@@ -1,9 +1,9 @@
 # Site settings
 title: Daudix's Blog
-baseurl: "/blog" # the subpath of your site, e.g. /blog/
+baseurl: "/blog/" # the subpath of your site, e.g. /blog/
                                  # usually empty. necessary for buidling absolute URIs
                                  # for metadata header
-url: "https://daudix-ufo.github.io"   # the base hostname & protocol for your site
+url: "https://daudix.undo.it"   # the base hostname & protocol for your site
 sourceurl: "https://github.com/daudix-UFO/blog" # "edit this website" link in the footer
 description: "Description of the OS Component website."
 issuesurl: "https://github.com/daudix-UFO/blog/issues" # issue tracker for website

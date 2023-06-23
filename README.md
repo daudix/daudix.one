@@ -1,3 +1,3 @@
-# daudix-ufo.github.io/blog
+# daudix.undo.it/blog
 
 This is my blog
