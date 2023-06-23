@@ -1,6 +1,6 @@
 # Site settings
 title: Daudix's Blog
-baseurl: "/blog/" # the subpath of your site, e.g. /blog/
+baseurl: "/blog" # the subpath of your site, e.g. /blog/
                                  # usually empty. necessary for buidling absolute URIs
                                  # for metadata header
 url: "https://daudix.undo.it"   # the base hostname & protocol for your site
