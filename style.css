@@ -63,11 +63,19 @@
 /* Typography */
 
 @font-face {
-  font-family: 'Inter Var';
+  font-family: 'Source Code Var';
   font-weight: 100 900;
   font-display: swap;
   font-style: oblique 0deg 10deg;
   src: url("fonts/Inter.var.woff2?v=3.19") format("woff2");
+}
+
+@font-face {
+  font-family: 'Inter Var';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: oblique 0deg 10deg;
+  src: url("fonts/SourceCodePro.var.woff2?v=2.042") format("woff2");
 }
 
 * {
@@ -443,6 +451,7 @@ tbody td {
 
 /* Code Blocks */
 .highlighter-rouge {
+  font-family: "Source Code Var", sans-serif;
   padding: 2px 1rem;
   border-radius: 5px;
   background-color: var(--light1);
