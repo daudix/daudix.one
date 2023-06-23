@@ -458,6 +458,11 @@ tbody td {
   background-color: var(--light1);
 }
 
+/* ASCII Blocks */  
+.highlighter-rouge .ascii {
+  background-color: var(--light2);
+}
+
 /* Inline Code */
 code.highlighter-rouge {
   padding: 2px 6px;
