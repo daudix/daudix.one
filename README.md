@@ -2,7 +2,7 @@
 
 This is my blog based on [os-component-website](https://github.com/jimmac/os-component-website)
 
-## Previewing locally
+## Preview locally
 
 Build the image:
 
