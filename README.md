@@ -1,4 +1,4 @@
-# daudix.undo.it/blog
+# daudix-ufo.github.io/blog
 
 This is my blog based on [os-component-website](https://github.com/jimmac/os-component-website)
 
