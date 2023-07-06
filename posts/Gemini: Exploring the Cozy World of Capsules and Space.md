@@ -306,15 +306,15 @@ The ASCII art can be found online in huge amounts, I will give you some good web
 
 As for banners, they can be easily created with figlet or toilet, you can easily find installation instructions online, I also recommend to install additional beautiful and sometimes funny fonts from [figlet-fonts](https://github.com/xero/figlet-fonts), which basically consists of few commands
 
-$ git clone https://github.com/xero/figlet-fonts.git
+`git clone https://github.com/xero/figlet-fonts.git`
 
-$ cd figlet-fonts/
+`cd figlet-fonts/`
 
-$ sudo cp -r ./ /usr/share/figlet/
+`sudo cp -r ./ /usr/share/figlet/`
 
 And then you can create your own banner!
 
-$ figlet -f ANSI\ Shadow "gemini"
+`figlet -f ANSI\ Shadow "gemini"`
 
 To easily find the perfect font, you can look at [font preview](https://github.com/xero/figlet-fonts/blob/master/Examples.md)
 
