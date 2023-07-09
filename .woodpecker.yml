@@ -33,7 +33,7 @@ steps:
       - git config --global user.name "CI Builder"
       - git config --global init.defaultBranch pages
       # clone and move the target repo
-      - git clone -b pages https://$CBTOKEN@codeberg.org/daudix-UFO/blog.git
+      - git clone -b pages https://codeberg.org/daudix-UFO/blog.git
       - mv blog _site
       - chmod -R a+w _site
       - cd _site
