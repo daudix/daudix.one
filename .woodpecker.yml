@@ -23,7 +23,7 @@ steps:
   build:
     # Use the official jekyll build container
     image: jekyll/jekyll
-    secrets: [ e12334ba3602289b69665f16b8676401aeba767c, ddaudix@gmail.com ]
+    secrets: [ 2379aff3dfd166bddbfc8d0eb4236448d941d6d4, ddaudix@gmail.com ]
     commands:
       # Avoid permission denied errors
       - chmod -R a+w .
