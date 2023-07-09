@@ -1,0 +1,52 @@
+# Jekyll on Woodpecker to codeberg pages
+#
+# This file would typically be .woodpecker.yml in the root of your repository.
+#
+# Takes a repository with jekyll source, generates the static site and
+# pushes the result to codeberg pages
+#
+# Needs a codeberg access token (cbtoken) as secret in woodpecker config
+# Also uses another secret (cbmail) with email address for git config
+#
+# CBIN must be replaced with the source repo
+# CBOUT must be replaced with the target codeberg pages repo
+# CBUSER must be replaced with the user/org
+#
+# See the _config.yml file for the important keep_files: line to preserve
+# git metadata during build
+#
+# We also assume a domains file in the source repo that gets copied to
+# .domains in the target repo so codeberg pages works for custom domains
+#
+
+steps:
+  build:
+    # Use the official jekyll build container
+    image: jekyll/jekyll
+    secrets: [ e12334ba3602289b69665f16b8676401aeba767c, ddaudix@gmail.com ]
+    commands:
+      # Avoid permission denied errors
+      - chmod -R a+w .
+      # Set up git in a working way
+      - git config --global --add safe.directory /woodpecker/src/codeberg.org/daudix-UFO/blog-source/_site
+      - git config --global user.email "$CBMAIL"
+      - git config --global user.name "CI Builder"
+      - git config --global init.defaultBranch pages
+      # clone and move the target repo
+      - git clone -b pages https://codeberg.org/daudix-UFO/blog.git
+      - mv blog _site
+      - chmod -R a+w _site
+      - cd _site
+      # Prepare for push
+      - git remote set-url origin https://$CBTOKEN@codeberg.org/daudix-UFO/blog.git
+      - cd ..
+      # Run Jekyll build stage
+      - bundle install
+      - bundle exec jekyll build
+      # Only needed for custom domains
+      - cp domains _site/.domains
+      # Push to target
+      - cd _site
+      - git add --all
+      - git commit -m "Woodpecker CI Jekyll Build at $( env TZ=Europe/Berlin date +"%Y-%m-%d %X %Z" )"
+      - git push
