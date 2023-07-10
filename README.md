@@ -1,6 +1,6 @@
 # daudix-ufo.github.io/blog
 
-[![](https://ci.codeberg.org/api/badges/12428/status.svg)](https://ci.codeberg.org/repos/12428)
+[![Build status](https://ci.codeberg.org/api/badges/12428/status.svg)](https://ci.codeberg.org/repos/12428)
 
 This is my blog based on [os-component-website](https://github.com/jimmac/os-component-website)
 
@@ -8,19 +8,19 @@ This is my blog based on [os-component-website](https://github.com/jimmac/os-com
 
 Build the image:
 
-```
+```shell
 podman build --tag gh-pages .
 ```
 
 Run the image:
 
-```
+```shell
 podman run -it --rm --volume="$PWD:/srv/jekyll:Z" -w /srv/jekyll -p 4000:4000 gh-pages /bin/sh
 ```
 
 Within the container, run:
 
-```
+```shell
 bundle exec jekyll serve --livereload --host 0.0.0.0
 ```
 
