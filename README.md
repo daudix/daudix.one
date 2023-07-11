@@ -1,6 +1,6 @@
 # daudix-ufo.codeberg.page/blog
 
-[![status-badge](https://ci.codeberg.org/api/badges/12428/status.svg)](https://ci.codeberg.org/12428)
+[![Build status](https://ci.codeberg.org/api/badges/12428/status.svg)](https://ci.codeberg.org/repos/12428)
 
 This is my blog based on [os-component-website](https://github.com/jimmac/os-component-website)
 
