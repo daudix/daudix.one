@@ -2,7 +2,8 @@
 
 [![status-badge](https://ci.codeberg.org/api/badges/12428/status.svg)](https://ci.codeberg.org/repos/12428)
 
-This is my blog based on [os-component-website](https://github.com/jimmac/os-component-website)
+> **Note**
+> This blog is based on [os-component-website](https://github.com/jimmac/os-component-website)
 
 ## Preview locally
 
