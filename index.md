@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 <!-- ![Pixels](assets/splash.png){:.full.pixels} -->
 
 ```
