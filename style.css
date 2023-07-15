@@ -448,6 +448,7 @@ tbody td {
   background-color: var(--light1);
   max-width: 100%;
   overflow-x: auto;
+  line-height: normal;
 }
   @media only screen and (max-device-width : 480px) {
   /*mobile*/
@@ -456,11 +457,6 @@ tbody td {
   
 .highlighter-rouge * {
   background-color: var(--light1);
-}
-
-/* ASCII Blocks */  
-.highlighter-rouge .ascii {
-  background-color: var(--light2);
 }
 
 /* Inline Code */
