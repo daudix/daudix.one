@@ -37,8 +37,8 @@ To make the migration as smooth as possible for everyone, I have [added redirect
 To do so, add this line to `<head>` of HTML
 
 ```html
-<meta http-equiv="refresh" content="0; URL=https://daudix-ufo.codeberg.page" />
-<link rel="canonical" href="https://daudix-ufo.codeberg.page" />
+<meta http-equiv="refresh" content="0; URL=https://daudix-ufo.codeberg.page">
+<link rel="canonical" href="https://daudix-ufo.codeberg.page">
 ```
 
 _Of course with your URLs in place of mine_
@@ -83,7 +83,7 @@ steps:
   build:
     # Use the official jekyll build container
     image: jekyll/jekyll
-    secrets: [cbtoken, cbmail]
+    secrets: [ cbtoken, cbmail ]
     commands:
       # Avoid permission denied errors
       - chmod -R a+w .
