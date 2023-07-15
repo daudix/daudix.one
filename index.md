@@ -25,3 +25,5 @@ Hi there! this is my little snug nook, take your cup of coffee and let's dive in
 ## Posts
 
 [Gemini: Exploring the Cozy World of Capsules and Space](posts/Gemini: Exploring the Cozy World of Capsules and Space.md){: .page-link}
+
+[Migration from GitHub to Codeberg](posts/Migration from GitHub to Codeberg.md){: .page-link}
