@@ -295,7 +295,6 @@ Or this fancy banner!
 ██║   ██║██╔══╝  ██║╚██╔╝██║██║██║╚██╗██║██║
 ╚██████╔╝███████╗██║ ╚═╝ ██║██║██║ ╚████║██║
  ╚═════╝ ╚══════╝╚═╝     ╚═╝╚═╝╚═╝  ╚═══╝╚═╝
-                                            
 ```
 
 The ASCII art can be found online in huge amounts, I will give you some good websites for start
