@@ -162,4 +162,4 @@ Guys over Codeberg seem to be very nice so if you value your code then you may w
 
 This is all for now, take ~~cake~~ care!
 
-[Go Home](/){: .inline-button}
+[Go Home](/blog/){: .inline-button}

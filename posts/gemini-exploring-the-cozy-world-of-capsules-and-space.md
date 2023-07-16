@@ -336,4 +336,4 @@ There are more things I want to tell you about, I want to write more in-depth po
 - [andregarzia.com/2022/01/gemini-is-a-little-gem.html](https://andregarzia.com/2022/01/gemini-is-a-little-gem.html)
 - [voidspace.blog/ramble/capsule-importance.gmi](gemini://voidspace.blog/ramble/capsule-importance.gmi)
 
-[Go Home](/){: .inline-button}
+[Go Home](/blog/){: .inline-button}
