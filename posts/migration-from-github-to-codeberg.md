@@ -6,23 +6,23 @@ On January 8, 2021, I have joined GitHub, back then I knew very little about FOS
 
 Things have changed since then, but this post is not about this (or is it).
 
-GitHub is biggest Git service that every developer knows about, a lot of open source projects use it because it provides free hosting and very convenient tools such as Actions and Pages, but not everything is perfect, and where there are Microsoft there are bad stuff.
+GitHub is the biggest Git service that every developer knows about, a lot of open source projects use it because it provides free Git hosting and very convenient tools such as Actions and Pages, but not everything is perfect, and where there Microsoft there are bad stuff.
 
-It is owned by Microsoft for a long time, which is the first red sign. ~~When [Russo-Ukrainian War](https://en.wikipedia.org/wiki/Russo-Ukrainian_War) began, GitHub started [suspending accounts and deleting repositories](https://www.jessesquires.com/blog/2022/04/19/github-suspending-russian-accounts) of Russian developers who has nothing to do with war but the fact that they were in Russia~~ (info varies). Last year they launched [Copilot](https://github.com/features/copilot) - an AI code completion and suggestion software [trained on FOSS projects](https://githubcopilotinvestigation.com), violating the GPL license. Microsoft itself has not the cleanest history with FOSS and Linux, if I will list every incident here it will take a lot of time.
+It is owned by Microsoft for a long time, which is the first red sign. ~~When [Russo-Ukrainian War](https://en.wikipedia.org/wiki/Russo-Ukrainian_War) began, GitHub started [suspending accounts and deleting repositories](https://www.jessesquires.com/blog/2022/04/19/github-suspending-russian-accounts) of Russian developers who has nothing to do with war but the fact that they were in Russia~~ (info varies). Last year they launched [Copilot](https://github.com/features/copilot) - an AI code completion and suggestion software [trained on FOSS projects](https://githubcopilotinvestigation.com), violating the GPL license. Microsoft itself has not the cleanest history with FOSS and Linux, and if I will list every incident here it will take a lot of time.
 
-Recently I were contributing to [some](https://codeberg.org/Bavarder/Bavarder) [projects](https://codeberg.org/Imaginer/Imaginer) hosted on Codeberg, and I had to create an account and use it for some time, and... I liked it! The UI of Codeberg; the workflow and the overall _vibe_ were really nice, the fact that Codeberg is very open with Community helped a lot too.
+Recently I were contributing to [some](https://codeberg.org/Bavarder/Bavarder) [projects](https://codeberg.org/Imaginer/Imaginer) hosted on Codeberg, and I had to create an account and use it for some time, and... I liked it! The UI of Codeberg; the workflow and the overall _vibe_ were really nice, the fact that Codeberg is very open with its Community helped a lot too.
 
 > Codeberg is non-profit powered by [Forgejo](https://forgejo.org) - a soft-fork of [Gitea](https://about.gitea.com) created after some suspicious stuff happened with it.
 
-And I have started thinking of and preparing for migration.
+And I started thinking of and preparing for migration.
 
 _Why not GitLab?_
 
-Because... I don't know, I just liked Codeberg so much :)
+Good question, because... I don't know, I just liked Codeberg so much :)
 
 ## Migration
 
-Finally, after deciding that I'll migrate my personal repositories to Codeberg I have created a [poll](https://mstdn.social/@Daudix/110680533037666405),in which asked what to do with repositories on GitHub, people decided that adding small note in README that tells about migration and gives a link to repository on Codeberg, and then archiving were the best approach, [and so I did it!](https://mstdn.social/@Daudix/110685982530642051)
+After final decision that I will migrate my personal repositories to Codeberg I have created a [poll](https://mstdn.social/@Daudix/110680533037666405),in which asked what to do with repositories on GitHub, people decided that adding small note in README that tells about migration and gives a link to repository on Codeberg, and then archiving were the best approach, [and so I did it!](https://mstdn.social/@Daudix/110685982530642051)
 
 ### Repositories
 
@@ -34,7 +34,7 @@ You can fine-tune the migration - enable migration of pull requests, issues, lab
 
 To make the migration as smooth as possible for everyone, I have [added redirect](https://mstdn.social/@Daudix/110682189578914151) from GitHub pages to Codeberg pages right before archiving, so all the links will continue work just like before.
 
-To do so, add this line to `<head>` of HTML
+To do so, add this lines to `<head>` of HTML
 
 ```html
 <meta http-equiv="refresh" content="0; URL=https://daudix-ufo.codeberg.page">
@@ -45,15 +45,15 @@ _Of course with your URLs in place of mine_
 
 ### GitHub pages → Codeberg pages
 
-Speaking of Codeberg pages, I have successfully recreated the workflow of GitHub pages with said Codeberg pages and Woodpecker - CI service that Codeberg provides (you need to request access), which allows running various jobs on changes, the one I needed were Jekyll - Static site generator from Markdown (and not only) that are used by GitHub pages and this blog is powered by.
+Speaking of Codeberg pages, I have successfully recreated the workflow of GitHub pages with said Codeberg pages and Woodpecker - CI service that Codeberg provides (you need to request access), which allows running various jobs on changes. Тhe one I needed were Jekyll - Static site generator from Markdown (and not only) that are used by GitHub pages and this blog is powered by.
 
 #### Woodpecker
 
-> See [blog post](https://jan.wildeboer.net/2022/07/Woodpecker-CI-Jekyll/) by Jan Wildeboer for better understanding how the CI works, since this guy created the workflow used here
+> See [blog post](https://jan.wildeboer.net/2022/07/Woodpecker-CI-Jekyll/) by Jan Wildeboer for better understanding how the CI works, since this guy created the workflow used here.
 
-First, request and wait for approval access to Woodpecker CI by opening an issue [here](https://codeberg.org/Codeberg-e.V./requests/issues/new/choose) and selecting _Woodpecker CI Access_.
+First, request and wait for manual approval to access to Woodpecker CI by opening an issue [here](https://codeberg.org/Codeberg-e.V./requests/issues/new/choose) and selecting _Woodpecker CI Access_, it should take no more than 12 hours
 
-After approval, create `blog-source` and `blog` repositories, the later will contain the generated static site, and create `.woodpecker.yml` file in the `blog-source` repository.
+After approval, create `blog-source` and `blog` repositories (names can be whatever you want), the later will contain the generated static site, and create `.woodpecker.yml` file in the `blog-source` repository.
 
 Then copy and paste the contents of [Jekyll workflow example](https://codeberg.org/Codeberg-CI/examples/src/branch/main/Jekyll/jekyll.yml) in `.woodpecker.yml`
 
@@ -122,9 +122,9 @@ Push all the changes and [Generate an Access Token](https://docs.codeberg.org/ad
 
 ![](../assets/blog/2023-07-15/Pasted image 20230715225539.png)
 
-Then copy the resulted token and save it to safe place, as it won't be shown again.
+Then copy the resulted token and save it to a safe place, as it won't be shown again.
 
-Go to [Woodpecker](https://ci.codeberg.org), navigate to _Repositories_ tab and add new repository (`blog-source`)
+Go to [Woodpecker](https://ci.codeberg.org) and navigate to _Repositories_ tab and add a new repository (`blog-source`)
 
 ![](../assets/blog/2023-07-15/Pasted image 20230715224850.png)
 
@@ -136,7 +136,7 @@ Navigate to _Settings_ and go to _Secrets_ tab
 
 Here create two secrets, `cbmail` and `cbtoken`
 
-`cbmail` should contain your Codeberg account email as a value
+`cbmail` should contain your Codeberg account email
 
 ![](../assets/blog/2023-07-15/Pasted image 20230715230017.png)
 
