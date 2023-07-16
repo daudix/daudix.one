@@ -30,5 +30,5 @@ _Building guide were shamelessly taken from [here](https://talk.jekyllrb.com/t/l
 ## Rename posts to web-friendly filenames
 
 ```shell
-./rename.sh posts/
+./rename.sh posts
 ```
