@@ -162,4 +162,4 @@ Guys over Codeberg seem to be very nice so if you value your code then you may w
 
 This is all for now, take ~~cake~~ care!
 
-[Go Back](<javascript:window.history.go(-1);>){: .inline-button}
+[Go Home](/){: .inline-button}
