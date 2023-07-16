@@ -162,4 +162,6 @@ Guys over Codeberg seem to be very nice so if you value your code then you may w
 
 This is all for now, take ~~cake~~ care!
 
+- Edit 1: Improve grammar and text <sup>[commit](https://codeberg.org/daudix-UFO/blog-source/commit/4cf7e74548e5350766ec674865388fb40a7b76f4)</sup>
+
 [Go Home](/blog/){: .inline-button}
