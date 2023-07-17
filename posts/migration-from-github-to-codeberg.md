@@ -1,5 +1,15 @@
 # Migration from GitHub to Codeberg
 
+## Table of Contents
+
+- [Backstory](#backstory)
+- [Migration](#migration)
+  - [Repositories](#repositories)
+  - [Redirect](#redirect)
+  - [GitHub pages → Codeberg pages](#github-pages--codeberg-pages)
+    - [Woodpecker](#woodpecker)
+- [Conclusion](#conclusion)
+
 ## Backstory
 
 On January 8, 2021, I have joined GitHub, back then I knew very little about FOSS and how it works, haven't done design _ever_ and had awful knowledge of English, to point that I used Google Translate to understand the text.
