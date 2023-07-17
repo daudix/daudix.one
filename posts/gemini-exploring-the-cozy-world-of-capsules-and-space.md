@@ -1,5 +1,18 @@
 # Gemini: Exploring the Cozy World of Capsules and Space
 
+## Table of Contents
+
+- [What is Gemini](#what-is-gemini)
+- [Gemini Browsers](#gemini-browsers)
+- [Browsing Geminispace](#browsing-geminispace)
+- [Creating Own Capsule](#creating-own-capsule)
+- [Writing Gemtext](#writing-gemtext)
+- [Adding Images](#adding-images)
+- [ASCII](#ascii)
+- [Conclusion](#conclusion)
+- [Footnotes](#footnotes)
+- [Extra](#extra)
+
 This post is made to give you basic understanding of what Gemini is, what are Capsules and Gemlogs, modern-day use of retro image techniques and text-based art
 
 > I highly recommend you to read geminiquickst.art before this post, because it provides a lot of valuable information about Gemini, and it is better written than this post
