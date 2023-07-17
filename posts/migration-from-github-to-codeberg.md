@@ -53,7 +53,7 @@ Speaking of Codeberg pages, I have successfully recreated the workflow of GitHub
 
 First, request and wait for manual approval to access to Woodpecker CI by opening an issue [here](https://codeberg.org/Codeberg-e.V./requests/issues/new/choose) and selecting _Woodpecker CI Access_, it should take no more than 12 hours
 
-After approval, create `blog-source` and `blog` repositories (names can be whatever you want), the later will contain the generated static site, and create `.woodpecker.yml` file in the `blog-source` repository.
+After approval, create `blog-source` and `blog` repositories (names can be whatever you want), the later will contain the generated static site, and should only have `pages` branch in it, and create `.woodpecker.yml` file in the `blog-source` repository.
 
 Then copy and paste the contents of [Jekyll workflow example](https://codeberg.org/Codeberg-CI/examples/src/branch/main/Jekyll/jekyll.yml) in `.woodpecker.yml`
 
