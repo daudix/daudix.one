@@ -591,3 +591,11 @@ code.highlighter-rouge {
   background-color: rgba(0, 0, 0, 0.05);
   color: var(--dark5);
 }
+
+.anchor {
+  opacity: 0;
+}
+
+.anchor:hover {
+  opacity: 1;
+}
