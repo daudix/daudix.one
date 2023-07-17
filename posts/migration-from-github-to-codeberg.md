@@ -128,7 +128,7 @@ After that, open it in your favorite text editor (e.g [VSCodium](https://vscodiu
 - `CBOUT` with output repository (`blog`)
 - `CBUSER` with your Codeberg username
 
-Push all the changes and [Generate an Access Token](https://docs.codeberg.org/advanced/access-token), you need to generate token named `cbtoken` with the `repo`, `user` and `package` scopes selected
+Push all the changes and [Generate an Access Token](https://docs.codeberg.org/advanced/access-token), you need to generate token named `cbtoken` with the `repo` and `user` scopes selected
 
 ![](../assets/blog/2023-07-15/Pasted image 20230715225539.png)
 
