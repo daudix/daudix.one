@@ -27,7 +27,7 @@ bundle exec jekyll serve --livereload --host 0.0.0.0
 
 _Building guide were shamelessly taken from [here](https://talk.jekyllrb.com/t/local-testing-of-existing-github-jekyll-site/7459/4)_
 
-## Rename posts to web-friendly filenames
+## Rename posts to kebab-case
 
 ```shell
 ./rename.sh posts
