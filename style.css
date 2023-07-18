@@ -66,7 +66,7 @@
   font-family: "InterVar";
   font-weight: 100 900;
   font-display: swap;
-  font-style: oblique 0deg 10deg;
+  font-style: oblique italic 0deg 10deg;
   src: url("fonts/Inter.var.woff2?v=4.0") format("woff2");
 }
 
@@ -161,6 +161,22 @@ small {
   color: #777;
 }
 
+dl {
+  padding: 0;
+}
+
+dl dt {
+  padding: 0;
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+dl dd {
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
 hr {
   margin: 3rem auto 4rem;
   width: 40%;
@@ -180,6 +196,34 @@ img.full {
 img.pixels {
   image-rendering: crisp-edges; /* older firefox browsers */
   image-rendering: pixelated;
+}
+
+blockquote {
+  padding: 0 1rem;
+  margin-left: 0;
+  color: #777;
+  border-left: .3rem solid rgba(0, 0, 0, 0.05);
+}
+
+blockquote > :first-child {
+  margin-top: 0;
+}
+
+blockquote > :last-child {
+  margin-bottom: 0;
+}
+
+kbd {
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.09);
+  color: var(--dark4);
+  display: inline-block;
+  font-size: 11px;
+  line-height: 10px;
+  padding: 3px 5px;
+  vertical-align: middle;
 }
 
 
@@ -250,6 +294,36 @@ footer {
   margin-top: 4rem;
 }
 
+/* Table */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+  -webkit-overflow-scrolling: touch;
+}
+
+table th {
+  font-weight: bold;
+}
+
+table th,
+table td {
+  padding: 0.5rem 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+td,
+th {
+  padding: 0;
+}
+
 /* Make tables vertically aligned to the top */
 tbody td {
   vertical-align: top;
@@ -285,10 +359,7 @@ tbody td {
   font-style: italic;
 }
 
-.highlight .c,
-.highlight .ch,
-.highlight .cd,
-.highlight .cpf {
+.highlight .c, .highlight .cd {
   color: #999988;
   font-style: italic;
 }
@@ -371,8 +442,7 @@ tbody td {
   font-weight: bold;
 }
 
-.highlight .k,
-.highlight .kv {
+.highlight .k, .highlight .kv {
   color: #000000;
   font-weight: bold;
 }
@@ -397,9 +467,7 @@ tbody td {
   color: #009999;
 }
 
-.highlight .m,
-.highlight .mb,
-.highlight .mx {
+.highlight .m, .highlight .mb, .highlight .mx {
   color: #009999;
 }
 
@@ -447,9 +515,7 @@ tbody td {
   color: #990073;
 }
 
-.highlight .s,
-.highlight .sa,
-.highlight .dl {
+.highlight .s {
   color: #d14;
 }
 
@@ -488,8 +554,7 @@ tbody td {
   font-weight: bold;
 }
 
-.highlight .nf,
-.highlight .fm {
+.highlight .nf {
   color: #990000;
   font-weight: bold;
 }
@@ -519,8 +584,7 @@ tbody td {
   color: #008080;
 }
 
-.highlight .nv,
-.highlight .vm {
+.highlight .nv {
   color: #008080;
 }
 
@@ -541,7 +605,6 @@ tbody td {
 .highlight {
   background-color: #f8f8f8;
 }
-
 
 /* Code Blocks */
 .highlighter-rouge {
