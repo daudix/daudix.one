@@ -3,7 +3,7 @@
     OS Component Website
     ====================
     
-    shamelessy stolen CSS from systemd 
+    shamelessly stolen CSS from systemd 
     https://github.com/systemd/systemd/tree/main/docs
     
 */
@@ -56,8 +56,7 @@
   --dark3: rgb(61, 56, 70);
   --dark4: rgb(36, 31, 49);
   --dark5: rgb(0, 0, 0);
-  --primary-color: var(--purple2);
-  /* Set your project color */
+  --primary-color: var(--purple2); /* Set your project color */
   --borders: var(--light3);
 }
 
@@ -546,12 +545,12 @@ tbody td {
 
 /* Code Blocks */
 .highlighter-rouge {
+  line-height: normal;
   padding: 2px 1rem;
   border-radius: 5px;
   background-color: var(--light1);
   max-width: 100%;
   overflow-x: auto;
-  line-height: normal;
 }
 
 @media only screen and (max-device-width : 480px) {
