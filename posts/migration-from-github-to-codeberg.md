@@ -22,17 +22,19 @@ It is owned by Microsoft for a long time, which is the first red sign. ~~When [R
 
 Recently I were contributing to [some](https://codeberg.org/Bavarder/Bavarder) [projects](https://codeberg.org/Imaginer/Imaginer) hosted on Codeberg, and I had to create an account and use it for some time, and... I liked it! The UI of Codeberg; the workflow and the overall _vibe_ were really nice, the fact that Codeberg is very open with its Community helped a lot too.
 
+_Edit: apparently I have [contributed to one project](https://codeberg.org/foreverxml/random/pulls/41) earlier, so I already had Codeberg account xD_
+
 > Codeberg is non-profit powered by [Forgejo](https://forgejo.org) - a soft-fork of [Gitea](https://about.gitea.com) created after some suspicious stuff happened with it.
 
 And I started thinking of and preparing for migration.
 
-_Why not GitLab?_
+_Why not GitLab?_ you may ask
 
-Good question, because... I don't know, I just liked Codeberg so much :)
+Good question, because... I don't know, GitLab is a bit confusing and I just liked Codeberg so much :)
 
 ## Migration
 
-After final decision that I will migrate my personal repositories to Codeberg I have created a [poll](https://mstdn.social/@Daudix/110680533037666405),in which asked what to do with repositories on GitHub, people decided that adding small note in README that tells about migration and gives a link to repository on Codeberg, and then archiving were the best approach, [and so I did it!](https://mstdn.social/@Daudix/110685982530642051)
+After final decision that I will migrate my personal repositories to Codeberg I have created a [poll](https://mstdn.social/@Daudix/110680533037666405) on Mastodon,in which asked what to do with repositories on GitHub, people decided that adding small note in README that tells about migration and gives a link to repository on Codeberg, and then archiving were the best approach, [and so I did it!](https://mstdn.social/@Daudix/110685982530642051)
 
 ### Repositories
 
@@ -44,14 +46,12 @@ You can fine-tune the migration - enable migration of pull requests, issues, lab
 
 To make the migration as smooth as possible for everyone, I have [added redirect](https://mstdn.social/@Daudix/110682189578914151) from GitHub pages to Codeberg pages right before archiving, so all the links will continue work just like before.
 
-To do so, add this lines to `<head>` of HTML
+To do so, I have added this two lines to `<head>` of HTML
 
 ```html
 <meta http-equiv="refresh" content="0; URL=https://daudix-ufo.codeberg.page">
 <link rel="canonical" href="https://daudix-ufo.codeberg.page">
 ```
-
-_Of course with your URLs in place of mine_
 
 ### GitHub pages → Codeberg pages
 
@@ -61,9 +61,9 @@ Speaking of Codeberg pages, I have successfully recreated the workflow of GitHub
 
 > See [blog post](https://jan.wildeboer.net/2022/07/Woodpecker-CI-Jekyll/) by Jan Wildeboer for better understanding how the CI works, since this guy created the workflow used here.
 
-First, request and wait for manual approval to access to Woodpecker CI by opening an issue [here](https://codeberg.org/Codeberg-e.V./requests/issues/new/choose) and selecting _Woodpecker CI Access_, it should take no more than 12 hours
+First, I have requested and waited for manual approval to access to Woodpecker CI by opening an issue [here](https://codeberg.org/Codeberg-e.V./requests/issues/new/choose) and selecting _Woodpecker CI Access_, it took a few hours, so when I woke up I already had access.
 
-After approval, create `blog-source` and `blog` repositories (names can be whatever you want), the later will contain the generated static site, and should only have `pages` branch in it, and create `.woodpecker.yml` file in the `blog-source` repository.
+After approval, I have created `blog-source` and `blog` repositories (names can be whatever you want), the later will contain the generated static site, and should only have `pages` branch in it, and created `.woodpecker.yml` file in the `blog-source` repository.
 
 Then copy and paste the contents of [Jekyll workflow example](https://codeberg.org/Codeberg-CI/examples/src/branch/main/Jekyll/jekyll.yml) in `.woodpecker.yml`
 
@@ -122,11 +122,13 @@ steps:
       - git push
 ```
 
-After that, open it in your favorite text editor (e.g [VSCodium](https://vscodium.com)) and replace:
+After that, open it in your favorite text editor and replace:
 
 - `CBIN` with source repository (`blog-source`)
 - `CBOUT` with output repository (`blog`)
 - `CBUSER` with your Codeberg username
+
+_Personally I use [VSCodium](https://vscodium.com), fork of VSCode with Microsoft telemetry removed._
 
 Push all the changes and [Generate an Access Token](https://docs.codeberg.org/advanced/access-token), you need to generate token named `cbtoken` with the `repo` and `user` scopes selected
 
@@ -167,6 +169,8 @@ In my case I already had blog based on [jimmac/os-component-website](https://git
 ## Conclusion
 
 The migration from GitHub to Codeberg were simple and smooth, but not without issues, I had difficulties understanding how to make Woodpecker secrets work and how to create them in first place, this is why I wrote this post in first place.
+
+_Edit: in Gitea and consequently in Forgejo v1.20 the secret creation UI have been completely changed, and it's more clear than current one_
 
 Guys over Codeberg seem to be very nice so if you value your code then you may want to do the same :)
 
