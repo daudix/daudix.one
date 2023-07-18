@@ -124,7 +124,36 @@ The final element.
 
 ### Extra
 
+```
 <kbd>Fn</kbd> + <kbd>Alt</kbd> + <kbd>F4</kbd>
+```
+
+<kbd>Fn</kbd> + <kbd>Alt</kbd> + <kbd>F4</kbd>
+
+```
+[Link](https://example.org){: .page-link}
+
+[Directory](https://example.org){: .page-link-folder}
+
+[Favorite post](https://example.org){: .page-link-star}
+
+[Unfinished post](https://example.org){: .page-link-slide}
+```
+
+[Link](https://example.org){: .page-link}
+
+[Directory](https://example.org){: .page-link-folder}
+
+[Favorite post](https://example.org){: .page-link-star}
+
+[Unfinished post](https://example.org){: .page-link-slide}
+
+```
+[Go Back](<javascript:window.history.go(-1);>){: .inline-button}
+[Go Home](/blog/){: .inline-button}
+[File an issue]({{site.issuesurl}})
+{: .dialog-buttons}
+```
 
 [Go Back](<javascript:window.history.go(-1);>){: .inline-button}
 [Go Home](/blog/){: .inline-button}

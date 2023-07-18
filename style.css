@@ -285,6 +285,17 @@ kbd {
   content: " ➜";
 }
 
+.page-link-folder::after {
+  content: " 🖿";
+}
+
+.page-link-star::after {
+  content: " ★";
+}
+
+.page-link-slide::after {
+  content: " ⛐";
+}
 
 /* Footer */
 footer {
