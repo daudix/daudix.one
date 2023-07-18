@@ -180,5 +180,6 @@ This is all for now, take ~~cake~~ care!
 - Edit 2: Mention use of `pages` branch <sup>[commit](https://codeberg.org/daudix-UFO/blog-source/commit/c634c8442a79f2b56cba7fbc0c63455a98032029)</sup>
 - Edit 3: Remove unnecessary `package` scope <sup>[commit](https://codeberg.org/daudix-UFO/blog-source/commit/d1d54af8387565e4e0047c0cda41d96a99ef266b)</sup>
 - Edit 4: Fix typos <sup>[commit](https://codeberg.org/daudix-UFO/blog-source/commit/137470afd773a26c0ca88c0d4bb367b8e7e28407)</sup>
+- Edit 5: Improve text yet again <sup>[commit](https://codeberg.org/daudix-UFO/blog-source/commit/733c7ee33d3b6d2db32c3faabe53d9316c9aa504)</sup>
 
 [Go Home](/blog/){: .inline-button}
