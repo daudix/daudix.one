@@ -5,27 +5,23 @@
 > **Note**
 > This blog is based on [os-component-website](https://github.com/jimmac/os-component-website)
 
-## Preview locally
+## [Markdown test page](https://daudix-ufo.codeberg.page/blog/markdown)
 
-Build the image:
+## Build static files:
 
 ```shell
-podman build --tag pages .
+./local_serve.sh build
 ```
 
-Run the image:
+## Run locally:
 
 ```shell
-podman run -it --rm --volume="$PWD:/srv/jekyll:Z" -w /srv/jekyll -p 4000:4000 pages /bin/sh
-```
-
-Within the container, run:
-
-```shell
-bundle exec jekyll serve --livereload --host 0.0.0.0
+./local_serve.sh serve
 ```
 
 _Building guide were shamelessly taken from [here](https://talk.jekyllrb.com/t/local-testing-of-existing-github-jekyll-site/7459/4)_
+
+_Initial script (`local_serve.sh`) were taken from [here](https://kuros.in/docker/docker-jekyll-container-to-serve-locally)_
 
 ## Rename posts to kebab-case
 
