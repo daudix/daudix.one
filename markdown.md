@@ -124,29 +124,39 @@ The final element.
 
 ### Extra
 
+Display pixel-art in full width without filtering
+
+```
+![Pixels](assets/small_witch_src.png){:.full.pixels}
+```
+
+![Pixels](assets/small-witch.png){:.full.pixels}
+
+> [Source](https://pixeljoint.com/pixelart/152424.htm)
+
+* * *
+
+Keyboard shortcuts
+
 ```
 <kbd>Fn</kbd> + <kbd>Alt</kbd> + <kbd>F4</kbd>
 ```
 
 <kbd>Fn</kbd> + <kbd>Alt</kbd> + <kbd>F4</kbd>
 
+* * *
+
+Link with arrow
+
 ```
-[Link](https://example.org){: .page-link}
-
-[Directory](https://example.org){: .page-link-folder}
-
-[Favorite post](https://example.org){: .page-link-star}
-
-[Unfinished post](https://example.org){: .page-link-slide}
+[Link with arrow](https://example.org){: .page-link}
 ```
 
-[Link](https://example.org){: .page-link}
+[Link with arrow](https://example.org){: .page-link}
 
-[Directory](https://example.org){: .page-link-folder}
+* * *
 
-[Favorite post](https://example.org){: .page-link-star}
-
-[Unfinished post](https://example.org){: .page-link-slide}
+Footer buttons
 
 ```
 [Go Back](<javascript:window.history.go(-1);>){: .inline-button}
