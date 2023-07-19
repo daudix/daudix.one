@@ -124,7 +124,7 @@ The final element.
 
 ### Extra
 
-Display pixel-art in full width without filtering
+Display pixel-art in full width without filtering.
 
 ```
 ![Pixels](assets/small_witch_src.png){:.full.pixels}
@@ -132,21 +132,21 @@ Display pixel-art in full width without filtering
 
 ![Pixels](assets/small-witch.png){:.full.pixels}
 
-> [Source](https://pixeljoint.com/pixelart/152424.htm)
+[Source](https://pixeljoint.com/pixelart/152424.htm){: .page-link}
 
 * * *
 
-Keyboard shortcuts
+Keyboard shortcuts.
 
 ```
-<kbd>Fn</kbd> + <kbd>Alt</kbd> + <kbd>F4</kbd>
+<kbd>⌘ Super</kbd> + <kbd>Space</kbd>
 ```
 
-<kbd>Fn</kbd> + <kbd>Alt</kbd> + <kbd>F4</kbd>
+<kbd>⌘ Super</kbd> + <kbd>Space</kbd>
 
 * * *
 
-Link with arrow
+Link with arrow.
 
 ```
 [Link with arrow](https://example.org){: .page-link}
@@ -156,7 +156,7 @@ Link with arrow
 
 * * *
 
-Footer buttons
+Footer buttons.
 
 ```
 [Go Back](<javascript:window.history.go(-1);>){: .inline-button}
