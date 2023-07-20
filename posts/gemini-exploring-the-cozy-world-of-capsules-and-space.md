@@ -342,6 +342,8 @@ To easily find the perfect font, you can look at [font preview](https://github.c
 
 There are also amazing graphical app for this - [Calligraphy](https://gitlab.com/gregorni/Calligraphy), made specifically for creating ASCII banners!
 
+You can also use [online tools](http://patorjk.com/software/taag)
+
 ## Conclusion
 
 Gemini is cozy corner for those who tired of railway noise of the web, it has its own limitations and strengths, and of course, community, in this post we have briefly touched additional topics: dithering and ASCII art
