@@ -5,25 +5,27 @@
 > **Note**
 > This blog is based on [os-component-website](https://github.com/jimmac/os-component-website)
 
-## [Markdown test page](https://daudix-ufo.codeberg.page/blog/markdown)
+## Usage
 
-## Build static files:
+### Markdown test page: [here](https://daudix-ufo.codeberg.page/blog/markdown)
+
+### Build static files:
 
 ```shell
-./local_serve.sh build
+./local.sh build
 ```
 
-## Run locally:
+### Watch static files and serve:
 
 ```shell
-./local_serve.sh serve
+./local.sh serve
 ```
 
 _Building guide were shamelessly taken from [here](https://talk.jekyllrb.com/t/local-testing-of-existing-github-jekyll-site/7459/4)_
 
-_Initial script (`local_serve.sh`) were taken from [here](https://kuros.in/docker/docker-jekyll-container-to-serve-locally)_
+_Initial script (`local.sh`) were taken from [here](https://kuros.in/docker/docker-jekyll-container-to-serve-locally)_
 
-## Rename posts to kebab-case
+### Rename posts to kebab-case
 
 ```shell
 ./rename.sh posts
