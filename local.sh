@@ -16,10 +16,10 @@ cat << "EOF"
 
 EOF
 
-        echo -e "\e[32mBuilding Podman image\e[0m"
+        echo -e "\e[1;32mBuilding Podman image\e[0m"
         podman build --tag pages .
 
-        echo -e "\e[32mBuilding Jekyll site\e[0m"    
+        echo -e "\e[1;32mBuilding Jekyll site\e[0m"    
         podman run \
             -it --rm --volume="$PWD:/srv/jekyll:Z" \
             -w /srv/jekyll -p 4000:4000 pages \
@@ -36,10 +36,10 @@ cat << "EOF"
 
 EOF
 
-        echo -e "\e[32mBuilding Podman image\e[0m"
+        echo -e "\e[1;32mBuilding Podman image\e[0m"
         podman build --tag pages .
 
-        echo -e "\e[32mBuilding Jekyll site\e[0m"    
+        echo -e "\e[1;32mBuilding Jekyll site\e[0m"    
         podman run \
             -it --rm --volume="$PWD:/srv/jekyll:Z" \
             -w /srv/jekyll -p 4000:4000 pages \
