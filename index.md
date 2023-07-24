@@ -27,4 +27,6 @@ Hi there! this is my little snug nook, take your cup of coffee and let's dive in
 
 [Migration from GitHub to Codeberg](posts/migration-from-github-to-codeberg.md){: .page-link}
 
-[ChatGPT And File Renaming](posts/chatgpt-and-file-renaming.md){: .page-link}
+## Nano-Posts
+
+[ChatGPT And File Renaming](nano-posts/chatgpt-and-file-renaming.md){: .page-link}

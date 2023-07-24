@@ -2,6 +2,15 @@
 
 # Script for building and serving site locally
 
+check_command() {
+    if ! command -v "$1" &>/dev/null; then
+        echo -e "\033[1;31m$1 is not installed, install $1 to continue\033[0m"
+        exit 1
+    fi
+}
+
+check_command "podman"
+
 set -e
 
 case $1 in
