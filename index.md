@@ -26,3 +26,5 @@ Hi there! this is my little snug nook, take your cup of coffee and let's dive in
 [Gemini: Exploring the Cozy World of Capsules and Space](posts/gemini-exploring-the-cozy-world-of-capsules-and-space.md){: .page-link}
 
 [Migration from GitHub to Codeberg](posts/migration-from-github-to-codeberg.md){: .page-link}
+
+[ChatGPT And File Renaming](posts/chatgpt-and-file-renaming.md){: .page-link}
