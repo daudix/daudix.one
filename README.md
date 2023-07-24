@@ -25,7 +25,7 @@ _Building guide were shamelessly taken from [here](https://talk.jekyllrb.com/t/l
 
 _Initial script (`local.sh`) were taken from [here](https://kuros.in/docker/docker-jekyll-container-to-serve-locally)_
 
-### Rename posts to be web-friendly
+### Rename posts to web-friendly format
 
 ```shell
 ./rename.sh posts
