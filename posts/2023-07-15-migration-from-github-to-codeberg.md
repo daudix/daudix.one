@@ -132,35 +132,35 @@ _Personally I use [VSCodium](https://vscodium.com), fork of VSCode with Microsof
 
 Push all the changes and [Generate an Access Token](https://docs.codeberg.org/advanced/access-token), you need to generate token named `cbtoken` with the `repo` scope selected
 
-![](../assets/blog/2023-07-15/Pasted image 20230715225539.png)
+![](../assets/posts/2023-07-15/Pasted image 20230715225539.png)
 
 Then copy the resulted token and save it to a safe place, as it won't be shown again.
 
 Go to [Woodpecker](https://ci.codeberg.org) and navigate to _Repositories_ tab and add a new repository (`blog-source`)
 
-![](../assets/blog/2023-07-15/Pasted image 20230715224850.png)
+![](../assets/posts/2023-07-15/Pasted image 20230715224850.png)
 
 Navigate to _Settings_ and go to _Secrets_ tab
 
-![](../assets/blog/2023-07-15/Pasted image 20230715225826.png)
+![](../assets/posts/2023-07-15/Pasted image 20230715225826.png)
 
-![](../assets/blog/2023-07-15/Pasted image 20230715225841.png)
+![](../assets/posts/2023-07-15/Pasted image 20230715225841.png)
 
 Here create two secrets, `cbmail` and `cbtoken`
 
 `cbmail` should contain your Codeberg account email
 
-![](../assets/blog/2023-07-15/Pasted image 20230715230017.png)
+![](../assets/posts/2023-07-15/Pasted image 20230715230017.png)
 
 And `cbtoken` should contain the secret we saved earlier
 
-![](../assets/blog/2023-07-15/Pasted image 20230715230115.png)
+![](../assets/posts/2023-07-15/Pasted image 20230715230115.png)
 
 Make sure these two secrets have successfully created and make some changes in `blog-source` to trigger the CI, it should finish successfully.
 
 > If you don't want to trigger the CI (the change doesn't affect content for example) you can add `[CI SKIP]` to your commit message to skip the CI
 
-![](../assets/blog/2023-07-15/Pasted image 20230715231347.png)
+![](../assets/posts/2023-07-15/Pasted image 20230715231347.png)
 
 Now it's up to you to choose Jekyll theme and write something ;)
 
