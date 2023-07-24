@@ -130,7 +130,7 @@ After that, open it in your favorite text editor and replace:
 
 _Personally I use [VSCodium](https://vscodium.com), fork of VSCode with Microsoft telemetry removed._
 
-Push all the changes and [Generate an Access Token](https://docs.codeberg.org/advanced/access-token), you need to generate token named `cbtoken` with the `repo` and `user` scopes selected
+Push all the changes and [Generate an Access Token](https://docs.codeberg.org/advanced/access-token), you need to generate token named `cbtoken` with the `repo` scope selected
 
 ![](../assets/blog/2023-07-15/Pasted image 20230715225539.png)
 
