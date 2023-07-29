@@ -247,7 +247,7 @@ kbd:active {
 /* Singletons */
 #logo {
   display: block;
-  width: 251px;
+  width: 130px;
   height: 26px;
   background: url('assets/page-logo.svg') no-repeat center;
   padding: 5rem 0 3rem;
