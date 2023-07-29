@@ -1,9 +1,9 @@
-# ChatGPT And File Renaming
-
-## Table of Contents
-
-- [Backstory](#backstory)
-- [The ~~programming~~ asking](#the-programming-asking)
+---
+layout: post
+title:  "ChatGPT And File Renaming"
+tags: AI ChatGPT Script
+toc: true
+---
 
 ## Backstory
 
@@ -71,5 +71,3 @@ rename_files "$target_directory"
 The script can take directory name as an argument (e.g `posts`) and rename everything in it, that's all it does :)
 
 Anyway, I have wrote this to let you know why the script may break your files and appreciate how useful GPT can be sometimes.
-
-[Go Home](/blog/){: .inline-button}
