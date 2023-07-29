@@ -161,11 +161,13 @@ Footer buttons.
 ```
 [Go Back](<javascript:window.history.go(-1);>){: .inline-button}
 [Go Home](/blog/){: .inline-button}
+[Toggle Style](<javascript:toggleStyle();>){: .inline-button}
 [File an issue]({{site.issuesurl}})
 {: .dialog-buttons}
 ```
 
 [Go Back](<javascript:window.history.go(-1);>){: .inline-button}
 [Go Home](/blog/){: .inline-button}
+[Toggle Style](<javascript:toggleStyle();>){: .inline-button}
 [File an issue]({{site.issuesurl}})
 {: .dialog-buttons}

@@ -9,7 +9,8 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 
-  <link rel="stylesheet" href="{{ "/style.css" | prepend: site.baseurl }}" />
+  <link rel="stylesheet" href="{{ "/style.css" | prepend: site.baseurl }}" id="original-style"/>
+  <link rel="stylesheet" href="{{ "/style-skeuo.css" | prepend: site.baseurl }}" id="skeuo-style" />
   
   <link rel="icon" type="image/gif" href="{{ "/favicon.gif" | prepend: site.baseurl }}" />
   <link rel="apple-touch-icon" sizes="180x180" href="{{ "/apple-touch-icon.png" | prepend: site.baseurl }}" />
@@ -25,4 +26,6 @@
 
   <!-- Plausible -->
   <script defer data-domain="daudix-ufo.codeberg.page" src="https://analytics.projectsegfau.lt/js/script.js"></script>
+
+  <script src="{{ "/script.js" | prepend: site.baseurl }}"></script>
 </head>
