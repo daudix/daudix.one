@@ -19,7 +19,7 @@ layout: default
 ____0_____0__\|/__@@@@__@@@__________|_\|/__|___\|/__\|/___________|_|_
 ```
 
-Hi there! this is my little snug nook, take your cup of coffee and let's dive in!
+Howdy! welcome to my little snug nook, take your cup of coffee and look around!
 
 ## Posts
 
