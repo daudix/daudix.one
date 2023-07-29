@@ -2,4 +2,4 @@
 FROM jekyll/jekyll
 
 # Install github-pages
-RUN gem update bundler && gem install bundler webrick github-pages
+RUN gem update bundler && gem install bundler webrick github-pages jekyll-toc

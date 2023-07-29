@@ -1,17 +1,9 @@
-# Gemini: Exploring the Cozy World of Capsules and Space
-
-## Table of Contents
-
-- [What is Gemini](#what-is-gemini)
-- [Gemini Browsers](#gemini-browsers)
-- [Browsing Geminispace](#browsing-geminispace)
-- [Creating Own Capsule](#creating-own-capsule)
-- [Writing Gemtext](#writing-gemtext)
-- [Adding Images](#adding-images)
-- [ASCII](#ascii)
-- [Conclusion](#conclusion)
-- [Footnotes](#footnotes)
-- [Extra](#extra)
+---
+layout: post
+title:  "Gemini: Exploring the Cozy World of Capsules and Space"
+tags: Gemini Dithering ASCII
+toc: true
+---
 
 This post is made to give you basic understanding of what Gemini is, what are Capsules and Gemlogs, modern-day use of retro image techniques and text-based art
 
@@ -360,5 +352,3 @@ There are more things I want to tell you about, I want to write more in-depth po
 
 - [andregarzia.com/2022/01/gemini-is-a-little-gem.html](https://andregarzia.com/2022/01/gemini-is-a-little-gem.html)
 - [voidspace.blog/ramble/capsule-importance.gmi](gemini://voidspace.blog/ramble/capsule-importance.gmi)
-
-[Go Home](/blog/){: .inline-button}

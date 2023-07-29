@@ -5,6 +5,7 @@ baseurl: "/blog" # the subpath of your site, e.g. /blog/
                                  # for metadata header
 url: "https://daudix-ufo.codeberg.page"   # the base hostname & protocol for your site
 sourceurl: "https://codeberg.org/daudix-UFO/blog-source" # "edit this website" link in the footer
+hosting: "Codeberg" # the hosting of your site, e.g Codeberg
 description: "Daudix UFO's blog."
 issuesurl: "https://codeberg.org/daudix-UFO/blog-source/issues" # issue tracker for website
 permalink: /:title/
@@ -12,3 +13,16 @@ primary-color: "#c061cb" #used in ios theme. further color customization in styl
 
 # Build settings
 markdown: kramdown
+
+defaults:
+  -
+   scope:
+     path: "_posts"
+     type: "posts"
+   values:
+     layout: "default"
+     author: "Daudix_UFO"
+     destination: "posts"
+
+plugins:
+  - jekyll-toc
