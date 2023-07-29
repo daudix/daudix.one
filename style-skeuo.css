@@ -90,6 +90,7 @@ body {
 body {
   background-image: url(assets/darkdenim.png);
   background-position: center;
+  background-repeat: repeat;
   background-size: 420px;
 
   color: var(--light2);
