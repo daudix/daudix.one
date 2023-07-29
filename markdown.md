@@ -132,7 +132,7 @@ Display pixel-art in full width without filtering.
 
 ![Pixels](assets/small-witch.png){:.full.pixels}
 
-[Source](https://pixeljoint.com/pixelart/152424.htm){: .page-link}
+[Source](https://pixeljoint.com/pixelart/152424.htm){:.site-link}
 
 * * *
 
@@ -149,25 +149,33 @@ Keyboard shortcuts.
 Link with arrow.
 
 ```
-[Link with arrow](https://example.org){: .page-link}
+[Link to page](markdown-page.md){:.page-link}
+
+[Link to site](https://example.org){:.site-link}
 ```
 
-[Link with arrow](https://example.org){: .page-link}
+[Link to page](markdown-page.md){:.page-link}
+
+[Link to site](https://example.org){:.site-link}
 
 * * *
 
-Footer buttons.
+Buttons.
 
 ```
 [Go Back](<javascript:window.history.go(-1);>){: .inline-button}
 [Go Home](/blog/){: .inline-button}
 [Toggle Style](<javascript:toggleStyle();>){: .inline-button}
 [File an issue]({{site.issuesurl}})
-{: .dialog-buttons}
 ```
 
-[Go Back](<javascript:window.history.go(-1);>){: .inline-button}
+| buttons                                                          |
+|:-----------------------------------------------------------------|
+| [Go Back](<javascript:window.history.go(-1);>){: .inline-button} |
+| [Go Home](/blog/){: .inline-button}                              |
+| [Toggle Style](<javascript:toggleStyle();>){: .inline-button}    |
+| [File an issue]({{site.issuesurl}})                              |
+
 [Go Home](/blog/){: .inline-button}
-[Toggle Style](<javascript:toggleStyle();>){: .inline-button}
 [File an issue]({{site.issuesurl}})
 {: .dialog-buttons}
