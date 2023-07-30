@@ -130,9 +130,9 @@ Display pixel-art in full width without filtering.
 ![Pixels](assets/small_witch_src.png){:.full.pixels}
 ```
 
-![Pixels](assets/small-witch.png){:.full.pixels}
+![Pixels](assets/duck.gif){:.full.pixels}
 
-[Source](https://pixeljoint.com/pixelart/152424.htm){:.site-link}
+[Source](https://pixeljoint.com/pixelart/152903.htm){:.site-link}
 
 * * *
 
@@ -165,17 +165,11 @@ Buttons.
 ```
 [Go Back](<javascript:window.history.go(-1);>){: .inline-button}
 [Go Home](/blog/){: .inline-button}
-[Toggle Style](<javascript:toggleStyle();>){: .inline-button}
 [File an issue]({{site.issuesurl}})
+{: .dialog-buttons}
 ```
 
-| buttons                                                          |
-|:-----------------------------------------------------------------|
-| [Go Back](<javascript:window.history.go(-1);>){: .inline-button} |
-| [Go Home](/blog/){: .inline-button}                              |
-| [Toggle Style](<javascript:toggleStyle();>){: .inline-button}    |
-| [File an issue]({{site.issuesurl}})                              |
-
+[Go Back](<javascript:window.history.go(-1);>){: .inline-button}
 [Go Home](/blog/){: .inline-button}
 [File an issue]({{site.issuesurl}})
 {: .dialog-buttons}
