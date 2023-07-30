@@ -14,6 +14,11 @@ primary-color: "#c061cb" #used in ios theme. further color customization in styl
 # Build settings
 markdown: kramdown
 
+feed:
+ tags:
+   path: "feed/tags/"
+plugins:
+  - jekyll-toc
 defaults:
   -
    scope:
@@ -23,6 +28,3 @@ defaults:
      layout: "default"
      author: "Daudix_UFO"
      destination: "posts"
-
-plugins:
-  - jekyll-toc
