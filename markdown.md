@@ -127,7 +127,7 @@ The final element.
 Display pixel-art in full width without filtering.
 
 ```
-![Pixels](assets/small_witch_src.png){:.full.pixels}
+![Pixels](assets/duck.gif){:.full.pixels}
 ```
 
 ![Pixels](assets/duck.gif){:.full.pixels}
