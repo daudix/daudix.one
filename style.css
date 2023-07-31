@@ -201,8 +201,8 @@ img.pixels {
 blockquote {
   padding: 0 1rem;
   margin-left: 0;
-  color: rgba(36, 31, 49, 0.6);
-  border-left: .3rem solid rgba(36, 31, 49, 0.2);
+  color: rgba(0, 0, 0, 0.4);
+  border-left: .3rem solid rgba(0, 0, 0, 0.07);
 }
 
 blockquote > :first-child {
