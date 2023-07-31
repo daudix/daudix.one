@@ -158,7 +158,7 @@ b {
 }
 
 small {
-  color: #777;
+  opacity: 55%;
 }
 
 dl {
@@ -201,8 +201,8 @@ img.pixels {
 blockquote {
   padding: 0 1rem;
   margin-left: 0;
-  color: #777;
-  border-left: .3rem solid rgba(0, 0, 0, 0.05);
+  color: rgba(36, 31, 49, 0.6);
+  border-left: .3rem solid rgba(36, 31, 49, 0.2);
 }
 
 blockquote > :first-child {
