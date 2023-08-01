@@ -105,7 +105,6 @@ h6 {
   margin: 3rem 0 1rem;
   font-weight: 600;
   line-height: 1.25;
-  font-variation-settings: "wght" 600; /* needed for webkit */
 }
 
 h1 {
@@ -146,7 +145,6 @@ a {
   text-decoration: none;
   color: var(--primary-color);
   cursor: pointer;
-  font-variation-settings: "wght" 600; /* needed for webkit */
 }
 
 a:hover {
