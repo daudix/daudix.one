@@ -657,7 +657,7 @@ code.highlighter-rouge {
 
 .inline-button {
   display: inline-block;
-  font-weight: 600;
+  font-weight: 900;
   font-size: 90%;
   padding: .4rem 1rem;
   border-radius: var(--rounded-corner);
