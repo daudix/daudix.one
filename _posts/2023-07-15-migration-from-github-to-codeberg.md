@@ -3,6 +3,8 @@ layout: post
 title:  "Migration from GitHub to Codeberg"
 tags: Codeberg GitHub Woodpecker Migration
 toc: true
+comments:
+  id: 110720129252541458
 ---
 
 ## Backstory

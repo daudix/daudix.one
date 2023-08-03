@@ -11,6 +11,11 @@ issuesurl: "https://codeberg.org/daudix-UFO/blog-source/issues" # issue tracker 
 permalink: /:title/
 primary-color: "#c061cb" #used in ios theme. further color customization in style.css  
 
+comments:
+  host: mstdn.social
+
+  username: Daudix
+
 # Build settings
 markdown: kramdown
 
