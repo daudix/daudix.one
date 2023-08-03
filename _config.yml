@@ -10,26 +10,23 @@ description: "Daudix UFO's blog."
 issuesurl: "https://codeberg.org/daudix-UFO/blog-source/issues" # issue tracker for website
 permalink: /:title/
 primary-color: "#c061cb" #used in ios theme. further color customization in style.css  
-
 comments:
   host: mstdn.social
-
   username: Daudix
 
 # Build settings
 markdown: kramdown
 
 feed:
- tags:
-   path: "feed/tags/"
+  tags:
+    path: "feed/tags/"
 plugins:
   - jekyll-toc
 defaults:
-  -
-   scope:
-     path: "_posts"
-     type: "posts"
-   values:
-     layout: "default"
-     author: "Daudix_UFO"
-     destination: "posts"
+  - scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      layout: "default"
+      author: "Daudix_UFO"
+      destination: "posts"
