@@ -3,6 +3,16 @@ layout: default
 ---
 
 <h1>{{ page.title }}</h1>
+
+<small>
+  <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date_to_long_string }}</time>
+  {% if page.tags %}
+    {% if page.tags.size > 0 %}
+      • {{ page.tags | join: ', ' }}
+    {% endif %}
+  {% endif %}
+</small>
+
 <h2>Table of Contents</h2>
 {{ content | toc }}
 
@@ -14,6 +24,20 @@ layout: default
     <hr>
   {%- endif -%}
 {%- endif -%}
+
+{% if page.next %}
+  <h2>Read Next</h2>
+  <a href="{{ site.baseurl }}{{ page.next.url }}" class="page-link">
+    {{ page.next.title }}
+  </a>
+{% endif %}
+
+{% if page.previous %}
+  <h2>Read Previous</h2>
+  <a href="{{ site.baseurl }}{{ page.previous.url }}" class="page-link">
+    {{ page.previous.title }}
+  </a>
+{% endif %}
 
 <p class="dialog-buttons">
   <a href="{{ site.baseurl }}/" class="inline-button">Go Home</a>
