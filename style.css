@@ -249,6 +249,14 @@ kbd:active {
   max-width: 720px;
 }
 
+@media only screen and (max-device-width : 480px) {
+
+  /*mobile*/
+  .container {
+    width: 90%;
+  }
+}
+
 /* Singletons */
 #logo {
   display: block;
@@ -638,7 +646,7 @@ tbody td {
 
   /*mobile*/
   .highlighter-rouge {
-    max-width: 80vw;
+    max-width: 90vw;
   }
 }
 
