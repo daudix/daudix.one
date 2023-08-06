@@ -1022,12 +1022,12 @@ section#comments .comment details summary {
   border-radius: var(--rounded-corner);
   background-color: transparent;
   color: var(--dark-op50);
-  transition: 200ms;
+  /* transition: 200ms; */
 }
 
 .nav a:hover {
   background-color: var(--dark-op05);
-  box-shadow: var(--purple2) -6px 0 12px, var(--blue2) 6px 0 12px;
+  /* box-shadow: var(--purple2) -6px 0 12px, var(--blue2) 6px 0 12px; */
 }
 
 @media (min-width: 650px) {
