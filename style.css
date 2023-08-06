@@ -218,6 +218,35 @@ blockquote> :last-child {
   margin-bottom: 0;
 }
 
+.ascii {
+  line-height: normal;
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 1rem 1rem;
+  transition: 800ms;
+
+  background: linear-gradient(to top, rgba(36, 31, 49, 1) 0%, rgba(36, 31, 49, 0) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.ascii:hover {
+  -webkit-text-fill-color: var(--dark4);
+  -moz-text-fill-color: var(--dark4);
+  text-shadow: var(--purple2) -6px 0 12px, var(--blue2) 6px 0 12px;
+}
+
+@media only screen and (max-device-width : 480px) {
+
+  /*mobile*/
+  .ascii {
+    max-width: 90vw;
+  }
+}
+
 kbd {
   background-color: var(--dark-op05);
   border: 1px solid var(--dark-op07);
