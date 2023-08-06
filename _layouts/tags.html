@@ -3,6 +3,9 @@ layout: default
 ---
 
 {{ content }}
+<h2>{{ page.title }}</h2>
+{{ page.description }}
+
 {% for tag in site.tags %}
   <h3>{{ tag[0] }}</h3>
   <ul>
