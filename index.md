@@ -2,7 +2,7 @@
 layout: default
 ---
 
-```
+<pre class="ascii">
          *                 *                  *              *
                                                       *             *
                         *            *                             ___
@@ -17,7 +17,7 @@ layout: default
   ____|_@|_       @@@@@@@@@__________|     \|/           |_______| |_|
 =|__ _____ |=     @@@@ .@@@__________|      |             |@| |@|  | |
 ____0_____0__\|/__@@@@__@@@__________|_\|/__|___\|/__\|/___________|_|_
-```
+</pre>
 
 Howdy! welcome to my little snug nook, take your cup of coffee and look around!
 
