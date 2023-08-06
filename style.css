@@ -269,7 +269,6 @@ kbd:active {
   filter: contrast(0.2);
 }
 
-
 /* Layout */
 .container {
   width: 80%;
@@ -1023,10 +1022,12 @@ section#comments .comment details summary {
   border-radius: var(--rounded-corner);
   background-color: transparent;
   color: var(--dark-op50);
+  transition: 200ms;
 }
 
 .nav a:hover {
   background-color: var(--dark-op05);
+  box-shadow: var(--purple2) -6px 0 12px, var(--blue2) 6px 0 12px;
 }
 
 @media (min-width: 650px) {
