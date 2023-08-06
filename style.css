@@ -210,11 +210,11 @@ blockquote {
   border-left: .3rem solid var(--dark-op07);
 }
 
-blockquote > :first-child {
+blockquote> :first-child {
   margin-top: 0;
 }
 
-blockquote > :last-child {
+blockquote> :last-child {
   margin-bottom: 0;
 }
 
@@ -384,7 +384,8 @@ tbody td {
   font-style: italic;
 }
 
-.highlight .c, .highlight .cd {
+.highlight .c,
+.highlight .cd {
   color: #999988;
   font-style: italic;
 }
@@ -467,7 +468,8 @@ tbody td {
   font-weight: bold;
 }
 
-.highlight .k, .highlight .kv {
+.highlight .k,
+.highlight .kv {
   color: #000000;
   font-weight: bold;
 }
@@ -492,7 +494,9 @@ tbody td {
   color: #009999;
 }
 
-.highlight .m, .highlight .mb, .highlight .mx {
+.highlight .m,
+.highlight .mb,
+.highlight .mx {
   color: #009999;
 }
 
@@ -636,10 +640,11 @@ tbody td {
   line-height: normal;
   margin: 1rem 0 1rem;
   padding: 2px 1rem;
-  border-radius: 5px;
+  border-radius: 8px;
   background-color: var(--light1);
   max-width: 100%;
   overflow-x: auto;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.03), 0 1px 3px 1px rgba(0, 0, 0, 0.07), 0 2px 6px 2px rgba(0, 0, 0, 0.03);
 }
 
 @media only screen and (max-device-width : 480px) {
@@ -658,6 +663,7 @@ tbody td {
 code.highlighter-rouge {
   padding: 2px 6px;
   background-color: var(--dark-op07);
+  box-shadow: none;
 }
 
 /* Buttons */
@@ -686,7 +692,7 @@ code.highlighter-rouge {
   background-position: center;
   background-size: cover;
   border-radius: 50%;
-  box-shadow: 0 0 2px var(--dark-op50);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.03), 0 1px 3px 1px rgba(0, 0, 0, 0.07), 0 2px 6px 2px rgba(0, 0, 0, 0.03);
   margin: 0;
   overflow: hidden;
 }
@@ -834,9 +840,10 @@ section#comments .comment .products .product figure,
 
 section#comments .comment .card figure {
   background-color: var(--light1);
-  border-radius: 12px;
+  border-radius: var(--rounded-corner);
   margin-left: 0;
   margin-right: 0;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.03), 0 1px 3px 1px rgba(0, 0, 0, 0.07), 0 2px 6px 2px rgba(0, 0, 0, 0.03);
 }
 
 section#comments .comment .card figure img {
@@ -926,4 +933,81 @@ section#comments .comment details summary {
   cursor: default;
   margin-top: 0.925rem;
   padding: 1em;
+}
+
+/* Navbar */
+
+.nav-container {
+  display: block;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 720px;
+}
+
+.nav {
+  /* background: linear-gradient(90deg, var(--purple2) 0%, var(--blue2) 100%);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.03), 0 1px 3px 1px rgba(0, 0, 0, 0.07), 0 2px 6px 2px rgba(0, 0, 0, 0.03); */
+  overflow: auto;
+}
+
+.nav-container {
+  margin: 1rem auto;
+  position: relative;
+  text-align: center;
+}
+
+.nav-title {
+  color: var(--dark-op50);
+  display: inline-block;
+  margin: 0;
+  padding-right: 0.2rem;
+}
+
+.nav-title:hover,
+.nav-title:focus {
+  text-decoration: underline;
+}
+
+.nav ul {
+  list-style-type: none;
+  margin: 1rem 0 0;
+  padding: 0;
+  text-align: center;
+}
+
+.nav li {
+  color: var(--dark-op50);
+  display: inline-block;
+  padding: 0 1rem 0 0;
+}
+
+.nav li:last-child {
+  padding-right: 0;
+}
+
+.nav a {
+  display: inline-block;
+  font-weight: 900;
+  font-size: 90%;
+  padding: .4rem 1rem;
+  border-radius: var(--rounded-corner);
+  background-color: transparent;
+  color: var(--dark-op50);
+}
+
+.nav a:hover {
+  background-color: var(--dark-op05);
+}
+
+@media (min-width: 650px) {
+  .nav-container {
+    text-align: left;
+  }
+
+  .nav ul {
+    bottom: 0;
+    position: absolute;
+    right: 0;
+  }
 }
