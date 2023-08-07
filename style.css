@@ -207,14 +207,14 @@ blockquote {
   padding: 0 1rem;
   margin-left: 0;
   color: var(--dark-op40);
-  border-left: .3rem solid var(--dark-op07);
+  border-left: 0.3rem solid var(--dark-op07);
 }
 
-blockquote> :first-child {
+blockquote > :first-child {
   margin-top: 0;
 }
 
-blockquote> :last-child {
+blockquote > :last-child {
   margin-bottom: 0;
 }
 
@@ -225,7 +225,11 @@ blockquote> :last-child {
   padding: 1rem 1rem;
   transition: 800ms;
 
-  background: linear-gradient(to top, rgba(36, 31, 49, 1) 0%, rgba(36, 31, 49, 0) 100%);
+  background: linear-gradient(
+    to top,
+    rgba(36, 31, 49, 1) 0%,
+    rgba(36, 31, 49, 0) 100%
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -239,8 +243,7 @@ blockquote> :last-child {
   text-shadow: var(--purple2) -6px 0 12px, var(--blue2) 6px 0 12px;
 }
 
-@media only screen and (max-device-width : 480px) {
-
+@media only screen and (max-device-width: 480px) {
   /*mobile*/
   .ascii {
     max-width: 90vw;
@@ -277,8 +280,7 @@ kbd:active {
   max-width: 720px;
 }
 
-@media only screen and (max-device-width : 480px) {
-
+@media only screen and (max-device-width: 480px) {
   /*mobile*/
   .container {
     width: 90%;
@@ -290,7 +292,7 @@ kbd:active {
   display: block;
   width: 130px;
   height: 26px;
-  background: url('assets/page-logo.svg') no-repeat center;
+  background: url("assets/page-logo.svg") no-repeat center;
   padding: 5rem 0 3rem;
   margin: 0 auto;
   position: relative;
@@ -307,14 +309,14 @@ kbd:active {
   cursor: pointer;
 }
 
-.page-logo>img {
+.page-logo > img {
   margin: 0 auto;
 }
 
 @media (prefers-color-scheme: dark) {
   #logo {
     filter: invert(100%) hue-rotate(180deg); /* uninvert */
-    background-image: url('assets/page-logo-i.svg');
+    background-image: url("assets/page-logo-i.svg");
   }
 }
 
@@ -323,11 +325,11 @@ kbd:active {
 }
 
 .brand-green {
-  background-color: #30D475;
+  background-color: #30d475;
 }
 
 .brand-black {
-  background-color: #201A26;
+  background-color: #201a26;
   color: white;
 }
 
@@ -585,7 +587,7 @@ tbody td {
 }
 
 .highlight .nb {
-  color: #0086B3;
+  color: #0086b3;
 }
 
 .highlight .nc {
@@ -672,11 +674,11 @@ tbody td {
   background-color: var(--light1);
   max-width: 100%;
   overflow-x: auto;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.03), 0 1px 3px 1px rgba(0, 0, 0, 0.07), 0 2px 6px 2px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.03), 0 1px 3px 1px rgba(0, 0, 0, 0.07),
+    0 2px 6px 2px rgba(0, 0, 0, 0.03);
 }
 
-@media only screen and (max-device-width : 480px) {
-
+@media only screen and (max-device-width: 480px) {
   /*mobile*/
   .highlighter-rouge {
     max-width: 90vw;
@@ -708,7 +710,7 @@ code.highlighter-rouge {
   display: inline-block;
   font-weight: 900;
   font-size: 90%;
-  padding: .4rem 1rem;
+  padding: 0.4rem 1rem;
   border-radius: var(--rounded-corner);
   background-color: var(--dark-op05);
   color: var(--dark5);
@@ -720,7 +722,8 @@ code.highlighter-rouge {
   background-position: center;
   background-size: cover;
   border-radius: var(--rounded-corner);
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.03), 0 1px 3px 1px rgba(0, 0, 0, 0.07), 0 2px 6px 2px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.03), 0 1px 3px 1px rgba(0, 0, 0, 0.07),
+    0 2px 6px 2px rgba(0, 0, 0, 0.03);
   margin: 0;
   overflow: hidden;
 }
@@ -871,7 +874,8 @@ section#comments .comment .card figure {
   border-radius: var(--rounded-corner);
   margin-left: 0;
   margin-right: 0;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.03), 0 1px 3px 1px rgba(0, 0, 0, 0.07), 0 2px 6px 2px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.03), 0 1px 3px 1px rgba(0, 0, 0, 0.07),
+    0 2px 6px 2px rgba(0, 0, 0, 0.03);
 }
 
 section#comments .comment .card figure img {
@@ -955,7 +959,22 @@ section#comments .comment .ellipsis::after {
 }
 
 section#comments .comment details summary {
-  background-image: linear-gradient(90deg, transparent, transparent 0.4rem, var(--light1) 0.4rem, var(--light1) calc(100% - 0.4rem), transparent calc(100% - 0.4rem), transparent), repeating-linear-gradient(45deg, var(--dark4), var(--dark4) 0.3rem, var(--purple2) 0.3rem, var(--purple2) 0.6rem);
+  background-image: linear-gradient(
+      90deg,
+      transparent,
+      transparent 0.4rem,
+      var(--light1) 0.4rem,
+      var(--light1) calc(100% - 0.4rem),
+      transparent calc(100% - 0.4rem),
+      transparent
+    ),
+    repeating-linear-gradient(
+      45deg,
+      var(--dark4),
+      var(--dark4) 0.3rem,
+      var(--purple2) 0.3rem,
+      var(--purple2) 0.6rem
+    );
   border-radius: 5px;
   color: inherit;
   cursor: default;
@@ -1018,7 +1037,7 @@ section#comments .comment details summary {
   display: inline-block;
   font-weight: 900;
   font-size: 90%;
-  padding: .4rem 1rem;
+  padding: 0.4rem 1rem;
   border-radius: var(--rounded-corner);
   background-color: transparent;
   color: var(--dark-op50);
@@ -1028,6 +1047,11 @@ section#comments .comment details summary {
 .nav a:hover {
   background-color: var(--dark-op05);
   /* box-shadow: var(--purple2) -6px 0 12px, var(--blue2) 6px 0 12px; */
+}
+
+.nav svg {
+  transform: translateY(0.125em);
+  fill: var(--dark-op50);
 }
 
 @media (min-width: 650px) {
