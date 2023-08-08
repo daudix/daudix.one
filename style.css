@@ -697,7 +697,6 @@ code.highlighter-rouge {
 }
 
 /* Buttons */
-
 .dialog-buttons {
   display: flex;
   flex-direction: row;
@@ -717,7 +716,6 @@ code.highlighter-rouge {
 }
 
 /* Comments */
-
 .avatar {
   background-position: center;
   background-size: cover;
@@ -983,7 +981,6 @@ section#comments .comment details summary {
 }
 
 /* Navbar */
-
 .nav-container {
   display: block;
   width: 80%;
@@ -993,8 +990,8 @@ section#comments .comment details summary {
 }
 
 .nav {
-  /* background: linear-gradient(90deg, var(--purple2) 0%, var(--blue2) 100%);
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.03), 0 1px 3px 1px rgba(0, 0, 0, 0.07), 0 2px 6px 2px rgba(0, 0, 0, 0.03); */
+  /* background: linear-gradient(90deg, var(--purple2) 0%, var(--blue2) 100%); */
+  /* box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.03), 0 1px 3px 1px rgba(0, 0, 0, 0.07), 0 2px 6px 2px rgba(0, 0, 0, 0.03); */
   overflow: auto;
 }
 
@@ -1008,7 +1005,7 @@ section#comments .comment details summary {
   color: var(--dark-op50);
   display: inline-block;
   margin: 0;
-  padding-right: 0.2rem;
+  /* padding-right: 0.2rem; */
 }
 
 .nav-title:hover,
@@ -1026,11 +1023,11 @@ section#comments .comment details summary {
 .nav li {
   color: var(--dark-op50);
   display: inline-block;
-  padding: 0 1rem 0 0;
+  /* padding: 0 1rem 0 0; */
 }
 
 .nav li:last-child {
-  padding-right: 0;
+  /* padding-right: 0; */
 }
 
 .nav a {
