@@ -7,7 +7,7 @@ toc: true
 
 ## Backstory
 
-While writing and the [previous post](../posts/migration-from-github-to-codeberg.md) I ran into an "issue" that post file names had spaces in them and special characters like `:`, I could rename them manually but why not use script to do this automatically?
+While writing and the [previous post](./2023-07-15-migration-from-github-to-codeberg.md) I ran into an "issue" that post file names had spaces in them and special characters like `:`, I could rename them manually but why not use script to do this automatically?
 
 ## The ~~programming~~ asking
 
