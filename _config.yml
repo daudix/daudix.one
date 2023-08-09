@@ -16,6 +16,7 @@ comments:
 
 # Build settings
 markdown: kramdown
+timezone: UTC
 
 feed:
   tags:
