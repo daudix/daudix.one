@@ -1075,3 +1075,15 @@ nav {
     right: 0;
   }
 }
+
+@media only screen and (max-device-width: 650px) {
+  /*mobile*/
+  nav {
+    position: relative;
+  }
+
+  .nav {
+    backdrop-filter: none;
+    box-shadow: none;
+  }
+}
