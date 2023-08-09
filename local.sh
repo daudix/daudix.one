@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Script for building and serving site locally
+# Script for building and serving Jekyll site locally
 
 check_command() {
     if ! command -v "$1" &>/dev/null; then
