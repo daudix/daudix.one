@@ -35,11 +35,16 @@
         setTimeout(function () {
           scrollFunction();
           scrolling = false;
-        }, 100); // Adjust the debounce time as needed
+        }, 100);
       }
     };
 
     function scrollFunction() {
+      var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+      if (screenWidth < 650) {
+        return;
+      }
+
       var navContainers = document.querySelectorAll(".nav-container");
       var navElements = document.querySelectorAll(".nav");
 
