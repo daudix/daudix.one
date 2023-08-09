@@ -180,7 +180,7 @@ Inspired by https://codeberg.org/jwildeboer/jwildeboersource/src/commit/45f9750b
               permalink.setAttribute("itemprop", "url");
               permalink.setAttribute("title", `View comment at ${ instance }`);
               permalink.setAttribute("rel", "external nofollow");
-              permalink.textContent = new Date(status.created_at).toLocaleString('en-US', {
+              permalink.textContent = new Date(status.created_at).toLocaleString('en-GB', {
                 dateStyle: "long",
                 timeStyle: "short",
               });
@@ -193,7 +193,7 @@ Inspired by https://codeberg.org/jwildeboer/jwildeboersource/src/commit/45f9750b
                 timestamp.classList.add("edited");
                 timestamp.setAttribute(
                   "title",
-                  "Edited " + new Date(status.edited_at).toLocaleString('en-US', {
+                  "Edited " + new Date(status.edited_at).toLocaleString('en-GB', {
                     dateStyle: "long",
                     timeStyle: "short",
                   })
