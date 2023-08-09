@@ -1081,9 +1081,4 @@ nav {
   nav {
     position: relative;
   }
-
-  .nav {
-    backdrop-filter: none;
-    box-shadow: none;
-  }
 }
