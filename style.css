@@ -987,6 +987,15 @@ nav {
   z-index: 1;
 }
 
+nav.scroll-up,
+nav:focus-within {
+  top: 0;
+}
+
+nav.scroll-down {
+  top: -100%;
+}
+
 .nav-container {
   display: block;
   width: 80%;
@@ -1001,14 +1010,13 @@ nav {
   /* box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.03), 0 1px 3px 1px rgba(0, 0, 0, 0.07),
     0 2px 6px 2px rgba(0, 0, 0, 0.03); */
   overflow: auto;
-  transition: 200ms;
+  transition: top 400ms, backdrop-filter 200ms, box-shadow 200ms;
 }
 
 .nav-container {
-  margin: 1rem auto;
+  margin: 0.5rem auto;
   position: relative;
   text-align: center;
-  transition: 200ms;
 }
 
 .nav-title {
@@ -1073,12 +1081,5 @@ nav {
     bottom: 0;
     position: absolute;
     right: 0;
-  }
-}
-
-@media only screen and (max-device-width: 650px) {
-  /*mobile*/
-  nav {
-    position: relative;
   }
 }
