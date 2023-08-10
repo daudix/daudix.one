@@ -126,7 +126,7 @@ I will use Halftone in this example
 
 This is what we get in the end
 
-![](../assets/posts/2023-06-12/bay-bridge-floyd.png)
+![](../assets/posts/2023-06-12/bay-bridge-floyd.png){:.hover}
 
 [Image on Unsplash](https://unsplash.com/photos/raNGlrn5JRI)
 
@@ -143,7 +143,7 @@ But, we can go even further, by using less colors and different dithering algori
 
 With ordered dithering (Bayer) and 2 colors we get the following result
 
-![](../assets/posts/2023-06-12/bay-bridge-bayer.png)
+![](../assets/posts/2023-06-12/bay-bridge-bayer.png){:.hover}
 
 [Image on Unsplash](https://unsplash.com/photos/raNGlrn5JRI)
 
@@ -250,7 +250,7 @@ Here are simple example of ASCII and Braille images made with ascii-image-conver
 
 But, do you think it has quality of this image?
 
-![](../assets/posts/2023-06-12/grayscale-plane.png)
+![](../assets/posts/2023-06-12/grayscale-plane.png){:.hover}
 
 [Image on Unsplash](https://unsplash.com/photos/cs4uFYrNZfc)
 

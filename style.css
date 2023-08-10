@@ -203,6 +203,23 @@ img.pixels {
   image-rendering: pixelated;
 }
 
+img.hover {
+  transition: 400ms;
+  border-radius: var(--rounded-corner);
+}
+
+img.hover:hover {
+  transform: scale(125%);
+  border-radius: unset;
+}
+
+@media only screen and (max-device-width: 480px) {
+  /*mobile*/
+  img.hover:hover {
+    transform: scale(110%);
+  }
+}
+
 blockquote {
   padding: 0 1rem;
   margin-left: 0;
@@ -672,6 +689,13 @@ tbody td {
   padding: 2px 1rem;
   border-radius: 8px;
   background-color: var(--light1);
+  background-size: 8px 8px;
+  background-image: linear-gradient(
+      to right,
+      var(--light2) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, var(--light2) 1px, transparent 1px);
   max-width: 100%;
   overflow-x: auto;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.03), 0 1px 3px 1px rgba(0, 0, 0, 0.07),
@@ -686,7 +710,7 @@ tbody td {
 }
 
 .highlighter-rouge * {
-  background-color: var(--light1);
+  background-color: transparent;
 }
 
 /* Inline Code */
@@ -694,6 +718,8 @@ code.highlighter-rouge {
   padding: 2px 6px;
   background-color: var(--dark-op07);
   box-shadow: none;
+  background-size: unset;
+  background-image: unset;
 }
 
 /* Buttons */
@@ -987,15 +1013,6 @@ nav {
   z-index: 1;
 }
 
-nav.scroll-up,
-nav:focus-within {
-  top: 0;
-}
-
-nav.scroll-down {
-  top: -100%;
-}
-
 .nav-container {
   display: block;
   width: 80%;
@@ -1007,14 +1024,13 @@ nav.scroll-down {
 .nav {
   background-color: transparent;
   backdrop-filter: blur(32px) saturate(180%);
-  /* box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.03), 0 1px 3px 1px rgba(0, 0, 0, 0.07),
-    0 2px 6px 2px rgba(0, 0, 0, 0.03); */
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.03), 0 1px 3px 1px rgba(0, 0, 0, 0.07),
+    0 2px 6px 2px rgba(0, 0, 0, 0.03);
   overflow: auto;
-  transition: top 400ms, backdrop-filter 200ms, box-shadow 200ms;
 }
 
 .nav-container {
-  margin: 1rem auto;
+  margin: 0.5rem auto;
   position: relative;
   text-align: center;
 }
@@ -1081,5 +1097,21 @@ nav.scroll-down {
     bottom: 0;
     position: absolute;
     right: 0;
+  }
+}
+
+@media only screen and (max-device-width: 650px) {
+  /*mobile*/
+  nav {
+    position: static;
+  }
+
+  .nav-container {
+    margin: 1rem auto;
+  }
+
+  .nav {
+    backdrop-filter: unset;
+    box-shadow: unset;
   }
 }
