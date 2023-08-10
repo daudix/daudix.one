@@ -10,7 +10,6 @@
 
 /* GNOME Color Palette */
 :root {
-  --rounded-corner: 12px;
   --blue1: rgb(153, 193, 241);
   --blue2: rgb(98, 160, 234);
   --blue3: rgb(53, 132, 228);
@@ -56,8 +55,15 @@
   --dark3: rgb(61, 56, 70);
   --dark4: rgb(36, 31, 49);
   --dark5: rgb(0, 0, 0);
-  --primary-color: var(--purple2); /* Set your project color */
+
+  --rounded-corner: 12px;
+  --primary-color: var(--purple2); /* Set your project primary color */
+  --secondary-color: var(--blue2); /* Set your project secondary color */
+
   --borders: var(--light3);
+  --transition:         200ms;
+  --transition-longer:  400ms;
+  --transition-long:    800ms;
 
   --light-op01: rgba(255, 255, 255, 0.01);
   --light-op03: rgba(255, 255, 255, 0.03);
@@ -86,8 +92,9 @@
   --background-color: var(--light-bg1);
   --background-color-dark: var(--dark-bg3);
 
-  --shadow: 0 0 0 1px rgba(0, 0, 0, 0.03), 0 1px 3px 1px rgba(0, 0, 0, 0.07),
-    0 2px 6px 2px rgba(0, 0, 0, 0.03);
+  --shadow:         0 0 0 1px rgba(0, 0, 0, 0.03), 0 1px 3px 1px rgba(0, 0, 0, 0.07), 0 2px 6px 2px rgba(0, 0, 0, 0.03);
+  --shadow-raised:  0 0 0 1px rgba(0, 0, 0, 0.03), 0 2px 6px 2px rgba(0, 0, 0, 0.09), 0 4px 12px 4px rgba(0, 0, 0, 0.06);
+  --glow:           var(--primary-color) -6px 0 12px, var(--secondary-color) 6px 0 12px;
 }
 
 /* Typography */
@@ -238,7 +245,7 @@ img.pixels {
 }
 
 img.hover {
-  transition: 400ms;
+  transition: var(--transition-longer);
   border-radius: var(--rounded-corner);
 }
 
@@ -281,7 +288,7 @@ blockquote > :last-child {
   max-width: 100%;
   overflow-x: auto;
   padding: 1rem 1rem;
-  transition: 800ms;
+  transition: var(--transition-long);
 
   background: linear-gradient(
     to top,
@@ -313,7 +320,7 @@ blockquote > :last-child {
 .ascii:hover {
   -webkit-text-fill-color: var(--dark4);
   -moz-text-fill-color: var(--dark4);
-  text-shadow: var(--purple2) -6px 0 12px, var(--blue2) 6px 0 12px;
+  text-shadow: var(--glow);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -437,7 +444,7 @@ kbd:active {
 }
 
 /* Footer */
-footer {
+.site-footer {
   text-align: center;
   padding: 3em 0 3em;
   font-size: 1em;
@@ -767,13 +774,19 @@ tbody td {
   background-color: #f8f8f8;
 }
 
+@media (prefers-color-scheme: dark) {
+  .highlight {
+    filter: contrast(0.4) saturate(2);
+  }
+}
+
 /* Code Blocks */
 .highlighter-rouge {
   line-height: normal;
   margin: 1rem 0 1rem;
   padding: 2px 1rem;
   border-radius: 8px;
-  background-color: var(--light1);
+  background-color: var(--light-bg2);
   background-size: 8px 8px;
   background-image: linear-gradient(to right, var(--dark-op03) 1px, transparent 1px), linear-gradient(to bottom, var(--dark-op03) 1px, transparent 1px);
   max-width: 100%;
@@ -857,8 +870,6 @@ code.highlighter-rouge {
 
 section#comments .comment time,
 section#comments .comment footer {
-  text-align: unset;
-  padding: unset;
   font-size: smaller;
   opacity: 0.9;
 }
@@ -886,7 +897,7 @@ section#comments .comment .avatar-link .avatar {
 }
 
 section#comments .comment .avatar-link.op::after {
-  background-color: var(--purple3);
+  background-color: var(--primary-color);
   border-radius: 50%;
   bottom: -0.25rem;
   color: var(--light2);
@@ -931,7 +942,7 @@ section#comments .comment .author .instance:hover {
 }
 
 section#comments .comment .author .instance.op {
-  background-color: var(--purple2);
+  background-color: var(--primary-color);
   color: var(--light2);
 }
 
@@ -992,11 +1003,17 @@ section#comments .comment .products .product figure,
 }
 
 section#comments .comment .card figure {
-  background-color: var(--light1);
+  background-color: var(--light-bg1);
   border-radius: var(--rounded-corner);
   margin-left: 0;
   margin-right: 0;
   box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+section#comments .comment .card figure:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: var(--shadow-raised);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -1099,8 +1116,8 @@ section#comments .comment details summary {
       45deg,
       var(--dark4),
       var(--dark4) 0.3rem,
-      var(--purple2) 0.3rem,
-      var(--purple2) 0.6rem
+      var(--primary-color) 0.3rem,
+      var(--primary-color) 0.6rem
     );
   border-radius: 5px;
   color: inherit;
@@ -1192,7 +1209,7 @@ nav {
   border-radius: var(--rounded-corner);
   background-color: transparent;
   color: var(--dark-op50);
-  /* transition: 200ms; */
+  /* transition: var(--transition); */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -1203,7 +1220,7 @@ nav {
 
 .nav a:hover {
   background-color: var(--dark-op05);
-  /* box-shadow: var(--purple2) -6px 0 12px, var(--blue2) 6px 0 12px; */
+  /* box-shadow: var(--glow); */
 }
 
 @media (prefers-color-scheme: dark) {
