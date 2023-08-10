@@ -80,7 +80,9 @@
   --dark-bg3: rgb(11, 11, 11);
 
   --background-color: var(--light-bg1);
-  --background-color-dark: var(--dark-bg2);
+  --background-color-dark: var(--dark-bg3);
+
+  --shadow: 0 0 0 1px rgba(0, 0, 0, 0.03), 0 1px 3px 1px rgba(0, 0, 0, 0.07), 0 2px 6px 2px rgba(0, 0, 0, 0.03);
 }
 
 /* Typography */
@@ -760,21 +762,15 @@ tbody td {
   border-radius: 8px;
   background-color: var(--light1);
   background-size: 8px 8px;
-  background-image: linear-gradient(
-      to right,
-      var(--light2) 1px,
-      transparent 1px
-    ),
-    linear-gradient(to bottom, var(--light2) 1px, transparent 1px);
+  background-image: linear-gradient(to right, var(--dark-op05) 1px, transparent 1px), linear-gradient(to bottom, var(--dark-op05) 1px, transparent 1px);
   max-width: 100%;
   overflow-x: auto;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.03), 0 1px 3px 1px rgba(0, 0, 0, 0.07),
-    0 2px 6px 2px rgba(0, 0, 0, 0.03);
+  box-shadow: var(--shadow);
 }
 
 @media (prefers-color-scheme: dark) {
   .highlighter-rouge {
-    background-color: var(--dark-bg1);
+    background-color: var(--dark-bg2);
     background-image: linear-gradient(to right, var(--light-op05) 1px, transparent 1px), linear-gradient(to bottom, var(--light-op05) 1px, transparent 1px);
   }
 }
@@ -836,8 +832,7 @@ code.highlighter-rouge {
   background-position: center;
   background-size: cover;
   border-radius: var(--rounded-corner);
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.03), 0 1px 3px 1px rgba(0, 0, 0, 0.07),
-    0 2px 6px 2px rgba(0, 0, 0, 0.03);
+  box-shadow: var(--shadow);
   margin: 0;
   overflow: hidden;
 }
@@ -988,8 +983,7 @@ section#comments .comment .card figure {
   border-radius: var(--rounded-corner);
   margin-left: 0;
   margin-right: 0;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.03), 0 1px 3px 1px rgba(0, 0, 0, 0.07),
-    0 2px 6px 2px rgba(0, 0, 0, 0.03);
+  box-shadow: var(--shadow);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -1120,8 +1114,7 @@ nav {
 .nav {
   background-color: transparent;
   backdrop-filter: blur(32px) saturate(180%);
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.03), 0 1px 3px 1px rgba(0, 0, 0, 0.07),
-    0 2px 6px 2px rgba(0, 0, 0, 0.03);
+  box-shadow: var(--shadow);
   overflow: auto;
 }
 
