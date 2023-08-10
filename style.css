@@ -59,12 +59,16 @@
   --primary-color: var(--purple2); /* Set your project color */
   --borders: var(--light3);
 
+  --light-op01: rgba(255, 255, 255, 0.01);
+  --light-op03: rgba(255, 255, 255, 0.03);
   --light-op05: rgba(255, 255, 255, 0.05);
   --light-op07: rgba(255, 255, 255, 0.07);
   --light-op09: rgba(255, 255, 255, 0.09);
   --light-op40: rgba(255, 255, 255, 0.4);
   --light-op50: rgba(255, 255, 255, 0.5);
 
+  --dark-op01: rgba(0, 0, 0, 0.01);
+  --dark-op03: rgba(0, 0, 0, 0.03);
   --dark-op05: rgba(0, 0, 0, 0.05);
   --dark-op07: rgba(0, 0, 0, 0.07);
   --dark-op09: rgba(0, 0, 0, 0.09);
@@ -82,7 +86,8 @@
   --background-color: var(--light-bg1);
   --background-color-dark: var(--dark-bg3);
 
-  --shadow: 0 0 0 1px rgba(0, 0, 0, 0.03), 0 1px 3px 1px rgba(0, 0, 0, 0.07), 0 2px 6px 2px rgba(0, 0, 0, 0.03);
+  --shadow: 0 0 0 1px rgba(0, 0, 0, 0.03), 0 1px 3px 1px rgba(0, 0, 0, 0.07),
+    0 2px 6px 2px rgba(0, 0, 0, 0.03);
 }
 
 /* Typography */
@@ -110,6 +115,14 @@ body {
   font-weight: 400;
   line-height: 1.6;
   scroll-behavior: smooth;
+  scrollbar-color: var(--dark-op50) transparent;
+}
+
+@media (prefers-color-scheme: dark) {
+  html,
+  body {
+    scrollbar-color: var(--light-op50) transparent;
+  }
 }
 
 body {
@@ -227,6 +240,7 @@ img.pixels {
 img.hover {
   transition: 400ms;
   border-radius: var(--rounded-corner);
+  box-shadow: var(--shadow);
 }
 
 img.hover:hover {
@@ -283,7 +297,7 @@ blockquote > :last-child {
 }
 
 @media (prefers-color-scheme: dark) {
-  .ascii {  
+  .ascii {
     background: linear-gradient(
       to top,
       rgba(246, 245, 244, 1) 0%,
@@ -762,7 +776,7 @@ tbody td {
   border-radius: 8px;
   background-color: var(--light1);
   background-size: 8px 8px;
-  background-image: linear-gradient(to right, var(--dark-op05) 1px, transparent 1px), linear-gradient(to bottom, var(--dark-op05) 1px, transparent 1px);
+  background-image: linear-gradient(to right, var(--dark-op03) 1px, transparent 1px), linear-gradient(to bottom, var(--dark-op03) 1px, transparent 1px);
   max-width: 100%;
   overflow-x: auto;
   box-shadow: var(--shadow);
@@ -771,7 +785,7 @@ tbody td {
 @media (prefers-color-scheme: dark) {
   .highlighter-rouge {
     background-color: var(--dark-bg2);
-    background-image: linear-gradient(to right, var(--light-op05) 1px, transparent 1px), linear-gradient(to bottom, var(--light-op05) 1px, transparent 1px);
+    background-image: linear-gradient(to right, var(--light-op01) 1px, transparent 1px), linear-gradient(to bottom, var(--light-op01) 1px, transparent 1px);
   }
 }
 
@@ -1116,6 +1130,13 @@ nav {
   backdrop-filter: blur(32px) saturate(180%);
   box-shadow: var(--shadow);
   overflow: auto;
+  border-bottom: 1px solid var(--dark-op07);
+}
+
+@media (prefers-color-scheme: dark) {
+  .nav {
+    border-bottom: 1px solid var(--light-op07);
+  }
 }
 
 .nav-container {
