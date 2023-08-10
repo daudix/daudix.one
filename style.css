@@ -240,7 +240,6 @@ img.pixels {
 img.hover {
   transition: 400ms;
   border-radius: var(--rounded-corner);
-  box-shadow: var(--shadow);
 }
 
 img.hover:hover {
