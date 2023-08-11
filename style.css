@@ -62,6 +62,7 @@
   --secondary-color:        var(--blue2);       /* Set your project secondary color */
   --background-color:       var(--light-bg1);   /* Set site background color */
   --background-color-dark:  var(--dark-bg3);    /* Set site background color (dark mode) */
+  --container-width:        720px;              /* Set content width */
 
 /* Custom Color Palette */
   --borders: var(--light3);
@@ -313,7 +314,7 @@ kbd:active {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  max-width: 720px;
+  max-width: var(--container-width);
 }
 
 @media only screen and (max-device-width: 480px) {
@@ -1037,7 +1038,7 @@ nav {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  max-width: 720px;
+  max-width: var(--container-width);
 }
 
 .nav {
