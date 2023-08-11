@@ -4,7 +4,7 @@ layout: default
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
-[Link to another page](markdown-page.md).
+[Link to another page](../markdown-page).
 
 There should be whitespace between paragraphs.
 
@@ -127,12 +127,12 @@ The final element.
 Display pixel-art in full width without filtering.
 
 ```
-![Pixels](assets/duck.gif){:.full.pixels}
+![Pixels](https://pixeljoint.com/files/icons/full/animation_rewinded_mostfinal.gif){:.full.pixels}
 ```
 
-![Pixels](assets/duck.gif){:.full.pixels}
+![Pixels](https://pixeljoint.com/files/icons/full/animation_rewinded_mostfinal.gif){:.full.pixels}
 
-[Source](https://pixeljoint.com/pixelart/152903.htm){:.site-link}
+[Source](https://pixeljoint.com/pixelart/15027.htm){:.site-link}
 
 * * *
 

@@ -17,6 +17,7 @@ comments:
 # Build settings
 markdown: kramdown
 timezone: UTC
+exclude: [Gemfile, Gemfile.lock, Dockerfile, local.sh, rename.sh, README.md]
 
 feed:
   tags:
