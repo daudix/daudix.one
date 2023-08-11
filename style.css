@@ -328,6 +328,23 @@ kbd:active {
   }
 }
 
+:target {
+  animation: glow-in-out var(--transition-long);
+  animation-delay: 1s;
+}
+
+@keyframes glow-in-out {
+  0% {
+    text-shadow: none;
+  }
+  50% {
+    text-shadow: var(--glow);
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
 /* Singletons */
 #logo {
   display: block;
@@ -712,14 +729,6 @@ tbody td {
   padding: 2px 1rem;
   border-radius: 8px;
   background-color: var(--light-bg2);
-  background-size: 0.5rem 0.5rem;
-  background-position: center;
-  background-image: linear-gradient(
-      to right,
-      var(--dark-op03) 1px,
-      transparent 1px
-    ),
-    linear-gradient(to bottom, var(--dark-op03) 1px, transparent 1px);
   max-width: 100%;
   overflow-x: auto;
   box-shadow: var(--shadow);
@@ -741,8 +750,6 @@ code.highlighter-rouge {
   padding: 2px 6px;
   background-color: var(--dark-op07);
   box-shadow: none;
-  background-size: unset;
-  background-image: unset;
 }
 
 /* Buttons */
@@ -1205,12 +1212,6 @@ nav {
 
   .highlighter-rouge {
     background-color: var(--dark-bg2);
-    background-image: linear-gradient(
-        to right,
-        var(--light-op01) 1px,
-        transparent 1px
-      ),
-      linear-gradient(to bottom, var(--light-op01) 1px, transparent 1px);
   }
 
   code.highlighter-rouge {
