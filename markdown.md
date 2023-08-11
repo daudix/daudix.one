@@ -154,7 +154,7 @@ Link with arrow.
 [Link to site](https://example.org){:.site-link}
 ```
 
-[Link to page](markdown-page.md){:.page-link}
+[Link to page](../markdown-page){:.page-link}
 
 [Link to site](https://example.org){:.site-link}
 
