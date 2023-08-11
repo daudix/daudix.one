@@ -10,95 +10,97 @@
 
 /* GNOME Color Palette */
 :root {
-  --blue1: rgb(153, 193, 241);
-  --blue2: rgb(98, 160, 234);
-  --blue3: rgb(53, 132, 228);
-  --blue4: rgb(28, 113, 216);
-  --blue5: rgb(26, 95, 180);
-  --green1: rgb(143, 240, 164);
-  --green2: rgb(87, 227, 137);
-  --green3: rgb(51, 209, 122);
-  --green4: rgb(46, 194, 126);
-  --green5: rgb(38, 162, 105);
-  --yellow1: rgb(249, 240, 107);
-  --yellow2: rgb(248, 228, 92);
-  --yellow3: rgb(246, 211, 45);
-  --yellow4: rgb(245, 194, 17);
-  --yellow5: rgb(229, 165, 10);
-  --orange1: rgb(255, 190, 111);
-  --orange2: rgb(255, 163, 72);
-  --orange3: rgb(255, 120, 0);
-  --orange4: rgb(230, 97, 0);
-  --orange5: rgb(198, 70, 0);
-  --red1: rgb(246, 97, 81);
-  --red2: rgb(237, 51, 59);
-  --red3: rgb(224, 27, 36);
-  --red4: rgb(192, 28, 40);
-  --red5: rgb(165, 29, 45);
-  --purple1: rgb(220, 138, 221);
-  --purple2: rgb(192, 97, 203);
-  --purple3: rgb(145, 65, 172);
-  --purple4: rgb(129, 61, 156);
-  --purple5: rgb(97, 53, 131);
-  --brown1: rgb(205, 171, 143);
-  --brown2: rgb(181, 131, 90);
-  --brown3: rgb(152, 106, 68);
-  --brown4: rgb(134, 94, 60);
-  --brown5: rgb(99, 69, 44);
-  --light1: rgb(255, 255, 255);
-  --light2: rgb(246, 245, 244);
-  --light3: rgb(222, 221, 218);
-  --light4: rgb(192, 191, 188);
-  --light5: rgb(154, 153, 150);
-  --dark1: rgb(119, 118, 123);
-  --dark2: rgb(94, 92, 100);
-  --dark3: rgb(61, 56, 70);
-  --dark4: rgb(36, 31, 49);
-  --dark5: rgb(0, 0, 0);
+  --blue1:        rgb(153, 193, 241);
+  --blue2:        rgb(98, 160, 234);
+  --blue3:        rgb(53, 132, 228);
+  --blue4:        rgb(28, 113, 216);
+  --blue5:        rgb(26, 95, 180);
+  --green1:       rgb(143, 240, 164);
+  --green2:       rgb(87, 227, 137);
+  --green3:       rgb(51, 209, 122);
+  --green4:       rgb(46, 194, 126);
+  --green5:       rgb(38, 162, 105);
+  --yellow1:      rgb(249, 240, 107);
+  --yellow2:      rgb(248, 228, 92);
+  --yellow3:      rgb(246, 211, 45);
+  --yellow4:      rgb(245, 194, 17);
+  --yellow5:      rgb(229, 165, 10);
+  --orange1:      rgb(255, 190, 111);
+  --orange2:      rgb(255, 163, 72);
+  --orange3:      rgb(255, 120, 0);
+  --orange4:      rgb(230, 97, 0);
+  --orange5:      rgb(198, 70, 0);
+  --red1:         rgb(246, 97, 81);
+  --red2:         rgb(237, 51, 59);
+  --red3:         rgb(224, 27, 36);
+  --red4:         rgb(192, 28, 40);
+  --red5:         rgb(165, 29, 45);
+  --purple1:      rgb(220, 138, 221);
+  --purple2:      rgb(192, 97, 203);
+  --purple3:      rgb(145, 65, 172);
+  --purple4:      rgb(129, 61, 156);
+  --purple5:      rgb(97, 53, 131);
+  --brown1:       rgb(205, 171, 143);
+  --brown2:       rgb(181, 131, 90);
+  --brown3:       rgb(152, 106, 68);
+  --brown4:       rgb(134, 94, 60);
+  --brown5:       rgb(99, 69, 44);
+  --light1:       rgb(255, 255, 255);
+  --light2:       rgb(246, 245, 244);
+  --light3:       rgb(222, 221, 218);
+  --light4:       rgb(192, 191, 188);
+  --light5:       rgb(154, 153, 150);
+  --dark1:        rgb(119, 118, 123);
+  --dark2:        rgb(94, 92, 100);
+  --dark3:        rgb(61, 56, 70);
+  --dark4:        rgb(36, 31, 49);
+  --dark5:        rgb(0, 0, 0);
 
-  --rounded-corner: 12px;
-  --primary-color: var(--purple2); /* Set your project primary color */
-  --secondary-color: var(--blue2); /* Set your project secondary color */
+/* General Setup */
+  --rounded-corner:         12px;               /* Set how rounded the corners will be */
+  --primary-color:          var(--purple2);     /* Set your project primary color */
+  --secondary-color:        var(--blue2);       /* Set your project secondary color */
+  --background-color:       var(--light-bg1);   /* Set site background color */
+  --background-color-dark:  var(--dark-bg3);    /* Set site background color (dark mode) */
 
+/* Custom Color Palette */
   --borders: var(--light3);
-  --transition:         200ms;
-  --transition-longer:  400ms;
-  --transition-long:    800ms;
 
-  --light-op01: rgba(255, 255, 255, 0.01);
-  --light-op03: rgba(255, 255, 255, 0.03);
-  --light-op05: rgba(255, 255, 255, 0.05);
-  --light-op07: rgba(255, 255, 255, 0.07);
-  --light-op09: rgba(255, 255, 255, 0.09);
-  --light-op40: rgba(255, 255, 255, 0.4);
-  --light-op50: rgba(255, 255, 255, 0.5);
+  --light-op01:   rgba(255, 255, 255, 0.01);
+  --light-op03:   rgba(255, 255, 255, 0.03);
+  --light-op05:   rgba(255, 255, 255, 0.05);
+  --light-op07:   rgba(255, 255, 255, 0.07);
+  --light-op09:   rgba(255, 255, 255, 0.09);
+  --light-op40:   rgba(255, 255, 255, 0.4);
+  --light-op50:   rgba(255, 255, 255, 0.5);
 
-  --dark-op01: rgba(0, 0, 0, 0.01);
-  --dark-op03: rgba(0, 0, 0, 0.03);
-  --dark-op05: rgba(0, 0, 0, 0.05);
-  --dark-op07: rgba(0, 0, 0, 0.07);
-  --dark-op09: rgba(0, 0, 0, 0.09);
-  --dark-op40: rgba(0, 0, 0, 0.4);
-  --dark-op50: rgba(0, 0, 0, 0.5);
+  --dark-op01:    rgba(0, 0, 0, 0.01);
+  --dark-op03:    rgba(0, 0, 0, 0.03);
+  --dark-op05:    rgba(0, 0, 0, 0.05);
+  --dark-op07:    rgba(0, 0, 0, 0.07);
+  --dark-op09:    rgba(0, 0, 0, 0.09);
+  --dark-op40:    rgba(0, 0, 0, 0.4);
+  --dark-op50:    rgba(0, 0, 0, 0.5);
 
-  --light-bg1: rgb(250, 250, 250);
-  --light-bg2: rgb(255, 255, 255);
-  --light-bg3: rgb(75, 75, 75);
+  --light-bg1:    rgb(250, 250, 250);
+  --light-bg2:    rgb(255, 255, 255);
+  --light-bg3:    rgb(75, 75, 75);
 
-  --dark-bg1: rgb(36, 36, 36);
-  --dark-bg2: rgb(30, 30, 30);
-  --dark-bg3: rgb(11, 11, 11);
+  --dark-bg1:     rgb(36, 36, 36);
+  --dark-bg2:     rgb(30, 30, 30);
+  --dark-bg3:     rgb(11, 11, 11);
 
-  --background-color: var(--light-bg1);
-  --background-color-dark: var(--dark-bg3);
-
+/* Custom Variables */
   --shadow:         0 0 0 1px rgba(0, 0, 0, 0.03), 0 1px 3px 1px rgba(0, 0, 0, 0.07), 0 2px 6px 2px rgba(0, 0, 0, 0.03);
   --shadow-raised:  0 0 0 1px rgba(0, 0, 0, 0.03), 0 2px 6px 2px rgba(0, 0, 0, 0.09), 0 4px 12px 4px rgba(0, 0, 0, 0.06);
   --glow:           var(--primary-color) -6px 0 12px, var(--secondary-color) 6px 0 12px;
+
+  --transition:         200ms;
+  --transition-longer:  400ms;
+  --transition-long:    800ms;
 }
 
 /* Typography */
-
 @font-face {
   font-family: "InterVar";
   font-weight: 100 900;
@@ -123,13 +125,6 @@ body {
   line-height: 1.6;
   scroll-behavior: smooth;
   scrollbar-color: var(--dark-op50) transparent;
-}
-
-@media (prefers-color-scheme: dark) {
-  html,
-  body {
-    scrollbar-color: var(--light-op50) transparent;
-  }
 }
 
 body {
@@ -170,17 +165,6 @@ h2 {
   font-size: 1.2rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  body {
-    color: var(--light2);
-    background-color: var(--background-color-dark);
-  }
-
-  html {
-    background-color: var(--dark5);
-  }
-}
-
 a {
   font-weight: 600;
   text-decoration: none;
@@ -199,12 +183,6 @@ b {
 
 small {
   color: var(--dark-op50);
-}
-
-@media (prefers-color-scheme: dark) {
-  small {
-    color: var(--light-op50);
-  }
 }
 
 dl {
@@ -268,13 +246,6 @@ blockquote {
   border-left: 0.3rem solid var(--dark-op07);
 }
 
-@media (prefers-color-scheme: dark) {
-  blockquote {
-    color: var(--light-op40);
-    border-left: 0.3rem solid var(--light-op07);
-  }
-}
-
 blockquote > :first-child {
   margin-top: 0;
 }
@@ -302,32 +273,10 @@ blockquote > :last-child {
   -moz-text-fill-color: transparent;
 }
 
-@media (prefers-color-scheme: dark) {
-  .ascii {
-    background: linear-gradient(
-      to top,
-      rgba(246, 245, 244, 1) 0%,
-      rgba(246, 245, 244, 0) 100%
-    );
-    background-clip: text;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-  }
-}
-
 .ascii:hover {
   -webkit-text-fill-color: var(--dark4);
   -moz-text-fill-color: var(--dark4);
   text-shadow: var(--glow);
-}
-
-@media (prefers-color-scheme: dark) {
-  .ascii:hover {
-    -webkit-text-fill-color: var(--light2);
-    -moz-text-fill-color: var(--light2);
-  }
 }
 
 @media only screen and (max-device-width: 480px) {
@@ -353,26 +302,10 @@ kbd {
   -webkit-user-select: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  kbd {
-    background-color: var(--light-op05);
-    border: 1px solid var(--light-op07);
-    border-radius: 4px;
-    box-shadow: inset 0 -1px 0 var(--light-op09);
-    color: var(--light2);
-  }
-}
-
 kbd:active {
   box-shadow: inset 0 0px 0 var(--dark-op09);
   vertical-align: bottom;
   filter: contrast(0.2);
-}
-
-@media (prefers-color-scheme: dark) {
-  kbd:active {
-    box-shadow: inset 0 0px 0 var(--light-op09);
-  }
 }
 
 /* Layout */
@@ -474,13 +407,6 @@ table th,
 table td {
   padding: 0.5rem 1rem;
   border: 1px solid var(--dark-op05);
-}
-
-@media (prefers-color-scheme: dark) {
-  table th,
-  table td {
-    border: 1px solid var(--light-op05);
-  }
 }
 
 td,
@@ -774,12 +700,6 @@ tbody td {
   background-color: #f8f8f8;
 }
 
-@media (prefers-color-scheme: dark) {
-  .highlight {
-    filter: contrast(0.4) saturate(2);
-  }
-}
-
 /* Code Blocks */
 .highlighter-rouge {
   line-height: normal;
@@ -788,17 +708,15 @@ tbody td {
   border-radius: 8px;
   background-color: var(--light-bg2);
   background-size: 8px 8px;
-  background-image: linear-gradient(to right, var(--dark-op03) 1px, transparent 1px), linear-gradient(to bottom, var(--dark-op03) 1px, transparent 1px);
+  background-image: linear-gradient(
+      to right,
+      var(--dark-op03) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, var(--dark-op03) 1px, transparent 1px);
   max-width: 100%;
   overflow-x: auto;
   box-shadow: var(--shadow);
-}
-
-@media (prefers-color-scheme: dark) {
-  .highlighter-rouge {
-    background-color: var(--dark-bg2);
-    background-image: linear-gradient(to right, var(--light-op01) 1px, transparent 1px), linear-gradient(to bottom, var(--light-op01) 1px, transparent 1px);
-  }
 }
 
 @media only screen and (max-device-width: 480px) {
@@ -821,12 +739,6 @@ code.highlighter-rouge {
   background-image: unset;
 }
 
-@media (prefers-color-scheme: dark) {
-  code.highlighter-rouge {
-    background-color: var(--light-op07);
-  }
-}
-
 /* Buttons */
 .dialog-buttons {
   display: flex;
@@ -844,13 +756,6 @@ code.highlighter-rouge {
   border-radius: var(--rounded-corner);
   background-color: var(--dark-op05);
   color: var(--dark5);
-}
-
-@media (prefers-color-scheme: dark) {
-  .inline-button {
-    background-color: var(--light-op05);
-    color: var(--light2);
-  }
 }
 
 /* Comments */
@@ -1016,12 +921,6 @@ section#comments .comment .card figure:hover {
   box-shadow: var(--shadow-raised);
 }
 
-@media (prefers-color-scheme: dark) {
-  section#comments .comment .card figure {
-    background-color: var(--dark-bg1);
-  }
-}
-
 section#comments .comment .card figure img {
   margin: unset;
 }
@@ -1149,12 +1048,6 @@ nav {
   border-bottom: 1px solid var(--dark-op07);
 }
 
-@media (prefers-color-scheme: dark) {
-  .nav {
-    border-bottom: 1px solid var(--light-op07);
-  }
-}
-
 .nav-container {
   margin: 0.5rem auto;
   position: relative;
@@ -1166,12 +1059,6 @@ nav {
   display: inline-block;
   margin: 0;
   /* padding-right: 0.2rem; */
-}
-
-@media (prefers-color-scheme: dark) {
-  .nav-title {
-    color: var(--light-op50);
-  }
 }
 
 .nav-title:hover {
@@ -1191,12 +1078,6 @@ nav {
   /* padding: 0 1rem 0 0; */
 }
 
-@media (prefers-color-scheme: dark) {
-  .nav li {
-    color: var(--light-op50);
-  }
-}
-
 /* .nav li:last-child {
   padding-right: 0;
 } */
@@ -1212,31 +1093,13 @@ nav {
   /* transition: var(--transition); */
 }
 
-@media (prefers-color-scheme: dark) {
-  .nav a {
-    color: var(--light-op50);
-  }
-}
-
 .nav a:hover {
   background-color: var(--dark-op05);
   /* box-shadow: var(--glow); */
 }
 
-@media (prefers-color-scheme: dark) {
-  .nav a:hover {
-    background-color: var(--light-op05);
-  }
-}
-
 .nav svg {
   fill: var(--dark-op50);
-}
-
-@media (prefers-color-scheme: dark) {
-  .nav svg {
-    fill: var(--light-op50);
-  }
 }
 
 .nav .feed-icon {
@@ -1268,5 +1131,116 @@ nav {
   .nav {
     backdrop-filter: unset;
     box-shadow: unset;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  html,
+  body {
+    scrollbar-color: var(--light-op50) transparent;
+  }
+
+  body {
+    color: var(--light2);
+    background-color: var(--background-color-dark);
+  }
+
+  html {
+    background-color: var(--dark5);
+  }
+
+  small {
+    color: var(--light-op50);
+  }
+
+  blockquote {
+    color: var(--light-op40);
+    border-left: 0.3rem solid var(--light-op07);
+  }
+
+  .ascii {
+    background: linear-gradient(
+      to top,
+      rgba(246, 245, 244, 1) 0%,
+      rgba(246, 245, 244, 0) 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+  }
+
+  .ascii:hover {
+    -webkit-text-fill-color: var(--light2);
+    -moz-text-fill-color: var(--light2);
+  }
+
+  kbd {
+    background-color: var(--light-op05);
+    border: 1px solid var(--light-op07);
+    border-radius: 4px;
+    box-shadow: inset 0 -1px 0 var(--light-op09);
+    color: var(--light2);
+  }
+
+  kbd:active {
+    box-shadow: inset 0 0px 0 var(--light-op09);
+  }
+
+  table th,
+  table td {
+    border: 1px solid var(--light-op05);
+  }
+
+  .highlight {
+    filter: contrast(0.4) saturate(2);
+  }
+
+  .highlighter-rouge {
+    background-color: var(--dark-bg2);
+    background-image: linear-gradient(
+        to right,
+        var(--light-op01) 1px,
+        transparent 1px
+      ),
+      linear-gradient(to bottom, var(--light-op01) 1px, transparent 1px);
+  }
+
+  code.highlighter-rouge {
+    background-color: var(--light-op07);
+  }
+
+  .inline-button {
+    background-color: var(--light-op05);
+    color: var(--light2);
+  }
+
+  section#comments .comment .card figure {
+    background-color: var(--dark-bg1);
+  }
+
+  .nav {
+    border-bottom: 1px solid var(--light-op07);
+  }
+
+  .nav-title {
+    color: var(--light-op50);
+  }
+
+  .nav li {
+    color: var(--light-op50);
+  }
+
+  .nav a {
+    color: var(--light-op50);
+  }
+
+  .nav a:hover {
+    background-color: var(--light-op05);
+  }
+
+  .nav svg {
+    fill: var(--light-op50);
   }
 }
