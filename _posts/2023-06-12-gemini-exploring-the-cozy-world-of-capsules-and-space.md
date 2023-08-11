@@ -13,7 +13,7 @@ This post is made to give you basic understanding of what Gemini is, what are Ca
 
 > For more accurate and in-depth answer to this question see [Project Gemini FAQ](https://gemini.circumlunar.space/docs/faq.gmi)
 
-Gemini is how some people call it - "smol web" - web without distracting elements such as ads, stylesheets that define website look, various tracking scripts, cookies and etc.
+Gemini is how some people call it - "smol web" - <abbr title="World Wide Web (WWW)">web</abbr> without distracting elements such as ads, stylesheets that define website look, various tracking scripts, cookies and etc.
 
 Gemini has its own aesthetics, it feels cozy, is small, has its own community, and are easy to use
 
@@ -29,7 +29,7 @@ Take a look at [awesome-gemini](https://github.com/kr1sp1n/awesome-gemini) for l
 
 ## Gemini Browsers
 
-Gemini is a protocol that are not supported by regular web browsers, so you will need a separate browser for it. As Gemini protocol are much easier than web, there are a lot of browsers for it, some good ones are:
+Gemini is a protocol that are not supported by <abbr title="Firefox, Chrome, Safari and etc.">regular</abbr> web browsers, so you will need a separate browser for it. As Gemini protocol are much easier than web, there are a lot of browsers for it, some good ones are:
 
 - [Lagrange](https://github.com/skyjake/lagrange) (Cross-platform) - Beautiful, fast and customizable Gemini browser
 - [Geopard](https://github.com/ranfdev/Geopard) (Linux) - Colorful and adaptive Libadwaita Gemini browser written in Rust
@@ -112,7 +112,7 @@ For this you can use Halftone - A simple Linux app that allows you to dither you
 - [Pixfect](https://codeberg.org/daudix-UFO/Pixfect)
 - [Dither Me This](https://doodad.dev/dither-me-this)
 
-Example of simple ordered image dithering with 2 colors using ImageMagick [1]
+Example of simple ordered image dithering with 2 colors using ImageMagick [^1]
 
 ```shell
 convert image.jpg -resize 840x840 -strip -colors 4 -ordered-dither o8x8 image-dithered.png
@@ -158,11 +158,11 @@ Taking into account ability to link images from web, images are not such a big i
 
 ## ASCII
 
-ASCII art is a good way to give your Gemlog (this is how blogs hosted at Gemini are called) more personality and make them more fun
+<abbr title="American Standard Code for Information Interchange">ASCII</abbr> art is a good way to give your Gemlog (this is how blogs hosted at Gemini are called) more personality and make them more fun
 
-ASCII art is with us from around 1966, and was invented in large part because early printers often lacked graphics ability and thus, characters were used in place of graphic marks that couldn't display normal images, ASCII art was also used in early e-mail when images could not be embedded [2]
+ASCII art is with us from around 1966, and was invented in large part because early printers often lacked graphics ability and thus, characters were used in place of graphic marks that couldn't display normal images, ASCII art was also used in early e-mail when images could not be embedded [^2]
 
-ASCII art is used to-date, sometimes as a braille art (you likely seen one of these), as image converted to ASCII, as text banners or as emoticons :‑) [3]
+ASCII art is used to-date, sometimes as a braille art (you likely seen one of these), as image converted to ASCII, as text banners or as emoticons :‑) [^3]
 
 Image to ASCII is very common, and you can easily make one yourself!
 
@@ -342,13 +342,13 @@ Gemini is cozy corner for those who tired of railway noise of the web, it has it
 
 There are more things I want to tell you about, I want to write more in-depth post about Dithering, Halftone and tech limitations that forced us to implement such things
 
-## Footnotes
-
-1. [Tobias Bernard's Mastodon post about dithering](https://mastodon.social/@tbernard/109675668676999287)
-2. [ASCII art at Wikipedia](https://en.wikipedia.org/wiki/ASCII_art)
-3. [List of emoticons at Wikipedia](https://en.wikipedia.org/wiki/List_of_emoticons)
-
 ## Extra
 
 - [andregarzia.com/2022/01/gemini-is-a-little-gem.html](https://andregarzia.com/2022/01/gemini-is-a-little-gem.html)
 - [voidspace.blog/ramble/capsule-importance.gmi](gemini://voidspace.blog/ramble/capsule-importance.gmi)
+
+## Footnotes
+
+[^1]: [Tobias Bernard's Mastodon post about dithering](https://mastodon.social/@tbernard/109675668676999287)
+[^2]: [ASCII art at Wikipedia](https://en.wikipedia.org/wiki/ASCII_art)
+[^3]: [List of emoticons at Wikipedia](https://en.wikipedia.org/wiki/List_of_emoticons)
