@@ -35,7 +35,7 @@ Home page is a very important page, this page links to all other pages, it gives
 
 - Added hover effect for cards that act like a button (blog and showcase).
 
-<video class="media-styled" controls src="../assets/posts/2023-08-13/запись-экрана-от-2023-08-13-12-00-41.webm" />
+<video class="media-styled" controls src="../assets/posts/2023-08-13/запись-экрана-от-2023-08-13-12-00-41.webm"></video>
 
 - Active state for cards (when you click/press on card) have been removed since it looked weird
 
@@ -45,14 +45,14 @@ And more, these are that I could remember.
 
 Showcase have been updated to include more icons, info overlay closing animation have been fixed (previously it just disappeared without any animation) and assets were optimized.
 
-<video class="media-styled" controls src="../assets/posts/2023-08-13/запись-экрана-от-2023-08-13-12-04-04.webm" />
+<video class="media-styled" controls src="../assets/posts/2023-08-13/запись-экрана-от-2023-08-13-12-04-04.webm"></video>
 
 ### Info
 
 Info page were completely redesigned, inspired by the design of [Felipe  
 Kinoshita's](https://felipekinoshita.com) site. It is more similar to the blog in terms of typography, has nice animated stripes background and a lot of info about me. Compared to the previous version it has way less links - only ones that I actually use.
 
-<video class="media-styled" controls src="../assets/posts/2023-08-13/запись-экрана-от-2023-08-13-12-12-30.webm" />
+<video class="media-styled" controls src="../assets/posts/2023-08-13/запись-экрана-от-2023-08-13-12-12-30.webm"></video>
 
 ### Screensaver
 
@@ -77,7 +77,7 @@ The blog have seen the most of the changes, it all were flipped upside down to b
 
 - Images now scale up on hover and have round corners
 
-<video class="media-styled" controls src="../assets/posts/2023-08-13/запись-экрана-от-2023-08-13-12-24-13.webm" />
+<video class="media-styled" controls src="../assets/posts/2023-08-13/запись-экрана-от-2023-08-13-12-24-13.webm"></video>
 
 - Code blocks now have some filters applied in dark mode for better visibility, the code blocks themselves are now more round and have shadows
 
@@ -88,7 +88,7 @@ The blog have seen the most of the changes, it all were flipped upside down to b
 - Some colors have been changed, all in all should be more pleasant to the eye
 - Everything now respects global variables, so e.g you can change accent color, roundness, shadows and maximum content width without going through the whole 1200+ <abbr title="Lines Of Code">LOC</abbr> <abbr title="Cascading Style Sheets">CSS</abbr>, this is made not only to keep myself sane but also for _you_ to make it easier to build upon ;)
 
-<video class="media-styled" class="media-styled" controls src="../assets/posts/2023-08-13/запись-экрана-от-2023-08-11-01-50-55.webm" />
+<video class="media-styled" class="media-styled" controls src="../assets/posts/2023-08-13/запись-экрана-от-2023-08-11-01-50-55.webm"></video>
 
 - The structure have been changed, now uses recommended Jekyll structure for posts
 - Posts now have tags, and tags have its own page

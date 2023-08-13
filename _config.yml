@@ -9,7 +9,9 @@ hosting: "Codeberg" # the hosting of your site, e.g Codeberg
 description: "Daudix UFO's blog."
 issuesurl: "https://codeberg.org/daudix-UFO/blog-source/issues" # issue tracker for website
 permalink: /:title/
-primary-color: "#c061cb" #used in ios theme. further color customization in style.css  
+primary-color: "#c061cb" #used in iOS theme. further color customization in style.css
+
+# Mastodon-powered commenting. See https://github.com/cassidyjames/cassidyjames.github.io/blob/main/_config.yaml#L33
 comments:
   host: mstdn.social
   username: Daudix
@@ -23,6 +25,8 @@ feed:
   tags:
     path: "feed/tags/"
 plugins:
+  - jekyll-sitemap
+  - jekyll-feed
   - jekyll-toc
 defaults:
   - scope:
