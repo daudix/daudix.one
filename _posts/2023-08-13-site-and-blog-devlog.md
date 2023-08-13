@@ -3,6 +3,8 @@ layout: post
 title:  "Site and Blog Devlog"
 tags: Devlog
 toc: true
+comments:
+  id: 110882489740462163
 ---
 
 <script>
@@ -37,7 +39,7 @@ Home page is a very important page, this page links to all other pages, it gives
 
 - Active state for cards (when you click/press on card) have been removed since it looked weird
 
-And more, these are that I could remember without looking.
+And more, these are that I could remember.
 
 ### Showcase
 
@@ -92,9 +94,10 @@ The blog have seen the most of the changes, it all were flipped upside down to b
 - Posts now have tags, and tags have its own page
 - Posts now have its own page
 - Posts list on index page now generates automatically on build, this allowed to display tags and publication date
-- Table of contents are now generated on build, now I don't have to create it for every page manually
 
 ![](../assets/posts/2023-08-13/pasted-image-20230813122050.png){:.media-styled.hover}
+
+- Table of contents are now generated on build, now I don't have to create it for every page manually
 
 - Hovering over `© Daudix's Blog, 2023` in footer now displays last built date
 
@@ -111,7 +114,7 @@ The blog have seen the most of the changes, it all were flipped upside down to b
 
 ## One More Thing™
 
-🥁 _[Drum roll](<javascript:onclick=playAudio('../assets/posts/2023-08-13/drum-roll-gaming-sound-effect-hd.mp3');>)_ I have a new site at Neocities! it will not replace this one, it's just a silly playground that has this old look. You know... Geocities and stuff.
+🥁 [Drum roll ▻](<javascript:onclick=playAudio('../assets/posts/2023-08-13/drum-roll-gaming-sound-effect-hd.mp3');>) I have a new site at Neocities! it will not replace this one, it's just a silly playground that has this old look. You know... Geocities and stuff.
 
 It's empty <abbr title="At The Moment">ATM</abbr>, but it has [AD-HD button](https://mstdn.social/@Daudix/110872543493210479)!
 
