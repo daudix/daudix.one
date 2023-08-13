@@ -1011,6 +1011,8 @@ section#comments .comment footer .boosts::before {
 }
 
 section#comments .comment .emoji {
+  margin: unset;
+  max-width: unset;
   display: inline;
   height: 1.25em;
   vertical-align: middle;
