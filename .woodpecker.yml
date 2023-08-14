@@ -40,11 +40,15 @@ steps:
       # Prepare for push
       - git remote set-url origin https://$CBTOKEN@codeberg.org/daudix-UFO/blog.git
       - cd ..
+      # Install Prettier
+      - npm install --save-dev --save-exact prettier
       # Run Jekyll build stage
       - bundle install
       - bundle exec jekyll build
       # Only needed for custom domains
       # - cp domains _site/.domains
+      # Format code with Prettier
+      - npx prettier _site/ --write
       # Push to target
       - cd _site
       - git add --all
