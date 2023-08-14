@@ -48,7 +48,7 @@ steps:
       # Only needed for custom domains
       # - cp domains _site/.domains
       # Format code with Prettier
-      - yarn prettier "_site/**/*"
+      - yarn prettier --write "_site/**/*"
       # Push to target
       - cd _site
       - git add --all
