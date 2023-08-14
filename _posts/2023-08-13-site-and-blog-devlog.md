@@ -118,7 +118,7 @@ The blog have seen the most of the changes, it all were flipped upside down to b
 
 It's empty <abbr title="At The Moment">ATM</abbr>, but it has [AD-HD button](https://mstdn.social/@Daudix/110872543493210479)!
 
-[Visit it here](https://daudix.neocities.org)
+[Visit it here](https://daudix.neocities.org){:.site-link}
 
 ![](../assets/posts/2023-08-13/pasted-image-20230813122311.png){:.media-styled.hover}
 
