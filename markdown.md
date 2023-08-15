@@ -25,9 +25,9 @@ This is a normal paragraph following a header. Codeberg is a code hosting platfo
 ```js
 // Javascript code with syntax highlighting.
 var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
+  dateformat.i18n = require("./lang/" + l);
   return true;
-}
+};
 ```
 
 ```ruby
@@ -39,9 +39,9 @@ end
 
 #### Header 4
 
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
+- This is an unordered list following a header.
+- This is an unordered list following a header.
+- This is an unordered list following a header.
 
 ##### Header 5
 
@@ -52,7 +52,7 @@ end
 ###### Header 6
 
 | head1        | head two          | three |
-|:-------------|:------------------|:------|
+| :----------- | :---------------- | :---- |
 | ok           | good swedish fish | nice  |
 | out of stock | good and plenty   | nice  |
 | ok           | good `oreos`      | hmm   |
@@ -60,14 +60,14 @@ end
 
 ### There's a horizontal rule below this.
 
-* * *
+---
 
 ### Here is an unordered list:
 
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
+- Item foo
+- Item bar
+- Item baz
+- Item zip
 
 ### And an ordered list:
 
@@ -99,7 +99,6 @@ end
 ### Large image
 
 ![Codeberg horizontal](https://codeberg.org/Codeberg/Design/raw/branch/main/logo/horizontal/png/codeberg-logo_horizontal_blue-850x250.png)
-
 
 ### Definition lists can be used with HTML syntax.
 
@@ -134,7 +133,7 @@ Display pixel-art in full width without filtering.
 
 [Source](https://pixeljoint.com/pixelart/15027.htm){:.site-link}
 
-* * *
+---
 
 Keyboard shortcuts.
 
@@ -144,7 +143,7 @@ Keyboard shortcuts.
 
 <kbd>⌘ Super</kbd> + <kbd>Space</kbd>
 
-* * *
+---
 
 Link with arrow.
 
@@ -158,7 +157,7 @@ Link with arrow.
 
 [Link to site](https://example.org){:.site-link}
 
-* * *
+---
 
 Buttons.
 
