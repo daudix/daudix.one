@@ -52,6 +52,6 @@ EOF
         podman run \
             -it --rm --volume="$PWD:/srv/jekyll:Z" \
             -w /srv/jekyll -p 4000:4000 pages \
-            bundle exec jekyll serve --livereload --host 0.0.0.0
+            bundle exec jekyll serve --incremental --livereload --host 0.0.0.0
     ;;
 esac
