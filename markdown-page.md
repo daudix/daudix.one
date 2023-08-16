@@ -1,6 +1,7 @@
 ---
-title: Cake Party!
 layout: default
+title: "Cake Party!"
+toc: false
 ---
 
 # Welcome to the cake party!
