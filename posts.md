@@ -1,6 +1,6 @@
 ---
-title: Posts
 layout: posts
+title: Posts
 description: Index of all posts published to date.
 ---
 

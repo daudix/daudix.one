@@ -164,13 +164,7 @@ Link with arrow.
 Buttons.
 
 ```
-[Go Back](<javascript:window.history.go(-1);>){: .inline-button}
-[Go Home](/blog/){: .inline-button}
+[Go to top](#top){: .inline-button}
 [File an issue]({{site.issuesurl}})
 {: .dialog-buttons}
 ```
-
-[Go Back](<javascript:window.history.go(-1);>){: .inline-button}
-[Go Home](/blog/){: .inline-button}
-[File an issue]({{site.issuesurl}})
-{: .dialog-buttons}

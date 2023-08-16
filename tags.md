@@ -1,6 +1,6 @@
 ---
-title: Tags
 layout: tags
+title: Tags
 description: Index of all tags, of all posts.
 ---
 
