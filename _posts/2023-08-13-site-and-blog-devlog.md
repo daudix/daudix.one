@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Site and Blog Devlog"
+title: "Site and Blog Devlog"
 tags: Devlog
 toc: true
 comments:

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "ChatGPT And File Renaming"
+title: "ChatGPT And File Renaming"
 tags: AI ChatGPT Script
 toc: true
 ---

@@ -15,6 +15,7 @@ primary-color: "#c061cb" #used in iOS theme. further color customization in styl
 comments:
   host: mstdn.social
   username: Daudix
+  token: jTNX9pAV8XEPBby0cPWF6CmGY60kkIy4vidggfxXmoQ
 
 # Build settings
 markdown: kramdown

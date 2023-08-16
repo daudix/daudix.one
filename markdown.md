@@ -1,5 +1,7 @@
 ---
-layout: default
+layout: post
+title: "Markdown test page"
+toc: false
 ---
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.

@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "Gemini: Exploring the Cozy World of Capsules and Space"
+title: "Gemini: Exploring the Cozy World of Capsules and Space"
 tags: Gemini Dithering ASCII
 toc: true
+archive: "This post is archived, meaning it will no longer receive content updates, may look odd, and may not follow newer practices."
 ---
 
 This post is made to give you basic understanding of what Gemini is, what are Capsules and Gemlogs, modern-day use of retro image techniques and text-based art

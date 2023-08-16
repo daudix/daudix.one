@@ -13,8 +13,33 @@ layout: default
   {% endif %}
 </small>
 
-<h2>Table of Contents</h2>
-{{ content | toc }}
+{% if page.archive %}
+  <div class="highlighter-rouge statement-container archive">
+    <big><strong>⚠ Archived</strong></big>
+    {{ page.archive | markdownify }}
+  </div>
+{% endif %}
+
+{% if page.trigger %}
+  <div class="highlighter-rouge statement-container trigger">
+    <big><strong>⚠ Trigger Warning</strong></big>
+    {{ page.trigger | markdownify }}
+  </div>
+{% endif %}
+
+{% if page.disclaimer %}
+  <div class="highlighter-rouge statement-container disclaimer">
+    <big><strong>⚠ Disclaimer(s)</strong></big>
+    {{ page.disclaimer | markdownify }}
+  </div>
+{% endif %}
+
+{% if page.toc %}
+  <h2>Table of Contents</h2>
+  {{ content | toc }}
+{% else %}
+  {{ content }}
+{% endif %}
 
 <hr>
 
@@ -40,6 +65,6 @@ layout: default
 {% endif %}
 
 <p class="dialog-buttons">
-  <a href="{{ site.baseurl }}/" class="inline-button">Go Home</a>
+  <a href="#top" class="inline-button">Go to top</a>
   <a href="{{ site.issuesurl }}">File an issue</a>
 </p>

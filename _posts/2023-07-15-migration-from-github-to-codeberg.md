@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Migration from GitHub to Codeberg"
+title: "Migration from GitHub to Codeberg"
 tags: Codeberg GitHub Woodpecker Migration
 toc: true
 comments:
