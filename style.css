@@ -59,6 +59,7 @@
 
 /* General Setup */
   --rounded-corner:         12px;               /* Set how rounded the corners will be */
+  --rounded-corner-small:   8px;                /* Set how rounded the small corners will be */
   --primary-color:          var(--purple2);     /* Set your project primary color */
   --secondary-color:        var(--blue2);       /* Set your project secondary color */
   --background-color:       var(--light-bg1);   /* Set site background color */
@@ -66,7 +67,7 @@
   --container-width:        720px;              /* Set content width */
 
 /* Custom Color Palette */
-  --borders: var(--light3);
+  --borders:        var(--light3);
 
   --light-op01:   rgba(255, 255, 255, 0.01);
   --light-op03:   rgba(255, 255, 255, 0.03);
@@ -91,6 +92,21 @@
   --dark-bg1:     rgb(36, 36, 36);
   --dark-bg2:     rgb(30, 30, 30);
   --dark-bg3:     rgb(11, 11, 11);
+
+  --archive-bg-color: rgba(145, 65, 172, 0.1);
+  --archive-bg-color-dark: rgba(220, 138, 221, 0.1);
+  --archive-color: rgb(145, 65, 172);
+  --archive-color-dark: rgb(220, 138, 221);
+
+  --disclaimer-bg-color: rgba(224, 27, 36, 0.1);
+  --disclaimer-bg-color-dark: rgba(226, 97, 81, 0.1);
+  --disclaimer-color: rgb(224, 27, 36);
+  --disclaimer-color-dark: rgb(246, 97, 81);
+
+  --trigger-bg-color: rgba(156, 110, 3, 0.1);
+  --trigger-bg-color-dark: rgba(248, 228, 92, 0.1);
+  --trigger-color: rgb(156, 110, 3);
+  --trigger-color-dark: rgb(248, 228, 92);
 
 /* Custom Variables */
   --shadow:         0 0 0 1px rgba(0, 0, 0, 0.03), 0 1px 3px 1px rgba(0, 0, 0, 0.07), 0 2px 6px 2px rgba(0, 0, 0, 0.03);
@@ -255,7 +271,7 @@ video {
 }
 
 .media-styled {
-  border-radius: var(--rounded-corner);
+  border-radius: var(--rounded-corner-small);
   box-shadow: var(--shadow);
 }
 
@@ -304,9 +320,10 @@ abbr {
 
 .ascii {
   line-height: normal;
+  margin: 1rem 0 1rem;
+  padding: 2px 1rem;
   max-width: 100%;
   overflow-x: auto;
-  padding: 1rem 1rem;
   transition: var(--transition-long);
 
   background: linear-gradient(
@@ -817,7 +834,7 @@ tbody td {
   line-height: normal;
   margin: 1rem 0 1rem;
   padding: 2px 1rem;
-  border-radius: 8px;
+  border-radius: var(--rounded-corner-small);
   background-color: var(--light-bg2);
   max-width: 100%;
   overflow-x: auto;
@@ -882,6 +899,7 @@ code.highlighter-rouge {
 
 /* Comments */
 .avatar {
+  background-color: var(--light-bg2);
   background-position: center;
   background-size: cover;
   border-radius: var(--rounded-corner);
@@ -890,13 +908,18 @@ code.highlighter-rouge {
   overflow: hidden;
 }
 
+@media (prefers-color-scheme: dark) {
+  .avatar {
+    background-color: var(--dark-bg2);
+  }
+}
+
 .avatar img {
   height: 100%;
   width: 100%;
 }
 
-section#comments .comment time,
-section#comments .comment footer {
+section#comments .comment time {
   font-size: smaller;
   opacity: 0.9;
 }
@@ -1002,35 +1025,23 @@ section#comments .comment main p:last-child {
   margin-bottom: 0;
 }
 
-section#comments .comment .card,
-section#comments .comment .qr,
-section#comments .comment .app-badge,
-section#comments .comment .products .product,
-.products section#comments .comment .product {
+section#comments .comment .card {
   color: inherit;
   grid-area: card;
   max-width: 400px;
 }
 
-section#comments .comment .card:hover,
-section#comments .comment .qr:hover,
-section#comments .comment .app-badge:hover,
-section#comments .comment .products .product:hover,
-.products section#comments .comment .product:hover {
+section#comments .comment .card:hover {
   text-decoration: none;
 }
 
-section#comments .comment .card figure,
-section#comments .comment .qr figure,
-section#comments .comment .app-badge figure,
-section#comments .comment .products .product figure,
-.products section#comments .comment .product figure {
+section#comments .comment .card figure {
   border-radius: inherit;
   overflow: hidden;
 }
 
 section#comments .comment .card figure {
-  background-color: var(--light-bg1);
+  background-color: var(--light-bg2);
   border-radius: var(--rounded-corner);
   margin-left: 0;
   margin-right: 0;
@@ -1040,7 +1051,7 @@ section#comments .comment .card figure {
 
 @media (prefers-color-scheme: dark) {
   section#comments .comment .card figure {
-    background-color: var(--dark-bg1);
+    background-color: var(--dark-bg2);
   }
 }
 
@@ -1053,11 +1064,7 @@ section#comments .comment .card figure img {
   margin: unset;
 }
 
-section#comments .comment .card figcaption,
-section#comments .comment .qr figcaption,
-section#comments .comment .app-badge figcaption,
-section#comments .comment .products .product figcaption,
-.products section#comments .comment .product figcaption {
+section#comments .comment .card figcaption {
   display: grid;
   gap: 0.5em;
   margin: 0;
@@ -1065,52 +1072,71 @@ section#comments .comment .products .product figcaption,
   text-align: left;
 }
 
-section#comments .comment .card figcaption *,
-section#comments .comment .qr figcaption *,
-section#comments .comment .app-badge figcaption *,
-section#comments .comment .products .product figcaption *,
-.products section#comments .comment .product figcaption * {
-  display: -webkit-box;
+section#comments .comment .card figcaption * {
+  display: flex;
+  flex-direction: column;
   line-height: 1.25;
   margin: 0;
   overflow: hidden;
   padding: 0;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
 }
 
-section#comments .comment:first-of-type .card,
-section#comments .comment:first-of-type .qr,
-section#comments .comment:first-of-type .app-badge,
-section#comments .comment:first-of-type .products .product,
-.products section#comments .comment:first-of-type .product {
+section#comments .comment:first-of-type .card {
   display: none;
 }
 
 section#comments .comment footer {
   display: flex;
-  gap: 1.25em;
+  gap: 0.4rem;
   grid-area: interactions;
-  margin-top: 0.925rem;
-}
-
-section#comments .comment footer .faves {
-  cursor: default;
-}
-
-section#comments .comment footer .faves::before {
-  color: var(--red2);
-  content: "❤️";
-  margin-inline-end: 0.25em;
+  margin-top: 1rem;
 }
 
 section#comments .comment footer .boosts {
   cursor: default;
+  font-weight: 600;
+  font-variation-settings: "wght" 600; /* needed for webkit */
+  font-size: 90%;
+  padding: 0.4rem 1rem;
+  border-radius: var(--rounded-corner);
+  background-color: var(--dark-op05);
+  color: var(--dark5);
+}
+
+@media (prefers-color-scheme: dark) {
+  section#comments .comment footer .boosts {
+    background-color: var(--light-op05);
+    color: var(--light2);
+  }
 }
 
 section#comments .comment footer .boosts::before {
   color: var(--orange2);
   content: "🔁";
+  margin-inline-end: 0.25em;
+}
+
+section#comments .comment footer .faves {
+  cursor: default;
+  font-weight: 600;
+  font-variation-settings: "wght" 600; /* needed for webkit */
+  font-size: 90%;
+  padding: 0.4rem 1rem;
+  border-radius: var(--rounded-corner);
+  background-color: var(--dark-op05);
+  color: var(--dark5);
+}
+
+@media (prefers-color-scheme: dark) {
+  section#comments .comment footer .faves {
+    background-color: var(--light-op05);
+    color: var(--light2);
+  }
+}
+
+section#comments .comment footer .faves::before {
+  color: var(--red2);
+  content: "❤️";
   margin-inline-end: 0.25em;
 }
 
@@ -1136,23 +1162,45 @@ section#comments .comment details summary {
       90deg,
       transparent,
       transparent 0.4rem,
-      var(--light1) 0.4rem,
-      var(--light1) calc(100% - 0.4rem),
+      var(--light-bg2) 0.4rem,
+      var(--light-bg2) calc(100% - 0.4rem),
       transparent calc(100% - 0.4rem),
       transparent
     ),
     repeating-linear-gradient(
       45deg,
-      var(--dark4),
-      var(--dark4) 0.3rem,
+      var(--dark-bg1),
+      var(--dark-bg1) 0.3rem,
       var(--primary-color) 0.3rem,
       var(--primary-color) 0.6rem
     );
-  border-radius: 5px;
+  border-radius: var(--rounded-corner-small);
+  box-shadow: var(--shadow);
   color: inherit;
-  cursor: default;
-  margin-top: 0.925rem;
+  cursor: pointer;
+  margin-top: 1rem;
   padding: 1em;
+}
+
+@media (prefers-color-scheme: dark) {
+  section#comments .comment details summary {
+    background-image: linear-gradient(
+        90deg,
+        transparent,
+        transparent 0.4rem,
+        var(--dark-bg2) 0.4rem,
+        var(--dark-bg2) calc(100% - 0.4rem),
+        transparent calc(100% - 0.4rem),
+        transparent
+      ),
+      repeating-linear-gradient(
+        45deg,
+        var(--dark-bg1),
+        var(--dark-bg1) 0.3rem,
+        var(--primary-color) 0.3rem,
+        var(--primary-color) 0.6rem
+      );
+  }
 }
 
 /* Navbar */
@@ -1173,6 +1221,7 @@ nav {
 .nav {
   background-color: var(--light-op50);
   backdrop-filter: blur(32px) saturate(180%);
+  -webkit-backdrop-filter: blur(32px) saturate(180%);
   border-bottom: 1px solid var(--dark-op07);
   box-shadow: var(--shadow);
   overflow: auto;
@@ -1300,5 +1349,43 @@ nav {
     backdrop-filter: unset;
     border-bottom: unset;
     box-shadow: unset;
+  }
+}
+
+.statement-container {
+  margin: 1rem 0 1rem;
+  padding-top: 1rem;
+  line-height: normal;
+}
+
+.archive {
+  background-color: var(--archive-bg-color);
+  color: var(--archive-color);
+}
+
+.disclaimer {
+  background-color: var(--disclaimer-bg-color);
+  color: var(--disclaimer-color);
+}
+
+.trigger {
+  background-color: var(--trigger-bg-color);
+  color: var(--trigger-color);
+}
+
+@media (prefers-color-scheme: dark) {
+  .archive {
+    background-color: var(--archive-bg-color-dark);
+    color: var(--archive-color-dark);
+  }
+
+  .disclaimer {
+    background-color: var(--disclaimer-bg-color-dark);
+    color: var(--disclaimer-color-dark);
+  }
+
+  .trigger {
+    background-color: var(--trigger-bg-color-dark);
+    color: var(--trigger-color-dark);
   }
 }

@@ -221,15 +221,6 @@ Inspired by https://codeberg.org/jwildeboer/jwildeboersource/src/commit/45f9750b
 
               let interactions = document.createElement("footer");
 
-              if(status.favourites_count > 0) {
-                let faves = document.createElement("span");
-                faves.className = "faves";
-                faves.setAttribute("title", "Favorites");
-                faves.textContent = status.favourites_count;
-
-                interactions.appendChild(faves);
-              }
-
               if(status.reblogs_count > 0) {
                 let boosts = document.createElement("span");
                 boosts.className = "boosts";
@@ -237,6 +228,15 @@ Inspired by https://codeberg.org/jwildeboer/jwildeboersource/src/commit/45f9750b
                 boosts.textContent = status.reblogs_count;
 
                 interactions.appendChild(boosts);
+              }
+
+              if(status.favourites_count > 0) {
+                let faves = document.createElement("span");
+                faves.className = "faves";
+                faves.setAttribute("title", "Favorites");
+                faves.textContent = status.favourites_count;
+
+                interactions.appendChild(faves);
               }
 
               let comment = document.createElement("article");
