@@ -186,9 +186,6 @@ h6 {
 
 h1 {
   font-size: 1.5rem;
-  font-weight: 100;
-  font-style: normal;
-  margin: 3rem 0 1rem;
 }
 
 @media screen and (min-width: 650px) {
@@ -590,7 +587,6 @@ table {
   overflow: auto;
   word-break: normal;
   word-break: keep-all;
-  -webkit-overflow-scrolling: touch;
 }
 
 table th {
@@ -1032,8 +1028,11 @@ code.highlighter-rouge {
 /* Statements */
 .statement-container {
   margin: 1rem 0 1rem;
-  padding-top: 1rem;
   line-height: normal;
+}
+
+.statement-container h2 {
+  margin: 1rem 0 1rem;
 }
 
 .archive {
