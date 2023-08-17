@@ -7,11 +7,11 @@
 
 ## Usage
 
-### 🧪️ Markdown test pages
+### 🧪️ Test pages
 
-[Here](https://daudix-ufo.codeberg.page/blog/markdown)
-and
-[Here](https://daudix-ufo.codeberg.page/blog/markdown-page)
+- [Markdown test page](https://daudix-ufo.codeberg.page/blog/markdown/)
+- [Cake Party!](https://daudix-ufo.codeberg.page/blog/markdown-page/)
+- [ActivityPub/​Fediverse comments test page](https://daudix-ufo.codeberg.page/blog/comments/)
 
 ### 🏗️ Build static files
 
