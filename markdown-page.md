@@ -6,7 +6,7 @@ toc: false
 
 # Welcome to the cake party!
 
-![](../assets/cake.png)
+![](https://i1.theportalwiki.net/img/0/0a/Portal_Cake.png){: width="50%"}
 
 Sadly, the cake is a _lie_
 

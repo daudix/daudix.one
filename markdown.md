@@ -2,6 +2,9 @@
 layout: post
 title: "Markdown test page"
 toc: false
+archive: "This page is, in fact, not archived, meaning it will receive content updates."
+trigger: "This page contains blackjack and hookers, and bad jokes such as this one."
+disclaimer: "All tricks in this page are performed by professionals, don't try this at home."
 ---
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
