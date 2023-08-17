@@ -497,24 +497,6 @@ kbd:active {
   }
 }
 
-@media only screen and (max-device-width: 640px) {
-  /*mobile*/
-  nav {
-    position: static;
-  }
-
-  .nav-container {
-    margin: 1rem auto;
-  }
-
-  .nav {
-    background-color: unset;
-    backdrop-filter: unset;
-    border-bottom: unset;
-    box-shadow: unset;
-  }
-}
-
 /* Singletons */
 #logo {
   display: block;
