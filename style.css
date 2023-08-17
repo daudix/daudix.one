@@ -1220,15 +1220,20 @@ section#comments .comment .card figure {
   transition: var(--transition);
 }
 
+section#comments .comment .card figure:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: var(--shadow-raised);
+}
+
+section#comments .comment .card figure:active {
+  transform: scale(0.95);
+  box-shadow: var(--shadow-raised);
+}
+
 @media (prefers-color-scheme: dark) {
   section#comments .comment .card figure {
     background-color: var(--dark-bg2);
   }
-}
-
-section#comments .comment .card figure:hover {
-  transform: translateY(-0.5rem);
-  box-shadow: var(--shadow-raised);
 }
 
 section#comments .comment .card figure img {
