@@ -19,7 +19,9 @@ layout: default
 ____0_____0__\|/__@@@@__@@@__________|_\|/__|___\|/__\|/___________|_|_
 </pre>
 
-Howdy! welcome to my little snug nook, take your cup of coffee and look around!
+# Daudix's Blog
+
+Howdy! welcome to my little snug nook, I write about software, FOSS and what not, take your cup of coffee and look around!
 
 ## Posts
 
