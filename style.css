@@ -58,8 +58,8 @@
   --dark5:        rgb(0, 0, 0);
 
 /* General Setup */
-  --rounded-corner:         12px;               /* Set how rounded the corners will be */
-  --rounded-corner-small:   8px;                /* Set how rounded the small corners will be */
+  --rounded-corner:         0.75rem;            /* Set how rounded the corners will be */
+  --rounded-corner-small:   0.5rem;             /* Set how rounded the small corners will be */
   --primary-color:          var(--purple2);     /* Set your project primary color */
   --secondary-color:        var(--blue2);       /* Set your project secondary color */
   --background-color:       var(--light-bg1);   /* Set site background color */
@@ -67,46 +67,46 @@
   --container-width:        720px;              /* Set content width */
 
 /* Custom Color Palette */
-  --borders:        var(--light3);
+  --borders:      var(--light3);
 
-  --light-op01:   rgba(255, 255, 255, 0.01);
-  --light-op03:   rgba(255, 255, 255, 0.03);
-  --light-op05:   rgba(255, 255, 255, 0.05);
-  --light-op07:   rgba(255, 255, 255, 0.07);
-  --light-op09:   rgba(255, 255, 255, 0.09);
-  --light-op40:   rgba(255, 255, 255, 0.4);
-  --light-op50:   rgba(255, 255, 255, 0.5);
+  --light-op01: rgba(255, 255, 255, 0.01);
+  --light-op03: rgba(255, 255, 255, 0.03);
+  --light-op05: rgba(255, 255, 255, 0.05);
+  --light-op07: rgba(255, 255, 255, 0.07);
+  --light-op09: rgba(255, 255, 255, 0.09);
+  --light-op40: rgba(255, 255, 255, 0.4);
+  --light-op50: rgba(255, 255, 255, 0.5);
 
-  --dark-op01:    rgba(0, 0, 0, 0.01);
-  --dark-op03:    rgba(0, 0, 0, 0.03);
-  --dark-op05:    rgba(0, 0, 0, 0.05);
-  --dark-op07:    rgba(0, 0, 0, 0.07);
-  --dark-op09:    rgba(0, 0, 0, 0.09);
-  --dark-op40:    rgba(0, 0, 0, 0.4);
-  --dark-op50:    rgba(0, 0, 0, 0.5);
+  --dark-op01:  rgba(0, 0, 0, 0.01);
+  --dark-op03:  rgba(0, 0, 0, 0.03);
+  --dark-op05:  rgba(0, 0, 0, 0.05);
+  --dark-op07:  rgba(0, 0, 0, 0.07);
+  --dark-op09:  rgba(0, 0, 0, 0.09);
+  --dark-op40:  rgba(0, 0, 0, 0.4);
+  --dark-op50:  rgba(0, 0, 0, 0.5);
 
-  --light-bg1:    rgb(250, 250, 250);
-  --light-bg2:    rgb(255, 255, 255);
-  --light-bg3:    rgb(75, 75, 75);
+  --light-bg1:  rgb(250, 250, 250);
+  --light-bg2:  rgb(255, 255, 255);
+  --light-bg3:  rgb(75, 75, 75);
 
-  --dark-bg1:     rgb(36, 36, 36);
-  --dark-bg2:     rgb(30, 30, 30);
-  --dark-bg3:     rgb(11, 11, 11);
+  --dark-bg1:   rgb(36, 36, 36);
+  --dark-bg2:   rgb(30, 30, 30);
+  --dark-bg3:   rgb(11, 11, 11);
 
-  --archive-bg-color: rgba(145, 65, 172, 0.1);
-  --archive-bg-color-dark: rgba(220, 138, 221, 0.1);
-  --archive-color: rgb(145, 65, 172);
-  --archive-color-dark: rgb(220, 138, 221);
+  --archive-bg-color:         rgba(145, 65, 172, 0.1);
+  --archive-bg-color-dark:    rgba(220, 138, 221, 0.1);
+  --archive-color:            rgb(145, 65, 172);
+  --archive-color-dark:       rgb(220, 138, 221);
 
-  --disclaimer-bg-color: rgba(224, 27, 36, 0.1);
+  --disclaimer-bg-color:      rgba(224, 27, 36, 0.1);
   --disclaimer-bg-color-dark: rgba(226, 97, 81, 0.1);
-  --disclaimer-color: rgb(224, 27, 36);
-  --disclaimer-color-dark: rgb(246, 97, 81);
+  --disclaimer-color:         rgb(224, 27, 36);
+  --disclaimer-color-dark:    rgb(246, 97, 81);
 
-  --trigger-bg-color: rgba(156, 110, 3, 0.1);
-  --trigger-bg-color-dark: rgba(248, 228, 92, 0.1);
-  --trigger-color: rgb(156, 110, 3);
-  --trigger-color-dark: rgb(248, 228, 92);
+  --trigger-bg-color:         rgba(156, 110, 3, 0.1);
+  --trigger-bg-color-dark:    rgba(248, 228, 92, 0.1);
+  --trigger-color:            rgb(156, 110, 3);
+  --trigger-color-dark:       rgb(248, 228, 92);
 
 /* Custom Variables */
   --shadow:         0 0 0 1px rgba(0, 0, 0, 0.03), 0 1px 3px 1px rgba(0, 0, 0, 0.07), 0 2px 6px 2px rgba(0, 0, 0, 0.03);
@@ -376,12 +376,6 @@ kbd:active {
 }
 
 /* Navbar */
-nav {
-  position: sticky;
-  top: 0;
-  z-index: 1;
-}
-
 .nav-container {
   display: block;
   width: 80%;
@@ -391,6 +385,9 @@ nav {
 }
 
 .nav {
+  position: sticky;
+  top: 0;
+  z-index: 1;
   background-color: var(--light-op50);
   backdrop-filter: blur(32px) saturate(180%);
   -webkit-backdrop-filter: blur(32px) saturate(180%);
@@ -476,16 +473,16 @@ nav {
 
 .nav svg {
   fill: var(--dark-op50);
+  height: 1rem;
+  width: 1rem;
+  vertical-align: middle;
+  transform: translateY(-0.125rem);
 }
 
 @media (prefers-color-scheme: dark) {
   .nav svg {
     fill: var(--light-op50);
   }
-}
-
-.nav .feed-icon {
-  transform: translateY(0.125rem);
 }
 
 @media (min-width: 640px) {
