@@ -129,35 +129,35 @@ _Personally I use [VSCodium](https://vscodium.com), fork of VSCode with Microsof
 
 Push all the changes and [Generate an Access Token](https://docs.codeberg.org/advanced/access-token), you need to generate token named `cbtoken` with the `repo` scope selected
 
-![](../assets/posts/2023-07-15/pasted-image-20230715225539.png){:.media-styled.hover}
+![](../assets/posts/2023-07-15/pasted-image-20230715225539.png){:.media-styled.hover}{:loading="lazy"}
 
 Then copy the resulted token and save it to a safe place, as it won't be shown again.
 
 Go to [Woodpecker](https://ci.codeberg.org) and navigate to _Repositories_ tab and add a new repository (`blog-source`)
 
-![](../assets/posts/2023-07-15/pasted-image-20230715224850.png){:.media-styled.hover}
+![](../assets/posts/2023-07-15/pasted-image-20230715224850.png){:.media-styled.hover}{:loading="lazy"}
 
 Navigate to _Settings_ and go to _Secrets_ tab
 
-![](../assets/posts/2023-07-15/pasted-image-20230715225826.png){:.media-styled.hover}
+![](../assets/posts/2023-07-15/pasted-image-20230715225826.png){:.media-styled.hover}{:loading="lazy"}
 
-![](../assets/posts/2023-07-15/pasted-image-20230715225841.png){:.media-styled.hover}
+![](../assets/posts/2023-07-15/pasted-image-20230715225841.png){:.media-styled.hover}{:loading="lazy"}
 
 Here create two secrets, `cbmail` and `cbtoken`
 
 `cbmail` should contain your Codeberg account email
 
-![](../assets/posts/2023-07-15/pasted-image-20230715230017.png){:.media-styled.hover}
+![](../assets/posts/2023-07-15/pasted-image-20230715230017.png){:.media-styled.hover}{:loading="lazy"}
 
 And `cbtoken` should contain the secret we saved earlier
 
-![](../assets/posts/2023-07-15/pasted-image-20230715230115.png){:.media-styled.hover}
+![](../assets/posts/2023-07-15/pasted-image-20230715230115.png){:.media-styled.hover}{:loading="lazy"}
 
 Make sure these two secrets have successfully created and make some changes in `blog-source` to trigger the CI, it should finish successfully.
 
 > If you don't want to trigger the CI (the change doesn't affect content for example) you can add `[CI SKIP]` to your commit message to skip the CI
 
-![](../assets/posts/2023-07-15/pasted-image-20230715231347.png){:.media-styled.hover}
+![](../assets/posts/2023-07-15/pasted-image-20230715231347.png){:.media-styled.hover}{:loading="lazy"}
 
 Now it's up to you to choose Jekyll theme and write something ;)
 

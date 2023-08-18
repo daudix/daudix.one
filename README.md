@@ -9,9 +9,9 @@
 
 ### 🧪️ Test pages
 
-- [Markdown test page](https://daudix-ufo.codeberg.page/blog/markdown/)
-- [Cake Party!](https://daudix-ufo.codeberg.page/blog/markdown-page/)
-- [ActivityPub/​Fediverse comments test page](https://daudix-ufo.codeberg.page/blog/comments/)
+- [Demo page](https://daudix-ufo.codeberg.page/blog/demo/)
+- [Cake Party!](https://daudix-ufo.codeberg.page/blog/demo-page/)
+- [ActivityPub/​Fediverse comments demo](https://daudix-ufo.codeberg.page/blog/comments/)
 
 ### 🏗️ Build static files
 
