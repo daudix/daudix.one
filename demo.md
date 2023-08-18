@@ -1,22 +1,22 @@
 ---
 layout: post
-title: "Markdown test page"
+title: "Demo page"
 toc: false
 archive: "This page is, in fact, not archived, meaning it will receive content updates."
 trigger: "This page contains blackjack and hookers, and bad jokes such as this one."
 disclaimer: "
-- All tricks in this page are performed by lab boys, do try this at home.
+- All tricks in this page are performed by lab boys, don't try this at home.
 
-- Expose yourself to 4000° kelvin.
+- Don't expose yourself to 4000° kelvin.
 
-- Inhale neurotoxin, enjoying slow death.
+- Don't take party escort submission position.
 
-- Lick the asbestos and moon rocks."
+- Don't interact with asbestos and moon rocks."
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+Text can be **bold**, _italic_, or ~~strikethrough~~, it can also be _**thick**_.
 
-[Link to another page](../markdown-page).
+[Link to another page](../demo-page){:.page-link}
 
 There should be whitespace between paragraphs.
 
@@ -106,11 +106,11 @@ end
 
 ### Small image
 
-![Codeberg icon](https://codeberg.org/Codeberg/Design/raw/branch/main/logo/icon/png/codeberg-logo_icon_blue-64x64.png)
+![Codeberg icon](https://codeberg.org/Codeberg/Design/raw/branch/main/logo/icon/png/codeberg-logo_icon_blue-64x64.png){:loading="lazy"}
 
 ### Large image
 
-![Codeberg horizontal](https://codeberg.org/Codeberg/Design/raw/branch/main/logo/horizontal/png/codeberg-logo_horizontal_blue-850x250.png)
+![Codeberg horizontal](https://codeberg.org/Codeberg/Design/raw/branch/main/logo/horizontal/png/codeberg-logo_horizontal_blue-850x250.png){:loading="lazy"}
 
 ### Definition lists can be used with HTML syntax.
 
@@ -138,10 +138,10 @@ The final element.
 Display pixel-art in full width without filtering.
 
 ```
-![Pixels](https://pixeljoint.com/files/icons/full/animation_rewinded_mostfinal.gif){:.full.pixels}
+![Pixels](https://pixeljoint.com/files/icons/full/animation_rewinded_mostfinal.gif){:.full.pixels}{:loading="lazy"}
 ```
 
-![Pixels](https://pixeljoint.com/files/icons/full/animation_rewinded_mostfinal.gif){:.full.pixels}
+![Pixels](https://pixeljoint.com/files/icons/full/animation_rewinded_mostfinal.gif){:.full.pixels}{:loading="lazy"}
 
 [Source](https://pixeljoint.com/pixelart/15027.htm){:.site-link}
 
