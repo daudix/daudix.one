@@ -59,7 +59,7 @@ Inspired by https://codeberg.org/jwildeboer/jwildeboersource/src/commit/45f9750b
   </div>
 
   <script>
-    loadComments();
+    // loadComments();
 
     function loadComments() {
       const HOST = "{{ host }}";
@@ -403,5 +403,19 @@ Inspired by https://codeberg.org/jwildeboer/jwildeboersource/src/commit/45f9750b
         .replace(/"/g, "&quot;")
       ;
     }
+  </script>
+  <script>
+    const commentsSection = document.getElementById("comments");
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          loadComments();
+          observer.disconnect();
+        }
+      });
+    });
+
+    observer.observe(commentsSection);
   </script>
 </section>
