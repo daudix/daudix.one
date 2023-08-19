@@ -19,17 +19,20 @@ It is owned by Microsoft for a long time, which is the first red sign. ~~When [R
 
 Recently I were contributing to [some](https://codeberg.org/Bavarder/Bavarder) [projects](https://codeberg.org/Imaginer/Imaginer) hosted on Codeberg, and I had to create an account and use it for some time, and... I liked it! The UI of Codeberg; the workflow and the overall _vibe_ were really nice, the fact that Codeberg is very open with its Community helped a lot too.
 
-_Edit: apparently I have [contributed to one project](https://codeberg.org/foreverxml/random/pulls/41) earlier, so I already had Codeberg account xD_
+_Edit: apparently I have [contributed to one project](https://codeberg.org/foreverxml/random/pulls/41) earlier, so I already had a Codeberg account xD_
 
-> Codeberg is non-profit powered by [Forgejo](https://forgejo.org) - a soft-fork of [Gitea](https://about.gitea.com) created after some suspicious stuff happened with it.
+> Codeberg is non-profit powered by [Forgejo](https://forgejo.org) - a soft-fork of [Gitea](https://about.gitea.com).
+>> (…) We started Forgejo in reaction to control of Gitea being taken away from the community by the newly-formed for-profit company Gitea Ltd without prior community consultation, and after an [Open Letter](https://gitea-open-letter.coding.social) to the Gitea project owners remained unanswered.
 
 And I started thinking of and preparing for migration.
 
-_Why not GitLab?_ you may ask
+_Why not GitLab?_
 
-Good question, because... I don't know, GitLab is a bit confusing and I just liked Codeberg so much :)
+Good question, I honestly don't know. As a matter of fact, GitLab is a bit confusing for me (especially after recent sidebar redesign) and I just liked Codeberg so much, it's small and cute :)
 
 ## Migration
+
+> I have found about that [Dan Erat](https://www.erat.org) have published an article about his migration from GitHub to Codeberg before this one, [check it out](https://www.erat.org/codeberg.html).
 
 After final decision that I will migrate my personal repositories to Codeberg I have created a [poll](https://mstdn.social/@Daudix/110680533037666405) on Mastodon,in which asked what to do with repositories on GitHub, people decided that adding small note in README that tells about migration and gives a link to repository on Codeberg, and then archiving were the best approach, [and so I did it!](https://mstdn.social/@Daudix/110685982530642051)
 
