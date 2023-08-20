@@ -58,8 +58,8 @@
   --dark5:        rgb(0, 0, 0);
 
 /* General Setup */
-  --rounded-corner:         0.75rem;            /* Set how rounded the corners will be */
-  --rounded-corner-small:   0.5rem;             /* Set how rounded the small corners will be */
+  --rounded-corner:         12px;               /* Set how rounded the corners will be */
+  --rounded-corner-small:   8px;                /* Set how rounded the small corners will be */
   --primary-color:          var(--purple2);     /* Set your project primary color */
   --secondary-color:        var(--blue2);       /* Set your project secondary color */
   --background-color:       var(--light-bg1);   /* Set site background color */
@@ -143,13 +143,6 @@ body {
   line-height: 1.6;
   scroll-behavior: smooth;
   scrollbar-color: var(--dark-op50) transparent;
-}
-
-@media only screen and (max-device-width: 480px) {
-  html,
-  body {
-    font-size: 14px;
-  }
 }
 
 @media (prefers-color-scheme: dark) {
