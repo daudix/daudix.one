@@ -64,7 +64,7 @@
   --secondary-color:        var(--blue2);       /* Set your project secondary color */
   --background-color:       var(--light-bg1);   /* Set site background color */
   --background-color-dark:  var(--dark-bg3);    /* Set site background color (dark mode) */
-  --container-width:        720px;              /* Set content width */
+  --content-width:          720px;              /* Set content width */
 
 /* Custom Color Palette */
   --borders:      var(--light3);
@@ -137,7 +137,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font-size: 18px;
+  font-size: 16px;
   font-family: "InterVar", sans-serif;
   font-weight: 400;
   line-height: 1.6;
@@ -148,7 +148,7 @@ body {
 @media only screen and (max-device-width: 480px) {
   html,
   body {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -346,7 +346,7 @@ kbd:active {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  max-width: var(--container-width);
+  max-width: var(--content-width);
 }
 
 @media only screen and (max-device-width: 480px) {
@@ -379,7 +379,7 @@ kbd:active {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  max-width: var(--container-width);
+  max-width: var(--content-width);
 }
 
 .nav {
@@ -938,7 +938,6 @@ code.highlighter-rouge {
 
 /* ASCII */
 .ascii {
-  font-size: 16px;
   line-height: normal;
   margin: 1rem 0 1rem;
   padding: 2px 1rem;
