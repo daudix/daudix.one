@@ -4,6 +4,7 @@
       <h2 class="nav-title">{{ site.title }}</h2>
     </a>
     <ul>
+      <li><a href="{{ '/' | prepend: relative_url }}">Home</a></li>
       <li><a href="{{ '/posts' | prepend: site.baseurl }}">Posts</a></li>
       <li><a href="{{ '/tags' | prepend: site.baseurl }}">Tags</a></li>
       <li><a href="{{ '/feed.xml' | prepend: site.baseurl }}">
