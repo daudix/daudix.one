@@ -9,113 +9,123 @@
 */
 
 /* GNOME Color Palette */
-/* prettier-ignore */
 :root {
-  --blue1:        rgb(153, 193, 241);
-  --blue2:        rgb(98, 160, 234);
-  --blue3:        rgb(53, 132, 228);
-  --blue4:        rgb(28, 113, 216);
-  --blue5:        rgb(26, 95, 180);
-  --green1:       rgb(143, 240, 164);
-  --green2:       rgb(87, 227, 137);
-  --green3:       rgb(51, 209, 122);
-  --green4:       rgb(46, 194, 126);
-  --green5:       rgb(38, 162, 105);
-  --yellow1:      rgb(249, 240, 107);
-  --yellow2:      rgb(248, 228, 92);
-  --yellow3:      rgb(246, 211, 45);
-  --yellow4:      rgb(245, 194, 17);
-  --yellow5:      rgb(229, 165, 10);
-  --orange1:      rgb(255, 190, 111);
-  --orange2:      rgb(255, 163, 72);
-  --orange3:      rgb(255, 120, 0);
-  --orange4:      rgb(230, 97, 0);
-  --orange5:      rgb(198, 70, 0);
-  --red1:         rgb(246, 97, 81);
-  --red2:         rgb(237, 51, 59);
-  --red3:         rgb(224, 27, 36);
-  --red4:         rgb(192, 28, 40);
-  --red5:         rgb(165, 29, 45);
-  --purple1:      rgb(220, 138, 221);
-  --purple2:      rgb(192, 97, 203);
-  --purple3:      rgb(145, 65, 172);
-  --purple4:      rgb(129, 61, 156);
-  --purple5:      rgb(97, 53, 131);
-  --brown1:       rgb(205, 171, 143);
-  --brown2:       rgb(181, 131, 90);
-  --brown3:       rgb(152, 106, 68);
-  --brown4:       rgb(134, 94, 60);
-  --brown5:       rgb(99, 69, 44);
-  --light1:       rgb(255, 255, 255);
-  --light2:       rgb(246, 245, 244);
-  --light3:       rgb(222, 221, 218);
-  --light4:       rgb(192, 191, 188);
-  --light5:       rgb(154, 153, 150);
-  --dark1:        rgb(119, 118, 123);
-  --dark2:        rgb(94, 92, 100);
-  --dark3:        rgb(61, 56, 70);
-  --dark4:        rgb(36, 31, 49);
-  --dark5:        rgb(0, 0, 0);
+  --blue1: rgb(153, 193, 241);
+  --blue2: rgb(98, 160, 234);
+  --blue3: rgb(53, 132, 228);
+  --blue4: rgb(28, 113, 216);
+  --blue5: rgb(26, 95, 180);
+  --green1: rgb(143, 240, 164);
+  --green2: rgb(87, 227, 137);
+  --green3: rgb(51, 209, 122);
+  --green4: rgb(46, 194, 126);
+  --green5: rgb(38, 162, 105);
+  --yellow1: rgb(249, 240, 107);
+  --yellow2: rgb(248, 228, 92);
+  --yellow3: rgb(246, 211, 45);
+  --yellow4: rgb(245, 194, 17);
+  --yellow5: rgb(229, 165, 10);
+  --orange1: rgb(255, 190, 111);
+  --orange2: rgb(255, 163, 72);
+  --orange3: rgb(255, 120, 0);
+  --orange4: rgb(230, 97, 0);
+  --orange5: rgb(198, 70, 0);
+  --red1: rgb(246, 97, 81);
+  --red2: rgb(237, 51, 59);
+  --red3: rgb(224, 27, 36);
+  --red4: rgb(192, 28, 40);
+  --red5: rgb(165, 29, 45);
+  --purple1: rgb(220, 138, 221);
+  --purple2: rgb(192, 97, 203);
+  --purple3: rgb(145, 65, 172);
+  --purple4: rgb(129, 61, 156);
+  --purple5: rgb(97, 53, 131);
+  --brown1: rgb(205, 171, 143);
+  --brown2: rgb(181, 131, 90);
+  --brown3: rgb(152, 106, 68);
+  --brown4: rgb(134, 94, 60);
+  --brown5: rgb(99, 69, 44);
+  --light1: rgb(255, 255, 255);
+  --light2: rgb(246, 245, 244);
+  --light3: rgb(222, 221, 218);
+  --light4: rgb(192, 191, 188);
+  --light5: rgb(154, 153, 150);
+  --dark1: rgb(119, 118, 123);
+  --dark2: rgb(94, 92, 100);
+  --dark3: rgb(61, 56, 70);
+  --dark4: rgb(36, 31, 49);
+  --dark5: rgb(0, 0, 0);
 
-/* General Setup */
-  --rounded-corner:         0.75rem;            /* Set how rounded the corners will be */
-  --rounded-corner-small:   0.5rem;             /* Set how rounded the small corners will be */
-  --primary-color:          var(--purple2);     /* Set your project primary color */
-  --secondary-color:        var(--blue2);       /* Set your project secondary color */
-  --background-color:       var(--light-bg1);   /* Set site background color */
-  --background-color-dark:  var(--dark-bg3);    /* Set site background color (dark mode) */
-  --content-width:          720px;              /* Set content width */
+  /* General Setup */
+  --border: var(--light3);
+  --border-radius: 0.75rem;
+  --border-radius-small: 0.5rem;
+  --accent: var(--purple2);
+  --secondary: var(--blue2);
+  --text: var(--dark4);
+  --background: var(--bg1);
+  --content-width: 720px;
 
-/* Custom Color Palette */
-  --borders:      var(--light3);
+  /* Custom Color Palette */
+  --fg01: rgba(0, 0, 0, 0.01);
+  --fg03: rgba(0, 0, 0, 0.03);
+  --fg05: rgba(0, 0, 0, 0.05);
+  --fg07: rgba(0, 0, 0, 0.07);
+  --fg09: rgba(0, 0, 0, 0.09);
+  --fg40: rgba(0, 0, 0, 0.4);
+  --fg50: rgba(0, 0, 0, 0.5);
 
-  --light-op01: rgba(255, 255, 255, 0.01);
-  --light-op03: rgba(255, 255, 255, 0.03);
-  --light-op05: rgba(255, 255, 255, 0.05);
-  --light-op07: rgba(255, 255, 255, 0.07);
-  --light-op09: rgba(255, 255, 255, 0.09);
-  --light-op40: rgba(255, 255, 255, 0.4);
-  --light-op50: rgba(255, 255, 255, 0.5);
+  --bg1: rgb(250, 250, 250);
+  --bg2: rgb(255, 255, 255);
+  --bg3: rgb(75, 75, 75);
 
-  --dark-op01:  rgba(0, 0, 0, 0.01);
-  --dark-op03:  rgba(0, 0, 0, 0.03);
-  --dark-op05:  rgba(0, 0, 0, 0.05);
-  --dark-op07:  rgba(0, 0, 0, 0.07);
-  --dark-op09:  rgba(0, 0, 0, 0.09);
-  --dark-op40:  rgba(0, 0, 0, 0.4);
-  --dark-op50:  rgba(0, 0, 0, 0.5);
+  --nav-bg: rgba(255, 255, 255, 0.5);
 
-  --light-bg1:  rgb(250, 250, 250);
-  --light-bg2:  rgb(255, 255, 255);
-  --light-bg3:  rgb(75, 75, 75);
+  --archive-bg: rgba(145, 65, 172, 0.1);
+  --archive-fg: rgb(145, 65, 172);
+  --disclaimer-bg: rgba(224, 27, 36, 0.1);
+  --disclaimer-fg: rgb(224, 27, 36);
+  --trigger-bg: rgba(156, 110, 3, 0.1);
+  --trigger-fg: rgb(156, 110, 3);
 
-  --dark-bg1:   rgb(36, 36, 36);
-  --dark-bg2:   rgb(30, 30, 30);
-  --dark-bg3:   rgb(11, 11, 11);
+  /* Custom Variables */
+  --shadow: 0 0 0 1px rgba(0, 0, 0, 0.03), 0 1px 3px 1px rgba(0, 0, 0, 0.07),
+    0 2px 6px 2px rgba(0, 0, 0, 0.03);
+  --shadow-raised: 0 0 0 1px rgba(0, 0, 0, 0.03),
+    0 2px 6px 2px rgba(0, 0, 0, 0.09), 0 4px 12px 4px rgba(0, 0, 0, 0.06);
+  --glow: var(--accent) -6px 0 12px, var(--secondary) 6px 0 12px;
 
-  --archive-bg-color:         rgba(145, 65, 172, 0.1);
-  --archive-bg-color-dark:    rgba(220, 138, 221, 0.1);
-  --archive-color:            rgb(145, 65, 172);
-  --archive-color-dark:       rgb(220, 138, 221);
+  --transition: 200ms;
+  --transition-longer: 400ms;
+  --transition-long: 800ms;
+}
 
-  --disclaimer-bg-color:      rgba(224, 27, 36, 0.1);
-  --disclaimer-bg-color-dark: rgba(226, 97, 81, 0.1);
-  --disclaimer-color:         rgb(224, 27, 36);
-  --disclaimer-color-dark:    rgb(246, 97, 81);
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: var(--light2);
+    --background: var(--bg3);
 
-  --trigger-bg-color:         rgba(156, 110, 3, 0.1);
-  --trigger-bg-color-dark:    rgba(248, 228, 92, 0.1);
-  --trigger-color:            rgb(156, 110, 3);
-  --trigger-color-dark:       rgb(248, 228, 92);
+    --fg01: rgba(255, 255, 255, 0.01);
+    --fg03: rgba(255, 255, 255, 0.03);
+    --fg05: rgba(255, 255, 255, 0.05);
+    --fg07: rgba(255, 255, 255, 0.07);
+    --fg09: rgba(255, 255, 255, 0.09);
+    --fg40: rgba(255, 255, 255, 0.4);
+    --fg50: rgba(255, 255, 255, 0.5);
 
-/* Custom Variables */
-  --shadow:         0 0 0 1px rgba(0, 0, 0, 0.03), 0 1px 3px 1px rgba(0, 0, 0, 0.07), 0 2px 6px 2px rgba(0, 0, 0, 0.03);
-  --shadow-raised:  0 0 0 1px rgba(0, 0, 0, 0.03), 0 2px 6px 2px rgba(0, 0, 0, 0.09), 0 4px 12px 4px rgba(0, 0, 0, 0.06);
-  --glow:           var(--primary-color) -6px 0 12px, var(--secondary-color) 6px 0 12px;
+    --bg1: rgb(36, 36, 36);
+    --bg2: rgb(30, 30, 30);
+    --bg3: rgb(11, 11, 11);
 
-  --transition:         200ms;
-  --transition-longer:  400ms;
-  --transition-long:    800ms;
+    --nav-bg: rgba(0, 0, 0, 0.5);
+
+    --archive-bg: rgba(220, 138, 221, 0.1);
+    --archive-fg: rgb(220, 138, 221);
+    --disclaimer-bg: rgba(226, 97, 81, 0.1);
+    --disclaimer-fg: rgb(246, 97, 81);
+    --trigger-bg: rgba(248, 228, 92, 0.1);
+    --trigger-fg: rgb(248, 228, 92);
+  }
 }
 
 /* Typography */
@@ -142,7 +152,7 @@ body {
   font-weight: 400;
   line-height: 1.6;
   scroll-behavior: smooth;
-  scrollbar-color: var(--dark-op50) transparent;
+  scrollbar-color: var(--fg50) transparent;
 }
 
 @media only screen and (max-device-width: 480px) {
@@ -152,16 +162,9 @@ body {
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  html,
-  body {
-    scrollbar-color: var(--light-op50) transparent;
-  }
-}
-
 body {
-  color: var(--dark4);
-  background-color: var(--background-color);
+  color: var(--text);
+  background-color: var(--background);
   /* ⇩⇩ put footer at the bottom for short pages, such as the 404 ⇩⇩ */
   display: grid;
   min-height: 100vh;
@@ -169,19 +172,27 @@ body {
 }
 
 @media (prefers-color-scheme: dark) {
-  body {
-    color: var(--light2);
-    background-color: var(--background-color-dark);
-  }
-
   html {
     background-color: var(--dark5);
   }
 }
 
 :target {
-  scroll-margin-top: 3.5rem;
-  scroll-snap-margin-top: 3.5rem; /* iOS 11 and older */
+  scroll-margin-top: 25vh;
+  animation: glow-in-out var(--transition-long);
+  animation-delay: 1s;
+}
+
+@keyframes glow-in-out {
+  0% {
+    text-shadow: none;
+  }
+  50% {
+    text-shadow: var(--glow);
+  }
+  100% {
+    text-shadow: none;
+  }
 }
 
 h1,
@@ -213,7 +224,7 @@ h2 {
 a {
   font-weight: 600;
   text-decoration: none;
-  color: var(--primary-color);
+  color: var(--accent);
   cursor: pointer;
   font-variation-settings: "wght" 600; /* needed for webkit */
 }
@@ -227,13 +238,7 @@ b {
 }
 
 small {
-  color: var(--dark-op50);
-}
-
-@media (prefers-color-scheme: dark) {
-  small {
-    color: var(--light-op50);
-  }
+  color: var(--fg50);
 }
 
 dl {
@@ -282,15 +287,8 @@ video {
 blockquote {
   padding: 0 1rem;
   margin-left: 0;
-  color: var(--dark-op40);
-  border-left: 0.3rem solid var(--dark-op07);
-}
-
-@media (prefers-color-scheme: dark) {
-  blockquote {
-    color: var(--light-op40);
-    border-left: 0.3rem solid var(--light-op07);
-  }
+  color: var(--fg40);
+  border-left: 0.3rem solid var(--fg07);
 }
 
 blockquote > :first-child {
@@ -306,11 +304,11 @@ abbr {
 }
 
 kbd {
-  background-color: var(--dark-op05);
-  border: 1px solid var(--dark-op07);
+  background-color: var(--fg05);
+  border: 1px solid var(--fg07);
   border-radius: 4px;
-  box-shadow: inset 0 -1px 0 var(--dark-op09);
-  color: var(--dark4);
+  box-shadow: inset 0 -1px 0 var(--fg09);
+  color: var(--text);
   display: inline-block;
   font-size: 11px;
   line-height: 10px;
@@ -322,23 +320,9 @@ kbd {
 }
 
 kbd:active {
-  box-shadow: inset 0 0px 0 var(--dark-op09);
+  box-shadow: inset 0 0px 0 var(--fg09);
   vertical-align: bottom;
   filter: contrast(0.2);
-}
-
-@media (prefers-color-scheme: dark) {
-  kbd {
-    background-color: var(--light-op05);
-    border: 1px solid var(--light-op07);
-    border-radius: 4px;
-    box-shadow: inset 0 -1px 0 var(--light-op09);
-    color: var(--light2);
-  }
-
-  kbd:active {
-    box-shadow: inset 0 0px 0 var(--light-op09);
-  }
 }
 
 /* Layout */
@@ -356,23 +340,6 @@ kbd:active {
   }
 }
 
-:target {
-  animation: glow-in-out var(--transition-long);
-  animation-delay: 1s;
-}
-
-@keyframes glow-in-out {
-  0% {
-    text-shadow: none;
-  }
-  50% {
-    text-shadow: var(--glow);
-  }
-  100% {
-    text-shadow: none;
-  }
-}
-
 /* Navbar */
 .nav-container {
   display: block;
@@ -386,19 +353,12 @@ kbd:active {
   position: sticky;
   top: 0;
   z-index: 1;
-  background-color: var(--light-op50);
+  background-color: var(--nav-bg);
   backdrop-filter: blur(24px) saturate(180%);
   -webkit-backdrop-filter: blur(24px) saturate(180%);
-  border-bottom: 1px solid var(--dark-op07);
+  border-bottom: 1px solid var(--fg07);
   box-shadow: var(--shadow);
   overflow: auto;
-}
-
-@media (prefers-color-scheme: dark) {
-  .nav {
-    background-color: var(--dark-op50);
-    border-bottom: 1px solid var(--light-op07);
-  }
 }
 
 .nav-container {
@@ -408,15 +368,9 @@ kbd:active {
 }
 
 .nav-title {
-  color: var(--dark-op50);
+  color: var(--fg50);
   display: inline-block;
   margin: 0;
-}
-
-@media (prefers-color-scheme: dark) {
-  .nav-title {
-    color: var(--light-op50);
-  }
 }
 
 .nav-title:hover {
@@ -431,14 +385,8 @@ kbd:active {
 }
 
 .nav li {
-  color: var(--dark-op50);
+  color: var(--fg50);
   display: inline-block;
-}
-
-@media (prefers-color-scheme: dark) {
-  .nav li {
-    color: var(--light-op50);
-  }
 }
 
 .nav a {
@@ -446,41 +394,23 @@ kbd:active {
   font-weight: 900;
   font-size: 90%;
   padding: 0.4rem 1rem;
-  border-radius: var(--rounded-corner);
+  border-radius: var(--border-radius);
   background-color: transparent;
-  color: var(--dark-op50);
+  color: var(--fg50);
   /* transition: var(--transition); */
 }
 
-@media (prefers-color-scheme: dark) {
-  .nav a {
-    color: var(--light-op50);
-  }
-}
-
 .nav a:hover {
-  background-color: var(--dark-op05);
+  background-color: var(--fg05);
   /* box-shadow: var(--glow); */
 }
 
-@media (prefers-color-scheme: dark) {
-  .nav a:hover {
-    background-color: var(--light-op05);
-  }
-}
-
 .nav svg {
-  fill: var(--dark-op50);
+  fill: var(--fg50);
   height: 1rem;
   width: 1rem;
   vertical-align: middle;
   transform: translateY(-0.125rem);
-}
-
-@media (prefers-color-scheme: dark) {
-  .nav svg {
-    fill: var(--light-op50);
-  }
 }
 
 @media (min-width: 640px) {
@@ -513,7 +443,7 @@ kbd:active {
   left: 0;
   right: 0;
   bottom: 0;
-  color: rgba(0, 0, 0, 0); /* make text transparent */
+  color: transparent; /* make text transparent */
   cursor: pointer;
 }
 
@@ -545,7 +475,7 @@ kbd:active {
 
 /* Media */
 .media-styled {
-  border-radius: var(--rounded-corner-small);
+  border-radius: var(--border-radius-small);
   box-shadow: var(--shadow);
 }
 
@@ -587,14 +517,7 @@ table th {
 table th,
 table td {
   padding: 0.5rem 1rem;
-  border: 1px solid var(--dark-op05);
-}
-
-@media (prefers-color-scheme: dark) {
-  table th,
-  table td {
-    border: 1px solid var(--light-op05);
-  }
+  border: 1px solid var(--fg05);
 }
 
 td,
@@ -899,17 +822,11 @@ tbody td {
   line-height: normal;
   margin: 1rem 0 1rem;
   padding: 2px 1rem;
-  border-radius: var(--rounded-corner-small);
-  background-color: var(--light-bg2);
+  border-radius: var(--border-radius-small);
+  background-color: var(--bg2);
   max-width: 80vw;
   overflow-x: auto;
   box-shadow: var(--shadow);
-}
-
-@media (prefers-color-scheme: dark) {
-  .highlighter-rouge {
-    background-color: var(--dark-bg2);
-  }
 }
 
 @media only screen and (max-device-width: 480px) {
@@ -926,14 +843,8 @@ tbody td {
 /* Inline Code */
 code.highlighter-rouge {
   padding: 2px 6px;
-  background-color: var(--dark-op07);
+  background-color: var(--fg07);
   box-shadow: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  code.highlighter-rouge {
-    background-color: var(--light-op07);
-  }
 }
 
 /* ASCII */
@@ -945,11 +856,7 @@ code.highlighter-rouge {
   overflow-x: auto;
   transition: var(--transition-long);
 
-  background: linear-gradient(
-    to top,
-    rgba(36, 31, 49, 1) 0%,
-    rgba(36, 31, 49, 0) 100%
-  );
+  background: linear-gradient(to top, var(--text) 0%, transparent 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -958,29 +865,9 @@ code.highlighter-rouge {
 }
 
 .ascii:hover {
-  -webkit-text-fill-color: var(--dark4);
-  -moz-text-fill-color: var(--dark4);
+  -webkit-text-fill-color: var(--text);
+  -moz-text-fill-color: var(--text);
   text-shadow: var(--glow);
-}
-
-@media (prefers-color-scheme: dark) {
-  .ascii {
-    background: linear-gradient(
-      to top,
-      rgba(246, 245, 244, 1) 0%,
-      rgba(246, 245, 244, 0) 100%
-    );
-    background-clip: text;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-  }
-
-  .ascii:hover {
-    -webkit-text-fill-color: var(--light2);
-    -moz-text-fill-color: var(--light2);
-  }
 }
 
 @media only screen and (max-device-width: 480px) {
@@ -1011,16 +898,9 @@ code.highlighter-rouge {
   font-weight: 900;
   font-size: 90%;
   padding: 0.4rem 1rem;
-  border-radius: var(--rounded-corner);
-  background-color: var(--dark-op05);
-  color: var(--dark5);
-}
-
-@media (prefers-color-scheme: dark) {
-  .inline-button {
-    background-color: var(--light-op05);
-    color: var(--light2);
-  }
+  border-radius: var(--border-radius);
+  background-color: var(--fg05);
+  color: var(--text);
 }
 
 /* Statements */
@@ -1034,52 +914,29 @@ code.highlighter-rouge {
 }
 
 .archive {
-  background-color: var(--archive-bg-color);
-  color: var(--archive-color);
+  background-color: var(--archive-bg);
+  color: var(--archive-fg);
 }
 
 .disclaimer {
-  background-color: var(--disclaimer-bg-color);
-  color: var(--disclaimer-color);
+  background-color: var(--disclaimer-bg);
+  color: var(--disclaimer-fg);
 }
 
 .trigger {
-  background-color: var(--trigger-bg-color);
-  color: var(--trigger-color);
-}
-
-@media (prefers-color-scheme: dark) {
-  .archive {
-    background-color: var(--archive-bg-color-dark);
-    color: var(--archive-color-dark);
-  }
-
-  .disclaimer {
-    background-color: var(--disclaimer-bg-color-dark);
-    color: var(--disclaimer-color-dark);
-  }
-
-  .trigger {
-    background-color: var(--trigger-bg-color-dark);
-    color: var(--trigger-color-dark);
-  }
+  background-color: var(--trigger-bg);
+  color: var(--trigger-fg);
 }
 
 /* Comments */
 section#comments .avatar {
-  background-color: var(--light-bg2);
+  background-color: var(--bg2);
   background-position: center;
   background-size: cover;
-  border-radius: var(--rounded-corner);
+  border-radius: var(--border-radius);
   box-shadow: var(--shadow);
   margin: 0;
   overflow: hidden;
-}
-
-@media (prefers-color-scheme: dark) {
-  section#comments .avatar {
-    background-color: var(--dark-bg2);
-  }
 }
 
 section#comments .avatar img {
@@ -1115,7 +972,7 @@ section#comments .comment .avatar-link .avatar {
 }
 
 section#comments .comment .avatar-link.op::after {
-  background-color: var(--primary-color);
+  background-color: var(--accent);
   border-radius: 50%;
   bottom: -0.25rem;
   color: var(--light2);
@@ -1160,7 +1017,7 @@ section#comments .comment .author .instance:hover {
 }
 
 section#comments .comment .author .instance.op {
-  background-color: var(--primary-color);
+  background-color: var(--accent);
   color: var(--light2);
 }
 
@@ -1209,8 +1066,8 @@ section#comments .comment .card figure {
 }
 
 section#comments .comment .card figure {
-  background-color: var(--light-bg2);
-  border-radius: var(--rounded-corner);
+  background-color: var(--bg2);
+  border-radius: var(--border-radius);
   margin-left: 0;
   margin-right: 0;
   box-shadow: var(--shadow);
@@ -1225,12 +1082,6 @@ section#comments .comment .card figure:hover {
 section#comments .comment .card figure:active {
   transform: scale(0.95);
   box-shadow: var(--shadow-raised);
-}
-
-@media (prefers-color-scheme: dark) {
-  section#comments .comment .card figure {
-    background-color: var(--dark-bg2);
-  }
 }
 
 section#comments .comment .card figure img {
@@ -1271,16 +1122,9 @@ section#comments .comment footer .boosts {
   font-variation-settings: "wght" 600; /* needed for webkit */
   font-size: 90%;
   padding: 0.4rem 1rem;
-  border-radius: var(--rounded-corner);
-  background-color: var(--dark-op05);
-  color: var(--dark5);
-}
-
-@media (prefers-color-scheme: dark) {
-  section#comments .comment footer .boosts {
-    background-color: var(--light-op05);
-    color: var(--light2);
-  }
+  border-radius: var(--border-radius);
+  background-color: var(--fg05);
+  color: var(--text);
 }
 
 section#comments .comment footer .boosts::before {
@@ -1295,16 +1139,9 @@ section#comments .comment footer .faves {
   font-variation-settings: "wght" 600; /* needed for webkit */
   font-size: 90%;
   padding: 0.4rem 1rem;
-  border-radius: var(--rounded-corner);
-  background-color: var(--dark-op05);
-  color: var(--dark5);
-}
-
-@media (prefers-color-scheme: dark) {
-  section#comments .comment footer .faves {
-    background-color: var(--light-op05);
-    color: var(--light2);
-  }
+  border-radius: var(--border-radius);
+  background-color: var(--fg05);
+  color: var(--text);
 }
 
 section#comments .comment footer .faves::before {
@@ -1335,43 +1172,22 @@ section#comments .comment details summary {
       90deg,
       transparent,
       transparent 0.4rem,
-      var(--light-bg2) 0.4rem,
-      var(--light-bg2) calc(100% - 0.4rem),
+      var(--bg2) 0.4rem,
+      var(--bg2) calc(100% - 0.4rem),
       transparent calc(100% - 0.4rem),
       transparent
     ),
     repeating-linear-gradient(
       45deg,
-      var(--dark-bg1),
-      var(--dark-bg1) 0.3rem,
-      var(--primary-color) 0.3rem,
-      var(--primary-color) 0.6rem
+      var(--bg1),
+      var(--bg1) 0.3rem,
+      var(--accent) 0.3rem,
+      var(--accent) 0.6rem
     );
-  border-radius: var(--rounded-corner-small);
+  border-radius: var(--border-radius-small);
   box-shadow: var(--shadow);
   color: inherit;
   cursor: pointer;
   margin-top: 1rem;
   padding: 1rem;
-}
-
-@media (prefers-color-scheme: dark) {
-  section#comments .comment details summary {
-    background-image: linear-gradient(
-        90deg,
-        transparent,
-        transparent 0.4rem,
-        var(--dark-bg2) 0.4rem,
-        var(--dark-bg2) calc(100% - 0.4rem),
-        transparent calc(100% - 0.4rem),
-        transparent
-      ),
-      repeating-linear-gradient(
-        45deg,
-        var(--dark-bg1),
-        var(--dark-bg1) 0.3rem,
-        var(--primary-color) 0.3rem,
-        var(--primary-color) 0.6rem
-      );
-  }
 }
