@@ -1,15 +1,16 @@
 /* 
 
-    OS Component Website
+    Daudix's Blog
     ====================
     
-    shamelessly stolen CSS from systemd 
+    based on OS Component Website which shamelessly stolen CSS from systemd
+    https://github.com/jimmac/os-component-website
     https://github.com/systemd/systemd/tree/main/docs
     
 */
 
-/* GNOME Color Palette */
 :root {
+  /* GNOME Color Palette */
   --blue1: rgb(153, 193, 241);
   --blue2: rgb(98, 160, 234);
   --blue3: rgb(53, 132, 228);
@@ -67,6 +68,10 @@
   --content-width: 720px;
 
   /* Custom Color Palette */
+  --bg1: rgb(250, 250, 250);
+  --bg2: rgb(255, 255, 255);
+  --bg3: rgb(75, 75, 75);
+
   --fg01: rgba(0, 0, 0, 0.01);
   --fg03: rgba(0, 0, 0, 0.03);
   --fg05: rgba(0, 0, 0, 0.05);
@@ -74,10 +79,6 @@
   --fg09: rgba(0, 0, 0, 0.09);
   --fg40: rgba(0, 0, 0, 0.4);
   --fg50: rgba(0, 0, 0, 0.5);
-
-  --bg1: rgb(250, 250, 250);
-  --bg2: rgb(255, 255, 255);
-  --bg3: rgb(75, 75, 75);
 
   --nav-bg: rgba(255, 255, 255, 0.5);
 
