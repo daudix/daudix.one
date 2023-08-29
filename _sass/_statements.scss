@@ -1,0 +1,24 @@
+/* Statements */
+.statement-container {
+  margin: 1rem 0 1rem;
+  line-height: normal;
+}
+
+.statement-container h2 {
+  margin: inherit;
+}
+
+.archive {
+  background-color: var(--archive-bg);
+  color: var(--archive-fg);
+}
+
+.disclaimer {
+  background-color: var(--disclaimer-bg);
+  color: var(--disclaimer-fg);
+}
+
+.trigger {
+  background-color: var(--trigger-bg);
+  color: var(--trigger-fg);
+}

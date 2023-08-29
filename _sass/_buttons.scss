@@ -1,0 +1,18 @@
+/* Buttons */
+.dialog-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-top: 6rem;
+}
+
+.inline-button {
+  display: inline-block;
+  font-weight: 900;
+  font-size: 90%;
+  padding: 0.4rem 1rem;
+  border-radius: var(--border-radius);
+  background-color: var(--fg05);
+  color: var(--text);
+}

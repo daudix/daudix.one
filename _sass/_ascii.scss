@@ -1,0 +1,36 @@
+/* ASCII */
+.ascii {
+  line-height: normal;
+  margin: 3rem 0 1rem;
+  padding: 2px 1rem;
+  max-width: 80vw;
+  overflow-x: auto;
+  transition: var(--transition-long);
+
+  background: linear-gradient(to top, var(--text) 0%, transparent 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.ascii:hover {
+  -webkit-text-fill-color: var(--text);
+  -moz-text-fill-color: var(--text);
+  text-shadow: var(--glow);
+}
+
+@media only screen and (max-device-width: 480px) {
+  /*mobile*/
+  .ascii {
+    max-width: 90vw;
+  }
+}
+
+@media only screen and (max-device-width: 640px) {
+  /*mobile*/
+  .ascii {
+    display: none;
+  }
+}

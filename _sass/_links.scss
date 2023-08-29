@@ -1,0 +1,8 @@
+/* Link arrows */
+.page-link::after {
+  content: " →";
+}
+
+.site-link::after {
+  content: " ↗";
+}
