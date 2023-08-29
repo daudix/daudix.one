@@ -269,6 +269,7 @@ Inspired by https://codeberg.org/jwildeboer/jwildeboersource/src/commit/45f9750b
                         mediaElement = document.createElement("img");
                         mediaElement.setAttribute("src", attachment.preview_url);
                         mediaElement.setAttribute("loading", "lazy");
+                        mediaElement.className = "media-styled hover";
 
                         if(attachment.description != null) {
                           mediaElement.setAttribute("alt", attachment.description);
@@ -284,6 +285,7 @@ Inspired by https://codeberg.org/jwildeboer/jwildeboersource/src/commit/45f9750b
                         mediaElement.setAttribute("autoplay", "");
                         mediaElement.setAttribute("playsinline", "");
                         mediaElement.setAttribute("loop", "");
+                        mediaElement.className = "media-styled hover";
 
                         if(attachment.description != null) {
                           mediaElement.setAttribute("aria-title", attachment.description);
