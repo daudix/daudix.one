@@ -74,7 +74,7 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll-feed
-  jekyll-sass-converter (~> 2.0)
+  jekyll-sass-converter (~> 2.2)
   jekyll-sitemap
   jekyll-toc
   webrick
