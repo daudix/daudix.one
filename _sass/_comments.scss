@@ -239,6 +239,7 @@ section#comments {
         border-radius: var(--border-radius-small);
         color: inherit;
         cursor: pointer;
+        box-shadow: var(--shadow);
         margin-top: 0.925rem;
         padding: 1rem;
       }
