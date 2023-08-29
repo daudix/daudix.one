@@ -1,0 +1,120 @@
+:root {
+  /* GNOME Color Palette */
+  --blue1: rgb(153, 193, 241);
+  --blue2: rgb(98, 160, 234);
+  --blue3: rgb(53, 132, 228);
+  --blue4: rgb(28, 113, 216);
+  --blue5: rgb(26, 95, 180);
+  --green1: rgb(143, 240, 164);
+  --green2: rgb(87, 227, 137);
+  --green3: rgb(51, 209, 122);
+  --green4: rgb(46, 194, 126);
+  --green5: rgb(38, 162, 105);
+  --yellow1: rgb(249, 240, 107);
+  --yellow2: rgb(248, 228, 92);
+  --yellow3: rgb(246, 211, 45);
+  --yellow4: rgb(245, 194, 17);
+  --yellow5: rgb(229, 165, 10);
+  --orange1: rgb(255, 190, 111);
+  --orange2: rgb(255, 163, 72);
+  --orange3: rgb(255, 120, 0);
+  --orange4: rgb(230, 97, 0);
+  --orange5: rgb(198, 70, 0);
+  --red1: rgb(246, 97, 81);
+  --red2: rgb(237, 51, 59);
+  --red3: rgb(224, 27, 36);
+  --red4: rgb(192, 28, 40);
+  --red5: rgb(165, 29, 45);
+  --purple1: rgb(220, 138, 221);
+  --purple2: rgb(192, 97, 203);
+  --purple3: rgb(145, 65, 172);
+  --purple4: rgb(129, 61, 156);
+  --purple5: rgb(97, 53, 131);
+  --brown1: rgb(205, 171, 143);
+  --brown2: rgb(181, 131, 90);
+  --brown3: rgb(152, 106, 68);
+  --brown4: rgb(134, 94, 60);
+  --brown5: rgb(99, 69, 44);
+  --light1: rgb(255, 255, 255);
+  --light2: rgb(246, 245, 244);
+  --light3: rgb(222, 221, 218);
+  --light4: rgb(192, 191, 188);
+  --light5: rgb(154, 153, 150);
+  --dark1: rgb(119, 118, 123);
+  --dark2: rgb(94, 92, 100);
+  --dark3: rgb(61, 56, 70);
+  --dark4: rgb(36, 31, 49);
+  --dark5: rgb(0, 0, 0);
+
+  /* General Setup */
+  --border: var(--light3);
+  --border-radius: 0.75rem;
+  --border-radius-small: 0.5rem;
+  --accent-color: var(--purple2);
+  --secondary-accent-color: var(--blue2);
+  --text: var(--dark4);
+  --background: var(--bg1);
+  --content-width: 720px;
+
+  /* Custom Color Palette */
+  --bg1: rgb(250, 250, 250);
+  --bg2: rgb(255, 255, 255);
+  --bg3: rgb(75, 75, 75);
+
+  --fg01: rgba(0, 0, 0, 0.01);
+  --fg03: rgba(0, 0, 0, 0.03);
+  --fg05: rgba(0, 0, 0, 0.05);
+  --fg07: rgba(0, 0, 0, 0.07);
+  --fg09: rgba(0, 0, 0, 0.09);
+  --fg40: rgba(0, 0, 0, 0.4);
+  --fg50: rgba(0, 0, 0, 0.5);
+
+  --nav-bg: rgba(255, 255, 255, 0.5);
+
+  --archive-bg: rgba(145, 65, 172, 0.1);
+  --archive-fg: rgb(145, 65, 172);
+  --disclaimer-bg: rgba(224, 27, 36, 0.1);
+  --disclaimer-fg: rgb(224, 27, 36);
+  --trigger-bg: rgba(156, 110, 3, 0.1);
+  --trigger-fg: rgb(156, 110, 3);
+
+  /* Custom Variables */
+  --shadow: 0 0 0 1px rgba(0, 0, 0, 0.03), 0 1px 3px 1px rgba(0, 0, 0, 0.07),
+    0 2px 6px 2px rgba(0, 0, 0, 0.03);
+  --shadow-raised: 0 0 0 1px rgba(0, 0, 0, 0.03),
+    0 2px 6px 2px rgba(0, 0, 0, 0.09), 0 4px 12px 4px rgba(0, 0, 0, 0.06);
+  --glow: var(--accent-color) -6px 0 12px,
+    var(--secondary-accent-color) 6px 0 12px;
+
+  --transition: 200ms;
+  --transition-longer: 400ms;
+  --transition-long: 800ms;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: var(--light2);
+    --background: var(--bg3);
+
+    --fg01: rgba(255, 255, 255, 0.01);
+    --fg03: rgba(255, 255, 255, 0.03);
+    --fg05: rgba(255, 255, 255, 0.05);
+    --fg07: rgba(255, 255, 255, 0.07);
+    --fg09: rgba(255, 255, 255, 0.09);
+    --fg40: rgba(255, 255, 255, 0.4);
+    --fg50: rgba(255, 255, 255, 0.5);
+
+    --bg1: rgb(36, 36, 36);
+    --bg2: rgb(30, 30, 30);
+    --bg3: rgb(11, 11, 11);
+
+    --nav-bg: rgba(0, 0, 0, 0.5);
+
+    --archive-bg: rgba(220, 138, 221, 0.1);
+    --archive-fg: rgb(220, 138, 221);
+    --disclaimer-bg: rgba(226, 97, 81, 0.1);
+    --disclaimer-fg: rgb(246, 97, 81);
+    --trigger-bg: rgba(248, 228, 92, 0.1);
+    --trigger-fg: rgb(248, 228, 92);
+  }
+}
