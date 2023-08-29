@@ -71,12 +71,14 @@
 
   --nav-bg: rgba(255, 255, 255, 0.5);
 
-  --archive-bg: rgba(145, 65, 172, 0.1);
-  --archive-fg: rgb(145, 65, 172);
-  --disclaimer-bg: rgba(224, 27, 36, 0.1);
-  --disclaimer-fg: rgb(224, 27, 36);
-  --trigger-bg: rgba(156, 110, 3, 0.1);
-  --trigger-fg: rgb(156, 110, 3);
+  --purple-bg: rgba(145, 65, 172, 0.1);
+  --purple-fg: rgb(145, 65, 172);
+  --red-bg: rgba(224, 27, 36, 0.1);
+  --red-fg: rgb(224, 27, 36);
+  --yellow-bg: rgba(156, 110, 3, 0.1);
+  --yellow-fg: rgb(156, 110, 3);
+  --orange-bg: rgba(255, 120, 0, 0.1);
+  --orange-fg: rgb(255, 120, 0);
 
   /* Custom Variables */
   --shadow: 0 0 0 1px rgba(0, 0, 0, 0.03), 0 1px 3px 1px rgba(0, 0, 0, 0.07),
@@ -110,11 +112,13 @@
 
     --nav-bg: rgba(0, 0, 0, 0.5);
 
-    --archive-bg: rgba(220, 138, 221, 0.1);
-    --archive-fg: rgb(220, 138, 221);
-    --disclaimer-bg: rgba(226, 97, 81, 0.1);
-    --disclaimer-fg: rgb(246, 97, 81);
-    --trigger-bg: rgba(248, 228, 92, 0.1);
-    --trigger-fg: rgb(248, 228, 92);
+    --purple-bg: rgba(220, 138, 221, 0.1);
+    --purple-fg: rgb(220, 138, 221);
+    --red-bg: rgba(226, 97, 81, 0.1);
+    --red-fg: rgb(246, 97, 81);
+    --yellow-bg: rgba(248, 228, 92, 0.1);
+    --yellow-fg: rgb(248, 228, 92);
+    --orange-bg: rgba(255, 190, 111, 0.1);
+    --orange-fg: rgb(255, 190, 111);
   }
 }
