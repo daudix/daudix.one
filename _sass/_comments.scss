@@ -174,8 +174,8 @@ section#comments {
         font-size: 90%;
         padding: 0.4rem 1rem;
         border-radius: var(--border-radius);
-        background-color: var(--fg05);
-        color: var(--text);
+        background-color: var(--orange-bg);
+        color: var(--orange-fg);
 
         &::before {
           color: var(--orange2);
@@ -191,8 +191,8 @@ section#comments {
         font-size: 90%;
         padding: 0.4rem 1rem;
         border-radius: var(--border-radius);
-        background-color: var(--fg05);
-        color: var(--text);
+        background-color: var(--red-bg);
+        color: var(--red-fg);
 
         &::before {
           color: var(--red2);
