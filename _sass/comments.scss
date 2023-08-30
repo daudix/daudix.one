@@ -143,13 +143,13 @@ section#comments {
         text-align: left;
 
         * {
-          display: -webkit-box;
+          display: inline-block;
           line-height: 1.25;
           margin: 0;
           overflow: hidden;
           padding: 0;
-          -webkit-box-orient: vertical;
-          -webkit-line-clamp: 2;
+          text-overflow: ellipsis;
+          white-space: nowrap;
         }
       }
     }
