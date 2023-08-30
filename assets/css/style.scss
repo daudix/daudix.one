@@ -12,17 +12,8 @@
 
 */
 
-@import "_variables";
-@import "_layout";
-@import "_fonts";
-@import "_typography";
-@import "_media";
-@import "_links";
-@import "_buttons";
-@import "_ascii";
-@import "_code";
-@import "_rouge-github";
-@import "_statements";
-@import "_comments";
-@import "_nav";
-@import "_footer";
+@import "variables";
+@import "fonts";
+@import "main";
+@import "rouge-github";
+@import "comments";
