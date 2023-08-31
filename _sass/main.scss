@@ -235,16 +235,16 @@ video {
   max-width: 100%;
 }
 
-.media-styled {
+.media {
   border-radius: var(--border-radius-small);
   box-shadow: var(--shadow);
 }
 
-.media-styled.hover {
+.media.hover {
   transition: var(--transition-longer);
 }
 
-.media-styled.hover:hover {
+.media.hover:hover {
   transform: scale(125%);
   border-radius: unset;
   box-shadow: var(--shadow-raised);
@@ -252,7 +252,7 @@ video {
 
 @media only screen and (max-device-width: 480px) {
   /*mobile*/
-  .media-styled.hover:hover {
+  .media.hover:hover {
     transform: scale(110%);
   }
 }

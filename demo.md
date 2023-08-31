@@ -135,15 +135,33 @@ The final element.
 
 ### Extra
 
-Display pixel-art in full width without filtering.
+Display pixel-art without filtering.
 
 ```
-![Pixels](https://pixeljoint.com/files/icons/full/animation_rewinded_mostfinal.gif){:.full.pixels}
+{:.pixels}
 ```
 
 ![Pixels](https://pixeljoint.com/files/icons/full/animation_rewinded_mostfinal.gif){:.full.pixels}
 
 [Source](https://pixeljoint.com/pixelart/15027.htm){:.site-link}
+
+Full-width.
+
+```
+{:.full}
+```
+
+Shadow and round corners.
+
+```
+{:.media}
+```
+
+...With zoom on hover.
+
+```
+{:.media.hover}
+```
 
 ---
 
@@ -157,15 +175,19 @@ Keyboard shortcuts.
 
 ---
 
-Link with arrow.
+Link to page (rightwards arrow).
 
 ```
-[Link to page](markdown-page.md){:.page-link}
-
-[Link to site](https://example.org){:.site-link}
+{:.page-link}
 ```
 
 [Link to page](../markdown-page){:.page-link}
+
+Link to site (up-rightwards arrow).
+
+```
+{:.site-link}
+```
 
 [Link to site](https://example.org){:.site-link}
 
