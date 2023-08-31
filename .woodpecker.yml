@@ -1,23 +1,4 @@
-# Jekyll on Woodpecker to codeberg pages
-#
-# This file would typically be .woodpecker.yml in the root of your repository.
-#
-# Takes a repository with jekyll source, generates the static site and
-# pushes the result to codeberg pages
-#
-# Needs a codeberg access token (cbtoken) as secret in woodpecker config
-# Also uses another secret (cbmail) with email address for git config
-#
-# CBIN must be replaced with the source repo
-# CBOUT must be replaced with the target codeberg pages repo
-# CBUSER must be replaced with the user/org
-#
-# See the _config.yml file for the important keep_files: line to preserve
-# git metadata during build
-#
-# We also assume a domains file in the source repo that gets copied to
-# .domains in the target repo so codeberg pages works for custom domains
-#
+# Uses https://codeberg.org/Codeberg-CI/examples/src/branch/main/Jekyll/jekyll.yml
 
 steps:
   build:

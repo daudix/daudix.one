@@ -1,9 +1,6 @@
-# daudix-ufo.codeberg.page/blog
+# Daudix’s Blog
 
 [![status-badge](https://ci.codeberg.org/api/badges/12428/status.svg)](https://ci.codeberg.org/repos/12428)
-
-> **Note**
-> This blog is based on [OS Component Website](https://jimmac.github.io/os-component-website)
 
 ## Usage
 
@@ -37,6 +34,6 @@ _Initial script (`local.sh`) were taken from [here](https://kuros.in/docker/dock
 
 ## ❤️ Special thanks
 
-- Jakub Steiner for an awesome [OS Component Website](https://jimmac.github.io/os-component-website) that are used as a base
-- Cassidy James for and awesome [Mastodon-powered comments](https://cassidyjames.com/blog/fediverse-blog-comments-mastodon)
-- dwb, ejm and jgs for ASCII art
+- Jakub Steiner for an awesome [OS Component Website](https://jimmac.github.io/os-component-website), on top of which this whole thing is built
+- Cassidy James for an awesome [Mastodon-powered comments](https://cassidyjames.com/blog/fediverse-blog-comments-mastodon)
+- dwb, ejm and jgs for awesome ASCII art
