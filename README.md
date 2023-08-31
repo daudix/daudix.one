@@ -34,6 +34,6 @@ _Initial script (`local.sh`) were taken from [here](https://kuros.in/docker/dock
 
 ## ❤️ Special thanks
 
-- Jakub Steiner for an awesome [OS Component Website](https://jimmac.github.io/os-component-website), on top of which this whole thing is built
-- Cassidy James for an awesome [Mastodon-powered comments](https://cassidyjames.com/blog/fediverse-blog-comments-mastodon)
+- [Jakub Steiner](https://jimmac.eu) for an awesome [OS Component Website](https://jimmac.github.io/os-component-website), on top of which this whole thing is built
+- [Cassidy James](https://cassidyjames.com) for an awesome [Mastodon-powered comments](https://cassidyjames.com/blog/fediverse-blog-comments-mastodon)
 - dwb, ejm and jgs for awesome ASCII art
