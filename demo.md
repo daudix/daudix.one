@@ -14,6 +14,8 @@ disclaimer: "
 - Don't interact with asbestos and moon rocks."
 ---
 
+> For ^these banners see page source <abbr title="The thingy wrapped in three dashes at very top of Markdown document">front matter</abbr>
+
 Text can be **bold**, _italic_, or ~~strikethrough~~, it can also be _**thick**_.
 
 [Link to another page](../demo-page){:.page-link}
@@ -70,7 +72,7 @@ end
 | ok           | good `oreos`      | hmm   |
 | ok           | good `zoute` drop | yumm  |
 
-### There's a horizontal rule below this.
+### There's a horizontal rule below this
 
 ---
 
@@ -112,7 +114,7 @@ end
 
 ![Codeberg horizontal](https://codeberg.org/Codeberg/Design/raw/branch/main/logo/horizontal/png/codeberg-logo_horizontal_blue-850x250.png)
 
-### Definition lists can be used with HTML syntax.
+### Definition lists can be used with HTML syntax
 
 <dl>
 <dt>Name</dt>
@@ -133,39 +135,100 @@ Long, single-line code blocks should not wrap. They should horizontally scroll i
 The final element.
 ```
 
-### Extra
+### Details
 
-Display pixel-art without filtering.
+<details><summary>I may be a spoiler, I may be a long text, I may be anything.</summary>
+
+Quack-quack!
+
+<img class="full media" src="https://random-d.uk/api/randomimg">
+
+</details>
+
+### Small
+
+<small>Small, cute text that doesn't catch attention.</small>
+
+### Abbreviation
+
+The <abbr title="American Standard Code for Information Interchange">ASCII</abbr> art are awesome!
+
+### Special ASCII style
+
+<pre class="ascii">
+ _____________________________________________
+|.'',        Public_Library_Halls         ,''.|
+|.'.'',                                 ,''.'.|
+|.'.'.'',                             ,''.'.'.|
+|.'.'.'.'',                         ,''.'.'.'.|
+|.'.'.'.'.|                         |.'.'.'.'.|
+|.'.'.'.'.|===;                 ;===|.'.'.'.'.|
+|.'.'.'.'.|:::|',             ,'|:::|.'.'.'.'.|
+|.'.'.'.'.|---|'.|, _______ ,|.'|---|.'.'.'.'.|
+|.'.'.'.'.|:::|'.|'|???????|'|.'|:::|.'.'.'.'.|
+|,',',',',|---|',|'|???????|'|,'|---|,',',',',|
+|.'.'.'.'.|:::|'.|'|???????|'|.'|:::|.'.'.'.'.|
+|.'.'.'.'.|---|','   /%%%\   ','|---|.'.'.'.'.|
+|.'.'.'.'.|===:'    /%%%%%\    ':===|.'.'.'.'.|
+|.'.'.'.'.|%%%%%%%%%%%%%%%%%%%%%%%%%|.'.'.'.'.|
+|.'.'.'.','       /%%%%%%%%%\       ','.'.'.'.|
+|.'.'.','        /%%%%%%%%%%%\        ','.'.'.|
+|.'.','         /%%%%%%%%%%%%%\         ','.'.|
+|.','          /%%%%%%%%%%%%%%%\          ','.|
+|;____________/%%%%%Spicer%%%%%%\____________;|
+</pre>
+
+### Pixel-art without anti-aliasing
 
 ```
 {:.pixels}
 ```
 
-![Pixels](https://pixeljoint.com/files/icons/full/animation_rewinded_mostfinal.gif){:.full.pixels}
+![Pixels](https://pixeljoint.com/files/icons/full/animation_rewinded_mostfinal.gif){:.pixels}
 
 [Source](https://pixeljoint.com/pixelart/15027.htm){:.site-link}
 
-Full-width.
+### Full-width image/video
 
 ```
 {:.full}
 ```
 
-Shadow and round corners.
+### Shadow and rounded corners on image/video
 
 ```
 {:.media}
 ```
 
-...With zoom on hover.
+### ...With zoom on hover
 
 ```
 {:.media.hover}
 ```
 
----
+### All together!
 
-Keyboard shortcuts.
+```
+{:.full.media.hover}
+```
+
+![Portal Gun blueprint](https://i.imgur.com/Fr1ImW9.png){:.full.media.hover}
+
+### Image descriptions
+
+![The Office](https://i.imgur.com/ImMAXM3.png){:.media.full}
+
+<figcaption>The Office where Stanley works, it has yellow floor and beige walls</figcaption>
+
+### Video
+
+Everything above can be applied to videos too.
+
+<video controls src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm"></video>{:.media.full}
+
+<figcaption>Red flower wakes up</figcaption>
+
+### Keyboard shortcut
 
 ```
 <kbd>⌘ Super</kbd> + <kbd>Space</kbd>
@@ -173,9 +236,7 @@ Keyboard shortcuts.
 
 <kbd>⌘ Super</kbd> + <kbd>Space</kbd>
 
----
-
-Link to page (rightwards arrow).
+### Link to page (rightwards arrow)
 
 ```
 {:.page-link}
@@ -183,7 +244,7 @@ Link to page (rightwards arrow).
 
 [Link to page](../markdown-page){:.page-link}
 
-Link to site (up-rightwards arrow).
+### Link to site (up-rightwards arrow)
 
 ```
 {:.site-link}
@@ -191,12 +252,12 @@ Link to site (up-rightwards arrow).
 
 [Link to site](https://example.org){:.site-link}
 
----
-
-Buttons.
+### Buttons
 
 ```
 [Go to top](#top){: .inline-button}
 [File an issue]({{site.issuesurl}})
 {: .dialog-buttons}
 ```
+
+> Look at the end of page xD
