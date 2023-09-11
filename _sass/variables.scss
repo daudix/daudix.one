@@ -95,6 +95,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
+    color-scheme: dark;
+
     --text: var(--light2);
     --background: var(--bg3);
 
