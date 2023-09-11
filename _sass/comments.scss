@@ -136,6 +136,8 @@ section#comments {
       }
 
       figcaption {
+        color: var(--text);
+        font-size: unset;
         display: grid;
         gap: 0.5rem;
         margin: 0;
