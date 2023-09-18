@@ -31,9 +31,14 @@ feed:
   tags:
     path: "feed/tags/"
 plugins:
-  - jekyll-loading-lazy
-  - jekyll-sitemap
+  - jekyll-default-layout
   - jekyll-feed
+  - jekyll-loading-lazy
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-relative-links
+  - jekyll-sitemap
+  - jekyll-titles-from-headings
   - jekyll-toc
 defaults:
   - scope:

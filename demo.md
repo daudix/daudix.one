@@ -18,7 +18,7 @@ disclaimer: "
 
 Text can be **bold**, _italic_, or ~~strikethrough~~, it can also be _**thick**_.
 
-[Link to another page](../demo-page){:.page-link}
+[Link to another page](demo-page.md){:.page-link}
 
 There should be whitespace between paragraphs.
 
@@ -242,7 +242,7 @@ Everything above can be applied to videos too.
 {:.page-link}
 ```
 
-[Link to page](../markdown-page){:.page-link}
+[Link to page](demo-page.md){:.page-link}
 
 ### Link to site (up-rightwards arrow)
 

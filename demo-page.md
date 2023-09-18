@@ -9,4 +9,4 @@ title: "Cake Party!"
 
 Sadly, the cake is a _lie_
 
-[Go Crying](../demo){: .inline-button}
+[Go Crying](demo.md){: .inline-button}
