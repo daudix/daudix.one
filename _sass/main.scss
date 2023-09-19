@@ -8,6 +8,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  accent-color: var(--accent-color);
   scroll-behavior: smooth;
   scrollbar-color: var(--fg50) transparent;
 }
