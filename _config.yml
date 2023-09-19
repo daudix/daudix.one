@@ -9,7 +9,7 @@ sourceurl: "https://codeberg.org/daudix-UFO/blog-source" # "edit this website" l
 hosting: "Codeberg" # the hosting of your site, e.g Codeberg
 description: "Daudix UFO's blog."
 issuesurl: "https://codeberg.org/daudix-UFO/blog-source/issues" # issue tracker for website
-permalink: /:title/
+permalink: /blog/:title/
 primary-color: "#c061cb" # used in iOS theme. further color customization in _sass/variables.scss
 
 # Mastodon-powered commenting.
