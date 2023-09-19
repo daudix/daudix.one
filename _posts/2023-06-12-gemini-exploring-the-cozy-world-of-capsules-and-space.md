@@ -126,7 +126,7 @@ I will use Halftone in this example
 
 This is what we get in the end
 
-[![](/assets/posts/2023-06-12/bay-bridge-floyd-min.png){:.media.hover}](/assets/posts/2023-06-12/bay-bridge-floyd.png)
+[![]({{site.baseurl}}/assets/posts/2023-06-12/bay-bridge-floyd-min.png){:.media.hover}]({{site.baseurl}}/assets/posts/2023-06-12/bay-bridge-floyd.png)
 <figcaption>Bay Bridge photo in dark tones, with Floyd-Steinberg dithering</figcaption>
 
 [Image on Unsplash](https://unsplash.com/photos/raNGlrn5JRI)
@@ -144,7 +144,7 @@ But, we can go even further, by using less colors and different dithering algori
 
 With ordered dithering (Bayer) and 2 colors we get the following result
 
-[![](/assets/posts/2023-06-12/bay-bridge-bayer-min.png){:.media.hover}](/assets/posts/2023-06-12/bay-bridge-bayer.png)
+[![]({{site.baseurl}}/assets/posts/2023-06-12/bay-bridge-bayer-min.png){:.media.hover}]({{site.baseurl}}/assets/posts/2023-06-12/bay-bridge-bayer.png)
 <figcaption>Bay Bridge photo in black and white, with Bayer dithering</figcaption>
 
 [Image on Unsplash](https://unsplash.com/photos/raNGlrn5JRI)
@@ -252,7 +252,7 @@ Here are simple example of ASCII and Braille images made with ascii-image-conver
 
 But, do you think it has quality of this image?
 
-[![](/assets/posts/2023-06-12/grayscale-plane-min.png){:.media.hover}](/assets/posts/2023-06-12/grayscale-plane.png)
+[![]({{site.baseurl}}/assets/posts/2023-06-12/grayscale-plane-min.png){:.media.hover}]({{site.baseurl}}/assets/posts/2023-06-12/grayscale-plane.png)
 <figcaption>T-6 plane photo in grayscale, with Floyd-Steinberg dithering</figcaption>
 
 [Image on Unsplash](https://unsplash.com/photos/cs4uFYrNZfc)
