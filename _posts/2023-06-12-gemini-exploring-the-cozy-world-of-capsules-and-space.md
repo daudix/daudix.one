@@ -3,7 +3,6 @@ layout: post
 title: "Gemini: Exploring the Cozy World of Capsules and Space"
 tags: Gemini Dithering ASCII
 toc: true
-archive: "This post is archived, meaning it will no longer receive content updates, may look odd, and may not follow newer practices."
 ---
 
 This post is made to give you basic understanding of what Gemini is, what are Capsules and Gemlogs, modern-day use of retro image techniques and text-based art
@@ -127,7 +126,8 @@ I will use Halftone in this example
 
 This is what we get in the end
 
-![](../assets/posts/2023-06-12/bay-bridge-floyd.png){:.media.hover}
+[![](/assets/posts/2023-06-12/bay-bridge-floyd-min.png){:.media.hover}](/assets/posts/2023-06-12/bay-bridge-floyd.png)
+<figcaption>Bay Bridge photo in dark tones, with Floyd-Steinberg dithering</figcaption>
 
 [Image on Unsplash](https://unsplash.com/photos/raNGlrn5JRI)
 
@@ -144,7 +144,8 @@ But, we can go even further, by using less colors and different dithering algori
 
 With ordered dithering (Bayer) and 2 colors we get the following result
 
-![](../assets/posts/2023-06-12/bay-bridge-bayer.png){:.media.hover}
+[![](/assets/posts/2023-06-12/bay-bridge-bayer-min.png){:.media.hover}](/assets/posts/2023-06-12/bay-bridge-bayer.png)
+<figcaption>Bay Bridge photo in black and white, with Bayer dithering</figcaption>
 
 [Image on Unsplash](https://unsplash.com/photos/raNGlrn5JRI)
 
@@ -251,7 +252,8 @@ Here are simple example of ASCII and Braille images made with ascii-image-conver
 
 But, do you think it has quality of this image?
 
-![](../assets/posts/2023-06-12/grayscale-plane.png){:.media.hover}
+[![](/assets/posts/2023-06-12/grayscale-plane-min.png){:.media.hover}](/assets/posts/2023-06-12/grayscale-plane.png)
+<figcaption>T-6 plane photo in grayscale, with Floyd-Steinberg dithering</figcaption>
 
 [Image on Unsplash](https://unsplash.com/photos/cs4uFYrNZfc)
 
