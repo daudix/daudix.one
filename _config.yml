@@ -1,15 +1,15 @@
 # Site settings
 title: Daudix's Blog
 baseurl:
-  "/blog" # the subpath of your site, e.g. /blog
+  "" # the subpath of your site, e.g. /blog
   # usually empty. necessary for building absolute URIs
   # for metadata header
-url: "https://daudix-ufo.codeberg.page" # the base hostname & protocol for your site
+url: "https://daudix-ufo.codeberg.page/blog" # the base hostname & protocol for your site
 sourceurl: "https://codeberg.org/daudix-UFO/blog-source" # "edit this website" link in the footer
 hosting: "Codeberg" # the hosting of your site, e.g Codeberg
 description: "Daudix UFO's blog."
 issuesurl: "https://codeberg.org/daudix-UFO/blog-source/issues" # issue tracker for website
-permalink: /blog/:title/
+permalink: /:title/
 primary-color: "#c061cb" # used in iOS theme. further color customization in _sass/variables.scss
 
 # Mastodon-powered commenting.
