@@ -1,5 +1,5 @@
-FROM jekyll/jekyll
+FROM ruby:3.2.2
 
 COPY Gemfile* ./
 
-RUN chmod -R a+w . && bundle install
+RUN gem install bundler && bundle install

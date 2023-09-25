@@ -7,7 +7,6 @@ group :jekyll_plugins do
   gem 'jekyll-optional-front-matter'
   gem 'jekyll-readme-index'
   gem 'jekyll-relative-links'
-  gem 'jekyll-sass-converter', '~> 2.2'
   gem 'jekyll-sitemap'
   gem 'jekyll-titles-from-headings'
   gem 'jekyll-toc'
