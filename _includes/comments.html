@@ -1,5 +1,5 @@
 <!--
-Taken from https://github.com/cassidyjames/cassidyjames.github.io/blob/99782788a7e3ba3cc52d6803010873abd1b02b9e/_includes/comments.html
+Based on https://github.com/cassidyjames/cassidyjames.github.io/blob/99782788a7e3ba3cc52d6803010873abd1b02b9e/_includes/comments.html
 which were inspired by https://codeberg.org/jwildeboer/jwildeboersource/src/commit/45f9750bb53b9f0f6f28399ce4d21785a3bb7d22/_includes/fediverse_comments.html
 -->
 
@@ -54,8 +54,9 @@ which were inspired by https://codeberg.org/jwildeboer/jwildeboersource/src/comm
   <p>Comment on this blog post by publicly replying to <a href="https://{{ host }}/@{{ username }}/{{ id }}">this Mastodon post</a> using a Mastodon or other ActivityPub/Fediverse account. Known non-private replies are displayed below.</p>
 
   <div id="comments-wrapper">
-    <p><small>No known comments, yet. Reply to <a href="https://{{ host }}/@{{ username }}/{{ id }}">this Mastodon post</a> to add your own!</small></p>
+    <p><small>Press the button below to load comments if they exist, if not, be the first!</small></p>
     <noscript><p>Loading comments relies on JavaScript. Try enabling JavaScript and reloading, or visit <a href="https://{{ host }}/@{{ username }}/{{ id }}">the original post</a> on Mastodon.</p></noscript>
+    <a onclick="loadComments()" class="inline-button">Load comments…</a>
   </div>
 
   <script>
@@ -409,19 +410,5 @@ which were inspired by https://codeberg.org/jwildeboer/jwildeboersource/src/comm
         .replace(/"/g, "&quot;")
       ;
     }
-  </script>
-  <script>
-    const commentsSection = document.getElementById("comments");
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          loadComments();
-          observer.disconnect();
-        }
-      });
-    });
-
-    observer.observe(commentsSection);
   </script>
 </section>
