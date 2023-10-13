@@ -1,0 +1,49 @@
+title = "Daudix UFO"
+base_url = "https://daudix.exozy.me"
+description = "Passionate designer, translator, and FOSS contributor"
+theme = "duckquill"
+
+compile_sass = true
+minify_html = true
+generate_feed = true
+feed_filename = "atom.xml"
+build_search_index = false
+
+taxonomies = [
+  {name = "tags", feed = true},
+]
+
+[markdown]
+highlight_code = true
+highlight_theme = "css"
+highlight_themes_css = [
+  { theme = "solarized-dark", filename = "syntax-theme-dark.css" },
+  { theme = "solarized-light", filename = "syntax-theme-light.css" },
+]
+smart_punctuation = true
+
+[extra]
+accent_color = "#c061cb"
+blog_title = "Daudix's Blog"
+blog_description = "Howdy! welcome to my little blog, I write about software, FOSS and what not. Take your cup of ☕ and look around!"
+date_format = "%d %B %Y"
+hosting = "Forgejo"
+issues_url = "https://git.exozy.me/daudix/website/issues"
+source_url = "https://git.exozy.me/daudix/website"
+nav_links = [
+  {url = "/about", name = "About"},
+  {url = "/design", name = "Design"},
+  {url = "/blog", name = "Blog"},
+]
+
+[extra.footer]
+johnvert_ref = "daudix.exozy.me"
+show_copyright = true
+show_johnvert = true
+show_powered_by = true
+show_source = false
+
+[extra.comments]
+host = "mstdn.social"
+user = "Daudix"
+token = "jTNX9pAV8XEPBby0cPWF6CmGY60kkIy4vidggfxXmoQ"
