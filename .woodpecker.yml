@@ -1,0 +1,19 @@
+clone:
+  git:
+    image: bash
+    commands:
+      - cd /home/daudix
+      - if [ -d .exoci/website ]; then
+      -   cd .exoci/website
+      -   git pull
+      -   git submodule update
+      - else
+      -   git clone --recursive https://git.exozy.me/daudix/website.git .exoci/website
+      - fi
+
+pipeline:
+  build:
+    image: bash
+    commands:
+      - cd /home/daudix/.exoci/website
+      - ~/.nix-profile/bin/zola build --output-dir /srv/http/pages/daudix --force
