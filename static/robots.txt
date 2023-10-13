@@ -1,0 +1,68 @@
+# Based on https://seirdy.one/robots.txt
+
+# The next three are borrowed from https://www.videolan.org/robots.txt
+
+# "This robot collects content from the Internet for the sole purpose of
+# helping educational institutions prevent plagiarism. [...] we compare
+# student papers against the content we find on the Internet to see if we
+# can find similarities." (http://www.turnitin.com/robot/crawlerinfo.html)
+#  --> fuck off.
+User-Agent: TurnitinBot
+Disallow: /
+
+# "NameProtect engages in crawling activity in search of a wide range of
+# brand and other intellectual property violations that may be of interest
+# to our clients." (http://www.nameprotect.com/botinfo.html)
+#  --> fuck off.
+User-Agent: NPBot
+Disallow: /
+
+# "iThenticateÂ® is a new service we have developed to combat the piracy
+# of intellectual property and ensure the originality of written work for
+# publishers, non-profit agencies, corporations, and newspapers."
+# (http://www.slysearch.com/)
+#  --> fuck off.
+User-Agent: SlySearch
+Disallow: /
+
+# BLEXBot assists internet marketers to get information on the link structure
+# of sites and their interlinking on the web, to avoid any technical and
+# possible legal issues and improve overall online experience.
+# (http://webmeup-crawler.com/)
+# --> fuck off.
+User-Agent: BLEXBot
+Disallow: /
+
+# Providing Intellectual Property professionals with superior brand protection
+# services by artfully merging the latest technology with expert analysis.
+# (https://www.checkmarknetwork.com/spider.html/)
+# "The Internet is just way to big to effectively police alone." (ACTUAL quote)
+# --> fuck off.
+User-agent: CheckMarkNetwork/1.0 (+https://www.checkmarknetwork.com/spider.html)
+Disallow: /
+
+# Stop trademark violations and affiliate non-compliance in paid search.
+# Automatically monitor your partner and affiliates’ online marketing to
+# protect yourself from harmful brand violations and regulatory risks.
+# We regularly crawl websites on behalf of our clients to ensure content
+# compliance with brand and regulatory guidelines.
+# (https://www.brandverity.com/why-is-brandverity-visiting-me)
+# --> fuck off.
+User-agent: BrandVerity/1.0
+Disallow: /
+
+# Eat shit, OpenAI and others.
+User-agent: ChatGPT-User
+Disallow: /
+User-agent: GPTBot
+Disallow: /
+User-agent: CCBot
+Disallow: /
+User-agent: Google-Extended
+Disallow: /
+User-agent: Omgilibot
+Disallow: /
+User-agent: Omgili
+Disallow: /
+User-agent: FacebookBot
+Disallow: /
