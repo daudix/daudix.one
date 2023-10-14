@@ -6,7 +6,8 @@ clone:
       - if [ -d .exoci/website ]; then
       -   cd .exoci/website
       -   git pull
-      -   git submodule update
+      -   cd themes/duckquill
+      -   git pull
       - else
       -   git clone --recursive https://git.exozy.me/daudix/website.git .exoci/website
       - fi

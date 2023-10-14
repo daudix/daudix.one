@@ -4,7 +4,7 @@ aliases = ["info"]
 
 <h1 class="gradient-h1">David Lapshin</h1>
 <br />
-<small>Passionate designer, translator, and FOSS contributor</small>
+<small>Passionate designer, translator, and FOSS contributor.</small>
 
 ## About
 
