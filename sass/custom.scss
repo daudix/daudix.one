@@ -54,14 +54,14 @@ $glow:
   justify-items: center;
   grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
 
-  img,
   img:hover,
-  video {
+  img {
     all: unset;
     display: block;
     max-width: 100%;
   }
 
+  img:hover,
   img {
     display: block;
     filter: drop-shadow(0 4px 3px rgba(0, 0, 0, 0.07))
@@ -69,15 +69,16 @@ $glow:
   }
 
   a {
-    padding: var(--border-radius);
+    padding: 0.75rem;
     border-radius: var(--border-radius);
     background-color: transparent;
     transition: all 0.35s cubic-bezier(0.17, 0.89, 0.32, 1.28);
   }
 
   a:hover {
-    background-color: var(--fg05);
-    box-shadow: 0 0 0 8px var(--fg05);
+    background-color: var(--fg-05);
+    box-shadow: 0 0 0 8px var(--fg-05);
+    text-decoration: none;
   }
 }
 
