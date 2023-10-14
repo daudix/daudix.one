@@ -24,8 +24,9 @@ smart_punctuation = true
 
 [extra]
 accent_color = "#c061cb"
-blog_title = "Daudix's Blog"
+animated_favicon = true
 blog_description = "Howdy! welcome to my little blog, I write about software, FOSS and what not. Take your cup of ☕ and look around!"
+blog_title = "Daudix's Blog"
 date_format = "%d %B %Y"
 hosting = "Forgejo"
 issues_url = "https://git.exozy.me/daudix/website/issues"
