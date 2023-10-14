@@ -17,27 +17,17 @@ $glow:
   0 4px 24px 4px color.scale($accent-color, $alpha: -90%);
   
 :root {
-  // GENERAL SETUP
   --accent-color: #{$accent-color};
   --background: var(--bg);
-
-  // CUSTOM COLOR PALETTE
   --bg: #{$bg-l};
   --crt-bg: #{$crt-bg};
   --accent-color-20: #{$accent-color-20};
-
-  // CUSTOM VARIABLES
   --glow: #{$glow};
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    color-scheme: dark;
-
-    // GENERAL SETUP
     --background: var(--bg);
-
-    // CUSTOM COLOR PALETTE
     --bg: #{$bg-d};
   }
 }
