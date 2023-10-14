@@ -17,18 +17,16 @@ $glow:
   0 4px 24px 4px color.scale($accent-color, $alpha: -90%);
   
 :root {
-  --accent-color: #{$accent-color};
-  --background: var(--bg);
-  --bg: #{$bg-l};
-  --crt-bg: #{$crt-bg};
   --accent-color-20: #{$accent-color-20};
+  --accent-color: #{$accent-color};
+  --background: #{$bg-l};
+  --crt-bg: #{$crt-bg};
   --glow: #{$glow};
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: var(--bg);
-    --bg: #{$bg-d};
+    --background: #{$bg-d};
   }
 }
 
