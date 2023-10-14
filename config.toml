@@ -1,6 +1,6 @@
 title = "Daudix UFO"
 base_url = "https://daudix.exozy.me"
-description = "Passionate designer, translator, and FOSS contributor"
+description = "Passionate designer, translator, and FOSS contributor."
 theme = "duckquill"
 
 compile_sass = true
