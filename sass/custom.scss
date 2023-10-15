@@ -1,32 +1,31 @@
 @use "sass:color";
 
-$accent-color: #c061cb;
-$accent-color-20: color.scale($accent-color, $alpha: -80%);
+$primary-color: #c061cb;
+$primary-color-alpha: color.scale($primary-color, $alpha: -80%);
+
+$bg-color-l: color.mix($primary-color, rgb(250, 250, 250), 10%);
+$bg-color-d: color.mix($primary-color, rgb(11, 11, 11), 5%);
 
 $crt-bg: radial-gradient(
-  color.scale($accent-color, $lightness: -80%),
-  color.scale($accent-color, $lightness: -90%)
+  color.scale($primary-color, $lightness: -80%),
+  color.scale($primary-color, $lightness: -90%)
 );
 
-$bg-l: color.mix($accent-color, rgb(250, 250, 250), 10%);
-$bg-d: color.mix($accent-color, rgb(11, 11, 11), 5%);
+$glow: 0 0 0 1px color.scale($primary-color, $alpha: -95%),
+  0 2px 6px 2px color.scale($primary-color, $alpha: -95%),
+  0 4px 24px 4px color.scale($primary-color, $alpha: -90%);
 
-$glow:
-  0 0 0 1px color.scale($accent-color, $alpha: -95%),
-  0 2px 6px 2px color.scale($accent-color, $alpha: -95%),
-  0 4px 24px 4px color.scale($accent-color, $alpha: -90%);
-  
 :root {
-  --accent-color-20: #{$accent-color-20};
-  --accent-color: #{$accent-color};
-  --background: #{$bg-l};
+  --bg-color: #{$bg-color-l};
   --crt-bg: #{$crt-bg};
+  --primary-color-alpha: #{$primary-color-alpha};
+  --primary-color: #{$primary-color};
   --glow: #{$glow};
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #{$bg-d};
+    --bg-color: #{$bg-color-d};
   }
 }
 
@@ -70,14 +69,14 @@ $glow:
 
   a {
     padding: 0.75rem;
-    border-radius: var(--border-radius);
+    border-radius: var(--rounded-corner);
     background-color: transparent;
     transition: all 0.35s cubic-bezier(0.17, 0.89, 0.32, 1.28);
   }
 
   a:hover {
-    background-color: var(--fg-05);
-    box-shadow: 0 0 0 8px var(--fg-05);
+    background-color: var(--fg05);
+    box-shadow: 0 0 0 8px var(--fg05);
     text-decoration: none;
   }
 }
@@ -94,31 +93,17 @@ section#wallpapers {
   background-color: rgba(255, 163, 72, 0.2);
 
   img {
-    border-radius: var(--border-radius);
+    border-radius: var(--rounded-corner);
   }
 }
 
 details.blur ul li {
-  color: var(--accent-color);
+  color: var(--primary-color);
   filter: blur(6px);
   transition: var(--transition-longer);
 
   &:hover {
     color: unset;
     filter: blur(0);
-  }
-}
-
-.johnvertisement {
-  margin: 0 auto;
-  display: block;
-  width: min(728px, 100vw);
-  height: min(90px, 12.367vw);
-  border: none;
-}
-
-.site-footer {
-  details {
-    all: unset;
   }
 }
