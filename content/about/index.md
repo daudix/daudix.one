@@ -1,5 +1,4 @@
 +++
-aliases = ["info"]
 +++
 
 <h1 class="gradient-h1">David Lapshin</h1>
