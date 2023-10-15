@@ -24,7 +24,7 @@ The Index is not only home page, it's also a showcase, info and screensaver page
 One important change have happened to the Index, now all its pages use the same base, `style.css`, and only page-specific tweaks are specified in page <abbr title="Cascading Style Sheets">CSS</abbr>, e.g showcase page style has `@import url("style.css");` in the beginning instead of exact copy of `index.css`, not only this makes the file size smaller, but also makes the tweaking process a breeze, since stuff can be changed in one place and be applied to every page.
 
 {{ image(url="pasted-image-20230813115925.png", url_min="pasted-image-20230813115925-min.png", hover=true) }}
-<figcaption>VSCodium screenshot showing off import if base style and some «body» styles</figcaption>
+<figcaption>VSCodium screenshot showing off import of base style and some «body» styles</figcaption>
 
 ### Home
 
