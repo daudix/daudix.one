@@ -31,7 +31,10 @@ date_format = "%d %B %Y"
 hosting = "Forgejo"
 issues_url = "https://git.exozy.me/daudix/website/issues"
 source_url = "https://git.exozy.me/daudix/website"
-nav_links = [
+
+[extra.nav]
+show_feed = true
+links = [
   {url = "/about", name = "About"},
   {url = "/design", name = "Design"},
   {url = "/blog", name = "Blog"},
