@@ -1,4 +1,6 @@
 +++
+title = "About"
+description = "About me, what I do, and more."
 +++
 
 <h1 class="gradient-h1">David Lapshin</h1>

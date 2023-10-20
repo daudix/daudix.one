@@ -1,5 +1,6 @@
 +++
 title = "Gemini: Exploring the Cozy World of Capsules and Space"
+description = "Understanding what Gemini is, what are Capsules and Gemlogs, and modern-day use of retro image techniques and text-based art."
 date = 2023-06-12
 [taxonomies]
 tags = ["Gemini", "Dithering", "ASCII"]
