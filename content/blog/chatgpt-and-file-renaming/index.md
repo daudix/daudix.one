@@ -1,5 +1,6 @@
 +++
 title = "ChatGPT And File Renaming"
+description = "How I wrote, no, generated the slugification script using ChatGPT."
 date = 2023-07-24
 [taxonomies]
 tags = ["AI", "ChatGPT", "Bash"]

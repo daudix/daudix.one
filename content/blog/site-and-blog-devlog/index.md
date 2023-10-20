@@ -1,5 +1,6 @@
 +++
 title = "Site and Blog Devlog"
+description = "Some behind-the-scenes of the blog update."
 date = 2023-08-13
 [taxonomies]
 tags = ["Devlog"]
