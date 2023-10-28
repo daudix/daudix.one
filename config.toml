@@ -34,9 +34,9 @@ stylesheets = ["custom.css"]
 [extra.nav]
 show_feed = true
 links = [
-  {url = "/about", name = "About"},
-  {url = "/design", name = "Design"},
-  {url = "/blog", name = "Blog"},
+  {url = "/about", name = "About", icon = "info-circle-fill"},
+  {url = "/design", name = "Design", icon = "brush-fill"},
+  {url = "/blog", name = "Blog", icon = "journal-bookmark-fill"},
 ]
 
 [extra.footer]
