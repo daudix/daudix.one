@@ -4,7 +4,7 @@ description = "Passionate designer, translator, and FOSS contributor."
 theme = "duckquill"
 
 compile_sass = true
-minify_html = false
+minify_html = true
 generate_feed = true
 feed_filename = "atom.xml"
 build_search_index = false
@@ -33,6 +33,7 @@ stylesheets = ["custom.css"]
 
 [extra.nav]
 show_feed = true
+icons = true
 links = [
   {url = "/about", name = "About", icon = "info-circle-fill"},
   {url = "/design", name = "Design", icon = "brush-fill"},
