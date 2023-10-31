@@ -80,15 +80,15 @@ $glow: 0 0 0 1px color.scale($primary-color, $alpha: -95%),
 }
 
 section#original-icons {
-  background-color: rgba(98, 160, 234, 0.2);
+  background-color: rgba(98, 160, 234, 0.5);
 }
 
 section#redrawn-icons {
-  background-color: rgba(87, 227, 137, 0.2);
+  background-color: rgba(87, 227, 137, 0.5);
 }
 
 section#wallpapers {
-  background-color: rgba(255, 163, 72, 0.2);
+  background-color: rgba(255, 163, 72, 0.5);
 
   img {
     border-radius: var(--rounded-corner);
