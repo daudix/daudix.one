@@ -1,19 +1,19 @@
 clone:
   git:
-    image: bash
+    image: fish
     commands:
-      - cd /home/daudix
-      - if [ -d .exoci/website ]; then
-      -   cd .exoci/website
+      - cd ~/.exoci
+      - if test -d website
+      -   cd website
       -   git pull
-      -   git submodule update --remote --merge
       - else
-      -   git clone --recursive https://git.exozy.me/daudix/website.git .exoci/website
-      - fi
+      -   git clone https://git.exozy.me/daudix/website.git
+      - end
 
 pipeline:
   build:
-    image: bash
+    image: fish
     commands:
-      - cd /home/daudix/.exoci/website
-      - ~/.nix-profile/bin/zola build --output-dir /srv/http/pages/daudix --force
+      - cd ~/.exoci/website
+      - zola build --output-dir /srv/http/pages/daudix --force
+      - echo Y29uZ3JhdHMsIHlvdSBmb3VuZCBpdCEK | base64 -d > /srv/http/pages/daudix/ananas-duck
