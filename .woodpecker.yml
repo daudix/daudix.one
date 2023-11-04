@@ -6,8 +6,9 @@ clone:
       - if test -d website
       -   cd website
       -   git pull
+      -   git submodule update --remote --merge
       - else
-      -   git clone https://git.exozy.me/daudix/website.git
+      -   git clone --recursive https://git.exozy.me/daudix/website.git
       - end
 
 pipeline:
