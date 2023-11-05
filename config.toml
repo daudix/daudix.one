@@ -23,17 +23,32 @@ highlight_themes_css = [
 smart_punctuation = true
 
 [extra]
+# Sets browser theme color,
+# see https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta/name/theme-color
 primary_color = "#c061cb"
+# If the favicon is GIF or not
 animated_favicon = true
+# Tera date format (not used in comments!),
+# see https://docs.rs/chrono/0.4.31/chrono/format/strftime/index.html
+# for all available variables.
 date_format = "%d %B %Y"
-hosting = "Forgejo"
+# URL to issue tracker
 issues_url = "https://git.exozy.me/daudix/website/issues"
+# URL to website's source code
 source_url = "https://git.exozy.me/daudix/website"
-stylesheets = ["custom.css"]
+# Additional stylesheets; expects it to be in the ./static/ directory.
+# If you are using Sass it will be compiled there anyway.
+stylesheets = [
+  "custom.css"
+]
 
 [extra.nav]
+# Display RSS/Atom feed button in the nav
 show_feed = true
+# Show icons next to links in the nav
 icons = true
+# Links used in the nav; any icon from https://icons.getbootstrap.com
+# can be used as the icon. The bi- prefix should not be added.
 links = [
   {url = "/about", name = "About", icon = "info-circle-fill"},
   {url = "/design", name = "Design", icon = "brush-fill"},
@@ -41,13 +56,34 @@ links = [
 ]
 
 [extra.footer]
+# URL to the website without the https:// part, used for Johnvertisement leaderboard
 johnvert_ref = "daudix.exozy.me"
+# "© Title, YEAR" in the footer
 show_copyright = true
+# Johnvertisement in the footer
 show_johnvert = true
+# "Powered by Zola and Duckquill" in footer
 show_powered_by = true
+# Link to website source
 show_source = false
 
+# Based on https://github.com/cassidyjames/cassidyjames.github.io/blob/75cd2a202de7a1026de1ea00a4ef1d5b2675c7ff/_config.yaml#L35-L74
+#
+# Mastodon-powered commenting.
+# Values can be overridden in front-matter, e.g.
+# for multi-author blogs or guest posts.
+#
+# These variables are also used for Mastodon verification,
+# the needed rel="me" link is set in the head based on these.
 [extra.comments]
+# Your Mastodon API host; this should be where you have an account
 host = "mstdn.social"
+# Used to determine who the original/verified poster is;
+# role may be expanded in the future (e.g. for moderation).
 user = "Daudix"
+# Optional; required to fetch more than 60 replies to any given blog post.
+# Application access token with read:statuses scope; NOTE: IF INCLUDED, ANYONE
+# WILL BE ABLE TO READ THE ASSOCIATED ACCOUNT'S PRIVATE STATUSES. It is highly
+# recommended to use a dedicated bot/API account to create an application with
+# scope read:statuses.
 token = "jTNX9pAV8XEPBby0cPWF6CmGY60kkIy4vidggfxXmoQ"
