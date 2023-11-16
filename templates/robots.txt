@@ -1,0 +1,31 @@
+User-agent: *
+Disallow:
+Allow: /
+Sitemap: {{ get_url(path="sitemap.xml") }}
+
+User-Agent: TurnitinBot
+Disallow: /
+User-Agent: NPBot
+Disallow: /
+User-Agent: SlySearch
+Disallow: /
+User-Agent: BLEXBot
+Disallow: /
+User-agent: CheckMarkNetwork/1.0 (+https://www.checkmarknetwork.com/spider.html)
+Disallow: /
+User-agent: BrandVerity/1.0
+Disallow: /
+User-agent: ChatGPT-User
+Disallow: /
+User-agent: GPTBot
+Disallow: /
+User-agent: CCBot
+Disallow: /
+User-agent: Google-Extended
+Disallow: /
+User-agent: Omgilibot
+Disallow: /
+User-agent: Omgili
+Disallow: /
+User-agent: FacebookBot
+Disallow: /
