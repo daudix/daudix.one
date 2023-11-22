@@ -15,7 +15,13 @@ It's been around 3 months since the last post, all this time I was procrastinati
 
 ## The Rewrite
 
-The main change is that I moved away from Jekyll to Zola, there were a few reasons for this, like speed, ruby-dependency hell and the need of third-party plugins.
+The first rewrite attempt happend pretty much immediately after publishing the [previous devlog](@/blog/site-and-blog-devlog/index.md), I thought using Hugo was a good idea, but I was horribly wrong. I lost my sanity on the day 3, while having no progress made. I asked some people about using Hugo and their reaction were something like "Oh God, use anything but Hugo, you will regret using it", and it was true.
+
+I then tried Zola which at first seemed like a worse Jekyll, but actually it were Jekyll 2.0.
+
+B-but why move from Jekyll in the first place?
+
+Well... there were a few reasons for this, like speed, ruby-dependency hell, broken internal linking and the need of third-party plugins for basic functionality, but the last straw was...
 
 ### Jekyll Issues
 
@@ -50,7 +56,7 @@ Almost every single style and template were redone, resulting in a much nicer lo
 - CRT style is now used for ASCII, replacing the old "gradient from opaque to transparent"
 - Header 1 style is now different from other headers; it's big, **bold**, and has purple dot at the end
 - Code blocks now use Solarized syntax highlighting theme instead of GitHub one, it changes from light to dark variant depending on current color scheme
-- JetBrains Mono font is now used for code blocks instead of system one
+- Source Code Pro font is now used for code blocks instead of system one
 - New, animated 404 image
 - Tags are now displayed alongside the date, both in the post list and in the post itself
 - Posts now can be filtered by a tag, so e.g you can only filter posts containing the `Devlog` tag
@@ -63,3 +69,9 @@ About Duckquill, it transformed from a Jekyll template to a proper Zola theme, w
 Duckquill powers this website and can be used by anyone, although I use some additional styles specific to this website.
 
 Duckquill is listed on [Zola themes page](https://www.getzola.org/themes/duckquill/), of which I'm quite proud of ^^
+
+## Conclusion
+
+It's been an interesting journey for sure; trying using Hugo, losing sanity, regretting life choices, learning new SSG, burning out, coming back, learning Sass, HTML and Tera (a bit like Liquid), Procrastinating, coming back, rewriting half of the styles, and finally submitting the theme to Zola themes website (not exactly in this order). All this, in my opinion, were worth it.
+
+My plan now is to write a few shorter posts and not focus on the website much anymore, since it's a wormhole I can't leave.

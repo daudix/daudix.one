@@ -3,13 +3,16 @@
 $primary-color: #c061cb;
 $primary-color-alpha: color.scale($primary-color, $alpha: -80%);
 
-$bg-color-l: color.mix($primary-color, rgb(250, 250, 250), 10%);
-$bg-color-d: color.mix($primary-color, rgb(11, 11, 11), 5%);
+$bg-color-l: color.scale($primary-color, $lightness: 80%);
+$bg-color-d: color.scale($primary-color, $lightness: -90%, $saturation: -50%);
 
 $crt-bg: radial-gradient(
   color.scale($primary-color, $lightness: -80%),
   color.scale($primary-color, $lightness: -90%)
 );
+
+$nav-bg-l: color.scale($bg-color-l, $alpha: -20%, $lightness: 50%);
+$nav-bg-d: color.scale($bg-color-d, $alpha: -20%, $lightness: 5%, $saturation: -50%);
 
 $glow: 0 0 0 1px color.scale($primary-color, $alpha: -95%),
   0 2px 6px 2px color.scale($primary-color, $alpha: -95%),
@@ -18,6 +21,7 @@ $glow: 0 0 0 1px color.scale($primary-color, $alpha: -95%),
 :root {
   --bg-color: #{$bg-color-l};
   --crt-bg: #{$crt-bg};
+  --nav-bg: #{$nav-bg-l};
   --primary-color-alpha: #{$primary-color-alpha};
   --primary-color: #{$primary-color};
   --glow: #{$glow};
@@ -26,6 +30,7 @@ $glow: 0 0 0 1px color.scale($primary-color, $alpha: -95%),
 @media (prefers-color-scheme: dark) {
   :root {
     --bg-color: #{$bg-color-d};
+    --nav-bg: #{$nav-bg-d};
   }
 }
 
@@ -66,10 +71,11 @@ $glow: 0 0 0 1px color.scale($primary-color, $alpha: -95%),
   }
 
   a {
-    padding: 0.75rem;
-    border-radius: var(--rounded-corner);
     background-color: transparent;
-    transition: all 0.35s cubic-bezier(0.17, 0.89, 0.32, 1.28);
+    border-radius: var(--rounded-corner);
+    padding: 0.75rem;
+    text-decoration: none;
+    transition: var(--transition-bezier);
   }
 
   a:hover {
@@ -81,14 +87,20 @@ $glow: 0 0 0 1px color.scale($primary-color, $alpha: -95%),
 
 section#original-icons {
   background-color: rgba(98, 160, 234, 0.5);
+  background-image: radial-gradient(circle, var(--fg05) 1px, rgba(0,0,0,0) 1px);
+  background-size: 1rem 1rem;
 }
 
 section#redrawn-icons {
   background-color: rgba(87, 227, 137, 0.5);
+  background-image: radial-gradient(circle, var(--fg05) 1px, rgba(0,0,0,0) 1px);
+  background-size: 1rem 1rem;
 }
 
 section#wallpapers {
   background-color: rgba(255, 163, 72, 0.5);
+  background-image: radial-gradient(circle, var(--fg05) 1px, rgba(0,0,0,0) 1px);
+  background-size: 1rem 1rem;
 
   img {
     border-radius: var(--rounded-corner);
