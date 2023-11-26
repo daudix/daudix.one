@@ -30,11 +30,11 @@ doesn't have a translation I do it, sometimes I help with UI design.
 
 Currently member of [Nickvision](https://nickvision.org) and [Gradience](https://gradienceteam.github.io) teams as a designer and maintainer respectively.
 
-I have a project that I'm pretty happy with - [Pixfect](https://codeberg.org/daudix-UFO/Pixfect), it's a CLI tool for image dithering, to give images that pixel art look, this project inspired [tfuxu](https://github.com/tfuxu) on creation of [Halftone](https://github.com/tfuxu/Halftone), a beautiful little app.
+I have a project that I'm pretty happy with - [Pixfect](https://codeberg.org/daudix/Pixfect), it's a CLI tool for image dithering, to give images that pixel art look, this project inspired [tfuxu](https://github.com/tfuxu) on creation of [Halftone](https://github.com/tfuxu/Halftone), a beautiful little app.
 
-I have a [showcase](works) of my latest good-looking icons, take a look ;)
+Have a look at my [designs](design), mostly icons but also some wallpapers :)
 
-Oh and, there are also calming [screensaver](screensaver) laying around, made of scarpped background for this page.
+Oh and, checkout this cute little animation at [404](/ananas-duck)
 
 ## Links
 
@@ -42,10 +42,10 @@ Compressed list of places where you can find me on:
 
 ### Git Forges
 
-- [Codeberg](https://codeberg.org/daudix-UFO)
-- [GitHub](https://github.com/daudix-UFO)
-- [GitLab](https://gitlab.com/daudix-UFO)
-- [GitLab (GNOME)](https://gitlab.gnome.org/daudix-UFO)
+- [Codeberg](https://codeberg.org/daudix)
+- [GitHub](https://github.com/daudix)
+- [GitLab](https://gitlab.com/daudix)
+- [GitLab (GNOME)](https://gitlab.gnome.org/daudix)
 
 ### Contacts
 
@@ -56,16 +56,16 @@ Compressed list of places where you can find me on:
 
 ### Socials
 
-- [Mastodon](https://mstdn.social/@Daudix)
+- [Mastodon](https://social.treehouse.systems/@daudix)
 - [Pixelfed](https://pixey.org/Daudix)
 - [Lemmy](https://toast.ooo/u/Daudix)
-- [YouTube](https://www.youtube.com/@Daudix_UFO)
+- [YouTube](https://www.youtube.com/@daudix_ufo)
 
 ## Extra
 
 Well, I guess you are pretty interested and have plenty of free time as you have read this long, so here are unsorted list of random facts and stuff
 
-<details class="blur"><summary>Expand at your own risc(-v)!</summary>
+<details class="blurred"><summary>Expand at your own risc(-v)!</summary>
     
 - This site are made using only pure CSS and HTML, JavaScript only used when it's impossible to do something without it or super complex.
 
@@ -85,7 +85,7 @@ Well, I guess you are pretty interested and have plenty of free time as you have
 
 - I f\***ing hate the overuse of emojis, especially if it's Apple ones.
 
-- I f\***ing hate TikTok, made up s\**t, influencers and all this kind of stuff.
+- I f\***ing hate TikTok, made up s\**t, dangerous and annoying pranks, and all this kind of stuff.
 
 - I'm disappointed in people, especially by most people of my age.
 

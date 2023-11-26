@@ -1,19 +1,5 @@
-clone:
-  git:
-    image: fish
-    commands:
-      - cd ~/.exoci
-      - if test -d website
-      -   cd website
-      -   git pull
-      -   git submodule update --remote --merge
-      - else
-      -   git clone --recursive https://git.exozy.me/daudix/website.git
-      - end
-
-pipeline:
+steps:
   build:
     image: fish
     commands:
-      - cd ~/.exoci/website
       - zola build --output-dir /srv/http/pages/daudix --force

@@ -63,15 +63,7 @@ $glow: 0 0 0 1px color.scale($primary-color, $alpha: -95%),
     max-width: 100%;
   }
 
-  img:hover,
-  img {
-    display: block;
-    filter: drop-shadow(0 4px 3px rgba(0, 0, 0, 0.07))
-      drop-shadow(0 2px 2px rgba(0, 0, 0, 0.06));
-  }
-
   a {
-    background-color: transparent;
     border-radius: var(--rounded-corner);
     padding: 0.75rem;
     text-decoration: none;
@@ -87,19 +79,19 @@ $glow: 0 0 0 1px color.scale($primary-color, $alpha: -95%),
 
 section#original-icons {
   background-color: rgba(98, 160, 234, 0.5);
-  background-image: radial-gradient(circle, var(--fg05) 1px, rgba(0,0,0,0) 1px);
+  background-image: radial-gradient(circle, var(--fg05) 1px, transparent 1px);
   background-size: 1rem 1rem;
 }
 
 section#redrawn-icons {
   background-color: rgba(87, 227, 137, 0.5);
-  background-image: radial-gradient(circle, var(--fg05) 1px, rgba(0,0,0,0) 1px);
+  background-image: radial-gradient(circle, var(--fg05) 1px, transparent 1px);
   background-size: 1rem 1rem;
 }
 
 section#wallpapers {
   background-color: rgba(255, 163, 72, 0.5);
-  background-image: radial-gradient(circle, var(--fg05) 1px, rgba(0,0,0,0) 1px);
+  background-image: radial-gradient(circle, var(--fg05) 1px, transparent 1px);
   background-size: 1rem 1rem;
 
   img {
@@ -107,13 +99,22 @@ section#wallpapers {
   }
 }
 
-details.blur ul li {
+details.blurred ul li {
   color: var(--primary-color);
   filter: blur(6px);
   transition: var(--transition-longer);
 
   &:hover {
-    color: unset;
+    color: var(--fg-color);
     filter: blur(0);
   }
+}
+
+.drop-shadow {
+  filter:
+    /* Sharp drop shadow */
+    drop-shadow(0 0.08rem 0.1rem rgba(0, 0, 0, 0.35)
+    )
+    /* Diffuse ambient shadow */
+    drop-shadow(0 0.4rem 0.7rem rgba(0, 0, 0, 0.18));
 }
