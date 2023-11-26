@@ -7,6 +7,8 @@ tags = ["Devlog", "Website"]
 [extra]
 toc = true
 [extra.comments]
+host = "mstdn.social"
+user = "Daudix"
 id = "110882489740462163"
 +++
 

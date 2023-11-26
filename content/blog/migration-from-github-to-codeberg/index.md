@@ -7,6 +7,8 @@ tags = ["Codeberg", "GitHub", "Woodpecker", "Migration"]
 [extra]
 toc = true
 [extra.comments]
+host = "mstdn.social"
+user = "Daudix"
 id = "110720129252541458"
 +++
 

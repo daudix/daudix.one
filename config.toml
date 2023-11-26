@@ -43,16 +43,14 @@ stylesheets = [
 ]
 
 [extra.nav]
-# Display RSS/Atom feed button in the nav
+# Display Atom/RSS feed button in the nav
 show_feed = true
-# Show icons next to links in the nav
-icons = true
 # Links used in the nav; any icon from https://icons.getbootstrap.com
 # can be used as the icon. The bi- prefix should not be added.
 links = [
-  {url = "/about", name = "About", icon = "info-circle-fill"},
-  {url = "/design", name = "Design", icon = "brush-fill"},
-  {url = "/blog", name = "Blog", icon = "journal-bookmark-fill"},
+  {url = "/about", name = "About"},
+  {url = "/design", name = "Design"},
+  {url = "/blog", name = "Blog"},
 ]
 
 [extra.footer]
@@ -77,13 +75,13 @@ show_source = false
 # the needed rel="me" link is set in the head based on these.
 [extra.comments]
 # Your Mastodon API host; this should be where you have an account
-host = "mstdn.social"
+host = "social.treehouse.systems"
 # Used to determine who the original/verified poster is;
 # role may be expanded in the future (e.g. for moderation).
-user = "Daudix"
+user = "daudix"
 # Optional; required to fetch more than 60 replies to any given blog post.
 # Application access token with read:statuses scope; NOTE: IF INCLUDED, ANYONE
 # WILL BE ABLE TO READ THE ASSOCIATED ACCOUNT'S PRIVATE STATUSES. It is highly
 # recommended to use a dedicated bot/API account to create an application with
 # scope read:statuses.
-token = "jTNX9pAV8XEPBby0cPWF6CmGY60kkIy4vidggfxXmoQ"
+token = ""
