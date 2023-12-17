@@ -12,12 +12,6 @@ user = "Daudix"
 id = "110882489740462163"
 +++
 
-<script>
-  function playAudio(url) {
-    new Audio(url).play();
-  }
-</script>
-
 This blog was born two month ago, and since the first revision a lot- no, that's not enough, **hella lot** of stuff has been changed, tweaked and redone from scratch, so here I will list them and my plans for the future of this blog.
 
 ## «The Index»
@@ -152,3 +146,9 @@ We'll see, I plan to publish more posts, at least I have an idea for the next on
 ## Conclusion
 
 Phew, that's a lot, 2 months of work! truly happy how it all comes up, hope you too, this is most long-lived site thingy yet, I have learned a lot about <abbr title="Cascading Style Sheets">CSS</abbr> and <abbr title="HyperText Markup Language">HTML</abbr>, and I really like doing this!
+
+<script>
+  function playAudio(url) {
+    new Audio(url).play();
+  }
+</script>

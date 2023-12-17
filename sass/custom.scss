@@ -12,7 +12,12 @@ $crt-bg: radial-gradient(
 );
 
 $nav-bg-l: color.scale($bg-color-l, $alpha: -20%, $lightness: 50%);
-$nav-bg-d: color.scale($bg-color-d, $alpha: -20%, $lightness: 5%, $saturation: -50%);
+$nav-bg-d: color.scale(
+  $bg-color-d,
+  $alpha: -20%,
+  $lightness: 5%,
+  $saturation: -50%
+);
 
 $glow: 0 0 0 1px color.scale($primary-color, $alpha: -95%),
   0 2px 6px 2px color.scale($primary-color, $alpha: -95%),
@@ -79,19 +84,31 @@ $glow: 0 0 0 1px color.scale($primary-color, $alpha: -95%),
 
 section#original-icons {
   background-color: rgba(98, 160, 234, 0.5);
-  background-image: radial-gradient(circle, var(--fg-muted-1) 1px, transparent 1px);
+  background-image: radial-gradient(
+    circle,
+    var(--fg-muted-1) 1px,
+    transparent 1px
+  );
   background-size: 1rem 1rem;
 }
 
 section#redrawn-icons {
   background-color: rgba(87, 227, 137, 0.5);
-  background-image: radial-gradient(circle, var(--fg-muted-1) 1px, transparent 1px);
+  background-image: radial-gradient(
+    circle,
+    var(--fg-muted-1) 1px,
+    transparent 1px
+  );
   background-size: 1rem 1rem;
 }
 
 section#wallpapers {
   background-color: rgba(255, 163, 72, 0.5);
-  background-image: radial-gradient(circle, var(--fg-muted-1) 1px, transparent 1px);
+  background-image: radial-gradient(
+    circle,
+    var(--fg-muted-1) 1px,
+    transparent 1px
+  );
   background-size: 1rem 1rem;
 
   img {
@@ -112,9 +129,8 @@ details.blurred ul li {
 
 .drop-shadow {
   filter:
-    /* Sharp drop shadow */
-    drop-shadow(0 0.08rem 0.1rem rgba(0, 0, 0, 0.35)
-    )
-    /* Diffuse ambient shadow */
+    // Sharp drop shadow
+    drop-shadow(0 0.08rem 0.1rem rgba(0, 0, 0, 0.35))
+    // Diffuse ambient shadow
     drop-shadow(0 0.4rem 0.7rem rgba(0, 0, 0, 0.18));
 }
