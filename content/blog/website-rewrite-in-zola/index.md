@@ -24,7 +24,7 @@ Well... there were a few reasons for this, like speed, Ruby dependency hell, bro
 
 ### Jekyll Issues
 
-One of the recent issues with Jekyll was that Dart Sass support didn't work due to outdated dependencies in the official Jekyll Docker image. On the other hand, Zola is modern, fast, has all the features I need, uses the Dart Sass compiler, has good support for creating and using themes (more on that later), and uses 🦀, which is the best lang on the planet (/s, sort of).
+One of the recent issues with Jekyll was that Dart Sass support didn't work due to outdated dependencies in the official Jekyll Docker image. On the other hand, Zola is modern, fast, has all the features I need, uses the Dart Sass compiler, has good support for creating and using themes (more on that later), and uses <abbr title="Rust">🦀</abbr>, which is the best lang on the planet (/s, sort of).
 
 ### New Codebase
 
@@ -48,7 +48,7 @@ Now everything is in the `website` repo, using the same stylesheet and templates
 
 ### Look and Feel
 
-Almost every single style and template has been reworked, resulting in a much nicer look and feel, some notable ones are:
+Almost every single style and template has been reworked, resulting in a much nicer look and feel, some that I can remember:
 
 - Brand new navigation bar!
 - Primary color is now used to tint the background (bye boring gray!)
@@ -77,4 +77,4 @@ It's been an interesting journey for sure; trying to use Hugo, losing my mind, r
 
 My plan now is to write a few posts and focus less on the website, since it's a wormhole I can't leave.
 
-Shout out to [Hari Rana](https://tesk.page) for helping to improve the accessibility of the site by pointing out contrast issues, as well as some style change suggestions.
+Shout out to [Hari Rana](https://tesk.page) for helping to improve the accessibility of the site by pointing out contrast issues, as well as some style change suggestions!
