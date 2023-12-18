@@ -1,5 +1,41 @@
+# Exclude page pipeline to be run on "pages" branch
+when:
+  branch:
+    exclude: pages
+
+# Recursive cloning is used to fully clone the themes given as Git submodules
+clone:
+  git:
+    image: woodpeckerci/plugin-git
+    settings:
+      recursive: true
+
 steps:
+  # Build Zola static files
   build:
-    image: fish
+    image: ghcr.io/getzola/zola:v0.17.2
     commands:
-      - zola build --output-dir /srv/http/pages/daudix --force
+      - zola build
+    when:
+      event: [ pull_request, push ]
+
+  publish:
+    image: bitnami/git
+    # Must be set in Woodpecker configuration
+    secrets: [ mail, codeberg_token ]
+    environment:
+      - ZOLA_OUTPUT=public
+    commands:
+      # Git configuration
+      - git config --global user.email $MAIL
+      - git config --global user.name "Woodpecker CI"
+      - git clone -b pages https://$CODEBERG_TOKEN@codeberg.org/$CI_REPO.git $CI_REPO_NAME
+      # Copy build step output to repository folder
+      - cp -ar $ZOLA_OUTPUT/. $CI_REPO_NAME/
+      # Commit and push all static files with pipeline started timestamp
+      - cd $CI_REPO_NAME
+      - git add .
+      - git commit -m "Woodpecker CI ${CI_BUILD_CREATED}"
+      - git push
+    when:
+      event: push
