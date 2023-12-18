@@ -13,11 +13,13 @@ Hello there! My name is David, you can call me by my nickname - Daudix - if you 
 
 I'm from the Siberian part of Russia, but currently live in ▒▓░▒▓░.
 
-I love photography, design, open source and retro and vintage stuff, as well as retro-futurism, my favorite games are «Portal» series, «Untitled Goose» and «The Stanley Parable».
+I love photography, design, open source and retro and vintage stuff as well as retro-futurism, my favorite games are «Portal» series, «Untitled Goose», «The Stanley Parable» and «Stardew Valley».
 
 Design is a bit more than just thing I like, it's my hobby that I learn more about every day.
 
 I also have some minimal understanding of how Blender works, occasionally do some silly stuff in it.
+
+And, as you can see, I try to do some web development!
 
 ## Works
 
