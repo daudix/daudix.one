@@ -13,7 +13,7 @@ clone:
 steps:
   # Build Zola static files
   build:
-    image: ghcr.io/getzola/zola:v0.17.2
+    image: ghcr.io/getzola/zola:v0.18.0
     commands:
       - zola build
     when:
