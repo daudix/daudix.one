@@ -6,21 +6,21 @@ when:
 # Recursive cloning is used to fully clone the themes given as Git submodules
 clone:
   git:
-    images: woodpeckerci/plugin-git
+    image: woodpeckerci/plugin-git
     settings:
       recursive: true
 
 steps:
   # Build Zola static files
   build:
-    images: ghcr.io/getzola/zola:v0.17.2
+    image: ghcr.io/getzola/zola:v0.17.2
     commands:
       - zola build
     when:
-      events: [ pull_request, push ]
+      event: [ pull_request, push ]
 
   publish:
-    images: bitnami/git
+    image: bitnami/git
     # Must be set in Woodpecker configuration
     secrets: [ mail, codeberg_token ]
     environment:
@@ -38,4 +38,4 @@ steps:
       - git commit -m "Woodpecker CI ${CI_BUILD_CREATED}"
       - git push
     when:
-      events: push
+      event: push
