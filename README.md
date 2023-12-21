@@ -3,4 +3,4 @@
 [![Please don't upload to GitHub](https://nogithub.codeberg.page/badge.svg)](https://nogithub.codeberg.page)
 [![status-badge](https://ci.codeberg.org/api/badges/12428/status.svg)](https://ci.codeberg.org/repos/12428)
 
-My personal website powered by [Zola](https://www.getzola.org) and the [Duckquill](https://duckquill.exozy.me) theme.
+My personal website powered by [Zola](https://www.getzola.org) and the [Duckquill](https://daudix.codeberg.page/duckquill) theme.
