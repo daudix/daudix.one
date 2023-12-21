@@ -13,8 +13,9 @@ clone:
 steps:
   # Build static files
   build:
-    image: ghcr.io/getzola/zola:v0.18.0
+    image: alpine
     commands:
+      - apk add zola
       - zola build
     when:
       event: [ pull_request, push ]
