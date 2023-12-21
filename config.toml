@@ -33,9 +33,9 @@ animated_favicon = true
 # for all available variables.
 date_format = "%d %B %Y"
 # URL to issue tracker
-issues_url = "https://git.exozy.me/daudix/website/issues"
+issues_url = "https://codeberg.org/daudix/pages/issues"
 # URL to website's source code
-source_url = "https://git.exozy.me/daudix/website"
+source_url = "https://codeberg.org/daudix/pages"
 # Additional stylesheets; expects it to be in the ./static/ directory.
 # If you are using Sass it will be compiled there anyway.
 stylesheets = [
@@ -55,7 +55,7 @@ links = [
 
 [extra.footer]
 # URL to the website without the https:// part, used for Johnvertisement leaderboard
-johnvert_ref = "daudix.exozy.me"
+johnvert_ref = "daudix.codeberg.page"
 # "© Title, YEAR" in the footer
 show_copyright = true
 # Johnvertisement in the footer
