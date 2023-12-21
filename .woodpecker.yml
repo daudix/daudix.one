@@ -11,7 +11,7 @@ clone:
       recursive: true
 
 steps:
-  # Build Zola static files
+  # Build static files
   build:
     image: ghcr.io/getzola/zola:v0.18.0
     commands:
