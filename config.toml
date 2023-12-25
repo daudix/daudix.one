@@ -48,9 +48,9 @@ show_feed = true
 # Links used in the nav; any icon from https://icons.getbootstrap.com
 # can be used as the icon. The bi- prefix should not be added.
 links = [
-  {url = "/about", name = "About"},
-  {url = "/design", name = "Design"},
-  {url = "/blog", name = "Blog"},
+  {url = "$BASE_URL/about", name = "About"},
+  {url = "$BASE_URL/design", name = "Design"},
+  {url = "$BASE_URL/blog", name = "Blog"},
 ]
 
 [extra.footer]

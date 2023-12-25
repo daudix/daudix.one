@@ -112,7 +112,7 @@ Dither is an intentionally applied form of noise used to randomize quantization 
 For this you can use Halftone - A simple Linux app that allows you to dither your image in seconds, or you can use Terminal tools such as Pixfect (by me :P), ImageMagick and others. You can also use amazing website for image dithering with some really interesting options - Dither Me This
 
 - [Halftone](https://github.com/tfuxu/Halftone)
-- [Pixfect](https://codeberg.org/daudix-UFO/Pixfect)
+- [Pixfect](https://codeberg.org/daudix/Pixfect)
 - [Dither Me This](https://doodad.dev/dither-me-this)
 
 Example of simple ordered image dithering with 2 colors using ImageMagick [^1]
