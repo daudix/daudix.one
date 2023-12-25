@@ -55,7 +55,7 @@ Almost every single style and template has been reworked, resulting in a much ni
 - Brand new navigation bar!
 - Primary color is now used to tint the background (bye boring gray!)
 - CRT style is now used for ASCII, replacing the old "opaque to transparent gradient".
-- Header 1 style is now different from other headers; it's big and **bold**
+- Header styles have been reworked; they're now thin, italic, and use JetBrains Mono with an alternative character variant (`ss02`)
 - Quotations and horizontal rules now have slightly rounded corners
 - Code blocks now use Solarized syntax highlighting theme instead of GitHub's; it changes from light to dark variant depending on current color scheme
 - Source Code Pro font is now used for code blocks instead of system one
