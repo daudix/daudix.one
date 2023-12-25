@@ -54,8 +54,8 @@ To make the migration as smooth as possible for everyone, I have [added redirect
 To do so, I have added this two lines to `<head>` of HTML
 
 ```html
-<meta http-equiv="refresh" content="0; URL=https://daudix-ufo.codeberg.page">
-<link rel="canonical" href="https://daudix-ufo.codeberg.page">
+<meta http-equiv="refresh" content="0; URL=https://daudix.codeberg.page">
+<link rel="canonical" href="https://daudix.codeberg.page">
 ```
 
 ### GitHub pages → Codeberg pages
