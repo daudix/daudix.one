@@ -40,26 +40,26 @@ $glow: 0 0 0 1px color.scale($primary-color, $alpha: -95%),
 }
 
 .gradient-h1 {
-  display: inline-block;
   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   background-clip: text;
   background-image: linear-gradient(
     to bottom right,
     var(--purple2),
     var(--blue2)
   );
-  -webkit-text-fill-color: transparent;
+  display: inline-block;
 }
 
 .media-grid {
   display: grid;
   gap: 2rem;
   grid-auto-flow: row;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  justify-items: center;
   margin: 1rem 0 1rem;
   padding: 0;
   text-align: center;
-  justify-items: center;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
 
   img:hover,
   img {
