@@ -45,12 +45,14 @@ stylesheets = [
 [extra.nav]
 # Display Atom/RSS feed button in the nav
 show_feed = true
+# Whether to use icons in the nav
+icons = true
 # Links used in the nav; any icon from https://icons.getbootstrap.com
 # can be used as the icon. The bi- prefix should not be added.
 links = [
-  {url = "$BASE_URL/about", name = "About"},
-  {url = "$BASE_URL/design", name = "Design"},
-  {url = "$BASE_URL/blog", name = "Blog"},
+  {url = "$BASE_URL/about", name = "About", icon = "info-circle"},
+  {url = "$BASE_URL/design", name = "Design", icon = "brush"},
+  {url = "$BASE_URL/blog", name = "Blog", icon = "journal-bookmark"},
 ]
 
 [extra.footer]

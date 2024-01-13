@@ -3,7 +3,7 @@ title = "About"
 description = "About me, what I do, and more."
 +++
 
-<h1 class="gradient-h1">David Lapshin</h1>
+<h1 class="name-header">David Lapshin</h1>
 <br />
 <small>Passionate designer, translator, and FOSS contributor.</small>
 
