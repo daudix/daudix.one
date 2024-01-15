@@ -3,9 +3,12 @@ title = "About"
 description = "About me, what I do, and more."
 +++
 
-<h1 class="name-header">David Lapshin</h1>
-<br />
-<small>Passionate designer, translator, and FOSS contributor.</small>
+<div class="about-splash">
+  <img class="avatar transparent drop-shadow" src="logo.svg" alt="My logo" />
+  <h1 class="header">David Lapshin</h1>
+  <br />
+  <small>Passionate designer, translator, and FOSS contributor.</small>
+</div>
 
 ## About
 
@@ -35,7 +38,7 @@ Oh and, checkout this cute little animation at [404](/ananas-duck)
 
 ## Links
 
-Shortened list of places where you can find me on:
+Shortened list of places where you can ~~stalk~~ find me on:
 
 ### Git Forges
 
@@ -54,11 +57,12 @@ Shortened list of places where you can find me on:
 ### Socials
 
 - [Mastodon](https://social.treehouse.systems/@daudix)
+- [Akkoma](https://pleroma.envs.net/daudix)
 - [Pixelfed](https://pixey.org/Daudix)
 - [Lemmy](https://toast.ooo/u/Daudix)
 - [YouTube](https://www.youtube.com/@daudix_ufo)
 
-### Where to Buy Me a Coffee
+### Where to Buy Me a Coffee :3
 
 - [Ko-fi](https://ko-fi.com/daudix)
 - [Liberapay](https://liberapay.com/daudix)
