@@ -62,7 +62,9 @@ Shortened list of places where you can ~~stalk~~ find me on:
 - [Lemmy](https://toast.ooo/u/Daudix)
 - [YouTube](https://www.youtube.com/@daudix_ufo)
 
-### Where to Buy Me a Coffee :3
+### Where to Buy Me a Coffee
+
+<small>That would be nice and mean a lot to me :3</small>
 
 - [Ko-fi](https://ko-fi.com/daudix)
 - [Liberapay](https://liberapay.com/daudix)
