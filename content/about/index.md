@@ -32,7 +32,7 @@ Currently member of [Nickvision](https://nickvision.org) and [Gradience](https:/
 
 I have a project that I'm pretty happy with - [Pixfect](https://codeberg.org/daudix/Pixfect), it's a CLI tool for image dithering, to give images that pixel art look, this project inspired [tfuxu](https://github.com/tfuxu) on creation of [Halftone](https://github.com/tfuxu/Halftone), a beautiful little app.
 
-Have a look at my [designs](design), mostly icons but also some wallpapers :)
+Have a look at my [designs](@/design/index.md), mostly icons but also some wallpapers :)
 
 Oh and, checkout this cute little animation at [404](/ananas-duck)
 
