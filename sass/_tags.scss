@@ -1,0 +1,34 @@
+.tags {
+  list-style: none;
+  padding: 0;
+  display: inline-block;
+
+  li {
+    display: inline-block;
+    margin: 0 0.2rem 0.4rem 0;
+    transition: var(--transition);
+
+    &:active {
+      transform: scale(var(--active));
+    }
+  }
+
+  .tag {
+    background-color: var(--fg-muted-1);
+    border-radius: 999px;
+    color: var(--fg-color);
+    padding: 0.25rem 0.75rem;
+    text-decoration: none;
+    transition: var(--transition);
+
+    &:hover {
+      color: var(--primary-color);
+      background-color: var(--primary-color-alpha);
+      text-decoration: none;
+    }
+
+    &::before {
+      content: "#";
+    }
+  }
+}

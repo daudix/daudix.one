@@ -1,0 +1,314 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  scrollbar-color: var(--primary-color) transparent;
+  accent-color: var(--primary-color);
+  overflow-wrap: break-word;
+}
+
+// Smaller font size on mobile
+// @media screen and (max-width: 480px) {
+//   html {
+//     font-size: 14px;
+//   }
+// }
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: InterVariable, sans-serif;
+  line-height: 1.6;
+  color: var(--fg-color);
+  background-color: var(--bg-color);
+  // Put footer at the bottom for short pages, such as the 404
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto minmax(auto, 1fr) auto; // Header, stuff, footer
+}
+
+// Style text selection to use primary color
+::selection {
+  color: var(--bg-color);
+  background-color: var(--primary-color);
+}
+
+// Make focused anchor not get covered by nav,
+// and flash it with primary color when jumping to it
+:target {
+  scroll-margin-top: 15vh;
+  animation: highlight-in-out var(--transition-long);
+  animation-delay: 1s;
+
+  @keyframes highlight-in-out {
+    50% {
+      color: var(--primary-color);
+      font-weight: 800;
+    }
+  }
+}
+
+// LAYOUT
+.container {
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--content-width);
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    width: 90vw;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: JetBrainsMono, monospace;
+  font-feature-settings: "ss02";
+  font-style: italic;
+  font-weight: 200;
+  line-height: 1.25;
+  margin: 3rem 0 1rem;
+
+  .zola-anchor {
+    display: none;
+    visibility: hidden;
+  }
+
+  &:hover .zola-anchor {
+    display: inline-block;
+    text-decoration: none;
+    visibility: visible;
+  }
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: -0.14rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+  letter-spacing: -0.14rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  letter-spacing: -0.08rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+  letter-spacing: -0.06rem;
+}
+
+h5 {
+  font-size: 1rem;
+  letter-spacing: -0.04rem;
+}
+
+h6 {
+  font-size: 0.75rem;
+}
+
+a {
+  color: var(--primary-color);
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: underline dotted;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+small {
+  color: var(--fg-muted-5);
+  font-size: 0.8rem;
+}
+
+dl {
+  padding: 0;
+
+  dt {
+    padding: 0;
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  dd {
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--fg-muted-2);
+  margin: 2rem auto;
+  width: 100%;
+}
+
+.blog-list hr:last-of-type {
+  display: none;
+}
+
+blockquote {
+  border-left: 0.25rem solid var(--primary-color);
+  border-radius: 0.2rem;
+  color: var(--fg-muted-5);
+  margin: 0;
+  padding: 0 0.75rem;
+}
+
+abbr {
+  cursor: help;
+  text-decoration: underline dotted;
+}
+
+// CODE
+pre,
+code,
+kbd {
+  font-family: JetBrainsMono, monospace;
+}
+
+code:not(pre code) {
+  padding: 2px 6px;
+  border-radius: var(--rounded-corner-small);
+  background-color: var(--fg-muted-2);
+  color: var(--red-fg);
+}
+
+pre {
+  line-height: normal; // Unset line height
+  padding: 1rem;
+  margin: 1rem 0 1rem;
+  border-radius: var(--rounded-corner);
+  max-width: 100vw;
+  box-shadow: var(--shadow);
+  overflow: auto;
+
+  table td {
+    padding: 0;
+    border: none;
+  }
+
+  // The line number cells
+  table td:nth-of-type(1) {
+    text-align: center;
+    user-select: none;
+  }
+
+  mark {
+    display: block;
+    background-color: var(--fg-muted-1);
+    color: var(--fg-color); // Unset mark color from primary color to text color
+    border-radius: 0; // Unset code block border radius
+    padding: 0; // Unset mark padding
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  // The line numbers already provide some kind of left/right padding
+  &[data-linenos] {
+    padding: 1rem 0;
+  }
+}
+
+kbd {
+  background-color: var(--fg-muted-2);
+  border-radius: var(--rounded-corner-small);
+  box-shadow: inset 0 -2px 0 var(--fg-muted-2), 0 -1px 0 var(--fg-muted-3);
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.8rem;
+  line-height: normal;
+  padding: 2px 6px;
+  transition: var(--transition);
+  // Small nice thingy, keys can be pressed!
+  &:active {
+    background-color: var(--fg-muted-3);
+    box-shadow: inset 0 1px 0 var(--fg-muted-2);
+    transform: translateY(2px);
+  }
+}
+
+mark {
+  padding: 2px 6px;
+  border-radius: var(--rounded-corner-small);
+  background-color: var(--primary-color-alpha);
+  color: var(--primary-color);
+}
+
+figcaption {
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+  display: block;
+  text-align: center;
+  color: var(--fg-muted-4);
+  font-size: 0.8rem;
+}
+
+details {
+  background-color: var(--fg-muted-1);
+  border-radius: var(--rounded-corner);
+  box-shadow: var(--shadow);
+  padding: 1rem;
+
+  & > summary {
+    cursor: pointer;
+  }
+}
+
+// TABLES
+table {
+  border-collapse: collapse;
+  border-radius: var(--rounded-corner);
+  overflow: hidden;
+  table-layout: fixed;
+  width: 100%;
+
+  th {
+    font-weight: bold;
+  }
+
+  th,
+  td {
+    padding: 0.5rem 1rem;
+  }
+
+  tr {
+    &:nth-child(even) {
+      background-color: var(--fg-muted-1);
+    }
+
+    th {
+      background-color: var(--fg-muted-2);
+    }
+  }
+}
+
+td,
+th {
+  padding: 0;
+}

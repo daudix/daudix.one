@@ -1,6 +1,6 @@
-{% extends "duckquill/templates/taxonomy_list.html" %}
+{% extends "base.html" %}
 
-{% block custom %}
+{% block content %}
 <div class="crt scanlines">
 <pre>
         _
@@ -17,4 +17,17 @@
 ___\|//jgs||//_\V/_\|//_______\\|//V/\\|/__
 </pre>
 </div>
-{% endblock custom %}
+
+<h1>Tags</h1>
+<small> {{ terms | length }} tags in total </small>
+<br />
+<small>
+  <ul class="tags">
+    {% for tag in terms %}
+    <li>
+      <a class="tag" href="{{ get_taxonomy_url(kind='tags', name=tag.name) }}">{{ tag.name }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</small>
+{% endblock content %}

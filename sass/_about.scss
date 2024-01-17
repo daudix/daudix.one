@@ -1,52 +1,3 @@
-@use "sass:color";
-
-$primary-color: #c061cb;
-$primary-color-alpha: color.scale($primary-color, $alpha: -80%);
-
-$bg-color-l: color.scale($primary-color, $lightness: 80%);
-$bg-color-d: color.scale($primary-color, $lightness: -90%, $saturation: -50%);
-
-$crt-bg: radial-gradient(
-  color.scale($primary-color, $lightness: -80%),
-  color.scale($primary-color, $lightness: -90%)
-);
-
-$nav-bg-l: color.scale($bg-color-l, $alpha: -20%, $lightness: 50%);
-$nav-bg-d: color.scale(
-  $bg-color-d,
-  $alpha: -20%,
-  $lightness: 5%,
-  $saturation: -50%
-);
-
-$glow: 0 0 0 1px color.scale($primary-color, $alpha: -95%),
-  0 2px 6px 2px color.scale($primary-color, $alpha: -95%),
-  0 4px 24px 4px color.scale($primary-color, $alpha: -90%);
-
-:root {
-  --bg-color: #{$bg-color-l};
-  --crt-bg: #{$crt-bg};
-  --glow: #{$glow};
-  --nav-bg: #{$nav-bg-l};
-  --primary-color-alpha: #{$primary-color-alpha};
-  --primary-color: #{$primary-color};
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg-color: #{$bg-color-d};
-    --nav-bg: #{$nav-bg-d};
-  }
-}
-
-@font-face {
-  font-family: Pacifico;
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("./fonts/Pacifico-Regular.woff2?v=3.000") format("woff2");
-}
-
 .about-splash {
   text-align: center;
 
@@ -175,8 +126,7 @@ details.blurred ul li {
 
 .drop-shadow {
   filter:
-    // Sharp drop shadow
-    drop-shadow(0 0.08rem 0.1rem rgba(0, 0, 0, 0.35))
-    // Diffuse ambient shadow
+      // Sharp drop shadow
+    drop-shadow(0 0.08rem 0.1rem rgba(0, 0, 0, 0.35)) // Diffuse ambient shadow
     drop-shadow(0 0.4rem 0.7rem rgba(0, 0, 0, 0.18));
 }

@@ -1,0 +1,33 @@
+<header>
+  <nav>
+    <a href="{{ get_url(path='') }}">
+      {% if config.extra.nav.icons %}
+        <i class="bi bi-house"></i>
+      {% endif %}
+      {{ config.title }}
+    </a>
+    <ul>
+      {% for link in config.extra.nav.links %}
+      <li>
+        <a href="{{ link.url | safe | replace(from='$BASE_URL', to=get_url(path='')) | safe }}">
+          {% if config.extra.nav.icons %}
+            {% if link.icon %}
+              <i class="bi bi-{{ link.icon }}"></i>
+            {% endif %}
+          {% endif %}
+          {{ link.name }}
+        </a>
+      </li>
+      {% endfor %} {% if config.extra.nav.show_feed %}
+      <li>
+        <a href="{{ get_url(path='atom.xml') }}">
+          {% if config.extra.nav.icons %}
+            <i class="bi bi-rss"></i>
+          {% endif %}
+          Feed
+        </a>
+      </li>
+      {% endif %}
+    </ul>
+  </nav>
+</header>

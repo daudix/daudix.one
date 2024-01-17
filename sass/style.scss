@@ -1,0 +1,34 @@
+/*!
+ * Duckquill v1.0.0 (https://daudix.codeberg.page/duckquill)
+ * Copyright 2023 David "Daudix" Lapshin
+ * Licensed under MIT (https://codeberg.org/daudix/duckquill/src/branch/main/LICENSE)
+ *
+ * Based on OS Component Website which shamelessly stole CSS from systemd
+ * https://github.com/jimmac/os-component-website
+ * https://github.com/systemd/systemd/tree/main/docs
+ */
+
+@use "normalize";
+
+@use "variables";
+@use "fonts";
+@use "main";
+
+@use "about";
+@use "bootstrap-icons";
+@use "buttons";
+@use "comments";
+@use "crt";
+@use "footer";
+@use "gnome-hig";
+@use "johnvertisement";
+@use "links";
+@use "media";
+@use "nav";
+@use "not-found";
+@use "post-nav";
+@use "statements";
+@use "tags";
+
+@import url("syntax-theme-dark.css") (prefers-color-scheme: dark);
+@import url("syntax-theme-light.css") (prefers-color-scheme: light);
