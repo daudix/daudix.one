@@ -1,7 +1,6 @@
 title = "Daudix"
 base_url = "https://daudix.codeberg.page"
 description = "Passionate designer, translator, and FOSS contributor."
-theme = "duckquill"
 
 compile_sass = true
 minify_html = true
@@ -38,9 +37,9 @@ issues_url = "https://codeberg.org/daudix/pages/issues"
 source_url = "https://codeberg.org/daudix/pages"
 # Additional stylesheets; expects it to be in the ./static/ directory.
 # If you are using Sass it will be compiled there anyway.
-stylesheets = [
-  "custom.css"
-]
+# stylesheets = [
+#   "custom.css"
+# ]
 
 [extra.nav]
 # Display Atom/RSS feed button in the nav

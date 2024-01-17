@@ -1,0 +1,398 @@
+<!--
+Based on https://github.com/cassidyjames/cassidyjames.github.io/blob/99782788a7e3ba3cc52d6803010873abd1b02b9e/_includes/comments.html
+which were inspired by https://codeberg.org/jwildeboer/jwildeboersource/src/commit/45f9750bb53b9f0f6f28399ce4d21785a3bb7d22/_includes/fediverse_comments.html
+-->
+
+{% if page.extra.comments.host %}
+  {% set host = page.extra.comments.host %}
+{% else %}
+  {% set host = config.extra.comments.host %}
+{% endif %}
+
+{% if page.extra.comments.domain %}
+  {% set domain = page.extra.comments.domain %}
+{% elif config.extra.comments.domain %}
+  {% set domain = config.extra.comments.domain %}
+{% else %}
+  {% set domain = host %}
+{% endif %}
+
+{% if page.extra.comments.user %}
+  {% set username = page.extra.comments.user %}
+{% else %}
+  {% set username = config.extra.comments.user %}
+{% endif %}
+
+{% if page.extra.comments.token %}
+  {% set token = page.extra.comments.token %}
+{% else %}
+  {% set token = config.extra.comments.token %}
+{% endif %}
+
+{% set id = page.extra.comments.id %}
+
+{% if config.extra.comments.verified %}
+  {% set verified = config.extra.comments.verified | jsonify %}
+{% else %}
+  {% set verified = "[]" %}
+{% endif %}
+
+<section id="comments" class="article comments">
+  <h2>Comments</h2>
+  <p>Comment on this blog post by publicly replying to <a href="https://{{ host }}/@{{ username }}/{{ id }}">this Mastodon post</a> using a Mastodon or other ActivityPub/Fediverse account. Known non-private replies are displayed below.</p>
+
+  <div id="comments-wrapper">
+    <p><small>Press the button below to load comments if they exist, if not, be the first!</small></p>
+    <noscript><p>Loading comments relies on JavaScript. Try enabling JavaScript and reloading, or visit <a href="https://{{ host }}/@{{ username }}/{{ id }}">the original post</a> on Mastodon.</p></noscript>
+    <a onclick="loadComments()" class="inline-button">Load comments…</a>
+  </div>
+
+  <script>
+    // loadComments();
+
+    function loadComments() {
+      const HOST = "{{ host }}";
+      const DOMAIN = "{{ domain }}";
+      const USERNAME = "{{ username }}";
+      const TOKEN = "{{ token }}";
+      const VERIFIED = "{{ verified }}";
+      const ID = "{{ id }}";
+
+      const SUPPORTED_MEDIA = [
+        "image",
+        "gifv",
+      ];
+
+      const STATUS_URL = `https://${ HOST }/api/v1/statuses/${ ID }`;
+
+      const REQUEST_HEADERS = new Headers();
+      if(TOKEN != ""){
+        REQUEST_HEADERS.append("Authorization", "Bearer " + TOKEN);
+      }
+
+      const requestOptions = {
+        method: "GET",
+        headers: REQUEST_HEADERS,
+        mode: "cors",
+        cache: "default",
+      };
+
+      const STATUS_REQUEST = new Request(STATUS_URL, requestOptions);
+      const CONTEXT_REQUEST = new Request(STATUS_URL + "/context", requestOptions);
+
+      let commentsWrapper = document.getElementById("comments-wrapper");
+
+      fetch(STATUS_REQUEST).then((response) => {
+        return response.json();
+      }).then((status) => {
+        fetch(CONTEXT_REQUEST).then((response) => {
+          return response.json();
+        }).then((data) => {
+          let descendants = data['descendants'];
+          if(
+            descendants &&
+            Array.isArray(descendants) &&
+            descendants.length > 0
+          ) {
+            commentsWrapper.innerHTML = "";
+            descendants.unshift(status);
+
+            descendants.forEach((status) => {
+              if( status.account.display_name.length > 0 ) {
+                status.account.display_name = escapeHtml(status.account.display_name);
+                status.account.display_name = emojify(
+                  status.account.display_name,
+                  status.account.emojis
+                );
+              } else {
+                status.account.display_name = status.account.username;
+              };
+
+              let instance = "";
+              if( status.account.acct.includes("@") ) {
+                instance = status.account.acct.split("@")[1];
+              } else {
+                instance = DOMAIN;
+              }
+
+              status.content = emojify(status.content, status.emojis);
+
+              let avatarSource = document.createElement("source");
+              avatarSource.setAttribute("srcset", escapeHtml(status.account.avatar));
+              avatarSource.setAttribute("media", "(prefers-reduced-motion: no-preference)");
+
+              let avatarImg = document.createElement("img");
+              avatarImg.className = "avatar";
+              avatarImg.setAttribute("src", escapeHtml(status.account.avatar_static));
+              avatarImg.setAttribute(
+                "alt",
+                `@${ status.account.username }@${ instance } avatar`
+              );
+
+              let avatarPicture = document.createElement("picture");
+              avatarPicture.appendChild(avatarSource);
+              avatarPicture.appendChild(avatarImg);
+
+              let avatar = document.createElement("a");
+              avatar.className = "avatar-link";
+              avatar.setAttribute("href", status.account.url);
+              avatar.setAttribute("rel", "external nofollow");
+              avatar.setAttribute(
+                "title",
+                `View profile at @${ status.account.username }@${ instance }`
+              );
+              avatar.appendChild(avatarPicture);
+
+              let instanceBadge = document.createElement("a");
+              instanceBadge.className = "instance";
+              instanceBadge.setAttribute("href", status.account.url);
+              instanceBadge.setAttribute(
+                "title",
+                `@${ status.account.username }@${ instance }`
+              );
+              instanceBadge.setAttribute("rel", "external nofollow");
+              instanceBadge.textContent = instance;
+
+              let display = document.createElement("span");
+              display.className = "display";
+              display.setAttribute("itemprop", "author");
+              display.setAttribute("itemtype", "http://schema.org/Person");
+              display.innerHTML = status.account.display_name;
+
+              let header = document.createElement("header");
+              header.className = "author";
+              header.appendChild(display);
+              header.appendChild(instanceBadge);
+
+              let permalink = document.createElement("a");
+              permalink.setAttribute("href", status.url);
+              permalink.setAttribute("itemprop", "url");
+              permalink.setAttribute("title", `View comment at ${ instance }`);
+              permalink.setAttribute("rel", "external nofollow");
+              permalink.textContent = new Date(status.created_at).toLocaleString('en-IE', {
+                dateStyle: "long",
+                timeStyle: "short",
+              });
+
+              let timestamp = document.createElement("time");
+              timestamp.setAttribute("datetime", status.created_at);
+              timestamp.appendChild(permalink);
+
+              if(status.edited_at != null) {
+                timestamp.classList.add("edited");
+                timestamp.setAttribute(
+                  "title",
+                  "Edited " + new Date(status.edited_at).toLocaleString('en-IE', {
+                    dateStyle: "long",
+                    timeStyle: "short",
+                  })
+                )
+              };
+
+              let main = document.createElement("main");
+              main.setAttribute("itemprop", "text");
+
+              if(status.sensitive == true || status.spoiler_text != "") {
+                let summary = document.createElement("summary");
+                if(status.spoiler_text == "") {
+                  status.spoiler_text == "Sensitive";
+                }
+                summary.innerHTML = status.spoiler_text;
+
+                let spoiler = document.createElement("details");
+                spoiler.appendChild(summary);
+                spoiler.innerHTML += status.content;
+
+                main.appendChild(spoiler);
+              } else {
+                main.innerHTML = status.content;
+              }
+
+              let interactions = document.createElement("footer");
+
+              if(status.reblogs_count > 0) {
+                let reblogs = document.createElement("a");
+                reblogs.setAttribute("href", status.url + "/reblogs");
+                reblogs.className = "reblogs";
+                reblogs.setAttribute("title", "Boosts");
+                reblogs.textContent = status.reblogs_count;
+
+                interactions.appendChild(reblogs);
+              }
+
+              if(status.favourites_count > 0) {
+                let favourites = document.createElement("a");
+                favourites.setAttribute("href", status.url + "/favourites");
+                favourites.className = "favourites";
+                favourites.setAttribute("title", "Favorites");
+                favourites.textContent = status.favourites_count;
+
+                interactions.appendChild(favourites);
+              }
+
+              let comment = document.createElement("article");
+              comment.id = `comment-${ status.id }`;
+              comment.className = "comment";
+              comment.setAttribute("itemprop", "comment");
+              comment.setAttribute("itemtype", "http://schema.org/Comment");
+              comment.appendChild(avatar);
+              comment.appendChild(header);
+              comment.appendChild(timestamp);
+              comment.appendChild(main);
+
+              let attachments = status.media_attachments;
+              if(
+                attachments &&
+                Array.isArray(attachments) &&
+                attachments.length > 0
+              ) {
+                attachments.forEach((attachment) => {
+                  if( SUPPORTED_MEDIA.includes(attachment.type) ){
+                    let media = document.createElement("a");
+                    media.className = "card";
+                    media.setAttribute("href", attachment.url);
+                    media.setAttribute("rel", "external nofollow");
+
+                    let mediaElement;
+                    switch(attachment.type){
+                      case "image":
+                        mediaElement = document.createElement("img");
+                        mediaElement.setAttribute("src", attachment.preview_url);
+
+                        if(attachment.description != null) {
+                          mediaElement.setAttribute("alt", attachment.description);
+                          mediaElement.setAttribute("title", attachment.description);
+                        }
+
+                        media.appendChild(mediaElement);
+                        break;
+
+                      case "gifv":
+                        mediaElement = document.createElement("video");
+                        mediaElement.setAttribute("src", attachment.url);
+                        mediaElement.setAttribute("autoplay", "");
+                        mediaElement.setAttribute("playsinline", "");
+                        mediaElement.setAttribute("loop", "");
+
+                        if(attachment.description != null) {
+                          mediaElement.setAttribute("aria-title", attachment.description);
+                          mediaElement.setAttribute("title", attachment.description);
+                        }
+
+                        media.appendChild(mediaElement);
+                        break;
+                    }
+
+                    comment.appendChild(media);
+                  }
+                });
+
+
+              } else if(
+                status.card != null &&
+                status.card.image != null &&
+                !status.card.url.startsWith("{{ get_url(path='') }}")
+              ) {
+                let cardImg = document.createElement("img");
+                cardImg.setAttribute("src", status.card.image);
+
+                let cardTitle = document.createElement("h5");
+                cardTitle.innerHTML = status.card.title;
+
+                let cardDescription = document.createElement("p");
+                cardDescription.innerHTML = status.card.description;
+
+                let cardCaption = document.createElement("figcaption");
+                cardCaption.appendChild(cardTitle);
+                cardCaption.appendChild(cardDescription);
+
+                let cardFigure = document.createElement("figure");
+                cardFigure.appendChild(cardImg);
+                cardFigure.appendChild(cardCaption);
+
+                let card = document.createElement("a");
+                card.className = "card";
+                card.setAttribute("href", status.card.url);
+                card.setAttribute("rel", "external nofollow");
+                card.appendChild(cardFigure);
+
+                comment.appendChild(card);
+              }
+
+              comment.appendChild(interactions);
+
+              if(status.account.acct == USERNAME) {
+                comment.classList.add("op");
+
+                avatar.classList.add("op");
+                avatar.setAttribute(
+                  "title",
+                  "Blog post author; " + avatar.getAttribute("title")
+                );
+
+                instanceBadge.classList.add("op");
+                instanceBadge.setAttribute(
+                  "title",
+                  "Blog post author: " + instanceBadge.getAttribute("title")
+                );
+              } else if( VERIFIED.includes(status.account.acct) ) {
+                comment.classList.add("verified");
+
+                avatar.classList.add("verified");
+                avatar.setAttribute(
+                  "title",
+                  avatar.getAttribute("title") + " (verified by site owner)"
+                );
+
+                instanceBadge.classList.add("verified");
+                instanceBadge.setAttribute(
+                  "title",
+                  instanceBadge.getAttribute("title") + " (verified by site owner)"
+                );
+              }
+
+              commentsWrapper.innerHTML += comment.outerHTML;
+            });
+          }
+        });
+      });
+    }
+
+    function emojify(input, emojis) {
+      let output = input;
+
+      emojis.forEach(emoji => {
+        let picture = document.createElement("picture");
+
+        let source = document.createElement("source");
+        source.setAttribute("srcset", escapeHtml(emoji.url));
+        source.setAttribute("media", "(prefers-reduced-motion: no-preference)");
+
+        let img = document.createElement("img");
+        img.className = "emoji";
+        img.setAttribute("src", escapeHtml(emoji.static_url));
+        img.setAttribute("alt", `:${ emoji.shortcode }:`);
+        img.setAttribute("title", `:${ emoji.shortcode }:`);
+        img.setAttribute("width", "20");
+        img.setAttribute("height", "20");
+
+        picture.appendChild(source);
+        picture.appendChild(img);
+
+        output = output.replace(`:${ emoji.shortcode }:`, picture.outerHTML);
+      });
+
+      return output;
+    }
+
+    function escapeHtml(unsafe) {
+      return unsafe
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/'/g, "&apos;")
+        .replace(/"/g, "&quot;")
+      ;
+    }
+  </script>
+</section>

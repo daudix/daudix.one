@@ -1,0 +1,88 @@
+@use "sass:color";
+
+$primary-color: #62a0ea;
+$primary-color-alpha: color.scale($primary-color, $alpha: -80%);
+
+$bg-color-l: color.scale($primary-color, $lightness: 80%);
+$bg-color-d: color.scale($primary-color, $lightness: -90%, $saturation: -50%);
+
+$crt-bg: radial-gradient(
+  color.scale($primary-color, $lightness: -80%),
+  color.scale($primary-color, $lightness: -90%)
+);
+
+$nav-bg-l: color.scale($bg-color-l, $alpha: -20%, $lightness: 50%);
+$nav-bg-d: color.scale(
+  $bg-color-d,
+  $alpha: -20%,
+  $lightness: 5%,
+  $saturation: -50%
+);
+
+$glow: 0 0 0 1px color.scale($primary-color, $alpha: -95%),
+  0 2px 6px 2px color.scale($primary-color, $alpha: -95%),
+  0 4px 24px 4px color.scale($primary-color, $alpha: -90%);
+
+:root {
+  // COLORS
+  --bg-color: #{$bg-color-l};
+  --crt-bg: #{$crt-bg};
+  --fg-color: rgba(0, 0, 0, 0.8);
+  --fg-muted-1: rgba(0, 0, 0, 0.05);
+  --fg-muted-2: rgba(0, 0, 0, 0.1);
+  --fg-muted-3: rgba(0, 0, 0, 0.2);
+  --fg-muted-4: rgba(0, 0, 0, 0.5);
+  --fg-muted-5: rgba(0, 0, 0, 0.6);
+  --nav-bg: #{$nav-bg-l};
+  --orange-bg: rgba(255, 120, 0, 0.1);
+  --orange-fg: rgb(255, 120, 0);
+  --primary-color-alpha: #{$primary-color-alpha};
+  --primary-color: #{$primary-color};
+  --purple-bg: rgba(145, 65, 172, 0.1);
+  --purple-fg: rgb(145, 65, 172);
+  --red-bg: rgba(224, 27, 36, 0.1);
+  --red-fg: rgb(224, 27, 36);
+  --yellow-bg: rgba(156, 110, 3, 0.1);
+  --yellow-fg: rgb(156, 110, 3);
+
+  // VARIABLES
+  --active: 0.9;
+  --content-width: 720px;
+  --drop-shadow: drop-shadow(0 4px 3px rgba(0, 0, 0, 0.07))
+    drop-shadow(0 2px 2px rgba(0, 0, 0, 0.06));
+  --glow: #{$glow};
+  --rounded-corner-small: 8px;
+  --rounded-corner: 12px;
+  --shadow-raised: 0 0 0 1px rgba(0, 0, 0, 0.06),
+    0 2px 6px 2px rgba(0, 0, 0, 0.14), 0 4px 12px 4px rgba(0, 0, 0, 0.06);
+  --shadow: 0 0 0 1px rgba(0, 0, 0, 0.03), 0 1px 3px 1px rgba(0, 0, 0, 0.07),
+    0 2px 6px 2px rgba(0, 0, 0, 0.03);
+  --transition-bezier: 350ms cubic-bezier(0.17, 0.89, 0.32, 1.28);
+  --transition-long: 800ms;
+  --transition-longer: 400ms;
+  --transition: 200ms;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+
+    // COLORS
+    --bg-color: #{$bg-color-d};
+    --fg-color: rgb(255, 255, 255);
+    --fg-muted-1: rgba(255, 255, 255, 0.05);
+    --fg-muted-2: rgba(255, 255, 255, 0.1);
+    --fg-muted-3: rgba(255, 255, 255, 0.2);
+    --fg-muted-4: rgba(255, 255, 255, 0.5);
+    --fg-muted-5: rgba(255, 255, 255, 0.6);
+    --nav-bg: #{$nav-bg-d};
+    --orange-bg: rgba(255, 190, 111, 0.1);
+    --orange-fg: rgb(255, 190, 111);
+    --purple-bg: rgba(220, 138, 221, 0.1);
+    --purple-fg: rgb(220, 138, 221);
+    --red-bg: rgba(226, 97, 81, 0.1);
+    --red-fg: rgb(246, 97, 81);
+    --yellow-bg: rgba(248, 228, 92, 0.1);
+    --yellow-fg: rgb(248, 228, 92);
+  }
+}

@@ -1,0 +1,41 @@
+img,
+video {
+  display: block;
+  margin: 2rem auto;
+  max-width: 100%;
+  border-radius: var(--rounded-corner);
+  box-shadow: var(--shadow);
+}
+
+img {
+  transition: var(--transition-longer);
+
+  &:not(.no-hover):hover {
+    transform: scale(125%);
+    border-radius: 0;
+    box-shadow: var(--shadow-raised);
+  }
+
+  &:active {
+    transform: scale(var(--active));
+  }
+
+  @media screen and (max-width: 480px) {
+    &:not(.no-hover):hover {
+      transform: scale(110%);
+    }
+  }
+}
+
+.full {
+  width: 100%;
+}
+
+.pixels {
+  image-rendering: pixelated;
+}
+
+.transparent {
+  border-radius: 0;
+  box-shadow: none;
+}
