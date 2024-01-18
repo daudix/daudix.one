@@ -1,6 +1,6 @@
-{% extends "base.html" %}
+{% extends "duckquill/templates/taxonomy_single.html" %}
 
-{% block content %}
+{% block custom %}
 <div class="crt scanlines">
 <pre>
         _
@@ -17,37 +17,4 @@
 ___\|//jgs||//_\V/_\|//_______\\|//V/\\|/__
 </pre>
 </div>
-
-<h1>Posts with tag “{{ term.name }}”</h1>
-<small>
-  <a class="link-page" href="{{ get_url(path='tags') }}">See all tags</a>
-  <br />
-  {{ term.pages | length }} posts in total
-</small>
-<article>
-  {% for page in term.pages %}
-  <h3>
-    <a class="link-page" href="{{ page.permalink | safe }}">
-      {{ page.title }}
-    </a>
-  </h3>
-  <small>
-    <time datetime='{{ page.date | date(format='%+') }}' pubdate>
-      {{- page.date | date(format=config.extra.date_format) -}}
-    </time>
-    {%- if page.taxonomies %}
-      {%- for name, taxon in page.taxonomies %}
-      <span>•</span>
-      <ul class="tags">
-        {%-for item in taxon %}
-        <li>
-          <a class="tag" href="{{ get_taxonomy_url(kind=name, name=item) }}">{{ item }}</a>
-        </li>
-        {%- endfor %}
-      </ul>
-      {%- endfor %}
-    {%- endif %}
-  </small>
-  {% endfor %}
-</article>
-{% endblock content %}
+{% endblock custom %}
