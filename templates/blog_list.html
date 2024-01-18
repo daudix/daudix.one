@@ -1,6 +1,6 @@
-{% extends "base.html" %}
+{% extends "duckquill/templates/blog_list.html" %}
 
-{% block content %}
+{% block custom %}
 <div class="crt scanlines">
 <pre>
          *                 *                  *              *
@@ -19,49 +19,4 @@
 ____0_____0__\|/__@@@@__@@@__________|_\|/__|___\|/__\|/___________|_|_
 </pre>
 </div>
-
-<h1>{{ section.title }}</h1>
-
-<p>
-  Hiya! welcome to my little blog, I write about stuff I'm interested in, mostly it's software, FOSS and design. Take your cup of <i class="bi bi-cup-hot"></i> and look around!
-</p>
-
-<small>
-  <a class="link-page" href="{{ get_url(path='tags') }}">Filter by tag</a>
-  <br />
-  From newest to oldest ↓
-</small>
-
-<div class="blog-list">
-{% for page in section.pages %}
-<article>
-  <h3>
-    <a class="link-page" href="{{ page.permalink | safe }}">{{ page.title }}</a>
-  </h3>
-  {%- if page.description %}
-    <p>{{ page.description }}</p>
-  {%- endif %}
-  {%- if page.date %}
-    <small>
-      <time datetime="{{ page.date | date(format='%+') }}" pubdate>
-        {{- page.date | date(format=config.extra.date_format) -}}
-      </time>
-      {%- if page.taxonomies %}
-        {%- for name, taxon in page.taxonomies %}
-        <span>•</span>
-        <ul class="tags">
-          {%-for item in taxon %}
-          <li>
-            <a class="tag" href="{{ get_taxonomy_url(kind=name, name=item) }}">{{ item }}</a>
-          </li>
-          {%- endfor %}
-        </ul>
-        {%- endfor %}
-      {%- endif %}
-    </small>
-  {%- endif %}
-</article>
-<hr>
-{% endfor %}
-</div>
-{% endblock content %}
+{% endblock custom %}

@@ -12,17 +12,32 @@ description = "About me, what I do, and more."
 
 ## <i class="bi bi-info-circle"></i> About
 
-Hello there! My name is David, you can call me by my nickname - Daudix - if you prefer.
+Hello there! My name is David, you may know me by my online handle Daudix.
 
-I'm from the Siberian part of Russia, but currently live in ▒▓░▒▓░.
+> Although Daudix may appear as just my online handle, it's actually slightly different persona; perhaps more silly and honest than the more "official" David, but they're so tightly tied together so it's fine to use whatever you like.
 
-I love photography, design, open source and retro and vintage stuff as well as retro-futurism, my favorite games are «Portal» series, «Untitled Goose», «The Stanley Parable» and «Stardew Valley».
+I'm from the Siberian part of Russia, but currently live in ▒▓░▒▓░ (if you know you know).
 
-Design is a bit more than just thing I like, it's my hobby that I learn more about every day.
+Some things I like:
 
-I also have some minimal understanding of how Blender works, occasionally do some silly stuff in it.
+- Photography; although I don't have much opportunity to shoot anything else than a view from my window
+- Design
+- Open source
+- Retro and vintage stuff, as well as retro-futurism
 
-And, as you can see, I try to do some web development!
+My favorite games are:
+
+- Portal series
+- Untitled Goose
+- The Stanley Parable
+- Stardew Valley
+- Cyberpunk 2077 (I only played it on YouTube so it's still to be played haha)
+
+Design is a perhaps a bit more than just a thing I like, it's my hobby that I learn more about every day.
+
+I'm also in process of learning 3D modeling in Blender and Pixel art in Aseprite.
+
+And, as you can see, I do some web development! I like working with CSS and HTML but that's about it, I have no clue how to work with JS :D
 
 ## <i class="bi bi-briefcase"></i> Works
 
