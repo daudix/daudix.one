@@ -8,6 +8,7 @@ minify_html = true
 generate_feed = true
 feed_filename = "atom.xml"
 build_search_index = false
+author = "Daudix"
 
 taxonomies = [
   {name = "tags", feed = true},
