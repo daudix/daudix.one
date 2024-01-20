@@ -8,6 +8,7 @@ minify_html = true
 generate_feed = true
 feed_filename = "atom.xml"
 build_search_index = false
+author = "David Lapshin"
 
 taxonomies = [
   {name = "tags", feed = true},
@@ -45,8 +46,6 @@ stylesheets = [
 [extra.nav]
 # Display Atom/RSS feed button in the nav
 show_feed = true
-# Whether to use icons in the nav
-icons = true
 # Links used in the nav; any icon from https://icons.getbootstrap.com
 # can be used as the icon. The bi- prefix should not be added.
 links = [
