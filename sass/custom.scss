@@ -57,9 +57,19 @@
 }
 
 #timeline {
-  border-left: 0.25rem solid var(--fg-muted-3);
+  border-image-slice: 1;
+  border-image-source: linear-gradient(
+    to bottom,
+    transparent 0px,
+    var(--fg-muted-3) 0.5rem,
+    var(--fg-muted-3) calc(100% - 0.5rem),
+    transparent 100%
+  );
+  border-left: 0.25rem solid;
   list-style: none;
-  padding-left: 20px;
+  padding-bottom: 0.5rem;
+  padding-left: 0;
+  padding-top: 0.5rem;
 
   li {
     small {
@@ -73,7 +83,7 @@
       content: "";
       display: inline-block;
       height: 0.5rem;
-      left: -1.85rem;
+      left: -0.6rem;
       position: relative;
       top: 0.175rem;
       transition: var(--transition);
