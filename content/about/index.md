@@ -3,9 +3,9 @@ title = "About"
 description = "About me, what I do, and more."
 +++
 
-<div class="about-splash">
-  <img class="avatar transparent drop-shadow" src="logo.svg" alt="My logo" />
-  <h1 class="header">David Lapshin</h1>
+<div id="about-splash">
+  <img id="about-avatar" class="transparent drop-shadow" src="logo.svg" alt="My logo" />
+  <h1 id="about-header">David Lapshin</h1>
   <br />
   <small>Passionate designer, translator, and FOSS contributor.</small>
 </div>
@@ -65,6 +65,14 @@ Shortened list of places where you can ~~stalk~~ find me on:
 - [Pixelfed](https://pixey.org/Daudix)
 - [Lemmy](https://toast.ooo/u/Daudix)
 - [YouTube](https://www.youtube.com/@daudix_ufo)
+
+I have changed (and will change) my homeserver, so to make sure nothing is lost, here is my Fediverse timeline:
+
+<ol id="timeline">
+  <li><small>01 Sep 2022 - 20 Nov 2023: <a href="https://mstdn.social/@Daudix">mstdn.social</a> - Previous main profile</small></li>
+  <li><small>20 Nov 2023 - Today: <a href="https://social.treehouse.systems/@daudix">social.treehouse.systems</a> - Main profile</small></li>
+  <li><small>08 Jan 2024 - Today: <a href="https://pleroma.envs.net/daudix">pleroma.envs.net</a> - Personal profile</small></li>
+</ol>
 
 ### <i class="bi bi-code-slash"></i> Forges
 
