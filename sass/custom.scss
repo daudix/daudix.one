@@ -6,10 +6,10 @@
   src: url("./fonts/Pacifico-Regular.woff2?v=3.000") format("woff2");
 }
 
-.about-splash {
+#about-splash {
   text-align: center;
 
-  .avatar {
+  #about-avatar {
     background-color: var(--light1);
     border-color: var(--light1);
     border-radius: 50%;
@@ -29,7 +29,7 @@
     }
   }
 
-  .header {
+  #about-header {
     color: #404a65;
     font-family: Pacifico, cursive;
     font-size: 4rem;
@@ -51,6 +51,46 @@
           text-shadow: 3px 3px 0 #404a65, 6px 6px 0 #f25242, 9px 9px 0 #93bfb0,
             12px 12px 0 #f1d456;
         }
+      }
+    }
+  }
+}
+
+#timeline {
+  border-left: 0.25rem solid var(--fg-muted-3);
+  list-style: none;
+  padding-left: 20px;
+
+  li {
+    small {
+      transition: var(--transition);
+    }
+
+    &::before {
+      background-color: var(--bg-color);
+      border-radius: 50%;
+      border: 0.25rem solid var(--fg-muted-3);
+      content: "";
+      display: inline-block;
+      height: 0.5rem;
+      left: -1.85rem;
+      position: relative;
+      top: 0.175rem;
+      transition: var(--transition);
+      width: 0.5rem;
+    }
+
+    &:hover {
+      small {
+        color: var(--primary-color);
+        text-shadow: 0 0 6px var(--primary-color-alpha),
+          0 0 8px var(--primary-color-alpha);
+      }
+
+      &::before {
+        border: 0.25rem solid var(--primary-color);
+        box-shadow: 0 0 4px var(--primary-color-alpha),
+          0 0 6px var(--primary-color-alpha), 0 0 8px var(--primary-color-alpha);
       }
     }
   }
@@ -118,17 +158,6 @@ section#wallpapers {
 
   img {
     border-radius: var(--rounded-corner);
-  }
-}
-
-details.blurred ul li {
-  color: var(--primary-color);
-  filter: blur(6px);
-  transition: var(--transition-longer);
-
-  &:hover {
-    color: var(--fg-color);
-    filter: blur(0);
   }
 }
 
