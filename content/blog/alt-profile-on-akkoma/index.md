@@ -38,7 +38,7 @@ Slightly more detailed: because it's too slow and buggy for my taste, even thoug
 
 *And now that we are done...*
 
-**ALEX, GO DUCK YOURSELF WITH <img class="emoji" src="crumb_dancing.gif" /> and <img class="emoji" src="deck_friend.webp" />!!!**
+**ALEX, GO DUCK YOURSELF WITH <img class="emoji no-hover" src="crumb_dancing.gif" /> and <img class="emoji no-hover" src="deck_friend.webp" />!!!**
 
 ## TL;DR
 
