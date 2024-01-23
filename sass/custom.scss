@@ -77,7 +77,7 @@
     }
 
     &::before {
-      background-color: var(--bg-color);
+      background: var(--bg-color);
       border-radius: 50%;
       border: 0.25rem solid var(--fg-muted-3);
       content: "";
