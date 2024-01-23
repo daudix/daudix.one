@@ -36,6 +36,10 @@ The answer is simple: just because!
 
 Slightly more detailed: because it's too slow and buggy for my taste, even though Sharkey is faster than Firefish it's still quite slow.
 
+*And now that we are done...*
+
+**ALEX, GO DUCK YOURSELF WITH <img class="emoji" src="crumb_dancing.gif" /> and <img class="emoji" src="deck_friend.webp" />!!!**
+
 ## TL;DR
 
 I tried Akkoma and it clicked, now I will post goofy stuff there, follow it (if you want) at [@daudix@pleroma.envs.net](https://pleroma.envs.net/users/daudix)
