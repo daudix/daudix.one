@@ -69,9 +69,9 @@ Shortened list of places where you can ~~stalk~~ find me on:
 I have changed (and will change) my homeserver, so to make sure nothing is lost, here is my Fediverse timeline:
 
 <ol id="timeline">
-  <li><small>01 Sep 2022 - 20 Nov 2023: <a href="https://mstdn.social/@Daudix">mstdn.social</a> - Previous main profile</small></li>
-  <li><small>20 Nov 2023 - Today: <a href="https://social.treehouse.systems/@daudix">social.treehouse.systems</a> - Main profile</small></li>
-  <li><small>08 Jan 2024 - Today: <a href="https://pleroma.envs.net/daudix">pleroma.envs.net</a> - Personal profile</small></li>
+  <li><small>01 Sep 2022 - 20 Nov 2023<br><a href="https://mstdn.social/@Daudix">mstdn.social</a> - Previous main profile</small></li>
+  <li><small>20 Nov 2023 - Today<br><a href="https://social.treehouse.systems/@daudix">social.treehouse.systems</a> - Main profile</small></li>
+  <li><small>08 Jan 2024 - Today<br><a href="https://pleroma.envs.net/daudix">pleroma.envs.net</a> - Personal profile</small></li>
 </ol>
 
 ### <i class="bi bi-code-slash"></i> Forges
