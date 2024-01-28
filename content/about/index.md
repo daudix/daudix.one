@@ -10,7 +10,7 @@ description = "About me, what I do, and more."
   <small>Passionate designer, translator, and FOSS contributor.</small>
 </div>
 
-## <i class="bi bi-info-circle"></i> About
+## About
 
 Hello there! My name is David, you may know me by my online handle Daudix.
 
@@ -39,7 +39,7 @@ I'm also in process of learning 3D modeling in Blender and Pixel art in Aseprite
 
 And, as you can see, I do some web development! I like working with CSS and HTML but that's about it, I have no clue how to work with JS :D
 
-## <i class="bi bi-briefcase"></i> Works
+## Works
 
 I mostly create and improve icons for around-GNOME apps, if app doesn't have a translation I do it, sometimes I help with UI design.
 
@@ -47,18 +47,18 @@ Currently member of [Nickvision](https://nickvision.org) and [Gradience](https:/
 
 Have a look at my [designs](@/design/index.md), mostly icons but also some wallpapers (one of them is even shipped with GNOME)
 
-## <i class="bi bi-box-arrow-up-right"></i> Links
+## Links
 
 Shortened list of places where you can ~~stalk~~ find me on:
 
-### <i class="bi bi-chat-dots"></i> Contacts
+### Contacts
 
 - [Mail](mailto:ddaudix@gmail.com)
 - [Matrix](https://matrix.to/#/@daudix_ufo:matrix.org)
 - [Discord](https://discord.com/users/650757995378114581)
 - [Telegram](https://t.me/Daudix_UFO)
 
-### <i class="bi bi-people"></i> Socials
+### Socials
 
 - [Mastodon](https://social.treehouse.systems/@daudix)
 - [Akkoma](https://pleroma.envs.net/daudix)
@@ -74,14 +74,14 @@ I have changed (and will change) my homeserver, so to make sure nothing is lost,
   <li><small>08 Jan 2024 - Today<br><a href="https://pleroma.envs.net/daudix">pleroma.envs.net</a> - Personal profile</small></li>
 </ol>
 
-### <i class="bi bi-code-slash"></i> Forges
+### Forges
 
 - [Codeberg](https://codeberg.org/daudix)
 - [GitHub](https://github.com/daudix)
 - [GitLab](https://gitlab.com/daudix)
 - [GitLab (GNOME)](https://gitlab.gnome.org/daudix)
 
-### <i class="bi bi-cup-hot"></i> Buy Me a Coffee
+### Buy Me a Coffee
 
 <small>That would be nice and mean a lot to me :3</small>
 
