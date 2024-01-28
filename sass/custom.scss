@@ -8,6 +8,7 @@
     border-style: solid;
     border-width: 16px;
     display: inline-block;
+    filter: hue-rotate(0deg);
     height: 128px;
     margin-bottom: 0;
     transition: var(--transition-longer);
@@ -17,7 +18,8 @@
       border-radius: 50%;
       border-width: 2px;
       box-shadow: none;
-      transform: scale(1.2);
+      filter: hue-rotate(90deg);
+      transform: scale(1.2) rotate(360deg);
     }
   }
 
