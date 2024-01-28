@@ -54,8 +54,8 @@ icons = true
 # can be used as the icon. The bi- prefix should not be added.
 links = [
   {url = "$BASE_URL/about", name = "About", icon = "info-circle"},
-  {url = "$BASE_URL/design", name = "Design", icon = "brush"},
   {url = "$BASE_URL/blog", name = "Blog", icon = "journal-bookmark"},
+  {url = "$BASE_URL/design", name = "Design", icon = "brush"},
 ]
 
 [extra.footer]
