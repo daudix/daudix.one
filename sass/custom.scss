@@ -1,17 +1,9 @@
-@font-face {
-  font-family: Pacifico;
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("./fonts/Pacifico-Regular.woff2?v=3.000") format("woff2");
-}
-
 #about-splash {
   text-align: center;
 
   #about-avatar {
-    background-color: var(--light1);
-    border-color: var(--light1);
+    background-color: white;
+    border-color: white;
     border-radius: 50%;
     border-style: solid;
     border-width: 16px;
@@ -31,9 +23,10 @@
 
   #about-header {
     color: #404a65;
-    font-family: Pacifico, cursive;
+    font-family: Superclarendon, "Bookman Old Style", "URW Bookman", "URW Bookman L", "Georgia Pro", Georgia, serif;
+    font-style: italic;
     font-size: 4rem;
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: 0;
     transition: var(--transition-longer);
 
@@ -181,7 +174,7 @@ section#wallpapers {
 .emoji {
   all: unset;
   display: inline;
-  width: 1.25rem;
-  height: 1.25rem;
+  height: 2rem;
   vertical-align: middle;
+  width: 2rem;
 }
