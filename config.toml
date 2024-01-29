@@ -24,7 +24,7 @@ highlight_themes_css = [
 smart_punctuation = true
 
 [extra]
-# Sets browser theme color,
+# Sets theme and browser theme color,
 # see https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta/name/theme-color
 primary_color = "#c061cb"
 # Same as primary_color, but with 20% opacity
@@ -48,14 +48,11 @@ stylesheets = [
 [extra.nav]
 # Display Atom/RSS feed button in the nav
 show_feed = true
-# Whether to use icons in the nav
-icons = true
-# Links used in the nav; any icon from https://icons.getbootstrap.com
-# can be used as the icon. The bi- prefix should not be added.
+# Links used in the nav
 links = [
-  {url = "$BASE_URL/about", name = "About", icon = "info-circle"},
-  {url = "$BASE_URL/blog", name = "Blog", icon = "journal-bookmark"},
-  {url = "$BASE_URL/design", name = "Design", icon = "brush"},
+  {url = "$BASE_URL/about", name = "About"},
+  {url = "$BASE_URL/blog", name = "Blog"},
+  {url = "$BASE_URL/design", name = "Design"},
 ]
 
 [extra.footer]
@@ -70,7 +67,7 @@ show_powered_by = true
 # Link to website source
 show_source = false
 
-# Based on https://github.com/cassidyjames/cassidyjames.github.io/blob/75cd2a202de7a1026de1ea00a4ef1d5b2675c7ff/_config.yaml#L35-L74
+# Based on https://carlschwan.eu/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/
 #
 # Mastodon-powered commenting.
 # Values can be overridden in front-matter, e.g.
@@ -81,12 +78,5 @@ show_source = false
 [extra.comments]
 # Your Mastodon API host; this should be where you have an account
 host = "social.treehouse.systems"
-# Used to determine who the original/verified poster is;
-# role may be expanded in the future (e.g. for moderation).
+# Used to determine who the original poster is
 user = "daudix"
-# Optional; required to fetch more than 60 replies to any given blog post.
-# Application access token with read:statuses scope; NOTE: IF INCLUDED, ANYONE
-# WILL BE ABLE TO READ THE ASSOCIATED ACCOUNT'S PRIVATE STATUSES. It is highly
-# recommended to use a dedicated bot/API account to create an application with
-# scope read:statuses.
-token = ""
