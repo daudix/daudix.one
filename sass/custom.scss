@@ -8,7 +8,6 @@
     border-style: solid;
     border-width: 16px;
     display: inline-block;
-    filter: hue-rotate(0deg);
     height: 128px;
     margin-bottom: 0;
     transition: var(--transition-longer);
@@ -18,7 +17,6 @@
       border-radius: 50%;
       border-width: 2px;
       box-shadow: none;
-      filter: hue-rotate(90deg);
       transform: scale(1.2);
     }
   }
@@ -29,13 +27,13 @@
     font-style: italic;
     font-size: 4rem;
     font-weight: 600;
-    letter-spacing: 0;
+    letter-spacing: -0.15rem;
     transition: var(--transition-longer);
 
     &:hover {
-      text-shadow: 3px 3px 0 #f4e2cc, 6px 6px 0 #f25242, 9px 9px 0 #93bfb0,
-        12px 12px 0 #f1d456;
-      transform: translate(-12px, -12px);
+      text-shadow: 0 3px 0 #f4e2cc, 0 6px 0 #f25242, 0 9px 0 #93bfb0,
+        0 12px 0 #f1d456;
+      transform: translate(0, -12px);
     }
 
     @media (prefers-color-scheme: dark) {
@@ -43,8 +41,8 @@
         color: #f4e2cc;
 
         &:hover {
-          text-shadow: 3px 3px 0 #404a65, 6px 6px 0 #f25242, 9px 9px 0 #93bfb0,
-            12px 12px 0 #f1d456;
+          text-shadow: 0 3px 0 #404a65, 0 6px 0 #f25242, 0 9px 0 #93bfb0,
+            0 12px 0 #f1d456;
         }
       }
     }
@@ -96,6 +94,27 @@
         box-shadow: 0 0 4px var(--primary-color-alpha),
           0 0 6px var(--primary-color-alpha), 0 0 8px var(--primary-color-alpha);
       }
+    }
+  }
+}
+
+#clock {
+  background-color: var(--primary-color-alpha);
+  border-radius: var(--rounded-corner-small);
+  color: var(--primary-color);
+  font-weight: 600;
+  padding: 0.125rem 0.375rem;
+  animation: clock-blink 1s infinite;
+
+  @keyframes clock-blink {
+    from {
+      color: var(--primary-color);
+    }
+    50% {
+      color: var(--primary-color-alpha);
+    }
+    75% {
+      color: var(--primary-color);
     }
   }
 }
