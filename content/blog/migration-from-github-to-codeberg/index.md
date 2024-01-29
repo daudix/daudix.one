@@ -73,27 +73,6 @@ After approval, I have created `blog-source` and `blog` repositories (names can 
 Then copy and paste the contents of [Jekyll workflow example](https://codeberg.org/Codeberg-CI/examples/src/branch/main/Jekyll/jekyll.yml) in `.woodpecker.yml`
 
 ```yml
-# Jekyll on Woodpecker to codeberg pages
-#
-# This file would typically be .woodpecker.yml in the root of your repository.
-#
-# Takes a repository with jekyll source, generates the static site and
-# pushes the result to codeberg pages
-#
-# Needs a codeberg access token (cbtoken) as secret in woodpecker config
-# Also uses another secret (cbmail) with email address for git config
-#
-# CBIN must be replaced with the source repo
-# CBOUT must be replaced with the target codeberg pages repo
-# CBUSER must be replaced with the user/org
-#
-# See the _config.yml file for the important keep_files: line to preserve
-# git metadata during build
-#
-# We also assume a domains file in the source repo that gets copied to
-# .domains in the target repo so codeberg pages works for custom domains
-#
-
 steps:
   build:
     # Use the official jekyll build container
@@ -137,35 +116,35 @@ _Personally I use [VSCodium](https://vscodium.com), fork of VSCode with Microsof
 
 Push all the changes and [Generate an Access Token](https://docs.codeberg.org/advanced/access-token), you need to generate token named `cbtoken` with the `repo` scope selected
 
-{{ image(url="pasted-image-20230715225539.png", url_min="pasted-image-20230715225539-min.png", hover=true) }}
+![Scopes repo](scopes-repo.png)
 
 Then copy the resulted token and save it to a safe place, as it won't be shown again.
 
 Go to [Woodpecker](https://ci.codeberg.org) and navigate to _Repositories_ tab and add a new repository (`blog-source`)
 
-{{ image(url="pasted-image-20230715224850.png", url_min="pasted-image-20230715224850-min.png", hover=true) }}
+![Add repository button](add-repository-button.png)
 
 Navigate to _Settings_ and go to _Secrets_ tab
 
-{{ image(url="pasted-image-20230715225826.png", url_min="pasted-image-20230715225826-min.png", hover=true) }}
+![Settings button](settings-button.png)
 
-{{ image(url="pasted-image-20230715225841.png", url_min="pasted-image-20230715225841-min.png", hover=true) }}
+![Secrets tab](secrets-tab.png)
 
 Here create two secrets, `cbmail` and `cbtoken`
 
 `cbmail` should contain your Codeberg account email
 
-{{ image(url="pasted-image-20230715230017.png", url_min="pasted-image-20230715230017-min.png", hover=true) }}
+![cbmail secret](cbmail-secret.png)
 
 And `cbtoken` should contain the secret we saved earlier
 
-{{ image(url="pasted-image-20230715230115.png", url_min="pasted-image-20230715230115-min.png", hover=true) }}
+![cbtoken secret](cbtoken-secret.png)
 
 Make sure these two secrets have successfully created and make some changes in `blog-source` to trigger the CI, it should finish successfully.
 
 > If you don't want to trigger the CI (the change doesn't affect content for example) you can add `[CI SKIP]` to your commit message to skip the CI
 
-{{ image(url="pasted-image-20230715231347.png", url_min="pasted-image-20230715231347-min.png", hover=true) }}
+![CI successful](ci-successful.png)
 
 Now it's up to you to choose Jekyll theme and write something ;)
 

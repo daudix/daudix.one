@@ -129,8 +129,8 @@ I will use Halftone in this example
 
 This is what we get in the end
 
-{{ image(url="bay-bridge-floyd.png", url_min="bay-bridge-floyd-min.png", hover=true) }}
-<figcaption>Bay Bridge photo in dark tones, with Floyd-Steinberg dithering</figcaption>
+![Bay bridge floyd](bay-bridge-floyd.png)
+<figcaption>San Francisco Bay Bridge photo in dark tones, with Floyd-Steinberg dithering</figcaption>
 
 [Image on Unsplash](https://unsplash.com/photos/raNGlrn5JRI)
 
@@ -147,8 +147,8 @@ But, we can go even further, by using less colors and different dithering algori
 
 With ordered dithering (Bayer) and 2 colors we get the following result
 
-{{ image(url="bay-bridge-bayer.png", url_min="bay-bridge-bayer-min.png", hover=true) }}
-<figcaption>Bay Bridge photo in black and white, with Bayer dithering</figcaption>
+![Bay bridge bayer](bay-bridge-bayer.png)
+<figcaption>San Francisco Bay Bridge photo in black and white, with Bayer dithering</figcaption>
 
 [Image on Unsplash](https://unsplash.com/photos/raNGlrn5JRI)
 
@@ -255,7 +255,7 @@ Here are simple example of ASCII and Braille images made with ascii-image-conver
 
 But, do you think it looks anything like this image?
 
-{{ image(url="grayscale-plane.png", url_min="grayscale-plane-min.png", hover=true) }}
+![Grayscale plane](grayscale-plane.png)
 <figcaption>T-6 plane photo in grayscale, with Floyd-Steinberg dithering</figcaption>
 
 [Image on Unsplash](https://unsplash.com/photos/cs4uFYrNZfc)
