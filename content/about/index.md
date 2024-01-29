@@ -116,14 +116,10 @@ Gemini capsules:
   function updateClock() {
     const options = { timeZone: 'Europe/Moscow', hour: '2-digit', minute: '2-digit', hour12: false };
     const now = new Date().toLocaleString('en-US', options);
-
     const clockElement = document.getElementById('clock');
     clockElement.textContent = now;
   }
 
-  // Update the clock every minute (60 * 1000 milliseconds)
   setInterval(updateClock, 1000);
-
-  // Initial call to set the clock when the page loads
   updateClock();
 </script>
