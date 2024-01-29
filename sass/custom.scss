@@ -117,6 +117,10 @@
       color: var(--primary-color);
     }
   }
+
+  @media (prefers-reduced-motion) {
+    animation: none;
+  }
 }
 
 .media-grid {
