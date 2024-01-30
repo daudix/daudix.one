@@ -27,9 +27,9 @@ One important change have happened to the Index, now all its pages use the same 
 
 Home page is a very important page, this page links to all other pages, it gives some basic info about me and some contact links. It didn't change a lot but there are some work been done.
 
-- Proper dark mode have been implemented (well, it were already there but I replaced it with filter hack,more on it in blog section. Now it's enabled back and all the custom stuff have been fixed to support it)
-- Background color are a bit different (taken from Libadwaita)
-- Added shadows to all cards to give them some depth
+- Proper dark mode have been implemented (well, it were already there but I replaced it with filter hack,more on it in blog section. Now it's enabled back and all the custom stuff have been fixed to support it).
+- Background color are a bit different (taken from Libadwaita).
+- Added shadows to all cards to give them some depth.
 
 ![Blog card](blog-card.png)
 <figcaption>Blog link card with newely added shadow</figcaption>
@@ -75,8 +75,7 @@ The blog have seen the most of the changes, it all were flipped upside down to b
 ![Blurred nav](blurred-nav.png)
 <figcaption>Navigation bar with content behind it being blurred</figcaption>
 
-- Added <abbr title="American Standard Code for Information Interchange">ASCII</abbr> style, now instead of boring code block it uses pretty gradient fill and has this neon glow on hover
-
+- Added <abbr title="American Standard Code for Information Interchange">ASCII</abbr> style, now instead of boring code block it uses pretty gradient fill and has this neon glow on hover.
 
 ![ASCII art](ascii-art.png)
 <figcaption>Regular state, it's filled with gradient going from bottom to top, with the bottom being black and top being transparent</figcaption>
@@ -84,12 +83,12 @@ The blog have seen the most of the changes, it all were flipped upside down to b
 ![ASCII art hover](ascii-art-hover.png)
 <figcaption>Hovered state, it becomes fully black and gains purple-blue glow</figcaption>
 
-- Images now scale up on hover and have round corners
+- Images now scale up on hover and have round corners.
 
 <video alt="Image hover" controls src="image-hover.webm"></video>
 <figcaption>Image zooming in on hover, with it loosing rounded corners</figcaption>
 
-- Code blocks now have some filters applied in dark mode for better visibility, the code blocks themselves are now more round and have shadows
+- Code blocks now have some filters applied in dark mode for better visibility, the code blocks themselves are now more round and have shadows.
 
 ![Code block](code-block.png)
 <figcaption>Code block in light mode</figcaption>
@@ -97,23 +96,22 @@ The blog have seen the most of the changes, it all were flipped upside down to b
 ![Code block dark](code-block-dark.png)
 <figcaption>...And in dark</figcaption>
 
-- Some colors have been changed, all in all should be more pleasant to the eye
+- Some colors have been changed, all in all should be more pleasant to the eye.
 - Everything now respects global variables, so e.g you can change accent color, roundness, shadows and maximum content width without going through the whole 1200+ <abbr title="Lines Of Code">LOC</abbr> <abbr title="Cascading Style Sheets">CSS</abbr>, this is made not only to keep myself sane but also for _you_ to make it easier to build upon ;)
 
 <video alt="Color variables" controls src="color-variables.webm"></video>
 <figcaption>Me chaning 2 color variables and site respecting this</figcaption>
 
-- The structure have been changed, now uses recommended Jekyll structure for posts
-- Posts now have tags, and tags have its own page
-- Posts now have its own page
-- Posts list on index page now generates automatically on build, this allowed to display tags and publication date
+- The structure have been changed, now uses recommended Jekyll structure for posts.
+- Posts now have tags, and tags have its own page.
+- Posts now have its own page.
+- Posts list on index page now generates automatically on build, this allowed to display tags and publication date.
 
 ![Posts list](posts-list.png)
 <figcaption>Automatically generated list of posts on index page</figcaption>
 
-- Table of contents are now generated on build, now I don't have to create it for every page manually
-
-- Hovering over `© Daudix's Blog, 2023` in footer now displays last built date
+- Table of contents are now generated on build, now I don't have to create it for every page manually.
+- Hovering over `© Daudix's Blog, 2023` in footer now displays last built date.
 
 ![Copyright hover](copyright-hover.png)
 <figcaption>You guess it, last built date is displayed on hover</figcaption>
@@ -123,7 +121,7 @@ The blog have seen the most of the changes, it all were flipped upside down to b
 ![Newsblur feed](newsblur-feed.png)
 <figcaption>Screenshot of NewsBlur with this blog</figcaption>
 
-- Added Johnvertisements
+- Added Johnvertisements.
 - Probably most exiting addition, Mastodon (and any other ActivityPub/​Fediverse account) powered comments! you can _right now_ scroll down and comment! all thanks goes to Cassidy James for [Mastodon-powered Blog Comments](https://cassidyjames.com/blog/fediverse-blog-comments-mastodon) ❤️
 
 ![Mastodon comment](mastodon-comment.png)

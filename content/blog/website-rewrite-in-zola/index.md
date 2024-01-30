@@ -53,17 +53,17 @@ Now everything is in the `website` repo, using the same stylesheet and templates
 Almost every single style and template has been reworked, resulting in a much nicer look and feel, some that I can remember:
 
 - Brand new navigation bar!
-- Primary color is now used to tint the background (bye boring gray!)
+- Primary color is now used to tint the background (bye boring gray!).
 - CRT style is now used for ASCII, replacing the old "opaque to transparent gradient".
-- Header styles have been reworked; they're now thin, italic, and use JetBrains Mono with an alternative character variant (`ss02`)
-- Quotations and horizontal rules now have slightly rounded corners
-- Code blocks now use Solarized syntax highlighting theme instead of GitHub's; it changes from light to dark variant depending on current color scheme
-- Source Code Pro font is now used for code blocks instead of system one
-- New, animated 404 image
+- Header styles have been reworked; they're now thin, italic, and use JetBrains Mono with an alternative character set (`ss02`).
+- Quotations and horizontal rules now have slightly rounded corners.
+- Code blocks now use Solarized syntax highlighting theme instead of GitHub's; it changes from light to dark variant depending on current color scheme.
+- Source Code Pro font is now used for code blocks instead of system one.
+- New, animated 404 image.
 - Tags are now displayed next to the date, both in the post list and in the post itself. Check out this neat effect on hover!
-- Posts can now can be filtered by a tag, e.g you can filter only posts containing the `Devlog` tag
-- New post navigation (previous/next post links at the end of the post)
-- And more! ([initial migration commit](https://codeberg.org/daudix/pages/commit/0323f9658345ec5f254e24b4385c31ebe9a69f15), ~2500 changes!)
+- Posts can now can be filtered by a tag, e.g you can filter only posts containing the `Devlog` tag.
+- New post navigation (previous/next post links at the end of the post).
+- And more! ([initial migration commit](https://codeberg.org/daudix/pages/commit/0323f9658345ec5f254e24b4385c31ebe9a69f15), ~2500 changes!).
 
 ### Reborn Duckquill
 
