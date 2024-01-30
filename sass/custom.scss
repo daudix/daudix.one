@@ -8,6 +8,10 @@
     border-style: solid;
     border-width: 16px;
     display: inline-block;
+    filter:
+      drop-shadow(0 0.08rem 0.1rem rgba(0, 0, 0, 0.35))
+      drop-shadow(0 0.4rem 0.7rem rgba(0, 0, 0, 0.18))
+      saturate(0);
     height: 128px;
     margin-bottom: 0;
     transition: var(--transition-longer);
@@ -17,13 +21,18 @@
       border-radius: 50%;
       border-width: 2px;
       box-shadow: none;
+      filter:
+        drop-shadow(0 0.08rem 0.1rem rgba(0, 0, 0, 0.35))
+        drop-shadow(0 0.4rem 0.7rem rgba(0, 0, 0, 0.18))
+        saturate(1);
       transform: scale(1.2);
     }
   }
 
   #about-header {
     color: #404a65;
-    font-family: Superclarendon, "Bookman Old Style", "URW Bookman", "URW Bookman L", "Georgia Pro", Georgia, serif;
+    font-family: Superclarendon, "Bookman Old Style", "URW Bookman",
+      "URW Bookman L", "Georgia Pro", Georgia, serif;
     font-style: italic;
     font-size: 4rem;
     font-weight: 600;
@@ -191,8 +200,7 @@ section#wallpapers {
 .drop-shadow {
   filter:
     // Sharp drop shadow
-    drop-shadow(0 0.08rem 0.1rem rgba(0, 0, 0, 0.35))
-    // Diffuse ambient shadow
+    drop-shadow(0 0.08rem 0.1rem rgba(0, 0, 0, 0.35)) // Diffuse ambient shadow
     drop-shadow(0 0.4rem 0.7rem rgba(0, 0, 0, 0.18));
 }
 

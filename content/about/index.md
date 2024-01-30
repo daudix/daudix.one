@@ -4,7 +4,7 @@ description = "About me, what I do, and more."
 +++
 
 <div id="about-splash">
-  <img id="about-avatar" class="transparent drop-shadow" src="logo.svg" alt="My logo" />
+  <img id="about-avatar" class="transparent" src="logo.svg" alt="My logo" />
   <h1 id="about-header">David Lapshin</h1>
   <small>Passionate designer, translator, and FOSS contributor.</small>
 </div>
@@ -130,11 +130,18 @@ I'm not good at writing blog posts nor coming up with ideas for them, so it's a 
 <small>Seriously, they're awesome!</small>
 
 <a href="https://512kb.club"><img class="transparent no-hover no-margin inline" src="https://512kb.club/assets/images/green-team.svg" alt="a proud member of the green team of 512KB club" /></a>
-<img class="transparent no-hover no-margin inline" src="adhd.gif" alt="ADHD" />
-<img class="transparent no-hover no-margin inline" src="besteyes2.gif" alt="Best viewed with eyes" />
-<img class="transparent no-hover no-margin inline" src="any2.gif" alt="Best viewed with any browser" />
-<img class="transparent no-hover no-margin inline" src="anythingbut.gif" alt="Anything but Chrome" />
-<img class="transparent no-hover no-margin inline" src="bestviewed16bit.gif" alt="Best viewed with 16bit color" />
+<img class="transparent no-hover no-margin inline" src="daudix.gif" />
+<img class="transparent no-hover no-margin inline" src="adhd.gif" />
+<img class="transparent no-hover no-margin inline" src="besteyes2.gif" />
+<img class="transparent no-hover no-margin inline" src="any2.gif" />
+<img class="transparent no-hover no-margin inline" src="anythingbut.gif" />
+<img class="transparent no-hover no-margin inline" src="bestviewed16bit.gif" />
+
+```
+<a href="https://daudix.codeberg.page" target="_blank"><img src="https://daudix.codeberg.page/about/daudix.gif"></a>
+```
+
+> Note: It's recommended to avoid hot-linking, so instead place a copy on your own site.
 
 <script>
   function updateClock() {
