@@ -125,6 +125,17 @@ Why all this mess? well at first I [migrated to Codeberg](@/blog/migration-from-
 
 I'm not good at writing blog posts nor coming up with ideas for them, so it's a bit empty. But hey, who knows when inspiration will kick in, right?
 
+## Buttons
+
+<small>Seriously, they're awesome!</small>
+
+<a href="https://512kb.club"><img class="transparent no-hover no-margin inline" src="https://512kb.club/assets/images/green-team.svg" alt="a proud member of the green team of 512KB club" /></a>
+<img class="transparent no-hover no-margin inline" src="adhd.gif" alt="ADHD" />
+<img class="transparent no-hover no-margin inline" src="besteyes2.gif" alt="Best viewed with eyes" />
+<img class="transparent no-hover no-margin inline" src="any2.gif" alt="Best viewed with any browser" />
+<img class="transparent no-hover no-margin inline" src="anythingbut.gif" alt="Anything but Chrome" />
+<img class="transparent no-hover no-margin inline" src="bestviewed16bit.gif" alt="Best viewed with 16bit color" />
+
 <script>
   function updateClock() {
     const options = { timeZone: 'Europe/Moscow', hour: '2-digit', minute: '2-digit', hour12: false };
