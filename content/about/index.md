@@ -143,7 +143,7 @@ I'm not good at writing blog posts nor coming up with ideas for them, so it's a 
 
 > Note: It's recommended to avoid hot-linking, so instead place a copy on your own site.
 
-<script>
+<script type="text/javascript">
   function updateClock() {
     const options = { timeZone: 'Europe/Moscow', hour: '2-digit', minute: '2-digit', hour12: false };
     const now = new Date().toLocaleString('en-US', options);
