@@ -49,7 +49,16 @@ Have a look at my [designs](@/design/index.md), mostly icons but also some wallp
 
 ## Contacts
 
-Currently it's <time><span id="clock"><noscript>clock here if JavaScript is enabled</noscript></span></time> <small>(UTC+3)</small> for me, so take that into consideration if I don't respond immediately.
+<p id="current-time">Currently it's <time><span id="clock"></span></time> <small>(UTC+3)</small> for me, so take that into consideration if I don't respond immediately.</p>
+
+<noscript>
+  <p>My current timezone is <mark><strong>UTC+3</strong></mark>, so take that into consideration if I don't respond immediately.</p>
+  <style>
+    #current-time {
+      display: none;
+    }
+  </style>
+</noscript>
 
 Feel free to send me a message on any of these, although Matrix is preferred since I use it the most. Whether you're bored or need someone to listen to you, I'm always open!
 
