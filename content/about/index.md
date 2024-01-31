@@ -138,13 +138,16 @@ I'm not good at writing blog posts nor coming up with ideas for them, so it's a 
 
 <small>Seriously, they're awesome!</small>
 
-<a href="https://512kb.club"><img class="transparent no-hover no-margin inline" src="https://512kb.club/assets/images/green-team.svg" alt="a proud member of the green team of 512KB club" /></a>
-<img class="transparent no-hover no-margin inline" src="daudix.gif" />
-<img class="transparent no-hover no-margin inline" src="adhd.gif" />
-<img class="transparent no-hover no-margin inline" src="besteyes2.gif" />
-<img class="transparent no-hover no-margin inline" src="any2.gif" />
-<img class="transparent no-hover no-margin inline" src="anythingbut.gif" />
-<img class="transparent no-hover no-margin inline" src="bestviewed16bit.gif" />
+<a href="https://512kb.club"><img class="badge no-hover" src="https://512kb.club/assets/images/green-team.svg" alt="a proud member of the green team of 512KB club" /></a>
+<img class="badge no-hover" src="daudix.gif" />
+<img class="badge no-hover" src="adhd.gif" />
+<img class="badge no-hover" src="besteyes2.gif" />
+<img class="badge no-hover" src="any2.gif" />
+<img class="badge no-hover" src="anythingbut.gif" />
+<img class="badge no-hover" src="fuckchrome.gif" />
+<img class="badge no-hover" src="yarrr.gif" />
+<img class="badge no-hover" src="bestviewed16bit.gif" />
+<img class="badge no-hover" src="fuckweb3.gif" />
 
 ```
 <a href="https://daudix.codeberg.page" target="_blank"><img src="https://daudix.codeberg.page/about/daudix.gif"></a>
