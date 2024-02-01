@@ -141,15 +141,15 @@ I'm not good at writing blog posts nor coming up with ideas for them, so it's a 
 <div id="buttons">
   <p>
     <a href="https://512kb.club"><img src="https://512kb.club/assets/images/green-team.svg" alt="a proud member of the green team of 512KB club" /></a>
-    <img src="daudix.gif" />
-    <img src="adhd.gif" />
-    <img src="besteyes2.gif" />
-    <img src="any2.gif" />
-    <img src="anythingbut.gif" />
-    <img src="fuckchrome.gif" />
-    <img src="yarrr.gif" />
-    <img src="bestviewed16bit.gif" />
-    <img src="fuckweb3.gif" />
+    <img src="88x31/daudix.gif" />
+    <img src="88x31/adhd.gif" />
+    <img src="88x31/besteyes2.gif" />
+    <img src="88x31/any2.gif" />
+    <img src="88x31/anythingbut.gif" />
+    <img src="88x31/fuckchrome.gif" />
+    <img src="88x31/yarrr.gif" />
+    <img src="88x31/bestviewed16bit.gif" />
+    <img src="88x31/fuckweb3.gif" />
   </p>
 </div>
 
