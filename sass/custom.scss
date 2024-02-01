@@ -132,6 +132,13 @@
   }
 }
 
+#buttons {
+  img {
+    all: unset;
+    display: inline;
+  }
+}
+
 .media-grid {
   display: grid;
   gap: 2rem;
@@ -211,9 +218,4 @@ section#wallpapers {
   height: 1.5em;
   vertical-align: middle;
   width: 1.5em;
-}
-
-.badge {
-  all: unset;
-  display: inline;
 }
