@@ -138,16 +138,20 @@ I'm not good at writing blog posts nor coming up with ideas for them, so it's a 
 
 <small>Seriously, they're awesome!</small>
 
-<a href="https://512kb.club"><img class="badge no-hover" src="https://512kb.club/assets/images/green-team.svg" alt="a proud member of the green team of 512KB club" /></a>
-<img class="badge no-hover" src="daudix.gif" />
-<img class="badge no-hover" src="adhd.gif" />
-<img class="badge no-hover" src="besteyes2.gif" />
-<img class="badge no-hover" src="any2.gif" />
-<img class="badge no-hover" src="anythingbut.gif" />
-<img class="badge no-hover" src="fuckchrome.gif" />
-<img class="badge no-hover" src="yarrr.gif" />
-<img class="badge no-hover" src="bestviewed16bit.gif" />
-<img class="badge no-hover" src="fuckweb3.gif" />
+<div id="buttons">
+  <p>
+    <a href="https://512kb.club"><img src="https://512kb.club/assets/images/green-team.svg" alt="a proud member of the green team of 512KB club" /></a>
+    <img src="daudix.gif" />
+    <img src="adhd.gif" />
+    <img src="besteyes2.gif" />
+    <img src="any2.gif" />
+    <img src="anythingbut.gif" />
+    <img src="fuckchrome.gif" />
+    <img src="yarrr.gif" />
+    <img src="bestviewed16bit.gif" />
+    <img src="fuckweb3.gif" />
+  </p>
+</div>
 
 ```
 <a href="https://daudix.codeberg.page" target="_blank"><img src="https://daudix.codeberg.page/about/daudix.gif"></a>
