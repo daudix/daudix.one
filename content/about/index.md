@@ -140,6 +140,7 @@ I'm not good at writing blog posts nor coming up with ideas for them, so it's a 
 
 <div id="buttons">
   <p>
+    <a href="https://512kb.club"><img src="88x31/green-team.gif" alt="a proud member of the green team of 512KB club" /></a>
     <img src="88x31/daudix.gif" />
     <img src="88x31/adhd.gif" />
     <img src="88x31/bestviewed16bit.gif" />
@@ -148,8 +149,7 @@ I'm not good at writing blog posts nor coming up with ideas for them, so it's a 
     <img src="88x31/anythingbut.gif" />
     <img src="88x31/fuckchrome.gif" />
     <img src="88x31/yarrr.gif" />
-    <a href="https://yesterweb.org/no-to-web3/"> <img src="88x31/notoweb3.gif" /></a>
-    <a href="https://512kb.club"><img src="https://512kb.club/assets/images/green-team.svg" alt="a proud member of the green team of 512KB club" /></a>
+    <a href="https://yesterweb.org/no-to-web3/"><img src="88x31/notoweb3.gif" /></a>
   </p>
 </div>
 
