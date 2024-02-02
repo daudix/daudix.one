@@ -8,10 +8,8 @@
     border-style: solid;
     border-width: 16px;
     display: inline-block;
-    filter:
-      drop-shadow(0 0.08rem 0.1rem rgba(0, 0, 0, 0.35))
-      drop-shadow(0 0.4rem 0.7rem rgba(0, 0, 0, 0.18))
-      saturate(0);
+    filter: drop-shadow(0 0.08rem 0.1rem rgba(0, 0, 0, 0.35))
+      drop-shadow(0 0.4rem 0.7rem rgba(0, 0, 0, 0.18)) saturate(0);
     height: 128px;
     margin-bottom: 0;
     transition: var(--transition-longer);
@@ -21,10 +19,8 @@
       border-radius: 50%;
       border-width: 2px;
       box-shadow: none;
-      filter:
-        drop-shadow(0 0.08rem 0.1rem rgba(0, 0, 0, 0.35))
-        drop-shadow(0 0.4rem 0.7rem rgba(0, 0, 0, 0.18))
-        saturate(1);
+      filter: drop-shadow(0 0.08rem 0.1rem rgba(0, 0, 0, 0.35))
+        drop-shadow(0 0.4rem 0.7rem rgba(0, 0, 0, 0.18)) saturate(1);
       transform: scale(1.2);
     }
   }
@@ -132,7 +128,9 @@
   }
 }
 
-#buttons {
+#buttons-container {
+  text-align: center;
+
   img {
     all: unset;
     display: inline;
@@ -170,37 +168,32 @@
   }
 }
 
-section#original-icons {
-  background-color: rgba(98, 160, 234, 0.5);
-  background-image: radial-gradient(
-    circle,
-    var(--fg-muted-1) 1px,
-    transparent 1px
-  );
-  background-size: 1rem 1rem;
-}
+section {
+  &#original-icons,
+  &#redrawn-icons,
+  &#wallpapers {
+    background-size: 1rem 1rem;
+    background-image: radial-gradient(
+      circle,
+      var(--fg-muted-1) 1px,
+      transparent 1px
+    );
+  }
 
-section#redrawn-icons {
-  background-color: rgba(87, 227, 137, 0.5);
-  background-image: radial-gradient(
-    circle,
-    var(--fg-muted-1) 1px,
-    transparent 1px
-  );
-  background-size: 1rem 1rem;
-}
+  &#original-icons {
+    background-color: rgba(98, 160, 234, 0.5);
+  }
 
-section#wallpapers {
-  background-color: rgba(255, 163, 72, 0.5);
-  background-image: radial-gradient(
-    circle,
-    var(--fg-muted-1) 1px,
-    transparent 1px
-  );
-  background-size: 1rem 1rem;
+  &#redrawn-icons {
+    background-color: rgba(87, 227, 137, 0.5);
+  }
 
-  img {
-    border-radius: var(--rounded-corner);
+  &#wallpapers {
+    background-color: rgba(255, 163, 72, 0.5);
+
+    img {
+      border-radius: var(--rounded-corner);
+    }
   }
 }
 
