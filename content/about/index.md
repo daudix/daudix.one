@@ -161,7 +161,7 @@ I'm not good at writing blog posts nor coming up with ideas for them, so it's a 
 <a href="https://daudix.codeberg.page" target="_blank"><img src="https://daudix.codeberg.page/about/daudix.gif"></a>
 ```
 
-> Note: It's recommended to avoid hot-linking, so instead place a copy on your own site.
+> Note: It's recommended to avoid hot-linking; instead place a copy on your own site.
 
 <script type="text/javascript">
   function updateClock() {
