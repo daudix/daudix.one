@@ -138,10 +138,12 @@ I'm not good at writing blog posts nor coming up with ideas for them, so it's a 
 
 <small>Seriously, they're awesome!</small>
 
-<div id="buttons">
+<div id="buttons-container">
   <p>
     <a href="https://512kb.club"><img src="88x31/green-team.gif" alt="a proud member of the green team of 512KB club" /></a>
+    <a href="https://duckduckgo.com"><img src="88x31/ddg.gif" /></a>
     <a href="https://getimiskon.xyz"><img src="88x31/getimiskon.png" /></a>
+    <a href="https://www.mozilla.org/en-US/firefox/new/"><img src="88x31/firefox3.gif" /></a>
     <a href="https://yesterweb.org/no-to-web3/"><img src="88x31/notoweb3.gif" /></a>
     <img src="88x31/adhd.gif" />
     <img src="88x31/any2.gif" />
@@ -149,8 +151,6 @@ I'm not good at writing blog posts nor coming up with ideas for them, so it's a 
     <img src="88x31/besteyes2.gif" />
     <img src="88x31/bestviewed16bit.gif" />
     <img src="88x31/daudix.gif" />
-    <img src="88x31/ddg.gif" />
-    <img src="88x31/firefox3.gif" />
     <img src="88x31/fuckchrome.gif" />
     <img src="88x31/imac.gif" />
     <img src="88x31/neo-fedi.gif" />
@@ -158,11 +158,15 @@ I'm not good at writing blog posts nor coming up with ideas for them, so it's a 
   </p>
 </div>
 
-```
+If you like my website, feel free to link it by adding the button:
+
+```html
 <a href="https://daudix.codeberg.page" target="_blank"><img src="https://daudix.codeberg.page/about/daudix.gif"></a>
 ```
 
 > Note: It's recommended to avoid hot-linking; instead place a copy on your own site.
+
+Hey you. Yes, *you*. Got a nice website? Got nice buttons?  Got any buttons? I have a deal for you! Just [ping me somewhere](@/about/index.md#contacts) and I'll add your button here, easy as pie.
 
 <script type="text/javascript">
   function updateClock() {
