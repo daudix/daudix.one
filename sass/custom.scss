@@ -196,8 +196,8 @@ section {
 
 .drop-shadow {
   filter:
-    // Sharp drop shadow
-    drop-shadow(0 0.08rem 0.1rem rgba(0, 0, 0, 0.35)) // Diffuse ambient shadow
+    // Sharp drop shadow -> diffuse ambient shadow
+    drop-shadow(0 0.08rem 0.1rem rgba(0, 0, 0, 0.35))
     drop-shadow(0 0.4rem 0.7rem rgba(0, 0, 0, 0.18));
 }
 
