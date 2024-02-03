@@ -13,7 +13,7 @@ description = "About me, what I do, and more."
 
 Hello there! My name is David, you may know me by my online handle Daudix.
 
-> Although Daudix may appear as just my online handle, it's actually slightly different persona; perhaps more silly and honest than the more "official" David, but they're so tightly tied together so it's fine to use whatever you like.
+> Although Daudix may appear as just my online handle, it's actually slightly different persona; perhaps more silly and honest than the "official" David, but they're so tightly tied together so it's fine to use whatever you like.
 
 I'm from the Siberian part of Russia, but currently live in <abbr title="If you know you know">▒▓░▒▓░</abbr>.
 
@@ -49,16 +49,7 @@ Have a look at my [designs](@/design/index.md), mostly icons but also some wallp
 
 ## Contacts
 
-<p id="current-time">Currently it's <time><span id="clock"></span></time> <small>(UTC+3)</small> for me, so take that into consideration if I don't respond immediately.</p>
-
-<noscript>
-  <p>My current timezone is <mark><strong>UTC+3</strong></mark>, so take that into consideration if I don't respond immediately.</p>
-  <style>
-    #current-time {
-      display: none;
-    }
-  </style>
-</noscript>
+Currently it's <time><span id="clock"><noscript>JavaScript required</noscript></span></time> <small>(UTC+3)</small> for me, so take that into consideration if I don't respond immediately.
 
 Feel free to send me a message on any of these, although Matrix is preferred since I use it the most. Whether you're bored or need someone to listen to you, I'm always open!
 
@@ -77,7 +68,7 @@ Shortened list of places where you can ~~stalk~~ find me on:
 
 - [Mastodon](https://social.treehouse.systems/@daudix)
 - [Akkoma](https://pleroma.envs.net/daudix)
-- [Sharkey](https://plasmatrap.com/@daudix)
+- [Sharkey](https://shonk.phite.ro/@daudix)
 - [Pixelfed](https://pixey.org/Daudix)
 - [Lemmy](https://toast.ooo/u/Daudix)
 - [YouTube](https://www.youtube.com/@daudix_ufo)
@@ -107,6 +98,16 @@ I were using GitHub from the very start of my FOSS journey, but recently I've [m
 - [Liberapay](https://liberapay.com/daudix)
 - [PayPal](https://paypal.me/Daudix)
 
+## This Website
+
+If you couldn't tell already, this website is made with love and attention, is contantly updated to be as good as possible, and it tries to be very lightweight and compatible with older browsers (at very least it works on iOS 15 and macOS High Sierra; which I'm sure a lot of people still use)
+
+This website used to be hosted on [GitHub pages](https://web.archive.org/web/20220920130408/https://daudix-ufo.github.io/), then on [Codeberg Pages](https://daudix.codeberg.page), then on [exozy.me](https://daudix.exozy.me), and now it's hosted on Codeberg Pages again.
+
+Why all this mess? well at first I [migrated to Codeberg](@/blog/migration-from-github-to-codeberg/index.md), then I joined [exozy.me](https://exozy.me) which provided way faster CI and overall easier workflow, in addition to prettier domain, but then I found out that only exozyme members can open issues/pull requests, which is not a good thing for a FOSS project like [Duckquill](https://daudix.codeberg.page/duckquill), so I have set up a two-way mirror at [Forgejo Next](https://next.forgejo.org), since [Codeberg](https://codeberg.org) doesn't allow two-way mirros to prevent high load on infrastructure. Everything worked well until one day, when Forgejo Next wiped all the data; accounts and repos. I had to do something, and I moved back to Codeberg. Now I joined [envs.net](https://envs.net) which provides git hosting with open registrations (as far as I can tell), so maybe I'll move this website there, I still need to see if it's good :)
+
+I'm not good at writing blog posts nor coming up with ideas for them, so it's a bit empty. But hey, who knows when inspiration will kick in, right?
+
 ## Small Web
 
 Small Web is something I really like, I'm member of multiple tildes/pubnixes, although I don't do much there yet, I still like to be part of them.
@@ -123,16 +124,6 @@ Gemini capsules:
 I also have a website on [neocities.org](https://neocities.org), it's not in a good shape right now, but still, you can see it [here](https://daudix.neocities.org)
 
 [![Tilde invasion](tilde-invasion.png)](https://pleroma.envs.net/notice/AeJ5ACKLIOl1bCj2lU)
-
-## About This Website
-
-If you couldn't tell already, this website is made with love and attention, is contantly updated to be as good as possible, and it tries to be very lightweight and compatible with older browsers (at very least it works on iOS 15 and macOS High Sierra; which I'm sure a lot of people still use)
-
-This website used to be hosted on [GitHub pages](https://web.archive.org/web/20220920130408/https://daudix-ufo.github.io/), then on [Codeberg Pages](https://daudix.codeberg.page), then on [exozy.me](https://daudix.exozy.me), and now it's hosted on Codeberg Pages again.
-
-Why all this mess? well at first I [migrated to Codeberg](@/blog/migration-from-github-to-codeberg/index.md), then I joined [exozy.me](https://exozy.me) which provided way faster CI and overall easier workflow, in addition to prettier domain, but then I found out that only exozyme members can open issues/pull requests, which is not a good thing for a FOSS project like [Duckquill](https://daudix.codeberg.page/duckquill), so I have set up a two-way mirror at [Forgejo Next](https://next.forgejo.org), since [Codeberg](https://codeberg.org) doesn't allow two-way mirros to prevent high load on infrastructure. Everything worked well until one day, when Forgejo Next wiped all the data; accounts and repos. I had to do something, and I moved back to Codeberg. Now I joined [envs.net](https://envs.net) which provides git hosting with open registrations (as far as I can tell), so maybe I'll move this website there, I still need to see if it's good :)
-
-I'm not good at writing blog posts nor coming up with ideas for them, so it's a bit empty. But hey, who knows when inspiration will kick in, right?
 
 ## Buttons
 
