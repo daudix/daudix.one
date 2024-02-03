@@ -8,10 +8,9 @@
     border-style: solid;
     border-width: 16px;
     display: inline-block;
-    filter: drop-shadow(0 0.08rem 0.1rem rgba(0, 0, 0, 0.35))
-      drop-shadow(0 0.4rem 0.7rem rgba(0, 0, 0, 0.18)) saturate(0);
     height: 128px;
     margin-bottom: 0;
+    margin-top: 2rem;
     transition: var(--transition-longer);
     width: 128px;
 
@@ -19,8 +18,6 @@
       border-radius: 50%;
       border-width: 2px;
       box-shadow: none;
-      filter: drop-shadow(0 0.08rem 0.1rem rgba(0, 0, 0, 0.35))
-        drop-shadow(0 0.4rem 0.7rem rgba(0, 0, 0, 0.18)) saturate(1);
       transform: scale(1.2);
     }
   }

@@ -4,7 +4,7 @@ description = "About me, what I do, and more."
 +++
 
 <div id="about-splash">
-  <img id="about-avatar" class="transparent" src="logo.svg" alt="My logo" />
+  <img id="about-avatar" class="transparent drop-shadow" src="logo.svg" alt="My logo" />
   <h1 id="about-header">David Lapshin</h1>
   <small>Passionate designer, translator, and FOSS contributor.</small>
 </div>
