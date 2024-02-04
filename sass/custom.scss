@@ -66,6 +66,7 @@
 
   li {
     padding-left: 1.5rem;
+
     small {
       transition: var(--transition);
     }
@@ -87,14 +88,14 @@
     &:hover {
       small {
         color: var(--primary-color);
-        text-shadow: 0 0 6px var(--primary-color-alpha),
-          0 0 8px var(--primary-color-alpha);
+        text-shadow: var(--primary-color-alpha) 0 0 4px,
+          var(--primary-color) 0 0 12px;
       }
 
       &::before {
         border: 0.25rem solid var(--primary-color);
-        box-shadow: 0 0 4px var(--primary-color-alpha),
-          0 0 6px var(--primary-color-alpha), 0 0 8px var(--primary-color-alpha);
+        box-shadow: var(--primary-color-alpha) 0 0 4px,
+          var(--primary-color) 0 0 12px;
       }
     }
   }
