@@ -1,221 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-  {% include "partials/head.html" ignore missing -%}
+{% include "partials/head.html" ignore missing -%}
 
-  <body>
-    {% include "partials/nav.html" ignore missing -%}
-    <div id="main" class="container">
-      <h1>Design Showcase</h1>
-      <p>A sneak peek into my designs.</p>
+<body>
+  {% include "partials/nav.html" ignore missing -%}
+  <div id="main" class="container">
+    <h1>Design Showcase</h1>
+    <p>A sneak peek into my designs.</p>
+    <br />
+  </div>
+  <section id="original-icons">
+    <div class="container">
+      <h2>Original Icons</h2>
+      <p>
+        Custom icons with original idea made for projects without prior ones
+        or with different ones.
+      </p>
+      <br />
+      <div class="media-grid">
+        <a href="https://flathub.org/apps/io.github.Bavarder.Bavarder">
+          <picture>
+            <img class="full drop-shadow no-hover" src="icons/io.github.Bavarder.Bavarder.svg" alt="Bavarder" />
+          </picture>
+          <small>Bavarder</small>
+        </a>
+        <a href="https://flathub.org/apps/org.nickvision.cavalier">
+          <picture>
+            <img class="full drop-shadow no-hover" src="icons/org.nickvision.cavalier.svg" alt="Cavalier" />
+          </picture>
+          <small>Cavalier</small>
+        </a>
+        <a href="https://flathub.org/apps/de.schmidhuberj.Flare">
+          <picture>
+            <img class="full drop-shadow no-hover" src="icons/de.schmidhuberj.Flare.svg" alt="Flare" />
+          </picture>
+          <small>Flare</small>
+        </a>
+        <a href="https://flathub.org/apps/io.github.tfuxu.Halftone">
+          <picture>
+            <img class="full drop-shadow no-hover" src="icons/io.github.tfuxu.Halftone.svg" alt="Halftone" />
+          </picture>
+          <small>Halftone</small>
+        </a>
+        <a href="https://flathub.org/apps/page.codeberg.Imaginer.Imaginer">
+          <picture>
+            <img class="full drop-shadow no-hover" src="icons/page.codeberg.Imaginer.Imaginer.svg" alt="Imaginer" />
+          </picture>
+          <small>Imaginer</small>
+        </a>
+        <a href="https://flathub.org/apps/ml.mdwalters.Lemonade">
+          <picture>
+            <img class="full drop-shadow no-hover" src="icons/ml.mdwalters.Lemonade.svg" alt="Lemonade" />
+          </picture>
+          <small>Lemonade</small>
+        </a>
+        <a href="https://flathub.org/apps/de.schmidhuberj.tubefeeder">
+          <picture>
+            <img class="full drop-shadow no-hover" src="icons/de.schmidhuberj.tubefeeder.svg" alt="Pipeline" />
+          </picture>
+          <small>Pipeline</small>
+        </a>
+        <a href="https://flathub.org/apps/de.schmidhuberj.DieBahn">
+          <picture>
+            <img class="full drop-shadow no-hover" src="icons/de.schmidhuberj.DieBahn.svg" alt="Railway" />
+          </picture>
+          <small>Railway</small>
+        </a>
+        <a href="https://flathub.org/apps/org.nickvision.tagger">
+          <picture>
+            <img class="full drop-shadow no-hover" src="icons/org.nickvision.tagger.svg" alt="Tagger" />
+          </picture>
+          <small>Tagger</small>
+        </a>
+      </div>
       <br />
     </div>
-    <section id="original-icons">
-      <div class="container">
-        <h2>Original Icons</h2>
-        <p>
-          Custom icons with original idea made for projects without prior ones
-          or with different ones.
-        </p>
-        <br />
-        <div class="media-grid">
-          <a href="https://flathub.org/apps/io.github.Bavarder.Bavarder">
-            <picture class="full drop-shadow">
-              <img src="icons/io.github.Bavarder.Bavarder.svg" alt="Bavarder" />
-            </picture>
-            <small>Bavarder</small>
-          </a>
-          <a href="https://flathub.org/apps/org.nickvision.cavalier">
-            <picture class="full drop-shadow">
-              <img src="icons/org.nickvision.cavalier.svg" alt="Cavalier" />
-            </picture>
-            <small>Cavalier</small>
-          </a>
-          <a href="https://flathub.org/apps/de.schmidhuberj.Flare">
-            <picture class="full drop-shadow">
-              <img src="icons/de.schmidhuberj.Flare.svg" alt="Flare" />
-            </picture>
-            <small>Flare</small>
-          </a>
-          <a href="https://flathub.org/apps/io.github.tfuxu.Halftone">
-            <picture class="full drop-shadow">
-              <img src="icons/io.github.tfuxu.Halftone.svg" alt="Halftone" />
-            </picture>
-            <small>Halftone</small>
-          </a>
-          <a href="https://flathub.org/apps/page.codeberg.Imaginer.Imaginer">
-            <picture class="full drop-shadow">
-              <img
-                src="icons/page.codeberg.Imaginer.Imaginer.svg"
-                alt="Imaginer"
-              />
-            </picture>
-            <small>Imaginer</small>
-          </a>
-          <a href="https://flathub.org/apps/ml.mdwalters.Lemonade">
-            <picture class="full drop-shadow">
-              <img src="icons/ml.mdwalters.Lemonade.svg" alt="Lemonade" />
-            </picture>
-            <small>Lemonade</small>
-          </a>
-          <a href="https://flathub.org/apps/de.schmidhuberj.tubefeeder">
-            <picture class="full drop-shadow">
-              <img src="icons/de.schmidhuberj.tubefeeder.svg" alt="Pipeline" />
-            </picture>
-            <small>Pipeline</small>
-          </a>
-          <a href="https://flathub.org/apps/de.schmidhuberj.DieBahn">
-            <picture class="full drop-shadow">
-              <img src="icons/de.schmidhuberj.DieBahn.svg" alt="Railway" />
-            </picture>
-            <small>Railway</small>
-          </a>
-          <a href="https://flathub.org/apps/org.nickvision.tagger">
-            <picture class="full drop-shadow">
-              <img src="icons/org.nickvision.tagger.svg" alt="Tagger" />
-            </picture>
-            <small>Tagger</small>
-          </a>
-        </div>
-        <br />
+  </section>
+  <section id="redrawn-icons">
+    <div class="container">
+      <h2>Redrawn Icons</h2>
+      <p>
+        Tweaked icons made for projects with icon and idea already present.
+      </p>
+      <br />
+      <div class="media-grid">
+        <a href="https://flathub.org/apps/com.github.neithern.g4music">
+          <picture>
+            <img class="full drop-shadow no-hover" src="icons/com.github.neithern.g4music.svg" alt="G4Music" />
+          </picture>
+          <small>G4Music</small>
+        </a>
+        <a href="https://flathub.org/apps/com.github.GradienceTeam.Gradience">
+          <picture>
+            <img class="full drop-shadow no-hover" src="icons/com.github.GradienceTeam.Gradience.svg" alt="Gradience" />
+          </picture>
+          <small>Gradience</small>
+        </a>
+        <a href="https://flathub.org/apps/com.github.marhkb.Pods">
+          <picture>
+            <img class="full drop-shadow no-hover" src="icons/com.github.marhkb.Pods.svg" alt="Pods" />
+          </picture>
+          <small>Pods</small>
+        </a>
+        <a href="https://flathub.org/apps/codes.loers.Punchclock">
+          <picture>
+            <img class="full drop-shadow no-hover" src="icons/codes.loers.Punchclock.svg" alt="Punchclock" />
+          </picture>
+          <small>Punchclock</small>
+        </a>
+        <a href="https://flathub.org/apps/com.github.ADBeveridge.Raider">
+          <picture>
+            <img class="full drop-shadow no-hover" src="icons/com.github.ADBeveridge.Raider.svg" alt="File Shredder" />
+          </picture>
+          <small>File Shredder</small>
+        </a>
+        <a href="https://flathub.org/apps/com.vixalien.sticky">
+          <picture>
+            <img class="full drop-shadow no-hover" src="icons/com.vixalien.sticky.svg" alt="Sticky Notes" />
+          </picture>
+          <small>Sticky Notes</small>
+        </a>
       </div>
-    </section>
-    <section id="redrawn-icons">
-      <div class="container">
-        <h2>Redrawn Icons</h2>
-        <p>
-          Tweaked icons made for projects with icon and idea already present.
-        </p>
-        <br />
-        <div class="media-grid">
-          <a href="https://flathub.org/apps/com.github.neithern.g4music">
-            <picture class="full drop-shadow">
-              <img src="icons/com.github.neithern.g4music.svg" alt="G4Music" />
-            </picture>
-            <small>G4Music</small>
-          </a>
-          <a href="https://flathub.org/apps/com.github.GradienceTeam.Gradience">
-            <picture class="full drop-shadow">
-              <img
-                src="icons/com.github.GradienceTeam.Gradience.svg"
-                alt="Gradience"
-              />
-            </picture>
-            <small>Gradience</small>
-          </a>
-          <a href="https://flathub.org/apps/com.github.marhkb.Pods">
-            <picture class="full drop-shadow">
-              <img src="icons/com.github.marhkb.Pods.svg" alt="Pods" />
-            </picture>
-            <small>Pods</small>
-          </a>
-          <a href="https://flathub.org/apps/codes.loers.Punchclock">
-            <picture class="full drop-shadow">
-              <img src="icons/codes.loers.Punchclock.svg" alt="Punchclock" />
-            </picture>
-            <small>Punchclock</small>
-          </a>
-          <a href="https://flathub.org/apps/com.github.ADBeveridge.Raider">
-            <picture class="full drop-shadow">
-              <img
-                src="icons/com.github.ADBeveridge.Raider.svg"
-                alt="File Shredder"
-              />
-            </picture>
-            <small>File Shredder</small>
-          </a>
-          <a href="https://flathub.org/apps/com.vixalien.sticky">
-            <picture class="full drop-shadow">
-              <img src="icons/com.vixalien.sticky.svg" alt="Sticky Notes" />
-            </picture>
-            <small>Sticky Notes</small>
-          </a>
-        </div>
-        <br />
+      <br />
+    </div>
+  </section>
+  <section id="wallpapers">
+    <div class="container">
+      <h2>Wallpapers</h2>
+      <p>Wallpapers that I have made for myself, that you can use too.</p>
+      <br />
+      <div class="media-grid">
+        <a href="https://codeberg.org/daudix/archive/src/branch/main/wallpapers/amber">
+          <picture>
+            <source srcset="wallpapers/amber-d.webp" media="(prefers-color-scheme: dark)" />
+            <img class="full drop-shadow no-hover" src="wallpapers/amber-l.webp" alt="Amber" />
+          </picture>
+          <small>Amber</small>
+        </a>
+        <a href="https://codeberg.org/daudix/archive/src/branch/main/wallpapers/amber-v2">
+          <picture>
+            <source srcset="wallpapers/amber-v2-d.webp" media="(prefers-color-scheme: dark)" />
+            <img class="full drop-shadow no-hover" src="wallpapers/amber-v2-l.webp" alt="Amber v2" />
+          </picture>
+          <small>Amber v2</small>
+        </a>
+        <a href="https://codeberg.org/daudix/archive/src/branch/main/wallpapers/crash">
+          <picture>
+            <source srcset="wallpapers/crash-d.webp" media="(prefers-color-scheme: dark)" />
+            <img class="full drop-shadow no-hover" src="wallpapers/crash-l.webp" alt="Crash" />
+          </picture>
+          <small>Crash</small>
+        </a>
+        <a href="https://codeberg.org/daudix/archive/src/branch/main/wallpapers/finder">
+          <picture>
+            <source srcset="wallpapers/finder-gnome-d.webp" media="(prefers-color-scheme: dark)" />
+            <img class="full drop-shadow no-hover" src="wallpapers/finder-gnome-l.webp" alt="Finder" />
+          </picture>
+          <small>Finder</small>
+        </a>
+        <a href="https://codeberg.org/daudix/archive/src/branch/main/wallpapers/lava">
+          <picture>
+            <source srcset="wallpapers/lava-d.webp" media="(prefers-color-scheme: dark)" />
+            <img class="full drop-shadow no-hover" src="wallpapers/lava-l.webp" alt="Lava" />
+          </picture>
+          <small>Lava</small>
+        </a>
+        <a href="https://codeberg.org/daudix/archive/src/branch/main/wallpapers/waves">
+          <picture>
+            <source srcset="wallpapers/waves-d.webp" media="(prefers-color-scheme: dark)" />
+            <img class="full drop-shadow no-hover" src="wallpapers/waves-l.webp" alt="Waves" />
+          </picture>
+          <small>Waves</small>
+        </a>
       </div>
-    </section>
-    <section id="wallpapers">
-      <div class="container">
-        <h2>Wallpapers</h2>
-        <p>Wallpapers that I have made for myself, that you can use too.</p>
-        <br />
-        <div class="media-grid">
-          <a
-            href="https://codeberg.org/daudix/archive/src/branch/main/wallpapers/amber"
-          >
-            <picture class="full drop-shadow">
-              <source
-                srcset="wallpapers/amber-d.webp"
-                media="(prefers-color-scheme: dark)"
-              />
-              <img src="wallpapers/amber-l.webp" alt="Amber" />
-            </picture>
-            <small>Amber</small>
-          </a>
-          <a
-            href="https://codeberg.org/daudix/archive/src/branch/main/wallpapers/amber-v2"
-          >
-            <picture class="full drop-shadow">
-              <source
-                srcset="wallpapers/amber-v2-d.webp"
-                media="(prefers-color-scheme: dark)"
-              />
-              <img src="wallpapers/amber-v2-l.webp" alt="Amber v2" />
-            </picture>
-            <small>Amber v2</small>
-          </a>
-          <a
-            href="https://codeberg.org/daudix/archive/src/branch/main/wallpapers/crash"
-          >
-            <picture class="full drop-shadow">
-              <source
-                srcset="wallpapers/crash-d.webp"
-                media="(prefers-color-scheme: dark)"
-              />
-              <img src="wallpapers/crash-l.webp" alt="Crash" />
-            </picture>
-            <small>Crash</small>
-          </a>
-          <a
-            href="https://codeberg.org/daudix/archive/src/branch/main/wallpapers/finder"
-          >
-            <picture class="full drop-shadow">
-              <source
-                srcset="wallpapers/finder-gnome-d.webp"
-                media="(prefers-color-scheme: dark)"
-              />
-              <img src="wallpapers/finder-gnome-l.webp" alt="Finder" />
-            </picture>
-            <small>Finder</small>
-          </a>
-          <a
-            href="https://codeberg.org/daudix/archive/src/branch/main/wallpapers/lava"
-          >
-            <picture class="full drop-shadow">
-              <source
-                srcset="wallpapers/lava-d.webp"
-                media="(prefers-color-scheme: dark)"
-              />
-              <img src="wallpapers/lava-l.webp" alt="Lava" />
-            </picture>
-            <small>Lava</small>
-          </a>
-          <a
-            href="https://codeberg.org/daudix/archive/src/branch/main/wallpapers/waves"
-          >
-            <picture class="full drop-shadow">
-              <source
-                srcset="wallpapers/waves-d.webp"
-                media="(prefers-color-scheme: dark)"
-              />
-              <img src="wallpapers/waves-l.webp" alt="Waves" />
-            </picture>
-            <small>Waves</small>
-          </a>
-        </div>
-        <br />
-      </div>
-    </section>
-    <div class="container">{% block content %}{%- endblock -%}</div>
-    {% include "partials/footer.html" ignore missing -%}
-  </body>
+      <br />
+    </div>
+  </section>
+  <div class="container">{% block content %}{%- endblock -%}</div>
+  {% include "partials/footer.html" ignore missing -%}
+</body>
+
 </html>
