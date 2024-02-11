@@ -26,7 +26,7 @@ So what did I do?
 
 Earlier this month I decided to try out a new instance - no, a whole new software even - Akkoma; in short, I fell in love with it. What I liked about it is that it's more lightweight yet has more features than Mastodon, even the glitch-soc edition (e.g. it can render MFM-Misskey Flavoured Markdown), plus it has slightly skeuomorphic look.
 
-I wasn't sure if I should switch my home server from [treehouse](https://social.treehouse.systems/@daudix) or keep it as a backup, but then I thought "what if I keep my current main profile for the boring David and use the new instance for Daudix's needs?", and... I did it! and this is the official announcement, if you want to follow the new profile it is at [@daudix@pleroma.envs.net](https://pleroma.envs.net/users/daudix) (Seirdy, the instance admin, rocks btw).
+I wasn't sure if I should switch my home server from [treehouse](https://social.treehouse.systems/@daudix) or keep it as a backup, but then I thought "what if I keep my current main profile for the boring David and use the new instance for Daudix's needs?", and... I did it! and this is the official announcement, if you want to follow the new profile it is at <https://pleroma.envs.net/users/daudix> (Seirdy, the instance admin, rocks btw).
 
 Sometimes I might boost stuff from this new profile on the main, but otherwise I expect the main to be less active.
 
@@ -44,7 +44,7 @@ Slightly more detailed: because it's too slow and buggy for my taste, even thoug
 
 ## TL;DR
 
-I tried Akkoma and it clicked, now I will post goofy stuff there, follow it (if you want) at [@daudix@pleroma.envs.net](https://pleroma.envs.net/users/daudix)
+I tried Akkoma and it clicked, now I will post goofy stuff there, follow it (if you want) at <https://pleroma.envs.net/users/daudix>
 
 ![Akkoma profile](akkoma-profile.png)
 <figcaption>Screenshot of the header of my Akkoma profile</figcaption>
