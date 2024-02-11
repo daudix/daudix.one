@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-  {% include "includes/head.html" ignore missing -%}
+  {% include "partials/head.html" ignore missing -%}
 
   <body>
-    {% include "includes/nav.html" ignore missing -%}
+    {% include "partials/nav.html" ignore missing -%}
     <div id="main" class="container">
       <h1>Design Showcase</h1>
       <p>A sneak peek into my designs.</p>
@@ -216,6 +216,6 @@
       </div>
     </section>
     <div class="container">{% block content %}{%- endblock -%}</div>
-    {% include "includes/footer.html" ignore missing -%}
+    {% include "partials/footer.html" ignore missing -%}
   </body>
 </html>
