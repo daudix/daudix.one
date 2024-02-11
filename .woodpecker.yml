@@ -26,7 +26,7 @@ steps:
     secrets: [ mail, codeberg_token ]
     commands:
       # Save .domains
-      - domains=$(cat .domains)
+      # - domains=$(cat .domains)
       # Git configuration
       - git config --global user.email $MAIL
       - git config --global user.name "Woodpecker CI"
@@ -38,7 +38,7 @@ steps:
       # Copy build step output to repository folder
       - cp -ar ../public/. .
       # Add .domains back
-      - echo $domains > .domains
+      # - echo $domains > .domains
       # Commit and push all static files with source commit SHA
       - git add --all
       - git commit -m "Woodpecker CI ${CI_COMMIT_SHA} [SKIP CI]"
