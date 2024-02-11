@@ -142,6 +142,7 @@ I also have a website on [neocities.org](https://neocities.org), it's not in a g
     <img src="88x31/besteyes2.gif" />
     <img src="88x31/bestviewed16bit.gif" />
     <img src="88x31/daudix.gif" />
+    <img src="88x31/daudix-alt.gif" />
     <img src="88x31/fuckchrome.gif" />
     <img src="88x31/imac.gif" />
     <img src="88x31/neo-fedi.gif" />
