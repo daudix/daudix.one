@@ -4,9 +4,11 @@ description = "About me, what I do, and more."
 +++
 
 <div id="about-splash">
-  <img id="about-avatar" class="transparent drop-shadow" src="logo.svg" alt="My logo" />
-  <h1 id="about-header">David Lapshin</h1>
-  <small>Passionate designer, translator, and FOSS contributor.</small>
+<img id="about-avatar" class="transparent drop-shadow" src="logo.svg" alt="My logo" />
+
+# David Lapshin { #about-header }
+
+<small>Passionate designer, translator, and FOSS contributor.</small>
 </div>
 
 ## About
@@ -76,9 +78,9 @@ Shortened list of places where you can ~~stalk~~ find me on:
 I have changed (and will change) my homeserver, so to make sure nothing is lost, here is my Fediverse timeline:
 
 <ol id="timeline">
-  <li><small>01 Sep 2022 - 20 Nov 2023<br><a href="https://mstdn.social/@Daudix">mstdn.social</a> - Previous main profile</small></li>
-  <li><small>20 Nov 2023 - Today<br><a href="https://social.treehouse.systems/@daudix">social.treehouse.systems</a> - Main profile</small></li>
-  <li><small>08 Jan 2024 - Today<br><a href="https://pleroma.envs.net/daudix">pleroma.envs.net</a> - Personal profile</small></li>
+<li><small>01 Sep 2022 - 20 Nov 2023<br><a href="https://mstdn.social/@Daudix">mstdn.social</a> - Previous main profile</small></li>
+<li><small>20 Nov 2023 - Today<br><a href="https://social.treehouse.systems/@daudix">social.treehouse.systems</a> - Main profile</small></li>
+<li><small>08 Jan 2024 - Today<br><a href="https://pleroma.envs.net/daudix">pleroma.envs.net</a> - Personal profile</small></li>
 </ol>
 
 ## Forges
@@ -130,25 +132,25 @@ I also have a website on [neocities.org](https://neocities.org), it's not in a g
 <small>Seriously, they're awesome!</small>
 
 <div id="buttons-container">
-  <p>
-    <a href="https://512kb.club"><img src="88x31/green-team.gif" alt="a proud member of the green team of 512KB club" /></a>
-    <a href="https://duckduckgo.com"><img src="88x31/ddg.gif" /></a>
-    <a href="https://getimiskon.xyz"><img src="88x31/getimiskon.png" /></a>
-    <a href="https://www.mozilla.org/en-US/firefox/new/"><img src="88x31/firefox3.gif" /></a>
-    <a href="https://yesterweb.org/no-to-web3/"><img src="88x31/notoweb3.gif" /></a>
-    <img src="88x31/adhd.gif" />
-    <img src="88x31/any2.gif" />
-    <img src="88x31/anythingbut.gif" />
-    <img src="88x31/besteyes2.gif" />
-    <img src="88x31/bestviewed16bit.gif" />
-    <img src="88x31/daudix-alt.gif" />
-    <img src="88x31/daudix.gif" />
-    <img src="88x31/fuckchrome.gif" />
-    <img src="88x31/imac.gif" />
-    <img src="88x31/linux_powered.gif" />
-    <img src="88x31/neo-fedi.gif" />
-    <img src="88x31/yarrr.gif" />
-  </p>
+
+![adhd](88x31/adhd.gif)
+![any2](88x31/any2.gif)
+![anythingbut](88x31/anythingbut.gif)
+![besteyes2](88x31/besteyes2.gif)
+![bestviewed16bit](88x31/bestviewed16bit.gif)
+![daudix-alt](88x31/daudix-alt.gif)
+![daudix](88x31/daudix.gif)
+![fuckchrome](88x31/fuckchrome.gif)
+![imac](88x31/imac.gif)
+![linux_powered](88x31/linux_powered.gif)
+![neo-fedi](88x31/neo-fedi.gif)
+![yarrr](88x31/yarrr.gif)
+[![a proud member of the green team of 512KB club](88x31/green-team.gif)](https://512kb.club)
+[![ddg](88x31/ddg.gif)](https://duckduckgo.com)
+[![firefox3](88x31/firefox3.gif)](https://www.mozilla.org/en-US/firefox/new/)
+[![getimiskon](88x31/getimiskon.png)](https://getimiskon.xyz)
+[![notoweb3](88x31/notoweb3.gif)](https://yesterweb.org/no-to-web3/)
+
 </div>
 
 If you like my website, feel free to link it by adding the button:
