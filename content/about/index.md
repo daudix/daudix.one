@@ -154,7 +154,7 @@ I also have a website on [neocities.org](https://neocities.org), it's not in a g
 If you like my website, feel free to link it by adding the button:
 
 ```html
-<a href="https://daudix.codeberg.page" target="_blank"><img src="https://daudix.codeberg.page/about/daudix.gif"></a>
+<a href="https://daudix.codeberg.page" target="_blank"><img src="https://daudix.codeberg.page/about/88x31/daudix.gif"></a>
 ```
 
 > Note: It's recommended to avoid hot-linking; instead place a copy on your own site.
