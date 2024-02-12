@@ -133,6 +133,11 @@ I also have a website on [neocities.org](https://neocities.org), it's not in a g
 
 <div id="buttons-container">
 
+[![a proud member of the green team of 512KB club](88x31/green-team.gif)](https://512kb.club)
+[![ddg](88x31/ddg.gif)](https://duckduckgo.com)
+[![firefox3](88x31/firefox3.gif)](https://www.mozilla.org/en-US/firefox/new/)
+[![getimiskon](88x31/getimiskon.png)](https://getimiskon.xyz)
+[![notoweb3](88x31/notoweb3.gif)](https://yesterweb.org/no-to-web3/)
 ![adhd](88x31/adhd.gif)
 ![any2](88x31/any2.gif)
 ![anythingbut](88x31/anythingbut.gif)
@@ -145,11 +150,6 @@ I also have a website on [neocities.org](https://neocities.org), it's not in a g
 ![linux_powered](88x31/linux_powered.gif)
 ![neo-fedi](88x31/neo-fedi.gif)
 ![yarrr](88x31/yarrr.gif)
-[![a proud member of the green team of 512KB club](88x31/green-team.gif)](https://512kb.club)
-[![ddg](88x31/ddg.gif)](https://duckduckgo.com)
-[![firefox3](88x31/firefox3.gif)](https://www.mozilla.org/en-US/firefox/new/)
-[![getimiskon](88x31/getimiskon.png)](https://getimiskon.xyz)
-[![notoweb3](88x31/notoweb3.gif)](https://yesterweb.org/no-to-web3/)
 
 </div>
 
