@@ -27,7 +27,8 @@ Recently I were contributing to [some](https://codeberg.org/Bavarder/Bavarder) [
 _Edit: apparently I have [contributed to one project](https://codeberg.org/foreverxml/random/pulls/41) earlier, so I already had a Codeberg account xD_
 
 > Codeberg is non-profit powered by [Forgejo](https://forgejo.org) - a soft-fork of [Gitea](https://about.gitea.com).
->> (…) We started Forgejo in reaction to control of Gitea being taken away from the community by the newly-formed for-profit company Gitea Ltd without prior community consultation, and after an [Open Letter](https://gitea-open-letter.coding.social) to the Gitea project owners remained unanswered.
+>
+> > (…) We started Forgejo in reaction to control of Gitea being taken away from the community by the newly-formed for-profit company Gitea Ltd without prior community consultation, and after an [Open Letter](https://gitea-open-letter.coding.social) to the Gitea project owners remained unanswered.
 
 And I started thinking of and preparing for migration.
 

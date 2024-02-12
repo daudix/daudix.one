@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="128"
+   height="128"
+   viewBox="0 0 128 128"
+   version="1.1"
+   id="svg323"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs320">
+    <linearGradient
+       id="linearGradient1879">
+      <stop
+         style="stop-color:#c061cb;stop-opacity:1;"
+         offset="0"
+         id="stop1875" />
+      <stop
+         style="stop-color:#62a0ea;stop-opacity:1;"
+         offset="1"
+         id="stop1877" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient62889">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0.5;"
+         offset="0"
+         id="stop62885" />
+      <stop
+         style="stop-color:#62a0ea;stop-opacity:0"
+         offset="1"
+         id="stop62887" />
+    </linearGradient>
+    <linearGradient
+       xlink:href="#linearGradient1879"
+       id="linearGradient559-3"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-864,-384)"
+       x1="16"
+       y1="16"
+       x2="112"
+       y2="112" />
+    <radialGradient
+       xlink:href="#linearGradient62889"
+       id="radialGradient561-5"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-864,-384)"
+       cx="96"
+       cy="128"
+       fx="96"
+       fy="128"
+       r="64" />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4577">
+      <circle
+         id="circle4579"
+         cx="0"
+         cy="64"
+         r="48"
+         style="display:none;fill:#3584e4"
+         d="M 48,64 A 48,48 0 0 1 0,112 48,48 0 0 1 -48,64 48,48 0 0 1 0,16 48,48 0 0 1 48,64 Z" />
+      <path
+         id="lpe_path-effect4581"
+         style="fill:#3584e4"
+         class="powerclip"
+         d="M -69,-5 H 69 V 133 H -69 Z M 48,64 A 48,48 0 0 0 0,16 48,48 0 0 0 -48,64 48,48 0 0 0 0,112 48,48 0 0 0 48,64 Z" />
+    </clipPath>
+  </defs>
+  <g
+     id="layer1"
+     style="display:inline"
+     transform="translate(864,384)">
+    <rect
+       width="128"
+       height="128"
+       x="-864"
+       y="-384"
+       id="rect541-6"
+       style="fill:url(#linearGradient559-3)" />
+    <rect
+       width="128"
+       height="128"
+       x="-864"
+       y="-384"
+       id="rect543-2"
+       style="display:inline;fill:url(#radialGradient561-5)" />
+    <path
+       id="rect4571"
+       width="128"
+       height="128"
+       x="-64"
+       y="0"
+       style="fill:#ffffff"
+       clip-path="url(#clipPath4577)"
+       d="M -64,0 H 64 V 128 H -64 Z"
+       transform="translate(-800,-384)" />
+    <g
+       id="g2006"
+       transform="translate(-800,-384)">
+      <path
+         id="circle2948-7"
+         style="fill:#ffffff"
+         d="m 21.000015,42.00004 c -3.38197,0.01 -6.57135,1.57516 -8.64844,4.24414 -0.0563,0.0464 -0.10741,0.0988 -0.15234,0.15625 l -0.59961,0.79883 c -0.0166,0.0228 -0.0323,0.0462 -0.0469,0.0703 -0.9036,1.44322 -2.61156,2.14889 -4.26757,1.76953 -1.67784,-0.68517 -3.47277,-1.03806 -5.28514,-1.03905 -4.66791,0.007 -9.02535,2.33976 -11.61914,6.2207 -0.0119,0.008 -0.0236,0.0154 -0.0352,0.0234 -1.45558,1.26242 -3.35347,1.8944 -5.27539,1.75781 -0.0234,-10e-4 -0.0469,-0.002 -0.0703,-0.002 h -3 c -7.73199,0 -14,6.26801 -14,14 0,7.73199 6.26801,14 14,14 1.7698,-0.0111 3.52144,-0.35776 5.16211,-1.02148 0.0838,-0.0111 0.16581,-0.0327 0.24414,-0.0645 l 0.37305,-0.16601 c 0.0209,-0.009 0.0417,-0.0182 0.0625,-0.0273 l 4.9082,-2.18164 c 1.96395,-0.87286 4.23521,-0.68043 6.02344,0.51172 l 1.58789,1.0586 c 2.59458,2.48572 6.04556,3.87869 9.63867,3.89062 7.73199,0 14,-6.26801 14,-14 v -4 c 0,-2.20418 1.03744,-4.2771 2.80078,-5.59961 0.340434,-0.221632 0.671808,-0.520979 0.9707,-0.76367 2.65992,-2.07764 4.21871,-5.26147 4.22855,-8.63664 0,-6.07513 -4.92487,-11 -11,-11 z" />
+      <circle
+         id="circle547-9"
+         cx="32"
+         cy="68"
+         r="4"
+         style="fill:#ffffff" />
+      <circle
+         id="circle549-1"
+         cx="6"
+         cy="42"
+         r="2"
+         style="fill:#ffffff" />
+      <circle
+         id="circle551-2"
+         cx="-15"
+         cy="49"
+         r="3"
+         style="fill:#ffffff" />
+    </g>
+  </g>
+</svg>
