@@ -69,9 +69,8 @@
   }
 
   #about-header {
-    color: #404a65;
-    font-family: Superclarendon, "Bookman Old Style", "URW Bookman",
-      "URW Bookman L", "Georgia Pro", Georgia, serif;
+    color: var(--primary-color);
+    font-family: var(--font-serif);
     font-style: italic;
     font-size: 4rem;
     font-weight: bold;
@@ -86,8 +85,6 @@
 
     @media (prefers-color-scheme: dark) {
       & {
-        color: #f4e2cc;
-
         &:hover {
           text-shadow: 0 3px 0 #404a65, 0 6px 0 #f25242, 0 9px 0 #93bfb0,
             0 12px 0 #f1d456;
