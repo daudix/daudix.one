@@ -1,8 +1,8 @@
 body {
   background-attachment: fixed;
   background-image: linear-gradient(
-      rgba(255, 255, 255, 0.7),
-      rgba(255, 255, 255, 0.7)
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.6)
     ),
     url(assets/bg.png);
   background-size: cover;
@@ -165,9 +165,7 @@ body {
 }
 
 #clock {
-  -webkit-backdrop-filter: var(--blur);
   animation: clock-blink 1s infinite;
-  backdrop-filter: var(--blur);
   background-color: var(--primary-color-alpha);
   border-radius: var(--rounded-corner-small);
   box-shadow: var(--edge-highlight);
@@ -237,8 +235,6 @@ section {
   &#original-icons,
   &#redrawn-icons,
   &#wallpapers {
-    -webkit-backdrop-filter: var(--blur);
-    backdrop-filter: var(--blur);
     background-image: radial-gradient(
       circle,
       var(--fg-muted-1) 1px,
