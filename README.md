@@ -4,3 +4,5 @@
 [![status-badge](https://ci.codeberg.org/api/badges/13031/status.svg)](https://ci.codeberg.org/repos/13031)
 
 My personal website powered by [Zola](https://www.getzola.org) and the [Duckquill](https://daudix.codeberg.page/duckquill) theme.
+
+Background image credit: IDK, I tried finding source, but apparently it's down, I got it from [here](https://wallpapersden.com/sky-clouds-pink-wallpaper)
