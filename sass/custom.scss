@@ -1,3 +1,20 @@
+body {
+  background-attachment: fixed;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url(assets/bg.png);
+  background-size: cover;
+
+  @media (prefers-color-scheme: dark) {
+    & {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url(assets/bg.png);
+    }
+  }
+}
+
 #status-container {
   margin: 2rem 0 2rem;
   display: flex;
@@ -148,12 +165,15 @@
 }
 
 #clock {
+  -webkit-backdrop-filter: var(--blur);
+  animation: clock-blink 1s infinite;
+  backdrop-filter: var(--blur);
   background-color: var(--primary-color-alpha);
   border-radius: var(--rounded-corner-small);
+  box-shadow: var(--edge-highlight);
   color: var(--primary-color);
   font-weight: bold;
   padding: 0.125rem 0.375rem;
-  animation: clock-blink 1s infinite;
 
   @keyframes clock-blink {
     from {
@@ -217,12 +237,14 @@ section {
   &#original-icons,
   &#redrawn-icons,
   &#wallpapers {
-    background-size: 1rem 1rem;
+    -webkit-backdrop-filter: var(--blur);
+    backdrop-filter: var(--blur);
     background-image: radial-gradient(
       circle,
       var(--fg-muted-1) 1px,
       transparent 1px
     );
+    background-size: 1rem 1rem;
   }
 
   &#original-icons {
