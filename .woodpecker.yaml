@@ -33,15 +33,11 @@ steps:
     # Must be set in Woodpecker configuration
     secrets: [ mail, codeberg_token ]
     commands:
-      # Save .domains
-      # - domains=$(cat .domains)
       # Git configuration
       - git config --global user.email $MAIL
       - git config --global user.name "Woodpecker CI"
-      # Push Updated Duckquill
-      - git add --all
-      - git commit -m "Updated Duckquill"
-      - git push
+      # Push Updated Duckquill (if it was updated)
+      - if [[ `git status --porcelain` ]]; then git add --all && git commit -m "Updated Duckquill" && git push; else true; fi
       # Clone output branch
       - git clone -b pages https://$CODEBERG_TOKEN@codeberg.org/$CI_REPO.git $CI_REPO_NAME
       # Enter output branch folder
@@ -50,8 +46,8 @@ steps:
       - git rm -r "*"
       # Copy build step output
       - cp -ar ../public/. .
-      # Add .domains back
-      # - echo $domains > .domains
+      # Needed for custom domains
+      - cp .domains $CI_REPO_NAME || true # Ignore if it doesn't exist
       # Commit and push all static files with source commit SHA
       - git add --all
       - git commit -m "Woodpecker CI ${CI_COMMIT_SHA} [SKIP CI]"
