@@ -50,7 +50,7 @@ steps:
       # Copy build step output
       - cp -ar ../public/. .
       # Needed for custom domains
-      - cp .domains $CI_REPO_NAME || true # Ignore if it doesn't exist
+      - cp ../.domains . || true # Ignore if it doesn't exist
       # Commit and push all static files with source commit SHA
       - git add --all
       - git commit -m "Woodpecker CI ${CI_COMMIT_SHA} [SKIP CI]"
