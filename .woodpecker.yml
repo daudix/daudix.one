@@ -11,7 +11,15 @@ clone:
       recursive: true
 
 steps:
-  # Build zola static files
+  update:
+    image: alpine/git
+    commands:
+      - git submodule update --init --recursive
+      - git submodule foreach --recursive "git fetch origin && git reset --hard origin/HEAD || :"
+      - git submodule update --remote --merge || git pull --allow-unrelated-histories
+    when:
+      event: push
+
   build:
     image: alpine
     commands:
@@ -30,12 +38,17 @@ steps:
       # Git configuration
       - git config --global user.email $MAIL
       - git config --global user.name "Woodpecker CI"
+      # Push Updated Duckquill
+      - git add --all
+      - git commit -m "Updated Duckquill"
+      - git push
+      # Clone output branch
       - git clone -b pages https://$CODEBERG_TOKEN@codeberg.org/$CI_REPO.git $CI_REPO_NAME
-      # Enter repository folder
+      # Enter output branch folder
       - cd $CI_REPO_NAME
-      # Remove old files from repository folder
+      # Remove old files
       - git rm -r "*"
-      # Copy build step output to repository folder
+      # Copy build step output
       - cp -ar ../public/. .
       # Add .domains back
       # - echo $domains > .domains
