@@ -37,7 +37,9 @@ steps:
       - git config --global user.email $MAIL
       - git config --global user.name "Woodpecker CI"
       # Push Updated Duckquill (if it was updated)
-      - if [[ `git status --porcelain` ]]; then git add --all && git commit -m "Updated Duckquill" && git push; else true; fi
+      - git add --all
+      - git commit -m "Update Duckquill" || true
+      - git push
       # Clone output branch
       - git clone -b pages https://$CODEBERG_TOKEN@codeberg.org/$CI_REPO.git $CI_REPO_NAME
       # Enter output branch folder
