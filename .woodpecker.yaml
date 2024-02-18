@@ -39,7 +39,8 @@ steps:
       # Push Updated Duckquill (if it was updated)
       - git add --all
       - git commit -m "Update Duckquill" || true
-      - git push
+      - git remote set-url origin https://$CODEBERG_TOKEN@codeberg.org/$CI_REPO.git
+      - git push --set-upstream origin main
       # Clone output branch
       - git clone -b pages https://$CODEBERG_TOKEN@codeberg.org/$CI_REPO.git $CI_REPO_NAME
       # Enter output branch folder
