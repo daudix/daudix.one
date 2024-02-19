@@ -71,7 +71,7 @@ First, I have requested and waited for manual approval to access to Woodpecker C
 
 After approval, I have created `blog-source` and `blog` repositories (names can be whatever you want), the later will contain the generated static site, and should only have `pages` branch in it, and created `.woodpecker.yml` file in the `blog-source` repository.
 
-Then copy and paste the contents of [Jekyll workflow example](https://codeberg.org/Codeberg-CI/examples/src/branch/main/Jekyll/jekyll.yml) in `.woodpecker.yml`
+Then copy and paste the contents of [Jekyll workflow example](https://codeberg.org/Codeberg-CI/examples/src/branch/main/Jekyll/.woodpecker/jekyll.yaml) in `.woodpecker.yml`
 
 ```yml
 steps:
