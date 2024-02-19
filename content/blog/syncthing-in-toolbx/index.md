@@ -5,7 +5,7 @@ date = 2024-02-19
 [taxonomies]
 tags = ["Silverblue", "Syncthing", "Toolbx"]
 [extra.comments]
-id = ""
+id = "111957654155839059"
 +++
 
 Today I wanted to reduce the amount of overlayed packages on my Silveblue install, sure thing it was easy to do, but there was one thing that wasn't this easy, Syncthing.
