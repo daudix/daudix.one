@@ -18,7 +18,7 @@ steps:
       - git submodule foreach --recursive "git fetch origin && git reset --hard origin/HEAD || :"
       - git submodule update --remote --merge || git pull --allow-unrelated-histories
     when:
-      event: push
+      event: [ push, manual ]
 
   build:
     image: alpine
@@ -26,7 +26,7 @@ steps:
       - apk add zola
       - zola build
     when:
-      event: [ pull_request, push ]
+      event: [ pull_request, push, manual ]
 
   publish:
     image: bitnami/git
@@ -56,4 +56,4 @@ steps:
       - git commit -m "Woodpecker CI ${CI_COMMIT_SHA} [SKIP CI]"
       - git push
     when:
-      event: push
+      event: [ push, manual ]
