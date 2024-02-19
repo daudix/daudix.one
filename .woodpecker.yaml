@@ -26,7 +26,7 @@ steps:
       - apk add zola
       - zola build
     when:
-      event: [ pull_request, push, manual ]
+      event: [ push, pull_request, manual ]
 
   publish:
     image: bitnami/git
