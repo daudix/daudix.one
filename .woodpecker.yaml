@@ -36,11 +36,6 @@ steps:
       # Git configuration
       - git config --global user.email $MAIL
       - git config --global user.name "Woodpecker CI"
-      # Push Updated Duckquill (if it was updated)
-      - git add --all
-      - git commit -m "Update Duckquill [SKIP CI]" || true
-      - git remote set-url origin https://$CODEBERG_TOKEN@codeberg.org/$CI_REPO.git
-      - git push --set-upstream origin main
       # Clone output branch
       - git clone -b pages https://$CODEBERG_TOKEN@codeberg.org/$CI_REPO.git $CI_REPO_NAME
       # Enter output branch folder
