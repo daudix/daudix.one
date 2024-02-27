@@ -4,6 +4,8 @@ description = "One of the thigns why I hate JS"
 date = 2024-02-06
 [taxonomies]
 tags = ["Devlog", "Website", "Duckquill", "JavaScript"]
+[extra.comments]
+id = "111881385228724178"
 +++
 
 > ~~This is a post in a new format called "microblog", not quite a Mastodon post nor a full-blown blog post, you got the idea :)~~
