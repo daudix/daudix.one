@@ -1,11 +1,10 @@
 body {
 	background-attachment: fixed;
 	background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(assets/bg.png);
-	background-size: cover;
 
 	@media (prefers-color-scheme: dark) {
 		& {
-			background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(assets/bg.png);
+			background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(assets/bg.png);
 		}
 	}
 }
