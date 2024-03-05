@@ -133,7 +133,7 @@ I also have a website on [neocities.org](https://neocities.org), it's not in a g
 
 <div id="buttons-container">
 
-[![a proud member of the blue team of 512KB club](88x31/blue-team.gif)](https://512kb.club)
+[![a proud member of the green team of 512KB club](88x31/green-team.gif)](https://512kb.club)
 [![ddg](88x31/ddg.gif)](https://duckduckgo.com)
 [![firefox3](88x31/firefox3.gif)](https://www.mozilla.org/en-US/firefox/new/)
 [![getimiskon](88x31/getimiskon.png)](https://getimiskon.xyz)
