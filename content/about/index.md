@@ -135,7 +135,7 @@ I also have a website on [neocities.org](https://neocities.org), it's not in a g
 
 [![a proud member of the green team of 512KB club](88x31/green-team.gif)](https://512kb.club)
 [![ddg](88x31/ddg.gif)](https://duckduckgo.com)
-[![firefox3](88x31/firefox3.gif)](https://www.mozilla.org/en-US/firefox/new/)
+[![firefox3](88x31/firefox3.gif)](https://www.mozilla.org/en-US/firefox/)
 [![getimiskon](88x31/getimiskon.png)](https://getimiskon.xyz)
 [![notoweb3](88x31/notoweb3.gif)](https://yesterweb.org/no-to-web3/)
 [![statuscafe](88x31/statuscafe.png)](https://status.cafe)
