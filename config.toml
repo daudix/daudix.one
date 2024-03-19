@@ -4,7 +4,7 @@ description = "Passionate designer, translator, and FOSS contributor."
 theme = "duckquill"
 
 compile_sass = true
-minify_html = true
+minify_html = false
 generate_feed = true
 feed_filename = "atom.xml"
 build_search_index = false
