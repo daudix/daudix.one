@@ -26,9 +26,9 @@ smart_punctuation = true
 [extra]
 # Sets theme and browser theme color,
 # see https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta/name/theme-color
-primary_color = "#7777af"
+primary_color = "#c061cb"
 # Same as primary_color, but with 20% opacity
-primary_color_alpha = "rgba(119, 119, 175, 0.2)"
+primary_color_alpha = "rgba(192, 97, 203, 0.2)"
 # If the favicon is GIF or not
 animated_favicon = true
 # Tera date format (not used in comments!),
