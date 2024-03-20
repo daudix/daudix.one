@@ -60,7 +60,7 @@ Feel free to send me a message on any of these, although Matrix is preferred sin
 - [Mail](mailto:daudix@envs.net)
 - [Gmail](mailto:ddaudix@gmail.com)
 - [Discord](https://discord.com/users/650757995378114581)
-- [Telegram](https://t.me/Daudix_UFO)
+- [Telegram](https://t.me/ddaudix)
 
 Additionally, If I know you I can give you my Signal phone number.
 
