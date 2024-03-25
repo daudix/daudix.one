@@ -66,7 +66,7 @@ Additionally, If I know you I can give you my Signal phone number.
 
 ## Socials
 
-Shortened list of places where you can ~~stalk~~ find me on:
+List of places where you can ~~stalk~~ find me on:
 
 - [Mastodon](https://social.treehouse.systems/@daudix)
 - [Akkoma](https://pleroma.envs.net/daudix)
@@ -74,6 +74,9 @@ Shortened list of places where you can ~~stalk~~ find me on:
 - [Pixelfed](https://pixey.org/Daudix)
 - [Lemmy](https://toast.ooo/u/Daudix)
 - [YouTube](https://www.youtube.com/@daudix_ufo)
+
+You can also find me on [Bluesky](https://bsky.app/profile/daudix.bsky.social) and [Tumblr](https://www.tumblr.com/ddaudix), although I don't use these often (at least right now)
+
 
 I have changed (and will change) my homeserver, so to make sure nothing is lost, here is my Fediverse timeline:
 
