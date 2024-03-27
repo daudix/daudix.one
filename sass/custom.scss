@@ -1,8 +1,9 @@
 #status-container {
-	margin: 2rem 0 2rem;
 	display: flex;
 	flex-direction: row;
+	margin: 2rem 0 2rem;
 	place-items: center;
+    justify-content: center;
 
 	#status-avatar {
 		margin: 0 1rem 0 0;
@@ -17,7 +18,6 @@
 		box-shadow: var(--edge-highlight);
 		padding: 0.5rem;
 		position: relative;
-		width: 100%;
 
 		&::after {
 			border-bottom: 10px solid transparent;
