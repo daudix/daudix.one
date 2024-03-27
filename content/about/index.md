@@ -61,8 +61,7 @@ Feel free to send me a message on any of these, although Matrix is preferred sin
 - [Gmail](mailto:ddaudix@gmail.com)
 - [Discord](https://discord.com/users/650757995378114581)
 - [Telegram](https://t.me/ddaudix)
-
-Additionally, If I know you I can give you my Signal phone number.
+- [Signal](https://signal.me/#eu/0KKOAPEjDPbNVKFfWbNu9AHZE2od2quKOO5NxLmFqf/xA9940S5JKZbOhTwoa2wP)
 
 ## Socials
 
@@ -164,7 +163,7 @@ If you like my website, feel free to link it by adding the button:
 
 > Note: It's recommended to avoid hot-linking; instead place a copy on your own site.
 
-Psst, you, yes, *you*. Got a nice website? Got nice buttons?  Got any buttons? I have a deal for you! Just [ping me somewhere](@/about/index.md#contacts) and I'll add your button here, easy as pie.
+Hey, you, yes, *you*. Got a nice website? Got nice buttons?  Got any buttons? I have a deal for you! Just [ping me somewhere](@/about/index.md#contacts) and I'll add your button here, easy as pie.
 
 <script type="text/javascript">
   function updateClock() {
