@@ -80,3 +80,5 @@ show_source = false
 host = "social.treehouse.systems"
 # Used to determine who the original poster is
 user = "daudix"
+# Display the QR code to Mastodon post (utilizes DuckDuckGo Instant Answer API)
+show_qr = true
