@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mastodon Archive</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  font-family: Verdana;
+  background-color: #282C37;
+  color: white;
+}
+
+a {
+  color: #8c8dff;
+  text-decoration: none;
+}
+
+.hashtag {
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#header {
+  text-align: center;
+}
+
+#header > img {
+  border-radius: 50%;
+  width: 150px;
+}
+
+#feed {
+  margin: 0 10% 0;
+}
+
+.m-post {
+  border: 1px solid;
+  border-radius: 25px;
+  padding: 10px;
+  margin-bottom: 10px;
+
+  text-wrap: wrap;
+}
+
+.m-media > * {
+  max-width: 100%;
+  max-height: 20vh;
+}
+
+.m-post-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.m-pfp {
+  border-radius: 50%;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.m-display-name {
+  font-weight: bold;
+}
+
+.m-user-block {
+  flex-grow: 1;
+}
+
+.invisible {
+  display: none;
+}
+
+.ellipsis:after {
+  content: "..."
+}
+</style>
+
+</head>
+<body>
+<section id="header">
+<img src="avatar.png">
+<div class="m-display-name">Daudix UFO 🐧</div>
+<div>@Daudix</div>
+<div id="actor-summary"></div>
+</section><div id="feed"><div class="m-post">
+	<div class="m-post-header">
+		<img src="avatar.png" class="m-pfp">
+		<div class="m-user-block">
+			<div class="m-display-name">Daudix UFO 🐧</div>
+			<div class="m-user-name">@Daudix</div>
+		</div>
+		<span class="m-permalink">2022-09-24T00:22:34Z</span>
+	</div>
+	<div class="m-post-body"><p>Hi fosstodon 👋 :fosstodon:</p></div>
+	<div class="m-media"></div>
+</div><div class="m-post">
+	<div class="m-post-header">
+		<img src="avatar.png" class="m-pfp">
+		<div class="m-user-block">
+			<div class="m-display-name">Daudix UFO 🐧</div>
+			<div class="m-user-name">@Daudix</div>
+		</div>
+		<span class="m-permalink">2022-11-27T17:29:39Z</span>
+	</div>
+	<div class="m-post-body"><p>I truly don&#39;t understand why a lot of people don&#39;t like the Anaconda <a href="https://fosstodon.org/tags/fedora" class="mention hashtag" rel="tag">#<span>fedora</span></a> installer, for me it always worked and I had no issues with it</p></div>
+	<div class="m-media"></div>
+</div><div class="m-post">
+	<div class="m-post-header">
+		<img src="avatar.png" class="m-pfp">
+		<div class="m-user-block">
+			<div class="m-display-name">Daudix UFO 🐧</div>
+			<div class="m-user-name">@Daudix</div>
+		</div>
+		<span class="m-permalink">2022-11-27T18:49:25Z</span>
+	</div>
+	<div class="m-post-body"><p><span class="h-card" translate="no"><a href="https://fosstodon.org/@ironbeagle" class="u-url mention">@<span>ironbeagle</span></a></span> <span class="h-card" translate="no"><a href="https://fosstodon.org/@Joseph_of_Earth" class="u-url mention">@<span>Joseph_of_Earth</span></a></span> well, I agree with this 😅</p></div>
+	<div class="m-media"></div>
+</div> </div>
+<script>
+const SECOND_LENGTH = 1000;
+const MINUTE_LENGTH = 60 * 1000;
+const HOUR_LENGTH = 60 * MINUTE_LENGTH;
+const DAY_LENGTH = 24 * HOUR_LENGTH;
+const WEEK_LENGTH = 7 * DAY_LENGTH;
+const YEAR_LENGTH = 365 * DAY_LENGTH;
+
+function ShortDate(date) {
+  const now = new Date();
+  const then = new Date(date);
+
+  const diff = now.getTime() - then.getTime();
+
+  if (diff >= YEAR_LENGTH) {
+    return Math.floor(diff / YEAR_LENGTH).toString() + "y"
+  }
+
+  if (diff >= WEEK_LENGTH) {
+    return Math.floor(diff / WEEK_LENGTH).toString() + "w";
+  }
+
+  if (diff >= DAY_LENGTH) {
+    return Math.floor(diff / DAY_LENGTH).toString() + "d";
+  }
+
+  if (diff >= HOUR_LENGTH) {
+    return Math.floor(diff / HOUR_LENGTH).toString() + "h";
+  }
+
+  if (diff >= MINUTE_LENGTH) {
+    return Math.floor(diff / MINUTE_LENGTH).toString() + "m";
+  }
+
+  if (diff >= SECOND_LENGTH) {
+    return Math.floor(diff / SECOND_LENGTH).toString() + "s";
+  }
+
+  return date;
+}
+
+[...document.querySelectorAll(".m-permalink")].forEach(item => {
+  item.title = item.innerText;
+  item.innerText = ShortDate(item.innerText);
+})
+</script>
+</body>
+</html>
