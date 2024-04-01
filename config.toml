@@ -39,7 +39,7 @@ date_format = "%d %B %Y"
 issues_url = "https://codeberg.org/daudix/pages/issues"
 # URL to website's source code
 source_url = "https://codeberg.org/daudix/pages"
-# Additional stylesheets; expects it to be in the ./static/ directory.
+# Additional stylesheets; expects it to be in the "./static/" directory.
 # If you are using Sass it will be compiled there anyway.
 stylesheets = [
   "custom.css"
@@ -48,11 +48,13 @@ stylesheets = [
 [extra.nav]
 # Display Atom/RSS feed button in the nav
 show_feed = true
-# Links used in the nav
+# Links used in the nav.
+# For local files use same syntax as in Markdown,
+# i.e "@/blog/_index.md"
 links = [
-  {url = "$BASE_URL/about", name = "About"},
-  {url = "$BASE_URL/blog", name = "Blog"},
-  {url = "$BASE_URL/design", name = "Design"},
+  {url = "@/about/index.md", name = "About"},
+  {url = "@/blog/_index.md", name = "Blog"},
+  {url = "@/design/index.md", name = "Design"},
 ]
 
 [extra.footer]
@@ -60,7 +62,7 @@ links = [
 johnvert_ref = "daudix.codeberg.page"
 # "© Title, YEAR" in the footer
 show_copyright = true
-# "Marketing" via "john" in the footer
+# Marketing via "john" in the footer
 show_johnvert = true
 # "Powered by Zola and Duckquill" in footer
 show_powered_by = true
