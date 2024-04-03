@@ -72,7 +72,7 @@ List of places where you can ~~stalk~~ find me on:
 - [Sharkey](https://shonk.phite.ro/@daudix)
 - [Pixelfed](https://pixey.org/Daudix)
 - [Lemmy](https://toast.ooo/u/Daudix)
-- [YouTube](https://www.youtube.com/@daudix_ufo)
+- [YouTube](https://www.youtube.com/@ddaudix)
 
 You can also find me on [Tumblr](https://ddaudix.tumblr.com), [Bluesky](https://bsky.app/profile/daudix.bsky.social), and [Twitter](https://twitter.com/ddaudix) (I refuse to call it 𝕏), although I don't really use these (at least right now).
 
