@@ -101,6 +101,12 @@ I were using GitHub from the very start of my FOSS journey, but recently I've [m
 - [Liberapay](https://liberapay.com/daudix)
 - [PayPal](https://paypal.me/Daudix)
 
+I also have a Monero wallet if that's something you prefer:
+
+```
+46mpVApATi3QkuwYNJ7sHQEvhRCjms6DxTxRhhLnSTv75n5qNgJheseW78hDRJ1pWo9XR4mAqeA91MuGXDvgV84MRQr5fHH
+```
+
 ## This Website
 
 If you couldn't tell already, this website is made with love and attention, is contantly updated to be as good as possible, and it tries to be very lightweight and compatible with older browsers (at very least it works on iOS 15 and macOS High Sierra; which I'm sure a lot of people still use)
