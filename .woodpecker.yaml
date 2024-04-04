@@ -11,15 +11,6 @@ clone:
       recursive: true
 
 steps:
-  update:
-    image: alpine/git
-    commands:
-      - git submodule update --init --recursive
-      - git submodule foreach --recursive "git fetch origin && git reset --hard origin/HEAD || :"
-      - git submodule update --remote --merge || git pull --allow-unrelated-histories
-    when:
-      event: [ push, manual ]
-
   build:
     image: alpine
     commands:
