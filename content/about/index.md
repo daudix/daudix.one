@@ -100,6 +100,7 @@ I were using GitHub from the very start of my FOSS journey, but recently I've [m
 - [Ko-fi](https://ko-fi.com/daudix)
 - [Liberapay](https://liberapay.com/daudix)
 - [PayPal](https://paypal.me/Daudix)
+- [Patreon](https://patreon.com/daudix)
 
 I also have a Monero wallet if that's something you prefer:
 
