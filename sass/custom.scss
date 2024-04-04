@@ -93,9 +93,7 @@
 }
 
 #timeline {
-	border-left: 0.25rem solid;
-	border-image-source: linear-gradient(to bottom, transparent 0px, var(--fg-muted-3) 0.5rem, var(--fg-muted-3) calc(100% - 0.5rem), transparent 100%);
-	border-image-slice: 1;
+	border-left: 0.25rem solid var(--fg-muted-3);
 	padding-left: 0;
 	list-style: none;
 
