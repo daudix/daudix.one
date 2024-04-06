@@ -70,7 +70,6 @@ List of places where you can ~~stalk~~ find me on:
 - [Bluesky](https://bsky.app/profile/daudix.bsky.social)
 - [Mastodon](https://social.treehouse.systems/@daudix)
 - [Pixelfed](https://pixey.org/Daudix)
-- [Tumblr](https://ddaudix.tumblr.com)
 - [YouTube](https://www.youtube.com/@ddaudix)
 
 I have changed (and will change) my Fediverse homeserver, so to make sure nothing is lost, here is my Fediverse timeline:
