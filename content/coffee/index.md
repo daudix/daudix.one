@@ -11,8 +11,6 @@ description = "Just in case you want to do so for some reason."
     <p class="dialog-buttons" id="coffee-buttons">
         <a id="ko-fi" class="inline-button" href="https://ko-fi.com/daudix">Ko-fi</a>
         <a id="liberapay" class="inline-button" href="https://liberapay.com/daudix">Liberapay</a>
-        <a id="paypal" class="inline-button" href="https://paypal.me/Daudix">PayPal</a>
-        <a id="patreon" class="inline-button" href="https://patreon.com/daudix">Patreon</a>
         <a id="monero" class="inline-button" href="monero.txt">Monero</a>
     </p>
 </div>
