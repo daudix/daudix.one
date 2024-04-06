@@ -169,6 +169,89 @@
 	}
 }
 
+#coffee {
+	&-container {
+		position: relative;
+		margin-top: 5rem;
+		margin-right: auto;
+		margin-left: auto;
+		box-shadow: var(--shadow);
+		border-radius: var(--rounded-corner);
+		background-color: var(--fg-muted-2);
+		width: min(calc(var(--content-width) / 2), 100%);
+		text-align: center;
+	}
+
+	&-banner {
+		margin: 0;
+		border-radius: var(--rounded-corner) var(--rounded-corner) 0 0;
+	}
+
+	&-title {
+		display: inline-block;
+		margin: 1rem 1rem 0 1rem;
+		font-size: 1.5rem;
+	}
+
+	&-avatar {
+		position: absolute;
+		right: 0;
+		left: 0;
+		transform: translateY(-50%);
+		margin: 0 auto;
+		border-radius: 50%;
+		width: 96px;
+		height: 96px;
+	}
+
+	&-message {
+		margin: 1rem;
+	}
+
+	&-buttons {
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 0.5rem;
+		margin-top: 0;
+		margin-bottom: 0;
+		padding: 0.5rem;
+
+		.inline-button {
+			box-shadow: var(--edge-highlight), var(--shadow);
+
+			&:hover {
+				transform: scale(1.1);
+				box-shadow: var(--edge-highlight), var(--shadow-raised);
+			}
+		}
+
+		#ko-fi {
+			background-color: #FF5E5B;
+			color: white;
+		}
+
+		#liberapay {
+			background-color: #F6C915;
+			color: black;
+		}
+
+		#paypal {
+			background-color: #003087;
+			color: white;
+		}
+
+		#patreon {
+			background-color: #000000;
+			color: white;
+		}
+
+		#monero {
+			background-color: #FF6600;
+			color: white;
+		}
+	}
+}
+
 .media-grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
