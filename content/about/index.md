@@ -95,18 +95,7 @@ I were using GitHub from the very start of my FOSS journey, but recently I've [m
 
 ## Buy Me a Coffee
 
-<small>That would be nice and mean a lot to me :3</small>
-
-- [Ko-fi](https://ko-fi.com/daudix)
-- [Liberapay](https://liberapay.com/daudix)
-- [PayPal](https://paypal.me/Daudix)
-- [Patreon](https://patreon.com/daudix)
-
-I also have a Monero wallet if that's something you prefer:
-
-```
-46mpVApATi3QkuwYNJ7sHQEvhRCjms6DxTxRhhLnSTv75n5qNgJheseW78hDRJ1pWo9XR4mAqeA91MuGXDvgV84MRQr5fHH
-```
+[See available options here](@/coffee/index.md)
 
 ## This Website
 
