@@ -55,28 +55,25 @@ Currently it's <time><span id="clock"><noscript>JavaScript required</noscript></
 
 Feel free to send me a message on any of these, although Matrix is preferred since I use it the most. Whether you're bored or need someone to listen to you, I'm always open!
 
-- [Matrix](https://matrix.to/#/@daudix:envs.net)
-- [XMPP](xmpp:daudix@nixnet.services)
-- [Mail](mailto:daudix@envs.net)
-- [Gmail](mailto:ddaudix@gmail.com)
 - [Discord](https://discord.com/users/650757995378114581)
-- [Telegram](https://t.me/ddaudix)
+- [Mail](mailto:daudix@envs.net)
+- [Matrix](https://matrix.to/#/@daudix:envs.net)
 - [Signal](https://signal.me/#eu/0KKOAPEjDPbNVKFfWbNu9AHZE2od2quKOO5NxLmFqf/xA9940S5JKZbOhTwoa2wP)
+- [Telegram](https://t.me/ddaudix)
+- [XMPP](xmpp:daudix@nixnet.services)
 
 ## Socials
 
 List of places where you can ~~stalk~~ find me on:
 
-- [Mastodon](https://social.treehouse.systems/@daudix)
 - [Akkoma](https://pleroma.envs.net/daudix)
-- [Sharkey](https://shonk.phite.ro/@daudix)
+- [Bluesky](https://bsky.app/profile/daudix.bsky.social)
+- [Mastodon](https://social.treehouse.systems/@daudix)
 - [Pixelfed](https://pixey.org/Daudix)
-- [Lemmy](https://toast.ooo/u/Daudix)
+- [Tumblr](https://ddaudix.tumblr.com)
 - [YouTube](https://www.youtube.com/@ddaudix)
 
-You can also find me on [Tumblr](https://ddaudix.tumblr.com), [Bluesky](https://bsky.app/profile/daudix.bsky.social), and [Twitter](https://twitter.com/ddaudix) (I refuse to call it 𝕏), although I don't really use these (at least right now).
-
-I have changed (and will change) my homeserver, so to make sure nothing is lost, here is my Fediverse timeline:
+I have changed (and will change) my Fediverse homeserver, so to make sure nothing is lost, here is my Fediverse timeline:
 
 <ol id="timeline">
 <li><small>01 Sep 2022 - 20 Nov 2023<br><a href="https://mstdn.social/@Daudix">mstdn.social</a> - Previous main profile</small></li>
