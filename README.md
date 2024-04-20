@@ -8,6 +8,29 @@ This is my personal website. It is powered by [Zola](https://www.getzola.org) an
 
 ![Screenshot](screenshot.png)
 
+## Setup local repository
+
+*These are mostly for myself XD*
+
+- Clone the repository recursively:
+
+```sh
+git clone --recursive git@codeberg.org:daudix/pages.git
+```
+
+- Checkout `main` branch for Duckquill:
+
+```sh
+cd themes/duckquill/
+git checkout main
+```
+
+- Set remote URL to SSH one:
+
+```sh
+git remote set-url origin git@codeberg.org:daudix/duckquill.git
+```
+
 ## Know your rights
 
 This website is under the MIT license:
