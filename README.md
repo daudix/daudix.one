@@ -21,7 +21,7 @@ git clone --recursive git@codeberg.org:daudix/pages.git
 - Checkout `main` branch for Duckquill:
 
 ```sh
-cd themes/duckquill/
+cd pages/themes/duckquill/
 git checkout main
 ```
 
