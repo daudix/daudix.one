@@ -2,7 +2,7 @@
 [![MIT license](https://img.shields.io/badge/License-MIT-blue)](https://mit-license.org)
 [![status-badge](https://ci.codeberg.org/api/badges/13031/status.svg)](https://ci.codeberg.org/repos/13031)
 
-# [Daudix’s Blog](https://daudix.codeberg.page) <img src="static/apple-touch-icon.png" alt="Logo" width="90" align="right"/>
+# [Daudix’s Blog](https://daudix.codeberg.page) <img src="logo.png" alt="Logo" width="96" align="right"/>
 
 This is my personal website. It is powered by [Zola](https://www.getzola.org) and [Duckquill](https://daudix.codeberg.page/duckquill).
 
