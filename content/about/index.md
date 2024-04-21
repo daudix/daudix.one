@@ -131,6 +131,7 @@ I also have a website on [neocities.org](https://neocities.org), it's not in a g
 [![firefox3](88x31/firefox3.gif)](https://getfirefox.com)
 [![getimiskon](88x31/getimiskon.png)](https://getimiskon.xyz)
 [![notoweb3](88x31/notoweb3.gif)](https://yesterweb.org/no-to-web3/)
+[![seirdy](88x31/seirdy.gif)](https://seirdy.one)
 [![statuscafe](88x31/statuscafe.png)](https://status.cafe)
 ![adhd](88x31/adhd.gif)
 ![any2](88x31/any2.gif)
