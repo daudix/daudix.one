@@ -21,7 +21,6 @@ description = "Just in case you want to do so for some reason."
         background-image: url(light.svg), url(paper.jpg);
         background-size: cover, auto;
         background-repeat: no-repeat, repeat;
-        background-blend-mode: light, normal;
     }
 
     footer * {
