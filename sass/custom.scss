@@ -176,15 +176,20 @@
 		margin-top: 5rem;
 		margin-right: auto;
 		margin-left: auto;
-		border-radius: calc(var(--rounded-corner) + 1rem);
-		background-color: var(--fg-muted-1);
+		box-shadow: 0px 20px 30px -10px rgba(0, 0, 0, 0.8);
+		border-radius: 36px;
+		// background-color: var(--fg-muted-1);
+		background-image: url(/coffee/paper-2.jpg);
+		background-repeat: repeat;
 		width: min(calc(var(--content-width) / 2), 100%);
+		color: rgb(51, 41, 31);
 		text-align: center;
+		text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
 	}
 
 	&-banner {
 		margin: 0;
-		border-radius: calc(var(--rounded-corner) + 1rem) calc(var(--rounded-corner) + 1rem) 0 0;
+		border-radius: 36px 36px 0 0;
 	}
 
 	&-title {
@@ -208,6 +213,10 @@
 		margin: 1rem;
 	}
 
+	&-clarification {
+		color: rgba(51, 41, 31, 0.8);
+	}
+
 	&-buttons {
 		flex-direction: column;
 		flex-wrap: wrap;
@@ -218,28 +227,38 @@
 		padding: 1rem;
 
 		.inline-button {
-			box-shadow: var(--edge-highlight), var(--shadow);
+			transform: translateY(-2px);
+			border-radius: 999px;
 			width: 100%;
 
 			&:hover {
-				transform: scale(1.1);
-				box-shadow: var(--edge-highlight), var(--shadow-raised);
+				transform: translateY(0);
+				filter: brightness(0.9);
+				// transform: scale(1.1);
+				// box-shadow: var(--edge-highlight), var(--shadow-raised);
+				box-shadow: inset 0 1px 3px rgba(0, 0, 0, .5), 0 1px 0 rgba(255, 255, 255, .1) !important;
 			}
 		}
 
 		#ko-fi {
-			background-color: #FF5E5B;
+			box-shadow: var(--edge-highlight), 0px 2px 0px 0px rgb(194, 3, 0);
+			background-image: linear-gradient(rgb(255, 145, 143), rgb(255, 44, 41));
 			color: white;
+			text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
 		}
 
 		#liberapay {
-			background-color: #F6C915;
+			box-shadow: var(--edge-highlight), 0px 2px 0px 0px rgb(157, 127, 6);
+			background-image: linear-gradient(rgb(248, 212, 68), rgb(207, 167, 7));
 			color: black;
+			text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
 		}
 
 		#monero {
-			background-color: #FF6600;
+			box-shadow: var(--edge-highlight), 0px 2px 0px 0px rgb(153, 61, 0);
+			background-image: linear-gradient(rgb(255, 133, 51), rgb(204, 82, 0));
 			color: white;
+			text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
 		}
 	}
 }
