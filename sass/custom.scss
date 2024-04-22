@@ -178,23 +178,58 @@
 		margin-left: auto;
 		box-shadow: 0px 20px 30px -10px rgba(0, 0, 0, 0.8);
 		border-radius: 36px;
-		// background-color: var(--fg-muted-1);
-		background-image: url(/coffee/paper-2.jpg);
+		background-image: url(coffee/paper.jpg);
 		background-repeat: repeat;
 		width: min(calc(var(--content-width) / 2), 100%);
-		color: rgb(51, 41, 31);
+		color: rgb(73, 59, 44);
 		text-align: center;
 		text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
 	}
 
-	&-banner {
-		margin: 0;
+	&-banner-container {
+		position: relative;
 		border-radius: 36px 36px 0 0;
+		padding-bottom: 1rem;
+		overflow: hidden;
+	}
+
+	&-blobfox {
+		position: absolute;
+		top: 0;
+		right: 0;
+		transform: scaleY(-1);
+		margin: 0;
+		width: 96px;
+		height: 96px;
+
+		&-message {
+			position: absolute;
+			top: 0;
+			right: 0;
+			margin: 3.5rem 6rem 0 0;
+			border: 6px solid black;
+			border-radius: 999px 0 999px 999px;
+			background-color: #fafafa;
+			padding: 0 0.5rem;
+			color: black;
+			font-weight: bold;
+			text-shadow: none;
+		}
+	}
+
+	&-banner {
+		position: relative;
+		margin: 0;
+		border-radius: 0;
+
+		&:active {
+			transform: translateY(-100%);
+		}
 	}
 
 	&-title {
 		display: inline-block;
-		margin: 1rem 1rem 0 1rem;
+		margin: 0 1rem;
 		font-size: 1.5rem;
 	}
 
@@ -203,18 +238,20 @@
 		right: 0;
 		left: 0;
 		transform: translateY(-50%);
+		z-index: 1;
 		margin: 0 auto;
 		border-radius: 50%;
 		width: 96px;
 		height: 96px;
+
+		&:active {
+			transform: translateY(-50%) scale(0.8);
+			filter: hue-rotate(90deg);
+		}
 	}
 
 	&-message {
 		margin: 1rem;
-	}
-
-	&-clarification {
-		color: rgba(51, 41, 31, 0.8);
 	}
 
 	&-buttons {
@@ -234,8 +271,6 @@
 			&:hover {
 				transform: translateY(0);
 				filter: brightness(0.9);
-				// transform: scale(1.1);
-				// box-shadow: var(--edge-highlight), var(--shadow-raised);
 				box-shadow: inset 0 1px 3px rgba(0, 0, 0, .5), 0 1px 0 rgba(255, 255, 255, .1) !important;
 			}
 		}
