@@ -12,9 +12,9 @@ clone:
 
 steps:
   build:
-    image: alpine
+    image: ghcr.io/getzola/zola as zola
     commands:
-      - apk add zola
+      - zola --version
       - zola build
     when:
       event: [ push, pull_request, manual ]
