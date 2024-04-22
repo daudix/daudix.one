@@ -33,7 +33,7 @@ steps:
       # Enter output branch folder
       - cd $CI_REPO_NAME
       # Remove old files
-      - git rm -r "*"
+      - git rm -r "*" || true # Ignore if it's empty
       # Copy build step output
       - cp -ar ../public/. .
       # Needed for custom domains
