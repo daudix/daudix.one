@@ -21,7 +21,7 @@ description = "Just in case you want to do so for some reason."
 
 <style>
     body {
-        background-image: url(light.svg), url(fabric.jpg);
+        background-image: url(glow.svg), url(fabric.jpg);
         background-size: cover, auto;
         background-repeat: no-repeat, repeat;
     }
@@ -33,7 +33,7 @@ description = "Just in case you want to do so for some reason."
 
     @media (prefers-color-scheme: dark) {
         body {
-            background-image: url(light-d.svg), url(fabric-d.jpg);
+            background-image: url(glow-d.svg), url(fabric-d.jpg);
         }
 
         footer * {
