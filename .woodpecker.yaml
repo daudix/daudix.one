@@ -12,7 +12,7 @@ clone:
 
 steps:
   build:
-    image: ghcr.io/getzola/zola as zola
+    image: ghcr.io/getzola/zola
     commands:
       - zola --version
       - zola build
