@@ -15,7 +15,7 @@ steps:
     image: alpine:edge
     commands:
       - apk add zola
-      - zola version
+      - zola --version
       - zola build
     when:
       event: [ push, pull_request, manual ]
