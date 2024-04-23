@@ -396,6 +396,16 @@ body:has(#skeuo-switch input:checked) {
 		box-shadow: var(--shadow);
 	}
 
+	#title {
+		font-family: var(--font-serif);
+		letter-spacing: -0.06em;
+	}
+
+	#message {
+		font-family: var(--font-serif);
+		letter-spacing: -0.04em;
+	}
+
 	#buttons {
 		.inline-button {
 			transform: translateY(-2px);
@@ -442,6 +452,8 @@ body:has(#skeuo-switch input:checked) {
 
 	small {
 		color: rgba(73, 59, 44, 0.8);
+		font-family: var(--font-serif);
+		letter-spacing: -0.04em;
 	}
 }
 
