@@ -338,10 +338,15 @@
 			right: 0;
 			bottom: 0;
 			left: 0;
-			transition: var(--transition-bezier);
+			transition: var(--transition);
 			cursor: pointer;
+			box-shadow: var(--edge-highlight);
 			border-radius: 999px;
 			background-color: var(--fg-muted-1);
+
+			&:hover {
+				background-color: var(--fg-muted-2);
+			}
 
 			&:before {
 				position: absolute;
@@ -433,6 +438,10 @@ body:has(#skeuo-switch input:checked) {
 				box-shadow: 0 1px 5px rgba(0, 0, 0, .5);
 			}
 		}
+	}
+
+	small {
+		color: rgba(73, 59, 44, 0.8);
 	}
 }
 
