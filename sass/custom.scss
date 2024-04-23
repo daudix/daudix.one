@@ -175,16 +175,11 @@
 	margin-top: 5rem;
 	margin-right: auto;
 	margin-left: auto;
-	box-shadow: 0.4px 1px 1.2px rgba(0, 0, 0, 0.23),
-		7.4px 19.4px 23.4px -1.2px rgba(0, 0, 0, 0.23),
-		32.5px 85px 102.4px -2.5px rgba(0, 0, 0, 0.23);
+	box-shadow: var(--shadow);
 	border-radius: 36px;
-	background-image: url(coffee/paper.jpg);
-	background-repeat: repeat;
+	background-color: var(--fg-muted-1);
 	width: min(calc(var(--content-width) / 2), 100%);
-	color: rgb(73, 59, 44);
 	text-align: center;
-	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
 
 	#banner-container {
 		position: relative;
@@ -235,6 +230,7 @@
 	#banner {
 		position: relative;
 		margin: 0;
+		box-shadow: none;
 		border-radius: 0;
 
 		&:active {
@@ -279,30 +275,125 @@
 		padding: 1rem;
 
 		.inline-button {
-			transform: translateY(-2px);
+			box-shadow: var(--edge-highlight), var(--shadow);
 			border-radius: 999px;
 			width: 100%;
 
+			&:hover {
+				transform: scale(1.1);
+				box-shadow: var(--edge-highlight), var(--shadow-raised);
+			}
+
+			&:active {
+				transform: scale(0.9);
+				box-shadow: var(--edge-highlight), var(--shadow);
+			}
+
 			&#ko-fi {
-				box-shadow: var(--edge-highlight), 0px 2px 0px 0px rgb(194, 3, 0);
-				background-image: linear-gradient(rgb(255, 145, 143), rgb(255, 44, 41));
+				background-color: #FF5E5B;
 				color: white;
-				text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
 			}
 
 			&#liberapay {
-				box-shadow: var(--edge-highlight), 0px 2px 0px 0px rgb(157, 127, 6);
-				background-image: linear-gradient(rgb(248, 212, 68), rgb(207, 167, 7));
+				background-color: #F6C915;
 				color: black;
-				text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
 			}
 
 			&#monero {
-				box-shadow: var(--edge-highlight), 0px 2px 0px 0px rgb(153, 61, 0);
-				background-image: linear-gradient(rgb(255, 133, 51), rgb(204, 82, 0));
+				background-color: #FF6600;
 				color: white;
-				text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
 			}
+		}
+	}
+
+	#skeuo-switch {
+		display: block;
+		position: relative;
+		margin: 0 auto;
+		width: 3rem;
+		height: 2rem;
+
+		&:has(input:focus-visible) {
+			outline: 1px auto;
+			border-radius: 999px;
+		}
+
+		input {
+			opacity: 0;
+			width: 0;
+			height: 0;
+
+			&:checked+#slider {
+				background-color: var(--primary-color);
+			}
+
+			&:checked+#slider:before {
+				transform: translateX(1rem);
+			}
+		}
+
+		#slider {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			transition: var(--transition-bezier);
+			cursor: pointer;
+			border-radius: 999px;
+			background-color: var(--fg-muted-1);
+
+			&:before {
+				position: absolute;
+				bottom: 0.25rem;
+				left: 0.25rem;
+				transition: var(--transition-bezier);
+				box-shadow: var(--shadow);
+				border-radius: 50%;
+				background-color: white;
+				width: 1.5rem;
+				height: 1.5rem;
+				content: "";
+			}
+		}
+	}
+}
+
+body:has(#skeuo-switch input:checked) {
+	background-image: url(coffee/glow.svg), url(coffee/fabric.jpg);
+	background-size: cover, auto;
+	background-repeat: no-repeat, repeat;
+
+	footer * {
+		color: rgb(196, 196, 197);
+		text-shadow: 0 1px 0 rgba(0, 0, 0, 0.6);
+	}
+
+	@media (prefers-color-scheme: dark) {
+		background-image: url(coffee/glow-d.svg), url(coffee/fabric-d.jpg);
+
+		footer * {
+			color: rgb(122, 122, 122);
+		}
+	}
+}
+
+#coffee-container:has(#skeuo-switch input:checked) {
+	box-shadow: 0.4px 1px 1.2px rgba(0, 0, 0, 0.23),
+		7.4px 19.4px 23.4px -1.2px rgba(0, 0, 0, 0.23),
+		32.5px 85px 102.4px -2.5px rgba(0, 0, 0, 0.23);
+	background-image: url(coffee/paper.jpg);
+	background-repeat: repeat;
+	color: rgb(73, 59, 44);
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+
+	#banner {
+		box-shadow: var(--shadow);
+	}
+
+	#buttons {
+		.inline-button {
+			transform: translateY(-2px);
 
 			&:hover {
 				filter: brightness(1.1);
@@ -312,6 +403,34 @@
 				transform: translateY(0);
 				filter: brightness(0.9);
 				box-shadow: inset 0 1px 3px rgba(0, 0, 0, .5), 0 1px 0 rgba(255, 255, 255, .1) !important;
+			}
+
+			&#ko-fi {
+				box-shadow: var(--edge-highlight), 0px 2px 0px 0px rgb(194, 3, 0);
+				background-image: linear-gradient(rgb(255, 145, 143), rgb(255, 44, 41));
+				text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+			}
+
+			&#liberapay {
+				box-shadow: var(--edge-highlight), 0px 2px 0px 0px rgb(157, 127, 6);
+				background-image: linear-gradient(rgb(248, 212, 68), rgb(207, 167, 7));
+				text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+			}
+
+			&#monero {
+				box-shadow: var(--edge-highlight), 0px 2px 0px 0px rgb(153, 61, 0);
+				background-image: linear-gradient(rgb(255, 133, 51), rgb(204, 82, 0));
+				text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+			}
+		}
+	}
+
+	#skeuo-switch {
+		#slider {
+			box-shadow: inset 0 1px 3px rgba(0, 0, 0, .5), 0 1px 0 rgba(255, 255, 255, .1);
+
+			&:before {
+				box-shadow: 0 1px 5px rgba(0, 0, 0, .5);
 			}
 		}
 	}
