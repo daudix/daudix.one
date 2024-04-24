@@ -244,20 +244,46 @@
 		font-size: 1.5rem;
 	}
 
-	#avatar {
-		position: absolute;
-		right: 0;
-		left: 0;
-		transform: translateY(-50%);
-		z-index: 1;
-		margin: 0 auto;
-		border-radius: 50%;
-		width: 96px;
-		height: 96px;
+	#avatar-container {
+		position: relative;
 
-		&:active {
+		&::after {
+			position: absolute;
+			right: 0;
+			left: 0;
+			transform: translateY(-50%);
+			opacity: 0;
+			z-index: 2;
+			transition: var(--transition-longer);
+			margin: 0 auto;
+			background-image: url(coffee/uwu.svg);
+			background-size: cover;
+			width: 96px;
+			height: 96px;
+			pointer-events: none;
+			content: "";
+		}
+
+		&:has(#avatar:active)::after {
 			transform: translateY(-50%) scale(0.8);
-			filter: hue-rotate(90deg);
+			opacity: 1;
+		}
+
+		#avatar {
+			position: absolute;
+			right: 0;
+			left: 0;
+			transform: translateY(-50%);
+			z-index: 1;
+			margin: 0 auto;
+			border-radius: 50%;
+			width: 96px;
+			height: 96px;
+	
+			&:active {
+				transform: translateY(-50%) scale(0.8);
+				filter: hue-rotate(90deg);
+			}
 		}
 	}
 
@@ -396,16 +422,6 @@ body:has(#skeuo-switch input:checked) {
 		box-shadow: var(--shadow);
 	}
 
-	#title {
-		font-family: var(--font-serif);
-		letter-spacing: -0.06em;
-	}
-
-	#message {
-		font-family: var(--font-serif);
-		letter-spacing: -0.04em;
-	}
-
 	#buttons {
 		.inline-button {
 			transform: translateY(-2px);
@@ -452,8 +468,6 @@ body:has(#skeuo-switch input:checked) {
 
 	small {
 		color: rgba(73, 59, 44, 0.8);
-		font-family: var(--font-serif);
-		letter-spacing: -0.04em;
 	}
 }
 
