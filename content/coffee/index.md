@@ -4,7 +4,9 @@ description = "Just in case you want to do so for some reason."
 +++
 
 <div id="coffee-container">
-	<img id="avatar" class="no-hover" src="../assets/avatar.svg" />
+	<div id="avatar-container">
+		<img id="avatar" class="no-hover" src="../assets/avatar.svg" />
+	</div>
 	<div id="banner-container">
 		<p id="blobfox-message">Hewwo~ 0w0</p>
 		<img id="blobfox" class="transparent no-hover" src="neofox-stretch-down.png" />
