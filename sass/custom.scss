@@ -21,7 +21,7 @@
 
 		&::after {
 			position: absolute;
-			translate: 0 -50%;
+			transform: translateY(-50%);
 			inset: 50% auto 50% -10px;
 			border-top: 10px solid transparent;
 			border-right: 10px solid var(--primary-color-alpha);
@@ -82,7 +82,7 @@
 		letter-spacing: -0.15rem;
 
 		&:hover {
-			transform: translate(0, -12px);
+			transform: translateY(-12px);
 			text-shadow: 0 3px 0 #f4e2cc, 0 6px 0 #f25242, 0 9px 0 #93bfb0, 0 12px 0 #f1d456;
 
 			@media (prefers-color-scheme: dark) {
@@ -202,7 +202,7 @@
 		position: absolute;
 		top: 0;
 		right: 0;
-		transform: translateY(-100%) rotate(90deg) scale(0);
+		transform: rotate(90deg) scale(0) translateY(-100%);
 		transform-origin: top right;
 		opacity: 0;
 		transition: var(--transition-longer);
@@ -222,7 +222,7 @@
 		}
 
 		#blobfox-message {
-			transform: translateY(0) rotate(0) scale(1);
+			transform: rotate(0) scale(1) translateY(0);
 			opacity: 1;
 		}
 	}
@@ -265,7 +265,7 @@
 		}
 
 		&:has(#avatar:active)::after {
-			transform: translateY(-50%) scale(0.8);
+			transform: scale(0.8) translateY(-50%);
 			opacity: 1;
 		}
 
@@ -279,9 +279,9 @@
 			border-radius: 50%;
 			width: 96px;
 			height: 96px;
-	
+
 			&:active {
-				transform: translateY(-50%) scale(0.8);
+				transform: scale(0.8) translateY(-50%);
 				filter: hue-rotate(90deg);
 			}
 		}
@@ -395,16 +395,26 @@ body:has(#skeuo-switch input:checked) {
 	background-size: cover, auto;
 	background-repeat: no-repeat, repeat;
 
-	footer * {
-		color: rgb(196, 196, 197);
-		text-shadow: 0 1px 0 rgba(0, 0, 0, 0.6);
+	footer {
+		box-shadow: inset 0 3px 10px rgba(0, 0, 0, .4);
+		background-color: hsl(0, 0%, 37%);
+
+		* {
+			color: hsl(0, 0%, 7%);
+			text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+		}
 	}
 
 	@media (prefers-color-scheme: dark) {
 		background-image: url(coffee/glow-d.svg), url(coffee/fabric-d.jpg);
 
-		footer * {
-			color: rgb(122, 122, 122);
+		footer {
+			background-color: hsl(0, 0%, 18%);
+
+			* {
+				color: hsl(0, 0%, 58%);
+				text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.6);
+			}
 		}
 	}
 }
