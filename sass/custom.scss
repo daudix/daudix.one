@@ -192,7 +192,7 @@
 		position: absolute;
 		top: 0;
 		right: 0;
-		transform: scaleY(-1) translateY(100%);
+		transform: translateY(-100%) scaleY(-1);
 		margin: 0;
 		width: 96px;
 		height: 96px;
@@ -202,7 +202,7 @@
 		position: absolute;
 		top: 0;
 		right: 0;
-		transform: rotate(90deg) scale(0) translateY(-100%);
+		transform: scale(0) rotate(90deg) translateY(-100%);
 		transform-origin: top right;
 		opacity: 0;
 		transition: var(--transition-longer);
@@ -218,11 +218,11 @@
 
 	#banner-container:active {
 		#blobfox {
-			transform: scaleY(-1) translateY(0);
+			transform: translateY(0) scaleY(-1);
 		}
 
 		#blobfox-message {
-			transform: rotate(0) scale(1) translateY(0);
+			transform: scale(1) rotate(0) translateY(0);
 			opacity: 1;
 		}
 	}
@@ -265,7 +265,7 @@
 		}
 
 		&:has(#avatar:active)::after {
-			transform: scale(0.8) translateY(-50%);
+			transform: translateY(-50%) scale(0.8);
 			opacity: 1;
 		}
 
@@ -281,7 +281,7 @@
 			height: 96px;
 
 			&:active {
-				transform: scale(0.8) translateY(-50%);
+				transform: translateY(-50%) scale(0.8);
 				filter: hue-rotate(90deg);
 			}
 		}
@@ -311,7 +311,7 @@
 			}
 
 			&:active {
-				transform: scale(0.9);
+				transform: scale(var(--active));
 				box-shadow: var(--edge-highlight), var(--shadow);
 			}
 
