@@ -5,6 +5,8 @@ date = 2024-02-19
 [taxonomies]
 tags = ["Silverblue", "Syncthing", "Toolbx"]
 [extra.comments]
+host = "social.treehouse.systems"
+user = "daudix"
 id = "111957654155839059"
 +++
 

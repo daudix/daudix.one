@@ -1,3 +1,13 @@
+:root {
+	// VARIABLES
+	--transition-bezier: 0.35s cubic-bezier(0.17, 0.89, 0.32, 1.28);
+
+	@media (prefers-reduced-motion) {
+		// VARIABLES
+		--transition-bezier: 0;
+	}
+}
+
 #status-container {
 	display: flex;
 	flex-direction: row;
@@ -178,7 +188,7 @@
 	box-shadow: var(--shadow);
 	border-radius: 36px;
 	background-color: var(--fg-muted-1);
-	width: min(calc(var(--content-width) / 2), 100%);
+	width: min(calc(var(--container-width) / 2), 100%);
 	text-align: center;
 
 	#banner-container {

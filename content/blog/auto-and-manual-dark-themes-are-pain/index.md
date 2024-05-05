@@ -5,6 +5,8 @@ date = 2024-02-06
 [taxonomies]
 tags = ["Devlog", "Website", "Duckquill", "JavaScript"]
 [extra.comments]
+host = "social.treehouse.systems"
+user = "daudix"
 id = "111881385228724178"
 +++
 

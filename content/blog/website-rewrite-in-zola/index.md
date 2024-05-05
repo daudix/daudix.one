@@ -7,6 +7,8 @@ tags = ["Devlog", "Website", "Duckquill"]
 [extra]
 toc = true
 [extra.comments]
+host = "social.treehouse.systems"
+user = "daudix"
 id = "111637048720507166"
 +++
 
