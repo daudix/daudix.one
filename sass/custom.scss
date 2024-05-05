@@ -420,9 +420,7 @@ body:has(#skeuo-switch input:checked) {
 }
 
 #coffee-container:has(#skeuo-switch input:checked) {
-	box-shadow: 0.4px 1px 1.2px rgba(0, 0, 0, 0.23),
-		7.4px 19.4px 23.4px -1.2px rgba(0, 0, 0, 0.23),
-		32.5px 85px 102.4px -2.5px rgba(0, 0, 0, 0.23);
+	box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
 	background-image: url(coffee/paper.jpg);
 	background-repeat: repeat;
 	color: rgb(73, 59, 44);
