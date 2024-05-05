@@ -7,6 +7,8 @@ tags = ["Akkoma", "Mastodon"]
 [extra]
 toc = true
 [extra.comments]
+host = "social.treehouse.systems"
+user = "daudix"
 id = "111804777265949955"
 +++
 
