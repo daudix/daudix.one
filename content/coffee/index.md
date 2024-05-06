@@ -10,7 +10,7 @@ description = "Just in case you want to do so for some reason."
 	<div id="banner-container">
 		<p id="blobfox-message">Hewwo~ 0w0</p>
 		<img id="blobfox" class="transparent no-hover" src="neofox-stretch-down.png" />
-		<img id="banner" class="no-hover" src="../assets/banner.png" />
+		<img id="banner" class="no-hover" src="banner.webp" />
 	</div>
 	<strong id="title">David Lapshin</strong>
 	<p id="message">Hello there! If you'd like to buy me a coffee (thanks for that!), you can use one of these options; use whichever you prefer.</p>
