@@ -401,29 +401,84 @@
 }
 
 body:has(#skeuo-switch input:checked) {
-	background-image: url(coffee/glow.svg), url(coffee/fabric.jpg);
-	background-size: cover, auto;
-	background-repeat: no-repeat, repeat;
+	box-shadow: inset 0 0 100px black;
+	background: url(coffee/glow.svg) center/cover, url(coffee/fabric.webp);
 
-	footer {
-		box-shadow: inset 0 3px 10px rgba(0, 0, 0, .4);
-		background-color: hsl(0, 0%, 37%);
+	#site-nav {
+		-webkit-backdrop-filter: unset;
+		backdrop-filter: unset;
+		outline: 1px solid rgba(255, 255, 255, 0.8);
+		box-shadow: var(--edge-highlight), 0 5px 30px rgba(0, 0, 0, 0.3);
+		background-image: linear-gradient(rgba(224, 224, 224, 0.95), rgba(212, 212, 212, 0.9) 50%, rgba(192, 192, 192, 0.8) 50%);
+		background-color: unset;
+
+		nav {
+			a {
+				color: rgba(0, 0, 0, 0.7);
+				text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+
+				&:hover {
+					box-shadow: none;
+					background-color: rgba(0, 0, 0, 0.1);
+					color: black;
+				}
+
+				svg {
+					filter: drop-shadow(0 1px 0 rgba(255, 255, 255, 0.8));
+				}
+			}
+		}
+	}
+
+	#site-footer {
+		box-shadow: inset 0 3px 10px rgba(0, 0, 0, 0.4);
+		background:
+			radial-gradient(black 15%, transparent 16%) 0 0,
+			radial-gradient(black 15%, transparent 16%) 8px 8px,
+			radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 0 1px,
+			radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 8px 9px;
+		background-size: 16px 16px;
+		background-color: hsl(0 0% 27%);
+
+		#johnvertisement {
+			box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+		}
 
 		* {
-			color: hsl(0, 0%, 7%);
-			text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+			color: hsl(0 0% 78%);
+			text-shadow: 0 2px 4px rgb(0, 0, 0);
 		}
 	}
 
 	@media (prefers-color-scheme: dark) {
-		background-image: url(coffee/glow-d.svg), url(coffee/fabric-d.jpg);
+		background: url(coffee/glow-d.svg) center/cover, linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(coffee/fabric.webp);
 
-		footer {
-			background-color: hsl(0, 0%, 18%);
+		#site-nav {
+			outline: 1px solid rgba(0, 0, 0, 0.8);
+			background-image: linear-gradient(rgba(80, 80, 80, 0.95), rgba(32, 32, 32, 0.9) 50%, rgba(0, 0, 0, 0.8) 50%);
+
+			nav {
+				a {
+					color: rgba(255, 255, 255, 0.7);
+					text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.8);
+
+					&:hover {
+						background-color: rgba(255, 255, 255, 0.1);
+						color: white;
+					}
+
+					svg {
+						filter: drop-shadow(0 -1px 0 rgba(0, 0, 0, 0.8));
+					}
+				}
+			}
+		}
+
+		#site-footer {
+			background-color: hsl(0 0% 13%);
 
 			* {
-				color: hsl(0, 0%, 58%);
-				text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.6);
+				color: hsl(0 0% 58%);
 			}
 		}
 	}
@@ -431,9 +486,8 @@ body:has(#skeuo-switch input:checked) {
 
 #coffee-container:has(#skeuo-switch input:checked) {
 	box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
-	background-image: url(coffee/paper.jpg);
-	background-repeat: repeat;
-	color: rgb(73, 59, 44);
+	background-image: url(coffee/paper.webp);
+	color: hsl(32 26% 25%);
 	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
 
 	#banner {
@@ -487,7 +541,7 @@ body:has(#skeuo-switch input:checked) {
 	}
 
 	small {
-		color: rgba(73, 59, 44, 0.8);
+		color: hsl(32 26% 20% / 80%);
 	}
 }
 
