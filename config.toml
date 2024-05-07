@@ -40,6 +40,7 @@ show_feed = true
 links = [
   {url = "@/about/index.md", name = "About"},
   {url = "@/blog/_index.md", name = "Blog"},
+  {url = "@/coffee/index.md", name = "Coffee"},
   {url = "@/design/index.md", name = "Design"},
 ]
 
