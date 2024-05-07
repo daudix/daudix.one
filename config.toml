@@ -51,7 +51,7 @@ show_powered_by = true
 show_source = false
 
 [extra.comments]
-host = "social.treehouse.systems"
+host = "vmst.io"
 user = "daudix"
 show_qr = true
 locale = "en-IE"
