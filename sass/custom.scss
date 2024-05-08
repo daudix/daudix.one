@@ -404,6 +404,72 @@ body:has(#skeuo-switch input:checked) {
 	box-shadow: inset 0 0 100px black;
 	background: url(coffee/glow.svg) center/cover, url(coffee/fabric.webp);
 
+	#site-nav {
+		-webkit-backdrop-filter: unset;
+		backdrop-filter: unset;
+		outline: 1px solid rgba(255, 255, 255, 0.8);
+		box-shadow: var(--edge-highlight), 0 5px 30px rgba(0, 0, 0, 0.3);
+		background-image: linear-gradient(rgba(224, 224, 224, 0.95), rgba(212, 212, 212, 0.9) 50%, rgba(192, 192, 192, 0.8) 50%);
+		background-color: unset;
+
+		nav {
+			a {
+				position: relative;
+				color: rgba(0, 0, 0, 0.7);
+				text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+
+				&:hover {
+					box-shadow: none;
+					color: black;
+
+					&::before {
+						opacity: 1;
+					}
+				}
+
+				&::before {
+					display: block;
+					position: absolute;
+					opacity: 0;
+					z-index: -1;
+					transition: var(--transition);
+					inset: 0;
+					border-radius: 999px;
+					background-image: linear-gradient(to top, rgba(224, 224, 224, 0.95), rgba(212, 212, 212, 0.9) 50%, rgba(192, 192, 192, 0.8) 50%);
+					content: "";
+				}
+
+				svg {
+					filter: drop-shadow(0 1px 0 rgba(255, 255, 255, 0.8));
+				}
+			}
+			
+			#main-content {
+				position: absolute;
+			}
+		}
+	}
+
+	#site-footer {
+		box-shadow: inset 0 3px 10px rgba(0, 0, 0, 0.4);
+		background:
+			radial-gradient(black 15%, transparent 16%) 0 0,
+			radial-gradient(black 15%, transparent 16%) 8px 8px,
+			radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 0 1px,
+			radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 8px 9px;
+		background-size: 16px 16px;
+		background-color: hsl(0 0% 27%);
+
+		#johnvertisement {
+			box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+		}
+
+		* {
+			color: hsl(0 0% 78%);
+			text-shadow: 0 2px 4px rgb(0, 0, 0);
+		}
+	}
+
 	#coffee-container {
 		box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
 		background-image: url(coffee/paper.webp);
@@ -469,52 +535,6 @@ body:has(#skeuo-switch input:checked) {
 		}
 	}
 
-	#site-nav {
-		-webkit-backdrop-filter: unset;
-		backdrop-filter: unset;
-		outline: 1px solid rgba(255, 255, 255, 0.8);
-		box-shadow: var(--edge-highlight), 0 5px 30px rgba(0, 0, 0, 0.3);
-		background-image: linear-gradient(rgba(224, 224, 224, 0.95), rgba(212, 212, 212, 0.9) 50%, rgba(192, 192, 192, 0.8) 50%);
-		background-color: unset;
-
-		nav {
-			a {
-				color: rgba(0, 0, 0, 0.7);
-				text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
-
-				&:hover {
-					box-shadow: none;
-					background-color: rgba(0, 0, 0, 0.1);
-					color: black;
-				}
-
-				svg {
-					filter: drop-shadow(0 1px 0 rgba(255, 255, 255, 0.8));
-				}
-			}
-		}
-	}
-
-	#site-footer {
-		box-shadow: inset 0 3px 10px rgba(0, 0, 0, 0.4);
-		background:
-			radial-gradient(black 15%, transparent 16%) 0 0,
-			radial-gradient(black 15%, transparent 16%) 8px 8px,
-			radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 0 1px,
-			radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 8px 9px;
-		background-size: 16px 16px;
-		background-color: hsl(0 0% 27%);
-
-		#johnvertisement {
-			box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
-		}
-
-		* {
-			color: hsl(0 0% 78%);
-			text-shadow: 0 2px 4px rgb(0, 0, 0);
-		}
-	}
-
 	@media (prefers-color-scheme: dark) {
 		background: url(coffee/glow-d.svg) center/cover, linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(coffee/fabric.webp);
 
@@ -530,6 +550,10 @@ body:has(#skeuo-switch input:checked) {
 					&:hover {
 						background-color: rgba(255, 255, 255, 0.1);
 						color: white;
+					}
+
+					&::before {
+						background-image: linear-gradient(to top, rgba(80, 80, 80, 0.95), rgba(32, 32, 32, 0.9) 50%, rgba(0, 0, 0, 0.8) 50%);
 					}
 
 					svg {
