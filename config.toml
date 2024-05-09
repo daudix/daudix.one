@@ -26,14 +26,13 @@ smart_punctuation = true
 [extra]
 primary_color = "#c061cb"
 primary_color_alpha = "rgba(192, 97, 203, 0.2)"
-emoji_favicon = false
 animated_favicon = true
-date_format = "%d %B %Y"
 issues_url = "https://codeberg.org/daudix/pages/issues"
 source_url = "https://codeberg.org/daudix/pages"
 stylesheets = [
   "custom.css"
 ]
+show_copy_button = true
 
 [extra.nav]
 show_feed = true
@@ -49,7 +48,6 @@ johnvert_ref = "daudix.codeberg.page"
 show_copyright = true
 show_johnvert = true
 show_powered_by = true
-show_source = false
 
 [extra.comments]
 host = "vmst.io"
