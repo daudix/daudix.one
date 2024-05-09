@@ -3,7 +3,7 @@
 #coffee-container #buttons .inline-button::before,
 body:has(#coffee-container)::before,
 body:has(#coffee-container) #site-nav::before,
-body:has(#coffee-container) #site-nav nav a:hover::before,
+body:has(#coffee-container) #site-nav nav a::before,
 body:has(#coffee-container) #site-footer::before,
 body:has(#coffee-container) #coffee-container::before,
 body:has(#coffee-container) #coffee-container #buttons .inline-button::before {
