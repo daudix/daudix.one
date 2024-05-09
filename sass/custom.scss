@@ -176,7 +176,14 @@
 	img {
 		all: unset;
 		display: inline;
+		transition: transform var(--transition-bezier);
+		cursor: zoom-in;
 		image-rendering: pixelated;
+
+		&:hover {
+			transform: scale(2);
+			box-shadow: 0 0 0 1px var(--primary-color-alpha), 0 2px 6px 2px var(--primary-color-alpha), 0 4px 24px 4px var(--primary-color-alpha);
+		}
 	}
 }
 
