@@ -67,7 +67,8 @@ body:has(#skeuo-switch:checked) #coffee-container #buttons .inline-button::befor
         transform: scale(0) rotate(90deg) translateY(-100%);
         transform-origin: top right;
         opacity: 0;
-        transition: var(--transition-longer);
+        transition-duration: var(--transition-longer);
+        transition-property: transform, opacity;
         margin: 3.5rem 6rem 0 0;
         border: 6px solid black;
         border-radius: 999px 0 999px 999px;
@@ -118,7 +119,8 @@ body:has(#skeuo-switch:checked) #coffee-container #buttons .inline-button::befor
             transform: translateY(-50%);
             opacity: 0;
             z-index: 2;
-            transition: var(--transition-longer);
+            transition-duration: var(--transition-longer);
+            transition-property: transform, opacity;
             margin: 0 auto;
             background-image: url(coffee/uwu.svg);
             background-size: cover;
@@ -210,7 +212,8 @@ body:has(#skeuo-switch:checked) #coffee-container #buttons .inline-button::befor
         display: block;
         position: relative;
         appearance: none;
-        transition: var(--transition);
+        transition-duration: var(--transition);
+        transition-property: background-color, box-shadow, filter;
         cursor: pointer;
         margin: 0 auto;
         box-shadow: var(--edge-highlight);
@@ -233,7 +236,7 @@ body:has(#skeuo-switch:checked) #coffee-container #buttons .inline-button::befor
             position: absolute;
             top: 0.25rem;
             left: 0.25rem;
-            transition: var(--transition-bezier);
+            transition: transform var(--transition-bezier), box-shadow var(--transition);
             box-shadow: var(--shadow);
             border-radius: 50%;
             background-color: white;
