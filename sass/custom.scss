@@ -63,10 +63,11 @@
 
 	#avatar {
 		display: inline-block;
-		transition: var(--transition-longer);
+		transition-duration: var(--transition-longer);
+		transition-property: transform, box-shadow, border-width, border-radius;
 		margin-top: 2rem;
 		margin-bottom: 0;
-		border-width: 16px;
+		border-width: 1rem;
 		border-style: solid;
 		border-color: white;
 		border-radius: 50%;
@@ -77,13 +78,14 @@
 		&:hover {
 			transform: scale(1.2);
 			box-shadow: none;
-			border-width: 2px;
+			border-width: 0.25rem;
 			border-radius: 50%;
 		}
 	}
 
 	#header {
-		transition: var(--transition-longer);
+		transition-duration: var(--transition-longer);
+		transition-property: transform, text-shadow;
 		color: var(--primary-color);
 		font-style: italic;
 		font-weight: bold;
@@ -111,7 +113,8 @@
 		padding-left: 1.5rem;
 
 		small {
-			transition: var(--transition);
+			transition-duration: var(--transition);
+			transition-property: color, text-shadow;
 		}
 
 		&::before {
@@ -119,7 +122,8 @@
 			position: relative;
 			top: 1.35rem;
 			left: -2.1rem;
-			transition: var(--transition);
+			transition-duration: var(--transition);
+			transition-property: box-shadow, border;
 			border: 0.25rem solid var(--fg-muted-3);
 			border-radius: 50%;
 			background: var(--bg-color);
@@ -207,7 +211,8 @@
 	}
 
 	a {
-		transition: var(--transition-bezier);
+		transition-duration: var(--transition-bezier);
+		transition-property: box-shadow, background-color;
 		border-radius: var(--rounded-corner);
 		padding: 0.75rem;
 		text-decoration: none;
