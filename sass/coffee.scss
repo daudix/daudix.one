@@ -1,0 +1,466 @@
+// Set the generic ::before properties to not repeat it over and over again
+#coffee-container::before,
+#coffee-container #buttons .inline-button::before,
+body:has(#coffee-container)::before,
+body:has(#coffee-container) #site-nav::before,
+body:has(#coffee-container) #site-nav nav a:hover::before,
+body:has(#coffee-container) #site-footer::before,
+body:has(#coffee-container) #coffee-container::before,
+body:has(#coffee-container) #coffee-container #buttons .inline-button::before {
+    display: block;
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity var(--transition);
+    inset: 0;
+    content: "";
+}
+
+body:has(#skeuo-switch:checked)::before,
+body:has(#skeuo-switch:checked) #site-nav::before,
+body:has(#skeuo-switch:checked) #site-nav nav a:hover::before,
+body:has(#skeuo-switch:checked) #site-footer::before,
+body:has(#skeuo-switch:checked) #coffee-container::before,
+body:has(#skeuo-switch:checked) #coffee-container #buttons .inline-button::before {
+    opacity: 1;
+}
+
+#coffee-container {
+    position: relative;
+    transition-duration: var(--transition);
+    transition-property: text-shadow, color, box-shadow;
+    margin-top: 5rem;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: var(--shadow);
+    border-radius: 36px;
+    background-color: var(--fg-muted-1);
+    width: min(calc(var(--container-width) / 2), 100%);
+    text-align: center;
+
+    &::before {
+        border-radius: 36px;
+        background-image: url(coffee/paper.webp);
+    }
+
+    #banner-container {
+        position: relative;
+        border-radius: 36px 36px 0 0;
+        padding-bottom: 1rem;
+        overflow: hidden;
+    }
+
+    #blobfox {
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translateY(-100%) scaleY(-1);
+        margin: 0;
+        width: 96px;
+        height: 96px;
+    }
+
+    #blobfox-message {
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: scale(0) rotate(90deg) translateY(-100%);
+        transform-origin: top right;
+        opacity: 0;
+        transition: var(--transition-longer);
+        margin: 3.5rem 6rem 0 0;
+        border: 6px solid black;
+        border-radius: 999px 0 999px 999px;
+        background-color: #fafafa;
+        padding: 0 0.5rem;
+        color: black;
+        font-weight: bold;
+        text-shadow: none;
+    }
+
+    #banner-container:active {
+        #blobfox {
+            transform: translateY(0) scaleY(-1);
+        }
+
+        #blobfox-message {
+            transform: scale(1) rotate(0) translateY(0);
+            opacity: 1;
+        }
+    }
+
+    #banner {
+        position: relative;
+        transition: box-shadow var(--transition);
+        margin: 0;
+        box-shadow: none;
+        border-radius: 0;
+
+        &:active {
+            transform: translateY(-100%);
+        }
+    }
+
+    #title {
+        display: inline-block;
+        margin: 0 1rem;
+        font-size: 1.5rem;
+    }
+
+    #avatar-container {
+        position: relative;
+
+        &::after {
+            position: absolute;
+            right: 0;
+            left: 0;
+            transform: translateY(-50%);
+            opacity: 0;
+            z-index: 2;
+            transition: var(--transition-longer);
+            margin: 0 auto;
+            background-image: url(coffee/uwu.svg);
+            background-size: cover;
+            width: 96px;
+            height: 96px;
+            pointer-events: none;
+            content: "";
+        }
+
+        &:has(#avatar:active)::after {
+            transform: translateY(-50%) scale(0.8);
+            opacity: 1;
+        }
+
+        #avatar {
+            position: absolute;
+            right: 0;
+            left: 0;
+            transform: translateY(-50%);
+            z-index: 1;
+            margin: 0 auto;
+            border-radius: 50%;
+            width: 96px;
+            height: 96px;
+
+            &:active {
+                transform: translateY(-50%) scale(0.8);
+                filter: hue-rotate(90deg);
+            }
+        }
+    }
+
+    #message {
+        margin: 1rem;
+    }
+
+    #buttons {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 1rem;
+
+        .inline-button {
+            transition-duration: var(--transition);
+            transition-property: box-shadow, text-shadow, transform;
+            box-shadow: var(--edge-highlight), var(--shadow);
+            border-radius: 999px;
+            width: 100%;
+
+            &:hover {
+                transform: scale(1.1);
+                box-shadow: var(--edge-highlight), var(--shadow-raised);
+            }
+
+            &:active {
+                transform: scale(var(--active));
+                box-shadow: var(--edge-highlight), var(--shadow);
+            }
+
+            &::before {
+                transition-duration: var(--transition);
+                transition-property: opacity, box-shadow;
+                box-shadow: var(--edge-highlight);
+                border-radius: 999px;
+            }
+
+            &#ko-fi {
+                background-color: #FF5E5B;
+                color: white;
+            }
+
+            &#liberapay {
+                background-color: #F6C915;
+                color: black;
+            }
+
+            &#monero {
+                background-color: #FF6600;
+                color: white;
+            }
+        }
+    }
+
+    #skeuo-switch {
+        -webkit-appearance: none;
+        display: block;
+        position: relative;
+        appearance: none;
+        transition: var(--transition);
+        cursor: pointer;
+        margin: 0 auto;
+        box-shadow: var(--edge-highlight);
+        border-radius: 999px;
+        background-color: var(--fg-muted-1);
+        width: 3rem;
+        height: 2rem;
+
+        +label {
+            transition: color var(--transition);
+            color: var(--fg-muted-5);
+            font-size: 0.8rem
+        }
+
+        &:hover {
+            background-color: var(--fg-muted-2);
+        }
+
+        &::before {
+            position: absolute;
+            top: 0.25rem;
+            left: 0.25rem;
+            transition: var(--transition-bezier);
+            box-shadow: var(--shadow);
+            border-radius: 50%;
+            background-color: white;
+            width: 1.5rem;
+            height: 1.5rem;
+            content: "";
+        }
+
+        &:checked {
+            background-color: var(--primary-color);
+
+            &::before {
+                transform: translateX(1rem);
+            }
+        }
+    }
+}
+
+body:has(#coffee-container) {
+    position: relative;
+    transition: box-shadow var(--transition);
+
+    &::before {
+        background: url(coffee/glow.svg) center/cover, url(coffee/fabric.webp);
+    }
+
+    #site-nav {
+        transition-duration: var(--transition);
+        transition-property: -webkit-backdrop-filter, backdrop-filter, background-color, box-shadow;
+
+        &::before {
+            outline: 1px solid rgba(255, 255, 255, 0.8);
+            border-radius: 26px;
+            background-image: linear-gradient(rgba(224, 224, 224, 0.95), rgba(212, 212, 212, 0.9) 50%, rgba(192, 192, 192, 0.8) 50%);
+        }
+
+        nav a::before {
+            border-radius: 999px;
+            background-image: linear-gradient(to top, rgba(224, 224, 224, 0.95), rgba(212, 212, 212, 0.9) 50%, rgba(192, 192, 192, 0.8) 50%);
+        }
+    }
+
+    #site-footer {
+        position: relative;
+        transition-duration: var(--transition);
+        transition-property: background-color, box-shadow;
+
+        &::before {
+            background:
+                radial-gradient(black 15%, transparent 16%) 0 0,
+                radial-gradient(black 15%, transparent 16%) 8px 8px,
+                radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 0 1px,
+                radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 8px 9px;
+            background-size: 16px 16px;
+            background-color: hsl(0 0% 27%);
+        }
+
+        * {
+            transition-duration: var(--transition);
+            transition-property: text-shadow, color;
+        }
+    }
+
+    @media (prefers-color-scheme: dark) {
+        &::before {
+            background: url(coffee/glow-d.svg) center/cover, linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(coffee/fabric.webp);
+        }
+
+        #site-nav {
+            &::before {
+                outline: 1px solid rgba(0, 0, 0, 0.8);
+                background-image: linear-gradient(rgba(80, 80, 80, 0.95), rgba(32, 32, 32, 0.9) 50%, rgba(0, 0, 0, 0.8) 50%);
+            }
+
+            nav a::before {
+                background-image: linear-gradient(to top, rgba(80, 80, 80, 0.95), rgba(32, 32, 32, 0.9) 50%, rgba(0, 0, 0, 0.8) 50%);
+            }
+        }
+    }
+}
+
+body:has(#skeuo-switch:checked) {
+    box-shadow: inset 0 0 100px black;
+
+    #site-nav {
+        -webkit-backdrop-filter: saturate(100%) blur(0px);
+        backdrop-filter: saturate(100%) blur(0px);
+        box-shadow: var(--edge-highlight), 0 5px 30px rgba(0, 0, 0, 0.3);
+        background-color: transparent;
+
+        nav {
+            a {
+                position: relative;
+                color: rgba(0, 0, 0, 0.7);
+                text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+
+                &:hover {
+                    box-shadow: none;
+                    color: black;
+                }
+
+                svg {
+                    filter: drop-shadow(0 1px 0 rgba(255, 255, 255, 0.8));
+                }
+            }
+
+            #main-content {
+                position: absolute;
+            }
+        }
+    }
+
+    #site-footer {
+        box-shadow: inset 0 3px 10px rgba(0, 0, 0, 0.4);
+        background-color: transparent;
+
+        * {
+            color: hsl(0 0% 78%);
+            text-shadow: 0 2px 4px rgb(0, 0, 0);
+        }
+
+        #johnvertisement {
+            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+        }
+    }
+
+    #coffee-container {
+        box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+        color: hsl(32 26% 25%);
+        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+
+        #banner {
+            box-shadow: var(--shadow);
+        }
+
+        #buttons {
+            .inline-button {
+                transform: translateY(-2px);
+
+                &:hover {
+                    filter: brightness(1.1);
+                }
+
+                &:active {
+                    transform: translateY(0);
+                    filter: brightness(0.9);
+                    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5), 0 1px 0 rgba(255, 255, 255, 0.1) !important;
+                }
+
+                &::before {
+                    box-shadow: inset rgba(255, 255, 255, 0.3) 0 1px 0 0;
+                }
+
+                &#ko-fi {
+                    box-shadow: 0px 2px 0px 0px rgb(194, 3, 0);
+                    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+
+                    &::before {
+                        background-image: linear-gradient(rgb(255, 145, 143), rgb(255, 44, 41));
+                    }
+                }
+
+                &#liberapay {
+                    box-shadow: 0px 2px 0px 0px rgb(157, 127, 6);
+                    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+
+                    &::before {
+                        background-image: linear-gradient(rgb(248, 212, 68), rgb(207, 167, 7));
+                    }
+                }
+
+                &#monero {
+                    box-shadow: 0px 2px 0px 0px rgb(153, 61, 0);
+                    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+
+                    &::before {
+                        background-image: linear-gradient(rgb(255, 133, 51), rgb(204, 82, 0));
+                    }
+                }
+            }
+        }
+
+        #skeuo-switch {
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5), 0 1px 0 rgba(255, 255, 255, 0.1);
+
+            +label {
+                color: hsl(32 26% 20% / 80%);
+            }
+
+            &:hover {
+                filter: brightness(1.1);
+            }
+
+            &::before {
+                box-shadow: inset 0 1px 0 rgb(255, 255, 255), 0 1px 5px rgba(0, 0, 0, 0.5);
+                background-image: linear-gradient(darkgray, white);
+                background-size: cover;
+            }
+        }
+    }
+
+    @media (prefers-color-scheme: dark) {
+        #site-nav {
+            nav {
+                a {
+                    color: rgba(255, 255, 255, 0.7);
+                    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.8);
+
+                    &:hover {
+                        background-color: unset;
+                        color: white;
+                    }
+
+                    svg {
+                        filter: drop-shadow(0 -1px 0 rgba(0, 0, 0, 0.8));
+                    }
+                }
+            }
+        }
+
+        #site-footer {
+            &::before {
+                background-color: hsl(0 0% 13%);
+            }
+
+            * {
+                color: hsl(0 0% 58%);
+            }
+        }
+    }
+}
