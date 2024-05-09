@@ -91,7 +91,8 @@ body:has(#skeuo-switch:checked) #coffee-container #buttons .inline-button::befor
 
     #banner {
         position: relative;
-        transition: box-shadow var(--transition);
+        transition-duration: var(--transition-longer);
+        transition-property: box-shadow, transform;
         margin: 0;
         box-shadow: none;
         border-radius: 0;
@@ -165,7 +166,7 @@ body:has(#skeuo-switch:checked) #coffee-container #buttons .inline-button::befor
 
         .inline-button {
             transition-duration: var(--transition);
-            transition-property: box-shadow, text-shadow, transform;
+            transition-property: box-shadow, text-shadow, transform, filter;
             box-shadow: var(--edge-highlight), var(--shadow);
             border-radius: 999px;
             width: 100%;
