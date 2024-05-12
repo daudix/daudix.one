@@ -212,13 +212,14 @@
 	}
 
 	a {
-		transition: box-shadow var(--transition-bezier), background-color var(--transition-bezier), transform var(--transition);
-		border-radius: var(--rounded-corner);
-		padding: 0.75rem;
+		transition-duration: var(--transition);
+		transition-property: box-shadow, background-color, transform;
+		border-radius: calc(var(--rounded-corner) + 0.5rem);
+		padding: 1rem;
 		text-decoration: none;
 
 		&:hover {
-			box-shadow: 0 0 0 8px var(--fg-muted-1);
+			box-shadow: var(--edge-highlight);
 			background-color: var(--fg-muted-1);
 			text-decoration: none;
 		}
