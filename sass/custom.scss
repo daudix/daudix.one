@@ -212,8 +212,7 @@
 	}
 
 	a {
-		transition-duration: var(--transition-bezier);
-		transition-property: box-shadow, background-color;
+		transition: box-shadow var(--transition-bezier), background-color var(--transition-bezier), transform var(--transition);
 		border-radius: var(--rounded-corner);
 		padding: 0.75rem;
 		text-decoration: none;
@@ -222,6 +221,10 @@
 			box-shadow: 0 0 0 8px var(--fg-muted-1);
 			background-color: var(--fg-muted-1);
 			text-decoration: none;
+		}
+
+		&:active {
+			transform: scale(var(--active));
 		}
 	}
 }
