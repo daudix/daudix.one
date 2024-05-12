@@ -214,7 +214,7 @@
 	a {
 		transition-duration: var(--transition);
 		transition-property: box-shadow, background-color, transform;
-		border-radius: calc(var(--rounded-corner) + 0.5rem);
+		border-radius: calc(var(--rounded-corner) + 1rem);
 		padding: 1rem;
 		text-decoration: none;
 
