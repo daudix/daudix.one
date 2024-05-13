@@ -33,7 +33,7 @@ My favorite games are:
 - Untitled Goose
 - The Stanley Parable
 - Stardew Valley
-- Cyberpunk 2077 (I only played it on YouTube so it's still to be played haha)
+- Cyberpunk 2077 <small>(I've only *played* it on YouTube)</small>
 
 Design is a perhaps a bit more than just a thing I like, it's my hobby that I learn more about every day.
 
