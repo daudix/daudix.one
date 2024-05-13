@@ -21,7 +21,7 @@ I'm from the Siberian part of Russia, but currently live in <abbr title="If you 
 
 Some things I like:
 
-- Photography; although I don't have much opportunity to shoot anything else than a view from my window
+- Photography <small>(although I don't have much opportunity to shoot anything else than a view from my window)</small>
 - Design
 - Open source
 - Retro and vintage stuff, as well as retro-futurism
