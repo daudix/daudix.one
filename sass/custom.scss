@@ -238,15 +238,15 @@
 }
 
 #original-icons {
-	background-color: hsl(213 76% 65% / 50%);
+	background-color: rgba(98, 160, 234, 0.5);
 }
 
 #redrawn-icons {
-	background-color: hsl(141 71% 62% / 50%);
+	background-color: rgba(87, 227, 137, 0.5);
 }
 
 #wallpapers {
-	background-color: hsl(30 100% 64% / 50%);
+	background-color: rgba(255, 163, 72, 0.5);
 
 	img {
 		border-radius: var(--rounded-corner);
@@ -258,8 +258,8 @@ body:has(#original-icons) footer {
 }
 
 .drop-shadow {
-	-webkit-filter: drop-shadow(0 0.08rem 0.1rem hsl(0 0% 0% / 35%)) drop-shadow(0 0.4rem 0.7rem hsl(0 0% 0% / 18%));
-	filter: drop-shadow(0 0.08rem 0.1rem hsl(0 0% 0% / 35%)) drop-shadow(0 0.4rem 0.7rem hsl(0 0% 0% / 18%));
+	-webkit-filter: drop-shadow(0 0.08rem 0.1rem rgba(0, 0, 0, 0.35)) drop-shadow(0 0.4rem 0.7rem rgba(0, 0, 0, 0.18));
+	filter: drop-shadow(0 0.08rem 0.1rem rgba(0, 0, 0, 0.35)) drop-shadow(0 0.4rem 0.7rem rgba(0, 0, 0, 0.18));
 }
 
 .emoji {
