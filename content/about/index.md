@@ -91,10 +91,6 @@ I were using GitHub from the very start of my FOSS journey, but recently I've [m
 - [GitLab](https://gitlab.com/daudix)
 - [GitLab (GNOME)](https://gitlab.gnome.org/daudix)
 
-## Buy Me a Coffee
-
-[See available options here](@/coffee/index.md)
-
 ## This Website
 
 If you couldn't tell already, this website is made with love and attention, is contantly updated to be as good as possible, and it tries to be very lightweight and compatible with older browsers (at very least it works on iOS 15 and macOS High Sierra; which I'm sure a lot of people still use)
@@ -126,7 +122,7 @@ I also have a website on [neocities.org](https://neocities.org), it's not in a g
 
 <small>Seriously, they're awesome!</small>
 
-<div id="buttons-container">
+<div id="netscape-buttons-container">
 
 [![a proud member of the green team of 512KB club](88x31/green-team.gif)](https://512kb.club)
 [![ddg](88x31/ddg.gif)](https://duckduckgo.com)
