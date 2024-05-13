@@ -76,10 +76,10 @@ I have changed (and will change) the Fediverse instance I'm on, so to make sure 
 
 <small>From newest to oldest ↓</small>
 <ol id="timeline">
-	<li><small>05 May 2024 - Today<br><a href="https://vmst.io/@daudix">vmst.io</a> - Main profile</small></li>
-	<li><small>08 Jan 2024 - Today<br><a href="https://pleroma.envs.net/daudix">pleroma.envs.net</a> - Personal profile</small></li>
-	<li><small>20 Nov 2023 - 07 May 2024<br><a href="https://social.treehouse.systems/@daudix">social.treehouse.systems</a> - Main profile</small></li>
-	<li><small>01 Sep 2022 - 20 Nov 2023<br><a href="https://mstdn.social/@Daudix">mstdn.social</a> - Main profile</small></li>
+	<li><small>05 May 2024 - Today<br><a href="https://vmst.io/@daudix">vmst.io</a> • <span>Main profile</span></small></li>
+	<li><small>08 Jan 2024 - Today<br><a href="https://pleroma.envs.net/daudix">pleroma.envs.net</a> • <span>Personal profile</span></small></li>
+	<li><small>20 Nov 2023 - 07 May 2024<br><a href="https://social.treehouse.systems/@daudix">social.treehouse.systems</a> • <span>Main profile</span></small></li>
+	<li><small>01 Sep 2022 - 20 Nov 2023<br><a href="https://mstdn.social/@Daudix">mstdn.social</a> • <span>Main profile</span></small></li>
 </ol>
 
 ## Forges

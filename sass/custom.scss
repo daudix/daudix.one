@@ -112,6 +112,17 @@
 			transition-property: color, text-shadow;
 		}
 
+		span {
+			transition-duration: var(--transition);
+			transition-property: background-color, color;
+			box-shadow: var(--edge-highlight);
+			border-radius: 999px;
+			background-color: var(--fg-muted-1);
+			padding: 0.25rem 0.75rem;
+			color: var(--fg-color);
+			font-weight: bold;
+		}
+
 		&::before {
 			display: block;
 			position: relative;
@@ -130,7 +141,11 @@
 		&:hover {
 			small {
 				color: var(--primary-color);
-				text-shadow: var(--primary-color-alpha) 0 0 4px, var(--primary-color) 0 0 12px;
+			}
+
+			span {
+				background-color: var(--primary-color-alpha);
+				color: var(--primary-color);
 			}
 
 			&::before {
