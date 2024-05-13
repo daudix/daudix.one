@@ -24,8 +24,8 @@ highlight_themes_css = [
 smart_punctuation = true
 
 [extra]
-primary_color = "#c061cb"
-primary_color_alpha = "rgba(192, 97, 203, 0.2)"
+primary_color = "#b57edc"
+primary_color_alpha = "rgba(180, 125, 219, 0.2)"
 animated_favicon = true
 issues_url = "https://codeberg.org/daudix/pages/issues"
 source_url = "https://codeberg.org/daudix/pages"
