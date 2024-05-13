@@ -268,14 +268,14 @@ body:has(#coffee-container) {
         transition-property: -webkit-backdrop-filter, backdrop-filter, background-color, box-shadow;
 
         &::before {
-            outline: 1px solid hsl(0 0% 100% / 80%);
+            outline: 1px solid rgba(255, 255, 255, 0.8);
             border-radius: 26px;
-            background-image: linear-gradient(hsl(0 0% 88% / 95%), hsl(0 0% 83% / 90%) 50%, hsl(0 0% 75% / 80%) 50%);
+            background-image: linear-gradient(rgba(224, 224, 224, 0.95), rgba(212, 212, 212, 0.9) 50%, rgba(192, 192, 192, 0.8) 50%);
         }
 
         nav a::before {
             border-radius: 999px;
-            background-image: linear-gradient(to top, hsl(0 0% 88% / 95%), hsl(0 0% 83% / 90%) 50%, hsl(0 0% 75% / 80%) 50%);
+            background-image: linear-gradient(to top, rgba(224, 224, 224, 0.95), rgba(212, 212, 212, 0.9) 50%, rgba(192, 192, 192, 0.8) 50%);
         }
     }
 
@@ -288,8 +288,8 @@ body:has(#coffee-container) {
             background:
                 radial-gradient(black 15%, transparent 16%) 0 0,
                 radial-gradient(black 15%, transparent 16%) 8px 8px,
-                radial-gradient(hsl(0 0% 100% / 10%) 15%, transparent 20%) 0 1px,
-                radial-gradient(hsl(0 0% 100% / 10%) 15%, transparent 20%) 8px 9px;
+                radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 0 1px,
+                radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 8px 9px;
             background-size: 16px 16px;
             background-color: hsl(0 0% 27%);
         }
@@ -302,17 +302,17 @@ body:has(#coffee-container) {
 
     @media (prefers-color-scheme: dark) {
         &::before {
-            background: url(coffee/glow-d.svg) center/cover, linear-gradient(hsl(0 0% 0% / 50%), hsl(0 0% 0% / 50%)), url(coffee/fabric.webp);
+            background: url(coffee/glow-d.svg) center/cover, linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(coffee/fabric.webp);
         }
 
         #site-nav {
             &::before {
-                outline: 1px solid hsl(0 0% 0% / 80%);
-                background-image: linear-gradient(hsl(0 0% 31% / 95%), hsl(0 0% 13% / 90%) 50%, hsl(0 0% 0% / 80%) 50%);
+                outline: 1px solid rgba(0, 0, 0, 0.8);
+                background-image: linear-gradient(rgba(80, 80, 80, 0.95), rgba(32, 32, 32, 0.9) 50%, rgba(0, 0, 0, 0.8) 50%);
             }
 
             nav a::before {
-                background-image: linear-gradient(to top, hsl(0 0% 31% / 95%), hsl(0 0% 13% / 90%) 50%, hsl(0 0% 0% / 80%) 50%);
+                background-image: linear-gradient(to top, rgba(80, 80, 80, 0.95), rgba(32, 32, 32, 0.9) 50%, rgba(0, 0, 0, 0.8) 50%);
             }
         }
     }
@@ -324,14 +324,14 @@ body:has(#skeuo-switch:checked) {
     #site-nav {
         -webkit-backdrop-filter: saturate(100%) blur(0px);
         backdrop-filter: saturate(100%) blur(0px);
-        box-shadow: var(--edge-highlight), 0 5px 30px hsl(0 0% 0% / 30%);
+        box-shadow: var(--edge-highlight), 0 5px 30px rgba(0, 0, 0, 0.3);
         background-color: transparent;
 
         nav {
             a {
                 position: relative;
-                color: hsl(0 0% 0% / 70%);
-                text-shadow: 0 1px 0 hsl(0 0% 100% / 80%);
+                color: rgba(0, 0, 0, 0.7);
+                text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
 
                 &:hover {
                     box-shadow: none;
@@ -339,7 +339,7 @@ body:has(#skeuo-switch:checked) {
                 }
 
                 svg {
-                    filter: drop-shadow(0 1px 0 hsl(0 0% 100% / 80%));
+                    filter: drop-shadow(0 1px 0 rgba(255, 255, 255, 0.8));
                 }
             }
 
@@ -350,23 +350,23 @@ body:has(#skeuo-switch:checked) {
     }
 
     #site-footer {
-        box-shadow: inset 0 3px 10px hsl(0 0% 0% / 40%);
+        box-shadow: inset 0 3px 10px rgba(0, 0, 0, 0.4);
         background-color: transparent;
 
         * {
             color: hsl(0 0% 78%);
-            text-shadow: 0 2px 4px hsl(0 0% 0%);
+            text-shadow: 0 2px 4px rgb(0, 0, 0);
         }
 
         #johnvertisement {
-            box-shadow: 0 5px 30px hsl(0 0% 0% / 30%);
+            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
         }
     }
 
     #coffee-container {
-        box-shadow: 0 5px 30px hsl(0 0% 0% / 30%);
+        box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
         color: hsl(32 26% 25%);
-        text-shadow: 0 1px 0 hsl(0 0% 100% / 30%);
+        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
 
         #banner {
             box-shadow: var(--shadow);
@@ -383,44 +383,44 @@ body:has(#skeuo-switch:checked) {
                 &:active {
                     transform: translateY(0);
                     filter: brightness(0.9);
-                    box-shadow: inset 0 1px 3px hsl(0 0% 0% / 50%), 0 1px 0 hsl(0 0% 100% / 10%) !important;
+                    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5), 0 1px 0 rgba(255, 255, 255, 0.1) !important;
                 }
 
                 &::before {
-                    box-shadow: inset hsl(0 0% 100% / 30%) 0 1px 0 0;
+                    box-shadow: inset rgba(255, 255, 255, 0.3) 0 1px 0 0;
                 }
 
                 &#ko-fi {
-                    box-shadow: 0px 2px 0px 0px hsl(1 100% 38%);
-                    text-shadow: 0 -1px 0 hsl(0 0% 0% / 40%);
+                    box-shadow: 0px 2px 0px 0px rgb(194, 3, 0);
+                    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
 
                     &::before {
-                        background-image: linear-gradient(hsl(1 100% 78%), hsl(1 100% 58%));
+                        background-image: linear-gradient(rgb(255, 145, 143), rgb(255, 44, 41));
                     }
                 }
 
                 &#liberapay {
-                    box-shadow: 0px 2px 0px 0px hsl(48 93% 32%);
-                    text-shadow: 0 1px 0 hsl(0 0% 100% / 40%);
+                    box-shadow: 0px 2px 0px 0px rgb(157, 127, 6);
+                    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
 
                     &::before {
-                        background-image: linear-gradient(hsl(48 93% 62%), hsl(48 93% 42%));
+                        background-image: linear-gradient(rgb(248, 212, 68), rgb(207, 167, 7));
                     }
                 }
 
                 &#monero {
-                    box-shadow: 0px 2px 0px 0px hsl(24 100% 30%);
-                    text-shadow: 0 -1px 0 hsl(0 0% 0% / 40%);
+                    box-shadow: 0px 2px 0px 0px rgb(153, 61, 0);
+                    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
 
                     &::before {
-                        background-image: linear-gradient(hsl(24 100% 60%), hsl(24 100% 40%));
+                        background-image: linear-gradient(rgb(255, 133, 51), rgb(204, 82, 0));
                     }
                 }
             }
         }
 
         #skeuo-switch {
-            box-shadow: inset 0 1px 3px hsl(0 0% 0% / 50%), 0 1px 0 hsl(0 0% 100% / 10%);
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5), 0 1px 0 rgba(255, 255, 255, 0.1);
 
             +label {
                 color: hsl(32 26% 20% / 80%);
@@ -431,7 +431,7 @@ body:has(#skeuo-switch:checked) {
             }
 
             &::before {
-                box-shadow: inset 0 1px 0 hsl(0 0% 100%), 0 1px 5px hsl(0 0% 0% / 50%);
+                box-shadow: inset 0 1px 0 rgb(255, 255, 255), 0 1px 5px rgba(0, 0, 0, 0.5);
                 background-image: linear-gradient(darkgray, white);
                 background-size: cover;
             }
@@ -442,8 +442,8 @@ body:has(#skeuo-switch:checked) {
         #site-nav {
             nav {
                 a {
-                    color: hsl(0 0% 100% / 70%);
-                    text-shadow: 0 -1px 0 hsl(0 0% 0% / 80%);
+                    color: rgba(255, 255, 255, 0.7);
+                    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.8);
 
                     &:hover {
                         background-color: unset;
@@ -451,7 +451,7 @@ body:has(#skeuo-switch:checked) {
                     }
 
                     svg {
-                        filter: drop-shadow(0 -1px 0 hsl(0 0% 0% / 80%));
+                        filter: drop-shadow(0 -1px 0 rgba(0, 0, 0, 0.8));
                     }
                 }
             }
