@@ -54,3 +54,6 @@ host = "vmst.io"
 user = "daudix"
 show_qr = true
 locale = "en-IE"
+
+[extra.goatcounter]
+user = "daudix"

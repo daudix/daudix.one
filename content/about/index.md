@@ -154,7 +154,7 @@ If you like my website, feel free to link it by adding the button:
 
 > Note: It's recommended to avoid hot-linking; instead place a copy on your own site.
 
-Hey, you, yes, *you*. Got a nice website? Got nice buttons?  Got any buttons? I have a deal for you! Just [ping me somewhere](@/about/index.md#contacts) and I'll add your button here, easy as pie.
+Hey, you, yes, *you*. Got a nice website? Got nice buttons?  Got any buttons? I have a deal for you! Just [ping me somewhere](@/about/index.md#contacts) and I'll add your button here, piece of cake.
 
 <script type="text/javascript">
   function updateClock() {
