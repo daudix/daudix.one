@@ -19,6 +19,8 @@ Hello there! My name is David, you may know me by my online handle Daudix.
 
 I'm from the Siberian part of Russia, but currently live in <abbr title="If you know you know">▒▓░▒▓░</abbr>.
 
+Oh and I'm *slightly* <span id="shy">shy</span>.
+
 Some things I like:
 
 - Photography <small>(although I don't have much opportunity to shoot anything else than a view from my window)</small>
@@ -157,13 +159,27 @@ If you like my website, feel free to link it by adding the button:
 Hey, you, yes, *you*. Got a nice website? Got nice buttons?  Got any buttons? I have a deal for you! Just [ping me somewhere](@/about/index.md#contacts) and I'll add your button here, piece of cake.
 
 <script type="text/javascript">
-  function updateClock() {
-    const options = { timeZone: 'Europe/Moscow', hour: '2-digit', minute: '2-digit', hour12: false };
-    const now = new Date().toLocaleString('en-US', options);
-    const clockElement = document.getElementById('clock');
-    clockElement.textContent = now;
-  }
+    function updateClock() {
+        const options = { timeZone: 'Europe/Moscow', hour: '2-digit', minute: '2-digit', hour12: false };
+        const now = new Date().toLocaleString('en-US', options);
+        const clockElement = document.getElementById('clock');
+        clockElement.textContent = now;
+    }
 
-  setInterval(updateClock, 1000);
-  updateClock();
+    setInterval(updateClock, 1000);
+    updateClock();
+
+    function handleClick() {
+        const img = document.createElement('img');
+        img.id = 'fluttershy';
+        img.className = 'transparent no-hover';
+        img.src = 'fluttershy.gif';
+        const siteNav = document.getElementById('site-nav');
+        siteNav.parentNode.insertBefore(img, siteNav);
+        setTimeout(() => {
+            document.body.removeChild(img);
+        }, 2000);
+    }
+
+    document.getElementById('shy').addEventListener('click', handleClick);
 </script>
