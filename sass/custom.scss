@@ -87,19 +87,19 @@
 		font-size: 4rem;
 
 		&:hover {
-			transform: translate(12px, -12px);
+			transform: translate(-12px, -12px);
 			text-shadow:
-				-3px 3px 0 #f4e2cc,
-				-6px 6px 0 #f25242,
-				-9px 9px 0 #93bfb0,
-				-12px 12px 0 #f1d456;
+				3px 3px 0 #f4e2cc,
+				6px 6px 0 #f25242,
+				9px 9px 0 #93bfb0,
+				12px 12px 0 #f1d456;
 
 			@media (prefers-color-scheme: dark) {
 				text-shadow:
-					-3px 3px 0 #404a65,
-					-6px 6px 0 #f25242,
-					-9px 9px 0 #93bfb0,
-					-12px 12px 0 #f1d456;
+					3px 3px 0 #404a65,
+					6px 6px 0 #f25242,
+					9px 9px 0 #93bfb0,
+					12px 12px 0 #f1d456;
 			}
 		}
 	}
