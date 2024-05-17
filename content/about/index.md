@@ -112,7 +112,7 @@ Pubnixes/tildes:
 
 Gemini capsules:
 
-- [flounder.online](https://flounder.online) - *finger* me at daudix@flounder.online
+- [flounder.online](https://flounder.online) - *finger* me at `daudix@flounder.online`
 
 I also have a website on [neocities.org](https://neocities.org), it's not in a good shape right now, but still, you can see it [here](https://daudix.neocities.org)
 
