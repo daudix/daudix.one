@@ -207,6 +207,37 @@
 	}
 }
 
+#shy {
+	-webkit-text-decoration: underline dotted;
+	cursor: help;
+	text-decoration: underline dotted;
+}
+
+#fluttershy {
+	position: sticky;
+	top: 15vh;
+	right: 0;
+	transform-origin: bottom left;
+	animation: fly 2s linear;
+	margin: 4rem 0;
+	width: 198.25px;
+	height: 177px;
+
+	@keyframes fly {
+		from {
+			transform: translateX(calc(100vw + 198.25px));
+		}
+
+		to {
+			transform: translateX(-100vw);
+		}
+	}
+}
+
+body:has(#fluttershy) {
+	overflow-x: hidden;
+}
+
 .media-grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
