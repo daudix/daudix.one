@@ -19,7 +19,7 @@ Hello there! My name is David, you may know me by my online handle Daudix.
 
 I'm from the Siberian part of Russia, but currently live in <abbr title="If you know you know">▒▓░▒▓░</abbr>.
 
-Oh and I'm *slightly* <span id="shy">shy</span>.
+Oh and I'm slightly <span id="shy">shy</span>.
 
 Some things I like:
 
