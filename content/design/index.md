@@ -12,6 +12,7 @@ original_icons = [
   {name = "Lemonade", icon = "ml.mdwalters.Lemonade.svg", url = "https://flathub.org/apps/ml.mdwalters.Lemonade"},
   {name = "Pipeline", icon = "de.schmidhuberj.tubefeeder.svg", url = "https://flathub.org/apps/de.schmidhuberj.tubefeeder"},
   {name = "Railway", icon = "de.schmidhuberj.DieBahn.svg", url = "https://flathub.org/apps/de.schmidhuberj.DieBahn"},
+  {name = "Sveglia", icon = "org.nickvision.sveglia.svg", url = "https://github.com/NickvisionApps/Sveglia"},
   {name = "Tagger", icon = "org.nickvision.tagger.svg", url = "https://flathub.org/apps/org.nickvision.tagger"},
 ]
 redrawn_icons = [
