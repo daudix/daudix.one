@@ -138,7 +138,7 @@
 			transition-property: box-shadow, border;
 			border: 0.25rem solid var(--fg-muted-3);
 			border-radius: 50%;
-			background: var(--bg-color);
+			background: var(--bg-color), var(--primary-color);
 			width: 0.5rem;
 			height: 0.5rem;
 			content: "";
