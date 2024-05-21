@@ -55,13 +55,15 @@ Have a look at my [designs](@/design/index.md), mostly icons but also some wallp
 
 Currently it's <time><span id="clock"><noscript>JavaScript required</noscript></span></time> <small>(UTC+3)</small> for me, so take that into consideration if I don't respond immediately.
 
-Feel free to send me a message on any of these, although Matrix, Telegram and Discord are the preferred ones since I use them the most. Whether you're bored or need someone to listen to you, I'm always open!
+Feel free to send me a message on any of these. Whether you're bored or need someone to listen to you, I'm always open!
 
-- [Discord](https://discord.com/users/650757995378114581)
-- [Mail](mailto:daudix@envs.net)
+<small>From most preferred to the least ↓</small>
+
 - [Matrix](https://matrix.to/#/@daudix:envs.net)
-- ~~[Signal](https://signal.me/#eu/0KKOAPEjDPbNVKFfWbNu9AHZE2od2quKOO5NxLmFqf/xA9940S5JKZbOhTwoa2wP)~~ <small>(currently my phone is broken so don't use it, I won't recieve the message)</small>
+- [Discord](https://discord.com/users/650757995378114581)
 - [Telegram](https://t.me/ddaudix)
+- [Mail](mailto:daudix@envs.net)
+- ~~[Signal](https://signal.me/#eu/0KKOAPEjDPbNVKFfWbNu9AHZE2od2quKOO5NxLmFqf/xA9940S5JKZbOhTwoa2wP)~~ <small>(currently my phone is broken so don't use it, I won't recieve the message)</small>
 - ~~[XMPP](xmpp:daudix@nixnet.services)~~ <small>(the admin is a pedo, so currently looking for a different server)</small>
 
 ## Socials
