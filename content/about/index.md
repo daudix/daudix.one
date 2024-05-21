@@ -64,7 +64,7 @@ Feel free to send me a message on any of these. Whether you're bored or need som
 - [Telegram](https://t.me/ddaudix)
 - [Mail](mailto:daudix@envs.net)
 - ~~[Signal](https://signal.me/#eu/0KKOAPEjDPbNVKFfWbNu9AHZE2od2quKOO5NxLmFqf/xA9940S5JKZbOhTwoa2wP)~~ <small>(currently my phone is broken so don't use it, I won't recieve the message)</small>
-- ~~[XMPP](xmpp:daudix@nixnet.services)~~ <small>(the admin is a pedo, so currently looking for a different server)</small>
+- ~~[XMPP](xmpp:daudix@nixnet.services)~~ <small>(admin is a pedo, so currently looking for a different server)</small>
 
 ## Socials
 
