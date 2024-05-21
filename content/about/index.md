@@ -55,23 +55,27 @@ Have a look at my [designs](@/design/index.md), mostly icons but also some wallp
 
 Currently it's <time><span id="clock"><noscript>JavaScript required</noscript></span></time> <small>(UTC+3)</small> for me, so take that into consideration if I don't respond immediately.
 
-Feel free to send me a message on any of these, although Matrix is preferred since I use it the most. Whether you're bored or need someone to listen to you, I'm always open!
+Feel free to send me a message on any of these, although Matrix, Telegram and Discord are the preferred ones since I use them the most. Whether you're bored or need someone to listen to you, I'm always open!
 
 - [Discord](https://discord.com/users/650757995378114581)
 - [Mail](mailto:daudix@envs.net)
 - [Matrix](https://matrix.to/#/@daudix:envs.net)
-- [Signal](https://signal.me/#eu/0KKOAPEjDPbNVKFfWbNu9AHZE2od2quKOO5NxLmFqf/xA9940S5JKZbOhTwoa2wP)
+- ~~[Signal](https://signal.me/#eu/0KKOAPEjDPbNVKFfWbNu9AHZE2od2quKOO5NxLmFqf/xA9940S5JKZbOhTwoa2wP)~~ <small>(currently my phone is broken so don't use it, I won't recieve the message)</small>
 - [Telegram](https://t.me/ddaudix)
-- [XMPP](xmpp:daudix@nixnet.services)
+- ~~[XMPP](xmpp:daudix@nixnet.services)~~ <small>(the admin is a pedo, so currently looking for a different server)</small>
 
 ## Socials
 
 List of places where you can ~~stalk~~ find me on:
 
-- [Akkoma](https://pleroma.envs.net/daudix)
-- [Bluesky](https://bsky.app/profile/daudix.bsky.social)
+> This is not a complete list but rather places where I'm somewhat active. You can find me on other platforms as well, although make sure it's the real me by [asking](@/about/index.md#contacts) first.
+
+<small>From most active to the least ↓</small>
+
 - [Mastodon](https://social.treehouse.systems/@daudix)
+- [Akkoma](https://pleroma.envs.net/daudix)
 - [Pixelfed](https://pixelfed.social/Daudix)
+- [Lemmy](https://lemmy.zip/u/daudix)
 - [YouTube](https://www.youtube.com/@ddaudix)
 
 I have changed (and will change) the Fediverse instance I'm on, so to make sure nothing is lost, here is my Fediverse timeline:
