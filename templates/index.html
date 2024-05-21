@@ -13,7 +13,9 @@
 </noscript>
 
 <div id="status-container">
-	<img id="avatar" class="no-hover" src="assets/avatar.svg" />
+	<div id="avatar-container">
+		<img id="avatar" class="no-hover" src="https://api.lanyard.rest/650757995378114581.png" />
+	</div>
 	<div id="statuscafe">
 		<div id="statuscafe-username"><noscript><a href="https://status.cafe/users/daudix">daudix</a> 🦆</noscript>
 		</div>
@@ -21,6 +23,17 @@
 	</div>
 </div>
 <script src="https://status.cafe/current-status.js?name=daudix" defer></script>
+<script>
+    fetch('https://api.lanyard.rest/v1/users/650757995378114581')
+        .then(response => response.json())
+        .then(data => {
+            const avatarElement = document.getElementById('avatar-container');
+            avatarElement.classList.add(data.data.discord_status);
+        })
+        .catch(error => {
+            console.error('Error fetching Lanyard data:', error);
+        });
+</script>
 
 <div class="crt scanlines">
 <pre>
