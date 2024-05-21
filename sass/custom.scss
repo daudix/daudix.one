@@ -9,11 +9,80 @@
 	place-items: center;
 	margin: 2rem 0 2rem;
 
-	#avatar {
+	#avatar-container {
+		position: relative;
 		margin: 0 1rem 0 0;
-		border-radius: 50%;
-		width: 4rem;
-		height: 4rem;
+
+		&.online,
+		&.idle,
+		&.dnd,
+		&.offline {
+
+			&::before,
+			&::after {
+				position: absolute;
+				border-radius: 50%;
+				content: "";
+			}
+
+			&::before {
+				right: 0;
+				bottom: 0;
+				background-color: #f3e0f5; // TODO: Replace this nasty hardcoded color
+				width: 1.5rem;
+				height: 1.5rem;
+
+				@media (prefers-color-scheme: dark) {
+					background-color: #130a14;
+				}
+			}
+
+			&::after {
+				right: 0.25rem;
+				bottom: 0.25rem;
+				width: 1rem;
+				height: 1rem;
+			}
+		}
+
+		&.online::after {
+			background-color: #23a55a;
+		}
+
+		&.idle::after {
+			$idle-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cpath d='M9.542 1.704a6 6 0 0 1-7.816 7.847c-1.017-.418-1.659-.14-1.32.91A8 8 0 0 0 8 16 8 8 0 0 0 10.445.384C9.396.048 9.12.69 9.542 1.704'/%3E%3C/svg%3E");
+			-webkit-mask-image: $idle-icon;
+			-webkit-mask-size: cover;
+			mask-image: $idle-icon;
+			mask-size: cover;
+			background-color: #f0b232;
+
+		}
+
+		&.dnd::after {
+			$dnd-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cpath fill='%23222' d='M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M3 7h10v2H3zm0 0'/%3E%3C/svg%3E");
+			-webkit-mask-image: $dnd-icon;
+			-webkit-mask-size: cover;
+			mask-image: $dnd-icon;
+			mask-size: cover;
+			background-color: #f23f43;
+		}
+
+		&.offline::after {
+			$offline-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cpath d='M8 0a8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8 8 8 0 0 0-8-8m0 4a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4'/%3E%3C/svg%3E");
+			-webkit-mask-image: $offline-icon;
+			-webkit-mask-size: cover;
+			mask-image: $offline-icon;
+			mask-size: cover;
+			background-color: #80848e;
+		}
+
+		#avatar {
+			margin: 0;
+			border-radius: 50%;
+			width: 4rem;
+			height: 4rem;
+		}
 	}
 
 	#statuscafe {
