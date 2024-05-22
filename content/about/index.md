@@ -53,7 +53,9 @@ Have a look at my [designs](@/design/index.md), mostly icons but also some wallp
 
 ## Contacts
 
-Currently it's <time><span id="clock"><noscript>JavaScript required</noscript></span></time> <small>(UTC+3)</small> for me, so take that into consideration if I don't respond immediately.
+Currently it's <time><span id="clock"><noscript>JavaScript required</noscript></span></time> <small>(UTC+3)</small> for me, so take that into consideration if I don't respond promptly.
+
+> **Tip:** Check my online status on the [home](@/_index.md) page in the form of a small dot on the avatar.
 
 Feel free to send me a message on any of these. Whether you're bored or need someone to listen to you, I'm always open!
 
