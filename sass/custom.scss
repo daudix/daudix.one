@@ -268,33 +268,28 @@
 
 #shy {
 	-webkit-text-decoration: underline dotted;
-	cursor: help;
+	cursor: pointer;
 	text-decoration: underline dotted;
 }
 
 #fluttershy {
-	position: sticky;
+	position: fixed;
 	top: 15vh;
-	right: 0;
+	right: -198.25px;
 	transform-origin: bottom left;
-	animation: fly 2s linear;
-	margin: 4rem 0;
+	margin: 0;
 	width: 198.25px;
 	height: 177px;
 
-	@keyframes fly {
-		from {
-			transform: translateX(calc(100vw + 198.25px));
-		}
+	&.fly {
+		animation: flight 2s linear;
 
-		to {
-			transform: translateX(-100vw);
+		@keyframes flight {
+			to {
+				transform: translateX(calc(-100vw - 198.25px));
+			}
 		}
 	}
-}
-
-body:has(#fluttershy) {
-	overflow-x: hidden;
 }
 
 .media-grid {
