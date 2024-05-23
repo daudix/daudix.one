@@ -13,58 +13,53 @@
 		position: relative;
 		margin: 0 1rem 0 0;
 
-		&.online,
-		&.idle,
-		&.dnd,
-		&.offline {
+		#online-indicator {
+			text-wrap: nowrap;
+			position: absolute;
+			right: 0.25rem;
+			bottom: 0.25rem;
+			outline: 0.25rem solid #f3e0f5; // TODO: Replace this nasty hardcoded color
+			border-radius: 0.5rem;
+			background-color: #80848e;
+			padding: 0 0.25rem;
+			width: 1rem;
+			height: 1rem;
+			overflow: hidden;
+			content: "";
+			color: transparent;
+			font-weight: bold;
+			font-size: 0.8rem;
+			line-height: normal;
 
-			&:hover::before {
+			&:hover {
 				width: auto;
 				color: rgba(0, 0, 0, 0.8);
 			}
 
-			&::before {
-				text-wrap: nowrap;
-				position: absolute;
-				right: 0.25rem;
-				bottom: 0.25rem;
-				outline: 0.25rem solid #f3e0f5; // TODO: Replace this nasty hardcoded color
-				border-radius: 0.5rem;
-				padding: 0 0.25rem;
-				width: 0.5rem;
-				height: 1rem;
-				overflow: hidden;
-				content: "";
-				color: transparent;
-				font-weight: bold;
-				font-size: 0.8rem;
-				line-height: normal;
-
-				@media (prefers-color-scheme: dark) {
-					outline: 0.25rem solid #130a14;
-				}
+			&.online {
+				background-color: #23a55a;
+				content: "Online";
 			}
-		}
 
-		&.online::before {
-			background-color: #23a55a;
-			content: "Online";
-		}
+			&.idle {
+				background-color: #f0b232;
+				content: "Idle";
 
-		&.idle::before {
-			background-color: #f0b232;
-			content: "Idle";
+			}
 
-		}
+			&.dnd {
+				background-color: #f23f43;
+				content: "DND";
+			}
 
-		&.dnd::before {
-			background-color: #f23f43;
-			content: "DND";
-		}
+			&.offline {
+				background-color: #80848e;
+				content: "Offline";
+			}
 
-		&.offline::before {
-			background-color: #80848e;
-			content: "Offline";
+			@media (prefers-color-scheme: dark) {
+				outline: 0.25rem solid #130a14;
+			}
 		}
 
 		#avatar {

@@ -1,15 +1,3 @@
-function updateClock() {
-	const options = {
-		timeZone: "Europe/Moscow",
-		hour: "2-digit",
-		minute: "2-digit",
-		hour12: false,
-	};
-	const now = new Date().toLocaleString("en-US", options);
-	const clockElement = document.getElementById("clock");
-	clockElement.textContent = now;
-}
-
 function insertFluttershy() {
 	const img = document.createElement("img");
 	img.id = "fluttershy";
@@ -19,7 +7,7 @@ function insertFluttershy() {
 	updateFluttershyPosition();
 }
 
-function handleClick() {
+function handleFluttershyClick() {
 	const img = document.getElementById("fluttershy");
 	if (img) {
 		img.classList.add("fly");
@@ -38,10 +26,7 @@ function updateFluttershyPosition() {
 	}
 }
 
-updateClock();
-setInterval(updateClock, 1000);
-
 insertFluttershy();
-document.getElementById("shy").addEventListener("click", handleClick);
+document.getElementById("shy").addEventListener("click", handleFluttershyClick);
 window.addEventListener("scroll", updateFluttershyPosition);
 window.addEventListener("resize", updateFluttershyPosition);
