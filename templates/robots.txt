@@ -3,29 +3,51 @@ Disallow:
 Allow: /
 Sitemap: {{ get_url(path="sitemap.xml") }}
 
+# Borrowed from seirdy.one
+
+User-Agent: Adsbot
+Disallow: /
+Allow: /ads.txt
+Allow: /app-ads.txt
+
+User-agent: peer39_crawler
+User-Agent: peer39_crawler/1.0
+Disallow: /
+
 User-Agent: TurnitinBot
 Disallow: /
+
 User-Agent: NPBot
 Disallow: /
+
 User-Agent: SlySearch
 Disallow: /
+
 User-Agent: BLEXBot
 Disallow: /
+
 User-agent: CheckMarkNetwork/1.0 (+https://www.checkmarknetwork.com/spider.html)
 Disallow: /
+
 User-agent: BrandVerity/1.0
 Disallow: /
-User-agent: ChatGPT-User
+
+User-agent: PiplBot
 Disallow: /
+
+User-agent: ChatGPT-User
 User-agent: GPTBot
 Disallow: /
-User-agent: CCBot
-Disallow: /
+
 User-agent: Google-Extended
 Disallow: /
-User-agent: Omgilibot
+
+User-agent: anthropic-ai
+User-agent: Claude-Web
 Disallow: /
-User-agent: Omgili
+
+User-agent: ClaudeBot
 Disallow: /
-User-agent: FacebookBot
+
+User-Agent:  FacebookBot
 Disallow: /
