@@ -5,7 +5,7 @@ description = "Just in case you want to do so for some reason."
 
 <div id="coffee-container">
 	<div id="avatar-container">
-		<img id="avatar" class="no-hover" src="../assets/avatar.svg" />
+		<img id="avatar" class="no-hover" src="/assets/avatar.svg" />
 	</div>
 	<div id="banner-container">
 		<p id="blobfox-message">Hewwo~ 0w0</p>
@@ -22,4 +22,4 @@ description = "Just in case you want to do so for some reason."
 		<a id="monero" class="inline-button" href="monero.txt">Monero</a>
 	</p>
 </div>
-<link rel="stylesheet" type="text/css" href="../coffee.css" />
+<link rel="stylesheet" type="text/css" href="/coffee.css" />

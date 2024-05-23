@@ -17,7 +17,7 @@ Hello there! My name is David, you may know me by my online handle Daudix.
 
 > Although Daudix may appear as just my online handle, it's actually slightly different persona; perhaps more silly and honest than the "official" David, but they're so tightly tied together so it's fine to use whatever you like.
 
-I'm from the Siberian part of Russia, but currently live in <abbr title="If you know you know">▒▓░▒▓░</abbr>.
+I'm from the Siberian part of Russia, but currently live in <abbr title="If you know, you know">▒▓░▒▓░</abbr>.
 
 Oh and I'm slightly <span id="shy">shy</span>.
 
@@ -166,4 +166,5 @@ If you like my website, feel free to link it by adding the button:
 
 Hey, you, yes, *you*. Got a nice website? Got nice buttons?  Got any buttons? I have a deal for you! Just [ping me somewhere](@/about/index.md#contacts) and I'll add your button here, piece of cake.
 
-<script src="script.js"></script>
+<script src="/clock.js"></script>
+<script src="/fluttershy.js"></script>

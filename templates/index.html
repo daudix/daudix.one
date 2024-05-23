@@ -8,13 +8,14 @@
 		<small>Here's an exclusive cute fox hugging a duck for you :3</small>
 		<br />
 		<img style="width: 4rem; height: 4rem; margin-top: 0;" class="transparent no-hover"
-			src="assets/neofox-hug-duck.png" />
+			src="/assets/neofox-hug-duck.png" />
 	</p>
 </noscript>
 
 <div id="status-container">
 	<div id="avatar-container">
 		<img id="avatar" class="no-hover" src="https://api.lanyard.rest/650757995378114581.png" />
+		<span id="online-indicator"></span>
 	</div>
 	<div id="statuscafe">
 		<div id="statuscafe-username"><noscript><a href="https://status.cafe/users/daudix">daudix</a> 🦆</noscript>
@@ -23,17 +24,7 @@
 	</div>
 </div>
 <script src="https://status.cafe/current-status.js?name=daudix" defer></script>
-<script>
-    fetch('https://api.lanyard.rest/v1/users/650757995378114581')
-        .then(response => response.json())
-        .then(data => {
-            const avatarElement = document.getElementById('avatar-container');
-            avatarElement.classList.add(data.data.discord_status);
-        })
-        .catch(error => {
-            console.error('Error fetching Lanyard data:', error);
-        });
-</script>
+<script src="/online-indicator.js"></script>
 
 <div class="crt scanlines">
 <pre>
