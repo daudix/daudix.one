@@ -107,6 +107,8 @@
 			border-radius: 50%;
 			width: 96px;
 			height: 96px;
+			transition-duration: var(--transition-longer);
+			transition-property: transform, filter;
 
 			&:active {
 				transform: translateY(-50%) scale(0.8);
