@@ -166,30 +166,4 @@ If you like my website, feel free to link it by adding the button:
 
 Hey, you, yes, *you*. Got a nice website? Got nice buttons?  Got any buttons? I have a deal for you! Just [ping me somewhere](@/about/index.md#contacts) and I'll add your button here, piece of cake.
 
-<script type="text/javascript">
-	function updateClock() {
-		const options = { timeZone: 'Europe/Moscow', hour: '2-digit', minute: '2-digit', hour12: false };
-		const now = new Date().toLocaleString('en-US', options);
-		const clockElement = document.getElementById('clock');
-		clockElement.textContent = now;
-	}
-
-	setInterval(updateClock, 1000);
-	updateClock();
-
-	function handleClick() {
-		const img = document.createElement('img');
-		img.id = 'fluttershy';
-		img.className = 'transparent no-hover';
-		img.src = 'fluttershy.gif';
-		const siteNav = document.getElementById('site-nav');
-		setTimeout(() => {
-			siteNav.parentNode.insertBefore(img, siteNav);
-		}, 500);
-		setTimeout(() => {
-			document.body.removeChild(img);
-		}, 2500);
-	}
-
-	document.getElementById('shy').addEventListener('click', handleClick);
-</script>
+<script src="script.js"></script>
