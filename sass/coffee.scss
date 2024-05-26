@@ -103,12 +103,12 @@
 			left: 0;
 			transform: translateY(-50%);
 			z-index: 1;
+			transition-duration: var(--transition-longer);
+			transition-property: transform, filter;
 			margin: 0 auto;
 			border-radius: 50%;
 			width: 96px;
 			height: 96px;
-			transition-duration: var(--transition-longer);
-			transition-property: transform, filter;
 
 			&:active {
 				transform: translateY(-50%) scale(0.8);
@@ -166,6 +166,7 @@
 
 	#skeuo-switch {
 		-webkit-appearance: none;
+		all: unset;
 		display: block;
 		position: relative;
 		appearance: none;
@@ -190,6 +191,7 @@
 		}
 
 		&::before {
+			all: unset;
 			position: absolute;
 			top: 0.25rem;
 			left: 0.25rem;
