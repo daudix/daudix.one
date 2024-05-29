@@ -166,7 +166,6 @@
 
 	#skeuo-switch {
 		-webkit-appearance: none;
-		all: unset;
 		display: block;
 		position: relative;
 		appearance: none;
@@ -175,6 +174,7 @@
 		cursor: pointer;
 		margin: 0 auto;
 		box-shadow: var(--edge-highlight);
+		border: none;
 		border-radius: 999px;
 		background-color: var(--fg-muted-1);
 		width: 3rem;
