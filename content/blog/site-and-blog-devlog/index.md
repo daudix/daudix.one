@@ -20,7 +20,7 @@ The Index is not only home page, it's also a showcase, info and screensaver page
 
 One important change have happened to the Index, now all its pages use the same base, `style.css`, and only page-specific tweaks are specified in page <abbr title="Cascading Style Sheets">CSS</abbr>, e.g showcase page style has `@import url("style.css");` in the beginning instead of exact copy of `index.css`, not only this makes the file size smaller, but also makes the tweaking process a breeze, since stuff can be changed in one place and be applied to every page.
 
-![Styles import](styles-import.png)
+![styles import](styles-import.png)
 <figcaption>VSCodium screenshot showing off import of base style and some «body» styles</figcaption>
 
 ### Home
@@ -31,7 +31,7 @@ Home page is a very important page, this page links to all other pages, it gives
 - Background color are a bit different (taken from Libadwaita).
 - Added shadows to all cards to give them some depth.
 
-![Blog card](blog-card.png)
+![blog card](blog-card.png)
 <figcaption>Blog link card with newely added shadow</figcaption>
 
 - Added hover effect for cards that act like a button (blog and showcase).
@@ -62,7 +62,7 @@ Kinoshita's](https://felipekinoshita.com) site. It is more similar to the blog i
 
 Screensaver is a brand-new page, the name is self-explanatory, it's just a pretty screensaver with colorful circles floating around, it is made around [this codepen](https://codepen.io/alvarotrigo/pen/qBMMyxz) by [Álvaro](https://codepen.io/alvarotrigo), from interesting it has «Enter Fulllscreen» button.
 
-![Screensaver](screensaver.png)
+![screensaver](screensaver.png)
 <figcaption>Pretty colorful circles blending with each other</figcaption>
 
 ## «The Blog»
@@ -72,34 +72,34 @@ The blog have seen the most of the changes, it all were flipped upside down to b
 - Proper dark mode have been implemented from scratch, previously <abbr title="Cascading Style Sheets">CSS</abbr> invert filter with hue rotation were used, it worked but had too much issues: images became unsaturated, emojis creepy, shadows glowing and etc.
 - Navigation bar have been added, it has pretty glassy look and shadow. Inspired by the navigation bar of [Micah Ilbery's](https://micahilbery.com) site. I really like how it looks :3
 
-![Blurred nav](blurred-nav.png)
+![blurred nav](blurred-nav.png)
 <figcaption>Navigation bar with content behind it being blurred</figcaption>
 
 - Added <abbr title="American Standard Code for Information Interchange">ASCII</abbr> style, now instead of boring code block it uses pretty gradient fill and has this neon glow on hover.
 
-![ASCII art](ascii-art.png)
+![ascii art](ascii-art.png)
 <figcaption>Regular state, it's filled with gradient going from bottom to top, with the bottom being black and top being transparent</figcaption>
 
-![ASCII art hover](ascii-art-hover.png)
+![ascii art hover](ascii-art-hover.png)
 <figcaption>Hovered state, it becomes fully black and gains purple-blue glow</figcaption>
 
 - Images now scale up on hover and have round corners.
 
-<video alt="Image hover" controls src="image-hover.webm"></video>
+<video alt="image hover" controls src="image-hover.webm"></video>
 <figcaption>Image zooming in on hover, with it loosing rounded corners</figcaption>
 
 - Code blocks now have some filters applied in dark mode for better visibility, the code blocks themselves are now more round and have shadows.
 
-![Code block](code-block.png)
+![code block](code-block.png)
 <figcaption>Code block in light mode</figcaption>
 
-![Code block dark](code-block-dark.png)
+![code block dark](code-block-dark.png)
 <figcaption>...And in dark</figcaption>
 
 - Some colors have been changed, all in all should be more pleasant to the eye.
 - Everything now respects global variables, so e.g you can change accent color, roundness, shadows and maximum content width without going through the whole 1200+ <abbr title="Lines Of Code">LOC</abbr> <abbr title="Cascading Style Sheets">CSS</abbr>, this is made not only to keep myself sane but also for _you_ to make it easier to build upon ;)
 
-<video alt="Color variables" controls src="color-variables.webm"></video>
+<video alt="color variables" controls src="color-variables.webm"></video>
 <figcaption>Me chaning 2 color variables and site respecting this</figcaption>
 
 - The structure have been changed, now uses recommended Jekyll structure for posts.
@@ -107,24 +107,24 @@ The blog have seen the most of the changes, it all were flipped upside down to b
 - Posts now have its own page.
 - Posts list on index page now generates automatically on build, this allowed to display tags and publication date.
 
-![Posts list](posts-list.png)
+![posts list](posts-list.png)
 <figcaption>Automatically generated list of posts on index page</figcaption>
 
 - Table of contents are now generated on build, now I don't have to create it for every page manually.
 - Hovering over `© Daudix's Blog, 2023` in footer now displays last built date.
 
-![Copyright hover](copyright-hover.png)
+![copyright hover](copyright-hover.png)
 <figcaption>You guess it, last built date is displayed on hover</figcaption>
 
 - Atom Feed is here!
 
-![Newsblur feed](newsblur-feed.png)
+![newsblur feed](newsblur-feed.png)
 <figcaption>Screenshot of NewsBlur with this blog</figcaption>
 
 - Added Johnvertisements.
 - Probably most exiting addition, Mastodon (and any other ActivityPub/​Fediverse account) powered comments! you can _right now_ scroll down and comment! all thanks goes to Cassidy James for [Mastodon-powered Blog Comments](https://cassidyjames.com/blog/fediverse-blog-comments-mastodon) ❤️
 
-![Mastodon comment](mastodon-comment.png)
+![mastodon comment](mastodon-comment.png)
 <figcaption>Mastodon post about my migration to Codeberg blog post being used as a comment</figcaption>
 
 ## One More Thing™
@@ -135,7 +135,7 @@ It's empty <abbr title="At The Moment">ATM</abbr>, but it has [AD-HD button](htt
 
 [Visit it here](https://daudix.neocities.org)
 
-![Neocities website](neocities-website.png)
+![neocities website](neocities-website.png)
 <figcaption>The Neocities website!</figcaption>
 
 ## The Future

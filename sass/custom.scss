@@ -361,3 +361,9 @@ body:has(#original-icons) footer {
 	width: 1.5em;
 	height: 1.5em;
 }
+
+.mastodon-embed {
+	box-shadow: var(--shadow);
+	border-radius: var(--rounded-corner);
+	width: 100%;
+}
