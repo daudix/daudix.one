@@ -4,6 +4,8 @@ description = "Almost a year later, I got my hands on it."
 date = 2024-06-04
 [taxonomies]
 tags = ["Devlog", "Website", "Neocities", "100DaysToOffload"]
+[extra.comments]
+id = "112555378913783711"
 +++
 
 > This is my first [#100DaysToOffload](https://100daystooffload.com) post; what this means is that I'll post more and about more diverse stuff. My drafts folder are nearly exploding so it's about time! A dedicated post about this will be published soon (hopefully _nervous giggling_).
