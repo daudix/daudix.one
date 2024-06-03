@@ -117,19 +117,19 @@ _Personally I use [VSCodium](https://vscodium.com), fork of VSCode with Microsof
 
 Push all the changes and [Generate an Access Token](https://docs.codeberg.org/advanced/access-token), you need to generate token named `cbtoken` with the `repo` scope selected
 
-![Scopes repo](scopes-repo.png)
+![scopes repo](scopes-repo.png)
 
 Then copy the resulted token and save it to a safe place, as it won't be shown again.
 
 Go to [Woodpecker](https://ci.codeberg.org) and navigate to _Repositories_ tab and add a new repository (`blog-source`)
 
-![Add repository button](add-repository-button.png)
+![add repository button](add-repository-button.png)
 
 Navigate to _Settings_ and go to _Secrets_ tab
 
-![Settings button](settings-button.png)
+![settings button](settings-button.png)
 
-![Secrets tab](secrets-tab.png)
+![secrets tab](secrets-tab.png)
 
 Here create two secrets, `cbmail` and `cbtoken`
 
@@ -145,7 +145,7 @@ Make sure these two secrets have successfully created and make some changes in `
 
 > If you don't want to trigger the CI (the change doesn't affect content for example) you can add `[CI SKIP]` to your commit message to skip the CI
 
-![CI successful](ci-successful.png)
+![ci successful](ci-successful.png)
 
 Now it's up to you to choose Jekyll theme and write something ;)
 

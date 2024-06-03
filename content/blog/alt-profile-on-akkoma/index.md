@@ -48,5 +48,5 @@ Slightly more detailed: because it's too slow and buggy for my taste, even thoug
 
 I tried Akkoma and it clicked, now I will post goofy stuff there, follow it (if you want) at <https://pleroma.envs.net/users/daudix>
 
-![Akkoma profile](akkoma-profile.png)
+![akkoma profile](akkoma-profile.png)
 <figcaption>Screenshot of the header of my Akkoma profile</figcaption>
