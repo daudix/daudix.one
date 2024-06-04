@@ -76,7 +76,10 @@ It allows pushing local files or whole directories directly to your Neocities we
 _Seriously, this thing saved my nerves._
 
 ![neocities cli help](neocities-cli-help.png)
+<figcaption>Help page; love the humor</figcaption>
+
 ![neocities cli pushing](neocities-cli-pushing.png)
+<figcaption>Pusing local directory to Neocities with deletion of files not present locally</figcaption>
 
 Thanks for reading! Visit the website [here](https://daudix.neocities.org) and feel free to drop something in the chat box ;)
 
