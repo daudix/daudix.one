@@ -1,5 +1,5 @@
 +++
-title = "Running Syncthing from inside Toolbx"
+title = "Running Syncthing From Inside Toolbx"
 description = "Yet another way of using Syncthing on Silverblue"
 date = 2024-02-19
 [taxonomies]
