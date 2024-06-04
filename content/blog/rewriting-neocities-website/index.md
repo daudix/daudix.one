@@ -1,5 +1,5 @@
 +++
-title = "Rewriting My Neocities Website Were Fun!"
+title = "Rewriting My Neocities Website Was Fun!"
 description = "Almost a year later, I got my hands on it."
 date = 2024-06-04
 [taxonomies]
