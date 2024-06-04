@@ -1,5 +1,5 @@
 +++
-title = "Auto and manual dark mode switching is a pain"
+title = "Auto and Manual Dark Mode Switching Is a Pain"
 description = "One of the thigns why I hate JS"
 date = 2024-02-06
 [taxonomies]

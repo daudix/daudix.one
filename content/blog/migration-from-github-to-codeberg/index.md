@@ -1,5 +1,5 @@
 +++
-title = "Migration from GitHub to Codeberg"
+title = "Migration From Github to Codeberg"
 description = "My journey of migrating personal repositories from GitHub to the Codeberg."
 date = 2023-07-15
 [taxonomies]
