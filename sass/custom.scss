@@ -269,16 +269,17 @@
 #fluttershy {
 	position: fixed;
 	top: 15vh;
-	right: -198px;
+	right: 0;
+	transform: translateX(297px);
 	transform-origin: bottom left;
 	margin: 0;
 
-	&.fly {
-		animation: flight 2s linear;
+	&.flying {
+		animation: flight 2.5s linear;
 
 		@keyframes flight {
 			to {
-				transform: translateX(calc(-100vw - 198px));
+				transform: translateX(calc(-100vw + -297px));
 			}
 		}
 	}
