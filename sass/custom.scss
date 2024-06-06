@@ -281,7 +281,7 @@
 		@keyframes flight {
 			to {
 				transform: translateX(calc(var(--vw) + -297px));
-				transform: translateX(calc(-100vw + -297px));
+				// transform: translateX(calc(-100vw + -297px));
 			}
 		}
 	}
