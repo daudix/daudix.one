@@ -1,4 +1,3 @@
-const viewportWidth = window.innerWidth;
 const fluttershy = document.getElementById("fluttershy");
 
 function handleFluttershyClick() {
