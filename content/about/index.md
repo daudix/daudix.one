@@ -124,7 +124,7 @@ Gemini capsules:
 
 - [flounder.online](https://flounder.online) - *finger* me at `daudix@flounder.online`
 
-I also have a website on [neocities.org](https://neocities.org), it's not in a good shape right now, but still, you can see it [here](https://daudix.neocities.org)
+I also have a website on [neocities.org](https://neocities.org), [check it out](https://daudix.neocities.org).
 
 [![Tilde invasion](tilde-invasion.png)](https://pleroma.envs.net/notice/AeJ5ACKLIOl1bCj2lU)
 
