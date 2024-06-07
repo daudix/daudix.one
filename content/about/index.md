@@ -103,7 +103,7 @@ I were using GitHub from the very start of my FOSS journey, but recently I've [m
 
 ## This Website
 
-If you couldn't tell already, this website is made with love and attention, is contantly updated to be as good as possible, and it tries to be very lightweight and compatible with older browsers (at very least it works on iOS 15 and macOS High Sierra; which I'm sure a lot of people still use)
+If you couldn't tell already, this website is made with love and attention, is constantly updated to be as good as possible, and it tries to be very lightweight and compatible with older browsers (at very least it works on iOS 15 and macOS High Sierra; which I'm sure a lot of people still use)
 
 This website used to be hosted on [GitHub pages](https://web.archive.org/web/20220920130408/https://daudix-ufo.github.io/), then on [Codeberg Pages](https://daudix.codeberg.page), then on [exozy.me](https://daudix.exozy.me), and now it's hosted on Codeberg Pages again.
 
