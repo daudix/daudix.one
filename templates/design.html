@@ -21,7 +21,7 @@
 				{% for icon in page.extra.original_icons %}
 					<a href="{{ icon.url }}">
 						<picture>
-							<img class="full drop-shadow no-hover" src="icons/{{ icon.icon }}" alt="{{ icon.name }}" />
+							<img class="no-hover full transparent" src="icons/{{ icon.icon }}" alt="{{ icon.name }}" />
 						</picture>
 						<small>{{ icon.name }}</small>
 					</a>
@@ -41,7 +41,7 @@
 				{% for icon in page.extra.redrawn_icons %}
 					<a href="{{ icon.url }}">
 						<picture>
-							<img class="full drop-shadow no-hover" src="icons/{{ icon.icon }}" alt="{{ icon.name }}" />
+							<img class="no-hover full transparent" src="icons/{{ icon.icon }}" alt="{{ icon.name }}" />
 						</picture>
 						<small>{{ icon.name }}</small>
 					</a>
@@ -62,7 +62,7 @@
 							{% if wallpaper.wallpaper_dark %}
 								<source srcset="wallpapers/{{ wallpaper.wallpaper_dark }}" media="(prefers-color-scheme: dark)" />
 							{% endif %}
-							<img class="full drop-shadow no-hover" src="wallpapers/{{ wallpaper.wallpaper }}" alt="{{ wallpaper.name }}" />
+							<img class="no-hover full" src="wallpapers/{{ wallpaper.wallpaper }}" alt="{{ wallpaper.name }}" />
 						</picture>
 						<small>{{ wallpaper.name }}</small>
 					</a>

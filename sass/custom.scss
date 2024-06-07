@@ -113,7 +113,7 @@
 	#avatar {
 		display: inline-block;
 		transition-duration: var(--transition-longer);
-		transition-property: transform, box-shadow, border-width, border-radius;
+		transition-property: transform, filter, box-shadow, border-width, border-radius;
 		margin-top: 2rem;
 		margin-bottom: 0;
 		border-width: 1rem;
@@ -125,7 +125,8 @@
 		height: 8rem;
 
 		&:hover {
-			transform: scale(1.25);
+			transform: scale(1.25) rotate(20deg);
+			filter: hue-rotate(45deg);
 			border-width: 0.25rem;
 			border-radius: 50%;
 		}
@@ -133,27 +134,19 @@
 
 	#header {
 		transition-duration: var(--transition-longer);
-		transition-property: transform, text-shadow;
+		transition-property: transform, color, text-shadow;
 		color: var(--primary-color);
 		font-style: italic;
 		font-weight: bold;
 		font-size: 4rem;
 
 		&:hover {
-			transform: translate(-12px, -12px);
+			transform: translate(9px, -9px);
+			color: #a1ddf4;
 			text-shadow:
-				3px 3px 0 #f4e2cc,
-				6px 6px 0 #f25242,
-				9px 9px 0 #93bfb0,
-				12px 12px 0 #f1d456;
-
-			@media (prefers-color-scheme: dark) {
-				text-shadow:
-					3px 3px 0 #404a65,
-					6px 6px 0 #f25242,
-					9px 9px 0 #93bfb0,
-					12px 12px 0 #f1d456;
-			}
+				-3px 3px 0 #1998d5,
+				-6px 6px 0 #ffe96b,
+				-9px 9px 0 #ee4043;
 		}
 	}
 }
@@ -298,10 +291,11 @@
 	img {
 		display: block;
 		margin: 0;
-		box-shadow: none;
-		border-radius: 0;
-		width: auto;
-		max-width: 100%;
+
+		&.transparent {
+			-webkit-filter: drop-shadow(0 0.08rem 0.1rem rgba(0, 0, 0, 0.35)) drop-shadow(0 0.4rem 0.7rem rgba(0, 0, 0, 0.18));
+			filter: drop-shadow(0 0.08rem 0.1rem rgba(0, 0, 0, 0.35)) drop-shadow(0 0.4rem 0.7rem rgba(0, 0, 0, 0.18));
+		}
 	}
 
 	a {
@@ -348,11 +342,6 @@
 
 body:has(#original-icons) footer {
 	margin-top: 0;
-}
-
-.drop-shadow {
-	-webkit-filter: drop-shadow(0 0.08rem 0.1rem rgba(0, 0, 0, 0.35)) drop-shadow(0 0.4rem 0.7rem rgba(0, 0, 0, 0.18));
-	filter: drop-shadow(0 0.08rem 0.1rem rgba(0, 0, 0, 0.35)) drop-shadow(0 0.4rem 0.7rem rgba(0, 0, 0, 0.18));
 }
 
 .emoji {
