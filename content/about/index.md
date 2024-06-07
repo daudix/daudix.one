@@ -65,7 +65,7 @@ Feel free to send me a message on any of these. Whether you're bored or need som
 - [Discord](https://discord.com/users/650757995378114581)
 - [Telegram](https://t.me/ddaudix)
 - [Mail](mailto:daudix@envs.net)
-- ~~[Signal](https://signal.me/#eu/0KKOAPEjDPbNVKFfWbNu9AHZE2od2quKOO5NxLmFqf/xA9940S5JKZbOhTwoa2wP)~~ <small>(my phone is burnt so don't use it, I won't recieve the message)</small>
+- ~~[Signal](https://signal.me/#eu/0KKOAPEjDPbNVKFfWbNu9AHZE2od2quKOO5NxLmFqf/xA9940S5JKZbOhTwoa2wP)~~ <small>(my phone [is burnt](https://xdaforums.com/t/fix-pixel-3-qusb_bulk_cid-xxxx_sn-xxxxxxxx.4205331/) so don't use it, I won't recieve the message in a while)</small>
 - ~~[XMPP](xmpp:daudix@nixnet.services)~~ <small>(admin was accused in being a pedo, so currently looking for a different server)</small>
 
 ## Socials
