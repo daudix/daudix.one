@@ -3,7 +3,7 @@ title = "About"
 description = "About me, what I do, and more."
 +++
 
-<img id="certified" class="transparent no-hover" src="certified.png" />
+<img id="certified" class="transparent no-hover drop-shadow" src="certified.png" />
 
 <div id="about-splash">
 <img id="avatar" src="logo.svg" alt="My logo" />
@@ -169,6 +169,6 @@ If you like my website, feel free to link it by adding the button:
 
 Hey, you, yes, *you*. Got a nice website? Got nice buttons?  Got any buttons? I have a deal for you! Just [ping me somewhere](@/about/index.md#contacts) and I'll add your button here, piece of cake.
 
-<img id="fluttershy" class="transparent no-hover" src="fluttershy.gif" />
+<img id="fluttershy" class="transparent no-hover drop-shadow" src="fluttershy.gif" />
 <script src="/clock.js"></script>
 <script src="/fluttershy.js"></script>
