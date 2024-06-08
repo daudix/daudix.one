@@ -3,6 +3,8 @@ title = "About"
 description = "About me, what I do, and more."
 +++
 
+<img id="certified" class="transparent no-hover" src="certified.png" />
+
 <div id="about-splash">
 <img id="avatar" src="logo.svg" alt="My logo" />
 

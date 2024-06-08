@@ -151,6 +151,23 @@
 	}
 }
 
+#certified {
+	-webkit-filter: drop-shadow(0 0.08rem 0.1rem rgba(0, 0, 0, 0.35)) drop-shadow(0 0.4rem 0.7rem rgba(0, 0, 0, 0.18));
+	position: absolute;
+	top: 2rem;
+	left: 2rem;
+	filter: drop-shadow(0 0.08rem 0.1rem rgba(0, 0, 0, 0.35)) drop-shadow(0 0.4rem 0.7rem rgba(0, 0, 0, 0.18));
+	margin: 0;
+
+	&:hover {
+		transform: rotate(-20deg);
+	}
+
+	@media only screen and (max-width: 720px) {
+		display: none;
+	}
+}
+
 #abyss {
 	filter: blur(4px);
 }
