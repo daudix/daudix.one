@@ -21,7 +21,7 @@ Hello there! My name is David, you may know me by my online handle Daudix.
 
 I'm from the Siberian part of Russia, but currently live in <abbr id="abyss" title="If you know, you know">a̸͙͠b̴̛ͅȳ̴̜s̴̫̄s̸̞̒</abbr>.
 
-Oh and I'm slightly <span id="shy">shy</span>.
+Oh and I'm slightly <span id="shy" onclick="fluttershyAnim()">shy</span>.
 
 Some things I like:
 
@@ -170,5 +170,31 @@ If you like my website, feel free to link it by adding the button:
 Hey, you, yes, *you*. Got a nice website? Got nice buttons?  Got any buttons? I have a deal for you! Just [ping me somewhere](@/about/index.md#contacts) and I'll add your button here, piece of cake.
 
 <img id="fluttershy" class="transparent no-hover drop-shadow" src="fluttershy.gif" />
-<script src="/clock.js"></script>
-<script src="/fluttershy.js"></script>
+
+<script type="text/javascript">
+	const fluttershy = document.getElementById("fluttershy");
+
+	function fluttershyAnim() {
+		fluttershy.classList.add("flying");
+		fluttershy.addEventListener("animationend", function () {
+			fluttershy.classList.remove("flying");
+		});
+	}
+</script>
+
+<script type="text/javascript">
+	function updateClock() {
+		const options = {
+			timeZone: "Europe/Moscow",
+			hour: "2-digit",
+			minute: "2-digit",
+			hour12: false,
+		};
+		const now = new Date().toLocaleString("en-US", options);
+		const clockElement = document.getElementById("clock");
+		clockElement.textContent = now;
+	}
+
+	updateClock();
+	setInterval(updateClock, 1000);
+</script>

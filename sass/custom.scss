@@ -175,6 +175,11 @@
 	-webkit-text-decoration: underline dotted;
 	cursor: pointer;
 	text-decoration: underline dotted;
+
+	&:hover {
+		-webkit-text-decoration: underline;
+		text-decoration: underline;
+	}
 }
 
 #fluttershy {
@@ -376,4 +381,19 @@ body:has(#original-icons) footer {
 	box-shadow: var(--shadow);
 	border-radius: var(--rounded-corner);
 	width: 100%;
+}
+
+.audio::after {
+	$icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12'%3E%3Cpath d='M7 2v8a.414.414 157.5 0 1-.707.293L4 8H2a1 1 45 0 1-1-1V5a1 1 135 0 1 1-1h2l2.293-2.293A.414.414 22.5 0 1 7 2' style='fill:none;stroke:black;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none'/%3E%3Cpath d='M10.998.01a1 1 0 0 0-.705.283L9 1.586v2.828l2.707-2.707A1 1 0 0 0 10.998.01M9 5v2h2c1.315-.019 1.315-1.981 0-2zm0 2.586v2.828l1.293 1.293a1 1 0 0 0 1.414-1.414z'/%3E%3C/svg%3E");
+	-webkit-mask-image: $icon;
+	-webkit-mask-size: cover;
+	display: inline-block;
+	opacity: 0.6;
+	mask-image: $icon;
+	mask-size: cover;
+	margin-left: 3px;
+	background-color: var(--primary-color);
+	width: 0.75rem;
+	height: 0.75rem;
+	content: "";
 }
