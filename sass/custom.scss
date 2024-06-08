@@ -151,6 +151,63 @@
 	}
 }
 
+#abyss {
+	filter: blur(4px);
+}
+
+#shy {
+	-webkit-text-decoration: underline dotted;
+	cursor: pointer;
+	text-decoration: underline dotted;
+}
+
+#fluttershy {
+	position: fixed;
+	top: 20vh;
+	right: 0;
+	transform: translateX(297px);
+	transform-origin: bottom left;
+	margin: 0;
+
+	&.flying {
+		animation: flight 2.5s linear;
+
+		@keyframes flight {
+			to {
+				transform: translateX(calc(-100vw + -297px));
+			}
+		}
+	}
+}
+
+#clock {
+	animation: clock-blink 1s infinite;
+	box-shadow: var(--edge-highlight);
+	border-radius: var(--rounded-corner-small);
+	background-color: var(--primary-color-alpha);
+	padding: 0.125rem 0.375rem;
+	color: var(--primary-color);
+	font-weight: bold;
+
+	@keyframes clock-blink {
+		from {
+			color: var(--primary-color);
+		}
+
+		25% {
+			color: var(--primary-color-alpha);
+		}
+
+		50% {
+			color: var(--primary-color);
+		}
+	}
+
+	@media (prefers-reduced-motion) {
+		animation: none;
+	}
+}
+
 #timeline {
 	border-left: 0.25rem solid var(--fg-muted-3);
 	padding-left: 0;
@@ -208,34 +265,6 @@
 	}
 }
 
-#clock {
-	animation: clock-blink 1s infinite;
-	box-shadow: var(--edge-highlight);
-	border-radius: var(--rounded-corner-small);
-	background-color: var(--primary-color-alpha);
-	padding: 0.125rem 0.375rem;
-	color: var(--primary-color);
-	font-weight: bold;
-
-	@keyframes clock-blink {
-		from {
-			color: var(--primary-color);
-		}
-
-		25% {
-			color: var(--primary-color-alpha);
-		}
-
-		50% {
-			color: var(--primary-color);
-		}
-	}
-
-	@media (prefers-reduced-motion) {
-		animation: none;
-	}
-}
-
 #netscape-buttons-container {
 	text-align: center;
 
@@ -249,31 +278,6 @@
 		&:hover {
 			transform: scale(2);
 			box-shadow: 0 0 0 1px var(--primary-color-alpha), 0 2px 6px 2px var(--primary-color-alpha), 0 4px 24px 4px var(--primary-color-alpha);
-		}
-	}
-}
-
-#shy {
-	-webkit-text-decoration: underline dotted;
-	cursor: pointer;
-	text-decoration: underline dotted;
-}
-
-#fluttershy {
-	position: fixed;
-	top: 20vh;
-	right: 0;
-	transform: translateX(297px);
-	transform-origin: bottom left;
-	margin: 0;
-
-	&.flying {
-		animation: flight 2.5s linear;
-
-		@keyframes flight {
-			to {
-				transform: translateX(calc(-100vw + -297px));
-			}
 		}
 	}
 }

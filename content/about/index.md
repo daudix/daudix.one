@@ -17,7 +17,7 @@ Hello there! My name is David, you may know me by my online handle Daudix.
 
 > Although Daudix may appear as just my online handle, it's actually slightly different persona; perhaps more silly and honest than the "official" David, but they're so tightly tied together so it's fine to use whatever you like.
 
-I'm from the Siberian part of Russia, but currently live in <abbr title="If you know, you know">▒▓░▒▓░</abbr>.
+I'm from the Siberian part of Russia, but currently live in <abbr id="abyss" title="If you know, you know">a̸͙͠b̴̛ͅȳ̴̜s̴̫̄s̸̞̒</abbr>.
 
 Oh and I'm slightly <span id="shy">shy</span>.
 
