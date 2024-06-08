@@ -46,7 +46,7 @@ links = [
 [extra.footer]
 johnvert_ref = "daudix.codeberg.page"
 show_copyright = true
-show_johnvert = true
+show_johnvert = false # Down at the moment, hopefully it will come back online
 show_powered_by = true
 
 [extra.comments]
