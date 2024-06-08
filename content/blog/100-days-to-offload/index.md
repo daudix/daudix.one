@@ -2,7 +2,6 @@
 title = "100 Days to Offload or the Drafts Folder Overflow"
 description = "Why I decided to participate in a challange that I'm doomed to fail?"
 date = 2024-06-08
-draft = true
 [taxonomies]
 tags = ["100DaysToOffload"]
 +++
