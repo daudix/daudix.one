@@ -18,7 +18,7 @@ There are more reasons why I decided to participate in this challenge:
 
 - It's a perfect opportunity for a tone shift towards a less formal one (you might've noticed this in the [previous post](@/blog/rewriting-neocities-website/index.md)).
 - Sometimes I need to vent about stuff that interest me, which I currently do by bugging my friends in a group chat. That isn't ideal.
-- I love writing and want to get better at it, which isn’t possible without, well, writing.
+- I enjoy writing blog posts and want to get better at it, which isn’t possible without, well, writing.
 - It's an excuse for posting more posts about blog posts on Mastodon.
 - An empty blog makes me very sad.
 - My drafts folder is overflowing.
