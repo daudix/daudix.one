@@ -219,8 +219,8 @@ body:has(#skeuo-switch:checked) {
 	background: url(coffee/glow.svg) center/cover, url(coffee/fabric.webp);
 
 	#site-nav {
-		-webkit-backdrop-filter: saturate(100%) blur(0px);
-		backdrop-filter: saturate(100%) blur(0px);
+		-webkit-backdrop-filter: unset;
+		backdrop-filter: unset;
 		outline: 1px solid rgba(255, 255, 255, 0.8);
 		box-shadow: var(--edge-highlight), 0 5px 30px rgba(0, 0, 0, 0.3);
 		background-image: linear-gradient(rgba(224, 224, 224, 0.95), rgba(212, 212, 212, 0.9) 50%, rgba(192, 192, 192, 0.8) 50%);
@@ -236,13 +236,60 @@ body:has(#skeuo-switch:checked) {
 					color: black;
 				}
 
-				svg {
-					filter: drop-shadow(0 1px 0 rgba(255, 255, 255, 0.8));
+				&.active {
+					&::before {
+						border-bottom: 0.25rem solid rgba(0, 0, 0, 0.7);
+					}
+
+					&:hover::before {
+						border-bottom: 0.25rem solid black;
+					}
 				}
 			}
 
 			#main-content {
 				position: absolute;
+			}
+
+			#dropdown {
+				details {
+					summary {
+						&:hover {
+							background-color: rgba(255, 255, 255, 0.4);
+
+							i {
+								background-color: black;
+							}
+						}
+
+						i {
+							background-color: rgba(0, 0, 0, 0.7);
+						}
+					}
+
+					ul {
+						-webkit-backdrop-filter: unset;
+						backdrop-filter: unset;
+						outline: 1px solid rgba(255, 255, 255, 0.8);
+						box-shadow: var(--edge-highlight), 0 5px 30px rgba(0, 0, 0, 0.3);
+						background-color: rgba(192, 192, 192, 0.8);
+					}
+				}
+			}
+
+			#feed,
+			#dropdown {
+				filter: drop-shadow(0 1px 0 rgba(255, 255, 255, 0.8));
+			}
+
+			#feed a {
+				i {
+					background-color: rgba(0, 0, 0, 0.7);
+				}
+
+				&:hover i {
+					background-color: black;
+				}
 			}
 		}
 	}
@@ -347,8 +394,52 @@ body:has(#skeuo-switch:checked) {
 						color: white;
 					}
 
-					svg {
-						filter: drop-shadow(0 -1px 0 rgba(0, 0, 0, 0.8));
+					&.active {
+						&::before {
+							border-bottom: 0.25rem solid rgba(255, 255, 255, 0.7);
+						}
+
+						&:hover::before {
+							border-bottom: 0.25rem solid white;
+						}
+					}
+				}
+
+				#dropdown {
+					details {
+						summary {
+							&:hover {
+								background-color: rgba(255, 255, 255, 0.1);
+
+								i {
+									background-color: white;
+								}
+							}
+
+							i {
+								background-color: rgba(255, 255, 255, 0.7);
+							}
+						}
+
+						ul {
+							outline: 1px solid rgba(0, 0, 0, 0.8);
+							background-color: rgba(0, 0, 0, 0.8);
+						}
+					}
+				}
+
+				#feed,
+				#dropdown {
+					filter: drop-shadow(0 -1px 0 rgba(0, 0, 0, 0.8));
+				}
+
+				#feed a {
+					i {
+						background-color: rgba(255, 255, 255, 0.7);
+					}
+
+					&:hover i {
+						background-color: white;
 					}
 				}
 			}
