@@ -1,6 +1,6 @@
 +++
 title = "MacBoy Chronicles: The Complete Edition"
-description = "The most complete story of my previous laptop that one can get, DLC's included."
+description = "The most complete story of my previous laptop that one can get, DLCs included."
 date = 2024-06-11
 [taxonomies]
 tags = ["100DaysToOffload"]
