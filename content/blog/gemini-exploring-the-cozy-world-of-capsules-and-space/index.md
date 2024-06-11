@@ -54,10 +54,10 @@ Gemini also has its own search - [geminispace.info](gemini://geminispace.info)
 
 I have found some interesting capsules you might like to look at:
 
-- [chat.mozz.us](gemini://chat.mozz.us chat.mozz.us) - Unmoderated chat for everyone
-- [station.martinrue.com](gemini://station.martinrue.com station.martinrue.com) - Gemini social media
-- [cosmic.voyage](gemini://cosmic.voyage cosmic.voyage) - Tilde community based around a collaborative science-fiction universe
-- [skyjake.fi](gemini://skyjake.fi skyjake.fi) - Lagrange developers capsule
+- [chat.mozz.us](gemini://chat.mozz.us) - Unmoderated chat for everyone
+- [station.martinrue.com](gemini://station.martinrue.com) - Gemini social media
+- [cosmic.voyage](gemini://cosmic.voyage) - Tilde community based around a collaborative science-fiction universe
+- [skyjake.fi](gemini://skyjake.fi) - Lagrange developers capsule
 - And more to be found ;)
 
 ## Creating Own Capsule
