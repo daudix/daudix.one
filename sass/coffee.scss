@@ -93,7 +93,7 @@
 		}
 
 		&:has(#avatar:active)::after {
-			transform: translateY(-50%) scale(0.8);
+			transform: translateY(-50%) scale(0.75);
 			opacity: 1;
 		}
 
@@ -111,7 +111,7 @@
 			height: 96px;
 
 			&:active {
-				transform: translateY(-50%) scale(0.8);
+				transform: translateY(-50%) scale(0.75);
 				filter: hue-rotate(90deg);
 			}
 		}
