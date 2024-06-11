@@ -6,6 +6,8 @@ date = 2024-06-11
 tags = ["100DaysToOffload"]
 [extra]
 toc = true
+[extra.comments]
+id = "112595182527799666"
 +++
 
 Today's that time of the year called WWDC, so I thought it's a perfect opportunity to publish this longstanding draft about my MacBook. Enjoy the roller-coaster!
