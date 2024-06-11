@@ -105,8 +105,8 @@ Everything was good now; MacBoy and I were happy to be together again, without t
 
 The charger started acting up: heating, sparking, and not charging. No wonder, it was in an awful state, tape made the rubber decompose entirely. It was clear that it was time for it to be replaced, but the financial situation didn't quite allow it, so what was left to do was to improvise. First, I knocked the charger a bit to make the pins come out, then sandpapered some metal from the MagSafe connector for the pins to be closer to the MagSafe connector. The issue, by the way, was in the connector pins; they were stuck inside since the spring forcing them outside became very loose or even broke.
 
-| Charger | Closeup | Connector |
-|---------|---------|-----------|
+| Charger                 | Closeup                                 | Connector                                                   |
+|-------------------------|-----------------------------------------|-------------------------------------------------------------|
 | ![charger](charger.jpg) | ![charger closeup](charger-closeup.jpg) | ![charger connector closeup](charger-connector-closeup.jpg) |
 
 ![charger repair](charger-repair.jpg)
