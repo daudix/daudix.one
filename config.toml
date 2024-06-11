@@ -40,9 +40,7 @@ links = [
 ]
 
 [extra.footer]
-johnvert_ref = "daudix.codeberg.page"
 show_copyright = true
-show_johnvert = true
 show_powered_by = true
 
 [extra.comments]

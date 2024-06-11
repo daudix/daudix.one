@@ -46,7 +46,7 @@ BigMac's history is unknown beyond this point. Hopefully, he became useful to so
 
 ### New Life
 
-The story begins the same way as BigMac's, but the difference starts at the point of purchase.
+Once upon a time, there was a small 13-inch MacBook Pro, but friends simply called him MacBoy. The story begins the same way as [BigMac's](#backstory), but the difference starts at the point of purchase.
 
 Dad and I arrived at MacBoy's owner's place, checked the same things as when BigMac was purchased: system info window, webcam, and charger. After agreeing on the price and coming home, flashing a patched Mojave USB and installing it, the journey continued.
 
