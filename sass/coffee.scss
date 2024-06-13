@@ -255,11 +255,11 @@ body:has(#skeuo-switch:checked) {
 				filter: drop-shadow(0 1px 0 rgba(255, 255, 255, 0.8));
 
 				a {
-					i {
+					.icon {
 						background-color: rgba(0, 0, 0, 0.7);
 					}
 
-					&:hover i {
+					&:hover .icon {
 						background-color: black;
 					}
 				}
@@ -382,11 +382,11 @@ body:has(#skeuo-switch:checked) {
 					filter: drop-shadow(0 -1px 0 rgba(0, 0, 0, 0.8));
 
 					a {
-						i {
+						.icon {
 							background-color: rgba(255, 255, 255, 0.7);
 						}
 
-						&:hover i {
+						&:hover .icon {
 							background-color: white;
 						}
 					}
