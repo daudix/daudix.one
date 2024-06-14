@@ -32,8 +32,7 @@
 		transform: scale(0) rotate(90deg) translateY(-100%);
 		transform-origin: top right;
 		opacity: 0;
-		transition-duration: var(--transition-longer);
-		transition-property: transform, opacity;
+		transition: var(--transition-longer);
 		margin: 3.5rem 6rem 0 0;
 		border: 6px solid black;
 		border-radius: 999px 0 999px 999px;
@@ -81,8 +80,7 @@
 			transform: translateY(-50%);
 			opacity: 0;
 			z-index: 2;
-			transition-duration: var(--transition-longer);
-			transition-property: transform, opacity;
+			transition: var(--transition-longer);
 			margin: 0 auto;
 			background-image: url(coffee/uwu.svg);
 			background-size: cover;
@@ -103,8 +101,7 @@
 			left: 0;
 			transform: translateY(-50%);
 			z-index: 1;
-			transition-duration: var(--transition-longer);
-			transition-property: transform, filter;
+			transition: var(--transition-longer);
 			margin: 0 auto;
 			border-radius: 50%;
 			width: 96px;
@@ -131,8 +128,7 @@
 		padding: 1rem;
 
 		.inline-button {
-			transition-duration: var(--transition);
-			transition-property: box-shadow, text-shadow, transform, filter;
+			transition: var(--transition);
 			box-shadow: var(--edge-highlight), var(--shadow);
 			border-radius: 999px;
 			width: 100%;
@@ -169,8 +165,7 @@
 		display: block;
 		position: relative;
 		appearance: none;
-		transition-duration: var(--transition);
-		transition-property: background-color, box-shadow, filter;
+		transition: var(--transition);
 		cursor: pointer;
 		margin: 0 auto;
 		box-shadow: var(--edge-highlight);
@@ -181,7 +176,7 @@
 		height: 2rem;
 
 		+label {
-			transition: color var(--transition);
+			transition: var(--transition);
 			color: var(--fg-muted-5);
 			font-size: 0.8rem
 		}
@@ -195,7 +190,7 @@
 			position: absolute;
 			top: 0.25rem;
 			left: 0.25rem;
-			transition: transform var(--transition-bezier), box-shadow var(--transition);
+			transition: all var(--transition), transform var(--transition-bezier);
 			box-shadow: var(--shadow);
 			border-radius: 50%;
 			background-color: white;

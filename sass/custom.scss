@@ -113,8 +113,7 @@
 
 	#avatar {
 		display: inline-block;
-		transition-duration: var(--transition-longer);
-		transition-property: transform, filter, box-shadow, border-width, border-radius;
+		transition: var(--transition-longer);
 		margin-top: 2rem;
 		margin-bottom: 0;
 		border-width: 1rem;
@@ -134,8 +133,7 @@
 	}
 
 	#header {
-		transition-duration: var(--transition-longer);
-		transition-property: transform, color, text-shadow;
+		transition: var(--transition-longer);
 		color: var(--primary-color);
 		font-style: italic;
 		font-weight: bold;
@@ -238,13 +236,11 @@
 		padding-left: 1.5rem;
 
 		small {
-			transition-duration: var(--transition);
-			transition-property: color, text-shadow;
+			transition: var(--transition);
 		}
 
 		span {
-			transition-duration: var(--transition);
-			transition-property: background-color, color;
+			transition: var(--transition);
 			box-shadow: var(--edge-highlight);
 			border-radius: 999px;
 			background-color: var(--fg-muted-1);
@@ -258,8 +254,7 @@
 			position: relative;
 			top: 1.35rem;
 			left: -2.1rem;
-			transition-duration: var(--transition);
-			transition-property: box-shadow, border;
+			transition: var(--transition);
 			border: 0.25rem solid var(--fg-muted-3);
 			border-radius: 50%;
 			background: var(--bg-color), var(--primary-color);
@@ -292,7 +287,7 @@
 	img {
 		all: unset;
 		display: inline;
-		transition: transform var(--transition-bezier);
+		transition: var(--transition-bezier);
 		cursor: zoom-in;
 		image-rendering: pixelated;
 
@@ -324,8 +319,7 @@
 	}
 
 	a {
-		transition-duration: var(--transition);
-		transition-property: box-shadow, background-color, transform;
+		transition: var(--transition);
 		border-radius: calc(var(--rounded-corner) + 1rem);
 		padding: 1rem;
 		text-decoration: none;
