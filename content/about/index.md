@@ -3,8 +3,6 @@ title = "About"
 description = "About me, what I do, and more."
 +++
 
-<img id="certified" class="transparent no-hover drop-shadow" src="certified.png" />
-
 <div id="about-splash">
 <img id="avatar" src="logo.svg" alt="My logo" />
 
@@ -25,25 +23,24 @@ Oh and I'm slightly <span id="shy" onclick="fluttershyAnim()">shy</span>.
 
 Some things I like:
 
-- Photography <small>(although I don't have much opportunity to shoot anything else than a view from my window)</small>
-- Design
-- Open source
 - Retro and vintage stuff, as well as retro-futurism
 - Small/indie web
+- Photography <small>(although I don't have much opportunity to shoot anything else than a view from my window)</small>
+- Design
+- Purple <small>(I know, it's shocking)</small>
+
+Design is perhaps a bit more than just a thing I like, it's my hobby and I'm learning more about it every day, although lately I've been a bit burned out.
+
+And, as you can see, I do some web development! I like working with CSS and HTML but that's about it, I have no clue how to work with JS :D
 
 My favorite games are:
 
-- Portal series
-- Untitled Goose
+- Portal series <small>(all-time favorite)</small>
 - The Stanley Parable
+- Superliminal
+- Untitled Goose
 - Stardew Valley
 - Cyberpunk 2077 <small>(I've only *played* it on YouTube)</small>
-
-Design is a perhaps a bit more than just a thing I like, it's my hobby that I learn more about every day.
-
-I'm also in process of learning 3D modeling in Blender and Pixel art in Aseprite.
-
-And, as you can see, I do some web development! I like working with CSS and HTML but that's about it, I have no clue how to work with JS :D
 
 ## Works
 
@@ -132,8 +129,6 @@ I also have a website on [neocities.org](https://neocities.org), [check it out](
 ![anythingbut](88x31/anythingbut.gif)
 ![besteyes2](88x31/besteyes2.gif)
 ![bestviewed16bit](88x31/bestviewed16bit.gif)
-![daudix-alt](88x31/daudix-alt.gif)
-![daudix](88x31/daudix.gif)
 ![fuckchrome](88x31/fuckchrome.gif)
 ![imac](88x31/imac.gif)
 ![linux_powered](88x31/linux_powered.gif)
@@ -142,15 +137,18 @@ I also have a website on [neocities.org](https://neocities.org), [check it out](
 
 </div>
 
-If you like my website, feel free to link it by adding the button:
+If you like my website, feel free to link it by adding one of the buttons:
 
-```html
-<a href="https://daudix.codeberg.page" target="_blank"><img src="https://daudix.codeberg.page/about/88x31/daudix.gif"></a>
-```
+<div id="netscape-buttons-container">
+
+![daudix](88x31/daudix.gif)
+![daudix-alt](88x31/daudix-alt.gif)
+
+</div>
 
 > Note: It's recommended to avoid hot-linking; instead place a copy on your own site.
 
-Hey, you, yes, *you*. Got a nice website? Got nice buttons?  Got any buttons? I have a deal for you! Just [ping me somewhere](@/contact/index.md) and I'll add your button here, piece of cake.
+Hey, you, yes, *you*. Got website and a button? I have a deal for you! Just [ping me somewhere](@/contact/index.md) and I'll add it here, piece of cake.
 
 <img id="fluttershy" class="transparent no-hover drop-shadow" src="fluttershy.gif" />
 
