@@ -12,7 +12,7 @@ This post is made to give you basic understanding of what Gemini is, what are Ca
 
 > I highly recommend you to read geminiquickst.art before this post, because it provides a lot of valuable information about Gemini, and it is better written than this post
 
-## What is Gemini
+## What Is Gemini
 
 > For more accurate and in-depth answer to this question see [Project Gemini FAQ](https://gemini.circumlunar.space/docs/faq.gmi)
 

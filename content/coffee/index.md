@@ -16,10 +16,10 @@ description = "Just in case you want to do so for some reason."
 	<p id="message">Hello there! If you'd like to buy me a coffee (thanks for that!), you can use one of these options; use whichever you prefer.</p>
 	<input type="checkbox" id="skeuo-switch">
 	<label for="skeuo-switch">Skeuomorph</label>
-	<p class="dialog-buttons" id="buttons">
+	<div class="dialog-buttons" id="buttons">
 		<a id="ko-fi" class="inline-button" href="https://ko-fi.com/daudix">Ko-fi</a>
 		<a id="liberapay" class="inline-button" href="https://liberapay.com/daudix">Liberapay</a>
 		<a id="monero" class="inline-button" href="monero.txt">Monero</a>
-	</p>
+	</div>
 </div>
 <link rel="stylesheet" type="text/css" href="/coffee.css" />

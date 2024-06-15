@@ -1,6 +1,6 @@
 +++
 title = "Running Syncthing From Inside Toolbx"
-description = "Yet another way of using Syncthing on Silverblue"
+description = "Yet another way of using Syncthing on Silverblue."
 date = 2024-02-19
 [taxonomies]
 tags = ["Silverblue", "Syncthing", "Toolbx"]

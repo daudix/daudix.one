@@ -59,7 +59,7 @@ To do so, I have added this two lines to `<head>` of HTML
 <link rel="canonical" href="https://daudix.codeberg.page">
 ```
 
-### GitHub pages → Codeberg pages
+### GitHub Pages → Codeberg Pages
 
 Speaking of Codeberg pages, I have successfully recreated the workflow of GitHub pages with said Codeberg pages and Woodpecker - CI service that Codeberg provides (you need to request access), which allows running various jobs on changes. Тhe one I needed were Jekyll - Static site generator from Markdown (and not only) that are used by GitHub pages and this blog is powered by.
 
