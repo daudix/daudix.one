@@ -1,0 +1,41 @@
++++
+title = "Contact"
+description = "Where, when and how to contact me."
++++
+
+![envelope](envelope.png#full#transparent#no-hover)
+
+## Contacts
+
+Currently it's <time><span id="clock"><noscript>JavaScript required</noscript></span></time> <small>(UTC+3)</small> for me, so take that into consideration if I don't respond promptly.
+
+> **Tip:** Check my online status on the [home](@/_index.md) page in the form of a small dot on the avatar.
+
+Feel free to send me a message on any of these. Whether you're bored or need someone to listen to you, I'm always open!
+
+<small>From most preferred to the least ↓</small>
+
+- [Matrix](https://matrix.to/#/@daudix:envs.net)
+- [Discord](https://discord.com/users/650757995378114581)
+- [Telegram](https://t.me/ddaudix)
+- [Mail (disroot)](mailto:daudix@disroot.org)
+- [Mail (envs)](mailto:daudix@envs.net)
+- ~~[Signal](https://signal.me/#eu/0KKOAPEjDPbNVKFfWbNu9AHZE2od2quKOO5NxLmFqf/xA9940S5JKZbOhTwoa2wP)~~ <small>(my phone [is burnt](https://xdaforums.com/t/fix-pixel-3-qusb_bulk_cid-xxxx_sn-xxxxxxxx.4205331/) so don't use it, I won't recieve the message in a while)</small>
+- ~~[XMPP](xmpp:daudix@nixnet.services)~~ <small>(admin was accused in being a pedo, so currently looking for a different server)</small>
+
+<script type="text/javascript">
+	function updateClock() {
+		const options = {
+			timeZone: "Europe/Moscow",
+			hour: "2-digit",
+			minute: "2-digit",
+			hour12: false,
+		};
+		const now = new Date().toLocaleString("en-US", options);
+		const clockElement = document.getElementById("clock");
+		clockElement.textContent = now;
+	}
+
+	updateClock();
+	setInterval(updateClock, 1000);
+</script>

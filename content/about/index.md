@@ -13,7 +13,7 @@ description = "About me, what I do, and more."
 <small>Passionate designer, translator, and FOSS contributor.</small>
 </div>
 
-## About
+## About Me
 
 Hello there! My name is David, you may know me by my online handle Daudix.
 
@@ -53,29 +53,11 @@ Currently member of [Nickvision](https://nickvision.org) and [Gradience](https:/
 
 Have a look at my [designs](@/design/index.md), mostly icons but also some wallpapers (one of them is even shipped with GNOME)
 
-## Contacts
-
-Currently it's <time><span id="clock"><noscript>JavaScript required</noscript></span></time> <small>(UTC+3)</small> for me, so take that into consideration if I don't respond promptly.
-
-> **Tip:** Check my online status on the [home](@/_index.md) page in the form of a small dot on the avatar.
-
-Feel free to send me a message on any of these. Whether you're bored or need someone to listen to you, I'm always open!
-
-<small>From most preferred to the least ↓</small>
-
-- [Matrix](https://matrix.to/#/@daudix:envs.net)
-- [Discord](https://discord.com/users/650757995378114581)
-- [Telegram](https://t.me/ddaudix)
-- [Mail (disroot)](mailto:daudix@disroot.org)
-- [Mail (envs)](mailto:daudix@envs.net)
-- ~~[Signal](https://signal.me/#eu/0KKOAPEjDPbNVKFfWbNu9AHZE2od2quKOO5NxLmFqf/xA9940S5JKZbOhTwoa2wP)~~ <small>(my phone [is burnt](https://xdaforums.com/t/fix-pixel-3-qusb_bulk_cid-xxxx_sn-xxxxxxxx.4205331/) so don't use it, I won't recieve the message in a while)</small>
-- ~~[XMPP](xmpp:daudix@nixnet.services)~~ <small>(admin was accused in being a pedo, so currently looking for a different server)</small>
-
 ## Socials
 
 List of places where you can ~~stalk~~ find me on:
 
-> This is not a complete list but rather places where I'm somewhat active. You can find me on other platforms as well, although make sure it's the real me by [asking](@/about/index.md#contacts) first.
+> This is not a complete list but rather places where I'm somewhat active. You can find me on other platforms as well, although make sure it's the real me by [asking](@/contact/index.md) first.
 
 <small>From most active to the least ↓</small>
 
@@ -142,6 +124,7 @@ I also have a website on [neocities.org](https://neocities.org), [check it out](
 [![firefox3](88x31/firefox3.gif)](https://getfirefox.com)
 [![getimiskon](88x31/getimiskon.png)](https://getimiskon.xyz)
 [![notoweb3](88x31/notoweb3.gif)](https://yesterweb.org/no-to-web3/)
+[![ronbutton](88x31/ronbutton.png)](https://veeronniecaw.space)
 [![seirdy](88x31/seirdy.gif)](https://seirdy.one)
 [![statuscafe](88x31/statuscafe.png)](https://status.cafe)
 ![adhd](88x31/adhd.gif)
@@ -167,7 +150,7 @@ If you like my website, feel free to link it by adding the button:
 
 > Note: It's recommended to avoid hot-linking; instead place a copy on your own site.
 
-Hey, you, yes, *you*. Got a nice website? Got nice buttons?  Got any buttons? I have a deal for you! Just [ping me somewhere](@/about/index.md#contacts) and I'll add your button here, piece of cake.
+Hey, you, yes, *you*. Got a nice website? Got nice buttons?  Got any buttons? I have a deal for you! Just [ping me somewhere](@/contact/index.md) and I'll add your button here, piece of cake.
 
 <img id="fluttershy" class="transparent no-hover drop-shadow" src="fluttershy.gif" />
 
@@ -180,21 +163,4 @@ Hey, you, yes, *you*. Got a nice website? Got nice buttons?  Got any buttons? I 
 			fluttershy.classList.remove("flying");
 		});
 	}
-</script>
-
-<script type="text/javascript">
-	function updateClock() {
-		const options = {
-			timeZone: "Europe/Moscow",
-			hour: "2-digit",
-			minute: "2-digit",
-			hour12: false,
-		};
-		const now = new Date().toLocaleString("en-US", options);
-		const clockElement = document.getElementById("clock");
-		clockElement.textContent = now;
-	}
-
-	updateClock();
-	setInterval(updateClock, 1000);
 </script>
