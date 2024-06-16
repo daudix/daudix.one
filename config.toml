@@ -12,6 +12,35 @@ author = "Daudix"
 
 taxonomies = [{ name = "tags", feed = true }]
 
+[translations]
+archived = "Archived"
+author = "Author"
+comments = "Comments"
+comments_description = "You can comment on this blog post by publicly replying to this post using a Mastodon or other ActivityPub/Fediverse account. Known non-private replies are displayed below."
+comments_loading = "Loading…"
+comments_noscript = "Loading comments relies on JavaScript. Try enabling JavaScript and reloading, or visit the original post on Mastodon."
+disclaimer = "Disclaimer"
+drafted = "Drafted"
+feed = "Feed"
+file_an_issue = "File an Issue"
+filter_by_tag = "Filter by tag"
+footer_powered_by = "Powered by"
+footer_powered_by_and = "and"
+footer_source = "Website source"
+go_to_top = "Go to Top"
+load_comments = "Load Comments"
+newest_to_oldest = "From newest to oldest"
+page_next = "Next"
+page_previous = "Previous"
+posts_in_total = "posts in total"
+posts_with_tag = "Posts with tag"
+see_all_tags = "See all tags"
+skip_to_content = "Skip to main content"
+table_of_contents = "Table of Contents"
+tags = "Tags"
+tags_in_total = "tags in total"
+trigger_warning = "Trigger Warning"
+
 [markdown]
 highlight_code = true
 highlight_theme = "css"
