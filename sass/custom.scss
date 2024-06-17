@@ -385,7 +385,7 @@ body:has(#original-icons) footer {
 	opacity: 0.6;
 	mask-image: $icon;
 	mask-size: cover;
-	margin-left: 3px;
+	margin-left: 0.25rem;
 	background-color: var(--primary-color);
 	width: 0.75rem;
 	height: 0.75rem;

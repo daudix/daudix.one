@@ -65,7 +65,6 @@ links = [
   { url = "@/about/index.md", name = "About" },
   { url = "@/blog/_index.md", name = "Blog" },
   { url = "@/coffee/index.md", name = "Coffee" },
-  { url = "@/contact/index.md", name = "Contact" },
   { url = "@/design/index.md", name = "Design" },
 ]
 

@@ -50,48 +50,21 @@ Currently member of [Nickvision](https://nickvision.org) and [Gradience](https:/
 
 Have a look at my [designs](@/design/index.md), mostly icons but also some wallpapers (one of them is even shipped with GNOME)
 
+## Contacts
+
+See the [contact](@/contact/index.md#contacts) page.
+
 ## Socials
 
-List of places where you can ~~stalk~~ find me on:
-
-> This is not a complete list but rather places where I'm somewhat active. You can find me on other platforms as well, although make sure it's the real me by [asking](@/contact/index.md) first.
-
-<small>From most active to the least ↓</small>
-
-- [Mastodon](https://social.treehouse.systems/@daudix)
-- [Akkoma](https://pleroma.envs.net/daudix)
-- [Pixelfed](https://pixelfed.social/Daudix)
-- [Lemmy](https://lemmy.zip/u/daudix)
-- [YouTube](https://www.youtube.com/@ddaudix)
-
-I have changed (and will change) the Fediverse instance I'm on, so to make sure nothing is lost, here is my Fediverse timeline:
-
-<small>From newest to oldest ↓</small>
-<ol id="timeline">
-	<li><small>05 May 2024 - Today<br><a href="https://vmst.io/@daudix">vmst.io</a> • <span>Main profile</span></small></li>
-	<li><small>08 Jan 2024 - Today<br><a href="https://pleroma.envs.net/daudix">pleroma.envs.net</a> • <span>Personal profile</span></small></li>
-	<li><small>20 Nov 2023 - 07 May 2024<br><a href="https://social.treehouse.systems/@daudix">social.treehouse.systems</a> • <span>Main profile</span></small></li>
-	<li><small>01 Sep 2022 - 20 Nov 2023<br><a href="https://mstdn.social/@Daudix">mstdn.social</a> • <span>Main profile</span></small></li>
-</ol>
+See the [socials](@/contact/index.md#socials) section on the contact page.
 
 ## Forges
 
-I were using GitHub from the very start of my FOSS journey, but recently I've [migrated to Codeberg](@/blog/migration-from-github-to-codeberg/index.md) because I didn't like where the GitHub is heading.
-
-- [Codeberg](https://codeberg.org/daudix)
-- [GitHub](https://github.com/daudix)
-- [GitLab](https://gitlab.com/daudix)
-- [GitLab (GNOME)](https://gitlab.gnome.org/daudix)
+See the [forges](@/contact/index.md#forges) section on the contact page.
 
 ## This Website
 
-If you couldn't tell already, this website is made with love and attention, is constantly updated to be as good as possible, and it tries to be very lightweight and compatible with older browsers (at very least it works on iOS 15 and macOS High Sierra; which I'm sure a lot of people still use)
-
-This website used to be hosted on [GitHub pages](https://web.archive.org/web/20220920130408/https://daudix-ufo.github.io/), then on [Codeberg Pages](https://daudix.codeberg.page), then on [exozy.me](https://daudix.exozy.me), and now it's hosted on Codeberg Pages again.
-
-Why all this mess? well at first I [migrated to Codeberg](@/blog/migration-from-github-to-codeberg/index.md), then I joined [exozy.me](https://exozy.me) which provided way faster CI and overall easier workflow, in addition to prettier domain, but then I found out that only exozyme members can open issues/pull requests, which is not a good thing for a FOSS project like [Duckquill](https://daudix.codeberg.page/duckquill), so I have set up a two-way mirror at [Forgejo Next](https://next.forgejo.org), since [Codeberg](https://codeberg.org) doesn't allow two-way mirrors to prevent high load on infrastructure. Everything worked well until one day, when Forgejo Next wiped all the data; accounts and repos. I had to do something, and I moved back to Codeberg. Now I joined [envs.net](https://envs.net) which provides git hosting with open registrations (as far as I can tell), so maybe I'll move this website there, I still need to see if it's good :)
-
-I'm not good at writing blog posts nor coming up with ideas for them, so it's a bit empty. But hey, who knows when inspiration will kick in, right?
+See the [colophon](@/colophon/index.md) page.
 
 ## Small Web
 
