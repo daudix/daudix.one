@@ -3,7 +3,7 @@ title = "MacBoy Chronicles: The Complete Edition"
 description = "The most complete story of my previous laptop that one can get, DLCs included."
 date = 2024-06-11
 [taxonomies]
-tags = ["100DaysToOffload"]
+tags = ["100DaysToOffload", "MacBoy"]
 [extra]
 toc = true
 [extra.comments]
@@ -145,7 +145,7 @@ Two weeks later, no call from the repair shop, so Dad once again called first. T
 
 > So yeah, I tried everything, but no luck. Sorry man. I'm quite certain that the motherboard is dead.
 
-Sooo we went and took it back. Since it was clear that trying further was pointless, we decided to return some of the parts from earlier visits; after all, they were only used for a few days at best. A *lot* of arguing later, we agreed on returning the charger, HDD cable, fan, and battery for half the price we bought them for, so we got back ~$80 in total. It was a good deal and a good start for saving up for a new laptop.
+Sooo we went and took it back. Since it was clear that trying further was pointless, we decided to return some of the parts from earlier visits; after all, they were only used for a few days at best. A *lot* of arguing later, we agreed on returning the charger, HDD cable, fan, and battery for half the price we bought them for, so we got back ~$110 in total. It was a good deal and a good start for saving up for a new laptop.
 
 While still there, we checked all the nearby stores if they would like to buy it for parts. No one did, unfortunately (or fortunately).
 

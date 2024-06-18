@@ -8,7 +8,7 @@ tags = ["Devlog", "Website", "Neocities", "100DaysToOffload"]
 id = "112555378913783711"
 +++
 
-> This is my first [#100DaysToOffload](https://100daystooffload.com) post; what this means is that I'll post more and about more diverse stuff. My drafts folder are nearly exploding so it's about time! A dedicated post about this will be published soon (hopefully _nervous giggling_).
+> This is my first [#100DaysToOffload](https://100daystooffload.com) post; what this means is that I'll post more and about more diverse stuff. My drafts folder are nearly exploding so it's about time! A dedicated post about this will be published soon (hopefully *nervous giggling*).
 >
 > Edit: it's been [published](@/blog/100-days-to-offload/index.md) (4 days later and not in half a year!).
 
