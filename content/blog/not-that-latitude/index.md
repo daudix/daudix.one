@@ -24,6 +24,12 @@ So we decided to look at Dell; my Mom had a Dell laptop before and it was a good
 
 Dell Latitude E7470 - thin, in great condition, with decent specs, and, most importantly, 96% sRGB coverage (at least so I thought)! MacBoy had full sRGB coverage, but still, it was very close, and comparing it to other laptops with 56% coverage it was the best variant. The price was sane as well: $230.
 
+![latitude closed](./latitude-closed.jpg)
+<figcaption>Feels good to hold a laptop that is twice as thin and light as MacBoy</figcaption>
+
+![latitude open](./latitude-open.jpg)
+<figcaption>Even though its screen is 14 inces it's just as compact as MacBoy, thin bezels compensate the screen size</figcaption>
+
 ## It's Time
 
 The next day - Jun 5th - while I was asleep, Mom told Dad about this variant, and he promptly called the seller to not miss such an opportunity. He asked if the machine in the listing was the same one, and it was indeed the same machine and all was OK, so he agreed on the purchase and delivery (which was free) the same day.
@@ -64,7 +70,7 @@ The keyboard has a longer travel distance than MacBoy and doesn't have the sligh
 
 One brand new thing for me was the trackpoint. This thing was so weird and confusing at first, but I slowly started to get it. It's super useful in Blender and, to my surprise, Portal 2 :3
 
-All these little things made my mood better and I no longer regretted the purchase. Sure, the screen wasn't the one I wanted, sleep on closed lid doesn't work since apparently the bezel was replaced and the magnet in it is absent and there's no "Dell" typed on it, but it's not critical.
+All these little things made my mood better and I no longer regretted the purchase. Sure, the screen wasn't the one I wanted, sleep on closed lid doesn't work since apparently the bezel was replaced and the magnet in it is absent and there's no "Dell" typed on it, soft touch plastic collects all the dust and fingerprints by just looking at it and is constantly sticky no matter what you do, but it's not critical.
 
 ## Conclusion
 
