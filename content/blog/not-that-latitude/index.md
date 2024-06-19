@@ -24,7 +24,7 @@ A few listings and some [Notebookcheck](https://www.notebookcheck.net) review re
 
 So we decided to look at Dell; my Mom had a Dell laptop before and it was a good machine. After scrolling through all listings from our city and checking every single one of them on Notebookcheck for the sRGB coverage, it became clear that the situation was somewhat similar to ThinkPads, but there was one listing that was interesting... (I've skipped the boring false positives).
 
-Dell Latitude E7470 - thin, in great condition, with decent specs, and, most importantly, 96% sRGB coverage (at least so I thought)! MacBoy had full sRGB coverage, but still, it was very close, and comparing it to other laptops with 56% coverage it was the best variant. The price was sane as well: $230.
+Dell Latitude E7470 - 2017 ultrabook in great condition, with decent specs, and, most importantly, 96% sRGB coverage (at least so I thought)! MacBoy had full sRGB coverage, but still, it was very close, and comparing it to other laptops with 56% coverage it was the best variant. The price was sane as well: $230.
 
 ![latitude closed](./latitude-closed.jpg)
 <figcaption>Feels good to hold a laptop that is twice as thin and light as MacBoy</figcaption>
