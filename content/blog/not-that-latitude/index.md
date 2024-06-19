@@ -56,6 +56,9 @@ Then I discovered that closing the lid doesn't put it in sleep mode. I thought i
 
 Bad things aside, I flashed a new Fedora Silverblue USB and installed it, which was an absolute breeze; no need to install `broadcom-wl` to get the WiFi working, no need for RPM Fusion for `broadcom-wl` and all the trickery needed to enable it on Silverblue, no need to add `acpi_backlight=auto` kernel argument to make the minimal screen brightness not burn your eyes, everything "just worked" out of the box. I knew Dell shipped some laptops with Linux and they're (way) more Linux-friendly than Apple, but damn, I didn't expect it to be this good.
 
+![neowofetch](neowofetch.png#transparent)
+<figcaption>How can one talk about a new laptop with Linux installed and not show a <del>neofetch</del> neowofetch screenshot!?</figcaption>
+
 After the installation, I opened Software to update the system, and... BIOS AND FIRMWARE UPDATES!? Fwupd is good huh.
 
 Then I opened Settings to check the Device Security tab, just for fun and giggles, and IT'S ALL GREEN!? On MacBoy it was all red, since no secure boot and such.
