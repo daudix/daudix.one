@@ -4,6 +4,8 @@ description = "A little story about my new (for me) laptop."
 date = 2024-06-19
 [taxonomies]
 tags = ["100DaysToOffload", "MacBoy", "Latte"]
+[extra.comments]
+id = "112640483364403774"
 +++
 
 ![header](header.png)
