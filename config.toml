@@ -78,6 +78,7 @@ links = [
 [extra.footer]
 show_copyright = true
 show_powered_by = true
+show_john = true
 
 [extra.comments]
 host = "vmst.io"

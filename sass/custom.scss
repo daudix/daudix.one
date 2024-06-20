@@ -150,21 +150,6 @@
 	}
 }
 
-#certified {
-	position: absolute;
-	top: 2rem;
-	left: 2rem;
-	margin: 0;
-
-	&:hover {
-		transform: rotate(-18deg);
-	}
-
-	@media only screen and (max-width: 720px) {
-		display: none;
-	}
-}
-
 #abyss {
 	filter: blur(4px);
 }
@@ -390,4 +375,36 @@ body:has(#original-icons) footer {
 	width: 0.75rem;
 	height: 0.75rem;
 	content: "";
+}
+
+#site-footer {
+	details {
+		margin: 0 auto;
+		border-radius: unset;
+		background-color: unset;
+		padding: unset;
+		color: var(--fg-muted-5);
+		font-size: 0.875rem;
+
+		#john-container {
+			position: relative;
+			margin: 1rem auto 0;
+			box-shadow: var(--shadow);
+			border-radius: var(--rounded-corner-small);
+			width: min(calc(728px - 6px), 100vw);
+			height: min(calc(90px - 6px), 12.367vw);
+			overflow: hidden;
+
+			#john {
+				display: block;
+				position: absolute;
+				top: -3px;
+				left: -3px;
+				border: none;
+				width: calc(100% + 6px);
+				height: calc(100% + 6px);
+
+			}
+		}
+	}
 }

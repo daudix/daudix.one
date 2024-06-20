@@ -1,0 +1,79 @@
+{% set current_lang = config.default_language %}
+{% if page %}
+	{% set current_lang = page.lang %}
+{% elif section %}
+	{%- set current_lang = section.lang %}
+{% endif %}
+<footer id="site-footer">
+	{% if config.extra.footer.links %}
+		<nav>
+			<ul>
+				{% for link in config.extra.footer.links %}
+					{% if current_lang == config.default_language %}
+						{% set title = link.name %}
+					{% else %}
+						{% set language_key = 'name_' ~ current_lang %}
+						{% set title = link[language_key] %}
+					{% endif %}
+					{%- if link.url is matching('https?://') %}
+						<li>
+							<a href="{{ link.url }}">
+								{{ title }}
+							</a>
+						</li>
+					{%- else %}
+						<li>
+							<a href="{{ get_url(path=link.url, lang=lang)}}">
+								{{ title }}
+							</a>
+						</li>
+					{%- endif %}
+				{% endfor %}
+			</ul>
+		</nav>
+	{% endif %}
+
+	{% if config.extra.footer.show_copyright %}
+		<p title="Last built at {{ now() | date(format='%F %a %R') }}">
+			&copy; {{ config.title }}, {{ now() | date(format="%Y") }}
+		</p>
+	{% endif %}
+
+	{% if config.extra.source_url and config.extra.footer.show_source %}
+		<p>
+			<a href="{{ config.extra.source_url }}">
+				{{ trans(key='footer_source', lang=lang) }}
+			</a>
+		</p>
+	{% endif %}
+
+	{% if config.extra.footer.show_powered_by %}
+		<p>
+			<small>
+				{{ trans(key="footer_powered_by", lang=lang) }} <a href="https://www.getzola.org">Zola</a> {{ trans(key="footer_powered_by_and", lang=lang) }} <a href="https://daudix.codeberg.page/duckquill">Duckquill</a>
+			</small>
+		</p>
+	{% endif %}
+
+	{% if config.extra.footer.socials %}
+		<ul id="socials">
+			{% for link in config.extra.footer.socials %}
+				<li>
+					<a href="{{ link.url | safe }}" rel="me" title="{{ link.name }}">
+						<i class="icon" style='mask-image: url("data:image/svg+xml,{{ link.icon }}"); -webkit-mask-image: url("data:image/svg+xml,{{ link.icon }}")'></i>
+						<span>{{ link.name }}</span>
+					</a>
+				</li>
+			{% endfor %}
+		</ul>
+	{% endif %}
+
+	{% if config.extra.footer.show_john %}
+		<details>
+			<summary>Johnvertisement</summary>
+			<div id="john-container">
+				<iframe id="john" src="https://john.citrons.xyz/embed?ref=daudix.codeberg.page"></iframe>
+			</div>
+		</details>
+	{% endif %}
+</footer>
