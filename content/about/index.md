@@ -52,7 +52,7 @@ Have a look at my [designs](@/design/index.md), mostly icons but also some wallp
 
 ## Find Me
 
-See the [find me](@/findme/index.md#contacts) page.
+See the [find me](@/find/index.md#contacts) page.
 
 ## This Website
 
@@ -113,7 +113,7 @@ If you like my website, feel free to link it by adding one of the buttons:
 
 > Note: It's recommended to avoid hot-linking; instead place a copy on your own site.
 
-Hey, you, yes, *you*. Got website and a button? I have a deal for you! Just [ping me somewhere](@/findme/index.md) and I'll add it here, piece of cake.
+Hey, you, yes, *you*. Got website and a button? I have a deal for you! Just [ping me somewhere](@/find/index.md) and I'll add it here, piece of cake.
 
 <img id="fluttershy" class="transparent no-hover drop-shadow" src="fluttershy.gif" />
 

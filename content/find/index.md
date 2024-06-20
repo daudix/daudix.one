@@ -29,7 +29,7 @@ Feel free to send me a message on any of these. Whether you're bored or need som
 
 List of places where you can ~~stalk~~ find me on:
 
-> This is not a complete list but rather places where I'm somewhat active. You can find me on other platforms as well, although make sure it's the real me by [asking](@/findme/index.md) first.
+> This is not a complete list but rather places where I'm somewhat active. You can find me on other platforms as well, although make sure it's the real me by [asking](@/find/index.md) first.
 
 <small>From most active to the least ↓</small>
 

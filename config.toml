@@ -45,7 +45,7 @@ show_powered_by = true
 show_john = true
 links = [
   { url = "@/colophon/index.md", name = "Colophon" },
-  { url = "@/findme/index.md", name = "Find Me" },
+  { url = "@/find/index.md", name = "Find Me" },
 ]
 
 [extra.comments]
