@@ -50,17 +50,9 @@ Currently member of [Nickvision](https://nickvision.org) and [Gradience](https:/
 
 Have a look at my [designs](@/design/index.md), mostly icons but also some wallpapers (one of them is even shipped with GNOME)
 
-## Contacts
+## Find Me
 
-See the [contact](@/findme/index.md#contacts) page.
-
-## Socials
-
-See the [socials](@/findme/index.md#socials) section on the contact page.
-
-## Forges
-
-See the [forges](@/findme/index.md#forges) section on the contact page.
+See the [find me](@/findme/index.md#contacts) page.
 
 ## This Website
 
