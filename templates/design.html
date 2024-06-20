@@ -1,77 +1,76 @@
-<!DOCTYPE html>
-<html lang="en">
-{% include "partials/head.html" %}
+{% extends "base.html" %} {% block content %}
 
-<body>
-	{% include "partials/nav.html" %}
-	<div id="main" class="container">
-		<h1>Design Showcase</h1>
-		<p>A sneak peek into my designs.</p>
+<section id="original-icons">
+	<div class="container">
+		<h2>Original Icons</h2>
+		<p>Custom icons with original idea made for projects without prior ones or with different ones.
+		</p>
+		<br />
+		<div class="media-grid">
+			{% for icon in page.extra.original_icons %}
+			<a href="{{ icon.url }}">
+				<picture>
+					<img
+						class="no-hover full transparent drop-shadow"
+						src="icons/{{ icon.icon }}"
+						alt="{{ icon.name }}"
+					/>
+				</picture>
+				<small>{{ icon.name }}</small>
+			</a>
+			{% endfor %}
+		</div>
 		<br />
 	</div>
-	<section id="original-icons">
-		<div class="container">
-			<h2>Original Icons</h2>
-			<p>
-				Custom icons with original idea made for projects without prior ones
-				or with different ones.
-			</p>
-			<br />
-			<div class="media-grid">
-				{% for icon in page.extra.original_icons %}
-					<a href="{{ icon.url }}">
-						<picture>
-							<img class="no-hover full transparent drop-shadow" src="icons/{{ icon.icon }}" alt="{{ icon.name }}" />
-						</picture>
-						<small>{{ icon.name }}</small>
-					</a>
-				{% endfor %}
-			</div>
-			<br />
+</section>
+<section id="redrawn-icons">
+	<div class="container">
+		<h2>Redrawn Icons</h2>
+		<p>Tweaked icons made for projects with icon and idea already present.</p>
+		<br />
+		<div class="media-grid">
+			{% for icon in page.extra.redrawn_icons %}
+			<a href="{{ icon.url }}">
+				<picture>
+					<img
+						class="no-hover full transparent drop-shadow"
+						src="icons/{{ icon.icon }}"
+						alt="{{ icon.name }}"
+					/>
+				</picture>
+				<small>{{ icon.name }}</small>
+			</a>
+			{% endfor %}
 		</div>
-	</section>
-	<section id="redrawn-icons">
-		<div class="container">
-			<h2>Redrawn Icons</h2>
-			<p>
-				Tweaked icons made for projects with icon and idea already present.
-			</p>
-			<br />
-			<div class="media-grid">
-				{% for icon in page.extra.redrawn_icons %}
-					<a href="{{ icon.url }}">
-						<picture>
-							<img class="no-hover full transparent drop-shadow" src="icons/{{ icon.icon }}" alt="{{ icon.name }}" />
-						</picture>
-						<small>{{ icon.name }}</small>
-					</a>
-				{% endfor %}
-			</div>
-			<br />
+		<br />
+	</div>
+</section>
+<section id="wallpapers">
+	<div class="container">
+		<h2>Wallpapers</h2>
+		<p>Wallpapers that I have made for myself, that you can use too.</p>
+		<br />
+		<div class="media-grid">
+			{% for wallpaper in page.extra.wallpapers %}
+			<a href="{{ wallpaper.url }}">
+				<picture>
+					{% if wallpaper.wallpaper_dark %}
+					<source
+						srcset="wallpapers/{{ wallpaper.wallpaper_dark }}"
+						media="(prefers-color-scheme: dark)"
+					/>
+					{% endif %}
+					<img
+						class="no-hover full"
+						src="wallpapers/{{ wallpaper.wallpaper }}"
+						alt="{{ wallpaper.name }}"
+					/>
+				</picture>
+				<small>{{ wallpaper.name }}</small>
+			</a>
+			{% endfor %}
 		</div>
-	</section>
-	<section id="wallpapers">
-		<div class="container">
-			<h2>Wallpapers</h2>
-			<p>Wallpapers that I have made for myself, that you can use too.</p>
-			<br />
-			<div class="media-grid">
-				{% for wallpaper in page.extra.wallpapers %}
-					<a href="{{ wallpaper.url }}">
-						<picture>
-							{% if wallpaper.wallpaper_dark %}
-								<source srcset="wallpapers/{{ wallpaper.wallpaper_dark }}" media="(prefers-color-scheme: dark)" />
-							{% endif %}
-							<img class="no-hover full" src="wallpapers/{{ wallpaper.wallpaper }}" alt="{{ wallpaper.name }}" />
-						</picture>
-						<small>{{ wallpaper.name }}</small>
-					</a>
-				{% endfor %}
-			</div>
-			<br />
-		</div>
-	</section>
-	<div class="container">{% block content %}{%- endblock -%}</div>
-	{% include "partials/footer.html" %}
-</body>
-</html>
+		<br />
+	</div>
+</section>
+{%- endblock -%}

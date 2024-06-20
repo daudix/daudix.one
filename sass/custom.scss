@@ -324,11 +324,19 @@
 #original-icons,
 #redrawn-icons,
 #wallpapers {
+	margin-right: calc((-100vw + 100%) / 2);
+	margin-left: calc((-100vw + 100%) / 2);
 	background-image: radial-gradient(circle, var(--fg-muted-1) 1px, transparent 1px);
 	background-size: 1rem 1rem;
+	padding-top: 3rem;
+
+	h2 {
+		margin-top: 0;
+	}
 }
 
 #original-icons {
+	margin-top: 2rem;
 	background-color: rgba(98, 160, 234, 0.5);
 }
 
