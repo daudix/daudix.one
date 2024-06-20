@@ -389,7 +389,7 @@ body:has(#original-icons) footer {
 		#john-container {
 			position: relative;
 			margin: 1rem auto 0;
-			box-shadow: var(--shadow);
+			box-shadow: 0 0 0 1px var(--primary-color-alpha), 0 2px 6px 2px var(--primary-color-alpha), 0 4px 24px 4px var(--primary-color-alpha);
 			border-radius: var(--rounded-corner-small);
 			width: min(calc(728px - 6px), 100vw);
 			height: min(calc(90px - 6px), 12.367vw);
