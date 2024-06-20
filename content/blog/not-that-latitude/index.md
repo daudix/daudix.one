@@ -30,7 +30,7 @@ Dell Latitude E7470 - 2017 ultrabook in great condition, with decent specs, and,
 <figcaption>Feels good to hold a laptop that is twice as thin and light as MacBoy</figcaption>
 
 ![latitude open](./latitude-open.jpg)
-<figcaption>Even though its screen is 14 inces it's just as compact as MacBoy, thin bezels compensate the screen size</figcaption>
+<figcaption>Even though its screen is 14 inches it's just as compact as MacBoy; thin bezels compensate the screen size</figcaption>
 
 ## It's Time
 
