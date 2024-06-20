@@ -1,11 +1,11 @@
 +++
-title = "Contact"
-description = "Where, when and how to contact me."
+title = "Find Me"
+description = "Where, when and how to find me."
 +++
 
-# Contact Me or Find on the Web
+# Find Me
 
-![envelope](envelope.png#full#transparent#no-hover)
+![envelope](envelope.png)
 
 ## Contacts
 
@@ -29,7 +29,7 @@ Feel free to send me a message on any of these. Whether you're bored or need som
 
 List of places where you can ~~stalk~~ find me on:
 
-> This is not a complete list but rather places where I'm somewhat active. You can find me on other platforms as well, although make sure it's the real me by [asking](@/contact/index.md) first.
+> This is not a complete list but rather places where I'm somewhat active. You can find me on other platforms as well, although make sure it's the real me by [asking](@/findme/index.md) first.
 
 <small>From most active to the least ↓</small>
 

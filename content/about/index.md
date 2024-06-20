@@ -52,15 +52,15 @@ Have a look at my [designs](@/design/index.md), mostly icons but also some wallp
 
 ## Contacts
 
-See the [contact](@/contact/index.md#contacts) page.
+See the [contact](@/findme/index.md#contacts) page.
 
 ## Socials
 
-See the [socials](@/contact/index.md#socials) section on the contact page.
+See the [socials](@/findme/index.md#socials) section on the contact page.
 
 ## Forges
 
-See the [forges](@/contact/index.md#forges) section on the contact page.
+See the [forges](@/findme/index.md#forges) section on the contact page.
 
 ## This Website
 
@@ -121,7 +121,7 @@ If you like my website, feel free to link it by adding one of the buttons:
 
 > Note: It's recommended to avoid hot-linking; instead place a copy on your own site.
 
-Hey, you, yes, *you*. Got website and a button? I have a deal for you! Just [ping me somewhere](@/contact/index.md) and I'll add it here, piece of cake.
+Hey, you, yes, *you*. Got website and a button? I have a deal for you! Just [ping me somewhere](@/findme/index.md) and I'll add it here, piece of cake.
 
 <img id="fluttershy" class="transparent no-hover drop-shadow" src="fluttershy.gif" />
 
