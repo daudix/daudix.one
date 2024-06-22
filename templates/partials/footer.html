@@ -1,79 +1,69 @@
-{% set current_lang = config.default_language %}
-{% if page %}
-	{% set current_lang = page.lang %}
-{% elif section %}
-	{%- set current_lang = section.lang %}
-{% endif %}
 <footer id="site-footer">
-	{% if config.extra.footer.links %}
+	{%- if config.extra.footer.links %}
 		<nav>
 			<ul>
-				{% for link in config.extra.footer.links %}
-					{% if current_lang == config.default_language %}
-						{% set title = link.name %}
-					{% else %}
-						{% set language_key = 'name_' ~ current_lang %}
-						{% set title = link[language_key] %}
-					{% endif %}
-					{%- if link.url is matching('https?://') %}
-						<li>
-							<a href="{{ link.url }}">
-								{{ title }}
-							</a>
-						</li>
-					{%- else %}
-						<li>
-							<a href="{{ get_url(path=link.url, lang=lang)}}">
-								{{ title }}
-							</a>
-						</li>
-					{%- endif %}
-				{% endfor %}
+				{%- for link in config.extra.footer.links %}
+				{%- if link.url is matching('https?://') %}
+					<li>
+						<a href="{{ link.url }}">
+							{{ macros_translate::translate(key=link.name, default=link.name, language_strings=language_strings) }}
+						</a>
+					</li>
+				{%- else %}
+					<li>
+						<a href="{{ get_url(path=link.url, lang=lang)}}">
+							{{ macros_translate::translate(key=link.name, default=link.name, language_strings=language_strings) }}
+						</a>
+					</li>
+				{%- endif %}
+			{%- endfor %}
 			</ul>
 		</nav>
-	{% endif %}
+	{%- endif %}
 
-	{% if config.extra.footer.show_copyright %}
-		<p title="Last built at {{ now() | date(format='%F %a %R') }}">
-			&copy; {{ config.title }}, {{ now() | date(format="%Y") }}
-		</p>
-	{% endif %}
+	{%- if config.extra.footer.show_copyright %}
+		{%- if config.extra.footer.copyright %}
+			{{ config.extra.footer.copyright | markdown | safe }}
+		{%- else %}
+			<p>&copy; {{ config.title }}, {{ now() | date(format="%Y") }}</p>
+		{%- endif %}
+	{%- endif %}
 
-	{% if config.extra.source_url and config.extra.footer.show_source %}
+	{%- if config.extra.source_url and config.extra.footer.show_source %}
 		<p>
 			<a href="{{ config.extra.source_url }}">
 				{{ macros_translate::translate(key="source", default="Website source", language_strings=language_strings) }}
 			</a>
 		</p>
-	{% endif %}
+	{%- endif %}
 
-	{% if config.extra.footer.show_powered_by %}
+	{%- if config.extra.footer.show_powered_by %}
 		<p>
 			<small>
-				{{ macros_translate::translate(key="powered_by", default="Powered by", language_strings=language_strings) }} <a class="link" href="https://www.getzola.org">Zola</a> {{ macros_translate::translate(key="powered_by_and", default="and", language_strings=language_strings) }} <a class="link" href="https://daudix.codeberg.page/duckquill">Duckquill</a>
+				{{ macros_translate::translate(key="powered_by", default="Powered by", language_strings=language_strings) }} <a class="link" href="https://www.getzola.org">Zola</a> {{ macros_translate::translate(key="powered_by_and", default="and", language_strings=language_strings) }} <a class="link" href="https://duckquill.daudix.one">Duckquill</a>
 			</small>
 		</p>
-	{% endif %}
+	{%- endif %}
 
-	{% if config.extra.footer.socials %}
+	{%- if config.extra.footer.socials %}
 		<ul id="socials">
-			{% for link in config.extra.footer.socials %}
+			{%- for link in config.extra.footer.socials %}
 				<li>
 					<a href="{{ link.url | safe }}" rel="me" title="{{ link.name }}">
 						<i class="icon" style='mask-image: url("data:image/svg+xml,{{ link.icon }}"); -webkit-mask-image: url("data:image/svg+xml,{{ link.icon }}")'></i>
 						<span>{{ link.name }}</span>
 					</a>
 				</li>
-			{% endfor %}
+			{%- endfor %}
 		</ul>
-	{% endif %}
+	{%- endif %}
 
-	{% if config.extra.footer.show_john %}
+	{%- if config.extra.footer.show_john %}
 		<details>
 			<summary>Johnvertisement</summary>
 			<div id="john-container">
-				<iframe id="john" src="https://john.citrons.xyz/embed?ref=daudix.codeberg.page"></iframe>
+				<iframe id="john" src="https://john.citrons.xyz/embed?ref={{ config.base_url | replace(from='https://', to='') }}"></iframe>
 			</div>
 		</details>
-	{% endif %}
+	{%- endif %}
 </footer>
