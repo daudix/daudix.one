@@ -13,7 +13,7 @@ clone:
 steps:
   # Build zola static files
   build:
-    image: alpine
+    image: alpine:3.20.1
     commands:
       - apk add zola
       - zola --version
