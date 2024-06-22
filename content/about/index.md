@@ -50,14 +50,6 @@ Currently member of [Nickvision](https://nickvision.org) and [Gradience](https:/
 
 Have a look at my [designs](@/design/index.md), mostly icons but also some wallpapers (one of them is even shipped with GNOME)
 
-## Find Me
-
-See the [find me](@/find/index.md#contacts) page.
-
-## This Website
-
-See the [colophon](@/colophon/index.md) page.
-
 ## Small Web
 
 Small Web is something I really like, I'm member of multiple tildes/pubnixes, although I don't do much there yet, I still like to be part of them.
