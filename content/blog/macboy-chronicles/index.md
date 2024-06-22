@@ -6,6 +6,7 @@ date = 2024-06-11
 tags = ["100DaysToOffload", "MacBoy"]
 [extra]
 toc = true
+featured = true
 [extra.comments]
 id = "112595182527799666"
 +++
