@@ -2,6 +2,7 @@
 title = "Rewriting My Neocities Website Was Fun!"
 description = "Almost a year later, I got my hands on it."
 date = 2024-06-04
+updated = 2024-06-22
 [taxonomies]
 tags = ["Devlog", "Website", "Neocities", "100DaysToOffload"]
 [extra]
@@ -12,7 +13,9 @@ id = "112555378913783711"
 
 > This is my first [#100DaysToOffload](https://100daystooffload.com) post; what this means is that I'll post more and about more diverse stuff. My drafts folder are nearly exploding so it's about time! A dedicated post about this will be published soon (hopefully *nervous giggling*).
 >
-> Edit: it's been [published](@/blog/100-days-to-offload/index.md) (4 days later and not in half a year!).
+> Edit: It's been [published](@/blog/100-days-to-offload/index.md) (4 days later and not in half a year!).
+>
+> Edit 2: This post has been [featured in exozyine](https://zine.exozy.me/posts/2024/june-2024/#website-rewriting-adventures)!
 
 As you might know, [almost a year ago](@/blog/site-and-blog-devlog/index.md) I got a website on [Neocities](https://neocities.org): the modern-age [Geocities](https://en.wikipedia.org/wiki/GeoCities) with not so modern personal websites. I always liked the idea of having website there, but never actually got my hands on it... until now, woo-hoo!
 
