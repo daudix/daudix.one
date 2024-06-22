@@ -1,10 +1,10 @@
 [![Please don't upload to GitHub](https://nogithub.codeberg.page/badge.svg)](https://nogithub.codeberg.page)
 [![MIT license](https://img.shields.io/badge/License-MIT-blue)](https://mit-license.org)
-[![status-badge](https://ci.codeberg.org/api/badges/13333/status.svg)](https://ci.codeberg.org/repos/13333)
+[![status-badge](https://ci.codeberg.org/api/badges/13469/status.svg)](https://ci.codeberg.org/repos/13469)
 
-# [Daudix’s Blog](https://daudix.codeberg.page) <img src="logo.png" alt="Logo" width="96" align="right"/>
+# [Daudix’s Blog](https://daudix.one) <img src="logo.png" alt="Logo" width="96" align="right"/>
 
-This is my personal website. It is powered by [Zola](https://www.getzola.org) and [Duckquill](https://daudix.codeberg.page/duckquill).
+This is my personal website. It is powered by [Zola](https://www.getzola.org) and [Duckquill](https://duckquill.daudix.one).
 
 ![Screenshot](screenshot.png)
 
@@ -60,4 +60,4 @@ When making any sort of contribution, please make sure to follow [Forgejo's Code
 
 - Card image: [Jeremy Thomas](https://unsplash.com/@jeremythomasphoto) on [Unsplash](https://unsplash.com/photos/the-stars-and-galaxy-as-seen-from-rocky-mountain-national-park-4dpAqfTbvKA)
 
-*</> with <3 by [daudix](https://daudix.codeberg.page) | README based on [libreivan's](https://codeberg.org/libreivan/libreivan.com)*
+*</> with <3 by [daudix](https://daudix.one) | README based on [libreivan's](https://codeberg.org/libreivan/libreivan.com)*
