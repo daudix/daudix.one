@@ -46,6 +46,7 @@ show_john = true
 links = [
   { url = "@/colophon/index.md", name = "Colophon" },
   { url = "@/find/index.md", name = "Find Me" },
+  { url = "https://daudix.neocities.org", name = "Neocities" },
 ]
 
 [extra.comments]
