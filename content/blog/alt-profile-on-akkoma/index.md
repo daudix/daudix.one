@@ -14,7 +14,7 @@ id = "111804777265949955"
 
 ## What?
 
-This is a little bit of spontaneous post, but I still liked to write it, thought be prepared for weird writing style, since as always, I'm experimenting with it :)
+This is a little bit of spontaneous post, but I still liked to write it, though be prepared for weird writing style, since as always, I'm experimenting with it :)
 
 ## Backstory
 
