@@ -5,6 +5,8 @@ date = 2024-06-25
 updated = 2024-06-25
 [taxonomies]
 tags = ["100DaysToOffload", "Website", "Devlog"]
+[extra.comments]
+id = "112675082269886749"
 +++
 
 > I know I said in the [previous post](@/blog/not-that-latitude/index.md) that the next post would be about how my Pixel 3 committed suicide, but I didn't quite feel like publishing 3 posts in a row about my devices dying and being replaced, plus I haven't researched the topic enough and don't have much to tell about the replacement, so it will stay in the drafts folder for a bit longer.
@@ -19,7 +21,7 @@ At first (back in the ["Space" theme era](https://web.archive.org/web/2022092013
 
 It was perfect: *one* of the cheapest options, *one* of a kind, and not a boring *one*.
 
-> Uninteresting fact: Only after getting the domain, I realized it's actually a huge [one](https://www.youtube.com/watch?v=EE4mslnibzQ) reference. So yes, the pun was not in fact intended.
+> **Uninteresting fact:** Only after getting the domain, I realized it's actually a huge [one](https://www.youtube.com/watch?v=EE4mslnibzQ) reference. So yes, the pun was not in fact intended.
 
 A while later, I finally decided it was time, even if I might not be able to pay for the next year.
 

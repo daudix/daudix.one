@@ -63,13 +63,13 @@ Then I added a fake music player to the top-right corner (which was an absolute 
 | ------------------------------------------- | ------------------------------------------- |
 | ![website on mobile](website-on-mobile.png) | ![website on tablet](website-on-tablet.png) |
 
-> Uninteresting fact #1: The music player initially displayed [PrinceWhateverer](https://www.youtube.com/@princewhateverer)'s [Miscommunication](https://www.youtube.com/watch?v=r0P67hLrFHI) as it's very relatable, but since I aimed for the 2010's vibe, I decided to change it to [WoodenToaster](https://www.youtube.com/@WoodenToaster)'s [Rainbow Factory](https://www.youtube.com/watch?v=YRx_iXgLAyw) since it was released in 2011 and were quite popular back then.
+> **Uninteresting** fact #1:** The music player initially displayed [PrinceWhateverer](https://www.youtube.com/@princewhateverer)'s [Miscommunication](https://www.youtube.com/watch?v=r0P67hLrFHI) as it's very relatable, but since I aimed for the 2010's vibe, I decided to change it to [WoodenToaster](https://www.youtube.com/@WoodenToaster)'s [Rainbow Factory](https://www.youtube.com/watch?v=YRx_iXgLAyw) since it was released in 2011 and were quite popular back then.
 
 | DeviantArt                                      | Mine                                |
 | ----------------------------------------------- | ----------------------------------- |
 | ![bookmark deviantart](bookmark-deviantart.png) | ![bookmark mine](bookmark-mine.png) |
 
-> Uninteresting fact #2: Initially the bookmark said "Work In Process", but I realised that it won't exit this state anytime soon, so it were changed to "Forever WIP"
+> **Uninteresting fact #2:** Initially the bookmark said "Work In Process", but I realised that it won't exit this state anytime soon, so it were changed to "Forever WIP"
 
 And that's about it! there's one issue that bothers me, the footer; it's absolute positioned relatively to the "paper" and it overlays on top of the scrollbar, which is meh.
 
