@@ -111,24 +111,37 @@
 #about-splash {
 	text-align: center;
 
-	#avatar {
+	#avatar-container {
 		display: inline-block;
-		transition: var(--transition-longer);
-		margin-top: 2rem;
-		margin-bottom: 0;
-		border-width: 1rem;
-		border-style: solid;
-		border-color: white;
-		border-radius: 50%;
-		background-color: white;
-		width: 8rem;
-		height: 8rem;
+		position: relative;
 
-		&:hover {
-			transform: scale(1.25) rotate(20deg);
-			filter: hue-rotate(45deg);
-			border-width: 0.25rem;
+		#avatar {
+			display: inline-block;
+			transition: var(--transition-longer);
+			margin-top: 2rem;
+			margin-bottom: 0;
+			border-width: 1rem;
+			border-style: solid;
+			border-color: white;
 			border-radius: 50%;
+			background-color: white;
+			width: 8rem;
+			height: 8rem;
+
+			&:hover {
+				transform: scale(1.25) rotate(20deg);
+				filter: hue-rotate(45deg);
+				border-width: 0.25rem;
+				border-radius: 50%;
+			}
+		}
+
+		#it-sucks {
+			position: absolute;
+			top: 4.5rem;
+			left: 9rem;
+			margin: 0;
+			max-width: none;
 		}
 	}
 

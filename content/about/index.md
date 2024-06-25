@@ -4,7 +4,10 @@ description = "About me, what I do, and more."
 +++
 
 <div id="about-splash">
-<img id="avatar" src="logo.svg" alt="My logo" />
+<div id="avatar-container">
+	<img id="avatar" src="logo.svg" alt="logo" />
+	<img id="it-sucks" class="transparent no-hover" src="this-logo-sucks.png" alt="this logo sucks" />
+</div>
 
 # David Lapshin { #header }
 
