@@ -2,6 +2,7 @@
 title = "One Little Domain or How I Got My First Domain"
 description = "One of my little dreams finally came true! But how?"
 date = 2024-06-25
+updated = 2024-06-25
 [taxonomies]
 tags = ["100DaysToOffload", "Website", "Devlog"]
 +++
@@ -24,7 +25,7 @@ A while later, I finally decided it was time, even if I might not be able to pay
 
 And so, in the early morning of June 22nd, I started the research with serious intentions. First, I checked [Porkbun](https://porkbun.com) since I heard good things about it and [exozyme](https://exozy.me) (the coziest pubnix) uses it as far as I know. Surprisingly, daudix.one was super cheap—just $1.57 (renewal will cost $13.88, which is still cheaper than many other options).
 
-For fun, I also checked daudix.io, which cost $40! Then I checked [Cloudflare Registrar](https://www.cloudflare.com/learning/dns/what-is-cloudflare-registrar/) since apparently they charge only the required fees without any markup, but it didn't have .one domains, so I checked [Namecheap](https://www.namecheap.com/), where daudix.one cost $2.60 or something like that. So I settled on Porkbun.
+For fun, I also checked daudix.io, which cost a whopping $40! Then I checked [Cloudflare Registrar](https://www.cloudflare.com/learning/dns/what-is-cloudflare-registrar/) since apparently they charge only the required fees without any markup, but it didn't have .one domains, so I checked [Namecheap](https://www.namecheap.com/), where daudix.one cost $2.60 or something like that. So I settled on Porkbun.
 
 One registration and payment later, I got *that* email from Porkbun!
 
@@ -48,13 +49,13 @@ Yes, apparently it needed a bit more time than 15 minutes to fully propagate. In
 ![porkbun dns](porkbun-dns.png)
 <figcaption>The final DNS setup for this site and Duckquill</figcaption>
 
-The next day, I created the `pages` repository and added a `_redirects` file to make the old daudix.codeberg.page address redirect to the new one, while keeping the path (so e.g. daudix.codeberg.page/ananas-duck becomes daudix.one/ananas-duck and not just daudix.one).
+The next day, I created the `pages` repository and added a `_redirects` file to make the old daudix.codeberg.page address redirect to the new one, while keeping the path (so e.g. `daudix.codeberg.page/ananas-duck` becomes `daudix.one/ananas-duck` and not just daudix.one).
 
 ```txt
 /*  https://daudix.one/:splat  302
 ```
 
-Yup, that's the entire file! It doesn't work perfectly though; links have a double slash after the domain (daudix.one//blog/...), but it doesn't seem to affect page loading, so it's fine, I guess?
+Yup, that's the entire file! It doesn't work perfectly though; links have a double slash after the domain (`daudix.one//blog/`), but it doesn't seem to affect page loading, so it's fine, I guess?
 
 Edit: [a](https://a.exozy.me) suggested me to try removing the slash between the domain and `:splat` (so it becomes `https://daudix.one:splat`), and it worked!
 
