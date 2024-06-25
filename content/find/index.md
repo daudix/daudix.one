@@ -17,7 +17,7 @@ Feel free to send me a message on any of these. Whether you're bored or need som
 
 <small>From most preferred to the least ↓</small>
 
-- [Matrix](https://matrix.to/#/@daudix:envs.net)
+- [Matrix](https://matrix.to/#/@daudix:envs.net) <small>(there are accounts on other homeservers, but I don't use them)</small>
 - [Discord](https://discord.com/users/650757995378114581)
 - [Telegram](https://t.me/ddaudix)
 - [Mail (disroot)](mailto:daudix@disroot.org)
