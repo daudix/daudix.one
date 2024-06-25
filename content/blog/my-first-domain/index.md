@@ -56,4 +56,6 @@ The next day, I created the `pages` repository and added a `_redirects` file to 
 
 Yup, that's the entire file! It doesn't work perfectly though; links have a double slash after the domain (daudix.one//blog/...), but it doesn't seem to affect page loading, so it's fine, I guess?
 
+Edit: [a](https://a.exozy.me) suggested me to try removing the slash between the domain and `:splat` (so it becomes `https://daudix.one:splat`), and it worked!
+
 And that's about it! I'm super happy to be a real internet citizen and, in the long run, to be able to move the site between different hosting services without constantly changing links everywhere.
