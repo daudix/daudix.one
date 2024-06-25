@@ -17,7 +17,7 @@ Today—I mean, the 22nd of June—I fulfilled my little dream: I got my very ow
 
 Yes, you read that right. My dream was to have my own domain. I don't know what's wrong with me; I just wanted it so badly.
 
-At first (back in the ["Space" theme era](https://web.archive.org/web/20220920130408/https://daudix-ufo.github.io/)), I thought I'd get daudix.space, but later on changed my mind since I'm not really into astronomy, it felt a bit lengthy and I didn't plan on hosting public services, which are usually associated with this domain. I considered other options, but they were expensive. Then I remembered about [zagura.one](https://zagura.one) and [seirdy.one](https://seirdy.one), what was common about them is this nice domain: one.
+At first (back in the ["Space" theme era](https://web.archive.org/web/20220920130408/https://daudix-ufo.github.io/)), I thought I'd get daudix.space, but later on changed my mind since I'm not really into astronomy, it felt a bit lengthy and I didn't plan on hosting public services, which are usually associated with this domain. I considered other options, but they were expensive. Then I remembered about [zagura.one](https://zagura.one) and [seirdy.one](https://seirdy.one), what was common about them is this nice <abbr title="Top-level domain">TLD</abbr>: one.
 
 It was perfect: *one* of the cheapest options, *one* of a kind, and not a boring *one*.
 
@@ -27,7 +27,7 @@ A while later, I finally decided it was time, even if I might not be able to pay
 
 And so, in the early morning of June 22nd, I started the research with serious intentions. First, I checked [Porkbun](https://porkbun.com) since I heard good things about it and [exozyme](https://exozy.me) (the coziest pubnix) uses it as far as I know. Surprisingly, daudix.one was super cheap—just $1.57 (renewal will cost $13.88, which is still cheaper than many other options).
 
-For fun, I also checked daudix.io, which cost a whopping $40! Then I checked [Cloudflare Registrar](https://www.cloudflare.com/learning/dns/what-is-cloudflare-registrar/) since apparently they charge only the required fees without any markup, but it didn't have .one domains, so I checked [Namecheap](https://www.namecheap.com/), where daudix.one cost $2.60 or something like that. So I settled on Porkbun.
+For fun, I also checked daudix.io, which cost a whopping $40! Then I checked [Cloudflare Registrar](https://www.cloudflare.com/learning/dns/what-is-cloudflare-registrar/) since apparently they charge only the required fees without any markup, but it didn't have .one TLD, so I checked [Namecheap](https://www.namecheap.com/), where daudix.one cost $2.60 or something like that. So I settled on Porkbun.
 
 One registration and payment later, I got *that* email from Porkbun!
 
