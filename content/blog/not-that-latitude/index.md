@@ -2,6 +2,7 @@
 title = "Latitude and Longitude, or My New Daily Driver"
 description = "A little story about my new (for me) laptop."
 date = 2024-06-19
+updated = 2024-06-25
 [taxonomies]
 tags = ["100DaysToOffload", "MacBoy", "Latte"]
 [extra.comments]
@@ -9,6 +10,8 @@ id = "112640483364403774"
 +++
 
 ![header](header.png)
+
+> Uninteresting fact: It was quite hard to get the expressions right, [first version](https://codeberg.org/daudix/website/src/commit/e39dd708a4d39012ce54f23673cb13460210bc75/content/blog/not-that-latitude/header.png) had them very sadge, so I changed them to be a bit more restrained.
 
 ## Backstory
 
@@ -34,7 +37,7 @@ Dell Latitude E7470 - 2017 ultrabook in great condition, with decent specs, and,
 
 ## It's Time
 
-The next day - Jun 5th - while I was asleep, Mom told Dad about this variant, and he promptly called the seller to not miss such an opportunity. He asked if the machine in the listing was the same one, and it was indeed the same machine and all was OK, so he agreed on the purchase and delivery (which was free) the same day.
+The next day - 5th of June - while I was asleep, Mom told Dad about this variant, and he promptly called the seller to not miss such an opportunity. He asked if the machine in the listing was the same one, and it was indeed the same machine and all was OK, so he agreed on the purchase and delivery (which was free) the same day.
 
 I woke up only to hear the surprising like snow-in-the-summer news, and I was happy and nervous at the same time—hapvous.
 
