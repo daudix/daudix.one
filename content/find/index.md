@@ -45,10 +45,10 @@ I have changed (and will change) the Fediverse instance I'm on, so to make sure 
 
 <small>From newest to oldest ↓</small>
 <ol id="timeline">
-	<li><small>05 May 2024 - Today<br><a href="https://vmst.io/@daudix">vmst.io</a> • <span>Main profile</span></small></li>
-	<li><small>08 Jan 2024 - Today<br><a href="https://pleroma.envs.net/daudix">pleroma.envs.net</a> • <span>Personal profile</span></small></li>
-	<li><small>20 Nov 2023 - 07 May 2024<br><a href="https://social.treehouse.systems/@daudix">social.treehouse.systems</a> • <span>Main profile</span></small></li>
-	<li><small>01 Sep 2022 - 20 Nov 2023<br><a href="https://mstdn.social/@Daudix">mstdn.social</a> • <span>Main profile</span></small></li>
+  <li><small>05 May 2024 - Today      <br><a href="https://vmst.io/@daudix">                 vmst.io                 </a> • <span>Main profile    </span></small></li>
+  <li><small>08 Jan 2024 - Today      <br><a href="https://pleroma.envs.net/daudix">         pleroma.envs.net        </a> • <span>Personal profile</span></small></li>
+  <li><small>20 Nov 2023 - 07 May 2024<br><a href="https://social.treehouse.systems/@daudix">social.treehouse.systems</a> • <span>Main profile    </span></small></li>
+  <li><small>01 Sep 2022 - 20 Nov 2023<br><a href="https://mstdn.social/@Daudix">            mstdn.social            </a> • <span>Main profile    </span></small></li>
 </ol>
 
 ## Forges
@@ -61,19 +61,19 @@ I were using GitHub from the very start of my FOSS journey, but recently I've [m
 - [GitLab (GNOME)](https://gitlab.gnome.org/daudix)
 
 <script type="text/javascript">
-	function updateClock() {
-		const options = {
-            // No, I'm not in Moscow, just so happens the timezone is the same there
-			timeZone: "Europe/Moscow",
-			hour: "2-digit",
-			minute: "2-digit",
-			hour12: false,
-		};
-		const now = new Date().toLocaleString("en-US", options);
-		const clockElement = document.getElementById("clock");
-		clockElement.textContent = now;
-	}
+  function updateClock() {
+    const options = {
+      // No, I'm not in Moscow, just so happens the timezone is the same there
+      timeZone: "Europe/Moscow",
+      hour: "2-digit",
+      minute: "2-digit",
+      hour12: false,
+    };
+    const now = new Date().toLocaleString("en-US", options);
+    const clockElement = document.getElementById("clock");
+    clockElement.textContent = now;
+  }
 
-	updateClock();
-	setInterval(updateClock, 1000);
+  updateClock();
+  setInterval(updateClock, 1000);
 </script>
