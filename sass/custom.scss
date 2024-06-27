@@ -5,9 +5,9 @@
 #status-container {
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
 	place-items: center;
-	margin: 2rem 0 2rem;
+	margin: 2rem auto 2rem;
+	max-width: min(calc(var(--container-width) / 2), 100%);
 
 	#avatar-container {
 		position: relative;
@@ -77,7 +77,9 @@
 			margin: 0;
 			border-radius: 50%;
 			width: 4rem;
+			min-width: 4rem;
 			height: 4rem;
+			min-height: 4rem;
 		}
 	}
 
