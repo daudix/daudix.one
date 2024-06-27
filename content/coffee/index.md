@@ -1,6 +1,8 @@
 +++
 title = "Buy Me a Coffee"
 description = "Just in case you want to do so for some reason."
+[extra]
+stylesheets = ["coffee.css"]
 +++
 
 <div id="coffee-container">
@@ -13,7 +15,7 @@ description = "Just in case you want to do so for some reason."
 		<img id="banner" class="no-hover" src="banner.webp" />
 	</div>
 	<strong id="title">David Lapshin</strong>
-	<p id="message">Hello there! If you'd like to buy me a coffee (thanks for that!), you can use one of these options; use whichever you prefer.</p>
+	<p id="message">If you'd like to buy me a coffee (thanks ^_^), you can use one of these options. If you'd like to use some other option feel free to <a href="https://daudix.one/find/#contacts">ask</a>, maybe I do have it.</p>
 	<input type="checkbox" id="skeuo-switch">
 	<label for="skeuo-switch">Skeuomorph</label>
 	<div class="dialog-buttons" id="buttons">
@@ -22,4 +24,3 @@ description = "Just in case you want to do so for some reason."
 		<a id="monero" class="inline-button" href="monero.txt">Monero</a>
 	</div>
 </div>
-<link rel="stylesheet" type="text/css" href="/coffee.css" />

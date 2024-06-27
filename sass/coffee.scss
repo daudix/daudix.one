@@ -316,11 +316,15 @@ body:has(#skeuo-switch:checked) {
 	#coffee-container {
 		box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
 		background-image: url(coffee/paper.webp);
-		color: hsl(32 26% 25%);
+		color: hsl(32 26% 20%);
 		text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
 
 		#banner {
 			box-shadow: var(--shadow);
+		}
+
+		#message a {
+			color: inherit;
 		}
 
 		#buttons {
