@@ -11,7 +11,7 @@ description = "About me, what I do, and more."
 
 # David Lapshin { #header }
 
-<small>Trying to find myself since 2007.</small>
+<small>Trying to find myself since 2007</small>
 </div>
 
 ## About Me
