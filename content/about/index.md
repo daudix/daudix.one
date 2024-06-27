@@ -40,6 +40,7 @@ Things that I like:
   - Untitled Goose
   - Stardew Valley
   - Cyberpunk 2077 <small>(I've only *played* it on YouTube)</small>
+  - Teardown <small>(I dig the voxel visuals)</small>
 
 Design is perhaps a bit more than just a thing I like, it's my hobby and I'm learning more about it every day, although lately I've been a bit burned out.
 

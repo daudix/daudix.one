@@ -165,17 +165,17 @@
 }
 
 #abyss {
-	filter: blur(4px);
+	filter: blur(0.25rem);
 }
 
 #shy {
-	-webkit-text-decoration: underline dotted;
 	cursor: pointer;
-	text-decoration: underline dotted;
+	text-decoration: underline;
+	text-decoration-style: dotted;
+	text-decoration-thickness: max(1px, 0.0625em);
 
 	&:hover {
-		-webkit-text-decoration: underline;
-		text-decoration: underline;
+		text-decoration-style: solid;
 	}
 }
 
@@ -398,8 +398,8 @@ body:has(#original-icons) footer {
 		mask-size: cover;
 		margin-left: 0.25rem;
 		background-color: var(--primary-color);
-		width: 0.75rem;
-		height: 0.75rem;
+		width: 0.75em;
+		height: 0.75em;
 		content: "";
 	}
 }
