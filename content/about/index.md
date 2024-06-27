@@ -18,32 +18,34 @@ description = "About me, what I do, and more."
 
 Hello there! My name is David, you may know me by my online handle Daudix.
 
-> Although Daudix may appear as just my online handle, it's actually slightly different persona; perhaps more silly and honest than the "official" David, but they're so tightly tied together so it's fine to use whatever you like.
+> Although Daudix appears to be just my online handle, it's actually a slightly different persona; perhaps more silly and authentic than the "official" David, but it's fine to use whatever you like.
 
 I'm from the Siberian part of Russia, but currently live in <abbr id="abyss" title="If you know, you know">a̸͙͠b̴̛ͅȳ̴̜s̴̫̄s̸̞̒</abbr>.
 
-Oh and I'm slightly <span id="shy" onclick="fluttershyAnim()">shy</span>.
-
-Some things I like:
-
-- Retro and vintage stuff, as well as retro-futurism
-- Small/indie web
+Things that I like:
+- Retro/-futurism and vintage stuff
+- Minor details and references
+- Smol/indie web
 - Photography <small>(although I don't have much opportunity to shoot anything else than a view from my window)</small>
 - Design
 - Purple <small>(I know, it's shocking)</small>
+- Aesthetics:
+  - [Vaporwave](https://aesthetics.fandom.com/wiki/Vaporwave)
+  - [Cyberpunk](https://aesthetics.fandom.com/wiki/Cyberpunk)
+  - [Liminal Space](https://aesthetics.fandom.com/wiki/Liminal_Space)
+- Games:
+  - Portal series <small>(all-time favorite)</small>
+  - The Stanley Parable
+  - Superliminal
+  - Untitled Goose
+  - Stardew Valley
+  - Cyberpunk 2077 <small>(I've only *played* it on YouTube)</small>
 
 Design is perhaps a bit more than just a thing I like, it's my hobby and I'm learning more about it every day, although lately I've been a bit burned out.
 
 And, as you can see, I do some web development! I like working with CSS and HTML but that's about it, I have no clue how to work with JS :D
 
-My favorite games are:
-
-- Portal series <small>(all-time favorite)</small>
-- The Stanley Parable
-- Superliminal
-- Untitled Goose
-- Stardew Valley
-- Cyberpunk 2077 <small>(I've only *played* it on YouTube)</small>
+Oh and I'm slightly <span id="shy" onclick="fluttershyAnim()">shy</span>.
 
 ## Works
 
