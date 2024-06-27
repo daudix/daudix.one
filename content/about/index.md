@@ -53,7 +53,7 @@ I mostly create and improve icons for around-GNOME apps, if app doesn't have a t
 
 Currently member of [Nickvision](https://nickvision.org) and [Gradience](https://gradienceteam.github.io) teams as a designer and maintainer respectively.
 
-Have a look at my [designs](@/design/index.md), mostly icons but also some wallpapers (one of them is even shipped with GNOME)
+Have a look at my [designs](@/design/index.md), mostly icons but also some wallpapers (one of them is even shipped with GNOME).
 
 ## Small Web
 
