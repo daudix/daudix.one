@@ -17,9 +17,7 @@ Feel free to send me a message on any of these. Whether you're bored or need som
 
 <small>From most preferred to the least ↓</small>
 
-<aside>
-	<img class="transparent no-hover" style="margin: 0;" alt="die in a fire" src="die-in-a-fire.jpg">
-</aside>
+![die in a fire](die-in-a-fire.jpg#end)
 
 - [Matrix](https://matrix.to/#/@daudix:envs.net) <small>(there are accounts on other homeservers, but I don't use them)</small>
 - [Discord](https://discord.com/users/650757995378114581)
