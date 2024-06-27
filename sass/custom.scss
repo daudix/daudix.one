@@ -34,23 +34,33 @@
 
 			&:hover {
 				width: auto;
-				color: rgba(0, 0, 0, 0.8);
 			}
 
 			&.online {
 				background-color: #23a55a;
 				content: "Online";
+
+				&:hover {
+					color: white;
+				}
 			}
 
 			&.idle {
 				background-color: #f0b232;
 				content: "Idle";
 
+				&:hover {
+					color: rgba(0, 0, 0, 0.8);
+				}
 			}
 
 			&.dnd {
 				background-color: #f23f43;
 				content: "DND";
+
+				&:hover {
+					color: white;
+				}
 			}
 
 			&.offline {
