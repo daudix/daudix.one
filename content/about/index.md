@@ -116,12 +116,12 @@ Hey, you, yes, *you*. Got website and a button? I have a deal for you! Just [pin
 <img id="fluttershy" class="transparent no-hover drop-shadow" src="fluttershy.gif" />
 
 <script type="text/javascript">
-	const fluttershy = document.getElementById("fluttershy");
+  const fluttershy = document.getElementById("fluttershy");
 
-	function fluttershyAnim() {
-		fluttershy.classList.add("flying");
-		fluttershy.addEventListener("animationend", function () {
-			fluttershy.classList.remove("flying");
-		});
-	}
+  function fluttershyAnim() {
+    fluttershy.classList.add("flying");
+    fluttershy.addEventListener("animationend", function () {
+      fluttershy.classList.remove("flying");
+    });
+  }
 </script>
