@@ -5,6 +5,7 @@
 #status-container {
 	display: flex;
 	flex-direction: row;
+	justify-content: center;
 	place-items: center;
 	margin: 2rem auto 2rem;
 	max-width: min(calc(var(--container-width) / 2), 100%);
