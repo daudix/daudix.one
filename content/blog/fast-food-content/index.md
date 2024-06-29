@@ -4,6 +4,8 @@ description = "The concerning trend of fast food content consumption."
 date = 2024-06-29
 [taxonomies]
 tags = ["100DaysToOffload"]
+[extra.comments]
+id = "112697941151315924"
 +++
 
 Imagine this situation: You scroll through YouTube and find some video from, let's say, 10 years ago. What you do is probably stop for a second, think, "Dawg, that's some *ancient* stuff,", and scroll by.
