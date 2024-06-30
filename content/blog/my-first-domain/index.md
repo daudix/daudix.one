@@ -2,7 +2,7 @@
 title = "One Little Domain or How I Got My First Domain"
 description = "One of my little dreams finally came true! But how?"
 date = 2024-06-25
-updated = 2024-06-25
+updated = 2024-06-30
 [taxonomies]
 tags = ["100DaysToOffload", "Website", "Devlog"]
 [extra.comments]
@@ -25,7 +25,7 @@ It was perfect: *one* of the cheapest options, *one* of a kind, and not a boring
 
 A while later, I finally decided it was time, even if I might not be able to pay for the next year.
 
-And so, in the early morning of June 22nd, I started the research with serious intentions. First, I checked [Porkbun](https://porkbun.com) since I heard good things about it and [exozyme](https://exozy.me) (the coziest pubnix) uses it as far as I know. Surprisingly, daudix.one was super cheap—just $1.57 (renewal will cost $13.88, which is still cheaper than many other options).
+And so, in the early morning of June 22nd, I started the research with serious intentions. First, I checked [Porkbun](https://porkbun.com) since I heard good things about it and [exozyme](https://exozy.me) (the coziest community) uses it as far as I know. Surprisingly, daudix.one was super cheap—just $1.57 (renewal will cost $13.88, which is still cheaper than many other options).
 
 For fun, I also checked daudix.io, which cost a whopping $40! Then I checked [Cloudflare Registrar](https://www.cloudflare.com/learning/dns/what-is-cloudflare-registrar/) since apparently they charge only the required fees without any markup, but it didn't have .one TLD, so I checked [Namecheap](https://www.namecheap.com/), where daudix.one cost $2.60 or something like that. So I settled on Porkbun.
 
@@ -59,6 +59,12 @@ The next day, I created the `pages` repository and added a `_redirects` file to 
 
 Yup, that's the entire file! It doesn't work perfectly though; links have a double slash after the domain (`daudix.one//blog/`), but it doesn't seem to affect page loading, so it's fine, I guess?
 
-Edit: [a](https://a.exozy.me) suggested me to try removing the slash between the domain and `:splat` (so it becomes `https://daudix.one:splat`), and it worked!
+> **Edit:** Awesome [a](https://a.exozy.me) suggested me to try removing the slash between the domain and `:splat` (so it becomes `https://daudix.one:splat`), and it worked!
+
+> **Edit #2:** Changed HTTP response from 302 "Moved Temporarily" to 301 "Moved Permanently". The final `_redirects` is:
+>
+> ```txt
+> /* https://daudix.one:splat 301
+> ```
 
 And that's about it! I'm super happy to be a real internet citizen and, in the long run, to be able to move the site between different hosting services without constantly changing links everywhere.
