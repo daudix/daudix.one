@@ -473,5 +473,6 @@ body:has(#original-icons) footer {
 
 	&:hover {
 		transform: scale(2);
+		border-radius: 0;
 	}
 }
