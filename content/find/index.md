@@ -5,7 +5,10 @@ description = "Where, when and how to find me."
 
 # Find Me
 
-![envelope](envelope.png)
+<picture>
+  <source srcset="envelope-d.png" media="(prefers-color-scheme: dark)" />
+  <img src="envelope-l.png" alt="envelope" />
+</picture>
 
 ## Contacts
 
