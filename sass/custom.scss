@@ -459,7 +459,10 @@ body:has(#original-icons) footer {
 }
 
 // Dear scripts, please add IDs to elements that you inject
-#websiteout + script + img {
+#counter + script + img {
+	display: inline-block;
+	vertical-align: -0.4em;
+	margin: 0;
 	box-shadow:
 		0 0 0 0.0625rem rgba(255, 0, 0, 0.2),
 		0 0.125rem 0.375rem 0.125rem rgba(255, 0, 0, 0.2),

@@ -21,8 +21,6 @@
 		</nav>
 	{%- endif %}
 
-	<script id="websiteout" type="text/javascript" src="//counter.websiteout.com/js/6/0/0/1"></script>
-
 	{%- if config.extra.footer.show_copyright %}
 		{%- if config.extra.footer.copyright %}
 			{{ config.extra.footer.copyright | markdown | safe }}
@@ -58,6 +56,15 @@
 				</li>
 			{%- endfor %}
 		</ul>
+	{%- endif %}
+
+	{%- if config.extra.footer.show_counter %}
+		<p>
+			<small>
+				Unique visitors:&nbsp;
+				<script id="counter" type="text/javascript" src="//counter.websiteout.com/js/6/0/0/1"></script>
+			</small>
+		</p>
 	{%- endif %}
 
 	{%- if config.extra.footer.show_john %}
