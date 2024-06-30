@@ -115,7 +115,7 @@ Hey, you, yes, *you*. Got website and a button? I have a deal for you! Just [pin
 
 <img id="fluttershy" class="transparent no-hover drop-shadow" src="fluttershy.gif" />
 
-<script type="text/javascript">
+<script>
   const fluttershy = document.getElementById("fluttershy");
 
   function fluttershyAnim() {

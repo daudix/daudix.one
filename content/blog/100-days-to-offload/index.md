@@ -29,7 +29,7 @@ And so, the [previous post](@/blog/rewriting-neocities-website/index.md) started
 
 Don't know how long I'll last, but still it's worth giving it a shot!
 
-<script type="text/javascript">
+<script>
 	function playAudio(url) {
 		new Audio(url).play();
 	}
