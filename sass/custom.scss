@@ -35,6 +35,7 @@
 
 			&:hover {
 				width: auto;
+				color: white;
 			}
 
 			&.online {
@@ -459,7 +460,7 @@ body:has(#original-icons) footer {
 }
 
 // Dear scripts, please add IDs to elements that you inject
-#counter + script + img {
+#counter+script+img {
 	display: inline-block;
 	vertical-align: -0.4em;
 	margin: 0;

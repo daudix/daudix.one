@@ -7,7 +7,8 @@
 		<br />
 		<small>Here's an exclusive cute fox hugging a duck for you :3</small>
 		<br />
-		<img style="width: 4rem; height: 4rem; margin-top: 0;" class="transparent no-hover" src="/assets/neofox-hug-duck.png" />
+		<img style="width: 4rem; height: 4rem; margin-top: 0;" class="transparent no-hover"
+			src="/assets/neofox-hug-duck.png" />
 	</p>
 </noscript>
 
@@ -19,43 +20,49 @@
 	<div id="statuscafe">
 		<div id="statuscafe-username"><noscript><a href="https://status.cafe/users/daudix">daudix</a> 🦆</noscript>
 		</div>
-		<div id="statuscafe-content"><noscript>Since JavaScript is disabled, the status cannot be loaded. You can still check it by yourself by clicking on the username</noscript></div>
+		<div id="statuscafe-content"><noscript>Since JavaScript is disabled, the status cannot be loaded. You can still
+				check it by yourself by clicking on the username</noscript></div>
 	</div>
 </div>
 <script src="https://status.cafe/current-status.js?name=daudix" defer></script>
 <script>
-	fetch("https://api.lanyard.rest/v1/users/650757995378114581")
-		.then(response => response.json())
-		.then(data => {
-			const indicatorElement = document.getElementById("online-indicator");
-			const status = data.data.discord_status;
-
-			indicatorElement.classList.add(status);
-
-			switch (status) {
-				case "online":
-					indicatorElement.innerHTML = "Online";
-					break;
-				case "idle":
-					indicatorElement.innerHTML = "Idle";
-					break;
-				case "dnd":
-					indicatorElement.innerHTML = "DND";
-					break;
-				case "offline":
-					indicatorElement.innerHTML = "Offline";
-					break;
-				default:
-					indicatorElement.innerHTML = "Unknown";
-			}
-		})
-		.catch(error => {
-			console.error("Error fetching Lanyard data:", error);
-		});
+	document.addEventListener("DOMContentLoaded", function () {
+		const indicatorElement = document.getElementById("online-indicator");
+		indicatorElement.innerHTML = "N/A";
+	
+		fetch("https://api.lanyard.rest/v1/users/650757995378114581")
+			.then(response => response.json())
+			.then(data => {
+				const status = data.data.discord_status;
+	
+				indicatorElement.classList.remove("online", "idle", "dnd", "offline");
+				indicatorElement.classList.add(status);
+	
+				switch (status) {
+					case "online":
+						indicatorElement.innerHTML = "Online";
+						break;
+					case "idle":
+						indicatorElement.innerHTML = "Idle";
+						break;
+					case "dnd":
+						indicatorElement.innerHTML = "DND";
+						break;
+					case "offline":
+						indicatorElement.innerHTML = "Offline";
+						break;
+				}
+			})
+			.catch(error => {
+				console.error("Error fetching Lanyard data:", error);
+				indicatorElement.innerHTML = "N/A";
+			});
+	});
 </script>
 
+
 <div class="crt scanlines">
-<pre>
+	<pre>
 <strong>daudix@latitude-e621 ~ </strong>
 ❯ ls
  amF4LnR4dAo=
