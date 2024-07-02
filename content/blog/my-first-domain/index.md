@@ -2,7 +2,7 @@
 title = "One Little Domain or How I Got My First Domain"
 description = "One of my little dreams finally came true! But how?"
 date = 2024-06-25
-updated = 2024-06-30
+updated = 2024-07-02
 [taxonomies]
 tags = ["100DaysToOffload", "Website", "Devlog"]
 [extra.comments]
@@ -59,7 +59,7 @@ The next day, I created the `pages` repository and added a `_redirects` file to 
 
 Yup, that's the entire file! It doesn't work perfectly though; links have a double slash after the domain (`daudix.one//blog/`), but it doesn't seem to affect page loading, so it's fine, I guess?
 
-> **Edit:** Awesome [a](https://a.exozy.me) suggested me to try removing the slash between the domain and `:splat` (so it becomes `https://daudix.one:splat`), and it worked!
+> **Edit:** Awesome [Anthony](https://a.exozy.me) suggested me to try removing the slash between the domain and `:splat` (so it becomes `https://daudix.one:splat`), and it worked!
 
 > **Edit #2:** Changed HTTP response from 302 "Moved Temporarily" to 301 "Moved Permanently". The final `_redirects` is:
 >
