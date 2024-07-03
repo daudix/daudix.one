@@ -42,7 +42,7 @@ links = [
 show_copyright = true
 show_powered_by = true
 show_counter = true
-show_john = true
+show_john = false
 links = [
   { url = "@/colophon/index.md", name = "Colophon" },
   { url = "@/find/index.md", name = "Find Me" },
