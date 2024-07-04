@@ -302,12 +302,14 @@
 	img {
 		all: unset;
 		display: inline;
+		position: relative;
 		transition: var(--transition-bezier);
 		cursor: zoom-in;
 		image-rendering: pixelated;
 
 		&:hover {
 			transform: scale(2);
+			z-index: 1;
 			box-shadow:
 				0 0 0 0.0625rem var(--primary-color-alpha),
 				0 0.125rem 0.375rem 0.125rem var(--primary-color-alpha),
