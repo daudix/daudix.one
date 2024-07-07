@@ -1,2 +1,5 @@
+[default.extend-words]
+sur = "sur"
+
 [files]
 extend-exclude = ["static/jax.txt"]
