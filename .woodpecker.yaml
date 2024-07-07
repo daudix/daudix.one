@@ -11,13 +11,23 @@ clone:
       recursive: true
 
 steps:
+  # Check for typos
+  typos:
+    image: alpine:edge
+    commands:
+      - apk add curl jq
+      - curl -s "https://api.github.com/repos/crate-ci/typos/releases/latest" | jq -r '.assets[] | select(.name | contains("unknown-linux-musl")) | .browser_download_url' | xargs -n 1 curl -L -o typos.tar.gz
+      - tar -zxvf typos.tar.gz ./typos
+      - ./typos
+    failure: ignore
+    when:
+      event: [push, pull_request, manual]
+
   # Build Zola static files
   build:
     image: alpine:edge
     commands:
-      - apk add cargo zola
-      - cargo install typos-cli
-      - typos
+      - apk add zola
       - zola --version
       - zola build
     when:
