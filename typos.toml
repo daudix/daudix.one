@@ -1,5 +1,5 @@
-[default.extend-words]
-big-sur = "Big Sur"
+[default]
+extend-ignore-re = ["\\bBig Sur\\b"]
 
 [files]
 extend-exclude = ["static/jax.txt"]
