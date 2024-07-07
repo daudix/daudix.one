@@ -15,7 +15,9 @@ steps:
   build:
     image: alpine:edge
     commands:
-      - apk add zola
+      - apk add cargo zola
+      - cargo install typos-cli
+      - typos
       - zola --version
       - zola build
     when:
