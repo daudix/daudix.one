@@ -110,7 +110,7 @@ If you like my website, feel free to link it by adding one of the buttons:
 </div>
 
 {% alert(note=true) %}
-It's recommended to avoid hot-linking; instead place a copy on your own site.
+It's recommended to avoid hot-linking; instead, place a copy on your own site.
 {% end %}
 
 Hey, you, yes, *you*. Got website and a button? I have a deal for you! Just [ping me somewhere](@/find/index.md#contacts) and I'll add it here, piece of cake.
