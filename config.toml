@@ -6,7 +6,7 @@ theme = "duckquill"
 compile_sass = true
 minify_html = true
 generate_feeds = true
-build_search_index = false
+build_search_index = true
 author = "Daudix"
 
 taxonomies = [{ name = "tags", feed = true }]
@@ -19,6 +19,9 @@ highlight_themes_css = [
   { theme = "solarized-light", filename = "syntax-theme-light.css" },
 ]
 smart_punctuation = true
+
+[search]
+index_format = "elasticlunr_json"
 
 [extra]
 primary_color = "#c061cb"
