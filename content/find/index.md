@@ -14,7 +14,9 @@ description = "Where, when and how to find me."
 
 Currently it's <time><span id="clock"><noscript>NO:JS</noscript></span></time> <small>(UTC+3)</small> for me, so take that into consideration if I don't respond promptly.
 
-> **Tip:** Check my online status on the [home](@/_index.md) page in the form of a small dot on the avatar.
+{% alert(tip=true) %}
+Check my online status on the [home](@/_index.md) page in the form of a small dot on the avatar.
+{% end %}
 
 Feel free to send me a message on any of these. Whether you're bored or need someone to listen to you, I'm always open!
 
@@ -34,7 +36,9 @@ Feel free to send me a message on any of these. Whether you're bored or need som
 
 List of places where you can ~~stalk~~ find me on:
 
-> This is not a complete list but rather places where I'm somewhat active. You can find me on other platforms as well, although make sure it's the real me by [asking](@/find/index.md) first.
+{% alert(note=true) %}
+This is not a complete list but rather places where I'm somewhat active. You can find me on other platforms as well, although make sure it's the real me by [asking](#contacts) first.
+{% end %}
 
 <small>From most active to the least ↓</small>
 
@@ -44,7 +48,7 @@ List of places where you can ~~stalk~~ find me on:
 - [Lemmy](https://lemmy.zip/u/daudix)
 - [YouTube](https://www.youtube.com/@ddaudix)
 
-I have changed (and will change) the Fediverse instance I'm on, so to make sure nothing is lost, here is my Fediverse timeline:
+I have changed the Fediverse instance I'm on, so to make sure nothing is lost, here is my Fediverse timeline:
 
 <small>From newest to oldest ↓</small>
 <ol id="timeline">
@@ -56,7 +60,7 @@ I have changed (and will change) the Fediverse instance I'm on, so to make sure 
 
 ## Forges
 
-I were using GitHub from the very start of my FOSS journey, but recently I've [migrated to Codeberg](@/blog/migration-from-github-to-codeberg/index.md) because I didn't like where the GitHub is heading.
+I was using GitHub from the very start of my FOSS journey, but (not so) recently I've [migrated to Codeberg](@/blog/migration-from-github-to-codeberg/index.md), because I didn't like the direction where GitHub is heading.
 
 - [Codeberg](https://codeberg.org/daudix)
 - [GitHub](https://github.com/daudix)
