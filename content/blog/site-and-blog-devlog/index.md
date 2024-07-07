@@ -100,7 +100,7 @@ The blog have seen the most of the changes, it all were flipped upside down to b
 - Everything now respects global variables, so e.g you can change accent color, roundness, shadows and maximum content width without going through the whole 1200+ <abbr title="Lines Of Code">LOC</abbr> <abbr title="Cascading Style Sheets">CSS</abbr>, this is made not only to keep myself sane but also for _you_ to make it easier to build upon ;)
 
 <video alt="color variables" controls src="color-variables.webm"></video>
-<figcaption>Me chaning 2 color variables and site respecting this</figcaption>
+<figcaption>Me changing 2 color variables and site respecting this</figcaption>
 
 - The structure have been changed, now uses recommended Jekyll structure for posts.
 - Posts now have tags, and tags have its own page.

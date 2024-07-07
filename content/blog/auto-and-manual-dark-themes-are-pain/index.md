@@ -1,6 +1,6 @@
 +++
 title = "Auto and Manual Dark Mode Switching Is a Pain"
-description = "One of the thigns why I hate JS."
+description = "One of the things why I hate JS."
 date = 2024-02-06
 [taxonomies]
 tags = ["Devlog", "Website", "Duckquill", "JavaScript"]

@@ -1,6 +1,6 @@
 +++
 title = "100 Days to Offload or the Drafts Folder Overflow"
-description = "Why I decided to participate in a challange that I'm doomed to fail?"
+description = "Why I decided to participate in a challenge that I'm doomed to fail?"
 date = 2024-06-08
 [taxonomies]
 tags = ["100DaysToOffload"]
@@ -12,7 +12,7 @@ Ever since the emergence of this website, I’ve blogged rarely and only about s
 
 Did I just swear? -Anyway.
 
-I've seen my friend [Orbital](https://orbitalmartian.codeberg.page) participate in [#100DaysToOffload](https://100daystooffload.com) challange, and I thought it would be fun to participate in it as well.
+I've seen my friend [Orbital](https://orbitalmartian.codeberg.page) participate in [#100DaysToOffload](https://100daystooffload.com) challenge, and I thought it would be fun to participate in it as well.
 
 > 100 Days To Offload is a challenge to publish 100 posts on your personal blog in a year, no matter what the posts are about.
 
