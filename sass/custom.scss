@@ -236,14 +236,10 @@
 			color: var(--primary-color);
 		}
 	}
-
-	@media (prefers-reduced-motion) {
-		animation: none;
-	}
 }
 
 #timeline {
-	border-left: 0.25rem solid var(--fg-muted-3);
+	border-inline-start: 0.25rem solid var(--fg-muted-3);
 	padding-left: 0;
 	list-style: none;
 
@@ -461,8 +457,7 @@ body:has(#original-icons) footer {
 	}
 }
 
-// Dear scripts, please add IDs to elements that you inject
-#counter+script+img {
+#counter {
 	display: inline-block;
 	vertical-align: -0.4em;
 	margin: 0;

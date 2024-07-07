@@ -13,9 +13,13 @@ disclaimer = """
 
 Two years ago today, a project called AdwCustomizer emerged: A libadwaita app that allowed users to recolor their libadwaita and GTK3 apps if `adw-gtk3` theme was present using an easy to use interface.
 
-> **Note:** My stance on the theming didn't change; I still believe that distributions should *not* ship any theming out of the box. It's up to the user to decide whether they're okay with broke napplications or not. See ["please don’t theme our apps"](https://stopthemingmy.app).
-> 
-> Personally, I stopped theming my desktop for a while; for more than a year I'm using vanilla GNOME with only a few extensions that add missing some features that I desperately need, like automatic dark mode on sunset.
+{% alert(important=true) %}
+My stance on the theming didn't change; I still believe that distributions should *not* ship any theming out of the box. It's up to the user to decide whether they're okay with broke napplications or not. See ["please don’t theme our apps"](https://stopthemingmy.app).
+{% end %}
+
+{% alert(note=true) %}
+Personally, I stopped theming my desktop for a while; for more than a year I'm using vanilla GNOME with only a few extensions that add missing some features that I desperately need, like automatic dark mode on sunset.
+{% end %}
 
 I was super exited to be one of the first to find it, since I thought about such app literally a few days before I found it. The same day, I opened an issue regarding changing the project name, since it didn't follow the [GNOME HIG](https://developer.gnome.org/hig/guidelines/app-naming.html). Dev quickly responded stating that Adwaita Manager sounds quite good, and very soon, the project was renamed.
 
