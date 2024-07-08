@@ -31,6 +31,7 @@ When the time came, we got it without a doubt, and it was an amazing device; the
 <br />
 <br />
 <br />
+<!-- I don't know what the hell is going up there -->
 
 After enjoying the stock ROM for 2 weeks/month, I decided to finally give custom ROMs a shot. My first one was LineageOS, and it's still my favorite; no bloat, the latest Android, plus some useful perks.
 
