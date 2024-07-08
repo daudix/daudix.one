@@ -15,7 +15,9 @@ id = ""
 
 Somewhere in the middle of 2021, I got my favorite phone yet: Pixel 3 (white, with a teal power button, 64GB model).
 
-Before that, I used an iPhone 7 (gold, 128GB). It was a great device, and later on, it was fun to jailbreak, all until one day when Apple put an end to jailbreak with the release of iOS 15 (potential post?).
+Let's rewind a bit earlier. *Rewind sounds intensifies.*
+
+A while back, I've used an iPhone 7 (gold, 128GB). It was a great device, and later on, it was fun to jailbreak, all until one day when Apple put an end to jailbreak with the release of iOS 15 (potential post?).
 
 Since then, I've been thinking about a replacement. Around the same time, I started to care about privacy and FOSS alternatives to popular apps, so I looked for something that allowed installing custom ROMs (and had a great camera, of course). I knew exactly what this device was–Pixel 3.
 
