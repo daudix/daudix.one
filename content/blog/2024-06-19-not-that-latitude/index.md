@@ -8,7 +8,7 @@ tags = ["100DaysToOffload", "MacBoy", "Latte"]
 id = "112640483364403774"
 +++
 
-![header](header.png)
+![header](header.png#no-hover)
 
 > **Uninteresting fact:** It was quite hard to get the expressions right, [first version](https://codeberg.org/daudix/website/src/commit/e39dd708a4d39012ce54f23673cb13460210bc75/content/blog/not-that-latitude/header.png) had them very sadge, so I changed them to be a bit more restrained.
 

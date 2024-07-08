@@ -7,7 +7,7 @@ description = "Where, when and how to find me."
 
 <picture>
   <source srcset="envelope-d.png" media="(prefers-color-scheme: dark)" />
-  <img src="envelope-l.png" alt="envelope" />
+  <img class="no-hover" src="envelope-l.png" alt="envelope" />
 </picture>
 
 ## Contacts
