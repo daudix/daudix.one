@@ -58,7 +58,9 @@ It was sitting on my desk. I checked the mail and chats as usual, sent a few mes
 
 Total absence; no vibration, no sound, nothing on the screen, even nothing when connecting to a PC.
 
-Turns out, I'm not the first, and not even the second person to have this exact issue. A [lot of others](https://old.reddit.com/r/GooglePixel/comments/nn7tcn/pixel_3_suddenly_off_and_nothing_will_turn_it/) have [reported the same scenario](https://xdaforums.com/t/fix-pixel-3-qusb_bulk_cid-xxxx_sn-xxxxxxxx.4205331/) and no one managed to get it to boot again. Some took it to repair shops, where they were told to replace the screen, but since the issue was not the screen but rather a hardware bug in the CPU (!!!), it didn't help. Instead, Google sent them new devices.
+Turns out, I'm not the first, and not even the second person to have this exact issue. A [lot of others](https://old.reddit.com/r/GooglePixel/comments/nn7tcn/pixel_3_suddenly_off_and_nothing_will_turn_it/) have [reported the same scenario](https://xdaforums.com/t/fix-pixel-3-qusb_bulk_cid-xxxx_sn-xxxxxxxx.4205331/) and no one managed to get it to boot again. Some took it to repair shops, where they were told to replace the screen, but since the issue was not the screen but rather a hardware bug in the CPU (!!!) that causes the device to stuck in EDL mode, it didn't help. Instead, Google sent them new devices.
+
+Given how popular this problem is, Google should've shared the [signed firehose programmer](https://xdaforums.com/t/fix-pixel-3-qusb_bulk_cid-xxxx_sn-xxxxxxxx.4205331/post-84929449) so people could at least try to do something about it, but 4 years later they still haven't.
 
 Alright, I lied that no one managed to boot it again. One or two managed to boot it after leaving it for a year in a drawer without charging, but *that's it*.
 
