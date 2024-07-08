@@ -1,6 +1,7 @@
 +++
 title = "Pixel's Suicide and My Switch to a Dumbphone"
 description = "How I ended up using a dumbphone as my main and only phone."
+updated = 2024-07-08
 [taxonomies]
 tags = ["100DaysToOffload", "Dumbphone", "Pixel 3"]
 [extra]
