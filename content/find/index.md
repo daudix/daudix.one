@@ -60,7 +60,7 @@ I have changed the Fediverse instance I'm on, so to make sure nothing is lost, h
 
 ## Forges
 
-I was using GitHub from the very start of my FOSS journey, but (not so) recently I've [migrated to Codeberg](@/blog/migration-from-github-to-codeberg/index.md), because I didn't like the direction where GitHub is heading.
+I was using GitHub from the very start of my FOSS journey, but (not so) recently I've [migrated to Codeberg](@/blog/2023-07-15-migration-from-github-to-codeberg/index.md), because I didn't like the direction where GitHub is heading.
 
 - [Codeberg](https://codeberg.org/daudix)
 - [GitHub](https://github.com/daudix)
