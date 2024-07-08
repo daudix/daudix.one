@@ -4,6 +4,8 @@ description = "A little story about my new (for me) laptop."
 updated = 2024-06-25
 [taxonomies]
 tags = ["100DaysToOffload", "MacBoy", "Latte"]
+[extra]
+toc = true
 [extra.comments]
 id = "112640483364403774"
 +++

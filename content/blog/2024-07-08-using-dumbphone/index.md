@@ -1,9 +1,8 @@
 +++
 title = "Pixel's Suicide and My Switch to a Dumbphone"
 description = "How I ended up using a dumbphone as my main and only phone."
-draft = true
 [taxonomies]
-tags = ["100DaysToOffload"]
+tags = ["100DaysToOffload", "Dumbphone", "Pixel 3"]
 [extra]
 toc = true
 [extra.comments]
