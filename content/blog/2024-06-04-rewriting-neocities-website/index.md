@@ -4,8 +4,6 @@ description = "Almost a year later, I got my hands on it."
 updated = 2024-06-22
 [taxonomies]
 tags = ["100DaysToOffload", "Devlog", "Website", "Neocities"]
-[extra]
-featured = true
 [extra.comments]
 id = "112555378913783711"
 +++

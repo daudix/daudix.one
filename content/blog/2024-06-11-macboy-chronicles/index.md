@@ -5,7 +5,6 @@ description = "The most complete story of my previous laptop that one can get, D
 tags = ["100DaysToOffload", "MacBoy"]
 [extra]
 toc = true
-featured = true
 [extra.comments]
 id = "112595182527799666"
 +++
