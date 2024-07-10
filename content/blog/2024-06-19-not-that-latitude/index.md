@@ -30,10 +30,10 @@ So we decided to look at Dell; my Mom had a Dell laptop before and it was a good
 
 Dell Latitude E7470 - 2017 ultrabook in great condition, with decent specs, and, most importantly, 96% sRGB coverage (at least so I thought)! MacBoy had full sRGB coverage, but still, it was very close, and comparing it to other laptops with 56% coverage it was the best variant. The price was sane as well: $230.
 
-![latitude closed](./latitude-closed.jpg)
+![latitude closed](latitude-closed.jpg)
 <figcaption>Feels good to hold a laptop that is twice as thin and light as MacBoy</figcaption>
 
-![latitude open](./latitude-open.jpg)
+![latitude open](latitude-open.jpg)
 <figcaption>Even though its screen is 14 inches it's just as compact as MacBoy; thin bezels compensate the screen size</figcaption>
 
 ## It's Time
@@ -85,6 +85,6 @@ All these little things made my mood better and I no longer regretted the purcha
 
 Overall, I *love* this laptop. MacBoy was a good machine, but this one is a whole new level.
 
-PS: While making the final edits to this post I've come up with a name for Latitude - Latte!
+P.S. While making the final edits to this post I've come up with a name for Latitude - Latte!
 
-PPS: The next post is already in the drafts, and it will be about my switch to a dumbphone or how my Pixel 3 burned violently without warning. (You can never have too many stories about my devices dying, right?)
+P.P.S. The next post is already in the drafts, and it will be about my switch to a dumbphone or how my Pixel 3 burned violently without warning. (You can never have too many stories about my devices dying, right?)
