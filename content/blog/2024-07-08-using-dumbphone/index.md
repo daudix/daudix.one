@@ -1,7 +1,7 @@
 +++
 title = "Pixel's Suicide and My Switch to a Dumbphone"
 description = "How I ended up using a dumbphone as my main and only phone."
-updated = 2024-07-08
+updated = 2024-07-11
 [taxonomies]
 tags = ["100DaysToOffload", "Dumbphone", "Pixel 3"]
 [extra]
@@ -81,11 +81,9 @@ I've been considering switching to a dumbphone to reduce my screen time before, 
 
 ![reminder](reminder.jpg#start)
 
-To this day, I use it to set my morning alarm—yes, alarm in singular, it can't set multiple—to check the time, and sometimes to put some thoughts in its reminders app (that only allows super short sentences) to then rewrite them on my laptop. It also has some exclusive game titles, like "Forbidden Treasures", "Vacation Solitaire", and the famous "Snake Xenzia" (sounds almost like [Xenia](https://xenia-linux-site.glitch.me) XD)
-<br />
-<br />
-<br />
-<!-- I still don't know what is that -->
+To this day, I use it to set my morning alarm—yes, alarm in singular, it can't set multiple—to check the time, and sometimes to put some thoughts in its reminders app (that only allows super short sentences) to then rewrite them on my laptop. It also has some exclusive game titles, like "Forbidden Treasures", "Vacation Solitaire", and the famous "Snake Xenzia" (sounds almost like [Xenia](https://xenia-linux-site.glitch.me) XD).
+
+Battery life doesn't need any praise; nearly a week on a single charge speaks up for itself.
 
 <video class="end" alt="themes" controls src="themes.webm"></video>
 
