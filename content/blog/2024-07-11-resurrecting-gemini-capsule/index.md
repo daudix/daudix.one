@@ -1,5 +1,5 @@
 +++
-title = "Repurposing my Gemini capsule"
+title = "Repurposing My Gemini Capsule"
 description = "My Gemini capsule has been collecting dust. It's time to change that."
 draft = true
 [taxonomies]
