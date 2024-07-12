@@ -6,7 +6,7 @@ description = "About me, what I do, and more."
 <div id="about-splash">
 <div id="avatar-container">
 	<img id="avatar" src="logo.svg" alt="logo" />
-	<img id="it-sucks" class="transparent no-hover" src="this-logo-sucks.png" alt="this logo sucks" />
+	<img id="it-sucks" class="transparent no-hover" alt="this logo sucks" src="this-logo-sucks.png" />
 </div>
 
 # David Lapshin { #header }
@@ -34,13 +34,13 @@ Things that I like:
   - [Cyberpunk](https://aesthetics.fandom.com/wiki/Cyberpunk)
   - [Liminal Space](https://aesthetics.fandom.com/wiki/Liminal_Space)
 - Games:
-  - Portal series <small>(all-time favorite)</small>
-  - The Stanley Parable
-  - Superliminal
-  - Untitled Goose
-  - Stardew Valley
-  - Cyberpunk 2077 <small>(I've only *played* it on YouTube)</small>
+  - Portal <small>(all-time favorite)</small>
+  - Celeste
   - Teardown <small>(I dig its visuals and physics)</small>
+  - Superliminal
+  - Stardew Valley
+  - Untitled Goose
+  - The Stanley Parable
 
 Design is perhaps a bit more than just a thing I like, it's my hobby and I'm learning more about it every day, although lately I've been a bit burned out.
 
