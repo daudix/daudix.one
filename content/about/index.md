@@ -36,7 +36,7 @@ Things that I like:
 - Games:
   - Portal <small>(all-time favorite)</small>
   - Celeste
-  - Teardown <small>(I dig its visuals and physics)</small>
+  - Teardown
   - Superliminal
   - Stardew Valley
   - Untitled Goose
