@@ -15,7 +15,7 @@ Today, I decided to do what [Drew DeVault](https://drewdevault.com) and [makewor
 
 Well, not quite retire, but pretty close.
 
-As you might know, I have a [Gemini capsule](https://gmi.daudix.one) on [flounder](https://flounder.online). I have it for as long as this blog, but all this time I wasn't sure how to use it. I could keep a [gemtext](https://geminiprotocol.net/docs/gemtext.gmi) version of all my posts there, but that's a lot of work, and it's not really worth it, as you can browse my website using `w3m` perfectly well.
+As you might know, I have a [Gemini capsule](gemini://gmi.daudix.one) on [flounder](https://flounder.online). I have it for as long as this blog, but all this time I wasn't sure how to use it. I could keep a [gemtext](https://geminiprotocol.net/docs/gemtext.gmi) version of all my posts there, but that's a lot of work, and it's not really worth it, as you can browse my website using `w3m` perfectly well.
 
 It's simply been collecting dust. It had some out-of-date gemtext versions of blog posts, but that's pretty much it.
 
