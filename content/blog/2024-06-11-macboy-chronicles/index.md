@@ -1,6 +1,7 @@
 +++
 title = "MacBoy Chronicles: The Complete Edition"
 description = "The most complete story of my previous laptop that one can get, DLCs included."
+updated = 2024-07-13
 [taxonomies]
 tags = ["100DaysToOffload", "MacBoy"]
 [extra]
@@ -118,7 +119,7 @@ I used it in this hacky way for a while. It was an unpleasant experience, but th
 
 MacBoy was put in a drawer until better times when a new charger could be bought. In the meantime, I used my mom's laptop to not lose access to a computer entirely.
 
-When the time came, a new charger was bought, and MacBoy was finally working again, but not for long. Very soon, he stopped charging. Since the charger was new, the suspicion fell on the battery, so I used it by powering it on without the battery by disconnecting the battery, holding the power button for 5 seconds and while holding it, connecting the charger and then releasing the power button after 5 seconds. Half a year later, a new charger was purchased. All this time, I used my mom's laptop.
+When the time came, a new charger was bought, and MacBoy was finally working again, but not for long. Very soon, he stopped charging. Since the charger was new, the suspicion fell on the battery, so I used it by powering it on without the battery by disconnecting the charger, holding the power button for 5 seconds, and, while holding it, connecting the charger and then releasing the power button after 5 seconds. Half a year later, a new charger was purchased. All this time, I used my mom's laptop.
 
 The charger worked a single day and then stopped charging. After a month or so, some budget to go to the repair shop was available and we went there, showed the problem and—WAIT IT WORKS, WTF!? Yep, it does; "I will shove the old battery up Satan's ass," I thought. To not lose time on nothing, we replaced the noisy fan that became noisy in the period of waiting for a new charger, the broken HDD cable that unexpectedly died one day, and repasted the CPU. Then we went back home.
 
