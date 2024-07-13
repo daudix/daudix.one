@@ -4,15 +4,11 @@ description = "My Gemini capsule has been collecting dust. It's time to change t
 draft = true
 [taxonomies]
 tags = ["100DaysToOffload", "Gemini"]
+[extra]
+banner = "banner.png#pixels"
 [extra.comments]
 id = ""
 +++
-
-Todo: Change title to "Farewell Gemini" or something along the lines.
-
-Header: https://pixeljoint.com/pixelart/62622.htm
-
-***
 
 Today I decided to do what drewdevault and "the amfora guy" did - retire my gemini capsule.
 

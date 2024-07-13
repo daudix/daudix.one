@@ -62,14 +62,12 @@ Small Web is something I really like, I'm member of multiple tildes/pubnixes, al
 
 Pubnixes/tildes:
 
-- [exozy.me](https://exozy.me) (most used one by me, really cool thing)
-- [envs.net](https://envs.net) (looks promising but I need to figure out the website build pipeline)
+- [exozyme](https://exozy.me)
+- [envs](https://envs.net) <small>(*finger* me at `daudix@envs.net`)</small>
 
-Gemini capsules:
+I have an alt website on [neocities](https://neocities.org), [check it out](https://daudix.neocities.org).
 
-- [flounder.online](https://flounder.online) - *finger* me at `daudix@flounder.online`
-
-I also have a website on [neocities.org](https://neocities.org), [check it out](https://daudix.neocities.org).
+I also have a [Gemini capsule](gemini://gmi.daudix.one) on [flounder](https://flounder.online), but I recently changed it to serve as a place for jotting down small notes. See [this post](@/blog/2024-07-13-repurposing-gemini-capsule/index.md) for the reasons behind this decision.
 
 [![Tilde invasion](tilde-invasion.png)](https://pleroma.envs.net/notice/AeJ5ACKLIOl1bCj2lU)
 

@@ -6,13 +6,13 @@
 				{%- if link.url is matching('https?://') %}
 					<li>
 						<a href="{{ link.url }}">
-							{{ macros_translate::translate(key=link.name, default=link.name, language_strings=language_strings) }}
+							{{- macros_translate::translate(key=link.name, default=link.name, language_strings=language_strings) -}}
 						</a>
 					</li>
 				{%- else %}
 					<li>
 						<a href="{{ get_url(path=link.url, lang=lang)}}">
-							{{ macros_translate::translate(key=link.name, default=link.name, language_strings=language_strings) }}
+							{{- macros_translate::translate(key=link.name, default=link.name, language_strings=language_strings) -}}
 						</a>
 					</li>
 				{%- endif %}
@@ -32,7 +32,7 @@
 	{%- if config.extra.source_url and config.extra.footer.show_source %}
 		<p>
 			<a href="{{ config.extra.source_url }}">
-				{{ macros_translate::translate(key="source", default="Website source", language_strings=language_strings) }}
+				{{- macros_translate::translate(key="source", default="Website source", language_strings=language_strings) -}}
 			</a>
 		</p>
 	{%- endif %}
