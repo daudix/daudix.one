@@ -6,7 +6,7 @@ tags = ["100DaysToOffload", "Gemini"]
 [extra]
 banner = "banner.png#pixels"
 [extra.comments]
-id = ""
+id = "112781226301037872"
 +++
 
 <small>[Banner](https://pixeljoint.com/pixelart/62622.htm) by [Wedmak2](https://pixeljoint.com/p/18694.htm)</small>
