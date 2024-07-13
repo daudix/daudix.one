@@ -52,7 +52,7 @@
 		}
 	}
 
-	#banner {
+	#coffee-banner {
 		margin: 0;
 		box-shadow: none;
 		border-radius: 0;
@@ -317,7 +317,7 @@ body:has(#skeuo-switch:checked) {
 		color: hsl(32 26% 20%);
 		text-shadow: 0 0.0625rem 0 rgba(255, 255, 255, 0.3);
 
-		#banner {
+		#coffee-banner {
 			box-shadow: var(--shadow);
 		}
 
