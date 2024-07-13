@@ -8,6 +8,12 @@ tags = ["100DaysToOffload", "Gemini"]
 id = ""
 +++
 
+Todo: Change title to "Farewell Gemini" or something along the lines.
+
+Header: https://pixeljoint.com/pixelart/62622.htm
+
+***
+
 Today I decided to do what drewdevault and "the amfora guy" did - retire my gemini capsule.
 
 As you might know, I have a Gemini capsule on [flounder](https://flounder.online), I have it for pretty much as long as this blog, but all this time I wasn't sure how to use it. I could keep a gemtext copies of all my posts there, but that's a lot of work and it's not really worth it; you can browse my website using w3m perfectly well.
