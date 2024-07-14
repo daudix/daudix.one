@@ -87,6 +87,7 @@ I also have a [Gemini capsule](gemini://gmi.daudix.one) on [flounder](https://fl
 [![ronbutton](88x31/ronbutton.png)](https://veeronniecaw.space)
 [![seirdy](88x31/seirdy.gif)](https://seirdy.one)
 [![statuscafe](88x31/statuscafe.png)](https://status.cafe)
+[![vscodium](88x31/vscodium.gif)](https://vscodium.com)
 ![adhd](88x31/adhd.gif)
 ![any2](88x31/any2.gif)
 ![anythingbut](88x31/anythingbut.gif)
