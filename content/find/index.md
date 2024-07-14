@@ -1,6 +1,8 @@
 +++
 title = "Find"
 description = "Where, when and how to find me."
+[extra]
+stylesheets = ["find.css"]
 +++
 
 # Find Me
