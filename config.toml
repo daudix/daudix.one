@@ -13,11 +13,7 @@ taxonomies = [{ name = "tags", feed = true }]
 
 [markdown]
 highlight_code = true
-highlight_theme = "css"
-highlight_themes_css = [
-  { theme = "solarized-dark", filename = "syntax-theme-dark.css" },
-  { theme = "solarized-light", filename = "syntax-theme-light.css" },
-]
+highlight_theme = "monokai"
 smart_punctuation = true
 
 [search]
@@ -37,8 +33,8 @@ show_feed = true
 links = [
   { url = "@/about/index.md", name = "About" },
   { url = "@/blog/_index.md", name = "Blog" },
-  { url = "@/coffee/index.md", name = "Coffee" },
   { url = "@/design/index.md", name = "Design" },
+  { url = "@/find/index.md", name = "Find" },
 ]
 
 [extra.footer]
@@ -48,7 +44,7 @@ show_counter = true
 show_john = true
 links = [
   { url = "@/colophon/index.md", name = "Colophon" },
-  { url = "@/find/index.md", name = "Find Me" },
+  { url = "@/coffee/index.md", name = "Coffee" },
   { url = "https://daudix.neocities.org", name = "Neocities" },
 ]
 

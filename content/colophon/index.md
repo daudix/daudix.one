@@ -5,7 +5,7 @@ description = "Some details about this website."
 
 # Colophon
 
-This website is made with great love and attention to details, is constantly updated to be as good as possible, and tries to be very lightweight and (somewhat) compatible with older browsers (at very least it works on iOS 15 and macOS High Sierra; which I'm sure a lot of people still use)
+This website is made with great love and attention to details, is constantly updated to be as good as possible, and tries to be very lightweight and (somewhat) compatible with older browsers. At very least, it works on iOS 15 and macOS High Sierra; which I'm sure a lot of people still use.
 
 It used to be hosted on [GitHub pages](https://web.archive.org/web/20220920130408/https://daudix-ufo.github.io/), then on [Codeberg Pages](https://daudix.one), then on [exozy.me](https://daudix.exozy.me), and now it's hosted on Codeberg Pages again.
 

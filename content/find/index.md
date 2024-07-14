@@ -1,5 +1,5 @@
 +++
-title = "Find Me"
+title = "Find"
 description = "Where, when and how to find me."
 +++
 
