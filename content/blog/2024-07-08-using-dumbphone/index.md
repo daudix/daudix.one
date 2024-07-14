@@ -5,12 +5,11 @@ updated = 2024-07-11
 [taxonomies]
 tags = ["100DaysToOffload", "Dumbphone", "Pixel 3"]
 [extra]
+banner = "banner.png"
 toc = true
 [extra.comments]
 id = "112752002875813283"
 +++
-
-![header](header.png#no-hover)
 
 ## Backstory
 
