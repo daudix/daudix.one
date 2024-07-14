@@ -77,15 +77,21 @@ I also have a [Gemini capsule](gemini://gmi.daudix.one) on [flounder](https://fl
 
 <small>Seriously, they're awesome!</small>
 
-<div id="netscape-buttons-container">
+<div class="buttons-container">
 
 [![a proud member of the green team of 512KB club](88x31/green-team.gif)](https://512kb.club)
+[![aperturelabs](88x31/aperturelabs.png)](https://www.aperturescience.com)
 [![ddg](88x31/ddg.gif)](https://duckduckgo.com)
 [![firefox3](88x31/firefox3.gif)](https://getfirefox.com)
 [![getimiskon](88x31/getimiskon.png)](https://getimiskon.xyz)
-[![notoweb3](88x31/notoweb3.gif)](https://yesterweb.org/no-to-web3/)
+[![iso](88x31/iso.png)](https://www.w3.org/QA/Tips/iso-date)
+[![portal](88x31/portal.png)](https://www.thinkwithportals.com)
 [![ronbutton](88x31/ronbutton.png)](https://veeronniecaw.space)
+[![savewalterwhite](88x31/savewalterwhite.gif)](http://www.savewalterwhite.com)
+[![saynotoweb3](88x31/saynotoweb3.gif)](https://yesterweb.org/no-to-web3/)
 [![seirdy](88x31/seirdy.gif)](https://seirdy.one)
+[![standwith](88x31/standwith.png)](https://decolonizepalestine.com)
+[![stardew-valley](88x31/stardew-valley.gif)](https://www.stardewvalley.net)
 [![statuscafe](88x31/statuscafe.png)](https://status.cafe)
 [![vscodium](88x31/vscodium.gif)](https://vscodium.com)
 ![adhd](88x31/adhd.gif)
@@ -93,17 +99,22 @@ I also have a [Gemini capsule](gemini://gmi.daudix.one) on [flounder](https://fl
 ![anythingbut](88x31/anythingbut.gif)
 ![besteyes2](88x31/besteyes2.gif)
 ![bestviewed16bit](88x31/bestviewed16bit.gif)
+![dark-mode](88x31/dark-mode.png)
 ![fuckchrome](88x31/fuckchrome.gif)
 ![imac](88x31/imac.gif)
 ![linux_powered](88x31/linux_powered.gif)
+![mobilefriendly](88x31/mobilefriendly.png)
 ![neo-fedi](88x31/neo-fedi.gif)
+![nofuckingthanks](88x31/nofuckingthanks.gif)
+![righttorepair](88x31/righttorepair.png)
+![sourcemissing](88x31/sourcemissing.png)
 ![yarrr](88x31/yarrr.gif)
 
 </div>
 
-If you like my website, feel free to link it by adding one of the buttons:
+If you like my website, feel free to link it by adding one of these buttons:
 
-<div id="netscape-buttons-container">
+<div class="buttons-container">
 
 ![daudix](88x31/daudix.gif)
 ![daudix-alt](88x31/daudix-alt.gif)
