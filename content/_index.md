@@ -1,2 +1,4 @@
 +++
+[extra]
+stylesheets = ["index.css"]
 +++

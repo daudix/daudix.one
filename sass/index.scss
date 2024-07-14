@@ -1,0 +1,119 @@
+#status-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	place-items: center;
+	margin: 2rem auto 2rem;
+	max-width: min(calc(var(--container-width) / 2), 100%);
+
+	#avatar-container {
+		position: relative;
+		margin: 0 1rem 0 0;
+
+		#online-indicator {
+			text-wrap: nowrap;
+			position: absolute;
+			right: 0.25rem;
+			bottom: 0.25rem;
+			outline: 0.25rem solid #f3e0f5; // TODO: Replace this nasty hardcoded color
+			border-radius: 0.5rem;
+			background-color: #80848e;
+			padding: 0.125rem 0.25rem;
+			width: 1rem;
+			height: 1rem;
+			overflow: hidden;
+			content: "";
+			color: transparent;
+			font-weight: bold;
+			font-size: 0.75rem;
+			line-height: 1;
+			user-select: none;
+
+			&:hover {
+				width: auto;
+				color: white;
+			}
+
+			&.online {
+				background-color: #23a55a;
+				content: "Online";
+
+				&:hover {
+					color: white;
+				}
+			}
+
+			&.idle {
+				background-color: #f0b232;
+				content: "Idle";
+
+				&:hover {
+					color: rgba(0, 0, 0, 0.8);
+				}
+			}
+
+			&.dnd {
+				background-color: #f23f43;
+				content: "DND";
+
+				&:hover {
+					color: white;
+				}
+			}
+
+			&.offline {
+				background-color: #80848e;
+				content: "Offline";
+			}
+
+			@media (prefers-color-scheme: dark) {
+				outline: 0.25rem solid #130a14;
+			}
+		}
+
+		#avatar {
+			margin: 0;
+			border-radius: 50%;
+			width: 4rem;
+			min-width: 4rem;
+			height: 4rem;
+			min-height: 4rem;
+		}
+	}
+
+	#statuscafe {
+		position: relative;
+		box-shadow: var(--edge-highlight);
+		border-radius: var(--rounded-corner);
+		background-color: var(--primary-color-alpha);
+		padding: 0.5rem;
+		min-height: 2rem;
+
+		&::after {
+			position: absolute;
+			transform: translateY(-50%);
+			inset: 50% auto 50% -0.5rem;
+			border-top: 0.5rem solid transparent;
+			border-right: 0.5rem solid var(--primary-color-alpha);
+			border-bottom: 0.5rem solid transparent;
+			width: 0;
+			height: 0;
+			content: "";
+		}
+
+		&-username {
+			margin-bottom: 0.5rem;
+			color: var(--fg-muted-5);
+			font-size: 0.75rem;
+
+			a {
+				font-size: 1rem;
+			}
+		}
+
+		&-content {
+			color: var(--primary-color);
+			font-weight: bold;
+		}
+	}
+}

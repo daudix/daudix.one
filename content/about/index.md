@@ -1,6 +1,8 @@
 +++
 title = "About"
 description = "About me, what I do, and more."
+[extra]
+stylesheets = ["about.css"]
 +++
 
 <div id="about-splash">
