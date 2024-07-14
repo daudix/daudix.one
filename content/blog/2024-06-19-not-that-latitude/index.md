@@ -6,7 +6,6 @@ updated = 2024-06-25
 tags = ["100DaysToOffload", "MacBoy", "Latte"]
 [extra]
 banner = "banner.png"
-banner_bright = true
 toc = true
 [extra.comments]
 id = "112640483364403774"
