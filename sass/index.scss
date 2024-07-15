@@ -12,9 +12,11 @@
 
 		#online-indicator {
 			text-wrap: nowrap;
+			-webkit-user-select: none;
 			position: absolute;
 			right: 0.25rem;
 			bottom: 0.25rem;
+			cursor: default;
 			outline: 0.25rem solid #f3e0f5; // TODO: Replace this nasty hardcoded color
 			border-radius: 0.5rem;
 			background-color: #80848e;
@@ -67,7 +69,7 @@
 			}
 
 			@media (prefers-color-scheme: dark) {
-				outline: 0.25rem solid #0a1017;
+				outline: 0.25rem solid #130a14;
 			}
 		}
 
