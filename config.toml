@@ -22,8 +22,6 @@ index_format = "elasticlunr_json"
 [extra]
 primary_color = "#c061cb"
 primary_color_alpha = "rgba(192, 97, 203, 0.2)"
-primary_color_dark = "#62a0ea"
-primary_color_dark_alpha = "rgba(98, 160, 234, 0.2)"
 animated_favicon = true
 issues_url = "https://codeberg.org/daudix/website/issues"
 source_url = "https://codeberg.org/daudix/website"

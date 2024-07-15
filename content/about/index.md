@@ -8,10 +8,7 @@ stylesheets = ["about.css"]
 <div id="about-splash">
 <div id="avatar-container">
 	<img id="avatar" src="logo.svg" alt="logo" />
-  <picture>
-    <source srcset="this-logo-sucks-d.png" media="(prefers-color-scheme: dark)" />
-    <img id="it-sucks" class="transparent no-hover" src="this-logo-sucks-l.png" alt="this logo sucks" />
-  </picture>
+  <img id="it-sucks" class="transparent no-hover" src="this-logo-sucks.png" alt="this logo sucks" />
 </div>
 
 # David Lapshin { #header }

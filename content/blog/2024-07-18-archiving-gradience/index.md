@@ -3,7 +3,7 @@ title = "Gradience Was Quite a Ride, Now It’s Time to Move On"
 description = "The most complete history of Gradience you'll ever find."
 draft = true
 [taxonomies]
-tags = ["100DaysToOffload"]
+tags = ["100DaysToOffload", "Gradience"]
 [extra]
 disclaimer = """
 - This post doesn't provide any names; this post isn't made to offend anyone but to give an idea of what was going on.
