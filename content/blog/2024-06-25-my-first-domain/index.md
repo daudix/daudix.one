@@ -20,7 +20,9 @@ At first (back in the ["Space" theme era](https://web.archive.org/web/2022092013
 
 It was perfect: *one* of the cheapest options, *one* of a kind, and not a boring *one*.
 
-> **Uninteresting fact:** Only after getting the domain, I realized it's actually a huge [one](https://www.youtube.com/watch?v=EE4mslnibzQ) reference. So yes, the pun was not in fact intended.
+{% alert(fact=true) %}
+Only after getting the domain, I realized it's actually a huge [one](https://www.youtube.com/watch?v=EE4mslnibzQ) reference. So yes, the pun was not in fact intended.
+{% end %}
 
 A while later, I finally decided it was time, even if I might not be able to pay for the next year.
 
@@ -58,12 +60,16 @@ The next day, I created the `pages` repository and added a `_redirects` file to 
 
 Yup, that's the entire file! It doesn't work perfectly though; links have a double slash after the domain (`daudix.one//blog/`), but it doesn't seem to affect page loading, so it's fine, I guess?
 
-> **Edit:** Awesome [Anthony](https://a.exozy.me) suggested me to try removing the slash between the domain and `:splat` (so it becomes `https://daudix.one:splat`), and it worked!
+{% alert(edit=true) %}
+Awesome [Anthony](https://a.exozy.me) suggested me to try removing the slash between the domain and `:splat` (so it becomes `https://daudix.one:splat`), and it worked!
+{% end %}
 
-> **Edit #2:** Changed HTTP response from 302 "Moved Temporarily" to 301 "Moved Permanently". The final `_redirects` is:
->
-> ```txt
-> /* https://daudix.one:splat 301
-> ```
+{% alert(edit=true) %}
+Changed HTTP response from 302 "Moved Temporarily" to 301 "Moved Permanently". The final `_redirects` is:
+
+```txt
+/* https://daudix.one:splat 301
+```
+{% end %}
 
 And that's about it! I'm super happy to be a real internet citizen and, in the long run, to be able to move the site between different hosting services without constantly changing links everywhere.
