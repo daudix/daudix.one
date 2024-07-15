@@ -1,6 +1,6 @@
 +++
 title = "Gradience Was Quite a Ride, Now It’s Time to Move On"
-description = ""
+description = "The most complete history of Gradience you'll ever find."
 draft = true
 [taxonomies]
 tags = ["100DaysToOffload"]
