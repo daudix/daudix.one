@@ -9,11 +9,15 @@ toc = true
 
 This post is made to give you basic understanding of what Gemini is, what are Capsules and Gemlogs, modern-day use of retro image techniques and text-based art
 
-> I highly recommend you to read geminiquickst.art before this post, because it provides a lot of valuable information about Gemini, and it is better written than this post
+{% alert(tip=true) %}
+I highly recommend you to read geminiquickst.art before this post, because it provides a lot of valuable information about Gemini, and it is better written than this post.
+{% end %}
 
 ## What Is Gemini
 
-> For more accurate and in-depth answer to this question see [Project Gemini FAQ](https://gemini.circumlunar.space/docs/faq.gmi)
+{% alert(note=true) %}
+For more accurate and in-depth answer to this question see [Project Gemini FAQ](https://gemini.circumlunar.space/docs/faq.gmi)
+{% end %}
 
 Gemini is how some people call it - "smol web" - <abbr title="World Wide Web (WWW)">web</abbr> without distracting elements such as ads, stylesheets that define website look, various tracking scripts, cookies and etc.
 

@@ -20,7 +20,9 @@ stylesheets = ["about.css"]
 
 Hello there! My name is David, you may know me by my online handle Daudix.
 
-> Although Daudix appears to be just my online handle, it's actually a slightly different persona; perhaps more silly and authentic than the "official" David, but it's fine to use whatever you like.
+{% alert(fact=true) %}
+Although Daudix appears to be just my online handle, it's actually a slightly different persona; perhaps more silly and authentic than the "official" David, but it's fine to use whatever you like.
+{% end %}
 
 I'm from the Siberian part of Russia, but currently live in <abbr id="abyss" title="If you know, you know">a̸͙͠b̴̛ͅȳ̴̜s̴̫̄s̸̞̒</abbr>.
 
