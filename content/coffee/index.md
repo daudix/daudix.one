@@ -9,7 +9,7 @@ stylesheets = ["coffee.css"]
 	<div id="avatar-container">
 		<img id="avatar" class="no-hover" src="/assets/avatar.svg" />
 	</div>
-	<div id="banner-container">
+	<div id="coffee-banner-container">
 		<p id="blobfox-message">Hewwo~ 0w0</p>
 		<img id="blobfox" class="transparent no-hover" src="neofox-stretch-down.png" />
 		<img id="coffee-banner" class="no-hover" src="banner.webp" />

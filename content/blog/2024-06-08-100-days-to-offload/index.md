@@ -7,7 +7,7 @@ tags = ["100DaysToOffload"]
 id = "112582292475911778"
 +++
 
-Ever since the emergence of this website, I’ve blogged rarely and only about stuff that I considered not too boring or "cringy"... Well, it's time to break all that- <mark class="audio" onclick="playAudio('party-horn.mp3')">Party Horn</mark>!
+Ever since the emergence of this website, I’ve blogged rarely and only about stuff that I considered not too boring or "cringy"... Well, it's time to break all that- <button class="audio" onclick="playAudio('party-horn.mp3')">Party Horn</button>!
 
 Did I just swear? -Anyway.
 

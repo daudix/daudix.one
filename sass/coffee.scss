@@ -6,13 +6,6 @@
 	width: min(calc(var(--container-width) / 2), 100%);
 	text-align: center;
 
-	#banner-container {
-		position: relative;
-		border-radius: 2.25rem 2.25rem 0 0;
-		padding-bottom: 1rem;
-		overflow: hidden;
-	}
-
 	#blobfox {
 		position: absolute;
 		top: 0;
@@ -41,24 +34,31 @@
 		text-shadow: none;
 	}
 
-	#banner-container:active {
-		#blobfox {
-			transform: translateY(0) scaleY(-1);
-		}
-
-		#blobfox-message {
-			transform: scale(1) rotate(0) translateY(0);
-			opacity: 1;
-		}
-	}
-
-	#coffee-banner {
-		margin: 0;
-		box-shadow: none;
-		border-radius: 0;
+	#coffee-banner-container {
+		position: relative;
+		border-radius: 2.25rem 2.25rem 0 0;
+		padding-bottom: 1rem;
+		overflow: hidden;
 
 		&:active {
-			transform: translateY(-100%);
+			#blobfox {
+				transform: translateY(0) scaleY(-1);
+			}
+
+			#blobfox-message {
+				transform: scale(1) rotate(0) translateY(0);
+				opacity: 1;
+			}
+		}
+
+		#coffee-banner {
+			margin: 0;
+			box-shadow: none;
+			border-radius: 0;
+
+			&:active {
+				transform: translateY(-100%);
+			}
 		}
 	}
 
@@ -220,7 +220,9 @@ body:has(#skeuo-switch:checked) {
 		background-color: transparent;
 
 		nav {
-			a {
+
+			a,
+			#search button {
 				color: rgba(0, 0, 0, 0.7);
 				text-shadow: 0 0.0625rem 0 rgba(255, 255, 255, 0.8);
 
@@ -244,18 +246,16 @@ body:has(#skeuo-switch:checked) {
 				position: absolute;
 			}
 
-			#search,
-			#feed {
+			#search button,
+			#feed a {
 				filter: drop-shadow(0 0.0625rem 0 rgba(255, 255, 255, 0.8));
 
-				a {
-					.icon {
-						background-color: rgba(0, 0, 0, 0.7);
-					}
+				.icon {
+					background-color: rgba(0, 0, 0, 0.7);
+				}
 
-					&:hover .icon {
-						background-color: black;
-					}
+				&:hover .icon {
+					background-color: black;
 				}
 			}
 		}
@@ -409,7 +409,9 @@ body:has(#skeuo-switch:checked) {
 			background-image: linear-gradient(rgba(80, 80, 80, 0.95), rgba(32, 32, 32, 0.9) 50%, rgba(0, 0, 0, 0.8) 50%);
 
 			nav {
-				a {
+
+				a,
+				#search button {
 					color: rgba(255, 255, 255, 0.7);
 					text-shadow: 0 -0.0625rem 0 rgba(0, 0, 0, 0.8);
 
@@ -429,18 +431,16 @@ body:has(#skeuo-switch:checked) {
 					}
 				}
 
-				#search,
-				#feed {
+				#search button,
+				#feed a {
 					filter: drop-shadow(0 -0.0625rem 0 rgba(0, 0, 0, 0.8));
 
-					a {
-						.icon {
-							background-color: rgba(255, 255, 255, 0.7);
-						}
+					.icon {
+						background-color: rgba(255, 255, 255, 0.7);
+					}
 
-						&:hover .icon {
-							background-color: white;
-						}
+					&:hover .icon {
+						background-color: white;
 					}
 				}
 			}

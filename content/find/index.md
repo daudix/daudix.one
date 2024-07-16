@@ -14,13 +14,13 @@ stylesheets = ["find.css"]
 
 ## Contacts
 
-Currently it's <time><span id="clock"><noscript>NO:JS</noscript></span></time> <small>(UTC+3)</small> for me, so take that into consideration if I don't respond promptly.
+Currently it's <time><span id="clock"><noscript>NO:JS</noscript></span></time> <small>(UTC+3)</small> for me, so take that into consideration.
 
 {% alert(tip=true) %}
 Check my online status on the [home](@/_index.md) page in the form of a small dot on the avatar.
 {% end %}
 
-Feel free to send me a message on any of these. Whether you're bored or need someone to listen to you, I'm always open!
+Feel free to message me on any of these.
 
 <small>From most preferred to the least ↓</small>
 
@@ -39,7 +39,7 @@ Feel free to send me a message on any of these. Whether you're bored or need som
 List of places where you can ~~stalk~~ find me on:
 
 {% alert(note=true) %}
-This is not a complete list but rather places where I'm somewhat active. You can find me on other platforms as well, although make sure it's the real me by [asking](#contacts) first.
+This is not a complete list, but rather list of places where I'm somewhat active. You can find me on other platforms as well, although make sure it's the real me by [asking](#contacts) first.
 {% end %}
 
 <small>From most active to the least ↓</small>

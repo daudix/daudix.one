@@ -8,7 +8,7 @@ stylesheets = ["about.css"]
 <div id="about-splash">
 <div id="avatar-container">
 	<img id="avatar" src="logo.svg" alt="logo" />
-  <div id="it-sucks" alt="this logo sucks"></div>
+  <div id="it-sucks" role="img" aria-label="this logo sucks"></div>
 </div>
 
 # David Lapshin { #header }
@@ -50,7 +50,7 @@ Design is perhaps a bit more than just a thing I like, it's my hobby and I'm lea
 
 And, as you can see, I do some web development! I like working with CSS and HTML but that's about it, I have no clue how to work with JS :D
 
-Oh and I'm slightly <span id="shy" onclick="fluttershyAnim()">shy</span>.
+Oh and I'm slightly <button id="shy" onclick="fluttershyAnim()">shy</button>.
 
 ## Works
 
@@ -127,9 +127,9 @@ If you like my website, feel free to link it by adding one of these buttons:
 It's recommended to avoid hot-linking; instead, place a copy on your own site.
 {% end %}
 
-Hey, you, yes, *you*. Got website and a button? Just button? I have a deal for you! [Ping me somewhere](@/find/index.md#contacts) so I can add it here, piece of cake.
+Hey, you, yes, *you*. Got a website and a button? Just a button? I got a deal for you! [Ping me somewhere](@/find/index.md#contacts) so I can add it here, easy as pie!
 
-<img id="fluttershy" class="transparent no-hover drop-shadow" src="fluttershy.gif" />
+<img id="fluttershy" class="transparent no-hover drop-shadow" alt="fluttershy" src="fluttershy.gif" />
 
 <script>
   const fluttershy = document.getElementById("fluttershy");

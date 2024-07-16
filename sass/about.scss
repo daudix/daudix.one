@@ -67,7 +67,13 @@
 }
 
 #shy {
+	-webkit-appearance: none;
+	appearance: none;
 	cursor: pointer;
+	border: none;
+	background-color: unset;
+	padding: 0;
+	font-size: 1em;
 	text-decoration: underline;
 	text-decoration-style: dotted;
 	text-decoration-thickness: max(1px, 0.0625em);
@@ -88,7 +94,7 @@
 	height: 11.0625rem;
 
 	&.flying {
-		animation: flight 2.5s linear;
+		animation: flight 1.5s linear;
 
 		@keyframes flight {
 			to {

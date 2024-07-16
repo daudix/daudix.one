@@ -128,7 +128,7 @@ The blog have seen the most of the changes, it all were flipped upside down to b
 
 ## One More Thing™
 
-<mark class="audio" onclick="playAudio('drum-roll.mp3')">Drum Roll</mark> I have a new site at Neocities! it will not replace this one, it's just a silly playground that has this old look. You know... Geocities and stuff.
+<button class="audio" onclick="playAudio('drum-roll.mp3')">Drum Roll</button> I have a new site at Neocities! it will not replace this one, it's just a silly playground that has this old look. You know... Geocities and stuff.
 
 It's empty <abbr title="At The Moment">ATM</abbr>, but it has [AD-HD button](https://mstdn.social/@Daudix/110872543493210479)!
 
