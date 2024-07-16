@@ -27,11 +27,19 @@
 		}
 
 		#it-sucks {
+			$url: url("about/this-logo-sucks.svg");
+			-webkit-mask-image: $url;
 			position: absolute;
 			top: 4.5rem;
 			left: 9rem;
-			margin: 0;
-			max-width: none;
+			mask-image: $url;
+			background-color: var(--primary-color);
+			width: 10.9375rem; // 175px
+			height: 7.0625rem; // 113px
+
+			@media only screen and (max-width: 509px) {
+				display: none;
+			}
 		}
 	}
 
