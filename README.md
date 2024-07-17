@@ -4,7 +4,7 @@
 
 # [Daudix’s Blog](https://daudix.one) <img src="logo.png" alt="Logo" width="96" align="right"/>
 
-This is my personal website. It is powered by [Zola](https://www.getzola.org) and [Duckquill](https://duckquill.daudix.one).
+This is the source code for personal website. It is powered by [Zola](https://www.getzola.org) and [Duckquill](https://duckquill.daudix.one).
 
 ![Screenshot](screenshot.png)
 
