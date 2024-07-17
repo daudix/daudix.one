@@ -9,7 +9,7 @@ banner = "banner.png#pixels"
 id = "112781226301037872"
 +++
 
-<small>[Banner](https://pixeljoint.com/pixelart/62622.htm) by [Wedmak2](https://pixeljoint.com/p/18694.htm)</small>
+<small>[Banner](https://pixeljoint.com/pixelart/62622.htm) by [Wedmak2](https://pixeljoint.com/p/18694.htm).</small>
 
 Today, I decided to do what [Drew DeVault](https://drewdevault.com) and [makeworld](https://www.makeworld.space/2023/08/bye_gemini.html) did - retire my Gemini capsule.
 

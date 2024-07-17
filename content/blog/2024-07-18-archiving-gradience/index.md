@@ -5,12 +5,15 @@ draft = true
 [taxonomies]
 tags = ["100DaysToOffload", "Gradience"]
 [extra]
+banner = "banner.webp"
 disclaimer = """
 - This post doesn't provide any names; this post isn't made to offend anyone but to give an idea of what was going on.
 - This post doesn't link to mentioned posts since I was a different person two years ago and find it very cringy.
 """
 toc = true
 +++
+
+<small>Sky photo by [Clyde RS](https://unsplash.com/@imclyde) on [Unsplash](https://unsplash.com/photos/clouds-under-clear-blue-sky-during-daytime-4XbZCfU2Uoo).</small>
 
 ## Backstory
 
@@ -44,7 +47,7 @@ Since then, we continued working on the project; the new maintainer implemented 
 
 ### Rename in Progress
 
-A month later, the app was somewhat feature-complete, and we finally managed to upload it to Flathub (we didn't that earlier on because Gradience used newly added liabdwaita message dialog widgets that weren't available in the stable version), so we thought a bit and decided to make an announcement about it on <abbr title="This Week In GNOME">[TWIG](https://gitlab.gnome.org/Teams/Websites/thisweek.gnome.org/-/blob/main/README.md)</abbr>. Shortly after the TWIG was published, I got contacted by one of the GNOME designers, asking if the project could use a name that's less likely to be confused with an official GNOME app.
+A month later, the app was somewhat feature-complete, and we finally managed to upload it to Flathub (we didn't that earlier on because Gradience used newly added liabdwaita message dialog widgets that weren't available in the stable version), so we thought a bit and decided to make an announcement about it on [TWIG](https://thisweek.gnome.org). Shortly after the TWIG was published, I got contacted by one of the GNOME designers, asking if the project could use a name that's less likely to be confused with an official GNOME app.
 
 ![rename request](rename-request.png)
 <figcaption>Screenshot of the chat with GNOME designer asking about the rename</figcaption>
