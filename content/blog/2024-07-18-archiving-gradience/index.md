@@ -80,6 +80,8 @@ Five months later and no work has been done whatsoever.
 
 I understood that this couldn't go on forever. People *will* keep asking the same questions, they *will* keep asking for the new release date, and I *will* keep having to answer them. To be fair, some people did the work for me and answered those questions, so it wasn't quite as bad (you know who you are, thanks!).
 
+The app was last updated over a year ago, and the new release wasn't ready, we just did a beta release to test the WIP GNOME Shell theming, so it was left at this `0.8.0-beta1` position.
+
 Last month, I scraped up all the courage and the remaining social battery and did what I had been planning to do for a while; announced that the project was looking for a new maintainer. Again. Just like the first time.
 
 But just like the first time, no one responded in two weeks, so I did what I had been thinking about and what one Reddit comment suggested: archived the project, the entire GitHub organization.
@@ -105,3 +107,5 @@ I thought so at the moment of writing the early draft. There's some promising wo
 Okay okay! It's a rewrite of Gradience, you ready? in Rust. Called Chameleon. You satisfied?
 
 There's some other things happening behind the scenes, but I can't say much just yet :P
+
+And now that we are on a positive note, I can say: see you next time!
