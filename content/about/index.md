@@ -50,7 +50,7 @@ Design is perhaps a bit more than just a thing I like, it's my hobby and I'm lea
 
 And, as you can see, I do some web development! I like working with CSS and HTML but that's about it, I have no clue how to work with JS :D
 
-Oh and I'm slightly <button id="shy" onclick="fluttershyAnim()">shy</button>.
+And, quoting [Jeffrey Serio](https://hyperreal.coffee/about/): "I’m <button id="shy" onclick="fluttershyAnim()">shy</button> and might come across as reserved and standoffish at first, but I open up when I get more comfortable with people."
 
 ## Works
 

@@ -73,6 +73,7 @@
 	border: none;
 	background-color: unset;
 	padding: 0;
+	color: var(--fg-color);
 	font-size: 1em;
 	text-decoration: underline;
 	text-decoration-style: dotted;
@@ -94,7 +95,7 @@
 	height: 11.0625rem;
 
 	&.flying {
-		animation: flight 1.5s linear;
+		animation: flight 2s linear;
 
 		@keyframes flight {
 			to {
