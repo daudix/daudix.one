@@ -10,6 +10,8 @@ disclaimer = """
 - This post doesn't link to some of the mentioned resources because I used to be a different person at the time, and find it very cringey.
 """
 toc = true
+[extra.comments]
+id = "112804700367926214"
 +++
 
 <small>Photo by [Clyde RS](https://unsplash.com/@imclyde) on [Unsplash](https://unsplash.com/photos/clouds-under-clear-blue-sky-during-daytime-4XbZCfU2Uoo).</small>
