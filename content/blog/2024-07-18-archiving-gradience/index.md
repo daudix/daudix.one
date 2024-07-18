@@ -99,6 +99,9 @@ Special thanks to Gradience's off-topic "Water Cooler" room; it's such a nice pl
 
 This is the end. For now. Goodbye, Gradience.
 
+![saluting](saluting.png)
+![shell-preview](shell-preview.png)
+
 Ha, no.
 
 I thought so at the moment of writing the early draft. There's some promising work being done by one of my friends, it's still in the early stages, but I'm looking forward to it.
