@@ -51,7 +51,7 @@ Since then, we continued to work on the project; the new maintainer implemented 
 A month later, the app was somewhat feature complete, and with the help of [Lyes](https://github.com/lyessaadi) we finally managed to upload it to Flathub (we hadn't done so before because Gradience used newly added liabdwaita message dialog widgets that weren't available in the stable release), so we did some thinking and decided to post an announcement about it on [TWIG](https://thisweek.gnome.org). Shortly after the TWIG post, one of the GNOME designers contacted me and asked if the project could use a name that wouldn't be confused with an official GNOME app.
 
 ![rename request](rename-request.png)
-<figcaption>Screenshot of the chat with GNOME designer asking about the rename</figcaption>
+<figcaption>Screenshot of the chat with the GNOME designer asking about the renaming</figcaption>
 
 In retrospect, this makes perfect sense, but at the time I was... offended? Anyhow, I promptly opened a new discussion on GitHub and we started brainstorming the new name.
 
