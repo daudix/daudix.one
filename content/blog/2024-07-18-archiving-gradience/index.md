@@ -1,7 +1,6 @@
 +++
 title = "Gradience Autopsy: Rise and Set"
 description = "The most complete history of Gradience you'll ever find."
-draft = true
 [taxonomies]
 tags = ["100DaysToOffload", "Gradience"]
 [extra]
