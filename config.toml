@@ -13,7 +13,8 @@ taxonomies = [{ name = "tags", feed = true }]
 
 [markdown]
 highlight_code = true
-highlight_theme = "monokai"
+extra_syntaxes_and_themes = ["sublime"]
+highlight_theme = "MonokaiPro"
 smart_punctuation = true
 
 [search]
