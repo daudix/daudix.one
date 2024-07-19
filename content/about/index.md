@@ -95,6 +95,7 @@ I also have a [Gemini capsule](gemini://gmi.daudix.one) on [flounder](https://fl
 [![standwith](88x31/standwith.png)](https://decolonizepalestine.com)
 [![stardew-valley](88x31/stardew-valley.gif)](https://www.stardewvalley.net)
 [![statuscafe](88x31/statuscafe.png)](https://status.cafe)
+[![valid-atom](88x31/valid-atom.png)](https://validator.w3.org/feed/)
 [![vscodium](88x31/vscodium.gif)](https://vscodium.com)
 ![adhd](88x31/adhd.gif)
 ![any2](88x31/any2.gif)
