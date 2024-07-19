@@ -145,7 +145,7 @@ We'll see, I plan to publish more posts, at least I have an idea for the next on
 
 Phew, that's a lot, 2 months of work! truly happy how it all comes up, hope you too, this is most long-lived site thingy yet, I have learned a lot about <abbr title="Cascading Style Sheets">CSS</abbr> and <abbr title="HyperText Markup Language">HTML</abbr>, and I really like doing this!
 
-<script>
+<script type="text/javascript">
 	function playAudio(url) {
 		new Audio(url).play();
 	}

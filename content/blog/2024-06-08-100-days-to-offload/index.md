@@ -28,7 +28,7 @@ And so, the [previous post](@/blog/2024-06-04-rewriting-neocities-website/index.
 
 Don't know how long I'll last, but still it's worth giving it a shot!
 
-<script>
+<script type="text/javascript">
 	function playAudio(url) {
 		new Audio(url).play();
 	}

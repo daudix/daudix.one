@@ -131,7 +131,7 @@ Hey, you, yes, *you*. Got a website and a button? Just a button? I got a deal fo
 
 <img id="fluttershy" class="transparent no-hover drop-shadow" alt="fluttershy" src="fluttershy.gif" />
 
-<script>
+<script type="text/javascript">
   const fluttershy = document.getElementById("fluttershy");
 
   function fluttershyAnim() {

@@ -69,7 +69,7 @@ I was using GitHub from the very start of my FOSS journey, but (not so) recently
 - [GitLab](https://gitlab.com/daudix)
 - [GitLab (GNOME)](https://gitlab.gnome.org/daudix)
 
-<script>
+<script type="text/javascript">
   function updateClock() {
     const options = {
       // No, I'm not in Moscow, just so happens the timezone is the same there
