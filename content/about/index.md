@@ -26,29 +26,30 @@ Although Daudix appears to be just my online handle, it's actually a slightly di
 
 I'm from the Siberian part of Russia, but currently live in <abbr id="abyss" title="If you know, you know">a̸͙͠b̴̛ͅȳ̴̜s̴̫̄s̸̞̒</abbr>.
 
-Things that I like:
-- Retro/-futurism and vintage stuff
-- Minor details and references
-- Smol/indie web
-- Photography <small>(although I don't have much opportunity to shoot anything else than a view from my window)</small>
+Some things that I like:
+- Purple <small>(it's shocking)</small>
 - Design
-- Purple <small>(I know, it's shocking)</small>
+- Games:
+  - Portal <small>(all-time favorite)</small>
+  - Celeste <small>(such a lovely game)</small>
+  - Teardown <small>(fun destructions)</small>
+  - Superliminal <small>(F-Stop if it wasn't scrapped)</small>
+  - Stardew Valley <small>(was fun until sis spoiled *everything*)</small>
+  - Untitled Goose <small>(*honk-honk!* I love geese, by the way)</small>
+  - The Stanley Parable <small>(fake feeling of choice, just like IRL)</small>
 - Aesthetics:
   - [Vaporwave](https://aesthetics.fandom.com/wiki/Vaporwave)
   - [Cyberpunk](https://aesthetics.fandom.com/wiki/Cyberpunk)
   - [Liminal Space](https://aesthetics.fandom.com/wiki/Liminal_Space)
-- Games:
-  - Portal <small>(all-time favorite)</small>
-  - Celeste
-  - Teardown
-  - Superliminal
-  - Stardew Valley
-  - Untitled Goose
-  - The Stanley Parable
+- Photography <small>(although I don't have much opportunity to shoot anything else than a view from my window)</small>
+- Smol/indie web
+- Minor details and references
+- Retro/-futurism and vintage stuff
+- Making this list look like a staircase
 
 Design is perhaps a bit more than just a thing I like, it's my hobby and I'm learning more about it every day, although lately I've been a bit burned out.
 
-And, as you can see, I do some web development! I like working with CSS and HTML but that's about it, I have no clue how to work with JS :D
+And, as you can see, I do some web development! I like working with CSS and HTML but that's about it, JS is a bit of a mystery for me :D
 
 And, quoting [Jeffrey Serio](https://hyperreal.coffee/about/): "I’m <button id="shy" onclick="fluttershyAnim()">shy</button> and might come across as reserved and standoffish at first, but I open up when I get more comfortable with people."
 
@@ -56,9 +57,7 @@ And, quoting [Jeffrey Serio](https://hyperreal.coffee/about/): "I’m <button id
 
 I mostly create and improve icons for around-GNOME apps, if app doesn't have a translation I do it, sometimes I help with UI design.
 
-Currently member of [Nickvision](https://nickvision.org) and [Gradience](https://gradienceteam.github.io) teams as a designer and maintainer respectively.
-
-Have a look at my [designs](@/design/index.md), mostly icons but also some wallpapers (one of them is even shipped with GNOME).
+Have a look at my [designs](@/design/index.md); mostly icons, but also some wallpapers (one of them is part of GNOME).
 
 ## Small Web
 
