@@ -42,4 +42,4 @@ Today I have finally decided: I'll keep the capsule, but will get rid of all the
 - Type the actual note.
 - Open terminal.
 - `git add` said note, commit, and push.
-- Wait for the <abbr title="Continuous integration">CI</abbr> to complete.
+- Wait for the <abbr title="continuous integration">CI</abbr> to complete.

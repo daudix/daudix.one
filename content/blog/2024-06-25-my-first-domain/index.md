@@ -18,7 +18,7 @@ Today—I mean, the 22nd of June—I fulfilled my little dream: I got my very ow
 
 Yes, you read that right. My dream was to have my own domain. I don't know what's wrong with me; I just wanted it so badly.
 
-At first (back in the ["Space" theme era](https://web.archive.org/web/20221030010150/https://daudix-ufo.github.io/)), I thought I'd get daudix.space, but later on changed my mind since I'm not really into astronomy, it felt a bit lengthy and I didn't plan on hosting public services, which are usually associated with this <abbr title="Top-level domain">TLD</abbr>. I considered other options, but they were expensive. Then I remembered about [zagura.one](https://zagura.one) and [seirdy.one](https://seirdy.one), what was common about them is this nice TLD: one.
+At first (back in the ["Space" theme era](https://web.archive.org/web/20221030010150/https://daudix-ufo.github.io/)), I thought I'd get daudix.space, but later on changed my mind since I'm not really into astronomy, it felt a bit lengthy and I didn't plan on hosting public services, which are usually associated with this <abbr title="top-level domain">TLD</abbr>. I considered other options, but they were expensive. Then I remembered about [zagura.one](https://zagura.one) and [seirdy.one](https://seirdy.one), what was common about them is this nice TLD: one.
 
 It was perfect: *one* of the cheapest options, *one* of a kind, and not a boring *one*.
 

@@ -96,7 +96,7 @@ The blog have seen the most of the changes, it all were flipped upside down to b
 <figcaption>...And in dark</figcaption>
 
 - Some colors have been changed, all in all should be more pleasant to the eye.
-- Everything now respects global variables, so e.g you can change accent color, roundness, shadows and maximum content width without going through the whole 1200+ <abbr title="Lines Of Code">LOC</abbr> <abbr title="Cascading Style Sheets">CSS</abbr>, this is made not only to keep myself sane but also for _you_ to make it easier to build upon ;)
+- Everything now respects global variables, so e.g you can change accent color, roundness, shadows and maximum content width without going through the whole 1200+ <abbr title="lines of code">LOC</abbr> <abbr title="Cascading Style Sheets">CSS</abbr>, this is made not only to keep myself sane but also for _you_ to make it easier to build upon ;)
 
 <video alt="color variables" controls src="color-variables.webm"></video>
 <figcaption>Me changing 2 color variables and site respecting this</figcaption>
@@ -130,7 +130,7 @@ The blog have seen the most of the changes, it all were flipped upside down to b
 
 <button class="audio" onclick="playAudio('drum-roll.mp3')">Drum Roll</button> I have a new site at Neocities! it will not replace this one, it's just a silly playground that has this old look. You know... Geocities and stuff.
 
-It's empty <abbr title="At The Moment">ATM</abbr>, but it has [AD-HD button](https://mstdn.social/@Daudix/110872543493210479)!
+It's empty <abbr title="at the moment">ATM</abbr>, but it has [AD-HD button](https://mstdn.social/@Daudix/110872543493210479)!
 
 [Visit it here](https://daudix.neocities.org)
 

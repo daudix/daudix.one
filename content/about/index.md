@@ -36,7 +36,7 @@ Some things that I like:
   - Superliminal <small>(F-Stop if it wasn't scrapped)</small>
   - Stardew Valley <small>(was fun until sis spoiled *everything*)</small>
   - Untitled Goose <small>(*honk-honk!* I love geese, by the way)</small>
-  - The Stanley Parable <small>(fake feeling of choice, just like IRL)</small>
+  - The Stanley Parable <small>(fake feeling of choice, just like <abbr title="in real life">IRL</abbr>)</small>
 - Aesthetics:
   - [Cyberpunk](https://aesthetics.fandom.com/wiki/Cyberpunk)
   - [Vaporwave](https://aesthetics.fandom.com/wiki/Vaporwave)
