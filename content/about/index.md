@@ -38,8 +38,8 @@ Some things that I like:
   - Untitled Goose <small>(*honk-honk!* I love geese, by the way)</small>
   - The Stanley Parable <small>(fake feeling of choice, just like IRL)</small>
 - Aesthetics:
-  - [Vaporwave](https://aesthetics.fandom.com/wiki/Vaporwave)
   - [Cyberpunk](https://aesthetics.fandom.com/wiki/Cyberpunk)
+  - [Vaporwave](https://aesthetics.fandom.com/wiki/Vaporwave)
   - [Liminal Space](https://aesthetics.fandom.com/wiki/Liminal_Space)
 - Photography <small>(although I don't have much opportunity to shoot anything else than a view from my window)</small>
 - Smol/indie web
