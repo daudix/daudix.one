@@ -46,8 +46,8 @@ This is not a complete list, but rather list of places where I'm somewhat active
 
 - [Mastodon](https://social.treehouse.systems/@daudix)
 - [Akkoma](https://pleroma.envs.net/daudix)
-- [Pixelfed](https://pixelfed.social/Daudix)
 - [Lemmy](https://lemmy.zip/u/daudix)
+- [Pixelfed](https://pixelfed.social/Daudix)
 - [YouTube](https://www.youtube.com/@ddaudix)
 
 I have changed the Fediverse instance I'm on, so to make sure nothing is lost, here is my Fediverse timeline:
