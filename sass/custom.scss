@@ -2,10 +2,6 @@
 	--transition-bezier: 0.35s cubic-bezier(0.17, 0.89, 0.32, 1.28);
 }
 
-h1 {
-	text-align: center;
-}
-
 .drop-shadow {
 	$drop-shadow: drop-shadow(0 0.08rem 0.1rem rgba(0, 0, 0, 0.35)) drop-shadow(0 0.4rem 0.7rem rgba(0, 0, 0, 0.18));
 	-webkit-filter: $drop-shadow;
