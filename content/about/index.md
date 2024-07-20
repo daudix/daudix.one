@@ -13,18 +13,18 @@ stylesheets = ["about.css"]
 
 # David Lapshin { #header }
 
-<small>Trying out things since 2007.</small>
+<small>"Silly little goober with a creative mind"–[Ronnie](https://veeronniecaw.space)</small>
 </div>
 
 ## About Me
 
-Hello there! My name is David, you may know me by my online handle Daudix.
+Greetings! Name's David, you may also know me by my online handle; Daudix.
 
 {% alert(fact=true) %}
 Although Daudix appears to be just my online handle, it's actually a slightly different persona; perhaps more silly and authentic than the "official" David, but it's fine to use whatever you like.
 {% end %}
 
-I'm from the Siberian part of Russia, but currently live in <abbr id="abyss" title="If you know, you know">a̸͙͠b̴̛ͅȳ̴̜s̴̫̄s̸̞̒</abbr>.
+Originally from the Siberian part of Russia, but currently living in <abbr id="abyss" title="If you know, you know">a̸͙͠b̴̛ͅȳ̴̜s̴̫̄s̸̞̒</abbr>.
 
 Some things that I like:
 - Purple <small>(it's shocking)</small>
@@ -47,9 +47,11 @@ Some things that I like:
 - Retro/-futurism and vintage stuff
 - Making this list look like a staircase
 
-Design is perhaps a bit more than just a thing I like, it's my hobby and I'm learning more about it every day, although lately I've been a bit burned out.
+I try to learn something new every day, and sometimes, I come across things that I enjoy and start to dive into them.
 
-And, as you can see, I do some web development! I like working with CSS and HTML but that's about it, JS is a bit of a mystery for me :D
+Take design; it's more than just something I like, it's my hobby and I'm learning more about it every day, although lately I've been a bit burned out.
+
+And, as you can see, I do some web development! I like working with CSS and HTML, but that's about it, JS is a bit of a mystery for me :D
 
 And, quoting [Jeffrey Serio](https://hyperreal.coffee/about/): "I’m <button id="shy" onclick="fluttershyAnim()">shy</button> and might come across as reserved and standoffish at first, but I open up when I get more comfortable with people."
 

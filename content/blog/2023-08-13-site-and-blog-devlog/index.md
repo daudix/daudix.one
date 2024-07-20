@@ -139,7 +139,7 @@ It's empty <abbr title="at the moment">ATM</abbr>, but it has [AD-HD button](htt
 
 ## The Future
 
-We'll see, I plan to publish more posts, at least I have an idea for the next one, I'm thinking about making the whole blog a Jekyll template (Duck Template, DuckQuill), but this will mean that I'll need to maintain one more site basically, not sure really, I could sync it with this blog once a month so it doesn't annoy much, idk, will see.
+We'll see, I plan to publish more posts, at least I have an idea for the next one, I'm thinking about making the whole blog a Jekyll template (Duck Template, DuckQuill), but this will mean that I'll need to maintain one more site basically, not sure really, I could sync it with this blog once a month so it doesn't annoy much, IDK, will see.
 
 ## Conclusion
 
