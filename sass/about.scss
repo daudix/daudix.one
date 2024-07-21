@@ -4,29 +4,28 @@ body {
 		display: block;
 		position: fixed;
 		bottom: 0;
-		left: 0;
-		transform: perspective(6.25rem) rotateX(60deg);
+		left: -50vw;
+		transform: perspective(8rem) rotateX(60deg);
 		z-index: -1;
-		mask-image: linear-gradient(transparent 25%, black 75%);
-		width: 100%;
-		height: 50%;
+		width: 200vw;
+		height: 50vh;
 		content: "";
 	}
 
 	&::before {
-		background-image: linear-gradient(transparent 25%, var(--primary-color-alpha) 75%);
+		background-image: linear-gradient(var(--primary-color-alpha) 25%, transparent 75%);
 	}
 
 	&::after {
 		filter: drop-shadow(0 0.125rem 0.125rem #dc8add);
-		animation: plane infinite linear 10s;
+		animation: plane infinite linear 1s;
 		background-image: linear-gradient(to right, rgba(220, 138, 221, 0.2) 0.0625rem, transparent 0.0625rem), linear-gradient(var(--primary-color-alpha) 0.0625rem, transparent 0.0625rem);
-		background-size: 1.25rem 1.25rem;
+		background-size: 1.5rem 1.5rem;
 		background-repeat: repeat;
 
 		@keyframes plane {
 			to {
-				background-position-y: 100%;
+				background-position-y: 1.5rem;
 			}
 		}
 	}
