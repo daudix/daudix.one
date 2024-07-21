@@ -67,8 +67,8 @@ body {
 			left: 9rem;
 			mask-image: $url;
 			background-color: var(--primary-color);
-			width: 10.9375rem; // 175px
-			height: 7.0625rem; // 113px
+			width: 10.9375rem;
+			height: 7.1875rem;
 
 			@media only screen and (max-width: 509px) {
 				display: none;
