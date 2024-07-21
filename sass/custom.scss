@@ -54,10 +54,10 @@
 #site-footer {
 	details {
 		margin: 0 auto;
-		box-shadow: unset;
-		border-radius: unset;
-		background-color: unset;
-		padding: unset;
+		box-shadow: none;
+		border-radius: 0;
+		background-color: transparent;
+		padding: 0;
 		color: var(--fg-muted-5);
 		font-size: 0.875rem;
 
