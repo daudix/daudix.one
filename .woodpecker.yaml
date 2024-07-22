@@ -36,7 +36,7 @@ steps:
   publish:
     image: bitnami/git
     # Must be set in Woodpecker configuration
-    # mail: Your email address used by Codebrg
+    # mail: Your email address used by Codeberg
     # codeberg_token: Codeberg access token with "write:repository" permission
     secrets: [mail, codeberg_token]
     commands:

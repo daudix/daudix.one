@@ -16,6 +16,7 @@ highlight_code = true
 extra_syntaxes_and_themes = ["sublime"]
 highlight_theme = "MonokaiPro"
 smart_punctuation = true
+bottom_footnotes = true
 
 [search]
 index_format = "elasticlunr_json"
