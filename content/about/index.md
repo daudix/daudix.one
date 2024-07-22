@@ -16,6 +16,10 @@ stylesheets = ["about.css"]
 <small>"Silly little goober with a creative mind"–[Ronnie](https://veeronniecaw.space)</small>
 </div>
 
+{% alert(warning=true) %}
+I talk too much about myself here, no wonder, this page is literally titled "About - Daudix." So yeah, it's very cringe and selfish. Proceed with caution or don't proceed at all.
+{% end %}
+
 ## About Me
 
 Greetings! Name's David, you may also know me by my online handle; Daudix.
