@@ -53,7 +53,7 @@ Take design; it's more than just something I like, it's my hobby and I'm learnin
 
 And, as you can see, I do some web development! I like working with CSS and HTML, but that's about it, JS is a bit of a mystery for me :D
 
-And, quoting [Jeffrey Serio](https://hyperreal.coffee/about/): "I’m <button id="shy" onclick="fluttershyAnim()">shy</button> and might come across as reserved and standoffish at first, but I open up when I get more comfortable with people."
+And, quoting [Jeffrey](https://hyperreal.coffee/about/): "I’m <button id="shy" onclick="fluttershyAnim()">shy</button> and might come across as reserved and standoffish at first, but I open up when I get more comfortable with people."
 
 ## Works
 
