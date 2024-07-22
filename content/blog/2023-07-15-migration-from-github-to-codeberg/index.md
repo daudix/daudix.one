@@ -1,5 +1,5 @@
 +++
-title = "Migration From Github to Codeberg"
+title = "Migration from GitHub to Codeberg"
 description = "My journey of migrating personal repositories from GitHub to the Codeberg."
 [taxonomies]
 tags = ["Codeberg", "GitHub", "Woodpecker", "Migration"]

@@ -1,5 +1,5 @@
 +++
-title = "Latitude and Longitude, or My New Daily Driver"
+title = "Latitude and Longitude or My New Daily Driver"
 description = "A little story about my new (for me) laptop."
 updated = 2024-06-25
 [taxonomies]

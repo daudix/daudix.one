@@ -1,5 +1,5 @@
 +++
-title = "Running Syncthing From Inside Toolbx"
+title = "Running Syncthing from inside Toolbx"
 description = "Yet another way of using Syncthing on Silverblue."
 [taxonomies]
 tags = ["Silverblue", "Syncthing", "Toolbx"]
