@@ -28,7 +28,7 @@ Greetings! Name's David, you may also know me by my online handle; Daudix.
 Although Daudix appears to be just my online handle, it's actually a slightly different persona; perhaps more silly and authentic than the "official" David, but it's fine to use whatever you like.
 {% end %}
 
-Originally from the Siberian part of Russia, but currently living in <abbr id="abyss" title="If you know, you know">a̸͙͠b̴̛ͅȳ̴̜s̴̫̄s̸̞̒</abbr>.
+Originally from the Siberian part of Russia, but currently living in <abbr id="abyss" title="If you know, you know">abyss</abbr>.
 
 Some things that I like:
 - Purple <small>(it's shocking)</small>
