@@ -4,11 +4,11 @@ body {
 		display: block;
 		position: fixed;
 		bottom: 0;
-		left: -75vw;
+		left: -50vw;
 		transform: perspective(8rem) rotateX(60deg);
 		z-index: -1;
-		width: 250vw;
-		height: 50vh;
+		width: 200vw;
+		height: 16rem;
 		content: "";
 	}
 
@@ -20,12 +20,12 @@ body {
 		filter: drop-shadow(0 0.125rem 0.125rem #dc8add);
 		animation: plane infinite linear 1s;
 		background-image: linear-gradient(to right, rgba(220, 138, 221, 0.2) 0.0625rem, transparent 0.0625rem), linear-gradient(var(--primary-color-alpha) 0.0625rem, transparent 0.0625rem);
-		background-size: 1.5rem 1.5rem;
+		background-size: 2rem 2rem;
 		background-repeat: repeat;
 
 		@keyframes plane {
 			to {
-				background-position-y: 1.5rem;
+				background-position-y: 2rem;
 			}
 		}
 	}
@@ -142,7 +142,7 @@ body {
 
 	img {
 		all: unset;
-		display: inline;
+		display: inline-block;
 		position: relative;
 		transition: var(--transition-bezier);
 		cursor: zoom-in;

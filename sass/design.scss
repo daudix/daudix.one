@@ -7,11 +7,6 @@
 	margin: 1rem 0 1rem;
 	text-align: center;
 
-	img {
-		display: block;
-		margin: 0;
-	}
-
 	a {
 		transition: var(--transition);
 		border-radius: calc(var(--rounded-corner) + 1rem);
@@ -26,6 +21,16 @@
 
 		&:active {
 			transform: scale(var(--active));
+		}
+
+		img {
+			display: inline-block;
+			margin: 0;
+		}
+
+		small {
+			display: block;
+			margin-top: 0.25rem;
 		}
 	}
 }
