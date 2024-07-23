@@ -13,7 +13,7 @@ I suck at writing.
 I want to, but can't.  
 What should I write about.  
 
-These are my constant thoughts since I started this goddamn challange, and it's been sucking my energy quite a bit. I am far behind the graph; instead of publishing 8 posts a month, I only published 9 in two. The quality is not as high as I would like it to be. All the drafts I had don't seem as exiting as I though they are.
+These are my constant thoughts since I started this goddamn challange, and it's been sucking my energy quite a bit. I am far behind the graph, instead of publishing 8 posts a month, I only published 9 in two, the quality is not as high as I would like it to be, all the drafts I had don't seem as exiting as I though they are.
 
 It's time to change the strategy a bit.
 
