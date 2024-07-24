@@ -138,19 +138,17 @@ body {
 	}
 }
 
-#portals {
+#portal {
 	display: inline-block;
 	position: relative;
-	margin: 0 0.25rem 0.25rem;
+	transition: var(--transition);
 
 	#portal-text {
-		$mask: linear-gradient(to right, transparent, black 0.5rem, black calc(100% - 0.5rem), transparent);
-		-webkit-mask-image: $mask;
 		display: inline-block;
 		position: relative;
 		vertical-align: -0.425em;
-		mask-image: $mask;
-		width: 6ch;
+		transition: var(--transition);
+		width: 2.6875rem;
 		height: 1.6rem;
 		overflow: hidden;
 
@@ -159,21 +157,18 @@ body {
 			position: absolute;
 			top: 0;
 			right: 0;
-			animation: slide 2s linear infinite;
-			width: 200%;
+			width: 100%;
 			height: 1.6rem;
 			overflow: hidden;
-
-			@keyframes slide {
-				to {
-					transform: translateX(50%);
-				}
-			}
 		}
 
 		span {
 			float: left;
-			width: 50%;
+			width: 100%;
+
+			&+span {
+				display: none;
+			}
 		}
 	}
 
@@ -185,6 +180,10 @@ body {
 			display: block;
 			position: absolute;
 			top: -0.1875rem;
+			transform: scale(0);
+			opacity: 0;
+			transition: var(--transition);
+			background-size: cover;
 			image-rendering: pixelated;
 			width: 1rem;
 			height: 2rem;
@@ -204,12 +203,12 @@ body {
 			-webkit-filter: $drop-shadow;
 			z-index: -1;
 			filter: $drop-shadow;
-			background-image: url("./about/portal-blue-bottom.png");
+			background-image: url("about/portal-blue-bottom.png");
 		}
 
 		&::after {
 			z-index: 1;
-			background-image: url("./about/portal-blue-top.png");
+			background-image: url("about/portal-blue-top.png");
 		}
 	}
 
@@ -225,13 +224,228 @@ body {
 			-webkit-filter: $drop-shadow;
 			z-index: -1;
 			filter: $drop-shadow;
-			background-image: url("./about/portal-orange-bottom.png");
+			background-image: url("about/portal-orange-bottom.png");
 		}
 
 		&::after {
 			z-index: 1;
-			background-image: url("./about/portal-orange-top.png");
+			background-image: url("about/portal-orange-top.png");
 		}
+	}
+
+	&:hover {
+		margin: 0 0.25rem;
+
+		#portal-text {
+			$mask: linear-gradient(to right, transparent, black 0.5rem, black calc(100% - 0.5rem), transparent);
+			-webkit-mask-image: $mask;
+			mask-image: $mask;
+			width: 4rem;
+
+			div {
+				animation: slide 2s linear infinite;
+				width: 200%;
+
+				@keyframes slide {
+					to {
+						transform: translateX(50%);
+					}
+				}
+			}
+
+			span {
+				width: 50%;
+
+				&+span {
+					display: inline;
+				}
+			}
+		}
+
+		#portal-blue,
+		#portal-orange {
+
+			&::before,
+			&::after {
+				transform: scale(1);
+				opacity: 1;
+			}
+		}
+	}
+}
+
+#celeste {
+	display: inline-block;
+	position: relative;
+
+	#strawberry {
+		display: inline-block;
+		position: absolute;
+		top: 0.4rem;
+		left: -1rem;
+		transform: scale(0);
+		opacity: 0;
+		transition: var(--transition);
+		background-image: url("about/strawberry.png");
+		image-rendering: pixelated;
+		width: 0.625rem;
+		height: 0.8125rem;
+	}
+
+	#celeste-text {
+		display: inline-block;
+		position: relative;
+		transition: var(--transition-longer);
+	}
+
+	&:hover {
+		#strawberry {
+			transform: scale(1);
+			opacity: 1;
+		}
+
+		#celeste-text {
+			transform: perspective(1rem) rotateX(10deg);
+			color: #62c2e0;
+			font-weight: 900;
+			text-shadow: 0 -0.125rem white, 0 0.125rem #675c83;
+		}
+	}
+}
+
+#teardown {
+	display: inline-block;
+
+	&:hover #teardown-text {
+		transform-origin: top left;
+		animation: hinge 2s forwards;
+
+		@keyframes hinge {
+			from {
+				animation-timing-function: ease-in-out;
+			}
+
+			20%,
+			60% {
+				transform: rotate3d(0, 0, 1, 80deg);
+				animation-timing-function: ease-in-out;
+			}
+
+			40%,
+			80% {
+				transform: rotate3d(0, 0, 1, 60deg);
+				opacity: 1;
+				animation-timing-function: ease-in-out;
+			}
+
+			to {
+				transform: translate3d(0, 700px, 0);
+				opacity: 0;
+			}
+		}
+	}
+}
+
+#superliminal {
+	display: inline-block;
+
+	#super,
+	#liminal {
+		display: inline-block;
+		transition: var(--transition-longer);
+	}
+
+	&:hover {
+		#super {
+			transform: perspective(4rem) rotateY(-45deg);
+		}
+
+		#liminal {
+			transform: perspective(4rem) rotateY(35deg);
+		}
+	}
+}
+
+#stardew {
+	display: inline-block;
+	position: relative;
+
+	#chicken {
+		display: inline-block;
+		position: absolute;
+		top: 0.25rem;
+		left: -1.1875rem;
+		transform: scale(0);
+		opacity: 0;
+		transition: var(--transition);
+		background-image: url("about/chicken.png");
+		image-rendering: pixelated;
+		width: 1rem;
+		height: 1rem;
+	}
+
+	#stardew-text {
+		transition: var(--transition);
+	}
+
+	&:hover {
+		#chicken {
+			transform: scale(1);
+			opacity: 1;
+		}
+
+		#stardew-text {
+			color: #e0a100;
+			font-weight: bold;
+			text-shadow: 0 0.0625rem 0 #413014;
+		}
+	}
+}
+
+#untitled {
+	display: inline-block;
+	position: relative;
+
+	#untitled-text {
+		display: inline-block;
+	}
+
+	#goose {
+		display: inline-block;
+		position: absolute;
+		top: 0.25rem;
+		left: -1.1875rem;
+		transform: scale(0);
+		opacity: 0;
+		transition: var(--transition);
+		background-image: url("about/untitled.png");
+		image-rendering: pixelated;
+		width: 1rem;
+		height: 1rem;
+	}
+
+	#untitled-text {
+		transition: var(--transition);
+	}
+
+	&:hover {
+		#goose {
+			transform: scale(1);
+			opacity: 1;
+		}
+
+		#untitled-text {
+			font-weight: bold;
+		}
+	}
+}
+
+#stanley {
+	display: inline-block;
+
+	&:hover {
+		text-decoration: underline 0.25rem #e4d21d;
+		text-transform: uppercase;
 	}
 }
 

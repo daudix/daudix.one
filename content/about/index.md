@@ -34,7 +34,7 @@ Some things that I like:
 - Purple <small>(it's shocking)</small>
 - Design
 - Games:
-  - <div id="portals">
+  - <div id="portal">
       <div id="portal-blue"></div>
       <div id="portal-text">
         <div>
@@ -44,12 +44,31 @@ Some things that I like:
       <span id="portal-orange"></span>
     </div>
     <small>(all-time favorite)</small>
-  - Celeste <small>(such a lovely game)</small>
-  - Teardown <small>(fun destructions)</small>
-  - Superliminal <small>(F-Stop if it wasn't scrapped)</small>
-  - Stardew Valley <small>(was fun until sis spoiled *everything*)</small>
-  - Untitled Goose <small>(*honk-honk!* I love geese, by the way)</small>
-  - The Stanley Parable <small>(fake feeling of choice, just like <abbr title="in real life">IRL</abbr>)</small>
+  - <div id="celeste">
+      <div id="strawberry"></div>
+      <div id="celeste-text">Celeste</div>
+    </div>
+    <small>(such a lovely game)</small>
+  - <div id="teardown">
+      <div id="teardown-text">Teardown</div>
+    </div>
+    <small>(fun destructions)</small>
+  - <div id="superliminal">
+      <div id="super">Super</div><div id="liminal">liminal</div>
+    </div>
+    <small>(F-Stop if it wasn't scrapped)</small>
+  - <div id="stardew">
+      <div id="chicken"></div>
+      <div id="stardew-text">Stardew Valley</div>
+    </div>
+    <small>(was fun until sis spoiled <em>everything</em>)</small>
+  - <div id="untitled">
+      <div id="goose"></div>
+      <div id="untitled-text">Untitled Goose</div>
+    </div>
+    <small>(<em>honk-honk!</em> I love geese, by the way)</small>
+  - <div id="stanley">The Stanley Parable</div>
+    <small>(fake feeling of choice, just like <abbr title="in real life">IRL</abbr>)</small>
 - Aesthetics:
   - [Cyberpunk](https://aesthetics.fandom.com/wiki/Cyberpunk)
   - [Vaporwave](https://aesthetics.fandom.com/wiki/Vaporwave)
