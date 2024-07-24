@@ -157,25 +157,23 @@ body {
 		div {
 			display: block;
 			position: absolute;
-			animation: marquee 3s linear infinite;
+			top: 0;
+			right: 0;
+			animation: slide 2s linear infinite;
 			width: 200%;
 			height: 1.6rem;
 			overflow: hidden;
+
+			@keyframes slide {
+				to {
+					transform: translateX(50%);
+				}
+			}
 		}
 
 		span {
 			float: left;
 			width: 50%;
-		}
-
-		@keyframes marquee {
-			0% {
-				left: 0;
-			}
-
-			100% {
-				left: -100%;
-			}
 		}
 	}
 
