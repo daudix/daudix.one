@@ -17,7 +17,7 @@ stylesheets = ["coffee.css"]
 	<strong id="title">David Lapshin</strong>
 	<p id="message">If you'd like to buy me a coffee (thanks ^_^), you can use one of these options. If you'd like to use some other option feel free to <a href="https://daudix.one/find/#contacts">ask</a>, maybe I do have it.</p>
 	<input type="checkbox" id="skeuo-switch">
-	<label for="skeuo-switch">Skeuomorph</label>
+	<label for="skeuo-switch">Skeuomorph<i id="skeuo-info" class="icon" title="This silly mode warms my heart, but sometimes drives me crazy because I have to fix it every time I change the components it styles."></i></label>
 	<div class="dialog-buttons" id="buttons">
 		<a id="ko-fi" class="inline-button" href="https://ko-fi.com/daudix">Ko-fi</a>
 		<a id="liberapay" class="inline-button" href="https://liberapay.com/daudix">Liberapay</a>
