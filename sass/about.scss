@@ -1,4 +1,5 @@
 body {
+
 	&::before,
 	&::after {
 		display: block;
@@ -133,6 +134,104 @@ body {
 			to {
 				transform: translateX(calc(-100vw + -18.5625rem));
 			}
+		}
+	}
+}
+
+#portals {
+	display: inline-block;
+	position: relative;
+	margin: 0 0.25rem 0.25rem;
+
+	#portal-text {
+		$mask: linear-gradient(to right, transparent, black 0.5rem, black calc(100% - 0.5rem), transparent);
+		-webkit-mask-image: $mask;
+		display: inline-block;
+		position: relative;
+		vertical-align: -0.425em;
+		mask-image: $mask;
+		width: 6ch;
+		height: 1.6rem;
+		overflow: hidden;
+
+		div {
+			display: block;
+			position: absolute;
+			animation: marquee 3s linear infinite;
+			width: 200%;
+			height: 1.6rem;
+			overflow: hidden;
+		}
+
+		span {
+			float: left;
+			width: 50%;
+		}
+
+		@keyframes marquee {
+			0% {
+				left: 0;
+			}
+
+			100% {
+				left: -100%;
+			}
+		}
+	}
+
+	#portal-blue,
+	#portal-orange {
+
+		&::before,
+		&::after {
+			display: block;
+			position: absolute;
+			top: -0.1875rem;
+			width: 1rem;
+			height: 2rem;
+			content: "";
+		}
+	}
+
+	#portal-blue {
+
+		&::before,
+		&::after {
+			left: -0.25rem;
+		}
+
+		&::before {
+			$drop-shadow: drop-shadow(0 0.0625rem 0.1875rem #008eda);
+			-webkit-filter: $drop-shadow;
+			z-index: -1;
+			filter: $drop-shadow;
+			background-image: url("./about/portal-blue-bottom.png");
+		}
+
+		&::after {
+			z-index: 1;
+			background-image: url("./about/portal-blue-top.png");
+		}
+	}
+
+	#portal-orange {
+
+		&::before,
+		&::after {
+			right: -0.25rem;
+		}
+
+		&::before {
+			$drop-shadow: drop-shadow(0 0.0625rem 0.1875rem #e09e36);
+			-webkit-filter: $drop-shadow;
+			z-index: -1;
+			filter: $drop-shadow;
+			background-image: url("./about/portal-orange-bottom.png");
+		}
+
+		&::after {
+			z-index: 1;
+			background-image: url("./about/portal-orange-top.png");
 		}
 	}
 }

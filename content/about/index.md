@@ -34,7 +34,16 @@ Some things that I like:
 - Purple <small>(it's shocking)</small>
 - Design
 - Games:
-  - Portal <small>(all-time favorite)</small>
+  - <div id="portals">
+      <div id="portal-blue"></div>
+      <div id="portal-text">
+        <div>
+          <span>Portal</span><span>Portal</span>
+        </div>
+      </div>
+      <span id="portal-orange"></span>
+    </div>
+    <small>(all-time favorite)</small>
   - Celeste <small>(such a lovely game)</small>
   - Teardown <small>(fun destructions)</small>
   - Superliminal <small>(F-Stop if it wasn't scrapped)</small>
