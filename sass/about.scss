@@ -138,9 +138,24 @@ body {
 	}
 }
 
-#portal {
+#portal,
+#celeste,
+#teardown,
+#superliminal,
+#stardew,
+#untitled,
+#stanley {
 	display: inline-block;
+}
+
+#portal,
+#celeste,
+#stardew,
+#untitled {
 	position: relative;
+}
+
+#portal {
 	transition: var(--transition);
 
 	#portal-text {
@@ -275,9 +290,6 @@ body {
 }
 
 #celeste {
-	display: inline-block;
-	position: relative;
-
 	#strawberry {
 		display: inline-block;
 		position: absolute;
@@ -313,41 +325,36 @@ body {
 	}
 }
 
-#teardown {
-	display: inline-block;
+#teardown:hover #teardown-text {
+	transform-origin: top left;
+	animation: hinge 2s forwards;
 
-	&:hover #teardown-text {
-		transform-origin: top left;
-		animation: hinge 2s forwards;
+	@keyframes hinge {
+		from {
+			animation-timing-function: ease-in-out;
+		}
 
-		@keyframes hinge {
-			from {
-				animation-timing-function: ease-in-out;
-			}
+		20%,
+		60% {
+			transform: rotate3d(0, 0, 1, 80deg);
+			animation-timing-function: ease-in-out;
+		}
 
-			20%,
-			60% {
-				transform: rotate3d(0, 0, 1, 80deg);
-				animation-timing-function: ease-in-out;
-			}
+		40%,
+		80% {
+			transform: rotate3d(0, 0, 1, 60deg);
+			opacity: 1;
+			animation-timing-function: ease-in-out;
+		}
 
-			40%,
-			80% {
-				transform: rotate3d(0, 0, 1, 60deg);
-				opacity: 1;
-				animation-timing-function: ease-in-out;
-			}
-
-			to {
-				transform: translate3d(0, 700px, 0);
-				opacity: 0;
-			}
+		to {
+			transform: translate3d(0, 700px, 0);
+			opacity: 0;
 		}
 	}
 }
 
 #superliminal {
-	display: inline-block;
 
 	#super,
 	#liminal {
@@ -367,9 +374,6 @@ body {
 }
 
 #stardew {
-	display: inline-block;
-	position: relative;
-
 	#chicken {
 		display: inline-block;
 		position: absolute;
@@ -403,9 +407,6 @@ body {
 }
 
 #untitled {
-	display: inline-block;
-	position: relative;
-
 	#untitled-text {
 		display: inline-block;
 	}
@@ -440,13 +441,9 @@ body {
 	}
 }
 
-#stanley {
-	display: inline-block;
-
-	&:hover {
-		text-decoration: underline 0.25rem #e4d21d;
-		text-transform: uppercase;
-	}
+#stanley:hover {
+	text-decoration: underline 0.25rem #e4d21d;
+	text-transform: uppercase;
 }
 
 .buttons-container {
