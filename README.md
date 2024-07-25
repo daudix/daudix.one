@@ -16,10 +16,8 @@ Seriously, just use the [Duckquill](https://duckquill.daudix.one) theme; I'm the
 
 If you want to use some custom styles and stuff from here, go ahead, just don't make it *too similar,* I got to have a little uniqueness :^)
 
-> \> "can I copy your homework?"
-> \>
-> \> "yeah just change it up a bit so it doesn't look obvious you copied"
-> \>
+> \> "can I copy your homework?"  
+> \> "yeah just change it up a bit so it doesn't look obvious you copied"  
 > \> "ok"
 
 ## Setup local repository
