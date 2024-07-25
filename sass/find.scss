@@ -37,6 +37,7 @@
 		span {
 			display: inline-block;
 			transition: var(--transition);
+			margin-inline-start: 0.25rem;
 			box-shadow: var(--edge-highlight);
 			border-radius: 999px;
 			background-color: var(--fg-muted-1);
