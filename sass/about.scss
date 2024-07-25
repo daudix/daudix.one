@@ -455,7 +455,9 @@ body {
 }
 
 #stanley:hover {
-	text-decoration: underline 0.25rem #e4d21d;
+	text-decoration: underline;
+	text-decoration-color: #e4d21d;
+	text-decoration-thickness: 0.25rem;
 	text-transform: uppercase;
 }
 
