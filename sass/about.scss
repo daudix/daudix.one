@@ -61,7 +61,7 @@ body {
 		}
 
 		#it-sucks {
-			$url: url("about/this-logo-sucks.svg");
+			$url: url("about/this-logo-sucks-anim.png");
 			-webkit-mask-image: $url;
 			position: absolute;
 			top: 4.5rem;
@@ -69,10 +69,16 @@ body {
 			mask-image: $url;
 			background-color: var(--primary-color);
 			width: 10.9375rem;
-			height: 7.1875rem;
+			height: 7.0625rem;
 
 			@media only screen and (max-width: 509px) {
 				display: none;
+			}
+
+			@media (prefers-reduced-motion) {
+				$url: url("about/this-logo-sucks.png");
+				-webkit-mask-image: $url;
+				mask-image: $url;
 			}
 		}
 	}
