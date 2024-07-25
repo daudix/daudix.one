@@ -31,7 +31,7 @@ Although Daudix appears to be just my online handle, it's actually a slightly di
 Originally from the Siberian part of Russia, but currently living in <abbr id="abyss" title="If you know, you know">abyss</abbr>.
 
 Some things that I like:
-- Purple <small>(it's shocking)</small>
+- <span id="purple">Purple</span> <small>(it's shocking)</small>
 - Design
 - Games:
   - <div id="portal">
@@ -44,30 +44,30 @@ Some things that I like:
       <span id="portal-orange"></span>
     </div>
     <small>(all-time favorite)</small>
-  - <div id="celeste">
+  - <span id="celeste">
       <div id="strawberry"></div>
-      <div id="celeste-text">Celeste</div>
-    </div>
+      <span id="celeste-text">Celeste</span>
+    </span>
     <small>(such a lovely game)</small>
   - <div id="teardown">
-      <div id="teardown-text">Teardown</div>
+      <span id="teardown-text">Teardown</span>
     </div>
     <small>(fun destructions)</small>
-  - <div id="superliminal">
-      <div id="super">Super</div><div id="liminal">liminal</div>
-    </div>
+  - <span id="superliminal">
+      <span id="super">Super</span><span id="liminal">liminal</span>
+    </span>
     <small>(F-Stop if it wasn't scrapped)</small>
   - <div id="stardew">
       <div id="chicken"></div>
-      <div id="stardew-text">Stardew Valley</div>
+      <span id="stardew-text">Stardew Valley</span>
     </div>
     <small>(was fun until sis spoiled <em>everything</em>)</small>
-  - <div id="untitled">
+  - <span id="untitled">
       <div id="goose"></div>
-      <div id="untitled-text">Untitled Goose</div>
-    </div>
+      <span id="untitled-text">Untitled Goose</span>
+    </span>
     <small>(<em>honk-honk!</em> I love geese, by the way)</small>
-  - <div id="stanley">The Stanley Parable</div>
+  - <span id="stanley">The Stanley Parable</span>
     <small>(fake feeling of choice, just like <abbr title="in real life">IRL</abbr>)</small>
 - Aesthetics:
   - [Cyberpunk](https://aesthetics.fandom.com/wiki/Cyberpunk)

@@ -138,13 +138,20 @@ body {
 	}
 }
 
+#purple {
+	transition: var(--transition);
+
+	&:hover {
+		color: var(--primary-color);
+		font-style: italic;
+		letter-spacing: 0.25em;
+	}
+}
+
 #portal,
-#celeste,
 #teardown,
-#superliminal,
-#stardew,
-#untitled,
-#stanley {
+#teardown-text,
+#stardew {
 	display: inline-block;
 }
 
