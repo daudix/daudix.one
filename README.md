@@ -8,6 +8,18 @@ This is the source code for personal website. It is powered by [Zola](https://ww
 
 ![Screenshot](screenshot.png)
 
+## FOR FUCK'S SAKE READ THIS
+
+If you like how my site looks and want to make your own based on it: DON'T.
+
+Seriously, just use the [Duckquill](https://duckquill.daudix.one) theme; I'm the author of it and it's literally the same thing as this site minus all my crap. Save your nerves, I'm serious.
+
+If you want to use some custom styles and stuff from here, go ahead, just don't make it *too similar,* I got to have a little uniqueness :^)
+
+> "can I copy your homework?"
+> "yeah just change it up a bit so it doesn't look obvious you copied"
+> "ok"
+
 ## Setup local repository
 
 *These are mostly for myself XD*
