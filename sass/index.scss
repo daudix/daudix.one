@@ -124,8 +124,8 @@ body {
 
 		&::after {
 			position: absolute;
+			right: 0;
 			bottom: -0.25rem;
-			left: 0;
 			background-image: linear-gradient(to right, #ff6188, #fc9867, #ffd866, #a9dc76, #78dce8, #ab9df2);
 			width: 3rem;
 			height: 0.5rem;
@@ -156,7 +156,7 @@ body {
 	}
 
 	#statuscafe-content {
-		margin-top: 0.125rem;
+		margin-top: 0.25rem;
 		font-size: 0.5625rem;
 		letter-spacing: -0.05em;
 	}
@@ -174,7 +174,7 @@ body {
 	}
 
 	#statuscafe-username {
-		margin-top: 0.25rem;
+		margin-top: 0.5rem;
 		font-size: 0.5625rem;
 
 		&::after {
