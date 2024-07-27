@@ -14,7 +14,7 @@ stylesheets = ["find.css"]
 
 ## Contacts
 
-Currently it's <time><span id="clock"><noscript>NO:JS</noscript></span></time> <small>(UTC+3)</small> for me, so take that into consideration.
+Currently it's <time><span id="clock"><noscript>NO:JS</noscript></span></time> <small>(UTC+3)</small> for me and I'm <span id="online-indicator"><noscript>N/A</noscript></span>, so take that into consideration.
 
 {% alert(tip=true) %}
 Check my online status on the [home](@/_index.md) page in the form of a small dot on the avatar.
@@ -85,4 +85,39 @@ I was using GitHub from the very start of my FOSS journey, but (not so) recently
 
   updateClock();
   setInterval(updateClock, 1000);
+</script>
+
+<script type="text/javascript">
+	document.addEventListener("DOMContentLoaded", function () {
+		const indicatorElement = document.getElementById("online-indicator");
+		indicatorElement.innerHTML = "N/A";
+	
+		fetch("https://api.lanyard.rest/v1/users/650757995378114581")
+			.then(response => response.json())
+			.then(data => {
+				const status = data.data.discord_status;
+	
+				indicatorElement.classList.remove("online", "idle", "dnd", "offline");
+				indicatorElement.classList.add(status);
+	
+				switch (status) {
+					case "online":
+						indicatorElement.innerHTML = "Online";
+						break;
+					case "idle":
+						indicatorElement.innerHTML = "Idle";
+						break;
+					case "dnd":
+						indicatorElement.innerHTML = "DND";
+						break;
+					case "offline":
+						indicatorElement.innerHTML = "Offline";
+						break;
+				}
+			})
+			.catch(error => {
+				console.error("Error fetching Lanyard data:", error);
+				indicatorElement.innerHTML = "N/A";
+			});
+	});
 </script>

@@ -22,6 +22,33 @@
 	}
 }
 
+#online-indicator {
+	box-shadow: var(--edge-highlight);
+	border-radius: var(--rounded-corner-small);
+	padding: 0.125rem 0.375rem;
+	font-weight: bold;
+
+	&.online {
+		background-color: var(--green-bg);
+		color: var(--green-fg);
+	}
+
+	&.idle {
+		background-color: var(--yellow-bg);
+		color: var(--yellow-fg);
+	}
+
+	&.dnd {
+		background-color: var(--red-bg);
+		color: var(--red-fg);
+	}
+
+	&.offline {
+		background-color: var(--fg-muted-1);
+		color: var(--fg-muted-5);
+	}
+}
+
 #timeline {
 	border-inline-start: 0.25rem solid var(--fg-muted-3);
 	padding-left: 0;

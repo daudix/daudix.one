@@ -190,28 +190,6 @@ body {
 	}
 }
 
-// #it-sucks {
-// 	$url: url("assets/this-logo-sucks-anim.png");
-// 	-webkit-mask-image: $url;
-// 	position: absolute;
-// 	top: 4.5rem;
-// 	left: 9rem;
-// 	mask-image: $url;
-// 	background-color: var(--primary-color);
-// 	width: 10.9375rem;
-// 	height: 7.0625rem;
-
-// 	@media only screen and (max-width: 509px) {
-// 		display: none;
-// 	}
-
-// 	@media (prefers-reduced-motion) {
-// 		$url: url("assets/this-logo-sucks.png");
-// 		-webkit-mask-image: $url;
-// 		mask-image: $url;
-// 	}
-// }
-
 #abyss {
 	filter: blur(0.25rem);
 }
