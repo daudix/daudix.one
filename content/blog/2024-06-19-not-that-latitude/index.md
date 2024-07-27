@@ -31,11 +31,17 @@ So we decided to look at Dell; my Mom had a Dell laptop before and it was a good
 
 Dell Latitude E7470 - 2017 ultrabook in great condition, with decent specs, and, most importantly, 96% sRGB coverage (at least so I thought)! MacBoy had full sRGB coverage, but still, it was very close, and comparing it to other laptops with 56% coverage it was the best variant. The price was sane as well: $230.
 
+<figure>
+
 ![latitude closed](latitude-closed.jpg)
 <figcaption>Feels good to hold a laptop that is twice as thin and light as MacBoy</figcaption>
+</figure>
+
+<figure>
 
 ![latitude open](latitude-open.jpg)
 <figcaption>Even though its screen is 14 inches it's just as compact as MacBoy; thin bezels compensate the screen size</figcaption>
+</figure>
 
 ## It's Time
 
@@ -61,8 +67,11 @@ Then I discovered that closing the lid doesn't put it in sleep mode. I thought i
 
 Bad things aside, I flashed a new Fedora Silverblue USB and installed it, which was an absolute breeze; no need to install `broadcom-wl` to get the WiFi working, no need for RPM Fusion for `broadcom-wl` and all the trickery needed to enable it on Silverblue, no need to add `acpi_backlight=auto` kernel argument to make the minimal screen brightness not burn your eyes, everything "just worked" out of the box. I knew Dell shipped some laptops with Linux and they're (way) more Linux-friendly than Apple, but damn, I didn't expect it to be this good.
 
+<figure>
+
 ![neowofetch](neowofetch.png#transparent)
 <figcaption>How can one talk about a new laptop with Linux installed and not show a <del>neofetch</del> neowofetch screenshot!?</figcaption>
+</figure>
 
 After the installation, I opened Software to update the system, and... BIOS AND FIRMWARE UPDATES!? Fwupd is good huh.
 

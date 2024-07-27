@@ -34,8 +34,11 @@ For fun, I also checked daudix.io, which cost a whopping $40! Then I checked [Cl
 
 One registration and payment later, I got *that* email from Porkbun!
 
+<figure>
+
 ![porkbun invoice](porkbun-invoice.png)
 <figcaption>The long-awaited Porkbun invoice stating that I have just successfully purchased a daudix.one domain</figcaption>
+</figure>
 
 "Hooray!" - thought I. Promptly I tried connecting it to [Codeberg Pages](https://codeberg.page), but it didn't go well, so I went to sleep.
 
@@ -51,8 +54,11 @@ Only to return and find it working!
 
 Yes, apparently it needed a bit more time than 15 minutes to fully propagate. In the end, everything was working, so I repeated the steps to make Duckquill use its own subdomain. It was a bit of a pain (mostly me making silly typos), but I got it working eventually.
 
+<figure>
+
 ![porkbun dns](porkbun-dns.png)
 <figcaption>The final DNS setup for this site and Duckquill</figcaption>
+</figure>
 
 The next day, I created the `pages` repository and added a `_redirects` file to make the old daudix.codeberg.page address redirect to the new one, while keeping the path (so e.g. `daudix.codeberg.page/ananas-duck` becomes `daudix.one/ananas-duck` and not just daudix.one).
 

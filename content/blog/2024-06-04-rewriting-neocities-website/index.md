@@ -22,20 +22,28 @@ As you might know, [almost a year ago](@/blog/2023-08-13-site-and-blog-devlog/in
 
 On the 31st of May I started rewriting it. 4 days later, it seems to be better than what it was in every aspect, so I decided to write this post sharing some insights on how it was done ^\_^
 
+<figure>
+
 ![website before](website-before.png)
 <figcaption>The pre-rewrite state; boring and sad</figcaption>
+</figure>
 
 All started by copy-pasting [sadgrl](https://goblin-heart.net/sadgrl/)'s [Simple Skinny 00s](https://codepen.io/sadness97/pen/mdXjExq) layout, since I _suck_ at this. The layout seemed perfect so I started tweaking it. After stealing the button shading styles from DeviantArt and getting this nice background from the same sadgrl's website, I had this:
 
+<figure>
+
 ![first steps](first-steps.png)
 <figcaption>First steps; empty and sad</figcaption>
+</figure>
 
 Fast-forward a few hours, I had some very basic thingy going!
 
 The icons are from [Tango](https://en.wikipedia.org/wiki/Tango_Desktop_Project), an icon theme that had it's last release 15 years ago, back in 2009. Project's website is down, but download link still works somehow: <http://tango.freedesktop.org/releases/tango-icon-theme-0.8.90.tar.bz2>
 
+<figure>
 <video alt="first demo" controls src="first-demo.webm"></video>
 <figcaption>First demo; navbar got icons and footer was added</figcaption>
+</figure>
 
 See that footer? yes, it uses a deprecated marquee HTML element, it's just too good to _not_ be used. I even [posted about it](https://vmst.io/@daudix/112532737670738850) on Mastodon.
 
@@ -43,8 +51,11 @@ See that footer? yes, it uses a deprecated marquee HTML element, it's just too g
 
 At this point it was 4:00 AM and I had to go sleep 0_0
 
+<figure>
+
 ![chat forces me to sleep](chat-forces-me-to-sleep.png)
 <figcaption>Group chat forces me to go sleep</figcaption>
+</figure>
 
 Yeah, I enjoyed the rewrite a bit too much.
 
@@ -56,9 +67,11 @@ About chat box: cbox doesn't allow adding custom CSS in the free plan, so I coul
 
 Then I added a fake music player to the top-right corner (which was an absolute pain to create, I could've used CSS grid to avoid all the alignment issues, but it's just confusing so I settled on this hacky unresponsive mess), further polished the design, fixed the mobile version, removed the ability to move and resize the chat box (it was buggy and quite useless), and drawn a favicon and a bookmark inspired by one on the [old DeviantArt](https://web.archive.org/web/20131126002716/http://www.deviantart.com/). In fact, a lot of things were inspired by DeviantArt of 2010's
 
+<figure>
+
 ![fake player](fake-player.png)
 <figcaption>Fake music player with some brony music</figcaption>
-<br />
+</figure>
 
 | Mobile                                      | Tablet                                      |
 | ------------------------------------------- | ------------------------------------------- |
@@ -78,8 +91,11 @@ Initially the bookmark said "Work In Process", but I realised that it won't exit
 
 And that's about it! there's one issue that bothers me, the footer; it's absolute positioned relatively to the "paper" and it overlays on top of the scrollbar, which is meh.
 
+<figure>
+
 ![broken scrollbar](broken-scrollbar.png)
 <figcaption>Footer's opacity is changed for demo purposes</figcaption>
+</figure>
 
 One more thing I want to mention is [Neocities CLI](https://neocities.org/cli). If you have ever used Neocities you know the pain of upload files to it via the web interface, it does provide [WebDAV mount](https://neocities.org/site_files/mount_info) for supporters, BUT there's another way, the official CLI tool!
 
@@ -87,11 +103,17 @@ It allows pushing local files or whole directories directly to your Neocities we
 
 _Seriously, this thing saved my nerves._
 
+<figure>
+
 ![neocities cli help](neocities-cli-help.png)
 <figcaption>Help page; love the humor</figcaption>
+</figure>
+
+<figure>
 
 ![neocities cli pushing](neocities-cli-pushing.png)
 <figcaption>Pusing local directory to Neocities with deletion of files not present locally</figcaption>
+</figure>
 
 Thanks for reading! Visit the website [here](https://daudix.neocities.org) and feel free to drop something in the chat box ;)
 

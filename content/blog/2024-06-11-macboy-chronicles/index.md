@@ -50,11 +50,17 @@ Once upon a time, there was a small 13-inch MacBook Pro, but friends simply call
 
 Dad and I arrived at MacBoy's owner's place, checked the same things as when BigMac was purchased: system info window, webcam, and charger. After agreeing on the price and coming home, flashing a patched Mojave USB and installing it, the journey continued.
 
+<figure>
+
 ![macbook sell photo](macbook-sell-photo.jpg)
 <figcaption>One of the photos I took when I tried to sell it at some point XD</figcaption>
+</figure>
+
+<figure>
 
 ![macbook high sierra](macbook-high-sierra.jpg)
 <figcaption>Ditto but with the screen on displaying the system info</figcaption>
+</figure>
 
 MacBoy was shocked: "Did I not just become useful again, but also become up-to-date again? My sensors aren't lying?"
 
@@ -86,20 +92,35 @@ The solution was eventually found; it needed a `broadcom-wl` driver, which requi
 
 Everything was good now; MacBoy and I were happy to be together again, without the bad influence of his parent company. Time passed, new Fedora versions came out, I distro-hopped more, but every time returned to Fedora, migrated from Workstation to Silverblue, learned more about FOSS, and even started contributing translations and later on, even icons. But everything good comes to an end.
 
+<figure>
+
 ![macbook ubuntu](macbook-ubuntu.jpg)
 <figcaption>One of my Ubuntu installs, not the first one though</figcaption>
+</figure>
+
+<figure>
 
 ![macbook chromeos](macbook-chromeos.jpg)
 <figcaption>For some reason I decided to try ChromeOS, yes it was pure dogshit, even the Linux container didn't work</figcaption>
+</figure>
+
+<figure>
 
 ![macbook endeavouros](macbook-endeavouros.jpg)
 <figcaption>For some time I daily-drove EndeavourOS, such a good distro but not exactly for me</figcaption>
+</figure>
+
+<figure>
 
 ![macbook sway](macbook-sway.jpg)
 <figcaption>Trying out Sway since everyone kept talking about tiling managers, I wasn't impressed and moved back to GNOME</figcaption>
+</figure>
+
+<figure>
 
 ![macbook rice](macbook-rice.jpg)
 <figcaption>My first "rice" that I <a href="https://www.reddit.com/r/unixporn/comments/t8mxai/gnome_aperture_arch_rice_labs/">shared at r/unixporn</a></figcaption>
+</figure>
 
 ### The Repair Hell
 
@@ -109,13 +130,19 @@ The charger started acting up: heating, sparking, and not charging. No wonder, i
 |-------------------------|-----------------------------------------|-------------------------------------------------------------|
 | ![charger](charger.jpg) | ![charger closeup](charger-closeup.jpg) | ![charger connector closeup](charger-connector-closeup.jpg) |
 
+<figure>
+
 ![charger repair](charger-repair.jpg)
 <figcaption>The last charger "repair", all serious this time, we even got this thermal thingy!</figcaption>
+</figure>
 
 I used it in this hacky way for a while. It was an unpleasant experience, but there's so much you can do in such a situation: constantly reconnecting the charger, pulling out the pins, sandpapering more and more metal from the connector. Then the unavoidable happened, it finally died.
 
+<figure>
+
 ![macbook webdev learning](macbook-webdev-learning.jpg)
 <figcaption>The start of my webdev learning, well, one of the unsuccessful attempts</figcaption>
+</figure>
 
 MacBoy was put in a drawer until better times when a new charger could be bought. In the meantime, I used my mom's laptop to not lose access to a computer entirely.
 
@@ -153,10 +180,16 @@ While still there, we checked all the nearby stores if they would like to buy it
 
 It was a long and interesting journey, but everything comes to an end. MacBoy was put in a drawer until better times when we can get another same MacBook and take the motherboard from it and put it in MacBoy, resulting in a FrankenBook. Until then, the story ends here.
 
+<figure>
+
 ![macbook current](macbook-current.jpg)
 <figcaption>Current state, it turns on for a few minutes using the direct power method and old charger, but that's about it</figcaption>
+</figure>
 
 *Laughs* GOTCHA! It doesn't. We already got the new laptop, more on that in the next post. Stay tuned!
 
+<figure>
+
 ![dell with this post open](dell-with-this-post-open.jpg)
 <figcaption>This post's draft open on said new laptop, Dell Latitude E7470</figcaption>
+</figure>
