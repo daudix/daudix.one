@@ -68,7 +68,6 @@ body {
 	margin-top: 2rem;
 	margin-inline-start: 1.5rem;
 	box-shadow: var(--shadow-raised);
-	border-radius: calc(var(--rounded-corner-small) / 2);
 	background-color: white;
 	padding: 0.5rem;
 	width: 10rem;
@@ -99,22 +98,23 @@ body {
 		}
 
 		#polaroid-shine {
-			top: -100%;
+			top: -5rem;
+			transform: rotate(35deg);
 			background-color: rgba(255, 255, 255, 0.25);
 		}
 	}
 
 	#polaroid-shine {
 		position: absolute;
-		top: -75%;
-		left: -50%;
+		top: -2rem;
+		left: 0;
 		transform: rotate(30deg);
 		z-index: 1;
 		filter: blur(0.25rem);
 		transition: var(--transition-longer);
 		background-color: rgba(255, 255, 255, 0.5);
-		width: 200%;
-		height: 100%;
+		width: 14rem;
+		height: 8rem;
 	}
 
 	#polaroid-photo-container {
