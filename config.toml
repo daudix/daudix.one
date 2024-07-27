@@ -34,7 +34,6 @@ show_read_time = true
 [extra.nav]
 show_feed = true
 links = [
-  { url = "@/about/index.md", name = "About" },
   { url = "@/blog/_index.md", name = "Blog" },
   { url = "@/design/index.md", name = "Design" },
   { url = "@/find/index.md", name = "Find" },
