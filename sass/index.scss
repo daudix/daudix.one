@@ -519,20 +519,13 @@ body {
 	display: block;
 	position: relative;
 	float: inline-end;
-	transition: var(--transition-longer);
 	margin-inline-start: 1rem;
 	box-shadow: 0 0.75rem 1.5rem -1rem rgba(0, 0, 0, 0.5);
 	border: 4rem solid transparent;
 	border-image: url("assets/border.png") 32 repeat;
 	image-rendering: pixelated;
-	// width: min(calc(var(--container-width) / 1.5), 100%);
 	width: min(18rem, 100%);
 	height: 12rem;
-
-	&:hover {
-		transform: perspective(16rem) rotateX(5deg) rotateY(-5deg) scale(1.1);
-		box-shadow: 0 1rem 1.75rem -1.25rem rgba(0, 0, 0, 0.75);
-	}
 
 	#window-contents {
 		-webkit-backdrop-filter: var(--blur);
@@ -544,6 +537,7 @@ body {
 		backdrop-filter: var(--blur);
 		background-color: var(--nav-bg);
 		padding: 1rem;
+		overflow: auto;
 
 		#rainbow-text {
 			display: inline-block;
