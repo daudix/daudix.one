@@ -10,7 +10,7 @@
 }
 
 body {
-	background: var(--bg-color), scroll url("assets/static.gif"), var(--primary-color);
+	background: var(--bg-color), fixed url("assets/static.gif"), var(--primary-color);
 	background-blend-mode: normal, difference;
 }
 
