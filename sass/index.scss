@@ -34,7 +34,10 @@ body {
 }
 
 #header {
+	display: inline-block;
 	transition: var(--transition-longer);
+	margin: 0;
+	margin-top: 2rem;
 	color: var(--primary-color);
 	font-style: italic;
 	font-weight: bold;
@@ -62,6 +65,7 @@ body {
 	transform: perspective(32rem) rotateX(5deg) rotate(5deg);
 	transform-origin: 50% 1rem;
 	transition: var(--transition-longer);
+	margin-top: 2rem;
 	margin-inline-start: 1.5rem;
 	box-shadow: var(--shadow-raised);
 	border-radius: calc(var(--rounded-corner-small) / 2);
