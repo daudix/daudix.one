@@ -62,7 +62,7 @@ body {
 	display: block;
 	position: relative;
 	float: inline-end;
-	transform: perspective(32rem) rotateX(5deg) rotate(5deg);
+	transform: perspective(16rem) rotateX(5deg) rotate(5deg);
 	transform-origin: 50% 1rem;
 	transition: var(--transition-longer);
 	margin-top: 2rem;
@@ -80,7 +80,7 @@ body {
 		top: 0.25rem;
 		left: calc(50% - 0.7813rem);
 		transform: rotate(10deg);
-		transform: perspective(32rem) rotateX(-5deg) rotate(-5deg);
+		transform: perspective(16rem) rotateX(-5deg) rotate(-5deg);
 		z-index: 2;
 		transition: var(--transition);
 		background-image: url("assets/thumbtack.png");
@@ -110,7 +110,6 @@ body {
 		left: -50%;
 		transform: rotate(30deg);
 		z-index: 1;
-		mix-blend-mode: screen;
 		filter: blur(0.25rem);
 		transition: var(--transition-longer);
 		background-color: rgba(255, 255, 255, 0.5);
@@ -120,7 +119,6 @@ body {
 
 	#polaroid-photo-container {
 		position: relative;
-		// overflow: hidden;
 
 		&::after {
 			position: absolute;
