@@ -62,7 +62,7 @@ body {
 	display: block;
 	position: relative;
 	float: inline-end;
-	transform: perspective(16rem) rotate(5deg) rotateX(5deg) scale(1.025);
+	transform: perspective(32rem) rotate(5deg) rotateX(5deg);
 	transform-origin: 50% 1rem;
 	transition: var(--transition-longer);
 	margin-top: 2rem;
@@ -80,7 +80,7 @@ body {
 		position: absolute;
 		top: 0.25rem;
 		left: calc(50% - 0.7813rem);
-		transform: perspective(16rem) rotate(-5deg) rotateX(-5deg) scale(0.975);
+		transform: perspective(32rem) rotate(-5deg) rotateX(-5deg);
 		z-index: 2;
 		transition: var(--transition);
 		background-image: url("assets/thumbtack.png");
