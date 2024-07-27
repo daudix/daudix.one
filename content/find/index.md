@@ -14,19 +14,15 @@ stylesheets = ["find.css"]
 
 ## Contacts
 
-Currently it's <time><span id="clock"><noscript>NO:JS</noscript></span></time> <small>(UTC+3)</small> for me and I'm <span id="online-indicator"><noscript>N/A</noscript></span>, so take that into consideration.
+For me it's currently <time><span id="clock"><noscript>NO:JS</noscript></span></time> <small>(UTC+3)</small>  and I'm <span id="online-indicator"><noscript>N/A</noscript></span>, so take that into consideration.
 
-{% alert(tip=true) %}
-Check my online status on the [home](@/_index.md) page in the form of a small dot on the avatar.
-{% end %}
-
-Feel free to message me on any of these.
+Feel free to message me on any of these:
 
 <small>From most preferred to the least ↓</small>
 
 ![die in a fire](die-in-a-fire.jpg#end)
 
-- [Matrix](https://matrix.to/#/@daudix:envs.net) <small>(there are accounts on other homeservers, but I don't use them)</small>
+- [Matrix](https://matrix.to/#/@daudix:envs.net) <small>(I have alts on other homeservers, but I don't use them)</small>
 - [Discord](https://discord.com/users/650757995378114581)
 - [Telegram](https://t.me/ddaudix)
 - [Mail (disroot)](mailto:daudix@disroot.org)
