@@ -544,7 +544,7 @@ body {
 
 			span {
 				display: block;
-				animation: rainbow 1.2s steps(1, end) infinite; // letter-spacing 1.2s ease-in-out alternate infinite
+				animation: rainbow 1.2s steps(1, end) infinite;
 				font-weight: bold;
 				line-height: 0.75;
 				letter-spacing: -0.05em;
@@ -596,12 +596,6 @@ body {
 
 					to {
 						color: #ab9df2;
-					}
-				}
-
-				@keyframes letter-spacing {
-					to {
-						letter-spacing: -0.05em;
 					}
 				}
 			}
