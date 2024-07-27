@@ -6,7 +6,8 @@ stylesheets = ["index.css"]
 {% alert(warning=true) %}
 This page is currently under construction.  
 I decided to merge the "about" and "home" pages, since the latter was rather empty.  
-This is also an opportunity to do some redesign, so yeah, beware of dragons! (some dragons are pretty cute though)
+This is also an opportunity to do some redesign, so yeah, beware of dragons!  
+(some dragons are pretty cute though)
 {% end %}
 
 ***
