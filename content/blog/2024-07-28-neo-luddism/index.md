@@ -52,7 +52,7 @@ As per 1990 [neo-Luddism manifest](https://theanarchistlibrary.org/library/chell
 > 1. *Neo-Luddites are not anti-technology.* Technology is intrinsic to human creativity and culture. What we oppose are the kinds of technologies that are, at root, destructive of human lives and communities. We also reject technologies that emanate from a worldview that sees rationality as the key to human potential, material acquisition as the key to human fulfillment, and technological development as the key to social progress.
 > 2. *All technologies are political.* As social critic Jerry Mander writes in Four Arguments for the Elimination of Television, technologies are not neutral tools that can be used for good or evil depending on who uses them. They are entities that have been consciously structured to reflect and serve specific powerful interests in specific historical situations. The technologies created by mass technological society are those that serve the perpetuation of mass technological society. They tend to be structured for short-term efficiency, ease of production, distribution, marketing, and profit potential — or for war-making. As a result, they tend to create rigid social systems and institutions that people do not understand and cannot change or control.
 >
-> As Mander points out, television does not just bring entertainment and information to households across the globe. It offers corporations a surefire method of expanding their markets and controlling social and political thought. (It also breaks down family communications and narrows people’s experience of life by mediating reality and lowering their span of attention.)
+> As Mander points out, television does not just bring entertainment and information to households across the globe. It offers corporations a surefire method of expanding their markets and controlling social and political thought. (It also breaks down family communications and narrows people's experience of life by mediating reality and lowering their span of attention.)
 
 In the last 30+ years a lot have changed, but this manifest still holds up.
 
@@ -64,9 +64,9 @@ I think this is pretty neat. I could water down this article with my own thought
 
 There are some nice articles about it and there's no need to re-type them here, just give them a read:
 
-- [I’m a Luddite. You should be one too](https://theconversation.com/im-a-luddite-you-should-be-one-too-163172)
+- [I'm a Luddite. You should be one too](https://theconversation.com/im-a-luddite-you-should-be-one-too-163172)
 - [A Nod to Ned Ludd](https://thebaffler.com/salvos/a-nod-to-ned-ludd)
-- [What’s a Luddite? An expert on technology and society explains](https://theconversation.com/whats-a-luddite-an-expert-on-technology-and-society-explains-203653)
+- [What's a Luddite? An expert on technology and society explains](https://theconversation.com/whats-a-luddite-an-expert-on-technology-and-society-explains-203653)
 - [Will 2018 be the year of the neo-luddite?](https://www.theguardian.com/technology/2018/mar/04/will-2018-be-the-year-of-the-neo-luddite)
 - [Rethinking the Luddites in the Age of A.I.](https://www.newyorker.com/books/page-turner/rethinking-the-luddites-in-the-age-of-ai)
 - [The neo-Luddites: how much tech is too much?](https://cybernews.com/editorial/neo-luddites-how-much-tech-is-too-much/)
