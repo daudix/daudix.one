@@ -12,6 +12,10 @@
 body {
 	background: var(--bg-color), fixed url("assets/static.gif"), var(--primary-color);
 	background-blend-mode: normal, difference;
+
+	@media (prefers-reduced-motion) {
+		background: var(--bg-color), fixed url("assets/static-static.gif"), var(--primary-color);
+	}
 }
 
 .drop-shadow {
