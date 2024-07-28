@@ -34,9 +34,9 @@ body {
 }
 
 #header-container {
-	display: inline-block;
+	display: block;
 	transition: var(--transition-longer);
-	margin-top: 2rem;
+	margin: 4rem 0 1rem;
 	width: min(31.0625rem, 100%);
 
 	&:hover {
@@ -68,6 +68,10 @@ body {
 			-webkit-mask-image: $mask;
 			mask-image: $mask;
 		}
+	}
+
+	@media only screen and (max-width: 758px) {
+		margin: 4rem auto 1rem;
 	}
 }
 
@@ -202,7 +206,7 @@ body {
 		}
 	}
 
-	@media only screen and (max-width: 720px) {
+	@media only screen and (max-width: 758px) {
 		float: none;
 		margin: 0 auto;
 	}
