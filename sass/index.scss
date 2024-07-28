@@ -34,10 +34,13 @@ body {
 }
 
 #header-container {
+	display: inline-block;
 	transition: var(--transition-longer);
+	margin-top: 2rem;
+	width: min(31.0625rem, 100%);
 
 	&:hover {
-		// DASHIE!
+		// Dashie!
 		transform: translate(0.5625rem, -0.5625rem);
 		filter: drop-shadow(-0.1875rem 0.1875rem 0 #1b98d1) drop-shadow(-0.1875rem 0.1875rem 0 #fde85f) drop-shadow(-0.1875rem 0.1875rem 0 #ec4141);
 
@@ -50,18 +53,15 @@ body {
 		$mask: url("assets/header.png");
 		-webkit-mask-size: cover;
 		-webkit-mask-image: $mask;
-		-webkit-user-select: none;
-		display: inline-block;
 		mask-image: $mask;
-		mask-size: cover;
+		mask-size: contain;
 		transition: var(--transition-longer);
 		margin: 0;
-		margin-top: 2rem;
 		background-color: var(--primary-color);
-		width: 31.0625rem;
-		height: 7.0625rem;
+		aspect-ratio: 497 / 113;
+		width: 100%;
+		overflow: hidden;
 		color: transparent;
-		user-select: none;
 
 		@media (prefers-reduced-motion) {
 			$mask: url("assets/header-static.png");
