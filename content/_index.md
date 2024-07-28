@@ -33,7 +33,10 @@ This is also an opportunity to do some redesign, so yeah, beware of dragons!
   <a href="https://status.cafe/users/daudix"><span id="statuscafe-username"></span></a>
 </div>
 
+<div id="header-container">
+
 # David Lapshin { #header }
+</div>
 
 Greetings! Name's David, you may also know me by my online handle; Daudix.
 

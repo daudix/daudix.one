@@ -33,28 +33,41 @@ body {
 	}
 }
 
-#header {
-	display: inline-block;
+#header-container {
 	transition: var(--transition-longer);
-	margin: 0;
-	margin-top: 2rem;
-	color: var(--primary-color);
-	font-style: italic;
-	font-weight: bold;
-	font-size: 4rem;
 
 	&:hover {
 		// DASHIE!
-		transform: translate(0.5625rem, -0.5625rem);
-		color: #9bdbf5;
-		text-shadow:
-			-0.1875rem 0.1875rem 0 #1b98d1,
-			-0.375rem 0.375rem 0 #fde85f,
-			-0.5625rem 0.5625rem 0 #ec4141;
+		transform: translate(9px, -9px);
+		filter: drop-shadow(-3px 3px 0 #1b98d1) drop-shadow(-3px 3px 0 #fde85f) drop-shadow(-3px 3px 0 #ec4141);
+
+		#header {
+			background-color: #9bdbf5;
+		}
 	}
 
-	@media only screen and (max-width: 720px) {
-		text-align: center;
+	#header {
+		$mask: url("assets/header.png");
+		-webkit-mask-size: cover;
+		-webkit-mask-image: $mask;
+		-webkit-user-select: none;
+		display: inline-block;
+		mask-image: $mask;
+		mask-size: cover;
+		transition: var(--transition-longer);
+		margin: 0;
+		margin-top: 2rem;
+		background-color: var(--primary-color);
+		width: 497px;
+		height: 113px;
+		color: transparent;
+		user-select: none;
+
+		@media (prefers-reduced-motion) {
+			$mask: url("assets/header-static.png");
+			-webkit-mask-image: $mask;
+			mask-image: $mask;
+		}
 	}
 }
 
@@ -67,8 +80,7 @@ body {
 	transition: var(--transition-longer);
 	margin-top: 2rem;
 	margin-inline-start: 1.5rem;
-	// box-shadow: var(--shadow-raised);
-	box-shadow: 0 0.75rem 1.5rem -1rem rgba(0, 0, 0, 0.5);
+	box-shadow: var(--shadow-raised);
 	border-radius: var(--rounded-corner-small);
 	background-color: white;
 	padding: 0.5rem;
@@ -549,24 +561,33 @@ body {
 				line-height: 0.75;
 				letter-spacing: -0.05em;
 
+				&:nth-child(1) {
+					color: #ff6188;
+				}
+
 				&:nth-child(2) {
 					animation-delay: 0.2s;
+					color: #fc9867;
 				}
 
 				&:nth-child(3) {
 					animation-delay: 0.4s;
+					color: #ffd866;
 				}
 
 				&:nth-child(4) {
 					animation-delay: 0.6s;
+					color: #a9dc76;
 				}
 
 				&:nth-child(5) {
 					animation-delay: 0.8s;
+					color: #78dce8;
 				}
 
 				&:nth-child(6) {
 					animation-delay: 1s;
+					color: #ab9df2;
 				}
 
 				@keyframes rainbow {
