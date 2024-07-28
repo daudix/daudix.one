@@ -53,6 +53,7 @@ body {
 		$mask: url("assets/header.png");
 		-webkit-mask-size: cover;
 		-webkit-mask-image: $mask;
+		-webkit-user-select: none;
 		mask-image: $mask;
 		mask-size: contain;
 		transition: var(--transition-longer);
@@ -62,6 +63,7 @@ body {
 		width: 100%;
 		overflow: hidden;
 		color: transparent;
+		user-select: none;
 
 		@media (prefers-reduced-motion) {
 			$mask: url("assets/header-static.png");
