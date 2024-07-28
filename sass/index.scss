@@ -38,8 +38,8 @@ body {
 
 	&:hover {
 		// DASHIE!
-		transform: translate(9px, -9px);
-		filter: drop-shadow(-3px 3px 0 #1b98d1) drop-shadow(-3px 3px 0 #fde85f) drop-shadow(-3px 3px 0 #ec4141);
+		transform: translate(0.5625rem, -0.5625rem);
+		filter: drop-shadow(-0.1875rem 0.1875rem 0 #1b98d1) drop-shadow(-0.1875rem 0.1875rem 0 #fde85f) drop-shadow(-0.1875rem 0.1875rem 0 #ec4141);
 
 		#header {
 			background-color: #9bdbf5;
@@ -58,8 +58,8 @@ body {
 		margin: 0;
 		margin-top: 2rem;
 		background-color: var(--primary-color);
-		width: 497px;
-		height: 113px;
+		width: 31.0625rem;
+		height: 7.0625rem;
 		color: transparent;
 		user-select: none;
 
@@ -427,7 +427,7 @@ body {
 		}
 
 		to {
-			transform: translateY(700px);
+			transform: translateY(45rem);
 			opacity: 0;
 		}
 	}
@@ -542,10 +542,10 @@ body {
 	#window-contents {
 		-webkit-backdrop-filter: var(--blur);
 		position: absolute;
-		top: -32px;
-		right: -58px;
-		bottom: -55px;
-		left: -58px;
+		top: -2rem;
+		right: -3.625rem;
+		bottom: -3.4375rem;
+		left: -3.625rem;
 		backdrop-filter: var(--blur);
 		background-color: var(--nav-bg);
 		padding: 1rem;
