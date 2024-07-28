@@ -9,9 +9,7 @@ description = "Some details about this website."
 This is the least fun page on this website. Deal with it.
 {% end %}
 
-This website is a passion project of mine; it's made with a lot of love and attention to detail (I bet you've noticed that already), is constantly updated, and tries to be (somewhat) lightweight and compatible with older browsers.
-
-At very least, it works on iOS 15 and macOS High Sierra; which I'm sure a lot of people still use.
+This website is a passion project of mine; it's made with a lot of love and attention to detail (I bet you've noticed that already), is constantly updated and improved, and tries to be (somewhat) lightweight and compatible with older browsers. <small>(at very least it works on iOS 15 and macOS High Sierra; which I'm sure a lot of people still use)</small>
 
 It used to be hosted on [GitHub pages](https://web.archive.org/web/20221030010150/https://daudix-ufo.github.io/), then on [Codeberg Pages](https://daudix.one), then on [exozy.me](https://daudix.exozy.me), and now it's hosted on Codeberg Pages again.
 
