@@ -174,20 +174,24 @@ body {
 	}
 
 	a {
-		filter: contrast(200%) brightness(75%) grayscale(100%);
 		color: inherit;
 		font-weight: normal;
 		text-decoration: none;
 
 		&:hover {
-			filter: none;
 			text-decoration: underline;
+			text-decoration-style: solid;
 		}
 	}
 
 	#statuscafe-username {
+		filter: contrast(200%) brightness(75%) grayscale(100%);
 		margin-top: 0.5rem;
 		font-size: 0.5625rem;
+
+		&:hover {
+			filter: none;
+		}
 
 		&::after {
 			content: " →";
