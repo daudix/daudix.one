@@ -36,7 +36,7 @@ body {
 #header-container {
 	display: block;
 	transition: var(--transition-longer);
-	margin: 4rem 0 1rem;
+	margin: 2rem 0 1rem;
 	width: min(31.0625rem, 100%);
 
 	&:hover {
@@ -71,7 +71,7 @@ body {
 	}
 
 	@media only screen and (max-width: 758px) {
-		margin: 4rem auto 1rem;
+		margin: 2rem auto 1rem;
 	}
 }
 
@@ -208,7 +208,7 @@ body {
 
 	@media only screen and (max-width: 758px) {
 		float: none;
-		margin: 0 auto;
+		margin: 2rem auto 0;
 	}
 }
 
