@@ -80,6 +80,7 @@ Some things that I like:
   - [Cyberpunk](https://aesthetics.fandom.com/wiki/Cyberpunk)
   - [Vaporwave](https://aesthetics.fandom.com/wiki/Vaporwave)
   - [Liminal Space](https://aesthetics.fandom.com/wiki/Liminal_Space)
+- Monokai Pro <small>(I know, very random, but hear me out, it got this sweet purple tint)</small>
 - Photography <small>(although I don't have much opportunity to shoot anything else than a view from my window)</small>
 - Smol/indie web
 - Minor details and references
