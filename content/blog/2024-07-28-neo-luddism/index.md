@@ -60,7 +60,7 @@ In the last 30+ years a lot have changed, but this manifest still holds up.
 
 In our age, when the Internet is flooded with AI-generated articles, images, and music, neo-Luddism is becoming more and more popular - people are fed up, not only with AI, but also with social media with its doomscrolling and fake realities, smartphones that are too smart, spyware advertised as privacy, and such, so they [move to dumbphones](@/blog/2024-07-08-using-dumbphone/index.md), install custom ROMs, move to smaller cities or even outside of them; join slow living movement, and generally trying to reduce their dependence on the new technology that turned out not to be as sweet as it seemed.
 
-I think this is pretty neat. I could water down this article with my own thoughts about how fucked up our world is, but I'll leave this up to you, I just wanted to give you a brief introducion to Luddism and Neo-Luddism, since I think this should be more popular.
+I think this is pretty neat. I could water down this article with my own thoughts about how fucked up our world is, but I'll leave this up to you, I just wanted to give you a brief introduction to Luddism and Neo-Luddism, since I think this should be more popular.
 
 There are some nice articles about it and there's no need to re-type them here, just give them a read:
 

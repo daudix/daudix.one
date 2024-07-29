@@ -1,5 +1,2 @@
 [default]
-extend-ignore-re = ["\\bBig Sur\\b"]
-
-[files]
-extend-exclude = ["static/jax.txt"]
+extend-ignore-re = ["\\bBig Sur\\b", "\\bNed Ludd\\b"]
