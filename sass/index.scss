@@ -159,7 +159,8 @@ body {
 
 	#polaroid-title,
 	#statuscafe-content,
-	#statuscafe-username {
+	#statuscafe-username,
+	a {
 		display: block;
 		color: rgba(0, 0, 0, 0.8);
 		line-height: 1;
@@ -180,7 +181,7 @@ body {
 	}
 
 	a {
-		color: inherit;
+		width: fit-content;
 		font-weight: normal;
 		text-decoration: none;
 
