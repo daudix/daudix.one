@@ -221,7 +221,8 @@
 
 body:has(#skeuo-switch:checked) {
 	box-shadow: inset 0 0 8rem black;
-	background: url("coffee/glow.svg") center/cover, url("coffee/fabric.webp");
+	background: radial-gradient(circle at 0% 0%, var(--primary-color-alpha), transparent) top left / cover, url("coffee/fabric.webp");
+	background-blend-mode: hard-light, normal;
 
 	#site-nav {
 		-webkit-backdrop-filter: none;
@@ -358,7 +359,7 @@ body:has(#skeuo-switch:checked) {
 			-webkit-filter: $drop-shadow;
 			filter: $drop-shadow;
 		}
-		
+
 		#coffee-banner {
 			box-shadow: var(--shadow);
 		}
@@ -427,7 +428,8 @@ body:has(#skeuo-switch:checked) {
 	}
 
 	@media (prefers-color-scheme: dark) {
-		background: url("coffee/glow-d.svg") center/cover, linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("coffee/fabric.webp");
+		background: radial-gradient(circle at 0% 0%, var(--primary-color-alpha), transparent) top left / cover, linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("coffee/fabric.webp");
+		background-blend-mode: hard-light, normal, normal;
 
 		#site-nav {
 			outline: 0.0625rem solid rgba(0, 0, 0, 0.8);
