@@ -21,7 +21,10 @@ body {
 	&::after {
 		filter: drop-shadow(0 0.125rem 0.125rem var(--primary-color)) drop-shadow(0 0.125rem 0.25rem var(--primary-color));
 		animation: plane infinite linear 1s;
-		background-image: linear-gradient(to right, var(--primary-color-alpha) 0.0625rem, transparent 0.0625rem), linear-gradient(to right, var(--primary-color-alpha) 0.0625rem, transparent 0.0625rem), linear-gradient(var(--primary-color-alpha) 0.0625rem, transparent 0.0625rem);
+		background-image:
+			linear-gradient(to right, var(--primary-color-alpha) 0.0625rem, transparent 0.0625rem),
+			linear-gradient(to right, var(--primary-color-alpha) 0.0625rem, transparent 0.0625rem), // Repeat the gradient twice so that it appers brighter
+			linear-gradient(var(--primary-color-alpha) 0.0625rem, transparent 0.0625rem);
 		background-size: 2rem 2rem;
 		background-repeat: repeat;
 
@@ -59,9 +62,9 @@ body {
 		transition: var(--transition-longer);
 		margin: 0;
 		background-color: var(--primary-color);
-		aspect-ratio: 4.40 / 1;
+		aspect-ratio: 4.40 / 1; // Make sure the header has proper height regardless of the width
 		width: 100%;
-		overflow: hidden;
+		overflow: hidden; // Make aspect ratio set above work
 		color: transparent;
 		user-select: none;
 
@@ -77,6 +80,7 @@ body {
 	}
 }
 
+// It's not an accurate polaroid please don't kill me
 #polaroid {
 	display: block;
 	position: relative;
@@ -87,7 +91,7 @@ body {
 	margin-top: 2rem;
 	margin-inline-start: 1.5rem;
 	box-shadow: var(--shadow-raised);
-	border-radius: var(--rounded-corner-small);
+	border-radius: var(--rounded-corner-small); // I know that polaroids have knife-sharp corners, that's only to make sure shine gets clipped in Firefox
 	background-color: white;
 	padding: 0.5rem;
 	width: 10rem;
@@ -98,7 +102,7 @@ body {
 		position: absolute;
 		top: 0.25rem;
 		left: calc(50% - 0.7813rem);
-		transform: perspective(32rem) rotate(-5deg) rotateX(-5deg);
+		transform: perspective(32rem) rotate(-5deg) rotateX(-5deg); // Dirty hack to avoid transformation of the thumbtack
 		z-index: 2;
 		transition: var(--transition);
 		background-image: url("assets/thumbtack.png");
@@ -136,6 +140,7 @@ body {
 		height: 8rem;
 	}
 
+	// You cannot set ::after on the image directly, hense the container
 	#polaroid-photo-container {
 		position: relative;
 
@@ -181,18 +186,18 @@ body {
 	}
 
 	a {
-		width: fit-content;
+		width: fit-content; // Fix the click target filling all the available width
 		font-weight: normal;
 		text-decoration: none;
 
 		&:hover {
 			text-decoration: underline;
-			text-decoration-style: solid;
+			text-decoration-style: solid; // Make sure the underline isn't wavy
 		}
 	}
 
 	#statuscafe-username {
-		filter: contrast(200%) brightness(75%) grayscale(100%);
+		filter: contrast(200%) brightness(75%) grayscale(100%); // Printed look for statuscafe emoji
 		margin-top: 0.5rem;
 		font-size: 0.5625rem;
 
@@ -205,7 +210,7 @@ body {
 		}
 
 		a {
-			display: none;
+			display: none; // Hide the statuscafe username
 		}
 	}
 
@@ -243,8 +248,7 @@ body {
 	position: relative;
 }
 
-// This style is just a big ugly hack.
-// But hey, it works!
+// This style is a huge and ugly hack, but hey, it works! ...kinda
 #portal {
 	transition: var(--transition);
 
@@ -419,6 +423,7 @@ body {
 	transform-origin: top left;
 	animation: hinge 2s forwards;
 
+	// Stolen from https://animate.style
 	@keyframes hinge {
 		from {
 			animation-timing-function: ease-in-out;
@@ -553,6 +558,7 @@ body {
 	#window-contents {
 		-webkit-backdrop-filter: var(--blur);
 		position: absolute;
+		// Get around bulky empty space caused by the image border
 		top: -2rem;
 		right: -3.625rem;
 		bottom: -3.4375rem;
@@ -626,9 +632,7 @@ body {
 						color: #ab9df2;
 					}
 
-					to {
-						color: #ab9df2;
-					}
+					// The last step is skipped, which is why it's not set
 				}
 			}
 		}
@@ -694,11 +698,11 @@ body {
 		image-rendering: pixelated;
 
 		&:hover {
-			transform: scale(2) !important;
+			transform: scale(2) !important; // Arrgh
 			box-shadow:
 				0 0 0 0.0625rem var(--primary-color-alpha),
 				0 0.125rem 0.375rem 0.125rem var(--primary-color-alpha),
-				0 0.25rem 1.5rem 0.25rem var(--primary-color-alpha) !important;
+				0 0.25rem 1.5rem 0.25rem var(--primary-color-alpha) !important; // Arrgh 2x
 		}
 	}
 }
