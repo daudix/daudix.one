@@ -42,7 +42,7 @@ links = [
 [extra.footer]
 show_copyright = true
 show_powered_by = true
-show_counter = true
+show_counter = false
 show_john = true
 links = [
   { url = "@/coffee/index.md", name = "Coffee" },
