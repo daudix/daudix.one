@@ -248,6 +248,45 @@ body {
 	position: relative;
 }
 
+#portal-blue::before,
+#portal-blue::after,
+#portal-orange::before,
+#portal-orange::after,
+#strawberry,
+#chicken,
+#goose {
+	image-rendering: pixelated;
+}
+
+#celeste,
+#stardew,
+#untitled {
+
+	#strawberry,
+	#chicken,
+	#goose {
+		display: inline-block;
+		position: absolute;
+		top: 0.25rem;
+		left: -1.1875rem;
+		transform: scale(0);
+		opacity: 0;
+		transition: var(--transition);
+		width: 1rem;
+		height: 1rem;
+	}
+
+	&:hover {
+
+		#strawberry,
+		#chicken,
+		#goose {
+			transform: scale(1);
+			opacity: 1;
+		}
+	}
+}
+
 // This style is a huge and ugly hack, but hey, it works! ...kinda
 #portal {
 	transition: var(--transition);
@@ -292,7 +331,6 @@ body {
 			transform: scale(0);
 			opacity: 0;
 			transition: var(--transition);
-			image-rendering: pixelated;
 			content: "";
 		}
 
@@ -308,6 +346,7 @@ body {
 	}
 
 	#portal-blue {
+
 		&::before,
 		&::after {
 			left: -0.25rem;
@@ -391,17 +430,7 @@ body {
 
 #celeste {
 	#strawberry {
-		display: inline-block;
-		position: absolute;
-		top: 0.25rem;
-		left: -1.1875rem;
-		transform: scale(0);
-		opacity: 0;
-		transition: var(--transition);
 		background: url("assets/sprites.gif") 0 -64px;
-		image-rendering: pixelated;
-		width: 1rem;
-		height: 1rem;
 	}
 
 	#celeste-text {
@@ -411,11 +440,6 @@ body {
 	}
 
 	&:hover {
-		#strawberry {
-			transform: scale(1);
-			opacity: 1;
-		}
-
 		#celeste-text {
 			transform: perspective(1rem) rotateX(10deg);
 			color: #62c2e0;
@@ -476,17 +500,7 @@ body {
 
 #stardew {
 	#chicken {
-		display: inline-block;
-		position: absolute;
-		top: 0.25rem;
-		left: -1.1875rem;
-		transform: scale(0);
-		opacity: 0;
-		transition: var(--transition);
 		background: url("assets/sprites.gif") 0 -80px;
-		image-rendering: pixelated;
-		width: 1rem;
-		height: 1rem;
 	}
 
 	#stardew-text {
@@ -494,11 +508,6 @@ body {
 	}
 
 	&:hover {
-		#chicken {
-			transform: scale(1);
-			opacity: 1;
-		}
-
 		#stardew-text {
 			color: #e0a100;
 			font-weight: bold;
@@ -513,17 +522,7 @@ body {
 	}
 
 	#goose {
-		display: inline-block;
-		position: absolute;
-		top: 0.0625rem;
-		left: -1.1875rem;
-		transform: scale(0);
-		opacity: 0;
-		transition: var(--transition);
 		background: url("assets/sprites.gif") 0 -96px;
-		image-rendering: pixelated;
-		width: 1rem;
-		height: 1rem;
 	}
 
 	#untitled-text {
@@ -531,11 +530,6 @@ body {
 	}
 
 	&:hover {
-		#goose {
-			transform: scale(1);
-			opacity: 1;
-		}
-
 		#untitled-text {
 			font-weight: bold;
 		}
