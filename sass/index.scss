@@ -292,16 +292,22 @@ body {
 			transform: scale(0);
 			opacity: 0;
 			transition: var(--transition);
-			background-size: cover;
 			image-rendering: pixelated;
+			content: "";
+		}
+
+		&::before {
 			width: 1rem;
 			height: 2rem;
-			content: "";
+		}
+
+		&::after {
+			width: 0.5rem;
+			height: 2rem;
 		}
 	}
 
 	#portal-blue {
-
 		&::before,
 		&::after {
 			left: -0.25rem;
@@ -312,12 +318,12 @@ body {
 			-webkit-filter: $drop-shadow;
 			z-index: -1;
 			filter: $drop-shadow;
-			background-image: url("assets/portal-blue-bottom.gif");
+			background: url("assets/sprites.gif") 0 0;
 		}
 
 		&::after {
 			z-index: 1;
-			background-image: url("assets/portal-blue-top.gif");
+			background: url("assets/sprites.gif") 0 0;
 		}
 	}
 
@@ -333,12 +339,12 @@ body {
 			-webkit-filter: $drop-shadow;
 			z-index: -1;
 			filter: $drop-shadow;
-			background-image: url("assets/portal-orange-bottom.gif");
+			background: url("assets/sprites.gif") 0 -32px;
 		}
 
 		&::after {
 			z-index: 1;
-			background-image: url("assets/portal-orange-top.gif");
+			background: url("assets/sprites.gif") -8px -32px;
 		}
 	}
 
@@ -387,15 +393,15 @@ body {
 	#strawberry {
 		display: inline-block;
 		position: absolute;
-		top: 0.4rem;
-		left: -1rem;
+		top: 0.25rem;
+		left: -1.1875rem;
 		transform: scale(0);
 		opacity: 0;
 		transition: var(--transition);
-		background-image: url("assets/strawberry.gif");
+		background: url("assets/sprites.gif") 0 -64px;
 		image-rendering: pixelated;
-		width: 0.625rem;
-		height: 0.8125rem;
+		width: 1rem;
+		height: 1rem;
 	}
 
 	#celeste-text {
@@ -477,7 +483,7 @@ body {
 		transform: scale(0);
 		opacity: 0;
 		transition: var(--transition);
-		background-image: url("assets/chicken.gif");
+		background: url("assets/sprites.gif") 0 -80px;
 		image-rendering: pixelated;
 		width: 1rem;
 		height: 1rem;
@@ -514,7 +520,7 @@ body {
 		transform: scale(0);
 		opacity: 0;
 		transition: var(--transition);
-		background-image: url("assets/untitled.gif");
+		background: url("assets/sprites.gif") 0 -96px;
 		image-rendering: pixelated;
 		width: 1rem;
 		height: 1rem;
