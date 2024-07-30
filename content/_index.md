@@ -20,7 +20,7 @@ stylesheets = ["index.css"]
   </div>
   <div id="polaroid-gradient"></div>
   <span id="polaroid-title">Instant photo<br />format</span>
-  <span id="statuscafe-content"><noscript>Since JavaScript is disabled, the status cannot be loaded. You can still check it by yourself by clicking on the username</noscript></span>
+  <span id="statuscafe-content"></span>
   <a href="https://status.cafe/users/daudix"><span id="statuscafe-username"></span></a>
 </div>
 
