@@ -365,8 +365,6 @@ There are more things I want to tell you about, I want to write more in-depth po
 - [andregarzia.com/2022/01/gemini-is-a-little-gem.html](https://andregarzia.com/2022/01/gemini-is-a-little-gem.html)
 - [voidspace.blog/ramble/capsule-importance.gmi](gemini://voidspace.blog/ramble/capsule-importance.gmi)
 
-## Footnotes
-
 [^1]: [Tobias Bernard's Mastodon post about dithering](https://mastodon.social/@tbernard/109675668676999287)
 [^2]: [ASCII art at Wikipedia](https://en.wikipedia.org/wiki/ASCII_art)
 [^3]: [List of emoticons at Wikipedia](https://en.wikipedia.org/wiki/List_of_emoticons)
