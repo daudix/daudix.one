@@ -37,7 +37,7 @@ The technology they were attacking wasn't all that new either; Luddites often at
 
 The terror of violence caused some factory owners to abandon their plans for automation. They reverted to manual labor or closed up shop altogether. For a time, it seemed that the Luddites were making progress in winning over machines.
 
-But in the end, the factory owners won: they convinced the state to make " frame breaking " a treasonable crime, punishable by execution and penal transportation.
+But in the end, the factory owners won: they convinced the state to make "frame breaking" a treasonable crime, punishable by execution and penal transportation.
 
 The Luddites existed for 5 years until they were suppressed by legal and military forces; government ultimately dispatched 12,000 troops to suppress Luddite activity. Dozens of workers were executed for Luddite activities, including a whopping fourteen on one brutal day in January 1813. George Mellor, the Luddite captain, was eventually convicted of murdering Horsfall, the mill owner, and hanged at the age of twenty-three.
 
