@@ -28,7 +28,7 @@ Feel free to message me on any of these:
 - [Mail (disroot)](mailto:daudix@disroot.org)
 - [Mail (envs)](mailto:daudix@envs.net)
 - ~~[Signal](https://signal.me/#eu/0KKOAPEjDPbNVKFfWbNu9AHZE2od2quKOO5NxLmFqf/xA9940S5JKZbOhTwoa2wP)~~ <small>(my phone [is burnt](@/blog/2024-07-08-using-dumbphone/index.md) so don't use it, I won't receive the message in a while)</small>
-- ~~[XMPP](xmpp:daudix@nixnet.services)~~ <small>(admin was accused in being a pedo, so currently looking for a different server)</small>
+- ~~[XMPP](xmpp:daudix@nixnet.services)~~ <small>(there are rumors that the admin is a pedo, so currently looking for another server; better safe than sorry)</small>
 
 ## Socials
 

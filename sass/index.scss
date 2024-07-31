@@ -1,40 +1,40 @@
-body {
+// body {
 
-	// Synthwave plane
-	&::before,
-	&::after {
-		display: block;
-		position: fixed;
-		bottom: 0;
-		left: -50vw;
-		transform: perspective(8rem) rotateX(60deg);
-		z-index: -1;
-		width: 200vw;
-		height: 16rem;
-		content: "";
-	}
+// 	// Synthwave plane
+// 	&::before,
+// 	&::after {
+// 		display: block;
+// 		position: fixed;
+// 		bottom: 0;
+// 		left: -50vw;
+// 		transform: perspective(8rem) rotateX(60deg);
+// 		z-index: -1;
+// 		width: 200vw;
+// 		height: 16rem;
+// 		content: "";
+// 	}
 
-	&::before {
-		background-image: linear-gradient(var(--primary-color-alpha) 25%, transparent 75%);
-	}
+// 	&::before {
+// 		background-image: linear-gradient(var(--primary-color-alpha) 25%, transparent 75%);
+// 	}
 
-	&::after {
-		filter: drop-shadow(0 0.125rem 0.125rem var(--primary-color)) drop-shadow(0 0.125rem 0.25rem var(--primary-color));
-		animation: plane infinite linear 1s;
-		background-image:
-			linear-gradient(to right, var(--primary-color-alpha) 0.0625rem, transparent 0.0625rem),
-			linear-gradient(to right, var(--primary-color-alpha) 0.0625rem, transparent 0.0625rem), // Repeat the gradient twice so that it appers brighter
-			linear-gradient(var(--primary-color-alpha) 0.0625rem, transparent 0.0625rem);
-		background-size: 2rem 2rem;
-		background-repeat: repeat;
+// 	&::after {
+// 		filter: drop-shadow(0 0.125rem 0.125rem var(--primary-color)) drop-shadow(0 0.125rem 0.25rem var(--primary-color));
+// 		animation: plane infinite linear 1s;
+// 		background-image:
+// 			linear-gradient(to right, var(--primary-color-alpha) 0.0625rem, transparent 0.0625rem),
+// 			linear-gradient(to right, var(--primary-color-alpha) 0.0625rem, transparent 0.0625rem), // Repeat the gradient twice so that it appers brighter
+// 			linear-gradient(var(--primary-color-alpha) 0.0625rem, transparent 0.0625rem);
+// 		background-size: 2rem 2rem;
+// 		background-repeat: repeat;
 
-		@keyframes plane {
-			to {
-				background-position-y: 2rem;
-			}
-		}
-	}
-}
+// 		@keyframes plane {
+// 			to {
+// 				background-position-y: 2rem;
+// 			}
+// 		}
+// 	}
+// }
 
 #header-container {
 	display: block;
