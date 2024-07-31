@@ -8,8 +8,8 @@ stylesheets = ["find.css"]
 # Find Me
 
 <picture>
-  <source srcset="envelope-d.png" media="(prefers-color-scheme: dark)" />
-  <img class="no-hover" src="envelope-l.png" alt="envelope" />
+  <source srcset="envelope-d.webp" media="(prefers-color-scheme: dark)" />
+  <img class="no-hover" src="envelope-l.webp" alt="envelope" />
 </picture>
 
 ## Contacts
