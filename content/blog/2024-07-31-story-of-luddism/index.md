@@ -42,3 +42,8 @@ But in the end, the factory owners won: they convinced the state to make "frame 
 The Luddites existed for 5 years until they were suppressed by legal and military forces; government ultimately dispatched 12,000 troops to suppress Luddite activity. Dozens of workers were executed for Luddite activities, including a whopping fourteen on one brutal day in January 1813. George Mellor, the Luddite captain, was eventually convicted of murdering Horsfall, the mill owner, and hanged at the age of twenty-three.
 
 But the idea continued to live on...
+
+Banner sources:
+- The map: [Wikimedia](https://commons.wikimedia.org/wiki/File:Part_of_ye_Sea_Coast_of_England_Holland_%26_Flanders_Atlas_Minor_1736.jpg)
+- The Leader of the Luddites: [Wikimedia](https://commons.wikimedia.org/wiki/File:Luddite.jpg)
+- The Luddites hammering: Tom Morgan, Mary Evans Picture Library
