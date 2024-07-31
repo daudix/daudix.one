@@ -1,7 +1,6 @@
 +++
 title = "How People Got Fed Up: Luddism"
 description = "The brief story of Luddism. (1/?)"
-draft = true
 [taxonomies]
 tags = ["100DaysToOffload", "Luddism", "Neo-Luddism"]
 [extra]
