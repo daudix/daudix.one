@@ -6,7 +6,7 @@ tags = ["100DaysToOffload", "Luddism", "Neo-Luddism"]
 [extra]
 banner  = "banner.webp"
 [extra.comments]
-id = ""
+id = "112878216253904523"
 +++
 
 {% alert(tip=true) %}
