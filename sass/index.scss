@@ -706,3 +706,26 @@
 		}
 	}
 }
+
+#subway-surfers,
+#family-guy {
+	position: fixed;
+	z-index: 1;
+	box-shadow: var(--shadow);
+	border: none;
+	border-radius: var(--rounded-corner);
+	width: calc(((100vw - var(--container-width)) / 2) - 2rem);
+	max-height: calc(100vh - 2rem);
+}
+
+#subway-surfers {
+	top: 1rem;
+	right: 1rem;
+	aspect-ratio: 0.45 / 1;
+}
+
+#family-guy {
+	bottom: 1rem;
+	left: 1rem;
+	aspect-ratio: 16 / 9;
+}

@@ -187,6 +187,10 @@ Hey, you, yes, *you*. Got a website and a button? Just a button? I got a deal fo
 
 <img id="fluttershy" class="transparent no-hover drop-shadow" alt="fluttershy" src="assets/fluttershy.gif" />
 
+<div class="dialog-buttons">
+  <button class="inline-button" onclick="rizzItUp()">Rizz It Up</button>
+</div>
+
 <script type="text/javascript" src="https://status.cafe/current-status.js?name=daudix" defer></script>
 
 <script type="text/javascript">
@@ -197,5 +201,26 @@ Hey, you, yes, *you*. Got a website and a button? Just a button? I got a deal fo
     fluttershy.addEventListener("animationend", function () {
       fluttershy.classList.remove("flying");
     });
+  }
+</script>
+
+<script type="text/javascript">
+  function rizzItUp() {
+      const subwaySurfers = document.createElement("iframe");
+      subwaySurfers.setAttribute("id", "subway-surfers");
+      subwaySurfers.setAttribute("src", "https://www.youtube.com/embed/zZ7AimPACzc?autoplay=1&mute=1");
+      subwaySurfers.setAttribute("name", "youtube embed");
+      subwaySurfers.setAttribute("allow", "autoplay; encrypted-media");
+      subwaySurfers.setAttribute("allowfullscreen", "true");
+
+      const familyGuy = document.createElement("iframe");
+      familyGuy.setAttribute("id", "family-guy");
+      familyGuy.setAttribute("src", "https://www.youtube.com/embed/mn-Tlb_wfjc?autoplay=1");
+      familyGuy.setAttribute("name", "youtube embed");
+      familyGuy.setAttribute("allow", "autoplay; encrypted-media");
+      familyGuy.setAttribute("allowfullscreen", "true");
+
+      document.body.appendChild(subwaySurfers);
+      document.body.appendChild(familyGuy);
   }
 </script>
