@@ -707,6 +707,42 @@
 	}
 }
 
+.dialog-buttons {
+	position: relative;
+
+	.inline-button:hover + #dont {
+		transform: none;
+		opacity: 1;
+	}
+
+	#dont {
+		$url: url("assets/dont.png");
+		-webkit-mask-image: $url;
+		position: absolute;
+		top: calc(-50% + -19px);
+		left: 6.5rem;
+		transform: scale(0);
+		transform-origin: left;
+		opacity: 0;
+		z-index: -1;
+		mask-image: $url;
+		transition: var(--transition);
+		background-color: var(--primary-color);
+		width: 22.25rem;
+		height: 7.0625rem;
+
+		@media only screen and (max-width: 484px) {
+			display: none;
+		}
+
+		@media (prefers-reduced-motion) {
+			$url: url("assets/dont-static.png");
+			-webkit-mask-image: $url;
+			mask-image: $url;
+		}
+	}
+}
+
 #subway-surfers,
 #family-guy {
 	position: fixed;

@@ -189,6 +189,7 @@ Hey, you, yes, *you*. Got a website and a button? Just a button? I got a deal fo
 
 <div class="dialog-buttons">
   <button class="inline-button" onclick="rizzItUp()">Rizz It Up</button>
+  <div id="dont"></div>
 </div>
 
 <script type="text/javascript" src="https://status.cafe/current-status.js?name=daudix" defer></script>
@@ -206,21 +207,31 @@ Hey, you, yes, *you*. Got a website and a button? Just a button? I got a deal fo
 
 <script type="text/javascript">
   function rizzItUp() {
-      const subwaySurfers = document.createElement("iframe");
-      subwaySurfers.setAttribute("id", "subway-surfers");
-      subwaySurfers.setAttribute("src", "https://www.youtube.com/embed/zZ7AimPACzc?autoplay=1&mute=1");
-      subwaySurfers.setAttribute("name", "youtube embed");
-      subwaySurfers.setAttribute("allow", "autoplay; encrypted-media");
-      subwaySurfers.setAttribute("allowfullscreen", "true");
+      const rizzSoundEffect = "assets/rizz.mp3";
+      new Audio(rizzSoundEffect).play();
 
-      const familyGuy = document.createElement("iframe");
-      familyGuy.setAttribute("id", "family-guy");
-      familyGuy.setAttribute("src", "https://www.youtube.com/embed/mn-Tlb_wfjc?autoplay=1");
-      familyGuy.setAttribute("name", "youtube embed");
-      familyGuy.setAttribute("allow", "autoplay; encrypted-media");
-      familyGuy.setAttribute("allowfullscreen", "true");
+      const container = document.getElementById("main");
 
-      document.body.appendChild(subwaySurfers);
-      document.body.appendChild(familyGuy);
+      let subwaySurfers = document.getElementById("subway-surfers");
+      if (subwaySurfers === null) {
+          let subwaySurfers = document.createElement("iframe");
+          subwaySurfers.setAttribute("id", "subway-surfers");
+          subwaySurfers.setAttribute("src", "https://www.youtube.com/embed/zZ7AimPACzc?autoplay=1&mute=1");
+          subwaySurfers.setAttribute("name", "youtube embed");
+          subwaySurfers.setAttribute("allow", "autoplay; encrypted-media");
+          subwaySurfers.setAttribute("allowfullscreen", "true");
+          container.appendChild(subwaySurfers);
+      }
+
+      let familyGuy = document.getElementById("family-guy");
+      if (familyGuy === null) {
+          let familyGuy = document.createElement("iframe");
+          familyGuy.setAttribute("id", "family-guy");
+          familyGuy.setAttribute("src", "https://www.youtube.com/embed/mn-Tlb_wfjc?autoplay=1");
+          familyGuy.setAttribute("name", "youtube embed");
+          familyGuy.setAttribute("allow", "autoplay; encrypted-media");
+          familyGuy.setAttribute("allowfullscreen", "true");
+          container.appendChild(familyGuy);
+      }
   }
 </script>
