@@ -20,7 +20,7 @@
 		position: absolute;
 		top: 0;
 		right: 0;
-		transform: scale(0) rotate(90deg) translateY(-100%);
+		transform: scale(0.5) rotate(90deg) translateY(-100%);
 		transform-origin: top right;
 		opacity: 0;
 		transition: var(--transition-longer);
