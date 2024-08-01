@@ -710,9 +710,17 @@
 .dialog-buttons {
 	position: relative;
 
-	.inline-button:hover + #dont {
+	.inline-button:hover + #dont,
+	.inline-button:focus-visible + #dont {
 		transform: none;
 		opacity: 1;
+	}
+
+	@supports not selector(:focus-visible) {
+		.inline-button:focus + #dont {
+			transform: none;
+			opacity: 1;
+		}
 	}
 
 	#dont {
