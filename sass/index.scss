@@ -111,6 +111,7 @@
 		top: 0.25rem;
 		left: calc(50% - 0.7813rem);
 		transform: perspective(32rem) rotate(-5deg) rotateX(-5deg); // Dirty hack to avoid transformation of the thumbtack
+		z-index: 1;
 		transition: var(--transition);
 		background-image: url("assets/thumbtack.png");
 		background-size: cover;
