@@ -93,6 +93,7 @@
 	float: inline-end;
 	transform: perspective(32rem) rotate(5deg) rotateX(5deg);
 	transform-origin: 50% 1rem;
+	// z-index: 0;
 	transition: var(--transition-longer);
 	margin-top: 2rem;
 	margin-inline-start: 1.5rem;
@@ -110,7 +111,6 @@
 		top: 0.25rem;
 		left: calc(50% - 0.7813rem);
 		transform: perspective(32rem) rotate(-5deg) rotateX(-5deg); // Dirty hack to avoid transformation of the thumbtack
-		z-index: 2;
 		transition: var(--transition);
 		background-image: url("assets/thumbtack.png");
 		background-size: cover;
@@ -134,6 +134,16 @@
 			background-color: rgba(255, 255, 255, 0.1);
 		}
 	}
+
+	// #polaroid-background {
+	// 	position: absolute;
+	// 	transform: scale(2);
+	// 	opacity: 0.3;
+	// 	z-index: -1;
+	// 	filter: blur(0.5rem);
+	// 	margin: 0;
+	// 	inset: 0;
+	// }
 
 	#polaroid-shine {
 		-webkit-pointer-events: none;
@@ -732,18 +742,19 @@
 	#dont {
 		$url: url("assets/dont.png");
 		-webkit-mask-image: $url;
+		-webkit-pointer-events: none;
 		position: absolute;
 		top: calc(-50% + -1.1875rem);
 		left: 6.5rem;
 		transform: scale(0.5);
 		transform-origin: left;
 		opacity: 0;
-		z-index: -1;
 		mask-image: $url;
 		transition: var(--transition);
 		background-color: var(--primary-color);
 		width: 22.25rem;
 		height: 7.0625rem;
+		pointer-events: none;
 
 		@media only screen and (max-width: 484px) {
 			display: none;
