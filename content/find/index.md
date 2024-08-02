@@ -9,7 +9,7 @@ stylesheets = ["find.css"]
 
 <picture>
   <source srcset="envelope-d.webp" media="(prefers-color-scheme: dark)" />
-  <img class="no-hover" src="envelope-l.webp" alt="envelope" />
+  <img class="no-hover" alt="envelope" decoding="async" loading="lazy" src="envelope-l.webp"  />
 </picture>
 
 ## Contacts

@@ -36,6 +36,12 @@
 // 	}
 // }
 
+#hug {
+	margin-top: 0;
+	width: 4rem;
+	height: 4rem;
+}
+
 #header-container {
 	display: block;
 	transition: var(--transition-longer);
@@ -710,14 +716,14 @@
 .dialog-buttons {
 	position: relative;
 
-	.inline-button:hover + #dont,
-	.inline-button:focus-visible + #dont {
+	.inline-button:hover+#dont,
+	.inline-button:focus-visible+#dont {
 		transform: none;
 		opacity: 1;
 	}
 
 	@supports not selector(:focus-visible) {
-		.inline-button:focus + #dont {
+		.inline-button:focus+#dont {
 			transform: none;
 			opacity: 1;
 		}

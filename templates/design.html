@@ -13,8 +13,10 @@
 				<picture>
 					<img
 						class="no-hover full transparent drop-shadow"
-						src="icons/{{ icon.icon }}"
 						alt="{{ icon.name }}"
+						decoding="async"
+						loading="lazy"
+						src="icons/{{ icon.icon }}"
 					/>
 				</picture>
 				<small>{{ icon.name }}</small>
@@ -35,8 +37,10 @@
 				<picture>
 					<img
 						class="no-hover full transparent drop-shadow"
-						src="icons/{{ icon.icon }}"
 						alt="{{ icon.name }}"
+						decoding="async"
+						loading="lazy"
+						src="icons/{{ icon.icon }}"
 					/>
 				</picture>
 				<small>{{ icon.name }}</small>
@@ -66,8 +70,10 @@
 					{% endif %}
 					<img
 						class="no-hover full"
-						src="wallpapers/{{ wallpaper.wallpaper }}"
 						alt="{{ wallpaper.name }}"
+						decoding="async"
+						loading="lazy"
+						src="wallpapers/{{ wallpaper.wallpaper }}"
 					/>
 				</picture>
 				<small>{{ wallpaper.name }}</small>

@@ -9,14 +9,14 @@ stylesheets = ["index.css"]
 		<br />
 		<small>Here's an exclusive cute fox hugging a duck for you :3</small>
 		<br />
-		<img style="width: 4rem; height: 4rem; margin-top: 0;" class="transparent no-hover" alt="neofox hug duck" src="/assets/neofox-hug-duck.png" />
+		<img id="hug" class="transparent no-hover" alt="neofox hug duck" decoding="async" loading="lazy" src="/assets/neofox-hug-duck.png" />
 	</p>
 </noscript>
 
 <div id="polaroid">
   <div id="polaroid-shine"></div>
   <div id="polaroid-photo-container">
-    <img id="polaroid-photo" class="transparent no-hover" src="https://api.lanyard.rest/650757995378114581.png" />
+    <img id="polaroid-photo" class="transparent no-hover" decoding="async" loading="lazy" src="https://api.lanyard.rest/650757995378114581.png" />
   </div>
   <div id="polaroid-gradient"></div>
   <span id="polaroid-title">Instant photo<br />format</span>
@@ -185,7 +185,7 @@ It's recommended to avoid hot-linking; instead, place a copy on your own site.
 
 Hey, you, yes, *you*. Got a website and a button? Just a button? I got a deal for you! [Ping me somewhere](@/find/index.md#contacts) so I can add it here, easy as pie!
 
-<img id="fluttershy" class="transparent no-hover drop-shadow" alt="fluttershy" src="assets/fluttershy.gif" />
+<img id="fluttershy" class="transparent no-hover drop-shadow" alt="fluttershy" decoding="async" loading="lazy" src="assets/fluttershy.gif" />
 
 <div class="dialog-buttons">
   <button class="inline-button" onclick="rizzItUp()">Rizz It Up</button>
