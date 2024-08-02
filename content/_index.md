@@ -15,9 +15,9 @@ stylesheets = ["index.css"]
 
 <div id="polaroid">
   <div id="polaroid-shine"></div>
-  <div id="polaroid-photo-container">
-    <img id="polaroid-photo" class="transparent no-hover" decoding="async" loading="lazy" src="https://api.lanyard.rest/650757995378114581.png" />
-  </div>
+  <a id="polaroid-photo" href="https://piclog.blue/profile.php?id=620">
+    <img class="transparent no-hover" decoding="async" loading="lazy" src="https://piclog.blue/latest.php?id=620">
+  </a>
   <div id="polaroid-gradient"></div>
   <span id="polaroid-title">Instant photo<br />format</span>
   <span id="statuscafe-content"></span>

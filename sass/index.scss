@@ -104,6 +104,7 @@
 	overflow: hidden;
 
 	&::after {
+		-webkit-pointer-events: none;
 		display: block;
 		position: absolute;
 		top: 0.25rem;
@@ -115,6 +116,7 @@
 		background-size: cover;
 		width: 1.5625rem;
 		height: 1.1875rem;
+		pointer-events: none;
 		content: "";
 	}
 
@@ -134,6 +136,7 @@
 	}
 
 	#polaroid-shine {
+		-webkit-pointer-events: none;
 		position: absolute;
 		top: -2rem;
 		left: 0;
@@ -144,10 +147,10 @@
 		background-color: rgba(255, 255, 255, 0.5);
 		width: 14rem;
 		height: 8rem;
+		pointer-events: none;
 	}
 
-	// You cannot set ::after on the image directly, hense the container
-	#polaroid-photo-container {
+	#polaroid-photo {
 		position: relative;
 
 		&::after {
@@ -159,13 +162,13 @@
 			height: 0.5rem;
 			content: "";
 		}
-	}
 
-	#polaroid-photo {
-		margin: 0;
-		border-radius: calc(var(--rounded-corner-small) / 2);
-		width: 9rem;
-		height: 9rem;
+		img {
+			margin: 0;
+			border-radius: calc(var(--rounded-corner-small) / 2);
+			width: 9rem;
+			// height: 9rem;
+		}
 	}
 
 	#polaroid-title,
