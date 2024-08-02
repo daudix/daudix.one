@@ -131,7 +131,7 @@
 		#polaroid-shine {
 			top: -5rem;
 			transform: rotate(35deg);
-			background-color: rgba(255, 255, 255, 0.25);
+			background-color: rgba(255, 255, 255, 0.1);
 		}
 	}
 
@@ -144,7 +144,7 @@
 		z-index: 1;
 		filter: blur(0.25rem);
 		transition: var(--transition-longer);
-		background-color: rgba(255, 255, 255, 0.5);
+		background-color: rgba(255, 255, 255, 0.3);
 		width: 14rem;
 		height: 8rem;
 		pointer-events: none;
