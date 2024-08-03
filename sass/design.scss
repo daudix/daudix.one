@@ -11,7 +11,14 @@
 }
 
 body {
+	animation: fade-in 3s;
 	background: black;
+
+	@keyframes fade-in {
+		from {
+			opacity: 0;
+		}
+	}
 
 	&::before {
 		display: block;
