@@ -1,3 +1,46 @@
+body {
+	animation: design-load 3s;
+	background: black;
+
+	&::before {
+		display: block;
+		position: fixed;
+		z-index: -1;
+		filter: brightness(20%);
+		background-image: url("design/curtain.webp");
+		background-size: contain;
+		background-repeat: repeat-x;
+		width: 100vw;
+		height: 100vh;
+		content: "";
+	}
+
+	&::after {
+		-webkit-pointer-events: none;
+		display: block;
+		position: fixed;
+		filter: saturate(120%) brightness(1);
+		animation: curtains-open 3s;
+		background: url("design/curtain-l.webp"), url("design/curtain-r.webp");
+		background-position: top left, top right;
+		background-size: calc(((100vw - var(--container-width)) / 2) - 2rem) auto;
+		background-repeat: repeat-y;
+		width: 100vw;
+		height: 100vh;
+		pointer-events: none;
+		content: "";
+
+		@keyframes curtains-open {
+
+			from,
+			50% {
+				filter: saturate(1) brightness(10%);
+				background-size: 60vw auto;
+			}
+		}
+	}
+}
+
 .media-grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
@@ -40,8 +83,8 @@
 #wallpapers {
 	margin-right: calc((-100vw + 100%) / 2);
 	margin-left: calc((-100vw + 100%) / 2);
-	background-image: radial-gradient(circle, var(--fg-muted-1) 0.0625rem, transparent 0.0625rem);
-	background-size: 1rem 1rem;
+	// background-image: radial-gradient(circle, var(--fg-muted-1) 0.0625rem, transparent 0.0625rem);
+	// background-size: 1rem 1rem;
 	padding-top: 3rem;
 
 	h2 {
@@ -51,15 +94,15 @@
 
 #original-icons {
 	margin-top: 2rem;
-	background-color: rgba(98, 160, 234, 0.5);
+	// background-color: rgba(98, 160, 234, 0.5);
 }
 
-#redrawn-icons {
-	background-color: rgba(87, 227, 137, 0.5);
-}
+// #redrawn-icons {
+// 	background-color: rgba(87, 227, 137, 0.5);
+// }
 
 #wallpapers {
-	background-color: rgba(255, 163, 72, 0.5);
+	// background-color: rgba(255, 163, 72, 0.5);
 
 	img {
 		border-radius: var(--rounded-corner);
