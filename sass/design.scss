@@ -26,6 +26,7 @@ body {
 		z-index: -1;
 		filter: brightness(50%);
 		background-image: url("design/curtain.webp");
+		// background-image: linear-gradient(to right, rgb(35, 6, 9) 0%, rgb(224, 27, 36) 4%, rgb(79, 13, 21) 6%, rgb(224, 27, 36) 10%, rgb(61, 10, 17) 16%, rgb(224, 27, 36) 24%, rgb(54, 7, 15) 30%, rgb(224, 27, 36) 36%, rgb(70, 12, 18) 39%, rgb(224, 27, 36) 50%, rgb(54, 7, 15) 55%, rgb(224, 27, 36) 69%, rgb(35, 6, 9) 71%, rgb(224, 27, 36) 82%, rgb(35, 6, 9) 84%, rgb(224, 27, 36) 100%);
 		background-size: contain;
 		background-repeat: repeat-x;
 		width: 100vw;
@@ -45,8 +46,8 @@ body {
 		animation: curtains-open 3s;
 		background: url("design/curtain-l.webp"), url("design/curtain-r.webp");
 		background-position: top left, top right;
-		background-size: calc(((100vw - var(--container-width)) / 2) - 2rem) auto;
-		background-repeat: repeat-y;
+		background-size: calc(((100% - var(--container-width)) / 2) - 2rem) 100%;
+		background-repeat: no-repeat;
 		width: 100vw;
 		height: 100vh;
 		pointer-events: none;
@@ -57,12 +58,23 @@ body {
 			from,
 			50% {
 				filter: saturate(1) brightness(10%);
-				background-size: 60vw auto;
+				background-size: 60% 100%;
 			}
 		}
 
 		@media (prefers-color-scheme: dark) {
 			filter: saturate(120%) brightness(1);
+		}
+	}
+}
+
+.container {
+	animation: fade-in-2 3s;
+
+	@keyframes fade-in-2 {
+		from,
+		50% {
+			opacity: 0;
 		}
 	}
 }
