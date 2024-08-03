@@ -18,20 +18,24 @@ body {
 		display: block;
 		position: fixed;
 		z-index: -1;
-		filter: brightness(20%);
+		filter: brightness(50%);
 		background-image: url("design/curtain.webp");
 		background-size: contain;
 		background-repeat: repeat-x;
 		width: 100vw;
 		height: 100vh;
 		content: "";
+
+		@media (prefers-color-scheme: dark) {
+			filter: brightness(20%);
+		}
 	}
 
 	&::after {
 		-webkit-pointer-events: none;
 		display: block;
 		position: fixed;
-		filter: saturate(120%) brightness(1);
+		filter: saturate(120%) brightness(150%);
 		animation: curtains-open 3s;
 		background: url("design/curtain-l.webp"), url("design/curtain-r.webp");
 		background-position: top left, top right;
@@ -49,6 +53,10 @@ body {
 				filter: saturate(1) brightness(10%);
 				background-size: 60vw auto;
 			}
+		}
+
+		@media (prefers-color-scheme: dark) {
+			filter: saturate(120%) brightness(1);
 		}
 	}
 }
