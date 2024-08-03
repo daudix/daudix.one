@@ -112,7 +112,7 @@ And lastly, to quote [Jeffrey](https://hyperreal.coffee/about/): "I’m <button 
 
 ## Works
 
-I ocasionally create and improve icons for around-GNOME apps, translate them to Russian, and sometimes help with the UI.
+I occasionally create and improve icons for around-GNOME apps, translate them to Russian, and sometimes help with the UI.
 
 Have a look at my [designs](@/design/index.md); mostly icons, but also some wallpapers (one of them is part of GNOME).
 
