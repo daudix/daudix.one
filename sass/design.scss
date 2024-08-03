@@ -1,3 +1,13 @@
+:root {
+	--fg-color: rgb(207, 192, 159);
+	--fg-muted-1: rgba(255, 255, 255, 0.05);
+	--fg-muted-2: rgba(255, 255, 255, 0.1);
+	--fg-muted-3: rgba(255, 255, 255, 0.2);
+	--fg-muted-4: rgba(255, 255, 255, 0.5);
+	--fg-muted-5: rgba(255, 255, 255, 0.6);
+	--nav-bg: rgba(25, 25, 25, 0.7);
+}
+
 body {
 	animation: design-load 3s;
 	background: black;
@@ -39,6 +49,14 @@ body {
 			}
 		}
 	}
+}
+
+h1,
+h2 {
+	-webkit-background-clip: text;
+	background: linear-gradient(to bottom, rgb(207, 192, 159) 27%, rgb(255, 236, 179) 40%, rgb(58, 44, 15) 78%);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 .media-grid {
@@ -85,7 +103,7 @@ body {
 	margin-left: calc((-100vw + 100%) / 2);
 	// background-image: radial-gradient(circle, var(--fg-muted-1) 0.0625rem, transparent 0.0625rem);
 	// background-size: 1rem 1rem;
-	padding-top: 3rem;
+	padding-top: 3rem; // Margin doesn't work for some reason
 
 	h2 {
 		margin-top: 0;
