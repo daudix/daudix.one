@@ -42,41 +42,49 @@ Some things that I like:
 - <span id="purple">Purple</span> <small>(it's shocking)</small>
 - Design
 - Games:
-  - <div id="portal">
-      <div id="portal-blue"></div>
-      <div id="portal-text">
-        <div>
-          <span>Portal</span><span>Portal</span>
-        </div>
+  <ul>
+    <li id="portal">
+      <div id="portal-container">
+        <div id="portal-blue"></div>
+          <div id="portal-marquee">
+            <span>Portal</span>
+            <span aria-hidden="true">Portal</span>
+          </div>
+        <div id="portal-orange"></div>
       </div>
-      <span id="portal-orange"></span>
-    </div>
-    <small>(all-time favorite)</small>
-  - <span id="celeste">
+      <small>(all-time favorite)</small>
+    </li>
+    <li id="celeste">
       <div id="strawberry"></div>
       <span id="celeste-text">Celeste</span>
-    </span>
-    <small>(such a lovely game)</small>
-  - <div id="teardown">
+      <small>(such a lovely game)</small>
+    </li>
+    <li id="teardown">
+      <div id="hammer"></div>
       <span id="teardown-text">Teardown</span>
-    </div>
-    <small>(fun destructions)</small>
-  - <span id="superliminal">
+      <small>(fun destructions)</small>
+    </li>
+    <li id="superliminal">
+      <div id="pawn"></div>
       <span id="super">Super</span><span id="liminal">liminal</span>
-    </span>
-    <small>(F-Stop if it wasn't scrapped)</small>
-  - <div id="stardew">
+      <small>(F-Stop if it wasn't scrapped)</small>
+    </li>
+    <li id="stardew">
       <div id="chicken"></div>
       <span id="stardew-text">Stardew Valley</span>
-    </div>
-    <small>(was fun until sis spoiled <em>everything</em>)</small>
-  - <span id="untitled">
+      <small>(was fun until sis spoiled <em>everything</em>)</small>
+    </li>
+    <li id="untitled">
       <div id="goose"></div>
       <span id="untitled-text">Untitled Goose</span>
-    </span>
-    <small>(<em>honk-honk!</em> I love geese, by the way)</small>
-  - <span id="stanley">The Stanley Parable</span>
-    <small>(fake feeling of choice, just like <abbr title="in real life">IRL</abbr>)</small>
+      <small>(<em>honk-honk!</em> I love geese, by the way)</small>
+    </li>
+    <li id="stanley">
+      <div id="boss"></div>
+      <span id="stanley-text">The Stanley Parable&nbsp;<span id="adventure-line">Adventure Line™!</span></span>
+      <small>(fake feeling of choice, just like <abbr title="in real life">IRL</abbr>)</small>
+    </li>
+  </ul>
 - Aesthetics:
   - [Cyberpunk](https://aesthetics.fandom.com/wiki/Cyberpunk)
   - [Vaporwave](https://aesthetics.fandom.com/wiki/Vaporwave)
