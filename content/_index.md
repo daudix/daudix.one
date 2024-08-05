@@ -114,7 +114,7 @@ I try to learn something new every day, and sometimes, I come across things that
 
 Take design; it's more than just something I like, it's my hobby and I'm learning more about it every day, although lately I've been a bit burned out.
 
-Ss you can see, I also do some web development! I like working with CSS and HTML, but that's about it; JS is a bit of a mystery for me :D
+As you can see, I also do some web development! I like working with CSS and HTML, but that's about it; JS is a bit of a mystery for me :D
 
 And lastly, to quote [Jeffrey](https://hyperreal.coffee/about/): "I’m <button id="shy" onclick="fluttershyAnim()">shy</button> and might come across as reserved and standoffish at first, but I open up when I get more comfortable with people."
 
