@@ -100,11 +100,11 @@ Some things that I like:
   <div id="window-contents">
     <div id="rainbow-text">
       <span>silly little goober with a creative mind</span>
-      <span>silly little goober with a creative mind</span>
-      <span>silly little goober with a creative mind</span>
-      <span>silly little goober with a creative mind</span>
-      <span>silly little goober with a creative mind</span>
-      <span>silly little goober with a creative mind</span>
+      <span aria-hidden="true">silly little goober with a creative mind</span>
+      <span aria-hidden="true">silly little goober with a creative mind</span>
+      <span aria-hidden="true">silly little goober with a creative mind</span>
+      <span aria-hidden="true">silly little goober with a creative mind</span>
+      <span aria-hidden="true">silly little goober with a creative mind</span>
       <small>–<a href="https://veeronniecaw.space">Ronnie</a></small>
     </div>
   </div>
