@@ -241,16 +241,6 @@
 	filter: blur(0.25rem);
 }
 
-#purple {
-	transition: var(--transition);
-
-	&:hover {
-		color: var(--primary-color);
-		font-style: italic;
-		letter-spacing: 0.25em;
-	}
-}
-
 #celeste,
 #teardown,
 #superliminal,
