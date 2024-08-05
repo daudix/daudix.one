@@ -50,12 +50,13 @@
 }
 
 #timeline {
+	margin-inline-start: 1.75rem;
 	border-inline-start: 0.25rem solid var(--fg-muted-3);
-	padding-left: 0;
+	padding-inline-start: 0;
 	list-style: none;
 
 	li {
-		padding-left: 1.5rem;
+		padding-inline-start: 1.125rem;
 
 		small {
 			transition: var(--transition);
@@ -77,8 +78,8 @@
 		&::before {
 			display: block;
 			position: relative;
-			top: 1.35rem;
-			left: -2.1rem;
+			top: 1.375rem;
+			left: -1.75rem;
 			transition: var(--transition);
 			border: 0.25rem solid var(--fg-muted-3);
 			border-radius: 50%;

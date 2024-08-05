@@ -38,7 +38,7 @@ I've tried other ROMs as well, such as [CalyxOS](https://calyxos.org/), [PixelBu
 
 Custom ROMs without Google services are quite sad though; no notifications in most apps, some apps won't launch at all, so I've used a combination of [Magisk](https://github.com/topjohnwu/Magisk) and [this microG module](https://github.com/nift4/microg_installer_revived). This setup was the most optimal one, i.e. [LineageOS for microG](https://lineage.microg.org) is out-of-date and offers the same functionality as said Magisk module. I also didn't use a custom recovery such as TWRP, since it was pretty useless for me (you can re-root after an OTA update right from Magisk), plus, it didn't survive OTA updates ¯\\\_(ツ)_/¯
 
-One day something silly happened to it. I was doing my bed before going to sleep, and I didn't notice that it was sitting on the blanket, and, well, I shook out the blanket and it flew with the speed of light right onto the metal chair leg, and of course, that day I didn't put the cover on. Frankly it all came down to a broken back glass. Imagine if it had fallen on the screen...
+One day (Dec 21, 2022, around 4am) something silly happened to it. I was doing my bed before going to sleep, and I didn't notice that it was sitting on the blanket, and, well, I shook out the blanket and it flew with the speed of light right onto the metal chair leg, and of course, that day I didn't put the cover on. Frankly it all came down to a broken back glass. Imagine if it had fallen on the screen...
 
 Otherwise, everything was almost perfect. I found the perfect setup and simply enjoyed my phone; took photos, mindlessly scrolled through social media, chatted the same way I could on a laptop, this kind of stuff.
 
