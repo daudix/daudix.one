@@ -41,7 +41,7 @@ Slightly more detailed: because it's too slow and buggy for my taste, even thoug
 
 *And now that we are done...*
 
-**ALEX, GO <img class="emoji no-hover" decoding="async" loading="lazy" src="crumb_dancing.gif" /> YOURSELF WITH A <img class="emoji no-hover" decoding="async" loading="lazy" src="deck_friend.webp" />**
+**ALEX, GO <img class="emoji no-hover" src="crumb_dancing.gif" /> YOURSELF WITH A <img class="emoji no-hover" src="deck_friend.webp" />**
 
 ## TL;DR
 

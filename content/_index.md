@@ -9,15 +9,15 @@ stylesheets = ["index.css"]
 		<br />
 		<small>Here's an exclusive cute fox hugging a duck for you :3</small>
 		<br />
-		<img id="hug" class="transparent no-hover" alt="neofox hugs a duck" decoding="async" loading="lazy" src="/assets/neofox-hug-duck.png" />
+		<img id="hug" class="transparent no-hover" alt="neofox hugs a duck" src="/assets/neofox-hug-duck.png" />
 	</p>
 </noscript>
 
 <div id="polaroid">
-  <!-- <img id="polaroid-background" class="transparent no-hover" decoding="async" loading="lazy" src="https://piclog.blue/latest.php?id=620"> -->
+  <!-- <img id="polaroid-background" class="transparent no-hover" src="https://piclog.blue/latest.php?id=620"> -->
   <div id="polaroid-shine"></div>
   <a id="polaroid-photo" href="https://piclog.blue/profile.php?id=620">
-    <img class="transparent no-hover" alt="latest image from piclog.blue" decoding="async" loading="lazy" src="https://piclog.blue/latest.php?id=620">
+    <img class="transparent no-hover" alt="latest image from piclog.blue" src="https://piclog.blue/latest.php?id=620">
   </a>
   <div id="polaroid-gradient"></div>
   <span id="polaroid-title">Instant photo<br />format</span>
@@ -186,7 +186,7 @@ It's recommended to avoid hot-linking; instead, place a copy on your own site.
 
 Hey, you, yes, *you*. Got a website and a button? Just a button? I got a deal for you! [Ping me somewhere](@/find/index.md#contacts) so I can add it here, easy as pie!
 
-<img id="fluttershy" class="transparent no-hover drop-shadow" alt="fluttershy" decoding="async" loading="lazy" src="assets/fluttershy.gif" />
+<img id="fluttershy" class="transparent no-hover drop-shadow" alt="fluttershy" src="assets/fluttershy.gif" />
 
 <div class="dialog-buttons">
   <button class="inline-button" onclick="rizzItUp()">Rizz It Up</button>
