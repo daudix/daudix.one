@@ -458,7 +458,7 @@
 
 	#teardown-text {
 		display: inline-block;
-		transform-origin: top left;
+		transform-origin: right;
 		transition: var(--transition);
 	}
 
@@ -473,13 +473,13 @@
 
 			20%,
 			60% {
-				transform: rotate(80deg);
+				transform: rotate(-80deg);
 				animation-timing-function: ease-in-out;
 			}
 
 			40%,
 			80% {
-				transform: rotate(60deg);
+				transform: rotate(-60deg);
 				opacity: 1;
 				animation-timing-function: ease-in-out;
 			}
