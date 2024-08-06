@@ -58,17 +58,6 @@
 		</ul>
 	{%- endif %}
 
-	{%- if config.extra.footer.show_counter %}
-		<p>
-			<small>
-				Hit counter:
-				<a href="https://www.free-website-hit-counter.com">
-					<img id="counter" class="pixels" alt="hit counter" src="https://www.free-website-hit-counter.com/c.php?d=5&id=174816&s=288" />
-				</a>
-			</small>
-		</p>
-	{%- endif %}
-
 	{%- if config.extra.footer.show_john %}
 		<details>
 			<summary>Johnvertisement</summary>
@@ -76,5 +65,9 @@
 				<iframe id="john" src="https://john.citrons.xyz/embed?ref={{ config.base_url | replace(from='https://', to='') }}"></iframe>
 			</div>
 		</details>
+	{%- endif %}
+
+	{%- if config.extra.footer.show_increment %}
+		<iframe id="increment" src="https://incr.easrng.net/badge?key=daudix.one" title="increment badge"></iframe>
 	{%- endif %}
 </footer>

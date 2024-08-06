@@ -178,7 +178,6 @@ I also have a [Gemini capsule](gemini://gmi.daudix.one) on [flounder](https://fl
 ![righttorepair](assets/88x31/righttorepair.png)
 ![sourcemissing](assets/88x31/sourcemissing.png)
 ![yarrr](assets/88x31/yarrr.gif)
-
 </div>
 
 If you like my website, feel free to link it by adding one of these buttons:
@@ -187,7 +186,6 @@ If you like my website, feel free to link it by adding one of these buttons:
 
 ![daudix](assets/88x31/daudix.gif)
 ![daudix-alt](assets/88x31/daudix-alt.gif)
-
 </div>
 
 {% alert(note=true) %}
