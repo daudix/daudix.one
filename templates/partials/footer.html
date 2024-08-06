@@ -68,6 +68,6 @@
 	{%- endif %}
 
 	{%- if config.extra.footer.show_increment %}
-		<iframe id="increment" src="https://incr.easrng.net/badge?key=daudix.one" title="increment badge"></iframe>
+		<iframe id="increment" src="https://incr.easrng.net/badge?key={{ config.base_url | replace(from='https://', to='') }}" title="increment badge"></iframe>
 	{%- endif %}
 </footer>
