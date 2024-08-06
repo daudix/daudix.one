@@ -38,7 +38,8 @@ Although Daudix appears to be just my online handle, it's actually a slightly di
 
 Originally from the Siberian part of Russia, but currently living in <abbr id="abyss" title="If you know, you know">abyss</abbr>.
 
-Some things that I like:
+<details><summary>Some things that I like</summary>
+
 - Purple <small>(it's shocking)</small>
 - Design
 - Games:
@@ -95,6 +96,7 @@ Some things that I like:
 - Minor details and references
 - Retro/-futurism and vintage stuff
 - Making this list look like a staircase
+</details>
 
 <div id="window">
   <div id="window-contents">
