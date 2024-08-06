@@ -38,7 +38,7 @@ Although Daudix appears to be just my online handle, it's actually a slightly di
 
 Originally from the Siberian part of Russia, but currently living in <abbr id="abyss" title="If you know, you know">abyss</abbr>.
 
-<details><summary>Some things that I like</summary>
+<details><summary>Some things that I like:</summary>
 
 - Purple <small>(it's shocking)</small>
 - Design
