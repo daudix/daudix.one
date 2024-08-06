@@ -68,10 +68,24 @@ body {
 	}
 }
 
+#site-nav {
+	animation: blur-in 6s;
+
+	@keyframes blur-in {
+
+		from,
+		50% {
+			-webkit-backdrop-filter: none;
+			backdrop-filter: none;
+		}
+	}
+}
+
 .container {
 	animation: fade-in-2 3s;
 
 	@keyframes fade-in-2 {
+
 		from,
 		50% {
 			opacity: 0;
