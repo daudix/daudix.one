@@ -573,18 +573,58 @@
 	}
 }
 
+// Who's shy?
+#shy {
+	-webkit-appearance: none;
+	appearance: none;
+	cursor: pointer;
+	border: none;
+	background-color: transparent;
+	padding: 0;
+	color: var(--fg-color);
+	font-size: 1em;
+	text-decoration: underline;
+	text-decoration-style: dotted;
+	text-decoration-thickness: max(1px, 0.0625em);
+
+	&:hover {
+		text-decoration-style: solid;
+	}
+}
+
+// Ah, that's who
+#fluttershy {
+	position: fixed;
+	top: 20vh;
+	right: 0;
+	transform: translateX(18.5625rem);
+	transform-origin: bottom left;
+	margin: 0;
+	width: 12.375rem;
+	height: 11.0625rem;
+
+	&.flying {
+		animation: flight 2s linear;
+
+		@keyframes flight {
+			to {
+				transform: translateX(calc(-100vw + -18.5625rem));
+			}
+		}
+	}
+}
+
 #window {
 	display: block;
 	position: relative;
 	float: inline-end;
 	margin-inline-start: 1rem;
-	margin-block-start: 1rem;
 	box-shadow: 0 0.75rem 1.5rem -1rem rgba(0, 0, 0, 0.5);
 	border: 4rem solid transparent;
 	border-image: url("assets/border.gif") 32 repeat;
 	image-rendering: pixelated;
 	width: min(18rem, 100%);
-	height: 12rem;
+	height: 11rem;
 
 	#window-contents {
 		-webkit-backdrop-filter: var(--blur);
@@ -672,47 +712,6 @@
 	@media only screen and (max-width: 720px) {
 		float: none;
 		margin: 1rem auto 0;
-	}
-}
-
-// Who's shy?
-#shy {
-	-webkit-appearance: none;
-	appearance: none;
-	cursor: pointer;
-	border: none;
-	background-color: transparent;
-	padding: 0;
-	color: var(--fg-color);
-	font-size: 1em;
-	text-decoration: underline;
-	text-decoration-style: dotted;
-	text-decoration-thickness: max(1px, 0.0625em);
-
-	&:hover {
-		text-decoration-style: solid;
-	}
-}
-
-// Ah, that's who
-#fluttershy {
-	position: fixed;
-	top: 20vh;
-	right: 0;
-	transform: translateX(18.5625rem);
-	transform-origin: bottom left;
-	margin: 0;
-	width: 12.375rem;
-	height: 11.0625rem;
-
-	&.flying {
-		animation: flight 2s linear;
-
-		@keyframes flight {
-			to {
-				transform: translateX(calc(-100vw + -18.5625rem));
-			}
-		}
 	}
 }
 
