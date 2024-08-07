@@ -14,7 +14,7 @@ stylesheets = ["find.css"]
 
 ## Contacts
 
-For me it's currently <time><span id="clock"><noscript>NO:JS</noscript></span></time> <small>(UTC+3)</small>  and I'm <span id="online-indicator"><noscript>N/A</noscript></span>, so take that into consideration.
+For me it's currently <time><span id="clock"><noscript>NO:JS</noscript></span></time> <small>(UTC+3)</small>  and I'm <span id="online-indicator"><noscript>N/A</noscript></span>.
 
 Feel free to message me on any of these:
 
@@ -46,7 +46,7 @@ This is not a complete list, but rather list of places where I'm somewhat active
 - [Pixelfed](https://pixelfed.social/Daudix)
 - [YouTube](https://www.youtube.com/@ddaudix)
 
-I have changed the Fediverse instance I'm on, so to make sure nothing is lost, here is my Fediverse timeline:
+I have changed the Fediverse instance I'm on a lot, so to make sure nothing is lost, here's my Fediverse timeline:
 
 <small>From newest to oldest ↓</small>
 <ol id="timeline">
