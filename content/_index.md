@@ -41,7 +41,7 @@ Originally from the Siberian part of Russia, but currently living in <abbr id="a
 <details><summary>Some things that I like:</summary>
 
 - Purple <small>(lavender in particular)</small>
-- Design <small>(pretty blurry description)</small>
+- Design
 - Games:
   <ul>
     <li id="portal">
