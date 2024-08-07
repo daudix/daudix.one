@@ -82,7 +82,7 @@ Originally from the Siberian part of Russia, but currently living in <abbr id="a
     </li>
     <li id="stanley">
       <div id="boss"></div>
-      <span id="stanley-text">The Stanley Parable&nbsp;<span id="adventure-line">Adventure Line™!</span></span>
+      <span id="stanley-text">The Stanley Parable&nbsp;<span id="adventure-line">Adventure Line™</span></span>
       <small>(fake feeling of choice, just like <abbr title="in real life">IRL</abbr>)</small>
     </li>
   </ul>
