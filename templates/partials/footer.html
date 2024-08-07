@@ -67,6 +67,16 @@
 		</details>
 	{%- endif %}
 
+	{%- if config.extra.footer.show_fediring  %}
+		<p>
+			<small>
+				<a href="https://fediring.net/previous?host={{ config.base_url | replace(from='https://', to='') }}">←</a>
+				<a href="https://fediring.net">Fediring</a>
+				<a href="https://fediring.net/next?host={{ config.base_url | replace(from='https://', to='') }}">→</a>
+			</small>
+		</p>
+	{%- endif %}
+
 	{%- if config.extra.footer.show_increment %}
 		<iframe id="increment" src="https://incr.easrng.net/badge?key={{ config.base_url | replace(from='https://', to='') }}" title="increment badge"></iframe>
 	{%- endif %}
