@@ -126,9 +126,22 @@ I was using GitHub from the very start of my FOSS journey, but (not so) recently
       minute: "2-digit",
       hour12: false,
     };
-    const now = new Date().toLocaleString("en-US", options);
+
     const clockElement = document.getElementById("clock");
-    clockElement.textContent = now;
+    const myLocalTime = new Date().toLocaleString("en-US", options);
+    const userLocalTime = new Date().toLocaleString("en-US", {
+      hour: "2-digit",
+      minute: "2-digit",
+      hour12: false,
+    });
+
+    if (myLocalTime === userLocalTime) {
+      clockElement.textContent = "Same time as yours";
+    }
+
+    else {
+      clockElement.textContent = myLocalTime;
+    }
   }
 
   updateClock();
