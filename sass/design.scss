@@ -120,14 +120,52 @@ h2 {
 			box-shadow: var(--edge-highlight);
 			background-color: var(--fg-muted-1);
 			text-decoration: none;
+
+			div {
+				img {
+					opacity: 0.5;
+				}
+
+				&::before {
+					opacity: 1;
+				}
+			}
 		}
 
 		&:active {
 			transform: scale(var(--active));
 		}
 
+		div {
+			position: relative;
+
+			&::before {
+				$grid: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='128' height='128' style='display:inline' version='1.0'%3E%3Ccircle cx='64' cy='64' r='59.5' style='fill:none;stroke:%23000;stroke-width:1'/%3E%3Crect width='87' height='111' x='20.5' y='8.5' rx='8' ry='8' style='fill:none;stroke:%23000;stroke-width:1'/%3E%3Crect width='103' height='103' x='12.5' y='12.5' rx='8' ry='8' style='fill:none;stroke:%23000;stroke-width:1'/%3E%3Crect width='111' height='87' x='8.5' y='28.5' rx='8' ry='8' style='fill:none;stroke:%23000;stroke-width:1'/%3E%3C/svg%3E");
+				-webkit-mask-image: $grid;
+				-webkit-mask-size: cover;
+				position: absolute;
+				top: 0;
+				left: 0;
+				opacity: 0;
+				mask-image: $grid;
+				mask-size: cover;
+				transition: var(--transition);
+				background-color: var(--fg-muted-4);
+				width: 8rem;
+				height: 8rem;
+				content: "";
+			}
+
+			img {
+				$drop-shadow: drop-shadow(0 0.08rem 0.1rem rgba(0, 0, 0, 0.35)) drop-shadow(0 0.4rem 0.7rem rgba(0, 0, 0, 0.18));
+				-webkit-filter: $drop-shadow;
+				filter: $drop-shadow;
+			}
+		}
+
 		img {
 			display: inline-block;
+			transition: var(--transition);
 			margin: 0;
 		}
 

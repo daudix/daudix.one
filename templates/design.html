@@ -13,13 +13,15 @@
 		<div class="media-grid">
 			{% for icon in page.extra.original_icons %}
 			<a href="{{ icon.url }}">
-				<picture>
-					<img
-						class="no-hover full transparent drop-shadow"
-						alt="{{ icon.name }}"
-						src="icons/{{ icon.icon }}"
-					/>
-				</picture>
+				<div>
+					<picture>
+						<img
+							class="no-hover full transparent drop-shadow"
+							alt="{{ icon.name }}"
+							src="icons/{{ icon.icon }}"
+						/>
+					</picture>
+				</div>
 				<small>{{ icon.name }}</small>
 			</a>
 			{% endfor %}
@@ -35,13 +37,15 @@
 		<div class="media-grid">
 			{% for icon in page.extra.redrawn_icons %}
 			<a href="{{ icon.url }}">
-				<picture>
-					<img
-						class="no-hover full transparent drop-shadow"
-						alt="{{ icon.name }}"
-						src="icons/{{ icon.icon }}"
-					/>
-				</picture>
+				<div>
+					<picture>
+						<img
+							class="no-hover full transparent drop-shadow"
+							alt="{{ icon.name }}"
+							src="icons/{{ icon.icon }}"
+						/>
+					</picture>
+				</div>
 				<small>{{ icon.name }}</small>
 			</a>
 			{% endfor %}
