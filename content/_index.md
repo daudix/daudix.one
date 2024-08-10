@@ -152,7 +152,7 @@ I also have a [Gemini capsule](gemini://gmi.daudix.one) on [flounder](https://fl
 [![getimiskon](assets/88x31/getimiskon.png)](https://getimiskon.xyz)
 [![iso](assets/88x31/iso.png)](https://www.w3.org/QA/Tips/iso-date)
 [![portal](assets/88x31/portal.png)](https://www.thinkwithportals.com)
-[![ronbutton](assets/88x31/ronbutton.png)](https://veeronniecaw.space)
+[![ronbutton](assets/88x31/ronbutton.gif)](https://veeronniecaw.space)
 [![savewalterwhite](assets/88x31/savewalterwhite.gif)](http://www.savewalterwhite.com)
 [![saynotoweb3](assets/88x31/saynotoweb3.gif)](https://yesterweb.org/no-to-web3/)
 [![seirdy](assets/88x31/seirdy.gif)](https://seirdy.one)
