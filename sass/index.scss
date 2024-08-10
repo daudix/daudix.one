@@ -93,7 +93,6 @@
 	float: inline-end;
 	transform: perspective(32rem) rotate(5deg) rotateX(5deg);
 	transform-origin: 50% 1rem;
-	z-index: 0;
 	transition: var(--transition-longer);
 	margin-top: 2rem;
 	margin-inline-start: 1.5rem;
@@ -129,25 +128,11 @@
 			transform: none;
 		}
 
-		#polaroid-background {
-			transform: scale(3);
-		}
-
 		#polaroid-shine {
 			top: -5rem;
 			transform: rotate(35deg);
 			background-color: rgba(255, 255, 255, 0.1);
 		}
-	}
-
-	#polaroid-background {
-		position: absolute;
-		transform: scale(2);
-		opacity: 0.5;
-		z-index: -1;
-		filter: blur(0.5rem);
-		margin: 0;
-		inset: 0;
 	}
 
 	#polaroid-shine {
@@ -227,8 +212,7 @@
 
 		#statuscafe-face {
 			float: inline-end;
-			mix-blend-mode: overlay;
-			filter: brightness(0);
+			filter: contrast(200%) brightness(75%) grayscale(100%); // Printed look for statuscafe emoji
 			color: black;
 			font-size: 1rem;
 			line-height: 0; // Dirty hack to avoid the link becoming too high
