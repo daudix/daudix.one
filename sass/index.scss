@@ -93,7 +93,7 @@
 	float: inline-end;
 	transform: perspective(32rem) rotate(5deg) rotateX(5deg);
 	transform-origin: 50% 1rem;
-	// z-index: 0;
+	z-index: 0;
 	transition: var(--transition-longer);
 	margin-top: 2rem;
 	margin-inline-start: 1.5rem;
@@ -129,6 +129,10 @@
 			transform: none;
 		}
 
+		#polaroid-background {
+			transform: scale(3);
+		}
+
 		#polaroid-shine {
 			top: -5rem;
 			transform: rotate(35deg);
@@ -136,15 +140,15 @@
 		}
 	}
 
-	// #polaroid-background {
-	// 	position: absolute;
-	// 	transform: scale(2);
-	// 	opacity: 0.3;
-	// 	z-index: -1;
-	// 	filter: blur(0.5rem);
-	// 	margin: 0;
-	// 	inset: 0;
-	// }
+	#polaroid-background {
+		position: absolute;
+		transform: scale(2);
+		opacity: 0.5;
+		z-index: -1;
+		filter: blur(0.5rem);
+		margin: 0;
+		inset: 0;
+	}
 
 	#polaroid-shine {
 		-webkit-pointer-events: none;
@@ -162,6 +166,7 @@
 	}
 
 	#polaroid-photo {
+		display: block;
 		position: relative;
 
 		&::after {
@@ -181,8 +186,7 @@
 
 	#polaroid-title,
 	#statuscafe-content,
-	#statuscafe-username,
-	a {
+	#statuscafe-link {
 		display: block;
 		color: rgba(0, 0, 0, 0.8);
 		line-height: 1;
@@ -199,35 +203,32 @@
 	#statuscafe-content {
 		margin-top: 0.25rem;
 		font-size: 0.5625rem;
-		letter-spacing: -0.05em;
 	}
 
-	a {
-		width: fit-content; // Fix the click target filling all the available width
-		font-weight: normal;
-		text-decoration: none;
-
-		&:hover {
-			text-decoration: underline;
-			text-decoration-style: solid; // Make sure the underline isn't wavy
-		}
-	}
-
-	#statuscafe-username {
-		filter: contrast(200%) brightness(75%) grayscale(100%); // Printed look for statuscafe emoji
+	#statuscafe-link {
 		margin-top: 0.5rem;
+		font-weight: normal;
 		font-size: 0.5625rem;
-
-		&:hover {
-			filter: none;
-		}
+		text-decoration: none;
 
 		&::after {
 			content: " →";
 		}
 
-		a {
-			display: none; // Hide the statuscafe username
+		&:hover {
+			text-decoration: underline;
+			text-decoration-style: solid; // Make sure the underline isn't wavy
+
+			#statuscafe-face {
+				filter: none;
+			}
+		}
+
+		#statuscafe-face {
+			float: inline-end;
+			filter: brightness(0%); // Printed look for statuscafe emoji
+			font-size: 1rem;
+			line-height: 0; // Dirty hack to avoid the link becoming too high
 		}
 	}
 

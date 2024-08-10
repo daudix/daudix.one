@@ -14,15 +14,14 @@ stylesheets = ["index.css"]
 </noscript>
 
 <div id="polaroid">
-  <!-- <img id="polaroid-background" class="transparent no-hover" src="https://piclog.blue/latest.php?id=620"> -->
+  <img id="polaroid-background" class="transparent no-hover" src="https://piclog.blue/latest.php?id=620">
   <div id="polaroid-shine"></div>
   <a id="polaroid-photo" href="https://piclog.blue/profile.php?id=620">
     <img class="transparent no-hover" alt="latest image from piclog.blue" src="https://piclog.blue/latest.php?id=620">
   </a>
-  <div id="polaroid-gradient"></div>
   <span id="polaroid-title">Instant photo<br />format</span>
   <span id="statuscafe-content"></span>
-  <a href="https://status.cafe/users/daudix"><span id="statuscafe-username"></span></a>
+  <a id="statuscafe-link" href="https://status.cafe/users/daudix"><span id="statuscafe-time-ago"></span><span id="statuscafe-face"></span></a>
 </div>
 
 <div id="header-container">
@@ -201,7 +200,22 @@ Hey, you, yes, *you*. Got a website and a button? Just a button? I got a deal fo
   <div id="dont"></div>
 </div>
 
-<script type="text/javascript" src="https://status.cafe/current-status.js?name=daudix" defer></script>
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    fetch("https://status.cafe/users/daudix/status.json")
+      .then(r => r.json())
+      .then(r => {
+        if (!r.content.length) {
+          document.getElementById("statuscafe-content").innerHTML = "No status yet."
+          return
+        }
+        document.getElementById("statuscafe-content").innerHTML = r.content
+        document.getElementById("statuscafe-face").innerHTML = r.face
+        document.getElementById("statuscafe-time-ago").innerHTML = r.timeAgo
+      })
+      .catch(error => console.error("Error fetching status:", error));
+  });
+</script>
 
 <script type="text/javascript">
   const fluttershy = document.getElementById("fluttershy");
