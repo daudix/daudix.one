@@ -220,13 +220,16 @@
 			text-decoration-style: solid; // Make sure the underline isn't wavy
 
 			#statuscafe-face {
+				mix-blend-mode: normal;
 				filter: none;
 			}
 		}
 
 		#statuscafe-face {
 			float: inline-end;
-			filter: brightness(0%); // Printed look for statuscafe emoji
+			mix-blend-mode: overlay;
+			filter: brightness(0);
+			color: black;
 			font-size: 1rem;
 			line-height: 0; // Dirty hack to avoid the link becoming too high
 		}
