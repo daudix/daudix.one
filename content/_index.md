@@ -14,6 +14,7 @@ stylesheets = ["index.css"]
 </noscript>
 
 <div id="polaroid">
+  <!-- <img id="polaroid-blur" class="transparent no-hover" src="https://piclog.blue/latest.php?id=620" /> -->
   <div id="polaroid-shine"></div>
   <a id="polaroid-photo" href="https://piclog.blue/profile.php?id=620">
     <img class="transparent no-hover" alt="latest image from piclog.blue" src="https://piclog.blue/latest.php?id=620">
