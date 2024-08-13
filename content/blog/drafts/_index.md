@@ -14,7 +14,7 @@ This page is only supposed to exist for those to whom I sent draf- oooh, I see, 
 W-what? You came here by yourself? in that case I recommend to go somewhere the navbar points to, here you won't find anything valuable, just half-finished, half-shit drafts. <button id="at-best" onclick="atBest()">At best</button>.
 
 <p id="bookshelf">
-What are you looking for? some kind of hidden lever in the bookshelf? come on, there's plenty of easter eggs on this website already.
+What are you looking for? Some kind of hidden lever in the bookshelf? Come on, there's already plenty of Easter eggs on this website.
 </p>
 
 <script type="text/javascript">
