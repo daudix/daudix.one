@@ -41,7 +41,7 @@ Slightly more detailed: because it's too slow and buggy for my taste, even thoug
 
 *And now that we are done...*
 
-**ALEX, GO <img class="emoji no-hover" alt="crumb dancing" src="crumb_dancing.gif" /> YOURSELF WITH A <img class="emoji no-hover" alt="deck friend" src="deck_friend.webp" />**
+**ALEX, GO <img class="emoji no-hover" alt="crumb dancing" src="crumb-dancing.gif" /> YOURSELF WITH A <img class="emoji no-hover" alt="deck friend" src="deck-friend.webp" />**
 
 ## TL;DR
 

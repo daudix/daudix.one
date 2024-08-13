@@ -1,0 +1,28 @@
+#at-best {
+	-webkit-appearance: none;
+	appearance: none;
+	cursor: pointer;
+	border: none;
+	background-color: transparent;
+	padding: 0;
+	color: var(--fg-color);
+	font-size: 1em;
+	text-decoration: underline;
+	text-decoration-style: dotted;
+	text-decoration-thickness: max(1px, 0.0625em);
+
+	&:hover {
+		text-decoration-style: solid;
+	}
+}
+
+#bookshelf {
+    opacity: 0;
+    filter: blur(0.25rem);
+    transition: var(--transition-longer);
+
+    &.active {
+        opacity: 1;
+        filter: none;
+    }
+}

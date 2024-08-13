@@ -1,5 +1,5 @@
 User-agent: *
-Disallow:
+Disallow: /blog/drafts/
 Allow: /
 Sitemap: {{ get_url(path="sitemap.xml") }}
 
