@@ -60,7 +60,7 @@ git clone <repository_url>
 cd <repository_name>
 ```
 
-Then, initialize a new Zola site with `zola init --force`. You can simply spam <kbd>Enter ↵</kbd> since we'll use our own configuration anyway. (the reason why the `--force` flag is used is that Zola doesn't like the presence of Git files in the folder and doesn't want to proceed)
+Then, initialize a new Zola site with `zola init --force`. You can simply spam <kbd>Enter ↵</kbd> since we'll use our own configuration anyway. (The reason why the `--force` flag is used is that Zola doesn't like the presence of Git files in the folder and doesn't want to proceed otherwise)
 
 Now you'll need to add the Duckquill theme as a Git submodule:
 
@@ -80,7 +80,7 @@ cd themes/duckquill
 git checkout tags/v4.2.1
 ```
 
-{% alert(note=true) %}
+{% alert(tip=true) %}
 You can check the latest release here: <https://codeberg.org/daudix/duckquill/releases>
 {% end %}
 
@@ -90,7 +90,7 @@ Now you can try serving the site locally:
 zola serve
 ```
 
-![empty site](empty-site.png#transparent)
+![empty](empty.png#transparent)
 
 Hm, doesn't look quite right...
 
@@ -112,7 +112,7 @@ And let's create a home page by creating an `_index.md` file under `content` wit
 
 And we get...
 
-![empty site duckquill](empty-site-duckquill.png#transparent)
+![empty duckquill](empty-duckquill.png#transparent)
 
 Alright, perhaps our config is too bare-bones, let's enable navbar and a footer:
 
@@ -152,7 +152,7 @@ Now we can push the changes to Codeberg and set up the CI to build and deploy ou
 Before we get to setting up the CI, we first need to get access to it. You'll need to fill [the following form](https://codeberg.org/Codeberg-e.V./requests/issues/new?template=ISSUE_TEMPLATE%2fWoodpecker-CI.yaml) at [Codeberg-e.V./requests](https://codeberg.org/Codeberg-e.V./requests) repository and wait for approval. After your request been approved, we can proceed further.
 {% end %}
 
-Copy [the following Woodpecker workflow](https://codeberg.org/Codeberg-CI/examples/src/branch/main/Zola/.woodpecker.yaml) example from [Codeberg-CI/examples](https://codeberg.org/Codeberg-CI/examples) and put it in the `.woodpecker.yaml` file in the root of your project. If you want the CI to be able to run manually, add `manual` to steps that have `push` events in them.
+Copy [the following Woodpecker workflow](https://codeberg.org/Codeberg-CI/examples/src/branch/main/Zola/.woodpecker.yaml) example from [Codeberg-CI/examples](https://codeberg.org/Codeberg-CI/examples) and put it in the `.woodpecker.yaml` file in the root of your project. If you want the CI to be able to run manually, add `manual` to steps that have the `push` events in them.
 
 ```yaml
 # Takes a repository with Zola source, generates the static site and
@@ -210,7 +210,7 @@ steps:
       event: [push, manual]
 ```
 
-Push the changes and go to <https://ci.codeberg.org>. There, add the `pages` repository we created earlier:
+Push the changes and go to [ci.codeberg.org](https://ci.codeberg.org). There, add the `pages` repository we created earlier:
 
 ```bash
 git add --all
@@ -221,7 +221,7 @@ git commit --message "Initial commit"
 
 ![enable repository](enable-repository.png)
 
-Now, [create a secret](https://codeberg.org/user/settings/applications) on Codeberg so CI can push the changes. You need to set `repository` scope to `Read and write`.
+Now, [create a secret](https://codeberg.org/user/settings/applications) on Codeberg so CI can push the changes. You need to set the `repository` scope to `Read and write`.
 
 ![token generation](token-generation.png)
 
@@ -235,7 +235,7 @@ Navigate to the "Secrets" tab:
 
 ![repository settings secrets](repository-settings-secrets.png)
 
-Add secret with the name `mail` with email you used for Codeberg, with the `Push` and `Manual` events selected (the later is only needed if you added `manual` event in the CI file):
+Add secret with the name `mail` with email you used for Codeberg as the value, with the `Push` and `Manual` events selected (the later is only needed if you added `manual` event in the CI file):
 
 ![mail secret](mail-secret.png)
 
@@ -249,7 +249,7 @@ We're almost there! now we just need to create the `pages` branch on Codeberg wh
 
 Now we can run the first build by pressing the "Run pipeline" button in Woodpecker.
 
-If everything is done properly, the build should succeed and site be available on <https://username.codeberg.page>.
+If everything is done properly, the build should succeed and site be available on `<username>.codeberg.page`.
 
 <button class="audio" onclick="playAudio('party-horn.mp3')">Congrats!</button> You've officially become a web citizen! Show off your new site to the world; it's something to be proud of!
 
