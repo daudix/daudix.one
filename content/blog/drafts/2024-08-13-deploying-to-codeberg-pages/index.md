@@ -17,7 +17,7 @@ This guide is intended to help with the process of getting a Zola website up and
 
 It assumes that you have Git set up and Zola installed already. If not, check the following [guide by GitHub](https://docs.github.com/en/get-started/getting-started-with-git/set-up-git) on setting up Git and [Zola's documentation](https://www.getzola.org/documentation/getting-started/installation/) on installing it.
 
-## What is Codeberg?
+## What Is Codeberg?
 
 Codeberg is a free forge for free and open source projects. A forge is a web-based collaborative software platform for both developing and sharing various software projects.
 
@@ -31,7 +31,7 @@ This one is pretty straightforward, you just go to [codeberg.org](https://codebe
 
 ![landing page](landing-page.png)
 
-## Create the repository
+## Create the Repository
 
 Now you can create a repository for your website. A repository is like a public folder with your project that you and others can work on.
 
@@ -47,7 +47,7 @@ I also recommend checking this "Initialize repository" box to save some time lat
 
 Now you can go and smash that "Create repository" button and proceed to the next step.
 
-## Initializing Zola website
+## Initializing Zola Website
 
 To be completely unbiased, I will use my own [Duckquill](https://duckquill.daudix.one) Zola theme in this example <img class="emoji no-hover" alt="troll face" src="troll-face.gif" />
 
