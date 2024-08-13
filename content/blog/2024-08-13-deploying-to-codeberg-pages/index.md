@@ -1,6 +1,6 @@
 +++
-title = "Deploy Zola Website to Codeberg Pages"
-description = "Getting a Zola website up and running using Codeberg pages."
+title = "Deploying a Zola Website to Codeberg Pages"
+description = "Step-by-step guide to deploying a Zola website using Codeberg Pages."
 draft = true
 [taxonomies]
 tags = ["100DaysToOffload", "Codeberg", "Zola"]
@@ -14,27 +14,27 @@ id = ""
 This guide focuses on the Zola <abbr title="Static site generator">SSG</abbr>, but other SSGs like Hugo and Jekyll should work with this guide as well.
 {% end %}
 
-This guide is intended to be a comprehensive walkthrough of the process of getting a Zola website up and running using Codeberg and Codeberg pages. It's aimed at users that are unfamiliar with all the obscure technical details.
+This guide is intended to help with the process of getting a Zola website up and running using Codeberg and Codeberg pages; some of the steps are confusing, so this article tries to clear them up.
 
-This guide assumes that you have Git set up already. If not, check the following guide by GitHub: <https://docs.github.com/en/get-started/getting-started-with-git/set-up-git>
+It assumes that you have Git set up and Zola installed already. If not, check the following [guide by GitHub](https://docs.github.com/en/get-started/getting-started-with-git/set-up-git) on setting up Git and [Zola's documentation](https://www.getzola.org/documentation/getting-started/installation/) on installing it.
 
 ## What is Codeberg?
 
 Codeberg is a free forge for free and open source projects. A forge is a web-based collaborative software platform for both developing and sharing various software projects.
 
-You may be familiar with GitHub, and well, it's pretty much the same thing, except it doesn't compromise user privacy, it doesn't violate license agreements, and it doesn't train its AI on code that users host there.
+You may be familiar with GitHub, and well, it's pretty much the same thing, except it doesn't compromise user privacy, it doesn't violate license agreements, and it doesn't train its AI on code that users host there. I [moved away from GitHub](@/blog/2023-07-15-migration-from-github-to-codeberg/index.md) myself some time ago, and have no regrets.
 
 See [Give Up GitHub!](https://sfconservancy.org/GiveUpGitHub/) and [Please don’t upload my code to GitHub](https://nogithub.codeberg.page) to get a better understanding of why GitHub is bad.
 
 ## Sign up on Codeberg
 
-This one is pretty straightforward, you just go to [codeberg.org](https://codeberg.org) and press that big "Register now." button. The rest doesn't need explanation.
+This one is pretty straightforward, you just go to [codeberg.org](https://codeberg.org) and press that big "Register now." button. The rest is self-explanatory.
 
 ![landing page](landing-page.png)
 
 ## Create the repository
 
-Now you can create a repository for your website. Repository is like a public folder with your project that you and others can work on.
+Now you can create a repository for your website. A repository is like a public folder with your project that you and others can work on.
 
 ![new repository](new-repository.png)
 
@@ -46,17 +46,28 @@ I also recommend checking this "Initialize repository" box to save some time lat
 
 ![initialize repository](initialize-repository.png)
 
-Now you can go and smash that "Create repository" button.
+Now you can go and smash that "Create repository" button and proceed to the next step.
 
 ## Initializing Zola website
 
-To be completely unbiased, I will use my own Duckquill theme in this example <img class="emoji no-hover" alt="troll face" src="troll-face.gif" />
+To be completely unbiased, I will use my own [Duckquill](https://duckquill.daudix.one) Zola theme in this example <img class="emoji no-hover" alt="troll face" src="troll-face.gif" />
+
+Jokes aside, you can use any theme from [www.getzola.org/themes](https://www.getzola.org/themes/), but to make sure we're on the same page we'll use Duckquill.
 
 First, clone the newly created repository and then `cd` into it.
 
-Then, initialize a new Zola site with `zola init`. You can simply spam <kbd>Enter ↵</kbd> since we'll use our own configuration anyway.
+```
+git clone <repository_url>
+cd <repository_name>
+```
+
+Then, initialize a new Zola site with `zola init --force`. You can simply spam <kbd>Enter ↵</kbd> since we'll use our own configuration anyway. (the reason why the `--force` flag is used is that Zola doesn't like the presence of Git files in the folder and doesn't want to proceed)
 
 Now you'll need to add the Duckquill theme as a Git submodule:
+
+{% alert(note=true) %}
+A Git submodule is a repository inside another repository. When you add a submodule, Git adds it to a special `.gitmodules` file, which can then be read by Git somewhere else and clone the needed repository in place, which will be helpful later when we set up the <abbr title="Contineventuous integration">CI</abbr> workflow.
+{% end %}
 
 ```sh
 git submodule init
@@ -138,11 +149,11 @@ Now we can push the changes to Codeberg and set up the CI to build and deploy ou
 
 ## Setting up the CI
 
-Before we get to setting up the CI, we need to get access to it. You'll need to fill [the following form](https://codeberg.org/Codeberg-e.V./requests/issues/new?template=ISSUE_TEMPLATE%2fWoodpecker-CI.yaml) at [Codeberg-e.V./requests](https://codeberg.org/Codeberg-e.V./requests repository.
+{% alert(important=true) %}
+Before we get to setting up the CI, we first need to get access to it. You'll need to fill [the following form](https://codeberg.org/Codeberg-e.V./requests/issues/new?template=ISSUE_TEMPLATE%2fWoodpecker-CI.yaml) at [Codeberg-e.V./requests](https://codeberg.org/Codeberg-e.V./requests) repository and wait for approval. After your request been approved, we can proceed further.
+{% end %}
 
-After your request been approved, we can proceed further.
-
-Copy [the following Woodpecker workflow](https://codeberg.org/Codeberg-CI/examples/src/branch/main/Zola/.woodpecker.yaml) example from [Codeberg-CI/examples](https://codeberg.org/Codeberg-CI/examples) and put it in `.woodpecker.yaml` file inside your project's root.
+Copy [the following Woodpecker workflow](https://codeberg.org/Codeberg-CI/examples/src/branch/main/Zola/.woodpecker.yaml) example from [Codeberg-CI/examples](https://codeberg.org/Codeberg-CI/examples) and put it in the `.woodpecker.yaml` file in the root of your project. If you want the CI to be able to run manually, add `manual` to steps that have `push` events in them.
 
 ```yaml
 # Takes a repository with Zola source, generates the static site and
@@ -202,15 +213,20 @@ steps:
 
 Push the changes and go to <https://ci.codeberg.org>. There, add the `pages` repository we created earlier:
 
+```sh
+git add --all
+git commit --message "Initial commit"
+```
+
 ![add repository](add-repository.png)
 
 ![enable repository](enable-repository.png)
 
-Now, [create a secret](https://codeberg.org/user/settings/applications) so CI can push the changes. You need to set `repository` scope to `Read and write`.
+Now, [create a secret](https://codeberg.org/user/settings/applications) on Codeberg so CI can push the changes. You need to set `repository` scope to `Read and write`.
 
 ![token generation](token-generation.png)
 
-Copy and paste the resulted token somewhere, since it couldn't be viewed after the page reload.
+Copy and paste the resulting token somewhere, since it couldn't be seen after the page reload.
 
 Now add the needed secrets in the Woodpecker repository settings by clicking on the repository in the list:
 
@@ -220,7 +236,7 @@ Navigate to the "Secrets" tab:
 
 ![repository settings secrets](repository-settings-secrets.png)
 
-Add secret with the name `mail` with email you used for Codeberg, with the `Push` and `Manual` events selected:
+Add secret with the name `mail` with email you used for Codeberg, with the `Push` and `Manual` events selected (the later is only needed if you added `manual` event in the CI file):
 
 ![mail secret](mail-secret.png)
 
@@ -228,18 +244,20 @@ Add secret with the name `mail` with email you used for Codeberg, with the `Push
 
 Do the same for the `codeberg_token`, use the token we generated earlier as the value.
 
-Almost there, now we just need to create the `pages` branch where the build result will be pushed:
+We're almost there! now we just need to create the `pages` branch on Codeberg where the build result will be pushed:
 
 ![pages branch](pages-branch.png)
 
 Now we can run the first build by pressing the "Run pipeline" button in Woodpecker.
 
-If everything is done properly, the build should succeed and site be available on <https://username.codeberg.page>. Congrats!
+If everything is done properly, the build should succeed and site be available on <https://username.codeberg.page>.
 
-The website demo lives under <https://daudix.codeberg.page/pages-demo/>, at the moment of writing at least.
+<button class="audio" onclick="playAudio('party-horn.mp3')">Congrats!</button> You've officially become a web citizen! Show off your new site to the world; it's something to be proud of!
 
-The repository is public as well: <https://codeberg.org/daudix/pages-demo>
+If you run into problems or need help with any of the steps, feel free to [reach out](@/find/index.md#contacts), I will try my best to help ^^
 
-And so is the Woodpecker: <https://ci.codeberg.org/repos/13650>
-
-If you have any issues or need any help with any of the steps, feel free to [reach out](@/find/index.md#contacts).
+<script type="text/javascript">
+	function playAudio(url) {
+		new Audio(url).play();
+	}
+</script>
