@@ -1,7 +1,6 @@
 +++
 title = "Deploying a Zola Website to Codeberg Pages"
 description = "Step-by-step guide to deploying a Zola website using Codeberg Pages."
-draft = true
 [taxonomies]
 tags = ["100DaysToOffload", "Codeberg", "Zola"]
 [extra]
