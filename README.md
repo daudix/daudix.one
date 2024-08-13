@@ -26,20 +26,20 @@ If you want to use some custom styles and stuff from here, go ahead, just don't 
 
 - Clone the repository recursively:
 
-```sh
+```bash
 git clone --recursive git@codeberg.org:daudix/pages.git
 ```
 
 - Checkout `main` branch for Duckquill:
 
-```sh
+```bash
 cd pages/themes/duckquill/
 git checkout main
 ```
 
 - Set remote URL to SSH one:
 
-```sh
+```bash
 git remote set-url origin git@codeberg.org:daudix/duckquill.git
 ```
 

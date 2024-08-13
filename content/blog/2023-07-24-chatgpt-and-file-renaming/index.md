@@ -15,7 +15,7 @@ While writing and the [previous post](@/blog/2023-07-15-migration-from-github-to
 
 After a quick web search I understood that this will be hard to do (a lot of `sed` and bash tricks, sounds like data loss), so I asked ChatGPT to write the script. After countless tweak requests and `git restore ./` *we* have finally got it, script that works for English and Russian, it makes everything lowercase, replaces spaces with dashes and removes spacial characters like said `:`, I don't know how it works but here is it:
 
-```sh
+```bash
 #!/usr/bin/env bash
 
 # Made by ChatGPT and countless tweak requests

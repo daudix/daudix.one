@@ -56,7 +56,7 @@ Jokes aside, you can use any theme from [www.getzola.org/themes](https://www.get
 
 First, clone the newly created repository and then `cd` into it.
 
-```
+```bash
 git clone <repository_url>
 cd <repository_name>
 ```
@@ -69,14 +69,14 @@ Now you'll need to add the Duckquill theme as a Git submodule:
 A Git submodule is a repository inside another repository. When you add a submodule, Git adds it to a special `.gitmodules` file, which can then be read by Git somewhere else and clone the needed repository in place, which will be helpful later when we set up the <abbr title="Contineventuous integration">CI</abbr> workflow.
 {% end %}
 
-```sh
+```bash
 git submodule init
 git submodule add https://codeberg.org/daudix/duckquill.git themes/duckquill
 ```
 
 Now we need to switch to the latest release instead of the unstable `main` branch:
 
-```sh
+```bash
 cd themes/duckquill
 git checkout tags/v4.2.1
 ```
@@ -87,7 +87,7 @@ You can check the latest release here: <https://codeberg.org/daudix/duckquill/re
 
 Now you can try serving the site locally:
 
-```sh
+```bash
 zola serve
 ```
 
@@ -213,7 +213,7 @@ steps:
 
 Push the changes and go to <https://ci.codeberg.org>. There, add the `pages` repository we created earlier:
 
-```sh
+```bash
 git add --all
 git commit --message "Initial commit"
 ```

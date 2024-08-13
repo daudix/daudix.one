@@ -120,7 +120,7 @@ For this you can use Halftone - A simple Linux app that allows you to dither you
 
 Example of simple ordered image dithering with 2 colors using ImageMagick [^1]
 
-```sh
+```bash
 convert image.jpg -resize 840x840 -strip -colors 4 -ordered-dither o8x8 image-dithered.png
 ```
 
@@ -330,21 +330,21 @@ The ASCII art can be found online in huge amounts, I will give you some good web
 
 As for banners, they can be easily created with figlet or toilet, you can easily find installation instructions online, I also recommend to install additional beautiful and sometimes funny fonts from [figlet-fonts](https://github.com/xero/figlet-fonts), which basically consists of few commands
 
-```sh
+```bash
 git clone https://github.com/xero/figlet-fonts.git
 ```
 
-```sh
+```bash
 cd figlet-fonts/
 ```
 
-```sh
+```bash
 sudo cp -r ./ /usr/share/figlet/
 ```
 
 And then you can create your own banner!
 
-```sh
+```bash
 figlet -f ANSI\ Shadow "gemini"
 ```
 
