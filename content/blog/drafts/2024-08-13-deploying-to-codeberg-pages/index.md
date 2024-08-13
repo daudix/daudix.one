@@ -51,7 +51,7 @@ Now you can go and smash that "Create repository" button and proceed to the next
 
 To be completely unbiased, I will use my own [Duckquill](https://duckquill.daudix.one) Zola theme in this example <img class="emoji no-hover" alt="troll face" src="troll-face.gif" />
 
-Jokes aside, you can use any theme from [www.getzola.org/themes](https://www.getzola.org/themes/), but to make sure we're on the same page we'll use Duckquill.
+Jokes aside, you can use any theme from [getzola.org/themes](https://www.getzola.org/themes/), but to make sure we're on the same page we'll use Duckquill.
 
 First, clone the newly created repository and then `cd` into it.
 
