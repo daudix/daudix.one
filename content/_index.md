@@ -193,8 +193,6 @@ It's recommended to avoid hot-linking; instead, place a copy on your own site.
 
 Hey, you, yes, *you*. Got a website and a button? Just a button? I got a deal for you! [Ping me somewhere](@/find/index.md#contacts) so I can add it here, easy as pie!
 
-<img id="fluttershy" class="transparent no-hover drop-shadow" alt="fluttershy" src="assets/fluttershy.gif" />
-
 <div class="dialog-buttons">
   <button class="inline-button" onclick="rizzItUp()">Rizz It Up</button>
   <div id="dont"></div>
@@ -218,12 +216,25 @@ Hey, you, yes, *you*. Got a website and a button? Just a button? I got a deal fo
 </script>
 
 <script type="text/javascript">
-  const fluttershy = document.getElementById("fluttershy");
-
   function fluttershyAnim() {
-    fluttershy.classList.add("flying");
+    const shy = document.getElementById("shy");
+    shy.toggleAttribute("disabled");
+
+    const squee = new Audio("assets/squee.mp3");
+    squee.play();
+
+    const fluttershy = document.createElement("img");
+    fluttershy.setAttribute("id", "fluttershy");
+    fluttershy.setAttribute("alt", "fluttershy");
+    fluttershy.setAttribute("src", "assets/fluttershy.gif");
+    fluttershy.classList.add("transparent", "no-hover", "drop-shadow");
+
+    const container = document.getElementById("main");
+    container.appendChild(fluttershy);
+
     fluttershy.addEventListener("animationend", function () {
-      fluttershy.classList.remove("flying");
+      shy.toggleAttribute("disabled");
+      fluttershy.remove();
     });
   }
 </script>
