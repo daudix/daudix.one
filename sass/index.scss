@@ -727,7 +727,9 @@
 		position: relative; // Prevent buttons from overlapping during transitions
 		transition: var(--transition-bezier);
 		margin: 0;
+		box-shadow: none;
 		border-radius: 0;
+		background-color: transparent;
 		image-rendering: pixelated;
 
 		&:hover {
