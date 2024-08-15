@@ -579,6 +579,7 @@
 #shy {
 	-webkit-appearance: none;
 	appearance: none;
+	transition: var(--transition);
 	cursor: pointer;
 	border: none;
 	background-color: transparent;
@@ -592,26 +593,26 @@
 	&:hover {
 		text-decoration-style: solid;
 	}
+
+	&:disabled {
+		cursor: not-allowed;
+		color: var(--fg-muted-5);
+	}
 }
 
 // Ah, that's who
 #fluttershy {
 	position: fixed;
-	top: 20vh;
-	right: 0;
-	transform: translateX(18.5625rem);
-	transform-origin: bottom left;
+	right: calc((100vw - var(--container-width)) / 2);
+	bottom: 0;
+	transform: translateY(100%);
+	animation: peek var(--transition-long);
 	margin: 0;
-	width: 12.375rem;
-	height: 11.0625rem;
 
-	&.flying {
-		animation: flight 2s linear;
-
-		@keyframes flight {
-			to {
-				transform: translateX(calc(-100vw + -18.5625rem));
-			}
+	@keyframes peek {
+		50%,
+		75% {
+			transform: translateY(0);
 		}
 	}
 }
@@ -723,7 +724,7 @@
 
 	img {
 		display: inline-block;
-		position: relative;
+		position: relative; // Prevent buttons from overlapping during transitions
 		transition: var(--transition-bezier);
 		margin: 0;
 		border-radius: 0;

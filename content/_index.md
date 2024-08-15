@@ -226,7 +226,7 @@ Hey, you, yes, *you*. Got a website and a button? Just a button? I got a deal fo
     const fluttershy = document.createElement("img");
     fluttershy.setAttribute("id", "fluttershy");
     fluttershy.setAttribute("alt", "fluttershy");
-    fluttershy.setAttribute("src", "assets/fluttershy.gif");
+    fluttershy.setAttribute("src", "assets/squee.webp");
     fluttershy.classList.add("transparent", "no-hover", "drop-shadow");
 
     const container = document.getElementById("main");
