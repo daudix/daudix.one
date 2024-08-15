@@ -152,6 +152,8 @@ I also have a [Gemini capsule](gemini://gmi.daudix.one) on [flounder](https://fl
 [![firefox3](assets/88x31/firefox3.gif)](https://getfirefox.com)
 [![getimiskon](assets/88x31/getimiskon.gif)](https://getimiskon.xyz)
 [![iso](assets/88x31/iso.gif)](https://www.w3.org/QA/Tips/iso-date)
+[![marchintosh](assets/88x31/marchintosh.gif)](https://libreivan.com)
+[![pixlxip](assets/88x31/pixlxip.gif)](https://xip.neocities.org)
 [![portal](assets/88x31/portal.gif)](https://www.thinkwithportals.com)
 [![ronbutton](assets/88x31/ronbutton.gif)](https://veeronniecaw.space)
 [![savewalterwhite](assets/88x31/savewalterwhite.gif)](http://www.savewalterwhite.com)
