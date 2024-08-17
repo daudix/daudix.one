@@ -70,7 +70,11 @@ About Bubbles; I went even further and made this shitty animation, again just fo
 
 You might've noticed the Mesh variant already being used on Matrix and Déjà Vu on Mastodon and Bluesky, what does that mean?
 
-Well, nothing really, I just throw logotars on profiles and see what sticks *looking away: that didn't sound very professional* I meant to say that I conduct an A/B testing in the real world scenarios to determine which logotar variant fulfills the desired objectives better.
+Well, nothing really, I just throw logotars on profiles and see what sticks.
+
+*Looking away* that didn't sound very professional.
+
+I meant to say that I conduct an A/B testing in the real world scenarios to determine which logotar variant fulfills the desired objectives better.
 
 ## Conclusion
 
