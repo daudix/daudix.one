@@ -149,6 +149,7 @@ I also have a [Gemini capsule](gemini://gmi.daudix.one) on [flounder](https://fl
 [![a proud member of the blue team of 512KB club](assets/88x31/blue-team.gif)](https://512kb.club)
 [![aperturelabs](assets/88x31/aperturelabs.gif)](https://www.aperturescience.com)
 [![ddg](assets/88x31/ddg.gif)](https://duckduckgo.com)
+[![fediring](assets/88x31/fediring.gif)](https://fediring.net)
 [![firefox3](assets/88x31/firefox3.gif)](https://getfirefox.com)
 [![getimiskon](assets/88x31/getimiskon.gif)](https://getimiskon.xyz)
 [![iso](assets/88x31/iso.gif)](https://www.w3.org/QA/Tips/iso-date)
