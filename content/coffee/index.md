@@ -10,8 +10,8 @@ stylesheets = ["coffee.css"]
 		<img id="avatar" class="no-hover" alt="avatar" src="/assets/avatar.svg" />
 	</div>
 	<div id="coffee-banner-container">
-		<p id="blobfox-message">Hewwo~ 0w0</p>
-		<img id="blobfox" class="transparent no-hover" alt="blobfox" src="neofox-stretch-down.png" />
+		<span id="blobfox-message" class="drop-shadow">Hewwo~ 0w0</span>
+		<img id="blobfox" class="transparent no-hover drop-shadow" alt="blobfox" src="neofox-stretch-down.png" />
 		<img id="coffee-banner" class="no-hover" alt="banner" src="banner.webp" />
 	</div>
 	<strong id="title">David Lapshin</strong>

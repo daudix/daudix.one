@@ -353,13 +353,6 @@ body:has(#skeuo-switch:checked) {
 		color: hsl(32 26% 20%);
 		text-shadow: 0 0.0625rem 0 rgba(255, 255, 255, 0.3);
 
-		#blobfox,
-		#blobfox-message {
-			$drop-shadow: drop-shadow(0 0.125rem 0.25rem rgba(0, 0, 0, 0.3));
-			-webkit-filter: $drop-shadow;
-			filter: $drop-shadow;
-		}
-
 		#coffee-banner {
 			box-shadow: var(--shadow);
 		}
