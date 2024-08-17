@@ -116,8 +116,8 @@ And lastly, to quote [Jeffrey](https://hyperreal.coffee/about/): "I’m <button 
       <span aria-hidden="true">silly little goober with a creative mind</span>
       <span aria-hidden="true">silly little goober with a creative mind</span>
       <span aria-hidden="true">silly little goober with a creative mind</span>
-      <small>–<a href="https://veeronniecaw.space">Ronnie</a></small>
     </div>
+    <small>–<a href="https://veeronniecaw.space">Ronnie</a></small>
   </div>
 </div>
 

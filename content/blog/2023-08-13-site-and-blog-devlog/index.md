@@ -15,7 +15,7 @@ This blog was born two month ago, and since the first revision a lot- no, that's
 
 ## «The Index»
 
-The Index is not only home page, it's also a showcase, info and screensaver pages, they all live in the same `pages` repository, while blog is a completely separate thing with its own repository.
+The Index is not only homepage, it's also a showcase, info and screensaver pages, they all live in the same `pages` repository, while blog is a completely separate thing with its own repository.
 
 One important change have happened to the Index, now all its pages use the same base, `style.css`, and only page-specific tweaks are specified in page <abbr title="Cascading Style Sheets">CSS</abbr>, e.g showcase page style has `@import url("style.css");` in the beginning instead of exact copy of `index.css`, not only this makes the file size smaller, but also makes the tweaking process a breeze, since stuff can be changed in one place and be applied to every page.
 
@@ -27,7 +27,7 @@ One important change have happened to the Index, now all its pages use the same 
 
 ### Home
 
-Home page is a very important page, this page links to all other pages, it gives some basic info about me and some contact links. It didn't change a lot but there are some work been done.
+Homepage is a very important page, this page links to all other pages, it gives some basic info about me and some contact links. It didn't change a lot but there are some work been done.
 
 - Proper dark mode have been implemented (well, it were already there but I replaced it with filter hack,more on it in blog section. Now it's enabled back and all the custom stuff have been fixed to support it).
 - Background color are a bit different (taken from Libadwaita).

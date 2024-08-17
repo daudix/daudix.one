@@ -103,7 +103,7 @@ description = "Demo site for a blog post."
 theme = "duckquill"
 ```
 
-And let's create a home page by creating an `_index.md` file under `content` with the following contents:
+And let's create a homepage by creating an `_index.md` file under `content` with the following contents:
 
 ```markdown
 +++
@@ -128,11 +128,11 @@ show_powered_by = true
 show_source = false
 ```
 
-And add something to the home page:
+And add something to the homepage:
 
 ```markdown
 +++
-title = "I'm a home page, look at me!"
+title = "I'm a homepage, look at me!"
 +++
 
 # Hello There!

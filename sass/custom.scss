@@ -2,7 +2,7 @@
 // *,
 // *::before,
 // *::after {
-// 	outline: solid 1px rgba(255, 0, 0, 0.5);
+// 	outline: solid 0.0625rem var(--primary-color);
 // }
 
 :root {
@@ -170,18 +170,14 @@ blockquote {
 	}
 }
 
-img {
-	&:not(.no-hover, .full-bleed, &[src*="#no-hover"], &[src*="#full-bleed"]) {
+.media-grid,
+.media-grid-markdown p {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+	gap: 0.5rem;
 
-		&.blur,
-		&[src*="#blur"] {
-			clip-path: inset(0% 0% 0% 0% round var(--rounded-corner));
-			filter: blur(1rem);
-
-			&:hover {
-				clip-path: inset(0% 0% 0% 0% round 0);
-				filter: none;
-			}
-		}
+	img,
+	video {
+		margin: 0;
 	}
 }
