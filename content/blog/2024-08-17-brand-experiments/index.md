@@ -33,7 +33,7 @@ Related: [Animation of it on YouTube](https://www.youtube.com/shorts/53Cv27Sjtgw
 
 That's right, it's a bold reference to a Portal 2 chapter with the same name, who might've guessed ¯\\\_\(ツ)\_\/¯
 
-Anyway, what I was talki- I mean writing about? Oh yeah, the logotar. One day I was visiting the [GNOME OS website](https://os.gnome.org/install/) and I saw this very cool illustration and I *really* liked the way the purple-blue gradient looked, and I did what I do when I like something. STOLE IT. <button class="audio" onclick="playAudio('scooby-doo.mp3')">MWRHEHEHE</button>.
+Anyway, what I was talki- I mean writing about? Oh yeah, the logotar. One day I was visiting the [GNOME OS website](https://os.gnome.org/install/) and I saw this very cool illustration and I *really* liked the way the purple-blue gradient looked, and I did what I do when I like something. STOLE IT. <button class="audio" onclick="playAudio('scooby-doo.mp3')">Rehehehe</button>.
 
 ![illustration](illustration.png)
 
