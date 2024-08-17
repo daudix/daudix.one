@@ -4,6 +4,7 @@ description = "Experimenting with my logo style, colors, textures, and design ph
 [taxonomies]
 tags = ["100DaysToOffload", "Design", "Blender", "Inkscape"]
 [extra]
+banner = "banner.png"
 toc = true
 [extra.comments]
 id = "112975067115258952"
