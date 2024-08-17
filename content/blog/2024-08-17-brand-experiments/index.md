@@ -6,7 +6,7 @@ tags = ["100DaysToOffload", "Design", "Blender", "Inkscape"]
 [extra]
 toc = true
 [extra.comments]
-id = ""
+id = "112975067115258952"
 +++
 
 Over the past few days I've been experimenting with my logo/avatar/whatever (let's call it... IDK, "logotar") and exploring new styles–because why not? It's fun, quite fun, and honestly, pretty fun. I won't go into the backstory of the logotar, though, because it's outside the scope of this article and it looked like absolute crap, so... WAIT WHA-
