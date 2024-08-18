@@ -1,6 +1,7 @@
 +++
 title = "Personal Branding Experiments"
 description = "Experimenting with my logo style, colors, textures, and design philosophy."
+updated = 2024-08-18
 [taxonomies]
 tags = ["100DaysToOffload", "Design", "Blender", "Inkscape"]
 [extra]
@@ -76,6 +77,12 @@ Well, nothing really, I just throw logotars on profiles and see what sticks.
 *Looking away* that didn't sound very professional.
 
 I meant to say that I conduct an A/B testing in the real world scenarios to determine which logotar variant fulfills the desired objectives better.
+
+{% alert(edit=true) %}
+Silly me just realized that the blueprint logo I made for the banner is actually another experiment! I might explore this direction further, I'm pretty sure it'll look swag in purple.
+
+[![blueprint](blueprint.png)](https://codeberg.org/daudix/archive/raw/branch/main/daudix/experiments/blueprint.png)
+{% end %}
 
 ## Conclusion
 
