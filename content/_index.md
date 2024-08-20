@@ -144,58 +144,61 @@ I also have a [Gemini capsule](gemini://gmi.daudix.one) on [flounder](https://fl
 
 <small>Seriously, they're awesome!</small>
 
-<div class="buttons-container">
+<div class="marquee-wrapper netscape">
+<div class="marquee">
 
-[![a proud member of the blue team of 512KB club](assets/88x31/blue-team.gif)](https://512kb.club)
-[![aperturelabs](assets/88x31/aperturelabs.gif)](https://www.aperturescience.com)
-[![ddg](assets/88x31/ddg.gif)](https://duckduckgo.com)
-[![fediring](assets/88x31/fediring.gif)](https://fediring.net)
-[![firefox3](assets/88x31/firefox3.gif)](https://getfirefox.com)
-[![getimiskon](assets/88x31/getimiskon.gif)](https://getimiskon.xyz)
-[![iso](assets/88x31/iso.gif)](https://www.w3.org/QA/Tips/iso-date)
-[![marchintosh](assets/88x31/marchintosh.gif)](https://libreivan.com)
-[![melankorin](assets/88x31/melankorin.gif)](https://melankorin.net)
-[![pixlxip](assets/88x31/pixlxip.gif)](https://xip.neocities.org)
-[![portal](assets/88x31/portal.gif)](https://www.thinkwithportals.com)
-[![ronbutton](assets/88x31/ronbutton.gif)](https://veeronniecaw.space)
-[![savewalterwhite](assets/88x31/savewalterwhite.gif)](http://www.savewalterwhite.com)
-[![saynotoweb3](assets/88x31/saynotoweb3.gif)](https://yesterweb.org/no-to-web3/)
-[![seirdy](assets/88x31/seirdy.gif)](https://seirdy.one)
-[![standwith](assets/88x31/standwith.gif)](https://decolonizepalestine.com)
-[![stardew-valley](assets/88x31/stardew-valley.gif)](https://www.stardewvalley.net)
-[![statuscafe](assets/88x31/statuscafe.gif)](https://status.cafe)
-[![valid-atom](assets/88x31/valid-atom.gif)](https://validator.w3.org/feed/)
-[![vscodium](assets/88x31/vscodium.gif)](https://vscodium.com)
-![adhd](assets/88x31/adhd.gif)
-![any2](assets/88x31/any2.gif)
-![anythingbut](assets/88x31/anythingbut.gif)
-![besteyes2](assets/88x31/besteyes2.gif)
-![bestviewed16bit](assets/88x31/bestviewed16bit.gif)
-![dark-mode](assets/88x31/dark-mode.gif)
-![fuckchrome](assets/88x31/fuckchrome.gif)
-![imac](assets/88x31/imac.gif)
-![linux_powered](assets/88x31/linux_powered.gif)
-![mobilefriendly](assets/88x31/mobilefriendly.gif)
-![neo-fedi](assets/88x31/neo-fedi.gif)
-![nofuckingthanks](assets/88x31/nofuckingthanks.gif)
-![righttorepair](assets/88x31/righttorepair.gif)
-![sourcemissing](assets/88x31/sourcemissing.gif)
-![yarrr](assets/88x31/yarrr.gif)
+- [![a proud member of the blue team of 512KB club](assets/88x31/blue-team.gif#pixels#transparent#no-hover)](https://512kb.club)
+- [![aperturelabs](assets/88x31/aperturelabs.gif#pixels#transparent#no-hover)](https://www.aperturescience.com)
+- [![ddg](assets/88x31/ddg.gif#pixels#transparent#no-hover)](https://duckduckgo.com)
+- [![fediring](assets/88x31/fediring.gif#pixels#transparent#no-hover)](https://fediring.net)
+- [![firefox3](assets/88x31/firefox3.gif#pixels#transparent#no-hover)](https://getfirefox.com)
+- [![georgemoody](assets/88x31/georgemoody.gif#pixels#transparent#no-hover)](https://tilde.town/~georgemoody/)
+- [![getimiskon](assets/88x31/getimiskon.gif#pixels#transparent#no-hover)](https://getimiskon.xyz)
+- [![graphite](assets/88x31/graphite.gif#pixels#transparent#no-hover)](https://gra.phite.ro)
+- [![iso](assets/88x31/iso.gif#pixels#transparent#no-hover)](https://www.w3.org/QA/Tips/iso-date)
+- [![marchintosh](assets/88x31/marchintosh.gif#pixels#transparent#no-hover)](https://libreivan.com)
+- [![melankorin](assets/88x31/melankorin.gif#pixels#transparent#no-hover)](https://melankorin.net)
+- [![pixlxip](assets/88x31/pixlxip.gif#pixels#transparent#no-hover)](https://xip.neocities.org)
+- [![portal](assets/88x31/portal.gif#pixels#transparent#no-hover)](https://www.thinkwithportals.com)
+- [![ronbutton](assets/88x31/ronbutton.gif#pixels#transparent#no-hover)](https://veeronniecaw.space)
+- [![savewalterwhite](assets/88x31/savewalterwhite.gif#pixels#transparent#no-hover)](http://www.savewalterwhite.com)
+- [![saynotoweb3](assets/88x31/saynotoweb3.gif#pixels#transparent#no-hover)](https://yesterweb.org/no-to-web3/)
+- [![seirdy](assets/88x31/seirdy.gif#pixels#transparent#no-hover)](https://seirdy.one)
+- [![spacehey](assets/88x31/spacehey.gif#pixels#transparent#no-hover)](https://spacehey.com)
+- [![standwith](assets/88x31/standwith.gif#pixels#transparent#no-hover)](https://decolonizepalestine.com)
+- [![stardew-valley](assets/88x31/stardew-valley.gif#pixels#transparent#no-hover)](https://www.stardewvalley.net)
+- [![statuscafe](assets/88x31/statuscafe.gif#pixels#transparent#no-hover)](https://status.cafe)
+- [![valid-atom](assets/88x31/valid-atom.gif#pixels#transparent#no-hover)](https://validator.w3.org/feed/)
+- [![vscodium](assets/88x31/vscodium.gif#pixels#transparent#no-hover)](https://vscodium.com)
+- ![adhd](assets/88x31/adhd.gif#pixels#transparent#no-hover)
+- ![any2](assets/88x31/any2.gif#pixels#transparent#no-hover)
+- ![anythingbut](assets/88x31/anythingbut.gif#pixels#transparent#no-hover)
+- ![besteyes2](assets/88x31/besteyes2.gif#pixels#transparent#no-hover)
+- ![bestviewed16bit](assets/88x31/bestviewed16bit.gif#pixels#transparent#no-hover)
+- ![bring-back-the-headphone-jack](assets/88x31/bring-back-the-headphone-jack.gif#pixels#transparent#no-hover)
+- ![companion](assets/88x31/companion.gif#pixels#transparent#no-hover)
+- ![dark-mode](assets/88x31/dark-mode.gif#pixels#transparent#no-hover)
+- ![fuckchrome](assets/88x31/fuckchrome.gif#pixels#transparent#no-hover)
+- ![imac](assets/88x31/imac.gif#pixels#transparent#no-hover)
+- ![linux_powered](assets/88x31/linux_powered.gif#pixels#transparent#no-hover)
+- ![mobilefriendly](assets/88x31/mobilefriendly.gif#pixels#transparent#no-hover)
+- ![neo-fedi](assets/88x31/neo-fedi.gif#pixels#transparent#no-hover)
+- ![nofuckingthanks](assets/88x31/nofuckingthanks.gif#pixels#transparent#no-hover)
+- ![righttorepair](assets/88x31/righttorepair.gif#pixels#transparent#no-hover)
+- ![sourcemissing](assets/88x31/sourcemissing.gif#pixels#transparent#no-hover)
+- ![up-all-night](assets/88x31/up-all-night.gif#pixels#transparent#no-hover)
+- ![yarrr](assets/88x31/yarrr.gif#pixels#transparent#no-hover)
+</div>
 </div>
 
-If you like my website, feel free to link it by adding one of these buttons:
+If you want to link back to me, use one of these buttons:
 
-<div class="buttons-container">
-
-![daudix](assets/88x31/daudix.gif)
-![daudix-alt](assets/88x31/daudix-alt.gif)
-</div>
+![daudix](assets/88x31/daudix.gif#pixels#transparent#no-hover)
+![daudix-alt](assets/88x31/daudix-alt.gif#pixels#transparent#no-hover)
 
 {% alert(note=true) %}
 It's recommended to avoid hot-linking; instead, place a copy on your own site.
 {% end %}
-
-Hey, you, yes, *you*. Got a website and a button? Just a button? I got a deal for you! [Ping me somewhere](@/find/index.md#contacts) so I can add it here, easy as pie!
 
 <div class="dialog-buttons">
   <button class="inline-button" onclick="rizzItUp()">Rizz It Up</button>

@@ -729,29 +729,68 @@
 	}
 }
 
-// 88x31 buttons
-.buttons-container {
-	text-align: center;
+.marquee-wrapper {
+	$mask: linear-gradient(to right, transparent, black 2rem, black calc(100% - 2rem), transparent);
+	-webkit-mask-image: $mask;
+	display: flex;
+	position: relative;
+	mask-image: $mask;
+	overflow: hidden;
 
-	img {
-		display: inline-block;
-		position: relative; // Prevent buttons from overlapping during transitions
-		transition: var(--transition-bezier);
-		margin: 0;
-		box-shadow: none;
-		border-radius: 0;
-		background-color: transparent;
-		image-rendering: pixelated;
+	.marquee {
+		display: flex;
+		position: absolute;
 
-		&:hover {
-			transform: scale(2) !important; // Arrgh
-			box-shadow:
-				0 0 0 0.0625rem var(--primary-color-alpha),
-				0 0.125rem 0.375rem 0.125rem var(--primary-color-alpha),
-				0 0.25rem 1.5rem 0.25rem var(--primary-color-alpha) !important; // Arrgh 2x
+		ul {
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			gap: 0.25rem;
+			animation: marquee-scroll 40s linear infinite;
+			transition: var(--transition-longer);
+			margin: 0;
+			padding: 0;
+			list-style: none;
+
+			&:hover {
+				animation-play-state: paused;
+			}
+
+			@keyframes marquee-scroll {
+				from {
+					transform: translateX(min(var(--container-width), 90%));
+				}
+
+				to {
+					transform: translateX(-100%);
+				}
+			}
+
+			li {
+				display: flex;
+
+				img {
+					margin: 0;
+
+					&:hover {
+						filter: brightness(1.25);
+					}
+				}
+			}
 		}
 	}
 }
+
+// 88x31 buttons marquee
+.marquee-wrapper.netscape {
+	height: 1.9375rem; // 31px
+
+	.marquee ul li {
+		width: 5.5rem; // 88px
+		height: 1.9375rem; // 31px
+	}
+}
+
 
 .dialog-buttons {
 	position: relative;
