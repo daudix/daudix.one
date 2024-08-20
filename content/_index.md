@@ -144,6 +144,10 @@ I also have a [Gemini capsule](gemini://gmi.daudix.one) on [flounder](https://fl
 
 <small>Seriously, they're awesome!</small>
 
+{% alert(caution=true) %}
+I'm currently in the process of rewriting and expanding this whole section, I'm trying to test everything a bit before pushing it into production, but some bugs might slip in still. Sowwy ^.^
+{% end %}
+
 <div class="marquee-wrapper netscape">
 <div class="marquee">
 
