@@ -125,24 +125,22 @@ I occasionally create and improve icons for around-GNOME apps, translate them to
 
 Have a look at my [designs](@/design/index.md); mostly icons, but also some wallpapers (one of them is part of GNOME).
 
-## Small Web
+## IndieWeb
 
-Small Web is something I really like, I'm member of multiple tildes/pubnixes, although I don't do much there yet, I still like to be part of them.
-
-Pubnixes/tildes:
+IndieWeb is something I really like; everything from 88x31 buttons to webrings is so cozy, fun, legit and personal, feels really great after the sterile corporate web all over the place. I'm even a member of several tildes/pubnixes, even though I don't do much there, I still like being a part of them:
 
 - [exozyme](https://exozy.me)
 - [envs](https://envs.net)
 
-I have an alt website on [neocities](https://neocities.org), [check it out](https://daudix.neocities.org).
+I have a website on [neocities](https://neocities.org); it's a bit empty at the moment, basically it's my playground where I can make bolder design choices than here. [Check it out](https://daudix.neocities.org).
 
-I also have a [Gemini capsule](gemini://gmi.daudix.one) on [flounder](https://flounder.online), but I recently changed it to serve as a place for jotting down small notes rather than being a mirror of this website. See [this post](@/blog/2024-07-13-repurposing-gemini-capsule/index.md) for the reasons behind this decision. <small>(you can also *finger* me at `daudix@flounder.online`)</small>
+I also have a [Gemini capsule](gemini://gmi.daudix.one) on [flounder](https://flounder.online). I recently changed it to serve as a place for jotting down small notes rather than being a mirror of this website. See [this post](@/blog/2024-07-13-repurposing-gemini-capsule/index.md) for the reasons behind this decision. <small>(you can also *finger* me at `daudix@flounder.online`)</small>
 
 [![Tilde invasion](assets/tilde-invasion.png)](https://pleroma.envs.net/notice/AeJ5ACKLIOl1bCj2lU)
 
-## Buttons
+## Bumps
 
-<small>Seriously, they're awesome!</small>
+<small>**Bu**ttons + Sta**mps** = Bumps</small>
 
 {% alert(caution=true) %}
 I'm currently in the process of rewriting and expanding this whole section, I'm trying to test everything a bit before pushing it into production, but some bugs might slip in still. Sowwy ^.^
