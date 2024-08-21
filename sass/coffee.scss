@@ -233,7 +233,6 @@ body:has(#skeuo-switch:checked) {
 		background-color: transparent;
 
 		nav {
-
 			a,
 			#search button {
 				color: rgba(0, 0, 0, 0.7);
@@ -259,6 +258,7 @@ body:has(#skeuo-switch:checked) {
 				position: absolute;
 			}
 
+			#home a,
 			#search button,
 			#feed a {
 				filter: drop-shadow(0 0.0625rem 0 rgba(255, 255, 255, 0.8));
@@ -451,6 +451,7 @@ body:has(#skeuo-switch:checked) {
 					}
 				}
 
+				#home a,
 				#search button,
 				#feed a {
 					filter: drop-shadow(0 -0.0625rem 0 rgba(0, 0, 0, 0.8));
