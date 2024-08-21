@@ -9,7 +9,7 @@ description = "Some details about this website."
 This is the least fun page on this website. Deal with it.
 {% end %}
 
-This website is a passion project of mine; it's made with a lot of love and attention to detail (I bet you've noticed that already), is constantly updated and improved, and tries to be (somewhat) lightweight and compatible with older browsers. <small>(at very least it works on iOS 15 and macOS High Sierra; which I'm sure a lot of people still use)</small>
+This website is a passion project of mine; it's made with (a lot of) love and attention to details (I bet you've noticed that already), is constantly updated and improved, and tries to be (somewhat) lightweight and compatible with older browsers. <small>(at very least most stuff works on iOS 15 and macOS High Sierra; which unfortunately a lot of people still use)</small>
 
 It used to be hosted on [GitHub pages](https://web.archive.org/web/20221030010150/https://daudix-ufo.github.io/), then on [Codeberg Pages](https://daudix.one), then on [exozy.me](https://daudix.exozy.me), and now it's hosted on Codeberg Pages again.
 
@@ -19,6 +19,8 @@ Well, at first I [migrated to Codeberg](@/blog/2023-07-15-migration-from-github-
 </details>
 
 ## Thanks To
+
+Most likely I forgot to credit someone. Sorry about that >_<
 
 - Everyone in [Duckquill's "Thanks To"](https://duckquill.daudix.one/#thanks-to).
 - [Jeremy Thomas](https://unsplash.com/@jeremythomasphoto) for the [galaxy image](https://unsplash.com/photos/the-stars-and-galaxy-as-seen-from-rocky-mountain-national-park-4dpAqfTbvKA) used in the metadata card.
