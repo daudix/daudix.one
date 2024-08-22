@@ -5,7 +5,7 @@ updated = 2024-08-18
 [taxonomies]
 tags = ["100DaysToOffload", "Design", "Blender", "Inkscape"]
 [extra]
-banner = "banner.png"
+banner = "banner.webp"
 toc = true
 [extra.comments]
 id = "112975067115258952"

@@ -4,6 +4,7 @@ description = "Step-by-step guide to deploying a Zola website using Codeberg Pag
 [taxonomies]
 tags = ["100DaysToOffload", "Codeberg", "Zola"]
 [extra]
+banner  = "banner.webp"
 toc = true
 [extra.comments]
 id = "112956494344143118"
