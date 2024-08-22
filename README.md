@@ -2,7 +2,7 @@
 [![MIT license](https://img.shields.io/badge/License-MIT-blue)](https://mit-license.org)
 [![status-badge](https://ci.codeberg.org/api/badges/13469/status.svg)](https://ci.codeberg.org/repos/13469)
 
-# [Daudix’s Blog](https://daudix.one) <img src="logo.png" alt="Logo" width="96" align="right"/>
+# [Daudix’s Blog](https://daudix.one)
 
 This is the source code for personal website. It is powered by [Zola](https://www.getzola.org) and [Duckquill](https://duckquill.daudix.one).
 

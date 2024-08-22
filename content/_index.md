@@ -14,14 +14,20 @@ stylesheets = ["index.css"]
 </noscript>
 
 <div id="polaroid">
-  <!-- <img id="polaroid-blur" class="transparent no-hover" src="https://piclog.blue/latest.php?id=620" /> -->
   <div id="polaroid-shine"></div>
-  <a id="polaroid-photo" href="https://piclog.blue/profile.php?id=620">
-    <img class="transparent no-hover" alt="latest image from piclog.blue" src="https://piclog.blue/latest.php?id=620">
-  </a>
-  <span id="polaroid-title">Instant photo<br />format</span>
+  <div id="polaroid-photo">
+    <img class="full transparent no-hover" alt="avatar" src="assets/avatar.svg" />
+  </div>
+  <span id="polaroid-title">
+    Instant photo
+    <br />
+    format
+  </span>
   <span id="statuscafe-content"></span>
-  <a id="statuscafe-link" href="https://status.cafe/users/daudix"><span id="statuscafe-time-ago"></span><span id="statuscafe-face"></span></a>
+  <a id="statuscafe-link" href="https://status.cafe/users/daudix">
+    <span id="statuscafe-time-ago"></span>
+    <span id="statuscafe-face"></span>
+  </a>
 </div>
 
 <div id="header-container">
@@ -158,7 +164,8 @@ I'm currently in the process of rewriting and expanding this whole section, I'm 
 - [![getimiskon](assets/88x31/getimiskon.gif#pixels#transparent#no-hover)](https://getimiskon.xyz)
 - [![graphite](assets/88x31/graphite.gif#pixels#transparent#no-hover)](https://gra.phite.ro)
 - [![iso](assets/88x31/iso.gif#pixels#transparent#no-hover)](https://www.w3.org/QA/Tips/iso-date)
-- [![marchintosh](assets/88x31/marchintosh.gif#pixels#transparent#no-hover)](https://libreivan.com)
+- [![libreivan](assets/88x31/libreivan.gif#pixels#transparent#no-hover)](https://libreivan.com)
+- [![marchintosh](assets/88x31/marchintosh.gif#pixels#transparent#no-hover)](https://libreivan.com/writing/)
 - [![melankorin](assets/88x31/melankorin.gif#pixels#transparent#no-hover)](https://melankorin.net)
 - [![pixlxip](assets/88x31/pixlxip.gif#pixels#transparent#no-hover)](https://xip.neocities.org)
 - [![portal](assets/88x31/portal.gif#pixels#transparent#no-hover)](https://www.thinkwithportals.com)
