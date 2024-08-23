@@ -1,13 +1,13 @@
 :root {
-	--fg-color: rgb(207, 192, 159);
-	--fg-muted-1: rgba(255, 255, 255, 0.05);
-	--fg-muted-2: rgba(255, 255, 255, 0.1);
-	--fg-muted-3: rgba(255, 255, 255, 0.2);
-	--fg-muted-4: rgba(255, 255, 255, 0.5);
-	--fg-muted-5: rgba(255, 255, 255, 0.6);
-	--nav-bg: rgba(25, 25, 25, 0.7);
-	--primary-color: rgb(207, 192, 159);
-	--primary-color-alpha: rgba(207, 192, 159, 0.2);
+	--fg-color: rgb(207 192 159);
+	--fg-muted-1: rgb(255 255 255 / 0.05);
+	--fg-muted-2: rgb(255 255 255 / 0.1);
+	--fg-muted-3: rgb(255 255 255 / 0.2);
+	--fg-muted-4: rgb(255 255 255 / 0.5);
+	--fg-muted-5: rgb(255 255 255 / 0.6);
+	--nav-bg: rgb(25 25 25 / 0.7);
+	--primary-color: rgb(207 192 159);
+	--primary-color-alpha: rgb(207 192 159 / 0.2);
 }
 
 body {
@@ -26,7 +26,6 @@ body {
 		z-index: -1;
 		filter: brightness(50%);
 		background-image: url("design/curtain.webp");
-		// background-image: linear-gradient(to right, rgb(35, 6, 9) 0%, rgb(224, 27, 36) 4%, rgb(79, 13, 21) 6%, rgb(224, 27, 36) 10%, rgb(61, 10, 17) 16%, rgb(224, 27, 36) 24%, rgb(54, 7, 15) 30%, rgb(224, 27, 36) 36%, rgb(70, 12, 18) 39%, rgb(224, 27, 36) 50%, rgb(54, 7, 15) 55%, rgb(224, 27, 36) 69%, rgb(35, 6, 9) 71%, rgb(224, 27, 36) 82%, rgb(35, 6, 9) 84%, rgb(224, 27, 36) 100%);
 		background-size: contain;
 		background-repeat: repeat-x;
 		width: 100vw;
@@ -45,7 +44,9 @@ body {
 		filter: saturate(120%) brightness(150%);
 		animation: curtains-open 3s;
 		background: url("design/curtain-l.webp"), url("design/curtain-r.webp");
-		background-position: top left, top right;
+		background-position:
+			top left,
+			top right;
 		background-size: calc(((100% - var(--container-width)) / 2) - 2rem) 100%;
 		background-repeat: no-repeat;
 		width: 100vw;
@@ -54,7 +55,6 @@ body {
 		content: "";
 
 		@keyframes curtains-open {
-
 			from,
 			50% {
 				filter: saturate(1) brightness(10%);
@@ -72,7 +72,6 @@ body {
 	animation: fade-in-2 3s;
 
 	@keyframes fade-in-2 {
-
 		from,
 		50% {
 			opacity: 0;
@@ -83,7 +82,12 @@ body {
 h1,
 h2 {
 	-webkit-background-clip: text;
-	background: linear-gradient(to bottom, rgb(207, 192, 159) 27%, rgb(255, 236, 179) 40%, rgb(58, 44, 15) 78%);
+	background: linear-gradient(
+		to bottom,
+		rgb(207 192 159) 27%,
+		rgb(255 236 179) 40%,
+		rgb(58 44 15) 78%
+	);
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -142,7 +146,8 @@ h2 {
 			}
 
 			img {
-				$drop-shadow: drop-shadow(0 0.08rem 0.1rem rgba(0, 0, 0, 0.35)) drop-shadow(0 0.4rem 0.7rem rgba(0, 0, 0, 0.18));
+				$drop-shadow: drop-shadow(0 0.08rem 0.1rem rgb(0 0 0 / 0.35))
+					drop-shadow(0 0.4rem 0.7rem rgb(0 0 0 / 0.18));
 				-webkit-filter: $drop-shadow;
 				filter: $drop-shadow;
 			}
@@ -177,15 +182,15 @@ h2 {
 
 #original-icons {
 	margin-top: 2rem;
-	// background-color: rgba(98, 160, 234, 0.5);
+	// background-color: rgb(98 160 234 / 0.5);
 }
 
 // #redrawn-icons {
-// 	background-color: rgba(87, 227, 137, 0.5);
+// 	background-color: rgb(87 227 137 / 0.5);
 // }
 
 #wallpapers {
-	// background-color: rgba(255, 163, 72, 0.5);
+	// background-color: rgb(255 163 72 / 0.5);
 
 	img {
 		border-radius: var(--rounded-corner);
@@ -198,7 +203,7 @@ h2 {
 	nav ul li a,
 	p small a.link {
 		&:hover {
-			color: rgba(0, 0, 0, 0.8);
+			color: rgb(0 0 0 / 0.8);
 		}
 	}
 }

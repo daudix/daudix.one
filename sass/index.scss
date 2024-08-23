@@ -150,7 +150,7 @@
 		#polaroid-shine {
 			top: -5rem;
 			transform: rotate(35deg);
-			background-color: rgba(255, 255, 255, 0.1);
+			background-color: rgb(255 255 255 / 0.1);
 		}
 	}
 
@@ -163,7 +163,7 @@
 		z-index: 1;
 		filter: blur(0.25rem);
 		transition: var(--transition-longer);
-		background-color: rgba(255, 255, 255, 0.3);
+		background-color: rgb(255 255 255 / 0.3);
 		width: 14rem;
 		height: 8rem;
 		pointer-events: none;
@@ -200,7 +200,7 @@
 	#statuscafe-content,
 	#statuscafe-link {
 		display: block;
-		color: rgba(0, 0, 0, 0.8);
+		color: rgb(0 0 0 / 0.8);
 		line-height: 1;
 		font-family: var(--font-monospace-code);
 	}
@@ -640,7 +640,7 @@
 	position: relative;
 	float: inline-start;
 	margin-inline-end: 1rem;
-	box-shadow: 0 0.75rem 1.5rem -1rem rgba(0, 0, 0, 0.5);
+	box-shadow: 0 0.75rem 1.5rem -1rem rgb(0 0 0 / 0.5);
 	border: 4rem solid;
 	border-image: url("assets/border.gif") 32 repeat;
 	image-rendering: pixelated;

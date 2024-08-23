@@ -7,12 +7,12 @@ body {
 	background-blend-mode: normal, difference;
 
 	@media (prefers-reduced-motion) {
-		background: var(--bg-color), url("assets/static-static.gif"), var(--primary-color);
+		background: var(--bg-color), url("assets/static-static.gif"),
+			var(--primary-color);
 	}
 }
 
 blockquote {
-
 	&.edit,
 	&.fact {
 		border-inline-start: 0.25rem solid var(--fg-muted-5);
@@ -42,7 +42,8 @@ blockquote {
 }
 
 .drop-shadow {
-	$drop-shadow: drop-shadow(0 0.08rem 0.1rem rgba(0, 0, 0, 0.35)) drop-shadow(0 0.4rem 0.7rem rgba(0, 0, 0, 0.18));
+	$drop-shadow: drop-shadow(0 0.08rem 0.1rem rgb(0 0 0 / 0.35))
+		drop-shadow(0 0.4rem 0.7rem rgb(0 0 0 / 0.18));
 	-webkit-filter: $drop-shadow;
 	filter: $drop-shadow;
 }
@@ -143,7 +144,6 @@ blockquote {
 				border: none;
 				width: calc(100% + 0.375rem);
 				height: calc(100% + 0.375rem);
-
 			}
 		}
 	}

@@ -23,7 +23,7 @@ index_format = "elasticlunr_json"
 
 [extra]
 primary_color = "#c061cb"
-primary_color_alpha = "rgba(192, 97, 203, 0.2)"
+primary_color_alpha = "rgb(192 97 203 / 0.2)"
 animated_favicon = true
 issues_url = "https://codeberg.org/daudix/website/issues"
 source_url = "https://codeberg.org/daudix/website"
@@ -34,9 +34,9 @@ show_read_time = true
 [extra.nav]
 show_feed = true
 links = [
-  { url = "@/blog/_index.md", name = "Blog" },
-  { url = "@/design/index.md", name = "Design" },
-  { url = "@/find/index.md", name = "Find" },
+	{ url = "@/blog/_index.md", name = "Blog" },
+	{ url = "@/design/index.md", name = "Design" },
+	{ url = "@/find/index.md", name = "Find" },
 ]
 
 [extra.footer]
@@ -46,9 +46,9 @@ show_john = true
 show_fediring = true
 show_increment = true
 links = [
-  { url = "@/coffee/index.md", name = "Coffee" },
-  { url = "@/colophon/index.md", name = "Colophon" },
-  { url = "https://daudix.neocities.org", name = "Neocities" },
+	{ url = "@/coffee/index.md", name = "Coffee" },
+	{ url = "@/colophon/index.md", name = "Colophon" },
+	{ url = "https://daudix.neocities.org", name = "Neocities" },
 ]
 
 [extra.comments]
