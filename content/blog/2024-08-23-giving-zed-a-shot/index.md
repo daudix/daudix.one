@@ -17,7 +17,7 @@ This time, however, I decided that it would be fair to actually try it before ju
 
 ```json
 {
-  "theme": "One Dark",
+  "theme": "Zedokai",
   "hard_tabs": true
 }
 ```
@@ -30,14 +30,24 @@ So far I like it, it's indeed super fast and minimalistic (in a good way).
 
 I do like VSCodium's font and rendering a bit more, but that's probably because I just got used to it. No wonder, I have been using VSCodium continuously for over a year.
 
+<figure>
+
 ![vscodium](vscodium.png#transparent)
+<figcaption>My VSCodium setup. Cozy and minimal.</figcaption>
+</figure>
 
 The built-in formatter is surprisingly good, better than the one in VSCodium; it wraps long CSS properties perfectly, formats automatically on save (VSCodium can do this too, but not as smoothly), and supports modern selectors like `.element-1 + .element-2`.
 
 What I also like, surprisingly, is the lack of one particular feature: Git integration. In VSCodium it was just annoying and not useful, since it just didn't work (GPG commit signing, SSH keys, and such) because of Flatpak, and I use lazygit for Git anyway, so I don't need it at all.
 
+There's even a Monokai Pro theme called Zedokai. It took me a while to find it. It really feels like home, such a great theme.
+
 I don't exactly like the AI crap integration, but it's optional, so I don't mind.
 
 Will see how it goes, but so far I like it.
 
+<figure>
+
 ![zed](zed.png#transparent)
+<figcaption>My Zed setup. Quite similar to VSCodium.</figcaption>
+</figure>
