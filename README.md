@@ -27,13 +27,13 @@ If you want to use some custom styles and stuff from here, go ahead, just don't 
 - Clone the repository recursively:
 
 ```bash
-git clone --recursive git@codeberg.org:daudix/pages.git
+git clone --recursive git@codeberg.org:daudix/website.git
 ```
 
 - Checkout `main` branch for Duckquill:
 
 ```bash
-cd pages/themes/duckquill/
+cd website/themes/duckquill/
 git checkout main
 ```
 

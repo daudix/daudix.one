@@ -714,64 +714,188 @@
 	}
 }
 
-.marquee-wrapper {
-	$mask: linear-gradient(to right, transparent, black 2rem, black calc(100% - 2rem), transparent);
-	-webkit-mask-image: $mask;
-	display: flex;
+#bumps {
 	position: relative;
-	mask-image: $mask;
+	padding: 0.75rem 0 1rem 0;
 	overflow: hidden;
 
-	.marquee {
+	&-title {
+		margin: 0 1rem;
+		color: var(--primary-color);
+		font-size: 1.5rem;
+		line-height: 1.25;
+	}
+
+	p:has(&-subtitle) {
+		margin-block-start: 0.25rem;
+	}
+
+	small {
+		margin: 0 1rem;
+	}
+
+	.marquee-wrapper {
+		$mask: linear-gradient(to right, transparent, black 1rem, black calc(100% - 1rem), transparent);
+		-webkit-mask-image: $mask;
 		display: flex;
-		position: absolute;
+		position: relative;
+		mask-image: $mask;
+		overflow: hidden;
 
-		ul {
+		&:hover .marquee ul {
+			animation-play-state: paused;
+
+			li img {
+				filter: contrast(200%) brightness(75%) grayscale(100%);
+
+			}
+		}
+
+		.marquee {
 			display: flex;
-			justify-content: space-around;
-			align-items: center;
-			gap: 0.25rem;
-			animation: marquee-scroll 40s linear infinite;
-			margin: 0;
-			padding: 0;
-			list-style: none;
+			position: absolute;
 
-			&:hover {
-				animation-play-state: paused;
-			}
-
-			@keyframes marquee-scroll {
-				from {
-					transform: translateX(min(var(--container-width), 90%));
-				}
-
-				to {
-					transform: translateX(-100%);
-				}
-			}
-
-			li {
+			ul {
 				display: flex;
+				flex-shrink: 0;
+				animation: marquee-scroll linear infinite;
+				transition: var(--transition);
+				margin: 0;
+				padding: 0;
+				list-style: none;
 
-				img {
-					margin: 0;
+				@keyframes marquee-scroll {
+					from {
+						transform: translateX(0%);
+					}
 
-					&:hover {
-						filter: brightness(1.25);
+					to {
+						transform: translateX(-100%);
+					}
+				}
+
+				li {
+					display: flex;
+					flex-shrink: 0;
+					margin-inline-end: 0.25rem;
+
+					img {
+						transition: var(--transition);
+						margin: 0;
+						max-width: none;
+
+						&:hover {
+							filter: none;
+						}
+
+						&:active {
+							transform: scale(var(--active));
+						}
 					}
 				}
 			}
 		}
+
+		&#netscape {
+			margin-block-end: 1rem;
+			height: 1.9375rem; // 31px
+
+			.marquee ul {
+				animation-duration: 60s;
+			}
+		}
+
+		&#stamps {
+			margin-block-start: 1rem;
+			height: 3.5rem; // 56px
+
+			.marquee ul {
+				animation-duration: 40s;
+				animation-direction: reverse;
+			}
+		}
 	}
-}
 
-// 88x31 buttons
-.marquee-wrapper.netscape {
-	height: 1.9375rem; // 31px
+	#bumps-bottom-sheet {
+		box-shadow: none;
+		border-radius: 0;
+		background-color: transparent;
+		padding: 0;
 
-	.marquee ul li {
-		width: 5.5rem; // 88px
-		height: 1.9375rem; // 31px
+		summary {
+			display: inline-block;
+			position: absolute;
+			top: 0.5rem;
+			right: 0.5rem;
+			z-index: 2;
+			transition: var(--transition);
+			border-radius: var(--rounded-corner-small);
+			background-color: transparent;
+			padding: 0.5rem;
+			line-height: 0;
+			list-style: none;
+
+			&:hover {
+				box-shadow: var(--edge-highlight);
+				background-color: var(--fg-muted-1);
+			}
+
+			&:active {
+				transform: scale(var(--active));
+			}
+
+			.icon {
+				$icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cpath d='M7 1v6H1v2h6v6h2V9h6V7H9V1zm0 0'/%3E%3C/svg%3E");
+				-webkit-mask-image: $icon;
+				vertical-align: -0.125em;
+				mask-image: $icon;
+				transition: var(--transition);
+				background-color: var(--fg-muted-4);
+				width: 1rem;
+				height: 1rem;
+			}
+		}
+
+		div {
+			-webkit-backdrop-filter: var(--blur);
+			position: absolute;
+			backdrop-filter: var(--blur);
+			inset: 3rem 0 0;
+			box-shadow: var(--edge-highlight), var(--shadow);
+			border-radius: var(--rounded-corner);
+			background-color: var(--nav-bg);
+			padding: 1rem;
+			overflow: auto;
+
+			p:first-of-type {
+				margin-block-start: 0;
+			}
+
+			p:has(img) {
+				margin: 1rem 0;
+				text-align: center;
+			}
+
+			img {
+				display: inline-block;
+				margin: 0;
+
+				&:first-child {
+					margin-inline-end: 0.25rem;
+				}
+			}
+		}
+
+		&[open] div {
+			animation: bottom-sheet-open var(--transition);
+
+			@keyframes bottom-sheet-open {
+				from {
+					transform: translateY(1rem);
+					opacity: 0;
+				}
+			}
+		}
 	}
 }
 

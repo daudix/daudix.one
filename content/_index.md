@@ -133,26 +133,12 @@ Have a look at my [designs](@/design/index.md); mostly icons, but also some wall
 
 ## IndieWeb
 
-IndieWeb is something I really like; everything from 88x31 buttons to webrings is so cozy, fun, legit and personal, feels really great after the sterile corporate web all over the place. I'm even a member of several tildes/pubnixes, even though I don't do much there, I still like being a part of them:
+<aside id="bumps">
+<strong id="bumps-title"><i class="icon"></i>Bumps</strong>
 
-- [exozyme](https://exozy.me)
-- [envs](https://envs.net)
+<small id="bumps-subtitle">**Bu**ttons + Sta**mps** = Bumps</small>
 
-I have a website on [neocities](https://neocities.org); it's a bit empty at the moment, basically it's my playground where I can make bolder design choices than here. [Check it out](https://daudix.neocities.org).
-
-I also have a [Gemini capsule](gemini://gmi.daudix.one) on [flounder](https://flounder.online). I recently changed it to serve as a place for jotting down small notes rather than being a mirror of this website. See [this post](@/blog/2024-07-13-repurposing-gemini-capsule/index.md) for the reasons behind this decision. <small>(you can also *finger* me at `daudix@flounder.online`)</small>
-
-[![Tilde invasion](assets/tilde-invasion.png)](https://pleroma.envs.net/notice/AeJ5ACKLIOl1bCj2lU)
-
-## Bumps
-
-<small>**Bu**ttons + Sta**mps** = Bumps</small>
-
-{% alert(caution=true) %}
-I'm currently in the process of rewriting and expanding this whole section, I'm trying to test everything a bit before pushing it into production, but some bugs might slip in still. Sowwy ^.^
-{% end %}
-
-<div class="marquee-wrapper netscape">
+<div id="netscape" class="marquee-wrapper">
 <div class="marquee">
 
 - [![a proud member of the blue team of 512KB club](assets/88x31/blue-team.gif#pixels#transparent#no-hover)](https://512kb.club)
@@ -182,7 +168,48 @@ I'm currently in the process of rewriting and expanding this whole section, I'm 
 - ![adhd](assets/88x31/adhd.gif#pixels#transparent#no-hover)
 - ![any2](assets/88x31/any2.gif#pixels#transparent#no-hover)
 - ![anythingbut](assets/88x31/anythingbut.gif#pixels#transparent#no-hover)
-- ![besteyes2](assets/88x31/besteyes2.gif#pixels#transparent#no-hover)
+- ![bestviewed16bit](assets/88x31/bestviewed16bit.gif#pixels#transparent#no-hover)
+- ![bring-back-the-headphone-jack](assets/88x31/bring-back-the-headphone-jack.gif#pixels#transparent#no-hover)
+- ![companion](assets/88x31/companion.gif#pixels#transparent#no-hover)
+- ![dark-mode](assets/88x31/dark-mode.gif#pixels#transparent#no-hover)
+- ![fuckchrome](assets/88x31/fuckchrome.gif#pixels#transparent#no-hover)
+- ![imac](assets/88x31/imac.gif#pixels#transparent#no-hover)
+- ![linux_powered](assets/88x31/linux_powered.gif#pixels#transparent#no-hover)
+- ![mobilefriendly](assets/88x31/mobilefriendly.gif#pixels#transparent#no-hover)
+- ![neo-fedi](assets/88x31/neo-fedi.gif#pixels#transparent#no-hover)
+- ![nofuckingthanks](assets/88x31/nofuckingthanks.gif#pixels#transparent#no-hover)
+- ![righttorepair](assets/88x31/righttorepair.gif#pixels#transparent#no-hover)
+- ![sourcemissing](assets/88x31/sourcemissing.gif#pixels#transparent#no-hover)
+- ![up-all-night](assets/88x31/up-all-night.gif#pixels#transparent#no-hover)
+- ![yarrr](assets/88x31/yarrr.gif#pixels#transparent#no-hover)
+<!-- Mirror of the above -->
+- [![a proud member of the blue team of 512KB club](assets/88x31/blue-team.gif#pixels#transparent#no-hover)](https://512kb.club)
+- [![aperturelabs](assets/88x31/aperturelabs.gif#pixels#transparent#no-hover)](https://www.aperturescience.com)
+- [![ddg](assets/88x31/ddg.gif#pixels#transparent#no-hover)](https://duckduckgo.com)
+- [![fediring](assets/88x31/fediring.gif#pixels#transparent#no-hover)](https://fediring.net)
+- [![firefox3](assets/88x31/firefox3.gif#pixels#transparent#no-hover)](https://getfirefox.com)
+- [![georgemoody](assets/88x31/georgemoody.gif#pixels#transparent#no-hover)](https://tilde.town/~georgemoody/)
+- [![getimiskon](assets/88x31/getimiskon.gif#pixels#transparent#no-hover)](https://getimiskon.xyz)
+- [![graphite](assets/88x31/graphite.gif#pixels#transparent#no-hover)](https://gra.phite.ro)
+- [![iso](assets/88x31/iso.gif#pixels#transparent#no-hover)](https://www.w3.org/QA/Tips/iso-date)
+- [![libreivan](assets/88x31/libreivan.gif#pixels#transparent#no-hover)](https://libreivan.com)
+- [![marchintosh](assets/88x31/marchintosh.gif#pixels#transparent#no-hover)](https://libreivan.com/writing/)
+- [![melankorin](assets/88x31/melankorin.gif#pixels#transparent#no-hover)](https://melankorin.net)
+- [![pixlxip](assets/88x31/pixlxip.gif#pixels#transparent#no-hover)](https://xip.neocities.org)
+- [![portal](assets/88x31/portal.gif#pixels#transparent#no-hover)](https://www.thinkwithportals.com)
+- [![ronbutton](assets/88x31/ronbutton.gif#pixels#transparent#no-hover)](https://veeronniecaw.space)
+- [![savewalterwhite](assets/88x31/savewalterwhite.gif#pixels#transparent#no-hover)](http://www.savewalterwhite.com)
+- [![saynotoweb3](assets/88x31/saynotoweb3.gif#pixels#transparent#no-hover)](https://yesterweb.org/no-to-web3/)
+- [![seirdy](assets/88x31/seirdy.gif#pixels#transparent#no-hover)](https://seirdy.one)
+- [![spacehey](assets/88x31/spacehey.gif#pixels#transparent#no-hover)](https://spacehey.com)
+- [![standwith](assets/88x31/standwith.gif#pixels#transparent#no-hover)](https://decolonizepalestine.com)
+- [![stardew-valley](assets/88x31/stardew-valley.gif#pixels#transparent#no-hover)](https://www.stardewvalley.net)
+- [![statuscafe](assets/88x31/statuscafe.gif#pixels#transparent#no-hover)](https://status.cafe)
+- [![valid-atom](assets/88x31/valid-atom.gif#pixels#transparent#no-hover)](https://validator.w3.org/feed/)
+- [![vscodium](assets/88x31/vscodium.gif#pixels#transparent#no-hover)](https://vscodium.com)
+- ![adhd](assets/88x31/adhd.gif#pixels#transparent#no-hover)
+- ![any2](assets/88x31/any2.gif#pixels#transparent#no-hover)
+- ![anythingbut](assets/88x31/anythingbut.gif#pixels#transparent#no-hover)
 - ![bestviewed16bit](assets/88x31/bestviewed16bit.gif#pixels#transparent#no-hover)
 - ![bring-back-the-headphone-jack](assets/88x31/bring-back-the-headphone-jack.gif#pixels#transparent#no-hover)
 - ![companion](assets/88x31/companion.gif#pixels#transparent#no-hover)
@@ -199,15 +226,81 @@ I'm currently in the process of rewriting and expanding this whole section, I'm 
 - ![yarrr](assets/88x31/yarrr.gif#pixels#transparent#no-hover)
 </div>
 </div>
+<div id="stamps" class="marquee-wrapper">
+<div class="marquee">
+
+- ![adhd](assets/stamps/adhd.gif#pixels#transparent#no-hover)
+- ![always-tired](assets/stamps/always-tired.gif#pixels#transparent#no-hover)
+- ![cassettes](assets/stamps/cassettes.gif#pixels#transparent#no-hover)
+- ![cold](assets/stamps/cold.gif#pixels#transparent#no-hover)
+- ![derpy](assets/stamps/derpy.gif#pixels#transparent#no-hover)
+- ![error](assets/stamps/error.gif#pixels#transparent#no-hover)
+- ![garfpropa](assets/stamps/garfpropa.gif#pixels#transparent#no-hover)
+- ![glados](assets/stamps/glados.gif#pixels#transparent#no-hover)
+- ![heisenshy](assets/stamps/heisenshy.gif#pixels#transparent#no-hover)
+- ![how-i-feel](assets/stamps/how-i-feel.gif#pixels#transparent#no-hover)
+- ![i-love-sleeping](assets/stamps/i-love-sleeping.gif#pixels#transparent#no-hover)
+- ![jax](assets/stamps/jax.gif#pixels#transparent#no-hover)
+- ![murder-drones](assets/stamps/murder-drones.gif#pixels#transparent#no-hover)
+- ![october](assets/stamps/october.gif#pixels#transparent#no-hover)
+- ![old-web](assets/stamps/old-web.gif#pixels#transparent#no-hover)
+- ![one](assets/stamps/one.gif#pixels#transparent#no-hover)
+- ![portalnyan](assets/stamps/portalnyan.gif#pixels#transparent#no-hover)
+- ![spirit-phone](assets/stamps/spirit-phone.gif#pixels#transparent#no-hover)
+- ![stamp](assets/stamps/stamp.gif#pixels#transparent#no-hover)
+- ![stardew](assets/stamps/stardew.gif#pixels#transparent#no-hover)
+- ![static](assets/stamps/static.gif#pixels#transparent#no-hover)
+- ![the-cake-is-a-lie](assets/stamps/the-cake-is-a-lie.gif#pixels#transparent#no-hover)
+- ![wheatley-crab](assets/stamps/wheatley-crab.gif#pixels#transparent#no-hover)
+<!-- Mirror of the above -->
+- ![adhd](assets/stamps/adhd.gif#pixels#transparent#no-hover)
+- ![always-tired](assets/stamps/always-tired.gif#pixels#transparent#no-hover)
+- ![cassettes](assets/stamps/cassettes.gif#pixels#transparent#no-hover)
+- ![cold](assets/stamps/cold.gif#pixels#transparent#no-hover)
+- ![derpy](assets/stamps/derpy.gif#pixels#transparent#no-hover)
+- ![error](assets/stamps/error.gif#pixels#transparent#no-hover)
+- ![garfpropa](assets/stamps/garfpropa.gif#pixels#transparent#no-hover)
+- ![glados](assets/stamps/glados.gif#pixels#transparent#no-hover)
+- ![heisenshy](assets/stamps/heisenshy.gif#pixels#transparent#no-hover)
+- ![how-i-feel](assets/stamps/how-i-feel.gif#pixels#transparent#no-hover)
+- ![i-love-sleeping](assets/stamps/i-love-sleeping.gif#pixels#transparent#no-hover)
+- ![jax](assets/stamps/jax.gif#pixels#transparent#no-hover)
+- ![murder-drones](assets/stamps/murder-drones.gif#pixels#transparent#no-hover)
+- ![october](assets/stamps/october.gif#pixels#transparent#no-hover)
+- ![old-web](assets/stamps/old-web.gif#pixels#transparent#no-hover)
+- ![one](assets/stamps/one.gif#pixels#transparent#no-hover)
+- ![portalnyan](assets/stamps/portalnyan.gif#pixels#transparent#no-hover)
+- ![spirit-phone](assets/stamps/spirit-phone.gif#pixels#transparent#no-hover)
+- ![stamp](assets/stamps/stamp.gif#pixels#transparent#no-hover)
+- ![stardew](assets/stamps/stardew.gif#pixels#transparent#no-hover)
+- ![static](assets/stamps/static.gif#pixels#transparent#no-hover)
+- ![the-cake-is-a-lie](assets/stamps/the-cake-is-a-lie.gif#pixels#transparent#no-hover)
+- ![wheatley-crab](assets/stamps/wheatley-crab.gif#pixels#transparent#no-hover)
+</div>
+</div>
+<details id="bumps-bottom-sheet">
+<summary title="Link to me"><i class="icon"></i></summary>
+<div>
 
 If you want to link back to me, use one of these buttons:
 
-![daudix](assets/88x31/daudix.gif#pixels#transparent#no-hover)
-![daudix-alt](assets/88x31/daudix-alt.gif#pixels#transparent#no-hover)
+![daudix](assets/88x31/daudix.gif#pixels#transparent#no-hover)![daudix-alt](assets/88x31/daudix-alt.gif#pixels#transparent#no-hover)
 
 {% alert(note=true) %}
 It's recommended to avoid hot-linking; instead, place a copy on your own site.
 {% end %}
+</div>
+</details>
+</aside>
+
+IndieWeb is something I really like; everything from 88x31 buttons to webrings is so cozy, fun, legit and personal, feels really great after the sterile corporate web all over the place. I'm even a member of several tildes/pubnixes, even though I don't do much there, I still like being a part of them:
+
+- [exozyme](https://exozy.me)
+- [envs](https://envs.net)
+
+I have a website on [neocities](https://neocities.org); it's a bit empty at the moment, basically it's my playground where I can make bolder design choices than here. [Check it out](https://daudix.neocities.org).
+
+I also have a [Gemini capsule](gemini://gmi.daudix.one) on [flounder](https://flounder.online). I recently changed it to serve as a place for jotting down small notes rather than being a mirror of this website. See [this post](@/blog/2024-07-13-repurposing-gemini-capsule/index.md) for the reasons behind this decision. <small>(you can also *finger* me at `daudix@flounder.online`)</small>
 
 <div class="dialog-buttons">
   <button class="inline-button" onclick="rizzItUp()">Rizz It Up</button>
