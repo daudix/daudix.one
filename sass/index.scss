@@ -50,8 +50,13 @@
 
 	&:hover {
 		// Dashie!
-		transform: translate(calc(var(--shift) * 3), calc(calc(var(--shift) * -1) * 3));
-		filter: drop-shadow(calc(var(--shift) * -1) var(--shift) 0 #1b98d1) drop-shadow(calc(var(--shift) * -1) var(--shift) 0 #fde85f) drop-shadow(calc(var(--shift) * -1) var(--shift) 0 #ec4141);
+		transform: translate(
+			calc(var(--shift) * 3),
+			calc(calc(var(--shift) * -1) * 3)
+		);
+		filter: drop-shadow(calc(var(--shift) * -1) var(--shift) 0 #1b98d1)
+			drop-shadow(calc(var(--shift) * -1) var(--shift) 0 #fde85f)
+			drop-shadow(calc(var(--shift) * -1) var(--shift) 0 #ec4141);
 
 		#header {
 			background-color: #9bdbf5;
@@ -60,8 +65,13 @@
 
 	&:active {
 		// 20% cooler
-		transform: translate(calc(calc(var(--shift) * -1) * 3), calc(calc(var(--shift) * -1) * 3));
-		filter: drop-shadow(var(--shift) var(--shift) 0 #1b98d1) drop-shadow(var(--shift) var(--shift) 0 #fde85f) drop-shadow(var(--shift) var(--shift) 0 #ec4141);
+		transform: translate(
+			calc(calc(var(--shift) * -1) * 3),
+			calc(calc(var(--shift) * -1) * 3)
+		);
+		filter: drop-shadow(var(--shift) var(--shift) 0 #1b98d1)
+			drop-shadow(var(--shift) var(--shift) 0 #fde85f)
+			drop-shadow(var(--shift) var(--shift) 0 #ec4141);
 	}
 
 	#header {
@@ -74,7 +84,7 @@
 		transition: var(--transition-longer);
 		margin: 0;
 		background-color: var(--primary-color);
-		aspect-ratio: 4.40 / 1; // Make sure the header has proper height regardless of the width
+		aspect-ratio: 4.4 / 1; // Proper height regardless of the width
 		width: 100%;
 		overflow: hidden; // Make aspect ratio set above work
 		color: transparent;
@@ -103,7 +113,9 @@
 	margin-top: 2rem;
 	margin-inline-start: 1.5rem;
 	box-shadow: var(--shadow-raised);
-	border-radius: var(--rounded-corner-small); // I know that polaroids have knife-sharp corners, that's only to make sure shine gets clipped in Firefox
+	// I know that polaroids have knife-sharp corners,
+	// that's only to make sure shine gets clipped in Firefox
+	border-radius: var(--rounded-corner-small);
 	background-color: white;
 	padding: 0.5rem;
 	width: 10rem;
@@ -115,7 +127,8 @@
 		position: absolute;
 		top: 0.25rem;
 		left: calc(50% - 0.7813rem);
-		transform: perspective(32rem) rotate(-5deg) rotateX(-5deg); // Dirty hack to avoid transformation of the thumbtack
+		// Dirty hack to avoid transformation of the thumbtack
+		transform: perspective(32rem) rotate(-5deg) rotateX(-5deg);
 		z-index: 1;
 		transition: var(--transition);
 		background-image: url("assets/thumbtack.png");
@@ -164,7 +177,15 @@
 			position: absolute;
 			right: 0;
 			bottom: -0.25rem;
-			background-image: linear-gradient(to right, #ff6188, #fc9867, #ffd866, #a9dc76, #78dce8, #ab9df2);
+			background-image: linear-gradient(
+				to right,
+				#ff6188,
+				#fc9867,
+				#ffd866,
+				#a9dc76,
+				#78dce8,
+				#ab9df2
+			);
 			width: 3rem;
 			height: 0.5rem;
 			content: "";
@@ -208,7 +229,7 @@
 
 		&:hover {
 			text-decoration: underline;
-			text-decoration-style: solid; // Make sure the underline isn't wavy
+			text-decoration-style: solid; // Make underline not wavy
 
 			#statuscafe-face {
 				filter: none;
@@ -217,11 +238,11 @@
 
 		#statuscafe-face {
 			float: inline-end;
-			filter: contrast(200%) brightness(75%) grayscale(100%); // Printed look for statuscafe emoji
+			filter: contrast(200%) brightness(75%) grayscale(100%);
 			transition: var(--transition);
 			color: black;
 			font-size: 1rem;
-			line-height: 0; // Dirty hack to avoid the link becoming too high
+			line-height: 0; // Avoid the link becoming too high
 		}
 	}
 
@@ -283,7 +304,6 @@
 
 		#portal-blue,
 		#portal-orange {
-
 			&::before,
 			&::after {
 				display: inline-block;
@@ -308,14 +328,14 @@
 		}
 
 		#portal-blue {
-
 			&::before,
 			&::after {
 				left: -0.25rem;
 			}
 
 			&::before {
-				$drop-shadow: drop-shadow(0 0.0625rem 0.1875rem #008eda) drop-shadow(0 0.0625rem 0.375rem #008eda);
+				$drop-shadow: drop-shadow(0 0.0625rem 0.1875rem #008eda)
+					drop-shadow(0 0.0625rem 0.375rem #008eda);
 				-webkit-filter: $drop-shadow;
 				z-index: -1;
 				filter: $drop-shadow;
@@ -329,14 +349,14 @@
 		}
 
 		#portal-orange {
-
 			&::before,
 			&::after {
 				right: -0.25rem;
 			}
 
 			&::before {
-				$drop-shadow: drop-shadow(0 0.0625rem 0.1875rem #e09e36) drop-shadow(0 0.0625rem 0.375rem #e09e36);
+				$drop-shadow: drop-shadow(0 0.0625rem 0.1875rem #e09e36)
+					drop-shadow(0 0.0625rem 0.375rem #e09e36);
 				-webkit-filter: $drop-shadow;
 				z-index: -1;
 				filter: $drop-shadow;
@@ -378,7 +398,6 @@
 
 			#portal-blue,
 			#portal-orange {
-
 				&::before,
 				&::after {
 					transform: scale(1);
@@ -387,7 +406,13 @@
 			}
 
 			#portal-marquee {
-				$mask: linear-gradient(to right, transparent, black 0.5rem, black calc(100% - 0.5rem), transparent);
+				$mask: linear-gradient(
+					to right,
+					transparent,
+					black 0.5rem,
+					black calc(100% - 0.5rem),
+					transparent
+				);
 				-webkit-mask-image: $mask;
 				mask-image: $mask;
 				width: calc(2.6875rem + 1rem);
@@ -434,8 +459,9 @@
 		transform: perspective(1rem) rotateX(10deg);
 		color: #62c2e0;
 		font-weight: 900;
-		text-shadow: 0 -0.125rem white, 0 0.125rem #675c83;
-
+		text-shadow:
+			0 -0.125rem white,
+			0 0.125rem #675c83;
 	}
 }
 
@@ -602,7 +628,6 @@
 	margin: 0;
 
 	@keyframes peek {
-
 		50%,
 		75% {
 			transform: translateY(0);
@@ -735,7 +760,13 @@
 	}
 
 	.marquee-wrapper {
-		$mask: linear-gradient(to right, transparent, black 1rem, black calc(100% - 1rem), transparent);
+		$mask: linear-gradient(
+			to right,
+			transparent,
+			black 1rem,
+			black calc(100% - 1rem),
+			transparent
+		);
 		-webkit-mask-image: $mask;
 		display: flex;
 		position: relative;
@@ -747,7 +778,6 @@
 
 			li img {
 				filter: contrast(200%) brightness(75%) grayscale(100%);
-
 			}
 		}
 
@@ -843,6 +873,11 @@
 				transform: scale(var(--active));
 			}
 
+			&::marker,
+			&::-webkit-details-marker {
+				display: none;
+			}
+
 			.icon {
 				$icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cpath d='M7 1v6H1v2h6v6h2V9h6V7H9V1zm0 0'/%3E%3C/svg%3E");
 				-webkit-mask-image: $icon;
@@ -907,14 +942,14 @@
 .dialog-buttons {
 	position: relative;
 
-	.inline-button:hover+#dont,
-	.inline-button:focus-visible+#dont {
+	.inline-button:hover + #dont,
+	.inline-button:focus-visible + #dont {
 		transform: none;
 		opacity: 1;
 	}
 
 	@supports not selector(:focus-visible) {
-		.inline-button:focus+#dont {
+		.inline-button:focus + #dont {
 			transform: none;
 			opacity: 1;
 		}
