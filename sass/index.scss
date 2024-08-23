@@ -779,6 +779,10 @@
 					flex-shrink: 0;
 					margin-inline-end: 0.25rem;
 
+					a img:active {
+						transform: scale(var(--active));
+					}
+
 					img {
 						transition: var(--transition);
 						margin: 0;
@@ -786,10 +790,6 @@
 
 						&:hover {
 							filter: none;
-						}
-
-						&:active {
-							transform: scale(var(--active));
 						}
 					}
 				}
