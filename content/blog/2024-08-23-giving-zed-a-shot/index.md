@@ -30,6 +30,8 @@ So far I like it, it's indeed super fast and minimalistic (in a good way).
 
 I do like VSCodium's font and rendering a bit more, but that's probably because I just got used to it. No wonder, I have been using VSCodium continuously for over a year.
 
+![vscodium](vscodium.png#transparent)
+
 The built-in formatter is surprisingly good, better than the one in VSCodium; it wraps long CSS properties perfectly, formats automatically on save (VSCodium can do this too, but not as smoothly), and supports modern selectors like `.element-1 + .element-2`.
 
 What I also like, surprisingly, is the lack of one particular feature: Git integration. In VSCodium it was just annoying and not useful, since it just didn't work (GPG commit signing, SSH keys, and such) because of Flatpak, and I use lazygit for Git anyway, so I don't need it at all.
@@ -37,3 +39,5 @@ What I also like, surprisingly, is the lack of one particular feature: Git integ
 I don't exactly like the AI crap integration, but it's optional, so I don't mind.
 
 Will see how it goes, but so far I like it.
+
+![zed](zed.png#transparent)
