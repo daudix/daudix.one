@@ -4,7 +4,7 @@ description = "The brief story of Luddism. (1/?)"
 [taxonomies]
 tags = ["100DaysToOffload", "Luddism", "Neo-Luddism"]
 [extra]
-banner = "blog/story-of-luddism/banner.webp"
+banner = "banner.webp"
 [extra.comments]
 id = "112878216253904523"
 +++

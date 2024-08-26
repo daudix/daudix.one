@@ -4,7 +4,7 @@ description = "My Gemini capsule has been collecting dust. It's time to change t
 [taxonomies]
 tags = ["100DaysToOffload", "Gemini"]
 [extra]
-banner = "blog/repurposing-gemini-capsule/banner.png"
+banner = "banner.png"
 banner_pixels = true
 [extra.comments]
 id = "112781226301037872"

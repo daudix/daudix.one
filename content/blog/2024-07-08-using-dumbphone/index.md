@@ -5,7 +5,7 @@ updated = 2024-08-05
 [taxonomies]
 tags = ["100DaysToOffload", "Dumbphone", "Pixel 3"]
 [extra]
-banner = "blog/using-dumbphone/banner.png"
+banner = "banner.png"
 toc = true
 [extra.comments]
 id = "112752002875813283"
