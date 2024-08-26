@@ -504,7 +504,8 @@ body:has(#skeuo-switch:checked) {
 
 					&.active {
 						&::before {
-							border-block-end: 0.25rem solid rgb(255 255 255 / 0.7);
+							border-block-end: 0.25rem solid
+								rgb(255 255 255 / 0.7);
 						}
 
 						&:hover::before {

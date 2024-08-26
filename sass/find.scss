@@ -56,7 +56,11 @@
 	margin-inline-start: 1.75rem;
 	border-width: 0.25rem;
 	border-inline-start: 0.25rem solid;
-	border-image-source: linear-gradient(to bottom, var(--fg-muted-3) calc(100% - 2.5rem), transparent);
+	border-image-source: linear-gradient(
+		to bottom,
+		var(--fg-muted-3) calc(100% - 2.5rem),
+		transparent
+	);
 	border-image-slice: 1;
 	padding-inline-start: 0;
 	list-style: none;
@@ -118,7 +122,9 @@
 			}
 
 			&::before {
-				box-shadow: var(--primary-color-alpha) 0 0 0.25rem, var(--primary-color) 0 0 0.75rem;
+				box-shadow:
+					var(--primary-color-alpha) 0 0 0.25rem,
+					var(--primary-color) 0 0 0.75rem;
 				border: 0.25rem solid var(--primary-color);
 			}
 		}
