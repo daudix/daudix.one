@@ -25,8 +25,7 @@ Feel free to message me on any of these:
 - [Matrix](https://matrix.to/#/@daudix:envs.net) <small>(I have alts on other homeservers, but I don't use them)</small>
 - [Discord](https://discord.com/users/650757995378114581)
 - [Telegram](https://t.me/ddaudix)
-- [Mail (disroot)](mailto:daudix@disroot.org)
-- [Mail (envs)](mailto:daudix@envs.net)
+- [Email](mailto:me@daudix.one)
 - ~~[Signal](https://signal.me/#eu/0KKOAPEjDPbNVKFfWbNu9AHZE2od2quKOO5NxLmFqf/xA9940S5JKZbOhTwoa2wP)~~ <small>(my phone [is burnt](@/blog/2024-07-08-using-dumbphone/index.md) so don't use it, I won't receive the message in a while)</small>
 - ~~[XMPP](xmpp:daudix@nixnet.services)~~ <small>(there are rumors that the admin is a pedo, so currently looking for another server; better safe than sorry)</small>
 
@@ -152,15 +151,15 @@ I was using GitHub from the very start of my FOSS journey, but (not so) recently
 	document.addEventListener("DOMContentLoaded", function () {
 		const indicatorElement = document.getElementById("online-indicator");
 		indicatorElement.innerHTML = "N/A";
-	
+
 		fetch("https://api.lanyard.rest/v1/users/650757995378114581")
 			.then(response => response.json())
 			.then(data => {
 				const status = data.data.discord_status;
-	
+
 				indicatorElement.classList.remove("online", "idle", "dnd", "offline");
 				indicatorElement.classList.add(status);
-	
+
 				switch (status) {
 					case "online":
 						indicatorElement.innerHTML = "Online";
