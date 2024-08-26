@@ -4,7 +4,7 @@ description = "The most complete history of Gradience you'll ever find."
 [taxonomies]
 tags = ["100DaysToOffload", "Gradience"]
 [extra]
-banner = "banner.webp"
+banner = "blog/archiving-gradience/banner.webp"
 disclaimer = """
 - This post doesn't mention some names; this post is not meant to offend anyone or make them uncomfortable, but to give an idea of what was going on.
 - This post doesn't link to some of the mentioned resources because I used to be a different person at the time, and find it very cringey.
