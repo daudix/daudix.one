@@ -879,10 +879,10 @@
 			}
 
 			.icon {
-				$icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cpath d='M7 1v6H1v2h6v6h2V9h6V7H9V1zm0 0'/%3E%3C/svg%3E");
-				-webkit-mask-image: $icon;
+				--icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cpath d='M7 1v6H1v2h6v6h2V9h6V7H9V1zm0 0'/%3E%3C/svg%3E");
+				-webkit-mask-image: var(--icon);
 				vertical-align: -0.125em;
-				mask-image: $icon;
+				mask-image: var(--icon);
 				transition: var(--transition);
 				background-color: var(--fg-muted-4);
 				width: 1rem;
