@@ -816,7 +816,8 @@
 					img {
 						transition: var(--transition);
 						margin: 0;
-						max-width: none;
+						width: fit-content;
+						height: fit-content;
 
 						&:hover {
 							filter: none;
