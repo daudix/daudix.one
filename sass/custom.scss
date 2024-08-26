@@ -149,8 +149,10 @@ blockquote {
 	}
 
 	#increment {
-		margin-block-start: 1rem;
+		margin-block-end: 0;
+		box-shadow: none;
 		border: none;
+		border-radius: 0;
 		background: url("https://incr.easrng.net/bg.gif");
 		width: 88px;
 		height: 31px;
