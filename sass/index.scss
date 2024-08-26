@@ -36,7 +36,7 @@
 // }
 
 #hug {
-	margin-top: 0;
+	margin-block-start: 0;
 	width: 4rem;
 	height: 4rem;
 }
@@ -110,7 +110,7 @@
 	transform: perspective(32rem) rotate(5deg) rotateX(5deg);
 	transform-origin: 50% 1rem;
 	transition: var(--transition-longer);
-	margin-top: 2rem;
+	margin-block-start: 2rem;
 	margin-inline-start: 1.5rem;
 	box-shadow: var(--shadow-raised);
 	// I know that polaroids have knife-sharp corners,
@@ -206,19 +206,19 @@
 	}
 
 	#polaroid-title {
-		margin-top: 0.5rem;
+		margin-block-start: 0.5rem;
 		font-weight: bold;
 		font-size: 0.5em;
 		text-transform: uppercase;
 	}
 
 	#statuscafe-content {
-		margin-top: 0.25rem;
+		margin-block-start: 0.25rem;
 		font-size: 0.5625rem;
 	}
 
 	#statuscafe-link {
-		margin-top: 0.5rem;
+		margin-block-start: 0.5rem;
 		font-weight: normal;
 		font-size: 0.5625rem;
 		text-decoration: none;

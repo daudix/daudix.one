@@ -8,6 +8,7 @@
 	--nav-bg: rgb(25 25 25 / 0.7);
 	--primary-color: rgb(207 192 159);
 	--primary-color-alpha: rgb(207 192 159 / 0.2);
+	--contrast-color: rgb(0 0 0 / 0.8);
 }
 
 body {
@@ -161,7 +162,7 @@ h2 {
 
 		small {
 			display: block;
-			margin-top: 0.25rem;
+			margin-block-start: 0.25rem;
 		}
 	}
 }
@@ -169,19 +170,19 @@ h2 {
 #original-icons,
 #redrawn-icons,
 #wallpapers {
-	margin-right: calc((-100vw + 100%) / 2);
-	margin-left: calc((-100vw + 100%) / 2);
+	margin-inline-end: calc((-100vw + 100%) / 2);
+	margin-inline-start: calc((-100vw + 100%) / 2);
 	// background-image: radial-gradient(circle, var(--fg-muted-1) 0.0625rem, transparent 0.0625rem);
 	// background-size: 1rem 1rem;
-	padding-top: 3rem; // Margin doesn't work for some reason
+	padding-block-start: 3rem; // Margin doesn't work for some reason
 
 	h2 {
-		margin-top: 0;
+		margin-block-start: 0;
 	}
 }
 
 #original-icons {
-	margin-top: 2rem;
+	margin-block-start: 2rem;
 	// background-color: rgb(98 160 234 / 0.5);
 }
 
@@ -198,7 +199,7 @@ h2 {
 }
 
 #site-footer {
-	margin-top: 0;
+	margin-block-start: 0;
 
 	nav ul li a,
 	p small a.link {
