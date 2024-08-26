@@ -43,7 +43,7 @@ Although Daudix appears to be just my online handle, it's actually a slightly di
 
 Originally from the Siberian part of Russia, but currently living in <abbr id="abyss" title="If you know, you know">abyss</abbr>.
 
-<details><summary>Some (random) things that I like:</summary>
+<details><summary>Some things that I like:</summary>
 
 - Purple <small>(lavender in particular)</small>
 - Design
@@ -289,6 +289,7 @@ If you want to link back to me, use one of these buttons:
 {% alert(note=true) %}
 It's recommended to avoid hot-linking; instead, place a copy on your own site.
 {% end %}
+
 </div>
 </details>
 </aside>
@@ -300,7 +301,7 @@ IndieWeb is something I really like; everything from 88x31 buttons to webrings i
 
 I have a website on [neocities](https://neocities.org); it's a bit empty at the moment, basically it's my playground where I can make bolder design choices than here. [Check it out](https://daudix.neocities.org).
 
-I also have a [Gemini capsule](gemini://gmi.daudix.one) on [flounder](https://flounder.online). I recently changed it to serve as a place for jotting down small notes rather than being a mirror of this website. See [this post](@/blog/2024-07-13-repurposing-gemini-capsule/index.md) for the reasons behind this decision. <small>(you can also *finger* me at `daudix@flounder.online`)</small>
+I also have a [Gemini capsule](gemini://gmi.daudix.one) on [flounder](https://flounder.online). I recently changed it to serve as a place for jotting down small notes rather than being a mirror of this website. See [this post](@/blog/2024-07-13-repurposing-gemini-capsule/index.md) for the reasons behind this decision. <small>(you can also _finger_ me at `daudix@flounder.online`)</small>
 
 <div class="dialog-buttons">
   <button class="inline-button" onclick="rizzItUp()">Rizz It Up</button>
