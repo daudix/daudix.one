@@ -624,6 +624,7 @@
 	right: calc((100vw - min(var(--container-width), 90%)) / 2);
 	bottom: 0;
 	transform: translateY(100%);
+	opacity: 0;
 	animation: peek var(--transition-long);
 	margin: 0;
 
@@ -631,6 +632,7 @@
 		50%,
 		75% {
 			transform: translateY(0);
+			opacity: 1;
 		}
 	}
 }
