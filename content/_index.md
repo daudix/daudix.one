@@ -10,7 +10,7 @@ stylesheets = ["index.css"]
 		<br />
 		<small>Here's an exclusive cute fox hugging a duck for you :3</small>
 		<br />
-		<img id="hug" class="transparent no-hover" alt="neofox hugs a duck" src="/assets/neofox-hug-duck.png" />
+		<img id="hug" class="transparent no-hover drop-shadow" alt="neofox hugs a duck" src="/assets/neofox-hug-duck.png" />
 	</p>
 </noscript>
 
