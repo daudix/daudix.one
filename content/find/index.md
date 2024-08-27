@@ -14,9 +14,9 @@ stylesheets = ["find.css"]
 
 ## Contacts
 
-For me it's currently <time><span id="clock"><noscript>NO:JS</noscript></span></time> <small>(UTC+3)</small>  and I'm <span id="online-indicator"><noscript>N/A</noscript></span>.
+For me it's currently <time><span id="clock"><noscript>NO:JS</noscript></span></time> <small>(UTC+3)</small> and I'm <span id="online-indicator"><noscript>N/A</noscript></span>.
 
-Feel free to message me on any of these:
+Feel free to reach out to me on any of these! I'm usually too shy to start the conversation, but I'm excited to chat once someone messages me.
 
 <small>From most preferred to the least ↓</small>
 
@@ -31,7 +31,7 @@ Feel free to message me on any of these:
 
 ## Socials
 
-List of places where you can ~~stalk~~ find me on:
+List of places where you can ~~stalk~~ find me on. I'm not much of a social media person, but I do post occasionally.
 
 {% alert(note=true) %}
 This is not a complete list, but rather list of places where I'm somewhat active. You can find me on other platforms as well, although make sure it's the real me by [asking](#contacts) first.
