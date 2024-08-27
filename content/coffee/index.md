@@ -15,7 +15,7 @@ stylesheets = ["coffee.css"]
 		<img id="coffee-banner" class="no-hover" alt="banner" src="banner.webp" />
 	</div>
 	<strong id="title">David Lapshin</strong>
-	<p id="message">If you'd like to buy me a coffee (thanks ^_^), you can use one of these options. If you'd like to use some other option feel free to <a href="https://daudix.one/find/#contacts">ask</a>, maybe I do have it.</p>
+	<p id="message">Like to support me and my work? You can do so by buying me a coffee! Use one of these options, and if you prefer some other option, feel free to <a href="https://daudix.one/find/#contacts">reach out</a>, maybe I do have it.</p>
 	<input type="checkbox" id="skeuo-switch">
 	<label for="skeuo-switch">Skeuomorph<i id="skeuo-info" class="icon" title="This silly mode warms my heart, but sometimes drives me crazy because I have to fix it every time I change the components it styles."></i></label>
 	<div class="dialog-buttons" id="buttons">
