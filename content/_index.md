@@ -1,4 +1,5 @@
 +++
+title = "Home"
 [extra]
 stylesheets = ["index.css"]
 +++
