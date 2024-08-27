@@ -117,28 +117,22 @@
 	}
 
 	#buttons {
-		flex-direction: column;
-		flex-wrap: wrap;
-		justify-content: center;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
 		gap: 0.5rem;
 		margin-block-start: 0;
 		margin-block-end: 0;
 		padding: 1rem;
 
 		.inline-button {
-			transition: var(--transition);
-			box-shadow: var(--edge-highlight), var(--shadow);
 			border-radius: 999px;
-			width: 100%;
 
 			&:hover {
 				transform: scale(1.1);
-				box-shadow: var(--edge-highlight), var(--shadow-raised);
 			}
 
 			&:active {
 				transform: scale(var(--active));
-				box-shadow: var(--edge-highlight), var(--shadow);
 			}
 
 			&#ko-fi {
@@ -153,6 +147,11 @@
 
 			&#monero {
 				background-color: #ff6600;
+				color: white;
+			}
+
+			&#paypal {
+				background-color: #003087;
 				color: white;
 			}
 		}
@@ -173,7 +172,7 @@
 		width: 3rem;
 		height: 2rem;
 
-		+ label {
+		& + label {
 			transition: var(--transition);
 			color: var(--fg-muted-5);
 			font-size: 0.875rem;
@@ -248,10 +247,11 @@ body:has(#skeuo-switch:checked) {
 		background-color: transparent;
 
 		nav {
+			filter: drop-shadow(0 0.0625rem 0 rgb(255 255 255 / 0.8));
+
 			a,
 			#search button {
 				color: rgb(0 0 0 / 0.7);
-				text-shadow: 0 0.0625rem 0 rgb(255 255 255 / 0.8);
 
 				&:hover {
 					background-color: rgb(255 255 255 / 0.4);
@@ -269,15 +269,8 @@ body:has(#skeuo-switch:checked) {
 				}
 			}
 
-			#main-content {
-				position: absolute;
-			}
-
-			#home a,
-			#search button,
-			#feed a {
-				filter: drop-shadow(0 0.0625rem 0 rgb(255 255 255 / 0.8));
-
+			.circle,
+			#home a {
 				.icon {
 					background-color: rgb(0 0 0 / 0.7);
 				}
@@ -334,7 +327,7 @@ body:has(#skeuo-switch:checked) {
 
 		* {
 			color: hsl(0 0% 78%);
-			text-shadow: 0 0.125rem 0.25rem rgb(0, 0, 0);
+			text-shadow: 0 0.125rem 0.25rem black;
 		}
 
 		nav {
@@ -410,10 +403,10 @@ body:has(#skeuo-switch:checked) {
 				&#ko-fi {
 					box-shadow:
 						inset rgb(255 255 255 / 0.3) 0 0.0625rem 0 0,
-						0 0.125rem 0 0 rgb(194 3 0);
+						0 0.125rem 0 0 hsl(1 100% 38%);
 					background-image: linear-gradient(
-						rgb(255 145 143),
-						rgb(255 44 41)
+						hsl(1 100% 78%),
+						hsl(1 100% 58%)
 					);
 					text-shadow: 0 -0.0625rem 0 rgb(0 0 0 / 0.4);
 				}
@@ -421,10 +414,10 @@ body:has(#skeuo-switch:checked) {
 				&#liberapay {
 					box-shadow:
 						inset rgb(255 255 255 / 0.3) 0 0.0625rem 0 0,
-						0 0.125rem 0 0 rgb(157 127 6);
+						0 0.125rem 0 0 hsl(48 93% 32%);
 					background-image: linear-gradient(
-						rgb(248 212 68),
-						rgb(207 167 7)
+						hsl(48 93% 62%),
+						hsl(48 93% 42%)
 					);
 					text-shadow: 0 0.0625rem 0 rgb(255 255 255 / 0.4);
 				}
@@ -432,10 +425,21 @@ body:has(#skeuo-switch:checked) {
 				&#monero {
 					box-shadow:
 						inset rgb(255 255 255 / 0.3) 0 0.0625rem 0 0,
-						0 0.125rem 0 0 rgb(153 61 0);
+						0 0.125rem 0 0 hsl(24 100% 30%);
 					background-image: linear-gradient(
-						rgb(255 133 51),
-						rgb(204 82 0)
+						hsl(24 100% 60%),
+						hsl(24 100% 40%)
+					);
+					text-shadow: 0 -0.0625rem 0 rgb(0 0 0 / 0.4);
+				}
+
+				&#paypal {
+					box-shadow:
+						inset rgb(255 255 255 / 0.3) 0 0.0625rem 0 0,
+						0 0.125rem 0 0 hsl(219 100% 16%);
+					background-image: linear-gradient(
+						hsl(219 100% 46%),
+						hsl(219 100% 26%)
 					);
 					text-shadow: 0 -0.0625rem 0 rgb(0 0 0 / 0.4);
 				}
@@ -492,10 +496,11 @@ body:has(#skeuo-switch:checked) {
 			);
 
 			nav {
+				filter: drop-shadow(0 -0.0625rem 0 rgb(0 0 0 / 0.8));
+
 				a,
 				#search button {
 					color: rgb(255 255 255 / 0.7);
-					text-shadow: 0 -0.0625rem 0 rgb(0 0 0 / 0.8);
 
 					&:hover {
 						background-color: rgb(255 255 255 / 0.1);
@@ -514,11 +519,8 @@ body:has(#skeuo-switch:checked) {
 					}
 				}
 
-				#home a,
-				#search button,
-				#feed a {
-					filter: drop-shadow(0 -0.0625rem 0 rgb(0 0 0 / 0.8));
-
+				.circle,
+				#home a {
 					.icon {
 						background-color: rgb(255 255 255 / 0.7);
 					}
