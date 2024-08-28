@@ -1,5 +1,5 @@
 +++
-title = "How People Got Fed up: Luddism"
+title = "How People Got Fed Up: Luddism"
 description = "The brief story of Luddism. (1/?)"
 [taxonomies]
 tags = ["100DaysToOffload", "Luddism", "Neo-Luddism"]
