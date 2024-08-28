@@ -4,6 +4,7 @@ description = "The long-awaited website rewrite using the new static site genera
 [taxonomies]
 tags = ["Devlog", "Website", "Duckquill"]
 [extra]
+archive = true
 toc = true
 [extra.comments]
 host = "social.treehouse.systems"

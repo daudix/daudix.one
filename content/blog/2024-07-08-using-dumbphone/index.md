@@ -5,6 +5,7 @@ updated = 2024-08-05
 [taxonomies]
 tags = ["100DaysToOffload", "Dumbphone", "Pixel 3"]
 [extra]
+featured = true
 banner = "banner.png"
 toc = true
 [extra.comments]

@@ -4,6 +4,7 @@ description = "My journey of migrating personal repositories from GitHub to the 
 [taxonomies]
 tags = ["Codeberg", "GitHub", "Woodpecker", "Migration"]
 [extra]
+archive = true
 toc = true
 [extra.comments]
 host = "mstdn.social"

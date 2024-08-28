@@ -4,6 +4,7 @@ description = "Some behind-the-scenes of the blog update."
 [taxonomies]
 tags = ["Devlog", "Website"]
 [extra]
+archive = true
 toc = true
 [extra.comments]
 host = "mstdn.social"

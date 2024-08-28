@@ -5,6 +5,7 @@ updated = 2024-07-13
 [taxonomies]
 tags = ["100DaysToOffload", "MacBoy"]
 [extra]
+featured = true
 toc = true
 [extra.comments]
 id = "112595182527799666"

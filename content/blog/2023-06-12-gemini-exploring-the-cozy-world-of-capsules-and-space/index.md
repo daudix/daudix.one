@@ -4,6 +4,7 @@ description = "Understanding what Gemini is, what are Capsules and Gemlogs, and 
 [taxonomies]
 tags = ["Gemini", "Dithering", "ASCII"]
 [extra]
+archive = true
 toc = true
 +++
 

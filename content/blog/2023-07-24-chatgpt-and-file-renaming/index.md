@@ -4,6 +4,7 @@ description = "How I wrote, no, generated the slugification script using ChatGPT
 [taxonomies]
 tags = ["AI", "ChatGPT", "Bash"]
 [extra]
+archive = true
 toc = true
 +++
 
