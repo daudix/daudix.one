@@ -1,3 +1,5 @@
+{%- set rel_attributes = macros_rel_attributes::rel_attributes() | trim -%}
+
 <footer id="site-footer">
 	{%- if config.extra.footer.links %}
 		<nav>
@@ -5,13 +7,19 @@
 				{%- for link in config.extra.footer.links %}
 				{%- if link.url is matching('https?://') %}
 					<li>
-						<a href="{{ link.url }}">
+						<a href="{{ link.url }}" rel="{{ rel_attributes }}"
+							{%- if current_url | default(value='/') | trim_end_matches(pat='/') | safe == link.url | trim_end_matches(pat='/') | safe -%}
+								class="active"
+							{%- endif -%}>
 							{{- macros_translate::translate(key=link.name, default=link.name, language_strings=language_strings) -}}
 						</a>
 					</li>
 				{%- else %}
 					<li>
-						<a href="{{ get_url(path=link.url, lang=lang)}}">
+						<a href="{{ get_url(path=link.url, lang=lang)}}"
+							{%- if current_url | default(value='/') | trim_end_matches(pat='/') | safe == get_url(path=link.url, lang=lang) | trim_end_matches(pat='/') | safe -%}
+								class="active"
+							{%- endif -%}>
 							{{- macros_translate::translate(key=link.name, default=link.name, language_strings=language_strings) -}}
 						</a>
 					</li>
@@ -31,7 +39,7 @@
 
 	{%- if config.extra.source_url and config.extra.footer.show_source %}
 		<p>
-			<a href="{{ config.extra.source_url }}">
+			<a href="{{ config.extra.source_url }}" rel="{{ rel_attributes }}">
 				{{- macros_translate::translate(key="source", default="Website source", language_strings=language_strings) -}}
 			</a>
 		</p>
@@ -40,7 +48,7 @@
 	{%- if config.extra.footer.show_powered_by %}
 		<p>
 			<small>
-				{{ macros_translate::translate(key="powered_by", default="Powered by", language_strings=language_strings) }} <a class="link" href="https://www.getzola.org">Zola</a> {{ macros_translate::translate(key="powered_by_and", default="and", language_strings=language_strings) }} <a class="link" href="https://duckquill.daudix.one">Duckquill</a>
+				{{ macros_translate::translate(key="powered_by", default="Powered by", language_strings=language_strings) }} <a class="link" href="https://www.getzola.org" rel="{{ rel_attributes }}">Zola</a> {{ macros_translate::translate(key="powered_by_and", default="and", language_strings=language_strings) }} <a class="link" href="https://duckquill.daudix.one" rel="{{ rel_attributes }}">Duckquill</a>
 			</small>
 		</p>
 	{%- endif %}
@@ -49,7 +57,7 @@
 		<ul id="socials">
 			{%- for link in config.extra.footer.socials %}
 				<li>
-					<a href="{{ link.url | safe }}" rel="me" title="{{ link.name }}">
+					<a href="{{ link.url | safe }}" rel="{{ rel_attributes }} me" title="{{ link.name }}">
 						<i class="icon" style='mask-image: url("data:image/svg+xml,{{ link.icon }}"); -webkit-mask-image: url("data:image/svg+xml,{{ link.icon }}")'></i>
 						<span>{{ link.name }}</span>
 					</a>
