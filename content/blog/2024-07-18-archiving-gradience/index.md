@@ -43,7 +43,7 @@ Then something unexpected happened: the developer announced that he was looking 
 
 To make things worse, I took responsibility into my own hands and... made an announcement on [r/gnome](https://old.reddit.com/r/gnome/) and [r/linux](https://old.reddit.com/r/linux/) that the project was looking for a maintainer. Without asking ArtyIF first. *deep sigh* Somebody kill me, please.
 
-No one came to maintain it from the Reddit post, but one guy commented under the initial developer's announcement on GitHub DIscussions and said he would like to maintain it. And so, I and this guy were soon added to the "AdwCustomizer Team" GitHub organization.
+No one came to maintain it from the Reddit post, but one guy commented under the initial developer's announcement on GitHub Discussions and said he would like to maintain it. And so, I and this guy were soon added to the "AdwCustomizer Team" GitHub organization.
 
 Since then, we continued to work on the project; the new maintainer implemented many of the requested features, such as Material You preset generation and refreshed the UI (following my mockups).
 
