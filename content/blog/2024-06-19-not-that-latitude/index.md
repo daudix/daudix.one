@@ -5,7 +5,7 @@ updated = 2024-06-25
 [taxonomies]
 tags = ["100DaysToOffload", "MacBoy", "Latte"]
 [extra]
-featured = true
+hot = true
 banner = "banner.png"
 toc = true
 [extra.comments]

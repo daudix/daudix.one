@@ -1,10 +1,11 @@
 +++
 title = "Gradience Autopsy: Rise and Set"
 description = "The most complete history of Gradience you'll ever find."
+updated = 2024-08-29
 [taxonomies]
 tags = ["100DaysToOffload", "Gradience"]
 [extra]
-featured = true
+hot = true
 banner = "banner.webp"
 disclaimer = """
 - This post doesn't mention some names; this post is not meant to offend anyone or make them uncomfortable, but to give an idea of what was going on.
@@ -29,7 +30,7 @@ My stance on theming hasn't changed; I still believe that distributions should *
 Personally, I've stopped theming my desktop for a while; I've been using vanilla GNOME for about a year now, with only a few extensions that add some missing features that I really need, like automatic dark mode at sunset.
 {% end %}
 
-I was absolutely thrilled to be one of the first to discover this amazing app! I had been thinking about such an app literally just a few days prior to this. I even posted about this app on [r/gnome](https://old.reddit.com/r/gnome/comments/w2ehe2/libadwaita_and_adwgtk3_recoloring_demo_using/)!
+I was absolutely thrilled to be one of the first to discover this amazing app! I had been thinking about such an app literally just a few days prior to this. I even posted about this app on [r/gnome](https://old.reddit.com/r/gnome/comments/w2ehe2/libadwaita_and_adwgtk3_recoloring_demo_using/).
 
 ### First Contributions
 
@@ -41,9 +42,9 @@ Then I created an issue about the app's icon and even tried to design something 
 
 Then something unexpected happened: the developer announced that he was looking for a new (co-)maintainer. This was shocking to me because I really liked the project, so I did what any reasonable human being would do: commented that I would like to maintain it, and no, I didn't say that I'm not a programmer and a joke of a designer...
 
-To make things worse, I took responsibility into my own hands and... made an announcement on [r/gnome](https://old.reddit.com/r/gnome/) and [r/linux](https://old.reddit.com/r/linux/) that the project was looking for a maintainer. Without asking ArtyIF first. *deep sigh* Somebody kill me, please.
+To make things worse, I took responsibility into my own hands and... made an announcement on [r/gnome](https://old.reddit.com/r/gnome/) and [r/linux](https://old.reddit.com/r/linux/) that the project was looking for a maintainer. Without asking ArtyIF first. *Deep sigh* somebody kill me, please.
 
-No one came to maintain it from the Reddit post, but one guy commented under the initial developer's announcement on GitHub Discussions and said he would like to maintain it. And so, I and this guy were soon added to the "AdwCustomizer Team" GitHub organization.
+No one came to maintain it from the Reddit post, but one guy commented under the initial developer's announcement on GitHub Discussions and said he would like to maintain it. And so, this guy and I were soon added to the "AdwCustomizer Team" GitHub organization.
 
 Since then, we continued to work on the project; the new maintainer implemented many of the requested features, such as Material You preset generation and refreshed the UI (following my mockups).
 
