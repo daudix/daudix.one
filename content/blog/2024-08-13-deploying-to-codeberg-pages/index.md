@@ -81,7 +81,7 @@ Now we need to switch to the latest release instead of the unstable `main` branc
 
 ```bash
 cd themes/duckquill
-git checkout tags/v4.7.1
+git checkout tags/v4.2.1
 ```
 
 {% alert(tip=true) %}
