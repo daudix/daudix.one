@@ -53,12 +53,12 @@ blockquote {
 	display: inline-block;
 	vertical-align: middle;
 	transition: var(--transition);
+	cursor: zoom-in;
 	width: 1.5em;
 	height: 1.5em;
 
 	&:hover {
 		transform: scale(2);
-		cursor: zoom-in;
 	}
 }
 
