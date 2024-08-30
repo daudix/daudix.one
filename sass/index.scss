@@ -191,73 +191,8 @@
 			content: "";
 		}
 
-		#dejavu {
-			display: block;
-			transition: var(--transition-longer);
-			width: 100%;
-			height: 100%;
-
-			#path4,
-			#path13,
-			#circle2948-7,
-			#path8,
-			#path11,
-			#path12 {
-				transform-origin: center;
-				transition: var(--transition-longer);
-			}
-
-			&:hover {
-				#path4 {
-					transform: translateY(-2px);
-				}
-
-				#path13 {
-					transform: translateY(-4px);
-				}
-
-				#circle2948-7 {
-					transform: translateY(-6px);
-				}
-
-				#path8 {
-					transform: translateY(-8px);
-				}
-
-				#path11 {
-					transform: translateY(-10px);
-				}
-
-				#path12 {
-					transform: translateY(-12px);
-				}
-			}
-
-			&:active {
-				#path4 {
-					transform: rotate(-5deg) scale(0.75);
-				}
-
-				#path13 {
-					transform: rotate(0deg) scale(1);
-				}
-
-				#circle2948-7 {
-					transform: rotate(5deg) scale(1.25);
-				}
-
-				#path8 {
-					transform: rotate(10deg) scale(1.5);
-				}
-
-				#path11 {
-					transform: rotate(15deg) scale(1.75);
-				}
-
-				#path12 {
-					transform: rotate(20deg) scale(2);
-				}
-			}
+		img {
+			margin: 0;
 		}
 	}
 
