@@ -1,6 +1,6 @@
 title = "Daudix"
 base_url = "https://daudix.one"
-description = "Passionate designer, translator, and FOSS contributor."
+description = "Silly little goober with a creative mind."
 theme = "duckquill"
 
 compile_sass = true

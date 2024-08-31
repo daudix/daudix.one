@@ -1,6 +1,6 @@
 +++
 title = "Buy Me a Coffee"
-description = "Just in case you want to do so for some reason."
+description = "In case you want to for some reason."
 [extra]
 stylesheets = ["coffee.css"]
 +++

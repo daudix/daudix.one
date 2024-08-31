@@ -1,6 +1,6 @@
 +++
 title = "Colophon"
-description = "Some details about this website."
+description = "Some boring details about this website."
 +++
 
 # Colophon
