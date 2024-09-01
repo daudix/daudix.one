@@ -806,7 +806,7 @@
 					margin-inline-end: 0.25rem;
 
 					a img:active {
-						transform: scale(var(--active));
+						transform: var(--active);
 					}
 
 					img {
@@ -867,7 +867,7 @@
 			}
 
 			&:active {
-				transform: scale(var(--active));
+				transform: var(--active);
 			}
 
 			&::marker,

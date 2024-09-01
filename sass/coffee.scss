@@ -130,11 +130,11 @@
 			border-radius: 999px;
 
 			&:hover {
-				transform: scale(1.1);
+				transform: var(--hover);
 			}
 
 			&:active {
-				transform: scale(var(--active));
+				transform: var(--active);
 			}
 
 			&#ko-fi {
