@@ -1,14 +1,23 @@
-:root {
-	--fg-color: rgb(207 192 159);
-	--fg-muted-1: rgb(255 255 255 / 0.05);
-	--fg-muted-2: rgb(255 255 255 / 0.1);
-	--fg-muted-3: rgb(255 255 255 / 0.2);
-	--fg-muted-4: rgb(255 255 255 / 0.5);
-	--fg-muted-5: rgb(255 255 255 / 0.6);
-	--nav-bg: rgb(25 25 25 / 0.7);
-	--primary-color: rgb(207 192 159);
-	--primary-color-alpha: rgb(207 192 159 / 0.2);
-	--contrast-color: rgb(0 0 0 / 0.8);
+@import "../themes/duckquill/sass/_variables.scss";
+
+@include theme-variables using ($theme) {
+	@if $theme =="light" {
+		// COLORS
+		--fg-color: rgb(207 192 159);
+		--fg-muted-1: rgb(255 255 255 / 0.05);
+		--fg-muted-2: rgb(255 255 255 / 0.1);
+		--fg-muted-3: rgb(255 255 255 / 0.2);
+		--fg-muted-4: rgb(255 255 255 / 0.5);
+		--fg-muted-5: rgb(255 255 255 / 0.6);
+		--nav-bg: rgb(25 25 25 / 0.7);
+		--primary-color: rgb(207 192 159);
+		--contrast-color: rgb(0 0 0 / 0.8);
+	}
+
+	@if $theme =="dark" {
+		// COLORS
+		--primary-color: rgb(207 192 159);
+	}
 }
 
 body {
@@ -83,12 +92,7 @@ body {
 h1,
 h2 {
 	-webkit-background-clip: text;
-	background: linear-gradient(
-		to bottom,
-		rgb(207 192 159) 27%,
-		rgb(255 236 179) 40%,
-		rgb(58 44 15) 78%
-	);
+	background: linear-gradient(to bottom, rgb(207 192 159) 27%, rgb(255 236 179) 40%, rgb(58 44 15) 78%);
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -160,44 +164,20 @@ h2 {
 	}
 }
 
-#original-icons,
-#redrawn-icons,
-#wallpapers {
+section {
 	margin-inline-start: calc((-100vw + 100%) / 2);
 	margin-inline-end: calc((-100vw + 100%) / 2);
-	// background-image: radial-gradient(circle, var(--fg-muted-1) 0.0625rem, transparent 0.0625rem);
-	// background-size: 1rem 1rem;
-	padding-block-start: 3rem; // Margin doesn't work for some reason
+	padding-block-start: 3rem;
+
+	&:first-of-type {
+		margin-block-start: 2rem;
+	}
 
 	h2 {
 		margin-block-start: 0;
 	}
 }
 
-#original-icons {
-	margin-block-start: 2rem;
-	// background-color: rgb(98 160 234 / 0.5);
-}
-
-// #redrawn-icons {
-// 	background-color: rgb(87 227 137 / 0.5);
-// }
-
-#wallpapers {
-	// background-color: rgb(255 163 72 / 0.5);
-
-	img {
-		border-radius: var(--rounded-corner);
-	}
-}
-
 #site-footer {
 	margin-block-start: 0;
-
-	nav ul li a,
-	p small a.link {
-		&:hover {
-			color: rgb(0 0 0 / 0.8);
-		}
-	}
 }
