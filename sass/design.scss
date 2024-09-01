@@ -1,7 +1,12 @@
 @import "../themes/duckquill/sass/_variables.scss";
 
 @include theme-variables using ($theme) {
-	@if $theme =="light" {
+	@if $theme == "dark" {
+		// COLORS
+		--primary-color: rgb(207 192 159);
+	}
+
+	@else {
 		// COLORS
 		--fg-color: rgb(207 192 159);
 		--fg-muted-1: rgb(255 255 255 / 0.05);
@@ -12,11 +17,6 @@
 		--nav-bg: rgb(25 25 25 / 0.7);
 		--primary-color: rgb(207 192 159);
 		--contrast-color: rgb(0 0 0 / 0.8);
-	}
-
-	@if $theme =="dark" {
-		// COLORS
-		--primary-color: rgb(207 192 159);
 	}
 }
 
