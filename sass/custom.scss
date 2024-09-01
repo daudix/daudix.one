@@ -9,8 +9,7 @@ body {
 	background-blend-mode: normal, difference;
 
 	@media (prefers-reduced-motion) {
-		background: var(--bg-color), url("assets/static-static.gif"),
-			var(--primary-color);
+		background: var(--bg-color), url("assets/static-static.gif"), var(--primary-color);
 	}
 }
 
