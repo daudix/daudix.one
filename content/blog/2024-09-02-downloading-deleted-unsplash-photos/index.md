@@ -2,7 +2,7 @@
 title = "Download Deleted Photos from Unsplash in Original Quality"
 description = "Sometimes a link to an Unsplash image returns 404, what can be done in this case?"
 [taxonomies]
-tags = ["100DaysToOffload"]
+tags = ["100DaysToOffload", "Unsplash"]
 [extra]
 banner = "banner.webp"
 toc = true
