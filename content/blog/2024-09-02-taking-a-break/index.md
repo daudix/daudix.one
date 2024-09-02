@@ -1,7 +1,6 @@
 +++
 title = "Taking a short break"
 description = "To my knowledge, short breaks haven't hurt anyone."
-draft = true
 date = 2024-09-02T17:00:00+03:00
 [taxonomies]
 tags = ["100DaysToOffload", "Mental Health"]
