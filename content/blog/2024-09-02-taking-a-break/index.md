@@ -1,5 +1,5 @@
 +++
-title = "Taking a short break"
+title = "Taking a Short Break"
 description = "To my knowledge, short breaks haven't hurt anyone."
 date = 2024-09-02T17:00:00+03:00
 [taxonomies]
