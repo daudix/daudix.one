@@ -927,6 +927,7 @@
 		--mask: url("assets/dont.png");
 		-webkit-mask-image: var(--mask);
 		-webkit-pointer-events: none;
+		-webkit-mask-size: cover;
 		position: absolute;
 		top: calc(-50% + -1.1875rem);
 		left: 6.5rem;
@@ -934,6 +935,7 @@
 		transform-origin: left;
 		opacity: 0;
 		mask-image: var(--mask);
+		mask-size: cover;
 		transition: var(--transition);
 		background-color: var(--primary-color);
 		width: 22.25rem;

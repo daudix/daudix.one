@@ -56,11 +56,9 @@
 	margin-inline-start: 1.75rem;
 	border-width: 0.25rem;
 	border-inline-start: 0.25rem solid;
-	border-image-source: linear-gradient(
-		to bottom,
-		var(--fg-muted-3) calc(100% - 2.5rem),
-		transparent
-	);
+	border-image-source: linear-gradient(to bottom,
+			var(--fg-muted-3) calc(100% - 2.5rem),
+			transparent);
 	border-image-slice: 1;
 	padding-inline-start: 0;
 	list-style: none;
@@ -105,7 +103,7 @@
 			transition: var(--transition);
 			border: 0.25rem solid var(--fg-muted-3);
 			border-radius: 50%;
-			background: var(--bg-color), var(--primary-color);
+			background-color: var(--bg-color);
 			width: 0.5rem;
 			height: 0.5rem;
 			content: "";

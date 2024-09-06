@@ -1,14 +1,14 @@
 @import "../themes/duckquill/sass/_variables.scss";
 
 @include theme-variables using ($theme) {
-	@if $theme == "dark" {
+	@if $theme =="dark" {
 		// COLORS
-		--bg-color: linear-gradient(rgb(0 0 0 / 0.9), rgb(0 0 0 / 0.9));
+		--bg-overlay: linear-gradient(rgb(0 0 0 / 0.9), rgb(0 0 0 / 0.9));
 	}
 
 	@else {
 		// COLORS
-		--bg-color: linear-gradient(rgb(255 255 255 / 0.8), rgb(255 255 255 / 0.8));
+		--bg-overlay: linear-gradient(rgb(255 255 255 / 0.8), rgb(255 255 255 / 0.8));
 
 		// VARIABLES
 		--printed: contrast(200%) brightness(75%) grayscale(100%);
@@ -17,11 +17,11 @@
 }
 
 body {
-	background: var(--bg-color), url("assets/static.gif"), var(--primary-color);
+	background: var(--bg-overlay), url("assets/static.gif"), var(--primary-color);
 	background-blend-mode: normal, difference;
 
 	@media (prefers-reduced-motion) {
-		background: var(--bg-color), url("assets/static-static.gif"), var(--primary-color);
+		background: var(--bg-overlay), url("assets/static-static.gif"), var(--primary-color);
 	}
 }
 
