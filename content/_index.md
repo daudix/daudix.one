@@ -135,7 +135,7 @@ Have a look at my [designs](@/design/index.md); mostly icons, but also some wall
 ## IndieWeb
 
 <aside id="bumps">
-<strong id="bumps-title"><i class="icon"></i>Bumps</strong>
+<strong id="bumps-title">Bumps</strong>
 
 <small id="bumps-subtitle">**Bu**ttons + Sta**mps** = Bumps</small>
 
@@ -305,7 +305,7 @@ I have a website on [neocities](https://neocities.org); it's a bit empty at the 
 I also have a [Gemini capsule](gemini://gmi.daudix.one) on [flounder](https://flounder.online). I recently changed it to serve as a place for jotting down small notes rather than being a mirror of this website. See [this post](@/blog/2024-07-13-repurposing-gemini-capsule/index.md) for the reasons behind this decision. <small>(you can also _finger_ me at `daudix@flounder.online`)</small>
 
 <div class="dialog-buttons">
-  <button class="inline-button" onclick="rizzItUp()">Rizz It Up</button>
+  <button id="rizz" class="inline-button" onmouseover="vineBoom()" onfocus="vineBoom()" onclick="rizzItUp()">Rizz It Up</button>
   <div id="dont"></div>
 </div>
 
@@ -351,6 +351,11 @@ I also have a [Gemini capsule](gemini://gmi.daudix.one) on [flounder](https://fl
 </script>
 
 <script type="text/javascript">
+  function vineBoom() {
+    const vineBoomSoundEffect = "assets/vine-boom.mp3";
+    new Audio(vineBoomSoundEffect).play();
+  }
+
   function rizzItUp() {
       const rizzSoundEffect = "assets/rizz.mp3";
       new Audio(rizzSoundEffect).play();

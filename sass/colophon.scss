@@ -1,0 +1,25 @@
+#to-do {
+	padding-block-start: 0.75rem;
+	aspect-ratio: 1 / 1;
+	overflow: auto;
+
+	&-title {
+		display: block;
+		color: var(--primary-color);
+		font-size: 1.5rem;
+		line-height: 1.25;
+	}
+
+	ul {
+		margin: 0;
+		margin-block-start: 0.5rem;
+		padding: 0;
+		color: var(--fg-muted-5);
+		font-size: 0.875rem;
+		list-style: none;
+	}
+
+	// @media only screen and (max-width: 720px) {
+	//     height: 100%;
+	// }
+}

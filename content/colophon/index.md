@@ -1,6 +1,8 @@
 +++
 title = "Colophon"
 description = "Some boring details about this website."
+[extra]
+stylesheets = ["colophon.css"]
 +++
 
 # Colophon
@@ -8,6 +10,34 @@ description = "Some boring details about this website."
 {% alert(fact=true) %}
 This is the least fun page on this website. Deal with it.
 {% end %}
+
+<aside id="to-do">
+<strong id="to-do-title">To-do</strong>
+
+- [ ] Have some fun with the overscroll space
+- [ ] /uses page
+- [ ] /now page
+- [ ] Redo social links, maybe even draw some custom icons (?)
+- [ ] Make "shrine" for my beloved portal series
+- [ ] Add [navlinkads](https://dimden.dev/navlinkads) (?)
+- [ ] Redesign status.cafe
+- [ ] Make the player on neocities display my current Spotify/last.fm
+- [ ] Style piclog.blue page
+- [ ] New ARG/Easter Egg type of thingy (?) (inspirations: Portal "dinosaur" ARG, SSTV)
+- [x] Move this to-do from Codeberg to this website
+- [x] ~~Simplify game icon styles (use markdown list with `:nth-child` thingy and `::before`)~~
+- [x] "Feature" some alright posts
+- [x] Fix ugly johnvertisements on mobile
+- [x] Add stamps and maybe blinkies (inspirations: [melankorin](https://melankorin.net) <sup>[1](https://melankorin.net/about/)</sup> <sup>[2](https://melankorin.net/links/)</sup>)
+- [x] Draw banner for the Codeberg Pages guide
+- [x] Use marquee type of thing for 88x31 buttons
+- [x] ~~Month stamps by [NebularDrip on DA](https://www.deviantart.com/nebulardrip) (basically I thought it would be neat if the stamp automatically changed every month. yeah it sounds weird)~~
+- [x] Use custom statuscafe script to avoid patching it using CSS
+- [x] Credit more stuff in the colophon
+- [x] Add Pixelfed to the fedi timeline
+- [x] Check if the timezone is the same as user's and if so, print a unique message
+- [x] Add webrings (fediring)
+</aside>
 
 This website is a passion project of mine; it's made with (a lot of) love and attention to details (I bet you've noticed that already), is constantly updated and improved, and tries to be (somewhat) lightweight and compatible with older browsers. <small>(at very least most stuff works on iOS 15 and macOS High Sierra; which unfortunately a lot of people still use)</small>
 
