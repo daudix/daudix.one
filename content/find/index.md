@@ -14,7 +14,7 @@ stylesheets = ["find.css"]
 
 ## Contacts
 
-For me it's currently <time><span id="clock"><noscript>NO:JS</noscript></span></time> <small>(UTC+3)</small> and I'm <span id="online-indicator"><noscript>N/A</noscript></span>. <small>(my sleep schedule is so borked that the time of day doesn’t necessarily mean I’m sleeping)</small>
+For me it's currently <time><span id="clock"><noscript>NO:JS</noscript></span></time> <small>(UTC+3)</small> and I'm <span id="online-indicator"><noscript>N/A</noscript></span>.
 
 Feel free to reach out to me on any of these! I'm usually too shy to start the conversation, but I'm excited to chat once someone messages me.
 
