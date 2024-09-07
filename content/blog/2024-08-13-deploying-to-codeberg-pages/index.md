@@ -11,7 +11,7 @@ toc = true
 id = "112956494344143118"
 +++
 
-<small>Banner by [Lubomir Minar](https://www.lubomirminar.com) on Unsplash [(archived)](https://web.archive.org/web/20210124002804/https://unsplash.com/photos/3K6ZkYBj2Xo).</small>
+<small>Photo by [Lubomir Minar](https://www.lubomirminar.com) on [Unsplash (archived)](https://web.archive.org/web/20210124002804/https://unsplash.com/photos/3K6ZkYBj2Xo).</small>
 
 {% alert(note=true) %}
 This guide focuses on the Zola <abbr title="Static site generator">SSG</abbr>, but other SSGs like Hugo and Jekyll should work with this guide as well.
