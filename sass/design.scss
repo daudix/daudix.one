@@ -1,9 +1,9 @@
 @import "../themes/duckquill/sass/_variables.scss";
 
 @include theme-variables using ($theme) {
-	@if $theme == "dark" {
+	@if $theme =="dark" {
 		// COLORS
-		--primary-color: rgb(207 192 159);
+		--primary-color: #cfc09f;
 	}
 
 	@else {
@@ -21,14 +21,7 @@
 }
 
 body {
-	animation: fade-in 3s;
 	background: black;
-
-	@keyframes fade-in {
-		from {
-			opacity: 0;
-		}
-	}
 
 	&::before {
 		display: block;
@@ -52,7 +45,6 @@ body {
 		display: block;
 		position: fixed;
 		filter: saturate(120%) brightness(150%);
-		animation: curtains-open 3s;
 		background: url("design/curtain-l.webp"), url("design/curtain-r.webp");
 		background-position:
 			top left,
@@ -64,27 +56,8 @@ body {
 		pointer-events: none;
 		content: "";
 
-		@keyframes curtains-open {
-			from,
-			50% {
-				filter: saturate(1) brightness(10%);
-				background-size: 60% 100%;
-			}
-		}
-
 		@media (prefers-color-scheme: dark) {
 			filter: saturate(120%) brightness(1);
-		}
-	}
-}
-
-.container {
-	animation: fade-in-2 3s;
-
-	@keyframes fade-in-2 {
-		from,
-		50% {
-			opacity: 0;
 		}
 	}
 }
@@ -92,16 +65,15 @@ body {
 h1,
 h2 {
 	-webkit-background-clip: text;
-	background: linear-gradient(to bottom, rgb(207 192 159) 27%, rgb(255 236 179) 40%, rgb(58 44 15) 78%);
+	background: linear-gradient(to bottom, #cfc09f 27%, #ffecb3 40%, #3a2c0f 78%);
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
 .media-grid {
-	grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
 	justify-items: center;
-	gap: 2rem;
-	margin: 1rem 0;
+	gap: 1rem;
 	text-align: center;
 
 	a {
@@ -165,19 +137,22 @@ h2 {
 }
 
 section {
+	-webkit-backdrop-filter: var(--blur);
+	display: block;
+	backdrop-filter: var(--blur);
 	margin-inline-start: calc((-100vw + 100%) / 2);
 	margin-inline-end: calc((-100vw + 100%) / 2);
-	padding-block-start: 3rem;
-
-	&:first-of-type {
-		margin-block-start: 2rem;
-	}
+	margin-block-start: 2rem;
+	box-shadow: var(--edge-highlight);
+	background-color: var(--fg-muted-1);
 
 	h2 {
-		margin-block-start: 0;
+		display: inline-block;
+		margin-block-end: 0;
 	}
 }
 
-#site-footer {
-	margin-block-start: 0;
+#site-footer nav {
+	-webkit-backdrop-filter: var(--blur);
+	backdrop-filter: var(--blur);
 }
