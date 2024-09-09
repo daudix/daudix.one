@@ -5,16 +5,14 @@ description = "Some boring details about this website."
 stylesheets = ["colophon.css"]
 +++
 
-# Colophon
-
 {% alert(fact=true) %}
 This is the least fun page on this website. Deal with it.
 {% end %}
 
 <aside id="to-do">
 <strong id="to-do-title">To-do</strong>
+<div id="to-do-container">
 
-- [ ] Have some fun with the overscroll space
 - [ ] /uses page
 - [ ] /now page
 - [ ] Redo social links, maybe even draw some custom icons (?)
@@ -24,6 +22,7 @@ This is the least fun page on this website. Deal with it.
 - [ ] Make the player on neocities display my current Spotify/last.fm
 - [ ] Style piclog.blue page
 - [ ] New ARG/Easter Egg type of thingy (?) (inspirations: Portal "dinosaur" ARG, SSTV)
+- [x] ~~Have some fun with the overscroll space~~
 - [x] Move this to-do from Codeberg to this website
 - [x] ~~Simplify game icon styles (use markdown list with `:nth-child` thingy and `::before`)~~
 - [x] "Feature" some alright posts
@@ -37,6 +36,7 @@ This is the least fun page on this website. Deal with it.
 - [x] Add Pixelfed to the fedi timeline
 - [x] Check if the timezone is the same as user's and if so, print a unique message
 - [x] Add webrings (fediring)
+</div>
 </aside>
 
 This website is a passion project of mine; it's made with (a lot of) love and attention to details (I bet you've noticed that already), is constantly updated and improved, and tries to be (somewhat) lightweight and compatible with older browsers. <small>(at very least most stuff works on iOS 15 and macOS High Sierra; which unfortunately a lot of people still use)</small>

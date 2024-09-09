@@ -1,11 +1,9 @@
 +++
-title = "Find"
+title = "Find Me"
 description = "Where, when and how to find me."
 [extra]
 stylesheets = ["find.css"]
 +++
-
-# Find Me
 
 <picture>
   <source srcset="envelope-d.webp" media="(prefers-color-scheme: dark)" />
