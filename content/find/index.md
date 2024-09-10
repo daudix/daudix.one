@@ -37,11 +37,12 @@ This is not a complete list, but rather list of places where I'm somewhat active
 
 <small>From most active to the least ↓</small>
 
-- [Mastodon](https://social.treehouse.systems/@daudix)
-- [Akkoma](https://pleroma.envs.net/daudix)
-- [Lemmy](https://lemmy.zip/u/daudix)
-- [Pixelfed](https://pixelfed.social/Daudix)
-- [YouTube](https://www.youtube.com/@ddaudix)
+- [Mastodon](https://social.treehouse.systems/@daudix) <small>(main account and my main online presence after this website)</small>
+- [Akkoma](https://pleroma.envs.net/daudix) <small>(alt account for everything else that doesn't fit the main account)</small>
+- [Bluesky](https://bsky.app/profile/daudix.one) <small>(planning to start using it more)</small>
+- [Lemmy](https://lemmy.zip/u/daudix) <small>(I've been a lurker since the Reddit days)</small>
+- [Pixelfed](https://pixelfed.social/Daudix) <small>(never understood the hype around Instagram.)</small>
+- [YouTube](https://www.youtube.com/@ddaudix) <small>(a whopping 3 videos + 1 short, if you don't count 2 hidden ones)</small>
 
 I have changed the Fediverse instance I'm on a lot, so to make sure nothing is lost, here's my Fediverse timeline:
 
