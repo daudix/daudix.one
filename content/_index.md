@@ -17,7 +17,8 @@ stylesheets = ["index.css"]
 <div id="polaroid">
   <div id="polaroid-shine"></div>
   <div id="polaroid-photo">
-    <img class="full transparent no-hover" alt="avatar" src="assets/avatar.svg" />
+    <img class="full transparent no-hover" alt="avatar grayscale" src="assets/rainbow-grayscale.svg" />
+    <img class="full transparent no-hover" alt="avatar" src="assets/rainbow.svg" />
   </div>
   <span id="polaroid-title">
     Instant photo

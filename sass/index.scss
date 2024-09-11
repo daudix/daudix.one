@@ -142,6 +142,10 @@
 			transform: rotate(35deg);
 			background-color: transparent;
 		}
+
+		#polaroid-photo img:last-child {
+			opacity: 1;
+		}
 	}
 
 	#polaroid-shine {
@@ -175,6 +179,13 @@
 
 		img {
 			margin: 0;
+
+			&:last-child {
+				position: absolute;
+				top: 0;
+				left: 0;
+				opacity: 0;
+			}
 		}
 	}
 
