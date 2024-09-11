@@ -24,8 +24,8 @@ Feel free to reach out to me on any of these! I'm usually too shy to start the c
 - [Discord](https://discord.com/users/650757995378114581)
 - [Telegram](https://t.me/ddaudix)
 - [Email](mailto:me@daudix.one)
-- ~~[Signal](https://signal.me/#eu/0KKOAPEjDPbNVKFfWbNu9AHZE2od2quKOO5NxLmFqf/xA9940S5JKZbOhTwoa2wP)~~ <small>(my phone [is burnt](@/blog/2024-07-08-using-dumbphone/index.md) so don't use it, I won't receive the message in a while)</small>
-- ~~[XMPP](xmpp:daudix@nixnet.services)~~ <small>(there are rumors that the admin is a pedo, so currently looking for another server; better safe than sorry)</small>
+- [Signal](https://signal.me/#eu/vqDQLk2OAOC3aFdUbzUCGrqRlAB5TSrv2nO8dc7B92B4t5YpR01H-LQ5TmMTifA2) <small>(my phone [is burnt](@/blog/2024-07-08-using-dumbphone/index.md) so I have it installed in [Waydroid](https://waydro.id))</small>
+- [XMPP](xmpp:daudix@nixnet.services) <small>(there are rumors that the admin is a pedo, so currently looking for another server; better safe than sorry)</small>
 
 ## Socials
 
