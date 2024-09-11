@@ -64,12 +64,12 @@ blockquote {
 	display: inline-block;
 	vertical-align: middle;
 	transition: var(--transition);
-	cursor: zoom-in;
 	width: 1.5em;
 	height: 1.5em;
 
 	&:hover {
 		transform: scale(2);
+		cursor: zoom-in;
 	}
 }
 
@@ -83,7 +83,6 @@ blockquote {
 	-webkit-appearance: none;
 	appearance: none;
 	transition: var(--transition);
-	cursor: pointer;
 	box-shadow: var(--edge-highlight);
 	border: none;
 	border-radius: var(--rounded-corner-small);
@@ -94,6 +93,7 @@ blockquote {
 	font-size: 1rem;
 
 	&:hover {
+		cursor: pointer;
 		background-color: var(--primary-color);
 		color: var(--contrast-color);
 

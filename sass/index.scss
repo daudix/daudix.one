@@ -577,7 +577,6 @@
 	-webkit-appearance: none;
 	appearance: none;
 	transition: var(--transition);
-	cursor: pointer;
 	border: none;
 	background-color: transparent;
 	padding: 0;
@@ -588,12 +587,16 @@
 	text-decoration-thickness: max(1px, 0.0625em);
 
 	&:hover {
+		cursor: pointer;
 		text-decoration-style: solid;
 	}
 
 	&:disabled {
-		cursor: not-allowed;
 		color: var(--fg-muted-5);
+
+		&:hover {
+			cursor: not-allowed;
+		}
 	}
 }
 
