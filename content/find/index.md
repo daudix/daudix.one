@@ -20,12 +20,12 @@ Feel free to reach out to me on any of these! I'm usually too shy to start the c
 
 ![die in a fire](die-in-a-fire.jpg#end)
 
-- [Matrix](https://matrix.to/#/@daudix:envs.net) <small>(I have alts on other homeservers, but I don't use them)</small>
-- [Discord](https://discord.com/users/650757995378114581)
-- [Telegram](https://t.me/ddaudix)
-- [Email](mailto:me@daudix.one)
+- [Discord](https://discord.com/users/650757995378114581) <small>(I prefer it to Matrix for the most part, but it's fine as well)</small>
+- [Matrix](https://matrix.to/#/@daudix:envs.net) <small>(I have a few alts, but I don't use them)</small>
 - [Signal](https://signal.me/#eu/vqDQLk2OAOC3aFdUbzUCGrqRlAB5TSrv2nO8dc7B92B4t5YpR01H-LQ5TmMTifA2) <small>(my phone [is burnt](@/blog/2024-07-08-using-dumbphone/index.md) so I have it installed in [Waydroid](https://waydro.id))</small>
-- [XMPP](xmpp:daudix@nixnet.services) <small>(there are rumors that the admin is a pedo, so currently looking for another server; better safe than sorry)</small>
+- [Telegram](https://t.me/ddaudix) <small>(Discord in terms of privacy, but advertises itself like it's not)</small>
+- [Email](mailto:me@daudix.one) <small>(I have email anxiety, so something from the above is preferred)</small>
+- ~~[XMPP](xmpp:daudix@nixnet.services)~~ <small>(there are rumors that the admin is a pedo, so currently looking for another server; better safe than sorry)</small>
 
 ## Socials
 
@@ -41,7 +41,7 @@ This is not a complete list, but rather list of places where I'm somewhat active
 - [Akkoma](https://pleroma.envs.net/daudix) <small>(alt account for everything else that doesn't fit the main account)</small>
 - [Bluesky](https://bsky.app/profile/daudix.one) <small>(planning to start using it more)</small>
 - [Lemmy](https://lemmy.zip/u/daudix) <small>(I've been a lurker since the Reddit days)</small>
-- [Pixelfed](https://pixelfed.social/Daudix) <small>(never understood the hype around Instagram.)</small>
+- [Pixelfed](https://pixelfed.social/Daudix) <small>(never understood the hype around Instagram)</small>
 - [YouTube](https://www.youtube.com/@ddaudix) <small>(a whopping 3 videos + 1 short, if you don't count 2 hidden ones)</small>
 
 I have changed the Fediverse instance I'm on a lot, so to make sure nothing is lost, here's my Fediverse timeline:
