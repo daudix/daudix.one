@@ -1,0 +1,27 @@
+{% extends "duckquill/templates/base.html" %}
+
+{% block body %}
+<x3d>
+	<scene>
+		<transform DEF="swag" scale="1.5 1.5 1.5">
+			<shape>
+				<appearance>
+					<material diffuseColor="1 1 1"></material>
+					<movieTexture DEF="videoTexture" url="swag.mp4" loop="true">
+					</movieTexture>
+				</appearance>
+				<box></box>
+			</shape>
+		</transform>
+		<TimeSensor DEF="clock" cycleInterval="5" loop="true"></TimeSensor>
+		<OrientationInterpolator DEF="spin" key="0 0.5 1" keyValue="0 1 0 0 0 1 0 3.14159 0 1 0 6.28318">
+		</OrientationInterpolator>
+		<ROUTE fromNode="clock" fromField="fraction_changed" toNode="spin" toField="set_fraction"></ROUTE>
+		<ROUTE fromNode="spin" fromField="value_changed" toNode="swag" toField="rotation"></ROUTE>
+		<ROUTE fromNode="clock" fromField="isActive" toNode="videoTexture" toField="set_startTime"></ROUTE>
+	</scene>
+</x3d>
+<p id="disclaimer">
+	<small>The swag block is a creation of <a href="https://libreivan.com">libreivan</a>. I just animated it and put it on a rotating cube :P</small>
+</p>
+{% endblock body %}
