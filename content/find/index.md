@@ -2,7 +2,7 @@
 title = "Find Me"
 description = "Where, when and how to find me."
 [extra]
-stylesheets = ["find.css"]
+styles = ["find.css"]
 +++
 
 <picture>

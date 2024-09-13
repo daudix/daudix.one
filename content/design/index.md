@@ -3,7 +3,7 @@ title = "Design"
 description = "A sneak peek into my designs."
 template = "design.html"
 [extra]
-stylesheets = ["design.css"]
+styles = ["design.css"]
 original_icons = [
   {name = "Bavarder", icon = "io.github.Bavarder.Bavarder.svg", url = "https://flathub.org/apps/io.github.Bavarder.Bavarder"},
   {name = "Cavalier", icon = "org.nickvision.cavalier.svg", url = "https://flathub.org/apps/org.nickvision.cavalier"},
