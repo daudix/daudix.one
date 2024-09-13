@@ -9,7 +9,7 @@ banner = "banner.webp"
 id = "113122090995619097"
 +++
 
-<small>Photo by [Juli Kosolapova](https://unsplash.com/@yuli_superson) on [Unsplash](https://unsplash.com/photos/brown-cliff-under-white-sky-tUsgCLx_HGk)</small>
+<small>Photo by [Juli Kosolapova](https://unsplash.com/@yuli_superson) on [Unsplash](https://unsplash.com/photos/brown-cliff-under-white-sky-tUsgCLx_HGk).</small>
 
 Hii, it's me, the silly little goober, and I'm back in business!
 

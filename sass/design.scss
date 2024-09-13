@@ -144,7 +144,20 @@ section {
 	margin-inline-end: calc((-100vw + 100%) / 2);
 	margin-block-start: 2rem;
 	box-shadow: var(--edge-highlight);
-	background-color: var(--fg-muted-1);
+	background-image: radial-gradient(circle, var(--fg-muted-1) 0.0625rem, transparent 0.0625rem);
+	background-size: 1rem 1rem;
+
+	&#original-icons {
+		background-color: var(--blue-bg);
+	}
+
+	&#redrawn-icons {
+		background-color: var(--green-bg);
+	}
+
+	&#wallpapers {
+		background-color: var(--purple-bg);
+	}
 
 	h2 {
 		display: inline-block;
