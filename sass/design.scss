@@ -3,7 +3,7 @@
 @include theme-variables using ($theme) {
 	@if $theme =="dark" {
 		// COLORS
-		--primary-color: #cfc09f;
+		--accent-color: #cfc09f;
 	}
 
 	@else {
@@ -15,7 +15,7 @@
 		--fg-muted-4: rgb(255 255 255 / 0.5);
 		--fg-muted-5: rgb(255 255 255 / 0.6);
 		--nav-bg: rgb(25 25 25 / 0.7);
-		--primary-color: rgb(207 192 159);
+		--accent-color: rgb(207 192 159);
 		--contrast-color: rgb(0 0 0 / 0.8);
 	}
 }
@@ -41,7 +41,6 @@ body {
 	}
 
 	&::after {
-		-webkit-pointer-events: none;
 		display: block;
 		position: fixed;
 		filter: saturate(120%) brightness(150%);
@@ -64,7 +63,6 @@ body {
 
 h1,
 h2 {
-	-webkit-background-clip: text;
 	background: linear-gradient(to bottom, #cfc09f 27%, #ffecb3 40%, #3a2c0f 78%);
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -106,14 +104,11 @@ h2 {
 			position: relative;
 
 			&::before {
-				--mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='128' height='128' style='display:inline' version='1.0'%3E%3Ccircle cx='64' cy='64' r='59.5' style='fill:none;stroke:%23000;stroke-width:1'/%3E%3Crect width='87' height='111' x='20.5' y='8.5' rx='8' ry='8' style='fill:none;stroke:%23000;stroke-width:1'/%3E%3Crect width='103' height='103' x='12.5' y='12.5' rx='8' ry='8' style='fill:none;stroke:%23000;stroke-width:1'/%3E%3Crect width='111' height='87' x='8.5' y='28.5' rx='8' ry='8' style='fill:none;stroke:%23000;stroke-width:1'/%3E%3C/svg%3E");
-				-webkit-mask-image: var(--mask);
-				-webkit-mask-size: cover;
 				position: absolute;
 				top: 0;
 				left: 0;
 				opacity: 0;
-				mask-image: var(--mask);
+				mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='128' height='128' style='display:inline' version='1.0'%3E%3Ccircle cx='64' cy='64' r='59.5' style='fill:none;stroke:%23000;stroke-width:1'/%3E%3Crect width='87' height='111' x='20.5' y='8.5' rx='8' ry='8' style='fill:none;stroke:%23000;stroke-width:1'/%3E%3Crect width='103' height='103' x='12.5' y='12.5' rx='8' ry='8' style='fill:none;stroke:%23000;stroke-width:1'/%3E%3Crect width='111' height='87' x='8.5' y='28.5' rx='8' ry='8' style='fill:none;stroke:%23000;stroke-width:1'/%3E%3C/svg%3E");
 				mask-size: cover;
 				transition: var(--transition);
 				background-color: var(--fg-muted-3);

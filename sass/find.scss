@@ -2,22 +2,22 @@
 	animation: clock-blink 1s infinite;
 	box-shadow: var(--edge-highlight);
 	border-radius: var(--rounded-corner-small);
-	background-color: var(--primary-color-alpha);
+	background-color: var(--accent-color-alpha);
 	padding: 0.125rem 0.375rem;
-	color: var(--primary-color);
+	color: var(--accent-color);
 	font-weight: bold;
 
 	@keyframes clock-blink {
 		from {
-			color: var(--primary-color);
+			color: var(--accent-color);
 		}
 
 		25% {
-			color: var(--primary-color-alpha);
+			color: var(--accent-color-alpha);
 		}
 
 		50% {
-			color: var(--primary-color);
+			color: var(--accent-color);
 		}
 	}
 }
@@ -111,19 +111,19 @@
 
 		&:hover {
 			.timeline-title {
-				color: var(--primary-color);
+				color: var(--accent-color);
 			}
 
 			.timeline-badge {
-				background-color: var(--primary-color-alpha);
-				color: var(--primary-color);
+				background-color: var(--accent-color-alpha);
+				color: var(--accent-color);
 			}
 
 			&::before {
 				box-shadow:
-					var(--primary-color-alpha) 0 0 0.25rem,
-					var(--primary-color) 0 0 0.75rem;
-				border: 0.25rem solid var(--primary-color);
+					var(--accent-color-alpha) 0 0 0.25rem,
+					var(--accent-color) 0 0 0.75rem;
+				border: 0.25rem solid var(--accent-color);
 			}
 		}
 	}

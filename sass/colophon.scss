@@ -5,16 +5,14 @@
 	aspect-ratio: 1 / 1;
 
 	&-title {
-		color: var(--primary-color);
+		color: var(--accent-color);
 		font-size: 1.5rem;
 		line-height: 1.25;
 	}
 
 	&-container {
-		--mask: linear-gradient(to bottom, transparent, black 1rem, black calc(100% - 1rem), transparent);
-		-webkit-mask-image: var(--mask);
 		flex: 1;
-		mask-image: var(--mask);
+		mask-image: linear-gradient(to bottom, transparent, black 1rem, black calc(100% - 1rem), transparent);
 		margin: 0 -1rem -1rem;
 		padding: 1rem;
 		padding-block-start: 0;

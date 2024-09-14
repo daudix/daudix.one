@@ -14,16 +14,16 @@
 // 	}
 
 // 	&::before {
-// 		background-image: linear-gradient(var(--primary-color-alpha) 25%, transparent 75%);
+// 		background-image: linear-gradient(var(--accent-color-alpha) 25%, transparent 75%);
 // 	}
 
 // 	&::after {
-// 		filter: drop-shadow(0 0.125rem 0.125rem var(--primary-color)) drop-shadow(0 0.125rem 0.25rem var(--primary-color));
+// 		filter: drop-shadow(0 0.125rem 0.125rem var(--accent-color)) drop-shadow(0 0.125rem 0.25rem var(--accent-color));
 // 		animation: plane infinite linear 1s;
 // 		background-image:
-// 			linear-gradient(to right, var(--primary-color-alpha) 0.0625rem, transparent 0.0625rem),
-// 			linear-gradient(to right, var(--primary-color-alpha) 0.0625rem, transparent 0.0625rem), // Repeat the gradient twice so that it appears brighter
-// 			linear-gradient(var(--primary-color-alpha) 0.0625rem, transparent 0.0625rem);
+// 			linear-gradient(to right, var(--accent-color-alpha) 0.0625rem, transparent 0.0625rem),
+// 			linear-gradient(to right, var(--accent-color-alpha) 0.0625rem, transparent 0.0625rem), // Repeat the gradient twice so that it appears brighter
+// 			linear-gradient(var(--accent-color-alpha) 0.0625rem, transparent 0.0625rem);
 // 		background-size: 2rem 2rem;
 // 		background-repeat: repeat;
 
@@ -65,15 +65,12 @@
 	}
 
 	#header {
-		--mask: url("assets/header.png");
-		-webkit-mask-size: cover;
-		-webkit-mask-image: var(--mask);
 		-webkit-user-select: none;
-		mask-image: var(--mask);
+		mask-image: url("assets/header.png");
 		mask-size: contain;
 		transition: var(--transition-longer);
 		margin: 0;
-		background-color: var(--primary-color);
+		background-color: var(--accent-color);
 		aspect-ratio: 4.4 / 1; // Proper height regardless of the width
 		width: 100%;
 		overflow: hidden; // Make aspect ratio set above work
@@ -81,9 +78,7 @@
 		user-select: none;
 
 		@media (prefers-reduced-motion) {
-			--mask: url("assets/header-static.png");
-			-webkit-mask-image: var(--mask);
-			mask-image: var(--mask);
+			mask-image: url("assets/header-static.png");
 		}
 	}
 
@@ -112,7 +107,6 @@
 	overflow: hidden;
 
 	&::after {
-		-webkit-pointer-events: none;
 		display: block;
 		position: absolute;
 		top: 0.25rem;
@@ -149,7 +143,6 @@
 	}
 
 	#polaroid-shine {
-		-webkit-pointer-events: none;
 		position: absolute;
 		top: -2rem;
 		left: 0;
@@ -399,13 +392,7 @@
 			}
 
 			#portal-marquee {
-				--mask: linear-gradient(to right,
-						transparent,
-						black 0.5rem,
-						black calc(100% - 0.5rem),
-						transparent);
-				-webkit-mask-image: var(--mask);
-				mask-image: var(--mask);
+				mask-image: linear-gradient(to right, transparent,black 0.5rem,black calc(100% - 0.5rem),transparent);
 				width: calc(2.6875rem + 1rem);
 
 				span {
@@ -574,7 +561,6 @@
 
 // Who's shy?
 #shy {
-	-webkit-appearance: none;
 	appearance: none;
 	transition: var(--transition);
 	border: none;
@@ -731,7 +717,7 @@
 
 	&-title {
 		margin: 0;
-		color: var(--primary-color);
+		color: var(--accent-color);
 		font-size: 1.5rem;
 		line-height: 1.25;
 	}
@@ -741,11 +727,9 @@
 	}
 
 	.marquee-wrapper {
-		--mask: linear-gradient(to right, transparent, black 1rem, black calc(100% - 1rem), transparent);
-		-webkit-mask-image: var(--mask);
 		display: flex;
 		position: relative;
-		mask-image: var(--mask);
+		mask-image: linear-gradient(to right, transparent, black 1rem, black calc(100% - 1rem), transparent);
 		margin: 0 -1rem;
 		overflow: hidden;
 
@@ -856,10 +840,8 @@
 			}
 
 			.icon {
-				--icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cpath d='M7 1v6H1v2h6v6h2V9h6V7H9V1zm0 0'/%3E%3C/svg%3E");
-				-webkit-mask-image: var(--icon);
 				vertical-align: -0.125em;
-				mask-image: var(--icon);
+				mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cpath d='M7 1v6H1v2h6v6h2V9h6V7H9V1zm0 0'/%3E%3C/svg%3E");
 				transition: var(--transition);
 				background-color: var(--fg-muted-4);
 				width: 1rem;
@@ -937,28 +919,22 @@
 	}
 
 	#dont {
-		--mask: url("assets/dont.png");
-		-webkit-mask-image: var(--mask);
-		-webkit-pointer-events: none;
-		-webkit-mask-size: cover;
 		position: absolute;
 		top: calc(-50% + -1.1875rem);
 		left: 6.5rem;
 		transform: scale(0.5);
 		transform-origin: left;
 		opacity: 0;
-		mask-image: var(--mask);
+		mask-image: url("assets/dont.png");
 		mask-size: cover;
 		transition: var(--transition);
-		background-color: var(--primary-color);
+		background-color: var(--accent-color);
 		width: 22.25rem;
 		height: 7.0625rem;
 		pointer-events: none;
 
 		@media (prefers-reduced-motion) {
-			--mask: url("assets/dont-static.png");
-			-webkit-mask-image: var(--mask);
-			mask-image: var(--mask);
+			mask-image: url("assets/dont-static.png");
 		}
 	}
 }
