@@ -563,6 +563,7 @@
 #shy {
 	appearance: none;
 	transition: var(--transition);
+	cursor: pointer;
 	border: none;
 	background-color: transparent;
 	padding: 0;
@@ -573,16 +574,12 @@
 	text-decoration-thickness: max(1px, 0.0625em);
 
 	&:hover {
-		cursor: pointer;
 		text-decoration-style: solid;
 	}
 
 	&:disabled {
+		cursor: not-allowed;
 		color: var(--fg-muted-5);
-
-		&:hover {
-			cursor: not-allowed;
-		}
 	}
 }
 
@@ -823,20 +820,20 @@
 			border-radius: var(--rounded-corner-small);
 			background-color: transparent;
 			padding: 0.5rem;
+			color: var(--fg-muted-4);
 			line-height: 0;
-			list-style: none;
 
 			&:hover {
 				box-shadow: var(--edge-highlight);
 				background-color: var(--fg-muted-1);
+				color: var(--fg-muted-5);
 			}
 
 			&:active {
 				transform: var(--active);
 			}
 
-			&::marker,
-			&::-webkit-details-marker {
+			&::before {
 				display: none;
 			}
 
@@ -844,7 +841,6 @@
 				vertical-align: -0.125em;
 				mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cpath d='M7 1v6H1v2h6v6h2V9h6V7H9V1zm0 0'/%3E%3C/svg%3E");
 				transition: var(--transition);
-				background-color: var(--fg-muted-4);
 				width: 1rem;
 				height: 1rem;
 			}
