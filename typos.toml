@@ -2,4 +2,4 @@
 extend-ignore-re = ["\\bBig Sur\\b", "\\bNed Ludd\\b"]
 
 [files]
-extend-exclude = ["themes/duckquill/*"]
+extend-exclude = ["themes/duckquill/*", "static/*.js"]
