@@ -119,7 +119,7 @@ blockquote {
 		background-color: transparent;
 		padding: 0;
 		color: var(--fg-muted-5);
-		font-size: smaller;
+		font-size: var(--font-size-small);
 
 		#john {
 			margin: 1rem auto 0;

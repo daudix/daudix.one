@@ -6,7 +6,7 @@
 
 	&-title {
 		color: var(--accent-color);
-		font-size: x-large;
+		font-size: var(--font-size-x-large);
 	}
 
 	&-container {
@@ -23,7 +23,7 @@
 		margin-block-start: 0.5rem;
 		padding: 0;
 		color: var(--fg-muted-5);
-		font-size: smaller;
+		font-size: var(--font-size-small);
 		list-style: none;
 	}
 }
