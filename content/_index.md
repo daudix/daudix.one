@@ -115,7 +115,7 @@ And lastly, to quote [Jeffrey](https://hyperreal.coffee/about/): "I’m <button 
 
 ## Works
 
-<div id="window">
+<div id="window" class="drop-shadow">
   <div id="window-contents">
     <div id="rainbow-text">
       <span>silly little goober with a creative mind</span>
