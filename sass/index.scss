@@ -766,7 +766,9 @@
 				li {
 					display: flex;
 					flex-shrink: 0;
+					margin: 0;
 					margin-inline-end: 0.25rem;
+					padding: 0;
 
 					a img:active {
 						transform: var(--active);
