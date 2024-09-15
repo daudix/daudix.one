@@ -194,19 +194,19 @@
 	#polaroid-title {
 		margin-block-start: 0.5rem;
 		font-weight: bold;
-		font-size: 0.5em;
+		font-size: xx-small;
 		text-transform: uppercase;
 	}
 
 	#statuscafe-content {
 		margin-block-start: 0.25rem;
-		font-size: 0.5625rem;
+		font-size: x-small;
 	}
 
 	#statuscafe-link {
 		margin-block-start: 0.5rem;
 		font-weight: normal;
-		font-size: 0.5625rem;
+		font-size: x-small;
 		text-decoration: none;
 
 		&::after {
@@ -227,7 +227,7 @@
 			filter: var(--printed);
 			transition: var(--transition);
 			color: black;
-			font-size: 1rem;
+			font-size: medium;
 			line-height: 0; // Avoid the link becoming too high
 		}
 	}
@@ -567,7 +567,7 @@
 	background-color: transparent;
 	padding: 0;
 	color: var(--fg-color);
-	font-size: 1em;
+	font-size: medium;
 	text-decoration: underline;
 	text-decoration-style: dotted;
 	text-decoration-thickness: max(1px, 0.0625em);
@@ -712,14 +712,13 @@
 
 #bumps {
 	position: relative;
-	padding-block-start: 0.75rem;
+	padding-block-start: 0.5rem;
 	overflow: hidden;
 
 	&-title {
 		margin: 0;
 		color: var(--accent-color);
-		font-size: 1.5rem;
-		line-height: 1.25;
+		font-size: x-large;
 	}
 
 	p:has(&-subtitle) {

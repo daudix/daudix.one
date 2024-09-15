@@ -67,7 +67,7 @@
 	#title {
 		display: inline-block;
 		margin: 0 1rem;
-		font-size: 1.5rem;
+		font-size: x-large;
 	}
 
 	#avatar-container {
@@ -166,7 +166,7 @@
 		&+label {
 			transition: var(--transition);
 			color: var(--fg-muted-5);
-			font-size: 0.875rem;
+			font-size: smaller;
 
 			.icon {
 				vertical-align: -0.25em;

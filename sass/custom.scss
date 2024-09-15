@@ -85,7 +85,6 @@ blockquote {
 	padding: 0.125rem 0.375rem;
 	color: var(--accent-color);
 	font-weight: bold;
-	font-size: 1rem;
 
 	&:hover {
 		cursor: pointer;
@@ -131,7 +130,7 @@ blockquote {
 		background-color: transparent;
 		padding: 0;
 		color: var(--fg-muted-5);
-		font-size: 0.875rem;
+		font-size: smaller;
 
 		#john {
 			margin: 1rem auto 0;
