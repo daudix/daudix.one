@@ -101,9 +101,9 @@
 		&::before {
 			display: block;
 			position: relative;
-			top: 0;
-			left: -1rem;
 			transition: var(--transition);
+			inset-block-start: 0;
+			inset-inline-start: -1rem;
 			border: 0.25rem solid var(--fg-muted-3);
 			border-radius: 50%;
 			background-color: var(--bg-color);

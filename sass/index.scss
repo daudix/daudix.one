@@ -1,40 +1,3 @@
-// body {
-// 	// Synthwave plane
-// 	&::before,
-// 	&::after {
-// 		display: block;
-// 		position: fixed;
-// 		bottom: 0;
-// 		left: -50vw;
-// 		transform: perspective(8rem) rotateX(60deg);
-// 		z-index: -1;
-// 		width: 200vw;
-// 		height: 16rem;
-// 		content: "";
-// 	}
-
-// 	&::before {
-// 		background-image: linear-gradient(var(--accent-color-alpha) 25%, transparent 75%);
-// 	}
-
-// 	&::after {
-// 		filter: drop-shadow(0 0.125rem 0.125rem var(--accent-color)) drop-shadow(0 0.125rem 0.25rem var(--accent-color));
-// 		animation: plane infinite linear 1s;
-// 		background-image:
-// 			linear-gradient(to right, var(--accent-color-alpha) 0.0625rem, transparent 0.0625rem),
-// 			linear-gradient(to right, var(--accent-color-alpha) 0.0625rem, transparent 0.0625rem), // Repeat the gradient twice so that it appears brighter
-// 			linear-gradient(var(--accent-color-alpha) 0.0625rem, transparent 0.0625rem);
-// 		background-size: 2rem 2rem;
-// 		background-repeat: repeat;
-
-// 		@keyframes plane {
-// 			to {
-// 				background-position-y: 2rem;
-// 			}
-// 		}
-// 	}
-// }
-
 #hug {
 	margin-block-start: 0;
 	width: 4rem;
@@ -109,12 +72,12 @@
 	&::after {
 		display: block;
 		position: absolute;
-		top: 0.25rem;
-		left: calc(50% - 0.7813rem);
 		// Dirty hack to avoid transformation of the thumbtack
 		transform: perspective(32rem) rotate(-5deg) rotateX(-5deg);
 		z-index: 1;
 		transition: var(--transition);
+		inset-block-start: 0.25rem;
+		inset-inline-start: calc(50% - 0.7813rem);
 		background-image: url("assets/thumbtack.png");
 		background-size: cover;
 		width: 1.5625rem;
@@ -132,8 +95,8 @@
 		}
 
 		#polaroid-shine {
-			top: -5rem;
 			transform: rotate(35deg);
+			inset-block-start: -5rem;
 			background-color: transparent;
 		}
 
@@ -144,13 +107,13 @@
 
 	#polaroid-shine {
 		position: absolute;
-		top: -2rem;
-		left: 0;
 		transform: rotate(30deg);
 		z-index: 1;
 		mix-blend-mode: screen;
 		filter: blur(0.25rem);
 		transition: var(--transition-longer);
+		inset-block-start: -2rem;
+		inset-inline-start: 0;
 		background-color: rgb(255 255 255 / 30%);
 		width: 14rem;
 		height: 8rem;
@@ -163,8 +126,8 @@
 
 		&::after {
 			position: absolute;
-			right: 0;
-			bottom: -0.25rem;
+			inset-block-end: -0.25rem;
+			inset-inline-end: 0;
 			background-image: linear-gradient(to right, #ff6188, #fc9867, #ffd866, #a9dc76, #78dce8, #ab9df2);
 			width: 3rem;
 			height: 0.5rem;
@@ -176,9 +139,9 @@
 
 			&:last-child {
 				position: absolute;
-				top: 0;
-				left: 0;
 				opacity: 0;
+				inset-block-start: 0;
+				inset-inline-start: 0;
 			}
 		}
 	}
@@ -264,11 +227,11 @@
 #boss {
 	display: block;
 	position: absolute;
-	top: 0.25rem;
-	left: -1.1875rem;
 	transform: scale(0.5);
 	opacity: 0;
 	transition: var(--transition);
+	inset-block-start: 0.25rem;
+	inset-inline-start: -1.1875rem;
 	image-rendering: pixelated;
 	width: 1rem;
 	height: 1rem;
@@ -298,10 +261,10 @@
 			&::after {
 				display: inline-block;
 				position: absolute;
-				top: -0.1875rem;
 				transform: scale(0.5);
 				opacity: 0;
 				transition: var(--transition);
+				inset-block-start: -0.1875rem;
 				image-rendering: pixelated;
 				content: "";
 			}
@@ -321,7 +284,7 @@
 
 			&::before,
 			&::after {
-				left: -0.25rem;
+				inset-inline-start: -0.25rem;
 			}
 
 			&::before {
@@ -340,7 +303,7 @@
 
 			&::before,
 			&::after {
-				right: -0.25rem;
+				inset-inline-end: -0.25rem;
 			}
 
 			&::before {
@@ -371,8 +334,8 @@
 				&:last-child {
 					display: none;
 					position: absolute;
-					top: 0;
-					left: 0;
+					inset-block-start: 0;
+					inset-inline-start: 0;
 				}
 			}
 		}
@@ -587,12 +550,12 @@
 // Ah, that's who
 #fluttershy {
 	position: fixed;
-	right: calc((100vw - min(var(--container-width), 90%)) / 2);
-	bottom: 0;
 	transform: translateY(100%);
 	opacity: 0;
 	animation: peek var(--transition-long);
 	margin: 0;
+	inset-block-end: 0;
+	inset-inline-end: calc((100vw - min(var(--container-width), 90%)) / 2);
 
 	@keyframes peek {
 
@@ -618,10 +581,7 @@
 	#window-contents {
 		position: absolute;
 		// Get around bulky empty space caused by the image border
-		top: -2rem;
-		right: -3.625rem;
-		bottom: -3.4375rem;
-		left: -3.625rem;
+		inset: -2rem -3.625rem -3.375rem -3.625rem;
 		background-color: #2d2a2e;
 		padding: 1rem;
 		overflow: auto;
@@ -814,9 +774,9 @@
 		summary {
 			display: inline-block;
 			position: absolute;
-			top: 0.5rem;
-			right: 0.5rem;
 			transition: var(--transition);
+			inset-block-start: 0.5rem;
+			inset-inline-end: 0.5rem;
 			border-radius: var(--rounded-corner-small);
 			background-color: transparent;
 			padding: 0.5rem;
@@ -917,14 +877,14 @@
 
 	#dont {
 		position: absolute;
-		top: calc(-50% + -1.1875rem);
-		left: 6.5rem;
 		transform: scale(0.5);
 		transform-origin: left;
 		opacity: 0;
 		mask-image: url("assets/dont.png");
 		mask-size: cover;
 		transition: var(--transition);
+		inset-block-start: calc(-50% + -1.1875rem);
+		inset-inline-start: 6.5rem;
 		background-color: var(--accent-color);
 		width: 22.25rem;
 		height: 7.0625rem;
@@ -946,13 +906,13 @@
 }
 
 #subway-surfers {
-	top: 1rem;
-	right: 1rem;
+	inset-block-start: 1rem;
+	inset-inline-end: 1rem;
 	aspect-ratio: 0.45 / 1;
 }
 
 #family-guy {
-	bottom: 1rem;
-	left: 1rem;
+	inset-block-end: 1rem;
+	inset-inline-start: 1rem;
 	aspect-ratio: 16 / 9;
 }
