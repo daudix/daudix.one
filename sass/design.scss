@@ -9,14 +9,14 @@
 	@else {
 		// COLORS
 		--fg-color: rgb(207 192 159);
-		--fg-muted-1: rgb(255 255 255 / 0.05);
-		--fg-muted-2: rgb(255 255 255 / 0.1);
-		--fg-muted-3: rgb(255 255 255 / 0.2);
-		--fg-muted-4: rgb(255 255 255 / 0.5);
-		--fg-muted-5: rgb(255 255 255 / 0.6);
-		--nav-bg: rgb(25 25 25 / 0.7);
+		--fg-muted-1: rgb(255 255 255 / 5%);
+		--fg-muted-2: rgb(255 255 255 / 10%);
+		--fg-muted-3: rgb(255 255 255 / 20%);
+		--fg-muted-4: rgb(255 255 255 / 50%);
+		--fg-muted-5: rgb(255 255 255 / 60%);
+		--nav-bg: rgb(25 25 25 / 70%);
 		--accent-color: rgb(207 192 159);
-		--contrast-color: rgb(0 0 0 / 0.8);
+		--contrast-color: rgb(0 0 0 / 80%);
 	}
 }
 

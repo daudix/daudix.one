@@ -148,9 +148,10 @@
 		left: 0;
 		transform: rotate(30deg);
 		z-index: 1;
+		mix-blend-mode: screen;
 		filter: blur(0.25rem);
 		transition: var(--transition-longer);
-		background-color: rgb(255 255 255 / 0.3);
+		background-color: rgb(255 255 255 / 30%);
 		width: 14rem;
 		height: 8rem;
 		pointer-events: none;
@@ -186,7 +187,7 @@
 	#statuscafe-content,
 	#statuscafe-link {
 		display: block;
-		color: rgb(0 0 0 / 0.8);
+		color: rgb(0 0 0 / 80%);
 		line-height: 1;
 		font-family: var(--font-monospace-code);
 	}
@@ -850,7 +851,7 @@
 			position: absolute;
 			backdrop-filter: var(--blur);
 			inset: 3rem 0 0;
-			box-shadow: var(--edge-highlight), var(--shadow);
+			box-shadow: var(--edge-highlight), var(--shadow), 0 0 0 16rem var(--shade-color);
 			border-radius: var(--rounded-corner);
 			background-color: var(--nav-bg);
 			padding: 1rem;
