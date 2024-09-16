@@ -138,7 +138,7 @@ section {
 	margin-inline-start: calc((-100vw + 100%) / 2);
 	margin-inline-end: calc((-100vw + 100%) / 2);
 	margin-block-start: 2rem;
-	box-shadow: var(--edge-highlight);
+	box-shadow: var(--edge-highlight), var(--shadow-glass);
 	background-image: radial-gradient(circle, var(--fg-muted-1) 0.0625rem, transparent 0.0625rem);
 	background-size: 1rem 1rem;
 
@@ -186,4 +186,5 @@ section {
 #site-footer nav {
 	-webkit-backdrop-filter: var(--blur);
 	backdrop-filter: var(--blur);
+	box-shadow: var(--edge-highlight), var(--shadow-glass);
 }
