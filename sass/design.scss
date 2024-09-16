@@ -87,7 +87,7 @@ h2 {
 
 			div {
 				img {
-					opacity: 0.5;
+					opacity: var(--dim-opacity);
 				}
 
 				&::before {
@@ -142,12 +142,35 @@ section {
 	background-image: radial-gradient(circle, var(--fg-muted-1) 0.0625rem, transparent 0.0625rem);
 	background-size: 1rem 1rem;
 
+	&#original-icons img,
+	&#redrawn-icons img {
+		width: 8rem;
+		height: 8rem;
+	}
+
 	&#original-icons {
 		background-color: var(--blue-bg);
 	}
 
 	&#redrawn-icons {
 		background-color: var(--green-bg);
+
+		a div:hover {
+			img {
+				opacity: 0;
+			}
+
+			img.before {
+				opacity: var(--dim-opacity);
+			}
+		}
+
+		img.before {
+			position: absolute;
+			top: 0;
+			left: 0;
+			opacity: 0;
+		}
 	}
 
 	&#wallpapers {
