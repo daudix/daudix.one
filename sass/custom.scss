@@ -125,6 +125,7 @@ blockquote {
 		font-size: var(--font-size-small);
 
 		summary {
+			color: var(--fg-muted-4);
 			font-weight: bold;
 
 			&::before {
