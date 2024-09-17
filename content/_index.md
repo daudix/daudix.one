@@ -374,15 +374,15 @@ I also have a [Gemini capsule](gemini://gmi.daudix.one) on [flounder](https://fl
           container.appendChild(subwaySurfers);
       }
 
-      let familyGuy = document.getElementById("family-guy");
-      if (familyGuy === null) {
-          let familyGuy = document.createElement("iframe");
-          familyGuy.setAttribute("id", "family-guy");
-          familyGuy.setAttribute("src", "https://www.youtube.com/embed/mn-Tlb_wfjc?autoplay=1");
-          familyGuy.setAttribute("name", "youtube embed");
-          familyGuy.setAttribute("allow", "autoplay; encrypted-media");
-          familyGuy.setAttribute("allowfullscreen", "true");
-          container.appendChild(familyGuy);
+      let oddlySatisfying = document.getElementById("oddly-satisfying");
+      if (oddlySatisfying === null) {
+          let oddlySatisfying = document.createElement("iframe");
+          oddlySatisfying.setAttribute("id", "oddly-satisfying");
+          oddlySatisfying.setAttribute("src", "https://www.youtube.com/embed/ebnQsTk9s-s?autoplay=1");
+          oddlySatisfying.setAttribute("name", "youtube embed");
+          oddlySatisfying.setAttribute("allow", "autoplay; encrypted-media");
+          oddlySatisfying.setAttribute("allowfullscreen", "true");
+          container.appendChild(oddlySatisfying);
       }
   }
 </script>
