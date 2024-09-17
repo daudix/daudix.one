@@ -1,12 +1,12 @@
 #to-do {
 	display: flex;
 	flex-direction: column;
-	padding-block-start: 0.5rem;
 	aspect-ratio: 1 / 1;
 
 	&-title {
 		color: var(--accent-color);
 		font-size: var(--font-size-x-large);
+		line-height: 1;
 	}
 
 	&-container {
@@ -20,7 +20,7 @@
 
 	ul {
 		margin: 0;
-		margin-block-start: 0.5rem;
+		margin-block-start: 0.75rem;
 		padding: 0;
 		color: var(--fg-muted-5);
 		font-size: var(--font-size-small);

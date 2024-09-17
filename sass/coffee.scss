@@ -19,7 +19,7 @@
 
 	#blobfox-message {
 		position: absolute;
-		transform: scale(0.5) rotate(90deg) translateY(-100%);
+		transform: scale(50%) rotate(90deg) translateY(-100%);
 		transform-origin: top right;
 		opacity: 0;
 		transition: var(--transition-longer);
@@ -91,7 +91,7 @@
 		}
 
 		&:has(#avatar:active)::after {
-			transform: translateY(-50%) scale(0.75);
+			transform: translateY(-50%) scale(75%);
 			opacity: 1;
 		}
 
@@ -108,7 +108,7 @@
 			height: 6rem;
 
 			&:active {
-				transform: translateY(-50%) scale(0.75);
+				transform: translateY(-50%) scale(75%);
 				filter: hue-rotate(90deg);
 			}
 		}

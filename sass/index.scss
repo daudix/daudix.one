@@ -227,7 +227,7 @@
 #boss {
 	display: block;
 	position: absolute;
-	transform: scale(0.5);
+	transform: scale(50%);
 	opacity: 0;
 	transition: var(--transition);
 	inset-block-start: 0.25rem;
@@ -261,7 +261,7 @@
 			&::after {
 				display: inline-block;
 				position: absolute;
-				transform: scale(0.5);
+				transform: scale(50%);
 				opacity: 0;
 				transition: var(--transition);
 				inset-block-start: -0.1875rem;
@@ -669,17 +669,16 @@
 
 #bumps {
 	position: relative;
-	padding-block-start: 0.5rem;
 	overflow: hidden;
 
 	&-title {
-		margin: 0;
 		color: var(--accent-color);
 		font-size: var(--font-size-x-large);
+		line-height: 1;
 	}
 
 	p:has(&-subtitle) {
-		margin-block-start: 0.25rem;
+		margin-block-start: 0.5rem;
 	}
 
 	.marquee-wrapper {
@@ -877,7 +876,7 @@
 
 	#dont {
 		position: absolute;
-		transform: scale(0.5);
+		transform: scale(50%);
 		transform-origin: left;
 		opacity: 0;
 		mask-image: url("assets/dont.png");
