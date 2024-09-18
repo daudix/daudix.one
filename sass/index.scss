@@ -114,7 +114,7 @@
 		transition: var(--transition-longer);
 		inset-block-start: -2rem;
 		inset-inline-start: 0;
-		background-color: rgb(255 255 255 / 30%);
+		background-color: rgb(255 255 255 / 0.3);
 		width: 14rem;
 		height: 8rem;
 		pointer-events: none;
@@ -150,7 +150,7 @@
 	#statuscafe-content,
 	#statuscafe-link {
 		display: block;
-		color: rgb(0 0 0 / 80%);
+		color: rgb(0 0 0 / 0.8);
 		line-height: 1;
 		font-family: var(--font-monospace-code);
 	}
@@ -227,7 +227,7 @@
 #boss {
 	display: block;
 	position: absolute;
-	transform: scale(50%);
+	transform: scale(0.5);
 	opacity: 0;
 	transition: var(--transition);
 	inset-block-start: 0.25rem;
@@ -261,7 +261,7 @@
 			&::after {
 				display: inline-block;
 				position: absolute;
-				transform: scale(50%);
+				transform: scale(0.5);
 				opacity: 0;
 				transition: var(--transition);
 				inset-block-start: -0.1875rem;
@@ -876,7 +876,7 @@
 
 	#dont {
 		position: absolute;
-		transform: scale(50%);
+		transform: scale(0.5);
 		transform-origin: left;
 		opacity: 0;
 		mask-image: url("assets/dont.png");

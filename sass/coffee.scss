@@ -19,7 +19,7 @@
 
 	#blobfox-message {
 		position: absolute;
-		transform: scale(50%) rotate(90deg) translateY(-100%);
+		transform: scale(0.5) rotate(90deg) translateY(-100%);
 		transform-origin: top right;
 		opacity: 0;
 		transition: var(--transition-longer);
@@ -48,7 +48,7 @@
 			}
 
 			#blobfox-message {
-				transform: scale(1) rotate(0) translateY(0);
+				transform: none;
 				opacity: 1;
 			}
 		}
@@ -91,7 +91,7 @@
 		}
 
 		&:has(#avatar:active)::after {
-			transform: translateY(-50%) scale(75%);
+			transform: translateY(-50%) scale(0.75);
 			opacity: 1;
 		}
 
@@ -108,7 +108,7 @@
 			height: 6rem;
 
 			&:active {
-				transform: translateY(-50%) scale(75%);
+				transform: translateY(-50%) scale(0.75);
 				filter: hue-rotate(90deg);
 			}
 		}
@@ -193,30 +193,30 @@ body:has(#skeuo-switch:checked) {
 	#site-nav {
 		-webkit-backdrop-filter: none;
 		backdrop-filter: none;
-		outline: 0.0625rem solid rgb(255 255 255 / 80%);
+		outline: 0.0625rem solid rgb(255 255 255 / 0.8);
 		box-shadow:
 			var(--edge-highlight),
-			0 0.375rem 2rem rgb(0 0 0 / 30%);
-		background-image: linear-gradient(rgb(224 224 224 / 95%),
-				rgb(212 212 212 / 90%) 50%,
-				rgb(192 192 192 / 80%) 50%);
+			0 0.375rem 2rem rgb(0 0 0 / 0.3);
+		background-image: linear-gradient(rgb(224 224 224 / 0.95),
+				rgb(212 212 212 / 0.9) 50%,
+				rgb(192 192 192 / 0.8) 50%);
 		background-color: transparent;
 
 		nav {
-			filter: drop-shadow(0 0.0625rem 0 rgb(255 255 255 / 80%));
+			filter: drop-shadow(0 0.0625rem 0 rgb(255 255 255 / 0.8));
 
 			a,
 			#search button {
-				color: rgb(0 0 0 / 70%);
+				color: rgb(0 0 0 / 0.7);
 
 				&:hover {
-					background-color: rgb(255 255 255 / 40%);
+					background-color: rgb(255 255 255 / 0.4);
 					color: black;
 				}
 
 				&.active {
 					&::before {
-						border-block-end: 0.25rem solid rgb(0 0 0 / 70%);
+						border-block-end: 0.25rem solid rgb(0 0 0 / 0.7);
 					}
 
 					&:hover::before {
@@ -232,9 +232,9 @@ body:has(#skeuo-switch:checked) {
 				backdrop-filter: none;
 				box-shadow: var(--edge-highlight);
 				background-image: linear-gradient(to top,
-						rgb(224 224 224 / 95%),
-						rgb(212 212 212 / 90%) 50%,
-						rgb(192 192 192 / 80%) 50%);
+						rgb(224 224 224 / 0.95),
+						rgb(212 212 212 / 0.9) 50%,
+						rgb(192 192 192 / 0.8) 50%);
 				background-color: transparent;
 			}
 
@@ -242,25 +242,25 @@ body:has(#skeuo-switch:checked) {
 				-webkit-backdrop-filter: none;
 				backdrop-filter: none;
 				box-shadow: var(--edge-highlight);
-				background-image: linear-gradient(rgb(224 224 224 / 95%),
-						rgb(212 212 212 / 90%) 50%,
-						rgb(192 192 192 / 80%) 50%);
+				background-image: linear-gradient(rgb(224 224 224 / 0.95),
+						rgb(212 212 212 / 0.9) 50%,
+						rgb(192 192 192 / 0.8) 50%);
 				background-color: transparent;
 
 				.item {
-					background-color: rgb(255 255 255 / 40%);
+					background-color: rgb(255 255 255 / 0.4);
 				}
 			}
 		}
 	}
 
 	#site-footer {
-		box-shadow: inset 0 0.25rem 0.75rem rgb(0 0 0 / 40%);
+		box-shadow: inset 0 0.25rem 0.75rem rgb(0 0 0 / 0.4);
 		background:
 			radial-gradient(black 15%, transparent 16%) 0 0,
 			radial-gradient(black 15%, transparent 16%) 0.5rem 0.5rem,
-			radial-gradient(rgb(255 255 255 / 10%) 15%, transparent 20%) 0 0.0625rem,
-			radial-gradient(rgb(255 255 255 / 10%) 15%, transparent 20%) 0.5rem 0.5625rem;
+			radial-gradient(rgb(255 255 255 / 0.1) 15%, transparent 20%) 0 0.0625rem,
+			radial-gradient(rgb(255 255 255 / 0.1) 15%, transparent 20%) 0.5rem 0.5625rem;
 		background-size: 1rem 1rem;
 		background-color: hsl(0 0% 27%);
 
@@ -271,15 +271,15 @@ body:has(#skeuo-switch:checked) {
 
 		nav {
 			box-shadow:
-				inset 0 0.0625rem 0.25rem rgb(0 0 0 / 50%),
-				0 0.0625rem 0 rgb(255 255 255 / 10%);
+				inset 0 0.0625rem 0.25rem rgb(0 0 0 / 0.5),
+				0 0.0625rem 0 rgb(255 255 255 / 0.1);
 			background-color: hsl(0 0% 22%);
 
 			a {
-				text-shadow: 0 -0.0625rem 0 rgb(0 0 0 / 40%);
+				text-shadow: 0 -0.0625rem 0 rgb(0 0 0 / 0.4);
 
 				&:hover {
-					background-color: rgb(255 255 255 / 20%);
+					background-color: rgb(255 255 255 / 0.2);
 					color: white;
 				}
 			}
@@ -288,10 +288,10 @@ body:has(#skeuo-switch:checked) {
 		.link {
 			display: inline-block;
 			box-shadow:
-				inset rgb(255 255 255 / 20%) 0 0.0625rem 0 0,
+				inset rgb(255 255 255 / 0.2) 0 0.0625rem 0 0,
 				0 0.125rem 0 0 hsl(0 0% 12%);
 			background-color: hsl(0 0% 22%);
-			text-shadow: 0 -0.0625rem 0 rgb(0 0 0 / 40%);
+			text-shadow: 0 -0.0625rem 0 rgb(0 0 0 / 0.4);
 
 			&:hover {
 				filter: brightness(1.1);
@@ -300,20 +300,20 @@ body:has(#skeuo-switch:checked) {
 			&:active {
 				transform: translateY(0.125rem);
 				filter: brightness(0.9);
-				box-shadow: inset rgb(255 255 255 / 20%) 0 0.0625rem 0 0;
+				box-shadow: inset rgb(255 255 255 / 0.2) 0 0.0625rem 0 0;
 			}
 		}
 
 		#john-container {
-			box-shadow: 0 0.375rem 2rem rgb(0 0 0 / 30%);
+			box-shadow: 0 0.375rem 2rem rgb(0 0 0 / 0.3);
 		}
 	}
 
 	#coffee-container {
-		box-shadow: 0 0.375rem 2rem rgb(0 0 0 / 30%);
+		box-shadow: 0 0.375rem 2rem rgb(0 0 0 / 0.3);
 		background-image: url("coffee/paper.webp");
 		color: hsl(32 26% 20%);
-		text-shadow: 0 0.0625rem 0 rgb(255 255 255 / 30%);
+		text-shadow: 0 0.0625rem 0 rgb(255 255 255 / 0.3);
 
 		#coffee-banner {
 			box-shadow: var(--shadow);
@@ -335,56 +335,56 @@ body:has(#skeuo-switch:checked) {
 					transform: translateY(0);
 					filter: brightness(0.9);
 					box-shadow:
-						inset 0 0.0625rem 0.1875rem rgb(0 0 0 / 50%),
-						0 0.0625rem 0 rgb(255 255 255 / 10%) !important;
+						inset 0 0.0625rem 0.1875rem rgb(0 0 0 / 0.5),
+						0 0.0625rem 0 rgb(255 255 255 / 0.1) !important;
 				}
 
 				&#ko-fi {
 					box-shadow:
-						inset rgb(255 255 255 / 30%) 0 0.0625rem 0 0,
+						inset rgb(255 255 255 / 0.3) 0 0.0625rem 0 0,
 						0 0.125rem 0 0 hsl(1 100% 38%);
 					background-image: linear-gradient(hsl(1 100% 78%),
 							hsl(1 100% 58%));
-					text-shadow: 0 -0.0625rem 0 rgb(0 0 0 / 40%);
+					text-shadow: 0 -0.0625rem 0 rgb(0 0 0 / 0.4);
 				}
 
 				&#liberapay {
 					box-shadow:
-						inset rgb(255 255 255 / 30%) 0 0.0625rem 0 0,
+						inset rgb(255 255 255 / 0.3) 0 0.0625rem 0 0,
 						0 0.125rem 0 0 hsl(48 93% 32%);
 					background-image: linear-gradient(hsl(48 93% 62%),
 							hsl(48 93% 42%));
-					text-shadow: 0 0.0625rem 0 rgb(255 255 255 / 40%);
+					text-shadow: 0 0.0625rem 0 rgb(255 255 255 / 0.4);
 				}
 
 				&#monero {
 					box-shadow:
-						inset rgb(255 255 255 / 30%) 0 0.0625rem 0 0,
+						inset rgb(255 255 255 / 0.3) 0 0.0625rem 0 0,
 						0 0.125rem 0 0 hsl(24 100% 30%);
 					background-image: linear-gradient(hsl(24 100% 60%),
 							hsl(24 100% 40%));
-					text-shadow: 0 -0.0625rem 0 rgb(0 0 0 / 40%);
+					text-shadow: 0 -0.0625rem 0 rgb(0 0 0 / 0.4);
 				}
 
 				&#paypal {
 					box-shadow:
-						inset rgb(255 255 255 / 30%) 0 0.0625rem 0 0,
+						inset rgb(255 255 255 / 0.3) 0 0.0625rem 0 0,
 						0 0.125rem 0 0 hsl(219 100% 16%);
 					background-image: linear-gradient(hsl(219 100% 46%),
 							hsl(219 100% 26%));
-					text-shadow: 0 -0.0625rem 0 rgb(0 0 0 / 40%);
+					text-shadow: 0 -0.0625rem 0 rgb(0 0 0 / 0.4);
 				}
 			}
 		}
 
 		#skeuo-switch {
 			box-shadow:
-				inset 0 0.0625rem 0.25rem rgb(0 0 0 / 50%),
-				0 0.0625rem 0 rgb(255 255 255 / 10%);
+				inset 0 0.0625rem 0.25rem rgb(0 0 0 / 0.5),
+				0 0.0625rem 0 rgb(255 255 255 / 0.1);
 
 			&+label {
-				filter: drop-shadow(0 0.0625rem 0 rgb(255 255 255 / 30%));
-				color: hsl(32 26% 20% / 80%);
+				filter: drop-shadow(0 0.0625rem 0 rgb(255 255 255 / 0.3));
+				color: hsl(32 26% 20% / 0.8);
 				text-shadow: none;
 			}
 
@@ -395,7 +395,7 @@ body:has(#skeuo-switch:checked) {
 			&::before {
 				box-shadow:
 					inset 0 0.0625rem 0 rgb(255 255 255),
-					0 0.0625rem 0.375rem rgb(0 0 0 / 50%);
+					0 0.0625rem 0.375rem rgb(0 0 0 / 0.5);
 				background-image: linear-gradient(darkgray, white);
 				background-size: cover;
 			}
@@ -407,31 +407,31 @@ body:has(#skeuo-switch:checked) {
 			radial-gradient(circle at 0% 0%,
 				var(--accent-color-alpha),
 				transparent) top left / cover,
-			linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 50%)),
+			linear-gradient(rgb(0 0 0 / 0.5), rgb(0 0 0 / 0.5)),
 			url("coffee/fabric.webp");
 		background-blend-mode: hard-light, normal, normal;
 
 		#site-nav {
-			outline: 0.0625rem solid rgb(0 0 0 / 80%);
-			background-image: linear-gradient(rgb(80 80 80 / 95%),
-					rgb(32 32 32 / 90%) 50%,
-					rgb(0 0 0 / 80%) 50%);
+			outline: 0.0625rem solid rgb(0 0 0 / 0.8);
+			background-image: linear-gradient(rgb(80 80 80 / 0.95),
+					rgb(32 32 32 / 0.9) 50%,
+					rgb(0 0 0 / 0.8) 50%);
 
 			nav {
-				filter: drop-shadow(0 -0.0625rem 0 rgb(0 0 0 / 80%));
+				filter: drop-shadow(0 -0.0625rem 0 rgb(0 0 0 / 0.8));
 
 				a,
 				#search button {
-					color: rgb(255 255 255 / 70%);
+					color: rgb(255 255 255 / 0.7);
 
 					&:hover {
-						background-color: rgb(255 255 255 / 10%);
+						background-color: rgb(255 255 255 / 0.1);
 						color: white;
 					}
 
 					&.active {
 						&::before {
-							border-block-end: 0.25rem solid rgb(255 255 255 / 70%);
+							border-block-end: 0.25rem solid rgb(255 255 255 / 0.7);
 						}
 
 						&:hover::before {
@@ -444,18 +444,18 @@ body:has(#skeuo-switch:checked) {
 			#search-container {
 				#search-bar {
 					background-image: linear-gradient(to top,
-							rgb(80 80 80 / 95%),
-							rgb(32 32 32 / 90%) 50%,
-							rgb(0 0 0 / 80%) 50%);
+							rgb(80 80 80 / 0.95),
+							rgb(32 32 32 / 0.90) 50%,
+							rgb(0 0 0 / 0.8) 50%);
 				}
 
 				#search-results {
-					background-image: linear-gradient(rgb(80 80 80 / 95%),
-							rgb(32 32 32 / 90%) 50%,
-							rgb(0 0 0 / 80%) 50%);
+					background-image: linear-gradient(rgb(80 80 80 / 0.95),
+							rgb(32 32 32 / 0.9) 50%,
+							rgb(0 0 0 / 0.8) 50%);
 
 					.item {
-						background-color: rgb(255 255 255 / 10%);
+						background-color: rgb(255 255 255 / 0.1);
 					}
 				}
 			}
@@ -474,7 +474,7 @@ body:has(#skeuo-switch:checked) {
 
 			.link {
 				box-shadow:
-					inset rgb(255 255 255 / 20%) 0 0.0625rem 0 0,
+					inset rgb(255 255 255 / 0.2) 0 0.0625rem 0 0,
 					0 0.125rem 0 0 black;
 				background-color: hsl(0 0% 10%);
 			}

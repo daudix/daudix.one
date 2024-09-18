@@ -5,7 +5,7 @@ body {
 		display: block;
 		position: fixed;
 		z-index: -1;
-		filter: brightness(50%);
+		filter: brightness(0.5);
 		background-image: url("design/curtain.webp");
 		background-size: contain;
 		background-repeat: repeat-x;
@@ -14,14 +14,14 @@ body {
 		content: "";
 
 		@media (prefers-color-scheme: dark) {
-			filter: brightness(20%);
+			filter: brightness(0.2);
 		}
 	}
 
 	&::after {
 		display: block;
 		position: fixed;
-		filter: saturate(120%) brightness(150%);
+		filter: saturate(1.2) brightness(1.5);
 		background: url("design/curtain-l.webp"), url("design/curtain-r.webp");
 		background-position:
 			top left,
@@ -34,7 +34,7 @@ body {
 		content: "";
 
 		@media (prefers-color-scheme: dark) {
-			filter: saturate(120%) brightness(1);
+			filter: saturate(1.2) brightness(1);
 		}
 	}
 }

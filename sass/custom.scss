@@ -3,18 +3,18 @@
 @include theme-variables using ($theme) {
 	@if $theme =="dark" {
 		// COLORS
-		--bg-overlay: linear-gradient(rgb(0 0 0 / 90%), rgb(0 0 0 / 90%));
-		--shade-color: rgb(0 0 0 / 25%);
+		--bg-overlay: linear-gradient(rgb(0 0 0 / 0.9), rgb(0 0 0 / 0.9));
+		--shade-color: rgb(0 0 0 / 0.25);
 	}
 
 	@else {
 		// COLORS
-		--bg-overlay: linear-gradient(rgb(255 255 255 / 80%), rgb(255 255 255 / 80%));
-		--shade-color: rgb(0 0 0 / 7%);
+		--bg-overlay: linear-gradient(rgb(255 255 255 / 0.8), rgb(255 255 255 / 0.8));
+		--shade-color: rgb(0 0 0 / 0.07);
 
 		// FILTERS
-		--printed: contrast(200%) brightness(75%) grayscale(100%);
-		--drop-shadow: drop-shadow(0 0.08rem 0.1rem rgb(0 0 0 / 35%)) drop-shadow(0 0.4rem 0.7rem rgb(0 0 0 / 18%));
+		--printed: contrast(2) brightness(0.75) grayscale(1);
+		--drop-shadow: drop-shadow(0 0.08rem 0.1rem rgb(0 0 0 / 0.35)) drop-shadow(0 0.4rem 0.7rem rgb(0 0 0 / 0.18));
 	}
 }
 
