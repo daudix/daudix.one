@@ -22,8 +22,8 @@ bottom_footnotes = true
 index_format = "elasticlunr_json"
 
 [extra]
-accent_color = "#9141ac"
-accent_color_dark = "#c061cb"
+accent_color = "#a2326c"
+accent_color_dark = "#ffa0d8"
 fix_contrast_dark = true
 issues_url = "https://codeberg.org/daudix/website/issues"
 source_url = "https://codeberg.org/daudix/website"
