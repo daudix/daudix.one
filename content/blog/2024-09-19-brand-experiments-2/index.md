@@ -6,7 +6,7 @@ tags = ["100DaysToOffload", "Design", "Inkscape"]
 [extra]
 banner = "banner.webp"
 [extra.comments]
-id = ""
+id = "113165388369757692"
 +++
 
 Remember when I said in the previous blog post:
