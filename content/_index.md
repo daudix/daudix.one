@@ -143,7 +143,7 @@ Have a look at my [designs](@/design/index.md); mostly icons, but also some wall
 <div id="netscape" class="marquee-wrapper">
 <div class="marquee">
 
-- [![a proud member of the blue team of 512KB club](assets/88x31/blue-team.gif#pixels#transparent#no-hover)](https://512kb.club)
+<!-- - [![a proud member of the blue team of 512KB club](assets/88x31/blue-team.gif#pixels#transparent#no-hover)](https://512kb.club) -->
 - [![aperturelabs](assets/88x31/aperturelabs.gif#pixels#transparent#no-hover)](https://www.aperturescience.com)
 - [![ddg](assets/88x31/ddg.gif#pixels#transparent#no-hover)](https://duckduckgo.com)
 - [![fediring](assets/88x31/fediring.gif#pixels#transparent#no-hover)](https://fediring.net)
@@ -185,7 +185,7 @@ Have a look at my [designs](@/design/index.md); mostly icons, but also some wall
 - ![up-all-night](assets/88x31/up-all-night.gif#pixels#transparent#no-hover)
 - ![yarrr](assets/88x31/yarrr.gif#pixels#transparent#no-hover)
 <!-- Mirror of the above -->
-- [![a proud member of the blue team of 512KB club](assets/88x31/blue-team.gif#pixels#transparent#no-hover)](https://512kb.club)
+<!-- - [![a proud member of the blue team of 512KB club](assets/88x31/blue-team.gif#pixels#transparent#no-hover)](https://512kb.club) -->
 - [![aperturelabs](assets/88x31/aperturelabs.gif#pixels#transparent#no-hover)](https://www.aperturescience.com)
 - [![ddg](assets/88x31/ddg.gif#pixels#transparent#no-hover)](https://duckduckgo.com)
 - [![fediring](assets/88x31/fediring.gif#pixels#transparent#no-hover)](https://fediring.net)
