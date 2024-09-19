@@ -13,6 +13,7 @@ This is the least fun page on this website. Deal with it.
 <strong id="to-do-title">To-do</strong>
 <div id="to-do-container">
 
+- [ ] Add section with logos to Design
 - [ ] Add section with unused icons to Design
 - [ ] /uses page
 - [ ] /now page
