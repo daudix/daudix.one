@@ -3,6 +3,8 @@ title = "Personal Branding Experiments #2"
 description = "Experimenting with my logo once again, with something actually new this time."
 [taxonomies]
 tags = ["100DaysToOffload", "Design", "Inkscape"]
+[extra]
+banner = "banner.webp"
 [extra.comments]
 id = ""
 +++
