@@ -49,20 +49,20 @@ TL;DR: Here's the results of my experiments:
 
 <div class="media-grid-markdown">
 
-[![bubbles](bubbles.png)](https://codeberg.org/daudix/archive/raw/branch/main/daudix/experiments/bubbles.png)
-[![candy](candy.png)](https://codeberg.org/daudix/archive/raw/branch/main/daudix/experiments/candy.png)
-[![dejavu](dejavu.png)](https://codeberg.org/daudix/archive/raw/branch/main/daudix/experiments/dejavu.png)
-[![mesh](mesh.png)](https://codeberg.org/daudix/archive/raw/branch/main/daudix/experiments/mesh.png)
-[![mesh alt](mesh-alt.png)](https://codeberg.org/daudix/archive/raw/branch/main/daudix/experiments/mesh-alt.png)
-[![mono](mono.png)](https://codeberg.org/daudix/archive/raw/branch/main/daudix/experiments/mono.png)
+[![bubbles](bubbles.png)](https://codeberg.org/daudix/archive/raw/commit/47b37a11a8df0d8656cf3e0858d64c1511b384dd/daudix/experiments/bubbles.png)
+[![candy](candy.png)](https://codeberg.org/daudix/archive/raw/commit/47b37a11a8df0d8656cf3e0858d64c1511b384dd/daudix/experiments/candy.png)
+[![dejavu](dejavu.png)](https://codeberg.org/daudix/archive/raw/commit/47b37a11a8df0d8656cf3e0858d64c1511b384dd/daudix/experiments/dejavu.png)
+[![mesh](mesh.png)](https://codeberg.org/daudix/archive/raw/commit/47b37a11a8df0d8656cf3e0858d64c1511b384dd/daudix/experiments/mesh.png)
+[![mesh alt](mesh-alt.png)](https://codeberg.org/daudix/archive/raw/commit/47b37a11a8df0d8656cf3e0858d64c1511b384dd/daudix/experiments/mesh-alt.png)
+[![mono](mono.png)](https://codeberg.org/daudix/archive/raw/commit/47b37a11a8df0d8656cf3e0858d64c1511b384dd/daudix/experiments/mono.png)
 </div>
 
 Now, a bit about each of them (in the order in which the logotars appear):
 
-- Bubbles: A while ago I did a silly [experiment](https://codeberg.org/daudix/archive/raw/branch/main/daudix/experiments/metaballs.png) where I remade my logotar in Blender using real meta*balls*, and it turned out pretty decent; I even used it for a day or two on Mastodon. Since I still had the `.blend` file on my PC, I thought why not try to create something I had been wanting to do for a while–soap bubbles! (shout out to [this tutorial](https://www.youtube.com/watch?v=9myqCVH3IKA) for the bubble material)
+- Bubbles: A while ago I did a silly [experiment](https://codeberg.org/daudix/archive/raw/commit/47b37a11a8df0d8656cf3e0858d64c1511b384dd/daudix/experiments/metaballs.png) where I remade my logotar in Blender using real meta*balls*, and it turned out pretty decent; I even used it for a day or two on Mastodon. Since I still had the `.blend` file on my PC, I thought why not try to create something I had been wanting to do for a while–soap bubbles! (shout out to [this tutorial](https://www.youtube.com/watch?v=9myqCVH3IKA) for the bubble material)
 - Candy: Had some fun with layer blend modes that turned into this skeuomorphic tasty-looking thing. See those "rays" in the background? I like rays like that :P
 - Déjà Vu: Reimagining of my current logotar; quite familiar and yet different in some way.
-- Mesh: Boldly inspired by [this elementaryOS logo](https://raw.githubusercontent.com/elementary/brand/master/logomark-mesh.png). What I like about it is that it doesn't use purple exclusively, but rather a spectrum of colors taken from the [Monokai Pro palette](https://github.com/subtheme-dev/monokai-pro/blob/master/colors/default.yaml); the same colors used in the rainbow strip on the Polaroid picture on the homepage. For me it's kind of important, because I don't want my next logotar to stop me from changing my "brand color", if that makes sense. I'm pretty fed up with the current [Purple 2](https://developer.gnome.org/hig/reference/palette.html) to be honest. What's complicated about not being tied to a single color is that I have no idea what to do with things like my 88x31 button.
+- Mesh: Boldly inspired by [this elementaryOS logo](https://raw.githubusercontent.com/elementary/brand/f4c51a70190b63332e62bb633fe99ac801935aef/logomark-mesh.png). What I like about it is that it doesn't use purple exclusively, but rather a spectrum of colors taken from the [Monokai Pro palette](https://github.com/subtheme-dev/monokai-pro/blob/4978c01ff3116e4dd19825d93e4e6c182d361764/colors/default.yaml); the same colors used in the rainbow strip on the Polaroid picture on the homepage. For me it's kind of important, because I don't want my next logotar to stop me from changing my "brand color", if that makes sense. I'm pretty fed up with the current [Purple 2](https://developer.gnome.org/hig/reference/palette.html) to be honest. What's complicated about not being tied to a single color is that I have no idea what to do with things like my 88x31 button.
 - Mesh (alt): Ditto, but inverted(?). I don't like it because it's a little too colorful for my taste.
 - Mono: The laziest and most recent experiment, if you can even call it that.
 
@@ -81,7 +81,7 @@ I meant to say that I conduct an A/B testing in the real world scenarios to dete
 {% alert(edit=true) %}
 Silly me just realized that the blueprint logo I made for the banner is actually another experiment! I might explore this direction further, I'm pretty sure it'll look swag in purple.
 
-[![blueprint](blueprint.png)](https://codeberg.org/daudix/archive/raw/branch/main/daudix/experiments/blueprint.png)
+[![blueprint](blueprint.png)](https://codeberg.org/daudix/archive/raw/commit/47b37a11a8df0d8656cf3e0858d64c1511b384dd/daudix/experiments/blueprint.png)
 {% end %}
 
 ## Conclusion
