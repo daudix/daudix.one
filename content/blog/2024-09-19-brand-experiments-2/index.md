@@ -9,7 +9,7 @@ banner = "banner.webp"
 id = "113165388369757692"
 +++
 
-Remember when I said in the previous blog post:
+Remember when I wrote in the previous blog post:
 
 > Experimented with my personal branding, this time completely new designs executed in monochrome. About this in the next post later today, I suppose.
 
