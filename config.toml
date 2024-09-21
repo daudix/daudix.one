@@ -44,7 +44,7 @@ links = [
 [extra.footer]
 show_copyright = true
 show_powered_by = true
-show_john = true
+show_john = false
 show_fediring = true
 show_increment = true
 links = [
