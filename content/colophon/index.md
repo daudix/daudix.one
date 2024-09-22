@@ -55,9 +55,8 @@ Well, at first I [migrated to Codeberg](@/blog/2023-07-15-migration-from-github-
 Most likely I forgot to credit someone. Sorry about that >_<
 
 - Everyone in [Duckquill's "Thanks To"](https://duckquill.daudix.one/#thanks-to).
-- [Jeremy Thomas](https://unsplash.com/@jeremythomasphoto) for the [galaxy image](https://unsplash.com/photos/the-stars-and-galaxy-as-seen-from-rocky-mountain-national-park-4dpAqfTbvKA) used in the metadata card.
-- [Vylet Pony](https://www.vyletpony.com) for inspiring the design of the refreshed homepage. <small>(specifically [ANTONYMPH](https://www.youtube.com/watch?v=CNPdO5TZ1DQ) and [I DON'T NEED TO BE FIXED](https://www.youtube.com/watch?v=xMzxVVXTGjE))</small>
-- [sadgrl.online](https://goblin-heart.net/sadgrl/) for the "static" [tiled background](https://goblin-heart.net/sadgrl/webmastery/downloads/tiledbgs). <small>(it's barely visible but it's there)</small>
+- [sadgrl.online](https://goblin-heart.net/sadgrl/) for the "static" [tiled background](https://goblin-heart.net/sadgrl/webmastery/downloads/tiledbgs), also used in metadata card.
 - [Volpeon](https://volpeon.ink) for [neofoxes](https://volpeon.ink/emojis/neofox/) on the "home" and "coffee" pages.
+- [Vylet Pony](https://www.vyletpony.com) for inspiring the design of the homepage. <small>([ANTONYMPH](https://www.youtube.com/watch?v=CNPdO5TZ1DQ) and [I DON'T NEED TO BE FIXED](https://www.youtube.com/watch?v=xMzxVVXTGjE) in particular)</small>
 - "dwb" and "jgs" for the ASCII art on the "blog" and "tags" pages respectively.
 - Everyone who supported me and said good stuff. <small>(you know who you are, thank you sincerely <3)</small>
