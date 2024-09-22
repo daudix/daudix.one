@@ -45,7 +45,7 @@
 		}
 	}
 
-	@media only screen and (max-width: 758px) {
+	@media only screen and (max-width: 756px) {
 		margin: 2rem auto 1rem;
 	}
 }
@@ -61,13 +61,16 @@
 	margin-inline-start: 1.5rem;
 	margin-block-start: 2rem;
 	box-shadow: var(--shadow-raised);
-	// I know that polaroids have knife-sharp corners,
-	// that's only to make sure shine gets clipped in Firefox
 	border-radius: var(--rounded-corner-small);
 	background-color: white;
 	padding: 0.5rem;
 	width: 10rem;
 	overflow: hidden;
+
+	@media only screen and (max-width: 756px) {
+		float: none;
+		margin: 2rem auto 0;
+	}
 
 	&::after {
 		display: block;
@@ -194,11 +197,6 @@
 			font-size: var(--font-size-medium);
 			line-height: 0; // Avoid the link becoming too high
 		}
-	}
-
-	@media only screen and (max-width: 758px) {
-		float: none;
-		margin: 2rem auto 0;
 	}
 }
 
