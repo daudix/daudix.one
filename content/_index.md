@@ -307,8 +307,8 @@ I have a website on [neocities](https://neocities.org); it's a bit empty at the 
 
 I also have a [Gemini capsule](gemini://gmi.daudix.one) on [flounder](https://flounder.online). I recently changed it to serve as a place for jotting down small notes rather than being a mirror of this website. See [this post](@/blog/2024-07-13-repurposing-gemini-capsule/index.md) for the reasons behind this decision. <small>(you can also _finger_ me at `daudix@flounder.online`)</small>
 
-<div class="dialog-buttons">
-  <button id="rizz" class="inline-button" onmouseover="vineBoom()" onfocus="vineBoom()" onclick="rizzItUp()">Rizz It Up</button>
+<div id="rizz-dialog" class="dialog-buttons">
+  <button id="rizz" class="inline-button" onclick="rizzItUp()">Rizz It Up</button>
   <div id="dont"></div>
 </div>
 
@@ -354,14 +354,12 @@ I also have a [Gemini capsule](gemini://gmi.daudix.one) on [flounder](https://fl
 </script>
 
 <script type="text/javascript">
-  function vineBoom() {
-    const vineBoomSoundEffect = "assets/vine-boom.mp3";
-    new Audio(vineBoomSoundEffect).play();
-  }
-
   function rizzItUp() {
-      const rizzSoundEffect = "assets/rizz.mp3";
-      new Audio(rizzSoundEffect).play();
+      const rizzDialog = document.getElementById("rizz-dialog");
+      rizzDialog.remove();
+
+      const vineBoomSoundEffect = "assets/vine-boom.mp3";
+      new Audio(vineBoomSoundEffect).play();
 
       const container = document.getElementById("main");
 
