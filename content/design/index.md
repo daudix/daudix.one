@@ -26,6 +26,11 @@ redrawn_icons = [
   {name = "Punchclock", icon = "codes.loers.Punchclock.svg", url = "https://flathub.org/apps/codes.loers.Punchclock"},
   {name = "Sticky Notes", icon = "com.vixalien.sticky.svg", url = "https://flathub.org/apps/com.vixalien.sticky"},
 ]
+unused_icons = [
+  {name = "Babylon", icon = "org.nickvision.babylon.svg"},
+  {name = "Compito", icon = "org.nickvision.Compito.svg"},
+  {name = "Sveglia", icon = "org.nickvision.sveglia.svg"},
+]
 wallpapers = [
   {name = "Amber", wallpaper = "amber-l.webp", wallpaper_dark = "amber-d.webp", url = "https://codeberg.org/daudix/archive/src/branch/main/wallpapers/amber"},
   {name = "Amber v2", wallpaper = "amber-v2-l.webp", wallpaper_dark = "amber-v2-d.webp", url = "https://codeberg.org/daudix/archive/src/branch/main/wallpapers/amber-v2"},
@@ -33,5 +38,9 @@ wallpapers = [
   {name = "Finder", wallpaper = "finder-gnome-l.webp", wallpaper_dark = "finder-gnome-d.webp", url = "https://codeberg.org/daudix/archive/src/branch/main/wallpapers/finder"},
   {name = "Lava", wallpaper = "lava-l.webp", wallpaper_dark = "lava-d.webp", url = "https://codeberg.org/daudix/archive/src/branch/main/wallpapers/lava"},
   {name = "Waves", wallpaper = "waves-l.webp", wallpaper_dark = "waves-d.webp", url = "https://codeberg.org/daudix/archive/src/branch/main/wallpapers/waves"},
+]
+logos = [
+  {name = "Distrobox", logo = "distrobox-light.svg", logo_mono = "distrobox-light-mono.svg", logo_dark = "distrobox-dark.svg", logo_dark_mono = "distrobox-dark-mono.svg", url = "https://distrobox.it"},
+  {name = "NimaOS", logo = "nimaos-light.svg", logo_mono = "nimaos-light-mono.svg", logo_dark = "nimaos-dark.svg", logo_dark_mono = "nimaos-dark-mono.svg", url = "https://github.com/NimaOS"},
 ]
 +++

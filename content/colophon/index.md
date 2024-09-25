@@ -13,8 +13,7 @@ This is the least fun page on this website. Deal with it.
 <strong id="to-do-title">To-do</strong>
 <div id="to-do-container">
 
-- [ ] Add section with logos to Design
-- [ ] Add section with unused icons to Design
+- [ ] Restyle Fediring
 - [ ] /uses page
 - [ ] /now page
 - [ ] Redo social links, maybe even draw some custom icons (?)
@@ -24,6 +23,8 @@ This is the least fun page on this website. Deal with it.
 - [ ] Make the player on neocities display my current Spotify/last.fm
 - [ ] Style piclog.blue page
 - [ ] New ARG/Easter Egg type of thingy (?) (inspirations: Portal "dinosaur" ARG, SSTV)
+- [x] Add section with logos to Design
+- [x] Add section with unused icons to Design
 - [x] ~~Have some fun with the overscroll space~~
 - [x] Move this to-do from Codeberg to this website
 - [x] ~~Simplify game icon styles (use markdown list with `:nth-child` thingy and `::before`)~~

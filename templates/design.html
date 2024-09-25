@@ -13,16 +13,16 @@
 		<br />
 		<div class="media-grid">
 			{% for icon in page.extra.original_icons %}
-			<a href="{{ icon.url }}">
-				<div>
-					<img
-						class="no-hover full transparent drop-shadow"
-						alt="{{ icon.name }}"
-						src="icons/original-icons/{{ icon.icon }}"
-					/>
-				</div>
-				<small>{{ icon.name }}</small>
-			</a>
+				<a class="grid-item" href="{{ icon.url }}">
+					<div class="grid">
+						<img
+							class="no-hover full transparent drop-shadow"
+							alt="{{ icon.name }}"
+							src="icons/original-icons/{{ icon.icon }}"
+						/>
+					</div>
+					<small>{{ icon.name }}</small>
+				</a>
 			{% endfor %}
 		</div>
 		<br />
@@ -35,21 +35,46 @@
 		<br />
 		<div class="media-grid">
 			{% for icon in page.extra.redrawn_icons %}
-			<a href="{{ icon.url }}">
-				<div>
-					<img
-						class="no-hover full transparent drop-shadow"
-						alt="{{ icon.name }}"
-						src="icons/redrawn-icons/{{ icon.icon }}"
-					/>
-					<img
-						class="no-hover full transparent drop-shadow before"
-						alt="{{ icon.name }}"
-						src="icons/redrawn-icons/before/{{ icon.icon }}"
-					/>
+				<a class="grid-item" href="{{ icon.url }}">
+					<div class="grid">
+						<img
+							class="no-hover full transparent drop-shadow"
+							alt="{{ icon.name }}"
+							src="icons/redrawn-icons/{{ icon.icon }}"
+						/>
+						<img
+							class="no-hover full transparent drop-shadow before"
+							alt="{{ icon.name }}"
+							src="icons/redrawn-icons/before/{{ icon.icon }}"
+						/>
+					</div>
+					<small>{{ icon.name }}</small>
+				</a>
+			{% endfor %}
+		</div>
+		<br />
+	</div>
+</section>
+<section id="unused-icons">
+	<div class="container">
+		<h2>Unused Icons</h2>
+		<p>Unused icons that didn't find their way for one reason or another.</p>
+		<p>
+			<small>There was much more, but unfortunately I've lost the sources :&#60;</small>
+		</p>
+		<br />
+		<div class="media-grid">
+			{% for icon in page.extra.unused_icons %}
+				<div class="grid-item">
+					<div class="grid">
+						<img
+							class="no-hover full transparent drop-shadow"
+							alt="{{ icon.name }}"
+							src="icons/unused-icons/{{ icon.icon }}"
+						/>
+					</div>
+					<small>{{ icon.name }}</small>
 				</div>
-				<small>{{ icon.name }}</small>
-			</a>
 			{% endfor %}
 		</div>
 		<br />
@@ -65,20 +90,59 @@
 		<br />
 		<div class="media-grid">
 			{% for wallpaper in page.extra.wallpapers %}
-			<a href="{{ wallpaper.url }}">
-				<picture>
-					<source
-						srcset="wallpapers/{{ wallpaper.wallpaper_dark }}"
-						media="(prefers-color-scheme: dark)"
-					/>
-					<img
-						class="no-hover full"
-						alt="{{ wallpaper.name }}"
-						src="wallpapers/{{ wallpaper.wallpaper }}"
-					/>
-				</picture>
-				<small>{{ wallpaper.name }}</small>
-			</a>
+				<a class="grid-item" href="{{ wallpaper.url }}">
+					<picture>
+						<source
+							srcset="wallpapers/{{ wallpaper.wallpaper_dark }}"
+							media="(prefers-color-scheme: dark)"
+						/>
+						<img
+							class="no-hover full"
+							alt="{{ wallpaper.name }}"
+							src="wallpapers/{{ wallpaper.wallpaper }}"
+						/>
+					</picture>
+					<small>{{ wallpaper.name }}</small>
+				</a>
+			{% endfor %}
+		</div>
+		<br />
+	</div>
+</section>
+<section id="logos">
+	<div class="container">
+		<h2>Logos</h2>
+		<p>It ain't much, but it's honest work.</p>
+		<br />
+		<div class="media-grid">
+			{% for logo in page.extra.logos %}
+				<a class="grid-item" href="{{ logo.url }}">
+					<div>
+						<picture>
+							<source
+								srcset="logos/{{ logo.logo_dark }}"
+								media="(prefers-color-scheme: dark)"
+							/>
+							<img
+								class="no-hover full"
+								alt="{{ logo.name }}"
+								src="logos/{{ logo.logo }}"
+							/>
+						</picture>
+						<picture>
+							<source
+								srcset="logos/{{ logo.logo_dark_mono }}"
+								media="(prefers-color-scheme: dark)"
+							/>
+							<img
+								class="no-hover full mono"
+								alt="{{ logo.name }}"
+								src="logos/{{ logo.logo_mono }}"
+							/>
+						</picture>
+					</div>
+					<small>{{ logo.name }}</small>
+				</a>
 			{% endfor %}
 		</div>
 		<br />

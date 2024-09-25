@@ -52,7 +52,7 @@ h2 {
 	gap: 1rem;
 	text-align: center;
 
-	a {
+	.grid-item {
 		transition: var(--transition);
 		border-radius: calc(var(--rounded-corner) + 1rem);
 		padding: 1rem;
@@ -63,7 +63,7 @@ h2 {
 			background-color: var(--fg-muted-1);
 			text-decoration: none;
 
-			div {
+			div.grid {
 				img {
 					opacity: var(--dim-opacity);
 				}
@@ -74,14 +74,10 @@ h2 {
 			}
 		}
 
-		&:active {
-			transform: var(--active);
-		}
-
 		div {
 			position: relative;
 
-			&::before {
+			&.grid::before {
 				position: absolute;
 				opacity: 0;
 				mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='128' height='128' style='display:inline' version='1.0'%3E%3Ccircle cx='64' cy='64' r='59.5' style='fill:none;stroke:%23000;stroke-width:1'/%3E%3Crect width='87' height='111' x='20.5' y='8.5' rx='8' ry='8' style='fill:none;stroke:%23000;stroke-width:1'/%3E%3Crect width='103' height='103' x='12.5' y='12.5' rx='8' ry='8' style='fill:none;stroke:%23000;stroke-width:1'/%3E%3Crect width='111' height='87' x='8.5' y='28.5' rx='8' ry='8' style='fill:none;stroke:%23000;stroke-width:1'/%3E%3C/svg%3E");
@@ -105,7 +101,12 @@ h2 {
 		small {
 			display: block;
 			margin-block-start: 0.25rem;
+			font-weight: bold;
 		}
+	}
+
+	a.grid-item:active {
+		transform: var(--active);
 	}
 }
 
@@ -151,8 +152,37 @@ section {
 		}
 	}
 
+	&#unused-icons {
+		background-color: var(--fg-muted-2);
+	}
+
 	&#wallpapers {
 		background-color: var(--purple-bg);
+	}
+
+	&#logos {
+		background-color: var(--yellow-bg);
+
+		a div:hover {
+			img.mono {
+				opacity: 1;
+			}
+		}
+
+		img {
+			background-color: white;
+
+			@media (prefers-color-scheme: dark) {
+				background-color: black;
+			}
+		}
+
+		img.mono {
+			position: absolute;
+			opacity: 0;
+			inset-block-start: 0;
+			inset-inline-start: 0;
+		}
 	}
 
 	h2 {
