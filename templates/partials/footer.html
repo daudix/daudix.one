@@ -74,15 +74,12 @@
 	{%- endif %}
 
 	{%- if config.extra.footer.show_fediring  %}
-		<p>
-			<small>
-				<a href="https://fediring.net/previous?host={{ config.base_url | replace(from='https://', to='') }}">←</a>
-				<a href="https://fediring.net">Fediring</a>
-				<span>•</span>
-				<a href="https://fediring.net/random">Random</a>
-				<a href="https://fediring.net/next?host={{ config.base_url | replace(from='https://', to='') }}">→</a>
-			</small>
-		</p>
+		<div id="fediring">
+			<a class="link external" href="https://fediring.net">Fediring</a>
+			<a id="fediring-previous" class="link" href="https://fediring.net/previous?host={{ config.base_url | replace(from='https://', to='') }}"><i class="icon"></i></a>
+			<a id="fediring-random" class="link" href="https://fediring.net/random"><i class="icon"></i></a>
+			<a id="fediring-next" class="link" href="https://fediring.net/next?host={{ config.base_url | replace(from='https://', to='') }}"><i class="icon"></i></a>
+		</div>
 	{%- endif %}
 
 	{%- if config.extra.footer.show_increment %}
