@@ -1,6 +1,7 @@
 +++
 title = "Download Deleted Photos from Unsplash in Original Quality"
 description = "Sometimes a link to an Unsplash image returns 404, what can be done in this case?"
+updated = 2024-09-26
 [taxonomies]
 tags = ["100DaysToOffload", "Unsplash"]
 [extra]
@@ -30,7 +31,7 @@ Unfortunately, [his website](https://www.lubomirminar.com) didn't have the photo
 
 But the fact that a low quality thumbnail was used for the banner kept bothering me, so I decided to locate the source.
 
-Upon inspecting the link to the thumbnail image on Unsplash, I noticed that you can change some of its attributes to get a higher quality image, so I returned to the mountain photo snapshot and copied the link to it, removed the Wayback Machine prefix, and to my surprise it was still available, probably because `images.unsplash.com` keeps the deleted images anyway to avoid breaking hardlinks.
+Upon inspecting the link to the thumbnail image on Unsplash, I noticed that you can change some of its attributes to get a higher quality image, so I returned to the mountain photo snapshot and copied the link to it, removed the Wayback Machine prefix, and to my surprise it was still available, probably because `images.unsplash.com` keeps the deleted images anyway to avoid breaking hotlinks.
 
 ## The solution
 
