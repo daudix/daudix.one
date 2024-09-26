@@ -309,8 +309,6 @@ I have a website on [neocities](https://neocities.org); it's a bit empty at the 
 
 I also have a [Gemini capsule](gemini://gmi.daudix.one) on [flounder](https://flounder.online). I recently changed it to serve as a place for jotting down small notes rather than being a mirror of this website. See [this post](@/blog/2024-07-13-repurposing-gemini-capsule/index.md) for the reasons behind this decision. <small>(you can also _finger_ me at `daudix@flounder.online`)</small>
 
-<iframe id="john" src="https://john.citrons.xyz/embed?ref=daudix.one"></iframe>
-
 <div id="rizz-dialog" class="dialog-buttons">
   <button id="rizz" class="inline-button" onclick="rizzItUp()">Rizz It Up</button>
   <div id="dont"></div>
