@@ -66,13 +66,6 @@
 		</ul>
 	{%- endif %}
 
-	{%- if config.extra.footer.show_john %}
-		<details>
-			<summary>Johnvertisement</summary>
-			<iframe id="john" src="https://john.citrons.xyz/embed?ref={{ config.base_url | replace(from='https://', to='') }}"></iframe>
-		</details>
-	{%- endif %}
-
 	{%- if config.extra.footer.show_fediring  %}
 		<div id="fediring">
 			<a class="link external" href="https://fediring.net">Fediring</a>
@@ -80,9 +73,5 @@
 			<a id="fediring-random" class="link" href="https://fediring.net/random"><i class="icon"></i></a>
 			<a id="fediring-next" class="link" href="https://fediring.net/next?host={{ config.base_url | replace(from='https://', to='') }}"><i class="icon"></i></a>
 		</div>
-	{%- endif %}
-
-	{%- if config.extra.footer.show_increment %}
-		<iframe id="increment" src="https://incr.easrng.net/badge?key={{ config.base_url | replace(from='https://', to='') }}" title="increment badge"></iframe>
 	{%- endif %}
 </footer>

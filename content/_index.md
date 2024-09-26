@@ -185,6 +185,7 @@ Have a look at my [designs](@/design/index.md); mostly icons, but also some wall
 - ![sourcemissing](assets/88x31/sourcemissing.gif#pixels#transparent#no-hover)
 - ![up-all-night](assets/88x31/up-all-night.gif#pixels#transparent#no-hover)
 - ![yarrr](assets/88x31/yarrr.gif#pixels#transparent#no-hover)
+- <iframe id="increment" src="https://incr.easrng.net/badge?key=daudix.one" title="increment badge"></iframe>
 <!-- Mirror of the above -->
 <!-- - [![a proud member of the blue team of 512KB club](assets/88x31/blue-team.gif#pixels#transparent#no-hover)](https://512kb.club) -->
 - [![aperturelabs](assets/88x31/aperturelabs.gif#pixels#transparent#no-hover)](https://www.aperturescience.com)
@@ -228,6 +229,7 @@ Have a look at my [designs](@/design/index.md); mostly icons, but also some wall
 - ![sourcemissing](assets/88x31/sourcemissing.gif#pixels#transparent#no-hover)
 - ![up-all-night](assets/88x31/up-all-night.gif#pixels#transparent#no-hover)
 - ![yarrr](assets/88x31/yarrr.gif#pixels#transparent#no-hover)
+- <iframe id="increment" src="https://incr.easrng.net/badge?key=daudix.one" title="increment badge"></iframe>
 </div>
 </div>
 <div id="stamps" class="marquee-wrapper">
@@ -306,6 +308,8 @@ IndieWeb is something I really like; everything from 88x31 buttons to webrings i
 I have a website on [neocities](https://neocities.org); it's a bit empty at the moment, basically it's my playground where I can make bolder design choices than here. [Check it out](https://daudix.neocities.org).
 
 I also have a [Gemini capsule](gemini://gmi.daudix.one) on [flounder](https://flounder.online). I recently changed it to serve as a place for jotting down small notes rather than being a mirror of this website. See [this post](@/blog/2024-07-13-repurposing-gemini-capsule/index.md) for the reasons behind this decision. <small>(you can also _finger_ me at `daudix@flounder.online`)</small>
+
+<iframe id="john" src="https://john.citrons.xyz/embed?ref=daudix.one"></iframe>
 
 <div id="rizz-dialog" class="dialog-buttons">
   <button id="rizz" class="inline-button" onclick="rizzItUp()">Rizz It Up</button>

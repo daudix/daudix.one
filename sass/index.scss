@@ -354,7 +354,7 @@
 			}
 
 			#portal-marquee {
-				mask-image: linear-gradient(to right, transparent,black 0.5rem,black calc(100% - 0.5rem),transparent);
+				mask-image: linear-gradient(to right, transparent, black 0.5rem, black calc(100% - 0.5rem), transparent);
 				width: calc(2.6875rem + 1rem);
 
 				span {
@@ -760,6 +760,16 @@
 				animation-direction: reverse;
 			}
 		}
+
+		#increment {
+			margin: 0;
+			box-shadow: none;
+			border: none;
+			border-radius: 0;
+			background: url("https://incr.easrng.net/bg.gif");
+			width: 5.5rem;
+			height: 1.9375rem;
+		}
 	}
 
 	#bumps-bottom-sheet {
@@ -850,6 +860,11 @@
 			}
 		}
 	}
+}
+
+#john {
+	border-radius: 0;
+	aspect-ratio: 728 / 90;
 }
 
 #rizz-dialog {
