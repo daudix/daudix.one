@@ -13,6 +13,7 @@ This is the least fun page on this website. Deal with it.
 <strong id="to-do-title">To-do</strong>
 <div id="to-do-container">
 
+- [ ] Improve a11y (alt texts are awful and testing is barely present)
 - [ ] /uses page
 - [ ] /now page
 - [ ] Redo social links, maybe even draw some custom icons (?)

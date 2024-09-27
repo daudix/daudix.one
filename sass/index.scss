@@ -358,9 +358,9 @@
 				width: calc(2.6875rem + 1rem);
 
 				span {
-					animation: scroll 2s linear infinite;
+					animation: portal-scroll 2s linear infinite;
 
-					@keyframes scroll {
+					@keyframes portal-scroll {
 						to {
 							transform: translateX(-100%);
 						}

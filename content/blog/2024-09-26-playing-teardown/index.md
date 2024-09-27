@@ -1,7 +1,7 @@
 +++
 title = "Teardown - The Criminal Simulator"
 description = "Playing a fun game about tearing stuff down."
-updated = 2024-09-27
+updated = 2024-09-28
 [taxonomies]
 tags = ["100DaysToOffload", "Gaming", "Teardown"]
 [extra]
@@ -14,7 +14,7 @@ TL;DR: Fun game.
 
 As you may know, I occasionally play games, which is shocking in itself, but even more shocking is that I've never blogged about it, so let's change that! (well, I just don't know what to blog about xD)
 
-Teardown is a game released back in 2022, and I have played it on release on YouTube (as in, I watched let's plays) Recently I decided to replay it, and it's been pretty fun, the process of carefully coming up with an optimal route and then executing it in under 60 seconds is pretty entertaining. My little brother seems to enjoy watching all this happen as well.
+Teardown is a game released back in 2022, but I have played the early access version released in 2020 on YouTube (as in, I watched let's plays). Recently I decided to replay it, and it's been pretty fun, the process of carefully coming up with an optimal route and then executing it in under 60 seconds is pretty entertaining. My little brother seems to enjoy watching all this happen as well.
 
 In terms of visuals, it's pretty fresh, using voxel graphics à la [MagicaVoxel](https://ephtracy.github.io) along with semi-realistic physics that work very well together. It's fun to just walk around and smash stuff with a sledge, toss chairs around, break glass, demolish buildings using propane tanks, and such.
 
