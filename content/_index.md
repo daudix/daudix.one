@@ -136,9 +136,9 @@ Have a look at my [designs](@/design/index.md); mostly icons, but also some wall
 ## IndieWeb
 
 <aside id="bumps">
-<strong id="bumps-title">Bumps</strong>
+<strong>Bumps</strong>
 
-<small id="bumps-subtitle">**Bu**ttons + Sta**mps** = Bumps</small>
+<small>**Bu**ttons + Sta**mps** = Bumps</small>
 
 <div id="netscape" class="marquee-wrapper">
 <div class="marquee">
@@ -287,6 +287,7 @@ Have a look at my [designs](@/design/index.md); mostly icons, but also some wall
 <details id="bumps-bottom-sheet">
 <summary title="Link to me"><i class="icon"></i></summary>
 <div>
+<div>
 
 If you want to link back to me, use one of these buttons:
 
@@ -295,7 +296,7 @@ If you want to link back to me, use one of these buttons:
 {% alert(note=true) %}
 It's recommended to avoid hot-linking; instead, place a copy on your own site.
 {% end %}
-
+</div>
 </div>
 </details>
 </aside>
