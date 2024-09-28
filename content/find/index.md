@@ -25,7 +25,7 @@ Feel free to reach out to me on any of these! I'm usually too shy to start the c
 - [Signal](https://signal.me/#eu/vqDQLk2OAOC3aFdUbzUCGrqRlAB5TSrv2nO8dc7B92B4t5YpR01H-LQ5TmMTifA2) <small>(my phone [is burnt](@/blog/2024-07-08-using-dumbphone/index.md) so I have it installed in [Waydroid](https://waydro.id))</small>
 - [Telegram](https://t.me/ddaudix) <small>(Discord in terms of privacy, but advertises itself like it's not)</small>
 - [Email](mailto:me@daudix.one) <small>(I have email anxiety, so something from the above is preferred)</small>
-- ~~[XMPP](xmpp:daudix@nixnet.services)~~ <small>(there are rumors that the admin is a pedo, so currently looking for another server; better safe than sorry)</small>
+- [XMPP](xmpp:daudix@nixnet.services) <small>(Does anyone use it? Everyone seems to be on Matrix these days)</small>
 
 ## Socials
 
