@@ -22,7 +22,7 @@ Feel free to reach out to me on any of these! I'm usually too shy to start the c
 
 - [Discord](https://discord.com/users/650757995378114581) <small>(I prefer it to Matrix for the most part, but it's fine as well)</small>
 - [Matrix](https://matrix.to/#/@daudix:envs.net) <small>(I have a few alts, but I don't use them)</small>
-- [Signal](https://signal.me/#eu/vqDQLk2OAOC3aFdUbzUCGrqRlAB5TSrv2nO8dc7B92B4t5YpR01H-LQ5TmMTifA2) <small>(my phone [is burnt](@/blog/2024-07-08-using-dumbphone/index.md) so I have it installed in [Waydroid](https://waydro.id))</small>
+- [Signal](https://signal.me/#eu/b4KzM1OB3uW52mMywHUJa8h6yD4ATY_KXJJiuJtWUxOVAJP22PVO_qoNGFnf32W7) <small>(Telegram, but if they kept their privacy promises)</small>
 - [Telegram](https://t.me/ddaudix) <small>(Discord in terms of privacy, but advertises itself like it's not)</small>
 - [Email](mailto:me@daudix.one) <small>(I have email anxiety, so something from the above is preferred)</small>
 - [XMPP](xmpp:daudix@nixnet.services) <small>(Does anyone use it? Everyone seems to be on Matrix these days)</small>
