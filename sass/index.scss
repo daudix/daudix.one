@@ -28,8 +28,10 @@
 	}
 
 	#header {
+		--mask: url("assets/header.png");
 		-webkit-user-select: none;
-		mask-image: url("assets/header.png");
+		-webkit-mask-image: var(--mask);
+		mask-image: var(--mask);
 		mask-size: contain;
 		transition: var(--transition-longer);
 		margin: 0;
@@ -41,7 +43,7 @@
 		user-select: none;
 
 		@media (prefers-reduced-motion) {
-			mask-image: url("assets/header-static.png");
+			--mask: url("assets/header-static.png");
 		}
 	}
 
@@ -354,7 +356,9 @@
 			}
 
 			#portal-marquee {
-				mask-image: linear-gradient(to right, transparent, black 0.5rem, black calc(100% - 0.5rem), transparent);
+				--mask: linear-gradient(to right, transparent, black 0.5rem, black calc(100% - 0.5rem), transparent);
+				-webkit-mask-image: var(--mask);
+				mask-image: var(--mask);
 				width: calc(2.6875rem + 1rem);
 
 				span {
@@ -680,9 +684,11 @@
 	}
 
 	.marquee-wrapper {
+		--mask: linear-gradient(to right, transparent, black 1rem, black calc(100% - 1rem), transparent);
+		-webkit-mask-image: var(--mask);
 		display: flex;
 		position: relative;
-		mask-image: linear-gradient(to right, transparent, black 1rem, black calc(100% - 1rem), transparent);
+		mask-image: var(--mask);
 		margin: 0 -1rem;
 		overflow: hidden;
 
@@ -805,8 +811,10 @@
 			}
 
 			.icon {
+				--icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cpath d='M7 1v6H1v2h6v6h2V9h6V7H9V1zm0 0'/%3E%3C/svg%3E");
+				-webkit-mask-image: var(--icon);
 				vertical-align: -0.125em;
-				mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cpath d='M7 1v6H1v2h6v6h2V9h6V7H9V1zm0 0'/%3E%3C/svg%3E");
+				mask-image: var(--icon);
 				transition: var(--transition);
 				width: 1rem;
 				height: 1rem;
@@ -825,8 +833,10 @@
 			background-color: var(--nav-bg);
 
 			div {
+				--mask: linear-gradient(to bottom, transparent, black 1rem, black calc(100% - 1rem), transparent);
+				-webkit-mask-image: var(--mask);
 				flex: 1;
-				mask-image: linear-gradient(to bottom, transparent, black 1rem, black calc(100% - 1rem), transparent);
+				mask-image: var(--mask);
 				padding: 1rem;
 				padding-block-start: 0.75rem;
 				overflow: auto;
@@ -890,11 +900,13 @@
 	}
 
 	#dont {
+		--mask: url("assets/dont.png");
+		-webkit-mask-image: var(--mask);
 		position: absolute;
 		transform: scale(0.5);
 		transform-origin: left;
 		opacity: 0;
-		mask-image: url("assets/dont.png");
+		mask-image: var(--mask);
 		mask-size: cover;
 		transition: var(--transition);
 		inset-block-start: calc(-50% + -1.1875rem);
@@ -905,7 +917,7 @@
 		pointer-events: none;
 
 		@media (prefers-reduced-motion) {
-			mask-image: url("assets/dont-static.png");
+			--mask: url("assets/dont-static.png");
 		}
 	}
 }

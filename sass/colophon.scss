@@ -3,19 +3,22 @@
 	flex-direction: column;
 	aspect-ratio: 1 / 1;
 
-	& > strong {
+	&>strong {
 		color: var(--accent-color);
 		font-size: var(--font-size-x-large);
 		line-height: 1;
 	}
 
 	div {
+		--mask: linear-gradient(to bottom, transparent, black 1rem, black calc(100% - 1rem), transparent);
+		-webkit-mask-image: var(--mask);
 		flex: 1;
-		mask-image: linear-gradient(to bottom, transparent, black 1rem, black calc(100% - 1rem), transparent);
+		mask-image: var(--mask);
 		margin: 0 -1rem -1rem;
 		padding: 1rem;
 		padding-block-start: 0;
 		overflow: auto;
+
 	}
 
 	ul {
