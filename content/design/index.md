@@ -8,6 +8,7 @@ accent_color_dark = "#cfc09f"
 styles = ["design.css"]
 original_icons = [
   {name = "Bavarder", icon = "io.github.Bavarder.Bavarder.svg", url = "https://flathub.org/apps/io.github.Bavarder.Bavarder"},
+  # {name = "Cassiere", icon = "org.nickvision.cassiere.svg", url = "https://flathub.org/apps/org.nickvision.cassiere"},
   {name = "Cavalier", icon = "org.nickvision.cavalier.svg", url = "https://flathub.org/apps/org.nickvision.cavalier"},
   {name = "Flare", icon = "de.schmidhuberj.Flare.svg", url = "https://flathub.org/apps/de.schmidhuberj.Flare"},
   {name = "Halftone", icon = "io.github.tfuxu.Halftone.svg", url = "https://flathub.org/apps/io.github.tfuxu.Halftone"},
@@ -15,7 +16,6 @@ original_icons = [
   {name = "Lemonade", icon = "ml.mdwalters.Lemonade.svg", url = "https://flathub.org/apps/ml.mdwalters.Lemonade"},
   {name = "Pipeline", icon = "de.schmidhuberj.tubefeeder.svg", url = "https://flathub.org/apps/de.schmidhuberj.tubefeeder"},
   {name = "Railway", icon = "de.schmidhuberj.DieBahn.svg", url = "https://flathub.org/apps/de.schmidhuberj.DieBahn"},
-  # {name = "Sveglia", icon = "org.nickvision.sveglia.svg", url = "https://github.com/NickvisionApps/Sveglia"},
   {name = "Tagger", icon = "org.nickvision.tagger.svg", url = "https://flathub.org/apps/org.nickvision.tagger"},
 ]
 redrawn_icons = [
