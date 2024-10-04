@@ -5,6 +5,7 @@ updated = 2024-08-18
 [taxonomies]
 tags = ["100DaysToOffload", "Design", "Blender", "Inkscape"]
 [extra]
+scripts = ["audio.js"]
 banner = "banner.webp"
 toc = true
 [extra.comments]
@@ -35,7 +36,7 @@ Related: [Animation of it on YouTube](https://www.youtube.com/shorts/53Cv27Sjtgw
 
 That's right, it's a bold reference to a Portal 2 chapter with the same name, who might've guessed ¯\\\_\(ツ)\_\/¯
 
-Anyway, what I was talki- I mean writing about? Oh yeah, the logotar. One day I was visiting the [GNOME OS website](https://os.gnome.org/install/) and I saw this very cool illustration and I *really* liked the way the purple-blue gradient looked, and I did what I do when I like something. STOLE IT. <button class="audio" onclick="playAudio('scooby-doo.mp3')">Rehehehe</button>.
+Anyway, what I was talki- I mean writing about? Oh yeah, the logotar. One day I was visiting the [GNOME OS website](https://os.gnome.org/install/) and I saw this very cool illustration and I *really* liked the way the purple-blue gradient looked, and I did what I do when I like something. STOLE IT. {{ audio(url="scooby-doo.mp3", name="Rehehehe") }}.
 
 ![illustration](illustration.png)
 
@@ -89,9 +90,3 @@ Silly me just realized that the blueprint logo I made for the banner is actually
 That's about it, this was supposed to be a short and silly article that was supposed to be published the following day after I created these logotars, but I was constantly distracted from writing and ended up finishing it five days later. So... yeah, see you in the next one ^^
 
 P.S. I wholeheartedly hate the word "logotar".
-
-<script type="text/javascript">
-	function playAudio(url) {
-		new Audio(url).play();
-	}
-</script>

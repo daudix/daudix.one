@@ -23,9 +23,7 @@ body {
 		position: fixed;
 		filter: saturate(1.2) brightness(1.5);
 		background: url("design/curtain-l.webp"), url("design/curtain-r.webp");
-		background-position:
-			top left,
-			top right;
+		background-position: top left, top right;
 		background-size: calc(((100% - var(--container-width)) / 2) - 2rem) 100%;
 		background-repeat: no-repeat;
 		width: 100vw;

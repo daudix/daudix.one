@@ -63,7 +63,7 @@ Almost every single style and template has been reworked, resulting in a much ni
 - Source Code Pro font is now used for code blocks instead of system one.
 - New, animated 404 image.
 - Tags are now displayed next to the date, both in the post list and in the post itself. Check out this neat effect on hover!
-- Posts can now can be filtered by a tag, e.g you can filter only posts containing the `Devlog` tag.
+- Posts can now be filtered by a tag, e.g you can filter only posts containing the `Devlog` tag.
 - New post navigation (previous/next post links at the end of the post).
 - And more! ([initial migration commit](https://codeberg.org/daudix/pages/commit/0323f9658345ec5f254e24b4385c31ebe9a69f15), ~2500 changes!).
 

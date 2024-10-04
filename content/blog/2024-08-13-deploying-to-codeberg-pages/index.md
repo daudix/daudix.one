@@ -4,6 +4,7 @@ description = "Step-by-step guide to deploying a Zola website using Codeberg Pag
 [taxonomies]
 tags = ["100DaysToOffload", "Codeberg", "Zola"]
 [extra]
+scripts = ["audio.js"]
 featured = true
 banner = "banner.webp"
 toc = true
@@ -257,12 +258,6 @@ If everything is done properly, the build should succeed and site be available o
 
 ## Conclusion
 
-<button class="audio" onclick="playAudio('party-horn.mp3')">Congrats!</button> You are now officially a web citizen! Show off your new site to the world; it's something to be proud of! Since it's yours and yours alone, you can do whatever you want with it; add silly gags all over the place, write serious or not-so-serious articles, let it rot for eternity, you name it!
+{{ audio(url="party-horn.mp3", name="Congrats!") }} You are now officially a web citizen! Show off your new site to the world; it's something to be proud of! Since it's yours and yours alone, you can do whatever you want with it; add silly gags all over the place, write serious or not-so-serious articles, let it rot for eternity, you name it!
 
 If you run into problems or need help with any of the steps, feel free to [reach out](@/find/index.md#contacts), I will try my best to help ^^
-
-<script type="text/javascript">
-	function playAudio(url) {
-		new Audio(url).play();
-	}
-</script>

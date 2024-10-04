@@ -4,6 +4,7 @@ description = "Some behind-the-scenes of the blog update."
 [taxonomies]
 tags = ["Devlog", "Website"]
 [extra]
+scripts = ["audio.js"]
 archive = true
 toc = true
 [extra.comments]
@@ -30,7 +31,7 @@ One important change have happened to the Index, now all its pages use the same 
 
 Homepage is a very important page, this page links to all other pages, it gives some basic info about me and some contact links. It didn't change a lot but there are some work been done.
 
-- Proper dark mode have been implemented (well, it were already there but I replaced it with filter hack,more on it in blog section. Now it's enabled back and all the custom stuff have been fixed to support it).
+- Proper dark mode have been implemented (well, it were already there but I replaced it with filter hack, more on it in blog section. Now it's enabled back and all the custom stuff have been fixed to support it).
 - Background color are a bit different (taken from Libadwaita).
 - Added shadows to all cards to give them some depth.
 
@@ -175,7 +176,7 @@ The blog have seen the most of the changes, it all were flipped upside down to b
 
 ## One More Thing™
 
-<button class="audio" onclick="playAudio('drum-roll.mp3')">Drum Roll</button> I have a new site at Neocities! it will not replace this one, it's just a silly playground that has this old look. You know... Geocities and stuff.
+{{ audio(url="drum-roll.mp3", name="Drum Roll") }} I have a new site at Neocities! it will not replace this one, it's just a silly playground that has this old look. You know... Geocities and stuff.
 
 It's empty <abbr title="at the moment">ATM</abbr>, but it has [AD-HD button](https://mstdn.social/@Daudix/110872543493210479)!
 
@@ -194,9 +195,3 @@ We'll see, I plan to publish more posts, at least I have an idea for the next on
 ## Conclusion
 
 Phew, that's a lot, 2 months of work! truly happy how it all comes up, hope you too, this is most long-lived site thingy yet, I have learned a lot about <abbr title="Cascading Style Sheets">CSS</abbr> and <abbr title="HyperText Markup Language">HTML</abbr>, and I really like doing this!
-
-<script type="text/javascript">
-	function playAudio(url) {
-		new Audio(url).play();
-	}
-</script>

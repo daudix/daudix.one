@@ -44,7 +44,7 @@ Good question, I honestly don't know. As a matter of fact, GitLab is a bit confu
 I have found about that [Dan Erat](https://www.erat.org) have published an article about his migration from GitHub to Codeberg before this one, [check it out](https://www.erat.org/codeberg.html).
 {% end %}
 
-After final decision that I will migrate my personal repositories to Codeberg I have created a [poll](https://mstdn.social/@Daudix/110680533037666405) on Mastodon,in which asked what to do with repositories on GitHub, people decided that adding small note in README that tells about migration and gives a link to repository on Codeberg, and then archiving were the best approach, [and so I did it!](https://mstdn.social/@Daudix/110685982530642051)
+After final decision that I will migrate my personal repositories to Codeberg I have created a [poll](https://mstdn.social/@Daudix/110680533037666405) on Mastodon, in which asked what to do with repositories on GitHub, people decided that adding small note in README that tells about migration and gives a link to repository on Codeberg, and then archiving were the best approach, [and so I did it!](https://mstdn.social/@Daudix/110685982530642051)
 
 ### Repositories
 
