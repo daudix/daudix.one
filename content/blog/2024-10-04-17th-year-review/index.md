@@ -10,11 +10,9 @@ disclaimer = "I'll be completely honest, this post is pretty bad and mostly aime
 id = "113251181891066967"
 +++
 
-It's that time of year again, birthday (or as they say, cake day). Nothing exciting about it, as I'm just one year closer to the average life expectancy. Still, this year has been pretty interesting and I thought why not do a little year in review. Yes, not at the end of the year like everyone else, but who can stop me? This list only includes some non-routine stuff, you know what I mean.
+It's that time of year again, birthday (or as they say, cake day). Nothing exciting about it, as I'm just one year closer to the average life expectancy. Still, this year has been pretty good and interesting, so I thought why not do a little year in review. Yes, not at the end of the year like everyone else does, but who can stop me? This list only includes some non-routine stuff, you know what I mean.
 
 This year, I have:
-
-<small>Yes, I really spent some time sorting this list to make it look like a staircase.</small>
 
 - [Archived Gradience](@/blog/2024-07-18-archiving-gradience/index.md)
 - [Got my first domain](@/blog/2024-06-25-my-first-domain/index.md)
@@ -30,6 +28,7 @@ This year, I have:
 - [Got an alt account](@/blog/2024-01-23-alt-profile-on-akkoma/index.md) on [pleroma.envs.net](https://pleroma.envs.net)
 - Started hating purple and then fell in love again
 - Made 3928 commits on Codeberg (I'm very sorry)
+- Met even more awesome people (online, of course)
 - Started participating in the [100DaysToOffload](https://100daystooffload.com) challenge
 - Made 149 contributions on GitHub (whatever that means)
 - Posted ~650 posts on main Fediverse account and ~300 on alt
@@ -40,6 +39,8 @@ This year, I have:
 - Worked on myself, I feel like I became less oversharing and annoying, although there's still a long way to go
 - Joined more Discord servers (fandom, if you will. For me it's quite an achievement, since I'm pretty shy)
 
-And more. Will probably update this list when I remember something interesting.
+<small>Yes, I really spent some time sorting this list to make it look like a staircase.</small>
 
 The flow of time is weird as always, on the one hand it feels like 2023 was a week ago (thanks Google Photos for ruining my mood), on the other hand I look at some of my work/contributions and think, damn, that was forever ago, how come it's only been a year? Real life flows faster than online, I guess.
+
+That's all for now. Take care and see you next time!
