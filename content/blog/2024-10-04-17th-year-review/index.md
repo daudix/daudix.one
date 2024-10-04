@@ -7,7 +7,7 @@ tags = ["100DaysToOffload"]
 banner = "banner.webp"
 disclaimer = "I'll be completely honest, this post is pretty bad and mostly aimed at future self. You've been warned xD"
 [extra.comments]
-id = ""
+id = "113251181891066967"
 +++
 
 It's that time of year again, birthday (or as they say, cake day). Nothing exciting about it, as I'm just one year closer to the average life expectancy. Still, this year has been pretty interesting and I thought why not do a little year in review. Yes, not at the end of the year like everyone else, but who can stop me? This list only includes some non-routine stuff, you know what I mean.
