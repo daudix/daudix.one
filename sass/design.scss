@@ -39,9 +39,10 @@ body {
 
 h1,
 h2 {
-	background: linear-gradient(to bottom, #cfc09f 27%, #ffecb3 40%, #3a2c0f 78%);
+	-webkit-background-clip: text;
+	background-image: linear-gradient(to bottom, #cfc09f 27%, #ffecb3 40%, #3a2c0f 78%);
 	background-clip: text;
-	-webkit-text-fill-color: transparent;
+	color: transparent;
 }
 
 .media-grid {
