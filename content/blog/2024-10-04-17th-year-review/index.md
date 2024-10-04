@@ -4,7 +4,7 @@ description = "One year closer to average life expectancy."
 [taxonomies]
 tags = ["100DaysToOffload"]
 [extra]
-banner = ""
+banner = "banner.webp"
 disclaimer = "I'll be completely honest, this post is pretty bad and mostly aimed at future self. You've been warned xD"
 [extra.comments]
 id = ""
