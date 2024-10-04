@@ -1,6 +1,6 @@
 +++
 title = "17th Year in Review"
-description = "One year closer to average life expectancy."
+description = "Wait, it's been a year already?"
 [taxonomies]
 tags = ["100DaysToOffload"]
 [extra]
