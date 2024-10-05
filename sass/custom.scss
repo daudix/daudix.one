@@ -3,13 +3,13 @@
 @include theme-variables using ($theme) {
 	@if $theme =="dark" {
 		// COLORS
-		// --bg-overlay: linear-gradient(rgb(0 0 0 / 0.9), rgb(0 0 0 / 0.9));
+		--bg-overlay: linear-gradient(rgb(0 0 0 / 0.9), rgb(0 0 0 / 0.9));
 		--shade-color: rgb(0 0 0 / 0.25);
 	}
 
 	@else {
 		// COLORS
-		// --bg-overlay: linear-gradient(rgb(255 255 255 / 0.8), rgb(255 255 255 / 0.8));
+		--bg-overlay: linear-gradient(rgb(255 255 255 / 0.8), rgb(255 255 255 / 0.8));
 		--shade-color: rgb(0 0 0 / 0.07);
 
 		// FILTERS
@@ -18,14 +18,14 @@
 	}
 }
 
-// body {
-// 	background: var(--bg-overlay), url("assets/static.gif"), var(--accent-color);
-// 	background-blend-mode: normal, difference;
+body {
+	background: var(--bg-overlay), url("assets/static.gif"), var(--accent-color);
+	background-blend-mode: normal, difference;
 
-// 	@media (prefers-reduced-motion) {
-// 		background: var(--bg-overlay), url("assets/static-static.gif"), var(--accent-color);
-// 	}
-// }
+	@media (prefers-reduced-motion) {
+		background: var(--bg-overlay), url("assets/static-static.gif"), var(--accent-color);
+	}
+}
 
 blockquote {
 
