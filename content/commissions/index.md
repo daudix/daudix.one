@@ -5,43 +5,41 @@ description = "Here you can commission me to do a wide range of designs."
 # styles = ["commissions.css"]
 +++
 
-Open slots: <mark>4/4</mark> (Small Scale) • <mark>2/2</mark> (Large Scale)
+Open slots: <mark>4/4</mark> Small Scale • <mark>2/2</mark> Large Scale.
 
-Hello and welcome to my commissions page. Here you can commission me to do a wide range of designs, including but not limited to: logos, icons, personal websites, motion design and video editing.
+Hello and welcome to my commissions page. Here you can commission me to do a wide range of designs, including but not limited to: logos, icons, personal websites, motion design, and video editing.
 
-You can see some of my decent work on the [design](@/design/index.md) page.
+You can see some of my work on the [design](@/design/index.md) page.
 
-I am familiar with the following creative applications
+I work with the following creative applications and I’m always learning to better meet the needs of your project:
 
-- Inkscape - Vector graphics
-- Blender - 3D modelling
-- Krita - Digital art
-- Kdenlive - Video editing
-- GIMP - Photo editing
-- Darktable - Photo colour correction
-- Aseprite - Pixel art
+- [Inkscape](https://inkscape.org) - Vector graphics
+- [Blender](https://www.blender.org) - 3D modelling
+- [Krita](https://krita.org/en/) - Digital art
+- [Kdenlive](https://kdenlive.org) - Video editing
+- [GIMP](https://www.gimp.org) - Photo editing
+- [Darktable](https://www.darktable.org) - Photo color correction
+- [Aseprite](https://www.aseprite.org) - Pixel art
 
-Please note that I am learning these on the fly. If I can't do something, I simply learn it.
-
-## Important Information
+## Policy
 
 ### Payment and Pricing
 
-- **Payment will be accepted trough Ko-fi or Paypal.** We will discuss the pricing, project requirements, etc. and create basic sketches, mood boards, color palettes, and fonts for free. I prefer doing 50-50 (pay 50% of the price when I start and 50% afterwards).
-- **I will only start working on the commission we agreed on after the payment.** Again, 50% of the total price (the reasoning behind this is clear I suppose). The rest should be paid after you are happy with the end result and would like to receive the full-resolution, watermark-less version.
-- **If you are not happy with the end result or I cannot finish the commission, I will promptly refund said 50%.** That said, I will do my absolute best to make you happy with the end result and get it to the finish line.
-- **If the actual cost exceeds the estimate (e.g. more revisions are required), I may ask for extra.** If the actual cost is *below* the estimate, I may return some money back.
+- **Only commission me if you have the means to pay.** We’ll first discuss your project requirements, and I’ll create basic sketches, mood boards, color palettes, and fonts for free. I prefer doing 50-50 (50% upfront and 50% after the project is complete).
+- **Payment will be accepted through Ko-fi or PayPal.** I will start working after the first 50% payment is received. The remaining 50% should be paid once you're happy with the final result and wish to receive the full-resolution, watermark-free version.
+- **If you are not happy with the end result or I cannot finish the commission, I will refund the initial 50%.** That said, I will do my absolute best to get it to the finish line and make you happy with the end result.
+- **If the project requires more revisions than originally discussed, I may ask for an additional fee.** If the total cost is less than estimated, I’ll refund the difference.
 
 ### Timing
 
-- **Response time is usually 12-36 hours.** If I don't respond in said time, that means that I have a strong reason for this. If any project takes more time than estimate we agreed upon, I will let you know.
-- **While I will provide estimate completion time, no exact deadlines will be provided.** This is simply not feasible because different people have different response time, require more or less revisions, and complexity can vary.
-- **Wait time can be anything from 24 hours to a few months.** Again, everything varies from the commission complexity and requirements. I will, however, do my best to complete it as fast as I can.
+- **Response time is usually 24-48 hours.** If I don’t respond within this time, there’s likely a good reason, and I’ll get back to you as soon as I can.
+- **While I will provide estimate completion time, no exact deadlines will be provided.** This is simply not feasible because different people have different response time, require more or less revisions, and complexity varies from one commission to another.
 
 ### Process
 
-- **I will regularly send you WIP pictures to let you know of current progress.** You may ask for the source files at any time. Layers, if present, will *not* be named unless specified. Named layers may cost around 5% of the agreed price depending on complexity.
-- **I will take your feedback seriously.** However, you should understand that I can't make countless revisions.
+- **I will regularly send work-in-progress pictures** to keep you updated on the progress. You may request source files after final payment is made.
+- **Layers will not be named unless specified.** If you need them named, it may cost 5% more, depending on the project complexity.
+- **I will take your feedback seriously.** However, if the number of revisions exceeds the norm, I may ask for an additional fee.
 
 ## What I Can Do
 
@@ -49,29 +47,19 @@ Please note that I am learning these on the fly. If I can't do something, I simp
 
 Small Scale: <mark>$2</mark>
 
-Get your own matching 88x31 button for your website. Animation will double the price. PNG and GIF exports (+ APNG for animated version).
+Custom 88x31 button for your website. Animation will double the price. Available in PNG, GIF (or APNG for animation).
 
-### Improve an Existing App Icon
-
-Small Scale: <mark>$4-$8</mark>
-
-Improvement of a pre-existing app icon with the basic idea already present. PNG and SVG (when possible) exports.
-
-### Custom App Icon
-
-Small Scale: <mark>$8-$16</mark>
-
-Brand-new icon for your app. PNG and SVG (when possible) exports.
+Available styles: Pixel art, vector, raster. Only pixel art and raster styles can be animated.
 
 ### Logo + Full Branding
 
 Small Scale: <mark>$24-$32</mark>
 
-Up to 2 logo variants (color and monochrome), simple color palette and matching fonts. Ideal for small projects/organizations.
+Up to 2 logo variants (color and monochrome), with a simple color palette and matching fonts. Ideal for small projects/organizations.
 
 Large Scale: <mark>$32-$64</mark>
 
-Includes more variations for a more flexible brand, a complete brand kit (fonts, color palette), and guidelines.
+Includes more logo variants, a complete brand kit (fonts, color palette), and branding guidelines.
 
 {% alert(note=true) %}
 - All logos will be exported in PNG and SVG.
@@ -84,35 +72,37 @@ Includes more variations for a more flexible brand, a complete brand kit (fonts,
 
 Small Scale: <mark>$8-$16</mark>
 
-[Duckquill](https://duckquill.daudix.one)-powered website. 1-8 page layouts at a flat rate of $8-$16 + $2 per additional page. Using only already available Duckquill features (which are many).
+[Duckquill](https://duckquill.daudix.one)-powered website. 1-8 page layouts at a flat rate. Extra pages cost $2 each.
 
 Large Scale: <mark>$16-$32</mark>
 
-[Duckquill](https://duckquill.daudix.one)-powered website. 8-32 page layouts at a flat rate of $16-$32 + $2 per additional page. You can request changes to the Duckquill look and as many custom elements as you need for 5% of the agreed price.
+[Duckquill](https://duckquill.daudix.one)-powered website. 8-32 page layouts. Custom features cost 5% extra of the total.
 
 #### Custom
 
-Small Scale: <mark>$32-$64<sup>*</sup></mark>
+Small Scale: <mark>$32-$64</mark>
 
-1-8 page layouts at a rate of $32-$64 flat fee + $4 per additional page. All pages are responsive to display properly on both desktop and mobile. Simpler design without complex styles.
+1-8 page layouts at a flat rate. Responsive on desktop and mobile. Simpler designs without complex styles.
 
-Large Scale: <mark>$64-$128<sup>*</sup></mark>
+Large Scale: <mark>$64-$128</mark>
 
-8-32 page layouts at a rate of $64-$128 flat fee + $4 per additional page. All pages are responsive to display properly on both desktop and mobile. More complex design with well-designed styles.
+8-32 page layouts, fully responsive. More complex design with customized styles.
 
-<small><sup>*</sup>Highest estimated total cost includes all fees.</small>
+<small><sup>*</sup>Highest estimated cost includes all fees.</small>
 
 {% alert(note=true) %}
-- I do static websites only, either hand-written or with use of one of the popular SSGs (Zola, Jekyll, or Hugo). No JavaScript is used unless needed. Auto light/dark mode switching based on OS preference comes by default, and manual toggle will cost extra $4.
-- I can "host" the site on Neocities with no custom domain. However, you are free to get the site files and host it somewhere else.
-- Website doesn't include custom graphics such as favicon and metadata card in "Small Scale" plan. You can order them separately, and I might make a (great) discount for you.
+- I do static websites only, either hand-written or using static site generators (such as [Zola](https://www.getzola.org), [Jekyll](https://jekyllrb.com), and [Hugo](https://gohugo.io)).
+- No JavaScript unless necessary.
+- Light/dark mode switching based on OS preference comes by default; manual toggle costs $4-$8 extra.
+- I don’t provide hosting, but I can help set up GitHub/GitLab/Codeberg pages or Vercel/Netlify if that’s what you use.
+- Website graphics (favicon, metadata card) are not included in the "Small Scale" plan but can be ordered separately, with a sweet discount.
 {% end %}
 
 ### Motion Design
 
 Small Scale: <mark>$24-$48</mark>
 
-Short (up to 90 seconds) video made in Blender, either 2D or featuring some 3D elements.
+Short video (up to 90 seconds) made in Blender, 2D or with some 3D elements.
 
 {{ youtube(id="wYu-te7d5-E") }}
 
@@ -120,25 +110,23 @@ Short (up to 90 seconds) video made in Blender, either 2D or featuring some 3D e
 
 Small Scale: <mark>$12-$48</mark>
 
-Simple edit of provided footage; cutting, color grading, fading, you name it. No complex FX. Simple FX such as chroma keying can be considered. If the video is longer than 10 minutes, each additional minite will cost 5% of the agreed price.
+Editing of provided footage (cutting, color grading, simple effects like fades). Extra 5% for each additional minute over 10 minutes.
 
 ### Something Else?
 
-There's a good chance I can make something design related that's not listed here, so feel free to contact me about it. If I can't, I'll let you know.
+If you need something design-related that’s not listed here, feel free to contact me. If it’s not something I can do, I’ll let you know.
 
-## Contact Methods
+## Contact & Commission Template
 
-All contacts listed on the [find](@/find/index.md#contacts) page should be fine.
-
-Make sure to use the template below so I can start the work faster.
-
-## Commission Template
+Please use the template below to help me get started faster.
 
 ```txt
-Project Type: (Small/Large) scale, (Logo/Website/Video Editing/etc.)
+Project Type: (Small/Large Scale, Logo/Website/Video Editing/etc.)
 Style: (Minimalism, Skeuomorphism, Neomorphism, Retro, etc.)
-Description: (Provide as much details as you can, i.e. how you want it to feel, inspirations that I could draw from, color preferences, etc.)
-Additional: (Any additional information that I should keep in mind.)
+Description: (Provide as much detail as possible, such as how you want it to feel, colors, inspirations, etc.)
+Additional: (Any extra information I should consider.)
 ```
 
-<small>I hope you actually have read all the above instead of skipping right to the end.</small>
+You can contact me via any method listed on the [find](@/find/index.md) page.
+
+<small>I hope you actually read this far instead of skipping straight to the end!</small>
