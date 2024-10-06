@@ -353,7 +353,7 @@ To easily find the perfect font, you can look at [font preview](https://github.c
 
 There are also amazing graphical app for this - [Calligraphy](https://gitlab.com/gregorni/Calligraphy), made specifically for creating ASCII banners!
 
-You can also use [online tools](http://patorjk.com/software/taag)
+You can also use [online tools](https://patorjk.com/software/taag/)
 
 ## Conclusion
 
