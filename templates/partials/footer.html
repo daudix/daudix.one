@@ -48,7 +48,9 @@
 	{%- if config.extra.footer.show_powered_by %}
 		<p>
 			<small>
-				{{ macros_translate::translate(key="powered_by", default="Powered by", language_strings=language_strings) }} <a class="link external" href="https://www.getzola.org" rel="{{ rel_attributes }}">Zola</a> {{ macros_translate::translate(key="powered_by_and", default="and", language_strings=language_strings) }} <a class="link external" href="https://duckquill.daudix.one" rel="{{ rel_attributes }}">Duckquill</a>
+				{%- set zola_link = '<a class="link external" href="https://www.getzola.org" rel="' ~ rel_attributes ~ '">Zola</a>' -%}
+				{%- set duckquill_link = '<a class="link external" href="https://duckquill.daudix.one" rel="' ~ rel_attributes ~ '">Duckquill</a>' -%}
+				{{ macros_translate::translate(key="powered_by", default="Powered by $ZOLA and $DUCKQUILL", language_strings=language_strings) | replace(from="$ZOLA", to=zola_link) | replace(from="$DUCKQUILL", to=duckquill_link) | safe }}
 			</small>
 		</p>
 	{%- endif %}
