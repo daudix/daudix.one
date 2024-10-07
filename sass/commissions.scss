@@ -50,9 +50,10 @@ body::before {
 			box-shadow: var(--edge-highlight), var(--shadow-glass);
 		}
 
-		strong {
+		& > strong {
 			display: block;
 			margin-block-end: 1rem;
+			color: var(--accent-color);
 			font-size: var(--font-size-x-large);
 			line-height: 1;
 		}
