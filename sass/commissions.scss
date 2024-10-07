@@ -12,19 +12,15 @@ body::before {
 	position: fixed;
 	z-index: -1;
 	mask-image: var(--mask);
-	animation: rays 5s linear infinite;
+	animation: rays 5s linear calc(var(--scroll) * -1s) 1 normal both paused;
 	background: repeating-conic-gradient(from var(--angle) at center 2.625rem, var(--ray) 0deg 10deg, transparent 10deg 20deg);
 	width: 100vw;
 	height: 100vh;
 	content: "";
 
 	@keyframes rays {
-		0% {
-			--angle: 0deg;
-		}
-
-		100% {
-			--angle: 20deg;
+		to {
+			--angle: 360deg;
 		}
 	}
 }
