@@ -5,6 +5,10 @@ description = "Here you can commission me to do a wide range of designs."
 styles = ["commissions.css"]
 +++
 
+{% alert(note=true) %}
+This page is still a work in progress. Prices/formatting are subject to change at any time.
+{% end %}
+
 Open slots: <mark>4/4</mark> Small Scale • <mark>2/2</mark> Large Scale.
 
 Hello and welcome to my commissions page. Here you can commission me to do a wide range of designs, including but not limited to: logos, personal websites, motion design, and video editing.

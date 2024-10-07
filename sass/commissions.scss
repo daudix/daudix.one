@@ -35,20 +35,20 @@ body::before {
 	gap: 0.5rem;
 
 	& > div {
-		-webkit-backdrop-filter: var(--blur);
+		// -webkit-backdrop-filter: var(--blur);
 		position: relative;
-		backdrop-filter: var(--blur);
-		transition: var(--transition);
+		// backdrop-filter: var(--blur);
+		// transition: var(--transition);
 		box-shadow: var(--edge-highlight);
 		border-radius: var(--rounded-corner);
 		background-color: var(--accent-color-alpha);
 		padding: 1rem;
 		min-height: 12rem;
 
-		&:hover {
-			transform: translateY(-1rem);
-			box-shadow: var(--edge-highlight), var(--shadow-glass);
-		}
+		// &:hover {
+		// 	transform: translateY(-1rem);
+		// 	box-shadow: var(--edge-highlight), var(--shadow-glass);
+		// }
 
 		& > strong {
 			display: block;
@@ -119,13 +119,14 @@ body::before {
 	}
 }
 
-.pre-container .header {
-	-webkit-backdrop-filter: var(--blur);
-	backdrop-filter: var(--blur);
-}
+// .pre-container {
+// 	-webkit-backdrop-filter: var(--blur);
+// 	backdrop-filter: var(--blur);
+// }
 
-#site-footer nav {
-	-webkit-backdrop-filter: var(--blur);
-	backdrop-filter: var(--blur);
-	box-shadow: var(--edge-highlight), var(--shadow-glass);
-}
+// #site-footer nav {
+// 	-webkit-backdrop-filter: var(--blur);
+// 	backdrop-filter: var(--blur);
+// 	box-shadow: var(--edge-highlight), var(--shadow-glass);
+// 	background-color: var(--nav-bg);
+// }
