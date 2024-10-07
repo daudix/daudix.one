@@ -1,8 +1,8 @@
 +++
 title = "Commissions"
 description = "Here you can commission me to do a wide range of designs."
-# [extra]
-# styles = ["commissions.css"]
+[extra]
+styles = ["commissions.css"]
 +++
 
 Open slots: <mark>4/4</mark> Small Scale • <mark>2/2</mark> Large Scale.
@@ -43,52 +43,116 @@ I work with the following creative applications and I’m always learning to bet
 
 ## What I Can Do
 
-### 88x31 Button
-
-Small Scale: <mark>$2</mark>
+<div class="card-grid">
+<!-- Card start -->
+<div>
+<strong>88x31 Button</strong>
+Small Scale • <mark>$2</mark>
 
 Custom 88x31 button for your website. Animation will double the price. Available in PNG, GIF (or APNG for animation).
+</div>
+<!-- Card end -->
 
-Available styles: Pixel art, vector, raster. Only pixel art and raster styles can be animated.
+<!-- Card start -->
+<div>
+<strong>Logo</strong>
+<div class="tabs">
 
-### Logo + Full Branding
+<div class="tab">
 
-Small Scale: <mark>$24-$32</mark>
+<input id="logo-small" type="radio" name="logo" checked />
+<label for="logo-small">&nbsp;Small Scale</label>
+
+<div class="content">
+Small Scale • <mark>$24-$32</mark>
 
 Up to 2 logo variants (color and monochrome), with a simple color palette and matching fonts. Ideal for small projects/organizations.
 
-Large Scale: <mark>$32-$64</mark>
+{% alert(note=true) %}
+- Logos will be exported in PNG & SVG.
+- Only freely licensed fonts are used.
+{% end %}
+</div>
+</div>
+
+<div class="tab">
+<input id="logo-large" type="radio" name="logo" />
+<label for="logo-large">&nbsp;Large Scale</label>
+
+<div class="content">
+Large Scale • <mark>$32-$64</mark>
 
 Includes more logo variants, a complete brand kit (fonts, color palette), and branding guidelines.
 
 {% alert(note=true) %}
-- All logos will be exported in PNG and SVG.
+- Logos will be exported in PNG & SVG.
 - Only freely licensed fonts are used.
 {% end %}
+</div>
 
-### Personal Website
+</div>
 
-#### Duckquill-Based
+</div>
+</div>
+<!-- Card end -->
 
-Small Scale: <mark>$8-$16</mark>
+<!-- Card start -->
+<div>
+<strong>Duckquill Website</strong>
+<div class="tabs">
+
+<div class="tab">
+
+<input id="duckquill-small" type="radio" name="duckquill" checked />
+<label for="duckquill-small">&nbsp;Small Scale</label>
+
+<div class="content">
+Small Scale • <mark>$8-$16</mark>
 
 [Duckquill](https://duckquill.daudix.one)-powered website. 1-8 page layouts at a flat rate. Extra pages cost $2 each.
 
-Large Scale: <mark>$16-$32</mark>
+{% alert(note=true) %}
+- I don’t provide hosting, but I can help set up GitHub/GitLab/Codeberg pages or Vercel/Netlify if that’s what you use.
+- Website graphics (favicon, metadata card) are not included, but can be ordered separately with a sweet discount.
+{% end %}
+</div>
+</div>
+
+<div class="tab">
+<input id="duckquill-large" type="radio" name="duckquill" />
+<label for="duckquill-large">&nbsp;Large Scale</label>
+
+<div class="content">
+Large Scale • <mark>$16-$32</mark>
 
 [Duckquill](https://duckquill.daudix.one)-powered website. 8-32 page layouts. Custom features cost 5% extra of the total.
 
-#### Custom
+{% alert(note=true) %}
+- No JavaScript is used unless necessary.
+- I don’t provide hosting, but I can help set up GitHub/GitLab/Codeberg pages or Vercel/Netlify if that’s what you use.
+{% end %}
+</div>
 
-Small Scale: <mark>$32-$64</mark>
+</div>
+
+</div>
+</div>
+<!-- Card end -->
+
+<!-- Card start -->
+<div>
+<strong>Custom Website</strong>
+<div class="tabs">
+
+<div class="tab">
+
+<input id="custom-small" type="radio" name="custom" checked />
+<label for="custom-small">&nbsp;Small Scale</label>
+
+<div class="content">
+Small Scale • <mark>$32-$64</mark>
 
 1-8 page layouts at a flat rate. Responsive on desktop and mobile. Simpler designs without complex styles.
-
-Large Scale: <mark>$64-$128</mark>
-
-8-32 page layouts, fully responsive. More complex design with customized styles.
-
-<small><sup>*</sup>Highest estimated cost includes all fees.</small>
 
 {% alert(note=true) %}
 - I do static websites only, either hand-written or using static site generators (such as [Zola](https://www.getzola.org), [Jekyll](https://jekyllrb.com), and [Hugo](https://gohugo.io)).
@@ -97,26 +161,58 @@ Large Scale: <mark>$64-$128</mark>
 - I don’t provide hosting, but I can help set up GitHub/GitLab/Codeberg pages or Vercel/Netlify if that’s what you use.
 - Website graphics (favicon, metadata card) are not included in the "Small Scale" plan but can be ordered separately, with a sweet discount.
 {% end %}
+</div>
+</div>
 
-### Motion Design
+<div class="tab">
+<input id="custom-large" type="radio" name="custom" />
+<label for="custom-large">&nbsp;Large Scale</label>
 
-Small Scale: <mark>$24-$48</mark>
+<div class="content">
+Large Scale • <mark>$64-$128</mark>
+
+8-32 page layouts, fully responsive. More complex design with customized styles.
+
+{% alert(note=true) %}
+- I do static websites only, either hand-written or using static site generators (such as [Zola](https://www.getzola.org), [Jekyll](https://jekyllrb.com), and [Hugo](https://gohugo.io)).
+- No JavaScript unless necessary.
+- Light/dark mode switching based on OS preference comes by default; manual toggle can be requested at no cost.
+- I don’t provide hosting, but I can help set up GitHub/GitLab/Codeberg pages or Vercel/Netlify if that’s what you use.
+{% end %}
+</div>
+
+</div>
+
+</div>
+</div>
+<!-- Card end -->
+
+<!-- Card start -->
+<div>
+<strong>Motion Design</strong>
+Small Scale • <mark>$24-$48</mark>
 
 Short video (up to 90 seconds) made in Blender, 2D or with some 3D elements.
+</div>
+<!-- Card end -->
+
+<!-- Card start -->
+<div>
+<strong>Video Editing</strong>
+Small Scale • <mark>$12-$48</mark>
+
+Editing of provided footage (cutting, color grading, simple effects like fades). Extra 5% for each additional minute over 10 minutes.
+</div>
+<!-- Card end -->
+</div>
 
 {{ youtube(id="wYu-te7d5-E") }}
 
-### Video Editing
-
-Small Scale: <mark>$12-$48</mark>
-
-Editing of provided footage (cutting, color grading, simple effects like fades). Extra 5% for each additional minute over 10 minutes.
-
-### Something Else?
+## Something Else?
 
 If you need something design-related that’s not listed here, feel free to contact me. If it’s not something I can do, I’ll let you know.
 
-## Contact & Commission Template
+## Contact and Commission Template
 
 Please use the template below to help me get started faster.
 
