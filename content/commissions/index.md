@@ -64,7 +64,7 @@ Custom 88x31 button for your website. Animation will double the price. Available
 <label for="logo-small">&nbsp;Small Scale</label>
 
 <div class="content">
-Small Scale • <mark>$24-$32</mark>
+Small Scale • <mark>$12-$24</mark>
 
 Up to 2 logo variants (color and monochrome), with a simple color palette and matching fonts. Ideal for small projects/organizations.
 
@@ -80,7 +80,7 @@ Up to 2 logo variants (color and monochrome), with a simple color palette and ma
 <label for="logo-large">&nbsp;Large Scale</label>
 
 <div class="content">
-Large Scale • <mark>$32-$64</mark>
+Large Scale • <mark>$24-$48</mark>
 
 Includes more logo variants, a complete brand kit (fonts, color palette), and branding guidelines.
 
