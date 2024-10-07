@@ -12,7 +12,7 @@ body::before {
 	position: fixed;
 	z-index: -1;
 	mask-image: var(--mask);
-	animation: rays 5s linear calc(var(--scroll) * -1s) 1 normal both paused;
+	animation: rays 4s linear calc(var(--scroll) * -1s) 1 normal both paused;
 	background: repeating-conic-gradient(from var(--angle) at center 2.625rem, var(--ray) 0deg 10deg, transparent 10deg 20deg);
 	width: 100vw;
 	height: 100vh;
