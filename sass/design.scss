@@ -122,10 +122,19 @@ section {
 	background-image: radial-gradient(circle, var(--fg-muted-1) 0.0625rem, transparent 0.0625rem);
 	background-size: 1rem 1rem;
 
-	&#original-icons img,
-	&#redrawn-icons img {
-		width: 8rem;
-		height: 8rem;
+	&#original-icons,
+	&#redrawn-icons,
+	&#unused-icons {
+		@media only screen and (max-width: 480px) {
+			.media-grid {
+				grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+			}
+		}
+
+		img {
+			width: 8rem;
+			height: 8rem;
+		}
 	}
 
 	&#original-icons {
