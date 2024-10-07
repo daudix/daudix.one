@@ -7,7 +7,7 @@ styles = ["commissions.css"]
 
 Open slots: <mark>4/4</mark> Small Scale • <mark>2/2</mark> Large Scale.
 
-Hello and welcome to my commissions page. Here you can commission me to do a wide range of designs, including but not limited to: logos, icons, personal websites, motion design, and video editing.
+Hello and welcome to my commissions page. Here you can commission me to do a wide range of designs, including but not limited to: logos, personal websites, motion design, and video editing.
 
 You can see some of my work on the [design](@/design/index.md) page.
 
