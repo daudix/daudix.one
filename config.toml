@@ -48,6 +48,7 @@ show_fediring = true
 links = [
 	{ url = "@/coffee/index.md", name = "Coffee" },
 	{ url = "@/colophon/index.md", name = "Colophon" },
+	{ url = "@/commissions/index.md", name = "Commissions" },
 	{ url = "https://daudix.neocities.org", name = "Neocities" },
 ]
 
