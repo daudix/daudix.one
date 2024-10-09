@@ -99,7 +99,15 @@ body::before {
 				font-weight: bold;
 				font-size: var(--font-size-small);
 				line-height: 1;
-				white-space: nowrap;
+
+				&:hover {
+					box-shadow: var(--edge-highlight);
+					background-color: var(--fg-muted-1);
+				}
+
+				&:active {
+					transform: var(--active);
+				}
 			}
 
 			input[type="radio"] {
