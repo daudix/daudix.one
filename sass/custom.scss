@@ -5,12 +5,14 @@
 		// COLORS
 		--bg-overlay: linear-gradient(rgb(0 0 0 / 0.9), rgb(0 0 0 / 0.9));
 		--shade-color: rgb(0 0 0 / 0.25);
+		--shine: rgb(255 255 255 / 0.1);
 	}
 
 	@else {
 		// COLORS
 		--bg-overlay: linear-gradient(rgb(255 255 255 / 0.8), rgb(255 255 255 / 0.8));
 		--shade-color: rgb(0 0 0 / 0.07);
+		--shine: rgb(255 255 255 / 0.3);
 
 		// FILTERS
 		--printed: contrast(2) brightness(0.75) grayscale(1);
@@ -191,6 +193,49 @@ blockquote {
 			--icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12'%3E%3Cpath d='M1 6h10M7 2l4 4-4 4' style='fill:none;stroke:%23000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round'/%3E%3C/svg%3E");
 			-webkit-mask-image: var(--icon);
 			mask-image: var(--icon);
+		}
+	}
+}
+
+#article-list {
+	.article-wrapper {
+		&:hover {
+			transform: perspective(32rem) rotateX(10deg) rotateY(-5deg);
+		}
+
+		&:active {
+			transform: var(--active);
+		}
+	}
+
+	article {
+		&:hover {
+			&::after {
+				opacity: 1;
+				inset-inline-start: 4rem;
+			}
+
+			.blurnail {
+				transform: none;
+			}
+		}
+
+		&::after {
+			position: absolute;
+			transform: translateY(-50%) rotate(30deg);
+			opacity: 0;
+			// z-index: -1;
+			mix-blend-mode: screen;
+			mask-size: cover;
+			filter: blur(0.25rem);
+			transition: var(--transition-longer);
+			inset-block-start: 50%;
+			inset-inline-start: -4rem;
+			background-color: var(--shine);
+			width: 12rem;
+			height: 200%;
+			pointer-events: none;
+			content: "";
 		}
 	}
 }
