@@ -128,12 +128,12 @@ blockquote {
 	nav a[href*="/commissions/"] {
 		position: relative;
 
-		&:hover::before {
+		&:hover::after {
 			transform: rotate(10deg) var(--hover);
 			box-shadow: var(--edge-highlight), var(--shadow-raised);
 		}
 
-		&::before {
+		&::after {
 			display: block;
 			position: absolute;
 			transform: rotate(0deg);
@@ -224,7 +224,6 @@ blockquote {
 			position: absolute;
 			transform: translateY(-50%) rotate(30deg);
 			opacity: 0;
-			// z-index: -1;
 			mix-blend-mode: screen;
 			mask-size: cover;
 			filter: blur(0.25rem);
