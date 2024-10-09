@@ -3,7 +3,7 @@
 	flex-direction: column;
 	aspect-ratio: 1 / 1;
 
-	&>strong {
+	& > strong {
 		color: var(--accent-color);
 		font-size: var(--font-size-x-large);
 		line-height: 1;

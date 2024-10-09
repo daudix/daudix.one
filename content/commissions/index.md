@@ -49,26 +49,33 @@ I work with the following creative applications and I’m always learning to bet
 ## What I Can Do
 
 <div class="card-grid">
+
 <!-- Card start -->
-<div>
+<div class="card">
 <strong>88x31 Button</strong>
+<div class="card-content">
 Small Scale • <mark>$2</mark>
 
 Custom 88x31 button for your website. Animation will double the price. Available in PNG, GIF (or APNG for animation).
 </div>
+</div>
 <!-- Card end -->
 
 <!-- Card start -->
-<div>
+<div class="card">
 <strong>Logo</strong>
-<div class="tabs">
-
-<div class="tab">
-
-<input id="logo-small" type="radio" name="logo" checked />
+<ul class="tab-switcher">
+<li>
+<input class="hidden" id="logo-small" type="radio" name="logo" checked />
 <label for="logo-small">&nbsp;Small Scale</label>
+</li>
+<li>
+<input class="hidden" id="logo-large" type="radio" name="logo" />
+<label for="logo-large">&nbsp;Large Scale</label>
+</li>
+</ul>
 
-<div class="content">
+<div class="card-content">
 Small Scale • <mark>$12-$24</mark>
 
 Up to 2 logo variants (color and monochrome), with a simple color palette and matching fonts. Ideal for small projects/organizations.
@@ -78,13 +85,8 @@ Up to 2 logo variants (color and monochrome), with a simple color palette and ma
 - Only freely licensed fonts are used.
 {% end %}
 </div>
-</div>
 
-<div class="tab">
-<input id="logo-large" type="radio" name="logo" />
-<label for="logo-large">&nbsp;Large Scale</label>
-
-<div class="content">
+<div class="card-content">
 Large Scale • <mark>$24-$48</mark>
 
 Includes more logo variants, a complete brand kit (fonts, color palette), and branding guidelines.
@@ -94,24 +96,24 @@ Includes more logo variants, a complete brand kit (fonts, color palette), and br
 - Only freely licensed fonts are used.
 {% end %}
 </div>
-
-</div>
-
-</div>
 </div>
 <!-- Card end -->
 
 <!-- Card start -->
-<div>
+<div class="card">
 <strong>Duckquill Website</strong>
-<div class="tabs">
-
-<div class="tab">
-
-<input id="duckquill-small" type="radio" name="duckquill" checked />
+<ul class="tab-switcher">
+<li>
+<input class="hidden" id="duckquill-small" type="radio" name="duckquill" checked />
 <label for="duckquill-small">&nbsp;Small Scale</label>
+</li>
+<li>
+<input class="hidden" id="duckquill-large" type="radio" name="duckquill" />
+<label for="duckquill-large">&nbsp;Large Scale</label>
+</li>
+</ul>
 
-<div class="content">
+<div class="card-content">
 Small Scale • <mark>$8-$16</mark>
 
 [Duckquill](https://duckquill.daudix.one)-powered website. 1-8 page layouts at a flat rate. Extra pages cost $2 each.
@@ -121,13 +123,8 @@ Small Scale • <mark>$8-$16</mark>
 - Website graphics (favicon, metadata card) are not included, but can be ordered separately with a sweet discount.
 {% end %}
 </div>
-</div>
 
-<div class="tab">
-<input id="duckquill-large" type="radio" name="duckquill" />
-<label for="duckquill-large">&nbsp;Large Scale</label>
-
-<div class="content">
+<div class="card-content">
 Large Scale • <mark>$16-$32</mark>
 
 [Duckquill](https://duckquill.daudix.one)-powered website. 8-32 page layouts. Custom features cost 5% extra of the total.
@@ -137,24 +134,24 @@ Large Scale • <mark>$16-$32</mark>
 - I don’t provide hosting, but I can help set up GitHub/GitLab/Codeberg pages or Vercel/Netlify if that’s what you use.
 {% end %}
 </div>
-
-</div>
-
-</div>
 </div>
 <!-- Card end -->
 
 <!-- Card start -->
-<div>
+<div class="card">
 <strong>Custom Website</strong>
-<div class="tabs">
-
-<div class="tab">
-
-<input id="custom-small" type="radio" name="custom" checked />
+<ul class="tab-switcher">
+<li>
+<input class="hidden" id="custom-small" type="radio" name="custom" checked />
 <label for="custom-small">&nbsp;Small Scale</label>
+</li>
+<li>
+<input class="hidden" id="custom-large" type="radio" name="custom" />
+<label for="custom-large">&nbsp;Large Scale</label>
+</li>
+</ul>
 
-<div class="content">
+<div class="card-content">
 Small Scale • <mark>$32-$64</mark>
 
 1-8 page layouts at a flat rate. Responsive on desktop and mobile. Simpler designs without complex styles.
@@ -167,13 +164,8 @@ Small Scale • <mark>$32-$64</mark>
 - Website graphics (favicon, metadata card) are not included in the "Small Scale" plan but can be ordered separately, with a sweet discount.
 {% end %}
 </div>
-</div>
 
-<div class="tab">
-<input id="custom-large" type="radio" name="custom" />
-<label for="custom-large">&nbsp;Large Scale</label>
-
-<div class="content">
+<div class="card-content">
 Large Scale • <mark>$64-$128</mark>
 
 8-32 page layouts, fully responsive. More complex design with customized styles.
@@ -185,28 +177,28 @@ Large Scale • <mark>$64-$128</mark>
 - I don’t provide hosting, but I can help set up GitHub/GitLab/Codeberg pages or Vercel/Netlify if that’s what you use.
 {% end %}
 </div>
-
-</div>
-
-</div>
 </div>
 <!-- Card end -->
 
 <!-- Card start -->
-<div>
+<div class="card">
 <strong>Motion Design</strong>
+<div class="card-content">
 Small Scale • <mark>$24-$48</mark>
 
 Short video (up to 90 seconds) made in Blender, 2D or with some 3D elements.
 </div>
+</div>
 <!-- Card end -->
 
 <!-- Card start -->
-<div>
+<div class="card">
 <strong>Video Editing</strong>
+<div class="card-content">
 Small Scale • <mark>$12-$48</mark>
 
 Editing of provided footage (cutting, color grading, simple effects like fades). Extra 5% for each additional minute over 10 minutes.
+</div>
 </div>
 <!-- Card end -->
 </div>
