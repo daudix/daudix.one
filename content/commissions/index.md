@@ -18,13 +18,81 @@ You can see some of my work on the [design](@/design/index.md) page.
 
 I work with the following creative applications and I’m always learning to better meet the needs of your project:
 
-- [Inkscape](https://inkscape.org) - Vector graphics
-- [Blender](https://www.blender.org) - 3D modelling
-- [Krita](https://krita.org/en/) - Digital art
-- [Kdenlive](https://kdenlive.org) - Video editing
-- [GIMP](https://www.gimp.org) - Photo editing
-- [Darktable](https://www.darktable.org) - Photo color correction
-- [Aseprite](https://www.aseprite.org) - Pixel art
+<div class="apps-grid">
+
+<a class="app" href="https://www.aseprite.org">
+<img class="transparent no-hover drop-shadow icon" alt="" src="icons/aseprite.png" />
+<div class="details">
+<strong>Aseprite</strong>
+<p>Pixel art</p>
+</div>
+</a>
+
+<a class="app" href="https://www.audacityteam.org/">
+<img class="transparent no-hover drop-shadow icon" alt="" src="icons/audacity.svg" />
+<div class="details">
+<strong>Audacity</strong>
+<p>Audio editing</p>
+</div>
+</a>
+
+<a class="app" href="https://www.blender.org">
+<img class="transparent no-hover drop-shadow icon" alt="" src="icons/blender.svg" />
+<div class="details">
+<strong>Blender</strong>
+<p>3D modelling</p>
+</div>
+</a>
+
+<a class="app" href="https://www.darktable.org">
+<img class="transparent no-hover drop-shadow icon" alt="" src="icons/darktable.svg" />
+<div class="details">
+<strong>Darktable</strong>
+<p>Color grading</p>
+</div>
+</a>
+
+<a class="app" href="https://www.blackmagicdesign.com/products/davinciresolve">
+<img class="transparent no-hover drop-shadow icon" alt="" src="icons/resolve.png" />
+<div class="details">
+<strong>DaVinci Resolve</strong>
+<p>Video editing</p>
+</div>
+</a>
+
+<a class="app" href="https://www.gimp.org">
+<img class="transparent no-hover drop-shadow icon" alt="" src="icons/gimp.svg" />
+<div class="details">
+<strong>GIMP</strong>
+<p>Photo editing</p>
+</div>
+</a>
+
+<a class="app" href="https://inkscape.org">
+<img class="transparent no-hover drop-shadow icon" alt="" src="icons/inkscape.svg" />
+<div class="details">
+<strong>Inkscape</strong>
+<p>Vector graphics</p>
+</div>
+</a>
+
+<a class="app" href="https://kdenlive.org">
+<img class="transparent no-hover drop-shadow icon" alt="" src="icons/kdenlive.svg" />
+<div class="details">
+<strong>Kdenlive</strong>
+<p>Video editing</p>
+</div>
+</a>
+
+<a class="app" href="https://krita.org/en/">
+<img class="transparent no-hover drop-shadow icon" alt="" src="icons/krita.svg" />
+<div class="details">
+<strong>Krita</strong>
+<p>Digital art</p>
+</div>
+</a>
+
+</div>
 
 ## Key Information
 
