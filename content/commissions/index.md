@@ -53,7 +53,7 @@ I work with the following creative applications and I’m always learning to bet
 </a>
 
 <a class="app" href="https://www.blackmagicdesign.com/products/davinciresolve">
-<img class="transparent no-hover drop-shadow icon" alt="" src="icons/resolve.png" />
+<img class="transparent no-hover drop-shadow icon" alt="" src="icons/davinciresolve.png" />
 <div class="details">
 <strong>DaVinci Resolve</strong>
 <p>Video editing</p>
