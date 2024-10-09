@@ -196,7 +196,7 @@ body::before {
 
 	li {
 		margin: 0.25rem 0;
-		border-radius: calc(var(--rounded-corner-small) / 2);
+		border-radius: var(--rounded-corner-small);
 		background-color: var(--fg-muted-1);
 		padding: 0.5rem 0.75rem;
 
