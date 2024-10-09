@@ -26,25 +26,97 @@ I work with the following creative applications and I’m always learning to bet
 - [Darktable](https://www.darktable.org) - Photo color correction
 - [Aseprite](https://www.aseprite.org) - Pixel art
 
-## Policy
+## Key Information
 
-### Payment and Pricing
+<div class="card-grid big">
 
-- **Only commission me if you have the means to pay.** We’ll first discuss your project requirements, and I’ll create basic sketches, mood boards, color palettes, and fonts for free. I prefer doing 50-50 (50% upfront and 50% after the project is complete).
-- **Payment will be accepted through Ko-fi or PayPal.** I will start working after the first 50% payment is received. The remaining 50% should be paid once you're happy with the final result and wish to receive the full-resolution, watermark-free version.
-- **If you are not happy with the end result or I cannot finish the commission, I will refund the initial 50%.** That said, I will do my absolute best to get it to the finish line and make you happy with the end result.
-- **If the project requires more revisions than originally discussed, I may ask for an additional fee.** If the total cost is less than estimated, I’ll refund the difference.
+<!-- Card start -->
+<div class="card">
+<strong>Payment and Pricing</strong>
 
-### Timing
+<div class="card-content">
+<div class="fancy-list">
 
-- **Response time is usually 24-48 hours.** If I don’t respond within this time, there’s likely a good reason, and I’ll get back to you as soon as I can.
-- **While I will provide estimate completion time, no exact deadlines will be provided.** This is simply not feasible because different people have different response time, require more or less revisions, and complexity varies from one commission to another.
+- **Only commission me if you have the means to pay.**  
+Discount for students, non-profits, and returning customers is present.
+- **Payment will be accepted through Ko-fi or PayPal.**  
+Cash App, Stripe and Crypto are not accepted; I don't and can't have the former two and the latter is more difficult to refund and confirm.
+- **I prefer doing 50-50 (50% upfront and 50% upon completion).**  
+I will start working after the first 50% payment is received. The remaining 50% should be paid once you're happy with the final result and wish to receive the full-resolution, watermark-free version.
+- **If you are not happy with the end result or I cannot finish the commission, I will refund the initial 50%.**  
+That said, I will do my absolute best to get it to the finish line and make you happy with the end result.
+- **If the project requires more revisions than originally discussed, I may ask for an additional fee.**  
+If the total cost is less than estimated, I’ll refund the difference.
+</div>
+</div>
+</div>
+<!-- Card end -->
 
-### Process
+<!-- Card start -->
+<div class="card">
+<strong>Timing</strong>
 
-- **I will regularly send work-in-progress pictures** to keep you updated on the progress. You may request source files after final payment is made.
-- **Layers will not be named unless specified.** If you need them named, it may cost 5% more, depending on the project complexity.
-- **I will take your feedback seriously.** However, if the number of revisions exceeds the norm, I may ask for an additional fee.
+<div class="card-content">
+<div class="fancy-list">
+
+- **Response time is usually 24-48 hours.**  
+If I don’t respond within this time, there’s likely a good reason, and I’ll get back to you as soon as I can.
+- **While I will provide estimate completion time, no exact deadlines will be provided.**  
+This is simply not feasible because different people have different response time, require more or less revisions, and complexity varies from one commission to another.
+- **Queue wait time can be anything from 24 hours to a few months.**  
+That said, I will do my best to complete it as fast as I can.
+</div>
+</div>
+</div>
+<!-- Card end -->
+
+<!-- Card start -->
+<div class="card">
+<strong>Process</strong>
+
+<div class="card-content">
+<div class="fancy-list">
+
+- **I will regularly send work-in-progress pictures to keep you updated on the progress.**  
+Images will have a prominent watermark and will be in a lower resolution than the final result.
+- **Layers will not be named unless specified.**  
+If you need them named, it may cost 5% more, depending on the project complexity.
+- **I will take your feedback seriously.**  
+However, keep in mind that the number of revisions is finite.
+- **Final delivery as a ZIP file with all the sources in place.**  
+Websites will have full source code and instructions on how to build them, logos will have SVG source files, etc.
+</div>
+</div>
+</div>
+<!-- Card end -->
+
+<!-- Card start -->
+<div class="card">
+<strong>Other Details</strong>
+
+<div class="card-content">
+<div class="fancy-list">
+
+- **I have the right to decline any commission that goes against my values or makes me uncomfortable.**  
+I suppose there's no need to explain why.
+- **Logos will be exported in PNG & SVG.**  
+Export in additional formats such as PDF are available upon request.
+- **Only freely licensed fonts are used.**  
+Fonts will either be available on Google Fonts or one of the code forges.
+- **Websites come with a light and dark modes based on OS preference by default.**  
+Manual toggle will cost $4-$8 extra.
+- **I don’t provide hosting, but I can help with this.** If you use GitHub/GitLab/Codeberg pages or Vercel, you're in luck.
+- **Website graphics (favicon, metadata card) are not included.**  
+You can however, order these separately with a sweet discount.
+- **No JavaScript is used unless necessary.**  
+This not only improves speed, but also ensures that the website uses only well-defined HTML elements.
+</div>
+</div>
+</div>
+<!-- Card end -->
+
+
+</div>
 
 ## What I Can Do
 
@@ -79,22 +151,12 @@ Custom 88x31 button for your website. Animation will double the price. Available
 Small Scale • <mark>$12-$24</mark>
 
 Up to 2 logo variants (color and monochrome), with a simple color palette and matching fonts. Ideal for small projects/organizations.
-
-{% alert(note=true) %}
-- Logos will be exported in PNG & SVG.
-- Only freely licensed fonts are used.
-{% end %}
 </div>
 
 <div class="card-content">
 Large Scale • <mark>$24-$48</mark>
 
 Includes more logo variants, a complete brand kit (fonts, color palette), and branding guidelines.
-
-{% alert(note=true) %}
-- Logos will be exported in PNG & SVG.
-- Only freely licensed fonts are used.
-{% end %}
 </div>
 </div>
 <!-- Card end -->
@@ -117,22 +179,12 @@ Includes more logo variants, a complete brand kit (fonts, color palette), and br
 Small Scale • <mark>$8-$16</mark>
 
 [Duckquill](https://duckquill.daudix.one)-powered website. 1-8 page layouts at a flat rate. Extra pages cost $2 each.
-
-{% alert(note=true) %}
-- I don’t provide hosting, but I can help set up GitHub/GitLab/Codeberg pages or Vercel/Netlify if that’s what you use.
-- Website graphics (favicon, metadata card) are not included, but can be ordered separately with a sweet discount.
-{% end %}
 </div>
 
 <div class="card-content">
 Large Scale • <mark>$16-$32</mark>
 
 [Duckquill](https://duckquill.daudix.one)-powered website. 8-32 page layouts. Custom features cost 5% extra of the total.
-
-{% alert(note=true) %}
-- No JavaScript is used unless necessary.
-- I don’t provide hosting, but I can help set up GitHub/GitLab/Codeberg pages or Vercel/Netlify if that’s what you use.
-{% end %}
 </div>
 </div>
 <!-- Card end -->
@@ -159,7 +211,6 @@ Small Scale • <mark>$32-$64</mark>
 {% alert(note=true) %}
 - I do static websites only, either hand-written or using static site generators (such as [Zola](https://www.getzola.org), [Jekyll](https://jekyllrb.com), and [Hugo](https://gohugo.io)).
 - No JavaScript unless necessary.
-- Light/dark mode switching based on OS preference comes by default; manual toggle costs $4-$8 extra.
 - I don’t provide hosting, but I can help set up GitHub/GitLab/Codeberg pages or Vercel/Netlify if that’s what you use.
 - Website graphics (favicon, metadata card) are not included in the "Small Scale" plan but can be ordered separately, with a sweet discount.
 {% end %}
