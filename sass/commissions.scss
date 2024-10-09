@@ -104,10 +104,6 @@ body::before {
 					box-shadow: var(--edge-highlight);
 					background-color: var(--fg-muted-1);
 				}
-
-				&:active {
-					transform: var(--active);
-				}
 			}
 
 			input[type="radio"] {
