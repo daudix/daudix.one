@@ -1,7 +1,6 @@
 +++
 title = "Jekyll Is Overrated, Use Zola Instead"
 description = "Or don't, it's up to you to decide after all."
-draft = true
 [taxonomies]
 tags = ["100DaysToOffload", "Zola", "Jekyll"]
 [extra]
@@ -90,6 +89,10 @@ Zola's directory structure is clear and logical:
         └── alert.html
 ```
 
+See that `_drafts` directory? Zola handles drafts differently; you can make an entire section or just certain pages "drafts" by setting `draft = true` in the front matter. Drafts won't be rendered unless you serve/build the site with the `--drafts` flag.
+
+As for the date, it can either be added to the file/folder name as seen above, or in the front matter, e.g. `date = 2007-10-04`. There is also an `updated` variable which sets the last updated date.
+
 Compare this to the one used in Jekyll:
 
 ```
@@ -117,13 +120,31 @@ Compare this to the one used in Jekyll:
 
 Somewhat similar, yet cleaner.
 
-See that `_drafts` directory? Zola handles drafts differently; you can make an entire section or just certain pages "drafts" by setting `draft = true` in the front matter. Drafts won't be rendered unless you serve/build the site with the `--drafts` flag.
-
 Zola also doesn't differentiate between layouts and includes, so you can simply create a directory called `includes` or `partials` in your `templates` directory and include files from there.
 
 ### Overriding Theme Files
 
-What's neat is that you can override any theme template/file by creating a file with the same name in the same location but under your site, e.g. to override the `page.html` template I would create a `page.html` file under the `templates` directory, and Zola will use it instead of the one provided by the theme, same goes for images and any other files.
+What's neat is that you can override any theme template/file by creating a file with the same name in the same location but under your site, e.g. to override the `page.html` template I would create a `page.html` file under the `templates` directory and Zola will use it instead of the one provided by the theme, same goes for images and any other files. If the template uses blocks, it's possible to override only certain blocks, e.g. the `title` block in `head.html`.
+
+`themes/some-theme/templates/partials/head.html`:
+
+```jinja2
+<title>
+    {% block title %}
+        Theme's Title
+    {% endblock title %}
+</title>
+```
+
+`templates/partials/head.html`:
+
+```jinja2
+{% extends "some-theme/templates/partials/head.html" %}
+
+{% block title %}
+    Custom Title
+{% endblock title %}
+```
 
 ### Advanced Features
 
@@ -139,9 +160,7 @@ img[src*="#pixels"] {
 }
 ```
 
-In this example, we have applied pixelated image rendering to an image with `#pixels` added to the image URL right after the file extension. Isn't that cool? I stole this solution from [libreivan's website](https://libreivan.com), kudos to them.
-
-Otherwise, it should all be fine.
+In this example, we have applied pixelated image rendering to an image with `#pixels` added to the image URL right after the file extension. Isn't that cool? I stole this solution from [libreivan's website](https://libreivan.com), kudos to him for that.
 
 ## Conclusion
 
@@ -162,6 +181,8 @@ I <3 Zola if you haven't got it already, but I used Jekyll before and I am aware
 A lot of people switched from Jekyll to Hugo, and I tried it, but found it way too advanced and confusing, whereas Zola fit me just right. I don't plan to switch away from it in the near future, however, I do plan to explore the Hugo landscape, and who knows, maybe the world will see a Duckquill port for it.
 
 That's all for now, see you next time!
+
+P.S. I just realized that the banner looks like that guy from Star Trek (Jean-Luc Picard, apparently).
 
 [^1]: [Meaning of the term "Dependency hell"](https://en.wikipedia.org/wiki/Dependency_hell)
 [^2]: [List SSGs sorted by the amount of GitHub stars](https://jamstack.org/generators/)
