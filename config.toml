@@ -29,7 +29,7 @@ issues_url = "https://codeberg.org/daudix/website/issues"
 source_url = "https://codeberg.org/daudix/website"
 styles = ["custom.css"]
 show_copy_button = true
-show_read_time = true
+show_reading_time = true
 show_share_button = true
 debug_layout = false
 
