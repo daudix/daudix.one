@@ -7,7 +7,7 @@ tags = ["100DaysToOffload", "Zola", "Jekyll"]
 toc = true
 banner = "banner.webp"
 [extra.comments]
-id = ""
+id = "113295812044964246"
 +++
 
 The title was a bit clickbait, sorry about that. You are really free to use whatever you like, be it Jekyll, Hugo, 11ty, or anything else, I respect your opinion. It's just that I felt like sharing why I prefer Zola. Now to the blog post.
