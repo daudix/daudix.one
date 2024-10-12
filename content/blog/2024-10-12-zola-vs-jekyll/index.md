@@ -1,10 +1,10 @@
 +++
 title = "Jekyll Is Overrated, Use Zola Instead"
 description = "Or don't, it's up to you to decide after all."
+draft = true
 [taxonomies]
 tags = ["100DaysToOffload", "Zola", "Jekyll"]
 [extra]
-draft = true
 toc = true
 banner = "banner.webp"
 [extra.comments]
