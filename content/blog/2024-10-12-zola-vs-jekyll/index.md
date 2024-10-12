@@ -46,7 +46,7 @@ Nowadays, the SSG space is mostly dominated by Next.js and Hugo[^2], the latter 
 
 However, there is an in-between that is modern, has all and only the needed features, has no<sup>*</sup> Jekyll problems, is written in Rust, is blazing fast, and is shipped as a single binary with no dependencies: Zola.
 
-<small>*Almost...</small>
+<small>*Almost.</small>
 
 ## The Solution
 
@@ -163,5 +163,5 @@ A lot of people switched from Jekyll to Hugo, and I tried it, but found it way t
 
 That's all for now, see you next time!
 
-[^1]: [Meaning of the "Dependency hell"](https://en.wikipedia.org/wiki/Dependency_hell)
+[^1]: [Meaning of the term "Dependency hell"](https://en.wikipedia.org/wiki/Dependency_hell)
 [^2]: [List SSGs sorted by the amount of GitHub stars](https://jamstack.org/generators/)
