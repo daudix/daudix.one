@@ -182,7 +182,6 @@ Have a look at my [designs](@/design/index.md); mostly icons, but also some wall
 - ![nofuckingthanks](assets/88x31/nofuckingthanks.gif#pixels#transparent#no-hover)
 - ![righttorepair](assets/88x31/righttorepair.gif#pixels#transparent#no-hover)
 - ![sourcemissing](assets/88x31/sourcemissing.gif#pixels#transparent#no-hover)
-- ![up-all-night](assets/88x31/up-all-night.gif#pixels#transparent#no-hover)
 - ![yarrr](assets/88x31/yarrr.gif#pixels#transparent#no-hover)
 - <iframe id="increment" src="https://incr.easrng.net/badge?key=daudix.one" title="increment badge"></iframe>
 <!-- Mirror of the above -->
@@ -225,7 +224,6 @@ Have a look at my [designs](@/design/index.md); mostly icons, but also some wall
 - ![nofuckingthanks](assets/88x31/nofuckingthanks.gif#pixels#transparent#no-hover)
 - ![righttorepair](assets/88x31/righttorepair.gif#pixels#transparent#no-hover)
 - ![sourcemissing](assets/88x31/sourcemissing.gif#pixels#transparent#no-hover)
-- ![up-all-night](assets/88x31/up-all-night.gif#pixels#transparent#no-hover)
 - ![yarrr](assets/88x31/yarrr.gif#pixels#transparent#no-hover)
 - <iframe id="increment" src="https://incr.easrng.net/badge?key=daudix.one" title="increment badge"></iframe>
 </div>
@@ -241,8 +239,6 @@ Have a look at my [designs](@/design/index.md); mostly icons, but also some wall
 - ![portalnyan](assets/stamps/portalnyan.gif#pixels#transparent#no-hover)
 - ![old-web](assets/stamps/old-web.gif#pixels#transparent#no-hover)
 - ![october](assets/stamps/october.gif#pixels#transparent#no-hover)
-- ![murder-drones](assets/stamps/murder-drones.gif#pixels#transparent#no-hover)
-- ![jax](assets/stamps/jax.gif#pixels#transparent#no-hover)
 - ![i-love-sleeping](assets/stamps/i-love-sleeping.gif#pixels#transparent#no-hover)
 - ![how-i-feel](assets/stamps/how-i-feel.gif#pixels#transparent#no-hover)
 - ![heisenshy](assets/stamps/heisenshy.gif#pixels#transparent#no-hover)
@@ -261,8 +257,6 @@ Have a look at my [designs](@/design/index.md); mostly icons, but also some wall
 - ![portalnyan](assets/stamps/portalnyan.gif#pixels#transparent#no-hover)
 - ![old-web](assets/stamps/old-web.gif#pixels#transparent#no-hover)
 - ![october](assets/stamps/october.gif#pixels#transparent#no-hover)
-- ![murder-drones](assets/stamps/murder-drones.gif#pixels#transparent#no-hover)
-- ![jax](assets/stamps/jax.gif#pixels#transparent#no-hover)
 - ![i-love-sleeping](assets/stamps/i-love-sleeping.gif#pixels#transparent#no-hover)
 - ![how-i-feel](assets/stamps/how-i-feel.gif#pixels#transparent#no-hover)
 - ![heisenshy](assets/stamps/heisenshy.gif#pixels#transparent#no-hover)
