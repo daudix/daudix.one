@@ -143,7 +143,7 @@ Have a look at my [designs](@/design/index.md); mostly icons, but also some wall
 <div id="netscape" class="marquee-wrapper">
 <div class="marquee">
 
-<!-- - [![a proud member of the blue team of 512KB club](assets/88x31/blue-team.gif#pixels#transparent#no-hover)](https://512kb.club) -->
+- [![a proud member of the blue team of 512KB club](assets/88x31/blue-team.gif#pixels#transparent#no-hover)](https://512kb.club)
 - [![aperturelabs](assets/88x31/aperturelabs.gif#pixels#transparent#no-hover)](https://www.aperturescience.com)
 - [![ddg](assets/88x31/ddg.gif#pixels#transparent#no-hover)](https://duckduckgo.com)
 - [![firefox3](assets/88x31/firefox3.gif#pixels#transparent#no-hover)](https://getfirefox.com)
@@ -185,7 +185,7 @@ Have a look at my [designs](@/design/index.md); mostly icons, but also some wall
 - ![yarrr](assets/88x31/yarrr.gif#pixels#transparent#no-hover)
 - <iframe id="increment" src="https://incr.easrng.net/badge?key=daudix.one" title="increment badge"></iframe>
 <!-- Mirror of the above -->
-<!-- - [![a proud member of the blue team of 512KB club](assets/88x31/blue-team.gif#pixels#transparent#no-hover)](https://512kb.club) -->
+- [![a proud member of the blue team of 512KB club](assets/88x31/blue-team.gif#pixels#transparent#no-hover)](https://512kb.club)
 - [![aperturelabs](assets/88x31/aperturelabs.gif#pixels#transparent#no-hover)](https://www.aperturescience.com)
 - [![ddg](assets/88x31/ddg.gif#pixels#transparent#no-hover)](https://duckduckgo.com)
 - [![firefox3](assets/88x31/firefox3.gif#pixels#transparent#no-hover)](https://getfirefox.com)
