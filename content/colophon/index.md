@@ -13,9 +13,10 @@ This is the least fun page on this website. Deal with it.
 <strong>To-do</strong>
 <div>
 
+- [ ] Add expand button to "Bumps" (fill the whole page width and make bumps display as a grid)
 - [ ] Improve a11y (alt texts are awful and testing is barely present)
-- [ ] /uses page
-- [ ] /now page
+- [ ] /uses page (?)
+- [ ] /now page (?)
 - [ ] Redo social links, maybe even draw some custom icons (?)
 - [ ] Make "shrine" for my beloved portal series
 - [ ] Add [navlinkads](https://dimden.dev/navlinkads) (?)
