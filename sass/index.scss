@@ -714,6 +714,10 @@
 				li {
 					margin: 0;
 
+					a img:active {
+						transform: var(--active);
+					}
+
 					img {
 						position: relative;
 						z-index: 0;
