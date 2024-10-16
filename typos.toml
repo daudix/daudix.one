@@ -1,5 +1,5 @@
 [default]
-extend-ignore-re = ["\\bBig Sur\\b", "\\bNed Ludd\\b"]
+extend-ignore-re = ["\\bBig Sur\\b", "\\bNed Ludd\\b", "\\bJuli Kosolapova\\b"]
 
 [files]
-extend-exclude = ["themes/duckquill/*", "static/*.js"]
+extend-exclude = ["themes/duckquill/*", "static/*.js", "*.svg"]
