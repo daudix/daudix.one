@@ -140,7 +140,7 @@ Have a look at my [designs](@/design/index.md); mostly icons, but also some wall
 
 <small>**Bu**ttons + Sta**mps** = Bumps</small>
 
-<div id="netscape" class="marquee-wrapper">
+<div class="marquee-wrapper">
 <div class="marquee">
 
 - [![a proud member of the blue team of 512KB club](assets/88x31/blue-team.gif#pixels#transparent#no-hover)](https://512kb.club)
@@ -228,7 +228,7 @@ Have a look at my [designs](@/design/index.md); mostly icons, but also some wall
 - <iframe id="increment" src="https://incr.easrng.net/badge?key=daudix.one" title="increment badge"></iframe>
 </div>
 </div>
-<div id="stamps" class="marquee-wrapper">
+<div class="marquee-wrapper">
 <div class="marquee">
 
 - ![the-cake-is-a-lie](assets/stamps/the-cake-is-a-lie.gif#pixels#transparent#no-hover)
