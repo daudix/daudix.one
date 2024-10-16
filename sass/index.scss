@@ -674,8 +674,8 @@
 	overflow: hidden;
 
 	&:has(#bumps-expand:checked) {
+		float: none;
 		margin-inline-start: 0;
-		margin-block-end: 1rem;
 		width: 100%;
 		overflow: visible;
 
