@@ -49,11 +49,6 @@ Originally from the Siberian part of Russia, but currently living in <abbr id="a
 
 - Purple <small>(lavender in particular)</small>
 - Design
-- Words:
-  - *yay!*
-  - okie
-  - mhm
-  - noice
 - Games:
   <ul>
     <li id="portal">
@@ -102,14 +97,9 @@ Originally from the Siberian part of Russia, but currently living in <abbr id="a
   - [Cyberpunk](https://aesthetics.fandom.com/wiki/Cyberpunk)
   - [Vaporwave](https://aesthetics.fandom.com/wiki/Vaporwave)
   - [Liminal Space](https://aesthetics.fandom.com/wiki/Liminal_Space)
-- Emoticons:
-  - :3
-  - :P
-  - :D
-  - ^^
 - Monokai Pro <small>(I know, very random, but hear me out, it got this sweet purple tint)</small>
 - Photography <small>(although I don't have much opportunity to shoot anything else than a view from my window)</small>
-- Smol/indie web
+- Small/indie web
 - Minor details and references
 - Retro/-futurism and vintage stuff
 - Making this list look like a staircase
@@ -278,6 +268,8 @@ Have a look at my [designs](@/design/index.md); mostly icons, but also some wall
 - ![adhd](assets/stamps/adhd.gif#pixels#transparent#no-hover)
 </div>
 </div>
+<input type="checkbox" id="bumps-expand" class="hidden" name="expand" />
+<label for="bumps-expand" title="Expand"><i class="icon"></i></label>
 <details id="bumps-bottom-sheet">
 <summary title="Link to me"><i class="icon"></i></summary>
 <div>

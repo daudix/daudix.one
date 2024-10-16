@@ -13,7 +13,6 @@ This is the least fun page on this website. Deal with it.
 <strong>To-do</strong>
 <div>
 
-- [ ] Add expand button to "Bumps" (fill the whole page width and make bumps display as a grid)
 - [ ] Improve a11y (alt texts are awful and testing is barely present)
 - [ ] /uses page (?)
 - [ ] /now page (?)
@@ -24,6 +23,7 @@ This is the least fun page on this website. Deal with it.
 - [ ] Make the player on neocities display my current Spotify/last.fm
 - [ ] Style piclog.blue page
 - [ ] New ARG/Easter Egg type of thingy (?) (inspirations: Portal "dinosaur" ARG, SSTV)
+- [x] Add expand button to "Bumps" (fill the whole page width and make bumps display as a grid)
 - [x] Restyle Fediring
 - [x] Add section with logos to Design
 - [x] Add section with unused icons to Design
