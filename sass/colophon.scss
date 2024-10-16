@@ -3,12 +3,6 @@
 	flex-direction: column;
 	aspect-ratio: 1 / 1;
 
-	& > strong {
-		color: var(--accent-color);
-		font-size: var(--font-size-x-large);
-		line-height: 1;
-	}
-
 	div {
 		--mask: linear-gradient(to bottom, transparent, black 1rem, black calc(100% - 1rem), transparent);
 		-webkit-mask-image: var(--mask);

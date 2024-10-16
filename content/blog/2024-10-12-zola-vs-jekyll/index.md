@@ -4,6 +4,7 @@ description = "Or don't, it's up to you to decide after all."
 [taxonomies]
 tags = ["100DaysToOffload", "Zola", "Jekyll"]
 [extra]
+featured = true
 toc = true
 banner = "banner.webp"
 [extra.comments]

@@ -100,7 +100,7 @@ I work with the following creative applications and I’m always learning to bet
 
 <!-- Card start -->
 <div class="card">
-<strong>Payment and Pricing</strong>
+<strong class="title">Payment and Pricing</strong>
 
 <div class="card-content">
 <div class="fancy-list">
@@ -122,7 +122,7 @@ If the total cost is less than estimated, I’ll refund the difference.
 
 <!-- Card start -->
 <div class="card">
-<strong>Timing</strong>
+<strong class="title">Timing</strong>
 
 <div class="card-content">
 <div class="fancy-list">
@@ -140,7 +140,7 @@ That said, I will do my best to complete it as fast as I can.
 
 <!-- Card start -->
 <div class="card">
-<strong>Process</strong>
+<strong class="title">Process</strong>
 
 <div class="card-content">
 <div class="fancy-list">
@@ -160,7 +160,7 @@ Websites will have full source code and instructions on how to build them, logos
 
 <!-- Card start -->
 <div class="card">
-<strong>Other Details</strong>
+<strong class="title">Other Details</strong>
 
 <div class="card-content">
 <div class="fancy-list">
@@ -192,7 +192,7 @@ This not only improves speed, but also ensures that the website uses only well-d
 
 <!-- Card start -->
 <div class="card">
-<strong>88x31 Button</strong>
+<strong class="title">88x31 Button</strong>
 <div class="card-content">
 Small Scale • <mark>$2</mark>
 
@@ -203,7 +203,7 @@ Custom 88x31 button for your website. Animation will double the price. Available
 
 <!-- Card start -->
 <div class="card">
-<strong>Logo</strong>
+<strong class="title">Logo</strong>
 <ul class="tab-switcher">
 <li>
 <input class="hidden" id="logo-small" type="radio" name="logo" checked />
@@ -231,7 +231,7 @@ Includes more logo variants, a complete brand kit (fonts, color palette), and br
 
 <!-- Card start -->
 <div class="card">
-<strong>Duckquill Website</strong>
+<strong class="title">Duckquill Website</strong>
 <ul class="tab-switcher">
 <li>
 <input class="hidden" id="duckquill-small" type="radio" name="duckquill" checked />
@@ -259,7 +259,7 @@ Large Scale • <mark>$16-$32</mark>
 
 <!-- Card start -->
 <div class="card">
-<strong>Custom Website</strong>
+<strong class="title">Custom Website</strong>
 <ul class="tab-switcher">
 <li>
 <input class="hidden" id="custom-small" type="radio" name="custom" checked />
@@ -301,7 +301,7 @@ Large Scale • <mark>$64-$128</mark>
 
 <!-- Card start -->
 <div class="card">
-<strong>Motion Design</strong>
+<strong class="title">Motion Design</strong>
 <div class="card-content">
 Small Scale • <mark>$24-$48</mark>
 
@@ -312,7 +312,7 @@ Short video (up to 90 seconds) made in Blender, 2D or with some 3D elements.
 
 <!-- Card start -->
 <div class="card">
-<strong>Video Editing</strong>
+<strong class="title">Video Editing</strong>
 <div class="card-content">
 Small Scale • <mark>$12-$48</mark>
 

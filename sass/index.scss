@@ -753,13 +753,7 @@
 		pointer-events: none;
 	}
 
-	&>strong {
-		color: var(--accent-color);
-		font-size: var(--font-size-x-large);
-		line-height: 1;
-	}
-
-	&>p {
+	& > p {
 		margin-block-start: 0.5rem;
 	}
 

@@ -10,7 +10,7 @@ This is the least fun page on this website. Deal with it.
 {% end %}
 
 <aside id="to-do">
-<strong>To-do</strong>
+<strong class="title">To-do</strong>
 <div>
 
 - [ ] Improve a11y (alt texts are awful and testing is barely present)

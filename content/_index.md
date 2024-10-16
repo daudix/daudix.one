@@ -136,7 +136,7 @@ Have a look at my [designs](@/design/index.md); mostly icons, but also some wall
 ## IndieWeb
 
 <aside id="bumps">
-<strong>Bumps</strong>
+<strong class="title">Bumps</strong>
 
 <small>**Bu**ttons + Sta**mps** = Bumps</small>
 

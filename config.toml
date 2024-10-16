@@ -31,6 +31,7 @@ styles = ["custom.css"]
 show_copy_button = true
 show_reading_time = true
 show_share_button = true
+show_backlinks = true
 debug_layout = false
 
 [extra.nav]
