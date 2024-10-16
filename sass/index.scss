@@ -671,7 +671,6 @@
 
 #bumps {
 	position: relative;
-	transition: var(--transition-longer);
 	overflow: hidden;
 
 	&:has(#bumps-expand:checked) {
@@ -705,6 +704,7 @@
 				justify-content: center;
 				gap: 0.25rem;
 				animation: none;
+				transition: none;
 				height: fit-content;
 
 				&:nth-of-type(2) {
