@@ -689,6 +689,10 @@
 			&:nth-of-type(1) {
 				margin-block-end: 1rem;
 			}
+
+			&:nth-of-type(2) .marquee ul {
+				flex-direction: row;
+			}
 		}
 
 		.marquee {
@@ -724,7 +728,7 @@
 			}
 		}
 
-		#bumps-expand + label {
+		#bumps-expand+label {
 			inset-inline-end: 0.5rem;
 
 			.icon {
@@ -739,19 +743,19 @@
 		}
 	}
 
-	&:has(#bumps-bottom-sheet[open]) #bumps-expand + label {
+	&:has(#bumps-bottom-sheet[open]) #bumps-expand+label {
 		transform: scale(0.5);
 		opacity: 0;
 		pointer-events: none;
 	}
 
-	& > strong {
+	&>strong {
 		color: var(--accent-color);
 		font-size: var(--font-size-x-large);
 		line-height: 1;
 	}
 
-	& > p {
+	&>p {
 		margin-block-start: 0.5rem;
 	}
 
@@ -834,6 +838,7 @@
 			height: 3.5rem; // 56px
 
 			.marquee ul {
+				flex-direction: row-reverse;
 				animation-duration: 40s;
 				animation-direction: reverse;
 			}
@@ -850,21 +855,21 @@
 	}
 
 	#bumps-expand {
-		&:focus-visible + label {
+		&:focus-visible+label {
 			animation: focus-in var(--transition);
 			outline: 0.125rem solid var(--accent-color);
 			outline-offset: 0.125rem;
 		}
 
 		@supports not selector(:focus-visible) {
-			&:focus + label {
+			&:focus+label {
 				animation: focus-in var(--transition);
 				outline: 0.125rem solid var(--accent-color);
 				outline-offset: 0.125rem;
 			}
 		}
 
-		& + label {
+		&+label {
 			position: absolute;
 			transition: var(--transition);
 			cursor: pointer;
@@ -940,7 +945,7 @@
 			}
 		}
 
-		& > div {
+		&>div {
 			-webkit-backdrop-filter: var(--blur);
 			display: flex;
 			position: absolute;
