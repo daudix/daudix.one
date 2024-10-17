@@ -32,6 +32,10 @@ styles = ["index.css"]
   </a>
 </div>
 
+{% alert(note=true) %}
+Now on exozyme!
+{% end %}
+
 <div id="header-container">
 
 # David Lapshin { #header }
