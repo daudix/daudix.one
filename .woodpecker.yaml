@@ -3,26 +3,23 @@ steps:
   typos:
     image: fish
     commands:
-      - distrobox enter archlinux-latest
-      - typos
+      - $HOME/.local/bin/typos
     failure: ignore
     when:
       event: [push, pull_request, manual]
 
   # Check website build
   check:
-    image: alpine:edge
+    image: fish
     commands:
-      - distrobox enter archlinux-latest
-      - zola check
+      - $HOME/.local/bin/zola check
     when:
       event: [pull_request]
 
   # Build and publish website
   build:
-    image: alpine:edge
+    image: fish
     commands:
-      - distrobox enter archlinux-latest
-      - zola build --output-dir /srv/http/daudix
+      - $HOME/.local/bin/zola build --output-dir /srv/http/daudix --force
     when:
       event: [push, manual]
