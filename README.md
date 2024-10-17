@@ -1,6 +1,6 @@
 [![Please don't upload to GitHub](https://nogithub.codeberg.page/badge.svg)](https://nogithub.codeberg.page)
 [![MIT license](https://img.shields.io/badge/License-MIT-blue)](https://mit-license.org)
-[![status-badge](https://ci.codeberg.org/api/badges/13749/status.svg)](https://ci.codeberg.org/repos/13749)
+[![status-badge](https://ci.exozy.me/api/badges/178/status.svg)](https://ci.exozy.me/repos/178)
 
 # [Daudix’s Blog](https://daudix.one)
 
@@ -27,7 +27,7 @@ If you want to use some custom styles and stuff from here, go ahead, just don't 
 - Clone the repository recursively:
 
 ```bash
-git clone --recursive git@codeberg.org:daudix/website.git
+git clone --recursive forgejo@git.exozy.me:daudix/website.git
 ```
 
 - Checkout `main` branch for Duckquill:
@@ -40,7 +40,7 @@ git checkout main
 - Set remote URL to SSH one:
 
 ```bash
-git remote set-url origin git@codeberg.org:daudix/duckquill.git
+git remote set-url origin forgejo@git.exozy.me:daudix/website.git
 ```
 
 ## Know your rights
