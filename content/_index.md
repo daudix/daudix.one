@@ -271,7 +271,7 @@ Have a look at my [designs](@/design/index.md); mostly icons, but also some wall
 <input type="checkbox" id="bumps-expand" class="hidden" name="expand" />
 <label for="bumps-expand" title="Expand"><i class="icon"></i></label>
 <details id="bumps-bottom-sheet">
-<summary title="Link to me"><i class="icon"></i></summary>
+<summary title="Link to Me"><i class="icon"></i></summary>
 <div>
 <div>
 
