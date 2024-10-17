@@ -40,7 +40,7 @@ git checkout main
 - Set remote URL to SSH one:
 
 ```bash
-git remote set-url origin forgejo@git.exozy.me:daudix/website.git
+git remote set-url origin git@codeberg.org:daudix/duckquill.git
 ```
 
 ## Know your rights
