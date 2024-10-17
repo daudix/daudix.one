@@ -1,6 +1,6 @@
 [![Please don't upload to GitHub](https://nogithub.codeberg.page/badge.svg)](https://nogithub.codeberg.page)
 [![MIT license](https://img.shields.io/badge/License-MIT-blue)](https://mit-license.org)
-[![status-badge](https://ci.exozy.me/api/badges/178/status.svg)](https://ci.exozy.me/repos/178)
+[![status-badge](https://ci.exozy.me/api/badges/179/status.svg)](https://ci.exozy.me/repos/179)
 
 # [Daudix’s Blog](https://daudix.one)
 
