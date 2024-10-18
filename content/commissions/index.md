@@ -206,11 +206,11 @@ Custom 88x31 button for your website. Animation will double the price. Available
 <strong class="title">Logo</strong>
 <ul class="tab-switcher">
 <li>
-<input class="hidden" id="logo-small" type="radio" name="logo" checked />
+<input class="visually-hidden" id="logo-small" type="radio" name="logo" checked />
 <label for="logo-small">&nbsp;Small Scale</label>
 </li>
 <li>
-<input class="hidden" id="logo-large" type="radio" name="logo" />
+<input class="visually-hidden" id="logo-large" type="radio" name="logo" />
 <label for="logo-large">&nbsp;Large Scale</label>
 </li>
 </ul>
@@ -234,11 +234,11 @@ Includes more logo variants, a complete brand kit (fonts, color palette), and br
 <strong class="title">Duckquill Website</strong>
 <ul class="tab-switcher">
 <li>
-<input class="hidden" id="duckquill-small" type="radio" name="duckquill" checked />
+<input class="visually-hidden" id="duckquill-small" type="radio" name="duckquill" checked />
 <label for="duckquill-small">&nbsp;Small Scale</label>
 </li>
 <li>
-<input class="hidden" id="duckquill-large" type="radio" name="duckquill" />
+<input class="visually-hidden" id="duckquill-large" type="radio" name="duckquill" />
 <label for="duckquill-large">&nbsp;Large Scale</label>
 </li>
 </ul>
@@ -262,11 +262,11 @@ Large Scale • <mark>$16-$32</mark>
 <strong class="title">Custom Website</strong>
 <ul class="tab-switcher">
 <li>
-<input class="hidden" id="custom-small" type="radio" name="custom" checked />
+<input class="visually-hidden" id="custom-small" type="radio" name="custom" checked />
 <label for="custom-small">&nbsp;Small Scale</label>
 </li>
 <li>
-<input class="hidden" id="custom-large" type="radio" name="custom" />
+<input class="visually-hidden" id="custom-large" type="radio" name="custom" />
 <label for="custom-large">&nbsp;Large Scale</label>
 </li>
 </ul>

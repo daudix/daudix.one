@@ -268,7 +268,7 @@ Have a look at my [designs](@/design/index.md); mostly icons, but also some wall
 - ![the-cake-is-a-lie](assets/stamps/the-cake-is-a-lie.gif#pixels#transparent#no-hover)
 </div>
 </div>
-<input type="checkbox" id="bumps-expand" class="hidden" name="expand" />
+<input type="checkbox" id="bumps-expand" class="visually-hidden" name="expand" />
 <label for="bumps-expand" title="Expand"><i class="icon"></i></label>
 <details id="bumps-bottom-sheet">
 <summary title="Link to Me"><i class="icon"></i></summary>
