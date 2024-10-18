@@ -33,6 +33,19 @@ show_reading_time = true
 show_share_button = true
 show_backlinks = true
 debug_layout = false
+csp = [
+	{ directive = "font-src", domains = ["'self'"] },
+	{ directive = "img-src", domains = ["'self'", "https:", "data:"] },
+	{ directive = "media-src", domains = ["'self'", "https:"] },
+	{ directive = "script-src", domains = ["'self'"] },
+	{ directive = "style-src", domains = ["'self'", "'unsafe-inline'"] },
+	{ directive = "frame-src", domains = ["https://vmst.io"] },
+	{ directive = "connect-src", domains = ["mstdn.social", "https://social.treehouse.systems"] },
+	{ directive = "frame-ancestors", domains = ["'none'"] },
+	{ directive = "base-uri", domains = ["'none'"] },
+	{ directive = "form-action", domains = ["'none'"] },
+	{ directive = "require-trusted-types-for", domains = ["'script'"] },
+]
 
 [extra.nav]
 show_feed = true
