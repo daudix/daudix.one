@@ -952,7 +952,7 @@
 			inset: 3rem 0 0;
 			box-shadow: var(--edge-highlight), var(--shadow), 0 0 0 16rem var(--shade-color);
 			border-radius: var(--rounded-corner);
-			background-color: var(--nav-bg);
+			background-color: var(--glass-bg);
 
 			div {
 				--mask: linear-gradient(to bottom, transparent, black 1rem, black calc(100% - 1rem), transparent);
