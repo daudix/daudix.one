@@ -1,0 +1,374 @@
+:root {
+	--border-width: 0.5mm;
+}
+
+@font-face {
+	font-style: normal;
+	font-weight: 100 900;
+	src: url("calendar/fonts/inter.woff2") format("woff2");
+	font-family: "Inter";
+	font-display: swap;
+}
+
+@font-face {
+	font-style: normal;
+	font-weight: 300;
+	src: url("calendar/fonts/univers.woff2") format("woff2");
+	font-family: "Univers";
+	font-display: swap;
+}
+
+body {
+	background: white;
+	color: black;
+	font-family: "Inter";
+
+	@media screen {
+		margin: 2rem auto;
+		width: min(var(--container-width), 90%);
+	}
+}
+
+#calendar-header {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 5mm;
+	margin-top: 3mm;
+	margin-bottom: -5mm;
+	line-height: 1;
+	font-family: "Univers";
+
+	#month-number {
+		font-size: 68mm;
+	}
+
+	#secondary-column {
+		display: flex;
+		flex-direction: column;
+		font-size: 30mm;
+		line-height: 0.95;
+	}
+}
+
+#calendar-footer {
+	display: flex;
+	flex-direction: column;
+
+	#year-progress {
+		flex: 1;
+
+		#progress-bar-wrapper {
+			flex: 1;
+			border-top: var(--border-width) solid black;
+			border-bottom: var(--border-width) solid black;
+			padding: 1mm 0;
+		}
+
+		#progress-bar {
+			--mask: linear-gradient(to right, black, black var(--year-percentage), transparent var(--year-percentage), transparent);
+			-webkit-mask-image: var(--mask);
+			-webkit-print-color-adjust: exact;
+			mask-image: var(--mask);
+			background-image: repeating-linear-gradient(to right,
+					black,
+					black 0.5mm,
+					white 0.5mm,
+					white 1mm);
+			width: 100%;
+			height: 5mm;
+			print-color-adjust: exact;
+			// background-clip: content-box;
+		}
+	}
+
+	#column {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+
+		&-left {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+
+		#progress-month {
+			display: inline-flex;
+			width: fit-content;
+		}
+
+		#logo {
+			margin: 0;
+			aspect-ratio: 598 / 152;
+			width: 38.835mm;
+		}
+	}
+}
+
+#chamber-icons {
+	display: grid;
+	grid-template-rows: repeat(2, 1fr);
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-areas:
+		". . . . ."
+		". . . . .";
+	grid-auto-flow: row;
+	gap: 1mm;
+	margin-top: 3mm;
+	width: fit-content;
+	height: fit-content;
+	// margin-left: auto;
+
+	label {
+		-webkit-print-color-adjust: exact;
+		cursor: pointer;
+		background-size: cover;
+		aspect-ratio: 1 / 1;
+		width: 13.560mm;
+		print-color-adjust: exact;
+	}
+
+	#cake {
+		&:checked+label {
+			background-image: url("calendar/chamber-icons/cake-on.png");
+		}
+
+		&+label {
+			background-image: url("calendar/chamber-icons/cake.png");
+		}
+	}
+
+	#cube-dispenser {
+		&:checked+label {
+			background-image: url("calendar/chamber-icons/cube-dispenser-on.png");
+		}
+
+		&+label {
+			background-image: url("calendar/chamber-icons/cube-dispenser.png");
+		}
+	}
+
+	#cube-hazard {
+		&:checked+label {
+			background-image: url("calendar/chamber-icons/cube-hazard-on.png");
+		}
+
+		&+label {
+			background-image: url("calendar/chamber-icons/cube-hazard.png");
+		}
+	}
+
+	#dirty-water {
+		&:checked+label {
+			background-image: url("calendar/chamber-icons/dirty-water-on.png");
+		}
+
+		&+label {
+			background-image: url("calendar/chamber-icons/dirty-water.png");
+		}
+	}
+
+	#fling-enter {
+		&:checked+label {
+			background-image: url("calendar/chamber-icons/fling-enter-on.png");
+		}
+
+		&+label {
+			background-image: url("calendar/chamber-icons/fling-enter.png");
+		}
+	}
+
+	#fling-exit {
+		&:checked+label {
+			background-image: url("calendar/chamber-icons/fling-exit-on.png");
+		}
+
+		&+label {
+			background-image: url("calendar/chamber-icons/fling-exit.png");
+		}
+	}
+
+	#pellet-catcher {
+		&:checked+label {
+			background-image: url("calendar/chamber-icons/pellet-catcher-on.png");
+		}
+
+		&+label {
+			background-image: url("calendar/chamber-icons/pellet-catcher.png");
+		}
+	}
+
+	#pellet-hazard {
+		&:checked+label {
+			background-image: url("calendar/chamber-icons/pellet-hazard-on.png");
+		}
+
+		&+label {
+			background-image: url("calendar/chamber-icons/pellet-hazard.png");
+		}
+	}
+
+	#turret-hazard {
+		&:checked+label {
+			background-image: url("calendar/chamber-icons/turret-hazard-on.png");
+		}
+
+		&+label {
+			background-image: url("calendar/chamber-icons/turret-hazard.png");
+		}
+	}
+
+	#water-hazard {
+		&:checked+label {
+			background-image: url("calendar/chamber-icons/water-hazard-on.png");
+		}
+
+		&+label {
+			background-image: url("calendar/chamber-icons/water-hazard.png");
+		}
+	}
+}
+
+.cjs-left:first-of-type {
+	border-left: none;
+}
+
+.cjs-weekRow:last-of-type .cjs-bottom {
+	border-bottom: none;
+}
+
+.CalendarJS {
+	margin: 0;
+	padding: 0;
+}
+
+.cjs-calHeader {
+	display: none;
+	margin: 0;
+	padding: 0 0 1mm 0 !important;
+	width: 100%;
+}
+
+.cjs-right {
+	box-sizing: border-box;
+}
+
+.cjs-top {
+	box-sizing: border-box;
+}
+
+.cjs-left {
+	box-sizing: border-box;
+	border-left: var(--border-width) solid black;
+}
+
+.cjs-bottom {
+	box-sizing: border-box;
+	border-bottom: var(--border-width) solid black;
+}
+
+.cjs-dayCol {
+	position: relative;
+	float: left;
+	/* = width for a 1:1 aspect ratio */
+	margin: 0;
+	padding: 0% 0% calc(100% / 7) 0%;
+	width: calc(100% / 7);
+	overflow: hidden;
+	text-align: left;
+}
+
+.cjs-dayContent {
+	position: absolute;
+	margin: 0;
+	/*90%; /* = 100% - 2*5% padding */
+	padding: 0;
+	/* 90%; /* = 100% - 2*5% padding */
+	width: calc(100% - 2mm);
+	height: calc(100% - 1mm);
+}
+
+.cjs-dayHeader {
+	margin: 0;
+	padding: 0;
+	font-size: 5mm;
+	text-align: center;
+}
+
+.cjs-dayHeaderCell {
+	margin: 0;
+	padding: 1mm;
+	font-size: 5mm;
+	text-transform: uppercase;
+}
+
+.cjs-dayTable {
+	display: table;
+	margin: 1mm 2mm;
+	padding: 0;
+	width: calc(100% - 2mm);
+	height: calc(100% - 1mm);
+}
+
+.cjs-dayCell {
+	display: table-cell;
+	vertical-align: top;
+	margin: 0;
+	padding: 0;
+}
+
+.cjs-lastLink {
+	float: left;
+	box-sizing: border-box;
+	margin: 0;
+	border: var(--border-width) solid black;
+	padding: 1mm 2mm;
+	font-weight: bold;
+	font-size: 5mm;
+}
+
+.cjs-nextLink {
+	float: right;
+	box-sizing: border-box;
+	margin: 0;
+	border: var(--border-width) solid black;
+	padding: 1mm 2mm;
+	font-weight: bold;
+	font-size: 5mm;
+}
+
+.cjs-clearfix {
+	clear: both;
+	margin: -0.25mm 0;
+	border: 0;
+	padding: 0.125mm;
+	width: 0;
+	height: 0;
+}
+
+.cjs-moTitle {
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	font-size: 5mm;
+	text-align: center;
+}
+
+.cjs-lastLink:hover,
+.cjs-nextLink:hover {
+	cursor: pointer;
+}
+
+.cjs-dateLabel {
+	margin: 0;
+	padding: 0;
+	font-size: 5mm;
+}
+
+.cjs-weekRow {
+	position: relative;
+	margin: 0;
+	border: 0;
+	padding: 0;
+}

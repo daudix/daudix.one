@@ -3,6 +3,6 @@ title = "Swag Block"
 description = "A small test of x3dom."
 template = "swag.html"
 [extra]
-styles = ["x3dom.css", "swag.css"]
-scripts = ["x3dom.js"]
+styles = ["swag/x3dom.css", "swag.css"]
+scripts = ["swag/x3dom.js"]
 +++

@@ -3,7 +3,7 @@ title = "Commissions"
 description = "Here you can commission me to do a wide range of designs."
 [extra]
 styles = ["commissions.css"]
-scripts = ["rays.js"]
+scripts = ["commissions/rays.js"]
 +++
 
 {% alert(note=true) %}
