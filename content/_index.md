@@ -2,6 +2,7 @@
 title = "Home"
 [extra]
 styles = ["index.css"]
+scripts = ["statuscafe.js", "fluttershy.js", "rizz.js"]
 +++
 
 <noscript>
@@ -111,7 +112,7 @@ Take design; it's more than just something I like, it's my hobby and I'm learnin
 
 As you can see, I also do some web development! I like working with CSS and HTML, but that's about it; JS is a bit of a mystery for me :D
 
-And lastly, to quote [Jeffrey](https://hyperreal.coffee/about/): "I’m <button id="shy" onclick="fluttershyAnim()">shy</button> and might come across as reserved and standoffish at first, but I open up when I get more comfortable with people."
+And lastly, to quote [Jeffrey](https://hyperreal.coffee/about/): "I’m <button id="shy">shy</button> and might come across as reserved and standoffish at first, but I open up when I get more comfortable with people."
 
 ## Works
 
@@ -297,81 +298,6 @@ I have a website on [neocities](https://neocities.org); it's a bit empty at the 
 I also have a [Gemini capsule](gemini://gmi.daudix.one) on [flounder](https://flounder.online). I recently changed it to serve as a place for jotting down small notes rather than being a mirror of this website. See [this post](@/blog/2024-07-13-repurposing-gemini-capsule/index.md) for the reasons behind this decision. <small>(you can also _finger_ me at `daudix@flounder.online`)</small>
 
 <div id="rizz-dialog" class="dialog-buttons">
-  <button id="rizz" class="inline-button" onclick="rizzItUp()">Rizz It Up</button>
+  <button id="rizz" class="inline-button">Rizz It Up</button>
   <div id="dont"></div>
 </div>
-
-<script type="text/javascript">
-  document.addEventListener("DOMContentLoaded", function () {
-    fetch("https://status.cafe/users/daudix/status.json")
-      .then(r => r.json())
-      .then(r => {
-        if (!r.content.length) {
-          document.getElementById("statuscafe-content").innerHTML = "No status yet."
-          return
-        }
-        document.getElementById("statuscafe-content").innerHTML = r.content
-        document.getElementById("statuscafe-face").innerHTML = r.face
-        document.getElementById("statuscafe-time-ago").innerHTML = r.timeAgo
-      })
-      .catch(error => console.error("Error fetching status:", error));
-  });
-</script>
-
-<script type="text/javascript">
-  function fluttershyAnim() {
-    const shy = document.getElementById("shy");
-    shy.toggleAttribute("disabled");
-
-    const squee = new Audio("assets/squee.mp3");
-    squee.play();
-
-    const fluttershy = document.createElement("img");
-    fluttershy.setAttribute("id", "fluttershy");
-    fluttershy.setAttribute("alt", "fluttershy");
-    fluttershy.setAttribute("src", "assets/squee.webp");
-    fluttershy.classList.add("transparent", "no-hover", "drop-shadow");
-
-    const container = document.getElementById("main");
-    container.appendChild(fluttershy);
-
-    fluttershy.addEventListener("animationend", function () {
-      shy.toggleAttribute("disabled");
-      fluttershy.remove();
-    });
-  }
-</script>
-
-<script type="text/javascript">
-  function rizzItUp() {
-      const rizzDialog = document.getElementById("rizz-dialog");
-      rizzDialog.remove();
-
-      const vineBoomSoundEffect = "assets/vine-boom.mp3";
-      new Audio(vineBoomSoundEffect).play();
-
-      const container = document.getElementById("main");
-
-      let subwaySurfers = document.getElementById("subway-surfers");
-      if (subwaySurfers === null) {
-          let subwaySurfers = document.createElement("iframe");
-          subwaySurfers.setAttribute("id", "subway-surfers");
-          subwaySurfers.setAttribute("src", "https://www.youtube.com/embed/zZ7AimPACzc?autoplay=1&mute=1");
-          subwaySurfers.setAttribute("name", "youtube embed");
-          subwaySurfers.setAttribute("allow", "autoplay; encrypted-media");
-          subwaySurfers.setAttribute("allowfullscreen", "true");
-          container.appendChild(subwaySurfers);
-      }
-
-      let oddlySatisfying = document.getElementById("oddly-satisfying");
-      if (oddlySatisfying === null) {
-          let oddlySatisfying = document.createElement("iframe");
-          oddlySatisfying.setAttribute("id", "oddly-satisfying");
-          oddlySatisfying.setAttribute("src", "https://www.youtube.com/embed/ebnQsTk9s-s?autoplay=1");
-          oddlySatisfying.setAttribute("name", "youtube embed");
-          oddlySatisfying.setAttribute("allow", "autoplay; encrypted-media");
-          oddlySatisfying.setAttribute("allowfullscreen", "true");
-          container.appendChild(oddlySatisfying);
-      }
-  }
-</script>
