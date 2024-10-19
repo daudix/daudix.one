@@ -44,7 +44,6 @@ csp = [
 	{ directive = "frame-ancestors", domains = ["'none'"] },
 	{ directive = "base-uri", domains = ["'none'"] },
 	{ directive = "form-action", domains = ["'none'"] },
-	{ directive = "require-trusted-types-for", domains = ["'script'"] },
 ]
 
 [extra.nav]
