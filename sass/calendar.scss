@@ -22,11 +22,19 @@ body {
 	background: white;
 	color: black;
 	font-family: "Inter", var(--font-system-ui);
+	white-space: nowrap;
+
+	& > a {
+		display: none;
+	}
 
 	@media screen {
-		margin: 2rem auto;
-		aspect-ratio: 1 / 1.41421;
+		margin: 10mm auto;
 		width: min(var(--container-width), 90%);
+
+		& > a {
+			display: inline;
+		}
 	}
 }
 
@@ -61,6 +69,7 @@ body {
 
 		#progress-bar-wrapper {
 			flex: 1;
+			margin-top: 3mm;
 			border-top: var(--border-width) solid black;
 			border-bottom: var(--border-width) solid black;
 			padding: 1mm 0;
@@ -186,14 +195,6 @@ body {
 	}
 }
 
-.cjs-left:first-of-type {
-	border-left: none;
-}
-
-.cjs-weekRow:last-of-type .cjs-bottom {
-	border-bottom: none;
-}
-
 .CalendarJS {
 	margin: 0;
 	padding: 0;
@@ -217,6 +218,10 @@ body {
 .cjs-left {
 	box-sizing: border-box;
 	border-left: var(--border-width) solid black;
+
+	&:first-of-type {
+		border-left: none;
+	}
 }
 
 .cjs-bottom {
@@ -327,4 +332,8 @@ body {
 	margin: 0;
 	border: 0;
 	padding: 0;
+
+	&:last-of-type .cjs-bottom {
+		border-bottom: none;
+	}
 }
