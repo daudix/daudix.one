@@ -85,7 +85,7 @@ This is not a complete list, but rather list of places where I'm somewhat active
 
 <div class="icon-grid">
 
-<a href="https://social.treehouse.systems/@daudix">
+<a href="https://vmst.io/@daudix">
 <img class="transparent no-hover pixels drop-shadow icon" alt="" src="icons/mastodon.gif" />
 <div class="details">
 <strong>Mastodon</strong>
