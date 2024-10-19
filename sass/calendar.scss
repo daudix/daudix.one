@@ -21,7 +21,7 @@
 body {
 	background: white;
 	color: black;
-	font-family: "Inter";
+	font-family: "Inter", var(--font-system-ui);
 
 	@media screen {
 		margin: 2rem auto;
@@ -37,7 +37,7 @@ body {
 	margin-top: 3mm;
 	margin-bottom: -5mm;
 	line-height: 1;
-	font-family: "Univers";
+	font-family: "Univers", var(--font-industrial);
 
 	#month-number {
 		font-size: 68mm;
