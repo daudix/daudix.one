@@ -135,6 +135,20 @@ body {
 		opacity: 1;
 	}
 
+	input:focus-visible + label {
+		animation: focus-in var(--transition);
+		outline: 0.125rem solid var(--accent-color);
+		outline-offset: 0.125rem;
+	}
+
+	@supports not selector(:focus-visible) {
+		input:focus + label {
+			animation: focus-in var(--transition);
+			outline: 0.125rem solid var(--accent-color);
+			outline-offset: 0.125rem;
+		}
+	}
+
 	#cube-dispenser + label {
 		background-image: url("calendar/chamber-icons/cube-dispenser.png");
 	}
