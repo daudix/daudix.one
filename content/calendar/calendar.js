@@ -612,4 +612,5 @@ document.getElementById('month-name').textContent = monthName;
 document.getElementById('month-number').textContent = monthNumber;
 document.getElementById('year').textContent = year;
 document.getElementById('progress-bar').style.setProperty('--year-percentage', `${formattedPercentage}%`);
+document.getElementById('progress-bar').title = `${formattedPercentage}% of the year has passed`;
 document.getElementById('progress-month').textContent = `${monthNumber}/12`;
