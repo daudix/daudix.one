@@ -25,6 +25,7 @@ body {
 
 	@media screen {
 		margin: 2rem auto;
+		aspect-ratio: 1 / 1.41421;
 		width: min(var(--container-width), 90%);
 	}
 }
