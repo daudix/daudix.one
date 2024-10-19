@@ -18,9 +18,9 @@ You can see some of my work on the [design](@/design/index.md) page.
 
 I work with the following creative applications and I’m always learning to better meet the needs of your project:
 
-<div class="apps-grid">
+<div class="icon-grid">
 
-<a class="app" href="https://www.aseprite.org">
+<a href="https://www.aseprite.org">
 <img class="transparent no-hover drop-shadow icon" alt="" src="icons/aseprite.png" />
 <div class="details">
 <strong>Aseprite</strong>
@@ -28,7 +28,7 @@ I work with the following creative applications and I’m always learning to bet
 </div>
 </a>
 
-<a class="app" href="https://www.audacityteam.org/">
+<a href="https://www.audacityteam.org/">
 <img class="transparent no-hover drop-shadow icon" alt="" src="icons/audacity.svg" />
 <div class="details">
 <strong>Audacity</strong>
@@ -36,7 +36,7 @@ I work with the following creative applications and I’m always learning to bet
 </div>
 </a>
 
-<a class="app" href="https://www.blender.org">
+<a href="https://www.blender.org">
 <img class="transparent no-hover drop-shadow icon" alt="" src="icons/blender.svg" />
 <div class="details">
 <strong>Blender</strong>
@@ -44,7 +44,7 @@ I work with the following creative applications and I’m always learning to bet
 </div>
 </a>
 
-<a class="app" href="https://www.darktable.org">
+<a href="https://www.darktable.org">
 <img class="transparent no-hover drop-shadow icon" alt="" src="icons/darktable.svg" />
 <div class="details">
 <strong>Darktable</strong>
@@ -52,7 +52,7 @@ I work with the following creative applications and I’m always learning to bet
 </div>
 </a>
 
-<a class="app" href="https://www.blackmagicdesign.com/products/davinciresolve">
+<a href="https://www.blackmagicdesign.com/products/davinciresolve">
 <img class="transparent no-hover drop-shadow icon" alt="" src="icons/davinciresolve.png" />
 <div class="details">
 <strong>DaVinci Resolve</strong>
@@ -60,7 +60,7 @@ I work with the following creative applications and I’m always learning to bet
 </div>
 </a>
 
-<a class="app" href="https://www.gimp.org">
+<a href="https://www.gimp.org">
 <img class="transparent no-hover drop-shadow icon" alt="" src="icons/gimp.svg" />
 <div class="details">
 <strong>GIMP</strong>
@@ -68,7 +68,7 @@ I work with the following creative applications and I’m always learning to bet
 </div>
 </a>
 
-<a class="app" href="https://inkscape.org">
+<a href="https://inkscape.org">
 <img class="transparent no-hover drop-shadow icon" alt="" src="icons/inkscape.svg" />
 <div class="details">
 <strong>Inkscape</strong>
@@ -76,7 +76,7 @@ I work with the following creative applications and I’m always learning to bet
 </div>
 </a>
 
-<a class="app" href="https://kdenlive.org">
+<a href="https://kdenlive.org">
 <img class="transparent no-hover drop-shadow icon" alt="" src="icons/kdenlive.svg" />
 <div class="details">
 <strong>Kdenlive</strong>
@@ -84,7 +84,7 @@ I work with the following creative applications and I’m always learning to bet
 </div>
 </a>
 
-<a class="app" href="https://krita.org/en/">
+<a href="https://krita.org/en/">
 <img class="transparent no-hover drop-shadow icon" alt="" src="icons/krita.svg" />
 <div class="details">
 <strong>Krita</strong>
