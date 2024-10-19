@@ -285,9 +285,9 @@ body {
 
 .cjs-clearfix {
 	clear: both;
-	margin: -0.25mm 0;
+	margin: calc(var(--border-width) / 2 * -1) 0;
 	border: 0;
-	padding: 0.125mm;
+	padding: calc(var(--border-width) / 4);
 	width: 0;
 	height: 0;
 }
