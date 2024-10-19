@@ -122,6 +122,7 @@ body {
 
 	label {
 		-webkit-print-color-adjust: exact;
+		opacity: 0.25;
 		cursor: pointer;
 		background-size: cover;
 		aspect-ratio: 1 / 1;
@@ -129,104 +130,48 @@ body {
 		print-color-adjust: exact;
 	}
 
-	#cake {
-		&:checked+label {
-			background-image: url("calendar/chamber-icons/cake-on.png");
-		}
-
-		&+label {
-			background-image: url("calendar/chamber-icons/cake.png");
-		}
+	input:checked + label {
+		opacity: 1;
 	}
 
-	#cube-dispenser {
-		&:checked+label {
-			background-image: url("calendar/chamber-icons/cube-dispenser-on.png");
-		}
-
-		&+label {
-			background-image: url("calendar/chamber-icons/cube-dispenser.png");
-		}
+	#cake + label {
+		background-image: url("calendar/chamber-icons/cake.png");
 	}
 
-	#cube-hazard {
-		&:checked+label {
-			background-image: url("calendar/chamber-icons/cube-hazard-on.png");
-		}
-
-		&+label {
-			background-image: url("calendar/chamber-icons/cube-hazard.png");
-		}
+	#cube-dispenser + label {
+		background-image: url("calendar/chamber-icons/cube-dispenser.png");
 	}
 
-	#dirty-water {
-		&:checked+label {
-			background-image: url("calendar/chamber-icons/dirty-water-on.png");
-		}
-
-		&+label {
-			background-image: url("calendar/chamber-icons/dirty-water.png");
-		}
+	#cube-hazard + label {
+		background-image: url("calendar/chamber-icons/cube-hazard.png");
 	}
 
-	#fling-enter {
-		&:checked+label {
-			background-image: url("calendar/chamber-icons/fling-enter-on.png");
-		}
-
-		&+label {
-			background-image: url("calendar/chamber-icons/fling-enter.png");
-		}
+	#dirty-water + label {
+		background-image: url("calendar/chamber-icons/dirty-water.png");
 	}
 
-	#fling-exit {
-		&:checked+label {
-			background-image: url("calendar/chamber-icons/fling-exit-on.png");
-		}
-
-		&+label {
-			background-image: url("calendar/chamber-icons/fling-exit.png");
-		}
+	#fling-enter + label {
+		background-image: url("calendar/chamber-icons/fling-enter.png");
 	}
 
-	#pellet-catcher {
-		&:checked+label {
-			background-image: url("calendar/chamber-icons/pellet-catcher-on.png");
-		}
-
-		&+label {
-			background-image: url("calendar/chamber-icons/pellet-catcher.png");
-		}
+	#fling-exit + label {
+		background-image: url("calendar/chamber-icons/fling-exit.png");
 	}
 
-	#pellet-hazard {
-		&:checked+label {
-			background-image: url("calendar/chamber-icons/pellet-hazard-on.png");
-		}
-
-		&+label {
-			background-image: url("calendar/chamber-icons/pellet-hazard.png");
-		}
+	#pellet-catcher + label {
+		background-image: url("calendar/chamber-icons/pellet-catcher.png");
 	}
 
-	#turret-hazard {
-		&:checked+label {
-			background-image: url("calendar/chamber-icons/turret-hazard-on.png");
-		}
-
-		&+label {
-			background-image: url("calendar/chamber-icons/turret-hazard.png");
-		}
+	#pellet-hazard + label {
+		background-image: url("calendar/chamber-icons/pellet-hazard.png");
 	}
 
-	#water-hazard {
-		&:checked+label {
-			background-image: url("calendar/chamber-icons/water-hazard-on.png");
-		}
+	#turret-hazard + label {
+		background-image: url("calendar/chamber-icons/turret-hazard.png");
+	}
 
-		&+label {
-			background-image: url("calendar/chamber-icons/water-hazard.png");
-		}
+	#water-hazard + label {
+		background-image: url("calendar/chamber-icons/water-hazard.png");
 	}
 }
 
