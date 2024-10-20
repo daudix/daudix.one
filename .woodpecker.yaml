@@ -3,7 +3,7 @@ steps:
   typos:
     image: fish
     commands:
-      - $HOME/.local/bin/typos > $HOME/typos.log
+      - $HOME/.local/bin/typos
     failure: ignore
     when:
       event: [push, pull_request, manual]
