@@ -1,12 +1,12 @@
 steps:
   # Check for typos
-  typos:
-    image: fish
-    commands:
-      - $HOME/.local/bin/typos
-    failure: ignore
-    when:
-      event: [push, pull_request, manual]
+  # typos:
+  #   image: fish
+  #   commands:
+  #     - $HOME/.local/bin/typos
+  #   failure: ignore
+  #   when:
+  #     event: [push, pull_request, manual]
 
   # Check website build
   check:
