@@ -24,7 +24,7 @@ Feel free to reach out to me on any of these! I'm usually too shy to start the c
 <div class="icon-grid">
 
 <a href="https://discord.com/users/650757995378114581">
-<img class="transparent no-hover pixels drop-shadow icon" alt="" src="icons/discord.gif" />
+<img class="transparent no-hover pixels drop-shadow icon" src="icons/discord.gif" />
 <div class="details">
 <strong>Discord</strong>
 <p><small>I prefer it to Matrix for the most part.</small></p>
@@ -32,7 +32,7 @@ Feel free to reach out to me on any of these! I'm usually too shy to start the c
 </a>
 
 <a href="https://matrix.to/#/@daudix:envs.net">
-<img class="transparent no-hover pixels drop-shadow icon" alt="" src="icons/matrix.gif" />
+<img class="transparent no-hover pixels drop-shadow icon" src="icons/matrix.gif" />
 <div class="details">
 <strong>Matrix</strong>
 <p><small>I have a few alts, but I don't use them.</small></p>
@@ -40,7 +40,7 @@ Feel free to reach out to me on any of these! I'm usually too shy to start the c
 </a>
 
 <a href="https://signal.me/#eu/b4KzM1OB3uW52mMywHUJa8h6yD4ATY_KXJJiuJtWUxOVAJP22PVO_qoNGFnf32W7">
-<img class="transparent no-hover pixels drop-shadow icon" alt="" src="icons/signal.gif" />
+<img class="transparent no-hover pixels drop-shadow icon" src="icons/signal.gif" />
 <div class="details">
 <strong>Signal</strong>
 <p><small>Telegram if they kept their privacy promises.</small></p>
@@ -48,7 +48,7 @@ Feel free to reach out to me on any of these! I'm usually too shy to start the c
 </a>
 
 <a href="https://t.me/ddaudix">
-<img class="transparent no-hover pixels drop-shadow icon" alt="" src="icons/telegram.gif" />
+<img class="transparent no-hover pixels drop-shadow icon" src="icons/telegram.gif" />
 <div class="details">
 <strong>Telegram</strong>
 <p><small>Discord level privacy advertised like it's not.</small></p>
@@ -56,7 +56,7 @@ Feel free to reach out to me on any of these! I'm usually too shy to start the c
 </a>
 
 <a href="mailto:me@daudix.one">
-<img class="transparent no-hover pixels drop-shadow icon" alt="" src="icons/email.gif" />
+<img class="transparent no-hover pixels drop-shadow icon" src="icons/email.gif" />
 <div class="details">
 <strong>Email</strong>
 <p><small>Email anxiety makes it less appealing.</small></p>
@@ -64,7 +64,7 @@ Feel free to reach out to me on any of these! I'm usually too shy to start the c
 </a>
 
 <a href="xmpp:daudix@nixnet.services">
-<img class="transparent no-hover pixels drop-shadow icon" alt="" src="icons/xmpp.gif" />
+<img class="transparent no-hover pixels drop-shadow icon" src="icons/xmpp.gif" />
 <div class="details">
 <strong>XMPP</strong>
 <p><small>Does anyone use it? Everyone's on Matrix.</small></p>
@@ -86,7 +86,7 @@ This is not a complete list, but rather list of places where I'm somewhat active
 <div class="icon-grid">
 
 <a href="https://vmst.io/@daudix">
-<img class="transparent no-hover pixels drop-shadow icon" alt="" src="icons/mastodon.gif" />
+<img class="transparent no-hover pixels drop-shadow icon" src="icons/mastodon.gif" />
 <div class="details">
 <strong>Mastodon</strong>
 <p><small>Main online presence after this website.</small></p>
@@ -94,7 +94,7 @@ This is not a complete list, but rather list of places where I'm somewhat active
 </a>
 
 <a href="https://pleroma.envs.net/daudix">
-<img class="transparent no-hover pixels drop-shadow icon" alt="" src="icons/akkoma.gif" />
+<img class="transparent no-hover pixels drop-shadow icon" src="icons/akkoma.gif" />
 <div class="details">
 <strong>Akkoma</strong>
 <p><small>Alt for everything that doesn't fit main.</small></p>
@@ -102,7 +102,7 @@ This is not a complete list, but rather list of places where I'm somewhat active
 </a>
 
 <a href="https://bsky.app/profile/daudix.one">
-<img class="transparent no-hover pixels drop-shadow icon" alt="" src="icons/bluesky.gif" />
+<img class="transparent no-hover pixels drop-shadow icon" src="icons/bluesky.gif" />
 <div class="details">
 <strong>Bluesky</strong>
 <p><small>Planning to actually start using it.</small></p>
@@ -110,7 +110,7 @@ This is not a complete list, but rather list of places where I'm somewhat active
 </a>
 
 <a href="https://lemmy.zip/u/daudix">
-<img class="transparent no-hover pixels drop-shadow icon" alt="" src="icons/lemmy.gif" />
+<img class="transparent no-hover pixels drop-shadow icon" src="icons/lemmy.gif" />
 <div class="details">
 <strong>Lemmy</strong>
 <p><small>I've been a lurker since the Reddit days.</small></p>
@@ -118,7 +118,7 @@ This is not a complete list, but rather list of places where I'm somewhat active
 </a>
 
 <a href="https://pixelfed.social/Daudix">
-<img class="transparent no-hover pixels drop-shadow icon" alt="" src="icons/pixelfed.gif" />
+<img class="transparent no-hover pixels drop-shadow icon" src="icons/pixelfed.gif" />
 <div class="details">
 <strong>Pixelfed</strong>
 <p><small>Never understood the appeal of Instagram.</small></p>
@@ -126,7 +126,7 @@ This is not a complete list, but rather list of places where I'm somewhat active
 </a>
 
 <a href="https://www.youtube.com/@ddaudix">
-<img class="transparent no-hover pixels drop-shadow icon" alt="" src="icons/youtube.gif" />
+<img class="transparent no-hover pixels drop-shadow icon" src="icons/youtube.gif" />
 <div class="details">
 <strong>YouTube</strong>
 <p><small>A whopping 3 videos + 1 short + 2 hidden.</small></p>
