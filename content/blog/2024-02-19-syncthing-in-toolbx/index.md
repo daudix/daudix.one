@@ -34,7 +34,7 @@ Keywords=synchronization;daemon;
 Categories=Network;FileTransfer;P2P
 ```
 
-![syncthing web ui](syncthing-web-ui.png)
+![Syncthing web UI.](syncthing-web-ui.png)
 
 It's available at <http://127.0.0.1:8384> just like on normal installation.
 

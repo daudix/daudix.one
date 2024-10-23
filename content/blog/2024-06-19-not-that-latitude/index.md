@@ -34,13 +34,13 @@ Dell Latitude E7470 - 2017 ultrabook in great condition, with decent specs, and,
 
 <figure>
 
-![latitude closed](latitude-closed.jpg)
+![Latitude closed.](latitude-closed.jpg)
 <figcaption>Feels good to hold a laptop that is twice as thin and light as MacBoy</figcaption>
 </figure>
 
 <figure>
 
-![latitude open](latitude-open.jpg)
+![Latitude open.](latitude-open.jpg)
 <figcaption>Even though its screen is 14 inches it's just as compact as MacBoy; thin bezels compensate the screen size</figcaption>
 </figure>
 
@@ -70,7 +70,7 @@ Bad things aside, I flashed a new Fedora Silverblue USB and installed it, which 
 
 <figure>
 
-![neowofetch](neowofetch.png#transparent)
+![neowofetch.](neowofetch.png#transparent)
 <figcaption>How can one talk about a new laptop with Linux installed and not show a <del>neofetch</del> neowofetch screenshot!?</figcaption>
 </figure>
 
@@ -78,11 +78,11 @@ After the installation, I opened Software to update the system, and... BIOS AND 
 
 Then I opened Settings to check the Device Security tab, just for fun and giggles, and IT'S ALL GREEN!? On MacBoy it was all red, since no secure boot and such.
 
-![device security](device-security.png#transparent)
+![Device security.](device-security.png#transparent)
 
 Then I decided to watch some videos, connected the headphones and A HEADPHONE TYPE SELECTOR POPPED OUT!? MacBoy didn't have this as well, it was a headset all the time. Here, on the other hand, I can connect it as headphones, a headset, or just a microphone.
 
-![audio device selector](audio-device-selector.png)
+![Audio device selector.](audio-device-selector.png)
 
 I used it for hours moving data from Vaio and MacBoy, and the battery didn't drain. I can do 3 hours of work and watch some YouTube videos and it will still have 20% left. I still can't get used to it after two weeks, it feels so good after the absence of battery and constant issues with the charger.
 

@@ -54,7 +54,7 @@ A month later, the app was somewhat feature complete, and with the help of [Lyes
 
 <figure>
 
-![rename request](rename-request.png)
+![Rename request.](rename-request.png)
 <figcaption>Screenshot of the chat with the GNOME designer asking about the renaming</figcaption>
 </figure>
 
@@ -92,7 +92,7 @@ Last month, I scraped up all the courage and the remaining social battery and di
 
 But just like the first time, no one responded in two weeks, so I did what I had been thinking about and what one Reddit comment suggested: archived the project, the entire GitHub organization.
 
-![archived organization](archived-organization.png)
+![Archived Gradience organization.](archived-organization.png)
 
 ## Farewell
 
@@ -104,8 +104,8 @@ Special thanks to Gradience's off-topic "Water Cooler" room; it's such a nice pl
 
 This is the end. For now. Goodbye, Gradience.
 
-![saluting](saluting.png)
-![shell-preview](shell-preview.png)
+![Saluting.](saluting.png)
+![Shell preview.](shell-preview.png)
 
 Ha, no.
 

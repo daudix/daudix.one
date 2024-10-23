@@ -18,7 +18,7 @@ Somewhere in the middle of 2021, I got my favorite phone yet: Pixel 3 (white, wi
 
 Let's rewind a bit earlier. *Rewind sounds intensifies.*
 
-![iphone 7](iphone-7.jpg#end)
+![iPhone 7.](iphone-7.jpg#end)
 
 A while back, I've used an iPhone 7 (gold, 128GB). It was a great device, and later on, it was fun to jailbreak, all until one day when Apple put an end to jailbreak with the release of iOS 15 (potential post?).
 
@@ -26,7 +26,7 @@ Since then, I've been thinking about a replacement. Around the same time, I star
 
 When the time came, we got it without a doubt, and it was an amazing device; the camera was as great as advertised, the OLED screen after IPS was something revolutionary, and battery life, oh boy, it was times better than the non-existent longevity of the iPhone. I had used Android phones before, so openness wasn't something new for me.
 
-![iphone se](iphone-se.jpg#end)
+![iPhone SE.](iphone-se.jpg#end)
 {% alert(fact=true) %}
 We got it by exchanging it for an iPhone SE (the one that looks like iPhone 5) with some extra cash, since its owner wanted to switch to iOS–the opposite of what we wanted to do XD
 {% end %}
@@ -67,7 +67,7 @@ After trying everything possible and impossible to turn it back on (letting it d
 
 ## Dumb Situation
 
-![nokia 100](nokia-100.jpg#end)
+![Nokia 100.](nokia-100.jpg#end)
 
 I had nothing to do but to pull out an old dumbphone; Nokia 100 from 2011!
 
@@ -77,17 +77,17 @@ It's actually "Schrödinger's old;" it's been manufactured in 2011, but it's sti
 
 I've been considering switching to a dumbphone to reduce my screen time before, but it was just considerations. Now, it's a perfect opportunity for this (not that I have a choice :P).
 
-![reminder](reminder.jpg#start)
+![Reminder.](reminder.jpg#start)
 
 To this day, I use it to set my morning alarm—yes, alarm in singular, it can't set multiple—to check the time, and sometimes to put some thoughts in its reminders app (that only allows super short sentences) to then rewrite them on my laptop. It also has some exclusive game titles, like "Forbidden Treasures", "Vacation Solitaire", and the famous "Snake Xenzia" (sounds almost like [Xenia](https://xenia-linux-site.glitch.me) XD).
 
 Battery life doesn't need any praise; nearly a week on a single charge speaks up for itself.
 
-<video class="end" alt="themes" controls src="themes.webm"></video>
+<video class="end" alt="Themes." controls src="themes.webm"></video>
 
 Now, listen closely [r/unixporn](https://old.reddit.com/r/unixporn/) enjoyers, this phone has something for you; built-in recoloring system, with some built-in wallpapers! I know, it's shocking, but it's real.
 
-![calendar](calendar.jpg#start)
+![Calendar.](calendar.jpg#start)
 
 As for the calendar, I switched to a paper one hanging on the wall.
 

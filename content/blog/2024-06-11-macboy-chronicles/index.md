@@ -53,13 +53,13 @@ Dad and I arrived at MacBoy's owner's place, checked the same things as when Big
 
 <figure>
 
-![macbook sell photo](macbook-sell-photo.jpg)
+![MacBook sell photo.](macbook-sell-photo.jpg)
 <figcaption>One of the photos I took when I tried to sell it at some point XD</figcaption>
 </figure>
 
 <figure>
 
-![macbook high sierra](macbook-high-sierra.jpg)
+![MacBook High Sierra.](macbook-high-sierra.jpg)
 <figcaption>Ditto but with the screen on displaying the system info</figcaption>
 </figure>
 
@@ -95,31 +95,31 @@ Everything was good now; MacBoy and I were happy to be together again, without t
 
 <figure>
 
-![macbook ubuntu](macbook-ubuntu.jpg)
+![MacBook Ubuntu.](macbook-ubuntu.jpg)
 <figcaption>One of my Ubuntu installs, not the first one though</figcaption>
 </figure>
 
 <figure>
 
-![macbook chromeos](macbook-chromeos.jpg)
+![MacBook ChromeOS.](macbook-chromeos.jpg)
 <figcaption>For some reason I decided to try ChromeOS, yes it was pure dogshit, even the Linux container didn't work</figcaption>
 </figure>
 
 <figure>
 
-![macbook endeavouros](macbook-endeavouros.jpg)
+![MacBook EndeavourOS.](macbook-endeavouros.jpg)
 <figcaption>For some time I daily-drove EndeavourOS, such a good distro but not exactly for me</figcaption>
 </figure>
 
 <figure>
 
-![macbook sway](macbook-sway.jpg)
+![Macbook Sway.](macbook-sway.jpg)
 <figcaption>Trying out Sway since everyone kept talking about tiling managers, I wasn't impressed and moved back to GNOME</figcaption>
 </figure>
 
 <figure>
 
-![macbook rice](macbook-rice.jpg)
+![MacBook rice.](macbook-rice.jpg)
 <figcaption>My first "rice" that I <a href="https://www.reddit.com/r/unixporn/comments/t8mxai/gnome_aperture_arch_rice_labs/">shared at r/unixporn</a></figcaption>
 </figure>
 
@@ -127,13 +127,13 @@ Everything was good now; MacBoy and I were happy to be together again, without t
 
 The charger started acting up: heating, sparking, and not charging. No wonder, it was in an awful state, tape made the rubber decompose entirely. It was clear that it was time for it to be replaced, but the financial situation didn't quite allow it, so what was left to do was to improvise. First, I knocked the charger a bit to make the pins come out, then sandpapered some metal from the MagSafe connector for the pins to be closer to the MagSafe connector. The issue, by the way, was in the connector pins; they were stuck inside since the spring forcing them outside became very loose or even broke.
 
-| Charger                 | Closeup                                 | Connector                                                   |
-|-------------------------|-----------------------------------------|-------------------------------------------------------------|
-| ![charger](charger.jpg) | ![charger closeup](charger-closeup.jpg) | ![charger connector closeup](charger-connector-closeup.jpg) |
+| Charger                  | Closeup                                  | Connector                                                    |
+| ------------------------ | ---------------------------------------- |------------------------------------------------------------- |
+| ![Charger.](charger.jpg) | ![Charger closeup.](charger-closeup.jpg) | ![Charger connector closeup.](charger-connector-closeup.jpg) |
 
 <figure>
 
-![charger repair](charger-repair.jpg)
+![Charger repair.](charger-repair.jpg)
 <figcaption>The last charger "repair", all serious this time, we even got this thermal thingy!</figcaption>
 </figure>
 
@@ -141,7 +141,7 @@ I used it in this hacky way for a while. It was an unpleasant experience, but th
 
 <figure>
 
-![macbook webdev learning](macbook-webdev-learning.jpg)
+![MacBook webdev learning.](macbook-webdev-learning.jpg)
 <figcaption>The start of my webdev learning, well, one of the unsuccessful attempts</figcaption>
 </figure>
 
@@ -183,7 +183,7 @@ It was a long and interesting journey, but everything comes to an end. MacBoy wa
 
 <figure>
 
-![macbook current](macbook-current.jpg)
+![MacBook current.](macbook-current.jpg)
 <figcaption>Current state, it turns on for a few minutes using the direct power method and old charger, but that's about it</figcaption>
 </figure>
 
@@ -191,6 +191,6 @@ It was a long and interesting journey, but everything comes to an end. MacBoy wa
 
 <figure>
 
-![dell with this post open](dell-with-this-post-open.jpg)
+![Dell with this post open.](dell-with-this-post-open.jpg)
 <figcaption>This post's draft open on said new laptop, Dell Latitude E7470</figcaption>
 </figure>

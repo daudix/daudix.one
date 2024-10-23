@@ -26,7 +26,7 @@ On the 31st of May I started rewriting it. 4 days later, it seems to be better t
 
 <figure>
 
-![website before](website-before.png)
+![Website before.](website-before.png)
 <figcaption>The pre-rewrite state; boring and sad</figcaption>
 </figure>
 
@@ -34,7 +34,7 @@ All started by copy-pasting [sadgrl](https://goblin-heart.net/sadgrl/)'s [Simple
 
 <figure>
 
-![first steps](first-steps.png)
+![First steps.](first-steps.png)
 <figcaption>First steps; empty and sad</figcaption>
 </figure>
 
@@ -43,7 +43,7 @@ Fast-forward a few hours, I had some very basic thingy going!
 The icons are from [Tango](https://en.wikipedia.org/wiki/Tango_Desktop_Project), an icon theme that had it's last release 15 years ago, back in 2009. Project's website is down, but download link still works somehow: <http://tango.freedesktop.org/releases/tango-icon-theme-0.8.90.tar.bz2>
 
 <figure>
-<video alt="first demo" controls src="first-demo.webm"></video>
+<video alt="First demo." controls src="first-demo.webm"></video>
 <figcaption>First demo; navbar got icons and footer was added</figcaption>
 </figure>
 
@@ -55,7 +55,7 @@ At this point it was 4:00 AM and I had to go sleep 0_0
 
 <figure>
 
-![chat forces me to sleep](chat-forces-me-to-sleep.png)
+![Chat forces me to sleep.](chat-forces-me-to-sleep.png)
 <figcaption>Group chat forces me to go sleep</figcaption>
 </figure>
 
@@ -71,21 +71,21 @@ Then I added a fake music player to the top-right corner (which was an absolute 
 
 <figure>
 
-![fake player](fake-player.png)
+![Fake player.](fake-player.png)
 <figcaption>Fake music player with some brony music</figcaption>
 </figure>
 
-| Mobile                                      | Tablet                                      |
-| ------------------------------------------- | ------------------------------------------- |
-| ![website on mobile](website-on-mobile.png) | ![website on tablet](website-on-tablet.png) |
+| Mobile                                       | Tablet                                      |
+| -------------------------------------------- | ------------------------------------------- |
+| ![Website on mobile.](website-on-mobile.png) | ![Website on tablet.](website-on-tablet.png) |
 
 {% alert(fact=true) %}
 The music player initially displayed [PrinceWhateverer](https://www.youtube.com/@princewhateverer)'s [Miscommunication](https://www.youtube.com/watch?v=r0P67hLrFHI) as it's very relatable, but since I aimed for the 2010's vibe, I decided to change it to [WoodenToaster](https://www.youtube.com/@WoodenToaster)'s [Rainbow Factory](https://www.youtube.com/watch?v=YRx_iXgLAyw) since it was released in 2011 and were quite popular back then.
 {% end %}
 
-| DeviantArt                                      | Mine                                |
-| ----------------------------------------------- | ----------------------------------- |
-| ![bookmark deviantart](bookmark-deviantart.png) | ![bookmark mine](bookmark-mine.png) |
+| DeviantArt                                       | Mine                                 |
+| ------------------------------------------------ | ------------------------------------ |
+| ![Bookmark deviantart.](bookmark-deviantart.png) | ![Bookmark mine.](bookmark-mine.png) |
 
 {% alert(fact=true) %}
 Initially the bookmark said "Work In Process", but I realised that it won't exit this state anytime soon, so it were changed to "Forever WIP"
@@ -95,7 +95,7 @@ And that's about it! there's one issue that bothers me, the footer; it's absolut
 
 <figure>
 
-![broken scrollbar](broken-scrollbar.png)
+![Broken scrollbar.](broken-scrollbar.png)
 <figcaption>Footer's opacity is changed for demo purposes</figcaption>
 </figure>
 
@@ -107,16 +107,16 @@ _Seriously, this thing saved my nerves._
 
 <figure>
 
-![neocities cli help](neocities-cli-help.png)
+![Neocities CLI help.](neocities-cli-help.png)
 <figcaption>Help page; love the humor</figcaption>
 </figure>
 
 <figure>
 
-![neocities cli pushing](neocities-cli-pushing.png)
+![Neocities CLI pushing.](neocities-cli-pushing.png)
 <figcaption>Pusing local directory to Neocities with deletion of files not present locally</figcaption>
 </figure>
 
 Thanks for reading! Visit the website [here](https://daudix.neocities.org) and feel free to drop something in the chat box ;)
 
-![website after](website-after.png)
+![Website after.](website-after.png)

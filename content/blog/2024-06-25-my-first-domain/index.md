@@ -36,7 +36,7 @@ One registration and payment later, I got *that* email from Porkbun!
 
 <figure>
 
-![porkbun invoice](porkbun-invoice.png)
+![Porkbun invoice.](porkbun-invoice.png)
 <figcaption>The long-awaited Porkbun invoice stating that I have just successfully purchased a daudix.one domain</figcaption>
 </figure>
 
@@ -56,7 +56,7 @@ Yes, apparently it needed a bit more time than 15 minutes to fully propagate. In
 
 <figure>
 
-![porkbun dns](porkbun-dns.png)
+![Porkbun DNS.](porkbun-dns.png)
 <figcaption>The final DNS setup for this site and Duckquill</figcaption>
 </figure>
 

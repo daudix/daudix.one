@@ -34,27 +34,27 @@ See [Give Up GitHub!](https://sfconservancy.org/GiveUpGitHub/) and [Please donâ€
 
 This one is pretty straightforward, you just go to [codeberg.org](https://codeberg.org) and press that big "Register now." button. The rest is self-explanatory.
 
-![landing page](landing-page.png)
+![Codeberg website's landing page.](landing-page.png)
 
 ## Create the Repository
 
 Now you can create a repository for your website. A repository is like a public folder with your project that you and others can work on.
 
-![new repository](new-repository.png)
+![Dropdown with the item "New repository".](new-repository.png)
 
 Now name the repository `pages` if you don't plan on using custom domain, otherwise you need to choose a different name, e.g. `website`. That's because Codeberg pages don't work well with custom domains and `pages` repository with the `pages` branch. It's confusing so just know that such combo won't work.
 
-![new repository 2](new-repository-2.png)
+![Repository creation UI.](new-repository-2.png)
 
 I also recommend checking this "Initialize repository" box to save some time later.
 
-![initialize repository](initialize-repository.png)
+!["Initialize repository" checkbox.](initialize-repository.png)
 
 Now you can go and smash that "Create repository" button and proceed to the next step.
 
 ## Initializing Zola Website
 
-To be completely unbiased, I will use my own [Duckquill](https://duckquill.daudix.one) Zola theme in this example <img class="emoji no-hover" alt="troll face" src="troll-face.gif" />
+To be completely unbiased, I will use my own [Duckquill](https://duckquill.daudix.one) Zola theme in this example <img class="emoji no-hover" alt="Trollface." src="troll-face.gif" />
 
 Jokes aside, you can use any theme from [getzola.org/themes](https://www.getzola.org/themes/), but to make sure we're on the same page we'll use Duckquill.
 
@@ -95,7 +95,7 @@ Now you can try serving the site locally:
 zola serve
 ```
 
-![empty](empty.png#transparent)
+![Empty website.](empty.png#transparent)
 
 Hm, doesn't look quite right...
 
@@ -117,7 +117,7 @@ And let's create a homepage by creating an `_index.md` file under `content` with
 
 And we get...
 
-![empty duckquill](empty-duckquill.png#transparent)
+![Empty Duckquill website.](empty-duckquill.png#transparent)
 
 Alright, perhaps our config is too bare-bones, let's enable navbar and a footer:
 
@@ -145,7 +145,7 @@ title = "I'm a homepage, look at me!"
 I'm just a demo, I like to **demo**nstrate stuff, **demo**lish stuff, and I'm a **demo**crat (no actually, I'm just a silly demo)
 ```
 
-![not empty](not-empty.png#transparent)
+![Duckquill website with some content.](not-empty.png#transparent)
 
 Much better. You can customize it further by looking at [Duckquill's config](https://codeberg.org/daudix/duckquill/src/branch/main/config.toml).
 
@@ -222,35 +222,35 @@ git add --all
 git commit --message "Initial commit"
 ```
 
-![add repository](add-repository.png)
+!["Add repository" button.](add-repository.png)
 
-![enable repository](enable-repository.png)
+![Repository with the "Enable" button next to it.](enable-repository.png)
 
 Now, [create a secret](https://codeberg.org/user/settings/applications) on Codeberg so CI can push the changes. You need to set the `repository` scope to `Read and write`.
 
-![token generation](token-generation.png)
+![Token generation page.](token-generation.png)
 
 Copy and paste the resulting token somewhere, since it couldn't be seen after the page reload.
 
 Now add the needed secrets in the Woodpecker repository settings by clicking on the repository in the list:
 
-![repository settings](repository-settings.png)
+![Repository settings button.](repository-settings.png)
 
 Navigate to the "Secrets" tab:
 
-![repository settings secrets](repository-settings-secrets.png)
+![Repository settings with the "Secrets" tab open.](repository-settings-secrets.png)
 
 Add secret with the name `mail` with email you used for Codeberg as the value, with the `Push` and `Manual` events selected (the later is only needed if you added `manual` event in the CI file):
 
-![mail secret](mail-secret.png)
+![Mail secret.](mail-secret.png)
 
-![events](events.png)
+![Event selection.](events.png)
 
 Do the same for the `codeberg_token`, use the token we generated earlier as the value.
 
 We're almost there! now we just need to create the `pages` branch on Codeberg where the build result will be pushed:
 
-![pages branch](pages-branch.png)
+!["pages" branch creation.](pages-branch.png)
 
 Now we can run the first build by pressing the "Run pipeline" button in Woodpecker.
 
