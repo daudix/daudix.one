@@ -3,6 +3,13 @@
 {% block body %}
 <a href="{{ get_url(path='/') }}">← Go Home</a>
 
+<ul id="on-monday-list">
+	<li>
+		<input type="checkbox" id="on-monday" class="switch" />
+		<label for="on-monday">Start on Monday</label>
+	</li>
+</ul>
+
 <div id="calendar-header">
 	<span id="month-number"></span>
 	<div id="secondary-column">

@@ -59,8 +59,13 @@
 			this.month = opts.hasOwnProperty('month') ? opts.month - 1 : (new Date()).getMonth();
 			this.year = opts.hasOwnProperty('year') ? opts.year : (new Date()).getFullYear();
 			this.ellipse = opts.hasOwnProperty('ellipse') ? opts.ellipse : true;
-			this.daysOfWeekFull = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-			this.daysOfWeekAbbr = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+			if (document.getElementById('on-monday').checked) {
+				this.daysOfWeekFull = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+				this.daysOfWeekAbbr = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+			} else {
+				this.daysOfWeekFull = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+				this.daysOfWeekAbbr = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+			}
 			this.monthsFull = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 			this.monthsAbbr = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
@@ -72,6 +77,7 @@
 			// Built-in event handlers
 			this._loadNextMonth = this.loadNextMonth.bind(this);
 			this._loadPrevMonth = this.loadPreviousMonth.bind(this);
+			this._redrawCalendar = this.redrawCalendar.bind(this);
 
 			this._dayClicked = function (e) {
 				var evtids = e.target.getAttribute('data-events').split(",");
@@ -156,6 +162,22 @@
 			if (this.month === 0) this.year++;
 			await this.drawCalendar();
 			this.onMonthChanged.call(this, this.month + 1, this.year);
+			return this;
+		}
+
+		/**
+		 * Reload calendar on first day change
+		 * @returns {Calendar instance}
+		 */
+		async redrawCalendar() {
+			if (document.getElementById('on-monday').checked) {
+				this.daysOfWeekFull = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+				this.daysOfWeekAbbr = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+			} else {
+				this.daysOfWeekFull = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+				this.daysOfWeekAbbr = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+			}
+			await this.drawCalendar();
 			return this;
 		}
 
@@ -278,6 +300,10 @@
 				currentDate = 1,
 				currentDay = 0,
 				currentWeek = 0;
+			var firstDayofWeek = new Date(this.year, this.month, 1).getDay();
+			if (document.getElementById('on-monday').checked) {
+				firstDayofWeek = (firstDayofWeek + 6) % 7;
+			}
 			// draw title bar
 			var year = this.abbrYear ? "'" + ("" + this.year).substr(2, 2) : this.year,
 				monthArrayName = !this.abbrMonth ? "monthsFull" : "monthsAbbr",
@@ -581,6 +607,9 @@
 				removeEventListener(events[i], 'click', this._eventClicked);
 				addEventListener(events[i], 'click', this._eventClicked);
 			}
+
+			var onMonday = document.getElementById('on-monday');
+			addEventListener(onMonday, 'change', this._redrawCalendar);
 			return this;
 		}
 	}
