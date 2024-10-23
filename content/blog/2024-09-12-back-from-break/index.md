@@ -32,7 +32,7 @@ Boring? Maybe. Am I happy? Yea, sorta. Yes.
 
 I thought about playing some video games during my break to distract myself from life, but as you can see it didn't go well, for the better I guess.
 
-![recent activity](recent-activity.png)
+![A screenshot showing the text "Recent Activity" followed by "0.5 hours past 2 weeks".](recent-activity.png)
 
 Everyone who commented under the [previous post](@/blog/2024-09-02-taking-a-break/index.md) and supported me, I appreciate it, like seriously y'all *super* awesome! Thanks <3
 

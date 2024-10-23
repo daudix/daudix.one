@@ -15,19 +15,19 @@ id = "113065883239236763"
 
 I was making a banner for the [Codeberg Pages](@/blog/2024-08-13-deploying-to-codeberg-pages/index.md) post and wanted to use the same mountain image as on the Codeberg landing page. Since I couldn't find the source on their website, I went to the Git history of the somewhat relevant repositories under various Codeberg organizations and found the [homepage renovation pull request](https://codeberg.org/Codeberg-Infrastructure/forgejo/pulls/35), which mentioned the [source](https://codeberg.org/Codeberg-Infrastructure/forgejo/pulls/35#issuecomment-494030). Unfortunately, the page returned a 404.
 
-![404 page](404-page.png)
+![404 page.](404-page.png)
 
 All I had to do was right-click and open the [last Wayback Machine snapshot](https://web.archive.org/web/20210124002804/https://unsplash.com/photos/3K6ZkYBj2Xo).
 
-![right-click menu](right-click-menu.png)
+![Firefox context menu with the item "Wayback Machine > Newest Version" highlighted.](right-click-menu.png)
 
 Obviously, the download buttons didn't work, so I visited the photo author's Unsplash profile, but it returned a placeholder, so I used the one archived by Wayback Machine.
 
-![john guest](john-guest.png)
+![John Guest's profile.](john-guest.png)
 
 Unfortunately, [his website](https://www.lubomirminar.com) didn't have the photo I needed, so I had to use what I had: the thumbnail; its size was fine for the banner, so I went ahead and used it.
 
-![wayback machine snapshot](wayback-machine-snapshot.png)
+![Screenshot of the Wayback Machine archive of the page.](wayback-machine-snapshot.png)
 
 But the fact that a low quality thumbnail was used for the banner kept bothering me, so I decided to locate the source.
 

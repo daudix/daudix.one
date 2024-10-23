@@ -19,20 +19,20 @@ This whole "branding experiments" session wasn't planned and happened accidental
 
 <div class="media-grid-markdown">
 
-[![checkmate](checkmate.png)](https://codeberg.org/daudix/archive/raw/commit/47b37a11a8df0d8656cf3e0858d64c1511b384dd/daudix/experiments/checkmate.png)
-[![jet](jet.png)](https://codeberg.org/daudix/archive/raw/commit/47b37a11a8df0d8656cf3e0858d64c1511b384dd/daudix/experiments/jet.png)
-[![rainbow mono](rainbow-mono.png)](https://codeberg.org/daudix/archive/raw/commit/47b37a11a8df0d8656cf3e0858d64c1511b384dd/daudix/experiments/rainbow-mono.png)
-[![spiral](spiral.png)](https://codeberg.org/daudix/archive/raw/commit/47b37a11a8df0d8656cf3e0858d64c1511b384dd/daudix/experiments/spiral.png)
-[![spring](spring.png)](https://codeberg.org/daudix/archive/raw/commit/47b37a11a8df0d8656cf3e0858d64c1511b384dd/daudix/experiments/spring.png)
-[![tunnel](tunnel.png)](https://codeberg.org/daudix/archive/raw/commit/47b37a11a8df0d8656cf3e0858d64c1511b384dd/daudix/experiments/tunnel.png)
+[!["Checkmate" logo.](checkmate.png)](https://codeberg.org/daudix/archive/raw/commit/47b37a11a8df0d8656cf3e0858d64c1511b384dd/daudix/experiments/checkmate.png)
+[!["Jet" logo.](jet.png)](https://codeberg.org/daudix/archive/raw/commit/47b37a11a8df0d8656cf3e0858d64c1511b384dd/daudix/experiments/jet.png)
+[!["Ranbow (mono)" logo.](rainbow-mono.png)](https://codeberg.org/daudix/archive/raw/commit/47b37a11a8df0d8656cf3e0858d64c1511b384dd/daudix/experiments/rainbow-mono.png)
+[!["Spiral" logo.](spiral.png)](https://codeberg.org/daudix/archive/raw/commit/47b37a11a8df0d8656cf3e0858d64c1511b384dd/daudix/experiments/spiral.png)
+[!["Spring" logo.](spring.png)](https://codeberg.org/daudix/archive/raw/commit/47b37a11a8df0d8656cf3e0858d64c1511b384dd/daudix/experiments/spring.png)
+[!["Tunnel" logo.](tunnel.png)](https://codeberg.org/daudix/archive/raw/commit/47b37a11a8df0d8656cf3e0858d64c1511b384dd/daudix/experiments/tunnel.png)
 </div>
 
 See that "D"? Yeah, it was the last one in the batch and I kinda liked it, so I made a few more versions, that you might've already noticed on the homepage.
 
 <div class="media-grid-markdown">
 
-[![rainbow](rainbow.png)](https://codeberg.org/daudix/archive/raw/commit/47b37a11a8df0d8656cf3e0858d64c1511b384dd/daudix/experiments/rainbow.png)
-[![rainbow grayscale](rainbow-grayscale.png)](https://codeberg.org/daudix/archive/raw/commit/47b37a11a8df0d8656cf3e0858d64c1511b384dd/daudix/experiments/rainbow-grayscale.png)
+[!["Rainbow" logo.](rainbow.png)](https://codeberg.org/daudix/archive/raw/commit/47b37a11a8df0d8656cf3e0858d64c1511b384dd/daudix/experiments/rainbow.png)
+[!["Rainbow (grayscale)" logo.](rainbow-grayscale.png)](https://codeberg.org/daudix/archive/raw/commit/47b37a11a8df0d8656cf3e0858d64c1511b384dd/daudix/experiments/rainbow-grayscale.png)
 </div>
 
 The colored variant looks cool, has retro vibes (Commodore/Apple logos), uses [Monokai Pro palette](https://github.com/subtheme-dev/monokai-pro/blob/4978c01ff3116e4dd19825d93e4e6c182d361764/colors/default.yaml), and has some hidden meaning; <span class="spoiler solid">it is rainbow shaped if you rotate it, the purple line stands on its own and is bold because it's my favorite color</span> (my little sister successfully noticed these, so I guess these aren't that obscure), but it's too colorful to use everywhere, for my taste, so I made a grayscale variant and it looks more interesting than the completely monochrome one, while still being serious-ish.

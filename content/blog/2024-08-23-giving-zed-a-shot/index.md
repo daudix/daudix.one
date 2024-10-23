@@ -32,7 +32,7 @@ I do like VSCodium's font and rendering a bit more, but that's probably because 
 
 <figure>
 
-![vscodium](vscodium.png#transparent)
+![Screenshot of VSCodium.](vscodium.png#transparent)
 <figcaption>My VSCodium setup. Cozy and minimal.</figcaption>
 </figure>
 
@@ -48,6 +48,6 @@ Will see how it goes, but so far I like it.
 
 <figure>
 
-![zed](zed.png#transparent)
+![Screenshot of Zed.](zed.png#transparent)
 <figcaption>My Zed setup. Quite similar to VSCodium.</figcaption>
 </figure>

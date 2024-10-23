@@ -20,11 +20,11 @@ Okay, fiiine.
 
 ## Backstory
 
-![first](first.jpg#end)
+![First ever logo.](first.jpg#end)
 
 A while *back*, *back* in August 2019, when I didn't have *back* pain (just kidding), my mom and I drew this logotar on an iPad 2. It's not spectacular by any means, but it's important to me because, well, we drew it with my mom, it's my first logotar, and it captures things I like, like Lego and... yeah, that's it. I was even more boring and annoying than I am now. And damn, that UFO suffix really, really sucked...
 
-![legacy](legacy.png#start)
+![Legacy logo.](legacy.png#start)
 
 Fast forward unknown amount of time when I learned of the existence of Canva, in which I "made" this logotar; by "made" I mean I found this stock metaball thingy and colored it in this blue gradient. (there were earlier versions, but they were just ugly because they had a little "DAUDIX UFO" text underneath the blob, which used uglier shades of blue; BSOD-level ugly blue)
 
@@ -38,7 +38,7 @@ That's right, it's a bold reference to a Portal 2 chapter with the same name, wh
 
 Anyway, what I was talki- I mean writing about? Oh yeah, the logotar. One day I was visiting the [GNOME OS website](https://os.gnome.org/install/) and I saw this very cool illustration and I *really* liked the way the purple-blue gradient looked, and I did what I do when I like something. STOLE IT. {{ audio(url="scooby-doo.mp3", name="Rehehehe") }}.
 
-![illustration](illustration.png)
+![Screenshot of the GNOME OS website.](illustration.png)
 
 Yeah, that's where this gradient and the whole idea of redesigning my logotar came from. As silly as it sounds.
 
@@ -50,12 +50,12 @@ TL;DR: Here's the results of my experiments:
 
 <div class="media-grid-markdown">
 
-[![bubbles](bubbles.png)](https://codeberg.org/daudix/archive/raw/commit/47b37a11a8df0d8656cf3e0858d64c1511b384dd/daudix/experiments/bubbles.png)
-[![candy](candy.png)](https://codeberg.org/daudix/archive/raw/commit/47b37a11a8df0d8656cf3e0858d64c1511b384dd/daudix/experiments/candy.png)
-[![dejavu](dejavu.png)](https://codeberg.org/daudix/archive/raw/commit/47b37a11a8df0d8656cf3e0858d64c1511b384dd/daudix/experiments/dejavu.png)
-[![mesh](mesh.png)](https://codeberg.org/daudix/archive/raw/commit/47b37a11a8df0d8656cf3e0858d64c1511b384dd/daudix/experiments/mesh.png)
-[![mesh alt](mesh-alt.png)](https://codeberg.org/daudix/archive/raw/commit/47b37a11a8df0d8656cf3e0858d64c1511b384dd/daudix/experiments/mesh-alt.png)
-[![mono](mono.png)](https://codeberg.org/daudix/archive/raw/commit/47b37a11a8df0d8656cf3e0858d64c1511b384dd/daudix/experiments/mono.png)
+[!["Bubbles" logo.](bubbles.png)](https://codeberg.org/daudix/archive/raw/commit/47b37a11a8df0d8656cf3e0858d64c1511b384dd/daudix/experiments/bubbles.png)
+[!["Candy" logo.](candy.png)](https://codeberg.org/daudix/archive/raw/commit/47b37a11a8df0d8656cf3e0858d64c1511b384dd/daudix/experiments/candy.png)
+[!["Dejavu" logo.](dejavu.png)](https://codeberg.org/daudix/archive/raw/commit/47b37a11a8df0d8656cf3e0858d64c1511b384dd/daudix/experiments/dejavu.png)
+[!["Mesh" logo.](mesh.png)](https://codeberg.org/daudix/archive/raw/commit/47b37a11a8df0d8656cf3e0858d64c1511b384dd/daudix/experiments/mesh.png)
+[!["Mesh (alt)" logo.](mesh-alt.png)](https://codeberg.org/daudix/archive/raw/commit/47b37a11a8df0d8656cf3e0858d64c1511b384dd/daudix/experiments/mesh-alt.png)
+[!["Mono" logo.](mono.png)](https://codeberg.org/daudix/archive/raw/commit/47b37a11a8df0d8656cf3e0858d64c1511b384dd/daudix/experiments/mono.png)
 </div>
 
 Now, a bit about each of them (in the order in which the logotars appear):
@@ -69,7 +69,7 @@ Now, a bit about each of them (in the order in which the logotars appear):
 
 About Bubbles; I went even further and made this shitty animation, again just for fun and I didn't put much effort into it. (I say that so you don't think I'm *that* shitty animator)
 
-<video alt="bubbles" controls src="bubbles.webm"></video>
+<video alt="Bubbles floating towards the center of the screen, forming the logo." controls src="bubbles.webm"></video>
 
 You might've noticed the Mesh variant already being used on Matrix and Déjà Vu on Mastodon and Bluesky, what does that mean?
 
@@ -82,7 +82,7 @@ I meant to say that I conduct an A/B testing in the real world scenarios to dete
 {% alert(edit=true) %}
 Silly me just realized that the blueprint logo I made for the banner is actually another experiment! I might explore this direction further, I'm pretty sure it'll look swag in purple.
 
-[![blueprint](blueprint.png)](https://codeberg.org/daudix/archive/raw/commit/47b37a11a8df0d8656cf3e0858d64c1511b384dd/daudix/experiments/blueprint.png)
+[!["Blueprint" logo.](blueprint.png)](https://codeberg.org/daudix/archive/raw/commit/47b37a11a8df0d8656cf3e0858d64c1511b384dd/daudix/experiments/blueprint.png)
 {% end %}
 
 ## Conclusion

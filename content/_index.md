@@ -11,21 +11,17 @@ scripts = ["statuscafe.js", "fluttershy.js", "rizz.js"]
 		<br />
 		<small>Here's an exclusive cute fox hugging a duck for you :3</small>
 		<br />
-		<img id="hug" class="transparent no-hover drop-shadow" alt="neofox hugs a duck" src="/assets/neofox-hug-duck.png" />
+		<img id="hug" class="transparent no-hover drop-shadow" alt="Neofox hugs a duck." src="/assets/neofox-hug-duck.png" />
 	</p>
 </noscript>
 
 <div id="polaroid">
   <div id="polaroid-shine"></div>
   <div id="polaroid-photo">
-    <img class="full transparent no-hover" alt="avatar grayscale" src="assets/rainbow-grayscale.svg" />
-    <img class="full transparent no-hover" alt="avatar" src="assets/rainbow.svg" />
+    <img class="full transparent no-hover" src="assets/rainbow-grayscale.svg" alt="My avatar, letter D filled with grayscale stripes." />
+    <img class="full transparent no-hover" alt="My avatar, letter D filled with rainbow stripes." src="assets/rainbow.svg" />
   </div>
-  <span id="polaroid-title">
-    Instant photo
-    <br />
-    format
-  </span>
+  <span id="polaroid-title">Instant photo<br />format</span>
   <span id="statuscafe-content"></span>
   <a id="statuscafe-link" href="https://status.cafe/users/daudix">
     <span id="statuscafe-time-ago"></span>

@@ -22,15 +22,15 @@ Due to hardware limitations I had to change the rendering quality all the way do
 
 <div class="media-grid-markdown">
 
-[![screenshot teardown 1](screenshot-teardown-1.png)](https://files.catbox.moe/u4p65h.png)
-[![screenshot teardown 2](screenshot-teardown-2.png)](https://files.catbox.moe/j8plvm.png)
-[![screenshot teardown 3](screenshot-teardown-3.png)](https://files.catbox.moe/gtckqi.png)
-[![screenshot teardown 4](screenshot-teardown-4.png)](https://files.catbox.moe/btqp4t.png)
-[![screenshot teardown 5](screenshot-teardown-5.png)](https://files.catbox.moe/ph30ik.png)
-[![screenshot teardown 6](screenshot-teardown-6.png)](https://files.catbox.moe/aayzmp.png)
-[![screenshot teardown 7](screenshot-teardown-7.png)](https://files.catbox.moe/jbupy7.png)
-[![screenshot teardown 8](screenshot-teardown-8.png)](https://files.catbox.moe/fnv84q.png)
-[![screenshot teardown 9](screenshot-teardown-9.png)](https://files.catbox.moe/oftls3.png)
+[![An abandoned building with exposed brick walls, a wooden staircase, and a metal pillar. The interior is dimly lit with an artificial lighting.](screenshot-teardown-1.png)](https://files.catbox.moe/u4p65h.png)
+[![Sunset over an ocean. A wooden dock with several boats tied to it is visible in the foreground. The sky is filled clouds.](screenshot-teardown-2.png)](https://files.catbox.moe/j8plvm.png)
+[![A small, wooden building with a door and windows on a wooden dock. A lamppost stands nearby, illuminating a table and chairs on the dock.](screenshot-teardown-3.png)](https://files.catbox.moe/gtckqi.png)
+[![A dimly lit dining room with a long wooden table and several chairs.](screenshot-teardown-4.png)](https://files.catbox.moe/btqp4t.png)
+[![A view from a window showing a winding road leading down a hill towards the ocean.](screenshot-teardown-5.png)](https://files.catbox.moe/ph30ik.png)
+[![A large, modern building with a glass wall. Features some racing-related elements such as poster titled #1.](screenshot-teardown-6.png)](https://files.catbox.moe/aayzmp.png)
+[![A brick building with a large explosion happening on the facade. The building's sign reads "Löckelle Teardown Services".](screenshot-teardown-7.png)](https://files.catbox.moe/jbupy7.png)
+[![A room with brick walls filled with smoke and flames. There are a few objects on fire.](screenshot-teardown-8.png)](https://files.catbox.moe/fnv84q.png)
+[![A large, abandoned building with exposed brick walls and a wooden ceiling. The building is engulfed in flames with smoke billowing everywhere.](screenshot-teardown-9.png)](https://files.catbox.moe/oftls3.png)
 </div>
 
 The sound design in this game is top notch, from the braking sounds of the various cars to the soundtrack, let alone the track that plays during the escape.
@@ -41,7 +41,7 @@ I'm currently on the level "Crook," which is quite early on, and I think it's go
 
 Another funny thing is that Steam thinks it's purchased, even though I just added the *legally acquired* version to the library. It seems that the cloud saves work even.
 
-![screenshot steam](screenshot-steam.png)
+![A screenshot of the Steam game library showing the game "Teardown" selected.](screenshot-steam.png)
 
 As this is a Windows-only game, I play it through Proton and it... just works? I simply added it to my games library and ticked the "Force the use of a specific Steam Play compatibility tool" checkbox in its settings, nothing more. In fact, I moved all my games to the Steam library to play them through Proton, as it works without the sheganings Bottles has (Bottles is still a very cool app).
 
