@@ -202,10 +202,13 @@ body {
 }
 
 .cjs-calHeader {
-	display: none;
 	margin: 0;
-	padding: 0 0 1mm 0 !important;
+	padding: 0 0 3mm 0 !important;
 	width: 100%;
+
+	@media print {
+		display: none;
+	}
 }
 
 .cjs-right {
@@ -278,22 +281,20 @@ body {
 	padding: 0;
 }
 
+.cjs-lastLink,
+.cjs-nextLink {
+	margin: 0;
+	width: 50%;
+	font-weight: bold;
+}
+
 .cjs-lastLink {
 	float: left;
-	box-sizing: border-box;
-	margin: 0;
-	border: var(--border-width) solid black;
-	padding: 1mm 2mm;
-	font-weight: bold;
 }
 
 .cjs-nextLink {
 	float: right;
-	box-sizing: border-box;
-	margin: 0;
-	border: var(--border-width) solid black;
-	padding: 1mm 2mm;
-	font-weight: bold;
+	text-align: end;
 }
 
 .cjs-clearfix {
