@@ -589,8 +589,7 @@
 
 })();
 
-// Custom stuff
-
+// Draw the calendar
 var ele = document.getElementById('calendar');
 var opts = { abbrDay: true };
 var cal = new calendar(ele, opts);
