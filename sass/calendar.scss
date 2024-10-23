@@ -25,16 +25,14 @@ body {
 	font-family: "Inter", var(--font-system-ui);
 	white-space: nowrap;
 
-	&>a {
-		display: none;
-	}
-
 	@media screen {
 		margin: 10mm auto;
 		width: min(var(--container-width), 90%);
+	}
 
-		&>a {
-			display: inline;
+	@media print {
+		& > a {
+			display: none;
 		}
 	}
 }
@@ -44,7 +42,6 @@ body {
 	justify-content: center;
 	align-items: flex-start;
 	gap: 5mm;
-	// margin-top: 3mm;
 	margin-bottom: -7mm;
 	line-height: 1;
 	font-family: "Univers", var(--font-industrial);
@@ -56,8 +53,7 @@ body {
 	#secondary-column {
 		display: flex;
 		flex-direction: column;
-		font-size: 30mm;
-		line-height: 0.95;
+		font-size: 29mm;
 	}
 }
 
@@ -153,43 +149,43 @@ body {
 				}
 			}
 
-			#cube-dispenser+label {
+			#cube-dispenser + label {
 				background-image: url("calendar/chamber-icons/cube-dispenser.png");
 			}
 
-			#cube-hazard+label {
+			#cube-hazard + label {
 				background-image: url("calendar/chamber-icons/cube-hazard.png");
 			}
 
-			#pellet-hazard+label {
+			#pellet-hazard + label {
 				background-image: url("calendar/chamber-icons/pellet-hazard.png");
 			}
 
-			#pellet-catcher+label {
+			#pellet-catcher + label {
 				background-image: url("calendar/chamber-icons/pellet-catcher.png");
 			}
 
-			#water-hazard+label {
+			#water-hazard + label {
 				background-image: url("calendar/chamber-icons/water-hazard.png");
 			}
 
-			#fling-enter+label {
+			#fling-enter + label {
 				background-image: url("calendar/chamber-icons/fling-enter.png");
 			}
 
-			#fling-exit+label {
+			#fling-exit + label {
 				background-image: url("calendar/chamber-icons/fling-exit.png");
 			}
 
-			#turret-hazard+label {
+			#turret-hazard + label {
 				background-image: url("calendar/chamber-icons/turret-hazard.png");
 			}
 
-			#dirty-water+label {
+			#dirty-water + label {
 				background-image: url("calendar/chamber-icons/dirty-water.png");
 			}
 
-			#cake+label {
+			#cake + label {
 				background-image: url("calendar/chamber-icons/cake.png");
 			}
 		}
