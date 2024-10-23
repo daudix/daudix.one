@@ -25,7 +25,7 @@ body {
 	font-family: "Inter", var(--font-system-ui);
 	white-space: nowrap;
 
-	& > a {
+	&>a {
 		display: none;
 	}
 
@@ -33,7 +33,7 @@ body {
 		margin: 10mm auto;
 		width: min(var(--container-width), 90%);
 
-		& > a {
+		&>a {
 			display: inline;
 		}
 	}
@@ -123,7 +123,7 @@ body {
 			width: fit-content;
 			height: fit-content;
 			// margin-left: auto;
-		
+
 			label {
 				-webkit-print-color-adjust: exact;
 				opacity: 0.25;
@@ -134,62 +134,62 @@ body {
 				width: 13.560mm;
 				print-color-adjust: exact;
 			}
-		
-			input:checked + label {
+
+			input:checked+label {
 				opacity: 1;
 			}
-		
-			input:focus-visible + label {
+
+			input:focus-visible+label {
 				animation: focus-in var(--transition);
 				outline: 0.125rem solid var(--accent-color);
 				outline-offset: 0.125rem;
 			}
-		
+
 			@supports not selector(:focus-visible) {
-				input:focus + label {
+				input:focus+label {
 					animation: focus-in var(--transition);
 					outline: 0.125rem solid var(--accent-color);
 					outline-offset: 0.125rem;
 				}
 			}
-		
-			#cube-dispenser + label {
+
+			#cube-dispenser+label {
 				background-image: url("calendar/chamber-icons/cube-dispenser.png");
 			}
-		
-			#cube-hazard + label {
+
+			#cube-hazard+label {
 				background-image: url("calendar/chamber-icons/cube-hazard.png");
 			}
-		
-			#pellet-hazard + label {
+
+			#pellet-hazard+label {
 				background-image: url("calendar/chamber-icons/pellet-hazard.png");
 			}
-		
-			#pellet-catcher + label {
+
+			#pellet-catcher+label {
 				background-image: url("calendar/chamber-icons/pellet-catcher.png");
 			}
-		
-			#water-hazard + label {
+
+			#water-hazard+label {
 				background-image: url("calendar/chamber-icons/water-hazard.png");
 			}
-		
-			#fling-enter + label {
+
+			#fling-enter+label {
 				background-image: url("calendar/chamber-icons/fling-enter.png");
 			}
-		
-			#fling-exit + label {
+
+			#fling-exit+label {
 				background-image: url("calendar/chamber-icons/fling-exit.png");
 			}
-		
-			#turret-hazard + label {
+
+			#turret-hazard+label {
 				background-image: url("calendar/chamber-icons/turret-hazard.png");
 			}
-		
-			#dirty-water + label {
+
+			#dirty-water+label {
 				background-image: url("calendar/chamber-icons/dirty-water.png");
 			}
-		
-			#cake + label {
+
+			#cake+label {
 				background-image: url("calendar/chamber-icons/cake.png");
 			}
 		}
@@ -284,12 +284,22 @@ body {
 .cjs-lastLink,
 .cjs-nextLink {
 	margin: 0;
+	border: none;
+	background: none;
+	padding: 0;
 	width: 50%;
 	font-weight: bold;
+	font-size: 5mm;
+	font-family: inherit;
+
+	&:hover {
+		background: none;
+	}
 }
 
 .cjs-lastLink {
 	float: left;
+	text-align: start;
 }
 
 .cjs-nextLink {

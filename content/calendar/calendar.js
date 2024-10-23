@@ -284,7 +284,7 @@
 				monthName = this[monthArrayName][this.month],
 				lastMo = this.monthsAbbr[this.month - 1] ? this.monthsAbbr[this.month - 1] : this.monthsAbbr[11],
 				nextMo = this.monthsAbbr[this.month + 1] ? this.monthsAbbr[this.month + 1] : this.monthsAbbr[0];
-			this.elem.insertAdjacentHTML('beforeend', "<div class='cjs-weekRow cjs-calHeader'><div class='cjs-lastLink'>&#8592; " + lastMo + "</div><div class='cjs-nextLink'>" + nextMo + " &#8594;</div></div>");
+			this.elem.insertAdjacentHTML('beforeend', "<div class='cjs-weekRow cjs-calHeader'><button class='cjs-lastLink'>&#8592; " + lastMo + "</button><button class='cjs-nextLink'>" + nextMo + " &#8594;</button></div>");
 
 			// My shit starts here
 			document.getElementById('month-number').textContent = this.month + 1;
