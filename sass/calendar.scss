@@ -21,6 +21,7 @@
 body {
 	background: white;
 	color: black;
+	font-size: 5mm;
 	font-family: "Inter", var(--font-system-ui);
 	white-space: nowrap;
 
@@ -101,7 +102,7 @@ body {
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
-	
+
 			img {
 				margin: 0;
 				aspect-ratio: 598 / 152;
@@ -253,14 +254,12 @@ body {
 .cjs-dayHeader {
 	margin: 0;
 	padding: 0;
-	font-size: 5mm;
 	text-align: center;
 }
 
 .cjs-dayHeaderCell {
 	margin: 0;
 	padding: 1mm;
-	font-size: 5mm;
 	text-transform: uppercase;
 }
 
@@ -286,7 +285,6 @@ body {
 	border: var(--border-width) solid black;
 	padding: 1mm 2mm;
 	font-weight: bold;
-	font-size: 5mm;
 }
 
 .cjs-nextLink {
@@ -296,7 +294,6 @@ body {
 	border: var(--border-width) solid black;
 	padding: 1mm 2mm;
 	font-weight: bold;
-	font-size: 5mm;
 }
 
 .cjs-clearfix {
@@ -312,7 +309,6 @@ body {
 	margin: 0;
 	padding: 0;
 	font-weight: bold;
-	font-size: 5mm;
 	text-align: center;
 }
 
@@ -324,7 +320,6 @@ body {
 .cjs-dateLabel {
 	margin: 0;
 	padding: 0;
-	font-size: 5mm;
 }
 
 .cjs-weekRow {
