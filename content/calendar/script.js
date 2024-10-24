@@ -14,6 +14,9 @@ const printCalendar = () => {
 		achievementLabRat = document.getElementById("achievement-lab-rat");
 		achievementLabRat.classList.add("active");
 		playAchievementSound();
+		achievementLabRat.addEventListener("animationend", function () {
+			achievementLabRat.classList.remove("active");
+		});
 	}
 };
 
@@ -88,11 +91,14 @@ checkboxIds.forEach(id => {
 		// Check if all checkboxes have been interacted
 		if (allToggledOnce() && !achievementBasicScience) {
 			console.log(`Achievement "Basic Science" unlocked`);
+			achievementBasicScience = true;
 			achievementBasicScience = document.getElementById("achievement-basic-science");
 			achievementBasicScience.classList.add("active");
 			playAchievementSound();
-			achievementBasicScience = true;
 			saveAchievementBasicScience();
+			achievementBasicScience.addEventListener("animationend", function () {
+				achievementBasicScience.classList.remove("active");
+			});
 		}
 	});
 });
@@ -109,6 +115,9 @@ document.addEventListener("keydown", function (pEvent) {
 			const achievementRocketScience = document.getElementById("achievement-rocket-science");
 			achievementRocketScience.classList.add("active");
 			playAchievementSound();
+			achievementRocketScience.addEventListener("animationend", function () {
+				achievementRocketScience.classList.remove("active");
+			});
 		}
 	}
 });

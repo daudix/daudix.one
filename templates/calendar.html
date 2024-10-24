@@ -2,7 +2,7 @@
 
 {% block body %}
 <blockquote>
-	This calendar is intended for printing (obviously) and is not adapted to screens, i.e. it uses millimetres instead of pixels, thus it looks bad on screens.</blockquote>
+	This calendar is intended for printing (obviously) and is not adapted to screens, i.e. it uses millimetres instead of pixels, thus it might looks bad on screens.</blockquote>
 <blockquote>
 	Recommended print size is A4 portrait, but should work well on A5. American Letter and other obscure sizes have not been tested.
 </blockquote>
@@ -18,16 +18,20 @@
 	</ul>
 </div>
 
-<div id="header">
-	<span id="month-number"></span>
-	<div id="secondary-column">
-		<span id="month-name"></span>
-		<span id="year"></span>
+<!-- Top half -->
+<div>
+	<div id="header">
+		<span id="month-number"></span>
+		<div id="secondary-column">
+			<span id="month-name"></span>
+			<span id="year"></span>
+		</div>
 	</div>
+
+	<div id=calendar></div>
 </div>
 
-<div id=calendar></div>
-
+<!-- Bottom half -->
 <div id="footer">
 	<div id="year-progress">
 		<div id="progress-bar-wrapper">
@@ -87,7 +91,7 @@
 </div>
 
 <div class="dialog-buttons">
-	<button id="calendar-print" class="inline-button">Print Calendar</button>
+	<button id="calendar-print" class="inline-button">Print Calendar…</button>
 </div>
 
 <div id="achievement-lab-rat" class="achievement">
