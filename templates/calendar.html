@@ -1,16 +1,24 @@
 {% extends "duckquill/templates/base.html" %}
 
 {% block body %}
-<a href="{{ get_url(path='/') }}">← Go Home</a>
+<blockquote>
+	This calendar is intended for printing (obviously) and is not adapted to screens, i.e. it uses millimetres instead of pixels, thus it looks bad on screens.</blockquote>
+<blockquote>
+	Recommended print size is A4 portrait, but should work well on A5. American Letter and other obscure sizes have not been tested.
+</blockquote>
 
-<ul id="on-monday-list">
-	<li>
-		<input type="checkbox" id="on-monday" class="switch" />
-		<label for="on-monday">Start on Monday</label>
-	</li>
-</ul>
+<div id="controls">
+	<a href="{{ get_url(path='/') }}">← Go Home</a>
 
-<div id="calendar-header">
+	<ul id="on-monday-list">
+		<li>
+			<label for="on-monday">Start on Monday</label>
+			<input type="checkbox" id="on-monday" class="switch" />
+		</li>
+	</ul>
+</div>
+
+<div id="header">
 	<span id="month-number"></span>
 	<div id="secondary-column">
 		<span id="month-name"></span>
@@ -20,7 +28,7 @@
 
 <div id=calendar></div>
 
-<div id="calendar-footer">
+<div id="footer">
 	<div id="year-progress">
 		<div id="progress-bar-wrapper">
 			<div id="progress-bar"></div>
@@ -38,52 +46,74 @@
 			<label for="cube-dispenser">
 				<span class="visually-hidden">Cube dispenser</span>
 			</label>
-
 			<input type="checkbox" id="cube-hazard" class="visually-hidden" checked />
 			<label for="cube-hazard">
 				<span class="visually-hidden">Cube hazard</span>
 			</label>
-
 			<input type="checkbox" id="pellet-hazard" class="visually-hidden" checked />
 			<label for="pellet-hazard">
 				<span class="visually-hidden">Pellet hazard</span>
 			</label>
-
 			<input type="checkbox" id="pellet-catcher" class="visually-hidden" checked />
 			<label for="pellet-catcher">
 				<span class="visually-hidden">Pellet catcher</span>
 			</label>
-
 			<input type="checkbox" id="water-hazard" class="visually-hidden" checked />
 			<label for="water-hazard">
 				<span class="visually-hidden">Water hazard</span>
 			</label>
-
 			<input type="checkbox" id="fling-enter" class="visually-hidden" checked />
 			<label for="fling-enter">
 				<span class="visually-hidden">Fling enter</span>
 			</label>
-
 			<input type="checkbox" id="fling-exit" class="visually-hidden" checked />
 			<label for="fling-exit">
 				<span class="visually-hidden">Fling exit</span>
 			</label>
-
 			<input type="checkbox" id="turret-hazard" class="visually-hidden" checked />
 			<label for="turret-hazard">
 				<span class="visually-hidden">Turret hazard</span>
 			</label>
-
 			<input type="checkbox" id="dirty-water" class="visually-hidden" checked />
 			<label for="dirty-water">
 				<span class="visually-hidden">Dirty water</span>
 			</label>
-
 			<input type="checkbox" id="cake" class="visually-hidden" checked />
 			<label for="cake">
 				<span class="visually-hidden">Cake</span>
 			</label>
 		</div>
+	</div>
+</div>
+
+<div class="dialog-buttons">
+	<button id="calendar-print" class="inline-button">Print Calendar</button>
+</div>
+
+<div id="achievement-lab-rat" class="achievement">
+	<img class="transparent no-hover" src="lab-rat.png" />
+	<div>
+		<span>Achievement Unlocked!</span>
+		<span>Lab Rat</span>
+		<span>Acquire the Aperture Science Calendar.</span>
+	</div>
+</div>
+
+<div id="achievement-basic-science" class="achievement">
+	<img class="transparent no-hover" src="basic-science.png" />
+	<div>
+		<span>Achievement Unlocked!</span>
+		<span>Basic Science</span>
+		<span>Switch off and on all chamber icons.</span>
+	</div>
+</div>
+
+<div id="achievement-rocket-science" class="achievement">
+	<img class="transparent no-hover" src="rocket-science.png" />
+	<div>
+		<span>Achievement Unlocked!</span>
+		<span>Rocket Science</span>
+		<span>Use keyboard shortcut to acquire the Aperture Science Calendar.</span>
 	</div>
 </div>
 {% endblock body %}

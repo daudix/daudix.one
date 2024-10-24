@@ -19,47 +19,66 @@
 }
 
 body {
-	position: relative;
 	background: white;
 	color: black;
 	font-size: 5mm;
 	font-family: "Inter", var(--font-system-ui);
-	white-space: nowrap;
 
 	@media screen {
 		margin: 10mm auto;
 		width: min(var(--container-width), 90%);
 	}
 
-	@media print {
-		& > a {
+	blockquote {
+		margin-block-end: 1rem;
+		font-size: var(--font-size-small);
+
+		@media print {
+			display: none;
+		}
+	}
+
+	#controls {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin-block-end: 4rem;
+		font-size: 16px;
+
+		a {
+			font-weight: normal;
+		}
+
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+
+			li {
+				margin: 0;
+				padding: 0;
+
+				.switch {
+					background-color: rgb(0 0 0 / 0.25);
+
+					&:hover {
+						background-color: rgb(0 0 0 / 0.5);
+					}
+
+					&:checked {
+						background-color: var(--accent-color);
+					}
+				}
+			}
+		}
+
+		@media print {
 			display: none;
 		}
 	}
 }
 
-#on-monday-list {
-	position: absolute;
-	top: 0;
-	right: 0;
-	margin: 0;
-	padding: 0;
-	list-style: none;
-
-	@media print {
-		display: none;
-	}
-
-	input {
-		background-color: rgb(0 0 0 / 0.25);
-
-		&:checked {
-			background-color: var(--accent-color);
-		}
-	}
-}
-
-#calendar-header {
+#header {
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
@@ -79,7 +98,7 @@ body {
 	}
 }
 
-#calendar-footer {
+#footer {
 	display: flex;
 	flex-direction: column;
 
@@ -214,9 +233,93 @@ body {
 	}
 }
 
+.dialog-buttons {
+	justify-content: space-around;
+
+	.inline-button {
+		border-radius: 999px;
+		background-color: rgb(0 0 0 / 0.25);
+		padding: 1rem 1.5rem;
+
+		&:hover {
+			background-color: var(--accent-color);
+			color: var(--contrast-color);
+		}
+	}
+}
+
+.achievement {
+	display: none;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	flex-direction: row;
+	gap: 0.5rem;
+	transform: translateY(100%);
+	opacity: 0;
+	box-shadow: var(--edge-highlight);
+	border: 1px solid #0e141b;
+	background-image: linear-gradient(to bottom, #23262e, #0e141b);
+	padding: 0.5rem;
+	color: white;
+
+	&.active {
+		display: flex;
+		animation: achievement-fade-in 4s;
+
+		@keyframes achievement-fade-in {
+			10%,
+			50%,
+			90% {
+				transform: none;
+				opacity: 1;
+			}
+
+			to {
+				transform: translateY(100%);
+				opacity: 0;
+			}
+		}
+	}
+
+	@media print {
+		display: none !important;
+	}
+
+	&:hover {
+		border: 1px solid #102b40;
+		background-image: linear-gradient(to bottom, #212834, #102b40);
+	}
+
+	img {
+		margin: 0;
+		width: 4rem;
+		height: 4rem;
+	}
+
+	div {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: 0.25rem;
+
+		span:nth-of-type(1),
+		span:nth-of-type(3) {
+			color: rgb(255 255 255 / 0.5);
+			font-size: var(--font-size-x-small);
+		}
+
+		span:nth-of-type(2) {
+			font-weight: 600;
+			font-size: var(--font-size-small);
+		}
+	}
+}
+
 .CalendarJS {
 	margin: 0;
 	padding: 0;
+	white-space: nowrap;
 }
 
 .cjs-calHeader {
@@ -306,7 +409,6 @@ body {
 	background: none;
 	padding: 0;
 	width: 50%;
-	font-weight: bold;
 	font-size: 5mm;
 	font-family: inherit;
 
@@ -337,7 +439,6 @@ body {
 .cjs-moTitle {
 	margin: 0;
 	padding: 0;
-	font-weight: bold;
 	text-align: center;
 }
 

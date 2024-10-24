@@ -55,7 +55,8 @@ blockquote {
 
 #site-footer {
 	// When it will stop being new? Who knows!
-	nav a[href*="/commissions/"] {
+	// Edit: Well, now it's calendar that is new...
+	nav a[href*="/calendar/"] {
 		position: relative;
 
 		&:hover::after {

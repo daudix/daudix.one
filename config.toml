@@ -59,10 +59,10 @@ show_copyright = true
 show_powered_by = true
 show_fediring = true
 links = [
+	{ url = "@/calendar/index.md", name = "Calendar" },
 	{ url = "@/coffee/index.md", name = "Coffee" },
 	{ url = "@/colophon/index.md", name = "Colophon" },
 	{ url = "@/commissions/index.md", name = "Commissions" },
-	{ url = "https://daudix.neocities.org", name = "Neocities" },
 ]
 
 [extra.comments]

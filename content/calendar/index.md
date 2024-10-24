@@ -6,6 +6,6 @@ template = "calendar.html"
 default_theme = "light"
 accent_color = "black"
 styles = ["calendar.css"]
-scripts = ["calendar/calendar.js"]
+scripts = ["calendar/calendar.js", "calendar/script.js"]
 card = "card.png"
 +++
