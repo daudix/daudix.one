@@ -28,7 +28,7 @@
 	}
 
 	#header {
-		--mask: url("assets/header.png");
+		--mask: url("assets/header.gif");
 		-webkit-user-select: none;
 		-webkit-mask-image: var(--mask);
 		mask-image: var(--mask);
@@ -43,7 +43,7 @@
 		user-select: none;
 
 		@media (prefers-reduced-motion) {
-			--mask: url("assets/header-static.png");
+			--mask: url("assets/header-static.gif");
 		}
 	}
 
@@ -1022,7 +1022,7 @@
 	}
 
 	#dont {
-		--mask: url("assets/dont.png");
+		--mask: url("assets/dont.gif");
 		-webkit-mask-image: var(--mask);
 		position: absolute;
 		transform: scale(0.5);
@@ -1039,7 +1039,7 @@
 		pointer-events: none;
 
 		@media (prefers-reduced-motion) {
-			--mask: url("assets/dont-static.png");
+			--mask: url("assets/dont-static.gif");
 		}
 	}
 }
