@@ -188,6 +188,12 @@ blockquote {
 	grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
 	gap: 0.5rem;
 
+	&:hover a {
+		transform: translateY(0.25rem);
+		opacity: var(--disabled-opacity);
+		filter: blur(0.25rem);
+	}
+
 	a {
 		display: flex;
 		justify-content: start;
@@ -202,6 +208,9 @@ blockquote {
 		text-decoration: none;
 
 		&:hover {
+			transform: translateY(-0.25rem);
+			opacity: 1;
+			filter: none;
 			background-color: var(--fg-muted-2);
 		}
 
