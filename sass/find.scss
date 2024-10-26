@@ -58,9 +58,11 @@
 	margin-inline-start: 1.75rem;
 	border-width: 0.25rem;
 	border-inline-start: 0.25rem solid;
-	border-image-source: linear-gradient(to bottom,
-			var(--fg-muted-3) calc(100% - 2.5rem),
-			transparent);
+	border-image-source: linear-gradient(
+		to bottom,
+		var(--fg-muted-3) calc(100% - 2.5rem),
+		transparent
+	);
 	border-image-slice: 1;
 	padding-inline-start: 0;
 	list-style: none;

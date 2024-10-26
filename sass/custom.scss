@@ -1,22 +1,24 @@
 @import "../themes/duckquill/sass/_variables.scss";
 
 @include theme-variables using ($theme) {
-	@if $theme =="dark" {
+	@if $theme == "dark" {
 		// COLORS
 		--bg-overlay: linear-gradient(rgb(0 0 0 / 0.9), rgb(0 0 0 / 0.9));
 		--shade-color: rgb(0 0 0 / 0.25);
 		--shine: rgb(255 255 255 / 0.1);
-	}
-
-	@else {
+	} @else {
 		// COLORS
-		--bg-overlay: linear-gradient(rgb(255 255 255 / 0.8), rgb(255 255 255 / 0.8));
+		--bg-overlay: linear-gradient(
+			rgb(255 255 255 / 0.8),
+			rgb(255 255 255 / 0.8)
+		);
 		--shade-color: rgb(0 0 0 / 0.07);
 		--shine: rgb(255 255 255 / 0.3);
 
 		// FILTERS
 		--printed: contrast(2) brightness(0.75) grayscale(1);
-		--drop-shadow: drop-shadow(0 0.08rem 0.1rem rgb(0 0 0 / 0.35)) drop-shadow(0 0.4rem 0.7rem rgb(0 0 0 / 0.18));
+		--drop-shadow: drop-shadow(0 0.08rem 0.1rem rgb(0 0 0 / 0.35))
+			drop-shadow(0 0.4rem 0.7rem rgb(0 0 0 / 0.18));
 	}
 }
 
@@ -25,7 +27,8 @@ body {
 	background-blend-mode: normal, difference;
 
 	@media (prefers-reduced-motion) {
-		background: var(--bg-overlay), url("assets/static-static.gif"), var(--accent-color);
+		background: var(--bg-overlay), url("assets/static-static.gif"),
+			var(--accent-color);
 	}
 }
 
@@ -43,7 +46,6 @@ blockquote {
 		--icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cpath d='M12.277.832c-.578.008-1.168.23-1.691.754l-9 9A2 2 0 0 0 1 12v3h3c.531 0 1.04-.21 1.414-.586l9-9c1.79-1.789.082-4.39-1.89-4.57-.083-.012-.165-.012-.247-.012M10.5 4.437 11.563 5.5 4.5 12.563 3.438 11.5zm0 0'/%3E%3C/svg%3E");
 		-webkit-mask-image: var(--icon);
 		mask-image: var(--icon);
-
 	}
 
 	&.fact .alert-title .icon {
@@ -242,14 +244,21 @@ blockquote {
 			}
 		}
 	}
-
 }
 
 // Sorry not sorry
 .rainboom {
 	-webkit-background-clip: text;
 	filter: drop-shadow(max(1px, 0.0625em) max(1px, 0.0625em) rgb(0 0 0 / 0.6));
-	background-image: linear-gradient(to right, #ff6188, #fc9867, #ffd866, #a9dc76, #78dce8, #ab9df2);
+	background-image: linear-gradient(
+		to right,
+		#ff6188,
+		#fc9867,
+		#ffd866,
+		#a9dc76,
+		#78dce8,
+		#ab9df2
+	);
 	background-clip: text;
-	color: transparent
+	color: transparent;
 }

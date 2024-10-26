@@ -13,7 +13,11 @@ body::before {
 	z-index: -1;
 	mask-image: var(--mask);
 	animation: rays 4s linear calc(var(--scroll) * -1s) 1 normal both paused;
-	background: repeating-conic-gradient(from var(--angle) at center 2.625rem, var(--ray) 0deg 10deg, transparent 10deg 20deg);
+	background: repeating-conic-gradient(
+		from var(--angle) at center 2.625rem,
+		var(--ray) 0deg 10deg,
+		transparent 10deg 20deg
+	);
 	width: 100vw;
 	height: 100vh;
 	content: "";
@@ -44,7 +48,13 @@ body::before {
 		aspect-ratio: 1 / 1;
 
 		.card-content {
-			--mask: linear-gradient(to bottom, transparent, black 1rem, black calc(100% - 1rem), transparent);
+			--mask: linear-gradient(
+				to bottom,
+				transparent,
+				black 1rem,
+				black calc(100% - 1rem),
+				transparent
+			);
 			-webkit-mask-image: var(--mask);
 			display: block;
 			flex: 1;
@@ -60,13 +70,17 @@ body::before {
 			}
 		}
 
-		&:has(li:nth-of-type(1) input[type="radio"]:checked) .card-content:nth-of-type(1),
-		&:has(li:nth-of-type(2) input[type="radio"]:checked) .card-content:nth-of-type(2) {
+		&:has(li:nth-of-type(1) input[type="radio"]:checked)
+			.card-content:nth-of-type(1),
+		&:has(li:nth-of-type(2) input[type="radio"]:checked)
+			.card-content:nth-of-type(2) {
 			display: block;
 		}
 
-		&:has(li:nth-of-type(1) input[type="radio"]:checked) .card-content:nth-of-type(2),
-		&:has(li:nth-of-type(2) input[type="radio"]:checked) .card-content:nth-of-type(1) {
+		&:has(li:nth-of-type(1) input[type="radio"]:checked)
+			.card-content:nth-of-type(2),
+		&:has(li:nth-of-type(2) input[type="radio"]:checked)
+			.card-content:nth-of-type(1) {
 			display: none;
 		}
 	}
@@ -105,21 +119,21 @@ body::before {
 			}
 
 			input[type="radio"] {
-				&:focus-visible+label {
+				&:focus-visible + label {
 					animation: focus-in var(--transition);
 					outline: 0.125rem solid var(--accent-color);
 					outline-offset: 0.125rem;
 				}
 
 				@supports not selector(:focus-visible) {
-					&:focus+label {
+					&:focus + label {
 						animation: focus-in var(--transition);
 						outline: 0.125rem solid var(--accent-color);
 						outline-offset: 0.125rem;
 					}
 				}
 
-				&:checked+label {
+				&:checked + label {
 					box-shadow: var(--shadow);
 					background-color: white;
 					color: rgb(0 0 0 / 0.8);
@@ -145,11 +159,14 @@ body::before {
 
 		&:first-of-type {
 			box-shadow: var(--edge-highlight);
-			border-radius: var(--rounded-corner) var(--rounded-corner) var(--rounded-corner-small) var(--rounded-corner-small);
+			border-radius: var(--rounded-corner) var(--rounded-corner)
+				var(--rounded-corner-small) var(--rounded-corner-small);
 		}
 
 		&:last-of-type {
-			border-radius: var(--rounded-corner-small) var(--rounded-corner-small) var(--rounded-corner) var(--rounded-corner);
+			border-radius: var(--rounded-corner-small)
+				var(--rounded-corner-small) var(--rounded-corner)
+				var(--rounded-corner);
 		}
 
 		strong {

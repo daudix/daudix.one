@@ -159,7 +159,7 @@
 		display: block;
 		margin: 0 auto;
 
-		&+label {
+		& + label {
 			transition: var(--transition);
 			color: var(--fg-muted-5);
 			font-size: var(--font-size-small);
@@ -182,9 +182,8 @@
 body:has(#skeuo-switch:checked) {
 	box-shadow: inset 0 0 8rem black;
 	background:
-		radial-gradient(circle at 0% 0%,
-			var(--accent-color-alpha),
-			transparent) top left / cover,
+		radial-gradient(circle at 0% 0%, var(--accent-color-alpha), transparent)
+			top left / cover,
 		url("coffee/fabric.webp");
 	background-blend-mode: hard-light, normal;
 
@@ -196,9 +195,11 @@ body:has(#skeuo-switch:checked) {
 			box-shadow:
 				var(--edge-highlight),
 				0 0.375rem 2rem rgb(0 0 0 / 0.3);
-			background-image: linear-gradient(rgb(224 224 224 / 0.95),
-					rgb(212 212 212 / 0.9) 50%,
-					rgb(192 192 192 / 0.8) 50%);
+			background-image: linear-gradient(
+				rgb(224 224 224 / 0.95),
+				rgb(212 212 212 / 0.9) 50%,
+				rgb(192 192 192 / 0.8) 50%
+			);
 			background-color: transparent;
 		}
 
@@ -231,10 +232,12 @@ body:has(#skeuo-switch:checked) {
 				-webkit-backdrop-filter: none;
 				backdrop-filter: none;
 				box-shadow: var(--edge-highlight);
-				background-image: linear-gradient(to top,
-						rgb(224 224 224 / 0.95),
-						rgb(212 212 212 / 0.9) 50%,
-						rgb(192 192 192 / 0.8) 50%);
+				background-image: linear-gradient(
+					to top,
+					rgb(224 224 224 / 0.95),
+					rgb(212 212 212 / 0.9) 50%,
+					rgb(192 192 192 / 0.8) 50%
+				);
 				background-color: transparent;
 			}
 
@@ -242,9 +245,11 @@ body:has(#skeuo-switch:checked) {
 				-webkit-backdrop-filter: none;
 				backdrop-filter: none;
 				box-shadow: var(--edge-highlight);
-				background-image: linear-gradient(rgb(224 224 224 / 0.95),
-						rgb(212 212 212 / 0.9) 50%,
-						rgb(192 192 192 / 0.8) 50%);
+				background-image: linear-gradient(
+					rgb(224 224 224 / 0.95),
+					rgb(212 212 212 / 0.9) 50%,
+					rgb(192 192 192 / 0.8) 50%
+				);
 				background-color: transparent;
 
 				.item {
@@ -259,8 +264,10 @@ body:has(#skeuo-switch:checked) {
 		background:
 			radial-gradient(black 15%, transparent 16%) 0 0,
 			radial-gradient(black 15%, transparent 16%) 0.5rem 0.5rem,
-			radial-gradient(rgb(255 255 255 / 0.1) 15%, transparent 20%) 0 0.0625rem,
-			radial-gradient(rgb(255 255 255 / 0.1) 15%, transparent 20%) 0.5rem 0.5625rem;
+			radial-gradient(rgb(255 255 255 / 0.1) 15%, transparent 20%) 0
+				0.0625rem,
+			radial-gradient(rgb(255 255 255 / 0.1) 15%, transparent 20%) 0.5rem
+				0.5625rem;
 		background-size: 1rem 1rem;
 		background-color: hsl(0 0% 27%);
 
@@ -343,8 +350,10 @@ body:has(#skeuo-switch:checked) {
 					box-shadow:
 						inset rgb(255 255 255 / 0.3) 0 0.0625rem 0 0,
 						0 0.125rem 0 0 hsl(1 100% 38%);
-					background-image: linear-gradient(hsl(1 100% 78%),
-							hsl(1 100% 58%));
+					background-image: linear-gradient(
+						hsl(1 100% 78%),
+						hsl(1 100% 58%)
+					);
 					text-shadow: 0 -0.0625rem 0 rgb(0 0 0 / 0.4);
 				}
 
@@ -352,8 +361,10 @@ body:has(#skeuo-switch:checked) {
 					box-shadow:
 						inset rgb(255 255 255 / 0.3) 0 0.0625rem 0 0,
 						0 0.125rem 0 0 hsl(48 93% 32%);
-					background-image: linear-gradient(hsl(48 93% 62%),
-							hsl(48 93% 42%));
+					background-image: linear-gradient(
+						hsl(48 93% 62%),
+						hsl(48 93% 42%)
+					);
 					text-shadow: 0 0.0625rem 0 rgb(255 255 255 / 0.4);
 				}
 
@@ -361,8 +372,10 @@ body:has(#skeuo-switch:checked) {
 					box-shadow:
 						inset rgb(255 255 255 / 0.3) 0 0.0625rem 0 0,
 						0 0.125rem 0 0 hsl(24 100% 30%);
-					background-image: linear-gradient(hsl(24 100% 60%),
-							hsl(24 100% 40%));
+					background-image: linear-gradient(
+						hsl(24 100% 60%),
+						hsl(24 100% 40%)
+					);
 					text-shadow: 0 -0.0625rem 0 rgb(0 0 0 / 0.4);
 				}
 
@@ -370,8 +383,10 @@ body:has(#skeuo-switch:checked) {
 					box-shadow:
 						inset rgb(255 255 255 / 0.3) 0 0.0625rem 0 0,
 						0 0.125rem 0 0 hsl(219 100% 16%);
-					background-image: linear-gradient(hsl(219 100% 46%),
-							hsl(219 100% 26%));
+					background-image: linear-gradient(
+						hsl(219 100% 46%),
+						hsl(219 100% 26%)
+					);
 					text-shadow: 0 -0.0625rem 0 rgb(0 0 0 / 0.4);
 				}
 			}
@@ -382,7 +397,7 @@ body:has(#skeuo-switch:checked) {
 				inset 0 0.0625rem 0.25rem rgb(0 0 0 / 0.5),
 				0 0.0625rem 0 rgb(255 255 255 / 0.1);
 
-			&+label {
+			& + label {
 				filter: drop-shadow(0 0.0625rem 0 rgb(255 255 255 / 0.3));
 				color: hsl(32 26% 20% / 0.8);
 				text-shadow: none;
@@ -404,9 +419,12 @@ body:has(#skeuo-switch:checked) {
 
 	@media (prefers-color-scheme: dark) {
 		background:
-			radial-gradient(circle at 0% 0%,
-				var(--accent-color-alpha),
-				transparent) top left / cover,
+			radial-gradient(
+					circle at 0% 0%,
+					var(--accent-color-alpha),
+					transparent
+				)
+				top left / cover,
 			linear-gradient(rgb(0 0 0 / 0.5), rgb(0 0 0 / 0.5)),
 			url("coffee/fabric.webp");
 		background-blend-mode: hard-light, normal, normal;
@@ -414,9 +432,11 @@ body:has(#skeuo-switch:checked) {
 		#site-nav {
 			&::before {
 				outline: 0.0625rem solid rgb(0 0 0 / 0.8);
-				background-image: linear-gradient(rgb(80 80 80 / 0.95),
-						rgb(32 32 32 / 0.9) 50%,
-						rgb(0 0 0 / 0.8) 50%);
+				background-image: linear-gradient(
+					rgb(80 80 80 / 0.95),
+					rgb(32 32 32 / 0.9) 50%,
+					rgb(0 0 0 / 0.8) 50%
+				);
 			}
 
 			nav {
@@ -433,7 +453,8 @@ body:has(#skeuo-switch:checked) {
 
 					&.active {
 						&::before {
-							border-block-end: 0.25rem solid rgb(255 255 255 / 0.7);
+							border-block-end: 0.25rem solid
+								rgb(255 255 255 / 0.7);
 						}
 
 						&:hover::before {
@@ -445,16 +466,20 @@ body:has(#skeuo-switch:checked) {
 
 			#search-container {
 				#search-bar {
-					background-image: linear-gradient(to top,
-							rgb(80 80 80 / 0.95),
-							rgb(32 32 32 / 0.90) 50%,
-							rgb(0 0 0 / 0.8) 50%);
+					background-image: linear-gradient(
+						to top,
+						rgb(80 80 80 / 0.95),
+						rgb(32 32 32 / 0.9) 50%,
+						rgb(0 0 0 / 0.8) 50%
+					);
 				}
 
 				#search-results {
-					background-image: linear-gradient(rgb(80 80 80 / 0.95),
-							rgb(32 32 32 / 0.9) 50%,
-							rgb(0 0 0 / 0.8) 50%);
+					background-image: linear-gradient(
+						rgb(80 80 80 / 0.95),
+						rgb(32 32 32 / 0.9) 50%,
+						rgb(0 0 0 / 0.8) 50%
+					);
 
 					.item {
 						background-color: rgb(255 255 255 / 0.1);

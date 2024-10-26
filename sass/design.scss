@@ -23,7 +23,9 @@ body {
 		position: fixed;
 		filter: saturate(1.2) brightness(1.5);
 		background: url("design/curtain-l.webp"), url("design/curtain-r.webp");
-		background-position: top left, top right;
+		background-position:
+			top left,
+			top right;
 		background-size: calc(((100% - var(--container-width)) / 2) - 2rem) 100%;
 		background-repeat: no-repeat;
 		width: 100vw;
@@ -40,7 +42,12 @@ body {
 h1,
 h2 {
 	-webkit-background-clip: text;
-	background-image: linear-gradient(to bottom, #cfc09f 27%, #ffecb3 40%, #3a2c0f 78%);
+	background-image: linear-gradient(
+		to bottom,
+		#cfc09f 27%,
+		#ffecb3 40%,
+		#3a2c0f 78%
+	);
 	background-clip: text;
 	color: transparent;
 }
@@ -119,7 +126,11 @@ section {
 	margin-inline-end: calc((-100vw + 100%) / 2);
 	margin-block-start: 2rem;
 	box-shadow: var(--edge-highlight), var(--shadow-glass);
-	background-image: radial-gradient(circle, var(--fg-muted-1) 0.0625rem, transparent 0.0625rem);
+	background-image: radial-gradient(
+		circle,
+		var(--fg-muted-1) 0.0625rem,
+		transparent 0.0625rem
+	);
 	background-size: 1rem 1rem;
 
 	&#original-icons,
