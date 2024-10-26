@@ -199,7 +199,30 @@ I have changed the Fediverse instance I'm on a lot, so to make sure nothing is l
 
 I was using GitHub from the very start of my FOSS journey, but (not so) recently I've [migrated to Codeberg](@/blog/2023-07-15-migration-from-github-to-codeberg/index.md), because I didn't like the direction where GitHub is heading.
 
-- [Codeberg](https://codeberg.org/daudix)
-- [GitHub](https://github.com/daudix)
-- [GitLab](https://gitlab.com/daudix)
-- [GitLab (GNOME)](https://gitlab.gnome.org/daudix)
+<div class="icon-grid">
+
+<a href="https://codeberg.org/daudix">
+<img class="transparent no-hover pixels drop-shadow icon" src="icons/codeberg.gif" alt="Pixel art Codeberg icon." />
+<div class="details">
+<strong>Codeberg</strong>
+<p><small>My main forge with all most of my projects.</small></p>
+</div>
+</a>
+
+<a href="https://github.com/daudix">
+<img class="transparent no-hover pixels drop-shadow icon" src="icons/github.gif" alt="Pixel art GitHub icon." />
+<div class="details">
+<strong>GitHub</strong>
+<p><small>Who doesn't have an account there?</small></p>
+</div>
+</a>
+
+<a href="https://gitlab.com/daudix">
+<img class="transparent no-hover pixels drop-shadow icon" src="icons/gitlab.gif" alt="Pixel art GitLab icon." />
+<div class="details">
+<strong>GitLab</strong>
+<p><small>GitHub 2: Electric Boogaloo.</small></p>
+</div>
+</a>
+
+</div>
