@@ -3,31 +3,79 @@ title = "Home"
 [extra]
 styles = ["index.css"]
 scripts = ["statuscafe.js", "fluttershy.js", "rizz.js"]
+buttons = [
+  { alt = "a proud member of the blue team of 512KB club", button = "blue-team.gif", url = "https://512kb.club" },
+  { alt = "aperturelabs", button = "aperturelabs.gif", url = "https://www.aperturescience.com" },
+  { alt = "ddg", button = "ddg.gif", url = "https://duckduckgo.com" },
+  { alt = "firefox3", button = "firefox3.gif", url = "https://getfirefox.com" },
+  { alt = "free", button = "free.gif", url = "https://freeplay.floof.company" },
+  { alt = "georgemoody", button = "georgemoody.gif", url = "https://tilde.town/~georgemoody/" },
+  { alt = "getimiskon", button = "getimiskon.gif", url = "https://getimiskon.xyz" },
+  { alt = "graphite", button = "graphite.gif", url = "https://gra.phite.ro" },
+  { alt = "iso", button = "iso.gif", url = "https://www.w3.org/QA/Tips/iso-date" },
+  { alt = "libreivan", button = "libreivan.gif", url = "https://libreivan.com" },
+  { alt = "marchintosh", button = "marchintosh.gif", url = "https://libreivan.com/writing/" },
+  { alt = "melankorin", button = "melankorin.gif", url = "https://melankorin.net" },
+  { alt = "pixlxip", button = "pixlxip.gif", url = "https://xip.neocities.org" },
+  { alt = "portal", button = "portal.gif", url = "https://www.thinkwithportals.com" },
+  { alt = "ronbutton", button = "ronbutton.gif", url = "https://veeronniecaw.space" },
+  { alt = "savewalterwhite", button = "savewalterwhite.gif", url = "http://www.savewalterwhite.com" },
+  { alt = "saynotoweb3", button = "saynotoweb3.gif", url = "https://yesterweb.org/no-to-web3/" },
+  { alt = "seirdy", button = "seirdy.gif", url = "https://seirdy.one" },
+  { alt = "solinus", button = "solinus.gif", url = "https://solinus.neocities.org" },
+  { alt = "spacehey", button = "spacehey.gif", url = "https://spacehey.com" },
+  { alt = "standwith", button = "standwith.gif", url = "https://decolonizepalestine.com" },
+  { alt = "stardew-valley", button = "stardew-valley.gif", url = "https://www.stardewvalley.net" },
+  { alt = "statuscafe", button = "statuscafe.gif", url = "https://status.cafe" },
+  { alt = "valid-atom", button = "valid-atom.gif", url = "https://validator.w3.org/feed/" },
+  { alt = "vscodium", button = "vscodium.gif", url = "https://vscodium.com" },
+  { alt = "adhd", button = "adhd.gif" },
+  { alt = "anythingbut", button = "anythingbut.gif" },
+  { alt = "bestviewed16bit", button = "bestviewed16bit.gif" },
+  { alt = "bring-back-the-headphone-jack", button = "bring-back-the-headphone-jack.gif" },
+  { alt = "companion", button = "companion.gif" },
+  { alt = "dark-mode", button = "dark-mode.gif" },
+  { alt = "fuckchrome", button = "fuckchrome.gif" },
+  { alt = "imac", button = "imac.gif" },
+  { alt = "mobilefriendly", button = "mobilefriendly.gif" },
+  { alt = "neo-fedi", button = "neo-fedi.gif" },
+  { alt = "nofuckingthanks", button = "nofuckingthanks.gif" },
+  { alt = "righttorepair", button = "righttorepair.gif" },
+  { alt = "sourcemissing", button = "sourcemissing.gif" },
+  { alt = "yarrr", button = "yarrr.gif" },
+]
+stamps = [
+  { alt = "adhd", stamp = "adhd.gif" },
+  { alt = "always-tired", stamp = "always-tired.gif" },
+  { alt = "cassettes", stamp = "cassettes.gif" },
+  { alt = "cold", stamp = "cold.gif" },
+  { alt = "derpy", stamp = "derpy.gif" },
+  { alt = "garfpropa", stamp = "garfpropa.gif" },
+  { alt = "heisenshy", stamp = "heisenshy.gif" },
+  { alt = "how-i-feel", stamp = "how-i-feel.gif" },
+  { alt = "i-love-sleeping", stamp = "i-love-sleeping.gif" },
+  { alt = "october", stamp = "october.gif" },
+  { alt = "old-web", stamp = "old-web.gif" },
+  { alt = "portalnyan", stamp = "portalnyan.gif" },
+  { alt = "spirit-phone", stamp = "spirit-phone.gif" },
+  { alt = "stamp", stamp = "stamp.gif" },
+  { alt = "stardew", stamp = "stardew.gif" },
+  { alt = "static", stamp = "static.gif" },
+  { alt = "the-cake-is-a-lie", stamp = "the-cake-is-a-lie.gif" },
+]
 +++
 
 <noscript>
-	<p style="text-align: center;">
+	<p>
 		<small>JavaScript is off huh? Good for you!</small>
 		<br />
 		<small>Here's an exclusive cute fox hugging a duck for you :3</small>
 		<br />
-		<img id="hug" class="transparent no-hover drop-shadow" alt="Neofox hugs a duck." src="/assets/neofox-hug-duck.png" />
+		<img class="transparent no-hover drop-shadow" alt="Neofox hugs a duck." src="/assets/neofox-hug-duck.png" />
 	</p>
 </noscript>
 
-<div id="polaroid">
-  <div id="polaroid-shine"></div>
-  <div id="polaroid-photo">
-    <img class="full transparent no-hover" src="assets/rainbow-grayscale.svg" alt="My avatar, letter D filled with grayscale stripes." />
-    <img class="full transparent no-hover" alt="My avatar, letter D filled with rainbow stripes." src="assets/rainbow.svg" />
-  </div>
-  <span id="polaroid-title">Instant photo<br />format</span>
-  <span id="statuscafe-content"></span>
-  <a id="statuscafe-link" href="https://status.cafe/users/daudix">
-    <span id="statuscafe-time-ago"></span>
-    <span id="statuscafe-face"></span>
-  </a>
-</div>
+{{ polaroid() }}
 
 <div id="header-container">
 
@@ -47,49 +95,21 @@ Originally from the Siberian part of Russia, but currently living in <abbr id="a
 - Purple <small>(lavender in particular)</small>
 - Design
 - Games:
-  <ul>
-    <li id="portal">
-      <div id="portal-container">
-        <div id="portal-blue"></div>
-          <div id="portal-marquee">
-            <span>Portal</span>
-            <span aria-hidden="true">Portal</span>
-          </div>
-        <div id="portal-orange"></div>
-      </div>
-      <small>(all-time favorite)</small>
-    </li>
-    <li id="celeste">
-      <div id="strawberry"></div>
-      <span id="celeste-text">Celeste</span>
-      <small>(such a lovely game)</small>
-    </li>
-    <li id="teardown">
-      <div id="hammer"></div>
-      <span id="teardown-text">Teardown</span>
-      <small>(fun destructions)</small>
-    </li>
-    <li id="superliminal">
-      <div id="pawn"></div>
-      <span id="super">Super</span><span id="liminal">liminal</span>
-      <small>(F-Stop if it wasn't scrapped)</small>
-    </li>
-    <li id="stardew">
-      <div id="chicken"></div>
-      <span id="stardew-text">Stardew Valley</span>
-      <small>(was fun until sis spoiled <em>everything</em>)</small>
-    </li>
-    <li id="untitled">
-      <div id="goose"></div>
-      <span id="untitled-text">Untitled Goose</span>
-      <small>(<em>honk-honk!</em> I love geese, by the way)</small>
-    </li>
-    <li id="stanley">
-      <div id="boss"></div>
-      <span id="stanley-text">The Stanley Parable&nbsp;<span id="adventure-line">Adventure Line™</span></span>
-      <small>(fake feeling of choice, just like irl)</small>
-    </li>
-  </ul>
+  - <div id="portal-container">
+      <div id="portal-blue"></div>
+        <div id="portal-marquee">
+          <span>Portal</span>
+          <span aria-hidden="true">Portal</span>
+        </div>
+      <div id="portal-orange"></div>
+    </div>
+    <small>(all-time favorite)</small>
+  - <span>Celeste</span> <small>(such a lovely game)</small>
+  - <span>Teardown</span> <small>(fun destructions)</small>
+  - <span>Super</span><span>liminal</span> <small>(F-Stop if it wasn't scrapped)</small>
+  - <span>Stardew Valley</span> <small>(was fun until sis spoiled *everything*)</small>
+  - <span>Untitled Goose</span> <small>(*honk-honk!* I love geese, by the way)</small>
+  - <span>The Stanley Parable<span>&nbsp;Adventure Line™</span></span> <small>(fake feeling of choice, just like irl)</small>
 - Aesthetics:
   - [Cyberpunk](https://aesthetics.fandom.com/wiki/Cyberpunk)
   - [Vaporwave](https://aesthetics.fandom.com/wiki/Vaporwave)
@@ -112,19 +132,7 @@ And lastly, to quote [Jeffrey](https://hyperreal.coffee/about/): "I’m <button 
 
 ## Works
 
-<div id="window" class="drop-shadow">
-  <div id="window-contents">
-    <div id="rainbow-text">
-      <span>silly little goober with a creative mind</span>
-      <span aria-hidden="true">silly little goober with a creative mind</span>
-      <span aria-hidden="true">silly little goober with a creative mind</span>
-      <span aria-hidden="true">silly little goober with a creative mind</span>
-      <span aria-hidden="true">silly little goober with a creative mind</span>
-      <span aria-hidden="true">silly little goober with a creative mind</span>
-    </div>
-    <small>–<a href="https://veeronniecaw.space">Ronnie</a></small>
-  </div>
-</div>
+{{ window() }}
 
 I occasionally contribute to FOSS projects, mostly around GNOME apps; creating and improving icons for them, translating them into Russian, and sometimes helping with the UI.
 
@@ -132,155 +140,7 @@ Have a look at my [designs](@/design/index.md); mostly icons, but also some wall
 
 ## IndieWeb
 
-<aside id="bumps">
-<strong class="title">Bumps</strong>
-
-<small>**Bu**ttons + Sta**mps** = Bumps</small>
-
-<div class="marquee-wrapper">
-<div class="marquee">
-
-- [![a proud member of the blue team of 512KB club](assets/88x31/blue-team.gif#pixels#transparent#no-hover)](https://512kb.club)
-- [![aperturelabs](assets/88x31/aperturelabs.gif#pixels#transparent#no-hover)](https://www.aperturescience.com)
-- [![ddg](assets/88x31/ddg.gif#pixels#transparent#no-hover)](https://duckduckgo.com)
-- [![firefox3](assets/88x31/firefox3.gif#pixels#transparent#no-hover)](https://getfirefox.com)
-- [![free](assets/88x31/free.gif#pixels#transparent#no-hover)](https://freeplay.floof.company)
-- [![georgemoody](assets/88x31/georgemoody.gif#pixels#transparent#no-hover)](https://tilde.town/~georgemoody/)
-- [![getimiskon](assets/88x31/getimiskon.gif#pixels#transparent#no-hover)](https://getimiskon.xyz)
-- [![graphite](assets/88x31/graphite.gif#pixels#transparent#no-hover)](https://gra.phite.ro)
-- [![iso](assets/88x31/iso.gif#pixels#transparent#no-hover)](https://www.w3.org/QA/Tips/iso-date)
-- [![libreivan](assets/88x31/libreivan.gif#pixels#transparent#no-hover)](https://libreivan.com)
-- [![marchintosh](assets/88x31/marchintosh.gif#pixels#transparent#no-hover)](https://libreivan.com/writing/)
-- [![melankorin](assets/88x31/melankorin.gif#pixels#transparent#no-hover)](https://melankorin.net)
-- [![pixlxip](assets/88x31/pixlxip.gif#pixels#transparent#no-hover)](https://xip.neocities.org)
-- [![portal](assets/88x31/portal.gif#pixels#transparent#no-hover)](https://www.thinkwithportals.com)
-- [![ronbutton](assets/88x31/ronbutton.gif#pixels#transparent#no-hover)](https://veeronniecaw.space)
-- [![savewalterwhite](assets/88x31/savewalterwhite.gif#pixels#transparent#no-hover)](http://www.savewalterwhite.com)
-- [![saynotoweb3](assets/88x31/saynotoweb3.gif#pixels#transparent#no-hover)](https://yesterweb.org/no-to-web3/)
-- [![seirdy](assets/88x31/seirdy.gif#pixels#transparent#no-hover)](https://seirdy.one)
-- [![solinus](assets/88x31/solinus.gif#pixels#transparent#no-hover)](https://solinus.neocities.org)
-- [![spacehey](assets/88x31/spacehey.gif#pixels#transparent#no-hover)](https://spacehey.com)
-- [![standwith](assets/88x31/standwith.gif#pixels#transparent#no-hover)](https://decolonizepalestine.com)
-- [![stardew-valley](assets/88x31/stardew-valley.gif#pixels#transparent#no-hover)](https://www.stardewvalley.net)
-- [![statuscafe](assets/88x31/statuscafe.gif#pixels#transparent#no-hover)](https://status.cafe)
-- [![valid-atom](assets/88x31/valid-atom.gif#pixels#transparent#no-hover)](https://validator.w3.org/feed/)
-- [![vscodium](assets/88x31/vscodium.gif#pixels#transparent#no-hover)](https://vscodium.com)
-- ![adhd](assets/88x31/adhd.gif#pixels#transparent#no-hover)
-- ![anythingbut](assets/88x31/anythingbut.gif#pixels#transparent#no-hover)
-- ![bestviewed16bit](assets/88x31/bestviewed16bit.gif#pixels#transparent#no-hover)
-- ![bring-back-the-headphone-jack](assets/88x31/bring-back-the-headphone-jack.gif#pixels#transparent#no-hover)
-- ![companion](assets/88x31/companion.gif#pixels#transparent#no-hover)
-- ![dark-mode](assets/88x31/dark-mode.gif#pixels#transparent#no-hover)
-- ![fuckchrome](assets/88x31/fuckchrome.gif#pixels#transparent#no-hover)
-- ![imac](assets/88x31/imac.gif#pixels#transparent#no-hover)
-- ![mobilefriendly](assets/88x31/mobilefriendly.gif#pixels#transparent#no-hover)
-- ![neo-fedi](assets/88x31/neo-fedi.gif#pixels#transparent#no-hover)
-- ![nofuckingthanks](assets/88x31/nofuckingthanks.gif#pixels#transparent#no-hover)
-- ![righttorepair](assets/88x31/righttorepair.gif#pixels#transparent#no-hover)
-- ![sourcemissing](assets/88x31/sourcemissing.gif#pixels#transparent#no-hover)
-- ![yarrr](assets/88x31/yarrr.gif#pixels#transparent#no-hover)
-- <iframe id="increment" src="https://incr.easrng.net/badge?key=daudix.one" title="increment badge"></iframe>
-<!-- Mirror of the above -->
-- [![a proud member of the blue team of 512KB club](assets/88x31/blue-team.gif#pixels#transparent#no-hover)](https://512kb.club)
-- [![aperturelabs](assets/88x31/aperturelabs.gif#pixels#transparent#no-hover)](https://www.aperturescience.com)
-- [![ddg](assets/88x31/ddg.gif#pixels#transparent#no-hover)](https://duckduckgo.com)
-- [![firefox3](assets/88x31/firefox3.gif#pixels#transparent#no-hover)](https://getfirefox.com)
-- [![free](assets/88x31/free.gif#pixels#transparent#no-hover)](https://freeplay.floof.company)
-- [![georgemoody](assets/88x31/georgemoody.gif#pixels#transparent#no-hover)](https://tilde.town/~georgemoody/)
-- [![getimiskon](assets/88x31/getimiskon.gif#pixels#transparent#no-hover)](https://getimiskon.xyz)
-- [![graphite](assets/88x31/graphite.gif#pixels#transparent#no-hover)](https://gra.phite.ro)
-- [![iso](assets/88x31/iso.gif#pixels#transparent#no-hover)](https://www.w3.org/QA/Tips/iso-date)
-- [![libreivan](assets/88x31/libreivan.gif#pixels#transparent#no-hover)](https://libreivan.com)
-- [![marchintosh](assets/88x31/marchintosh.gif#pixels#transparent#no-hover)](https://libreivan.com/writing/)
-- [![melankorin](assets/88x31/melankorin.gif#pixels#transparent#no-hover)](https://melankorin.net)
-- [![pixlxip](assets/88x31/pixlxip.gif#pixels#transparent#no-hover)](https://xip.neocities.org)
-- [![portal](assets/88x31/portal.gif#pixels#transparent#no-hover)](https://www.thinkwithportals.com)
-- [![ronbutton](assets/88x31/ronbutton.gif#pixels#transparent#no-hover)](https://veeronniecaw.space)
-- [![savewalterwhite](assets/88x31/savewalterwhite.gif#pixels#transparent#no-hover)](http://www.savewalterwhite.com)
-- [![saynotoweb3](assets/88x31/saynotoweb3.gif#pixels#transparent#no-hover)](https://yesterweb.org/no-to-web3/)
-- [![seirdy](assets/88x31/seirdy.gif#pixels#transparent#no-hover)](https://seirdy.one)
-- [![solinus](assets/88x31/solinus.gif#pixels#transparent#no-hover)](https://solinus.neocities.org)
-- [![spacehey](assets/88x31/spacehey.gif#pixels#transparent#no-hover)](https://spacehey.com)
-- [![standwith](assets/88x31/standwith.gif#pixels#transparent#no-hover)](https://decolonizepalestine.com)
-- [![stardew-valley](assets/88x31/stardew-valley.gif#pixels#transparent#no-hover)](https://www.stardewvalley.net)
-- [![statuscafe](assets/88x31/statuscafe.gif#pixels#transparent#no-hover)](https://status.cafe)
-- [![valid-atom](assets/88x31/valid-atom.gif#pixels#transparent#no-hover)](https://validator.w3.org/feed/)
-- [![vscodium](assets/88x31/vscodium.gif#pixels#transparent#no-hover)](https://vscodium.com)
-- ![adhd](assets/88x31/adhd.gif#pixels#transparent#no-hover)
-- ![anythingbut](assets/88x31/anythingbut.gif#pixels#transparent#no-hover)
-- ![bestviewed16bit](assets/88x31/bestviewed16bit.gif#pixels#transparent#no-hover)
-- ![bring-back-the-headphone-jack](assets/88x31/bring-back-the-headphone-jack.gif#pixels#transparent#no-hover)
-- ![companion](assets/88x31/companion.gif#pixels#transparent#no-hover)
-- ![dark-mode](assets/88x31/dark-mode.gif#pixels#transparent#no-hover)
-- ![fuckchrome](assets/88x31/fuckchrome.gif#pixels#transparent#no-hover)
-- ![imac](assets/88x31/imac.gif#pixels#transparent#no-hover)
-- ![mobilefriendly](assets/88x31/mobilefriendly.gif#pixels#transparent#no-hover)
-- ![neo-fedi](assets/88x31/neo-fedi.gif#pixels#transparent#no-hover)
-- ![nofuckingthanks](assets/88x31/nofuckingthanks.gif#pixels#transparent#no-hover)
-- ![righttorepair](assets/88x31/righttorepair.gif#pixels#transparent#no-hover)
-- ![sourcemissing](assets/88x31/sourcemissing.gif#pixels#transparent#no-hover)
-- ![yarrr](assets/88x31/yarrr.gif#pixels#transparent#no-hover)
-- <iframe id="increment" src="https://incr.easrng.net/badge?key=daudix.one" title="increment badge"></iframe>
-</div>
-</div>
-<div class="marquee-wrapper">
-<div class="marquee">
-
-- ![adhd](assets/stamps/adhd.gif#pixels#transparent#no-hover)
-- ![always-tired](assets/stamps/always-tired.gif#pixels#transparent#no-hover)
-- ![cassettes](assets/stamps/cassettes.gif#pixels#transparent#no-hover)
-- ![cold](assets/stamps/cold.gif#pixels#transparent#no-hover)
-- ![derpy](assets/stamps/derpy.gif#pixels#transparent#no-hover)
-- ![garfpropa](assets/stamps/garfpropa.gif#pixels#transparent#no-hover)
-- ![heisenshy](assets/stamps/heisenshy.gif#pixels#transparent#no-hover)
-- ![how-i-feel](assets/stamps/how-i-feel.gif#pixels#transparent#no-hover)
-- ![i-love-sleeping](assets/stamps/i-love-sleeping.gif#pixels#transparent#no-hover)
-- ![october](assets/stamps/october.gif#pixels#transparent#no-hover)
-- ![old-web](assets/stamps/old-web.gif#pixels#transparent#no-hover)
-- ![portalnyan](assets/stamps/portalnyan.gif#pixels#transparent#no-hover)
-- ![spirit-phone](assets/stamps/spirit-phone.gif#pixels#transparent#no-hover)
-- ![stamp](assets/stamps/stamp.gif#pixels#transparent#no-hover)
-- ![stardew](assets/stamps/stardew.gif#pixels#transparent#no-hover)
-- ![static](assets/stamps/static.gif#pixels#transparent#no-hover)
-- ![the-cake-is-a-lie](assets/stamps/the-cake-is-a-lie.gif#pixels#transparent#no-hover)
-<!-- Mirror of the above -->
-- ![adhd](assets/stamps/adhd.gif#pixels#transparent#no-hover)
-- ![always-tired](assets/stamps/always-tired.gif#pixels#transparent#no-hover)
-- ![cassettes](assets/stamps/cassettes.gif#pixels#transparent#no-hover)
-- ![cold](assets/stamps/cold.gif#pixels#transparent#no-hover)
-- ![derpy](assets/stamps/derpy.gif#pixels#transparent#no-hover)
-- ![garfpropa](assets/stamps/garfpropa.gif#pixels#transparent#no-hover)
-- ![heisenshy](assets/stamps/heisenshy.gif#pixels#transparent#no-hover)
-- ![how-i-feel](assets/stamps/how-i-feel.gif#pixels#transparent#no-hover)
-- ![i-love-sleeping](assets/stamps/i-love-sleeping.gif#pixels#transparent#no-hover)
-- ![october](assets/stamps/october.gif#pixels#transparent#no-hover)
-- ![old-web](assets/stamps/old-web.gif#pixels#transparent#no-hover)
-- ![portalnyan](assets/stamps/portalnyan.gif#pixels#transparent#no-hover)
-- ![spirit-phone](assets/stamps/spirit-phone.gif#pixels#transparent#no-hover)
-- ![stamp](assets/stamps/stamp.gif#pixels#transparent#no-hover)
-- ![stardew](assets/stamps/stardew.gif#pixels#transparent#no-hover)
-- ![static](assets/stamps/static.gif#pixels#transparent#no-hover)
-- ![the-cake-is-a-lie](assets/stamps/the-cake-is-a-lie.gif#pixels#transparent#no-hover)
-</div>
-</div>
-<input type="checkbox" id="bumps-expand" class="visually-hidden" name="expand" />
-<label for="bumps-expand" title="Expand"><i class="icon"></i></label>
-<details id="bumps-bottom-sheet">
-<summary title="Link to Me"><i class="icon"></i></summary>
-<div>
-<div>
-
-If you want to link back to me, use one of these buttons:
-
-![daudix](assets/88x31/daudix.gif#pixels#transparent#no-hover)![daudix-alt](assets/88x31/daudix-alt.gif#pixels#transparent#no-hover)
-
-{% alert(note=true) %}
-It's recommended to avoid hot-linking; instead, place a copy on your own site.
-{% end %}
-</div>
-</div>
-</details>
-</aside>
+{{ bumps() }}
 
 IndieWeb is something I really like; everything from 88x31 buttons to webrings is so cozy, fun, legit and personal, feels really great after the sterile corporate web all over the place. I'm even a member of several tildes/pubnixes, even though I don't do much there, I still like being a part of them:
 

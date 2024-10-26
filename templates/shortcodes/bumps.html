@@ -1,0 +1,131 @@
+<aside id="bumps">
+	<strong class="title">Bumps</strong>
+	<p>
+		<small>
+			<strong>Bu</strong>ttons + Sta<strong>mps</strong> = Bumps
+		</small>
+	</p>
+	<div class="marquee-wrapper">
+		<div class="marquee">
+			<ul>
+				{% for button in section.extra.buttons %}
+					<li>
+						{% if button.url %}
+							<a href="{{ button.url }}">
+								<img
+									class="pixels transparent no-hover"
+									alt="{{ button.alt }}"
+									src="assets/buttons/{{ button.button }}"
+								/>
+							</a>
+						{% else %}
+							<img
+								class="pixels transparent no-hover"
+								alt="{{ button.alt }}"
+								src="assets/buttons/{{ button.button }}"
+							/>
+						{% endif %}
+					</li>
+				{% endfor %}
+				<li>
+					<iframe id="increment" src="https://incr.easrng.net/badge?key=daudix.one" title="increment badge"></iframe>
+				</li>
+			</ul>
+			<ul>
+				{% for button in section.extra.buttons %}
+					<li>
+						{% if button.url %}
+							<a href="{{ button.url }}">
+								<img
+									class="pixels transparent no-hover"
+									alt="{{ button.alt }}"
+									src="assets/buttons/{{ button.button }}"
+								/>
+							</a>
+						{% else %}
+							<img
+								class="pixels transparent no-hover"
+								alt="{{ button.alt }}"
+								src="assets/buttons/{{ button.button }}"
+							/>
+						{% endif %}
+					</li>
+				{% endfor %}
+				<li>
+					<iframe id="increment" src="https://incr.easrng.net/badge?key=daudix.one" title="increment badge"></iframe>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="marquee-wrapper">
+		<div class="marquee">
+			<ul>
+				{% for stamp in section.extra.stamps %}
+					<li>
+						{% if stamp.url %}
+							<a href="{{ stamp.url }}">
+								<img
+									class="pixels transparent no-hover"
+									alt="{{ stamp.alt }}"
+									src="assets/stamps/{{ stamp.stamp }}"
+								/>
+							</a>
+						{% else %}
+							<img
+								class="pixels transparent no-hover"
+								alt="{{ stamp.alt }}"
+								src="assets/stamps/{{ stamp.stamp }}"
+							/>
+						{% endif %}
+					</li>
+				{% endfor %}
+			</ul>
+			<ul>
+				{% for stamp in section.extra.stamps %}
+					<li>
+						{% if stamp.url %}
+							<a href="{{ stamp.url }}">
+								<img
+									class="pixels transparent no-hover"
+									alt="{{ stamp.alt }}"
+									src="assets/stamps/{{ stamp.stamp }}"
+								/>
+							</a>
+						{% else %}
+							<img
+								class="pixels transparent no-hover"
+								alt="{{ stamp.alt }}"
+								src="assets/stamps/{{ stamp.stamp }}"
+							/>
+						{% endif %}
+					</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+	<input type="checkbox" id="bumps-expand" class="visually-hidden" />
+	<label for="bumps-expand" title="Expand"><i class="icon"></i></label>
+	<details id="bumps-bottom-sheet">
+		<summary title="Link to Me"><i class="icon"></i></summary>
+		<div>
+			<div>
+				<p>
+					If you want to link back to me, use one of these buttons:
+				</p>
+				<p>
+					<img class="pixels transparent no-hover" alt="daudix" src="assets/buttons/daudix.gif" />
+					<img class="pixels transparent no-hover" alt="daudix-alt" src="assets/buttons/daudix-alt.gif" />
+				</p>
+				<blockquote class="note">
+					<p class="alert-title">
+						<i class="icon"></i>
+						Note
+					</p>
+					<p>
+						It’s recommended to avoid hot-linking; instead, place a copy on your own site.
+					</p>
+				</blockquote>
+			</div>
+		</div>
+	</details>
+</aside>
