@@ -775,6 +775,18 @@ details:first-of-type li:nth-of-type(3) li {
 		margin: 0.5rem 0;
 	}
 
+	&:has(.marquee:hover) .marquee ul {
+		animation-play-state: paused;
+
+		li {
+			img,
+			#increment {
+				opacity: var(--disabled-opacity);
+				filter: blur(0.25rem);
+			}
+		}
+	}
+
 	.marquee-wrapper {
 		--mask: linear-gradient(
 			to right,
@@ -789,18 +801,6 @@ details:first-of-type li:nth-of-type(3) li {
 		mask-image: var(--mask);
 		margin: 0 -1rem;
 		overflow: hidden;
-
-		&:hover .marquee ul {
-			animation-play-state: paused;
-
-			li {
-				img,
-				#increment {
-					opacity: var(--disabled-opacity);
-					filter: blur(0.25rem);
-				}
-			}
-		}
 
 		.marquee {
 			display: flex;
