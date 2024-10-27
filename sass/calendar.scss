@@ -1,3 +1,12 @@
+@import "../themes/duckquill/sass/_variables.scss";
+
+@include theme-variables using ($theme) {
+	@if $theme == "light" {
+		// COLORS
+		--color-opacity: 0.25;
+	}
+}
+
 :root {
 	--border-width: 0.5mm;
 }
@@ -62,7 +71,7 @@ body {
 				padding: 0;
 
 				.switch {
-					background-color: rgb(0 0 0 / 0.25);
+					background-color: var(--accent-color-alpha);
 
 					&:hover {
 						background-color: rgb(0 0 0 / 0.5);
@@ -167,17 +176,17 @@ body {
 			margin-block-start: 2mm;
 
 			label {
-				-webkit-print-color-adjust: exact;
-				opacity: 0.25;
-				transition: var(--transition);
 				cursor: pointer;
-				background-size: cover;
-				aspect-ratio: 1 / 1;
 				width: 13.56mm;
-				print-color-adjust: exact;
+
+				img {
+					opacity: 0.25;
+					transition: var(--transition);
+					margin: 0;
+				}
 			}
 
-			input:checked + label {
+			input:checked + label img {
 				opacity: 1;
 			}
 
@@ -194,66 +203,13 @@ body {
 					outline-offset: 0.125rem;
 				}
 			}
-
-			#cube-dispenser + label {
-				background-image: url("calendar/chamber-icons/cube-dispenser.png");
-			}
-
-			#cube-hazard + label {
-				background-image: url("calendar/chamber-icons/cube-hazard.png");
-			}
-
-			#pellet-hazard + label {
-				background-image: url("calendar/chamber-icons/pellet-hazard.png");
-			}
-
-			#pellet-catcher + label {
-				background-image: url("calendar/chamber-icons/pellet-catcher.png");
-			}
-
-			#water-hazard + label {
-				background-image: url("calendar/chamber-icons/water-hazard.png");
-			}
-
-			#fling-enter + label {
-				background-image: url("calendar/chamber-icons/fling-enter.png");
-			}
-
-			#fling-exit + label {
-				background-image: url("calendar/chamber-icons/fling-exit.png");
-			}
-
-			#turret-hazard + label {
-				background-image: url("calendar/chamber-icons/turret-hazard.png");
-			}
-
-			#dirty-water + label {
-				background-image: url("calendar/chamber-icons/dirty-water.png");
-			}
-
-			#cake + label {
-				background-image: url("calendar/chamber-icons/cake.png");
-			}
 		}
 	}
 }
 
-.dialog-buttons {
-	justify-content: space-around;
-
+.buttons {
 	@media print {
 		display: none;
-	}
-
-	.inline-button {
-		border-radius: 999px;
-		background-color: rgb(0 0 0 / 0.25);
-		padding: 1rem 1.5rem;
-
-		&:hover {
-			background-color: var(--accent-color);
-			color: var(--contrast-color);
-		}
 	}
 }
 
