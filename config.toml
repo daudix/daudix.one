@@ -81,6 +81,7 @@ csp = [
 ]
 
 [extra.nav]
+auto_hide = true
 show_feed = true
 links = [
 	{ url = "@/blog/_index.md", name = "Blog" },
