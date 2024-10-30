@@ -133,6 +133,11 @@ section {
 	);
 	background-size: 1rem 1rem;
 
+	& > div {
+		margin: 0 auto;
+		width: min(var(--container-width), 90%);
+	}
+
 	&#original-icons,
 	&#redrawn-icons,
 	&#unused-icons {
