@@ -734,17 +734,13 @@ details:first-of-type li:nth-of-type(3) li {
 				&:hover {
 					img,
 					#increment {
-						&:hover {
+						&:hover:not(:active) {
 							transform: scale(2);
 							z-index: 1;
 							filter: blur(0) var(--drop-shadow);
 						}
 					}
 				}
-			}
-
-			a img:active {
-				transform: var(--active);
 			}
 
 			img,
@@ -870,8 +866,11 @@ details:first-of-type li:nth-of-type(3) li {
 			}
 		}
 
-		a:active img {
-			transform: var(--active);
+		a:active {
+			img,
+			#increment {
+				transform: var(--active);
+			}
 		}
 
 		img,
