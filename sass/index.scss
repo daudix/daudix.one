@@ -726,26 +726,31 @@ details:first-of-type li:nth-of-type(3) li {
 				&:nth-of-type(2) {
 					display: none;
 				}
+			}
 
-				li {
-					margin: 0;
+			li {
+				margin: 0;
 
-					a img:active {
-						transform: var(--active);
-					}
-
+				&:hover {
 					img,
 					#increment {
-						position: relative;
-						z-index: 0;
-
 						&:hover {
 							transform: scale(2);
 							z-index: 1;
-							filter: contrast(1) brightness(1) grayscale(0) var(--drop-shadow);
+							filter: blur(0) var(--drop-shadow);
 						}
 					}
 				}
+			}
+
+			a img:active {
+				transform: var(--active);
+			}
+
+			img,
+			#increment {
+				position: relative;
+				z-index: 0;
 			}
 		}
 
@@ -774,11 +779,11 @@ details:first-of-type li:nth-of-type(3) li {
 		margin: 0.5rem 0;
 	}
 
-	&:has(.marquee:hover) .marquee ul {
-		animation-play-state: paused;
-	}
+	&:has(.marquee li:hover) .marquee {
+		ul {
+			animation-play-state: paused;
+		}
 
-	&:has(.marquee li:hover) .marquee li {
 		img,
 		#increment {
 			opacity: var(--disabled-opacity);
@@ -801,59 +806,6 @@ details:first-of-type li:nth-of-type(3) li {
 		margin: 0 -1rem;
 		overflow: hidden;
 
-		.marquee {
-			display: flex;
-			position: absolute;
-
-			ul {
-				display: flex;
-				flex-shrink: 0;
-				animation: marquee-scroll linear infinite;
-				transition: var(--transition);
-				margin: 0;
-				padding: 0;
-				list-style: none;
-
-				@keyframes marquee-scroll {
-					from {
-						transform: translateX(0%);
-					}
-
-					to {
-						transform: translateX(-100%);
-					}
-				}
-
-				li {
-					display: flex;
-					flex-shrink: 0;
-					margin: 0;
-					margin-inline-end: 0.25rem;
-					padding: 0;
-
-					a img:active {
-						transform: var(--active);
-					}
-
-					img {
-						width: fit-content;
-						height: fit-content;
-					}
-
-					img,
-					#increment {
-						transition: var(--transition);
-						margin: 0;
-
-						&:hover {
-							opacity: 1;
-							filter: none;
-						}
-					}
-				}
-			}
-		}
-
 		&:nth-of-type(1) {
 			padding: 0.5rem 0;
 			height: 2.9375rem; // 31px + 1rem
@@ -873,6 +825,64 @@ details:first-of-type li:nth-of-type(3) li {
 				animation-duration: 40s;
 				animation-direction: reverse;
 			}
+		}
+	}
+
+	.marquee {
+		display: flex;
+		position: absolute;
+
+		ul {
+			display: flex;
+			flex-shrink: 0;
+			animation: marquee-scroll linear infinite;
+			transition: var(--transition);
+			margin: 0;
+			padding: 0;
+			list-style: none;
+
+			@keyframes marquee-scroll {
+				from {
+					transform: translateX(0%);
+				}
+
+				to {
+					transform: translateX(-100%);
+				}
+			}
+		}
+
+		li {
+			display: flex;
+			flex-shrink: 0;
+			margin: 0;
+			margin-inline-end: 0.25rem;
+			padding: 0;
+
+			&:hover {
+				img,
+				#increment {
+					&:hover {
+						opacity: 1;
+						filter: none;
+					}
+				}
+			}
+		}
+
+		a:active img {
+			transform: var(--active);
+		}
+
+		img,
+		#increment {
+			transition: var(--transition);
+			margin: 0;
+		}
+
+		img {
+			width: fit-content;
+			height: fit-content;
 		}
 
 		#increment {
