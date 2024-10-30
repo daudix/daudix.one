@@ -7,10 +7,7 @@
 				{%- for link in config.extra.footer.links %}
 				{%- if link.url is matching('https?://') %}
 					<li>
-						<a href="{{ link.url }}" rel="{{ rel_attributes }}"
-							{%- if current_url | default(value='/') | trim_end_matches(pat='/') | safe == link.url | trim_end_matches(pat='/') | safe -%}
-								class="active"
-							{%- endif -%}>
+						<a href="{{ link.url }}" rel="{{ rel_attributes }}" class="external">
 							{{- macros_translate::translate(key=link.name, default=link.name, language_strings=language_strings) -}}
 						</a>
 					</li>
