@@ -742,8 +742,7 @@ details:first-of-type li:nth-of-type(3) li {
 						&:hover {
 							transform: scale(2);
 							z-index: 1;
-							filter: contrast(1) brightness(1) grayscale(0)
-								var(--drop-shadow);
+							filter: contrast(1) brightness(1) grayscale(0) var(--drop-shadow);
 						}
 					}
 				}
@@ -777,13 +776,13 @@ details:first-of-type li:nth-of-type(3) li {
 
 	&:has(.marquee:hover) .marquee ul {
 		animation-play-state: paused;
+	}
 
-		li {
-			img,
-			#increment {
-				opacity: var(--disabled-opacity);
-				filter: blur(0.25rem);
-			}
+	&:has(.marquee li:hover) .marquee li {
+		img,
+		#increment {
+			opacity: var(--disabled-opacity);
+			filter: blur(0.25rem);
 		}
 	}
 
