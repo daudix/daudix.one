@@ -120,8 +120,8 @@ body {
 		#progress-bar-wrapper {
 			flex: 1;
 			margin-block-start: 2mm;
-			border-top: var(--border-width) solid black;
-			border-bottom: var(--border-width) solid black;
+			border-block-start: var(--border-width) solid black;
+			border-block-end: var(--border-width) solid black;
 			padding: 1mm 0;
 		}
 
@@ -221,12 +221,12 @@ body {
 .achievement {
 	display: none;
 	position: fixed;
-	right: 0;
-	bottom: 0;
 	flex-direction: row;
 	gap: 0.5rem;
 	transform: translateY(100%);
 	opacity: 0;
+	inset-block-end: 0;
+	inset-inline-end: 0;
 	box-shadow: var(--edge-highlight);
 	border: 1px solid #0e141b;
 	background-image: linear-gradient(to bottom, #23262e, #0e141b);
@@ -319,16 +319,16 @@ body {
 
 .cjs-left {
 	box-sizing: border-box;
-	border-left: var(--border-width) solid black;
+	border-inline-start: var(--border-width) solid black;
 
 	&:first-of-type {
-		border-left: none;
+		border-inline-start: none;
 	}
 }
 
 .cjs-bottom {
 	box-sizing: border-box;
-	border-bottom: var(--border-width) solid black;
+	border-block-end: var(--border-width) solid black;
 }
 
 .cjs-dayCol {
@@ -436,6 +436,6 @@ body {
 	padding: 0;
 
 	&:last-of-type .cjs-bottom {
-		border-bottom: none;
+		border-block-end: none;
 	}
 }
