@@ -5,11 +5,6 @@ description = "Yet another Discord server bridged to Matrix."
 styles = ["snug-nook.css"]
 +++
 
-{% alert(note=true) %}
-This server is in closed beta. If you're reading this, it means I've sent you a link (or you're smart and saw the commit history, idk).  
-{% end %}
-
-
 Hi, nice to see you here ^^
 
 Ever wanted to join yet another Discord server for fun and giggles? Hate Discord and prefer Matrix instead? Worry not, I got you all covered! <span class="rainboom">**Daudix's Snug Nook**</span> is the very server that is available on both Discord and Matrix, allowing seamless<sup>*</sup> communication. Gluten-free and is proven safe by the FDA.
@@ -51,6 +46,10 @@ I see... We also have:
 > Ughhh, fiiine. You're so miserable, I'm only joining this damn server because I feel bad for you.
 
 Uh, this works too? Here, choose your pill:
+
+{% alert(note=true) %}
+Keep in mind that this server is still in a "beta" state and some things may not work as expected, sorry about that.
+{% end %}
 
 <div class="icon-grid">
 

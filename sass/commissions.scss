@@ -6,7 +6,7 @@
 
 body::before {
 	--ray: rgb(from var(--accent-color) r g b / calc(var(--color-opacity) / 2));
-	--mask: radial-gradient(ellipse at center 2.625rem, black, transparent);
+	--mask: radial-gradient(ellipse at top left, black, transparent);
 	-webkit-mask-image: var(--mask);
 	display: block;
 	position: fixed;
@@ -14,7 +14,7 @@ body::before {
 	mask-image: var(--mask);
 	animation: rays 4s linear calc(var(--scroll) * -1s) 1 normal both paused;
 	background: repeating-conic-gradient(
-		from var(--angle) at center 2.625rem,
+		from var(--angle) at top left,
 		var(--ray) 0deg 10deg,
 		transparent 10deg 20deg
 	);
