@@ -73,5 +73,5 @@ Uh, this works too? Here, choose your pill:
 </div>
 
 {% alert(fact=true) %}
-In the process of setting up the Matrix mirror and adding the "Abuse Management" bot, I managed to get on the nerves of the homerver moderator because the bot is in fact not a bot and is manually added and approved, so I got called out publicly. As usual, I'm causing trouble in the process of doing something, classic me.
+In the process of setting up the Matrix mirror and adding the "Abuse Management" bot, I managed to get on the nerves of the homerver moderator because the bot is in fact not a bot and is manually added and approved, so I got called out publicly. As usual, I'm unintentionally causing trouble in the process of doing something, classic me.
 {% end %}
