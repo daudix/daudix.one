@@ -17,13 +17,15 @@ Ever wanted to join yet another Discord server for fun and giggles? Hate Discord
 <small>*Almost, it's a bit unstable at times.</small>
 
 > <div><img class="no-hover" src="petric.png" alt="Petric's avatar." /><strong>Petric</strong><small>Tomorrow at 24:59</small></div>
-> 
+>
 > What is so special about this server? There are other servers like this, smh...
 
 This server is meant to be cozy, welcoming, and friendly, which means toxicity, doxxing, drama, suicide threats, <span class="spoiler">NSFW</span>, and the like are not welcome.
 
 Besides, I just wanted to try running a server, because why not? I like chatting with cool people and I don't like the stuff mentioned above, so yeah. There's probably a server out there that ticks all the boxes that I just don't know about, if so, [let me know](@/find/index.md#contacts).
 
+> <div><img class="no-hover" src="petric.png" alt="Petric's avatar." /><strong>Petric</strong><small>Tomorrow at 24:59</small></div>
+>
 > What else? I'm not convinced, stop wasting my time!
 
 ![Server avatar; "Neofox googly shocked" on a violet background.](avatar.png#end#spoiler)
@@ -33,7 +35,7 @@ Okay okay, I didn't think we'd get this far, but I have something to convince yo
 Isn't it wonderful, spectacular, and extremely fops? ^w^
 
 > <div><img class="no-hover" src="petric.png" alt="Petric's avatar." /><strong>Petric</strong><small>Tomorrow at 24:59</small></div>
-> 
+>
 > Not convinced, you can't buy me with a [Neofox](https://volpeon.ink/emojis/neofox/) on violet background.
 
 I see... We also have:
@@ -45,7 +47,7 @@ I see... We also have:
 - Color roles that every other server also has
 
 > <div><img class="no-hover" src="petric.png" alt="Petric's avatar." /><strong>Petric</strong><small>Tomorrow at 24:59</small></div>
-> 
+>
 > Ughhh, fiiine. You're so miserable, I'm only joining this damn server because I feel bad for you.
 
 Uh, this works too? Here, choose your pill:
