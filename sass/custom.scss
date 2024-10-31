@@ -185,6 +185,10 @@ blockquote {
 	grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
 	gap: 0.5rem;
 
+	&.two-column {
+		grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+	}
+
 	&:hover a {
 		transform: translateY(0.25rem);
 		opacity: var(--disabled-opacity);
