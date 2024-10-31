@@ -50,7 +50,7 @@ I see... We also have:
 
 Uh, this works too? Here, choose your pill:
 
-<div class="icon-grid two-column">
+<div class="icon-grid">
 
 <a href="https://discord.gg/ksgyZgCvGx">
 <img class="transparent no-hover pixels drop-shadow icon" src="icons/discord.gif" alt="Pixel art Discord icon." />

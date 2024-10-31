@@ -29,3 +29,7 @@ blockquote:has(div) {
 		}
 	}
 }
+
+.icon-grid {
+	grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+}
