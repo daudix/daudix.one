@@ -42,7 +42,7 @@ I see... we also have:
 - No voice channels, that's right, shy folks
 - Color roles that every other server also has
 
-Plus we got "Locations" metaphor; "#general" and "#welcome"? Nope. We have "#living-room" and "#hallway".
+Plus we got "Locations" metaphor; `#general` and `#welcome`? Nope. We have `#living-room` and `#hallway`!
 
 > <div><img class="no-hover" src="petric.png" alt="Petric's avatar." /><strong>Petric</strong><small>Tomorrow at 24:59</small></div>
 >
