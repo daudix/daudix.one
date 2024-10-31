@@ -56,8 +56,9 @@ auto_hide = true
 show_feed = true
 links = [
 	{ url = "@/blog/_index.md", name = "Blog" },
+	{ url = "@/find/index.md", name = "Find" },
 	{ url = "@/design/index.md", name = "Design" },
-	{ url = "@/find/index.md", name = "Find" }
+	{ url = "@/coffee/index.md", name = "Coffee" },
 ]
 
 [extra.footer]
@@ -65,10 +66,10 @@ show_copyright = true
 show_powered_by = true
 show_fediring = true
 links = [
-	{ url = "@/calendar/index.md", name = "Calendar" },
-	{ url = "@/coffee/index.md", name = "Coffee" },
 	{ url = "@/colophon/index.md", name = "Colophon" },
-	{ url = "@/commissions/index.md", name = "Commissions" }
+	{ url = "@/commissions/index.md", name = "Commissions" },
+	{ url = "@/calendar/index.md", name = "Calendar" },
+	{ url = "@/snug-nook/index.md", name = "Snug Nook" }
 ]
 
 [extra.comments]

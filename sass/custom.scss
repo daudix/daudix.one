@@ -53,7 +53,7 @@ blockquote {
 #site-footer {
 	// When it will stop being new? Who knows!
 	// Edit: Well, now it's calendar that is new...
-	nav a[href*="/calendar/"] {
+	nav a[href*="/snug-nook/"] {
 		position: relative;
 
 		&:hover::after {
@@ -241,8 +241,8 @@ blockquote {
 	}
 }
 
-// Sorry not sorry
-.rainboom {
+// Why not, why shouldn't I use rainbow text
+.rainbow {
 	-webkit-background-clip: text;
 	filter: drop-shadow(max(1px, 0.0625em) max(1px, 0.0625em) rgb(0 0 0 / 0.6));
 	background-image: linear-gradient(

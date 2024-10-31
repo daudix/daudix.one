@@ -7,7 +7,7 @@ styles = ["snug-nook.css"]
 
 Hi, nice to see you here ^^
 
-Ever wanted to join yet another Discord server for fun and giggles? Hate Discord and prefer Matrix instead? Worry not, I got you all covered! <span class="rainboom">**Snug Nook**</span> is the very server that is available on both Discord and Matrix, allowing seamless<sup>*</sup> communication. Gluten-free and is proven safe by the FDA.
+Ever wanted to join yet another Discord server for fun and giggles? Hate Discord and prefer Matrix instead? Worry not, I got you all covered! <span class="rainbow">**Snug Nook**</span> is the very server that is available on both Discord and Matrix, allowing seamless<sup>*</sup> communication. Gluten-free and is proven safe by the FDA.
 
 <small>*Almost, it's a bit unstable at times.</small>
 
