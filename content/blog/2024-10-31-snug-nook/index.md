@@ -2,7 +2,9 @@
 title = "Behold, The Snug Nook"
 description = "Yet another chat thingy that no one asked for."
 [extra]
-banner = ""
+banner = "banner.webp"
+[extra.comments]
+id = ""
 +++
 
 So, what silly thing I came up this time? When I'll post about something interesting? Why don't I sit and do something useful?
