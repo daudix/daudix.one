@@ -10,7 +10,7 @@ This server is in closed beta. If you're reading this, it means I've sent you a 
 
 Hi, nice to see you here ^^
 
-Ever wanted to join yet another Discord server for fun and giggles? Hate Discord and prefer Matrix instead? Worry not, I got you all covered! <span class="rainboom">**Daudix's Snug Nook**</span> is the very server that is available on both Discord and Matrix, allowing seamless<sup>*</sup> communication.
+Ever wanted to join yet another Discord server for fun and giggles? Hate Discord and prefer Matrix instead? Worry not, I got you all covered! <span class="rainboom">**Daudix's Snug Nook**</span> is the very server that is available on both Discord and Matrix, allowing seamless<sup>*</sup> communication. Gluten-free and is proven safe by the FDA.
 
 <small>*Almost, it's a bit unstable at times.</small>
 
