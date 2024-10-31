@@ -58,7 +58,7 @@ Uh, this works too? Here, choose your pill:
 <img class="transparent no-hover pixels drop-shadow icon" src="icons/discord.gif" alt="Pixel art Discord icon." />
 <div class="details">
 <strong>Discord</strong>
-<p><small>Original sevrer; first-class experience.</small></p>
+<p><small>Original server; first-class experience.</small></p>
 </div>
 </a>
 
