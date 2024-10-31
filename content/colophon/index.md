@@ -13,16 +13,16 @@ This is the least fun page on this website. Deal with it.
 <strong class="title">To-do</strong>
 <div>
 
-- [ ] Improve a11y (alt texts are awful and testing is barely present)
-- [ ] /uses page (?)
-- [ ] /now page (?)
-- [ ] Redo social links, maybe even draw some custom icons (?)
 - [ ] Make "shrine" for my beloved portal series
-- [ ] Add [navlinkads](https://dimden.dev/navlinkads) (?)
 - [ ] Redesign status.cafe
 - [ ] Make the player on neocities display my current Spotify/last.fm
 - [ ] Style piclog.blue page
+- [ ] /uses page (?)
+- [ ] /now page (?)
 - [ ] New ARG/Easter Egg type of thingy (?) (inspirations: Portal "dinosaur" ARG, SSTV)
+- [ ] Add [navlinkads](https://dimden.dev/navlinkads) (?)
+- [x] Improve a11y (alt texts are awful and testing is barely present)
+- [x] Redo social links, maybe even draw some custom icons (?)
 - [x] Add expand button to "Bumps" (fill the whole page width and make bumps display as a grid)
 - [x] Restyle Fediring
 - [x] Add section with logos to Design
