@@ -11,6 +11,8 @@ Ever wanted to join yet another Discord server for fun and giggles? Hate Discord
 
 <small>*Almost, it's a bit unstable at times.</small>
 
+Read about its creation and the motivation behind it [here](@/blog/2024-10-31-snug-nook/index.md).
+
 > <div><img class="no-hover" src="petric.png" alt="Petric's avatar." /><strong>Petric</strong><small>Tomorrow at 24:59</small></div>
 >
 > What is so special about this server? There are other servers like this, smh...
@@ -73,7 +75,3 @@ Keep in mind that this server is still in a "beta" state and some things may not
 </a>
 
 </div>
-
-{% alert(fact=true) %}
-In the process of setting up the Matrix mirror and adding the "Abuse Management" bot, I managed to get on the nerves of the homerver moderator because the bot is in fact not a bot and is manually added and approved, so I got called out publicly. As usual, I'm unintentionally causing trouble in the process of doing something, classic me.
-{% end %}
