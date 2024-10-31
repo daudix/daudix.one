@@ -22,7 +22,7 @@ Ever wanted to join yet another Discord server for fun and giggles? Hate Discord
 
 This server is meant to be cozy, welcoming, and friendly, which means toxicity, doxxing, drama, suicide threats, <span class="spoiler">NSFW</span>, and the like are not welcome.
 
-Besides, I just wanted to try running a server, because why not? I like chatting with cool people and I don't like the stuff mentioned above, so yeah. There's probably a server out there that ticks all the boxes that I just don't know about, if so, let me know.
+Besides, I just wanted to try running a server, because why not? I like chatting with cool people and I don't like the stuff mentioned above, so yeah. There's probably a server out there that ticks all the boxes that I just don't know about, if so, [let me know](@/find/index.md#contacts).
 
 > What else? I'm not convinced, stop wasting my time!
 
