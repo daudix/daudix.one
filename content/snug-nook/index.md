@@ -1,6 +1,8 @@
 +++
 title = "Daudix's Snug Nook"
 description = "Yet another Discord server bridged to Matrix."
+[extra]
+styles = ["snug-nook.css"]
 +++
 
 {% alert(note=true) %}
@@ -14,6 +16,8 @@ Ever wanted to join yet another Discord server for fun and giggles? Hate Discord
 
 <small>*Almost, it's a bit unstable at times.</small>
 
+> <div><img class="no-hover" src="petric.png" alt="Petric's avatar." /><strong>Petric</strong><small>Tomorrow at 24:59</small></div>
+> 
 > What is so special about this server? There are other servers like this, smh...
 
 This server is meant to be cozy, welcoming, and friendly, which means toxicity, doxxing, drama, suicide threats, <span class="spoiler">NSFW</span>, and the like are not welcome.
@@ -26,8 +30,10 @@ Besides, I just wanted to try running a server, because why not? I like chatting
 
 Okay okay, I didn't think we'd get this far, but I have something to convince you; we got a fun server avatar, just look at it!
 
-Isn't it spectacular, wonderful, simply divine, and extremely fops? ^w^
+Isn't it wonderful, spectacular, and extremely fops? ^w^
 
+> <div><img class="no-hover" src="petric.png" alt="Petric's avatar." /><strong>Petric</strong><small>Tomorrow at 24:59</small></div>
+> 
 > Not convinced, you can't buy me with a [Neofox](https://volpeon.ink/emojis/neofox/) on violet background.
 
 I see... We also have:
@@ -38,6 +44,8 @@ I see... We also have:
 - Duckquill and this website
 - Color roles that every other server also has
 
+> <div><img class="no-hover" src="petric.png" alt="Petric's avatar." /><strong>Petric</strong><small>Tomorrow at 24:59</small></div>
+> 
 > Ughhh, fiiine. You're so miserable, I'm only joining this damn server because I feel bad for you.
 
 Uh, this works too? Here, choose your pill:
