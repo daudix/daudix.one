@@ -33,13 +33,16 @@ Isn't it wonderful, spectacular, and extremely fops? ^w^
 >
 > Not convinced, you can't buy me with a [Neofox](https://volpeon.ink/emojis/neofox/) on violet background.
 
-I see... We also have:
+I see... we also have:
 
 - ??? room
 - Starboard
 - Memeboard
 - Duckquill and this website
+- No voice channels, that's right, shy folks
 - Color roles that every other server also has
+
+Plus we got "Locations" metaphor; "#general" and "#welcome"? Nope. We have "#living-room" and "#hallway".
 
 > <div><img class="no-hover" src="petric.png" alt="Petric's avatar." /><strong>Petric</strong><small>Tomorrow at 24:59</small></div>
 >
@@ -61,7 +64,7 @@ Keep in mind that this server is still in a "beta" state and some things may not
 </div>
 </a>
 
-<a href="https://matrix.to/#/#snug-nook:envs.net">
+<a href="https://matrix.to/#/!DtgLKLSmujSBYKgIxv:envs.net">
 <img class="transparent no-hover pixels drop-shadow icon" src="icons/matrix.gif" alt="Pixel art Discord icon." />
 <div class="details">
 <strong>Matrix</strong>
