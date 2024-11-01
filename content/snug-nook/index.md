@@ -66,7 +66,7 @@ Keep in mind that this server is still in a "beta" state and some things may not
 </div>
 </a>
 
-<a href="https://matrix.to/#/!DtgLKLSmujSBYKgIxv:envs.net">
+<a href="https://matrix.to/#/#snug-nook-space:envs.net">
 <img class="transparent no-hover pixels drop-shadow icon" src="icons/matrix.gif" alt="Pixel art Discord icon." />
 <div class="details">
 <strong>Matrix</strong>
