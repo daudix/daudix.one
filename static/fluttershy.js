@@ -13,8 +13,8 @@ function fluttershyAnim() {
 	fluttershy.setAttribute("src", "assets/squee.webp");
 	fluttershy.classList.add("transparent", "no-hover", "drop-shadow");
 
-	const container = document.getElementById("main");
-	container.appendChild(fluttershy);
+	const mainContent = document.getElementById("main-content");
+	mainContent.appendChild(fluttershy);
 
 	fluttershy.addEventListener("animationend", function () {
 		shy.toggleAttribute("disabled");
