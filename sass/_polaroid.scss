@@ -1,0 +1,156 @@
+// It's not an accurate polaroid please don't kill me
+#polaroid {
+	display: block;
+	position: relative;
+	float: inline-end;
+	transform: perspective(32rem) rotate(5deg) rotateX(5deg);
+	transform-origin: 50% 1rem;
+	transition: var(--transition-longer);
+	margin-inline-start: 1.5rem;
+	margin-block-start: 2rem;
+	box-shadow: var(--shadow-glass);
+	border-radius: var(--rounded-corner-small);
+	background-color: white;
+	padding: 0.5rem;
+	width: 10rem;
+	overflow: hidden;
+
+	@media only screen and (max-width: 756px) {
+		float: none;
+		margin: 2rem auto 0;
+	}
+
+	&::after {
+		display: block;
+		position: absolute;
+		// Dirty hack to avoid transformation of the thumbtack
+		transform: perspective(32rem) rotate(-5deg) rotateX(-5deg);
+		z-index: 1;
+		transition: var(--transition);
+		inset-block-start: 0.25rem;
+		inset-inline-start: calc(50% - 0.7813rem);
+		background-image: url("assets/thumbtack.png");
+		background-size: cover;
+		width: 1.5625rem; // 25px
+		height: 1.1875rem; // 19px
+		pointer-events: none;
+		content: "";
+	}
+
+	&:hover {
+		transform: none;
+		box-shadow: var(--shadow);
+
+		&::after {
+			transform: none;
+		}
+
+		#polaroid-shine {
+			transform: rotate(35deg);
+			inset-block-start: -5rem;
+			background-color: transparent;
+		}
+
+		#polaroid-photo img:last-child {
+			opacity: 1;
+		}
+	}
+
+	#polaroid-shine {
+		position: absolute;
+		transform: rotate(30deg);
+		z-index: 1;
+		mix-blend-mode: screen;
+		filter: blur(0.25rem);
+		transition: var(--transition-longer);
+		inset-block-start: -2rem;
+		inset-inline-start: 0;
+		background-color: rgb(255 255 255 / 0.3);
+		width: 14rem;
+		height: 8rem;
+		pointer-events: none;
+	}
+
+	#polaroid-photo {
+		display: block;
+		position: relative;
+
+		&::after {
+			position: absolute;
+			inset-block-end: -0.25rem;
+			inset-inline-end: 0;
+			background-image: linear-gradient(
+				to right,
+				#ff6188,
+				#fc9867,
+				#ffd866,
+				#a9dc76,
+				#78dce8,
+				#ab9df2);
+			width: 3rem;
+			height: 0.5rem;
+			content: "";
+		}
+
+		img {
+			margin: 0;
+
+			&:last-child {
+				position: absolute;
+				opacity: 0;
+				inset-block-start: 0;
+				inset-inline-start: 0;
+			}
+		}
+	}
+
+	#polaroid-title,
+	#statuscafe-content,
+	#statuscafe-link {
+		display: block;
+		color: rgb(0 0 0 / 0.8);
+		line-height: 1;
+		font-family: var(--font-monospace-code);
+	}
+
+	#polaroid-title {
+		margin-block-start: 0.5rem;
+		font-weight: bold;
+		font-size: var(--font-size-xx-small);
+		text-transform: uppercase;
+	}
+
+	#statuscafe-content {
+		margin-block-start: 0.25rem;
+		font-size: var(--font-size-xx-small);
+	}
+
+	#statuscafe-link {
+		margin-block-start: 0.5rem;
+		font-weight: normal;
+		font-size: var(--font-size-xx-small);
+		text-decoration: none;
+
+		&::after {
+			content: " →";
+		}
+
+		&:hover {
+			text-decoration: underline;
+			text-decoration-style: solid; // Make underline not wavy
+
+			#statuscafe-face {
+				filter: none;
+			}
+		}
+
+		#statuscafe-face {
+			float: inline-end;
+			filter: var(--printed);
+			transition: var(--transition);
+			color: black;
+			font-size: var(--font-size-medium);
+			line-height: 0; // Avoid the link becoming too high
+		}
+	}
+}

@@ -1,0 +1,313 @@
+details:first-of-type li:nth-of-type(3) li {
+	&:not(:first-of-type) {
+		position: relative;
+
+		&:hover {
+			list-style-type: none;
+
+			&::before {
+				transform: scale(1);
+				opacity: 1;
+			}
+		}
+
+		&::before {
+			display: block;
+			position: absolute;
+			transform: scale(0.5);
+			opacity: 0;
+			transition: var(--transition);
+			inset-block-start: 0.25rem;
+			inset-inline-start: -1.1875rem;
+			image-rendering: pixelated;
+			width: 1rem;
+			height: 1rem;
+			content: "";
+		}
+	}
+
+	// This style is a huge and ugly hack, but hey, it works! ...kinda
+	&:first-of-type {
+		#portal-container {
+			display: inline-block;
+			position: relative;
+			transition: var(--transition);
+
+			#portal-blue,
+			#portal-orange {
+				&::before,
+				&::after {
+					display: inline-block;
+					position: absolute;
+					transform: scale(0.5);
+					opacity: 0;
+					transition: var(--transition);
+					inset-block-start: -0.1875rem;
+					image-rendering: pixelated;
+					content: "";
+				}
+
+				&::before {
+					width: 1rem;
+					height: 2rem;
+				}
+
+				&::after {
+					width: 0.5rem;
+					height: 2rem;
+				}
+			}
+
+			#portal-blue {
+				&::before,
+				&::after {
+					inset-inline-start: -0.25rem;
+				}
+
+				&::before {
+					z-index: -1;
+					filter: drop-shadow(0 0.0625rem 0.1875rem #008eda)
+						drop-shadow(0 0.0625rem 0.375rem #008eda);
+					background: url("assets/sprites.gif") 0 0;
+				}
+
+				&::after {
+					z-index: 1;
+					background: url("assets/sprites.gif") 0 0;
+				}
+			}
+
+			#portal-orange {
+				&::before,
+				&::after {
+					inset-inline-end: -0.25rem;
+				}
+
+				&::before {
+					z-index: -1;
+					filter: drop-shadow(0 0.0625rem 0.1875rem #e09e36)
+						drop-shadow(0 0.0625rem 0.375rem #e09e36);
+					background: url("assets/sprites.gif") 0 -32px;
+				}
+
+				&::after {
+					z-index: 1;
+					background: url("assets/sprites.gif") -8px -32px;
+				}
+			}
+
+			#portal-marquee {
+				display: inline-flex;
+				position: relative;
+				transition: var(--transition);
+				width: 2.6875rem;
+				overflow: hidden;
+
+				span {
+					display: inline-flex;
+					flex-shrink: 0;
+					justify-content: space-around;
+					min-width: 100%;
+
+					&:last-child {
+						display: none;
+						position: absolute;
+						inset-block-start: 0;
+						inset-inline-start: 0;
+					}
+				}
+			}
+		}
+
+		&:hover {
+			#portal-container {
+				margin: 0 0.25rem;
+
+				#portal-blue,
+				#portal-orange {
+					&::before,
+					&::after {
+						transform: scale(1);
+						opacity: 1;
+					}
+				}
+
+				#portal-marquee {
+					--mask: linear-gradient(
+						to right,
+						transparent,
+						black 0.5rem,
+						black calc(100% - 0.5rem),
+						transparent
+					);
+					-webkit-mask-image: var(--mask);
+					mask-image: var(--mask);
+					width: calc(2.6875rem + 1rem);
+
+					span {
+						animation: portal-scroll 2s linear infinite;
+
+						@keyframes portal-scroll {
+							to {
+								transform: translateX(-100%);
+							}
+						}
+
+						&:last-child {
+							display: inline-flex;
+							animation-name: scroll-abs;
+
+							@keyframes scroll-abs {
+								from {
+									transform: translateX(100%);
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&:nth-of-type(3),
+	&:nth-of-type(5),
+	&:nth-of-type(6) {
+		span {
+			transition: var(--transition);
+		}
+	}
+
+	&:nth-of-type(2),
+	&:nth-of-type(3),
+	&:nth-of-type(4) {
+		span {
+			display: inline-block;
+		}
+	}
+
+	&:nth-of-type(2),
+	&:nth-of-type(4) {
+		span {
+			transition: var(--transition-longer);
+		}
+	}
+
+	&:nth-of-type(2) {
+		&::before {
+			background: url("assets/sprites.gif") 0 -64px;
+		}
+
+		&:hover span {
+			transform: perspective(1rem) rotateX(10deg);
+			color: #62c2e0;
+			font-weight: 900;
+			text-shadow:
+				0 -0.125rem white,
+				0 0.125rem #675c83;
+		}
+	}
+
+	&:nth-of-type(3) {
+		&::before {
+			background: url("assets/sprites.gif") 0 -80px;
+
+			@media (prefers-color-scheme: dark) {
+				filter: invert(1);
+			}
+		}
+
+		span {
+			transform-origin: top left;
+		}
+
+		&:hover span {
+			animation: hinge 2s;
+
+			// Stolen from https://animate.style
+			@keyframes hinge {
+				from {
+					animation-timing-function: ease-in-out;
+				}
+
+				20%,
+				60% {
+					transform: rotate(80deg);
+					animation-timing-function: ease-in-out;
+				}
+
+				40%,
+				80% {
+					transform: rotate(60deg);
+					opacity: 1;
+					animation-timing-function: ease-in-out;
+				}
+
+				to {
+					transform: translateY(45rem);
+					opacity: 0;
+				}
+			}
+		}
+	}
+
+	&:nth-of-type(4) {
+		&::before {
+			background: url("assets/sprites.gif") 0 -96px;
+		}
+
+		&:hover {
+			span {
+				&:nth-of-type(1) {
+					transform: perspective(4rem) rotateY(-45deg);
+				}
+
+				&:nth-of-type(2) {
+					transform: perspective(4rem) rotateY(35deg);
+				}
+			}
+		}
+	}
+
+	&:nth-of-type(5) {
+		&::before {
+			background: url("assets/sprites.gif") 0 -112px;
+		}
+
+		&:hover span {
+			color: #e0a100;
+			font-weight: bold;
+			text-shadow: 0 0.0625rem 0 #413014;
+		}
+	}
+
+	&:nth-of-type(6) {
+		&::before {
+			background: url("assets/sprites.gif") 0 -128px;
+		}
+
+		&:hover span {
+			font-weight: bold;
+		}
+	}
+
+	&:nth-of-type(7) {
+		&::before {
+			background: url("assets/sprites.gif") 0 -144px;
+		}
+
+		span span {
+			display: none;
+		}
+
+		&:hover span {
+			text-decoration: underline;
+			text-decoration-color: #ffd600;
+			text-decoration-thickness: 0.25rem;
+			text-transform: uppercase;
+
+			span {
+				display: inline;
+			}
+		}
+	}
+}
