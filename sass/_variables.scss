@@ -33,6 +33,8 @@
 		--purple-fg: rgb(220 138 221);
 		--red-fg: rgb(246 97 81);
 		--yellow-fg: rgb(248 228 92);
+		--shade-color: rgb(0 0 0 / 0.25);
+		--shine: rgb(255 255 255 / 0.1);
 
 		color-scheme: dark;
 	}
@@ -62,6 +64,8 @@
 		--red-fg: rgb(224 27 36);
 		--yellow-bg: rgb(from var(--yellow-fg) r g b / var(--color-opacity));
 		--yellow-fg: rgb(156 110 3);
+		--shade-color: rgb(0 0 0 / 0.07);
+		--shine: rgb(255 255 255 / 0.3);
 
 		// CONTAINERS
 		--container-width: 720px;
@@ -72,6 +76,8 @@
 
 		// FILTERS
 		--blur: saturate(1.8) blur(0.75rem);
+		--printed: contrast(2) brightness(0.75) grayscale(1);
+		--drop-shadow: drop-shadow(0 0.08rem 0.1rem rgb(0 0 0 / 0.35)) drop-shadow(0 0.4rem 0.7rem rgb(0 0 0 / 0.18));
 
 		// FONT SIZES
 		--font-size-xx-small: 0.625rem;
