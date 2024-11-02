@@ -241,12 +241,12 @@ blockquote {
 
 .wavy span {
 	display: inline-block;
-	animation: wave var(--transition) ease-in-out alternate infinite;
+	animation: wave var(--transition-longer) ease-in-out alternate infinite;
 	animation-delay: calc(0.1s * var(--delay));
 
 	@keyframes wave {
 		to {
-			transform: translateY(-0.125em);
+			transform: translateY(-0.25em);
 		}
 	}
 }
