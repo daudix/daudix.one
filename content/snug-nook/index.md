@@ -52,10 +52,6 @@ Plus we got "Locations" metaphor; `#general` and `#welcome`? Nope. We have `#liv
 
 Uh, this works too? Here, choose your pill:
 
-{% alert(note=true) %}
-Keep in mind that this server is still in a "beta" state and some things may not work as expected, sorry about that.
-{% end %}
-
 <div class="icon-grid">
 
 <a href="https://discord.gg/ksgyZgCvGx">
