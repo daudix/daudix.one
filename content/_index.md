@@ -12,6 +12,7 @@ buttons = [
   { alt = "georgemoody", button = "georgemoody.gif", url = "https://tilde.town/~georgemoody/" },
   { alt = "getimiskon", button = "getimiskon.gif", url = "https://getimiskon.xyz" },
   { alt = "graphite", button = "graphite.gif", url = "https://gra.phite.ro" },
+  { alt = "immjs", button = "immjs.gif", url = "https://immjs.dev" },
   { alt = "iso", button = "iso.gif", url = "https://www.w3.org/QA/Tips/iso-date" },
   { alt = "libreivan", button = "libreivan.gif", url = "https://libreivan.com" },
   { alt = "marchintosh", button = "marchintosh.gif", url = "https://libreivan.com/writing/" },
