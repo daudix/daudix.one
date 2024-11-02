@@ -6,7 +6,7 @@ tags = ["100DaysToOffload", "Duckquill"]
 [extra]
 banner = "banner.webp"
 [extra.comments]
-id = ""
+id = "113415328427289687"
 +++
 
 As you may know, this blog is powered by [Zola](https://www.getzola.org) and a custom theme of mine called [Duckquill](https://duckquill.daudix.one). It was built based on the needs of my website and has a very opinionated set of features and (somewhat) unique design. That was until some time ago, when Duckquill gained more users which requested more features, which moved Duckquill further away from being opinionated to being "one size fits all". Sure, it's very nice to have lots of features and configurations to make it fit your needs, but it also means that I'm now more restricted than ever in terms of changing the look and feel of it. This has been bothering me for a while now (first scrapped draft of this post was written back on Aug 24th), and I've finally decided that it's time.
