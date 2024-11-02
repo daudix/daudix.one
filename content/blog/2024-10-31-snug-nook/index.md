@@ -2,6 +2,8 @@
 title = "Behold, The Snug Nook"
 description = "Yet another chat thingy that no one ever asked for."
 updated = 2024-11-01
+[taxonomies]
+tags = ["100DaysToOffload"]
 [extra]
 banner = "banner.webp"
 [extra.comments]
