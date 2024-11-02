@@ -1,0 +1,63 @@
+{%- if page.extra.comments.host -%}
+	{%- set host = page.extra.comments.host -%}
+{%- else -%}
+	{%- set host = config.extra.comments.host -%}
+{%- endif -%}
+
+{%- if page.extra.comments.user -%}
+	{%- set user = page.extra.comments.user -%}
+{%- else %}
+	{%- set user = config.extra.comments.user -%}
+{%- endif -%}
+
+{%- set id = page.extra.comments.id -%}
+
+{%- set date_locale = macros_translate::translate(key="date_locale", default="en-US", language_strings=language_strings) | replace(from="_", to="-") -%}
+
+<span id="blog-post-author-text" class="hidden">{{ macros_translate::translate(key="blog_post_author", default="Blog post author", language_strings=language_strings) }}</span>
+<span id="boosts-from-text" class="hidden">{{ macros_translate::translate(key="boosts_from", default="Boosts from $INSTANCE", language_strings=language_strings) }}</span>
+<span id="date-locale" class="hidden">{{ date_locale }}</span>
+<span id="faves-from-text" class="hidden">{{ macros_translate::translate(key="faves_from", default="Favorites from $INSTANCE", language_strings=language_strings) }}</span>
+<span id="host" class="hidden">{{ host }}</span>
+<span id="id" class="hidden">{{ id }}</span>
+<span id="loading-text" class="hidden">{{ macros_translate::translate(key="loading", default="Loading", language_strings=language_strings) }}…</span>
+<span id="no-comments-text" class="hidden">{{ macros_translate::translate(key="no_comments", default="No Comments yet :/", language_strings=language_strings) }}</span>
+<span id="rel-attributes" class="hidden">{{ rel_attributes }}</span>
+<span id="reload-text" class="hidden">{{ macros_translate::translate(key="reload", default="Reload", language_strings=language_strings) }}</span>
+<span id="sensitive-text" class="hidden">{{ macros_translate::translate(key="sensitive", default="Sensitive Content", language_strings=language_strings) }}</span>
+<span id="user" class="hidden">{{ user }}</span>
+<span id="view-comment-text" class="hidden">{{ macros_translate::translate(key="view_comment", default="View Comment At", language_strings=language_strings) }}</span>
+<span id="view-profile-text" class="hidden">{{ macros_translate::translate(key="view_profile", default="View Profile At", language_strings=language_strings) }}</span>
+
+{%- if config.markdown.lazy_async_image %}
+	<span id="lazy-async-image" class="hidden">true</span>
+{%- else -%}
+	<span id="lazy-async-image" class="hidden">false</span>
+{%- endif %}
+
+<section id="comments">
+	{%- if config.extra.comments.show_qr -%}
+		<img
+			id="qrcode"
+			class="pixels no-hover"
+			title="{{ macros_translate::translate(key='comments_qr', default='QR code to a Mastodon post', language_strings=language_strings) }}"
+			{%- if config.markdown.lazy_async_image -%}decoding="async" loading="lazy"{%- endif -%}
+			src="https://api.qrserver.com/v1/create-qr-code/?data=https://{{ host }}/@{{ user }}/{{ id }}"
+		/>
+	{%- endif -%}
+	<h2>{{ macros_translate::translate(key="comments", default="Comments", language_strings=language_strings) }}</h2>
+	<p>{{ macros_translate::translate(key="comments_description", default="You can comment on this blog post by publicly replying to this post using a Mastodon or other ActivityPub/Fediverse account. Known non-private replies are displayed below.", language_strings=language_strings) }}</p>
+	<div class="buttons">
+		<button id="load-comments">
+			{{- macros_translate::translate(key="load_comments", default="Load Comments", language_strings=language_strings) -}}
+		</button>
+		<a class="colored external" href="https://{{ host }}/@{{ user }}/{{ id }}" rel="{{ rel_attributes }}">
+			{{- macros_translate::translate(key="open_post", default="Open Post", language_strings=language_strings) -}}
+		</a>
+	</div>
+	<div id="comments-wrapper">
+		<noscript>
+			<p>{{ macros_translate::translate(key="comments_noscript", default="Loading comments relies on JavaScript. Try enabling JavaScript and reloading, or visit the original post on Mastodon.", language_strings=language_strings) }}</p>
+		</noscript>
+	</div>
+</section>

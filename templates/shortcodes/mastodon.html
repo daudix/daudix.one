@@ -1,0 +1,16 @@
+{%- if host -%}
+	{%- set host = host -%}
+{%- else -%}
+	{%- set host = config.extra.comments.host -%}
+{%- endif -%}
+
+{%- if user -%}
+	{%- set user = user -%}
+{%- else -%}
+	{%- set user = config.extra.comments.user -%}
+{%- endif -%}
+
+<iframe
+	class="mastodon-embed"
+	src="https://{{ host }}/@{{ user }}/{{ id }}/embed">
+</iframe>

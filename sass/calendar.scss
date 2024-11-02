@@ -1,4 +1,4 @@
-@import "../themes/duckquill/sass/_variables.scss";
+@import "_variables.scss";
 
 @include theme-variables using ($theme) {
 	@if $theme =="light" {

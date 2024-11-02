@@ -1,0 +1,26 @@
+.sparkline {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	float: inline-end;
+	gap: 0.25rem;
+	margin: 1rem 0;
+	width: 6rem;
+	height: 2rem;
+
+	div {
+		flex: 1;
+		transform-origin: bottom;
+		transition: var(--transition);
+		background-image: linear-gradient(
+			to top,
+			var(--accent-color) var(--bar-height),
+			transparent var(--bar-height)
+		);
+		height: 100%;
+
+		&:hover {
+			height: 200%;
+		}
+	}
+}
