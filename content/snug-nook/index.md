@@ -13,7 +13,7 @@ Ever wanted to join yet another Discord server for fun and giggles? Hate Discord
 
 Read about its creation and the motivation behind it [here](@/blog/2024-10-31-snug-nook/index.md).
 
-> <div><img class="no-hover" src="petric.png" alt="Petric's avatar." /><strong>Petric</strong><small>Tomorrow at 24:59</small></div>
+> <div><img class="no-hover" src="macboy.png" alt="Evil MacBoy's avatar." /><strong>Evil MacBoy</strong><small>Tomorrow at 24:59</small></div>
 >
 > What is so special about this server? There are other servers like this, smh...
 
@@ -21,7 +21,7 @@ This server is meant to be cozy, welcoming, and friendly, which means toxicity, 
 
 Besides, I just wanted to try running a server, because why not? I like chatting with cool people and I don't like the stuff mentioned above, so yeah. There's probably a server out there that ticks all the boxes that I just don't know about, if so, [let me know](@/find/index.md#contacts).
 
-> <div><img class="no-hover" src="petric.png" alt="Petric's avatar." /><strong>Petric</strong><small>Tomorrow at 24:59</small></div>
+> <div><img class="no-hover" src="macboy.png" alt="Evil MacBoy's avatar." /><strong>Evil MacBoy</strong><small>Tomorrow at 24:59</small></div>
 >
 > What else? I'm not convinced, stop wasting my time!
 
@@ -31,9 +31,9 @@ Okay okay, I didn't think we'd get this far, but I have something to convince yo
 
 Isn't it wonderful, spectacular, and extremely fops? ^w^
 
-> <div><img class="no-hover" src="petric.png" alt="Petric's avatar." /><strong>Petric</strong><small>Tomorrow at 24:59</small></div>
+> <div><img class="no-hover" src="macboy.png" alt="Evil MacBoy's avatar." /><strong>Evil MacBoy</strong><small>Tomorrow at 24:59</small></div>
 >
-> Not convinced, you can't buy me with a [Neofox](https://volpeon.ink/emojis/neofox/) on violet background.
+> Still not convinced, you can't buy me with a [Neofox](https://volpeon.ink/emojis/neofox/) on violet background.
 
 I see... we also have:
 
@@ -46,7 +46,7 @@ I see... we also have:
 
 Plus we got "Locations" metaphor; `#general` and `#welcome`? Nope. We have `#living-room` and `#hallway`!
 
-> <div><img class="no-hover" src="petric.png" alt="Petric's avatar." /><strong>Petric</strong><small>Tomorrow at 24:59</small></div>
+> <div><img class="no-hover" src="macboy.png" alt="Evil MacBoy's avatar." /><strong>Evil MacBoy</strong><small>Tomorrow at 24:59</small></div>
 >
 > Ughhh, fiiine. You're so miserable, I'm only joining this damn server because I feel bad for you.
 
