@@ -2,7 +2,7 @@
 title = "Colophon"
 description = "Some boring details about this website."
 [extra]
-styles = ["colophon.css"]
+styles = ["colophon/colophon.css"]
 +++
 
 {% alert(fact=true) %}

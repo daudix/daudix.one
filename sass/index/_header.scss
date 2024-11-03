@@ -22,7 +22,7 @@
 	}
 
 	#header {
-		--mask: url("assets/header.gif");
+		--mask: url("header.gif");
 		-webkit-user-select: none;
 		-webkit-mask-image: var(--mask);
 		mask-image: var(--mask);
@@ -37,7 +37,7 @@
 		user-select: none;
 
 		@media (prefers-reduced-motion) {
-			--mask: url("assets/header-static.gif");
+			--mask: url("header-static.gif");
 		}
 	}
 

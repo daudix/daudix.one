@@ -2,7 +2,7 @@
 title = "Commissions"
 description = "Here you can commission me to do a wide range of designs."
 [extra]
-styles = ["commissions.css"]
+styles = ["commissions/commissions.css"]
 scripts = ["commissions/rays.js"]
 +++
 

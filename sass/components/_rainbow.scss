@@ -1,0 +1,16 @@
+// Why not, why shouldn't I use rainbow text
+.rainbow {
+	-webkit-background-clip: text;
+	filter: drop-shadow(max(1px, 0.0625em) max(1px, 0.0625em) rgb(0 0 0 / 0.6));
+	background-image: linear-gradient(
+		to right,
+		#ff6188,
+		#fc9867,
+		#ffd866,
+		#a9dc76,
+		#78dce8,
+		#ab9df2
+	);
+	background-clip: text;
+	color: transparent;
+}

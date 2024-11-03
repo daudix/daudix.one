@@ -6,7 +6,7 @@ body {
 		position: fixed;
 		z-index: -1;
 		filter: brightness(0.5);
-		background-image: url("design/curtain.webp");
+		background-image: url("curtain.webp");
 		background-size: contain;
 		background-repeat: repeat-x;
 		width: 100vw;
@@ -22,7 +22,7 @@ body {
 		display: block;
 		position: fixed;
 		filter: saturate(1.2) brightness(1.5);
-		background: url("design/curtain-l.webp"), url("design/curtain-r.webp");
+		background: url("curtain-l.webp"), url("curtain-r.webp");
 		background-position:
 			top left,
 			top right;

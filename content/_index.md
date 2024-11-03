@@ -1,8 +1,8 @@
 +++
 title = "Home"
 [extra]
-styles = ["index.css"]
-scripts = ["statuscafe.js", "fluttershy.js", "rizz.js"]
+styles = ["index/index.css"]
+scripts = ["index/statuscafe.js", "index/fluttershy.js", "index/rizz.js"]
 buttons = [
   { alt = "a proud member of the blue team of 512KB club", button = "blue-team.gif", url = "https://512kb.club" },
   { alt = "aperturelabs", button = "aperturelabs.gif", url = "https://www.aperturescience.com" },
@@ -72,7 +72,7 @@ stamps = [
 		<br />
 		<small>Here's an exclusive cute fox hugging a duck for you :3</small>
 		<br />
-		<img class="transparent no-hover drop-shadow" alt="Neofox hugs a duck." src="/assets/neofox-hug-duck.png" />
+		<img class="transparent no-hover drop-shadow" alt="Neofox hugs a duck." src="index/neofox-hug-duck.png" />
 	</p>
 </noscript>
 

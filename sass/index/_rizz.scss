@@ -20,7 +20,7 @@
 	}
 
 	#dont {
-		--mask: url("assets/dont.gif");
+		--mask: url("dont.gif");
 		-webkit-mask-image: var(--mask);
 		position: absolute;
 		transform: scale(0.5);
@@ -37,7 +37,7 @@
 		pointer-events: none;
 
 		@media (prefers-reduced-motion) {
-			--mask: url("assets/dont-static.gif");
+			--mask: url("dont-static.gif");
 		}
 	}
 }

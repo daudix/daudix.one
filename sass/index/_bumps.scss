@@ -383,7 +383,7 @@
 	}
 
 	#here {
-		--mask: url("assets/here.gif");
+		--mask: url("here.gif");
 		-webkit-mask-image: var(--mask);
 		position: absolute;
 		transform: scale(0.5);
@@ -400,7 +400,7 @@
 		pointer-events: none;
 
 		@media (prefers-reduced-motion) {
-			--mask: url("assets/here-static.gif");
+			--mask: url("here-static.gif");
 		}
 
 		@media only screen and (max-width: 1074px) {

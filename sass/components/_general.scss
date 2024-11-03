@@ -10,16 +10,21 @@
 }
 
 body {
-	text-wrap: pretty;
-	display: grid; // Put footer at the bottom for short pages, such as the 404
-	grid-template-rows: auto minmax(auto, 1fr) auto; // Header, stuff, footer
-	margin: 0;
-	background-color: var(--bg-color);
-	min-height: 100vh;
+	background-blend-mode: normal, difference;
+	background: var(--bg-overlay), url("static.gif"), var(--accent-color);
 	color: var(--fg-color);
-	line-height: 1.5;
+	display: grid; // Put footer at the bottom for short pages, such as the 404
 	font-family: var(--font-system-ui), var(--font-emoji);
+	grid-template-rows: auto minmax(auto, 1fr) auto; // Header, stuff, footer
+	line-height: 1.5;
+	margin: 0;
+	min-height: 100vh;
 	overflow-wrap: break-word;
+	text-wrap: pretty;
+
+	@media (prefers-reduced-motion) {
+		background: var(--bg-overlay), url("static-static.gif"), var(--accent-color);
+	}
 }
 
 // Style text selection to use accent color

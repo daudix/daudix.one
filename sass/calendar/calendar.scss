@@ -1,4 +1,4 @@
-@import "_variables.scss";
+@import "../components/_variables.scss";
 
 @include theme-variables using ($theme) {
 	@if $theme =="light" {
@@ -14,7 +14,7 @@
 @font-face {
 	font-style: normal;
 	font-weight: 100 900;
-	src: url("calendar/fonts/inter.woff2") format("woff2");
+	src: url("fonts/inter.woff2") format("woff2");
 	font-family: "Inter";
 	font-display: swap;
 }
@@ -22,7 +22,7 @@
 @font-face {
 	font-style: normal;
 	font-weight: 300;
-	src: url("calendar/fonts/univers.woff2") format("woff2");
+	src: url("fonts/univers.woff2") format("woff2");
 	font-family: "Univers";
 	font-display: swap;
 }
