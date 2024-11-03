@@ -399,10 +399,12 @@
 		height: 4.75rem;
 		pointer-events: none;
 
-
-
 		@media (prefers-reduced-motion) {
 			--mask: url("assets/here-static.gif");
+		}
+
+		@media only screen and (max-width: 1074px) {
+			display: none;
 		}
 	}
 }
