@@ -70,35 +70,6 @@
 					</button>
 				</li>
 			{%- endif %}
-			{%- if config.languages | length > 0 %}
-				{%- include "partials/language_switcher.html" %}
-			{%- endif -%}
-			{%- if config.extra.default_theme or config.extra.nav.show_theme_switcher  %}
-				<li id="theme-switcher">
-					<details class="closable">
-						<summary class="circle" title="{{ macros_translate::translate(key='theme', default='Theme', language_strings=language_strings) }}">
-							<i class="icon"></i>
-						</summary>
-						<ul>
-							<li>
-								<button class="circle" id="theme-light" title="{{ macros_translate::translate(key='theme_light', default='Switch to Light Theme', language_strings=language_strings) }}">
-									<i class="icon"></i>
-								</button>
-							</li>
-							<li>
-								<button class="circle" id="theme-dark" title="{{ macros_translate::translate(key='theme_dark', default='Switch to Dark Theme', language_strings=language_strings) }}">
-									<i class="icon"></i>
-								</button>
-							</li>
-							<li>
-								<button class="circle" id="theme-system" title="{{ macros_translate::translate(key='theme_system', default='Use System Theme', language_strings=language_strings) }}">
-									<i class="icon"></i>
-								</button>
-							</li>
-						</ul>
-					</details>
-				</li>
-			{%- endif %}
 			{%- if config.feed_filenames | length > 1 and config.extra.nav.show_feed -%}
 				<li id="feed">
 					<details class="closable">

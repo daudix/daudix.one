@@ -1,9 +1,3 @@
-{%- if page.extra.toc_ordered or section.extra.toc_ordered or config.extra.toc_ordered -%}
-	{%- set list_element = "ol" -%}
-{%- else -%}
-	{%- set list_element = "ul" -%}
-{%- endif -%}
-
 {%- if page.toc -%}
     {%- set toc = page.toc -%}
 {%- elif section.toc -%}
@@ -13,21 +7,21 @@
 {%- if page.extra.toc or section.extra.toc -%}
 	{%- if toc | length > 0 -%}
 		<h2>{{ macros_translate::translate(key="toc", default="Table of Contents", language_strings=language_strings) }}</h2>
-		<{{ list_element }}>
+		<ul>
 			{%- for h1 in toc -%}
 				<li>
 					<a href="{{ h1.permalink | safe }}">{{ h1.title }}</a>
 					{%- if h1.children -%}
-						<{{ list_element }}>
+						<ul>
 							{%- for h2 in h1.children -%}
 								<li>
 									<a href="{{ h2.permalink | safe }}">{{ h2.title }}</a>
 								</li>
 							{%- endfor -%}
-						</{{ list_element }}>
+						</ul>
 					{%- endif -%}
 				</li>
 			{%- endfor -%}
-		</{{ list_element }}>
+		</ul>
 	{%- endif -%}
 {%- endif -%}

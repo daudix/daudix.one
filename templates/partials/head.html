@@ -40,10 +40,6 @@
 		{%- set styles = styles | concat(with=["fonts.css"]) %}
 	{%- endif %}
 
-	{%- if page.extra.katex or section.extra.katex or config.extra.katex %}
-		{%- set styles = styles | concat(with=["katex.css"]) %}
-	{%- endif %}
-
 	{%- if config.extra.styles %}
 		{%- set styles = styles | concat(with=config.extra.styles) %}
 	{%- endif %}
@@ -54,7 +50,7 @@
 		{%- set styles = styles | concat(with=section.extra.styles) %}
 	{%- endif %}
 
-	{%- if not config.extra.debug_no_styles %}
+	{%- if not config.extra.debug.no_styles %}
 		{%- for style in styles %}
 			<link type="text/css" rel="stylesheet" href="{{ get_url(path=style) | safe }}" />
 		{%- endfor %}
@@ -79,20 +75,8 @@
 		{%- set scripts = scripts | concat(with=["count.js"]) %}
 	{%- endif %}
 
-	{%- if page.extra.katex or section.extra.katex or config.extra.katex %}
-		{%- set scripts = scripts | concat(with=["katex.min.js", "auto-render.min.js", "katex-init.js"]) %}
-	{%- endif %}
-
 	{%- if config.build_search_index %}
-		{%- if config.search.index_format == "elasticlunr_json" -%}
-			{%- set scripts = scripts | concat(with=["elasticlunr.min.js", "search-elasticlunr.js"]) %}
-		{%- elif config.search.index_format == "fuse_json" -%}
-			{%- set scripts = scripts | concat(with=["fuse.js", "search-fuse.js"]) %}
-		{%- endif -%}
-	{%- endif %}
-
-	{%- if config.extra.nav.show_theme_switcher %}
-		{%- set scripts = scripts | concat(with=["theme-switcher.js"]) %}
+		{%- set scripts = scripts | concat(with=["elasticlunr.min.js", "search-elasticlunr.js"]) %}
 	{%- endif %}
 
 	{%- if page.extra.comments.id %}

@@ -35,8 +35,6 @@ show_copy_button = true
 show_reading_time = true
 show_share_button = true
 show_backlinks = true
-debug_layout = false
-debug_no_styles = false
 csp = [
 	{ directive = "font-src", domains = ["'self'"] },
 	{ directive = "img-src", domains = ["'self'", "https:" ,"data:"] },
@@ -78,3 +76,7 @@ show_qr = true
 
 [extra.goatcounter]
 user = "daudix"
+
+[extra.debug]
+layout = false
+no_styles = false

@@ -5,12 +5,6 @@
 {%- set date_locale = macros_translate::translate(key="date_locale", default="en_US", language_strings=language_strings) -%}
 {%- set rel_attributes = macros_rel_attributes::rel_attributes() | trim -%}
 
-{%- if page.extra.toc_ordered or section.extra.toc_ordered or config.extra.toc_ordered -%}
-	{%- set list_element = "ol" -%}
-{%- else -%}
-	{%- set list_element = "ul" -%}
-{%- endif -%}
-
 <article>
 	{%- if page.extra.banner -%}
 		<div id="banner-container">
@@ -77,22 +71,22 @@
 				<div>
 					<strong class="title">{{ macros_translate::translate(key="table_of_contents", default="Table of Contents", language_strings=language_strings) }}</strong>
 					<div>
-						<{{ list_element }}>
+						<ul>
 							{%- for h1 in page.toc -%}
 								<li>
 									<a href="{{ h1.permalink | safe }}">{{ h1.title }}</a>
 									{%- if h1.children -%}
-										<{{ list_element }}>
+										<ul>
 											{%- for h2 in h1.children -%}
 												<li>
 													<a href="{{ h2.permalink | safe }}">{{ h2.title }}</a>
 												</li>
 											{%- endfor -%}
-										</{{ list_element }}>
+										</ul>
 									{%- endif -%}
 								</li>
 							{%- endfor -%}
-						</{{ list_element }}>
+						</ul>
 					</div>
 				</div>
 			</details>
@@ -124,12 +118,6 @@
 	</div>
 
 	{%- include "partials/statements.html" -%}
-
-	{%- if page.extra.toc_inline -%}
-		{%- include "partials/toc.html" -%}
-	{%- elif config.extra.toc_inline -%}
-		{%- include "partials/toc.html" -%}
-	{%- endif -%}
 
 	{{ page.content | safe }}
 </article>
