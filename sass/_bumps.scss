@@ -1,6 +1,10 @@
 #bumps {
 	position: relative;
-	overflow: hidden;
+
+	&:hover #here {
+		transform: none;
+		opacity: 1;
+	}
 
 	&:has(#bumps-expand:checked) {
 		float: none;
@@ -76,12 +80,26 @@
 			opacity: 0;
 			pointer-events: none;
 		}
+
+		#here {
+			transform: scale(0.5);
+			opacity: 0;
+		}
 	}
 
-	&:has(#bumps-bottom-sheet[open]) #bumps-expand + label {
-		transform: scale(0.5);
-		opacity: 0;
-		pointer-events: none;
+	&:has(#bumps-bottom-sheet[open]) {
+		overflow: hidden;
+
+		#bumps-expand + label {
+			transform: scale(0.5);
+			opacity: 0;
+			pointer-events: none;
+		}
+
+		#here {
+			transform: scale(0.5);
+			opacity: 0;
+		}
 	}
 
 	& > p {
@@ -361,6 +379,30 @@
 					}
 				}
 			}
+		}
+	}
+
+	#here {
+		--mask: url("assets/here.gif");
+		-webkit-mask-image: var(--mask);
+		position: absolute;
+		transform: scale(0.5);
+		transform-origin: 0.25rem 1.75rem;
+		opacity: 0;
+		mask-image: var(--mask);
+		mask-size: cover;
+		transition: var(--transition);
+		inset-block-start: 0.5rem;
+		inset-inline-start: 12.5rem;
+		background-color: var(--accent-color);
+		width: 12.125rem;
+		height: 4.75rem;
+		pointer-events: none;
+
+
+
+		@media (prefers-reduced-motion) {
+			--mask: url("assets/here-static.gif");
 		}
 	}
 }
