@@ -24,7 +24,7 @@ Read about its creation and the motivation behind it [here](@/blog/2024-10-31-sn
 >
 > What is so special about this server? There are other servers like this, smh...
 
-This server is meant to be cozy, welcoming, and friendly, which means toxicity, doxxing, drama, suicide threats, <span class="spoiler">NSFW</span>, and the like are not welcome.
+There's nothing special about this server in itself, what's special is the wonderful people on it. Still, this server is meant to be cozy, welcoming, and friendly, which means toxicity, doxxing, drama, suicide threats, <span class="spoiler">NSFW</span>, and the like are not welcome.
 
 Besides, I just wanted to try running a server, because why not? I like chatting with cool people and I don't like the stuff mentioned above, so yeah. There's probably a server out there that ticks all the boxes that I just don't know about, if so, [let me know](@/find/index.md#contacts).
 
@@ -40,16 +40,17 @@ Isn't it wonderful, spectacular, and extremely fops? ^w^
 
 > <div><img class="no-hover" src="macboy.png" alt="Evil MacBoy's avatar." /><strong>Evil MacBoy</strong><small>Tomorrow at 24:59</small></div>
 >
-> Still not convinced, you can't buy me with a [Neofox](https://volpeon.ink/emojis/neofox/) on violet background.
+> Still not convinced, you can't buy me with a [Neofox](https://volpeon.ink/emojis/neofox/) on violet background. Heck, you didn't even pick the color, it's just a "Lavender" from [Name that Color](https://chir.ag/projects/name-that-color/#B57EDC)!
 
 I see... we also have:
 
 - ??? room
 - Starboard
 - Memeboard
-- Duckquill and this website
+- Most of my friends
 - No voice channels, that's right, shy folks
 - Color roles that every other server also has
+- Duckquill and this website's updates and devlog channels
 
 Plus we got "Locations" metaphor; `#general` and `#welcome`? Nope. We have `#living-room` and `#hallway`!
 
