@@ -49,6 +49,7 @@ I see... we also have:
 - Memeboard
 - Most of my friends
 - No voice channels, that's right, shy folks
+- Time zone roles that no other server has
 - Color roles that every other server also has
 - Duckquill and this website's updates and devlog channels
 
