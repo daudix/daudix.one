@@ -69,7 +69,7 @@ main {
 	margin: 4.25rem auto 4rem;
 	width: min(var(--container-width), 90%);
 
-	& > *:not(#banner-container) {
+	& > *:not(#banner-container, #fluttershy) {
 		animation: main-load var(--transition-bezier);
 
 		@keyframes main-load {
