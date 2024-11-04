@@ -66,6 +66,10 @@ stamps = [
 ]
 +++
 
+{% alert(note=true) %}
+The website is undergoing a pretty major refactoring, restyling, and content improvement, so things may be broken or look weird. Sorry for that.
+{% end %}
+
 <noscript>
 	<p>
 		<small>JavaScript is off huh? Good for you!</small>
