@@ -206,7 +206,7 @@
 
 		img,
 		#increment {
-			transition: var(--transition);
+			transition: all var(--transition), transform var(--transition-bezier);
 			margin: 0;
 		}
 
