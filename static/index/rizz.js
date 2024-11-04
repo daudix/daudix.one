@@ -4,10 +4,10 @@ function rizzItUp() {
 	const rizzDialog = document.getElementById("rizz-dialog");
 	rizzDialog.remove();
 
-	const vineBoomSoundEffect = "vine-boom.mp3";
+	const vineBoomSoundEffect = "index/vine-boom.mp3";
 	new Audio(vineBoomSoundEffect).play();
 
-	const container = document.getElementById("main");
+	const mainContent = document.getElementById("main-content");
 
 	let subwaySurfers = document.getElementById("subway-surfers");
 	if (subwaySurfers === null) {
@@ -17,7 +17,7 @@ function rizzItUp() {
 		subwaySurfers.setAttribute("name", "youtube embed");
 		subwaySurfers.setAttribute("allow", "autoplay; encrypted-media");
 		subwaySurfers.setAttribute("allowfullscreen", "true");
-		container.appendChild(subwaySurfers);
+		mainContent.appendChild(subwaySurfers);
 	}
 
 	let oddlySatisfying = document.getElementById("oddly-satisfying");
@@ -28,6 +28,6 @@ function rizzItUp() {
 		oddlySatisfying.setAttribute("name", "youtube embed");
 		oddlySatisfying.setAttribute("allow", "autoplay; encrypted-media");
 		oddlySatisfying.setAttribute("allowfullscreen", "true");
-		container.appendChild(oddlySatisfying);
+		mainContent.appendChild(oddlySatisfying);
 	}
 }
