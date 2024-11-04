@@ -33,7 +33,6 @@
 
 	&:hover + #site-nav {
 		transform: perspective(var(--container-width));
-		opacity: 1;
 		pointer-events: auto;
 	}
 
@@ -41,7 +40,6 @@
 		position: fixed;
 		transform: perspective(var(--container-width)) rotateX(-90deg);
 		transform-origin: top;
-		opacity: 0;
 		transition: var(--transition-bezier);
 		margin: 0 auto;
 		width: max-content;
@@ -50,7 +48,6 @@
 		&:hover,
 		&:has(*:focus-visible, *:focus) {
 			transform: perspective(var(--container-width));
-			opacity: 1;
 			pointer-events: all;
 		}
 	}

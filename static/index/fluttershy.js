@@ -4,13 +4,13 @@ function fluttershyAnim() {
 	const shy = document.getElementById("shy");
 	shy.toggleAttribute("disabled");
 
-	const squee = new Audio("squee.mp3");
+	const squee = new Audio("index/squee.mp3");
 	squee.play();
 
 	const fluttershy = document.createElement("img");
 	fluttershy.setAttribute("id", "fluttershy");
 	fluttershy.setAttribute("alt", "fluttershy");
-	fluttershy.setAttribute("src", "squee.webp");
+	fluttershy.setAttribute("src", "index/squee.webp");
 	fluttershy.classList.add("transparent", "no-hover", "drop-shadow");
 
 	const mainContent = document.getElementById("main-content");
