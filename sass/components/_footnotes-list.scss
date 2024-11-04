@@ -12,20 +12,12 @@
 		vertical-align: -0.3125em;
 		mask-image: var(--icon);
 		mask-size: cover;
-		transition: var(--transition);
+		transition: all var(--transition), transform var(--transition-bezier);
 		background-color: var(--fg-muted-4);
 		width: 1rem;
 		height: 1rem;
 		color: transparent;
 		user-select: none;
-
-		:root[dir*="rtl"] & {
-			transform: scaleX(-1);
-
-			&:active {
-				transform: scaleX(-1) var(--active);
-			}
-		}
 
 		&:hover {
 			background-color: var(--accent-color);

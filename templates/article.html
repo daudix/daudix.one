@@ -5,13 +5,13 @@
 {%- set date_locale = macros_translate::translate(key="date_locale", default="en_US", language_strings=language_strings) -%}
 {%- set rel_attributes = macros_rel_attributes::rel_attributes() | trim -%}
 
-<article>
-	{%- if page.extra.banner -%}
-		<div id="banner-container">
-			<img id="banner" class="full-bleed{% if page.extra.banner_pixels %} pixels{% endif %}" src="{{ current_url ~ page.extra.banner }}" {% if config.markdown.lazy_async_image %}decoding="async" loading="lazy"{% endif %} />
-		</div>
-	{%- endif -%}
+{%- if page.extra.banner -%}
+	<div id="banner-container">
+		<img id="banner" class="full-bleed{% if page.extra.banner_pixels %} pixels{% endif %}" src="{{ current_url ~ page.extra.banner }}" {% if config.markdown.lazy_async_image %}decoding="async" loading="lazy"{% endif %} />
+	</div>
+{%- endif -%}
 
+<article>
 	<div id="heading">
 		{%- if page.date -%}
 			<p>

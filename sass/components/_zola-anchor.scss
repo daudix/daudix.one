@@ -7,10 +7,6 @@ h6 {
 	&:hover .zola-anchor {
 		transform: translateY(-0.125em);
 		opacity: 1;
-
-		:root[dir*="rtl"] & {
-			transform: translateY(-0.125em);
-		}
 	}
 }
 
@@ -25,10 +21,6 @@ h6 {
 
 	@media only screen and (max-width: 832px) {
 		display: none;
-	}
-
-	:root[dir*="rtl"] & {
-		transform: translateX(-0.5rem) translateY(-0.125em);
 	}
 
 	&:hover {
@@ -51,10 +43,6 @@ h6 {
 		transition: var(--transition);
 		width: 1em;
 		height: 1em;
-
-		:root[dir*="rtl"] & {
-			transform: scaleX(-1);
-		}
 	}
 }
 

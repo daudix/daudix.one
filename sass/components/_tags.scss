@@ -9,17 +9,12 @@
 
 	li {
 		display: flex;
-		transition: var(--transition);
 		margin: 0;
 		padding: 0;
-
-		&:active {
-			transform: var(--active);
-		}
 	}
 
 	a {
-		transition: var(--transition);
+		transition: all var(--transition), transform var(--transition-bezier);
 		box-shadow: var(--edge-highlight);
 		border-radius: 999px;
 		background-color: var(--fg-muted-1);
@@ -39,6 +34,10 @@
 				background-color: var(--accent-color-alpha);
 				color: var(--accent-color);
 			}
+		}
+
+		&:active {
+			transform: var(--active);
 		}
 
 		&:has(.tag) {

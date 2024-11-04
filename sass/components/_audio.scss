@@ -1,7 +1,7 @@
 // Who doesn't like a party popper mid article?
 .audio {
 	appearance: none;
-	transition: var(--transition);
+	transition: all var(--transition), transform var(--transition-bezier);
 	cursor: pointer;
 	box-shadow: var(--edge-highlight);
 	border: none;
@@ -15,6 +15,10 @@
 	&:hover {
 		background-color: var(--accent-color);
 		color: var(--contrast-color);
+	}
+
+	&:active {
+		transform: var(--active);
 	}
 
 	&::after {

@@ -30,7 +30,7 @@
 
 		button {
 			appearance: none;
-			transition: var(--transition);
+			transition: all var(--transition), transform var(--transition-bezier);
 			cursor: pointer;
 			border: none;
 			border-radius: var(--rounded-corner-small);
@@ -62,10 +62,6 @@
 				-webkit-mask-image: var(--icon);
 				mask-image: var(--icon);
 				transition: var(--transition);
-
-				:root[dir*="rtl"] & {
-					transform: scaleX(-1);
-				}
 			}
 		}
 

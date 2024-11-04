@@ -86,7 +86,7 @@
 			opacity: 0;
 			z-index: 999;
 			backdrop-filter: var(--blur);
-			transition: var(--transition);
+			transition: var(--transition-bezier);
 			inset-block-start: 0;
 			box-shadow: var(--edge-highlight), var(--shadow-glass);
 			border-radius: 999px;
@@ -128,7 +128,7 @@
 		a,
 		summary {
 			flex: 1;
-			transition: var(--transition);
+			transition: all var(--transition), transform var(--transition-bezier);
 			box-shadow: none;
 			border-radius: 999px;
 			background-color: transparent;
@@ -221,7 +221,7 @@
 
 		button {
 			appearance: none;
-			transition: var(--transition);
+			transition: all var(--transition), transform var(--transition-bezier);
 			cursor: pointer;
 			border: none;
 			border-radius: 999px;
@@ -239,7 +239,7 @@
 			padding: 0;
 
 			&[open] ul {
-				animation: dropdown-open var(--transition);
+				animation: dropdown-open var(--transition-bezier);
 
 				@keyframes dropdown-open {
 					from {
@@ -286,20 +286,12 @@
 			--icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cpath d='M6.57.063c-3.578 0-6.5 2.921-6.5 6.5 0 3.578 2.922 6.5 6.5 6.5a6.46 6.46 0 0 0 3.83-1.256l2.975 2.974c.957.938 2.363-.5 1.406-1.437l-2.96-2.961a6.46 6.46 0 0 0 1.25-3.82c0-3.579-2.923-6.5-6.5-6.5m0 2c2.5 0 4.5 2.003 4.5 4.5 0 2.5-2 4.5-4.5 4.5-2.496 0-4.5-2-4.5-4.5 0-2.497 2.004-4.5 4.5-4.5'/%3E%3C/svg%3E");
 			-webkit-mask-image: var(--icon);
 			mask-image: var(--icon);
-
-			:root[dir*="rtl"] & {
-				transform: scaleX(-1);
-			}
 		}
 
 		#feed .icon {
 			--icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cpath d='M1.988 1.988V3c.008.547.453.984 1 .988.004-.004.008-.004.012-.004v.028A8.977 8.977 0 0 1 11.988 13a.991.991 0 0 0 1 .984h1V13h-.004c0-.004 0-.004.004-.008C13.984 7.02 9.184 2.148 3.242 2.02A1.004 1.004 0 0 0 3 1.988v-.004zm0 4V7c.008.547.453.984 1 .988.004-.004.008-.004.012-.004V8a4.985 4.985 0 0 1 4.996 4.844 1.002 1.002 0 0 0 .988 1.145c.008-.005.012-.005.016-.005v.004h.984V13H10c0-3.793-3.047-6.898-6.82-6.992 0-.004-.004-.004-.004-.004A.892.892 0 0 0 3 5.988v-.004zm2 4a1.999 1.999 0 1 0-.002 3.998 1.999 1.999 0 0 0 .002-3.998m0 0'%3E%3C/path%3E%3C/svg%3E");
 			-webkit-mask-image: var(--icon);
 			mask-image: var(--icon);
-
-			:root[dir*="rtl"] & {
-				transform: scaleX(-1);
-			}
 		}
 
 		#repo .icon {
@@ -318,7 +310,7 @@
 	#search-container {
 		transform: scale(0.5) translateY(-2.75rem);
 		opacity: 0;
-		transition: var(--transition);
+		transition: var(--transition-bezier);
 		padding: 0 0.5rem 0;
 		height: 0;
 		pointer-events: none;
@@ -391,10 +383,6 @@
 
 				&::after {
 					content: " →";
-
-					:root[dir*="rtl"] & {
-						content: " ←";
-					}
 				}
 			}
 

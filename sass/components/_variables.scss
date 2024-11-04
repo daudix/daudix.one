@@ -158,9 +158,9 @@
 		--active: scale(0.9);
 
 		// TRANSITIONS
-		--transition: 0.2s;
-		--transition-longer: 0.4s;
-		--transition-long: 0.8s;
+		--transition: 0.2s ease;
+		--transition-longer: 0.4s ease;
+		--transition-long: 0.8s ease;
 		--transition-bezier: 0.35s cubic-bezier(0.17, 0.89, 0.32, 1.28);
 	}
 }

@@ -10,8 +10,4 @@ a.external::after {
 	width: max(0.75rem, 0.75em);
 	height: max(0.75rem, 0.75em);
 	content: "";
-
-	:root[dir*="rtl"] & {
-		transform: scaleX(-1);
-	}
 }

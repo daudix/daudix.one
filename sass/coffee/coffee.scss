@@ -11,6 +11,7 @@
 		position: absolute;
 		transform: translateY(-100%) scaleY(-1);
 		opacity: 0;
+		transition: var(--transition-longer);
 		margin: 0;
 		inset-block-start: 0;
 		inset-inline-end: 0;
@@ -55,6 +56,7 @@
 		}
 
 		#coffee-banner {
+			transition: var(--transition-longer);
 			margin: 0;
 			box-shadow: none;
 			border-radius: 0;
@@ -81,7 +83,7 @@
 			transform: translateY(-50%);
 			opacity: 0;
 			z-index: 2;
-			transition: var(--transition-longer);
+			transition: var(--transition-bezier);
 			margin: 0 auto;
 			inset-inline-end: 0;
 			inset-inline-start: 0;
@@ -102,7 +104,7 @@
 			position: absolute;
 			transform: translateY(-50%);
 			z-index: 1;
-			transition: var(--transition-longer);
+			transition: var(--transition-bezier);
 			margin: 0 auto;
 			inset-inline-end: 0;
 			inset-inline-start: 0;

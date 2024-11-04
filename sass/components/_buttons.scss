@@ -33,7 +33,7 @@
 
 	a,
 	button {
-		transition: var(--transition);
+		transition: all var(--transition), transform var(--transition-bezier);
 		box-shadow: var(--edge-highlight);
 		border-radius: var(--rounded-corner);
 		background-color: var(--fg-muted-1);

@@ -7,7 +7,7 @@
 	article {
 		--bg-overlay: var(--accent-color-alpha);
 		position: relative;
-		transition: var(--transition);
+		transition: var(--transition-bezier);
 		box-shadow: var(--edge-highlight), var(--shadow-glass);
 		border-radius: var(--rounded-corner);
 		border-start-end-radius: 2.125rem;
@@ -24,14 +24,10 @@
 			h3::after {
 				transform: none;
 				opacity: 1;
-
-				:root[dir*="rtl"] & {
-					transform: scaleX(-1);
-				}
 			}
 		}
 
-		&:active {
+		&:active:not(:has(.tag:active)) {
 			transform: var(--active);
 		}
 
@@ -79,10 +75,6 @@
 				height: 1rem;
 				pointer-events: none;
 				content: "";
-
-				:root[dir*="rtl"] & {
-					transform: scaleX(-1) translateX(-0.25rem);
-				}
 			}
 		}
 
@@ -113,7 +105,7 @@
 				transform: translateY(-50%);
 				opacity: var(--disabled-opacity);
 				mask-size: cover;
-				transition: var(--transition-longer);
+				transition: var(--transition-bezier);
 				inset-block-start: 50%;
 				inset-inline-end: -3rem;
 				width: 12rem;
@@ -123,10 +115,6 @@
 
 			&:hover::before {
 				transform: translateY(-50%) rotate(-10deg) scale(1.5);
-			}
-
-			:root[dir*="rtl"] &:hover::before {
-				transform: translateY(-50%) rotate(10deg) scale(1.5);
 			}
 		}
 
@@ -211,14 +199,8 @@
 				background-color: var(--yellow-bg);
 			}
 
-			&:hover {
-				&::before {
-					transform: translateY(-50%) rotate(62deg) scale(1.5);
-				}
-
-				:root[dir*="rtl"] &::before {
-					transform: translateY(-50%) rotate(-62deg) scale(1.5);
-				}
+			&:hover::before {
+				transform: translateY(-50%) rotate(62deg) scale(1.5);
 			}
 
 			h3 {
@@ -357,7 +339,7 @@
 	#paginator-next,
 	#paginator-last {
 		display: inline-block;
-		transition: var(--transition);
+		transition: all var(--transition), transform var(--transition-bezier);
 		box-shadow: var(--edge-highlight);
 		border-radius: 1rem;
 		background-color: var(--fg-muted-1);
@@ -367,10 +349,6 @@
 
 		.icon {
 			transition: var(--transition);
-
-			:root[dir*="rtl"] & {
-				transform: scaleX(-1);
-			}
 		}
 	}
 
@@ -433,7 +411,7 @@
 
 	#paginator-counter {
 		display: inline-block;
-		transition: var(--transition);
+		transition: var(--transition-bezier);
 		box-shadow: var(--edge-highlight);
 		border-radius: var(--rounded-corner-small);
 		background-color: var(--accent-color-alpha);

@@ -28,7 +28,7 @@
 		opacity: 0;
 		mask-image: var(--mask);
 		mask-size: cover;
-		transition: var(--transition);
+		transition: var(--transition-bezier);
 		inset-block-start: calc(-50% + -1.1875rem);
 		inset-inline-start: 6.5rem;
 		background-color: var(--accent-color);

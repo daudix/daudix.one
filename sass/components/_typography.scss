@@ -208,10 +208,6 @@ aside {
 	padding: 1rem;
 	width: 30%;
 
-	:root[dir*="rtl"] & {
-		float: left;
-	}
-
 	@media only screen and (max-width: 720px) {
 		float: none;
 		margin-inline-start: 0;
@@ -280,7 +276,7 @@ details {
 			}
 
 			& ~ * {
-				animation: details-open var(--transition);
+				animation: details-open var(--transition-bezier);
 
 				@keyframes details-open {
 					from {

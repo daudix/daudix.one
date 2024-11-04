@@ -9,7 +9,7 @@
 
 	.post-nav-item {
 		flex: 1;
-		transition: var(--transition);
+		transition: all var(--transition), transform var(--transition-bezier);
 		border-radius: var(--rounded-corner);
 		padding: 1rem;
 		padding-block-end: 0.75rem;
@@ -31,10 +31,6 @@
 
 		&.post-nav-prev .nav-arrow::before {
 			content: "← ";
-
-			:root[dir*="rtl"] & {
-				content: "→ ";
-			}
 		}
 
 		&.post-nav-next {
@@ -42,10 +38,6 @@
 
 			.nav-arrow::after {
 				content: " →";
-
-				:root[dir*="rtl"] & {
-					content: " ←";
-				}
 			}
 		}
 

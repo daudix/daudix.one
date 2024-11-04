@@ -67,7 +67,7 @@ stamps = [
 +++
 
 {% alert(note=true) %}
-The website is undergoing a pretty major refactoring, restyling, and content improvement, so things may be broken or look weird. Sorry for that.
+The website is undergoing a pretty major refactoring, restyling, and content improvement, so things may be broken or look weird. Sorry about that.
 {% end %}
 
 <noscript>

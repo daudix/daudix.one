@@ -35,7 +35,7 @@ input[type="checkbox"] {
 		position: absolute;
 		transform: scale(0.5);
 		opacity: 0;
-		transition: var(--transition);
+		transition: all var(--transition), transform var(--transition-bezier);
 		background-color: var(--contrast-color);
 		content: "";
 	}
@@ -104,7 +104,6 @@ input[type="checkbox"] {
 			transform-origin: center;
 			opacity: 1;
 			mask-image: none;
-			transition: var(--transition);
 			inset-block-start: 0.25rem;
 			inset-inline-start: 0.25rem;
 			box-shadow: var(--shadow);
@@ -120,10 +119,6 @@ input[type="checkbox"] {
 			&::before {
 				transform: translateX(1rem);
 				background-color: var(--contrast-color);
-
-				:root[dir*="rtl"] & {
-					transform: translateX(-1rem);
-				}
 			}
 		}
 
@@ -171,7 +166,7 @@ input[type="range"] {
 	&::-webkit-slider-thumb {
 		appearance: none;
 		filter: brightness(0.9);
-		transition: var(--transition);
+		transition: var(--transition-bezier);
 		cursor: grab;
 		box-shadow: var(--shadow);
 		border-radius: 999px;
@@ -187,7 +182,7 @@ input[type="range"] {
 
 	&::-moz-range-thumb {
 		appearance: none;
-		transition: var(--transition);
+		transition: var(--transition-bezier);
 		cursor: grab;
 		box-shadow: var(--shadow);
 		border: none;

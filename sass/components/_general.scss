@@ -10,17 +10,17 @@
 }
 
 body {
-	background-blend-mode: normal, difference;
-	background: var(--bg-overlay), url("static.gif"), var(--accent-color);
-	color: var(--fg-color);
-	display: grid; // Put footer at the bottom for short pages, such as the 404
-	font-family: var(--font-system-ui), var(--font-emoji);
-	grid-template-rows: auto minmax(auto, 1fr) auto; // Header, stuff, footer
-	line-height: 1.5;
-	margin: 0;
-	min-height: 100vh;
-	overflow-wrap: break-word;
 	text-wrap: pretty;
+	display: grid; // Put footer at the bottom for short pages, such as the 404
+	grid-template-rows: auto minmax(auto, 1fr) auto; // Header, stuff, footer
+	margin: 0;
+	background: var(--bg-overlay), url("static.gif"), var(--accent-color);
+	background-blend-mode: normal, difference;
+	min-height: 100vh;
+	color: var(--fg-color);
+	line-height: 1.5;
+	font-family: var(--font-system-ui), var(--font-emoji);
+	overflow-wrap: break-word;
 
 	@media (prefers-reduced-motion) {
 		background: var(--bg-overlay), url("static-static.gif"), var(--accent-color);
@@ -36,9 +36,7 @@ body {
 // Make focused anchor not get covered by nav,
 // and flash it with accent color when jumping to it
 :target:not(#main-content) {
-	transition:
-		all var(--transition),
-		scroll-margin-block-start 0s;
+	transition: all var(--transition), scroll-margin-block-start 0s;
 	scroll-margin-block-start: 15vh;
 	color: var(--accent-color);
 	text-shadow: var(--text-shadow-glow);
@@ -70,6 +68,17 @@ body {
 main {
 	margin: 4.25rem auto 4rem;
 	width: min(var(--container-width), 90%);
+
+	& > *:not(#banner-container) {
+		animation: main-load var(--transition-bezier);
+
+		@keyframes main-load {
+			from {
+				transform: translateY(-1rem);
+				opacity: 0;
+			}
+		}
+	}
 }
 
 @media (prefers-reduced-motion) {

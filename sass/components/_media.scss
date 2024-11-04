@@ -42,10 +42,6 @@ video {
 		float: inline-start;
 		transform-origin: left;
 		margin-inline-end: 1rem;
-
-		:root[dir*="rtl"] & {
-			transform-origin: right;
-		}
 	}
 
 	&.end,
@@ -53,10 +49,6 @@ video {
 		float: inline-end;
 		transform-origin: right;
 		margin-inline-start: 1rem;
-
-		:root[dir*="rtl"] & {
-			transform-origin: left;
-		}
 	}
 
 	&.pixels,
@@ -104,7 +96,7 @@ video {
 }
 
 img {
-	transition: var(--transition-longer);
+	transition: var(--transition-bezier);
 
 	&:not(
 			.no-hover,
