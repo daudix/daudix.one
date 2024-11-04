@@ -7,7 +7,7 @@
 	inset-inline-end: 0;
 	inset-inline-start: 0;
 	width: min(var(--container-width), 90%);
-	height: 4.25rem;
+	height: 3.25rem;
 
 	&::before {
 		position: absolute;
@@ -32,24 +32,24 @@
 	}
 
 	&:hover + #site-nav {
-		transform: none;
+		transform: perspective(var(--container-width));
 		opacity: 1;
 		pointer-events: auto;
 	}
 
 	& + #site-nav {
 		position: fixed;
-		transform: translateY(calc(-50% - 1rem)) scale(0.5);
+		transform: perspective(var(--container-width)) rotateX(-90deg);
 		transform-origin: top;
 		opacity: 0;
-		transition: var(--transition);
+		transition: var(--transition-bezier);
 		margin: 0 auto;
 		width: max-content;
 		pointer-events: none;
 
 		&:hover,
 		&:has(*:focus-visible, *:focus) {
-			transform: none;
+			transform: perspective(var(--container-width));
 			opacity: 1;
 			pointer-events: all;
 		}
@@ -60,10 +60,10 @@
 	position: sticky;
 	z-index: 999;
 	margin: 1rem auto 0;
-	inset-block-start: 1rem;
+	inset-block-start: 0;
 	inset-inline-end: 0;
 	inset-inline-start: 0;
-	border-radius: 1.625rem;
+	border-radius: 0 0 1.625rem 1.625rem;
 	max-width: min(var(--container-width), 90%);
 
 	&::before {
@@ -72,8 +72,9 @@
 		z-index: -1;
 		backdrop-filter: var(--blur);
 		inset: 0;
-		box-shadow: var(--edge-highlight), var(--shadow-glass);
-		border-radius: 1.625rem;
+		// box-shadow: var(--edge-highlight), var(--shadow-glass);
+		box-shadow: var(--shadow-glass);
+		border-radius: 0 0 1.625rem 1.625rem;
 		background-color: var(--glass-bg);
 		content: "";
 	}

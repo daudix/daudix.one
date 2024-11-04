@@ -3,9 +3,9 @@
 	display: block;
 	position: relative;
 	float: inline-end;
-	transform: perspective(32rem) rotate(5deg) rotateX(5deg);
+	transform: perspective(var(--container-width)) rotate(5deg) rotateX(5deg);
 	transform-origin: 50% 1rem;
-	transition: var(--transition-longer);
+	transition: var(--transition-bezier);
 	margin-inline-start: 1.5rem;
 	margin-block-start: 2rem;
 	box-shadow: var(--shadow-glass);
@@ -24,7 +24,7 @@
 		display: block;
 		position: absolute;
 		// Dirty hack to avoid transformation of the thumbtack
-		transform: perspective(32rem) rotate(-5deg) rotateX(-5deg);
+		transform: perspective(var(--container-width)) rotate(-5deg) rotateX(-5deg);
 		z-index: 1;
 		transition: var(--transition);
 		inset-block-start: 0.25rem;
@@ -38,11 +38,11 @@
 	}
 
 	&:hover {
-		transform: none;
+		transform: perspective(var(--container-width));
 		box-shadow: var(--shadow);
 
 		&::after {
-			transform: none;
+			transform: perspective(var(--container-width));
 		}
 
 		#polaroid-shine {
@@ -67,7 +67,7 @@
 		z-index: 1;
 		mix-blend-mode: screen;
 		filter: blur(0.25rem);
-		transition: var(--transition-longer);
+		transition: var(--transition-bezier);
 		inset-block-start: -2rem;
 		inset-inline-start: 0;
 		background-color: rgb(255 255 255 / 0.3);
