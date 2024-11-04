@@ -189,6 +189,10 @@ body:has(#skeuo-switch:checked) {
 		url("fabric.webp");
 	background-blend-mode: hard-light, normal;
 
+	main {
+		margin: 4.25rem auto 2rem;
+	}
+
 	#site-nav {
 		&::before {
 			-webkit-backdrop-filter: none;
@@ -216,12 +220,10 @@ body:has(#skeuo-switch:checked) {
 				}
 
 				&.active {
-					&::before {
-						border-block-end: 0.25rem solid rgb(0 0 0 / 0.7);
-					}
+					background-color: rgb(255 255 255 / 0.2);
 
-					&:hover::before {
-						border-block-end: 0.25rem solid black;
+					&:hover {
+						background-color: rgb(255 255 255 / 0.4);
 					}
 				}
 			}
@@ -260,6 +262,7 @@ body:has(#skeuo-switch:checked) {
 	}
 
 	#site-footer {
+		margin-block-end: 0;
 		box-shadow: inset 0 0.25rem 0.75rem rgb(0 0 0 / 0.4);
 		background:
 			radial-gradient(black 15%, transparent 16%) 0 0,
@@ -270,6 +273,8 @@ body:has(#skeuo-switch:checked) {
 				0.5625rem;
 		background-size: 1rem 1rem;
 		background-color: hsl(0 0% 27%);
+		padding-block-start: 2rem;
+		padding-block-end: 2rem;
 
 		* {
 			color: hsl(0 0% 78%);
@@ -452,13 +457,10 @@ body:has(#skeuo-switch:checked) {
 					}
 
 					&.active {
-						&::before {
-							border-block-end: 0.25rem solid
-								rgb(255 255 255 / 0.7);
-						}
+						background-color: rgb(255 255 255 / 0.05);
 
-						&:hover::before {
-							border-block-end: 0.25rem solid white;
+						&:hover {
+							background-color: rgb(255 255 255 / 0.1);
 						}
 					}
 				}
