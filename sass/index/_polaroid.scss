@@ -38,11 +38,11 @@
 	}
 
 	&:hover {
-		transform: perspective(var(--container-width));
+		transform: none;
 		box-shadow: var(--shadow);
 
 		&::after {
-			transform: perspective(var(--container-width));
+			transform: none;
 		}
 
 		#polaroid-shine {

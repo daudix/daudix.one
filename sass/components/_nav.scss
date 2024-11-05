@@ -32,7 +32,7 @@
 	}
 
 	&:hover + #site-nav {
-		transform: perspective(var(--container-width));
+		transform: none;
 		pointer-events: auto;
 	}
 
@@ -47,7 +47,7 @@
 
 		&:hover,
 		&:has(*:focus-visible, *:focus) {
-			transform: perspective(var(--container-width));
+			transform: none;
 			pointer-events: all;
 		}
 	}
