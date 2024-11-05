@@ -4,6 +4,10 @@
 	&:hover #here {
 		transform: none;
 		opacity: 1;
+
+		@media only screen and (max-width: 1074px) {
+			transform: rotate(-90deg);
+		}
 	}
 
 	&:has(#bumps-expand:checked) {
@@ -84,6 +88,10 @@
 		#here {
 			transform: scale(0.5);
 			opacity: 0;
+
+			@media only screen and (max-width: 1074px) {
+				transform: scale(0.5) rotate(-90deg);
+			}
 		}
 	}
 
@@ -99,6 +107,10 @@
 		#here {
 			transform: scale(0.5);
 			opacity: 0;
+
+			@media only screen and (max-width: 1074px) {
+				transform: scale(0.5) rotate(-90deg);
+			}
 		}
 	}
 
@@ -404,6 +416,11 @@
 		}
 
 		@media only screen and (max-width: 1074px) {
+			transform: scale(0.5) rotate(-90deg);
+			inset-block-start: -1rem;
+		}
+
+		@media only screen and (max-width: 784px) {
 			display: none;
 		}
 	}
