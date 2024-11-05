@@ -6,6 +6,32 @@
 @use "shy";
 @use "window";
 
+@import "../components/_variables.scss";
+
+@include theme-variables using ($theme) {
+    @if $theme == "dark" {
+		--monokai-red: #ff6188;
+		--monokai-orange: #fc9867;
+		--monokai-yellow: #ffd866;
+		--monokai-green: #a9dc76;
+		--monokai-blue: #78dce8;
+		--monokai-purple: #ab9df2;
+		--monokai-background: #2d2a2e;
+		--monokai-text: #fcfcfa;
+    }
+
+    @else {
+		--monokai-red: #e14775;
+		--monokai-orange: #e16032;
+		--monokai-yellow: #cc7a0a;
+		--monokai-green: #269d69;
+		--monokai-blue: #1c8ca8;
+		--monokai-purple: #7058be;
+		--monokai-background: #faf4f2;
+		--monokai-text: #29242a;
+    }
+}
+
 noscript p {
 	text-align: center;
 
