@@ -74,6 +74,14 @@
 				"...... interactions";
 			column-gap: 1rem;
 			justify-items: start;
+			animation: comment-load var(--transition-bezier);
+
+			@keyframes comment-load {
+				from {
+					transform: perspective(var(--container-width)) translateX(-1rem);
+					opacity: 0;
+				}
+			}
 
 			&.comment-reply {
 				position: relative;
