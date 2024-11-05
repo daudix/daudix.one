@@ -51,7 +51,7 @@
 				&:hover {
 					img,
 					#increment {
-						&:hover:not(:active) {
+						&:hover:not(a:active img) {
 							transform: scale(2);
 							z-index: 1;
 							filter: blur(0) var(--drop-shadow);
