@@ -236,7 +236,7 @@ section {
 		border-radius: 50%;
 		background-color: white;
 		aspect-ratio: 1 / 1;
-		width: 25vw;
+		width: 24rem;
 	}
 
 	div:nth-of-type(1) {
@@ -246,12 +246,12 @@ section {
 			25% {
 				transform: translate(35vw, 30vw);
 				opacity: 0.8;
-				width: 30vw;
+				width: 16rem;
 			}
 
 			50% {
 				transform: translate(75vw, 50vw);
-				width: 20vw;
+				width: 12rem;
 			}
 
 			75% {
@@ -269,12 +269,12 @@ section {
 			25% {
 				transform: translate(-35vw, -30vw);
 				opacity: 0.8;
-				width: 30vw;
+				width: 16rem;
 			}
 
 			50% {
 				transform: translate(-75vw, -50vw);
-				width: 20vw;
+				width: 12rem;
 			}
 
 			75% {
