@@ -222,3 +222,64 @@ section {
 	backdrop-filter: var(--blur);
 	box-shadow: var(--edge-highlight), var(--shadow-glass);
 }
+
+#spotlights {
+	position: fixed;
+	// z-index: -1;
+	mix-blend-mode: soft-light;
+	inset: 0;
+	pointer-events: none;
+
+	div {
+		position: absolute;
+		filter: blur(1rem);
+		border-radius: 50%;
+		background-color: white;
+		aspect-ratio: 1 / 1;
+		width: 25vw;
+	}
+
+	div:nth-of-type(1) {
+		animation: spotlight-1 10s ease-in-out alternate infinite;
+
+		@keyframes spotlight-1 {
+			25% {
+				transform: translate(35vw, 30vw);
+				opacity: 0.8;
+				width: 30vw;
+			}
+
+			50% {
+				transform: translate(75vw, 50vw);
+				width: 20vw;
+			}
+
+			75% {
+				transform: translate(80vw, 75vw);
+			}
+		}
+	}
+
+	div:nth-of-type(2) {
+		animation: spotlight-2 10s ease-in-out alternate-reverse infinite;
+		inset-block-end: 0;
+		inset-inline-end: 0;
+
+		@keyframes spotlight-2 {
+			25% {
+				transform: translate(-35vw, -30vw);
+				opacity: 0.8;
+				width: 30vw;
+			}
+
+			50% {
+				transform: translate(-75vw, -50vw);
+				width: 20vw;
+			}
+
+			75% {
+				transform: translate(-80vw, -75vw);
+			}
+		}
+	}
+}
