@@ -7,7 +7,7 @@ styles = ["snug-nook/snug-nook.css"]
 
 Hi, nice to see you here ^^
 
-Ever wanted to join yet another Discord server for fun and giggles? Hate Discord and prefer Matrix instead? Worry not, I got you all covered!
+Ever wanted to join yet another Discord server for fun and giggles? Hate Discord and prefer Matrix instead? Worry not, We got you all covered!
 <span class="rainbow wavy">
     <strong>
         <span style="--delay:1">S</span><span style="--delay:2">n</span><span style="--delay:3">u</span><span style="--delay:4">g</span>
@@ -53,7 +53,7 @@ I see... we also have:
 - Color roles that every other server also has
 - Duckquill and this website's updates and devlog channels
 
-Plus we got "Locations" metaphor; `#general` and `#welcome`? Nope. We have `#living-room` and `#hallway`!
+Plus we got "locations" metaphor; `#general` and `#welcome`? Nope. We have `#living-room` and `#hallway`!
 
 > <div><img class="no-hover" src="macboy.png" alt="Evil MacBoy's avatar." /><strong>Evil MacBoy</strong><small>Tomorrow at 24:59</small></div>
 >
