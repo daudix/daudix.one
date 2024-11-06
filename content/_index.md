@@ -135,18 +135,6 @@ As you can see, I also do some web development! I like working with CSS and HTML
 
 And lastly, to quote [Jeffrey](https://hyperreal.coffee/about/): "I’m <button id="shy">shy</button> and might come across as reserved and standoffish at first, but I open up when I get more comfortable with people."
 
-<div id="read-by">
-
-This blog is not read by engineers and their coworkers from
-
-[![Amazon](index/logos/amazon.svg#transparent#no-hover)](https://www.amazon.com)
-[![AMD](index/logos/amd.svg#transparent#no-hover)](https://www.amd.com)
-[![Apple](index/logos/apple.svg#transparent#no-hover)](https://www.apple.com)
-[![Google](index/logos/google.svg#transparent#no-hover)](https://www.google.com)
-[![Meta](index/logos/meta.svg#transparent#no-hover)](https://www.meta.com)
-[![OpenAI](index/logos/openai.svg#transparent#no-hover)](https://openai.com)
-</div>
-
 ## Works
 
 {{ window() }}
