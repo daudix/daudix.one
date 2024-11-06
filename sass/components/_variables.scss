@@ -19,31 +19,22 @@
 		// COLORS
 		--bg-color: color-mix(in srgb, var(--accent-color) 10%, black);
 		--bg-overlay: linear-gradient(rgb(0 0 0 / 0.9), rgb(0 0 0 / 0.9));
-		--fg-color: rgb(255 255 255);
-		--fg-contrast: rgb(0 0 0 / 0.8);
+		--fg-color: #fcfcfa;
+		--fg-contrast: #29242a;
 		--fg-muted-1: rgb(255 255 255 / 0.05);
 		--fg-muted-2: rgb(255 255 255 / 0.1);
 		--fg-muted-3: rgb(255 255 255 / 0.2);
 		--fg-muted-4: rgb(255 255 255 / 0.5);
 		--fg-muted-5: rgb(255 255 255 / 0.6);
 		--glass-bg: rgb(25 25 25 / 0.7);
-		--blue-fg: rgb(153 193 241);
-		--brown-fg: rgb(205 171 143);
-		--green-fg: rgb(143 240 164);
-		--purple-fg: rgb(220 138 221);
-		--red-fg: rgb(246 97 81);
-		--yellow-fg: rgb(248 228 92);
+		--red-fg: #ff6188;
+		--orange-fg: #fc9867;
+		--yellow-fg: #ffd866;
+		--green-fg: #a9dc76;
+		--blue-fg: #78dce8;
+		--purple-fg: #ab9df2;
 		--shade-color: rgb(0 0 0 / 0.25);
 		--shine: rgb(255 255 255 / 0.1);
-
-		--monokai-red: #ff6188;
-		--monokai-orange: #fc9867;
-		--monokai-yellow: #ffd866;
-		--monokai-green: #a9dc76;
-		--monokai-blue: #78dce8;
-		--monokai-purple: #ab9df2;
-		--monokai-background: #2d2a2e;
-		--monokai-text: #fcfcfa;
 
 		color-scheme: dark;
 	}
@@ -52,8 +43,8 @@
 		// COLORS
 		--bg-color: color-mix(in srgb, var(--accent-color) 20%, white);
 		--bg-overlay: linear-gradient(rgb(255 255 255 / 0.8), rgb(255 255 255 / 0.8));
-		--fg-color: rgb(0 0 0 / 0.8);
-		--fg-contrast: rgb(255 255 255);
+		--fg-color: #29242a;
+		--fg-contrast: #fcfcfa;
 		--fg-muted-1: rgb(0 0 0 / 0.05);
 		--fg-muted-2: rgb(0 0 0 / 0.1);
 		--fg-muted-3: rgb(0 0 0 / 0.2);
@@ -61,29 +52,19 @@
 		--fg-muted-5: rgb(0 0 0 / 0.6);
 		--glass-bg: rgb(242 242 242 / 0.7);
 		--accent-color-alpha: rgb(from var(--accent-color) r g b / var(--color-opacity));
+		--red-fg: #e14775;
+		--orange-fg: #e16032;
+		--yellow-fg: #cc7a0a;
+		--green-fg: #269d69;
+		--blue-fg: #1c8ca8;
+		--purple-fg: #7058be;
 		--blue-bg: rgb(from var(--blue-fg) r g b / var(--color-opacity));
-		--blue-fg: rgb(53 132 228);
-		--brown-bg: rgb(from var(--brown-fg) r g b / var(--color-opacity));
-		--brown-fg: rgb(99 69 44);
 		--green-bg: rgb(from var(--green-fg) r g b / var(--color-opacity));
-		--green-fg: rgb(38 162 105);
 		--purple-bg: rgb(from var(--purple-fg) r g b / var(--color-opacity));
-		--purple-fg: rgb(145 65 172);
 		--red-bg: rgb(from var(--red-fg) r g b / var(--color-opacity));
-		--red-fg: rgb(224 27 36);
 		--yellow-bg: rgb(from var(--yellow-fg) r g b / var(--color-opacity));
-		--yellow-fg: rgb(156 110 3);
 		--shade-color: rgb(0 0 0 / 0.07);
 		--shine: rgb(255 255 255 / 0.3);
-
-		--monokai-red: #e14775;
-		--monokai-orange: #e16032;
-		--monokai-yellow: #cc7a0a;
-		--monokai-green: #269d69;
-		--monokai-blue: #1c8ca8;
-		--monokai-purple: #7058be;
-		--monokai-background: #faf4f2;
-		--monokai-text: #29242a;
 
 		// CONTAINERS
 		--container-width: 720px;

@@ -87,13 +87,23 @@ The website is undergoing a pretty major refactoring, restyling, and content imp
 # David Lapshin { #header }
 </div>
 
-Greetings! Name's David, you may also know me by my online handle; Daudix.
+Greetings! Name's David, and this is my little corner in the big and scary world wild web. You might know someone named "Daudix", and yeah, that's me :P
 
 {% alert(fact=true) %}
-Although Daudix appears to be just my online handle, it's actually a slightly different persona; perhaps more silly and authentic than the "official" David, but it's fine to use whatever you like.
+Daudix is actually a slightly different persona; more silly and cringe, yet authentic.
 {% end %}
 
-Originally from Siberia, but currently living in <abbr id="abyss" title="If you know, you know">abyss</abbr>.
+Originating from Siberia, but currently reside in <abbr id="abyss" title="If you know, you know">abyss</abbr>. That means that I'm a native Russian speaker, which is cool I guess?
+
+Other than that, I like to "mess around and find out" about all sorts of things. By nature, I'm very curious, quite enthusiastic, and maybe a little annoying.
+
+I'm also trying to learn something new every day, and sometimes I happen to come across something that consumes me completely, but that doesn't happen all that often... :<
+
+One such thing is design; it's my hobby and I'm learning more about it every day. As you can see, I also do some web development! I looove working with CSS and HTML and its templating, but that's about it; JS is a bit of a mystery for me :D
+
+And lastly, to quote [Jeffrey](https://hyperreal.coffee/about/):
+
+> I’m <button id="shy">shy</button> and might come across as reserved and standoffish at first, but I open up when I get more comfortable with people.
 
 <details><summary>Some things that I like:</summary>
 
@@ -127,34 +137,30 @@ Originally from Siberia, but currently living in <abbr id="abyss" title="If you 
 - Making this list look like a staircase
 </details>
 
-I try to learn something new every day, and sometimes, I come across things that I enjoy and start to dive into them.
-
-Take design; it's more than just something I like, it's my hobby and I'm learning more about it every day, although lately I've been a bit burned out.
-
-As you can see, I also do some web development! I like working with CSS and HTML, but that's about it; JS is a bit of a mystery for me :D
-
-And lastly, to quote [Jeffrey](https://hyperreal.coffee/about/): "I’m <button id="shy">shy</button> and might come across as reserved and standoffish at first, but I open up when I get more comfortable with people."
-
 ## Works
 
 {{ window() }}
 
-I occasionally contribute to FOSS projects, mostly around GNOME apps; creating and improving icons for them, translating them into Russian, and sometimes helping with the UI.
+Occasionally I contribute to random FOSS projects, either by creating and improving icons, translating them into Russian, or even crafting a logo.
 
-Have a look at my [designs](@/design/index.md); mostly icons, but also some wallpapers (one of them is part of GNOME).
+Mor my design work, have a look at my [design page](@/design/index.md); it's mostly icons, but also some wallpapers (one of them is part of GNOME) and logos.
 
 ## IndieWeb
 
 {{ bumps() }}
 
-IndieWeb is something I really like; everything from 88x31 buttons to webrings is so cozy, fun, legit and personal, feels really great after the sterile corporate web all over the place. I'm even a member of several tildes/pubnixes, even though I don't do much there, I still like being a part of them:
+Simply put, IndieWeb is anything on the web that is hand-crafted and feels personal, at least that's what it is for me.
+
+Everything about it is awesome, from 88x31 buttons to webrings, it's also cozy and fun; feels refreshing after the sterile corporate web.
+
+I'm even a member of several tildes/pubnixes, even though I don't do much there, I still like being a part of them:
 
 - [exozyme](https://exozy.me)
 - [envs](https://envs.net)
 
-I have a website on [neocities](https://neocities.org); it's a bit empty at the moment, basically it's my playground where I can make bolder design choices than here. [Check it out](https://daudix.neocities.org).
+Better yet, I have a website on [neocities](https://neocities.org); it's quite empty at the moment, basically it's my playground where I can make bolder design choices than here. [Check it out](https://daudix.neocities.org) if you want.
 
-I also have a [Gemini capsule](gemini://gmi.daudix.one) on [flounder](https://flounder.online). I recently changed it to serve as a place for jotting down small notes rather than being a mirror of this website. See [this post](@/blog/2024-07-13-repurposing-gemini-capsule/index.md) for the reasons behind this decision. <small>(you can also _finger_ me at `daudix@flounder.online`)</small>
+I also have a [Gemini capsule](gemini://gmi.daudix.one) on [flounder](https://flounder.online). I've recently changed it to serve as a place for jotting down small notes rather than being a mirror of this website. See [this post](@/blog/2024-07-13-repurposing-gemini-capsule/index.md) for the reasons behind this decision. <small>(you can also _finger_ me at `daudix@flounder.online`)</small>
 
 <div id="rizz-dialog" class="buttons">
   <button id="rizz">Rizz It Up</button>

@@ -98,8 +98,7 @@
 		&.draft,
 		&.archive,
 		&.featured,
-		&.hot,
-		&.poor {
+		&.hot {
 			&::before {
 				position: absolute;
 				transform: translateY(-50%);
@@ -258,41 +257,6 @@
 
 				&:hover {
 					background-color: var(--red-fg);
-					color: var(--fg-contrast);
-				}
-			}
-		}
-
-		&.poor {
-			--icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cpath d='M8.963 1.514A4 4 0 0 1 5 5H4c-1.108 0-2 .892-2 2s.892 2 2 2H3c-1.662 0-3 1.338-3 3s1.338 3 3 3h10c1.662 0 3-1.338 3-3s-1.338-3-3-3h-1c1.108 0 2-.892 2-2s-.892-2-2-2h-1a4 4 0 0 0-2.037-3.486'/%3E%3C/svg%3E");
-			--bg-overlay: var(--brown-bg);
-
-			&::before {
-				-webkit-mask-image: var(--icon);
-				mask-image: var(--icon);
-				background-color: var(--brown-bg);
-			}
-
-			h3 {
-				color: var(--brown-fg);
-			}
-
-			.badge {
-				background-color: var(--brown-bg);
-				color: var(--brown-fg);
-
-				.icon {
-					-webkit-mask-image: var(--icon);
-					mask-image: var(--icon);
-				}
-			}
-
-			.tags a {
-				background-color: var(--brown-bg);
-				color: var(--brown-fg);
-
-				&:hover {
-					background-color: var(--brown-fg);
 					color: var(--fg-contrast);
 				}
 			}
