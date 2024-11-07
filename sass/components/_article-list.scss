@@ -375,9 +375,9 @@
 		transition: var(--transition-bezier);
 		box-shadow: var(--edge-highlight);
 		border-radius: var(--rounded-corner-small);
-		background-color: var(--bg-muted-2);
+		background-color: var(--accent-color);
 		padding: 0.5rem 0.625rem;
-		color: var(--accent-color);
+		color: var(--contrast-color);
 		font-weight: bold;
 		line-height: 1;
 		font-variant-numeric: tabular-nums;
