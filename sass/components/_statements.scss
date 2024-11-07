@@ -1,6 +1,6 @@
 .statement-container {
 	margin: 1rem 0;
-	box-shadow: var(--edge-highlight);
+	box-shadow: var(--edge-highlight), var(--shadow);
 	border-radius: var(--rounded-corner);
 	padding: 1rem;
 
@@ -29,7 +29,7 @@
 	}
 
 	&.archive {
-		background-color: var(--purple-bg);
+		background-color: var(--purple-bg-1);
 		color: var(--purple-fg);
 
 		.icon {
@@ -40,7 +40,7 @@
 	}
 
 	&.disclaimer {
-		background-color: var(--red-bg);
+		background-color: var(--red-bg-1);
 		color: var(--red-fg);
 
 		.icon {
@@ -51,7 +51,7 @@
 	}
 
 	&.trigger {
-		background-color: var(--yellow-bg);
+		background-color: var(--yellow-bg-1);
 		color: var(--yellow-fg);
 
 		.icon {

@@ -16,7 +16,7 @@ h6 {
 	opacity: 0;
 	transition: var(--transition);
 	margin-inline-start: calc(-1em + -0.5rem);
-	color: var(--fg-muted-4);
+	color: var(--fg-muted-1);
 	line-height: 1;
 
 	@media only screen and (max-width: 832px) {
@@ -47,5 +47,5 @@ h6 {
 }
 
 :target .zola-anchor {
-	color: var(--accent-color-alpha);
+	color: var(--bg-muted-1);
 }

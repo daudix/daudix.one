@@ -16,7 +16,7 @@
 		inset-block-start: 0.5rem;
 		inset-inline-end: 0;
 		inset-inline-start: 0;
-		box-shadow: var(--edge-highlight);
+		box-shadow: var(--edge-highlight), var(--shadow);
 		border-radius: 999px;
 		background-color: var(--accent-color);
 		width: min(calc(var(--container-width) / 4), 100%);
@@ -142,17 +142,17 @@
 
 		a.active {
 			box-shadow: var(--edge-highlight);
-			background-color: var(--accent-color-alpha);
+			background-color: var(--bg-muted-1);
 			color: var(--accent-color);
 
 			&:hover {
-				background-color: var(--accent-color);
-				color: var(--contrast-color);
+				background-color: var(--bg-muted-2);
+				color: var(--accent-color);
 			}
 		}
 
 		#home a {
-			color: var(--fg-muted-5);
+			color: var(--fg-muted-2);
 			font-weight: 800;
 
 			&:hover {
@@ -161,10 +161,6 @@
 
 			&.active {
 				color: var(--accent-color);
-
-				&:hover {
-					color: var(--contrast-color);
-				}
 			}
 
 			.icon {
@@ -180,7 +176,7 @@
 		.divider {
 			align-self: stretch;
 			margin: 0 0.25rem;
-			background-color: var(--fg-muted-2);
+			background-color: var(--bg-muted-2);
 			width: max(1px, 0.0625em);
 
 			@media only screen and (max-width: 480px) {
@@ -192,12 +188,12 @@
 		#search button,
 		#language-switcher summary,
 		summary {
-			color: var(--fg-muted-4);
+			color: var(--fg-muted-1);
 
 			&:hover {
 				box-shadow: var(--edge-highlight);
-				background-color: var(--fg-muted-1);
-				color: var(--fg-muted-5);
+				background-color: var(--bg-muted-1);
+				color: var(--fg-muted-2);
 			}
 
 			&:active {
@@ -328,7 +324,7 @@
 		box-shadow: var(--edge-highlight);
 		border: none;
 		border-radius: 999px;
-		background: var(--fg-muted-1);
+		background: var(--bg-muted-1);
 		padding: 0 0.75rem;
 		width: 100%;
 		height: 2.25rem;
@@ -337,7 +333,7 @@
 
 		&::placeholder {
 			opacity: 1;
-			color: var(--fg-muted-4);
+			color: var(--fg-muted-1);
 		}
 	}
 
@@ -375,7 +371,7 @@
 			flex-direction: column;
 			box-shadow: var(--edge-highlight);
 			border-radius: var(--rounded-corner);
-			background-color: var(--fg-muted-1);
+			background-color: var(--bg-muted-1);
 			padding: 0.5rem;
 
 			a {
@@ -387,11 +383,11 @@
 			}
 
 			span {
-				color: var(--fg-muted-5);
+				color: var(--fg-muted-2);
 
 				&:first-of-type {
 					margin-block-start: 0.5rem;
-					border-block-start: max(1px, 0.0625rem) solid var(--fg-muted-2);
+					border-block-start: max(1px, 0.0625rem) solid var(--bg-muted-2);
 					padding-block-start: 0.25rem;
 				}
 

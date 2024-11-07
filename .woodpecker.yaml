@@ -22,4 +22,5 @@ steps:
     commands:
       - $HOME/.local/bin/zola build --output-dir /srv/http/daudix --force
     when:
+      branch: main
       event: [push, manual]

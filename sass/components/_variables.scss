@@ -17,16 +17,13 @@
 @include theme-variables using ($theme) {
 	@if $theme == "dark" {
 		// COLORS
-		--bg-color: color-mix(in srgb, var(--accent-color) 10%, black);
+		--bg-color: color-mix(in srgb, var(--accent-color) var(--color-opacity-1), black);
 		--bg-overlay: linear-gradient(rgb(0 0 0 / 0.9), rgb(0 0 0 / 0.9));
 		--fg-color: #fcfcfa;
 		--fg-contrast: #29242a;
-		--fg-muted-1: rgb(255 255 255 / 0.05);
-		--fg-muted-2: rgb(255 255 255 / 0.1);
-		--fg-muted-3: rgb(255 255 255 / 0.2);
-		--fg-muted-4: rgb(255 255 255 / 0.5);
-		--fg-muted-5: rgb(255 255 255 / 0.6);
-		--glass-bg: rgb(25 25 25 / 0.7);
+		--fg-muted-1: color-mix(in srgb, var(--accent-color) 15%, rgb(255 255 255 / 0.5));
+		--fg-muted-2: color-mix(in srgb, var(--accent-color) 15%, rgb(255 255 255 / 0.6));
+		--glass-bg: color-mix(in srgb, var(--accent-color) 15%, rgb(0 0 0 / var(--dim-opacity)));
 		--red-fg: #ff6188;
 		--orange-fg: #fc9867;
 		--yellow-fg: #ffd866;
@@ -41,28 +38,31 @@
 
 	@else {
 		// COLORS
-		--bg-color: color-mix(in srgb, var(--accent-color) 20%, white);
+		--bg-color: color-mix(in srgb, var(--accent-color) var(--color-opacity-2), white);
 		--bg-overlay: linear-gradient(rgb(255 255 255 / 0.8), rgb(255 255 255 / 0.8));
+		--bg-muted-1: rgb(from var(--accent-color) r g b / var(--color-opacity-1));
+		--bg-muted-2: rgb(from var(--accent-color) r g b / var(--color-opacity-2));
 		--fg-color: #29242a;
 		--fg-contrast: #fcfcfa;
-		--fg-muted-1: rgb(0 0 0 / 0.05);
-		--fg-muted-2: rgb(0 0 0 / 0.1);
-		--fg-muted-3: rgb(0 0 0 / 0.2);
-		--fg-muted-4: rgb(0 0 0 / 0.5);
-		--fg-muted-5: rgb(0 0 0 / 0.6);
-		--glass-bg: rgb(242 242 242 / 0.7);
-		--accent-color-alpha: rgb(from var(--accent-color) r g b / var(--color-opacity));
+		--fg-muted-1: color-mix(in srgb, var(--accent-color) 15%, rgb(0 0 0 / 0.5));
+		--fg-muted-2: color-mix(in srgb, var(--accent-color) 15%, rgb(0 0 0 / v0.6));
+		--glass-bg: color-mix(in srgb, var(--accent-color) 15%, rgb(255 255 255 / var(--dim-opacity)));
 		--red-fg: #e14775;
 		--orange-fg: #e16032;
 		--yellow-fg: #cc7a0a;
 		--green-fg: #269d69;
 		--blue-fg: #1c8ca8;
 		--purple-fg: #7058be;
-		--blue-bg: rgb(from var(--blue-fg) r g b / var(--color-opacity));
-		--green-bg: rgb(from var(--green-fg) r g b / var(--color-opacity));
-		--purple-bg: rgb(from var(--purple-fg) r g b / var(--color-opacity));
-		--red-bg: rgb(from var(--red-fg) r g b / var(--color-opacity));
-		--yellow-bg: rgb(from var(--yellow-fg) r g b / var(--color-opacity));
+		--blue-bg-1: rgb(from var(--blue-fg) r g b / var(--color-opacity-1));
+		--blue-bg-2: rgb(from var(--blue-fg) r g b / var(--color-opacity-2));
+		--green-bg-1: rgb(from var(--green-fg) r g b / var(--color-opacity-1));
+		--green-bg-2: rgb(from var(--green-fg) r g b / var(--color-opacity-2));
+		--purple-bg-1: rgb(from var(--purple-fg) r g b / var(--color-opacity-1));
+		--purple-bg-2: rgb(from var(--purple-fg) r g b / var(--color-opacity-2));
+		--red-bg-1: rgb(from var(--red-fg) r g b / var(--color-opacity-1));
+		--red-bg-2: rgb(from var(--red-fg) r g b / var(--color-opacity-2));
+		--yellow-bg-1: rgb(from var(--yellow-fg) r g b / var(--color-opacity-1));
+		--yellow-bg-2: rgb(from var(--yellow-fg) r g b / var(--color-opacity-2));
 		--shade-color: rgb(0 0 0 / 0.07);
 		--shine: rgb(255 255 255 / 0.3);
 
@@ -100,57 +100,35 @@
 
 		// FONTS
 		--font-system-ui: system-ui, sans-serif;
-		--font-transitional: Charter, "Bitstream Charter", "Sitka Text", Cambria,
-			serif;
-		--font-old-style: "Iowan Old Style", "Palatino Linotype",
-			"URW Palladio L", P052, serif;
-		--font-humanist: Seravek, "Gill Sans Nova", Ubuntu, Calibri,
-			"DejaVu Sans", source-sans-pro, sans-serif;
-		--font-geometric-humanist: Avenir, Montserrat, Corbel, "URW Gothic",
-			source-sans-pro, sans-serif;
-		--font-classical-humanist: Optima, Candara, "Noto Sans", source-sans-pro,
-			sans-serif;
-		--font-neo-grotesque: Inter, Roboto, "Helvetica Neue", "Arial Nova",
-			"Nimbus Sans", Arial, sans-serif;
+		--font-transitional: Charter, "Bitstream Charter", "Sitka Text", Cambria, serif;
+		--font-old-style: "Iowan Old Style", "Palatino Linotype", "URW Palladio L", P052, serif;
+		--font-humanist: Seravek, "Gill Sans Nova", Ubuntu, Calibri, "DejaVu Sans", source-sans-pro, sans-serif;
+		--font-geometric-humanist: Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro, sans-serif;
+		--font-classical-humanist: Optima, Candara, "Noto Sans", source-sans-pro, sans-serif;
+		--font-neo-grotesque: Inter, Roboto, "Helvetica Neue", "Arial Nova", "Nimbus Sans", Arial, sans-serif;
 		--font-monospace-slab-serif: "Nimbus Mono PS", "Courier New", monospace;
-		--font-monospace-code: ui-monospace, "Cascadia Code", "Source Code Pro",
-			Menlo, Consolas, "DejaVu Sans Mono", monospace;
-		--font-industrial: Bahnschrift, "DIN Alternate",
-			"Franklin Gothic Medium", "Nimbus Sans Narrow", sans-serif-condensed,
-			sans-serif;
-		--font-rounded-sans: ui-rounded, "Hiragino Maru Gothic ProN", Quicksand,
-			Comfortaa, Manjari, "Arial Rounded MT", "Arial Rounded MT Bold",
-			Calibri, source-sans-pro, sans-serif;
-		--font-slab-serif: Rockwell, "Rockwell Nova", "Roboto Slab",
-			"DejaVu Serif", "Sitka Small", serif;
-		--font-antique: Superclarendon, "Bookman Old Style", "URW Bookman",
-			"URW Bookman L", "Georgia Pro", Georgia, serif;
-		--font-didone: Didot, "Bodoni MT", "Noto Serif Display",
-			"URW Palladio L", P052, Sylfaen, serif;
-		--font-handwritten: "Segoe Print", "Bradley Hand", Chilanka, TSCu_Comic,
-			casual, cursive;
-		--font-emoji: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-			"Noto Color Emoji";
+		--font-monospace-code: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas, "DejaVu Sans Mono", monospace;
+		--font-industrial: Bahnschrift, "DIN Alternate", "Franklin Gothic Medium", "Nimbus Sans Narrow", sans-serif-condensed, sans-serif;
+		--font-rounded-sans: ui-rounded, "Hiragino Maru Gothic ProN", Quicksand, Comfortaa, Manjari, "Arial Rounded MT", "Arial Rounded MT Bold", Calibri, source-sans-pro, sans-serif;
+		--font-slab-serif: Rockwell, "Rockwell Nova", "Roboto Slab", "DejaVu Serif", "Sitka Small", serif;
+		--font-antique: Superclarendon, "Bookman Old Style", "URW Bookman", "URW Bookman L", "Georgia Pro", Georgia, serif;
+		--font-didone: Didot, "Bodoni MT", "Noto Serif Display", "URW Palladio L", P052, Sylfaen, serif;
+		--font-handwritten: "Segoe Print", "Bradley Hand", Chilanka, TSCu_Comic, casual, cursive;
+		--font-emoji: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
 		// OPACITY
-		--color-opacity: 0.1;
+		--color-opacity-1: 0.1;
+		--color-opacity-2: 0.2;
 		--dim-opacity: 0.8;
 		--disabled-opacity: 0.6;
 
 		// SHADOWS
 		--edge-highlight: inset 0 0.0625rem 0 rgb(255 255 255 / 0.1);
-		--shadow: 0 0 0 0.0625rem rgb(0 0 0 / 0.03),
-			0 0.0625rem 0.1875rem 0.0625rem rgb(0 0 0 / 0.07),
-			0 0.125rem 0.375rem 0.125rem rgb(0 0 0 / 0.03);
-		--shadow-raised: 0 0 0 0.0625rem rgb(0 0 0 / 0.06),
-			0 0.125rem 0.375rem 0.125rem rgb(0 0 0 / 0.14),
-			0 0.25rem 0.75rem 0.25rem rgb(0 0 0 / 0.06);
+		--shadow: 0 0 0 0.0625rem rgb(0 0 0 / 0.03), 0 0.0625rem 0.1875rem 0.0625rem rgb(0 0 0 / 0.07), 0 0.125rem 0.375rem 0.125rem rgb(0 0 0 / 0.03);
+		--shadow-raised: 0 0 0 0.0625rem rgb(0 0 0 / 0.06), 0 0.125rem 0.375rem 0.125rem rgb(0 0 0 / 0.14), 0 0.25rem 0.75rem 0.25rem rgb(0 0 0 / 0.06);
 		--shadow-glass: 0 0.75rem 1.5rem -1rem rgb(0 0 0 / 0.5);
-		--shadow-glow: 0 0 0 0.0625rem var(--accent-color-alpha),
-			0 0.125rem 0.375rem 0.125rem var(--accent-color-alpha),
-			0 0.25rem 1.5rem 0.25rem var(--accent-color-alpha);
-		--text-shadow-glow: var(--accent-color-alpha) 0 0 0.25rem,
-			var(--accent-color) 0 0 0.75rem;
+		--shadow-glow: 0 0 0 0.0625rem var(--bg-muted-1), 0 0.125rem 0.375rem 0.125rem var(--bg-muted-1), 0 0.25rem 1.5rem 0.25rem var(--bg-muted-1);
+		--text-shadow-glow: var(--bg-muted-1) 0 0 0.25rem, var(--accent-color) 0 0 0.75rem;
 
 		// STATES
 		--hover: scale(1.1);

@@ -46,7 +46,7 @@
 		<p>
 			<small>
 				{%- set zola_link = '<a class="link external" href="https://www.getzola.org" rel="' ~ rel_attributes ~ '">Zola</a>' -%}
-				{{ macros_translate::translate(key="powered_by", default="Powered by $ZOLA", language_strings=language_strings) | replace(from="$ZOLA", to=zola_link) | safe }}
+				{{ macros_translate::translate(key="powered_by", default="Powered by $ZOLA and <3", language_strings=language_strings) | replace(from="$ZOLA", to=zola_link) | safe }}
 			</small>
 		</p>
 	{%- endif %}

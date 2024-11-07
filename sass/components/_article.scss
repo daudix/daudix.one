@@ -38,9 +38,9 @@
 		margin: 0;
 		background-image: linear-gradient(
 			to right,
-			var(--fg-muted-4),
+			var(--fg-muted-1),
 			var(--fg-color),
-			var(--fg-muted-4)
+			var(--fg-muted-1)
 		);
 		background-clip: text;
 		color: transparent;
@@ -80,14 +80,14 @@
 		transition: all var(--transition), transform var(--transition-bezier);
 		box-shadow: var(--edge-highlight);
 		border-radius: 999px;
-		background-color: var(--fg-muted-1);
+		background-color: var(--bg-muted-1);
 		padding: 0.5rem;
-		color: var(--fg-muted-4);
+		color: var(--accent-color);
 		line-height: 0;
 
 		&:hover {
-			background-color: var(--fg-muted-2);
-			color: var(--fg-muted-5);
+			background-color: var(--bg-muted-2);
+			// color: var(--fg-muted-2);
 		}
 
 		&:active {
@@ -147,7 +147,7 @@
 		}
 
 		strong.title {
-			color: var(--fg-muted-4);
+			color: var(--fg-muted-1);
 		}
 
 		div {
@@ -178,11 +178,11 @@
 			}
 
 			li::marker {
-				color: var(--fg-muted-5);
+				color: var(--fg-muted-2);
 			}
 
 			a {
-				color: var(--fg-muted-5);
+				color: var(--fg-muted-2);
 			}
 		}
 	}

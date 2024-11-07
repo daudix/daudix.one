@@ -3,7 +3,7 @@
 @include theme-variables using ($theme) {
 	@if $theme =="light" {
 		// COLORS
-		--color-opacity: 0.25;
+		--color-opacity-1: 0.25;
 	}
 }
 
@@ -71,7 +71,7 @@ body {
 				padding: 0;
 
 				.switch {
-					background-color: var(--accent-color-alpha);
+					background-color: var(--bg-muted-1);
 
 					&:hover {
 						background-color: rgb(0 0 0 / 0.5);
@@ -209,7 +209,7 @@ body {
 	}
 
 	button.colored {
-		background-color: var(--accent-color-alpha);
+		background-color: var(--bg-muted-1);
 
 		&:hover {
 			background-color: var(--accent-color);

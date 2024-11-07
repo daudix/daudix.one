@@ -16,18 +16,19 @@
 		align-items: center;
 		gap: 1rem;
 		transition: all var(--transition), transform var(--transition-bezier);
-		box-shadow: var(--edge-highlight);
+		box-shadow: var(--edge-highlight), var(--shadow);
 		border-radius: var(--rounded-corner);
-		background-color: var(--fg-muted-1);
+		background-color: var(--bg-muted-1);
 		padding: 1rem;
-		color: var(--fg-muted-5);
+		color: var(--fg-muted-2);
 		text-decoration: none;
 
 		&:hover {
 			transform: translateY(-0.25rem);
 			opacity: 1;
 			filter: none;
-			background-color: var(--fg-muted-2);
+			background-color: var(--bg-muted-2);
+			box-shadow: var(--edge-highlight), var(--shadow-raised);
 		}
 
 		&:active {
