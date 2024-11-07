@@ -16,7 +16,7 @@
 		align-items: center;
 		gap: 1rem;
 		transition: all var(--transition), transform var(--transition-bezier);
-		box-shadow: var(--edge-highlight), var(--shadow);
+		box-shadow: var(--edge-highlight);
 		border-radius: var(--rounded-corner);
 		background-color: var(--bg-muted-1);
 		padding: 1rem;
@@ -27,7 +27,7 @@
 			transform: translateY(-0.25rem);
 			opacity: 1;
 			filter: none;
-			box-shadow: var(--edge-highlight), var(--shadow-raised);
+			box-shadow: var(--edge-highlight), var(--shadow-glass);
 			background-color: var(--bg-muted-2);
 		}
 
