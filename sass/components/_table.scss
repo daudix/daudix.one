@@ -1,14 +1,14 @@
 table {
-	box-shadow: var(--edge-highlight);
+	box-shadow: var(--edge-highlight), var(--shadow);
 	border-radius: var(--rounded-corner);
 	border-collapse: collapse;
-	background-color: var(--fg-muted-1);
+	background-color: var(--bg-muted-1);
 	width: 100%;
 	overflow: hidden;
 
 	tr {
 		&:nth-child(even) {
-			background-color: var(--fg-muted-1);
+			background-color: var(--bg-muted-1);
 		}
 
 		th,
@@ -17,7 +17,8 @@ table {
 		}
 
 		th {
-			background-color: var(--fg-muted-2);
+			background-color: var(--bg-muted-2);
+			color: var(--fg-muted-1);
 			font-weight: bold;
 		}
 	}

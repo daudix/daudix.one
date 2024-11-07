@@ -6,8 +6,9 @@
 	border: none;
 	background-color: transparent;
 	padding: 0;
-	color: var(--fg-color);
-	font-size: var(--font-size-medium);
+	color: inherit;
+	font-style: inherit;
+	font-size: inherit;
 	text-decoration: underline;
 	text-decoration-style: dotted;
 	text-decoration-thickness: max(1px, 0.0625em);
@@ -17,8 +18,8 @@
 	}
 
 	&:disabled {
+		opacity: var(--disabled-opacity);
 		cursor: not-allowed;
-		color: var(--fg-muted-5);
 	}
 }
 

@@ -4,12 +4,12 @@
 	filter: drop-shadow(max(1px, 0.0625em) max(1px, 0.0625em) rgb(0 0 0 / 0.6));
 	background-image: linear-gradient(
 		to right,
-		var(--monokai-red),
-		var(--monokai-orange),
-		var(--monokai-yellow),
-		var(--monokai-green),
-		var(--monokai-blue),
-		var(--monokai-purple)
+		var(--red-fg),
+		var(--orange-fg),
+		var(--yellow-fg),
+		var(--green-fg),
+		var(--blue-fg),
+		var(--purple-fg)
 	);
 	background-clip: text;
 	color: transparent;

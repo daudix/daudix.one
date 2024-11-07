@@ -76,11 +76,11 @@ blockquote {
 
 	&.edit,
 	&.fact {
-		border-inline-start: 0.25rem solid var(--fg-muted-5);
+		border-inline-start: 0.25rem solid var(--fg-muted-2);
 
 		.alert-title,
 		li::marker {
-			color: var(--fg-muted-5);
+			color: var(--fg-muted-2);
 		}
 	}
 

@@ -259,13 +259,12 @@
 			inset-inline-end: 2.75rem;
 			border-radius: var(--rounded-corner-small);
 			padding: 0.5rem;
-			color: var(--fg-muted-4);
+			color: var(--accent-color);
 			line-height: 0;
 
 			&:hover {
 				box-shadow: var(--edge-highlight);
-				background-color: var(--fg-muted-1);
-				color: var(--fg-muted-5);
+				background-color: var(--bg-muted-1);
 			}
 
 			&:active {
@@ -300,13 +299,12 @@
 			border-radius: var(--rounded-corner-small);
 			background-color: transparent;
 			padding: 0.5rem;
-			color: var(--fg-muted-4);
+			color: var(--accent-color);
 			line-height: 0;
 
 			&:hover {
 				box-shadow: var(--edge-highlight);
-				background-color: var(--fg-muted-1);
-				color: var(--fg-muted-5);
+				background-color: var(--bg-muted-1);
 			}
 
 			&:active {

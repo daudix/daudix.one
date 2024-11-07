@@ -17,22 +17,22 @@
 		transition: all var(--transition), transform var(--transition-bezier);
 		box-shadow: var(--edge-highlight);
 		border-radius: 999px;
-		background-color: var(--fg-muted-1);
+		background-color: var(--bg-muted-1);
 		padding: 0.375rem 0.75rem;
-		color: var(--fg-muted-5);
+		color: var(--fg-muted-1);
 		font-size: var(--font-size-small);
 		line-height: 1;
 		text-decoration: none;
 		white-space: nowrap;
 
 		&:hover {
-			background-color: var(--accent-color-alpha);
-			color: var(--accent-color);
+			background-color: var(--bg-muted-2);
+			color: var(--fg-muted-2);
 			text-decoration: none;
 
 			.count {
-				background-color: var(--accent-color-alpha);
-				color: var(--accent-color);
+				background-color: var(--bg-muted-2);
+				color: var(--fg-muted-2);
 			}
 		}
 
@@ -57,7 +57,7 @@
 			transition: var(--transition);
 			border-start-end-radius: 999px;
 			border-end-end-radius: 999px;
-			background-color: var(--fg-muted-1);
+			background-color: var(--bg-muted-1);
 			padding-inline-start: 0.5rem;
 			padding-inline-end: 0.625rem;
 			padding-block-start: 0.375rem;

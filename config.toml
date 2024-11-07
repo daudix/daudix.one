@@ -25,8 +25,10 @@ bottom_footnotes = true
 index_format = "elasticlunr_json"
 
 [extra]
-accent_color = "#8939a4"
-accent_color_dark = "#fba7ff"
+accent_color = "#e14775"
+accent_color_dark = "#ff6188"
+# accent_color = "#8939a4"
+# accent_color_dark = "#fba7ff"
 fix_contrast_dark = true
 issues_url = "https://git.exozy.me/daudix/website/issues"
 source_url = "https://git.exozy.me/daudix/website"

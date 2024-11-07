@@ -10,31 +10,23 @@
 		-webkit-mask-image: var(--icon);
 		display: inline-block;
 		vertical-align: -0.3125em;
+		opacity: var(--dim-opacity);
 		mask-image: var(--icon);
 		mask-size: cover;
 		transition: all var(--transition), transform var(--transition-bezier);
-		background-color: var(--fg-muted-4);
+		background-color: var(--accent-color);
 		width: 1rem;
 		height: 1rem;
 		color: transparent;
 		user-select: none;
 
 		&:hover {
+			opacity: 1;
 			background-color: var(--accent-color);
 		}
 
 		&:active {
 			transform: var(--active);
-		}
-	}
-
-	a + a[href*="#fr-"],
-	li:target a[href*="#fr-"] {
-		opacity: var(--dim-opacity);
-		background-color: var(--accent-color);
-
-		&:hover {
-			opacity: 1;
 		}
 	}
 

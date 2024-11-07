@@ -5,13 +5,13 @@ input[type="color"] {
 	appearance: none;
 	transition: var(--transition);
 	cursor: pointer;
-	border: 0.15rem solid var(--fg-muted-2);
-	background-color: var(--fg-muted-1);
+	border: 0.15rem solid var(--bg-muted-2);
+	background-color: var(--bg-muted-1);
 	width: 1rem;
 	height: 1rem;
 
 	&:hover {
-		background-color: var(--fg-muted-2);
+		background-color: var(--bg-muted-2);
 	}
 
 	&:disabled {
@@ -19,7 +19,7 @@ input[type="color"] {
 		cursor: not-allowed;
 
 		&:hover {
-			background-color: var(--fg-muted-1);
+			background-color: var(--bg-muted-1);
 
 			&:checked {
 				background-color: var(--accent-color);

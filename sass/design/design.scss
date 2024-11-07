@@ -50,6 +50,8 @@ h2 {
 	);
 	background-clip: text;
 	color: transparent;
+	font-weight: lighter;
+	font-family: var(--font-antique);
 }
 
 .media-grid {
@@ -66,7 +68,7 @@ h2 {
 
 		&:hover {
 			box-shadow: var(--edge-highlight);
-			background-color: var(--fg-muted-1);
+			background-color: var(--bg-muted-1);
 			text-decoration: none;
 
 			div.grid {
@@ -93,7 +95,7 @@ h2 {
 				transition: var(--transition);
 				inset-block-start: 0;
 				inset-inline-start: 0;
-				background-color: var(--fg-muted-3);
+				background-color: var(--bg-muted-2);
 				width: 8rem;
 				height: 8rem;
 				content: "";
@@ -128,7 +130,7 @@ section {
 	box-shadow: var(--edge-highlight), var(--shadow-glass);
 	background-image: radial-gradient(
 		circle,
-		var(--fg-muted-1) 0.0625rem,
+		var(--bg-muted-1) 0.0625rem,
 		transparent 0.0625rem
 	);
 	background-size: 1rem 1rem;
@@ -154,11 +156,11 @@ section {
 	}
 
 	&#original-icons {
-		background-color: var(--blue-bg);
+		background-color: var(--blue-bg-1);
 	}
 
 	&#redrawn-icons {
-		background-color: var(--green-bg);
+		background-color: var(--green-bg-1);
 
 		a div:hover {
 			img {
@@ -179,15 +181,15 @@ section {
 	}
 
 	&#unused-icons {
-		background-color: var(--fg-muted-2);
+		background-color: var(--bg-muted-2);
 	}
 
 	&#wallpapers {
-		background-color: var(--purple-bg);
+		background-color: var(--purple-bg-1);
 	}
 
 	&#logos {
-		background-color: var(--yellow-bg);
+		background-color: var(--yellow-bg-1);
 
 		a div:hover {
 			img.mono {
