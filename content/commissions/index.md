@@ -194,6 +194,7 @@ This not only improves speed, but also ensures that the website uses only well-d
 <div class="card">
 <strong class="title">88x31 Button</strong>
 <div class="card-content">
+
 Small Scale • <mark>$2</mark>
 
 Custom 88x31 button for your website. Animation will double the price. Available in PNG, GIF (or APNG for animation).
@@ -216,12 +217,14 @@ Custom 88x31 button for your website. Animation will double the price. Available
 </ul>
 
 <div class="card-content">
+
 Small Scale • <mark>$12-$24</mark>
 
 Up to 2 logo variants (color and monochrome), with a simple color palette and matching fonts. Ideal for small projects/organizations.
 </div>
 
 <div class="card-content">
+
 Large Scale • <mark>$24-$48</mark>
 
 Includes more logo variants, a complete brand kit (fonts, color palette), and branding guidelines.
@@ -244,12 +247,14 @@ Includes more logo variants, a complete brand kit (fonts, color palette), and br
 </ul>
 
 <div class="card-content">
+
 Small Scale • <mark>$8-$16</mark>
 
 [Duckquill](https://duckquill.daudix.one)-powered website. 1-8 page layouts at a flat rate. Extra pages cost $2 each.
 </div>
 
 <div class="card-content">
+
 Large Scale • <mark>$16-$32</mark>
 
 [Duckquill](https://duckquill.daudix.one)-powered website. 8-32 page layouts. Custom features cost 5% extra of the total.
@@ -272,6 +277,7 @@ Large Scale • <mark>$16-$32</mark>
 </ul>
 
 <div class="card-content">
+
 Small Scale • <mark>$32-$64</mark>
 
 1-8 page layouts at a flat rate. Responsive on desktop and mobile. Simpler designs without complex styles.
@@ -285,6 +291,7 @@ Small Scale • <mark>$32-$64</mark>
 </div>
 
 <div class="card-content">
+
 Large Scale • <mark>$64-$128</mark>
 
 8-32 page layouts, fully responsive. More complex design with customized styles.
@@ -303,6 +310,7 @@ Large Scale • <mark>$64-$128</mark>
 <div class="card">
 <strong class="title">Motion Design</strong>
 <div class="card-content">
+
 Small Scale • <mark>$24-$48</mark>
 
 Short video (up to 90 seconds) made in Blender, 2D or with some 3D elements.
@@ -314,6 +322,7 @@ Short video (up to 90 seconds) made in Blender, 2D or with some 3D elements.
 <div class="card">
 <strong class="title">Video Editing</strong>
 <div class="card-content">
+
 Small Scale • <mark>$12-$48</mark>
 
 Editing of provided footage (cutting, color grading, simple effects like fades). Extra 5% for each additional minute over 10 minutes.
