@@ -27,12 +27,13 @@
 			transform: translateY(-0.25rem);
 			opacity: 1;
 			filter: none;
-			background-color: var(--bg-muted-2);
 			box-shadow: var(--edge-highlight), var(--shadow-raised);
+			background-color: var(--bg-muted-2);
 		}
 
 		&:active {
 			transform: var(--active);
+			background-color: var(--bg-muted-1);
 		}
 
 		.icon {
