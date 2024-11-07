@@ -4,44 +4,9 @@
 
 # [Daudix’s Blog](https://daudix.one)
 
-This is the source code for personal website. It is powered by [Zola](https://www.getzola.org) and [Duckquill](https://duckquill.daudix.one).
+The source code of my personal website. It is powered by [Zola](https://www.getzola.org) and <3. It is crafted in such a way as to be usable as a theme, but I cannot guarantee its stability and it is made to suit my needs first.
 
 ![Screenshot](screenshot.png)
-
-## FOR FUCK'S SAKE READ THIS
-
-If you like how my website looks and want to make your own based on it: DON'T.
-
-Seriously, just use the [Duckquill](https://duckquill.daudix.one) theme; I'm the author of it and it's literally the same thing as this website minus all my crap. Save your nerves, I'm serious.
-
-If you want to use some custom styles and stuff from here, go ahead, just don't make it *too similar,* I got to have a little uniqueness :^)
-
-> \> "can I copy your homework?"  
-> \> "yeah just change it up a bit so it doesn't look obvious you copied"  
-> \> "ok"
-
-## Setup local repository
-
-*These are mostly for myself XD*
-
-- Clone the repository recursively:
-
-```bash
-git clone --recursive forgejo@git.exozy.me:daudix/website.git
-```
-
-- Checkout `main` branch for Duckquill:
-
-```bash
-cd website/themes/duckquill/
-git checkout main
-```
-
-- Set remote URL to SSH one:
-
-```bash
-git remote set-url origin git@codeberg.org:daudix/duckquill.git
-```
 
 ## Know your rights
 
