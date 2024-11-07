@@ -69,12 +69,13 @@ main {
 	margin: 4.25rem auto 4rem;
 	width: min(var(--container-width), 90%);
 
-	& > *:not(#banner-container, #fluttershy, #comments main > *) {
-		animation: main-load var(--transition-bezier);
+	& > *:not(#banner-container, #fluttershy, #comments main > *),
+	& ~ #site-footer {
+		animation: main-load var(--transition-bezier-longer);
 
 		@keyframes main-load {
 			from {
-				transform: translateY(1rem);
+				transform: translateY(2rem);
 				opacity: 0;
 			}
 		}

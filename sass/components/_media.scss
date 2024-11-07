@@ -119,12 +119,15 @@ img {
 		&.end,
 		&[src*="#start"],
 		&[src*="#end"] {
+			transition: var(--transition-bezier-longer);
+
 			&:hover {
 				transform: scale(2);
 			}
 
 			@media only screen and (max-width: 720px) {
 				transform-origin: center;
+				transition: var(--transition-bezier);
 
 				&:hover {
 					transform: var(--hover);
