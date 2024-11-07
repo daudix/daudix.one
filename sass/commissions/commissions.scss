@@ -60,10 +60,18 @@ body::before {
 			flex: 1;
 			flex-direction: column;
 			mask-image: var(--mask);
+			animation: card-fade var(--transition-bezier);
 			margin: 0 -1rem -1rem;
 			padding: 1rem;
 			overflow: auto;
 			color: var(--fg-muted-2);
+
+			@keyframes card-fade {
+				from {
+					transform: translateY(-1rem);
+					opacity: 0;
+				}
+			}
 
 			:last-child {
 				margin-block-end: 0;
