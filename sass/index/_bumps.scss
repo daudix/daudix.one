@@ -360,16 +360,16 @@
 				}
 
 				p:has(img) {
-					text-align: center;
+					display: flex;
+					flex-direction: row;
+					flex-wrap: wrap;
+					justify-content: center;
+					gap: 0.25rem;
 				}
 
 				img {
 					display: inline-block;
 					margin: 0;
-
-					&:first-child {
-						margin-inline-end: 0.25rem;
-					}
 				}
 			}
 		}
