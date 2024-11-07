@@ -2,10 +2,9 @@
 {% import "macros/translate.html" as macros_translate %}
 
 {%- set language_strings = load_data(path="i18n/" ~ lang ~ '.toml', required=false) -%}
-{%- set rtl_languages = ["ar", "arc", "az", "dv", "ff", "he", "ku", "nqo", "fa", "rhg", "syc", "ur"] -%}
 
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" {% if lang in rtl_languages %}dir="rtl"{% endif %} lang="{{ lang }}" {% include "partials/default_theme.html" %}>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="{{ lang }}" {% include "partials/default_theme.html" %}>
 {% include "partials/head.html" %}
 <body>
 {% block body %}

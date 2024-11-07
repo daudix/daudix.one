@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+{%- set date_format = macros_translate::translate(key="date_format", default="%B %d, %Y", language_strings=language_strings) -%}
+{%- set date_locale = macros_translate::translate(key="date_locale", default="en_US", language_strings=language_strings) -%}
+<h1>{{ section.title }}</h1>
+
+{{ section.description | markdown | safe }}
+
+<ul id="notes">
+    {%- for page in section.pages %}
+        <li>
+            <strong>{{ page.date | date(format=date_format, locale=date_locale) }}</strong>
+            <div>
+                {{ page.content | markdown | safe }}
+                <a href="{{ page.permalink | safe }}">View Post →</a>
+            </div>
+        </li>
+    {%- endfor %}
+</ul>
+
+{% endblock content %}

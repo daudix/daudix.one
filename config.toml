@@ -16,7 +16,7 @@ extra_syntaxes_and_themes = ["sublime"]
 highlight_theme = "css"
 highlight_themes_css = [
 	{ theme = "monokai-pro-dark", filename = "syntax-theme-dark.css" },
-	{ theme = "monokai-pro-light", filename = "syntax-theme-light.css" }
+	{ theme = "monokai-pro-light", filename = "syntax-theme-light.css" },
 ]
 smart_punctuation = true
 bottom_footnotes = true
@@ -38,7 +38,7 @@ show_share_button = true
 show_backlinks = true
 csp = [
 	{ directive = "font-src", domains = ["'self'"] },
-	{ directive = "img-src", domains = ["'self'", "https:" ,"data:"] },
+	{ directive = "img-src", domains = ["'self'", "https:", "data:"] },
 	{ directive = "media-src", domains = ["'self'", "https:"] },
 	{ directive = "script-src", domains = ["'self'"] },
 	{ directive = "style-src", domains = ["'self'", "'unsafe-inline'"] },
@@ -46,7 +46,7 @@ csp = [
 	{ directive = "connect-src", domains = ["https://mstdn.social", "https://social.treehouse.systems", "https://status.cafe", "https://api.lanyard.rest"] },
 	{ directive = "frame-ancestors", domains = ["'none'"] },
 	{ directive = "base-uri", domains = ["'none'"] },
-	{ directive = "form-action", domains = ["'none'"] }
+	{ directive = "form-action", domains = ["'none'"] },
 ]
 
 [extra.nav]
@@ -54,9 +54,12 @@ auto_hide = true
 show_feed = true
 links = [
 	{ url = "@/blog/_index.md", name = "Blog" },
-	{ url = "@/find/index.md", name = "Find" },
 	{ url = "@/design/index.md", name = "Design" },
-	{ url = "@/coffee/index.md", name = "Coffee" },
+	{ name = "More", menu = [
+		{ url = "@/calendar/index.md", name = "Calendar" },
+		{ url = "@/microblog/_index.md", name = "Microblog" },
+		{ url = "@/snug-nook/index.md", name = "Snug Nook" },
+	] },
 ]
 
 [extra.footer]
@@ -64,10 +67,10 @@ show_copyright = true
 show_powered_by = true
 show_fediring = true
 links = [
+	{ url = "@/coffee/index.md", name = "Coffee" },
 	{ url = "@/colophon/index.md", name = "Colophon" },
 	{ url = "@/commissions/index.md", name = "Commissions" },
-	{ url = "@/calendar/index.md", name = "Calendar" },
-	{ url = "@/snug-nook/index.md", name = "Snug Nook" }
+	{ url = "@/find/index.md", name = "Find" },
 ]
 
 [extra.comments]
