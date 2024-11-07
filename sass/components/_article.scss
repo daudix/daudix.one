@@ -11,10 +11,19 @@
 
 	#banner {
 		position: fixed;
+		animation: banner-load var(--transition-longer);
 		transition: none;
 		margin: 0;
 		inset-block-start: 0;
 		inset-inline-start: 0;
+
+		@keyframes banner-load {
+			from {
+				transform: var(--hover);
+				opacity: 0;
+				filter: blur(0.25rem);
+			}
+		}
 	}
 
 	& + article > #heading {
