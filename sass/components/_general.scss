@@ -69,7 +69,7 @@ main {
 	margin: 4.25rem auto 4rem;
 	width: min(var(--container-width), 90%);
 
-	& > *:not(#banner-container, #fluttershy, #comments main > *),
+	& > *:not(#banner-container, #buttons-container, #fluttershy, #comments main > *),
 	& ~ #site-footer {
 		animation: main-load var(--transition-bezier-longer);
 

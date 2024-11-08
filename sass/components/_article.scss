@@ -70,13 +70,21 @@
 	position: fixed;
 	flex-direction: column;
 	gap: 0.5rem;
+	animation: buttons-load var(--transition-bezier) 0.525s;
 	inset-block-end: 1rem;
 	inset-inline-end: 1rem;
+
+	@keyframes buttons-load {
+		from {
+			transform: translateX(1rem);
+			opacity: 0;
+		}
+	}
 
 	@media only screen and (max-width: 720px) {
 		position: static;
 		flex-direction: row-reverse;
-		// justify-content: center;
+		animation: none;
 		margin-block-start: 2rem;
 	}
 

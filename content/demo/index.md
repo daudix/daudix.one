@@ -472,9 +472,6 @@ With `range` type:
 ```
 
 <input type="range" max="100" value="33" id="range">
-<!-- For the demo purposes only -->
-<small id="range-value"></small>
-<!-- End -->
 
 ### Figure Captions (`<figcaption>`)
 
