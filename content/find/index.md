@@ -138,42 +138,42 @@ I have changed the Fediverse instance I'm on a lot, so to make sure nothing is l
 <small>From newest to oldest ↓</small>
 <ol id="timeline">
   <li>
-    <strong>May 5, 2024 - Today</strong>
+    <strong>05 May 2024 - Today</strong>
     <a href="https://vmst.io/@daudix">vmst.io</a>
     <span>Main profile</span>
   </li>
   <li>
-    <strong>Jan 8, 2024 - Today</strong>
+    <strong>08 Jan 2024 - Today</strong>
     <a href="https://pleroma.envs.net/daudix">pleroma.envs.net</a>
     <span>Personal profile</span>
   </li>
   <li>
-    <strong>Nov 20, 2023 - May 7, 2024</strong>
+    <strong>20 Nov 2023 - 07 May 2024</strong>
     <a href="https://social.treehouse.systems/@daudix">social.treehouse.systems</a>
     <span>Main profile</span>
   </li>
   <li>
-    <strong>May 21, 2024 - Today</strong>
+    <strong>21 May 2024 - Today</strong>
     <a href="https://lemmy.zip/u/daudix">lemmy.zip</a>
     <span>Link aggregator</span>
   </li>
   <li>
-    <strong>Aug 7, 2023 - May 21, 2024</strong>
+    <strong>07 Aug 2023 - 21 May 2024</strong>
     <a href="https://toast.ooo/u/daudix">toast.ooo</a>
     <span>Link aggregator</span>
   </li>
   <li>
-    <strong>Mar 7, 2023 - Today</strong>
+    <strong>07 Mar 2023 - Today</strong>
     <a href="https://pixelfed.social/Daudix">pixelfed.social</a>
     <span>Photo album</span>
   </li>
   <li>
-    <strong>Feb 17, 2023 - Mar 7, 2023</strong>
+    <strong>17 Feb 2023 - 07 Mar 2023</strong>
     <a href="https://pixey.org/Daudix">pixey.org</a>
     <span>Photo album</span>
   </li>
   <li>
-    <strong>Sep 1, 2022 - Nov 20, 2023</strong>
+    <strong>01 Sep 2022 - 20 Nov 2023</strong>
     <a href="https://mstdn.social/@Daudix">mstdn.social</a>
     <span>Main profile</span>
   </li>
