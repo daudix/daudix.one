@@ -28,16 +28,19 @@
 								{%- for link in link.menu -%}
 									{%- if link.url is matching('https?://') %}
 										<li>
-											<a href="{{ link.url }}" rel="{{ rel_attributes }}" class="external">
+											<a href="{{ link.url }}" rel="{{ rel_attributes }}" class="external{% if link.new %} new{% endif %}">
 												{{- macros_translate::translate(key=link.name, default=link.name, language_strings=language_strings) -}}
 											</a>
 										</li>
 									{%- else %}
 										<li>
-											<a href="{{ get_url(path=link.url, lang=lang)}}"
-												{%- if current_url | default(value='/') | trim_end_matches(pat='/') | safe == get_url(path=link.url, lang=lang) | trim_end_matches(pat='/') | safe -%}
-													class="active"
-												{%- endif -%}>
+											<a href="{{ get_url(path=link.url, lang=lang)}}" class="
+												{% if link.new %}
+													new
+												{% endif %}
+												{% if current_url | default(value='/') | trim_end_matches(pat='/') | safe == get_url(path=link.url, lang=lang) | trim_end_matches(pat='/') | safe %}
+													active
+												{% endif %}">
 												{{- macros_translate::translate(key=link.name, default=link.name, language_strings=language_strings) -}}
 											</a>
 										</li>
@@ -48,16 +51,19 @@
 			 		 </li>
 				{%- elif link.url is matching('https?://') %}
 					<li>
-						<a href="{{ link.url }}" rel="{{ rel_attributes }}" class="external">
+						<a href="{{ link.url }}" rel="{{ rel_attributes }}" class="external{% if link.new %} new{% endif %}">
 							{{- macros_translate::translate(key=link.name, default=link.name, language_strings=language_strings) -}}
 						</a>
 					</li>
 				{%- else %}
 					<li>
-						<a href="{{ get_url(path=link.url, lang=lang)}}"
-							{%- if current_url | default(value='/') | trim_end_matches(pat='/') | safe == get_url(path=link.url, lang=lang) | trim_end_matches(pat='/') | safe -%}
-								class="active"
-							{%- endif -%}>
+						<a href="{{ get_url(path=link.url, lang=lang)}}" class="
+							{% if link.new %}
+								new
+							{% endif %}
+							{% if current_url | default(value='/') | trim_end_matches(pat='/') | safe == get_url(path=link.url, lang=lang) | trim_end_matches(pat='/') | safe %}
+								active
+							{% endif %}">
 							{{- macros_translate::translate(key=link.name, default=link.name, language_strings=language_strings) -}}
 						</a>
 					</li>
