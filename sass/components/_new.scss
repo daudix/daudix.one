@@ -1,0 +1,29 @@
+// When commissions will stop being new? Who knows!
+// Edit: Well, now it's calendar that is new...
+// Edit 2: Well, now it's Snug Nook that is new...
+// Edit 3: Well, now it's a separate class...
+.new {
+	position: relative;
+
+	&:hover::after {
+		transform: rotate(10deg) var(--hover);
+		box-shadow: var(--edge-highlight), var(--shadow-raised);
+	}
+
+	&::after {
+		display: block;
+		position: absolute;
+		transform: rotate(0deg);
+		transition: var(--transition-bezier);
+		inset-block-start: -0.5rem;
+		inset-inline-end: -0.5rem;
+		box-shadow: var(--edge-highlight), var(--shadow);
+		border-radius: 999px;
+		background-color: var(--red-fg);
+		padding: 0.25rem 0.3125rem;
+		content: "New!";
+		color: var(--contrast-color);
+		font-size: var(--font-size-x-small);
+		line-height: 1;
+	}
+}
