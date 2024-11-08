@@ -55,8 +55,8 @@ links = [
 	{ url = "@/blog/_index.md", name = "Blog" },
 	{ url = "@/design/index.md", name = "Design" },
 	{ name = "More", menu = [
+		{ url = "@/nanolog/_index.md", name = "Nanolog" },
 		{ url = "@/calendar/index.md", name = "Calendar" },
-		{ url = "@/microblog/_index.md", name = "Microblog" },
 		{ url = "@/snug-nook/index.md", name = "Snug Nook" },
 	] },
 ]

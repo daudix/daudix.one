@@ -11,8 +11,8 @@
         <li>
             <strong>{{ page.date | date(format="%d %B %Y, %R", locale=date_locale) }}</strong>
             <div>
-                {{ page.content | markdown | safe }}
                 <a href="{{ page.permalink | safe }}">View Post →</a>
+                {{ page.content | markdown | safe }}
             </div>
         </li>
     {%- endfor %}
