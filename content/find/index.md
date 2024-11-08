@@ -138,60 +138,44 @@ I have changed the Fediverse instance I'm on a lot, so to make sure nothing is l
 <small>From newest to oldest ↓</small>
 <ol id="timeline">
   <li>
-    <small>
-      <span class="timeline-title">May 5, 2024 - Today</span>
-      <a href="https://vmst.io/@daudix">vmst.io</a>
-      <span class="timeline-badge">Main profile</span>
-    </small>
+    <strong>May 5, 2024 - Today</strong>
+    <a href="https://vmst.io/@daudix">vmst.io</a>
+    <span>Main profile</span>
   </li>
   <li>
-    <small>
-      <span class="timeline-title">Jan 8, 2024 - Today</span>
-      <a href="https://pleroma.envs.net/daudix">pleroma.envs.net</a>
-      <span class="timeline-badge">Personal profile</span>
-    </small>
+    <strong>Jan 8, 2024 - Today</strong>
+    <a href="https://pleroma.envs.net/daudix">pleroma.envs.net</a>
+    <span>Personal profile</span>
   </li>
   <li>
-    <small>
-      <span class="timeline-title">Nov 20, 2023 - May 7, 2024</span>
-      <a href="https://social.treehouse.systems/@daudix">social.treehouse.systems</a>
-      <span class="timeline-badge">Main profile</span>
-    </small>
+    <strong>Nov 20, 2023 - May 7, 2024</strong>
+    <a href="https://social.treehouse.systems/@daudix">social.treehouse.systems</a>
+    <span>Main profile</span>
   </li>
   <li>
-    <small>
-      <span class="timeline-title">May 21, 2024 - Today</span>
-      <a href="https://lemmy.zip/u/daudix">lemmy.zip</a>
-      <span class="timeline-badge">Link aggregator</span>
-    </small>
+    <strong>May 21, 2024 - Today</strong>
+    <a href="https://lemmy.zip/u/daudix">lemmy.zip</a>
+    <span>Link aggregator</span>
   </li>
   <li>
-    <small>
-      <span class="timeline-title">Aug 7, 2023 - May 21, 2024</span>
-      <a href="https://toast.ooo/u/daudix">toast.ooo</a>
-      <span class="timeline-badge">Link aggregator</span>
-    </small>
+    <strong>Aug 7, 2023 - May 21, 2024</strong>
+    <a href="https://toast.ooo/u/daudix">toast.ooo</a>
+    <span>Link aggregator</span>
   </li>
   <li>
-    <small>
-      <span class="timeline-title">Mar 7, 2023 - Today</span>
-      <a href="https://pixelfed.social/Daudix">pixelfed.social</a>
-      <span class="timeline-badge">Photo album</span>
-    </small>
+    <strong>Mar 7, 2023 - Today</strong>
+    <a href="https://pixelfed.social/Daudix">pixelfed.social</a>
+    <span>Photo album</span>
   </li>
   <li>
-    <small>
-      <span class="timeline-title">Feb 17, 2023 - Mar 7, 2023</span>
-      <a href="https://pixey.org/Daudix">pixey.org</a>
-      <span class="timeline-badge">Photo album</span>
-    </small>
+    <strong>Feb 17, 2023 - Mar 7, 2023</strong>
+    <a href="https://pixey.org/Daudix">pixey.org</a>
+    <span>Photo album</span>
   </li>
   <li>
-    <small>
-      <span class="timeline-title">Sep 1, 2022 - Nov 20, 2023</span>
-      <a href="https://mstdn.social/@Daudix">mstdn.social</a>
-      <span class="timeline-badge">Main profile</span>
-    </small>
+    <strong>Sep 1, 2022 - Nov 20, 2023</strong>
+    <a href="https://mstdn.social/@Daudix">mstdn.social</a>
+    <span>Main profile</span>
   </li>
 </ol>
 

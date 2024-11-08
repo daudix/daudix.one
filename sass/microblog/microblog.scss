@@ -10,9 +10,11 @@ h1 + p {
 	margin: 2rem auto 0;
 	border-width: 0.25rem;
 	border-inline-start: 0.25rem solid;
-	border-image-source: linear-gradient(to bottom,
-			var(--accent-color) calc(100% - 2.5rem),
-			transparent);
+	border-image-source: linear-gradient(
+		to bottom,
+		var(--accent-color) calc(100% - 2.5rem),
+		transparent
+	);
 	border-image-slice: 1;
 	padding-inline-start: 0;
 	width: min(calc(var(--container-width) / 1.5), 100%);
