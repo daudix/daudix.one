@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+{%- set date_locale = macros_translate::translate(key="date_locale", default="en_US", language_strings=language_strings) -%}
+<h1>{{ section.title }}<a href="atom.xml"><i class="icon feed"></i></a></h1>
+
+{{ section.description | markdown | safe }}
+
+<ul id="nanolog-list">
+    {%- for page in section.pages %}
+        <li>
+            <strong>{{ page.date | date(format="%d %B %Y, %R", locale=date_locale) }}</strong>
+            <div>
+                <a href="{{ page.permalink | safe }}">View Post</a>
+                {{ page.content | safe }}
+            </div>
+        </li>
+    {%- endfor %}
+</ul>
+
+{% endblock content %}

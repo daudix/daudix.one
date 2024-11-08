@@ -2,20 +2,20 @@
 
 {% block content %}
 {%- set date_locale = macros_translate::translate(key="date_locale", default="en_US", language_strings=language_strings) -%}
-<h1>{{ section.title }}<a href="atom.xml"><i class="icon feed"></i></a></h1>
+<div id="nanolog">
+	{%- if page.lower -%}
+		<a id="nanolog-higher" href="{{ page.lower.permalink }}">
+			<span>{{ page.lower.date | date(format="%d %B %Y, %R", locale=date_locale) }}</span>
+		</a>
+	{%- endif -%}
 
-{{ section.description | markdown | safe }}
+	<h1 id="nanolog-header">{{ page.date | date(format="%d %B %Y, %R", locale=date_locale) }}</h1>
+	{{ page.content | safe }}
 
-<ul id="notes">
-    {%- for page in section.pages %}
-        <li>
-            <strong>{{ page.date | date(format="%d %B %Y, %R", locale=date_locale) }}</strong>
-            <div>
-                <a href="{{ page.permalink | safe }}">View Post →</a>
-                {{ page.content | markdown | safe }}
-            </div>
-        </li>
-    {%- endfor %}
-</ul>
-
+	{%- if page.higher -%}
+		<a id="nanolog-lower" href="{{ page.higher.permalink }}">
+			<span>{{ page.higher.date | date(format="%d %B %Y, %R", locale=date_locale) }}</span>
+		</a>
+	{%- endif -%}
+</div>
 {% endblock content %}

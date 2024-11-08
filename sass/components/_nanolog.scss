@@ -1,0 +1,30 @@
+#nanolog-lower,
+#nanolog-higher {
+	display: block;
+	position: relative;
+	line-height: 1;
+
+	&::before {
+		display: block;
+		position: absolute;
+		inset-block-start: 0;
+		inset-inline-start: -1.625rem;
+		border: 0.25rem solid var(--accent-color);
+		border-radius: 50%;
+		background-color: var(--bg-color);
+		width: 0.5rem;
+		height: 0.5rem;
+		content: "";
+	}
+}
+
+#nanolog-header {
+	margin: 1rem 0;
+}
+
+#nanolog {
+	margin: 0 auto;
+	border-inline-start: 0.25rem solid var(--accent-color);
+	padding-inline-start: 1rem;
+	width: min(calc(var(--container-width) / 1.5), 100%);
+}

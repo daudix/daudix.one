@@ -3,7 +3,7 @@ h1 + p {
 	text-align: center;
 }
 
-#notes {
+#nanolog-list {
 	display: flex;
 	flex-direction: column;
 	gap: 1rem;
@@ -33,7 +33,6 @@ h1 + p {
 		&::before {
 			display: block;
 			position: absolute;
-			transition: var(--transition);
 			inset-block-start: 0;
 			inset-inline-start: -0.625rem;
 			border: 0.25rem solid var(--accent-color);
@@ -61,6 +60,7 @@ h1 + p {
 			& > a {
 				float: inline-end;
 				transition: all var(--transition), transform var(--transition-bezier);
+				margin-inline-start: 1rem;
 				box-shadow: var(--edge-highlight);
 				border-radius: 999px;
 				background-color: var(--bg-muted-1);
