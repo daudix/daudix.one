@@ -43,8 +43,6 @@ steps:
       - git rm -r "*" || true # Don't fail if there's nothing to remove
       # Copy the output of the build step
       - cp -ar ../public/. .
-      # Copy .domains in place (Duckquill specific. you should just place it in ./static/)
-      - cp ../.domains .
       # Commit and push all static files with the source commit hash
       - git add --all
       - git commit -m "Woodpecker CI ${CI_COMMIT_SHA} [SKIP CI]" --allow-empty
