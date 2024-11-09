@@ -49,13 +49,13 @@ a:hover {
 	margin-bottom: 0.5rem;
 	box-shadow: var(--edge-highlight), var(--shadow);
 	border-radius: var(--rounded-corner);
-	background-color: var(--primary-color-alpha);
+	background-color: var(--bg-muted-1);
 	padding: 0.5rem;
 }
 
 .status-username {
 	margin-bottom: 0.5rem;
-	color: var(--fg-muted-5);
+	color: var(--fg-muted-2);
 	font-size: 0.875rem;
 }
 
@@ -65,6 +65,6 @@ a:hover {
 
 .status-content {
 	margin: 0;
-	color: var(--primary-color);
+	color: var(--accent-color);
 	font-weight: bold;
 }
