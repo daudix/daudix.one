@@ -1,0 +1,70 @@
+@use "components/variables";
+
+@import "components/_variables.scss";
+
+@include theme-variables using ($theme) {
+    @if $theme == "dark" {
+		--contrast-color: #000c;
+		--accent-color: #ff6188;
+    }
+
+    @else {
+        --accent-color: #e14775;
+  		--contrast-color: #fff;
+    }
+}
+
+
+body {
+	text-wrap: pretty;
+	background: var(--bg-overlay), url("https://daudix.one/static.gif"), var(--accent-color);
+	background-blend-mode: normal, difference;
+	color: var(--fg-color);
+	line-height: 1.5;
+	font-family: var(--font-system-ui), var(--font-emoji);
+	overflow-wrap: break-word;
+
+	@media (prefers-reduced-motion) {
+		background: var(--bg-overlay), url("https://daudix.one/static-static.gif"), var(--accent-color);
+	}
+}
+
+a {
+	color: var(--accent-color);
+	font-weight: bold;
+	text-decoration-thickness: max(1px, 0.0625em);
+}
+
+a:hover {
+	text-decoration-style: wavy;
+}
+
+.profile-picture {
+	box-shadow: var(--shadow);
+	border-radius: 50%;
+	max-width: 6rem;
+}
+
+.status {
+	margin-bottom: 0.5rem;
+	box-shadow: var(--edge-highlight), var(--shadow);
+	border-radius: var(--rounded-corner);
+	background-color: var(--primary-color-alpha);
+	padding: 0.5rem;
+}
+
+.status-username {
+	margin-bottom: 0.5rem;
+	color: var(--fg-muted-5);
+	font-size: 0.875rem;
+}
+
+.status-username a {
+	font-size: 1rem;
+}
+
+.status-content {
+	margin: 0;
+	color: var(--primary-color);
+	font-weight: bold;
+}
