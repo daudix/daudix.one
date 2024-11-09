@@ -182,10 +182,11 @@ hr {
 
 	&::after {
 		position: relative;
-		inset-block-start: -1.25rem;
-		content: "❦";
+		inset-block-start: calc(-0.5em - 0.1875rem);
+		content: "☙❧";
 		color: var(--fg-muted-1);
-		font-size: var(--font-size-x-large);
+		font-size: var(--font-size-xx-large);
+		line-height: 1;
 	}
 }
 

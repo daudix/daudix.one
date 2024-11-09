@@ -186,6 +186,10 @@
 					background-color: var(--purple-bg-2);
 				}
 			}
+
+			.details {
+				border-block-start-color: var(--purple-bg-2);
+			}
 		}
 
 		&.featured {
@@ -224,6 +228,10 @@
 					background-color: var(--yellow-bg-2);
 				}
 			}
+
+			.details {
+				border-block-start-color: var(--yellow-bg-2);
+			}
 		}
 
 		&.hot {
@@ -258,6 +266,10 @@
 					background-color: var(--red-bg-2);
 				}
 			}
+
+			.details {
+				border-block-start-color: var(--red-bg-2);
+			}
 		}
 
 		.badge {
@@ -283,7 +295,8 @@
 			align-items: center;
 			gap: 0.25rem;
 			margin-block-start: 1rem;
-			border-block-start: max(1px, 0.0625rem) solid var(--bg-muted-2);
+			border-block-start: max(1px, 0.0625rem) solid;
+			border-block-start-color: var(--bg-muted-2);
 			padding-block-start: 0.5rem;
 		}
 	}
