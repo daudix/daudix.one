@@ -50,6 +50,7 @@ I see... we also have:
 - Most of my friends
 - No voice channels, that's right, shy folks
 - Time zone roles that no other server has
+- Custom emojis on both Discord and Matrix
 - Color roles that every other server also has
 - Duckquill and this website's updates and devlog channels
 
