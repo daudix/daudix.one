@@ -17,7 +17,7 @@
 		text-decoration: none;
 
 		&:hover {
-			box-shadow: var(--edge-highlight);
+			box-shadow: var(--edge-highlight), var(--shadow);
 			background-color: var(--bg-muted-1);
 
 			.post-title {

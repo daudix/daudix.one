@@ -7,7 +7,7 @@
 	</p>
 	<div class="marquee-wrapper">
 		<div class="marquee">
-			<ul>
+			<ul style="--duration: {{ section.extra.buttons | length * 2 }}s">
 				{% for button in section.extra.buttons %}
 					<li>
 						{% if button.url %}
@@ -31,7 +31,7 @@
 					<iframe id="increment" src="https://incr.easrng.net/badge?key={{ config.base_url | replace(from='https://', to='') }}" title="increment badge"></iframe>
 				</li>
 			</ul>
-			<ul>
+			<ul style="--duration: {{ section.extra.buttons | length * 2 }}s">
 				{% for button in section.extra.buttons %}
 					<li>
 						{% if button.url %}
@@ -59,7 +59,7 @@
 	</div>
 	<div class="marquee-wrapper">
 		<div class="marquee">
-			<ul>
+			<ul style="--duration: {{ section.extra.stamps | length * 2 }}s">
 				{% for stamp in section.extra.stamps %}
 					<li>
 						{% if stamp.url %}
@@ -80,7 +80,7 @@
 					</li>
 				{% endfor %}
 			</ul>
-			<ul>
+			<ul style="--duration: {{ section.extra.stamps | length * 2 }}s">
 				{% for stamp in section.extra.stamps %}
 					<li>
 						{% if stamp.url %}
