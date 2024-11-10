@@ -45,14 +45,14 @@ Isn't it wonderful, spectacular, and extremely fops-car? ^w^ :3
 I see... we also have:
 
 - ??? room
-- Starboard
 - Memeboard
+- Hall of... Shame
 - Most of my friends
 - No voice channels, that's right, shy folks
 - Time zone roles that no other server has
-- Custom emojis on both Discord and Matrix
 - Color roles that every other server also has
 - Duckquill and this website's updates and devlog channels
+- Custom emojis on both Discord and Matrix (but mostly on Discord)
 
 Plus we got "locations" metaphor; `#general` and `#welcome`? Nope. We have `#living-room` and `#hallway`!
 
@@ -60,7 +60,13 @@ Plus we got "locations" metaphor; `#general` and `#welcome`? Nope. We have `#liv
 >
 > Ughhh, fiiine. You're so miserable, I'm only joining this damn server because I feel bad for you.
 
-Uh, this works too? Here, choose your pill:
+Nuh-uh, you have to read the [rules](@/snug-nook/rules.md) first :3c
+
+> <div><img class="no-hover" src="macboy.png" alt="Evil MacBoy's avatar." /><strong>Evil MacBoy</strong><small>Tomorrow at 24:59</small></div>
+>
+> Okay, I guess these makes sense.
+
+Swag! Now you can choose your pill<sup>*</sup>:
 
 <div class="icon-grid">
 
@@ -81,3 +87,5 @@ Uh, this works too? Here, choose your pill:
 </a>
 
 </div>
+
+<small>Like, the red or blue one... Anyway.</small>
