@@ -9,7 +9,10 @@
 <ul id="nanolog-list">
     {%- for page in section.pages %}
         <li>
-            <strong>{{ page.date | date(format="%d %B %Y, %R", locale=date_locale) }}</strong>
+            <div>
+                <strong>{{ page.date | date(format="%d %B %Y, %R", locale=date_locale) }}</strong>
+                <small>{{ page.title }}</small>
+            </div>
             <div>
                 <a href="{{ page.permalink | safe }}">View Post</a>
                 {{ page.content | safe }}

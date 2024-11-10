@@ -1,5 +1,5 @@
-#nanolog-lower,
-#nanolog-higher {
+#nanolog-higher,
+#nanolog-lower {
 	display: block;
 	position: relative;
 	line-height: 1;
@@ -18,9 +18,24 @@
 	}
 }
 
+#nanolog-higher {
+	margin-block-end: -1rem;
+}
+
 #nanolog {
 	margin: 0 auto;
 	border-inline-start: 0.25rem solid var(--accent-color);
 	padding-inline-start: 1rem;
 	width: min(calc(var(--container-width) / 1.5), 100%);
+}
+
+#nanolog-title {
+	border-block-end: max(1px, 0.0625rem) solid var(--bg-muted-2);
+	padding-block-end: 1rem;
+
+	small {
+		color: var(--fg-muted-1);
+		font-size: var(--font-size-large);
+		line-height: 1;
+	}
 }

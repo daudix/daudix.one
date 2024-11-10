@@ -10,6 +10,9 @@
 	{%- endif -%}
 
 	<h1>{{ page.date | date(format="%d %B %Y, %R", locale=date_locale) }}</h1>
+	<p id="nanolog-title">
+		<small>{{ page.title }}</small>
+	</p>
 	{{ page.content | safe }}
 
 	{%- if page.higher -%}
