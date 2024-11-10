@@ -188,7 +188,6 @@
 
 		img,
 		#increment {
-			filter: var(--drop-shadow);
 			transition: all var(--transition), transform var(--transition-bezier);
 			margin: 0;
 		}

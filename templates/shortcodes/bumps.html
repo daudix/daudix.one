@@ -13,14 +13,14 @@
 						{% if button.url %}
 							<a href="{{ button.url }}">
 								<img
-									class="pixels transparent no-hover"
+									class="pixels transparent no-hover drop-shadow"
 									alt="{{ button.alt }}"
 									src="index/buttons/{{ button.button }}"
 								/>
 							</a>
 						{% else %}
 							<img
-								class="pixels transparent no-hover"
+								class="pixels transparent no-hover drop-shadow"
 								alt="{{ button.alt }}"
 								src="index/buttons/{{ button.button }}"
 							/>
@@ -28,7 +28,7 @@
 					</li>
 				{% endfor %}
 				<li>
-					<iframe id="increment" src="https://incr.easrng.net/badge?key={{ config.base_url | replace(from='https://', to='') }}" title="increment badge"></iframe>
+					<iframe class="drop-shadow" id="increment" src="https://incr.easrng.net/badge?key={{ config.base_url | replace(from='https://', to='') }}" title="increment badge"></iframe>
 				</li>
 			</ul>
 			<ul style="--duration: {{ section.extra.buttons | length * 2 }}s">
@@ -37,14 +37,14 @@
 						{% if button.url %}
 							<a href="{{ button.url }}">
 								<img
-									class="pixels transparent no-hover"
+									class="pixels transparent no-hover drop-shadow"
 									alt="{{ button.alt }}"
 									src="index/buttons/{{ button.button }}"
 								/>
 							</a>
 						{% else %}
 							<img
-								class="pixels transparent no-hover"
+								class="pixels transparent no-hover drop-shadow"
 								alt="{{ button.alt }}"
 								src="index/buttons/{{ button.button }}"
 							/>
@@ -52,7 +52,7 @@
 					</li>
 				{% endfor %}
 				<li>
-					<iframe id="increment" src="https://incr.easrng.net/badge?key={{ config.base_url | replace(from='https://', to='') }}" title="increment badge"></iframe>
+					<iframe class="drop-shadow" id="increment" src="https://incr.easrng.net/badge?key={{ config.base_url | replace(from='https://', to='') }}" title="increment badge"></iframe>
 				</li>
 			</ul>
 		</div>
@@ -65,14 +65,14 @@
 						{% if stamp.url %}
 							<a href="{{ stamp.url }}">
 								<img
-									class="pixels transparent no-hover"
+									class="pixels transparent no-hover drop-shadow"
 									alt="{{ stamp.alt }}"
 									src="index/stamps/{{ stamp.stamp }}"
 								/>
 							</a>
 						{% else %}
 							<img
-								class="pixels transparent no-hover"
+								class="pixels transparent no-hover drop-shadow"
 								alt="{{ stamp.alt }}"
 								src="index/stamps/{{ stamp.stamp }}"
 							/>
@@ -86,14 +86,14 @@
 						{% if stamp.url %}
 							<a href="{{ stamp.url }}">
 								<img
-									class="pixels transparent no-hover"
+									class="pixels transparent no-hover drop-shadow"
 									alt="{{ stamp.alt }}"
 									src="index/stamps/{{ stamp.stamp }}"
 								/>
 							</a>
 						{% else %}
 							<img
-								class="pixels transparent no-hover"
+								class="pixels transparent no-hover drop-shadow"
 								alt="{{ stamp.alt }}"
 								src="index/stamps/{{ stamp.stamp }}"
 							/>
@@ -113,8 +113,8 @@
 					If you want to link back to me, use one of these buttons:
 				</p>
 				<p>
-					<img class="pixels transparent no-hover" alt="daudix" src="index/buttons/daudix.gif" />
-					<img class="pixels transparent no-hover" alt="daudix-alt" src="index/buttons/daudix-alt.gif" />
+					<img class="pixels transparent no-hover drop-shadow" alt="daudix" src="index/buttons/daudix.gif" />
+					<img class="pixels transparent no-hover drop-shadow" alt="daudix-alt" src="index/buttons/daudix-alt.gif" />
 				</p>
 				<blockquote class="note">
 					<p class="alert-title">
