@@ -16,7 +16,7 @@
 		align-items: center;
 		gap: 1rem;
 		transition: all var(--transition), transform var(--transition-bezier);
-		box-shadow: var(--edge-highlight);
+		box-shadow: var(--edge-highlight), var(--shadow);
 		border-radius: var(--rounded-corner);
 		background-color: var(--bg-muted-1);
 		padding: 1rem;
