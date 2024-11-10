@@ -22,6 +22,16 @@
 		padding: 1rem;
 		overflow: hidden;
 
+		@media (prefers-color-scheme: dark) {
+			&.has-banner {
+				--accent-color: var(--accent-color-dark) !important;
+				--bg-color: var(--bg-color-dark) !important;
+				--fg-muted-1: var(--fg-muted-1-dark) !important;
+				--fg-muted-2: var(--fg-muted-2-dark) !important;
+				--glass-bg: var(--glass-bg-dark) !important;
+			}
+		}
+
 		&:hover {
 			h3::after {
 				transform: none;

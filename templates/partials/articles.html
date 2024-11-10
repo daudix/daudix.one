@@ -27,7 +27,24 @@
 		{%- if page.extra.banner -%}
 			{%- set blurnail = resize_image(path=page.colocated_path ~ page.extra.banner, width=4, height=2, op="fill", format="webp") -%}
 		{%- endif -%}
-		<article {% if article_type %}class="{{ article_type }}"{% endif %} {% if blurnail %}style="--blurnail: url('{{ blurnail.url }}')"{% endif %}>
+		<article class="{% if article_type %}{{ article_type }}{% endif %}{% if page.extra.banner %} has-banner{% endif %}" style="
+			{% if blurnail %}
+			 --blurnail: url('{{ blurnail.url }}');
+			{% endif %}
+
+			{% if page.extra.banner %}
+				--accent-color: {{ page.extra.accent_color }};
+				--accent-color-dark: {{ page.extra.accent_color_dark }};
+				--bg-color-dark: color-mix(in srgb, var(--accent-color) 10%, black);
+				--bg-muted-1: rgb(from var(--accent-color) r g b / var(--color-opacity-1));
+				--bg-muted-2: rgb(from var(--accent-color) r g b / var(--color-opacity-2));
+				--fg-muted-1: color-mix(in srgb, var(--accent-color) 15%, rgb(0 0 0 / 0.5));
+				--fg-muted-1-dark: color-mix(in srgb, var(--accent-color) 15%, rgb(255 255 255 / 0.5));
+				--fg-muted-2: color-mix(in srgb, var(--accent-color) 15%, rgb(0 0 0 / 0.6));
+				--fg-muted-2-dark: color-mix(in srgb, var(--accent-color) 15%, rgb(255 255 255 / 0.6));
+				--glass-bg: color-mix(in srgb, var(--accent-color) 10%, rgb(255 255 255 / var(--dim-opacity)));
+				--glass-bg-dark: color-mix(in srgb, var(--accent-color) 15%, rgb(0 0 0 / var(--dim-opacity)));
+			{% endif %}">
 			<a href="{{ page.permalink | safe }}"></a>
 			{% if article_type %}
 				<span class="badge">
