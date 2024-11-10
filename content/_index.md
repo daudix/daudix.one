@@ -139,7 +139,7 @@ And lastly, to quote [Jeffrey](https://hyperreal.coffee/about/):
 
 Occasionally I contribute to random FOSS projects, either by creating and improving icons, translating them into Russian, or even crafting a logo.
 
-Mor my design work, have a look at my [design page](@/design/index.md); it's mostly icons, but also some wallpapers (one of them is part of GNOME) and logos.
+For my design work, have a look at my [design page](@/design/index.md); it's mostly icons, but also some wallpapers (one of them is part of GNOME) and logos.
 
 ## IndieWeb
 
