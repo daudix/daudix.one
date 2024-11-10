@@ -38,3 +38,7 @@ If the user continues to be nasty, they will be:
 - Permanently banned.
 
 However, if the user's actions are too nasty, levels may be skipped depending on the severity of the nastiness.
+
+## Appeal
+
+If you feel that you have been unfairly punished, feel free to discuss it with the [admin](@/find/index.md#contacts) or the moderator behind this. Misunderstandings happen.
