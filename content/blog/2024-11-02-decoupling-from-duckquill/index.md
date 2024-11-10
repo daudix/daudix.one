@@ -4,6 +4,8 @@ description = "It's time for it to live its own life."
 [taxonomies]
 tags = ["100DaysToOffload", "Duckquill"]
 [extra]
+accent_color = "#5c5d5e"
+accent_color_dark = "#b0b1b1"
 banner = "banner.webp"
 [extra.comments]
 id = "113415328427289687"

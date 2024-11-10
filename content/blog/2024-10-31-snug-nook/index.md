@@ -5,6 +5,8 @@ updated = 2024-11-01
 [taxonomies]
 tags = ["100DaysToOffload"]
 [extra]
+accent_color = "#6a535c"
+accent_color_dark = "#a98ea2"
 banner = "banner.webp"
 [extra.comments]
 id = "113404729751512002"

@@ -4,6 +4,8 @@ description = "Experimenting with my logo once again, with something actually ne
 [taxonomies]
 tags = ["100DaysToOffload", "Design", "Inkscape"]
 [extra]
+accent_color = "#d85a28"
+accent_color_dark = "#b66cb9"
 banner = "banner.webp"
 [extra.comments]
 id = "113165388369757692"

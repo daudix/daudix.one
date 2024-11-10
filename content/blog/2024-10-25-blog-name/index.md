@@ -4,6 +4,8 @@ description = "That's right, and it's stupid one as well."
 [taxonomies]
 tags = ["100DaysToOffload"]
 [extra]
+accent_color = "#7a5893"
+accent_color_dark = "#c59ae4"
 banner = "banner.png"
 [extra.comments]
 id = "113364857250574824"

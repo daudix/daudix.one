@@ -4,6 +4,8 @@ description = "The brief story of Luddism. (1/?)"
 [taxonomies]
 tags = ["100DaysToOffload", "Luddism", "Neo-Luddism"]
 [extra]
+accent_color = "#8b7950"
+accent_color_dark = "#ccbe9d"
 banner = "banner.webp"
 [extra.comments]
 id = "112878216253904523"

@@ -4,6 +4,8 @@ description = "You've been what!?"
 [taxonomies]
 tags = ["100DaysToOffload"]
 [extra]
+accent_color = "#35353d"
+accent_color_dark = "#7a7687"
 banner = "banner.webp"
 [extra.comments]
 id = "113312629869813421"

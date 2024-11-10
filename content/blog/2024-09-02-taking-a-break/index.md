@@ -5,8 +5,8 @@ date = 2024-09-02T17:00:00+03:00
 [taxonomies]
 tags = ["100DaysToOffload", "Mental Health"]
 [extra]
-accent_color = "#757575"
-accent_color_dark = "#969696"
+accent_color = "#262c32"
+accent_color_dark = "#5f6c70"
 banner = "banner.webp"
 [extra.comments]
 id = "113068488938326761"

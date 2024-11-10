@@ -5,6 +5,8 @@ updated = 2024-09-26
 [taxonomies]
 tags = ["100DaysToOffload", "Unsplash"]
 [extra]
+accent_color = "#404a57"
+accent_color_dark = "#989590"
 banner = "banner.webp"
 toc = true
 [extra.comments]

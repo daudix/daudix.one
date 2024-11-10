@@ -4,6 +4,8 @@ description = "My Gemini capsule has been collecting dust. It's time to change t
 [taxonomies]
 tags = ["100DaysToOffload", "Gemini"]
 [extra]
+accent_color = "#557273"
+accent_color_dark = "#c0d2a5"
 banner = "banner.png"
 banner_pixels = true
 [extra.comments]

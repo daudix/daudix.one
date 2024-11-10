@@ -5,6 +5,8 @@ updated = 2024-06-25
 [taxonomies]
 tags = ["100DaysToOffload", "MacBoy", "Latte"]
 [extra]
+accent_color = "#69617e"
+accent_color_dark = "#987eae"
 hot = true
 banner = "banner.png"
 toc = true

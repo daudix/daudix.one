@@ -5,6 +5,8 @@ updated = 2024-08-29
 [taxonomies]
 tags = ["100DaysToOffload", "Gradience"]
 [extra]
+accent_color = "#7a6aa8"
+accent_color_dark = "#b9aee1"
 hot = true
 banner = "banner.webp"
 disclaimer = """

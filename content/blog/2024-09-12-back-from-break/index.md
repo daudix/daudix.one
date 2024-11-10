@@ -4,6 +4,8 @@ description = "I'm back from my pathetic, short break."
 [taxonomies]
 tags = ["100DaysToOffload"]
 [extra]
+accent_color = "#78635b"
+accent_color_dark = "#a18e88"
 banner = "banner.webp"
 [extra.comments]
 id = "113122090995619097"

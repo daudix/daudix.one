@@ -4,6 +4,8 @@ description = "Or don't, it's up to you to decide after all."
 [taxonomies]
 tags = ["100DaysToOffload", "Zola", "Jekyll"]
 [extra]
+accent_color = "#722330"
+accent_color_dark = "#d33c55"
 featured = true
 toc = true
 banner = "banner.webp"

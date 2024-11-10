@@ -5,6 +5,8 @@ updated = 2024-09-28
 [taxonomies]
 tags = ["100DaysToOffload", "Gaming", "Teardown"]
 [extra]
+accent_color = "#6d5542"
+accent_color_dark = "#ad8463"
 banner = "banner.webp"
 [extra.comments]
 id = "113210064391141759"
