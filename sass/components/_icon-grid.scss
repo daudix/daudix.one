@@ -23,7 +23,7 @@
 		color: var(--fg-muted-2);
 		text-decoration: none;
 
-		&:hover {
+		&:hover:not(:active) {
 			transform: translateY(-0.25rem);
 			opacity: 1;
 			filter: none;
@@ -33,7 +33,6 @@
 
 		&:active {
 			transform: var(--active);
-			background-color: var(--bg-muted-1);
 		}
 
 		.icon {
