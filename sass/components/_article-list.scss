@@ -8,7 +8,7 @@
 		--bg-overlay: var(--bg-muted-1);
 		position: relative;
 		transition: var(--transition-bezier);
-		box-shadow: var(--edge-highlight), var(--shadow-glass);
+		box-shadow: var(--edge-highlight), var(--shadow);
 		border-radius: var(--rounded-corner);
 		border-start-end-radius: 2.125rem;
 		border-end-end-radius: 1.8125rem;
@@ -32,7 +32,15 @@
 			}
 		}
 
-		&:hover {
+		&:hover h3::after {
+			transform: none;
+			opacity: 1;
+		}
+
+		&:hover:not(:active) {
+			transform: translateY(-1rem);
+			box-shadow: var(--edge-highlight), var(--shadow-glass);
+
 			h3::after {
 				transform: none;
 				opacity: 1;
