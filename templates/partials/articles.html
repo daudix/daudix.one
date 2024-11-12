@@ -27,12 +27,12 @@
 		{%- if page.extra.banner -%}
 			{%- set blurnail = resize_image(path=page.colocated_path ~ page.extra.banner, width=4, height=2, op="fill", format="webp") -%}
 		{%- endif -%}
-		<article class="{% if article_type %}{{ article_type }}{% endif %}{% if page.extra.banner and not article_type %} has-banner{% endif %}" style="
+		<article class="{% if article_type %}{{ article_type }}{% endif %}{% if page.extra.banner %} has-banner{% endif %}{% if page.extra.accent_color and not article_type %} colored{% endif %}" style="
 			{% if blurnail %}
 			 --blurnail: url('{{ blurnail.url }}');
 			{% endif %}
 
-			{% if page.extra.banner and not article_type %}
+			{% if page.extra.accent_color and not article_type %}
 				--accent-color: {{ page.extra.accent_color }};
 				--accent-color-dark: {{ page.extra.accent_color_dark }};
 				--bg-color-dark: color-mix(in srgb, var(--accent-color) 10%, black);

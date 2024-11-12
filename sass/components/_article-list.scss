@@ -12,18 +12,18 @@
 		border-radius: var(--rounded-corner);
 		border-start-end-radius: 2.125rem;
 		border-end-end-radius: 1.8125rem;
-		background-image:
-			linear-gradient(var(--bg-overlay), var(--bg-overlay)),
-			linear-gradient(var(--glass-bg), var(--glass-bg)),
-			var(--blurnail);
-		background-position: center;
-		background-size: cover;
 		background-color: var(--bg-overlay);
 		padding: 1rem;
 		overflow: hidden;
 
-		@media (prefers-color-scheme: dark) {
-			&.has-banner {
+		&.has-banner {
+			background-image: linear-gradient(var(--bg-overlay), var(--bg-overlay)), linear-gradient(var(--glass-bg), var(--glass-bg)), var(--blurnail);
+			background-position: center;
+			background-size: cover;
+		}
+
+		&.colored {
+			@media (prefers-color-scheme: dark) {
 				--accent-color: var(--accent-color-dark) !important;
 				--bg-color: var(--bg-color-dark) !important;
 				--fg-muted-1: var(--fg-muted-1-dark) !important;
