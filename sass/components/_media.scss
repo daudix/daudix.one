@@ -96,7 +96,7 @@ video {
 }
 
 img {
-	transition: var(--transition-bezier);
+	transition: all var(--transition), transform var(--transition-bezier);
 
 	&:not(
 			.no-hover,
