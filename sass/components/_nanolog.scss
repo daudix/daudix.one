@@ -29,13 +29,42 @@
 	width: min(calc(var(--container-width) / 1.5), 100%);
 }
 
-#nanolog-title {
-	border-block-end: max(1px, 0.0625rem) solid var(--bg-muted-2);
-	padding-block-end: 1rem;
 
-	small {
-		color: var(--fg-muted-1);
-		font-size: var(--font-size-large);
-		line-height: 1;
+
+#nanolog-heading {
+	display: flex;
+	flex-direction: column;
+
+	#nanolog-details {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		border-block-end: max(1px, 0.0625rem) solid var(--bg-muted-2);
+		padding-block-end: 1rem;
+
+		& > p {
+			margin: 0;
+			line-height: 1;
+		
+			small {
+				color: var(--fg-muted-1);
+				font-size: var(--font-size-large);
+				line-height: 1;
+			}
+		}
+
+		#buttons-container {
+			position: static;
+			flex-direction: row-reverse;
+			animation: none;
+			margin: 0;
+			inset-block-end: 0;
+			inset-inline-end: 0;
+
+			#backlinks summary + div {
+				width: min(var(--container-width) / 3, 90vw - 2.5rem);
+			}
+		}
 	}
 }
