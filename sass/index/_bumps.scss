@@ -118,7 +118,7 @@
 		img:not(:hover),
 		#increment:not(:hover) {
 			opacity: var(--dim-opacity);
-			filter: var(--drop-shadow) blur(0.25rem);
+			filter: blur(0.25rem);
 		}
 	}
 
@@ -190,6 +190,10 @@
 		#increment {
 			transition: all var(--transition), transform var(--transition-bezier);
 			margin: 0;
+
+			&:hover {
+				filter: blur(0) var(--drop-shadow);
+			}
 		}
 
 		img {
