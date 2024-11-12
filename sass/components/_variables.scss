@@ -19,6 +19,7 @@
 		// COLORS
 		--bg-color: color-mix(in srgb, var(--accent-color) 10%, black);
 		--bg-overlay: linear-gradient(rgb(0 0 0 / 0.9), rgb(0 0 0 / 0.9));
+		--bg-overlay-neutral: rgb(0 0 0 / var(--dim-opacity));
 		--fg-color: #fcfcfa;
 		--fg-contrast: #29242a;
 		--fg-muted-1: color-mix(in srgb, var(--accent-color) 15%, rgb(255 255 255 / 0.5));
@@ -40,6 +41,7 @@
 		// COLORS
 		--bg-color: color-mix(in srgb, var(--accent-color) 20%, white);
 		--bg-overlay: linear-gradient(rgb(255 255 255 / 0.8), rgb(255 255 255 / 0.8));
+		--bg-overlay-neutral: rgb(255 255 255 / var(--dim-opacity));
 		--bg-muted-1: rgb(from var(--accent-color) r g b / var(--color-opacity-1));
 		--bg-muted-2: rgb(from var(--accent-color) r g b / var(--color-opacity-2));
 		--fg-color: #29242a;
