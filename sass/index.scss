@@ -19,11 +19,11 @@ main {
     height: 100vh;
     line-height: 1;
 
-    a {
+    & > a {
         display: block;
 		transition: all var(--transition), letter-spacing var(--transition-bezier);
         font-weight: 900;
-        font-size: 5.3rem;
+        font-size: 4.625rem;
 	    letter-spacing: -0.05em;
         text-decoration: underline 0.125em solid;
         text-decoration-color: transparent;
@@ -42,7 +42,12 @@ main {
 
     p {
         margin: 0;
-        color: var(--fg-muted-2);
+    }
+
+    p:nth-of-type(2) {
+        position: absolute;
+        inset-block-end: 1rem;
+        inset-inline-start: 1rem;
     }
 
     div {
