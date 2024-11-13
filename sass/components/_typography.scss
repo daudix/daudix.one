@@ -183,9 +183,9 @@ hr {
 	&::after {
 		position: relative;
 		inset-block-start: calc(-0.5em - 0.1875rem);
-		content: "☙❧";
+		content: "❦";
 		color: var(--fg-muted-1);
-		font-size: var(--font-size-xx-large);
+		font-size: var(--font-size-x-large);
 		line-height: 1;
 	}
 }
