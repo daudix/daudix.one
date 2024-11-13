@@ -1,5 +1,9 @@
 {% extends "base.html" %}
 
-{% block content %}
-{{ section.content | safe }}
-{% endblock content %}
+{% block body %}
+<main>
+    <a href="{{ get_url(path='@/home/index.md', lang=lang) }}">daudix.one</a>
+    <p>1024x768 | non-essential javascript | 13+ | mild profanity</p>
+    <div></div>
+</main>
+{% endblock body %}

@@ -7,22 +7,22 @@
 	</p>
 	<div class="marquee-wrapper">
 		<div class="marquee">
-			<ul style="--duration: {{ section.extra.buttons | length * 2 }}s">
-				{% for button in section.extra.buttons %}
+			<ul style="--duration: {{ page.extra.buttons | length * 2 }}s">
+				{% for button in page.extra.buttons %}
 					<li>
 						{% if button.url %}
 							<a href="{{ button.url }}">
 								<img
 									class="pixels transparent no-hover"
 									alt="{{ button.alt }}"
-									src="index/buttons/{{ button.button }}"
+									src="buttons/{{ button.button }}"
 								/>
 							</a>
 						{% else %}
 							<img
 								class="pixels transparent no-hover"
 								alt="{{ button.alt }}"
-								src="index/buttons/{{ button.button }}"
+								src="buttons/{{ button.button }}"
 							/>
 						{% endif %}
 					</li>
@@ -31,22 +31,22 @@
 					<iframe id="increment" src="https://incr.easrng.net/badge?key={{ config.base_url | replace(from='https://', to='') }}" title="increment badge"></iframe>
 				</li>
 			</ul>
-			<ul style="--duration: {{ section.extra.buttons | length * 2 }}s">
-				{% for button in section.extra.buttons %}
+			<ul style="--duration: {{ page.extra.buttons | length * 2 }}s">
+				{% for button in page.extra.buttons %}
 					<li>
 						{% if button.url %}
 							<a href="{{ button.url }}">
 								<img
 									class="pixels transparent no-hover"
 									alt="{{ button.alt }}"
-									src="index/buttons/{{ button.button }}"
+									src="buttons/{{ button.button }}"
 								/>
 							</a>
 						{% else %}
 							<img
 								class="pixels transparent no-hover"
 								alt="{{ button.alt }}"
-								src="index/buttons/{{ button.button }}"
+								src="buttons/{{ button.button }}"
 							/>
 						{% endif %}
 					</li>
@@ -59,43 +59,43 @@
 	</div>
 	<div class="marquee-wrapper">
 		<div class="marquee">
-			<ul style="--duration: {{ section.extra.stamps | length * 2 }}s">
-				{% for stamp in section.extra.stamps %}
+			<ul style="--duration: {{ page.extra.stamps | length * 2 }}s">
+				{% for stamp in page.extra.stamps %}
 					<li>
 						{% if stamp.url %}
 							<a href="{{ stamp.url }}">
 								<img
 									class="pixels transparent no-hover"
 									alt="{{ stamp.alt }}"
-									src="index/stamps/{{ stamp.stamp }}"
+									src="stamps/{{ stamp.stamp }}"
 								/>
 							</a>
 						{% else %}
 							<img
 								class="pixels transparent no-hover"
 								alt="{{ stamp.alt }}"
-								src="index/stamps/{{ stamp.stamp }}"
+								src="stamps/{{ stamp.stamp }}"
 							/>
 						{% endif %}
 					</li>
 				{% endfor %}
 			</ul>
-			<ul style="--duration: {{ section.extra.stamps | length * 2 }}s">
-				{% for stamp in section.extra.stamps %}
+			<ul style="--duration: {{ page.extra.stamps | length * 2 }}s">
+				{% for stamp in page.extra.stamps %}
 					<li>
 						{% if stamp.url %}
 							<a href="{{ stamp.url }}">
 								<img
 									class="pixels transparent no-hover"
 									alt="{{ stamp.alt }}"
-									src="index/stamps/{{ stamp.stamp }}"
+									src="stamps/{{ stamp.stamp }}"
 								/>
 							</a>
 						{% else %}
 							<img
 								class="pixels transparent no-hover"
 								alt="{{ stamp.alt }}"
-								src="index/stamps/{{ stamp.stamp }}"
+								src="stamps/{{ stamp.stamp }}"
 							/>
 						{% endif %}
 					</li>
@@ -113,8 +113,8 @@
 					If you want to link back to me, use one of these buttons:
 				</p>
 				<p>
-					<img class="pixels transparent no-hover" alt="daudix" src="index/buttons/daudix.gif" />
-					<img class="pixels transparent no-hover" alt="daudix-alt" src="index/buttons/daudix-alt.gif" />
+					<img class="pixels transparent no-hover" alt="daudix" src="buttons/daudix.gif" />
+					<img class="pixels transparent no-hover" alt="daudix-alt" src="buttons/daudix-alt.gif" />
 				</p>
 				<blockquote class="note">
 					<p class="alert-title">

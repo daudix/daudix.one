@@ -1,0 +1,64 @@
+body {
+    --bg-overlay: linear-gradient(rgb(0 0 0 / var(--dim-opacity)), rgb(0 0 0 / var(--dim-opacity)));
+	background: var(--bg-overlay), url("static.gif"), black;
+	background-blend-mode: normal, difference;
+
+	@media (prefers-reduced-motion) {
+		background: var(--bg-overlay), url("static-static.gif"), black;
+	}
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    line-height: 1;
+
+    a {
+        display: block;
+		transition: all var(--transition), letter-spacing var(--transition-bezier);
+        font-weight: 900;
+        font-size: 5.3rem;
+	    letter-spacing: -0.05em;
+        text-decoration: underline 0.125em solid;
+        text-decoration-color: transparent;
+        text-underline-offset: 0.25em;
+
+        &:hover {
+            text-decoration-style: solid;
+            text-decoration-color: inherit;
+            text-underline-offset: 0.125em;
+        }
+
+        &:active {
+            letter-spacing: 0.05em;
+        }
+    }
+
+    p {
+        margin: 0;
+        color: var(--fg-muted-2);
+    }
+
+    div {
+        position: absolute;
+        inset-block-end: 1rem;
+        inset-inline-end: 1rem;
+        background-image: linear-gradient(
+            to right,
+            var(--red-fg),
+            var(--orange-fg),
+            var(--yellow-fg),
+            var(--green-fg),
+            var(--blue-fg),
+            var(--purple-fg)
+        );
+        width: 8rem;
+        height: 1rem;
+    }
+}

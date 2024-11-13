@@ -10,8 +10,8 @@
 		</a>
 		<ul>
 			<li id="home">
-				<a href="{{ get_url(path='/', lang=lang) }}"
-					{%- if current_url | default(value="/") | trim_end_matches(pat="/") | safe == get_url(path="/", lang=lang) | trim_end_matches(pat='/') | safe -%}
+				<a href="{{ get_url(path='@/home/index.md', lang=lang) }}"
+					{%- if current_url | default(value="/") | trim_end_matches(pat="/") | safe == get_url(path='@/home/index.md', lang=lang) | trim_end_matches(pat='/') | safe -%}
 						class="active"
 					{%- endif -%}>
 					<i class="icon"></i>
