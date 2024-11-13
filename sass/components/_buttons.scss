@@ -16,6 +16,7 @@
 		appearance: none;
 		cursor: pointer;
 		border: none;
+		font-family: inherit;
 
 		&:disabled {
 			cursor: not-allowed;
