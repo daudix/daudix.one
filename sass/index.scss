@@ -22,7 +22,7 @@ main {
     & > a {
         display: block;
 		transition: all var(--transition), transform var(--transition-bezier), letter-spacing var(--transition-bezier);
-        font-weight: 900;
+        font-weight: var(--font-weight-black);
         font-size: 4.625rem;
 	    letter-spacing: -0.05em;
         text-decoration: underline 0.125em solid;

@@ -130,7 +130,7 @@
 			border-radius: 999px;
 			background-color: transparent;
 			padding: 0.625rem 0.75rem;
-			font-weight: bold;
+			font-weight: var(--font-weight-semi-bold);
 			line-height: 1;
 			list-style: none;
 			text-align: center;
@@ -150,7 +150,7 @@
 
 		#home a {
 			color: var(--fg-muted-2);
-			font-weight: 800;
+			font-weight: var(--font-weight-extra-bold);
 
 			&:hover {
 				color: var(--fg-color);

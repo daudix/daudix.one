@@ -54,7 +54,7 @@
 
 		#comments-status {
 			color: var(--fg-muted-1);
-			font-weight: bold;
+			font-weight: var(--font-weight-semi-bold);
 			font-size: var(--font-size-x-large);
 			text-align: center;
 		}
@@ -126,7 +126,7 @@
 				grid-area: name;
 				align-items: center;
 				gap: 0.25rem;
-				font-weight: bold;
+				font-weight: var(--font-weight-semi-bold);
 
 				.instance {
 					transition: all var(--transition), transform var(--transition-bezier);
@@ -305,7 +305,7 @@
 				transition: all var(--transition), transform var(--transition-bezier);
 				margin-block-start: 1rem;
 				width: min(calc(var(--container-width) / 2), 100%);
-				font-weight: normal;
+				font-weight: var(--font-weight-normal);
 				text-decoration: none;
 
 				&:hover:not(:active) {

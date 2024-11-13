@@ -3,7 +3,7 @@ pre,
 code,
 kbd,
 samp {
-	font-family: var(--font-monospace-code);
+	font-family: var(--font-monospace), var(--font-ui-monospace);
 }
 
 code:not(pre code) {
@@ -44,7 +44,7 @@ pre {
 
 			th {
 				background-color: transparent;
-				font-weight: normal;
+				font-weight: var(--font-weight-normal);
 			}
 		}
 	}

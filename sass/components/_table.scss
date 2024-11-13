@@ -19,7 +19,7 @@ table {
 		th {
 			background-color: var(--bg-muted-2);
 			color: var(--fg-muted-2);
-			font-weight: bold;
+			font-weight: var(--font-weight-semi-bold);
 		}
 	}
 }

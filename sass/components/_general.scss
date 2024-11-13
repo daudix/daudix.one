@@ -18,8 +18,8 @@ body {
 	background-blend-mode: normal, difference;
 	min-height: 100vh;
 	color: var(--fg-color);
-	line-height: 1.5;
-	font-family: var(--font-system-ui), var(--font-emoji);
+	line-height: 1.6;
+	font-family: var(--font-sans-serif), var(--font-system-ui), var(--font-emoji);
 	overflow-wrap: break-word;
 
 	@media (prefers-reduced-motion) {

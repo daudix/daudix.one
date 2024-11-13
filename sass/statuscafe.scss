@@ -31,7 +31,7 @@ body {
 
 a {
 	color: var(--accent-color);
-	font-weight: bold;
+	font-weight: var(--font-weight-semi-bold);
 	text-decoration-thickness: max(1px, 0.0625em);
 }
 
@@ -66,5 +66,5 @@ a:hover {
 .status-content {
 	margin: 0;
 	color: var(--accent-color);
-	font-weight: bold;
+	font-weight: var(--font-weight-semi-bold);
 }

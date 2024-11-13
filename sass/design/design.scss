@@ -42,6 +42,7 @@ body {
 h1,
 h2 {
 	-webkit-background-clip: text;
+	filter: drop-shadow(max(1px, 0.0625em) max(1px, 0.0625em) rgb(0 0 0 / 0.6));
 	background-image: linear-gradient(
 		to bottom,
 		#cfc09f 27%,
@@ -50,8 +51,6 @@ h2 {
 	);
 	background-clip: text;
 	color: transparent;
-	font-weight: lighter;
-	font-family: var(--font-antique);
 }
 
 .media-grid {
@@ -111,7 +110,7 @@ h2 {
 		small {
 			display: block;
 			margin-block-start: 0.25rem;
-			font-weight: bold;
+			font-weight: var(--font-weight-semi-bold);
 		}
 	}
 

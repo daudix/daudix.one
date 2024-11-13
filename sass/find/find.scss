@@ -5,7 +5,7 @@
 	background-color: var(--bg-muted-1);
 	padding: 0.125rem 0.375rem;
 	color: var(--accent-color);
-	font-weight: bold;
+	font-weight: var(--font-weight-semi-bold);
 
 	@keyframes clock-blink {
 		from {
@@ -28,7 +28,7 @@
 	background-color: var(--bg-muted-1);
 	padding: 0.125rem 0.375rem;
 	color: var(--fg-muted-2);
-	font-weight: bold;
+	font-weight: var(--font-weight-semi-bold);
 
 	&.online {
 		background-color: var(--green-bg-1);
@@ -122,7 +122,7 @@
 			background-color: var(--bg-muted-1);
 			padding: 0.375rem 0.75rem;
 			color: var(--fg-muted-1);
-			font-weight: bold;
+			font-weight: var(--font-weight-semi-bold);
 			font-size: var(--font-size-small);
 			line-height: 1;
 		}

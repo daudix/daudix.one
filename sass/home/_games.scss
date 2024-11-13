@@ -200,7 +200,7 @@ details:first-of-type li:nth-of-type(3) li {
 		&:hover span {
 			transform: perspective(1rem) rotateX(10deg);
 			color: #62c2e0;
-			font-weight: 900;
+			font-weight: var(--font-weight-black);
 			text-shadow:
 				0 -0.125rem white,
 				0 0.125rem #675c83;
@@ -275,7 +275,7 @@ details:first-of-type li:nth-of-type(3) li {
 
 		&:hover span {
 			color: #e0a100;
-			font-weight: bold;
+			font-weight: var(--font-weight-semi-bold);
 			text-shadow: 0 0.0625rem 0 #413014;
 		}
 	}
@@ -286,7 +286,7 @@ details:first-of-type li:nth-of-type(3) li {
 		}
 
 		&:hover span {
-			font-weight: bold;
+			font-weight: var(--font-weight-semi-bold);
 		}
 	}
 

@@ -115,12 +115,12 @@
 		display: block;
 		color: rgb(0 0 0 / 0.8);
 		line-height: 1;
-		font-family: var(--font-monospace-code);
+		font-family: var(--font-monospace), var(--font-ui-monospace);
 	}
 
 	#polaroid-title {
 		margin-block-start: 0.5rem;
-		font-weight: bold;
+		font-weight: var(--font-weight-semi-bold);
 		font-size: var(--font-size-xx-small);
 		text-transform: uppercase;
 	}
@@ -134,7 +134,7 @@
 
 	#statuscafe-link {
 		margin-block-start: 0.5rem;
-		font-weight: normal;
+		font-weight: var(--font-weight-normal);
 		font-size: var(--font-size-xx-small);
 		text-decoration: none;
 

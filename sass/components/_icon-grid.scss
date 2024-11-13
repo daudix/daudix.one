@@ -47,14 +47,14 @@
 			gap: 0.25rem;
 
 			strong {
-				font-weight: bold;
+				font-weight: var(--font-weight-semi-bold);
 				font-size: var(--font-size-large);
 				line-height: 1;
 			}
 
 			p {
 				margin: 0;
-				font-weight: normal;
+				font-weight: var(--font-weight-normal);
 				font-size: var(--font-size-small);
 			}
 		}

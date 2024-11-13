@@ -76,9 +76,8 @@
 		h3 {
 			margin: 0;
 			color: var(--accent-color);
-			font-weight: bold;
+			font-weight: var(--font-weight-semi-bold);
 			line-height: 1;
-			font-family: var(--font-system-ui);
 
 			&::after {
 				--icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cpath d='m5.707 1.293 6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 1 1-1.414-1.414L9.586 8 4.293 2.707a1 1 0 1 1 1.414-1.414m0 0'/%3E%3C/svg%3E");
@@ -318,7 +317,7 @@
 			border-radius: 999px;
 			padding: 0.375rem 0.75rem;
 			height: fit-content;
-			font-weight: bold;
+			font-weight: var(--font-weight-semi-bold);
 			white-space: nowrap;
 
 			.icon {
@@ -431,7 +430,7 @@
 		background-color: var(--accent-color);
 		padding: 0.5rem 0.625rem;
 		color: var(--contrast-color);
-		font-weight: bold;
+		font-weight: var(--font-weight-semi-bold);
 		line-height: 1;
 		font-variant-numeric: tabular-nums;
 	}

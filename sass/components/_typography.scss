@@ -165,7 +165,7 @@ kbd {
 
 a {
 	color: var(--accent-color);
-	font-weight: bold;
+	font-weight: var(--font-weight-semi-bold);
 	text-decoration-thickness: max(1px, 0.0625em);
 
 	&:hover {
@@ -191,7 +191,7 @@ hr {
 }
 
 dt {
-	font-weight: bold;
+	font-weight: var(--font-weight-semi-bold);
 }
 
 dd {
@@ -231,7 +231,7 @@ details {
 		background-color: var(--bg-muted-1);
 		padding: 1rem;
 		color: var(--fg-muted-2);
-		font-weight: bold;
+		font-weight: var(--font-weight-semi-bold);
 		line-height: 1;
 		list-style: none;
 
@@ -304,6 +304,6 @@ li {
 
 	&::marker {
 		color: var(--accent-color);
-		font-weight: bold;
+		font-weight: var(--font-weight-semi-bold);
 	}
 }
