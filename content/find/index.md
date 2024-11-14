@@ -41,7 +41,7 @@ Feel free to reach out to me on any of these! I'm usually too shy to start the c
 <img class="transparent no-hover pixels drop-shadow icon" src="icons/signal.gif" alt="Pixel art Signal icon." />
 <div class="details">
 <strong>Signal</strong>
-<p><small>Telegram if they kept their privacy promises.</small></p>
+<p><small>Telegram if they kept privacy promises.</small></p>
 </div>
 </a>
 
@@ -49,7 +49,7 @@ Feel free to reach out to me on any of these! I'm usually too shy to start the c
 <img class="transparent no-hover pixels drop-shadow icon" src="icons/telegram.gif" alt="Pixel art Telegram icon." />
 <div class="details">
 <strong>Telegram</strong>
-<p><small>Discord level privacy advertised like it's not.</small></p>
+<p><small>Discord level privacy advertised as it's not.</small></p>
 </div>
 </a>
 
@@ -111,7 +111,7 @@ This is not a complete list, but rather list of places where I'm somewhat active
 <img class="transparent no-hover pixels drop-shadow icon" src="icons/lemmy.gif" alt="Pixel art Lemmy icon." />
 <div class="details">
 <strong>Lemmy</strong>
-<p><small>I've been a lurker since the Reddit days.</small></p>
+<p><small>Been a lurker since the Reddit days.</small></p>
 </div>
 </a>
 
@@ -189,7 +189,7 @@ I was using GitHub from the very start of my FOSS journey, but (not so) recently
 <img class="transparent no-hover pixels drop-shadow icon" src="icons/codeberg.gif" alt="Pixel art Codeberg icon." />
 <div class="details">
 <strong>Codeberg</strong>
-<p><small>My main forge with all most of my projects.</small></p>
+<p><small>My main forge with most of my projects.</small></p>
 </div>
 </a>
 
