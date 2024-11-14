@@ -37,16 +37,6 @@
 			opacity: 1;
 		}
 
-		&:hover:not(:active) {
-			transform: translateY(-1rem);
-			box-shadow: var(--edge-highlight), var(--shadow-glass);
-
-			h3::after {
-				transform: none;
-				opacity: 1;
-			}
-		}
-
 		&:active:not(:has(.tag:active)) {
 			transform: var(--active);
 		}
