@@ -175,19 +175,8 @@ a {
 
 hr {
 	margin: 2rem auto;
-	border: none;
-	border-block-start: 0.1875rem double var(--bg-muted-2);
-	overflow: visible;
-	text-align: center;
-
-	&::after {
-		position: relative;
-		inset-block-start: calc(-0.5em - 0.1875rem);
-		content: "❦";
-		color: var(--fg-muted-1);
-		font-size: var(--font-size-x-large);
-		line-height: 1;
-	}
+	border: 0.125rem solid var(--bg-muted-2);
+	border-radius: 999px;
 }
 
 dt {

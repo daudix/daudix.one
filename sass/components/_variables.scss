@@ -31,6 +31,18 @@
 		--green-fg: #a9dc76;
 		--blue-fg: #78dce8;
 		--purple-fg: #ab9df2;
+		--red-fg-muted-1: color-mix(in srgb, var(--red-fg) 15%, rgb(255 255 255 / 0.5));
+		--red-fg-muted-2: color-mix(in srgb, var(--red-fg) 15%, rgb(255 255 255 / 0.6));
+		--orange-fg-muted-1: color-mix(in srgb, var(--orange-fg) 15%, rgb(255 255 255 / 0.5));
+		--orange-fg-muted-2: color-mix(in srgb, var(--orange-fg) 15%, rgb(255 255 255 / 0.6));
+		--yellow-fg-muted-1: color-mix(in srgb, var(--yellow-fg) 15%, rgb(255 255 255 / 0.5));
+		--yellow-fg-muted-2: color-mix(in srgb, var(--yellow-fg) 15%, rgb(255 255 255 / 0.6));
+		--green-fg-muted-1: color-mix(in srgb, var(--green-fg) 15%, rgb(255 255 255 / 0.5));
+		--green-fg-muted-2: color-mix(in srgb, var(--green-fg) 15%, rgb(255 255 255 / 0.6));
+		--blue-fg-muted-1: color-mix(in srgb, var(--blue-fg) 15%, rgb(255 255 255 / 0.5));
+		--blue-fg-muted-2: color-mix(in srgb, var(--blue-fg) 15%, rgb(255 255 255 / 0.6));
+		--purple-fg-muted-1: color-mix(in srgb, var(--purple-fg) 15%, rgb(255 255 255 / 0.5));
+		--purple-fg-muted-2: color-mix(in srgb, var(--purple-fg) 15%, rgb(255 255 255 / 0.6));
 		--shade-color: rgb(0 0 0 / 0.25);
 		--shine: rgb(255 255 255 / 0.1);
 
@@ -65,6 +77,18 @@
 		--red-bg-2: rgb(from var(--red-fg) r g b / var(--color-opacity-2));
 		--yellow-bg-1: rgb(from var(--yellow-fg) r g b / var(--color-opacity-1));
 		--yellow-bg-2: rgb(from var(--yellow-fg) r g b / var(--color-opacity-2));
+		--red-fg-muted-1: color-mix(in srgb, var(--red-fg) 15%, rgb(0 0 0 / 0.5));
+		--red-fg-muted-2: color-mix(in srgb, var(--red-fg) 15%, rgb(0 0 0 / 0.6));
+		--orange-fg-muted-1: color-mix(in srgb, var(--orange-fg) 15%, rgb(0 0 0 / 0.5));
+		--orange-fg-muted-2: color-mix(in srgb, var(--orange-fg) 15%, rgb(0 0 0 / 0.6));
+		--yellow-fg-muted-1: color-mix(in srgb, var(--yellow-fg) 15%, rgb(0 0 0 / 0.5));
+		--yellow-fg-muted-2: color-mix(in srgb, var(--yellow-fg) 15%, rgb(0 0 0 / 0.6));
+		--green-fg-muted-1: color-mix(in srgb, var(--green-fg) 15%, rgb(0 0 0 / 0.5));
+		--green-fg-muted-2: color-mix(in srgb, var(--green-fg) 15%, rgb(0 0 0 / 0.6));
+		--blue-fg-muted-1: color-mix(in srgb, var(--blue-fg) 15%, rgb(0 0 0 / 0.5));
+		--blue-fg-muted-2: color-mix(in srgb, var(--blue-fg) 15%, rgb(0 0 0 / 0.6));
+		--purple-fg-muted-1: color-mix(in srgb, var(--purple-fg) 15%, rgb(0 0 0 / 0.5));
+		--purple-fg-muted-2: color-mix(in srgb, var(--purple-fg) 15%, rgb(0 0 0 / 0.6));
 		--shade-color: rgb(0 0 0 / 0.07);
 		--shine: rgb(255 255 255 / 0.3);
 

@@ -31,7 +31,7 @@
 					<iframe id="increment" src="https://incr.easrng.net/badge?key={{ config.base_url | replace(from='https://', to='') }}" title="increment badge"></iframe>
 				</li>
 			</ul>
-			<ul style="--duration: {{ page.extra.buttons | length * 2 }}s">
+			<ul style="--duration: {{ page.extra.buttons | length * 2 }}s" aria-hidden="true">
 				{% for button in page.extra.buttons %}
 					<li>
 						{% if button.url %}
@@ -80,7 +80,7 @@
 					</li>
 				{% endfor %}
 			</ul>
-			<ul style="--duration: {{ page.extra.stamps | length * 2 }}s">
+			<ul style="--duration: {{ page.extra.stamps | length * 2 }}s" aria-hidden="true">
 				{% for stamp in page.extra.stamps %}
 					<li>
 						{% if stamp.url %}

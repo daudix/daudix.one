@@ -115,30 +115,44 @@ Available alert types:
 
 {% alert(note=true) %}
 Useful information that users should know, even when skimming content.
+
+- I'm a list with an [inline](https://example.org) link.
 {% end %}
 
 {% alert(tip=true) %}
 Helpful advice for doing things better or more easily.
+
+- I'm a list with an [inline](https://example.org) link.
 {% end %}
 
 {% alert(important=true) %}
 Key information users need to know to achieve their goal.
+
+- I'm a list with an [inline](https://example.org) link.
 {% end %}
 
 {% alert(warning=true) %}
 Urgent info that needs immediate user attention to avoid problems.
+
+- I'm a list with an [inline](https://example.org) link.
 {% end %}
 
 {% alert(caution=true) %}
 Advises about risks or negative outcomes of certain actions.
+
+- I'm a list with an [inline](https://example.org) link.
 {% end %}
 
 {% alert(edit=true) %}
 Indicates that something has been edited.
+
+- I'm a list with an [inline](https://example.org) link.
 {% end %}
 
 {% alert(fact=true) %}
 Some uninteresting fact.
+
+- I'm a list with an [inline](https://example.org) link.
 {% end %}
 
 #### Images and Videos

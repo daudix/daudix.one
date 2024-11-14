@@ -1,9 +1,11 @@
 blockquote {
 	&.note {
 		border-inline-start: 0.25rem solid var(--blue-fg);
+		color: var(--blue-fg-muted-2);
 
 		.alert-title,
-		li::marker {
+		li::marker,
+		a {
 			color: var(--blue-fg);
 		}
 
@@ -16,9 +18,11 @@ blockquote {
 
 	&.tip {
 		border-inline-start: 0.25rem solid var(--green-fg);
+		color: var(--green-fg-muted-2);
 
 		.alert-title,
-		li::marker {
+		li::marker,
+		a {
 			color: var(--green-fg);
 		}
 
@@ -31,9 +35,11 @@ blockquote {
 
 	&.important {
 		border-inline-start: 0.25rem solid var(--purple-fg);
+		color: var(--purple-fg-muted-2);
 
 		.alert-title,
-		li::marker {
+		li::marker,
+		a {
 			color: var(--purple-fg);
 		}
 
@@ -46,9 +52,11 @@ blockquote {
 
 	&.warning {
 		border-inline-start: 0.25rem solid var(--yellow-fg);
+		color: var(--yellow-fg-muted-2);
 
 		.alert-title,
-		li::marker {
+		li::marker,
+		a {
 			color: var(--yellow-fg);
 		}
 
@@ -61,9 +69,11 @@ blockquote {
 
 	&.caution {
 		border-inline-start: 0.25rem solid var(--red-fg);
+		color: var(--red-fg-muted-2);
 
 		.alert-title,
-		li::marker {
+		li::marker,
+		a {
 			color: var(--red-fg);
 		}
 
@@ -79,7 +89,8 @@ blockquote {
 		border-inline-start: 0.25rem solid var(--fg-muted-2);
 
 		.alert-title,
-		li::marker {
+		li::marker,
+		a {
 			color: var(--fg-muted-2);
 		}
 	}
