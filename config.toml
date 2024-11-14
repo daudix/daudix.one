@@ -58,6 +58,8 @@ show_copy_button = true
 show_reading_time = true
 show_share_button = true
 show_backlinks = true
+# separator = "•"
+# title_separator = "-"
 csp = [
 	{ directive = "font-src", domains = ["'self'"] },
 	{ directive = "img-src", domains = ["'self'", "https:", "data:"] },

@@ -18,7 +18,6 @@ content="default-src 'none';
 		{%- set connect_src = connect_src ~ " " ~ goatcounter_url -%}
 	{%- endif %}
 
-
 	{#- Append comments host if present -#}
 	{%- if config.extra.comments -%}
 		{%- set connect_src = connect_src ~ " " ~ "https://" ~ config.extra.comments.host -%}

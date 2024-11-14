@@ -1,7 +1,7 @@
 {%- if page.title -%}
-	{{- page.title }} - {{ config.title -}}
+    {{- page.title }} {{ config.extra.title_separator | default(value="-") }} {{ config.title -}}
 {%- elif section.title -%}
-	{{- section.title }} - {{ config.title -}}
+    {{- section.title }} {{ config.extra.title_separator | default(value="-") }} {{ config.title -}}
 {%- else -%}
-	{{- config.title -}}
+    {{- config.title -}}
 {%- endif -%}

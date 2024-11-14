@@ -21,7 +21,7 @@
 						{{ page.date | date(format=date_format, locale=date_locale) -}}
 					</time>
 					{%- if page.updated -%}
-						<span> • </span>
+						<span> {{ config.extra.separator | default(value="•") }} </span>
 						<time datetime="{{ page.updated | date(format=' %+') }}">
 							{{- macros_translate::translate(key="updated", default="Updated on", language_strings=language_strings) }}
 							{{ page.updated | date(format=date_format, locale=date_locale) -}}
@@ -39,14 +39,14 @@
 					{%- if page.authors -%}
 						<span>{% include "partials/authors.html" -%}</span>
 						{%- if config.extra.show_reading_time -%}
-							<span> • </span>
+							<span> {{ config.extra.separator | default(value="•") }} </span>
 						{%- endif -%}
 					{%- endif -%}
 
 					{%- if config.extra.show_reading_time -%}
 						<span>{{ macros_translate::translate(key="minutes_read", number=page.reading_time, default="$NUMBER minute read", language_strings=language_strings) }}</span>
 						{%- if page.taxonomies -%}
-							<span> • </span>
+							<span> {{ config.extra.separator | default(value="•") }} </span>
 						{%- endif -%}
 					{%- endif -%}
 				</small>

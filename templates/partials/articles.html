@@ -20,9 +20,6 @@
 		{%- elif page.extra.hot -%}
 			{%- set article_type = "hot" -%}
 			{%- set article_string = macros_translate::translate(key="hot", default="Hot", language_strings=language_strings) -%}
-		{%- elif page.extra.poor -%}
-			{%- set article_type = "poor" -%}
-			{%- set article_string = macros_translate::translate(key="poor", default="Poor", language_strings=language_strings) -%}
 		{%- endif -%}
 		{%- if page.extra.banner -%}
 			{%- set blurnail = resize_image(path=page.colocated_path ~ page.extra.banner, width=4, height=2, op="fill", format="webp") -%}
@@ -63,7 +60,7 @@
 							{{- page.date | date(format=date_format, locale=date_locale) -}}
 						</time>
 						{%- if page.authors -%}
-							<span> • {% include "partials/authors.html" -%}</span>
+							<span> {{ config.extra.separator | default(value="•") }} {% include "partials/authors.html" -%}</span>
 						{%- endif -%}
 					</small>
 					{%- if page.taxonomies -%}
