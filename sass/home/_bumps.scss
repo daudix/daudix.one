@@ -39,9 +39,9 @@
 				flex-shrink: 1;
 				flex-wrap: wrap;
 				justify-content: center;
-				gap: 0.25rem;
 				animation: none;
 				transition: none;
+				margin-inline-end: 0;
 				height: fit-content;
 
 				&:nth-of-type(2) {
@@ -152,9 +152,11 @@
 		ul {
 			display: flex;
 			flex-shrink: 0;
+			gap: 0.25rem;
 			animation: marquee-scroll var(--duration) linear infinite;
 			transition: var(--transition);
 			margin: 0;
+			margin-inline-end: 0.25rem;
 			padding: 0;
 			list-style: none;
 
@@ -170,7 +172,6 @@
 		}
 
 		li {
-			margin-inline-end: 0.25rem;
 			padding: 0;
 		}
 
