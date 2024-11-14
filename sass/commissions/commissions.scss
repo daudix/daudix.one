@@ -115,7 +115,6 @@ body::before {
 
 		li {
 			display: flex;
-			margin: 0;
 			padding: 0;
 
 			label {
@@ -167,7 +166,6 @@ body::before {
 	list-style: none;
 
 	li {
-		margin: 0;
 		border-radius: var(--rounded-corner-small);
 		background-color: var(--bg-muted-1);
 		padding: 0.5rem 0.75rem;
