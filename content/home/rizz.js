@@ -4,7 +4,7 @@ function rizzItUp() {
 	const rizzDialog = document.getElementById("rizz-dialog");
 	rizzDialog.remove();
 
-	const vineBoomSoundEffect = "home/vine-boom.mp3";
+	const vineBoomSoundEffect = "vine-boom.mp3";
 	new Audio(vineBoomSoundEffect).play();
 
 	const mainContent = document.getElementById("main-content");
