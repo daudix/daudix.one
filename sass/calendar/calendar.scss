@@ -4,6 +4,14 @@
 
 @font-face {
 	font-style: normal;
+	font-weight: 100 900;
+	src: url("fonts/inter.woff2") format("woff2");
+	font-family: "Inter";
+	font-display: swap;
+}
+
+@font-face {
+	font-style: normal;
 	font-weight: 300;
 	src: url("fonts/univers.woff2") format("woff2");
 	font-family: "Univers";
@@ -17,6 +25,7 @@ body {
 	background: white;
 	color: black;
 	font-size: 5mm;
+	font-family: "Inter", var(--font-system-ui);
 
 	@media screen {
 		margin: 10mm auto;
@@ -67,7 +76,7 @@ body {
 	gap: 5mm;
 	margin-block-end: -7mm;
 	line-height: 1;
-	font-family: "Univers", var(--font-industrial);
+	font-family: "Univers", var(--font-system-ui);
 
 	#month-number {
 		font-size: 68mm;
