@@ -40,7 +40,7 @@ nanolog
 - **Brand-New Color Palette**  
 I bet you already noticed; purple is gone! Okay, not forever, just until I get over the fact that Monokai Pro's purple looks more like indigo than purple. GNOME's palette is also gone now, replaced by Monokai Pro now that it has a light variant (I am so happy about that). I also changed the internal palette, it used to be black and white with different opacities, now it uses accent color. Makes things more saturated. I also got rid of a bunch of intermediate variables; before there were 5 levels of `--fg-muted`, now there are only 2. `--accent-color-alpha` has been replaced by `--bg-muted` with two levels of opacity for normal and hovered state, since that was the only thing it was used for.
 - **Bouncier Everything**  
-All transitions (that's 99 `transition' properties, mind you) have been changed to use cubic bezier transitions where appropriate; for transformations and such, however, color transitions still use simple ease transitions, since cubic bezier doesn't work well for that. So what does all this mean? Well, everything is bouncy now, try hovering over some images, pressing buttons, reloading the page, see how it goes on and then take a little step back? Yeah.
+All transitions (that's 99 `transition` properties, mind you) have been changed to use cubic bezier transitions where appropriate; for transformations and such, however, color transitions still use simple ease transitions, since cubic bezier doesn't work well for that. So what does all this mean? Well, everything is bouncy now, try hovering over some images, pressing buttons, reloading the page, see how it goes on and then take a little step back? Yeah.
 - **New Headings**  
 That's right, no more serif headings. I liked them, but I got bored, so here we are, with bold colorful headings.
 - **Loads of Load Animations**  
@@ -54,7 +54,7 @@ Like microblog, but even smaller (not really, I just liked the name). I plan to 
 - [Bye Skeuo](@/nanolog/2024-11-10T00:42:00Z-bye-skeuo.md)  
 The [coffee](@/coffee/index.md) page no longer has the skeuo mode switch. Sad, but it got way too annoying to fix. Maybe it'll come back later.
 - **Blog Atom Feed Changed**  
-Now it's under the `blog' directory instead of the site root. This is because it was mixed with nanolog, so I had to split it up.
+Now it's under the `blog` directory instead of the site root. This is because it was mixed with nanolog, so I had to split it up.
 - **Reworded Homepage**  
 I've reworded (more like rewritten) most of the homepage, now it should make a bit more sense.
 - **Spotlights**  
