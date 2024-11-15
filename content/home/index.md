@@ -5,7 +5,6 @@ styles = ["home/home.css"]
 scripts = ["home/statuscafe.js", "home/fluttershy.js", "home/rizz.js"]
 no_header = true
 buttons = [
-  { alt = "a proud member of the blue team of 512KB club", button = "blue-team.gif", url = "https://512kb.club" },
   { alt = "aperturelabs", button = "aperturelabs.gif", url = "https://www.aperturescience.com" },
   { alt = "ddg", button = "ddg.gif", url = "https://duckduckgo.com" },
   { alt = "firefox3", button = "firefox3.gif", url = "https://getfirefox.com" },
