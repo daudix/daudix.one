@@ -7,10 +7,15 @@
 	box-shadow: none;
 	border-radius: 0;
 	background-color: transparent;
-	width: 1.5em;
-	height: 1.5em;
+	width: 1.5rem;
+	height: 1.5rem;
 
 	&:hover {
 		transform: scale(2);
+	}
+
+	&.big {
+		width: 3rem;
+		height: 3rem;
 	}
 }

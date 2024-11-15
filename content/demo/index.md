@@ -283,6 +283,29 @@ Alright, this one doesn't simplify anything, it just adds a CRT-like effect arou
 
 There's also a `cursor` class that you can add to a span with e.g. `█` character to simulate the terminal cursor. It doesn't work from inside Markdown code blocks though.
 
+#### Emoji
+
+Use any custom emoji from Akkoma ([pleroma.envs.net](https://pleroma.envs.net) is the default instance).
+
+Available variables are:
+
+- `host`: Instance on which the emoji is located.
+- `pack`: Name of the emoji pack.
+- `name`: Name of the emoji itself.
+- `big`: Makes the emoji bigger.
+
+```jinja2
+{{/* emoji(pack="neofox", name="neofox_googly_shocked") */}}
+```
+
+Hello there, I'm an {{ emoji(pack="neofox", name="neofox_googly_shocked") }} inline custom emoji.
+
+```jinja2
+{{/* emoji(pack="floof", name="afloofLoad", big=true) */}}
+```
+
+{{ emoji(pack="floof", name="afloofLoad", big=true) }}
+
 #### YouTube
 
 Allows to embed a YouTube video using youtube-nocookie.
