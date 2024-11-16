@@ -1,54 +1,36 @@
 <aside id="bumps">
-	<strong class="title">Bumps</strong>
+	<strong class="title">Buttons</strong>
 	<p>
-		<small>
-			<strong>Bu</strong>ttons + Sta<strong>mps</strong> = Bumps
-		</small>
+		<small>AKA 88x31's</small>
 	</p>
 	<div class="marquee-wrapper">
 		<div class="marquee">
-			<ul style="--duration: {{ page.extra.buttons | length * 2 }}s">
-				{% for button in page.extra.buttons %}
+			<ul style="--duration: {{ page.extra.buttons_url | length * 2 }}s">
+				{% for button in page.extra.buttons_url %}
 					<li>
-						{% if button.url %}
-							<a href="{{ button.url }}">
-								<img
-									class="pixels transparent no-hover"
-									alt="{{ button.alt }}"
-									src="buttons/{{ button.button }}"
-								/>
-							</a>
-						{% else %}
+						<a href="{{ button.url }}">
 							<img
 								class="pixels transparent no-hover"
 								alt="{{ button.alt }}"
 								src="buttons/{{ button.button }}"
 							/>
-						{% endif %}
+						</a>
 					</li>
 				{% endfor %}
 				<li>
 					<iframe id="increment" src="https://incr.easrng.net/badge?key={{ config.base_url | replace(from='https://', to='') }}" title="increment badge"></iframe>
 				</li>
 			</ul>
-			<ul style="--duration: {{ page.extra.buttons | length * 2 }}s" aria-hidden="true">
-				{% for button in page.extra.buttons %}
+			<ul style="--duration: {{ page.extra.buttons_url | length * 2 }}s" aria-hidden="true">
+				{% for button in page.extra.buttons_url %}
 					<li>
-						{% if button.url %}
-							<a href="{{ button.url }}">
-								<img
-									class="pixels transparent no-hover"
-									alt="{{ button.alt }}"
-									src="buttons/{{ button.button }}"
-								/>
-							</a>
-						{% else %}
+						<a href="{{ button.url }}">
 							<img
 								class="pixels transparent no-hover"
 								alt="{{ button.alt }}"
 								src="buttons/{{ button.button }}"
 							/>
-						{% endif %}
+						</a>
 					</li>
 				{% endfor %}
 				<li>
@@ -59,45 +41,25 @@
 	</div>
 	<div class="marquee-wrapper">
 		<div class="marquee">
-			<ul style="--duration: {{ page.extra.stamps | length * 2 }}s">
-				{% for stamp in page.extra.stamps %}
+			<ul style="--duration: {{ page.extra.buttons | length * 2 }}s">
+				{% for button in page.extra.buttons %}
 					<li>
-						{% if stamp.url %}
-							<a href="{{ stamp.url }}">
-								<img
-									class="pixels transparent no-hover"
-									alt="{{ stamp.alt }}"
-									src="stamps/{{ stamp.stamp }}"
-								/>
-							</a>
-						{% else %}
-							<img
-								class="pixels transparent no-hover"
-								alt="{{ stamp.alt }}"
-								src="stamps/{{ stamp.stamp }}"
-							/>
-						{% endif %}
+						<img
+							class="pixels transparent no-hover"
+							alt="{{ button.alt }}"
+							src="buttons/{{ button.button }}"
+						/>
 					</li>
 				{% endfor %}
 			</ul>
-			<ul style="--duration: {{ page.extra.stamps | length * 2 }}s" aria-hidden="true">
-				{% for stamp in page.extra.stamps %}
+			<ul style="--duration: {{ page.extra.buttons | length * 2 }}s" aria-hidden="true">
+				{% for button in page.extra.buttons %}
 					<li>
-						{% if stamp.url %}
-							<a href="{{ stamp.url }}">
-								<img
-									class="pixels transparent no-hover"
-									alt="{{ stamp.alt }}"
-									src="stamps/{{ stamp.stamp }}"
-								/>
-							</a>
-						{% else %}
-							<img
-								class="pixels transparent no-hover"
-								alt="{{ stamp.alt }}"
-								src="stamps/{{ stamp.stamp }}"
-							/>
-						{% endif %}
+						<img
+							class="pixels transparent no-hover"
+							alt="{{ button.alt }}"
+							src="buttons/{{ button.button }}"
+						/>
 					</li>
 				{% endfor %}
 			</ul>
