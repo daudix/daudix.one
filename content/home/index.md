@@ -52,7 +52,7 @@ buttons = [
 stamps = [
   { alt = "adhd", stamp = "adhd.gif" },
   { alt = "always-tired", stamp = "always-tired.gif" },
-  { alt = "cassettes", stamp = "cassettes.gif" },
+  # { alt = "cassettes", stamp = "cassettes.gif" },
   { alt = "cold", stamp = "cold.gif" },
   { alt = "derpy", stamp = "derpy.gif" },
   # { alt = "error", stamp = "error.gif" },
