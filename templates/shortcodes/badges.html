@@ -11,7 +11,7 @@
 						<a href="{{ button.url }}">
 							<img
 								class="pixels transparent no-hover"
-								alt="{{ button.alt }}"
+								alt="{{ button.name | trim_end_matches(pat='.gif') }}"
 								src="buttons/{{ button.name }}"
 							/>
 						</a>
@@ -27,7 +27,7 @@
 						<a href="{{ button.url }}">
 							<img
 								class="pixels transparent no-hover"
-								alt="{{ button.alt }}"
+								alt="{{ button.name | trim_end_matches(pat='.gif') }}"
 								src="buttons/{{ button.name }}"
 							/>
 						</a>
