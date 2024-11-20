@@ -1,14 +1,5 @@
 @use "components/variables";
 
-// Geist
-@font-face {
-	font-style: normal;
-	font-weight: 100 900;
-	src: url("https://codeberg.org/daudix/website/raw/branch/main/static/fonts/geist.woff2") format("woff2");
-	font-family: "Geist";
-	font-display: swap;
-}
-
 @import "components/_variables.scss";
 
 @include theme-variables using ($theme) {
@@ -30,7 +21,7 @@ body {
 	background-blend-mode: normal, difference;
 	color: var(--fg-color);
 	line-height: 1.5;
-	font-family: var(--font-sans-serif), var(--font-system-ui), var(--font-emoji);
+	font-family: var(--font-system-ui), var(--font-emoji);
 	overflow-wrap: break-word;
 
 	@media (prefers-reduced-motion) {
