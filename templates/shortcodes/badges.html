@@ -5,14 +5,14 @@
 	</p>
 	<div class="marquee-wrapper">
 		<div class="marquee">
-			<ul style="--duration: {{ page.extra.buttons_url | length * 2 }}s">
-				{% for button in page.extra.buttons_url %}
+			<ul style="--duration: {{ page.extra.buttons | length * 2 }}s">
+				{% for button in page.extra.buttons %}
 					<li>
 						<a href="{{ button.url }}">
 							<img
 								class="pixels transparent no-hover"
 								alt="{{ button.alt }}"
-								src="buttons/{{ button.button }}"
+								src="buttons/{{ button.name }}"
 							/>
 						</a>
 					</li>
@@ -21,14 +21,14 @@
 					<iframe id="increment" src="https://incr.easrng.net/badge?key={{ config.base_url | replace(from='https://', to='') }}" title="increment badge"></iframe>
 				</li>
 			</ul>
-			<ul style="--duration: {{ page.extra.buttons_url | length * 2 }}s" aria-hidden="true">
-				{% for button in page.extra.buttons_url %}
+			<ul style="--duration: {{ page.extra.buttons | length * 2 }}s" aria-hidden="true">
+				{% for button in page.extra.buttons %}
 					<li>
 						<a href="{{ button.url }}">
 							<img
 								class="pixels transparent no-hover"
 								alt="{{ button.alt }}"
-								src="buttons/{{ button.button }}"
+								src="buttons/{{ button.name }}"
 							/>
 						</a>
 					</li>
@@ -39,30 +39,13 @@
 			</ul>
 		</div>
 	</div>
-	<div class="marquee-wrapper">
-		<div class="marquee">
-			<ul style="--duration: {{ page.extra.buttons | length * 2 }}s">
-				{% for button in page.extra.buttons %}
-					<li>
-						<img
-							class="pixels transparent no-hover"
-							alt="{{ button.alt }}"
-							src="buttons/{{ button.button }}"
-						/>
-					</li>
-				{% endfor %}
-			</ul>
-			<ul style="--duration: {{ page.extra.buttons | length * 2 }}s" aria-hidden="true">
-				{% for button in page.extra.buttons %}
-					<li>
-						<img
-							class="pixels transparent no-hover"
-							alt="{{ button.alt }}"
-							src="buttons/{{ button.button }}"
-						/>
-					</li>
-				{% endfor %}
-			</ul>
+	<div id="badges-neocities">
+		<hr />
+		<p>
+			<small>The rest is on my Neocities site; it includes all the badges present here, plus lots of fun ones, and even some stamps!</small>
+		</p>
+		<div class="buttons centered">
+			<a class="big external" href="https://daudix.neocities.org">Neocities Site</a>
 		</div>
 	</div>
 	<input type="checkbox" id="badges-expand" class="visually-hidden" />

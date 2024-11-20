@@ -22,14 +22,6 @@
 			margin: 0;
 			padding: 0;
 			overflow: visible;
-
-			&:nth-of-type(1) {
-				margin-block-end: 1rem;
-			}
-
-			&:nth-of-type(2) .marquee ul {
-				flex-direction: row;
-			}
 		}
 
 		.marquee {
@@ -73,6 +65,14 @@
 			transform: scale(0.5);
 			opacity: 0;
 			pointer-events: none;
+		}
+
+		#badges-neocities {
+			display: block;
+
+			hr {
+				margin-block-start: 2rem;
+			}
 		}
 
 		#here {
@@ -131,19 +131,6 @@
 		margin: -1rem -1rem -2.125rem;
 		padding: 1rem 0 2.125rem;
 		overflow: hidden;
-
-		&:nth-of-type(1) {
-			margin-block-end: -2.125rem;
-		}
-
-		&:nth-of-type(2) {
-			margin-block-start: -2.125rem;
-
-			.marquee ul {
-				flex-direction: row-reverse;
-				animation-direction: reverse;
-			}
-		}
 	}
 
 	.marquee {
@@ -172,7 +159,10 @@
 		}
 
 		li {
+			display: flex;
 			padding: 0;
+			height: fit-content;
+			line-height: 0;
 		}
 
 		a:active {
@@ -204,6 +194,14 @@
 			width: 5.5rem;
 			height: 1.9375rem;
 		}
+	}
+
+	#badges-neocities {
+		display: none;
+	}
+
+	.buttons {
+		margin-block-start: 0;
 	}
 
 	#badges-expand {

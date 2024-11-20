@@ -25,8 +25,9 @@ main {
         font-weight: var(--font-weight-black);
         font-size: 4.375rem;
 	    letter-spacing: -0.05em;
-        text-decoration: underline 0.125em solid;
+        text-decoration: underline solid;
         text-decoration-color: transparent;
+        text-decoration-thickness: 0.125em;
         text-underline-offset: 0.25em;
 
         &:hover {
@@ -36,8 +37,9 @@ main {
         }
 
         &:active {
-            font-weight: var(--font-weight-bold);
-            letter-spacing: 0.05em;
+            font-weight: var(--font-weight-light);
+            letter-spacing: 0.025em;
+            text-decoration-thickness: 0.0625em;
         }
     }
 
