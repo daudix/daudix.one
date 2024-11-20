@@ -40,8 +40,10 @@ function emojify(input, emojis) {
 		let img = document.createElement("img");
 		img.className = "emoji";
 		img.setAttribute("src", escapeHtml(emoji.static_url));
-		img.setAttribute("alt", `:${emoji.shortcode}:`);
-		img.setAttribute("title", `:${emoji.shortcode}:`);
+		img.setAttribute("alt", `${emoji.shortcode}`);
+		img.setAttribute("title", `${emoji.shortcode}`);
+		img.setAttribute("width", "24");
+		img.setAttribute("height", "24");
 		if (lazyAsyncImage == "true") {
 			img.setAttribute("decoding", "async");
 			img.setAttribute("loading", "lazy");

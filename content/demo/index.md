@@ -295,16 +295,16 @@ Available variables are:
 - `big`: Makes the emoji bigger.
 
 ```jinja2
-{{/* emoji(pack="neofox", name="neofox_googly_shocked") */}}
+{{/* emoji(pack="neofox", name="neofox_googly_shocked.png") */}}
 ```
 
-Hello there, I'm an {{ emoji(pack="neofox", name="neofox_googly_shocked") }} inline custom emoji.
+Hello there, I'm an {{ emoji(pack="neofox", name="neofox_googly_shocked.png") }} inline custom emoji.
 
 ```jinja2
-{{/* emoji(pack="floof", name="afloofLoad", big=true) */}}
+{{/* emoji(pack="floof", name="afloofLoad.png", big=true) */}}
 ```
 
-{{ emoji(pack="floof", name="afloofLoad", big=true) }}
+{{ emoji(pack="floof", name="afloofLoad.png", big=true) }}
 
 #### YouTube
 

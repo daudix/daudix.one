@@ -4,8 +4,12 @@
 	animation-delay: calc(0.1s * var(--delay));
 
 	@keyframes wave {
+		from {
+			transform: translateY(-0.125em);
+		}
+
 		to {
-			transform: translateY(-0.25em);
+			transform: translateY(0.125em);
 		}
 	}
 }

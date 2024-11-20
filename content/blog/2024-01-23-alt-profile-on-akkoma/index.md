@@ -41,7 +41,7 @@ Slightly more detailed: because it's too slow and buggy for my taste, even thoug
 
 *And now that we are done...*
 
-**ALEX, GO <img class="emoji no-hover" alt="Crumb dancing." src="crumb-dancing.gif" /> YOURSELF WITH A <img class="emoji no-hover" alt="Deck friend." src="deck-friend.webp" />**
+**ALEX, GO {{ emoji(name="crumb-dancing.gif") }} YOURSELF WITH A {{ emoji(name="deck-friend.webp") }}**
 
 ## TL;DR
 
