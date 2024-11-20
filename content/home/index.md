@@ -4,7 +4,7 @@ title = "Home"
 styles = ["home/home.css"]
 scripts = ["home/statuscafe.js", "home/fluttershy.js", "home/rizz.js"]
 no_header = true
-buttons = [
+badges = [
   { name = "blue-team.gif", url = "https://512kb.club" },
   { name = "doskel.gif", url = "https://doskel.net" },
   { name = "free.gif", url = "https://freeplay.floof.company" },

@@ -5,14 +5,14 @@
 	</p>
 	<div class="marquee-wrapper">
 		<div class="marquee">
-			<ul style="--duration: {{ page.extra.buttons | length * 2 }}s">
-				{% for button in page.extra.buttons %}
+			<ul style="--duration: {{ page.extra.badges | length * 2 }}s">
+				{% for button in page.extra.badges %}
 					<li>
 						<a href="{{ button.url }}">
 							<img
 								class="pixels transparent no-hover"
 								alt="{{ button.name | trim_end_matches(pat='.gif') }}"
-								src="buttons/{{ button.name }}"
+								src="badges/{{ button.name }}"
 							/>
 						</a>
 					</li>
@@ -21,14 +21,14 @@
 					<iframe id="increment" src="https://incr.easrng.net/badge?key={{ config.base_url | replace(from='https://', to='') }}" title="increment badge"></iframe>
 				</li>
 			</ul>
-			<ul style="--duration: {{ page.extra.buttons | length * 2 }}s" aria-hidden="true">
-				{% for button in page.extra.buttons %}
+			<ul style="--duration: {{ page.extra.badges | length * 2 }}s" aria-hidden="true">
+				{% for button in page.extra.badges %}
 					<li>
 						<a href="{{ button.url }}">
 							<img
 								class="pixels transparent no-hover"
 								alt="{{ button.name | trim_end_matches(pat='.gif') }}"
-								src="buttons/{{ button.name }}"
+								src="badges/{{ button.name }}"
 							/>
 						</a>
 					</li>
@@ -58,8 +58,8 @@
 					If you want to link back to me, use one of these buttons:
 				</p>
 				<p>
-					<img class="pixels transparent no-hover" alt="daudix" src="buttons/daudix.gif" />
-					<img class="pixels transparent no-hover" alt="daudix-alt" src="buttons/daudix-alt.gif" />
+					<img class="pixels transparent no-hover" alt="daudix" src="badges/daudix.gif" />
+					<img class="pixels transparent no-hover" alt="daudix-alt" src="badges/daudix-alt.gif" />
 				</p>
 				<blockquote class="note">
 					<p class="alert-title">
