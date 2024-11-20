@@ -1,12 +1,12 @@
 <img
-    class="emoji{% if big %} big{% endif %}"
-    {% if pack %}
-        src="https://{{ host | default(value='pleroma.envs.net') }}/emoji/{{ pack }}/{{ name }}"
-    {% else %}
-        src="{{ name }}"
-    {% endif %}
-    alt="{{ name }}"
-    title="{{ name | trim_end_matches(pat='.gif') | trim_end_matches(pat='.png') | trim_end_matches(pat='.webp') }}"
-    width="24"
-    height="24"
+	class="emoji{% if big %} big{% endif %}"
+	{% if pack %}
+		src="https://{{ host | default(value='pleroma.envs.net') }}/emoji/{{ pack }}/{{ name }}"
+	{% else %}
+		src="{{ name }}"
+	{% endif %}
+	alt="{{ name }}"
+	title="{{ name | trim_end_matches(pat='.apng') | trim_end_matches(pat='.gif') | trim_end_matches(pat='.jpg') | trim_end_matches(pat='.png') | trim_end_matches(pat='.webp') }}"
+	width="24"
+	height="24"
 />
