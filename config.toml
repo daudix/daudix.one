@@ -25,12 +25,12 @@ index_format = "elasticlunr_json"
 
 [extra]
 # Red
-accent_color = "#e14775"
-accent_color_dark = "#ff6188"
+# accent_color = "#e14775"
+# accent_color_dark = "#ff6188"
 
 # Orange
-# accent_color = "#e16032"
-# accent_color_dark = "#fc9867"
+accent_color = "#e16032"
+accent_color_dark = "#fc9867"
 
 # Yellow
 # accent_color = "#cc7a0a"
