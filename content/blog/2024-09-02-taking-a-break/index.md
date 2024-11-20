@@ -7,6 +7,7 @@ tags = ["100DaysToOffload", "Mental Health"]
 [extra]
 accent_color = "#262c32"
 accent_color_dark = "#5f6c70"
+fix_contrast_dark = true
 banner = "banner.webp"
 [extra.comments]
 id = "113068488938326761"
