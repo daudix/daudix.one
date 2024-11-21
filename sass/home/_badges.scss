@@ -278,7 +278,7 @@
 				-webkit-mask-image: var(--icon);
 				vertical-align: -0.125em;
 				mask-image: var(--icon);
-				transition: var(--transition);
+				transition: var(--transition-bezier);
 				width: 1rem;
 				height: 1rem;
 			}
