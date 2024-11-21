@@ -61,7 +61,7 @@
 			}
 		}
 
-		#badges-bottom-sheet summary {
+		#badges-popup summary {
 			transform: scale(0.5);
 			opacity: 0;
 			pointer-events: none;
@@ -85,22 +85,12 @@
 		}
 	}
 
-	&:has(#badges-bottom-sheet[open]) {
-		overflow: hidden;
+	&:has(#badges-popup[open]) #here {
+		transform: scale(0.5);
+		opacity: 0;
 
-		#badges-expand + label {
-			transform: scale(0.5);
-			opacity: 0;
-			pointer-events: none;
-		}
-
-		#here {
-			transform: scale(0.5);
-			opacity: 0;
-
-			@media only screen and (max-width: 1074px) {
-				transform: scale(0.5) rotate(-90deg);
-			}
+		@media only screen and (max-width: 1074px) {
+			transform: scale(0.5) rotate(-90deg);
 		}
 	}
 
@@ -252,7 +242,7 @@
 		}
 	}
 
-	#badges-bottom-sheet {
+	#badges-popup {
 		box-shadow: none;
 		border-radius: 0;
 		background-color: transparent;
@@ -300,13 +290,13 @@
 			position: absolute;
 			flex-direction: column;
 			backdrop-filter: var(--blur);
-			inset: 3rem 0 0;
-			box-shadow:
-				var(--edge-highlight),
-				var(--shadow),
-				0 0 0 16rem var(--shade-color);
+			inset-block-start: 0.5rem;
+			inset-inline-end: 3rem;
+			box-shadow: var(--edge-highlight), var(--shadow-glass);
 			border-radius: var(--rounded-corner);
 			background-color: var(--glass-bg);
+			aspect-ratio: 1 / 1;
+			width: min(calc(var(--container-width) / 3), calc(90vw - 3rem));
 
 			div {
 				--mask: linear-gradient(
@@ -347,12 +337,13 @@
 				transform: rotate(45deg);
 			}
 
-			div {
-				animation: bottom-sheet-open var(--transition);
-
-				@keyframes bottom-sheet-open {
+			& > div {
+				transform-origin: top right;
+				animation: badges-popup-open var(--transition-bezier);
+		
+				@keyframes badges-popup-open {
 					from {
-						transform: translateY(1rem);
+						transform: scale(0.5) translate(1rem, 1rem);
 						opacity: 0;
 					}
 				}

@@ -163,6 +163,8 @@
 		}
 
 		strong.title {
+			border-block-end: var(--bg-muted-2) max(1px, 0.0625rem) solid;
+			padding-block-end: 0.5rem;
 			color: var(--fg-muted-1);
 		}
 
@@ -190,7 +192,7 @@
 			font-size: var(--font-size-small);
 
 			&:first-child {
-				margin-block-start: 0.75rem;
+				margin-block-start: 0.5rem;
 			}
 
 			li::marker {
