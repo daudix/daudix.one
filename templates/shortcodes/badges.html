@@ -3,6 +3,31 @@
 	<p>
 		<small><abbr title="Also Known As">AKA</abbr> 88x31 buttons</small>
 	</p>
+	<input type="checkbox" id="badges-expand" class="visually-hidden" />
+	<label for="badges-expand" title="Expand"><i class="icon"></i></label>
+	<details id="badges-popup">
+		<summary title="Link to Me"><i class="icon"></i></summary>
+		<div>
+			<div>
+				<p>
+					If you want to link back to me, use one of these buttons:
+				</p>
+				<p>
+					<img class="pixels transparent no-hover" alt="daudix" src="badges/daudix.gif" />
+					<img class="pixels transparent no-hover" alt="daudix-alt" src="badges/daudix-alt.gif" />
+				</p>
+				<blockquote class="note">
+					<p class="alert-title">
+						<i class="icon"></i>
+						Note
+					</p>
+					<p>
+						It’s recommended to avoid hot-linking; instead, place a copy on your own site.
+					</p>
+				</blockquote>
+			</div>
+		</div>
+	</details>
 	<div class="marquee-wrapper">
 		<div class="marquee">
 			<ul style="--duration: {{ page.extra.badges | length * 2 }}s">
@@ -48,30 +73,5 @@
 			<a class="big external" href="https://daudix.neocities.org">Neocities Site</a>
 		</div>
 	</div>
-	<input type="checkbox" id="badges-expand" class="visually-hidden" />
-	<label for="badges-expand" title="Expand"><i class="icon"></i></label>
-	<details id="badges-popup">
-		<summary title="Link to Me"><i class="icon"></i></summary>
-		<div>
-			<div>
-				<p>
-					If you want to link back to me, use one of these buttons:
-				</p>
-				<p>
-					<img class="pixels transparent no-hover" alt="daudix" src="badges/daudix.gif" />
-					<img class="pixels transparent no-hover" alt="daudix-alt" src="badges/daudix-alt.gif" />
-				</p>
-				<blockquote class="note">
-					<p class="alert-title">
-						<i class="icon"></i>
-						Note
-					</p>
-					<p>
-						It’s recommended to avoid hot-linking; instead, place a copy on your own site.
-					</p>
-				</blockquote>
-			</div>
-		</div>
-	</details>
 	<div id="here"></div>
 </aside>

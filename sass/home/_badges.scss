@@ -88,7 +88,7 @@
 		margin: 0.5rem 0 1rem;
 	}
 
-	&:not(:has(#badges-expand:checked)):has(img:hover, #increment:hover) .marquee ul {
+	&:not(:has(#badges-expand:checked)):has(.marquee img:hover, .marquee #increment:hover) .marquee ul {
 		animation-play-state: paused;
 
 		img:not(:hover),
@@ -279,6 +279,7 @@
 			display: flex;
 			position: absolute;
 			flex-direction: column;
+			z-index: 1;
 			backdrop-filter: var(--blur);
 			inset-block-start: 0.5rem;
 			inset-inline-end: 3rem;
