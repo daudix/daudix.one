@@ -16,6 +16,7 @@ badges = [
   { name = "lucida.gif", url = "https://lucida.to" },
   { name = "marchintosh.gif", url = "https://libreivan.com/writing/" },
   { name = "melankorin.gif", url = "https://melankorin.net" },
+  { name = "nek0zyx.gif", url = "https://nek0zyx.pages.gay" },
   { name = "pixlxip.gif", url = "https://xip.neocities.org" },
   { name = "righttorepair.gif", url="https://www.ifixit.com/Right-to-Repair" },
   { name = "ronbutton.gif", url = "https://veeronniecaw.space" },
