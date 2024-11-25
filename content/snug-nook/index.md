@@ -44,15 +44,15 @@ Isn't it wonderful, spectacular, and extremely fops-car? ^w^ :3
 
 I see... we also have:
 
-- ??? room
 - Memeboard
+- Ananas Duck
 - Hall of... Shame
 - Most of my friends
+- Duckquill updates and devlog channel
 - No voice channels, that's right, shy folks
 - Time zone roles that no other server has
+- Custom emojis on both Discord and Matrix
 - Color roles that every other server also has
-- Duckquill and this website's updates and devlog channels
-- Custom emojis on both Discord and Matrix (but mostly on Discord)
 
 Plus we got "locations" metaphor; `#general` and `#welcome`? Nope. We have `#living-room` and `#hallway`!
 
