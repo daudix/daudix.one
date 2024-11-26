@@ -1,10 +1,16 @@
 #not-found {
+	--bg-overlay: linear-gradient(rgb(0 0 0 / var(--dim-opacity)), rgb(0 0 0 / var(--dim-opacity)));
 	display: block;
 	margin-top: -4.25rem;
 	margin-inline-start: calc((-100vw + 100%) / 2);
 	margin-inline-end: calc((-100vw + 100%) / 2);
-	background-color: black;
+	background: var(--bg-overlay), url("static.gif"), black;
+	background-blend-mode: normal, difference;
 	padding: 4rem 0;
+
+	@media (prefers-reduced-motion) {
+		background: var(--bg-overlay), url("static-static.gif"), black;
+	}
 
 	img {
 		margin: 0 auto;
