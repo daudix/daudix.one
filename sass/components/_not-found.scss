@@ -1,7 +1,13 @@
 #not-found {
 	display: block;
+	margin-top: -4.25rem;
+	margin-inline-start: calc((-100vw + 100%) / 2);
+	margin-inline-end: calc((-100vw + 100%) / 2);
+	background-color: black;
+	padding: 4rem 0;
 
 	img {
-		width: min(calc(var(--container-width) / 5), 100%);
+		margin: 0 auto;
+		width: 8rem;
 	}
 }
