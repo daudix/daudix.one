@@ -5,7 +5,7 @@
 	margin-inline-start: calc((-100vw + 100%) / 2);
 	margin-inline-end: calc((-100vw + 100%) / 2);
 	background: var(--bg-overlay), url("static.gif"), black;
-	background-blend-mode: normal, difference;
+	background-blend-mode: normal;
 	padding: 4rem 0;
 
 	@media (prefers-reduced-motion) {
