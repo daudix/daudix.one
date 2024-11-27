@@ -69,10 +69,9 @@ input[type="checkbox"] {
 	border-radius: calc(var(--rounded-corner-small) / 2);
 
 	&::before {
-		--icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cpath d='M13.754 4.668c.176-.2.262-.461.246-.723a1 1 0 0 0-.34-.687 1 1 0 0 0-.726-.246 1 1 0 0 0-.688.34L5.95 10.547 3.707 8.3A1 1 0 0 0 2 9.01a1 1 0 0 0 .293.708l3 3c.195.195.465.3.742.293.278-.012.535-.133.719-.344zm0 0'/%3E%3C/svg%3E");
-		-webkit-mask-image: var(--icon);
+		-webkit-mask-image: var(--icon-checkmark);
 		transform-origin: bottom left;
-		mask-image: var(--icon);
+		mask-image: var(--icon-checkmark);
 		mask-size: cover;
 		inset-block-start: -0.125rem;
 		inset-inline-start: -0.125rem;

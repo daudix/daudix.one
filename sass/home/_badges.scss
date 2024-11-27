@@ -54,7 +54,8 @@
 		}
 
 		#badges-expand + label .icon {
-			--icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cpath d='M9 1c-.55 0-1 .45-1 1v6h6c.55 0 1-.45 1-1s-.45-1-1-1h-2.586l3.293-3.293a1 1 0 1 0-1.414-1.414L10 4.586V2c0-.55-.45-1-1-1M8 8H2c-.55 0-1 .45-1 1s.45 1 1 1h2.586l-3.293 3.293a1 1 0 1 0 1.414 1.414L6 11.414V14c0 .55.45 1 1 1s1-.45 1-1z'/%3E%3C/svg%3E");
+			-webkit-mask-image: var(--icon-minimize);
+			mask-image: var(--icon-minimize);
 		}
 
 		#badges-neocities {
@@ -220,14 +221,10 @@
 			}
 
 			.icon {
-				--icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cpath d='M10 0c-.55 0-1 .45-1 1s.45 1 1 1h2.586L9.293 5.293a1 1 0 1 0 1.414 1.414L14 3.414V6c0 .55.45 1 1 1s1-.45 1-1V0zM1 9c-.55 0-1 .45-1 1v6h6c.55 0 1-.45 1-1s-.45-1-1-1H3.414l3.293-3.293a1 1 0 1 0-1.414-1.414L2 12.586V10c0-.55-.45-1-1-1'/%3E%3C/svg%3E");
-				// --icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cpath d='M0 0v5c0 .55.45 1 1 1s1-.45 1-1V3.414l2.293 2.293a1 1 0 1 0 1.414-1.414L3.414 2H5c.55 0 1-.45 1-1s-.45-1-1-1zm11 0c-.55 0-1 .45-1 1s.45 1 1 1h1.586l-2.293 2.293a1 1 0 1 0 1.414 1.414L14 3.414V5c0 .55.45 1 1 1s1-.45 1-1V0zM1 10c-.55 0-1 .45-1 1v5h5c.55 0 1-.45 1-1s-.45-1-1-1H3.414l2.293-2.293a1 1 0 1 0-1.414-1.414L2 12.586V11c0-.55-.45-1-1-1m10 0a1 1 0 0 0-.707 1.707L12.586 14H11c-.55 0-1 .45-1 1s.45 1 1 1h5v-5c0-.55-.45-1-1-1s-1 .45-1 1v1.586l-2.293-2.293A1 1 0 0 0 11 10'/%3E%3C/svg%3E");
-				-webkit-mask-image: var(--icon);
+				-webkit-mask-image: var(--icon-expand);
 				vertical-align: -0.125em;
-				mask-image: var(--icon);
+				mask-image: var(--icon-expand);
 				transition: var(--transition);
-				width: 1rem;
-				height: 1rem;
 			}
 		}
 	}
@@ -264,10 +261,9 @@
 			}
 
 			.icon {
-				--icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cpath d='M7 1v6H1v2h6v6h2V9h6V7H9V1zm0 0'/%3E%3C/svg%3E");
-				-webkit-mask-image: var(--icon);
+				-webkit-mask-image: var(--icon-plus);
 				vertical-align: -0.125em;
-				mask-image: var(--icon);
+				mask-image: var(--icon-plus);
 				transition: var(--transition-bezier);
 				width: 1rem;
 				height: 1rem;
