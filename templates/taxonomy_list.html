@@ -1,8 +1,6 @@
 {% extends "base.html" %}
 
 {% block content %}
-{%- set number_of_tags = terms | length -%}
-
 <div class="crt scanlines" aria-hidden="true">
 <pre>
         _
@@ -20,10 +18,10 @@ ___\|//jgs||//_\V/_\|//_______\\|//V/\\|/__
 </pre>
 </div>
 
-<h1>{{ macros_translate::translate(key="tags_title", default="Tags", language_strings=language_strings) }}</h1>
+<h1>Tags</h1>
 
 <p>
-	<small>{{ macros_translate::translate(key="tags", number=number_of_tags, default="$NUMBER tags", language_strings=language_strings) }}</small>
+	<small>Tags in total: {{ terms | length }}</small>
 </p>
 
 <ul class="tags">

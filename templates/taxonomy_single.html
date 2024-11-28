@@ -1,11 +1,6 @@
 {% extends "base.html" %}
 
 {% block content %}
-{%- set date_format = macros_translate::translate(key="date_format", default="%B %d, %Y", language_strings=language_strings) -%}
-{%- set date_locale = macros_translate::translate(key="date_locale", default="en_US", language_strings=language_strings) -%}
-{%- set number_of_posts = term.pages | length -%}
-
-{%- set term_name = "“" ~ term.name ~ "”" -%}
 
 <div class="crt scanlines" aria-hidden="true">
 <pre>
@@ -24,15 +19,13 @@ ___\|//jgs||//_\V/_\|//_______\\|//V/\\|/__
 </pre>
 </div>
 
-<h1>{{ macros_translate::translate(key="posts_with_tag", default="Posts with tag $TAG", language_strings=language_strings) | replace(from="$TAG", to=term_name) }}</h1>
+<h1>Posts with tag “{{ term.name }}”</h1>
 
 <p>
 	<small>
-		<a href="{{ get_url(path='tags', lang=lang) }}">
-			{{ macros_translate::translate(key="all_tags", default="See all tags", language_strings=language_strings) }}
-		</a>
+		<a href="{{ get_url(path='tags', lang=lang) }}">See all tags</a>
 		<br />
-		{{ macros_translate::translate(key="posts", number=number_of_posts, default="$NUMBER posts", language_strings=language_strings) }}
+		Posts in total: {{ term.pages | length }}
 	</small>
 </p>
 

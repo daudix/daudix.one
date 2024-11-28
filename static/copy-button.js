@@ -15,8 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 			// Copy button
 			let button = document.createElement("button");
-			let copyCodeText = document.getElementById("copy-code-text").textContent;
-			button.setAttribute("title", copyCodeText)
+			button.setAttribute("title", "Copy Code")
 			button.appendChild(icon);
 
 			// Code block header

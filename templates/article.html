@@ -1,8 +1,6 @@
 {% extends "base.html" %}
 
 {% block content %}
-{%- set date_format = macros_translate::translate(key="date_format", default="%B %d, %Y", language_strings=language_strings) -%}
-{%- set date_locale = macros_translate::translate(key="date_locale", default="en_US", language_strings=language_strings) -%}
 {%- set rel_attributes = macros_rel_attributes::rel_attributes() | trim -%}
 
 {%- if page.extra.banner -%}
@@ -17,14 +15,12 @@
 			<p>
 				<small>
 					<time datetime="{{ page.date | date(format=' %+') }}">
-						{{- macros_translate::translate(key="published", default="Published on", language_strings=language_strings) }}
-						{{ page.date | date(format=date_format, locale=date_locale) -}}
+						Published on {{ page.date | date(format=config.extra.date_format, locale=config.extra.date_locale) -}}
 					</time>
 					{%- if page.updated -%}
 						<span> {{ config.extra.separator | default(value="•") }} </span>
 						<time datetime="{{ page.updated | date(format=' %+') }}">
-							{{- macros_translate::translate(key="updated", default="Updated on", language_strings=language_strings) }}
-							{{ page.updated | date(format=date_format, locale=date_locale) -}}
+							Updated on {{ page.updated | date(format=config.extra.date_format, locale=config.extra.date_locale) -}}
 						</time>
 					{%- endif -%}
 				</small>
@@ -44,7 +40,7 @@
 					{%- endif -%}
 
 					{%- if config.extra.show_reading_time -%}
-						<span>{{ macros_translate::translate(key="minutes_read", number=page.reading_time, default="$NUMBER minute read", language_strings=language_strings) }}</span>
+						<span>{{ page.reading_time }} min read</span>
 						{%- if page.taxonomies -%}
 							<span> {{ config.extra.separator | default(value="•") }} </span>
 						{%- endif -%}
@@ -67,9 +63,9 @@
 	<div id="buttons-container">
 		{%- if page.extra.toc and page.toc | length > 0 -%}
 			<details id="toc" class="closable">
-				<summary title="{{ macros_translate::translate(key='table_of_contents', default='Table of Contents', language_strings=language_strings) }}"><i class="icon"></i></summary>
+				<summary title="Table of Contents"><i class="icon"></i></summary>
 				<div>
-					<strong class="title">{{ macros_translate::translate(key="table_of_contents", default="Table of Contents", language_strings=language_strings) }}</strong>
+					<strong class="title">Table of Contents</strong>
 					<div>
 						<ul>
 							{%- for h1 in page.toc -%}
@@ -93,9 +89,9 @@
 		{%- endif -%}
 		{%- if config.extra.show_backlinks and page.backlinks | length > 0 -%}
 			<details id="backlinks" class="closable">
-				<summary title="{{ macros_translate::translate(key='backlinks', default='Backlinks', language_strings=language_strings) }}"><i class="icon"></i></summary>
+				<summary title="Backlinks"><i class="icon"></i></summary>
 				<div>
-					<strong class="title">{{ macros_translate::translate(key="backlinks", default="Backlinks", language_strings=language_strings) }}</strong>
+					<strong class="title">Backlinks</strong>
 					<div>
 						<ul>
 							{%- for backlink in page.backlinks -%}
@@ -108,12 +104,12 @@
 				</div>
 			</details>
 		{%- endif -%}
-		<a id="go-to-top" href="#top" title="{{ macros_translate::translate(key='go_to_top', default='Go to Top', language_strings=language_strings) }}"><i class="icon"></i></a>
+		<a id="go-to-top" href="#top" title="Go to Top"><i class="icon"></i></a>
 		{%- if config.extra.show_share_button -%}
-			<a id="share" href="https://shareopenly.org/share/?url={{ page.permalink }}&text={{ page.description | urlencode }}" rel="{{ rel_attributes }}" title="{{ macros_translate::translate(key='share', default='Share', language_strings=language_strings) }}"><i class="icon"></i></a>
+			<a id="share" href="https://shareopenly.org/share/?url={{ page.permalink }}&text={{ page.description | urlencode }}" rel="{{ rel_attributes }}" title="Share"><i class="icon"></i></a>
 		{%- endif -%}
 		{%- if config.extra.issues_url -%}
-			<a id="issue" href="{{ config.extra.issues_url }}" rel="{{ rel_attributes }}" title="{{ macros_translate::translate(key='file_an_issue', default='File an Issue', language_strings=language_strings) }}"><i class="icon"></i></a>
+			<a id="issue" href="{{ config.extra.issues_url }}" rel="{{ rel_attributes }}" title="File an Issue"><i class="icon"></i></a>
 		{%- endif -%}
 	</div>
 
@@ -131,13 +127,13 @@
 	<nav id="post-nav">
 		{%- if page.higher -%}
 			<a class="post-nav-item post-nav-prev" href="{{ page.higher.permalink }}">
-				<div class="nav-arrow">{{ macros_translate::translate(key="previous", default="Previous", language_strings=language_strings) }}</div>
+				<div class="nav-arrow">Previous</div>
 				<span class="post-title">{{ page.higher.title }}</span>
 			</a>
 		{%- endif -%}
 		{%- if page.lower -%}
 			<a class="post-nav-item post-nav-next" href="{{ page.lower.permalink }}">
-				<div class="nav-arrow">{{ macros_translate::translate(key="next", default="Next", language_strings=language_strings) }}</div>
+				<div class="nav-arrow">Next</div>
 				<span class="post-title">{{ page.lower.title }}</span>
 			</a>
 		{%- endif -%}

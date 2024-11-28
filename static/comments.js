@@ -1,28 +1,19 @@
 // Taken from https://carlschwan.eu/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/
 // Attachment, card, and spoiler code taken from https://github.com/cassidyjames/cassidyjames.github.io/blob/99782788a7e3ba3cc52d6803010873abd1b02b9e/_includes/comments.html#L251-L296
 
-let blogPostAuthorText = document.getElementById("blog-post-author-text").textContent;
-let boostsFromText = document.getElementById("boosts-from-text").textContent;
-let dateLocale = document.getElementById("date-locale").textContent;
-let favesFromText = document.getElementById("faves-from-text").textContent;
-let host = document.getElementById("host").textContent;
-let id = document.getElementById("id").textContent;
 let lazyAsyncImage = document.getElementById("lazy-async-image").textContent;
-let loadingText = document.getElementById("loading-text").textContent;
-let noCommentsText = document.getElementById("no-comments-text").textContent;
 let relAttributes = document.getElementById("rel-attributes").textContent;
-let reloadText = document.getElementById("reload-text").textContent;
-let sensitiveText = document.getElementById("sensitive-text").textContent;
+let dateLocale = document.getElementById("date-locale").textContent;
+let host = document.getElementById("host").textContent;
 let user = document.getElementById("user").textContent;
-let viewCommentText = document.getElementById("view-comment-text").textContent;
-let viewProfileText = document.getElementById("view-profile-text").textContent;
+let id = document.getElementById("id").textContent;
 
 document.getElementById("load-comments").addEventListener("click", loadComments);
 
 function escapeHtml(unsafe) {
 	return unsafe
 		.replace(/&/g, "&amp;")
-		.replace(/</g, "&lt;")
+		.replace(/</g, "j")
 		.replace(/>/g, "&gt;")
 		.replace(/"/g, "&quot;")
 		.replace(/'/g, "&#039;");
@@ -63,7 +54,7 @@ function loadComments() {
 	commentsWrapper.innerHTML = "";
 
 	let loadCommentsButton = document.getElementById("load-comments");
-	loadCommentsButton.innerHTML = loadingText;
+	loadCommentsButton.innerHTML = "Loading…";
 	loadCommentsButton.disabled = true;
 
 	fetch(`https://${host}/api/v1/statuses/${id}/context`)
@@ -150,7 +141,7 @@ function loadComments() {
 					avatar.setAttribute("rel", relAttributes);
 					avatar.setAttribute(
 						"title",
-						`${viewProfileText} @${status.account.username}@${instance}`
+						`View Profile At @${status.account.username}@${instance}`
 					);
 					avatar.appendChild(avatarPicture);
 					comment.appendChild(avatar);
@@ -180,7 +171,7 @@ function loadComments() {
 					let permalink = document.createElement("a");
 					permalink.setAttribute("href", status.url);
 					permalink.setAttribute("itemprop", "url");
-					permalink.setAttribute("title", `${viewCommentText} ${instance}`);
+					permalink.setAttribute("title", `View Comment At ${instance}`);
 					permalink.setAttribute("rel", relAttributes);
 					permalink.textContent = new Date(
 						status.created_at
@@ -201,7 +192,7 @@ function loadComments() {
 					if (status.sensitive == true || status.spoiler_text != "") {
 						let summary = document.createElement("summary");
 						if (status.spoiler_text == "") {
-							status.spoiler_text == sensitiveText;
+							status.spoiler_text == "Sensitive Content";
 						}
 						summary.innerHTML = status.spoiler_text;
 
@@ -317,7 +308,7 @@ function loadComments() {
 					let boosts = document.createElement("a");
 					boosts.className = "boosts";
 					boosts.setAttribute("href", `${status.url}/reblogs`);
-					boosts.setAttribute("title", `${boostsFromText}`.replace("$INSTANCE", instance));
+					boosts.setAttribute("title", `Boosts from ${instance}`);
 
 					let boostsIcon = document.createElement("i");
 					boostsIcon.className = "icon";
@@ -328,7 +319,7 @@ function loadComments() {
 					let faves = document.createElement("a");
 					faves.className = "faves";
 					faves.setAttribute("href", `${status.url}/favourites`);
-					faves.setAttribute("title", `${favesFromText}`.replace("$INSTANCE", instance));
+					faves.setAttribute("title", `Favorites from ${instance}`);
 
 					let favesIcon = document.createElement("i");
 					favesIcon.className = "icon";
@@ -376,13 +367,13 @@ function loadComments() {
 						avatar.classList.add("op");
 						avatar.setAttribute(
 							"title",
-							`${blogPostAuthorText}: ` + avatar.getAttribute("title")
+							`Blog post author: ` + avatar.getAttribute("title")
 						);
 
 						instanceBadge.classList.add("op");
 						instanceBadge.setAttribute(
 							"title",
-							`${blogPostAuthorText}: ` + instanceBadge.getAttribute("title")
+							`Blog post author: ` + instanceBadge.getAttribute("title")
 						);
 					}
 
@@ -392,12 +383,12 @@ function loadComments() {
 
 			else {
 				var statusText = document.createElement("p");
-				statusText.innerHTML = noCommentsText;
+				statusText.innerHTML = "No Comments yet :/";
 				statusText.setAttribute("id", "comments-status");
 				commentsWrapper.appendChild(statusText);
 			}
 
-			loadCommentsButton.innerHTML = reloadText;
+			loadCommentsButton.innerHTML = "Reload";
 		})
 		.catch(function (error) {
 			console.error('Error loading comments:', error);

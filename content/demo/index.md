@@ -1,7 +1,6 @@
 +++
 title = "Demo Page"
 [extra]
-styles = ["demo/demo.css"]
 scripts = ["demo/demo.js"]
 archive = "This page is in fact not archived. It is only here to demonstrate the archival statement."
 trigger = "This page contains blackjack and hookers, and bad jokes such as this one."
@@ -693,23 +692,3 @@ With `centered` and `big` classes:
 
 [^1]: Footnote
 [^2]: [Footnote (link)](https://example.org)
-
-<!-- For the demo purposes only -->
-<div id="color-picker-container">
-  <small>Accent color:</small>
-  <br />
-  <input id="color-picker-light" type="color" value="#e14775" />
-  <label for="color-picker-light">Light theme</label>
-  <br />
-  <input id="color-picker-dark" type="color" value="#ff6188" />
-  <label for="color-picker-dark">Dark theme</label>
-  <br />
-  <small>Fix contrast:</small>
-  <br />
-  <input id="contrast-color-light" class="switch" type="checkbox" />
-  <label for="contrast-color-light">Light theme</label>
-  <br />
-  <input id="contrast-color-dark" class="switch" type="checkbox" checked />
-  <label for="contrast-color-dark">Dark theme</label>
-</div>
-<!-- End -->

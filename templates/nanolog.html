@@ -1,25 +1,24 @@
 {% extends "base.html" %}
 
 {% block content %}
-{%- set date_locale = macros_translate::translate(key="date_locale", default="en_US", language_strings=language_strings) -%}
 {%- set rel_attributes = macros_rel_attributes::rel_attributes() | trim -%}
 <div id="nanolog">
 	{%- if page.lower -%}
 		<a id="nanolog-higher" href="{{ page.lower.permalink }}">
-			<span>{{ page.lower.date | date(format="%d %B %Y, %R", locale=date_locale) }}</span>
+			<span>{{ page.lower.date | date(format=config.extra.date_format_long | default(value="%B %d, %Y, %R"), locale=config.extra.date_locale) | default(value="en_US") }}</span>
 		</a>
 	{%- endif -%}
 
 	<div id="nanolog-heading">
-		<h1>{{ page.date | date(format="%d %B %Y, %R", locale=date_locale) }}</h1>
+		<h1>{{ page.date | date(format=config.extra.date_format_long | default(value="%B %d, %Y, %R"), locale=config.extra.date_locale) | default(value="en_US") }}</h1>
 		<div id="nanolog-details">
 			<p><small>{{ page.title }}</small></p>
 			<div id="buttons-container">
 				{%- if config.extra.show_backlinks and page.backlinks | length > 0 -%}
 					<details id="backlinks" class="closable">
-						<summary title="{{ macros_translate::translate(key='backlinks', default='Backlinks', language_strings=language_strings) }}"><i class="icon"></i></summary>
+						<summary title="Backlinks"><i class="icon"></i></summary>
 						<div>
-							<strong class="title">{{ macros_translate::translate(key="backlinks", default="Backlinks", language_strings=language_strings) }}</strong>
+							<strong class="title">Backlinks</strong>
 							<div>
 								<ul>
 									{%- for backlink in page.backlinks -%}
@@ -33,10 +32,10 @@
 					</details>
 				{%- endif -%}
 				{%- if config.extra.show_share_button -%}
-					<a id="share" href="https://shareopenly.org/share/?url={{ page.permalink }}&text={{ page.title | urlencode }}" rel="{{ rel_attributes }}" title="{{ macros_translate::translate(key='share', default='Share', language_strings=language_strings) }}"><i class="icon"></i></a>
+					<a id="share" href="https://shareopenly.org/share/?url={{ page.permalink }}&text={{ page.title | urlencode }}" rel="{{ rel_attributes }}" title="Share"><i class="icon"></i></a>
 				{%- endif -%}
 				{%- if config.extra.issues_url -%}
-					<a id="issue" href="{{ config.extra.issues_url }}" rel="{{ rel_attributes }}" title="{{ macros_translate::translate(key='file_an_issue', default='File an Issue', language_strings=language_strings) }}"><i class="icon"></i></a>
+					<a id="issue" href="{{ config.extra.issues_url }}" rel="{{ rel_attributes }}" title="File an Issue"><i class="icon"></i></a>
 				{%- endif -%}
 			</div>
 		</div>
@@ -45,7 +44,7 @@
 
 	{%- if page.higher -%}
 		<a id="nanolog-lower" href="{{ page.higher.permalink }}">
-			<span>{{ page.higher.date | date(format="%d %B %Y, %R", locale=date_locale) }}</span>
+			<span>{{ page.higher.date | date(format=config.extra.date_format_long | default(value="%B %d, %Y, %R"), locale=config.extra.date_locale) | default(value="en_US") }}</span>
 		</a>
 	{%- endif -%}
 </div>

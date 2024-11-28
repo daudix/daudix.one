@@ -1,28 +1,26 @@
-{% import "macros/translate.html" as macros_translate %}
-
 {%- set language_strings = load_data(path="i18n/" ~ lang ~ '.toml', required=false) -%}
 
 {%- if note -%}
 	{%- set alert_type = "note" -%}
-	{%- set alert_string = macros_translate::translate(key="note", default="Note", language_strings=language_strings) -%}
+	{%- set alert_string = "Note" -%}
 {%- elif tip -%}
 	{%- set alert_type = "tip" -%}
-	{%- set alert_string = macros_translate::translate(key="tip", default="Tip", language_strings=language_strings) -%}
+	{%- set alert_string = "Tip" -%}
 {%- elif important -%}
 	{%- set alert_type = "important" -%}
-	{%- set alert_string = macros_translate::translate(key="important", default="Important", language_strings=language_strings) -%}
+	{%- set alert_string = "Important" -%}
 {%- elif warning -%}
 	{%- set alert_type = "warning" -%}
-	{%- set alert_string = macros_translate::translate(key="warning", default="Warning", language_strings=language_strings) -%}
+	{%- set alert_string = "Warning" -%}
 {%- elif caution -%}
 	{%- set alert_type = "caution" -%}
-	{%- set alert_string = macros_translate::translate(key="caution", default="Caution", language_strings=language_strings) -%}
+	{%- set alert_string = "Caution" -%}
 {%- elif edit -%}
 	{%- set alert_type = "edit" -%}
-	{%- set alert_string = macros_translate::translate(key="edit", default="Edit", language_strings=language_strings) -%}
+	{%- set alert_string = "Edit" -%}
 {%- elif fact -%}
 	{%- set alert_type = "fact" -%}
-	{%- set alert_string = macros_translate::translate(key="fact", default="Uninteresting Fact", language_strings=language_strings) -%}
+	{%- set alert_string = "Uninteresting Fact" -%}
 {%- endif -%}
 
 <blockquote class="{{ alert_type }}">

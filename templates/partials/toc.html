@@ -6,7 +6,7 @@
 
 {%- if page.extra.toc or section.extra.toc -%}
 	{%- if toc | length > 0 -%}
-		<h2>{{ macros_translate::translate(key="toc", default="Table of Contents", language_strings=language_strings) }}</h2>
+		<h2>Table of Contents</h2>
 		<ul>
 			{%- for h1 in toc -%}
 				<li>

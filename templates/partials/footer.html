@@ -8,7 +8,7 @@
 				{%- if link.url is matching('https?://') %}
 					<li>
 						<a href="{{ link.url }}" rel="{{ rel_attributes }}" class="external{% if link.new %} new{% endif %}">
-							{{- macros_translate::translate(key=link.name, default=link.name, language_strings=language_strings) -}}
+							{{- link.name -}}
 						</a>
 					</li>
 				{%- else %}
@@ -20,7 +20,7 @@
 							{% if current_url | default(value='/') | trim_end_matches(pat='/') | safe == get_url(path=link.url, lang=lang) | trim_end_matches(pat='/') | safe %}
 								active
 							{% endif %}">
-							{{- macros_translate::translate(key=link.name, default=link.name, language_strings=language_strings) -}}
+							{{- link.name -}}
 						</a>
 					</li>
 				{%- endif %}
@@ -39,17 +39,14 @@
 
 	{%- if config.extra.source_url and config.extra.footer.show_source %}
 		<p>
-			<a class="external" href="{{ config.extra.source_url }}" rel="{{ rel_attributes }}">
-				{{- macros_translate::translate(key="source", default="Website source", language_strings=language_strings) -}}
-			</a>
+			<a class="external" href="{{ config.extra.source_url }}" rel="{{ rel_attributes }}">Website source</a>
 		</p>
 	{%- endif %}
 
 	{%- if config.extra.footer.show_powered_by %}
 		<p>
 			<small>
-				{%- set zola_link = '<a class="link external" href="https://www.getzola.org" rel="' ~ rel_attributes ~ '">Zola</a>' -%}
-				{{ macros_translate::translate(key="powered_by", default="Powered by $ZOLA and <3", language_strings=language_strings) | replace(from="$ZOLA", to=zola_link) | safe }}
+				Powered by <a class="link external" href="https://www.getzola.org" rel="{{ rel_attributes }}">Zola</a> and &lt;3
 			</small>
 		</p>
 	{%- endif %}

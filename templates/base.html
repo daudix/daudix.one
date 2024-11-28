@@ -1,5 +1,4 @@
 {% import "macros/rel_attributes.html" as macros_rel_attributes %}
-{% import "macros/translate.html" as macros_translate %}
 
 {%- set language_strings = load_data(path="i18n/" ~ lang ~ '.toml', required=false) -%}
 
@@ -14,7 +13,6 @@
 	<main id="main-content">
 		{% block custom %}{% endblock custom %}
 		{% block content %}{% endblock content %}
-		{% include "partials/extra_features.html" %}
 	</main>
 	{% include "partials/footer.html" %}
 {% endblock body %}

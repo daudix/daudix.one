@@ -71,6 +71,9 @@ csp = [
 	{ directive = "base-uri", domains = ["'none'"] },
 	{ directive = "form-action", domains = ["'none'"] },
 ]
+date_format = "%d %B %Y"
+date_format_long = "%d %B %Y, %R"
+date_locale = "en_IE"
 
 [extra.nav]
 auto_hide = true

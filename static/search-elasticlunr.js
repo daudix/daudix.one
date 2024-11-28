@@ -147,7 +147,7 @@ function initSearch() {
 
 	var initIndex = async function () {
 		if (index === undefined) {
-			let searchIndex = document.getElementById("search-index").textContent;
+			let searchIndex = "/search_index.en.json";
 			index = fetch(searchIndex)
 				.then(
 					async function (response) {

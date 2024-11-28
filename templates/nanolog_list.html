@@ -1,7 +1,6 @@
 {% extends "base.html" %}
 
 {% block content %}
-{%- set date_locale = macros_translate::translate(key="date_locale", default="en_US", language_strings=language_strings) -%}
 <h1>{{ section.title }}<a href="atom.xml"><i class="icon feed"></i></a></h1>
 
 {{ section.description | markdown | safe }}
@@ -10,7 +9,7 @@
     {%- for page in section.pages %}
         <li>
             <div>
-                <strong>{{ page.date | date(format="%d %B %Y, %R", locale=date_locale) }}</strong>
+                <strong>{{ page.date | date(format=config.extra.date_format_long | default(value="%B %d, %Y, %R") , locale=config.extra.date_locale | default(value="en_US")) }}</strong>
                 <small>{{ page.title }}</small>
             </div>
             <div>
