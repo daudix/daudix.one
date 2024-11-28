@@ -1,7 +1,7 @@
 +++
 title = "Gradience Autopsy: Rise and Set"
 description = "The most complete history of Gradience you'll ever find."
-updated = 2024-08-29
+updated = 2024-11-29
 [taxonomies]
 tags = ["100DaysToOffload", "Gradience"]
 [extra]
@@ -10,7 +10,7 @@ accent_color_dark = "#b9aee1"
 hot = true
 banner = "banner.webp"
 disclaimer = """
-- This post doesn't mention some names; this post is not meant to offend anyone or make them uncomfortable, but to give an idea of what was going on.
+- This post doesn't mention some names as it's not meant to offend anyone or make them uncomfortable, but to give an idea of what was going on.
 - This post doesn't link to some of the mentioned resources because I used to be a different person at the time, and find it very cringey.
 """
 toc = true
