@@ -8,20 +8,9 @@ function updateClock() {
 	};
 
 	const clockElement = document.getElementById("clock");
-	const myLocalTime = new Date().toLocaleString("en-US", options);
-	const userLocalTime = new Date().toLocaleString("en-US", {
-		hour: "2-digit",
-		minute: "2-digit",
-		hour12: false,
-	});
+	const localTime = new Date().toLocaleString("en-IE", options);
 
-	if (myLocalTime === userLocalTime) {
-		clockElement.textContent = "Same time as yours";
-	}
-
-	else {
-		clockElement.textContent = myLocalTime;
-	}
+	clockElement.textContent = localTime;
 }
 
 updateClock();

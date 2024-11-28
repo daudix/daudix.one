@@ -32,7 +32,7 @@ Besides, I just wanted to try running a server, because why not? I like chatting
 >
 > What else? I'm not convinced, stop wasting my time!
 
-![Server avatar; half of "Neofox googly shocked" and "Neocat googly shocked" on a violet background.](avatar.png#end#spoiler)
+![Server avatar; half of "neofox googly shocked" and "neocat googly shocked" on a violet background.](avatar.png#end#spoiler)
 
 Okay okay, I didn't think we'd get this far, but I have something to convince you; we got a fun server avatar, just look at it!
 
@@ -40,7 +40,7 @@ Isn't it wonderful, spectacular, and extremely fops-car? ^w^ :3
 
 > <div><img class="no-hover" src="macboy.png" alt="Evil MacBoy's avatar." /><strong>Evil MacBoy</strong><small>Tomorrow at 24:59</small></div>
 >
-> Still not convinced, you can't buy me with a half of [Neofox](https://volpeon.ink/emojis/neofox/) and [Neocat](https://volpeon.ink/emojis/neocat/) on violet background. Heck, you didn't even pick the color, it's just a "Lavender" from [Name that Color](https://chir.ag/projects/name-that-color/#B57EDC)!
+> Still not convinced, you can't buy me with a half of [Volpeon's](https://volpeon.ink) {{ emoji(pack="neofox", name="neofox_googly_shocked.png") }} and {{ emoji(pack="neocat", name="neocat_googly_shocked.png") }} on violet background. Heck, you didn't even pick the color, it's just ["Lavender"](https://chir.ag/projects/name-that-color/#B57EDC)!
 
 I see... we also have:
 

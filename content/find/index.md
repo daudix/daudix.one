@@ -13,7 +13,7 @@ scripts = ["find/clock.js", "find/status.js"]
 
 ## Contacts
 
-For me it's currently <time><span id="clock"><noscript>NO:JS</noscript></span></time> <small>(UTC+3)</small> and I'm <span id="online-indicator"><noscript>N/A</noscript></span>.
+For me it's currently <time id="clock"><noscript>NO:JS</noscript></time> <small>(UTC+3)</small> and I'm <span id="online-indicator"><noscript>N/A</noscript></span>.
 
 Feel free to reach out to me on any of these! I'm usually too shy to start the conversation, but I'm excited to chat once someone messages me.
 
