@@ -21,7 +21,7 @@ main {
 
     & > a {
         display: block;
-		transition: all var(--transition), font-weight var(--transition-bezier), letter-spacing var(--transition-bezier);
+		transition: var(--transition-bezier);
         font-weight: var(--font-weight-black);
         font-size: 4.375rem;
 	    letter-spacing: -0.05em;
@@ -38,7 +38,7 @@ main {
 
         &:active {
             font-weight: var(--font-weight-light);
-            letter-spacing: 0.025em;
+            letter-spacing: 0.0275em;
             text-decoration-thickness: 0.0625em;
         }
     }

@@ -22,7 +22,6 @@ badges = [
   { name = "ronbutton.gif", url = "https://veeronniecaw.space" },
   { name = "saynotoweb3.gif", url = "https://yesterweb.org/no-to-web3/" },
   { name = "seirdy.gif", url = "https://seirdy.one" },
-  { name = "solinus.gif", url = "https://solinus.neocities.org" },
   { name = "standwith.gif", url = "https://decolonizepalestine.com" },
   { name = "valid-atom.gif", url = "https://validator.w3.org/feed/" },
   { name = "vscodium.gif", url = "https://vscodium.com" },
