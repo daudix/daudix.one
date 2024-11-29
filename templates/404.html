@@ -4,7 +4,7 @@
 {%- set rel_attributes = macros_rel_attributes::rel_attributes() | trim -%}
 <picture id="not-found">
 	<source srcset="{{ get_url(path='404-static.gif') }}" media="(prefers-reduced-motion: reduce)"></source>
-	<img class="pixels transparent no-hover" alt="404" {%- if config.markdown.lazy_async_image -%}decoding="async" loading="lazy"{%- endif -%} src="{{ get_url(path='404.gif') }}">
+	<img class="pixels transparent no-hover drop-shadow" alt="404" {%- if config.markdown.lazy_async_image -%}decoding="async" loading="lazy"{%- endif -%} src="{{ get_url(path='404.gif') }}">
 </picture>
 
 <h1>Page Not Found</h1>
