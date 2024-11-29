@@ -3,37 +3,53 @@
 
 	&:hover:not(:active) div {
 		transform: translateY(-0.5rem);
-		box-shadow: var(--edge-highlight), var(--shadow-glass);
+
+		&::before {
+			filter: blur(0.75rem);
+		}
 	}
 
 	&:hover div strong::after {
 		transform: none;
 		opacity: 1;
 	}
-	
+
 	div {
 		display: flex;
 		position: relative;
 		flex-direction: column;
 		gap: 0.5rem;
 		transition: all var(--transition), transform var(--transition-bezier);
-		box-shadow: var(--edge-highlight), var(--shadow);
+		box-shadow: var(--edge-highlight);
 		border-radius: var(--rounded-corner);
-		background-image: linear-gradient(to right, var(--red-fg), var(--orange-fg), var(--yellow-fg));
+		background-image: linear-gradient(45deg, var(--red-fg), var(--orange-fg), var(--yellow-fg));
 		padding: 1rem;
 		color: var(--contrast-color);
-	
+
+		&::before {
+			position: absolute;
+			transform: translateY(0.125rem);
+			opacity: var(--dim-opacity);
+			z-index: -1;
+			filter: blur(0.5rem);
+			transition: var(--transition);
+			inset: -0.125rem;
+			border-radius: inherit;
+			background: linear-gradient(45deg, var(--red-fg), var(--orange-fg), var(--yellow-fg));
+			content: "";
+		}
+
 		p {
 			margin: 0;
 		}
-	
+
 		p:nth-of-type(1) a {
 			position: absolute;
 			z-index: 1;
 			inset: 0;
 			border-radius: var(--rounded-corner);
 		}
-	
+
 		strong {
 			color: inherit;
 
@@ -54,11 +70,11 @@
 				content: "";
 			}
 		}
-	
+
 		p:nth-of-type(2) {
 			padding-inline-end: 3rem;
 		}
-	
+
 		img {
 			position: absolute;
 			transform: rotate(10deg);
