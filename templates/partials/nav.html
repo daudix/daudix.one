@@ -8,8 +8,8 @@
 		<a href="#main-content" tabindex="0">Skip to Main Content</a>
 		<ul>
 			<li id="home">
-				<a href="{{ get_url(path='@/home/index.md', lang=lang) }}"
-					{%- if current_url | default(value="/") | trim_end_matches(pat="/") | safe == get_url(path='@/home/index.md', lang=lang) | trim_end_matches(pat='/') | safe -%}
+				<a href="{{ get_url(path='@/home/index.md') }}"
+					{%- if current_url | default(value="/") | trim_end_matches(pat="/") | safe == get_url(path='@/home/index.md') | trim_end_matches(pat='/') | safe -%}
 						class="active"
 					{%- endif -%}>
 					<i class="icon"></i>
@@ -32,11 +32,11 @@
 										</li>
 									{%- else %}
 										<li>
-											<a href="{{ get_url(path=link.url, lang=lang)}}" class="
+											<a href="{{ get_url(path=link.url)}}" class="
 												{% if link.new %}
 													new
 												{% endif %}
-												{% if current_url | default(value='/') | trim_end_matches(pat='/') | safe == get_url(path=link.url, lang=lang) | trim_end_matches(pat='/') | safe %}
+												{% if current_url | default(value='/') | trim_end_matches(pat='/') | safe == get_url(path=link.url) | trim_end_matches(pat='/') | safe %}
 													active
 												{% endif %}">
 												{{- link.name -}}
@@ -55,11 +55,11 @@
 					</li>
 				{%- else %}
 					<li>
-						<a href="{{ get_url(path=link.url, lang=lang)}}" class="
+						<a href="{{ get_url(path=link.url)}}" class="
 							{% if link.new %}
 								new
 							{% endif %}
-							{% if current_url | default(value='/') | trim_end_matches(pat='/') | safe == get_url(path=link.url, lang=lang) | trim_end_matches(pat='/') | safe %}
+							{% if current_url | default(value='/') | trim_end_matches(pat='/') | safe == get_url(path=link.url) | trim_end_matches(pat='/') | safe %}
 								active
 							{% endif %}">
 							{{- link.name -}}
@@ -83,7 +83,7 @@
 						<ul>
 							{%- for feed in config.feed_filenames %}
 								<li>
-									<a href="{{ get_url(path=feed, lang=lang) }}" rel="{{ rel_attributes }}">
+									<a href="{{ get_url(path=feed) }}" rel="{{ rel_attributes }}">
 										{%- if feed == "atom.xml" -%}
 											Atom
 										{%- else -%}
@@ -97,7 +97,7 @@
 				</li>
 			{%- elif config.generate_feeds and config.extra.nav.show_feed %}
 				<li id="feed">
-					<a class="circle" href="{{ get_url(path=config.feed_filenames[0], lang=lang) }}" title="Feed">
+					<a class="circle" href="{{ get_url(path=config.feed_filenames[0]) }}" title="Feed">
 						<i class="icon"></i>
 					</a>
 				</li>

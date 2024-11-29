@@ -2,13 +2,19 @@
 
 {% block body %}
 <main>
-    <a href="{{ get_url(path='@/home/index.md', lang=lang) }}">daudix.one</a>
-    <p>
-        <small>1024x768 | non-essential javascript | 13+ | mild profanity</small>
-    </p>
-    <p>
-        <small>Inspired by <a href="https://melankorin.net">Kori's splash page</a></small>
-    </p>
-    <div></div>
+	<a id="header" href="{{ get_url(path='@/home/index.md') }}">daudix.one</a>
+	<p>
+		<small>1024x768 | non-essential javascript | 14+ | mild profanity</small>
+	</p>
+	<div id="icons">
+		<img class="transparent no-hover" src="{{ get_url(path='icon-4-by-3.svg') }}" alt="1024x768" />
+		<img class="transparent no-hover" src="{{ get_url(path='icon-no-js.svg') }}" alt="non-essential javascript" />
+		<img class="transparent no-hover" src="{{ get_url(path='icon-web-14.svg') }}" alt="14+" />
+		<img class="transparent no-hover" src="{{ get_url(path='icon-profanity.svg') }}" alt="mild profanity" />
+	</div>
+	<p id="credits">
+		<small>Inspired by <a href="https://melankorin.net">Kori's splash page</a></small>
+	</p>
+	<div id="rainbow"></div>
 </main>
 {% endblock body %}

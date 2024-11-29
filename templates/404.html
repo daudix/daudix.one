@@ -12,7 +12,7 @@
 <p>The requested page could not be found.{% if config.extra.issues_url %} If you feel this is not normal, then you can create an issue on the issue tracker.{% endif %}</p>
 
 <div class="buttons">
-	<a href="{{ get_url(path='@/home/index.md', lang=lang) }}">Go Home</a>
+	<a href="{{ get_url(path='@/home/index.md') }}">Go Home</a>
 	{%- if config.extra.issues_url %}
 		<a class="colored external" href="{{ config.extra.issues_url }}" rel="{{ rel_attributes }}">File an Issue</a>
 	{%- endif %}

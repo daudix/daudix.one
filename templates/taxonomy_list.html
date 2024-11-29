@@ -26,7 +26,7 @@ ___\|//jgs||//_\V/_\|//_______\\|//V/\\|/__
 
 <ul class="tags">
 	{%- for tag in terms -%}
-		<li><a href="{{ get_taxonomy_url(kind='tags', name=tag.name, lang=lang) }}"><span class="tag">{{ tag.name }}</span><span class="count">{{ tag.pages | length }}</span></a></li>
+		<li><a href="{{ get_taxonomy_url(kind='tags', name=tag.name) }}"><span class="tag">{{ tag.name }}</span><span class="count">{{ tag.pages | length }}</span></a></li>
 	{%- endfor -%}
 </ul>
 {% endblock content %}

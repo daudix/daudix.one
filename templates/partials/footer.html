@@ -13,11 +13,11 @@
 					</li>
 				{%- else %}
 					<li>
-						<a href="{{ get_url(path=link.url, lang=lang)}}" class="
+						<a href="{{ get_url(path=link.url)}}" class="
 							{% if link.new %}
 								new
 							{% endif %}
-							{% if current_url | default(value='/') | trim_end_matches(pat='/') | safe == get_url(path=link.url, lang=lang) | trim_end_matches(pat='/') | safe %}
+							{% if current_url | default(value='/') | trim_end_matches(pat='/') | safe == get_url(path=link.url) | trim_end_matches(pat='/') | safe %}
 								active
 							{% endif %}">
 							{{- link.name -}}

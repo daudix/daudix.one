@@ -34,7 +34,7 @@ ____0_____0__\|/__@@@@__@@@__________|_\|/__|___\|/__\|/___________|_|_
 <p>
 	<small>
 		{%- if config.taxonomies | length > 0 -%}
-			<a href="{{ get_url(path='tags', lang=lang) }}">Filter by tag</a>
+			<a href="{{ get_url(path='tags') }}">Filter by tag</a>
 			<br />
 		{%- endif %}
 		Posts in total: {{ number_of_posts }}
