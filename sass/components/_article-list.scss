@@ -58,9 +58,7 @@
 		& > a {
 			position: absolute;
 			inset: 0;
-			border-radius: var(--rounded-corner);
-			border-start-end-radius: 2.125rem;
-			border-end-end-radius: 1.8125rem;
+			border-radius: inherit;
 		}
 
 		h3 {
