@@ -2,7 +2,7 @@
 	margin: 2rem 0;
 
 	&:hover:not(:active) div {
-		transform: translateY(-1rem);
+		transform: translateY(-0.5rem);
 		box-shadow: var(--edge-highlight), var(--shadow-glass);
 	}
 
