@@ -82,10 +82,10 @@ links = [
 	{ url = "@/blog/_index.md", name = "Blog" },
 	{ url = "@/design/index.md", name = "Design" },
 	{ name = "More", menu = [
-		{ url = "@/nanolog/_index.md", name = "Nanolog", new = true },
+		{ url = "@/nanolog/_index.md", name = "Nanolog" },
 		{ url = "@/calendar/index.md", name = "Calendar" },
 		{ url = "@/snug-nook/index.md", name = "Snug Nook" },
-		{ url = "@/100daystooffload/index.md", name = "100 Days To Offload" },
+		{ url = "@/100daystooffload/index.md", name = "100 Days To Offload", new = true },
 	] },
 ]
 
