@@ -81,6 +81,10 @@ h1 + p {
 				}
 			}
 
+			img {
+				border-radius: 0;
+			}
+
 			:last-child {
 				margin-block-end: 0;
 			}
