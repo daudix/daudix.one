@@ -85,6 +85,7 @@ links = [
 		{ url = "@/nanolog/_index.md", name = "Nanolog", new = true },
 		{ url = "@/calendar/index.md", name = "Calendar" },
 		{ url = "@/snug-nook/index.md", name = "Snug Nook" },
+		{ url = "@/100daystooffload/index.md", name = "100 Days To Offload" },
 	] },
 ]
 
