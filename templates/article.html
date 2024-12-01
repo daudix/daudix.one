@@ -14,12 +14,12 @@
 		{%- if page.date -%}
 			<p>
 				<small>
-					<time datetime="{{ page.date | date(format=' %+') }}">
+					<time datetime="{{ page.date | date(format='%+') }}">
 						Published on {{ page.date | date(format=config.extra.date_format, locale=config.extra.date_locale) -}}
 					</time>
 					{%- if page.updated -%}
 						<span> {{ config.extra.separator | default(value="•") }} </span>
-						<time datetime="{{ page.updated | date(format=' %+') }}">
+						<time datetime="{{ page.updated | date(format='%+') }}">
 							Updated on {{ page.updated | date(format=config.extra.date_format, locale=config.extra.date_locale) -}}
 						</time>
 					{%- endif -%}
