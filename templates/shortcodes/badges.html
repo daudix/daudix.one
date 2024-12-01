@@ -10,10 +10,10 @@
 		<div>
 			<div>
 				<p>
-					If you'd like to link to me, use the following button:
+					If you'd like to link to me, use the following badge:
 				</p>
 				<p>
-					<img class="pixels transparent no-hover" alt="daudix" src="badges/daudix.gif" />
+					<img class="pixels transparent no-hover" alt="daudix" src="{{ get_url(path='home/badges/daudix.gif') }}" />
 				</p>
 				<blockquote class="note">
 					<p class="alert-title">
@@ -30,13 +30,14 @@
 	<div class="marquee-wrapper">
 		<div class="marquee">
 			<ul style="--duration: {{ page.extra.badges | length * 2 }}s">
-				{% for button in page.extra.badges %}
+				{% for badge in page.extra.badges %}
 					<li>
-						<a href="{{ button.url }}">
+						<a href="{{ badge.url }}">
 							<img
 								class="pixels transparent no-hover"
-								alt="{{ button.name | trim_end_matches(pat='.gif') }}"
-								src="badges/{{ button.name }}"
+								alt="{{ badge.name | trim_end_matches(pat='.gif') }}"
+								{% set badge_url = "home/badges/" ~ badge.name %}
+								src="{{ get_url(path=badge_url) }}"
 							/>
 						</a>
 					</li>
@@ -46,13 +47,14 @@
 				</li>
 			</ul>
 			<ul style="--duration: {{ page.extra.badges | length * 2 }}s" aria-hidden="true">
-				{% for button in page.extra.badges %}
+				{% for badge in page.extra.badges %}
 					<li>
-						<a href="{{ button.url }}">
+						<a href="{{ badge.url }}">
 							<img
 								class="pixels transparent no-hover"
-								alt="{{ button.name | trim_end_matches(pat='.gif') }}"
-								src="badges/{{ button.name }}"
+								alt="{{ badge.name | trim_end_matches(pat='.gif') }}"
+								{% set badge_url = "home/badges/" ~ badge.name %}
+								src="{{ get_url(path=badge_url) }}"
 							/>
 						</a>
 					</li>
