@@ -1,0 +1,49 @@
+#posts-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+	gap: 0.5rem;
+	margin-block-start: 2rem;
+	padding: 0;
+	list-style: none;
+
+	li {
+		display: flex;
+		position: relative;
+		flex-direction: column;
+		gap: 1rem;
+        box-shadow: var(--edge-highlight), var(--shadow);
+        border-radius: var(--rounded-corner);
+        background-color: var(--bg-muted-1);
+        padding: 1rem;
+
+		&.journal {
+			--fg-muted-1: color-mix(in srgb, var(--purple-fg) 15%, rgb(0 0 0 / 0.5));
+			--fg-muted-2: color-mix(in srgb, var(--purple-fg) 15%, rgb(0 0 0 / 0.6));
+
+			@media (prefers-color-scheme: dark) {
+				--fg-muted-1: color-mix(in srgb, var(--purple-fg) 15%, rgb(255 255 255 / 0.5));
+				--fg-muted-2: color-mix(in srgb, var(--purple-fg) 15%, rgb(255 255 255 / 0.6));
+			}
+
+			background-color: var(--purple-bg-1);
+
+			a {
+				color: var(--purple-fg);
+			}
+		}
+
+		a {
+			font-size: var(--font-size-large);
+			line-height: 1;
+		}
+
+        p {
+            margin: 0;
+        }
+
+		small {
+			margin-block-start: auto;
+			line-height: 1;
+		}
+	}
+}

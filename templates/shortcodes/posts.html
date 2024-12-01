@@ -1,0 +1,17 @@
+<ul id="posts-list">
+	{%- for post in page.extra.posts %}
+		<li {% if post.journal %}class="journal"{% endif %}>
+			<a href="{{ post.url | safe }}">{{ post.title }}</a>
+			<p>{{ post.description }}</p>
+			<small>
+				<time datetime="{{ post.date | date(format='%+') }}">
+					{{ post.date | date(format=config.extra.date_format | default(value="%B %d, %Y") , locale=config.extra.date_locale | default(value="en_US")) }}
+				</time>
+				{%- if post.journal -%}
+					<span> {{ config.extra.separator | default(value="•") }} </span>
+					<span>Journal</span>
+				{%- endif -%}
+			</small>
+		</li>
+	{%- endfor %}
+</ul>
