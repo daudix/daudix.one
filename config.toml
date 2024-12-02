@@ -29,16 +29,16 @@ index_format = "elasticlunr_json"
 # accent_color_dark = "#ff6188"
 
 # Orange
-accent_color = "#e16032"
-accent_color_dark = "#fc9867"
+# accent_color = "#e16032"
+# accent_color_dark = "#fc9867"
 
 # Yellow
 # accent_color = "#cc7a0a"
 # accent_color_dark = "#ffd866"
 
 # Green
-# accent_color = "#269d69"
-# accent_color_dark = "#a9dc76"
+accent_color = "#269d69"
+accent_color_dark = "#a9dc76"
 
 # Blue
 # accent_color = "#1c8ca8"
