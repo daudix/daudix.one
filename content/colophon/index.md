@@ -18,24 +18,20 @@ This is the least fun page on this website. Deal with it.
 - [ ] Make the player on neocities display my current Spotify/last.fm
 - [ ] Style piclog.blue page
 - [ ] /uses page (?)
-- [ ] /now page (?)
 - [ ] New ARG/Easter Egg type of thingy (?) (inspirations: Portal "dinosaur" ARG, SSTV)
-- [ ] Add [navlinkads](https://dimden.dev/navlinkads) (?)
 - [x] Improve a11y (alt texts are awful and testing is barely present)
 - [x] Redo social links, maybe even draw some custom icons (?)
 - [x] Add expand button to "Bumps" (fill the whole page width and make bumps display as a grid)
 - [x] Restyle Fediring
 - [x] Add section with logos to Design
 - [x] Add section with unused icons to Design
-- [x] ~~Have some fun with the overscroll space~~
 - [x] Move this to-do from Codeberg to this website
-- [x] ~~Simplify game icon styles (use markdown list with `:nth-child` thingy and `::before`)~~
+- [x] Simplify game icon styles (use markdown list with `:nth-child` thingy and `::before`)
 - [x] "Feature" some alright posts
 - [x] Fix ugly johnvertisements on mobile
 - [x] Add stamps and maybe blinkies (inspirations: [melankorin](https://melankorin.net) <sup>[1](https://melankorin.net/about/)</sup> <sup>[2](https://melankorin.net/links/)</sup>)
 - [x] Draw banner for the Codeberg Pages guide
 - [x] Use marquee type of thing for 88x31 buttons
-- [x] ~~Month stamps by [NebularDrip on DA](https://www.deviantart.com/nebulardrip) (basically I thought it would be neat if the stamp automatically changed every month. yeah it sounds weird)~~
 - [x] Use custom statuscafe script to avoid patching it using CSS
 - [x] Credit more stuff in the colophon
 - [x] Add Pixelfed to the fedi timeline
@@ -46,7 +42,7 @@ This is the least fun page on this website. Deal with it.
 
 This website is a passion project of mine; it's made with (a lot of) love and attention to details (I bet you've noticed that already), is constantly updated and improved, and tries to be (somewhat) lightweight and compatible with older browsers. <small>(at very least most stuff works on iOS 15 and macOS High Sierra; which unfortunately a lot of people still use)</small>
 
-It used to be hosted on [GitHub pages](https://web.archive.org/web/20221030010150/https://daudix-ufo.github.io/), then on [Codeberg Pages](https://daudix.one), then on [exozyme](https://daudix.exozy.me), then on Codeberg Pages again, and now it's back on exozyme.
+It used to be hosted on [GitHub pages](https://web.archive.org/web/20221030010150/https://daudix-ufo.github.io/), then on [Codeberg Pages](https://daudix.one), then on [exozyme](https://daudix.exozy.me), then on Codeberg Pages again, then again on exozyme, and now it's on Codeberg Pages yet again.
 
 <details><summary>Why all this hosting mess?</summary>
 
