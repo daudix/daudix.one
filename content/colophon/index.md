@@ -42,14 +42,7 @@ This is the least fun page on this website. Deal with it.
 
 This website is a passion project of mine; it's made with (a lot of) love and attention to details (I bet you've noticed that already), is constantly updated and improved, and tries to be (somewhat) lightweight and compatible with older browsers. <small>(at very least most stuff works on iOS 15 and macOS High Sierra; which unfortunately a lot of people still use)</small>
 
-It used to be hosted on [GitHub pages](https://web.archive.org/web/20221030010150/https://daudix-ufo.github.io/), then on [Codeberg Pages](https://daudix.one), then on [exozyme](https://daudix.exozy.me), then on Codeberg Pages again, then again on exozyme, and now it's on Codeberg Pages yet again.
-
-<details><summary>Why all this hosting mess?</summary>
-
-At first I [migrated to Codeberg](@/blog/2023-07-15-migration-from-github-to-codeberg/index.md), then I joined [exozyme](https://exozy.me) which provided way faster CI and overall easier workflow, in addition to prettier domain, but then I found out that only exozyme members can open issues/pull requests on [exogit](https://git.exozy.me), which isn't good for a FOSS project like [Duckquill](https://duckquill.daudix.one), so I have set up a two-way mirror at [Forgejo Next](https://next.forgejo.org), since [Codeberg](https://codeberg.org) doesn't allow two-way mirrors to prevent high load on infrastructure. Everything worked well until one day, when Forgejo Next wiped *all the data*; accounts and repos. I had to do something, and so I moved back to Codeberg. Then Codeberg Pages became even more unstable than it already was, so after weeks of saying "no, just be patient, they'll come back up in a few hours" to myself, I moved to exozyme. This time it was super easy, since I already had [my own domain](@/blog/2024-06-25-my-first-domain/index.md). Duckquill is still on Codeberg Pages since I like everything about it to be as public as possible, my website on the other hand doesn't need to; I even consider making the repository private so that I can more safely draft posts (and maybe add some easter eggs, last time it didn't go well since everyone just looked at the source code).
-
-TL;DR: I'm chaotic.
-</details>
+It is currently hosted on [Vercel](https://vercel.com), and I like it so far. Before that, it used to be hosted on [Codeberg Pages](https://codeberg.page), [exozyme](https://exozy.me), and [GitHub Pages](https://pages.github.com).
 
 ## Thanks To
 
