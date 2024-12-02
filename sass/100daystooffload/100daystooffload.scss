@@ -1,3 +1,14 @@
+#percentage {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 0.5rem;
+
+	mark {
+		font-variant-numeric: tabular-nums;
+	}
+}
+
 #posts-list {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));

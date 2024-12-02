@@ -1,3 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>{{ page.title }}</h1>
+
+{{ page.content | safe }}
+
+<div id="percentage">
+    <mark>{{ page.extra.posts | length }}/100</mark>
+    <progress value="{{ page.extra.posts | length }}" max="100"></progress>
+</div>
+
 <ul id="posts-list">
 	{%- for post in page.extra.posts %}
 		<li {% if post.journal %}class="journal"{% endif %}>
@@ -15,3 +27,4 @@
 		</li>
 	{%- endfor %}
 </ul>
+{% endblock content %}

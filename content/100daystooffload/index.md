@@ -1,6 +1,7 @@
 +++
 title = "100 Days To Offload"
 description = "Great (in both meanings) writing challenge."
+template = "100daystooffload.html"
 [extra]
 styles = ["100daystooffload/100daystooffload.css"]
 posts = [
@@ -41,5 +42,3 @@ This page lists all my [#100DaysToOffload](https://100daystooffload.com) posts f
 Is this cheating? I don't think so. I see it as a way to organise my posts, and they are still written by me over the course of a year.
 
 To be completely honest I have no hopes for completing it, but also, I don't want to just give up. So here we are.
-
-{{ posts() }}
