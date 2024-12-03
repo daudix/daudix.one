@@ -48,28 +48,48 @@ main {
 
 	#header {
 		display: block;
-		transition: var(--transition-bezier);
+		position: relative;
+		transition: var(--transition-bezier-longer);
 		border-block-start: 0.125rem solid white;
 		border-block-end: 0.125rem solid white;
-		padding: 0.25rem 0;
+		width: 280px;
+		height: calc(48px + 0.75rem);
 		font-weight: var(--font-weight-black);
-		font-size: 54.725px;
+		font-size: 48px;
 		letter-spacing: -0.05em;
 		text-decoration: underline solid;
 		text-decoration-color: transparent;
 		text-decoration-thickness: 0.125em;
 		text-underline-offset: 0.25em;
+		text-transform: uppercase;
 
 		&:hover {
-			text-decoration-style: solid;
-			text-decoration-color: inherit;
-			text-underline-offset: 0.125em;
+			#face-front {
+				transform: perspective(var(--container-width)) rotateX(-180deg);
+			}
+
+			#face-back {
+				transform: perspective(var(--container-width)) rotateX(0deg);
+			}
 		}
 
-		&:active {
-			font-weight: var(--font-weight-light);
-			letter-spacing: 0.0275em;
-			text-decoration-thickness: 0.0625em;
+		#face-front,
+		#face-back {
+			-webkit-backface-visibility: hidden;
+			position: absolute;
+			backface-visibility: hidden;
+			transition: var(--transition-bezier-longer);
+			inset-block-start: 0;
+			inset-inline-start: 0;
+			padding: 0.25rem 0;
+		}
+
+		#face-front {
+			transform: perspective(var(--container-width)) rotateX(0deg);
+		}
+
+		#face-back {
+			transform: perspective(var(--container-width)) rotateX(180deg);
 		}
 	}
 
