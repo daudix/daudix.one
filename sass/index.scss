@@ -23,6 +23,10 @@ main {
 		margin: 0;
 	}
 
+	img {
+		margin: 0;
+	}
+
 	#top {
 		display: flex;
 		flex-direction: row;
@@ -33,12 +37,6 @@ main {
 			flex-direction: column;
 			gap: 0.5rem;
 			text-align: center;
-
-			img {
-				margin: 0;
-				width: 4rem;
-				height: 4rem;
-			}
 
 			span {
 				font-size: var(--font-size-xx-small);
@@ -132,17 +130,10 @@ main {
 			padding-inline-start: 1rem;
 			font-size: var(--font-size-x-small);
 		}
-
-		img {
-			margin: 0;
-			width: 8.5rem;
-			height: 4rem;
-		}
 	}
 
 	#barcode {
 		position: absolute;
-		margin: 0;
 		inset-block-end: 1rem;
 		inset-inline-start: 1rem;
 	}
