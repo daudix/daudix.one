@@ -1,5 +1,3 @@
-{%- set language_strings = load_data(path="i18n/" ~ lang ~ '.toml', required=false) -%}
-
 {%- if note -%}
 	{%- set alert_type = "note" -%}
 	{%- set alert_string = "Note" -%}

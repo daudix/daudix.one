@@ -1,7 +1,5 @@
 {% import "macros/rel_attributes.html" as macros_rel_attributes %}
 
-{%- set language_strings = load_data(path="i18n/" ~ lang ~ '.toml', required=false) -%}
-
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="{{ lang }}" {% include "partials/default_theme.html" %}>
 {% include "partials/head.html" %}
