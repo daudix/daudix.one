@@ -1,14 +1,14 @@
 {%- set rel_attributes = macros_rel_attributes::rel_attributes() | trim -%}
 
 <header id="site-nav">
-	{# <a href="#main-content" tabindex="0">Skip to Main Content</a> #}
+	<a href="#main-content" tabindex="0">Skip to Main Content</a>
 	<a id="home" href="{{ get_url(path='@/home/index.md') }}" title="Home"
 		{%- if current_url | default(value="/") | trim_end_matches(pat="/") | safe == get_url(path='@/home/index.md') | trim_end_matches(pat='/') | safe -%}
 			class="active"
 		{%- endif -%}>
 		<i class="icon"></i>
 	</a>
-	<details>
+	<details class="closable">
 		<summary title="Menu">
 			<i class="icon menu"></i>
 			<i class="icon close"></i>
