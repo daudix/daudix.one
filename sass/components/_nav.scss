@@ -67,6 +67,7 @@
 		backdrop-filter: var(--blur);
 		transition: all var(--transition), transform var(--transition-bezier);
 		box-shadow: var(--edge-highlight), var(--shadow);
+		border-radius: 999px;
 		background-color: var(--glass-bg);
 		padding: 0.625rem;
 		width: fit-content;
@@ -82,13 +83,9 @@
 		}
 	}
 
-	#home {
-		border-radius: 1.125rem 1.125rem var(--rounded-corner-small) var(--rounded-corner-small);
-
-		.icon {
-			-webkit-mask-image: var(--icon-home);
-			mask-image: var(--icon-home);
-		}
+	#home .icon {
+		-webkit-mask-image: var(--icon-home);
+		mask-image: var(--icon-home);
 	}
 
 	details {
@@ -101,7 +98,7 @@
 			summary {
 				position: relative;
 				box-shadow: var(--edge-highlight);
-				border-radius: var(--rounded-corner-small) var(--rounded-corner-small) 1.125rem 1.125rem;
+				border-radius: 999px;
 				padding: 0.625rem;
 
 				.icon.menu {
@@ -117,7 +114,6 @@
 		}
 
 		summary {
-			border-radius: var(--rounded-corner-small) var(--rounded-corner-small) 1.125rem 1.125rem;
 			width: 2.25rem;
 			height: 2.25rem;
 
