@@ -14,18 +14,17 @@ body {
 	display: grid; // Put footer at the bottom for short pages, such as the 404
 	grid-template-rows: auto minmax(auto, 1fr) auto; // Header, stuff, footer
 	margin: 0;
-	background-color: var(--bg-color);
-	// background: var(--bg-overlay), url("static.gif"), var(--accent-color);
-	// background-blend-mode: normal, difference;
+	background: var(--bg-overlay), url("static.gif"), var(--accent-color);
+	background-blend-mode: normal, difference;
 	min-height: 100vh;
 	color: var(--fg-color);
 	line-height: 1.5;
 	font-family: var(--font-sans-serif), var(--font-system-ui), var(--font-emoji);
 	overflow-wrap: break-word;
 
-	// @media (prefers-reduced-motion) {
-	// 	background: var(--bg-overlay), url("static-static.gif"), var(--accent-color);
-	// }
+	@media (prefers-reduced-motion) {
+		background: var(--bg-overlay), url("static-static.gif"), var(--accent-color);
+	}
 }
 
 // Style text selection to use accent color
