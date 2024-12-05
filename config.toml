@@ -77,15 +77,12 @@ date_locale = "en_IE"
 
 [extra.nav]
 auto_hide = true
-show_feed = true
 links = [
 	{ url = "@/blog/_index.md", name = "Blog" },
 	{ url = "@/design/index.md", name = "Design" },
-	{ name = "More", menu = [
-		{ url = "@/nanolog/_index.md", name = "Nanolog" },
-		{ url = "@/calendar/index.md", name = "Calendar" },
-		{ url = "@/snug-nook/index.md", name = "Snug Nook" },
-	] },
+	{ url = "@/nanolog/_index.md", name = "Nanolog" },
+	{ url = "@/calendar/index.md", name = "Calendar" },
+	{ url = "@/snug-nook/index.md", name = "Snug Nook" },
 ]
 
 [extra.footer]

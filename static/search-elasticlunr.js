@@ -131,7 +131,6 @@ function formatSearchResultItem(item, terms) {
 
 function initSearch() {
 	var searchBar = document.getElementById("search-bar");
-	var searchContainer = document.getElementById("search-container");
 	var searchResults = document.getElementById("search-results");
 	var MAX_ITEMS = 10;
 
@@ -181,23 +180,6 @@ function initSearch() {
 			searchResults.innerHTML += formatSearchResultItem(results[i], term.split(" "));
 		}
 	}, 150));
-
-	document.addEventListener("keydown", function (event) {
-		if (event.key === "/") {
-			event.preventDefault();
-			toggleSearch();
-		}
-	});
-
-	document.getElementById("search-toggle").addEventListener("click", toggleSearch);
-}
-
-function toggleSearch() {
-	var searchContainer = document.getElementById("search-container");
-	var searchBar = document.getElementById("search-bar");
-	searchContainer.classList.toggle("active");
-	searchBar.toggleAttribute("disabled");
-	searchBar.focus();
 }
 
 if (document.readyState === "complete" ||

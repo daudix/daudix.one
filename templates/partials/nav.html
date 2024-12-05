@@ -1,123 +1,49 @@
 {%- set rel_attributes = macros_rel_attributes::rel_attributes() | trim -%}
 
-{%- if config.extra.nav.auto_hide %}
-	<div id="handle"></div>
-{%- endif %}
 <header id="site-nav">
-	<nav>
-		<a href="#main-content" tabindex="0">Skip to Main Content</a>
-		<ul>
-			<li id="home">
-				<a href="{{ get_url(path='@/home/index.md') }}"
-					{%- if current_url | default(value="/") | trim_end_matches(pat="/") | safe == get_url(path='@/home/index.md') | trim_end_matches(pat='/') | safe -%}
-						class="active"
-					{%- endif -%}>
-					<i class="icon"></i>
-					{{- config.title -}}
-				</a>
-			</li>
-			<li class="divider"></li>
-			{%- for link in config.extra.nav.links %}
-				{%- if link.menu and link.menu | length > 0 -%}
-					<li>
-						<details class="closable">
-							<summary>{{ link.name }}</summary>
-							<ul>
-								{%- for link in link.menu -%}
-									{%- if link.url is matching('https?://') %}
-										<li>
-											<a href="{{ link.url }}" rel="{{ rel_attributes }}" class="external{% if link.new %} new{% endif %}">
-												{{- link.name -}}
-											</a>
-										</li>
-									{%- else %}
-										<li>
-											<a href="{{ get_url(path=link.url)}}" class="
-												{% if link.new %}
-													new
-												{% endif %}
-												{% if current_url | default(value='/') | trim_end_matches(pat='/') | safe == get_url(path=link.url) | trim_end_matches(pat='/') | safe %}
-													active
-												{% endif %}">
-												{{- link.name -}}
-											</a>
-										</li>
-									{%- endif %}
-								{%- endfor -%}
-							</ul>
-						</details>
-			 		 </li>
-				{%- elif link.url is matching('https?://') %}
-					<li>
-						<a href="{{ link.url }}" rel="{{ rel_attributes }}" class="external{% if link.new %} new{% endif %}">
-							{{- link.name -}}
-						</a>
-					</li>
-				{%- else %}
-					<li>
-						<a href="{{ get_url(path=link.url)}}" class="
-							{% if link.new %}
-								new
-							{% endif %}
-							{% if current_url | default(value='/') | trim_end_matches(pat='/') | safe == get_url(path=link.url) | trim_end_matches(pat='/') | safe %}
-								active
-							{% endif %}">
-							{{- link.name -}}
-						</a>
-					</li>
-				{%- endif %}
-			{%- endfor -%}
+	{# <a href="#main-content" tabindex="0">Skip to Main Content</a> #}
+	<a id="home" href="{{ get_url(path='@/home/index.md') }}" title="Home"
+		{%- if current_url | default(value="/") | trim_end_matches(pat="/") | safe == get_url(path='@/home/index.md') | trim_end_matches(pat='/') | safe -%}
+			class="active"
+		{%- endif -%}>
+		<i class="icon"></i>
+	</a>
+	<details>
+		<summary title="Menu">
+			<i class="icon menu"></i>
+			<i class="icon close"></i>
+		</summary>
+		<div>
+			<nav>
+				<ul>
+					{%- for link in config.extra.nav.links %}
+						{%- if link.url is matching("https?://") %}
+							<li>
+								<a href="{{ link.url }}" rel="{{ rel_attributes }}" class="external{% if link.new %} new{% endif %}">
+									{{- link.name -}}
+								</a>
+							</li>
+						{%- else %}
+							<li>
+								<a href="{{ get_url(path=link.url)}}" class="
+									{% if link.new %}
+										new
+									{% endif %}
+									{% if current_url | default(value='/') | trim_end_matches(pat='/') | safe == get_url(path=link.url) | trim_end_matches(pat='/') | safe %}
+										active
+									{% endif %}">
+									{{- link.name -}}
+								</a>
+							</li>
+						{%- endif %}
+					{%- endfor -%}
+				</ul>
+			</nav>
 			{%- if config.build_search_index %}
-				<li id="search">
-					<button id="search-toggle" class="circle" title="Search">
-						<i class="icon"></i>
-					</button>
-				</li>
-			{%- endif %}
-			{%- if config.feed_filenames | length > 1 and config.extra.nav.show_feed -%}
-				<li id="feed">
-					<details class="closable">
-						<summary class="circle" title="Feed">
-							<i class="icon"></i>
-						</summary>
-						<ul>
-							{%- for feed in config.feed_filenames %}
-								<li>
-									<a href="{{ get_url(path=feed) }}" rel="{{ rel_attributes }}">
-										{%- if feed == "atom.xml" -%}
-											Atom
-										{%- else -%}
-											RSS
-										{%- endif -%}
-									</a>
-								</li>
-							{%- endfor -%}
-						</ul>
-					</details>
-				</li>
-			{%- elif config.generate_feeds and config.extra.nav.show_feed %}
-				<li id="feed">
-					<a class="circle" href="{{ get_url(path=config.feed_filenames[0]) }}" title="Feed">
-						<i class="icon"></i>
-					</a>
-				</li>
-			{%- endif %}
-			{%- if config.extra.source_url and config.extra.nav.show_repo %}
-				<li id="repo">
-					<a class="circle" href="{{ config.extra.source_url }}" title="Repository">
-						<i class="icon"></i>
-					</a>
-				</li>
-			{%- endif %}
-		</ul>
-	</nav>
-	{%- if config.build_search_index %}
-		<div id="search-container">
-			<label for="search-bar" class="visually-hidden">Search</label>
-			<input id="search-bar" placeholder="Search for…" autocomplete="off" type="search" disabled>
-			<div id="search-results-container">
+				<label for="search-bar" class="visually-hidden">Search</label>
+				<input id="search-bar" placeholder="Search for…" autocomplete="off" type="search">
 				<div id="search-results"></div>
-			</div>
+			{%- endif %}
 		</div>
-	{%- endif %}
+	</details>
 </header>
