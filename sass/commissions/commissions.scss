@@ -6,7 +6,7 @@
 
 body::before {
 	--ray: rgb(from var(--accent-color) r g b / calc(var(--color-opacity-1) / 2));
-	--mask: radial-gradient(ellipse at top left, black, transparent);
+	--mask: radial-gradient(circle at top left, black, transparent);
 	-webkit-mask-image: var(--mask);
 	display: block;
 	position: fixed;
