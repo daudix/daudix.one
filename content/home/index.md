@@ -24,6 +24,7 @@ badges = [
   { name = "seirdy.gif", url = "https://seirdy.one" },
   { name = "standwith.gif", url = "https://decolonizepalestine.com" },
   { name = "valid-atom.gif", url = "https://validator.w3.org/feed/" },
+  { name = "volpeon.gif", url = "https://volpeon.ink" },
   { name = "vscodium.gif", url = "https://vscodium.com" },
 ]
 +++
