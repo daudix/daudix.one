@@ -7,9 +7,6 @@
 	{%- if config.extra.accent_color_dark %}
 		<meta name="theme-color" content="{{ config.extra.accent_color_dark | safe }}" media="(prefers-color-scheme:dark)" />
 	{%- endif %}
-	{%- if config.extra.csp %}
-		{%- include "partials/csp.html" %}
-	{%- endif %}
 	<title>{% include "partials/title.html" %}</title>
 	<link rel="canonical" href="{{ current_url | default(value='/') | safe }}" />
 
