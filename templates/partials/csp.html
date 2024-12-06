@@ -11,11 +11,9 @@ content="default-src 'none';
 	{%- set connect_src = "connect-src 'self'" -%}
 
 	{# Base logic for appending analytics domains #}
-	{%- if config.extra.goatcounter %}
-		{%- set goatcounter_host = config.extra.goatcounter.host | default(value='goatcounter.com') -%}
-		{%- set goatcounter_url = "https://" ~ config.extra.goatcounter.user ~ "." ~ goatcounter_host ~ "/count" %}
-		{%- set script_src = script_src ~ " " ~ goatcounter_url -%}
-		{%- set connect_src = connect_src ~ " " ~ goatcounter_url -%}
+	{%- if config.extra.analytics %}
+		{%- set script_src = "https://vercel.live" -%}
+		{%- set connect_src = "https://vercel.live" -%}
 	{%- endif %}
 
 	{#- Append comments host if present -#}

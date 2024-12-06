@@ -71,8 +71,8 @@
 		{%- set scripts = scripts | concat(with=["copy-button.js"]) %}
 	{%- endif %}
 
-	{%- if config.extra.goatcounter %}
-		{%- set scripts = scripts | concat(with=["count.js"]) %}
+	{%- if config.extra.analytics %}
+		{%- set scripts = scripts | concat(with=["_vercel/insights/script.js"]) %}
 	{%- endif %}
 
 	{%- if config.build_search_index %}
@@ -95,14 +95,9 @@
 
 	{%- if scripts | length > 0 %}
 		{%- for script in scripts %}
-			<script type="text/javascript" defer {% if script == "count.js" %}data-goatcounter="https://{{ config.extra.goatcounter.user }}.{{ config.extra.goatcounter.host | default(value='goatcounter.com') }}/count"{% endif %} src="{{ get_url(path=script) | safe }}"></script>
+			<script type="text/javascript" defer src="{{ get_url(path=script) | safe }}"></script>
 		{%- endfor %}
 	{%- endif %}
-
-	<script>
-		window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-	</script>
-	<script defer src="/_vercel/insights/script.js"></script>
 
 	<meta property="og:site_name" content="{{ config.title }}" />
 	<meta property="og:title" content="{% include 'partials/title.html' %}" />
