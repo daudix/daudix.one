@@ -145,7 +145,7 @@
 			flex-direction: column;
 			margin-block-start: 1rem;
 			width: min(calc(var(--container-width) / 2), calc(100vw - 2rem));
-			height: calc(100vh - 108px);
+			max-height: calc(100vh - 108px);
 		}
 
 		nav ul {
@@ -187,6 +187,7 @@
 		}
 
 		#search-bar {
+			flex-shrink: 0;
 			margin-block-start: 1rem;
 			box-shadow: var(--edge-highlight);
 			border: none;
