@@ -13,7 +13,6 @@ badges = [
   { name = "graphite.gif", url = "https://gra.phite.ro" },
   { name = "immjs.gif", url = "https://immjs.dev" },
   { name = "libreivan.gif", url = "https://libreivan.com" },
-  { name = "lucida.gif", url = "https://lucida.to" },
   { name = "marchintosh.gif", url = "https://libreivan.com/writing/" },
   { name = "melankorin.gif", url = "https://melankorin.net" },
   { name = "nek0zyx.gif", url = "https://nek0zyx.pages.gay" },
