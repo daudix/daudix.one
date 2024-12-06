@@ -99,6 +99,11 @@
 		{%- endfor %}
 	{%- endif %}
 
+	<script>
+		window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+	</script>
+	<script defer src="/_vercel/insights/script.js"></script>
+
 	<meta property="og:site_name" content="{{ config.title }}" />
 	<meta property="og:title" content="{% include 'partials/title.html' %}" />
 	<meta property="og:url" content="{{ current_url | default(value='/') | safe }}" />
