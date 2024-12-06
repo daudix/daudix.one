@@ -63,6 +63,7 @@ date_format = "%d %B %Y"
 date_format_long = "%d %B %Y, %R"
 date_locale = "en_IE"
 analytics = true
+speed_insights = true
 
 [extra.nav]
 auto_hide = true

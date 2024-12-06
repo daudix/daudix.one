@@ -72,6 +72,10 @@
 		{%- set scripts = scripts | concat(with=["_vercel/insights/script.js"]) %}
 	{%- endif %}
 
+	{%- if config.extra.speed_insights %}
+		{%- set scripts = scripts | concat(with=["_vercel/speed-insights/script.js"]) %}
+	{%- endif %}
+
 	{%- if config.build_search_index %}
 		{%- set scripts = scripts | concat(with=["elasticlunr.min.js", "search-elasticlunr.js"]) %}
 	{%- endif %}
