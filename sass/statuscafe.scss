@@ -14,7 +14,6 @@
     }
 }
 
-
 body {
 	text-wrap: pretty;
 	background: var(--bg-overlay), url("https://daudix.one/static.gif"), var(--accent-color);
@@ -29,14 +28,52 @@ body {
 	}
 }
 
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-wrap: balance;
+	margin: 2rem 0 1rem;
+	color: var(--accent-color);
+	line-height: normal;
+	letter-spacing: -0.05em;
+}
+
+h1 {
+	font-size: var(--font-size-xxx-large);
+}
+
+h2 {
+	font-size: var(--font-size-xx-large);
+}
+
+h3 {
+	font-size: var(--font-size-x-large);
+}
+
+h4 {
+	font-size: var(--font-size-large);
+}
+
+h5 {
+	font-size: var(--font-size-medium);
+}
+
+h6 {
+	font-size: var(--font-size-small);
+}
+
 a {
 	color: var(--accent-color);
 	font-weight: var(--font-weight-semi-bold);
 	text-decoration-thickness: max(1px, 0.0625em);
-}
 
-a:hover {
-	text-decoration-style: wavy;
+	&:hover {
+		text-decoration-style: wavy;
+	}
 }
 
 .profile-picture {
@@ -56,15 +93,35 @@ a:hover {
 .status-username {
 	margin-bottom: 0.5rem;
 	color: var(--fg-muted-2);
-	font-size: 0.875rem;
-}
+	font-size: var(--font-size-small);
 
-.status-username a {
-	font-size: 1rem;
+	a {
+		font-size: 1rem;
+	}
 }
 
 .status-content {
 	margin: 0;
 	color: var(--accent-color);
 	font-weight: var(--font-weight-semi-bold);
+}
+
+article + p a {
+	display: inline-block;
+	transition: all var(--transition), transform var(--transition-bezier);
+	box-shadow: var(--edge-highlight);
+	border-radius: 999px;
+	background-color: var(--bg-muted-1);
+	padding: 0.625rem 0.75rem;
+	font-weight: var(--font-weight-semi-bold);
+	line-height: 1;
+	text-decoration: none;
+
+	&:hover {
+		background-color: var(--bg-muted-2);
+	}
+
+	&:active {
+		transform: var(--active);
+	}
 }
