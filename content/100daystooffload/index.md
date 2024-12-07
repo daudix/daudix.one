@@ -5,6 +5,7 @@ template = "100daystooffload.html"
 [extra]
 styles = ["100daystooffload/100daystooffload.css"]
 posts = [
+  { date = "2024-12-07", title = "On Move to Vercel", description = "How and why I’ve moved this site away from Codeberg Pages.", url = "https://daudix.one/blog/moving-to-vercel/" },
   { date = "2024-11-30", title = "Bluesky Comments", description = "Shit on me right from the sky.", url = "https://daudix.neocities.org/journal/bluesky-comments/", journal = true },
   { date = "2024-11-12", title = "Rewrite Again?", description = "Yet another rewrite is pretty much over.", url = "https://daudix.one/blog/winter-cleanup/" },
   { date = "2024-11-02", title = "The Duck Has Grown Up", description = "It’s time for it to live its own life.", url = "https://daudix.one/blog/decoupling-from-duckquill/" },
