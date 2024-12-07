@@ -1,4 +1,4 @@
-# Taken from https://www.markpitblado.me/blog/deploying-to-vercel-from-codeberg
+# Based on https://www.markpitblado.me/blog/deploying-to-vercel-from-codeberg
 
 steps:
   preview:
