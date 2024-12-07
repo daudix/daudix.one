@@ -9,7 +9,7 @@ accent_color_dark = "#02a4d3"
 banner = "banner.png"
 toc = true
 [extra.comments]
-id = ""
+id = "113613291522721129"
 +++
 
 *Sigh* I know, yet another devlog after almost a month of radio silence (heh, if only). I could turn this into a long rant/vent, but let's rather not, and instead let me tell you how I moved this site from [Codeberg Pages](https://codeberg.page) to [Vercel](https://vercel.com) for no reason :P
