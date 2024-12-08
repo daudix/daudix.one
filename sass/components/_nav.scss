@@ -67,9 +67,9 @@
 		backdrop-filter: var(--blur);
 		transition: all var(--transition), transform var(--transition-bezier);
 		box-shadow: var(--edge-highlight), var(--shadow);
-		border-radius: 999px;
+		border-radius: var(--rounded-corner);
 		background-color: var(--glass-bg);
-		padding: 0.625rem;
+		padding: 0.75rem;
 		width: fit-content;
 		color: var(--accent-color);
 
@@ -79,7 +79,6 @@
 
 		&:active {
 			transform: var(--active);
-			border-radius: 1.125rem;
 		}
 	}
 
@@ -98,8 +97,6 @@
 			summary {
 				position: relative;
 				box-shadow: var(--edge-highlight);
-				border-radius: 999px;
-				padding: 0.625rem;
 
 				.icon.menu {
 					transform: rotate(45deg);
@@ -114,13 +111,13 @@
 		}
 
 		summary {
-			width: 2.25rem;
-			height: 2.25rem;
+			width: 2.5rem;
+			height: 2.5rem;
 
 			.icon {
 				position: absolute;
 				transition: all var(--transition), transform var(--transition-bezier);
-				inset: 0.625rem;
+				inset: 0.75rem;
 
 				&.menu {
 					-webkit-mask-image: var(--icon-menu);
