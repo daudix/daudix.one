@@ -8,7 +8,7 @@ badges = [
   { name = "blue-team.gif", url = "https://512kb.club" },
   { name = "doskel.gif", url = "https://doskel.net" },
   { name = "free.gif", url = "https://freeplay.floof.company" },
-  { name = "georgemoody.gif", url = "https://tilde.town/~georgemoody/" },
+  { name = "georgemoody.gif", url = "https://moody.im" },
   { name = "getimiskon.gif", url = "https://getimiskon.xyz" },
   { name = "graphite.gif", url = "https://gra.phite.ro" },
   { name = "immjs.gif", url = "https://immjs.dev" },
