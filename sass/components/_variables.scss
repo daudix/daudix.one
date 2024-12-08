@@ -44,7 +44,6 @@
 		--purple-fg-muted-1: color-mix(in srgb, var(--purple-fg) 15%, rgb(255 255 255 / 0.5));
 		--purple-fg-muted-2: color-mix(in srgb, var(--purple-fg) 15%, rgb(255 255 255 / 0.6));
 		--shade-color: rgb(0 0 0 / 0.25);
-		--shine: rgb(255 255 255 / 0.1);
 
 		color-scheme: dark;
 	}
@@ -90,7 +89,6 @@
 		--purple-fg-muted-1: color-mix(in srgb, var(--purple-fg) 15%, rgb(0 0 0 / 0.5));
 		--purple-fg-muted-2: color-mix(in srgb, var(--purple-fg) 15%, rgb(0 0 0 / 0.6));
 		--shade-color: rgb(0 0 0 / 0.07);
-		--shine: rgb(255 255 255 / 0.3);
 
 		// CONTAINERS
 		--container-width: 720px;
