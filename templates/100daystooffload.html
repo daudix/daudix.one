@@ -27,4 +27,9 @@
 		</li>
 	{%- endfor %}
 </ul>
+
+{%- if page.extra.posts | length == 100 -%}
+	<script type="text/javascript" defer src="{{ get_url(path='100daystooffload/confetti.js') | safe }}"></script>
+	<script type="text/javascript" defer src="{{ get_url(path='100daystooffload/script.js') | safe }}"></script>
+{%- endif -%}
 {% endblock content %}
