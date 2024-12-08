@@ -1,11 +1,33 @@
 #percentage {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	gap: 0.5rem;
+	position: relative;
+	margin: 4rem auto 0;
+	width: min(calc(var(--container-width) / 1.5), 100%);
 
-	mark {
+	span {
+		position: absolute;
+		transform: translateX(-50%);
+		inset-block-end: calc(100% + 0.5rem);
+		inset-inline-start: var(--percentage);
+		border-radius: var(--rounded-corner-small);
+		background-color: var(--accent-color);
+		padding: 0.25rem 0.375rem;
+		color: var(--contrast-color);
+		font-weight: var(--font-weight-semi-bold);
+		line-height: 1;
 		font-variant-numeric: tabular-nums;
+
+		&::before {
+			position: absolute;
+			transform: translateX(-50%);
+			inset-block-start: 100%;
+			inset-inline-start: 50%;
+			border-top: 0.5rem solid var(--accent-color);
+			border-right: 0.5rem solid transparent; 
+			border-left: 0.5rem solid transparent;
+			width: 0; 
+			height: 0;
+			content: "";
+		}
 	}
 }
 

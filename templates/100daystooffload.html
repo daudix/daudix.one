@@ -6,7 +6,7 @@
 {{ page.content | safe }}
 
 <div id="percentage">
-    <mark>{{ page.extra.posts | length }}/100</mark>
+    <span style="--percentage: {{ page.extra.posts | length }}%">{{ page.extra.posts | length }}%</span>
     <progress value="{{ page.extra.posts | length }}" max="100"></progress>
 </div>
 
