@@ -1,4 +1,5 @@
 i.icon {
+	-webkit-user-select: none;
 	display: inline-block;
 	mask-size: cover;
 	background-color: currentColor;
@@ -7,5 +8,6 @@ i.icon {
 	font-style: normal;
 	font-variant: normal;
 	line-height: 0;
+	user-select: none;
 	text-rendering: auto;
 }
