@@ -1,12 +1,27 @@
+{% set host = host | default(value="pleroma.envs.net") %}
+{% set data = load_data(url="https://" ~ host ~ "/api/v1/pleroma/emoji", format="json") %}
+
 <img
 	class="emoji{% if big %} big{% endif %}"
-	{% if pack %}
-		src="https://{{ host | default(value='pleroma.envs.net') }}/emoji/{{ pack }}/{{ name }}"
+	{% if path %}
+		src="{{ get_url(path=page.path ~ path) }}"
 	{% else %}
-		src="{{ name }}"
+		src="https://{{ host }}{{ data[name].image_url }}"
 	{% endif %}
-	alt="{{ name }}"
-	title="{{ name | trim_end_matches(pat='.apng') | trim_end_matches(pat='.gif') | trim_end_matches(pat='.jpg') | trim_end_matches(pat='.png') | trim_end_matches(pat='.webp') }}"
+	alt="
+	{%- if path -%}
+		{{ path | split(pat='.', limit=2) | first }}
+	{%- else -%}
+		{{ name }}
+	{%- endif -%}
+	"
+	title="
+	{%- if path -%}
+		{{ path | split(pat='.', limit=2) | first }}
+	{%- else -%}
+		{{ name }}
+	{%- endif -%}
+	"
 	width="24"
 	height="24"
 />

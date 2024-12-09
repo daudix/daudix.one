@@ -56,7 +56,7 @@ Now you can go and smash that "Create repository" button and proceed to the next
 
 ## Initializing Zola Website
 
-To be completely unbiased, I will use my own [Duckquill](https://duckquill.daudix.one) Zola theme in this example {{ emoji(pack="rage_faces", name="troll-face.gif") }}
+To be completely unbiased, I will use my own [Duckquill](https://duckquill.daudix.one) Zola theme in this example {{ emoji(name="troll-face") }}
 
 Jokes aside, you can use any theme from [getzola.org/themes](https://www.getzola.org/themes/), but to make sure we're on the same page we'll use Duckquill.
 

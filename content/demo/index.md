@@ -284,26 +284,26 @@ There's also a `cursor` class that you can add to a span with e.g. `█` charact
 
 #### Emoji
 
-Use any custom emoji from Akkoma ([pleroma.envs.net](https://pleroma.envs.net) is the default instance).
+Use any custom emoji from Akkoma.
 
 Available variables are:
 
-- `host`: Instance on which the emoji is located.
-- `pack`: Name of the emoji pack.
-- `name`: Name of the emoji itself.
-- `big`: Makes the emoji bigger.
+- `host`: The instance on which the emoji is located (defaults to [pleroma.envs.net](https://pleroma.envs.net)).
+- `name`: Name of the emoji.
+- `path`: Path or filename of the local colocated emoji.
+- `big`: Make the emoji bigger.
 
 ```jinja2
-{{/* emoji(pack="neofox", name="neofox_googly_shocked.png") */}}
+{{/* emoji(name="neofox_googly_shocked") */}}
 ```
 
-Hello there, I'm an {{ emoji(pack="neofox", name="neofox_googly_shocked.png") }} inline custom emoji.
+Hello there, I'm an {{ emoji(name="neofox_googly_shocked") }} inline custom emoji.
 
 ```jinja2
-{{/* emoji(pack="floof", name="afloofLoad.png", big=true) */}}
+{{/* emoji(name="afloofLoad", big=true) */}}
 ```
 
-{{ emoji(pack="floof", name="afloofLoad.png", big=true) }}
+{{ emoji(name="afloofLoad", big=true) }}
 
 #### YouTube
 

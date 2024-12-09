@@ -41,7 +41,7 @@ Slightly more detailed: because it's too slow and buggy for my taste, even thoug
 
 *And now that we are done...*
 
-**ALEX, GO {{ emoji(name="crumb-dancing.gif") }} YOURSELF WITH A {{ emoji(name="deck-friend.webp") }}**
+**ALEX, GO {{ emoji(path="crumb-dancing.gif") }} YOURSELF WITH A {{ emoji(path="deck-friend.webp") }}**
 
 ## TL;DR
 
