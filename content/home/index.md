@@ -7,6 +7,7 @@ no_header = true
 badges = [
   { name = "blue-team.gif", url = "https://512kb.club" },
   { name = "doskel.gif", url = "https://doskel.net" },
+  { name = "ersei.gif", url = "https://ersei.net" },
   { name = "free.gif", url = "https://freeplay.floof.company" },
   { name = "georgemoody.gif", url = "https://moody.im" },
   { name = "getimiskon.gif", url = "https://getimiskon.xyz" },
@@ -22,7 +23,6 @@ badges = [
   { name = "saynotoweb3.gif", url = "https://yesterweb.org/no-to-web3/" },
   { name = "seirdy.gif", url = "https://seirdy.one" },
   { name = "standwith.gif", url = "https://decolonizepalestine.com" },
-  { name = "valid-atom.gif", url = "https://validator.w3.org/feed/" },
   { name = "volpeon.gif", url = "https://volpeon.ink" },
   { name = "vscodium.gif", url = "https://vscodium.com" },
 ]
