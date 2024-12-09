@@ -51,8 +51,8 @@ accent_color_dark = "#ab9df2"
 # Purple (GNOME)
 # accent_color = "#8939a4"
 # accent_color_dark = "#fba7ff"
-issues_url = "https://git.exozy.me/daudix/website/issues"
-source_url = "https://git.exozy.me/daudix/website"
+issues_url = "https://codeberg.org/daudix/website/issues"
+source_url = "https://codeberg.org/daudix/website"
 show_copy_button = true
 show_reading_time = true
 show_share_button = true

@@ -1,4 +1,5 @@
 #percentage {
+	display: flex;
 	position: relative;
 	margin: 4rem auto 0;
 	width: min(calc(var(--container-width) / 1.5), 100%);
@@ -6,7 +7,7 @@
 	span {
 		position: absolute;
 		transform: translateX(-50%);
-		inset-block-end: calc(100% + 0.5rem);
+		inset-block-end: calc(100% + 0.75rem);
 		inset-inline-start: var(--percentage);
 		border-radius: var(--rounded-corner-small);
 		background-color: var(--accent-color);
