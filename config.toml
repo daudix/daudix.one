@@ -41,12 +41,12 @@ index_format = "elasticlunr_json"
 # accent_color_dark = "#a9dc76"
 
 # Blue
-accent_color = "#1c8ca8"
-accent_color_dark = "#78dce8"
+# accent_color = "#1c8ca8"
+# accent_color_dark = "#78dce8"
 
 # Purple
-# accent_color = "#7058be"
-# accent_color_dark = "#ab9df2"
+accent_color = "#7058be"
+accent_color_dark = "#ab9df2"
 
 # Purple (GNOME)
 # accent_color = "#8939a4"

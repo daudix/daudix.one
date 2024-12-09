@@ -5,11 +5,11 @@
 @include theme-variables using ($theme) {
     @if $theme == "dark" {
 		--contrast-color: rgb(0 0 0 / 0.8);
-		--accent-color: #78dce8;
+		--accent-color: #ab9df2;
     }
 
     @else {
-        --accent-color: #1c8ca8;
+        --accent-color: #7058be;
   		--contrast-color: #fff;
     }
 }
