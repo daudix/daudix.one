@@ -103,7 +103,7 @@ This is not a complete list, but rather list of places where I'm somewhat active
 <img class="transparent no-hover pixels drop-shadow icon" src="icons/bluesky.gif" alt="Pixel art Bluesky icon." />
 <div class="details">
 <strong>Bluesky</strong>
-<p><small>Planning to actually start using it.</small></p>
+<p><small>A mix of the former two. Kind of.</small></p>
 </div>
 </a>
 
