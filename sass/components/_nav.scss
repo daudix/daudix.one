@@ -7,38 +7,6 @@
 	inset-block-start: 1rem;
 	inset-inline-start: 1rem;
 
-	&::before {
-		--mask: radial-gradient(circle at top left, black 50%, rgb(0 0 0 / var(--dim-opacity)));
-		-webkit-mask-image: var(--mask);
-		position: absolute;
-		z-index: -1;
-		mask-image: var(--mask);
-		transition: var(--transition);
-		inset-block-start: -1rem;
-		inset-inline-start: -1rem;
-		width: 100vw;
-		height: 100vh;
-		pointer-events: none;
-		content: "";
-	}
-
-	&:has(details[open]) {
-		&::before {
-			-webkit-backdrop-filter: var(--blur);
-			backdrop-filter: var(--blur);
-			background-color: var(--glass-bg);
-			pointer-events: all;
-		}
-
-		#home,
-		summary {
-			-webkit-backdrop-filter: none;
-			backdrop-filter: none;
-			box-shadow: var(--edge-highlight);
-			background-color: var(--bg-muted-1);
-		}
-	}
-
 	& > a:first-of-type {
 		position: absolute;
 		transform: translateX(-50%) translateY(calc(-100% - 1rem));
@@ -95,9 +63,6 @@
 			padding: 0;
 
 			summary {
-				position: relative;
-				box-shadow: var(--edge-highlight);
-
 				.icon.menu {
 					transform: rotate(45deg);
 					opacity: 0;
@@ -107,6 +72,25 @@
 					transform: none;
 					opacity: 1;
 				}
+
+				& ~ * {
+					animation: nav-open var(--transition-bezier);
+	
+					@keyframes nav-open {
+						from {
+							transform: translate(-1rem, -1rem) scale(0.5);
+							opacity: 0;
+						}
+					}
+				}
+			}
+
+			& > div {
+				-webkit-backdrop-filter: var(--blur);
+				transform: none;
+				backdrop-filter: var(--blur);
+				box-shadow: var(--edge-highlight), var(--shadow-glass);
+				background-color: var(--glass-bg);
 			}
 		}
 
@@ -141,9 +125,16 @@
 		& > div {
 			display: flex;
 			flex-direction: column;
+			transform-origin: top left;
 			margin-block-start: 1rem;
+			border-radius: 1.625rem 1.625rem 1.75rem 1.75rem;
+			padding: 0.5rem;
 			width: min(calc(var(--container-width) / 2), calc(100vw - 2rem));
-			max-height: calc(100vh - 108px);
+			max-height: calc(100vh - 132px);
+
+			&:has(#search-results .item) {
+				border-radius: 1.625rem 1.625rem 1.25rem 1.25rem;
+			}
 		}
 
 		nav ul {
@@ -207,7 +198,7 @@
 			--mask: linear-gradient(to bottom,
 					transparent,
 					black 1rem,
-					black calc(100% - 16rem),
+					black calc(100% - 0.5rem),
 					transparent);
 			-webkit-mask-image: var(--mask);
 			display: none;
@@ -215,8 +206,8 @@
 			flex-direction: column;
 			gap: 0.5rem;
 			mask-image: var(--mask);
-			margin: 0 -0.5rem;
-			padding: 1rem 0.5rem;
+			margin: 0 -0.5rem -0.5rem;
+			padding: 1rem 0.5rem 0.5rem;
 			overflow: auto;
 
 			.item {
@@ -226,10 +217,6 @@
 				border-radius: var(--rounded-corner);
 				background-color: var(--bg-muted-1);
 				padding: 1rem;
-
-				&:last-of-type {
-					margin-block-end: 16rem;
-				}
 
 				a {
 					width: fit-content;
