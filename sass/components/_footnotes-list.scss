@@ -1,35 +1,4 @@
-.footnotes-list {
-	p {
-		margin-block-start: 0;
-		margin-block-end: 0;
-	}
-
-	a[href*="#fr-"] {
-		-webkit-user-select: none;
-		-webkit-mask-image: var(--icon-footnote);
-		display: inline-block;
-		vertical-align: -0.3125em;
-		opacity: var(--dim-opacity);
-		mask-image: var(--icon-footnote);
-		mask-size: cover;
-		transition: all var(--transition), transform var(--transition-bezier);
-		background-color: var(--accent-color);
-		width: 1rem;
-		height: 1rem;
-		color: transparent;
-		user-select: none;
-
-		&:hover {
-			opacity: 1;
-			background-color: var(--accent-color);
-		}
-
-		&:active {
-			transform: var(--active);
-		}
-	}
-
-	li:target a[href*="#fr-"] {
-		text-shadow: none;
-	}
+.footnotes-list p {
+	margin-block-start: 0;
+	margin-block-end: 0;
 }
