@@ -61,7 +61,7 @@
 	display: flex;
 	position: fixed;
 	flex-direction: column;
-	gap: 0.5rem;
+	gap: 0.25rem;
 	animation: buttons-load var(--transition-bezier) 0.525s;
 	inset-block-end: 1rem;
 	inset-inline-end: 1rem;
@@ -84,18 +84,19 @@
 	#go-to-top,
 	#share,
 	#issue {
+		-webkit-backdrop-filter: var(--blur);
 		display: inline-block;
+		backdrop-filter: var(--blur);
 		transition: all var(--transition), transform var(--transition-bezier);
-		box-shadow: var(--edge-highlight);
-		border-radius: 999px;
-		background-color: var(--bg-muted-1);
-		padding: 0.5rem;
+		box-shadow: var(--edge-highlight), var(--shadow);
+		border-radius: var(--rounded-corner);
+		background-color: var(--glass-bg-1);
+		padding: 0.625rem;
 		color: var(--accent-color);
 		line-height: 0;
 
 		&:hover {
-			background-color: var(--bg-muted-2);
-			// color: var(--fg-muted-2);
+			background-color: var(--glass-bg-2);
 		}
 
 		&:active {
@@ -144,7 +145,7 @@
 		inset-inline-end: 3rem;
 		box-shadow: var(--edge-highlight), var(--shadow-glass);
 		border-radius: var(--rounded-corner);
-		background-color: var(--glass-bg);
+		background-color: var(--glass-bg-1);
 		padding: 1rem;
 		width: min(calc(var(--container-width) / 3), calc(90vw - 3rem));
 		max-height: 50vh;

@@ -13,7 +13,7 @@
 		transition: all var(--transition), transform var(--transition-bezier);
 		inset-inline-start: 50vw;
 		border-radius: 999px;
-		background-color: var(--glass-bg);
+		background-color: var(--glass-bg-1);
 		padding: 0.625rem 0.75rem;
 		width: max-content;
 		line-height: 1;
@@ -36,13 +36,13 @@
 		transition: all var(--transition), transform var(--transition-bezier);
 		box-shadow: var(--edge-highlight), var(--shadow);
 		border-radius: var(--rounded-corner);
-		background-color: var(--glass-bg);
+		background-color: var(--glass-bg-1);
 		padding: 0.75rem;
 		width: fit-content;
 		color: var(--accent-color);
 
 		&:hover {
-			background-color: var(--bg-muted-2);
+			background-color: var(--glass-bg-2);
 		}
 
 		&:active {
@@ -90,7 +90,7 @@
 				transform: none;
 				backdrop-filter: var(--blur);
 				box-shadow: var(--edge-highlight), var(--shadow-glass);
-				background-color: var(--glass-bg);
+				background-color: var(--glass-bg-1);
 			}
 		}
 
