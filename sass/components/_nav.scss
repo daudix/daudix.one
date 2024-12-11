@@ -142,7 +142,10 @@
 			flex-wrap: wrap;
 			gap: 0.25rem;
 			margin: 0;
+			margin-block-end: 0.5rem;
+			border-block-end: max(1px, 0.0625rem) solid var(--bg-muted-2);
 			padding: 0;
+			padding-block-end: 0.5rem;
 			list-style: none;
 
 			li {
@@ -175,7 +178,6 @@
 
 		#search-bar {
 			flex-shrink: 0;
-			margin-block-start: 1rem;
 			box-shadow: var(--edge-highlight);
 			border: none;
 			border-radius: 999px;
@@ -216,27 +218,15 @@
 				background-color: var(--bg-muted-1);
 				padding: 0.75rem 1rem;
 
-				a ::after {
+				a::after {
 					content: " →";
-
-					:root[dir*="rtl"] & {
-						content: " ←";
-					}
 				}
 
 				span {
+					margin-block-start: 0.5rem;
+					border-block-start: max(1px, 0.0625rem) solid var(--bg-muted-2);
+					padding-block-start: 0.25rem;
 					color: var(--fg-muted-2);
-
-					&:first-of-type,
-					&.more-matches {
-						margin-block-start: 0.75rem;
-						border-block-start: max(1px, 0.0625rem) solid var(--bg-muted-2);
-						padding-block-start: 0.25rem;
-					}
-
-					&.more-matches {
-						font-size: var(--font-size-small);
-					}
 
 					strong {
 						color: var(--fg-color);

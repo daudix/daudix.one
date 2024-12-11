@@ -146,7 +146,7 @@
 		box-shadow: var(--edge-highlight), var(--shadow-glass);
 		border-radius: var(--rounded-corner);
 		background-color: var(--glass-bg-1);
-		padding: 1rem;
+		padding: 0.75rem 1rem;
 		width: min(calc(var(--container-width) / 3), calc(90vw - 3rem));
 		max-height: 50vh;
 
@@ -158,7 +158,6 @@
 		strong.title {
 			border-block-end: var(--bg-muted-2) max(1px, 0.0625rem) solid;
 			padding-block-end: 0.5rem;
-			color: var(--fg-muted-1);
 		}
 
 		div {
@@ -186,14 +185,6 @@
 
 			&:first-child {
 				margin-block-start: 0.5rem;
-			}
-
-			li::marker {
-				color: var(--fg-muted-2);
-			}
-
-			a {
-				color: var(--fg-muted-2);
 			}
 		}
 	}
