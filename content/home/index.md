@@ -120,17 +120,6 @@ Better yet, I have a website on [neocities](https://neocities.org); it's quite e
 
 I also have a [Gemini capsule](gemini://gmi.daudix.one) on [flounder](https://flounder.online). I've recently changed it to serve as a place for jotting down small notes rather than being a mirror of this website. See [this post](@/blog/2024-07-13-repurposing-gemini-capsule/index.md) for the reasons behind this decision. <small>(you can also _finger_ me at `daudix@flounder.online`)</small>
 
-<div id="snug-nook">
-<div>
-
-[](@/snug-nook/index.md)
-<strong class="title">Snug Nook</strong>
-
-Cozy and welcoming space for cool people to hang out in; now available on both Discord and Matrix.
-![neofax](neofax-googly-shocked.png#transparent#no-hover)
-</div>
-</div>
-
 <div id="rizz-dialog" class="buttons">
   <button id="rizz">Rizz It Up</button>
   <div id="dont"></div>
