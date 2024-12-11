@@ -14,7 +14,6 @@
 		padding: 0.25rem 0.375rem;
 		color: var(--contrast-color);
 		font-weight: var(--font-weight-semi-bold);
-		line-height: 1;
 		font-variant-numeric: tabular-nums;
 
 		&::before {
@@ -48,7 +47,7 @@
         box-shadow: var(--edge-highlight), var(--shadow);
         border-radius: var(--rounded-corner);
         background-color: var(--bg-muted-1);
-        padding: 1rem;
+        padding: 0.75rem 1rem;
 
 		&.journal {
 			--fg-muted-1: color-mix(in srgb, var(--purple-fg) 15%, rgb(0 0 0 / 0.5));
@@ -68,7 +67,6 @@
 
 		a {
 			font-size: var(--font-size-large);
-			line-height: 1;
 		}
 
         p {
@@ -77,7 +75,6 @@
 
 		small {
 			margin-block-start: auto;
-			line-height: 1;
 		}
 	}
 }

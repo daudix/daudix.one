@@ -65,7 +65,6 @@
 			margin: 0;
 			color: var(--accent-color);
 			font-weight: var(--font-weight-semi-bold);
-			line-height: 1;
 
 			&::after {
 				-webkit-mask-image: var(--icon-right);
@@ -337,9 +336,9 @@
 		display: inline-block;
 		transition: all var(--transition), transform var(--transition-bezier);
 		box-shadow: var(--edge-highlight);
-		border-radius: 1rem;
+		border-radius: 1.125rem;
 		background-color: var(--bg-muted-1);
-		padding: 0.5rem;
+		padding: 0.625rem;
 		color: var(--accent-color);
 		line-height: 0;
 
@@ -358,7 +357,7 @@
 
 		&:active {
 			transform: var(--active);
-			border-radius: 1rem;
+			border-radius: 1.125rem;
 		}
 	}
 
@@ -406,20 +405,19 @@
 		box-shadow: var(--edge-highlight);
 		border-radius: var(--rounded-corner-small);
 		background-color: var(--accent-color);
-		padding: 0.5rem 0.625rem;
+		padding: 0.375rem 0.625rem;
 		color: var(--contrast-color);
 		font-weight: var(--font-weight-semi-bold);
-		line-height: 1;
 		font-variant-numeric: tabular-nums;
 	}
 
 	&:has(a#paginator-previous:active) #paginator-counter {
-		border-start-start-radius: 1rem;
-		border-end-start-radius: 1rem;
+		border-start-start-radius: 1.125rem;
+		border-end-start-radius: 1.125rem;
 	}
 
 	&:has(a#paginator-next:active) #paginator-counter {
-		border-start-end-radius: 1rem;
-		border-end-end-radius: 1rem;
+		border-start-end-radius: 1.125rem;
+		border-end-end-radius: 1.125rem;
 	}
 }

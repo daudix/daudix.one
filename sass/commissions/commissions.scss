@@ -116,7 +116,6 @@ body::before {
 			display: inline-flex;
 			flex: 1;
 			padding: 0;
-			line-height: 1;
 			white-space: nowrap;
 
 			label {
@@ -124,7 +123,7 @@ body::before {
 				transition: var(--transition);
 				cursor: pointer;
 				border-radius: var(--rounded-corner-small);
-				padding: 0.25rem 0.375rem;
+				padding: 0 0.375rem;
 				font-weight: var(--font-weight-semi-bold);
 				font-size: var(--font-size-small);
 				text-align: center;

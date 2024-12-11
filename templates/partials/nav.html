@@ -1,7 +1,7 @@
 {%- set rel_attributes = macros_rel_attributes::rel_attributes() | trim -%}
 
 <header id="site-nav">
-	<a href="#main-content" tabindex="0">Skip to Main Content</a>
+	<a id="skip-to-content" href="#main-content" tabindex="0">Skip to Main Content</a>
 	<a id="home" href="{{ get_url(path='@/home/index.md') }}" title="Home"
 		{%- if current_url | default(value="/") | trim_end_matches(pat="/") | safe == get_url(path='@/home/index.md') | trim_end_matches(pat='/') | safe -%}
 			class="active"

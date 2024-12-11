@@ -11,8 +11,7 @@
 		flex: 1;
 		transition: all var(--transition), transform var(--transition-bezier);
 		border-radius: var(--rounded-corner);
-		padding: 1rem;
-		padding-block-end: 0.75rem;
+		padding: 0.75rem 1rem;
 		min-width: 0;
 		text-decoration: none;
 
@@ -42,10 +41,9 @@
 		}
 
 		.nav-arrow {
-			margin-block-end: 0.75rem;
+			margin-block-end: 0.5rem;
 			color: var(--fg-muted-2);
 			font-weight: var(--font-weight-normal);
-			line-height: 1;
 		}
 
 		.post-title {

@@ -37,11 +37,10 @@
 		box-shadow: var(--edge-highlight);
 		border-radius: var(--rounded-corner);
 		background-color: var(--bg-muted-1);
-		padding: 0.75rem 1rem;
+		padding: 0.4375rem 1rem;
 		color: var(--fg-muted-1);
 		font-weight: var(--font-weight-semi-bold);
 		font-size: var(--font-size-small);
-		line-height: 1;
 
 		&:hover {
 			background-color: var(--bg-muted-2);

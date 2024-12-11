@@ -51,19 +51,6 @@
 		</p>
 	{%- endif %}
 
-	{%- if config.extra.footer.socials %}
-		<ul id="socials">
-			{%- for link in config.extra.footer.socials %}
-				<li>
-					<a href="{{ link.url | safe }}" rel="{{ rel_attributes }} me" title="{{ link.name }}">
-						<i class="icon" style='--icon: url("data:image/svg+xml,{{ link.icon }}")'></i>
-						<span>{{ link.name }}</span>
-					</a>
-				</li>
-			{%- endfor %}
-		</ul>
-	{%- endif %}
-
 	{%- if config.extra.footer.show_fediring  %}
 		<div id="fediring">
 			<a class="link external" href="https://fediring.net">Fediring</a>
