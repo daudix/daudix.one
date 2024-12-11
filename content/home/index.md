@@ -28,11 +28,11 @@ badges = [
 ]
 +++
 
-<noscript>
+<noscript id="noscript">
   <p>
     <small>JavaScript is off huh? Good for you!</small>
     <br />
-    <small>Here's an exclusive cute fox hugging a duck for you :3</small>
+    <small>Here's an exclusive cute fox hugging a duck for you x3</small>
     <br />
     <img class="transparent no-hover drop-shadow" alt="Neofox hugs a duck." src="neofox-hug-duck.png" />
   </p>
