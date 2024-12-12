@@ -1,7 +1,6 @@
 body {
 	--bg-overlay: linear-gradient(rgb(0 0 0 / var(--dim-opacity)), rgb(0 0 0 / var(--dim-opacity)));
 	background: var(--bg-overlay), url("static.gif"), black;
-	background-blend-mode: normal;
 
 	@media (prefers-reduced-motion) {
 		background: var(--bg-overlay), url("static-static.gif"), black;
