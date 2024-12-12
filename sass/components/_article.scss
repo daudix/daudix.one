@@ -6,34 +6,64 @@ body:has(#banner-container) {
 }
 
 #banner-container {
-	--mask: linear-gradient(black, transparent);
+	--mask: linear-gradient(black 50%, transparent);
 	-webkit-user-select: none;
 	-webkit-mask-image: var(--mask);
 	position: absolute;
 	z-index: -1;
 	mask-image: var(--mask);
 	inset: 0;
-	aspect-ratio: 2 / 1;
+	border-radius: var(--rounded-corner) var(--rounded-corner) 0 0;
+	width: 100vw;
+	height: min(calc((var(--container-width) / 2) + 4rem), calc(50vw + 3rem));
 	user-select: none;
+
+	&::before {
+		position: fixed;
+		transform: translateX(-50%);
+		filter: blur(1rem);
+		animation: banner-glow-load 1.6s;
+		margin-block-start: 4rem;
+		inset-inline-start: 50%;
+		border-radius: var(--rounded-corner) var(--rounded-corner) 0 0;
+		background-image: var(--blurnail);
+		background-position: center;
+		background-size: cover;
+		background-attachment: fixed;
+		aspect-ratio: 2 / 1;
+		width: min(var(--container-width), calc(100% - 2rem));
+		content: "";
+
+		@keyframes banner-glow-load {
+			from,
+			25% {
+				opacity: 0;
+			}
+		}
+	}
 
 	#banner {
 		position: fixed;
+		transform: translateX(-50%);
 		animation: banner-load var(--transition-longer);
 		transition: none;
 		margin: 0;
+		margin-block-start: 4rem;
+		inset-inline-start: 50%;
+		border-radius: var(--rounded-corner) var(--rounded-corner) 0 0;
+		width: min(var(--container-width), calc(100% - 2rem));
 
 		@keyframes banner-load {
 			from {
-				transform: var(--hover);
+				transform: translateX(-50%) var(--hover);
 				opacity: 0;
 			}
 		}
 	}
 
 	& + article > #heading {
-		margin-block-start: calc(50vw - 7rem);
+		margin-block-start: min(calc(var(--container-width) / 2), calc(50vw - 1rem));
 	}
-
 }
 
 #heading {
@@ -43,16 +73,14 @@ body:has(#banner-container) {
 	h1 {
 		-webkit-background-clip: text;
 		margin: 0;
-		background-image: linear-gradient(
-			to right,
-			var(--fg-muted-1),
-			var(--fg-muted-2),
-			var(--fg-muted-1)
-		);
+		background-image: linear-gradient(to right,
+				var(--fg-muted-1),
+				var(--fg-muted-2),
+				var(--fg-muted-1));
 		background-clip: text;
 		color: transparent;
 
-		& + p {
+		&+p {
 			display: inline;
 		}
 	}
@@ -122,7 +150,7 @@ body:has(#banner-container) {
 		background-color: transparent;
 		padding: 0;
 
-		&[open] summary ~ * {
+		&[open] summary~* {
 			transform-origin: bottom right;
 			animation: button-dropdown-open var(--transition-bezier);
 
@@ -141,7 +169,7 @@ body:has(#banner-container) {
 		}
 	}
 
-	summary + div {
+	summary+div {
 		-webkit-backdrop-filter: var(--blur);
 		display: flex;
 		position: absolute;
@@ -167,13 +195,11 @@ body:has(#banner-container) {
 		}
 
 		div {
-			--mask: linear-gradient(
-				to bottom,
-				transparent,
-				black 1rem,
-				black calc(100% - 1rem),
-				transparent
-			);
+			--mask: linear-gradient(to bottom,
+					transparent,
+					black 1rem,
+					black calc(100% - 1rem),
+					transparent);
 			-webkit-mask-image: var(--mask);
 			flex: 1;
 			mask-image: var(--mask);
@@ -206,7 +232,7 @@ body:has(#banner-container) {
 			mask-image: var(--icon-backlinks);
 		}
 
-		summary + div {
+		summary+div {
 			width: min(calc(var(--container-width) / 3), calc(90vw - 5rem));
 		}
 	}
