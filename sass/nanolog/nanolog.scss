@@ -52,7 +52,7 @@ h1 + p {
 		& > div:nth-of-type(2) {
 			box-shadow: var(--edge-highlight), var(--shadow);
 			border-radius: var(--rounded-corner);
-			border-start-end-radius: 1.9375rem;
+			border-start-end-radius: 2rem;
 			background-color: var(--bg-muted-1);
 			padding: 1rem;
 
@@ -63,9 +63,8 @@ h1 + p {
 				box-shadow: var(--edge-highlight);
 				border-radius: 999px;
 				background-color: var(--bg-muted-1);
-				padding: 0.5rem 0.75rem;
+				padding: 0.25rem 0.75rem;
 				font-size: var(--font-size-small);
-				line-height: 1;
 				text-decoration: none;
 
 				&:hover {
