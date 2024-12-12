@@ -1,3 +1,10 @@
+body:has(#banner-container) {
+	background: var(--bg-overlay), var(--blurnail), var(--accent-color);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
 #banner-container {
 	--mask: linear-gradient(black, transparent);
 	-webkit-user-select: none;

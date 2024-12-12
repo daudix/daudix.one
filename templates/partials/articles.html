@@ -26,7 +26,7 @@
 		{%- endif -%}
 		<article class="{% if article_type %}{{ article_type }}{% endif %}{% if page.extra.banner %} has-banner{% endif %}{% if page.extra.accent_color and not article_type %} colored{% endif %}" style="
 			{% if blurnail %}
-			 --blurnail: url('{{ blurnail.url }}');
+			 --blurnail: url('{{ blurnail.url | safe }}');
 			{% endif %}
 
 			{% if page.extra.accent_color and not article_type %}

@@ -4,6 +4,12 @@
 {%- set rel_attributes = macros_rel_attributes::rel_attributes() | trim -%}
 
 {%- if page.extra.banner -%}
+	{%- set blurnail = resize_image(path=page.colocated_path ~ page.extra.banner, width=8, height=8, op="fill", format="webp") -%}
+	<style>
+		:root {
+			--blurnail: url('{{ blurnail.url | safe }}');
+		}
+	</style>
 	<div id="banner-container">
 		<img id="banner" class="full-bleed{% if page.extra.banner_pixels %} pixels{% endif %}" src="{{ current_url ~ page.extra.banner }}" {% if config.markdown.lazy_async_image %}decoding="async" loading="lazy"{% endif %} />
 	</div>
