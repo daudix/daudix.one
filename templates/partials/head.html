@@ -68,14 +68,6 @@
 		{%- set scripts = scripts | concat(with=["copy-button.js"]) %}
 	{%- endif %}
 
-	{%- if config.extra.analytics %}
-		{%- set scripts = scripts | concat(with=["_vercel/insights/script.js"]) %}
-	{%- endif %}
-
-	{%- if config.extra.speed_insights %}
-		{%- set scripts = scripts | concat(with=["_vercel/speed-insights/script.js"]) %}
-	{%- endif %}
-
 	{%- if config.build_search_index %}
 		{%- set scripts = scripts | concat(with=["elasticlunr.min.js", "search-elasticlunr.js"]) %}
 	{%- endif %}
@@ -92,6 +84,14 @@
 		{%- set scripts = scripts | concat(with=page.extra.scripts) %}
 	{%- elif section.extra.scripts %}
 		{%- set scripts = scripts | concat(with=section.extra.scripts) %}
+	{%- endif %}
+
+	{%- if config.extra.analytics %}
+		<script type="text/javascript" async src="{{ get_url(path='api/insights/script.js') | safe }}" data-endpoint="/api"></script>
+	{%- endif %}
+
+	{%- if config.extra.speed_insights %}
+		<script type="text/javascript" async src="{{ get_url(path='api/speed-insights/script.js') | safe }}" data-endpoint="/api"></script>
 	{%- endif %}
 
 	{%- if scripts | length > 0 %}
