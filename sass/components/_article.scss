@@ -6,7 +6,7 @@ body:has(#banner-container) {
 }
 
 #banner-container {
-	--mask: linear-gradient(black 50%, transparent);
+	--mask: linear-gradient(black calc(50% + 2rem), transparent);
 	-webkit-user-select: none;
 	-webkit-mask-image: var(--mask);
 	position: absolute;
