@@ -24,8 +24,8 @@
 		--fg-contrast: #29242a;
 		--fg-muted-1: color-mix(in srgb, var(--accent-color) 15%, rgb(255 255 255 / 0.5));
 		--fg-muted-2: color-mix(in srgb, var(--accent-color) 15%, rgb(255 255 255 / 0.6));
-		--glass-bg-1: color-mix(in srgb, var(--accent-color) 15%, rgb(0 0 0 / var(--dim-opacity)));
-		--glass-bg-2: color-mix(in srgb, var(--accent-color) 25%, rgb(0 0 0 / var(--dim-opacity)));
+		--glass-bg-1: color-mix(in srgb, var(--accent-color) 25%, rgb(0 0 0 / var(--dim-opacity)));
+		--glass-bg-2: color-mix(in srgb, var(--accent-color) 35%, rgb(0 0 0 / var(--dim-opacity)));
 		--red-fg: #ff6188;
 		--orange-fg: #fc9867;
 		--yellow-fg: #ffd866;
