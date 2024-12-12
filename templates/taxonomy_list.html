@@ -21,12 +21,12 @@ ___\|//jgs||//_\V/_\|//_______\\|//V/\\|/__
 <h1>Tags</h1>
 
 <p>
-	<small>Tags in total: {{ terms | length }}</small>
+	<small>{{ terms | length }} tag{{ terms | length | pluralize }} in total.</small>
 </p>
 
 <ul class="tags">
 	{%- for tag in terms -%}
-		<li><a href="{{ get_taxonomy_url(kind='tags', name=tag.name) }}"><span class="tag">{{ tag.name }}</span><span class="count">{{ tag.pages | length }}</span></a></li>
+		<li><a href="{{ get_taxonomy_url(kind='tags', name=tag.name) }}"><span class="tag">{{ tag.name }}</span><span class="count">{{ tag.page_count }}</span></a></li>
 	{%- endfor -%}
 </ul>
 {% endblock content %}

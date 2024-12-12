@@ -37,7 +37,7 @@ ____0_____0__\|/__@@@@__@@@__________|_\|/__|___\|/__\|/___________|_|_
 			<a href="{{ get_url(path='tags') }}">Filter by tag</a>
 			<br />
 		{%- endif %}
-		Posts in total: {{ number_of_posts }}
+		{{ number_of_posts }} post{{ number_of_posts | pluralize }} in total.
 	</small>
 </p>
 
