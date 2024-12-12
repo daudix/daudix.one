@@ -4,7 +4,7 @@
 {%- set rel_attributes = macros_rel_attributes::rel_attributes() | trim -%}
 
 {%- if page.extra.banner -%}
-	{%- set blurnail = resize_image(path=page.colocated_path ~ page.extra.banner, width=8, height=8, op="fill", format="webp") -%}
+	{%- set blurnail = resize_image(path=page.colocated_path ~ page.extra.banner, width=4, height=2, op="fill", format="webp") -%}
 	<style>
 		:root {
 			--blurnail: url('{{ blurnail.url | safe }}');
