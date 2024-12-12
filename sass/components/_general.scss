@@ -20,10 +20,6 @@ body {
 	line-height: 1.5rem;
 	font-family: var(--font-sans-serif), var(--font-system-ui), var(--font-emoji);
 	overflow-wrap: break-word;
-
-	@media (prefers-reduced-motion) {
-		background: var(--bg-overlay), url("static-static.gif"), var(--accent-color);
-	}
 }
 
 // Style text selection to use accent color

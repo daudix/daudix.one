@@ -16,16 +16,11 @@
 
 body {
 	text-wrap: pretty;
-	background: var(--bg-overlay), url("https://daudix.one/static.gif"), var(--accent-color);
-	background-blend-mode: normal, difference;
+	background-color: var(--bg-color);
 	color: var(--fg-color);
 	line-height: 1.5rem;
 	font-family: var(--font-system-ui), var(--font-emoji);
 	overflow-wrap: break-word;
-
-	@media (prefers-reduced-motion) {
-		background: var(--bg-overlay), url("https://daudix.one/static-static.gif"), var(--accent-color);
-	}
 }
 
 h1,
