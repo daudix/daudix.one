@@ -6,7 +6,7 @@
 
 body::before {
 	--ray: rgb(from var(--accent-color) r g b / calc(var(--color-opacity-1) / 2));
-	--mask: radial-gradient(circle at top left, black, transparent);
+	--mask: radial-gradient(circle at 2.25rem 2.25rem, black, transparent);
 	-webkit-mask-image: var(--mask);
 	display: block;
 	position: fixed;
@@ -14,7 +14,7 @@ body::before {
 	mask-image: var(--mask);
 	animation: rays 35s linear infinite;
 	background: repeating-conic-gradient(
-		from var(--angle) at top left,
+		from var(--angle) at 2.25rem 2.25rem,
 		var(--ray) 0deg 10deg,
 		transparent 10deg 20deg
 	);

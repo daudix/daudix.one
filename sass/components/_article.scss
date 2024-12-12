@@ -154,12 +154,11 @@ body:has(#banner-container) {
 		border-radius: var(--rounded-corner);
 		background-color: var(--glass-bg-1);
 		padding: 0.75rem 1rem;
-		width: min(calc(var(--container-width) / 3), calc(90vw - 3rem));
+		width: min(calc(var(--container-width) / 3), calc(100vw - 4.5rem));
 		max-height: 50vh;
 
 		@media only screen and (max-width: 720px) {
 			inset-inline-end: 2.5rem;
-			width: min(calc(var(--container-width) / 3), calc(90vw - 2.5rem));
 		}
 
 		strong.title {

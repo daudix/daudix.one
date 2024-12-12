@@ -59,7 +59,8 @@
 			inset-inline-end: 0;
 
 			#backlinks summary + div {
-				width: min(var(--container-width) / 3, 90vw - 2.5rem);
+				width: min(var(--container-width) / 3, calc(100vw - 4.5rem));
+				inset-inline-end: 2.5rem;
 			}
 		}
 	}

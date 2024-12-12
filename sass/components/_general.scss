@@ -62,7 +62,7 @@ body {
 
 main {
 	margin: 4rem auto;
-	width: min(var(--container-width), 90%);
+	width: min(var(--container-width), calc(100% - 2rem));
 
 	& > *:not(#banner-container, #buttons-container, #fluttershy, #comments main > *),
 	& + #site-footer {

@@ -29,7 +29,7 @@ body {
 
 	@media screen {
 		margin: 10mm auto;
-		width: min(var(--container-width), 90%);
+		width: min(var(--container-width), calc(100% - 2rem));
 	}
 
 	blockquote {
