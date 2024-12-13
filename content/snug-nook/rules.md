@@ -17,9 +17,11 @@ As per [Discord's TOS](https://discord.com/terms/#2), this server can be viewed 
 Many members are polyglots, but not all. The use of foreign languages also makes moderation more difficult. However, if the conversation is mainly in English and a member, for example, asks for the meaning of a particular foreign word, that's fine.
 7. **Limit Unnecessary Use of Profanity**  
 You know what that means; pointless swearing out of habit.
-8. **Don't Spam and Don't Mention Users without Need**  
+8. **Don't Encourage Others in Breaking the Rules**  
+Doing so will count as breaking the rule by yourself.
+9. **Don't Spam and Don't Mention Users without Need**  
 Even if the spam is unintentional, automated moderation can think it is.
-9. **Don't Try to Find Loopholes in the Rules**  
+10. **Don't Try to Find Loopholes in the Rules**  
 Want to speedrun getting banned? Just ask `@Moderator` to do so.
 
 The rules may be changed at any time. Improvement proposals are welcome.
