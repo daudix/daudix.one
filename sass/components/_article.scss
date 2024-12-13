@@ -7,16 +7,13 @@ body:has(#banner-container) {
 
 #banner-container {
 	--mask: linear-gradient(black calc(50% + 2rem), transparent);
-	-webkit-user-select: none;
 	-webkit-mask-image: var(--mask);
 	position: absolute;
 	z-index: -1;
 	mask-image: var(--mask);
 	inset: 0;
-	border-radius: var(--rounded-corner) var(--rounded-corner) 0 0;
 	width: 100vw;
 	height: min(calc((var(--container-width) / 2) + 4rem), calc(50vw + 3rem));
-	user-select: none;
 
 	&::before {
 		position: fixed;
@@ -26,10 +23,7 @@ body:has(#banner-container) {
 		margin-block-start: 4rem;
 		inset-inline-start: 50%;
 		border-radius: var(--rounded-corner) var(--rounded-corner) 0 0;
-		background-image: var(--blurnail);
-		background-position: center;
-		background-size: cover;
-		background-attachment: fixed;
+		background: var(--blurnail) center / cover fixed;
 		aspect-ratio: 2 / 1;
 		width: min(var(--container-width), calc(100% - 2rem));
 		content: "";
@@ -46,7 +40,6 @@ body:has(#banner-container) {
 		position: fixed;
 		transform: translateX(-50%);
 		animation: banner-load var(--transition-longer);
-		transition: none;
 		margin: 0;
 		margin-block-start: 4rem;
 		inset-inline-start: 50%;
