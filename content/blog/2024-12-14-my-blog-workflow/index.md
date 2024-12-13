@@ -9,7 +9,7 @@ accent_color_dark = "#e89928"
 banner = "banner.webp"
 trigger = "Contains a huge amount of meta, thankfully not the fedi meta."
 [extra.comments]
-id = ""
+id = "113647866479778879"
 +++
 
 You know what we do when there's no ideas for a blog post? Write about the blog itself.
@@ -73,7 +73,11 @@ When I'm happy with the banner, I open the downscaled 4x2px version of it (which
 
 ## Step 5: Publication
 
-This is the hardest step, removing `draft = true` from the frontmatter and pushing it to the repo. Once it's deployed, I post about it on Mastodon using the following template (that I fill out manually):
+This is the hardest step, removing `draft = true` from the frontmatter and pushing it to the repo.
+
+![Lazygit with commit message "New post: My Blog Workflow"](lazygit.png#transparent)
+
+Once it's deployed, I post about it on Mastodon using the following template (that I fill out manually):
 
 ```txt
 #Blog post: <title>
@@ -87,7 +91,7 @@ This is the hardest step, removing `draft = true` from the frontmatter and pushi
 
 ![Mastodon post compose box with the template above in it, but placeholders are replaced with actual title, description, and URL](mastodon-compose.png)
 
-How do I get the title and description? No, not from the Markdown file, I extract it using "Inspect Element" from the card on blog posts list. Why? Because Zola actually converts some characters to their proper variants, like three dots to an ellipsis, single quote to apostrophe, and such. I could automate it and save lots of time in the long run, but I don't want to spend my time writing the automation.
+From where do I get the title and description? No, not from the Markdown file, I extract it using "Inspect Element" from the card on blog posts list. Why? Because Zola actually converts some characters to their proper variants, like three dots to an ellipsis, single quote to apostrophe, and so on. I could automate it and save a lot of time in the long run, but I don't want to spend my time writing the automation.
 
 ![Inspect element sidebar with post title, description, and downscaled banner URL being highlighted](inspect-post.png)
 
