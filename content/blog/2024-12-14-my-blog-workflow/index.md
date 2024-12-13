@@ -30,9 +30,6 @@ As soon as I feel like writing, I go thorough said folder in search for somethin
 
 Then, I create a new file with some frontmatter in it, so that I don't have to fill it out manually. GNOME has a not-very-well-known feature called Templates, which is basically a folder in home with any files you want, which you can copy in place from the context menu. I have one called `index.md` with the following contents:
 
-![Templates folder in Nautilus](templates.png#transparent)
-![Context menu with index.md template](context-menu.png#transparent)
-
 ```toml
 +++
 title = ""
@@ -49,9 +46,12 @@ id = ""
 +++
 ```
 
-![Apostrophe window with this post open](apostrophe.png#transparent)
+![Templates folder in Nautilus](templates.png#transparent)
+![Context menu with index.md template](context-menu.png#transparent)
 
 Afterwards I simply write. Nothing interesting.
+
+![Apostrophe window with this post open](apostrophe.png#transparent)
 
 ## Step 3: Final Touches
 
