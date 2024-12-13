@@ -66,14 +66,7 @@ main {
 
 	& > *:not(#banner-container, #buttons-container, #fluttershy, #comments main > *),
 	& + #site-footer {
-		animation: main-load var(--transition-bezier-longer);
-
-		@keyframes main-load {
-			from {
-				transform: translateY(2rem);
-				opacity: 0;
-			}
-		}
+		animation: slide-in-bottom-longer var(--transition-bezier-longer);
 	}
 }
 

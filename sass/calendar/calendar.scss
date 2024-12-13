@@ -226,12 +226,9 @@ body {
 
 	&.active {
 		display: flex;
-		animation: achievement-fade-in 4s;
+		animation: achievement-fade-out 4s;
 
-		@keyframes achievement-fade-in {
-
-			10%,
-			50%,
+		@keyframes achievement-fade-out {
 			90% {
 				transform: none;
 				opacity: 1;

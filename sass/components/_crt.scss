@@ -92,13 +92,3 @@
 		}
 	}
 }
-
-.cursor {
-	animation: cursor-blink 1s infinite;
-
-	@keyframes cursor-blink {
-		50% {
-			opacity: 0;
-		}
-	}
-}

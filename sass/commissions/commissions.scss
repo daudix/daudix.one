@@ -66,14 +66,7 @@ body::before {
 			color: var(--fg-muted-2);
 
 			& > * {
-				animation: card-fade var(--transition-bezier);
-		
-				@keyframes card-fade {
-					from {
-						transform: translateX(-1rem);
-						opacity: 0;
-					}
-				}
+				animation: slide-in var(--transition-bezier);
 			}
 
 			:first-child {

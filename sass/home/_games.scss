@@ -155,9 +155,9 @@ details:first-of-type li:nth-of-type(3) li {
 
 						&:last-child {
 							display: inline-flex;
-							animation-name: scroll-abs;
+							animation-name: portal-scroll-2;
 
-							@keyframes scroll-abs {
+							@keyframes portal-scroll-2 {
 								from {
 									transform: translateX(100%);
 								}

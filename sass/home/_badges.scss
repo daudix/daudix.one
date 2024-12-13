@@ -329,14 +329,7 @@
 
 			& > div {
 				transform-origin: top right;
-				animation: badges-popup-open var(--transition-bezier);
-		
-				@keyframes badges-popup-open {
-					from {
-						transform: scale(0.5) translate(1rem, 1rem);
-						opacity: 0;
-					}
-				}
+				animation: expand-top-right var(--transition-bezier);
 			}
 		}
 	}

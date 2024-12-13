@@ -269,14 +269,7 @@ details {
 			}
 
 			& ~ * {
-				animation: details-open var(--transition-bezier);
-
-				@keyframes details-open {
-					from {
-						transform: translateY(-1rem);
-						opacity: 0;
-					}
-				}
+				animation: slide-in-top var(--transition-bezier);
 			}
 		}
 	}

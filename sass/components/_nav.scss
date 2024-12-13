@@ -73,14 +73,7 @@
 				}
 
 				& ~ * {
-					animation: nav-open var(--transition-bezier);
-	
-					@keyframes nav-open {
-						from {
-							transform: translate(-1rem, -1rem) scale(0.5);
-							opacity: 0;
-						}
-					}
+					animation: expand-top-left var(--transition-bezier);
 				}
 			}
 

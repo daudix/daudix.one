@@ -9,10 +9,6 @@
 	font-variant-numeric: tabular-nums;
 
 	@keyframes clock-blink {
-		from {
-			color: var(--accent-color);
-		}
-
 		25% {
 			color: var(--bg-muted-1);
 		}
