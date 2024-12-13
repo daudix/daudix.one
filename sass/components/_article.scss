@@ -21,7 +21,7 @@ body:has(#banner-container) {
 	&::before {
 		position: fixed;
 		transform: translateX(-50%);
-		filter: blur(1rem);
+		filter: blur(4rem);
 		animation: banner-glow-load 1.6s;
 		margin-block-start: 4rem;
 		inset-inline-start: 50%;
