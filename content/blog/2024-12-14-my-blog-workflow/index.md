@@ -8,6 +8,7 @@ accent_color = "#d13300"
 accent_color_dark = "#e89928"
 banner = "banner.webp"
 trigger = "Contains a huge amount of meta, thankfully not the fedi meta."
+toc = true
 [extra.comments]
 id = "113647866479778879"
 +++
