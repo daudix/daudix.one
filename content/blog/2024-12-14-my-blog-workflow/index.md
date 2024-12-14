@@ -90,8 +90,6 @@ Once it's deployed, I post about it on Mastodon using the following template (th
 #100DaysToOffload <additional_hashtags>
 ```
 
-![Mastodon post compose box with the template above in it, but placeholders are replaced with actual title, description, and URL](mastodon-compose.png)
-
 From where do I get the title and description? No, not from the Markdown file, I extract it using "Inspect Element" from the card on blog posts list. Why? Because Zola actually converts some characters to their proper variants, like three dots to an ellipsis, single quote to apostrophe, and so on. I could automate it and save a lot of time in the long run, but I don't want to spend my time writing the automation.
 
 ![Inspect element sidebar with post title, description, and downscaled banner URL being highlighted](inspect-post.png)
@@ -104,6 +102,6 @@ If I feel like so, I also crosspost said post to Bluesky, but I don't do that of
 
 That's it I think, I could forget something, but if I did this means it wasn't all that important.
 
-This post wasn't spellchecked with DeepL and wasn't proofreaded all that mich, so apologizes if some typos slipped in.
+This post wasn't spellchecked with DeepL and wasn't proofreaded all that much, so apologizes if some typos slipped in.
 
 As always, thanks for reading and see you in the next one!
