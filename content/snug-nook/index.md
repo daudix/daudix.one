@@ -8,7 +8,7 @@ styles = ["snug-nook/snug-nook.css"]
 Hi, nice to see you here ^^
 
 Ever wanted to join yet another Discord server for fun and giggles? Hate Discord and prefer Matrix instead? Worry not, We got you all covered!
-<span class="rainbow wavy">
+<span class="rainbow">
     <strong>
         <span style="--delay:1">S</span><span style="--delay:2">n</span><span style="--delay:3">u</span><span style="--delay:4">g</span>
         <span style="--delay:6">N</span><span style="--delay:7">o</span><span style="--delay:8">o</span><span style="--delay:9">k</span>
