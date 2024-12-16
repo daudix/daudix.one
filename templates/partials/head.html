@@ -3,10 +3,23 @@
 	<meta charset="UTF-8" />
 	<meta name="description" content="{{ config.description }}" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta name="theme-color" content="{{ config.extra.accent_color | default(value='#9a9996') | safe }}" />
-	{%- if config.extra.accent_color_dark %}
-		<meta name="theme-color" content="{{ config.extra.accent_color_dark | safe }}" media="(prefers-color-scheme:dark)" />
-	{%- endif %}
+
+	{%- if page.extra.accent_color %}
+		<meta name="theme-color" content="{{ page.extra.accent_color | safe }}" />
+	{%- elif section.extra.accent_color %}
+		<meta name="theme-color" content="{{ section.extra.accent_color | safe }}" />
+	{%- else -%}
+		<meta name="theme-color" content="{{ config.extra.accent_color | default(value='#9a9996') | safe }}" />
+	{%- endif -%}
+
+	{%- if page.extra.accent_color_dark %}
+		<meta name="theme-color" content="{{ page.extra.accent_color_dark | safe }}" media="(prefers-color-scheme:dark)" />
+	{%- elif section.extra.accent_color_dark %}
+		<meta name="theme-color" content="{{ section.extra.accent_color_dark | safe }}" media="(prefers-color-scheme:dark)" />
+	{%- elif config.extra.accent_color_dark -%}
+		<meta name="theme-color" content="{{ config.extra.accent_color | safe }}" media="(prefers-color-scheme:dark)" />
+	{%- endif -%}
+
 	<title>{% include "partials/title.html" %}</title>
 	<link rel="canonical" href="{{ current_url | default(value='/') | safe }}" />
 
@@ -14,6 +27,8 @@
 		<link rel="me" href="https://{{ config.extra.comments.host }}/@{{ config.extra.comments.user }}" />
         <meta name="fediverse:creator" content="@{{ config.extra.comments.user }}@{{ config.extra.comments.host }}" />
 	{%- endif %}
+
+	<meta content="Zola v0.19.2" name="generator">
 
 	{%- include "partials/favicon.html" %}
 

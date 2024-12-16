@@ -4,6 +4,7 @@ description = "A sneak peek into my designs."
 template = "design.html"
 [extra]
 default_theme = "dark"
+accent_color = "#cfc09f"
 accent_color_dark = "#cfc09f"
 styles = ["design/design.css"]
 original_icons = [
