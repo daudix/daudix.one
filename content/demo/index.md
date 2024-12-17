@@ -280,8 +280,6 @@ Alright, this one doesn't simplify anything, it just adds a CRT-like effect arou
 
 {% end %}
 
-There's also a `cursor` class that you can add to a span with e.g. `█` character to simulate the terminal cursor. It doesn't work from inside Markdown code blocks though.
-
 #### Emoji
 
 Use any custom emoji from Akkoma.
