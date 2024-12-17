@@ -218,12 +218,17 @@ aside {
 }
 
 details {
+	transition: width var(--transition);
+	margin: 0 auto;
+	width: min(calc(var(--container-width) / 1.5), 100%);
+
 	&[open] {
 		box-shadow: var(--edge-highlight), var(--shadow);
 		border-radius: var(--rounded-corner);
 		background-color: var(--bg-muted-1);
 		padding: 1rem;
 		padding-block-start: 0.75rem;
+		width: 100%;
 
 		summary {
 			box-shadow: none;
