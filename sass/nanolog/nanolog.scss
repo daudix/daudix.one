@@ -80,7 +80,7 @@ h1 + p {
 				}
 			}
 
-			img {
+			img:not(:hover) {
 				border-radius: 0;
 			}
 

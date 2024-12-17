@@ -44,3 +44,11 @@ However, if the user's actions are too nasty, levels may be skipped depending on
 ## Appeal
 
 If you feel that you have been unfairly punished, feel free to discuss it with the [admin](@/find/index.md#contacts) or the moderator behind this. Misunderstandings happen.
+
+## TL;DR
+
+<details>
+<summary>Be friendly</summary>
+
+![Meme titled "Be friendly" with a stretched image of Twilight Sparkle, followed by the text: Don't engage with rude people online. And make sure you behave yourself - Don't offend anyone. When communicating on the Internet, be kind to others. Avoid using harsh words! You might unintentionally hurt someone, And reading rude comments is just as unpleasant as hearing them.](../be-friendly.png)
+</details>

@@ -63,7 +63,7 @@ And lastly, to quote [Jeffrey](https://hyperreal.coffee/about/):
 
 > I’m <button id="shy">shy</button> and might come across as reserved and standoffish at first, but I open up when I get more comfortable with people.
 
-<details><summary>Some things that I like:</summary>
+<details><summary>Some things that I like</summary>
 
 - Purple <small>(lavender in particular)</small>
 - Design

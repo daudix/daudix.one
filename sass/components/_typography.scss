@@ -218,6 +218,29 @@ aside {
 }
 
 details {
+	&[open] {
+		box-shadow: var(--edge-highlight), var(--shadow);
+		border-radius: var(--rounded-corner);
+		background-color: var(--bg-muted-1);
+		padding: 1rem;
+		padding-block-start: 0.75rem;
+
+		summary {
+			box-shadow: none;
+			border-radius: 0;
+			background-color: transparent;
+			padding: 0;
+
+			&::before {
+				transform: scaleY(-1);
+			}
+
+			& ~ * {
+				animation: slide-in-top var(--transition-bezier);
+			}
+		}
+	}
+
 	summary {
 		cursor: pointer;
 		box-shadow: var(--edge-highlight), var(--shadow);
@@ -247,31 +270,12 @@ details {
 		}
 	}
 
-	:last-child {
-		margin-block-end: 0;
+	img {
+		border-radius: 0;
 	}
 
-	&[open] {
-		box-shadow: var(--edge-highlight), var(--shadow);
-		border-radius: var(--rounded-corner);
-		background-color: var(--bg-muted-1);
-		padding: 1rem;
-		padding-block-start: 0.75rem;
-
-		summary {
-			box-shadow: none;
-			border-radius: 0;
-			background-color: transparent;
-			padding: 0;
-
-			&::before {
-				transform: scaleY(-1);
-			}
-
-			& ~ * {
-				animation: slide-in-top var(--transition-bezier);
-			}
-		}
+	:last-child {
+		margin-block-end: 0;
 	}
 }
 
