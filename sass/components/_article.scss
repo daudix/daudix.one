@@ -90,6 +90,7 @@ body:has(#banner-container) {
 	position: fixed;
 	flex-direction: column;
 	gap: 0.25rem;
+	z-index: 1;
 	animation: slide-in-reverse var(--transition-bezier) 0.525s;
 	inset-block-end: 1rem;
 	inset-inline-end: 1rem;
@@ -148,7 +149,7 @@ body:has(#banner-container) {
 		}
 	}
 
-	summary+div {
+	summary + div {
 		-webkit-backdrop-filter: var(--blur);
 		display: flex;
 		position: absolute;
