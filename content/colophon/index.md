@@ -13,6 +13,11 @@ This is the least fun page on this website. Deal with it.
 <strong class="title">To-do</strong>
 <div>
 
+- [ ] Add photo gallery (random polaroid rotation can be done using Tera's [`get_random`](https://keats.github.io/tera/docs/#get-random))
+- [ ] Redesign navbar one more time (full-width bar, perhaps with my logo in it)
+- [ ] Display "Website Source" link somewhere
+- [ ] Cacheburst (?)
+- [ ] Introduce categories as a replacement to post types
 - [ ] Make "shrine" for my beloved portal series
 - [ ] Redesign status.cafe
 - [ ] Make the player on neocities display my current Spotify/last.fm
@@ -48,9 +53,9 @@ It is currently hosted on [Vercel](https://vercel.com), and I like it so far. Be
 
 Most likely I forgot to credit someone. Sorry about that >_<
 
-- Everyone in [Duckquill's "Thanks To"](https://duckquill.daudix.one/#thanks-to).
-- [sadgrl.online](https://goblin-heart.net/sadgrl/) for the "static" [tiled background](https://goblin-heart.net/sadgrl/webmastery/downloads/tiledbgs), also used in metadata card.
-- [Volpeon](https://volpeon.ink) for [neofoxes](https://volpeon.ink/emojis/neofox/) on the "home" and "coffee" pages.
-- [Vylet Pony](https://www.vyletpony.com) for inspiring the design of the homepage. <small>([ANTONYMPH](https://www.youtube.com/watch?v=CNPdO5TZ1DQ) and [I DON'T NEED TO BE FIXED](https://www.youtube.com/watch?v=xMzxVVXTGjE) in particular)</small>
-- "dwb" and "jgs" for the ASCII art on the "blog" and "tags" pages respectively.
+- [sadgrl.online](https://goblin-heart.net/sadgrl/) for the "static" [tiled background](https://goblin-heart.net/sadgrl/webmastery/downloads/tiledbgs) used on splash page, metadata card, and 88x31 button.
+- [Volpeon](https://volpeon.ink) for [neofoxes](https://volpeon.ink/emojis/neofox/) used on Home and Coffee pages.
+- [Vylet Pony](https://www.vyletpony.com) for inderictly inspiring the design of the homepage. <small>([ANTONYMPH](https://www.youtube.com/watch?v=CNPdO5TZ1DQ) and [I DON'T NEED TO BE FIXED](https://www.youtube.com/watch?v=xMzxVVXTGjE) in particular)</small>
+- "dwb" and "jgs" for the ASCII art on the Blog and Tags pages respectively.
+- [Fuwari](https://github.com/saicaca/fuwari) blog template for some design inspirations. <small>(mostly the design of post cards)</small>
 - Everyone who supported me and said good stuff. <small>(you know who you are, thank you sincerely <3)</small>
