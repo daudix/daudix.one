@@ -1,0 +1,32 @@
+# Based on https://www.markpitblado.me/blog/deploying-to-vercel-from-codeberg
+
+steps:
+  preview:
+    image: node
+    environment:
+      VERCEL_TOKEN:
+        from_secret: vercel_token
+      VERCEL_ORG_ID:
+        from_secret: vercel_org_id
+      VERCEL_PROJECT_ID:
+        from_secret: vercel_project_id
+    commands:
+      - npm install --global vercel@latest
+      - vercel deploy --token=$VERCEL_TOKEN
+    when:
+      event: [pull_request]
+
+  deploy:
+    image: node
+    environment:
+      VERCEL_TOKEN:
+        from_secret: vercel_token
+      VERCEL_ORG_ID:
+        from_secret: vercel_org_id
+      VERCEL_PROJECT_ID:
+        from_secret: vercel_project_id
+    commands:
+      - npm install --global vercel@latest
+      - vercel deploy --prod --token=$VERCEL_TOKEN
+    when:
+      event: [push, manual]
