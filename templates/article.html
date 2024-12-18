@@ -46,7 +46,7 @@
 					{%- endif -%}
 
 					{%- if config.extra.show_reading_time -%}
-						<span>{{ page.reading_time }} min read</span>
+						<span>{{ page.reading_time }} minute{{ page.reading_time | pluralize }}</span>
 						{%- if page.taxonomies -%}
 							<span> {{ config.extra.separator | default(value="•") }} </span>
 						{%- endif -%}

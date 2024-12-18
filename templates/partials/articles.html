@@ -24,59 +24,72 @@
 		{%- if page.extra.banner -%}
 			{%- set blurnail = resize_image(path=page.colocated_path ~ page.extra.banner, width=4, height=2, op="fill", format="webp") -%}
 		{%- endif -%}
-		<article class="{% if article_type %}{{ article_type }}{% endif %}{% if page.extra.banner %} has-banner{% endif %}{% if page.extra.accent_color and not article_type %} colored{% endif %}" style="
+		<article class="{% if article_type %}{{ article_type }}{% endif %}{% if page.extra.banner %} has-banner{% endif %}" style="
 			{% if blurnail %}
-			 --blurnail: url('{{ blurnail.url | safe }}');
+				--blurnail: url('{{ blurnail.url | safe }}');
 			{% endif %}
 
-			{% if page.extra.accent_color and not article_type %}
-				--accent-color: {{ page.extra.accent_color }};
-				--accent-color-dark: {{ page.extra.accent_color_dark }};
-				--bg-color-dark: color-mix(in srgb, var(--accent-color) 10%, black);
-				--bg-muted-1: rgb(from var(--accent-color) r g b / var(--color-opacity-1));
-				--bg-muted-2: rgb(from var(--accent-color) r g b / var(--color-opacity-2));
-				--fg-muted-1: color-mix(in srgb, var(--accent-color) 15%, rgb(0 0 0 / 0.5));
-				--fg-muted-1-dark: color-mix(in srgb, var(--accent-color) 15%, rgb(255 255 255 / 0.5));
-				--fg-muted-2: color-mix(in srgb, var(--accent-color) 15%, rgb(0 0 0 / 0.6));
-				--fg-muted-2-dark: color-mix(in srgb, var(--accent-color) 15%, rgb(255 255 255 / 0.6));
-				--glass-bg-1: color-mix(in srgb, var(--accent-color) 10%, rgb(255 255 255 / var(--dim-opacity)));
-				--glass-bg-1-dark: color-mix(in srgb, var(--accent-color) 15%, rgb(0 0 0 / var(--dim-opacity)));
+			{% if page.extra.accent_color %}
+				--post-accent-color: {{ page.extra.accent_color }};
+				--post-accent-color-dark: {{ page.extra.accent_color_dark }};
 			{% endif %}">
-			<a href="{{ page.permalink | safe }}"></a>
-			{% if article_type %}
-				<span class="badge">
-					<i class="icon"></i>
-					{{- article_string -}}
-				</span>
-			{%- endif %}
-			<h3>{{ page.title }}</h3>
-			{%- if page.description %}
-				{{ page.description | markdown | safe }}
-			{%- endif %}
-			{%- if page.date -%}
+			<div>
+				<a href="{{ page.permalink | safe }}">
+					<h3>{{ page.title }}</h3>
+				</a>
+				{%- if page.description %}
+					<div class="description">
+						{{ page.description | markdown | safe }}
+					</div>
+				{%- endif %}
 				<div class="details">
-					<small>
-						<time datetime="{{ page.date | date(format='%+') }}" pubdate>
-							{{- page.date | date(format=config.extra.date_format, locale=config.extra.date_locale) -}}
-						</time>
-						{%- if page.authors -%}
+					{%- if page.date -%}
+						<div class="details-date">
+							<span>
+								<i class="icon"></i>
+							</span>
+							<time datetime="{{ page.date | date(format='%+') }}" pubdate>
+								{{- page.date | date(format=config.extra.date_format, locale=config.extra.date_locale) -}}
+							</time>
+						</div>
+					{%- endif -%}
+
+					{%- if page.authors -%}
+						<div class="details-authors">
+							<span>
+								<i class="icon"></i>
+							</span>
 							<span> {{ config.extra.separator | default(value="•") }} {% include "partials/authors.html" -%}</span>
-						{%- endif -%}
-					</small>
-					{%- if page.taxonomies -%}
-						{%- for name, taxon in page.taxonomies %}
-							<small>
-								<ul class="tags">
-									{%-for item in taxon -%}
-										<li><a class="tag" href="{{ get_taxonomy_url(kind=name, name=item) }}">{{ item }}</a></li>
-									{%- endfor %}
-								</ul>
-							</small>
-						{%- endfor -%}
-					{%- endif %}
-					</small>
+						</div>
+					{%- endif -%}
+
+					{%- if config.extra.show_reading_time -%}
+						<div class="details-time">
+							<span>
+								<i class="icon"></i>
+							</span>
+							<span>{{ page.reading_time }} minute{{ page.reading_time | pluralize -}}</span>
+						</div>
+					{%- endif -%}
 				</div>
-			{%- endif -%}
+				{%- if page.taxonomies -%}
+					<div class="tags-row">
+						<span>
+							<i class="icon"></i>
+						</span>
+						<ul class="tags">
+							{%- for name, taxon in page.taxonomies %}
+								{%-for item in taxon -%}
+									<li><a class="tag" href="{{ get_taxonomy_url(kind=name, name=item) }}">{{ item }}</a></li>
+								{%- endfor %}
+							{%- endfor -%}
+						</ul>
+					</div>
+				{%- endif %}
+			</div>
+			<a class="open-post" href="{{ page.permalink | safe }}">
+				<i class="icon"></i>
+			</a>
 		</article>
 	{%- endfor %}
 </div>

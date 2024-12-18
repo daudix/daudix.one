@@ -211,12 +211,16 @@
 				background-color: var(--bg-muted-1);
 				padding: 0.75rem 1rem;
 
-				a::after {
-					content: " →";
+				a {
+					text-decoration: none;
+
+					&::after {
+						content: " →";
+					}
 				}
 
 				span {
-					margin-block-start: 0.5rem;
+					margin-block-start: 0.25rem;
 					border-block-start: max(1px, 0.0625rem) solid var(--bg-muted-2);
 					padding-block-start: 0.25rem;
 					color: var(--fg-muted-2);
