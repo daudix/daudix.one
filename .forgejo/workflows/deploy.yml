@@ -10,12 +10,10 @@ env:
 jobs:
   deploy:
     name: "Vercel Deploy"
-    runs-on: docker
-    container:
-      image: ghcr.io/catthehacker/ubuntu:act-latest
+    runs-on: codeberg-tiny
     steps:
       - name: "Checkout"
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: "Install Vercel CLI"
         run: npm install --global vercel@latest
       - name: "Deploy"
