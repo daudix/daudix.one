@@ -19,7 +19,7 @@ body:has(#banner-container) {
 		position: fixed;
 		transform: translateX(-50%);
 		filter: blur(4rem);
-		animation: banner-glow-load 1.6s;
+		animation: banner-glow-load var(--transition-longer);
 		margin-block-start: 4rem;
 		inset-inline-start: 50%;
 		border-radius: var(--rounded-corner) var(--rounded-corner) 0 0;
@@ -29,8 +29,7 @@ body:has(#banner-container) {
 		content: "";
 
 		@keyframes banner-glow-load {
-			from,
-			25% {
+			from {
 				opacity: 0;
 			}
 		}
@@ -39,7 +38,7 @@ body:has(#banner-container) {
 	#banner {
 		position: fixed;
 		transform: translateX(-50%);
-		animation: banner-load var(--transition-longer);
+		animation: banner-load var(--transition-long);
 		margin: 0;
 		margin-block-start: 4rem;
 		inset-inline-start: 50%;
@@ -47,7 +46,8 @@ body:has(#banner-container) {
 		width: min(var(--container-width), calc(100% - 2rem));
 
 		@keyframes banner-load {
-			from {
+			from,
+			50% {
 				transform: translateX(-50%) var(--hover);
 				opacity: 0;
 			}
@@ -91,9 +91,17 @@ body:has(#banner-container) {
 	flex-direction: column;
 	gap: 0.25rem;
 	z-index: 1;
-	animation: slide-in-reverse var(--transition-bezier) 0.525s;
+	animation: buttons-container-load 1.05s cubic-bezier(0.17, 0.89, 0.32, 1.28);
 	inset-block-end: 1rem;
 	inset-inline-end: 1rem;
+
+	@keyframes buttons-container-load {
+		from,
+		50% {
+			transform: translateX(1rem);
+			opacity: 0;
+		}
+	}
 
 	@media only screen and (max-width: 720px) {
 		position: static;

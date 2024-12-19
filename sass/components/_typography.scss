@@ -218,8 +218,6 @@ aside {
 }
 
 details {
-	margin: 0 auto;
-
 	&[open] {
 		box-shadow: var(--edge-highlight), var(--shadow);
 		border-radius: var(--rounded-corner);

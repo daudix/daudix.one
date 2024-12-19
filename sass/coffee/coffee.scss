@@ -20,6 +20,7 @@
 	}
 
 	#blobfox-message {
+		-webkit-user-select: none;
 		position: absolute;
 		transform: scale(0.5) rotate(90deg) translateY(-100%);
 		transform-origin: top right;
@@ -33,11 +34,12 @@
 		padding: 0 0.5rem;
 		color: black;
 		font-weight: var(--font-weight-semi-bold);
-		text-shadow: none;
+		user-select: none;
 	}
 
 	#coffee-banner-container {
 		position: relative;
+		cursor: help;
 		margin: -1rem -1rem 1rem -1rem;
 		border-radius: 2.25rem 2.25rem 0 0;
 		overflow: hidden;
@@ -103,6 +105,7 @@
 			transform: translateY(-50%);
 			z-index: 1;
 			transition: var(--transition-bezier);
+			cursor: pointer;
 			margin: 0 auto;
 			inset-inline-end: 0;
 			inset-inline-start: 0;
