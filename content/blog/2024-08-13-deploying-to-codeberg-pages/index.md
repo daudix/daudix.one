@@ -3,11 +3,11 @@ title = "Deploying a Zola Website to Codeberg Pages"
 description = "Step-by-step guide to deploying a Zola website using Codeberg Pages."
 [taxonomies]
 tags = ["100DaysToOffload", "Codeberg", "Zola"]
+categories = ["Featured"]
 [extra]
 accent_color = "#5c616a"
 accent_color_dark = "#a4bac0"
 scripts = ["audio.js"]
-featured = true
 banner = "banner.webp"
 toc = true
 [extra.comments]

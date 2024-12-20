@@ -3,8 +3,8 @@ title = "Website 2.0"
 description = "The long-awaited website rewrite using the new static site generator - Zola."
 [taxonomies]
 tags = ["Devlog", "Website", "Duckquill"]
+categories = ["Archived"]
 [extra]
-archive = true
 toc = true
 [extra.comments]
 host = "social.treehouse.systems"

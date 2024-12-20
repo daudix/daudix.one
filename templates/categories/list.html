@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Categories</h1>
+
+<p>
+	<small>{{ terms | length }} categor{{ terms | length | pluralize(singular="y", plural="ies") }} in total.</small>
+</p>
+
+<div class="card-list categories">
+	{%- for category in terms -%}
+		<article class="{{ category.slug }}">
+			<div>
+				<a href="{{ get_taxonomy_url(kind='categories', name=category.name) }}">
+					<h3>{{ category.name }}</h3>
+				</a>
+				<div class="description">
+					{%- if category.slug == "archived" -%}
+						{%- set category_description = "Posts that have been archived due to their age." -%}
+					{%- elif category.slug == "featured" -%}
+						{%- set category_description = "Posts that are somewhat decently written." -%}
+					{%- elif category.slug == "hot" -%}
+						{%- set category_description = "Posts that did numbers compared to others." -%}
+					{%- else -%}
+						{%- set category_description = "There's no info on this category. Boo-womp." -%}
+					{%- endif -%}
+					{{ category_description | markdown | safe }}
+				</div>
+				<div class="details">
+					<div class="details-count">
+						<span>
+							<i class="icon"></i>
+						</span>
+						<span>{{ category.page_count }} post{{ category.page_count | pluralize }}</span>
+					</div>
+				</div>
+			</div>
+			<a class="open-post" href="{{ get_taxonomy_url(kind='categories', name=category.name) }}">
+				<i class="icon"></i>
+			</a>
+		</article>
+	{%- endfor -%}
+</div>
+{% endblock content %}

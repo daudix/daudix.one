@@ -3,11 +3,11 @@ title = "Jekyll Is Overrated, Use Zola Instead"
 description = "Or don't, it's up to you to decide after all."
 [taxonomies]
 tags = ["100DaysToOffload", "Zola", "Jekyll"]
+categories = ["Featured"]
 [extra]
 accent_color = "#722330"
 accent_color_dark = "#d33c55"
 fix_contrast_dark = true
-featured = true
 toc = true
 banner = "banner.webp"
 [extra.comments]

@@ -57,5 +57,5 @@ Most likely I forgot to credit someone. Sorry about that >_<
 - [Volpeon](https://volpeon.ink) for [neofoxes](https://volpeon.ink/emojis/neofox/) used on Home and Coffee pages.
 - [Vylet Pony](https://www.vyletpony.com) for inderictly inspiring the design of the homepage. <small>([ANTONYMPH](https://www.youtube.com/watch?v=CNPdO5TZ1DQ) and [I DON'T NEED TO BE FIXED](https://www.youtube.com/watch?v=xMzxVVXTGjE) in particular)</small>
 - "dwb" and "jgs" for the ASCII art on the Blog and Tags pages respectively.
-- [Fuwari](https://github.com/saicaca/fuwari) blog template for some design inspirations. <small>(mostly the design of post cards)</small>
+- [Fuwari](https://fuwari.vercel.app) blog template for some design inspirations. <small>(mostly the design of post cards)</small>
 - Everyone who supported me and said good stuff. <small>(you know who you are, thank you sincerely <3)</small>

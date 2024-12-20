@@ -3,8 +3,8 @@ title = "Migration from GitHub to Codeberg"
 description = "My journey of migrating personal repositories from GitHub to the Codeberg."
 [taxonomies]
 tags = ["Codeberg", "GitHub", "Woodpecker", "Migration"]
+categories = ["Archived"]
 [extra]
-archive = true
 toc = true
 [extra.comments]
 host = "mstdn.social"

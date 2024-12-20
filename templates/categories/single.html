@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>{{ term.name }} Posts<a href="{{ current_url ~ 'atom.xml' }}"><i class="icon feed"></i></a></h1>
+
+{%- if term.slug == "archived" -%}
+	{%- set category_description = "Posts that have been archived due to their age." -%}
+{%- elif term.slug == "featured" -%}
+	{%- set category_description = "Posts that are somewhat decently written." -%}
+{%- elif term.slug == "hot" -%}
+	{%- set category_description = "Posts that did numbers compared to others." -%}
+{%- else -%}
+	{%- set category_description = "There's no info on this category. Boo-womp." -%}
+{%- endif -%}
+{{ category_description | markdown | safe }}
+
+<p>
+	<small>
+		<a href="{{ get_url(path='categories') }}">See all categories</a>
+		<br />
+		{{ term.pages | length }} post{{ term.pages | length | pluralize }} in total.
+	</small>
+</p>
+
+{% include "partials/articles.html" %}
+{% endblock content %}

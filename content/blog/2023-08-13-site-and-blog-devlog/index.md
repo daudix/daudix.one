@@ -3,9 +3,9 @@ title = "Site and Blog Devlog"
 description = "Some behind-the-scenes of the blog update."
 [taxonomies]
 tags = ["Devlog", "Website"]
+categories = ["Archived"]
 [extra]
 scripts = ["audio.js"]
-archive = true
 toc = true
 [extra.comments]
 host = "mstdn.social"

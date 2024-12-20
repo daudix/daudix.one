@@ -6,25 +6,12 @@
     {%- set pages = term.pages -%}
 {%- endif -%}
 
-<div id="article-list">
+<div class="card-list">
 	{%- for page in pages %}
-		{%- if page.draft -%}
-			{%- set article_type = "draft" -%}
-			{%- set article_string = "Drafted" -%}
-		{%- elif page.extra.archive -%}
-			{%- set article_type = "archive" -%}
-			{%- set article_string = "Archived" -%}
-		{%- elif page.extra.featured -%}
-			{%- set article_type = "featured" -%}
-			{%- set article_string = "Featured" -%}
-		{%- elif page.extra.hot -%}
-			{%- set article_type = "hot" -%}
-			{%- set article_string = "Hot" -%}
-		{%- endif -%}
 		{%- if page.extra.banner -%}
 			{%- set blurnail = resize_image(path=page.colocated_path ~ page.extra.banner, width=4, height=2, op="fill", format="webp") -%}
 		{%- endif -%}
-		<article class="{% if article_type %}{{ article_type }}{% endif %}{% if page.extra.banner %} has-banner{% endif %}" style="
+		<article class="{% if page.draft %}draft{% endif %}{% if page.extra.banner %} has-banner{% endif %}" style="
 			{% if blurnail %}
 				--blurnail: url('{{ blurnail.url | safe }}');
 			{% endif %}
@@ -59,7 +46,7 @@
 							<span>
 								<i class="icon"></i>
 							</span>
-							<span> {{ config.extra.separator | default(value="•") }} {% include "partials/authors.html" -%}</span>
+							<span>{% include "partials/authors.html" %}</span>
 						</div>
 					{%- endif -%}
 
@@ -71,17 +58,26 @@
 							<span>{{ page.reading_time }} minute{{ page.reading_time | pluralize -}}</span>
 						</div>
 					{%- endif -%}
+
+					{%- if page.taxonomies.categories -%}
+						<div class="details-category">
+							<span>
+								<i class="icon"></i>
+							</span>
+							{%- for category in page.taxonomies.categories %}
+								<a href="{{ get_taxonomy_url(kind='categories', name=category) }}">{{ category }}</a>
+							{%- endfor -%}
+						</div>
+					{%- endif %}
 				</div>
-				{%- if page.taxonomies -%}
+				{%- if page.taxonomies.tags -%}
 					<div class="tags-row">
 						<span>
 							<i class="icon"></i>
 						</span>
 						<ul class="tags">
-							{%- for name, taxon in page.taxonomies %}
-								{%-for item in taxon -%}
-									<li><a class="tag" href="{{ get_taxonomy_url(kind=name, name=item) }}">{{ item }}</a></li>
-								{%- endfor %}
+							{%- for tag in page.taxonomies.tags %}
+								<li><a class="tag" href="{{ get_taxonomy_url(kind='tags', name=tag) }}">{{ tag }}</a></li>
 							{%- endfor -%}
 						</ul>
 					</div>

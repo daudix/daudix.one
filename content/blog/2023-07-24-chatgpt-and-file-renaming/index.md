@@ -3,8 +3,8 @@ title = "ChatGPT and File Renaming"
 description = "How I wrote, no, generated the slugification script using ChatGPT."
 [taxonomies]
 tags = ["AI", "ChatGPT", "Bash"]
+categories = ["Archived"]
 [extra]
-archive = true
 toc = true
 +++
 

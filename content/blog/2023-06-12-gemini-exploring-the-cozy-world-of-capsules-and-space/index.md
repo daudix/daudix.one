@@ -3,8 +3,8 @@ title = "Gemini: Exploring the Cozy World of Capsules and Space"
 description = "Understanding what Gemini is, what are Capsules and Gemlogs, and modern-day use of retro image techniques and text-based art."
 [taxonomies]
 tags = ["Gemini", "Dithering", "ASCII"]
+categories = ["Archived"]
 [extra]
-archive = true
 toc = true
 +++
 

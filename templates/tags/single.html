@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Posts with tag “{{ term.name }}”<a href="{{ current_url ~ 'atom.xml' }}"><i class="icon feed"></i></a></h1>
+
+<p>
+	<small>
+		<a href="{{ get_url(path='tags') }}">See all tags</a>
+		<br />
+		{{ term.pages | length }} post{{ term.pages | length | pluralize }} in total.
+	</small>
+</p>
+
+{% include "partials/articles.html" %}
+{% endblock content %}

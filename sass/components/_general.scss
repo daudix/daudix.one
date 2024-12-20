@@ -11,8 +11,8 @@
 
 body {
 	text-wrap: pretty;
-	display: grid; // Put footer at the bottom for short pages, such as the 404
-	grid-template-rows: auto minmax(auto, 1fr) auto; // Header, stuff, footer
+	display: flex;
+	flex-direction: column;
 	margin: 0;
 	background-color: var(--bg-color);
 	min-height: 100vh;
@@ -61,8 +61,10 @@ body {
 }
 
 main {
+	display: block;
 	margin: 4rem auto;
-	width: min(var(--container-width), calc(100% - 2rem));
+	width: calc(100% - 2rem);
+	max-width: var(--container-width);
 
 	& > *:not(#banner-container, #buttons-container, #fluttershy, #comments main > *),
 	& + #site-footer {

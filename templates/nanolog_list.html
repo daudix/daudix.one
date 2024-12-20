@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>{{ section.title }}<a href="atom.xml"><i class="icon feed"></i></a></h1>
+<h1>{{ section.title }}<a href="{{ current_url ~ 'atom.xml' }}"><i class="icon feed"></i></a></h1>
 
 {{ section.description | markdown | safe }}
 
