@@ -33,10 +33,16 @@ ____0_____0__\|/__@@@@__@@@__________|_\|/__|___\|/__\|/___________|_|_
 
 <p>
 	<small>
-		{%- if config.taxonomies | length > 0 -%}
-			<a href="{{ get_url(path='tags') }}">Filter by tag</a>
-			<br />
-		{%- endif %}
+		{%- for taxonomy in config.taxonomies %}
+			{%- if taxonomy.name == "tags" %}
+				<a href="{{ get_url(path='tags') }}">Filter by tag</a>
+				<br />
+			{%- endif %}
+			{%- if taxonomy.name == "categories" %}
+				<a href="{{ get_url(path='categories') }}">Filter by category</a>
+				<br />
+			{%- endif %}
+		{%- endfor %}
 		{{ number_of_posts }} post{{ number_of_posts | pluralize }} in total.
 	</small>
 </p>
