@@ -35,33 +35,58 @@
 
 		<h1>{{ page.title }}</h1>
 
-		{%- if page.authors or config.extra.show_reading_time -%}
-			<p>
-				<small>
-					{%- if page.authors -%}
-						<span>{% include "partials/authors.html" -%}</span>
-						{%- if config.extra.show_reading_time -%}
-							<span> {{ config.extra.separator | default(value="•") }} </span>
-						{%- endif -%}
-					{%- endif -%}
+		<div class="details">
+			{%- if page.authors -%}
+				<div class="details-authors">
+					<span>
+						<i class="icon"></i>
+						{%- if page.date -%}
+						<div class="details-date">
+							<span>
+								<i class="icon"></i>
+							</span>
+							<time datetime="{{ page.date | date(format='%+') }}" pubdate>
+								{{- page.date | date(format=config.extra.date_format, locale=config.extra.date_locale) -}}
+							</time>
+						</div>
+					{%- endif -%}	</span>
+					<span>{% include "partials/authors.html" %}</span>
+				</div>
+			{%- endif -%}
 
-					{%- if config.extra.show_reading_time -%}
-						<span>{{ page.reading_time }} minute{{ page.reading_time | pluralize }}</span>
-						{%- if page.taxonomies -%}
-							<span> {{ config.extra.separator | default(value="•") }} </span>
-						{%- endif -%}
-					{%- endif -%}
-				</small>
-			</p>
-		{%- endif -%}
+			{%- if config.extra.show_reading_time -%}
+				<div class="details-time">
+					<span>
+						<i class="icon"></i>
+					</span>
+					<span>{{ page.reading_time }} minute{{ page.reading_time | pluralize -}}</span>
+				</div>
+			{%- endif -%}
 
-		{%- if page.taxonomies.tags -%}
-			<ul class="tags">
-				{%- for tag in page.taxonomies.tags %}
-					<li><a class="tag" href="{{ get_taxonomy_url(kind='tags', name=tag) }}">{{ tag }}</a></li>
-				{%- endfor -%}
-			</ul>
-		{%- endif %}
+			{%- if page.taxonomies.categories -%}
+				<div class="details-category">
+					<span>
+						<i class="icon"></i>
+					</span>
+					{%- for category in page.taxonomies.categories %}
+						<a href="{{ get_taxonomy_url(kind='categories', name=category) }}">{{ category }}</a>
+					{%- endfor -%}
+				</div>
+			{%- endif %}
+
+			{%- if page.taxonomies.tags -%}
+				<div class="details-tags">
+					<span>
+						<i class="icon"></i>
+					</span>
+					<ul class="tags">
+						{%- for tag in page.taxonomies.tags %}
+							<li><a class="tag" href="{{ get_taxonomy_url(kind='tags', name=tag) }}">{{ tag }}</a></li>
+						{%- endfor -%}
+					</ul>
+				</div>
+			{%- endif %}
+		</div>
 	</div>
 
 	<div id="buttons-container">
