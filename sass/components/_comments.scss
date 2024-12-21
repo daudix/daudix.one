@@ -71,7 +71,7 @@
 				"...... interactions";
 			column-gap: 1rem;
 			justify-items: start;
-			animation: slide-in var(--transition-bezier);
+			animation: slide-in-right var(--transition-bezier);
 
 			&.comment-reply {
 				position: relative;
