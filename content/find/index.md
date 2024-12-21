@@ -15,7 +15,7 @@ scripts = ["find/clock.js", "find/status.js"]
 
 For me it's currently <time id="clock"><noscript>NO:JS</noscript></time> <small>(UTC+3)</small> and I'm <span id="online-indicator"><noscript>N/A</noscript></span>.
 
-Feel free to reach out to me on any of these! I'm usually too shy to start the conversation, but I'm excited to chat once someone messages me.
+Feel free to reach out to me on any of these! I'm usually too shy to start the conversation, but I'm excited to chat once someone messages me first.
 
 <small>From most preferred to the least ↓</small>
 
@@ -138,12 +138,17 @@ I have changed the Fediverse instance I'm on a lot, so to make sure nothing is l
 <small>From newest to oldest ↓</small>
 <ol id="timeline">
   <li>
+    <strong>10 Dec 2024 - Today</strong>
+    <a href="https://wetdry.world/@daudix">wetdry.world</a>
+    <span>Personal profile</span>
+  </li>
+  <li>
     <strong>05 May 2024 - Today</strong>
     <a href="https://vmst.io/@daudix">vmst.io</a>
     <span>Main profile</span>
   </li>
   <li>
-    <strong>08 Jan 2024 - Today</strong>
+    <strong>08 Jan 2024 - 10 Dec 2024</strong>
     <a href="https://pleroma.envs.net/daudix">pleroma.envs.net</a>
     <span>Personal profile</span>
   </li>
@@ -181,7 +186,7 @@ I have changed the Fediverse instance I'm on a lot, so to make sure nothing is l
 
 ## Forges
 
-I was using GitHub from the very start of my FOSS journey, but (not so) recently I've [migrated to Codeberg](@/blog/2023-07-15-migration-from-github-to-codeberg/index.md), because I didn't like the direction where GitHub is heading.
+I was using GitHub since the very start of my FOSS journey, but some time ago I've [migrated to Codeberg](@/blog/2023-07-15-migration-from-github-to-codeberg/index.md) because I didn't like the direction where GitHub is heading, and I have no regrets of doing so.
 
 <div class="icon-grid">
 

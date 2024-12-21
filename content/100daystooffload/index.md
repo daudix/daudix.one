@@ -37,8 +37,8 @@ posts = [
 ]
 +++
 
-All of my [#100DaysToOffload](https://100daystooffload.com) posts from both [Blog](@/blog/_index.md) and my [Journal](https://daudix.neocities.org/journal/) in a single place.
+[#100DaysToOffload](https://100daystooffload.com) posts from my [blog](@/blog/_index.md) and [journal](https://daudix.neocities.org/journal/), all in a single place.
 
 Is this cheating? I don't think so. I see it as a way to organise my posts, and they are still written by me over the course of a year.
 
-And, to be completely honest, I have no hopes for completing it. On the other hand, I don't want to just give up. So here we are.
+To be completely honest, I have no hopes for completing it. On the other hand, I don't want to just give up. So here we are.
