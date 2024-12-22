@@ -121,4 +121,10 @@
 	<meta property="og:description" content="{% include 'partials/description.html' %}" />
 	<meta property="og:image" content="{% include 'partials/card.html' %}" />
 	<meta property="og:locale" content="{{ config.extra.date_locale | default(value='en_US') }}" />
+
+	<meta property="twitter:card" content="summary_large_image" />
+	<meta property="twitter:title" content="{% include 'partials/title.html' %}" />
+	<meta property="twitter:url" content="{{ current_url | default(value='/') | safe }}" />
+	<meta property="twitter:description" content="{% include 'partials/description.html' %}" />
+	<meta property="twitter:image" content="{% include 'partials/card.html' %}" />
 </head>
