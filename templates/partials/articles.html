@@ -32,7 +32,7 @@
 				<div class="details">
 					{%- if page.date -%}
 						<div class="details-date">
-							<span>
+							<span title="Published On">
 								<i class="icon"></i>
 							</span>
 							<time datetime="{{ page.date | date(format='%+') }}" pubdate>
@@ -52,7 +52,7 @@
 
 					{%- if config.extra.show_reading_time -%}
 						<div class="details-time">
-							<span>
+							<span title="Read Time">
 								<i class="icon"></i>
 							</span>
 							<span>{{ page.reading_time }} minute{{ page.reading_time | pluralize -}}</span>
@@ -61,7 +61,7 @@
 
 					{%- if page.taxonomies.categories -%}
 						<div class="details-category">
-							<span>
+							<span title="Category">
 								<i class="icon"></i>
 							</span>
 							{%- for category in page.taxonomies.categories %}
@@ -72,7 +72,7 @@
 				</div>
 				{%- if page.taxonomies.tags -%}
 					<div class="tags-row">
-						<span>
+						<span title="Tags">
 							<i class="icon"></i>
 						</span>
 						<ul class="tags">

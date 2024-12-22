@@ -38,25 +38,16 @@
 		<div class="details">
 			{%- if page.authors -%}
 				<div class="details-authors">
-					<span>
+					<span title="Authors">
 						<i class="icon"></i>
-						{%- if page.date -%}
-						<div class="details-date">
-							<span>
-								<i class="icon"></i>
-							</span>
-							<time datetime="{{ page.date | date(format='%+') }}" pubdate>
-								{{- page.date | date(format=config.extra.date_format, locale=config.extra.date_locale) -}}
-							</time>
-						</div>
-					{%- endif -%}	</span>
+					</span>
 					<span>{% include "partials/authors.html" %}</span>
 				</div>
 			{%- endif -%}
 
 			{%- if config.extra.show_reading_time -%}
 				<div class="details-time">
-					<span>
+					<span title="Read Time">
 						<i class="icon"></i>
 					</span>
 					<span>{{ page.reading_time }} minute{{ page.reading_time | pluralize -}}</span>
@@ -65,7 +56,7 @@
 
 			{%- if page.taxonomies.categories -%}
 				<div class="details-category">
-					<span>
+					<span title="Category">
 						<i class="icon"></i>
 					</span>
 					{%- for category in page.taxonomies.categories %}
@@ -76,7 +67,7 @@
 
 			{%- if page.taxonomies.tags -%}
 				<div class="details-tags">
-					<span>
+					<span title="Tags">
 						<i class="icon"></i>
 					</span>
 					<ul class="tags">
