@@ -4,8 +4,12 @@
 	<meta name="description" content="{{ config.description }}" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-	{%- if page.extra.accent_color %}
+	{%- if page.extra.accent_color_dark and not page.extra.accent_color %}
+		<meta name="theme-color" content="{{ page.extra.accent_color_dark | safe }}" />
+	{%- elif page.extra.accent_color %}
 		<meta name="theme-color" content="{{ page.extra.accent_color | safe }}" />
+	{%- elif section.extra.accent_color_dark and not section.extra.accent_color %}
+		<meta name="theme-color" content="{{ section.extra.accent_color_dark | safe }}" />
 	{%- elif section.extra.accent_color %}
 		<meta name="theme-color" content="{{ section.extra.accent_color | safe }}" />
 	{%- else -%}
