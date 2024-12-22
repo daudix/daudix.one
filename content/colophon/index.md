@@ -17,13 +17,13 @@ This is the least fun page on this website. Deal with it.
 - [ ] Redesign navbar one more time (full-width bar, perhaps with my logo in it)
 - [ ] Display "Website Source" link somewhere
 - [ ] Cacheburst (?)
-- [ ] Introduce categories as a replacement to post types
 - [ ] Make "shrine" for my beloved portal series
 - [ ] Redesign status.cafe
 - [ ] Make the player on neocities display my current Spotify/last.fm
 - [ ] Style piclog.blue page
 - [ ] /uses page (?)
 - [ ] New ARG/Easter Egg type of thingy (?) (inspirations: Portal "dinosaur" ARG, SSTV)
+- [x] Introduce categories as a replacement to post types
 - [x] Improve a11y (alt texts are awful and testing is barely present)
 - [x] Redo social links, maybe even draw some custom icons (?)
 - [x] Add expand button to "Bumps" (fill the whole page width and make bumps display as a grid)
