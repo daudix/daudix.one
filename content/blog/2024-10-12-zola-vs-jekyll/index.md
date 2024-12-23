@@ -7,7 +7,6 @@ categories = ["Featured"]
 [extra]
 accent_color = "#722330"
 accent_color_dark = "#d33c55"
-fix_contrast_dark = true
 toc = true
 banner = "banner.webp"
 [extra.comments]
