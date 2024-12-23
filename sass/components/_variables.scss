@@ -91,9 +91,8 @@
 		--shade-color: rgb(0 0 0 / 0.07);
 
 		// CONTRAST COLOR
-		--y-threshold: 0.36;
-		--y: clamp(0, (y / var(--y-threshold) - 1) * -infinity, 1);
-		--contrast-color: color(from var(--accent-color) xyz-d65 var(--y) var(--y) var(--y));
+		--l: clamp(0, (l / 0.623 - 1) * -infinity, 1);
+		--contrast-color: oklch(from var(--accent-color) var(--l) 0 h / var(--dim-opacity));
 
 		// CONTAINERS
 		--container-width: 720px;
