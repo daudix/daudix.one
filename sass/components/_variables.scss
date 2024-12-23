@@ -55,7 +55,6 @@
 		--bg-overlay-neutral: linear-gradient(rgb(255 255 255 / var(--dim-opacity)), rgb(255 255 255 / var(--dim-opacity)));
 		--bg-muted-1: rgb(from var(--accent-color) r g b / var(--color-opacity-1));
 		--bg-muted-2: rgb(from var(--accent-color) r g b / var(--color-opacity-2));
-		--contrast-color: lch(from var(--accent-color) calc((49.44 - l) * infinity) 0 0);
 		--fg-color: #29242a;
 		--fg-muted-1: color-mix(in srgb, var(--accent-color) 15%, rgb(0 0 0 / 0.5));
 		--fg-muted-2: color-mix(in srgb, var(--accent-color) 15%, rgb(0 0 0 / 0.6));
@@ -90,6 +89,11 @@
 		--purple-fg-muted-1: color-mix(in srgb, var(--purple-fg) 15%, rgb(0 0 0 / 0.5));
 		--purple-fg-muted-2: color-mix(in srgb, var(--purple-fg) 15%, rgb(0 0 0 / 0.6));
 		--shade-color: rgb(0 0 0 / 0.07);
+
+		// CONTRAST COLOR
+		--y-threshold: 0.36;
+		--y: clamp(0, (y / var(--y-threshold) - 1) * -infinity, 1);
+		--contrast-color: color(from var(--accent-color) xyz-d65 var(--y) var(--y) var(--y));
 
 		// CONTAINERS
 		--container-width: 720px;
