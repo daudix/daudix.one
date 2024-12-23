@@ -92,7 +92,8 @@
 
 		// CONTRAST COLOR
 		--l: clamp(0, (l / 0.623 - 1) * -infinity, 1);
-		--contrast-color: oklch(from var(--accent-color) var(--l) 0 h / var(--dim-opacity));
+		--a: calc(var(--l) + (0.8 * (1 - var(--l))));
+		--contrast-color: oklch(from var(--accent-color) var(--l) 0 h / var(--a));
 
 		// CONTAINERS
 		--container-width: 720px;
