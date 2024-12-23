@@ -8,7 +8,7 @@
 	{% elif data %}
 		src="https://{{ host }}{{ data[name].image_url }}"
 	{% endif %}
-	alt="
+	title="
 	{%- if path -%}
 		{{ path | split(pat='.', limit=2) | first }}
 	{%- else -%}
