@@ -1,6 +1,7 @@
 +++
 title = "Demo Page"
 [extra]
+styles = ["demo/demo.css"]
 scripts = ["demo/demo.js"]
 archive = "This page is in fact not archived. It is only here to demonstrate the archival statement."
 trigger = "This page contains blackjack and hookers, and bad jokes such as this one."
@@ -57,15 +58,13 @@ Long, single-line code blocks should not wrap. They should horizontally scroll i
 
 [![Shimmer Glimmer Twiggle Trouble](https://files.catbox.moe/levd55.jpg)](https://www.deviantart.com/orin331/art/Shimmer-Glimmer-Twiggle-Trouble-841664469)
 
-| Mare         | Rating            | Additional info  |
-| :----------- | :---------------- | :--------------- |
-| Fluttershy   | Best pone         | Shy and adorable |
-| Apple Jack   | Good pone         | Honest and nice  |
-| Pinkie Pie   | Fun pone          | Parties and ADHD |
-| Twilight     | Main pone         | Neeerd           |
-| Rainbow Dash | Yes               | Looks badass     |
-| Rarity       | Fancy pone        | Generous         |
-| Derpy Hooves | *M u f f i n s*   | [REDACTED]       |
+| Character            | Show               | Quotes                             |
+| :------------------- | :----------------- | :--------------------------------- |
+| Fluttershy           | My Little Pony     | Yay                                |
+| Derpy Hooves         | My Little Pony     | I just don't know what went wrong  |
+| Gir                  | Invader ZIM        | GUESS WHO MADE WAAAAFFLES?!!       |
+| WALL-E               | WALL-E             | Ooooo 0.0                          |
+| Taco                 | Inanimate Insanity | SOUR CREAM!                        |
 
 ```rust
 let highlight = true;
@@ -690,3 +689,14 @@ With `centered` and `big` classes:
 
 [^1]: Footnote
 [^2]: [Footnote (link)](https://example.org)
+
+<!-- For the demo purposes only -->
+<div id="color-picker-container">
+  <small>Accent color:</small>
+  <input id="color-picker-light" type="color" value="#7058be" />
+  <label for="color-picker-light">Light theme</label>
+  <br />
+  <input id="color-picker-dark" type="color" value="#ab9df2" />
+  <label for="color-picker-dark">Dark theme</label>
+</div>
+<!-- End -->
