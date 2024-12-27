@@ -16,13 +16,12 @@ code:not(pre code) {
 }
 
 pre {
-	margin: 1rem 0 1rem;
+	margin: 1rem 0;
 	box-shadow: var(--edge-highlight), var(--shadow);
 	border-radius: var(--rounded-corner);
 	background-color: var(--bg-muted-1);
 	padding: 1rem;
-	max-width: 100vw;
-	overflow: auto;
+	overflow-x: auto;
 	line-height: normal;
 
 	table {

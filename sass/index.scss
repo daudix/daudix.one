@@ -1,5 +1,6 @@
 body {
 	--bg-overlay: linear-gradient(rgb(0 0 0 / var(--dim-opacity)), rgb(0 0 0 / var(--dim-opacity)));
+	display: block;
 	background: var(--bg-overlay), url("static.gif"), black;
 
 	@media (prefers-reduced-motion) {
@@ -14,6 +15,7 @@ main {
 	align-items: center;
 	gap: 1rem;
 	margin: 0 auto;
+	width: 100vw;
 	height: 100vh;
 	line-height: 1;
 
@@ -27,7 +29,6 @@ main {
 
 	#top {
 		display: flex;
-		flex-direction: row;
 		gap: 0.5rem;
 
 		div {
@@ -113,7 +114,6 @@ main {
 
 	#bottom {
 		display: flex;
-		flex-direction: row;
 		justify-content: space-between;
 		width: 280px;
 

@@ -2,7 +2,7 @@
 title = "Snug Nook"
 description = "Yet another Discord server bridged to Matrix."
 [extra]
-styles = ["snug-nook/snug-nook.css"]
+styles = ["snug-nook/style.css"]
 +++
 
 Hi, nice to see you here ^^

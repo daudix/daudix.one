@@ -7,7 +7,6 @@
 	&:has(a:hover) a:not(:hover) {
 		transform: translateY(0.25rem);
 		opacity: var(--disabled-opacity);
-		filter: blur(0.25rem);
 	}
 
 	a {

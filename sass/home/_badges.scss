@@ -3,12 +3,8 @@
 	padding-block-start: 0.75rem;
 
 	&:hover #here {
-		transform: none;
+		transform: rotate(-90deg);
 		opacity: 1;
-
-		@media only screen and (max-width: 1074px) {
-			transform: rotate(-90deg);
-		}
 	}
 
 	&:has(#badges-expand:checked) {
@@ -69,7 +65,7 @@
 		}
 
 		#here {
-			transform: scale(0.5);
+			transform: scale(0.5) rotate(-90deg);
 			opacity: 0;
 
 			@media only screen and (max-width: 1074px) {
@@ -79,7 +75,7 @@
 	}
 
 	&:has(#badges-popup[open]) #here {
-		transform: scale(0.5);
+		transform: scale(0.5) rotate(-90deg);
 		opacity: 0;
 
 		@media only screen and (max-width: 1074px) {
@@ -96,8 +92,8 @@
 
 		img:not(:hover),
 		#increment:not(:hover) {
-			opacity: var(--dim-opacity);
-			filter: blur(0.25rem);
+			transform: translate(-0.125rem, 0.125rem);
+			opacity: var(--disabled-opacity);
 		}
 	}
 
@@ -162,7 +158,8 @@
 			margin: 0;
 
 			&:hover {
-				filter: blur(0) var(--drop-shadow);
+				transform: translate(0.125rem, -0.125rem);
+				filter: var(--drop-shadow);
 			}
 		}
 
@@ -309,7 +306,6 @@
 
 				p:has(img) {
 					display: flex;
-					flex-direction: row;
 					flex-wrap: wrap;
 					justify-content: center;
 					gap: 0.25rem;
@@ -338,13 +334,13 @@
 		--mask: url("here.gif");
 		-webkit-mask-image: var(--mask);
 		position: absolute;
-		transform: scale(0.5);
+		transform: scale(0.5) rotate(-90deg);
 		transform-origin: 0.25rem 1.75rem;
 		opacity: 0;
 		mask-image: var(--mask);
 		mask-size: cover;
 		transition: var(--transition-bezier);
-		inset-block-start: 0.5rem;
+		inset-block-start: -1rem;
 		inset-inline-start: 12.5rem;
 		background-color: var(--accent-color);
 		width: 12.125rem;
@@ -355,12 +351,7 @@
 			--mask: url("here-static.gif");
 		}
 
-		@media only screen and (max-width: 1074px) {
-			transform: scale(0.5) rotate(-90deg);
-			inset-block-start: -1rem;
-		}
-
-		@media only screen and (max-width: 784px) {
+		@media only screen and (max-width: 1024px) {
 			display: none;
 		}
 	}

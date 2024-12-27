@@ -1,7 +1,7 @@
 +++
 title = "Home"
 [extra]
-styles = ["home/home.css"]
+styles = ["home/style.css"]
 scripts = ["home/statuscafe.js", "home/fluttershy.js", "home/rizz.js"]
 no_header = true
 badges = [
@@ -120,8 +120,3 @@ I'm even a member of several tildes and CS clubs, even though I don't do much th
 Better yet, I have a website on [neocities](https://neocities.org); essentially it's my playground where I can make bolder design choices than here, and write less interesting and more cringe stuff. [Check it out](https://daudix.neocities.org) if you want to.
 
 I also have a [Gemini capsule](gemini://gmi.daudix.one) on [flounder](https://flounder.online). It's very empty and I have no idea what to use it for ;\_; <small>(you can also _finger_ me at `daudix@flounder.online`)</small>
-
-<div id="rizz-dialog" class="buttons">
-  <button id="rizz">Rizz It Up</button>
-  <div id="dont"></div>
-</div>

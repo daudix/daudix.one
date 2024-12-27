@@ -1,7 +1,7 @@
 +++
 title = "Demo Page"
 [extra]
-styles = ["demo/demo.css"]
+styles = ["demo/style.css"]
 scripts = ["demo/demo.js"]
 archive = "This page is in fact not archived. It is only here to demonstrate the archival statement."
 trigger = "This page contains blackjack and hookers, and bad jokes such as this one."
@@ -163,7 +163,6 @@ Available variables are:
 - `url_min`: URL to compressed version of an image, original can be opened by clicking on the image.
 - `alt`: Alt text, same as if the text were inside square brackets in Markdown.
 - `full`: Forces image to be full-width.
-- `full_bleed`: Forces image to fill all the available screen width. Removes shadow, rounded corners and zoom on hover.
 - `start`: Float image to the start of paragraph and scale it down.
 - `end`: Float image to the end of paragraph and scale it down.
 - `pixels`: Uses nearest neighbor algorithm for scaling, useful for keeping pixel-art sharp.
@@ -194,7 +193,6 @@ Available variables are:
 Alternatively, you can append the following URL anchors. It can be more handy in some cases, e.g. such images will render normally in any Markdown editor, opposed to the Zola shortcodes.
 
 - `#full`: Forces image to be full-width.
-- `#full-bleed`: Forces image to fill all the available screen width. Removes shadow, rounded corners and zoom on hover.
 - `#start`: Float image to the start of paragraph and scale it down.
 - `#end`: Float image to the end of paragraph and scale it down.
 - `#pixels`: Uses nearest neighbor algorithm for scaling, useful for keeping pixel-art sharp.
@@ -215,9 +213,6 @@ Alternatively, you can append the following URL anchors. It can be more handy in
 ![1966 Ford Mustang coupe white](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/1966_Ford_Mustang_coupe_white_003.jpg/320px-1966_Ford_Mustang_coupe_white_003.jpg#start)
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri tamen permagna accessio potest, si aliquod aeternum et infinitum impendere malum nobis opinemur.
 
-\
-[![Picture of the magnificent lej da staz just before sunrise in october](https://images.unsplash.com/photo-1635410773896-da585e1fe138?q=80&w=2063&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D#full-bleed)](https://unsplash.com/photos/a-mountain-lake-surrounded-by-trees-and-snow-CqTOTZh5vrs)
-
 For videos it's all the same except for a few differences: `no_hover` and `url_min` variables are not available.
 
 Additionally, the following [attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video#attributes) can be set:
@@ -233,12 +228,7 @@ Additionally, the following [attributes](https://developer.mozilla.org/en-US/doc
 ```
 
 <figure>
-{{ video(url="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm", alt="Red flower wakes up", controls=true) }}
-<figcaption>WebM video example from MDN</figcaption>
-</figure>
-
-<figure>
-{{ video(url="https://upload.wikimedia.org/wikipedia/commons/transcoded/0/0e/Duckling_preening_%2881313%29.webm/Duckling_preening_%2881313%29.webm.720p.vp9.webm", alt="Duckling preening", full_bleed=true, controls=true) }}
+{{ video(url="https://upload.wikimedia.org/wikipedia/commons/transcoded/0/0e/Duckling_preening_%2881313%29.webm/Duckling_preening_%2881313%29.webm.720p.vp9.webm", alt="Duckling preening", controls=true) }}
 <figcaption>Duckling preening</figcaption>
 </figure>
 

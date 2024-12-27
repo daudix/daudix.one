@@ -1,32 +1,42 @@
-body:has(#banner-container) {
+body:has(#banner) {
 	background: var(--bg-overlay), var(--blurnail), var(--accent-color);
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
 }
 
-#banner-container {
+#banner {
 	--mask: linear-gradient(black calc(50% + 2rem), transparent);
 	-webkit-mask-image: var(--mask);
+	display: flex;
 	position: absolute;
+	justify-content: center;
 	z-index: -1;
 	mask-image: var(--mask);
+	container: banner / inline-size;
+	margin-block-start: -4rem;
 	inset: 0;
-	width: 100vw;
-	height: min(calc((var(--container-width) / 2) + 4rem), calc(50vw + 3rem));
+	padding-block-start: 4rem;
+	height: min(calc((var(--container-width) / 2) + 4rem), calc(50cqw - 4rem));
 
-	&::before {
+	@media only screen and (max-width: 720px) {
+		height: min(calc((var(--container-width) / 2) + 4rem), calc(50cqw + 3rem));
+	}
+
+	img {
 		position: fixed;
-		transform: translateX(-50%);
+		margin: 0;
+		border-radius: var(--rounded-corner) var(--rounded-corner) 0 0;
+		aspect-ratio: 2 / 1;
+		width: 100cqw;
+		width: min(var(--container-width), calc(100cqw - 2rem));
+		object-fit: cover;
+	}
+
+	img:nth-of-type(1) {
+		z-index: -1;
 		filter: blur(4rem);
 		animation: banner-glow-load var(--transition-longer);
-		margin-block-start: 4rem;
-		inset-inline-start: 50%;
-		border-radius: var(--rounded-corner) var(--rounded-corner) 0 0;
-		background: var(--blurnail) center / cover fixed;
-		aspect-ratio: 2 / 1;
-		width: min(var(--container-width), calc(100% - 2rem));
-		content: "";
 
 		@keyframes banner-glow-load {
 			from {
@@ -35,27 +45,24 @@ body:has(#banner-container) {
 		}
 	}
 
-	#banner {
-		position: fixed;
-		transform: translateX(-50%);
+	img:nth-of-type(2) {
 		animation: banner-load var(--transition-long);
-		margin: 0;
-		margin-block-start: 4rem;
-		inset-inline-start: 50%;
-		border-radius: var(--rounded-corner) var(--rounded-corner) 0 0;
-		width: min(var(--container-width), calc(100% - 2rem));
 
 		@keyframes banner-load {
 			from,
 			50% {
-				transform: translateX(-50%) var(--hover);
+				transform: var(--hover);
 				opacity: 0;
 			}
 		}
 	}
 
-	& + article > #heading {
-		margin-block-start: min(calc(var(--container-width) / 2), calc(50vw - 1rem));
+	& + .container article > #heading {
+		margin-block-start: min(calc(var(--container-width) / 2), calc(50cqw - 8rem));
+
+		@media only screen and (max-width: 720px) {
+			margin-block-start: min(calc(var(--container-width) / 2), calc(50cqw - 1rem));
+		}
 	}
 }
 
@@ -76,7 +83,6 @@ body:has(#banner-container) {
 
 	.details {
 		display: flex;
-		flex-direction: row;
 		justify-content: center;
 		gap: 0.5rem;
 		margin-block-start: 2rem;
@@ -88,7 +94,6 @@ body:has(#banner-container) {
 
 		& > div {
 			display: inline-flex;
-			flex-direction: row;
 			align-items: center;
 			gap: 0.5rem;
 			color: var(--fg-muted-2);
@@ -147,167 +152,5 @@ body:has(#banner-container) {
 			-webkit-mask-image: var(--icon-newspaper);
 			mask-image: var(--icon-newspaper);
 		}
-	}
-}
-
-#buttons-container {
-	display: flex;
-	position: fixed;
-	flex-direction: column;
-	gap: 0.25rem;
-	z-index: 1;
-	animation: buttons-container-load 1.05s cubic-bezier(0.17, 0.89, 0.32, 1.28);
-	inset-block-end: 1rem;
-	inset-inline-end: 1rem;
-
-	@keyframes buttons-container-load {
-		from,
-		50% {
-			transform: translateX(1rem);
-			opacity: 0;
-		}
-	}
-
-	@media only screen and (max-width: 720px) {
-		position: static;
-		flex-direction: row-reverse;
-		animation: none;
-		margin-block-start: 2rem;
-	}
-
-	summary,
-	#go-to-top,
-	#share,
-	#issue {
-		-webkit-backdrop-filter: var(--blur);
-		display: inline-block;
-		backdrop-filter: var(--blur);
-		transition: all var(--transition), transform var(--transition-bezier);
-		box-shadow: var(--edge-highlight), var(--shadow);
-		border-radius: var(--rounded-corner);
-		background-color: var(--glass-bg-1);
-		padding: 0.625rem;
-		color: var(--accent-color);
-		line-height: 0;
-
-		&:hover {
-			background-color: var(--glass-bg-2);
-		}
-
-		&:active {
-			transform: var(--active);
-		}
-
-		.icon {
-			transition: var(--transition);
-		}
-	}
-
-	details {
-		position: relative;
-		box-shadow: none;
-		border-radius: 0;
-		background-color: transparent;
-		padding: 0;
-
-		&[open] summary~* {
-			transform-origin: bottom right;
-			animation: expand-bottom-right var(--transition-bezier);
-		}
-
-		summary {
-			&::before {
-				display: none;
-			}
-		}
-	}
-
-	summary + div {
-		-webkit-backdrop-filter: var(--blur);
-		display: flex;
-		position: absolute;
-		flex-direction: column;
-		z-index: 1;
-		backdrop-filter: var(--blur);
-		inset-block-end: 0;
-		inset-inline-end: 3rem;
-		box-shadow: var(--edge-highlight), var(--shadow-glass);
-		border-radius: var(--rounded-corner);
-		background-color: var(--glass-bg-1);
-		padding: 0.75rem 1rem;
-		width: min(calc(var(--container-width) / 3), calc(100vw - 4.5rem));
-		max-height: 50vh;
-
-		@media only screen and (max-width: 720px) {
-			inset-inline-end: 2.5rem;
-		}
-
-		strong.title {
-			border-block-end: var(--bg-muted-2) max(1px, 0.0625rem) solid;
-			padding-block-end: 0.5rem;
-		}
-
-		div {
-			--mask: linear-gradient(to bottom,
-					transparent,
-					black 1rem,
-					black calc(100% - 1rem),
-					transparent);
-			-webkit-mask-image: var(--mask);
-			flex: 1;
-			mask-image: var(--mask);
-			margin: 0 -1rem -1rem;
-			padding: 1rem;
-			padding-block-start: 0;
-			overflow: auto;
-		}
-
-		ol,
-		ul {
-			margin: 0;
-			padding-inline-start: 0.75rem;
-			font-size: var(--font-size-small);
-
-			&:first-child {
-				margin-block-start: 0.5rem;
-			}
-		}
-	}
-
-	#toc .icon {
-		-webkit-mask-image: var(--icon-toc);
-		mask-image: var(--icon-toc);
-	}
-
-	#backlinks {
-		.icon {
-			-webkit-mask-image: var(--icon-backlinks);
-			mask-image: var(--icon-backlinks);
-		}
-
-		summary+div {
-			width: min(calc(var(--container-width) / 3), calc(90vw - 5rem));
-		}
-	}
-
-	#go-to-top {
-		@media only screen and (max-width: 720px) {
-			display: none;
-		}
-
-		.icon {
-			-webkit-mask-image: var(--icon-top);
-			mask-image: var(--icon-top);
-		}
-	}
-
-	#share .icon {
-		-webkit-mask-image: var(--icon-share);
-		mask-image: var(--icon-share);
-	}
-
-	#issue .icon {
-		-webkit-mask-image: var(--icon-bug);
-		mask-image: var(--icon-bug);
 	}
 }

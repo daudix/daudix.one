@@ -60,6 +60,7 @@ show_copy_button = true
 show_reading_time = true
 show_share_button = true
 show_backlinks = true
+show_fediring = true
 # separator = "•"
 # title_separator = "-"
 date_format = "%d %B %Y"
@@ -71,23 +72,27 @@ speed_insights = true
 [extra.nav]
 auto_hide = true
 links = [
-	{ url = "@/blog/_index.md", name = "Blog" },
-	{ url = "@/design/index.md", name = "Design" },
-	{ url = "@/nanolog/_index.md", name = "Nanolog" },
-	{ url = "@/calendar/index.md", name = "Calendar" },
-	{ url = "@/snug-nook/index.md", name = "Snug Nook" },
+	{ url = "@/home/index.md", name = "Home" },
+	{ url = "@/find/index.md", name = "Find" },
+	{ name = "Writing", category = [
+		{ url = "@/blog/_index.md", name = "Blog" },
+		{ url = "@/nanolog/_index.md", name = "Nanolog" },
+	] },
+	{ name = "Projects", category = [
+		{ url = "@/design/index.md", name = "Design" },
+		{ url = "@/calendar/index.md", name = "Calendar" },
+		{ url = "@/snug-nook/index.md", name = "Snug Nook" },
+	] },
+	{ name = "Extra", category = [
+		{ url = "@/coffee/index.md", name = "Coffee" },
+		{ url = "@/colophon/index.md", name = "Colophon" },
+		{ url = "@/commissions/index.md", name = "Commissions" },
+	] },
 ]
 
 [extra.footer]
 show_copyright = true
-show_powered_by = true
 show_fediring = true
-links = [
-	{ url = "@/coffee/index.md", name = "Coffee" },
-	{ url = "@/colophon/index.md", name = "Colophon" },
-	{ url = "@/commissions/index.md", name = "Commissions" },
-	{ url = "@/find/index.md", name = "Find" },
-]
 
 [extra.comments]
 host = "vmst.io"

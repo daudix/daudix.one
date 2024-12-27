@@ -11,8 +11,13 @@
 
 body {
 	text-wrap: pretty;
-	display: flex;
-	flex-direction: column;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	grid-template-columns: auto 1fr;
+	grid-template-areas:
+		"sidebar header"
+		"sidebar main"
+		"sidebar footer";
 	margin: 0;
 	background-color: var(--bg-color);
 	min-height: 100vh;
@@ -20,6 +25,15 @@ body {
 	line-height: 1.5rem;
 	font-family: var(--font-sans-serif), var(--font-system-ui), var(--font-emoji);
 	overflow-wrap: break-word;
+
+	@media only screen and (max-width: 720px) {
+		grid-template-columns: 1fr;
+		grid-template-areas:
+			"sidebar"
+			"header"
+			"main"
+			"footer";
+	}
 }
 
 // Style text selection to use accent color
@@ -61,13 +75,13 @@ body {
 }
 
 main {
-	display: block;
-	margin: 4rem auto;
-	width: calc(100% - 2rem);
-	max-width: var(--container-width);
+	display: flex;
+	position: relative;
+	grid-area: main;
+	margin: 4rem 0;
+	min-width: 0;
 
-	& > *:not(#banner-container, #buttons-container, #fluttershy, #comments main > *),
-	& + #site-footer {
+	& > *:not(#banner-container, #buttons-container, #fluttershy, #comments main > *) {
 		animation: slide-in-bottom-longer var(--transition-bezier-longer);
 	}
 }

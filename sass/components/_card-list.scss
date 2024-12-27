@@ -145,7 +145,6 @@
 		--bg-overlay: var(--bg-muted-1);
 		display: flex;
 		position: relative;
-		flex-direction: row;
 		justify-content: space-between;
 		gap: 1rem;
 		box-shadow: var(--edge-highlight), var(--shadow);
@@ -219,7 +218,6 @@
 
 		.details {
 			display: flex;
-			flex-direction: row;
 			gap: 0.5rem;
 			margin-block-start: 1rem;
 
@@ -230,7 +228,6 @@
 
 			& > div {
 				display: inline-flex;
-				flex-direction: row;
 				align-items: center;
 				gap: 0.5rem;
 				color: var(--fg-muted-2);
@@ -285,7 +282,6 @@
 
 		.tags-row {
 			display: flex;
-			flex-direction: row;
 			align-items: center;
 			gap: 0.5rem;
 			margin-block-start: 0.5rem;
@@ -340,7 +336,6 @@
 
 #paginator {
 	display: flex;
-	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 	gap: 0.25rem;

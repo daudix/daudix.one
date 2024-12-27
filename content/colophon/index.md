@@ -2,7 +2,7 @@
 title = "Colophon"
 description = "Some boring details about this website."
 [extra]
-styles = ["colophon/colophon.css"]
+styles = ["colophon/style.css"]
 +++
 
 {% alert(fact=true) %}
@@ -23,6 +23,7 @@ This is the least fun page on this website. Deal with it.
 - [ ] Style piclog.blue page
 - [ ] /uses page (?)
 - [ ] New ARG/Easter Egg type of thingy (?) (inspirations: Portal "dinosaur" ARG, SSTV)
+- [ ] Replace burger menu with navigation sidebar
 - [x] Introduce categories as a replacement to post types
 - [x] Improve a11y (alt texts are awful and testing is barely present)
 - [x] Redo social links, maybe even draw some custom icons (?)
@@ -58,4 +59,5 @@ Most likely I forgot to credit someone. Sorry about that \>_<
 - [Vylet Pony](https://www.vyletpony.com) for inderictly inspiring the design of the homepage. <small>([ANTONYMPH](https://www.youtube.com/watch?v=CNPdO5TZ1DQ) and [I DON'T NEED TO BE FIXED](https://www.youtube.com/watch?v=xMzxVVXTGjE) in particular)</small>
 - "dwb" for the ASCII art on the blog page.
 - [Fuwari](https://fuwari.vercel.app) blog template for some design inspirations. <small>(mostly the design of post cards)</small>
+- All the sites that are listed in the Badges section of Home page for inspiration.
 - Everyone who supported me and said good stuff. <small>(you know who you are, thank you sincerely <3)</small>

@@ -1,15 +1,15 @@
 #color-picker-container {
 	-webkit-backdrop-filter: var(--blur);
 	position: fixed;
-	transform: translateX(calc(-100% + 1rem));
+	transform: translateX(calc(100% - 2rem));
 	z-index: 1;
 	backdrop-filter: var(--blur);
 	transition: var(--transition);
 	inset-block-end: 1rem;
-	inset-inline-start: 0;
+	inset-inline-end: 0;
 	box-shadow: var(--edge-highlight), var(--shadow-glass);
-	border-start-end-radius: var(--rounded-corner);
-	border-end-end-radius: var(--rounded-corner);
+	border-start-start-radius: var(--rounded-corner);
+	border-end-start-radius: var(--rounded-corner);
 	background-color: var(--glass-bg-1);
 	padding: 0.5rem;
 

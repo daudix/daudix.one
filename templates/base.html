@@ -1,16 +1,60 @@
-{% import "macros/rel_attributes.html" as macros_rel_attributes %}
+{%- import "macros/rel_attributes.html" as macros_rel_attributes -%}
+{%- set rel_attributes = macros_rel_attributes::rel_attributes() | trim -%}
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="{{ lang }}" {% include "partials/default_theme.html" %}>
 {% include "partials/head.html" %}
 <body>
 {% block body %}
-	{%- if config.extra.nav.links %}
-		{% include "partials/nav.html" %}
-	{%- endif %}
+	<a id="skip-to-content" href="#main-content" tabindex="0">Skip to Main Content</a>
+	{% include "partials/sidebar.html" %}
+	<header id="site-header">
+		<div id="site-header-title">
+			<input class="visually-hidden" id="toggle-sidebar" type="checkbox" name="toggle-sidebar" autocomplete="off" />
+			<label for="toggle-sidebar" title="Toggle Sidebar"><i class="icon"></i><i class="icon"></i></label>
+			<a class="go-to-top" href="#top" title="Go to Top">
+				<strong class="title">
+					{%- if current_path and current_path == "/" -%}
+						{%- set suffix = "" -%}
+					{% elif title %}
+						{%- set suffix = title -%}
+					{% elif section.title -%}
+						{%- set suffix = section.title -%}
+					{% elif page.title %}
+						{%- set suffix = page.title -%}
+					{% elif term.name %}
+						{#- Individual tags -#}
+						{%- set suffix = term.name -%}
+					{% elif taxonomy.name %}
+						{#- List of tags -#}
+						{%- set suffix = taxonomy.name | capitalize -%}
+					{% else %}
+						{%- set suffix = "404" %}
+					{%- endif -%}
+			
+					{{- suffix -}}
+				</strong>
+			</a>
+		</div>
+		{% block actions %}{% endblock post_actions %}
+	</header>
 	<main id="main-content">
-		{% block custom %}{% endblock custom %}
-		{% block content %}{% endblock content %}
+		{%- if page.extra.banner -%}
+			{%- set blurnail = resize_image(path=page.colocated_path ~ page.extra.banner, width=4, height=2, op="fill", format="webp") -%}
+			<style>
+				:root {
+					--blurnail: url('{{ blurnail.url | safe }}');
+				}
+			</style>
+			<div id="banner">
+				<img class="transparent no-hover" src="{{ blurnail.url }}" {% if config.markdown.lazy_async_image %}decoding="async" loading="lazy"{% endif %} />
+				<img class="transparent no-hover{% if page.extra.banner_pixels %} pixels{% endif %}" src="{{ current_url ~ page.extra.banner }}" {% if config.markdown.lazy_async_image %}decoding="async" loading="lazy"{% endif %} />
+			</div>
+		{%- endif -%}
+		<div class="container">
+			{% block custom %}{% endblock custom %}
+			{% block content %}{% endblock content %}
+		</div>
 	</main>
 	{% include "partials/footer.html" %}
 {% endblock body %}

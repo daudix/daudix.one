@@ -7,145 +7,130 @@
 	<small>Sorry about all the fancy stuff, I had to make this page a bit exciting somehow :P</small>
 </p>
 <section id="original-icons">
-	<div>
-		<h2>Original Icons</h2>
-		<p>Custom icons with original idea made for projects without prior or with different one.</p>
-		<br />
-		<div class="media-grid">
-			{% for icon in page.extra.original_icons %}
-				<a class="grid-item" href="{{ icon.url }}">
-					<div class="grid">
-						<img
-							class="no-hover full transparent drop-shadow"
-							alt="{{ icon.name }} icon."
-							src="icons/original-icons/{{ icon.icon }}"
-						/>
-					</div>
-					<small>{{ icon.name }}</small>
-				</a>
-			{% endfor %}
-		</div>
-		<br />
+	<h2>Original Icons</h2>
+	<p>Custom icons with original idea made for projects without prior or with different one.</p>
+	<br />
+	<div class="media-grid">
+		{% for icon in page.extra.original_icons %}
+			<a class="grid-item" href="{{ icon.url }}">
+				<div class="grid">
+					<img
+						class="no-hover full transparent drop-shadow"
+						alt="{{ icon.name }} icon."
+						src="icons/original-icons/{{ icon.icon }}"
+					/>
+				</div>
+				<small>{{ icon.name }}</small>
+			</a>
+		{% endfor %}
 	</div>
 </section>
 <section id="redrawn-icons">
-	<div>
-		<h2>Redrawn Icons</h2>
-		<p>Tweaked icons made for projects with an icon and idea already present.</p>
-		<br />
-		<div class="media-grid">
-			{% for icon in page.extra.redrawn_icons %}
-				<a class="grid-item" href="{{ icon.url }}">
-					<div class="grid">
-						<img
-							class="no-hover full transparent drop-shadow"
-							alt="{{ icon.name }} icon."
-							src="icons/redrawn-icons/{{ icon.icon }}"
-						/>
-						<img
-							class="no-hover full transparent drop-shadow before"
-							alt="{{ icon.name }} icon."
-							src="icons/redrawn-icons/before/{{ icon.icon }}"
-						/>
-					</div>
-					<small>{{ icon.name }}</small>
-				</a>
-			{% endfor %}
-		</div>
-		<br />
+	<h2>Redrawn Icons</h2>
+	<p>Tweaked icons made for projects with an icon and idea already present.</p>
+	<br />
+	<div class="media-grid">
+		{% for icon in page.extra.redrawn_icons %}
+			<a class="grid-item" href="{{ icon.url }}">
+				<div class="grid">
+					<img
+						class="no-hover full transparent drop-shadow"
+						alt="{{ icon.name }} icon."
+						src="icons/redrawn-icons/{{ icon.icon }}"
+					/>
+					<img
+						class="no-hover full transparent drop-shadow before"
+						alt="{{ icon.name }} icon."
+						src="icons/redrawn-icons/before/{{ icon.icon }}"
+					/>
+				</div>
+				<small>{{ icon.name }}</small>
+			</a>
+		{% endfor %}
 	</div>
 </section>
 <section id="unused-icons">
-	<div>
-		<h2>Unused Icons</h2>
-		<p>Unused icons that didn't find their way for one reason or another.</p>
-		<p>
-			<small>There was much more, but unfortunately I've lost the sources :&#60;</small>
-		</p>
-		<br />
-		<div class="media-grid">
-			{% for icon in page.extra.unused_icons %}
-				<div class="grid-item">
-					<div class="grid">
-						<img
-							class="no-hover full transparent drop-shadow"
-							alt="{{ icon.name }} icon."
-							src="icons/unused-icons/{{ icon.icon }}"
-						/>
-					</div>
-					<small>{{ icon.name }}</small>
+	<h2>Unused Icons</h2>
+	<p>Unused icons that didn't find their way for one reason or another.</p>
+	<p>
+		<small>There was much more, but unfortunately I've lost the sources :&#60;</small>
+	</p>
+	<br />
+	<div class="media-grid">
+		{% for icon in page.extra.unused_icons %}
+			<div class="grid-item">
+				<div class="grid">
+					<img
+						class="no-hover full transparent drop-shadow"
+						alt="{{ icon.name }} icon."
+						src="icons/unused-icons/{{ icon.icon }}"
+					/>
 				</div>
-			{% endfor %}
-		</div>
-		<br />
+				<small>{{ icon.name }}</small>
+			</div>
+		{% endfor %}
 	</div>
 </section>
 <section id="wallpapers">
-	<div>
-		<h2>Wallpapers</h2>
-		<p>Wallpapers that I have made for myself, that you can use, too.</p>
-		<p>
-			<small><em>It would be nice if you credit me in case you reupload or remix them :^)</em></small>
-		</p>
-		<br />
-		<div class="media-grid">
-			{% for wallpaper in page.extra.wallpapers %}
-				<a class="grid-item" href="{{ wallpaper.url }}">
+	<h2>Wallpapers</h2>
+	<p>Wallpapers that I have made for myself, that you can use, too.</p>
+	<p>
+		<small><em>It would be nice if you credit me in case you reupload or remix them :^)</em></small>
+	</p>
+	<br />
+	<div class="media-grid">
+		{% for wallpaper in page.extra.wallpapers %}
+			<a class="grid-item" href="{{ wallpaper.url }}">
+				<picture>
+					<source
+						srcset="wallpapers/{{ wallpaper.wallpaper_dark }}"
+						media="(prefers-color-scheme: dark)"
+					/>
+					<img
+						class="no-hover full"
+						alt="{{ wallpaper.name }} wallpaper."
+						src="wallpapers/{{ wallpaper.wallpaper }}"
+					/>
+				</picture>
+				<small>{{ wallpaper.name }}</small>
+			</a>
+		{% endfor %}
+	</div>
+</section>
+<section id="logos">
+	<h2>Logos</h2>
+	<p>It ain’t much, but it’s honest work.</p>
+	<br />
+	<div class="media-grid">
+		{% for logo in page.extra.logos %}
+			<a class="grid-item" href="{{ logo.url }}">
+				<div>
 					<picture>
 						<source
-							srcset="wallpapers/{{ wallpaper.wallpaper_dark }}"
+							srcset="logos/{{ logo.logo_dark }}"
 							media="(prefers-color-scheme: dark)"
 						/>
 						<img
 							class="no-hover full"
-							alt="{{ wallpaper.name }} wallpaper."
-							src="wallpapers/{{ wallpaper.wallpaper }}"
+							alt="{{ logo.name }} logo."
+							src="logos/{{ logo.logo }}"
 						/>
 					</picture>
-					<small>{{ wallpaper.name }}</small>
-				</a>
-			{% endfor %}
-		</div>
-		<br />
-	</div>
-</section>
-<section id="logos">
-	<div>
-		<h2>Logos</h2>
-		<p>It ain’t much, but it’s honest work.</p>
-		<br />
-		<div class="media-grid">
-			{% for logo in page.extra.logos %}
-				<a class="grid-item" href="{{ logo.url }}">
-					<div>
-						<picture>
-							<source
-								srcset="logos/{{ logo.logo_dark }}"
-								media="(prefers-color-scheme: dark)"
-							/>
-							<img
-								class="no-hover full"
-								alt="{{ logo.name }} logo."
-								src="logos/{{ logo.logo }}"
-							/>
-						</picture>
-						<picture>
-							<source
-								srcset="logos/{{ logo.logo_dark_mono }}"
-								media="(prefers-color-scheme: dark)"
-							/>
-							<img
-								class="no-hover full mono"
-								alt="{{ logo.name }} logo."
-								src="logos/{{ logo.logo_mono }}"
-							/>
-						</picture>
-					</div>
-					<small>{{ logo.name }}</small>
-				</a>
-			{% endfor %}
-		</div>
-		<br />
+					<picture>
+						<source
+							srcset="logos/{{ logo.logo_dark_mono }}"
+							media="(prefers-color-scheme: dark)"
+						/>
+						<img
+							class="no-hover full mono"
+							alt="{{ logo.name }} logo."
+							src="logos/{{ logo.logo_mono }}"
+						/>
+					</picture>
+				</div>
+				<small>{{ logo.name }}</small>
+			</a>
+		{% endfor %}
 	</div>
 </section>
 {% endblock content %}

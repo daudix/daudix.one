@@ -1,99 +1,43 @@
 #site-footer {
+	display: flex;
+	grid-area: footer;
+	justify-content: space-between;
+	align-items: center;
+    gap: 0.5rem;
 	margin-block-start: auto;
-	margin-block-end: 2rem;
-	text-align: center;
+	border-block-start: max(1px, 0.0625rem) solid var(--bg-muted-2);
+	background-color: var(--bg-muted-1);
+	padding: 0.5rem 1rem;
+	height: 53px;
 
-	nav {
-		display: inline-block;
-		margin: 0 auto 1rem;
-		box-shadow: var(--edge-highlight), var(--shadow);
-		border-radius: 1.375rem;
-		background-color: var(--bg-muted-1);
-		padding: 0.25rem;
-		max-width: 90%;
+	&-copyright {
+		color: var(--fg-muted-2);
+		font-size: var(--font-size-small);
+	}
 
-		ul {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-			align-items: center;
-			gap: 0.25rem;
-			margin: 0;
-			padding: 0;
-		}
-
-		li {
-			display: flex;
-			padding: 0;
-			list-style: none;
-
-			@media only screen and (max-width: 480px) {
-				flex: 0 0 100%;
-			}
-		}
+	// IMO it's pretty cute
+	&-fediring {
+		display: flex;
+		gap: 0.25rem;
 
 		a {
-			flex: 1;
+			display: inline-block;
 			transition: all var(--transition), transform var(--transition-bezier);
-			border-radius: 999px;
-			padding: 0.375rem 0.75rem;
-			color: var(--fg-muted-1);
-			text-align: center;
+			box-shadow: var(--edge-highlight);
+			border-radius: var(--rounded-corner-small);
+			background-color: var(--bg-muted-1);
+			padding: 0 0.375rem;
+			font-size: var(--font-size-small);
 			text-decoration: none;
-
-			&.active {
-				box-shadow: var(--edge-highlight);
-				background-color: var(--bg-muted-1);
-				color: var(--accent-color);
-
-				&:hover {
-					background-color: var(--bg-muted-2);
-					color: var(--accent-color);
-				}
-			}
-
+	
 			&:hover {
-				box-shadow: var(--edge-highlight);
-				background-color: var(--bg-muted-1);
-				color: var(--fg-muted-2);
+				background-color: var(--bg-muted-2);
 			}
-
+	
 			&:active {
 				transform: var(--active);
 			}
 		}
-	}
-
-	p {
-		margin: 1rem auto;
-	}
-
-	.link {
-		display: inline-block;
-		transition: all var(--transition), transform var(--transition-bezier);
-		box-shadow: var(--edge-highlight);
-		border-radius: var(--rounded-corner-small);
-		background-color: var(--bg-muted-1);
-		padding: 0 0.375rem;
-		text-decoration: none;
-
-		&:hover {
-			background-color: var(--bg-muted-2);
-		}
-
-		&:active {
-			transform: var(--active);
-		}
-	}
-
-	// IMO it's pretty cute
-	#fediring {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		gap: 0.25rem;
-		margin: 1rem 0;
-		font-size: var(--font-size-small);
 
 		.icon {
 			transition: var(--transition);
@@ -101,29 +45,27 @@
 			height: max(0.75rem, 0.75em);
 		}
 
-		#fediring-random,
-		#fediring-previous,
-		#fediring-next {
+		.random,
+		.previous,
+		.next {
+			display: inline-flex;
+			justify-content: center;
+			align-items: center;
 			border-radius: 999px;
-			padding: 0.25rem 0.375rem;
-			line-height: 0;
-
-			.icon {
-				vertical-align: -0.5625rem;
-			}
+			padding: 0.375rem;
 		}
 
-		#fediring-random .icon {
+		.random .icon {
 			-webkit-mask-image: var(--icon-mini-random);
 			mask-image: var(--icon-mini-random);
 		}
 
-		#fediring-previous .icon {
+		.previous .icon {
 			-webkit-mask-image: var(--icon-mini-previous);
 			mask-image: var(--icon-mini-previous);
 		}
 
-		#fediring-next .icon {
+		.next .icon {
 			-webkit-mask-image: var(--icon-mini-next);
 			mask-image: var(--icon-mini-next);
 		}

@@ -43,7 +43,6 @@ body {
 
 	#controls {
 		display: flex;
-		flex-direction: row;
 		justify-content: space-between;
 		margin-block-end: 4rem;
 		font-size: 16px;
@@ -126,7 +125,6 @@ body {
 
 	#column {
 		display: flex;
-		flex-direction: row;
 		justify-content: space-between;
 
 		div:nth-of-type(1) {
@@ -201,7 +199,6 @@ body {
 .achievement {
 	display: none;
 	position: fixed;
-	flex-direction: row;
 	gap: 0.5rem;
 	transform: translateY(100%);
 	opacity: 0;

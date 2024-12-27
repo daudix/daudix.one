@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>{{ section.title }}<a href="{{ current_url ~ 'atom.xml' }}"><i class="icon feed"></i></a></h1>
+<h1>{{ section.title }}</h1>
 
 {{ section.description | markdown | safe }}
 
@@ -21,3 +21,9 @@
 </ul>
 
 {% endblock content %}
+
+{% block actions %}
+<div id="site-header-buttons">
+	<a class="feed" href="{{ current_url ~ 'atom.xml' }}"><i class="icon"></i></a>
+</div>
+{% endblock actions %}

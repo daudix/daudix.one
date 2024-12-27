@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>Posts with tag “{{ term.name }}”<a href="{{ current_url ~ 'atom.xml' }}"><i class="icon feed"></i></a></h1>
+<h1>Posts with tag “{{ term.name }}”</h1>
 
 <p>
 	<small>
@@ -13,3 +13,9 @@
 
 {% include "partials/articles.html" %}
 {% endblock content %}
+
+{% block actions %}
+<div id="site-header-buttons">
+	<a class="feed" href="{{ current_url ~ 'atom.xml' }}"><i class="icon"></i></a>
+</div>
+{% endblock actions %}

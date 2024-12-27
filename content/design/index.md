@@ -4,8 +4,8 @@ description = "A sneak peek into my designs."
 template = "design.html"
 [extra]
 default_theme = "dark"
-accent_color_dark = "#cfc09f"
-styles = ["design/design.css"]
+accent_color_dark = "#dd2936"
+styles = ["design/style.css"]
 original_icons = [
   { name = "Bavarder", icon = "io.github.Bavarder.Bavarder.svg", url = "https://flathub.org/apps/io.github.Bavarder.Bavarder" },
   # { name = "Cassiere", icon = "org.nickvision.cassiere.svg", url = "https://flathub.org/apps/org.nickvision.cassiere" },

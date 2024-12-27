@@ -2,7 +2,7 @@
 title = "Commissions"
 description = "Here you can commission me to do a wide range of designs."
 [extra]
-styles = ["commissions/commissions.css"]
+styles = ["commissions/style.css"]
 +++
 
 Open slots: <mark>4/4</mark> Small Scale • <mark>2/2</mark> Large Scale.

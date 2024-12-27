@@ -1,0 +1,215 @@
+#site-header {
+	-webkit-backdrop-filter: var(--blur);
+	display: flex;
+	position: sticky;
+	grid-area: header;
+	justify-content: space-between;
+	align-items: center;
+    gap: 0.5rem;
+	z-index: 999;
+	backdrop-filter: var(--blur);
+	inset-block-start: 0;
+	border-block-end: max(1px, 0.0625rem) solid var(--bg-muted-2);
+	background-color: var(--glass-bg-1);
+	padding: 0.5rem 1rem;
+	height: 53px;
+
+    &-title {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+		.go-to-top {
+			text-decoration: none;
+		}
+
+        .title {
+            font-size: var(--font-size-medium);
+            line-height: 1.25rem;
+        }
+    }
+
+	&-buttons {
+		display: flex;
+		gap: 0.25rem;
+	
+		summary,
+		.share,
+		.issue,
+        .feed {
+			display: inline-block;
+			transition: all var(--transition), transform var(--transition-bezier);
+			border-radius: var(--rounded-corner);
+			padding: 0.625rem;
+			color: var(--accent-color);
+			line-height: 0;
+	
+			&:hover {
+				box-shadow: var(--edge-highlight);
+				background-color: var(--bg-muted-1);
+			}
+	
+			&:active {
+				transform: var(--active);
+			}
+	
+			.icon {
+				transition: var(--transition);
+			}
+		}
+	
+		details {
+			position: relative;
+			box-shadow: none;
+			border-radius: 0;
+			background-color: transparent;
+			padding: 0;
+	
+			&[open] summary~* {
+				transform-origin: top right;
+				animation: expand-top-right var(--transition-bezier);
+			}
+	
+			summary {
+				box-shadow: none;
+				background-color: transparent;
+
+				&::before {
+					display: none;
+				}
+			}
+		}
+	
+		summary + div {
+			-webkit-backdrop-filter: var(--blur);
+			display: flex;
+			position: absolute;
+			flex-direction: column;
+			z-index: 1;
+			backdrop-filter: var(--blur);
+			inset-block-start: calc(100% + 1rem);
+			inset-inline-end: 0;
+			box-shadow: var(--edge-highlight), var(--shadow-glass);
+			border-radius: var(--rounded-corner);
+			background-color: var(--glass-bg-1);
+			padding: 0.75rem 1rem;
+			width: min(calc(var(--container-width) / 3), calc(100vw - 2rem));
+			max-height: 50vh;
+	
+			strong.title {
+				border-block-end: var(--bg-muted-2) max(1px, 0.0625rem) solid;
+				padding-block-end: 0.5rem;
+			}
+	
+			div {
+				--mask: linear-gradient(to bottom,
+						transparent,
+						black 1rem,
+						black calc(100% - 1rem),
+						transparent);
+				-webkit-mask-image: var(--mask);
+				flex: 1;
+				mask-image: var(--mask);
+				margin: 0 -1rem -1rem;
+				padding: 1rem;
+				padding-block-start: 0;
+				overflow: auto;
+			}
+	
+			ol,
+			ul {
+				margin: 0;
+				padding-inline-start: 0.75rem;
+				font-size: var(--font-size-small);
+	
+				&:first-child {
+					margin-block-start: 0.5rem;
+				}
+			}
+		}
+	
+		.toc .icon {
+			-webkit-mask-image: var(--icon-toc);
+			mask-image: var(--icon-toc);
+		}
+	
+		.backlinks {
+			.icon {
+				-webkit-mask-image: var(--icon-backlinks);
+				mask-image: var(--icon-backlinks);
+			}
+	
+			summary + div {
+				width: min(calc(var(--container-width) / 3), calc(90vw - 3rem));
+			}
+		}
+	
+		.share .icon {
+			-webkit-mask-image: var(--icon-share);
+			mask-image: var(--icon-share);
+		}
+	
+		.issue .icon {
+			-webkit-mask-image: var(--icon-bug);
+			mask-image: var(--icon-bug);
+		}
+
+        .feed .icon {
+			-webkit-mask-image: var(--icon-feed);
+			mask-image: var(--icon-feed);
+		}
+	}
+
+	label {
+		display: none;
+		position: relative;
+		transition: all var(--transition), transform var(--transition-bezier);
+		cursor: pointer;
+		border-radius: var(--rounded-corner);
+		padding: 0.625rem;
+		color: var(--accent-color);
+
+		&:hover {
+			box-shadow: var(--edge-highlight);
+			background-color: var(--bg-muted-1);
+		}
+
+		&:active {
+			transform: var(--active);
+		}
+
+		@media only screen and (max-width: 720px) {
+			display: inline-flex;
+		}
+	}
+
+	label .icon {
+		transition: all var(--transition), transform var(--transition-bezier);
+	}
+
+	label .icon:nth-of-type(1) {
+		-webkit-mask-image: var(--icon-menu);
+		mask-image: var(--icon-menu);
+	}
+
+	label .icon:nth-of-type(2) {
+		-webkit-mask-image: var(--icon-cross);
+		position: absolute;
+		transform: rotate(-45deg);
+		opacity: 0;
+		mask-image: var(--icon-cross);
+		inset: 0.625rem;
+	}
+
+	#toggle-sidebar:checked + label {
+		.icon:nth-of-type(1) {
+			transform: rotate(45deg) scale(0.5);
+			opacity: 0;
+		}
+
+		.icon:nth-of-type(2) {
+			transform: none;
+			opacity: 1;
+		}
+	}
+}

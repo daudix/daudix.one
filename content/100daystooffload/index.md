@@ -3,7 +3,7 @@ title = "100 Days To Offload"
 description = "Great (in both meanings) writing challenge."
 template = "100daystooffload.html"
 [extra]
-styles = ["100daystooffload/100daystooffload.css"]
+styles = ["100daystooffload/style.css"]
 posts = [
   { date = "2024-12-14", title = "My Blog Workflow", description = "My entire blogging workflow, from A to Я.", url = "https://daudix.one/blog/my-blog-workflow/" },
   { date = "2024-12-07", title = "On Move to Vercel", description = "How and why I’ve moved this site away from Codeberg Pages.", url = "https://daudix.one/blog/moving-to-vercel/" },

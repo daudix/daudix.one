@@ -2,7 +2,7 @@
 title = "Find Me"
 description = "Where, when and how to find me."
 [extra]
-styles = ["find/find.css"]
+styles = ["find/style.css"]
 scripts = ["find/clock.js", "find/status.js"]
 +++
 

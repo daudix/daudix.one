@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>{{ term.name }} Posts<a href="{{ current_url ~ 'atom.xml' }}"><i class="icon feed"></i></a></h1>
+<h1>{{ term.name }} Posts</h1>
 
 {%- if term.slug == "archived" -%}
 	{%- set category_description = "Posts that have been archived due to their age." -%}
@@ -24,3 +24,9 @@
 
 {% include "partials/articles.html" %}
 {% endblock content %}
+
+{% block actions %}
+<div id="site-header-buttons">
+	<a class="feed" href="{{ current_url ~ 'atom.xml' }}"><i class="icon"></i></a>
+</div>
+{% endblock actions %}

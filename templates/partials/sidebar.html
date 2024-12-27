@@ -1,0 +1,68 @@
+{%- set rel_attributes = macros_rel_attributes::rel_attributes() | trim -%}
+
+<div id="site-sidebar">
+	{%- if config.build_search_index %}
+		<div id="search">
+			<label for="search-bar" class="visually-hidden">Search</label>
+			<input id="search-bar" placeholder="Search for…" autocomplete="off" type="search">
+			<div id="search-results"></div>
+		</div>
+	{%- endif %}
+	<nav>
+		<ul>
+			{%- for link in config.extra.nav.links %}
+				{%- if link.category and link.category | length > 0 -%}
+					<ul>
+						<div class="category">
+							<strong class="title">{{ link.name }}</strong>
+							<div class="line"></div>
+						</div>
+						{%- for link in link.category -%}
+							{%- if link.url is matching("https?://") %}
+								<li>
+									<a href="{{ link.url }}" rel="{{ rel_attributes }}" class="external{% if link.new %} new{% endif %}">
+										<i class="icon {{ link.name | slugify }}"></i>
+										{{- link.name -}}
+									</a>
+								</li>
+							{%- else %}
+								<li>
+									<a href="{{ get_url(path=link.url)}}" class="
+										{% if link.new %}
+											new
+										{% endif %}
+										{% if current_url | default(value='/') | trim_end_matches(pat='/') | safe == get_url(path=link.url) | trim_end_matches(pat='/') | safe %}
+											active
+										{% endif %}">
+										<i class="icon {{ link.name | slugify }}"></i>
+										{{- link.name -}}
+									</a>
+								</li>
+							{%- endif %}
+						{%- endfor -%}
+					</ul>
+				{%- elif link.url is matching("https?://") %}
+					<li>
+						<a href="{{ link.url }}" rel="{{ rel_attributes }}" class="external{% if link.new %} new{% endif %}">
+							<i class="icon {{ link.name | slugify }}"></i>
+							{{- link.name -}}
+						</a>
+					</li>
+				{%- else %}
+					<li>
+						<a href="{{ get_url(path=link.url)}}" class="
+							{% if link.new %}
+								new
+							{% endif %}
+							{% if current_url | default(value='/') | trim_end_matches(pat='/') | safe == get_url(path=link.url) | trim_end_matches(pat='/') | safe %}
+								active
+							{% endif %}">
+							<i class="icon {{ link.name | slugify }}"></i>
+							{{- link.name -}}
+						</a>
+					</li>
+				{%- endif %}
+			{%- endfor -%}
+		</ul>
+	</nav>
+</div>
