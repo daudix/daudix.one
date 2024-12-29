@@ -14,8 +14,6 @@ This is the least fun page on this website. Deal with it.
 <div>
 
 - [ ] Add photo gallery (random polaroid rotation can be done using Tera's [`get_random`](https://keats.github.io/tera/docs/#get-random))
-- [ ] Redesign navbar one more time (full-width bar, perhaps with my logo in it)
-- [ ] Display "Website Source" link somewhere
 - [ ] Cacheburst (?)
 - [ ] Make "shrine" for my beloved portal series
 - [ ] Redesign status.cafe
@@ -23,7 +21,9 @@ This is the least fun page on this website. Deal with it.
 - [ ] Style piclog.blue page
 - [ ] /uses page (?)
 - [ ] New ARG/Easter Egg type of thingy (?) (inspirations: Portal "dinosaur" ARG, SSTV)
-- [ ] Replace burger menu with navigation sidebar
+- ~~[x] Display "Website Source" link somewhere~~
+- [x] Redesign navbar one more time (full-width bar, perhaps with my logo in it)
+- [x] Replace burger menu with navigation sidebar
 - [x] Introduce categories as a replacement to post types
 - [x] Improve a11y (alt texts are awful and testing is barely present)
 - [x] Redo social links, maybe even draw some custom icons (?)
