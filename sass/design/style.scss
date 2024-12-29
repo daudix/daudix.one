@@ -123,6 +123,8 @@ h1 {
 }
 
 section {
+	-webkit-backdrop-filter: var(--blur);
+	backdrop-filter: var(--blur);
 	margin-block-start: 2rem;
 	box-shadow: var(--edge-highlight), var(--shadow);
 	border-radius: 2.75rem;
