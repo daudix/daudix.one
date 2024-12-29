@@ -60,7 +60,6 @@ show_copy_button = true
 show_reading_time = true
 show_share_button = true
 show_backlinks = true
-show_fediring = true
 # separator = "•"
 # title_separator = "-"
 date_format = "%d %B %Y"
