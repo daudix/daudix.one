@@ -3,6 +3,7 @@
 		-webkit-backdrop-filter: var(--blur);
 		transform: none;
 		backdrop-filter: var(--blur);
+		box-shadow: 0 0 0 720px var(--shade-color);
 	}
 }
 
@@ -11,7 +12,7 @@
 	grid-area: sidebar;
 	z-index: 999;
 	transition-duration: var(--transition);
-	transition-property: transform, backdrop-filter, -webkit-backdrop-filter;
+	transition-property: -webkit-backdrop-filter, transform, backdrop-filter, box-shadow;
 	inset-block-start: 0;
 	border-inline-end: max(1px, 0.0625rem) solid var(--bg-muted-2);
 	background-color: var(--bg-muted-1);
