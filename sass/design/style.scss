@@ -251,3 +251,9 @@ section {
 		}
 	}
 }
+
+#site-footer {
+	-webkit-backdrop-filter: var(--blur);
+	backdrop-filter: var(--blur);
+	background-color: var(--glass-bg-1);
+}
