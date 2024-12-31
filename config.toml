@@ -8,7 +8,7 @@ build_search_index = true
 author = "Daudix"
 
 taxonomies = [
-	{ name = "tags", feed = true },
+	{ name = "tags", feed = true, paginate_by = 10 },
 	{ name = "categories", feed = true },
 ]
 
