@@ -89,7 +89,7 @@ pre table td:nth-of-type(1) {
 
 ### Shortcodes
 
-Duckquill provides a few useful [shortcodes](https://www.getzola.org/documentation/content/shortcodes/) that simplify some tasks. They can be used on all pages.
+Ananas Duck provides a few useful [shortcodes](https://www.getzola.org/documentation/content/shortcodes/) that simplify some tasks. They can be used on all pages.
 
 #### Alerts
 
@@ -337,7 +337,7 @@ Available variables are:
 
 {{ mastodon(id="113375516179365586") }}
 
-### Description List (`<dl>`)
+### Description List
 
 ```html
 <dl>
@@ -357,7 +357,7 @@ Available variables are:
 <dd>Green</dd>
 </dl>
 
-### Form Input (`<input>`)
+### Form Input
 
 ```html
 <input type="checkbox" />
@@ -501,7 +501,7 @@ With `range` type:
 <small id="range-value"></small>
 <!-- End -->
 
-### Figure Captions (`<figcaption>`)
+### Figure Captions
 
 ```markdown
 <figure>
@@ -516,7 +516,7 @@ With `range` type:
   <figcaption>The Office where Stanley works, it has yellow floor and beige walls</figcaption>
 </figure>
 
-### Accordion (`<details>`)
+### Accordion
 
 ```markdown
 <details>
@@ -533,7 +533,7 @@ With `range` type:
 
 </details>
 
-### Side Comment (`<small>`)
+### Side Comment
 
 ```html
 <small>Small, cute text that doesn't catch attention.</small>
@@ -541,7 +541,7 @@ With `range` type:
 
 <small>Small, cute text that doesn't catch attention.</small>
 
-### Abbreviation (`<abbr>`)
+### Abbreviation
 
 ```html
 <abbr title="American Standard Code for Information Interchange">ASCII</abbr>
@@ -549,7 +549,7 @@ With `range` type:
 
 The <abbr title="American Standard Code for Information Interchange">ASCII</abbr> art is awesome!
 
-### Aside (`<aside>`)
+### Aside
 
 ```html
 <aside>
@@ -569,7 +569,7 @@ A quill is a writing tool made from a moulted flight feather (preferably a prima
 
 As with the earlier reed pen (and later dip pen), a quill has no internal ink reservoir and therefore needs to periodically be dipped into an inkwell during writing. The hand-cut goose quill is rarely used as a calligraphy tool anymore because many papers are now derived from wood pulp and would quickly wear a quill down. However it is still the tool of choice for a few scribes who have noted that quills provide an unmatched sharp stroke as well as greater flexibility than a steel pen.
 
-### Keyboard Input (`<kbd>`)
+### Keyboard Input
 
 ```html
 <kbd>⌘ Command</kbd>.
@@ -577,7 +577,7 @@ As with the earlier reed pen (and later dip pen), a quill has no internal ink re
 
 To switch the keyboard layout, press <kbd>⌘ Super</kbd> + <kbd>Space</kbd>.
 
-### Mark Text (`<mark>`)
+### Mark Text
 
 ```html
 <mark>Marked text</mark>
@@ -585,7 +585,7 @@ To switch the keyboard layout, press <kbd>⌘ Super</kbd> + <kbd>Space</kbd>.
 
 You know what? I'm gonna say some <mark>very important</mark> stuff, so <mark>important</mark> that even **bold** is not enough.
 
-### Deleted and Inserted Text (`<del>` and `<ins>`)
+### Deleted and Inserted Text
 
 ```html
 <del>Something deleted</del> <ins>Something added</ins>
@@ -593,7 +593,7 @@ You know what? I'm gonna say some <mark>very important</mark> stuff, so <mark>im
 
 <del>Text deleted</del> <ins>Text added</ins>
 
-### Progress Indicator (`<progress>`)
+### Progress Indicator
 
 ```html
 <progress></progress>
@@ -603,7 +603,7 @@ You know what? I'm gonna say some <mark>very important</mark> stuff, so <mark>im
 <progress></progress>
 <progress value="33" max="100"></progress>
 
-### Sample Output (`<samp>`)
+### Sample Output
 
 ```html
 <samp>Sample Output</samp>
@@ -611,7 +611,7 @@ You know what? I'm gonna say some <mark>very important</mark> stuff, so <mark>im
 
 <samp>Sample Output</samp>
 
-### Inline Quotation (`<q>`)
+### Inline Quotation
 
 ```html
 <q>Someone said something</q>
@@ -619,7 +619,7 @@ You know what? I'm gonna say some <mark>very important</mark> stuff, so <mark>im
 
 Blah blah <q>Inline Quote</q> hmm.
 
-### Unarticulated Annotation (`<u>`)
+### Unarticulated Annotation
 
 ```html
 <u>Gmarrar mitsakes</u>
@@ -641,7 +641,7 @@ Blah blah <q>Inline Quote</q> hmm.
 <span class="spoiler">Some spoiler</span>
 ```
 
-You know, <span class="spoiler">Duckquill is a pretty dumb name.</span> I know, crazy.
+You know, <span class="spoiler">Ananas Duck is a pretty dumb name.</span> I know, crazy.
 
 With `solid` class:
 
@@ -649,7 +649,7 @@ With `solid` class:
 <span class="spoiler solid">Some spoiler</span>
 ```
 
-You know, <span class="spoiler solid">Duckquill is a pretty dumb name.</span> I know, crazy.
+You know, <span class="spoiler solid">Ananas Duck is a pretty dumb name.</span> I know, crazy.
 
 ### Buttons Dialog
 

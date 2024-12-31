@@ -49,4 +49,4 @@ However, if the user's actions are too nasty, levels may be skipped depending on
 
 ## Appeal
 
-If you feel that you have been unfairly punished, feel free to discuss it with the [admin](@/find/index.md#contacts) or the moderator behind this. Misunderstandings happen.
+If you feel that you have been unfairly punished, feel free to discuss it with the [admin](@/online/index.md#contacts) or the moderator behind this. Misunderstandings happen.

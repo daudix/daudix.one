@@ -1,10 +1,12 @@
 +++
-title = "Find Me"
-description = "Where, when and how to find me."
+title = "Online"
+description = "Where and when to find me online."
 [extra]
-styles = ["find/style.css"]
-scripts = ["find/clock.js", "find/status.js"]
+styles = ["online/style.css"]
+scripts = ["online/clock.js", "online/status.js"]
 +++
+
+Where and when to find me online.
 
 <picture>
   <source srcset="envelope-d.webp" media="(prefers-color-scheme: dark)" />
