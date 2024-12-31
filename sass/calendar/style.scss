@@ -223,9 +223,10 @@ body {
 
 	&.active {
 		display: flex;
-		animation: achievement-fade-out 4s;
+		animation: achievement-fade-in-out 4s;
 
-		@keyframes achievement-fade-out {
+		@keyframes achievement-fade-in-out {
+			10%,
 			90% {
 				transform: none;
 				opacity: 1;
@@ -236,6 +237,7 @@ body {
 				opacity: 0;
 			}
 		}
+
 	}
 
 	img {
