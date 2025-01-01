@@ -75,13 +75,12 @@ body {
 }
 
 main {
-	display: flex;
 	position: relative;
 	grid-area: main;
 	padding: 4rem 0;
 	min-width: 0;
 
-	& > *:not(#banner-container, #buttons-container, #fluttershy, #comments main > *) {
+	& > *:not(#banner-container, #buttons-container, #fluttershy, #comments-section main > *) {
 		animation: slide-in-bottom-longer var(--transition-bezier-longer);
 	}
 }

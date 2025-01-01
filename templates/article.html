@@ -97,58 +97,11 @@
 {% endblock content %}
 
 {% block actions %}
-<div id="site-header-buttons">
-	{%- if config.extra.issues_url -%}
-		<a class="issue" href="{{ config.extra.issues_url }}" rel="{{ rel_attributes }}" title="File an Issue"><i class="icon"></i></a>
-	{%- endif -%}
+{%- if config.extra.issues_url -%}
+	<a class="issue" href="{{ config.extra.issues_url }}" rel="{{ rel_attributes }}" title="File an Issue"><i class="icon"></i></a>
+{%- endif -%}
 
-	{%- if config.extra.show_share_button -%}
-		<a class="share" href="https://shareopenly.org/share/?url={{ page.permalink }}&text={{ page.description | urlencode }}" rel="{{ rel_attributes }}" title="Share"><i class="icon"></i></a>
-	{%- endif -%}
-
-	{%- if config.extra.show_backlinks and page.backlinks | length > 0 -%}
-		<details class="backlinks closable">
-			<summary title="Backlinks"><i class="icon"></i></summary>
-			<div>
-				<strong class="title">Backlinks</strong>
-				<div>
-					<ul>
-						{%- for backlink in page.backlinks -%}
-							<li>
-								<a href="{{ backlink.permalink }}">{{ backlink.title }}</a>
-							</li>
-						{%- endfor -%}
-					</ul>
-				</div>
-			</div>
-		</details>
-	{%- endif -%}
-
-	{%- if page.extra.toc and page.toc | length > 0 -%}
-		<details class="toc closable">
-			<summary title="Table of Contents"><i class="icon"></i></summary>
-			<div>
-				<strong class="title">Table of Contents</strong>
-				<div>
-					<ul>
-						{%- for h1 in page.toc -%}
-							<li>
-								<a href="{{ h1.permalink | safe }}">{{ h1.title }}</a>
-								{%- if h1.children -%}
-									<ul>
-										{%- for h2 in h1.children -%}
-											<li>
-												<a href="{{ h2.permalink | safe }}">{{ h2.title }}</a>
-											</li>
-										{%- endfor -%}
-									</ul>
-								{%- endif -%}
-							</li>
-						{%- endfor -%}
-					</ul>
-				</div>
-			</div>
-		</details>
-	{%- endif -%}
-</div>
+{%- if config.extra.show_share_button -%}
+	<a class="share" href="https://shareopenly.org/share/?url={{ page.permalink }}&text={{ page.description | urlencode }}" rel="{{ rel_attributes }}" title="Share"><i class="icon"></i></a>
+{%- endif -%}
 {% endblock actions %}

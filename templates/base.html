@@ -36,7 +36,70 @@
 				</strong>
 			</a>
 		</div>
-		{% block actions %}{% endblock post_actions %}
+
+		<div id="site-header-buttons">
+			{% block actions %}{% endblock post_actions %}
+
+			{%- if page.backlinks -%}
+				{%- set backlinks = page.backlinks -%}
+			{%- elif section.backlinks -%}
+				{%- set backlinks = section.backlinks -%}
+			{%- endif -%}
+			{%- if backlinks and backlinks | length > 0 -%}
+				<details class="backlinks closable">
+					<summary title="Backlinks"><i class="icon"></i></summary>
+					<div>
+						<strong class="title">Backlinks</strong>
+						<div>
+							<ul>
+								{%- for backlink in backlinks -%}
+									<li>
+										<a href="{{ backlink.permalink }}">{{ backlink.title }}</a>
+									</li>
+								{%- endfor -%}
+							</ul>
+						</div>
+					</div>
+				</details>
+			{%- endif -%}
+
+			{%- if page.toc -%}
+				{%- set toc = page.toc -%}
+			{%- elif section.toc -%}
+				{%- set toc = section.toc -%}
+			{%- endif -%}
+			{%- if toc and toc | length > 0 -%}
+				<details class="toc closable">
+					<summary title="Table of Contents"><i class="icon"></i></summary>
+					<div>
+						<strong class="title">Table of Contents</strong>
+						<div>
+							<ul>
+								{%- for h1 in toc -%}
+									<li>
+										<a href="{{ h1.permalink | safe }}">{{ h1.title }}</a>
+										{%- if h1.children -%}
+											<ul>
+												{%- for h2 in h1.children -%}
+													<li>
+														<a href="{{ h2.permalink | safe }}">{{ h2.title }}</a>
+													</li>
+												{%- endfor -%}
+											</ul>
+										{%- endif -%}
+									</li>
+								{%- endfor -%}
+								{%- if page.extra.comments -%}
+									<li>
+										<a href="{{ current_url ~ '#comments' }}">Comments</a>
+									</li>
+								{%- endif -%}
+							</ul>
+						</div>
+					</div>
+				</details>
+			{%- endif -%}
+		</div>
 	</header>
 	<main id="main-content">
 		{%- if page.extra.banner -%}

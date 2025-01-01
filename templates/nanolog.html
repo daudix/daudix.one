@@ -26,31 +26,11 @@
 {% endblock content %}
 
 {% block actions %}
-<div id="site-header-buttons">
-	{%- if config.extra.issues_url -%}
-		<a class="issue" href="{{ config.extra.issues_url }}" rel="{{ rel_attributes }}" title="File an Issue"><i class="icon"></i></a>
-	{%- endif -%}
+{%- if config.extra.issues_url -%}
+	<a class="issue" href="{{ config.extra.issues_url }}" rel="{{ rel_attributes }}" title="File an Issue"><i class="icon"></i></a>
+{%- endif -%}
 
-	{%- if config.extra.show_share_button -%}
-		<a class="share" href="https://shareopenly.org/share/?url={{ page.permalink }}&text={{ page.title | urlencode }}" rel="{{ rel_attributes }}" title="Share"><i class="icon"></i></a>
-	{%- endif -%}
-
-	{%- if config.extra.show_backlinks and page.backlinks | length > 0 -%}
-		<details class="backlinks closable">
-			<summary title="Backlinks"><i class="icon"></i></summary>
-			<div>
-				<strong class="title">Backlinks</strong>
-				<div>
-					<ul>
-						{%- for backlink in page.backlinks -%}
-							<li>
-								<a href="{{ backlink.permalink }}">{{ backlink.title }}</a>
-							</li>
-						{%- endfor -%}
-					</ul>
-				</div>
-			</div>
-		</details>
-	{%- endif -%}
-</div>
+{%- if config.extra.show_share_button -%}
+	<a class="share" href="https://shareopenly.org/share/?url={{ page.permalink }}&text={{ page.title | urlencode }}" rel="{{ rel_attributes }}" title="Share"><i class="icon"></i></a>
+{%- endif -%}
 {% endblock actions %}

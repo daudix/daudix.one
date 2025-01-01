@@ -26,7 +26,7 @@
 <span id="user" class="hidden">{{ user }}</span>
 <span id="id" class="hidden">{{ id }}</span>
 
-<section id="comments">
+<section id="comments-section">
 	{%- if config.extra.comments.show_qr -%}
 		<img
 			id="qrcode"
@@ -36,7 +36,7 @@
 			src="https://api.qrserver.com/v1/create-qr-code/?data=https://{{ host }}/@{{ user }}/{{ id }}"
 		/>
 	{%- endif -%}
-	<h2>Comments</h2>
+	<h2 id="comments">Comments</h2>
 	<p>You can comment on this blog post by publicly replying to this post using a Mastodon or other ActivityPub/Fediverse account. Known non-private replies are displayed below.</p>
 	<div class="buttons">
 		<button id="load-comments">Load Comments</button>
