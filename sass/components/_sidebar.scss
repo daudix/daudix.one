@@ -137,7 +137,7 @@
 				a {
 					flex: 1;
 					transition: all var(--transition), transform var(--transition-bezier);
-					border-radius: var(--rounded-corner);
+					border-radius: 999px;
 					padding: 0.375rem 0.75rem;
 					text-decoration: none;
 
