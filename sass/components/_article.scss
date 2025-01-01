@@ -36,23 +36,25 @@ body:has(#banner) {
 	img:nth-of-type(1) {
 		z-index: -1;
 		filter: blur(4rem);
-		animation: banner-glow-load var(--transition-longer);
+		animation: banner-glow-load 1.525s;
 
 		@keyframes banner-glow-load {
-			from {
+			from,
+			52.5% {
 				opacity: 0;
 			}
 		}
 	}
 
 	img:nth-of-type(2) {
-		animation: banner-load var(--transition-long);
+		animation: banner-load 0.925s;
 
 		@keyframes banner-load {
 			from,
-			50% {
+			52.5% {
 				transform: var(--hover);
 				opacity: 0;
+				filter: blur(0.75rem);
 			}
 		}
 	}
