@@ -101,11 +101,6 @@
 	}
 
 	nav {
-		&:hover ul li a:not(:hover) {
-			transform: translateX(-0.25rem);
-			opacity: var(--disabled-opacity);
-		}
-
 		ul {
 			display: flex;
 			flex-direction: column;
@@ -142,12 +137,11 @@
 				a {
 					flex: 1;
 					transition: all var(--transition), transform var(--transition-bezier);
-					border-radius: 999px;
+					border-radius: var(--rounded-corner);
 					padding: 0.375rem 0.75rem;
 					text-decoration: none;
 
 					&:hover {
-						transform: translateX(0.25rem);
 						box-shadow: var(--edge-highlight);
 						background-color: var(--bg-muted-1);
 					}
