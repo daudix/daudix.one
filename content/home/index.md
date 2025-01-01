@@ -2,7 +2,7 @@
 title = "Home"
 [extra]
 styles = ["home/style.css"]
-scripts = ["home/statuscafe.js", "home/fluttershy.js", "home/rizz.js"]
+scripts = ["home/statuscafe.js", "home/shy.js"]
 no_header = true
 badges = [
   { name = "blue-team.gif", url = "https://512kb.club" },
