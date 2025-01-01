@@ -264,8 +264,8 @@
 
 			main {
 				grid-area: post;
-				margin: 1rem 0 0;
-				width: 100%;
+				margin-block-start: 1rem;
+				padding: 0;
 
 				:first-child {
 					margin-block-start: 0;
