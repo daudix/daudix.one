@@ -27,7 +27,7 @@ Feel free to reach out to me on any of these! I'm usually too shy to start the c
 <img class="transparent no-hover pixels drop-shadow icon" src="icons/discord.gif" alt="Pixel art Discord icon." />
 <div class="details">
 <strong>Discord</strong>
-<p><small>I prefer it to Matrix for the most part.</small></p>
+<p>I prefer it to Matrix for the most part.</p>
 </div>
 </a>
 
@@ -35,7 +35,7 @@ Feel free to reach out to me on any of these! I'm usually too shy to start the c
 <img class="transparent no-hover pixels drop-shadow icon" src="icons/matrix.gif" alt="Pixel art Matrix icon." />
 <div class="details">
 <strong>Matrix</strong>
-<p><small>I have a few alts, but I don't use them.</small></p>
+<p>I have a few alts, but I don't use them.</p>
 </div>
 </a>
 
@@ -43,7 +43,7 @@ Feel free to reach out to me on any of these! I'm usually too shy to start the c
 <img class="transparent no-hover pixels drop-shadow icon" src="icons/signal.gif" alt="Pixel art Signal icon." />
 <div class="details">
 <strong>Signal</strong>
-<p><small>Telegram if they kept privacy promises.</small></p>
+<p>Telegram if they kept privacy promises.</p>
 </div>
 </a>
 
@@ -51,7 +51,7 @@ Feel free to reach out to me on any of these! I'm usually too shy to start the c
 <img class="transparent no-hover pixels drop-shadow icon" src="icons/telegram.gif" alt="Pixel art Telegram icon." />
 <div class="details">
 <strong>Telegram</strong>
-<p><small>Discord level privacy advertised as it's not.</small></p>
+<p>Discord level privacy advertised as it's not.</p>
 </div>
 </a>
 
@@ -59,7 +59,7 @@ Feel free to reach out to me on any of these! I'm usually too shy to start the c
 <img class="transparent no-hover pixels drop-shadow icon" src="icons/email.gif" alt="Pixel art Email icon." />
 <div class="details">
 <strong>Email</strong>
-<p><small>Email anxiety makes it less appealing.</small></p>
+<p>Email anxiety makes it less appealing.</p>
 </div>
 </a>
 
@@ -67,7 +67,7 @@ Feel free to reach out to me on any of these! I'm usually too shy to start the c
 <img class="transparent no-hover pixels drop-shadow icon" src="icons/xmpp.gif" alt="Pixel art XMPP icon." />
 <div class="details">
 <strong>XMPP</strong>
-<p><small>Does anyone use it? Everyone's on Matrix.</small></p>
+<p>Does anyone use it? Everyone's on Matrix.</p>
 </div>
 </a>
 
@@ -89,7 +89,7 @@ This is not a complete list, but rather list of places where I'm somewhat active
 <img class="transparent no-hover pixels drop-shadow icon" src="icons/mastodon.gif" alt="Pixel art Mastodon icon." />
 <div class="details">
 <strong>Mastodon</strong>
-<p><small>Main online presence after this website.</small></p>
+<p>Main online presence after this website.</p>
 </div>
 </a>
 
@@ -97,7 +97,7 @@ This is not a complete list, but rather list of places where I'm somewhat active
 <img class="transparent no-hover pixels drop-shadow icon" src="icons/akkoma.gif" alt="Pixel art Akkoma icon." />
 <div class="details">
 <strong>Akkoma</strong>
-<p><small>Alt for everything that doesn't fit main.</small></p>
+<p>Alt for everything that doesn't fit main.</p>
 </div>
 </a>
 
@@ -105,7 +105,7 @@ This is not a complete list, but rather list of places where I'm somewhat active
 <img class="transparent no-hover pixels drop-shadow icon" src="icons/bluesky.gif" alt="Pixel art Bluesky icon." />
 <div class="details">
 <strong>Bluesky</strong>
-<p><small>A mix of the former two. Kind of.</small></p>
+<p>A mix of the former two. Kind of.</p>
 </div>
 </a>
 
@@ -113,7 +113,7 @@ This is not a complete list, but rather list of places where I'm somewhat active
 <img class="transparent no-hover pixels drop-shadow icon" src="icons/lemmy.gif" alt="Pixel art Lemmy icon." />
 <div class="details">
 <strong>Lemmy</strong>
-<p><small>Been a lurker since the Reddit days.</small></p>
+<p>Been a lurker since the Reddit days.</p>
 </div>
 </a>
 
@@ -121,7 +121,7 @@ This is not a complete list, but rather list of places where I'm somewhat active
 <img class="transparent no-hover pixels drop-shadow icon" src="icons/pixelfed.gif" alt="Pixel art Pixelfed icon." />
 <div class="details">
 <strong>Pixelfed</strong>
-<p><small>Never understood the appeal of Instagram.</small></p>
+<p>Never understood the appeal of Instagram.</p>
 </div>
 </a>
 
@@ -129,7 +129,7 @@ This is not a complete list, but rather list of places where I'm somewhat active
 <img class="transparent no-hover pixels drop-shadow icon" src="icons/youtube.gif" alt="Pixel art YouTube icon." />
 <div class="details">
 <strong>YouTube</strong>
-<p><small>A whopping 3 videos + 1 short + 2 hidden.</small></p>
+<p>A whopping 3 videos + 1 short + 2 hidden.</p>
 </div>
 </a>
 
@@ -138,6 +138,7 @@ This is not a complete list, but rather list of places where I'm somewhat active
 I have changed the Fediverse instance I'm on a lot, so to make sure nothing is lost, here's my Fediverse timeline:
 
 <small>From newest to oldest ↓</small>
+
 <ol id="timeline">
   <li>
     <strong>10 Dec 2024 - Today</strong>
@@ -196,7 +197,7 @@ I was using GitHub since the very start of my FOSS journey, but some time ago I'
 <img class="transparent no-hover pixels drop-shadow icon" src="icons/codeberg.gif" alt="Pixel art Codeberg icon." />
 <div class="details">
 <strong>Codeberg</strong>
-<p><small>My main forge with most of my projects.</small></p>
+<p>My main forge with most of my projects.</p>
 </div>
 </a>
 
@@ -204,7 +205,7 @@ I was using GitHub since the very start of my FOSS journey, but some time ago I'
 <img class="transparent no-hover pixels drop-shadow icon" src="icons/github.gif" alt="Pixel art GitHub icon." />
 <div class="details">
 <strong>GitHub</strong>
-<p><small>Who doesn't have an account there?</small></p>
+<p>Who doesn't have an account there?</p>
 </div>
 </a>
 
@@ -212,7 +213,7 @@ I was using GitHub since the very start of my FOSS journey, but some time ago I'
 <img class="transparent no-hover pixels drop-shadow icon" src="icons/gitlab.gif" alt="Pixel art GitLab icon." />
 <div class="details">
 <strong>GitLab</strong>
-<p><small>GitHub 2: Electric Boogaloo.</small></p>
+<p>GitHub 2: Electric Boogaloo.</p>
 </div>
 </a>
 
