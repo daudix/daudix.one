@@ -32,8 +32,8 @@ index_format = "elasticlunr_json"
 # accent_color_dark = "#ff6188"
 
 # Orange
-# accent_color = "#e16032"
-# accent_color_dark = "#fc9867"
+accent_color = "#e16032"
+accent_color_dark = "#fc9867"
 
 # Yellow
 # accent_color = "#cc7a0a"
@@ -48,8 +48,8 @@ index_format = "elasticlunr_json"
 # accent_color_dark = "#78dce8"
 
 # Purple
-accent_color = "#7058be"
-accent_color_dark = "#ab9df2"
+# accent_color = "#7058be"
+# accent_color_dark = "#ab9df2"
 
 # Purple (GNOME)
 # accent_color = "#8939a4"
