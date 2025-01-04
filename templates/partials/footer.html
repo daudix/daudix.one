@@ -1,12 +1,12 @@
 <footer id="site-footer">
 	{%- if config.extra.footer.show_copyright %}
-		<div id="site-footer-copyright">
+		<span id="site-footer-copyright" title="Site last updated {{ now() | date(format=config.extra.date_format_long | default(value='%B %d, %Y, %R') , locale=config.extra.date_locale | default(value='en_US')) }}">
 			{%- if config.extra.footer.copyright %}
 				{{ config.extra.footer.copyright | markdown | safe }}
 			{%- else %}
 				<p>&copy; {{ config.title }}, {{ now() | date(format="%Y") }}</p>
 			{%- endif %}
-		</div>
+		</span>
 	{%- endif %}
 	{%- if config.extra.footer.show_fediring  %}
 		<div id="site-footer-fediring">

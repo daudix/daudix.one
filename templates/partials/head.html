@@ -29,7 +29,7 @@
 
 	{%- if config.extra.comments %}
 		<link rel="me" href="https://{{ config.extra.comments.host }}/@{{ config.extra.comments.user }}" />
-        <meta name="fediverse:creator" content="@{{ config.extra.comments.user }}@{{ config.extra.comments.host }}" />
+		<meta name="fediverse:creator" content="@{{ config.extra.comments.user }}@{{ config.extra.comments.host }}" />
 	{%- endif %}
 
 	<meta content="Zola v0.19.2" name="generator">
@@ -46,7 +46,7 @@
 				<link rel="alternate" href="{{ get_url(path=feed) | safe }}">
 			{% endif %}
 		{% endfor %}
-    {% endif %}
+	{% endif %}
 
 	{%- include "partials/variables.html" %}
 
