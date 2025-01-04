@@ -11,8 +11,13 @@
 	height: 53px;
 
 	&-copyright {
+		cursor: help;
 		color: var(--fg-muted-2);
 		font-size: var(--font-size-small);
+
+		p {
+			margin: 0;
+		}
 	}
 
 	// IMO it's pretty cute

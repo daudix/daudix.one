@@ -158,6 +158,13 @@ function initSearch() {
 		return res;
 	}
 
+	document.addEventListener("keydown", (event) => {
+		if (event.key === "/" && document.activeElement !== searchBar) {
+			event.preventDefault();
+			searchBar.focus();
+		}
+	});
+
 	searchBar.addEventListener("keyup", debounce(async function () {
 		var term = searchBar.value.trim();
 		if (term === currentTerm) {

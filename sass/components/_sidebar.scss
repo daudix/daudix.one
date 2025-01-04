@@ -33,9 +33,27 @@
 
 	#search {
 		display: flex;
+		position: relative;
 		flex-direction: column;
 		margin-block-end: 2rem;
 		max-height: calc(50vh - 2.5rem);
+
+		&:has(#search-bar:not(:placeholder-shown)) .icon {
+			transform: scale(0.5);
+			opacity: 0;
+			pointer-events: none;
+		}
+
+		.icon {
+			position: absolute;
+			mask-image: var(--icon-slash);
+			inset-block-start: 0.75rem;
+			inset-inline-end: 1rem;
+			-webkit-mask-image: var(--icon-slash);
+			transition: all var(--transition), transform var(--transition-bezier);
+			cursor: help;
+			color: var(--fg-muted-1);
+		}
 
 		#search-bar {
 			flex-shrink: 0;
