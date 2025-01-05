@@ -50,6 +50,7 @@
 			inset-block-start: 0.75rem;
 			inset-inline-end: 1rem;
 			-webkit-mask-image: var(--icon-slash);
+			opacity: var(--disabled-opacity);
 			transition: all var(--transition), transform var(--transition-bezier);
 			cursor: help;
 			color: var(--fg-muted-1);
