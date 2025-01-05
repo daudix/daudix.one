@@ -39,7 +39,7 @@
 		max-height: calc(50vh - 2.5rem);
 
 		&:has(#search-bar:not(:placeholder-shown)) .icon {
-			transform: scale(0.5);
+			transform: translateX(0.5rem);
 			opacity: 0;
 			pointer-events: none;
 		}

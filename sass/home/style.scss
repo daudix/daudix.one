@@ -18,3 +18,35 @@
 #abyss {
 	filter: blur(0.25rem);
 }
+
+.masonry {
+	column-gap: 0.5rem;
+	columns: auto 16rem;
+	margin: 0;
+	margin-block-start: 2rem;
+	padding: 0;
+	list-style: none;
+
+	& > li {
+		display: contents;
+		margin: 0;
+		padding: 0;
+
+		article {
+			break-inside: avoid;
+			margin-block-end: 0.5rem;
+			box-shadow: var(--edge-highlight), var(--shadow);
+			border-radius: var(--rounded-corner);
+			background-color: var(--bg-muted-1);
+			padding: 1rem;
+
+			:first-child {
+				margin-block-start: 0;
+			}
+
+			:last-child {
+				margin-block-end: 0;
+			}
+		}
+	}
+}
