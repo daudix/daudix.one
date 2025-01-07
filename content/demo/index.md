@@ -89,7 +89,7 @@ pre table td:nth-of-type(1) {
 
 ### Shortcodes
 
-Ananas Duck provides a few useful [shortcodes](https://www.getzola.org/documentation/content/shortcodes/) that simplify some tasks. They can be used on all pages.
+Ametrine provides a few useful [shortcodes](https://www.getzola.org/documentation/content/shortcodes/) that simplify some tasks. They can be used on all pages.
 
 #### Alerts
 
@@ -641,7 +641,7 @@ Blah blah <q>Inline Quote</q> hmm.
 <span class="spoiler">Some spoiler</span>
 ```
 
-You know, <span class="spoiler">Ananas Duck is a pretty dumb name.</span> I know, crazy.
+You know, <span class="spoiler">Ametrines are very pretty.</span> I know, crazy.
 
 With `solid` class:
 
@@ -649,7 +649,7 @@ With `solid` class:
 <span class="spoiler solid">Some spoiler</span>
 ```
 
-You know, <span class="spoiler solid">Ananas Duck is a pretty dumb name.</span> I know, crazy.
+You know, <span class="spoiler solid">Ametrines are very pretty.</span> I know, crazy.
 
 ### Buttons Dialog
 
