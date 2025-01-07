@@ -21,6 +21,27 @@
 
 		.go-to-top {
 			text-decoration: none;
+
+			&:hover::after {
+				transform: none;
+				opacity: 1;
+			}
+
+			&::after {
+				display: inline-block;
+				vertical-align: top;
+				transform: translateX(-0.25rem);
+				opacity: 0;
+				transition: all var(--transition), transform var(--transition-bezier);
+				content: "| Go to Top ↑";
+				color: var(--fg-muted-2);
+				font-weight: var(--font-weight-normal);
+				font-size: var(--font-size-small);
+
+				@media only screen and (max-width: 720px) {
+					display: none;
+				}
+			}
 		}
 
         .title {
