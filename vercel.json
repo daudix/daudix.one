@@ -1,12 +1,12 @@
 {
 	"rewrites": [
 		{
-			"source": "/api/insights/:match*",
-			"destination": "https://daudix.one/_vercel/insights/:match*"
+			"source": "/speed-insights/:match*",
+			"destination": "https://daudix.one/_vercel/speed-insights/:match*"
 		},
 		{
-			"source": "/api/speed-insights/:match*",
-			"destination": "https://daudix.one/_vercel/speed-insights/:match*"
+			"source": "/stats/:match*",
+			"destination": "https://cloud.umami.is/:match*"
 		}
 	]
 }
