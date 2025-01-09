@@ -6,6 +6,8 @@ template = "article_list.html"
 page_template = "article.html"
 paginate_by = 10
 generate_feeds = true
+[extra]
+styles = ["blog/style.css"]
 +++
 
 Hi! Welcome to my blog! <sup>[Why such a stupid name?](@/blog/2024-10-25-blog-name/index.md)</sup>
