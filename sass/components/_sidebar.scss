@@ -11,8 +11,7 @@
 	position: sticky;
 	grid-area: sidebar;
 	z-index: 999;
-	transition-duration: var(--transition);
-	transition-property: -webkit-backdrop-filter, transform, backdrop-filter, box-shadow;
+	transition: var(--transition);
 	inset-block-start: 0;
 	border-inline-end: max(1px, 0.0625rem) solid var(--bg-muted-2);
 	background-color: var(--bg-muted-1);

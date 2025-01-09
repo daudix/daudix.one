@@ -196,3 +196,26 @@ input[type="range"] {
 		}
 	}
 }
+
+input[type="submit"] {
+	appearance: none;
+	transition: all var(--transition), transform var(--transition-bezier);
+	cursor: pointer;
+	box-shadow: var(--edge-highlight);
+	border: none;
+	border-radius: var(--rounded-corner);
+	background-color: var(--bg-muted-1);
+	padding: 0.375rem 0.75rem;
+	color: var(--fg-muted-1);
+	font-weight: var(--font-weight-semi-bold);
+	font-size: var(--font-size-small);
+	font-family: inherit;
+
+	&:hover {
+		background-color: var(--bg-muted-2);
+	}
+
+	&:active {
+		transform: var(--active);
+	}
+}
