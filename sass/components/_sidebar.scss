@@ -189,14 +189,19 @@
 						mask-image: var(--icon-home);
 					}
 
+					.icon.online {
+						-webkit-mask-image: var(--icon-online);
+						mask-image: var(--icon-online);
+					}
+
+					.icon.about {
+						-webkit-mask-image: var(--icon-info);
+						mask-image: var(--icon-info);
+					}
+
 					.icon.blog {
 						-webkit-mask-image: var(--icon-newspaper);
 						mask-image: var(--icon-newspaper);
-					}
-
-					.icon.design {
-						-webkit-mask-image: var(--icon-design);
-						mask-image: var(--icon-design);
 					}
 
 					.icon.nanolog {
@@ -204,9 +209,9 @@
 						mask-image: var(--icon-edit);
 					}
 
-					.icon.calendar {
-						-webkit-mask-image: var(--icon-calendar);
-						mask-image: var(--icon-calendar);
+					.icon.design {
+						-webkit-mask-image: var(--icon-design);
+						mask-image: var(--icon-design);
 					}
 
 					.icon.calendar {
@@ -217,11 +222,6 @@
 					.icon.snug-nook {
 						-webkit-mask-image: var(--icon-chat);
 						mask-image: var(--icon-chat);
-					}
-
-					.icon.online {
-						-webkit-mask-image: var(--icon-online);
-						mask-image: var(--icon-online);
 					}
 
 					.icon.coffee {

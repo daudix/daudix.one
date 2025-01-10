@@ -28,6 +28,7 @@
 #fluttershy {
 	position: fixed;
 	transform: translateY(100%);
+	z-index: 1;
 	animation: peek var(--transition-long);
 	margin: 0;
 	inset-block-end: 0;

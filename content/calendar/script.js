@@ -73,7 +73,7 @@ const allToggledOnce = () => {
 
 // Play the achievement sound
 const playAchievementSound = () => {
-	const audio = new Audio('achievement.mp3');
+	const audio = new Audio('/calendar/achievement.mp3');
 	audio.play();
 };
 

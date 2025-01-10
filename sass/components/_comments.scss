@@ -16,32 +16,26 @@
 		}
 	}
 
-	.buttons {
-		justify-content: start;
-		gap: 0.25rem;
-		margin-block-start: 2rem;
+	#load-comments:disabled {
+		animation: loading-shimmer var(--transition-long) ease-in-out
+			alternate infinite;
+		transition: none;
+		background-image: linear-gradient(
+			to right,
+			var(--bg-muted-1) 50%,
+			var(--bg-muted-2) 75%,
+			var(--bg-muted-1) 100%
+		);
+		background-size: 200%;
+		background-color: transparent;
 
-		#load-comments:disabled {
-			animation: loading-shimmer var(--transition-long) ease-in-out
-				alternate infinite;
-			transition: none;
-			background-image: linear-gradient(
-				to right,
-				var(--bg-muted-1) 50%,
-				var(--bg-muted-2) 75%,
-				var(--bg-muted-1) 100%
-			);
-			background-size: 200%;
+		&:hover {
 			background-color: transparent;
+		}
 
-			&:hover {
-				background-color: transparent;
-			}
-
-			@keyframes loading-shimmer {
-				to {
-					background-position-x: -200%;
-				}
+		@keyframes loading-shimmer {
+			to {
+				background-position-x: -200%;
 			}
 		}
 	}

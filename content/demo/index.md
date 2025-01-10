@@ -656,25 +656,25 @@ You know, <span class="spoiler solid">Ametrines are very pretty.</span> I know, 
 ```html.j2
 <div class="buttons">
   <a href="#top">Go to Top</a>
-  <a class="colored external" href="https://example.org">Example</a>
+  <a class="suggested external" href="https://example.org">Example</a>
 </div>
 ```
 
 <div class="buttons">
   <a href="#top">Go to Top</a>
-  <a class="colored external" href="https://example.org">Example</a>
+  <a class="suggested external" href="https://example.org">Example</a>
 </div>
 
 With `centered` and `big` classes:
 
 ```html.j2
-<div class="buttons centered">
-  <button class="big colored">Do Something…</button>
+<div class="buttons centered big">
+  <button class="suggested">Do Something…</button>
 </div>
 ```
 
-<div class="buttons centered">
-  <button class="big colored">Do Something…</button>
+<div class="buttons centered big">
+  <button class="suggested">Do Something…</button>
 </div>
 
 [^1]: Footnote

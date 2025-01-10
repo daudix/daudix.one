@@ -183,17 +183,6 @@ body {
 	@media print {
 		display: none;
 	}
-
-	button {
-		background-color: var(--accent-color);
-		color: var(--contrast-color);
-
-		&:hover {
-			opacity: var(--dim-opacity);
-			background-color: var(--accent-color);
-			color: var(--contrast-color);
-		}
-	}
 }
 
 .achievement {

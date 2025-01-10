@@ -50,6 +50,7 @@
 
 	@else {
 		// COLORS
+		--dim-accent-color: rgb(from var(--accent-color) r g b / var(--dim-opacity));
 		--bg-color: color-mix(in srgb, var(--accent-color) 20%, white);
 		--bg-overlay: linear-gradient(rgb(255 255 255 / var(--dim-opacity)), rgb(255 255 255 / var(--dim-opacity)));
 		--bg-overlay-neutral: linear-gradient(rgb(255 255 255 / var(--dim-opacity)), rgb(255 255 255 / var(--dim-opacity)));
@@ -107,6 +108,13 @@
 		--printed: contrast(2) brightness(0.75) grayscale(1);
 		--drop-shadow: drop-shadow(0 0.08rem 0.1rem rgb(0 0 0 / 0.35)) drop-shadow(0 0.4rem 0.7rem rgb(0 0 0 / 0.18));
 
+		// FONTS
+		--font-sans-serif: "Geist";
+		--font-monospace: "Geist Mono";
+		--font-system-ui: system-ui, sans-serif;
+		--font-ui-monospace: ui-monospace, monospace;
+		--font-emoji: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
 		// FONT SIZES
 		--font-size-xx-small: 0.625rem;
 		--font-size-x-small: 0.75rem;
@@ -116,13 +124,6 @@
 		--font-size-x-large: 1.5rem;
 		--font-size-xx-large: 2rem;
 		--font-size-xxx-large: 3rem;
-
-		// FONTS
-		--font-sans-serif: "Geist";
-		--font-monospace: "Geist Mono";
-		--font-system-ui: system-ui, sans-serif;
-		--font-ui-monospace: ui-monospace, monospace;
-		--font-emoji: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
 		// FONT WEIGHTS
 		--font-weight-thin: 100;

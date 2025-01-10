@@ -2,7 +2,7 @@
 title = "Home"
 [extra]
 styles = ["home/style.css"]
-scripts = ["home/statuscafe.js", "home/shy.js"]
+scripts = ["home/statuscafe.js"]
 no_header = true
 badges = [
   { name = "blue-team.gif", url = "https://512kb.club" },
@@ -38,116 +38,46 @@ badges = [
   </p>
 </noscript>
 
+<div id="header">
+<div>
+
 {{ polaroid() }}
 
-<div id="header-container">
+<div id="title">
 
-# David Lapshin { #header }
+# David Lapshin
 </div>
 
-Greetings! Name's David, and this is my little corner on the big, scary World Wild Web. You might know someone online with the nickname "Daudix", and yeah, that's me :P
+Greetings! Welcome to my little corner on World Wild Web. You might know me by my online handle; Daudix.
 
-## About Me
-
-<ul class="masonry">
-<!-- Card Start -->
-<li>
-<article>
-
-**I'm originating from Siberia,** but currently residing in <abbr id="abyss" title="If you know, you know">abyss</abbr>. That means that I'm a native Russian speaker, which is cool, I guess?
-</article>
-</li>
-<!-- Card End -->
-
-<!-- Card Start -->
-<li>
-<article>
-
-**Design is my hobby,** and I'm learning more about it every day. I also enjoy doing some web development! I looove working with CSS/SCSS, HTML, and its templating, but that's about it; JS is a bit of a mystery for me.
-</article>
-</li>
-<!-- Card End -->
-
-<!-- Card Start -->
-<li>
-<article>
-
-**I like to "mess around and find out" about all sorts of things.** I'm very curious, quite enthusiastic, and maybe a little annoying. I am not perfect but I am trying to become a better self each day.
-</article>
-</li>
-<!-- Card End -->
-
-<!-- Card Start -->
-<li>
-<article class="fancy-list">
-
-**Random things I like:**
-
-- Purple <small>(lavender in particular)</small>
-- Monokai Pro <small>(it got this sweet purple tint)</small>
-- Photography <small>(mostly view from my window)</small>
-- Emoticons (but not emojis)
-- Minor details and references
-- Retro(futurism) and vintage stuff
-- Making this list look like a staircase
-</article>
-</li>
-<!-- Card End -->
-
-<!-- Card Start -->
-<li>
-<article class="games fancy-list">
-
-**Games I like:**
-
-- <div id="portal-container">
-    <div id="portal-blue"></div>
-      <div id="portal-marquee">
-        <span>Portal</span>
-        <span aria-hidden="true">Portal</span>
-      </div>
-    <div id="portal-orange"></div>
-  </div>
-  <small>(all-time favorite)</small>
-- <span>Celeste</span> <small>(such a lovely game)</small>
-- <span>Teardown</span> <small>(fun destructions)</small>
-- <span>Super</span><span>liminal</span> <small>(F-Stop if it wasn't scrapped)</small>
-- <span>Machinarium</span> <small>(I love silly robots)</small>
-- <span>Stardew Valley</span> <small>(wish I could live like that)</small>
-- <span>Untitled Goose</span> <small>(just a horrible goose)</small>
-- <span>The Stanley Parable<span>&nbsp;Adventure Line™</span></span> <small>(I love the broom closet ending)</small>
-</article>
-</li>
-<!-- Card End -->
-
-<!-- Card Start -->
-<li>
-<article>
-
-**I don't really have a fixed interest,** I just do things and see what's fun. Sometimes so happens that I come across something that consumes me completely, but that doesn't happen all that often, sadly.
-</article>
-</li>
-<!-- Card End -->
-
-<!-- Card Start -->
-<li>
-<article>
-
-**I'm rather shy.** Quoting [Jeffrey](https://hyperreal.coffee/about/) as I can't say it better:
-
-> I'm <button id="shy">shy</button> and might come across as reserved and standoffish at first, but I open up when I get more comfortable with people.
-</article>
-</li>
-<!-- Card End -->
-</ul>
+<div class="buttons start big">
+  <a class="suggested" href="/about/">About Me →</a>
+  <a href="#works">My Works ↓</a>
+</div>
+</div>
+</div>
 
 ## Works
 
-{{ window() }}
+<div>
 
-I contribute to various FOSS projects from time to time, either by creating and improving icons, translating them into Russian, or even crafting a logo.
+<div id="icons">
+  <img class="transparent no-hover drop-shadow" src="/design/icons/original/de.schmidhuberj.DieBahn.svg" />
+  <img class="transparent no-hover drop-shadow" src="/design/icons/original/io.github.tfuxu.Halftone.svg" />
+  <img class="transparent no-hover drop-shadow" src="/design/icons/original/org.nickvision.cavalier.svg" />
+  <img class="transparent no-hover drop-shadow" src="/design/icons/original/org.nickvision.tagger.svg" />
+</div>
 
-Have a look at my [design page](@/design/index.md) for my design-related works; mostly icons, some wallpapers (one of them is part of GNOME), and a few logos.
+<div>
+
+I ocasionally contribute to various FOSS projects by creating/improving icons, translating them into Russian, or crafting logos. Other times I make wallpapers for myself that I share with others. <small>(one is in [GNOME](https://www.gnome.org))</small>
+
+<div class="buttons big">
+  <a href="/design/">My Designs →</a>
+</div>
+</div>
+
+</div>
 
 ## IndieWeb
 

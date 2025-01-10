@@ -73,6 +73,7 @@ speed_insights = true
 auto_hide = true
 links = [
 	{ url = "@/home/index.md", name = "Home" },
+	{ url = "@/about/index.md", name = "About" },
 	{ url = "@/online/index.md", name = "Online" },
 	{ name = "Writing", category = [
 		{ url = "@/blog/_index.md", name = "Blog" },

@@ -1,8 +1,16 @@
-#header-container {
+#header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-block-start: -4rem;
+	height: calc(100vh - 53px);
+}
+
+#title {
 	--shift: 0.1875rem;
 	display: block;
 	transition: var(--transition-bezier);
-	margin: 2rem 0 1rem;
+	margin-block-start: 0;
 	width: min(31.0625rem, 100%);
 
 	&:hover {
@@ -10,7 +18,7 @@
 		transform: translate(calc(var(--shift) * 3), calc(calc(var(--shift) * -1) * 3));
 		filter: drop-shadow(calc(var(--shift) * -1) var(--shift) 0 #1b98d1) drop-shadow(calc(var(--shift) * -1) var(--shift) 0 #fde85f) drop-shadow(calc(var(--shift) * -1) var(--shift) 0 #ec4141);
 
-		#header {
+		#david-lapshin {
 			background-color: #9bdbf5;
 		}
 	}
@@ -20,12 +28,12 @@
 		transform: translate(calc(calc(var(--shift) * -1) * 3), calc(calc(var(--shift) * -1) * 3));
 		filter: drop-shadow(var(--shift) var(--shift) 0 #1b98d1) drop-shadow(var(--shift) var(--shift) 0 #fde85f) drop-shadow(var(--shift) var(--shift) 0 #ec4141);
 
-		#header {
+		#david-lapshin {
 			background-color: #9bdbf5;
 		}
 	}
 
-	#header {
+	#david-lapshin {
 		--mask: url("header.gif");
 		-webkit-user-select: none;
 		-webkit-mask-image: var(--mask);

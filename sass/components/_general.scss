@@ -45,9 +45,10 @@ body {
 // Make focused anchor not get covered by nav,
 // and flash it with accent color when jumping to it
 :target:not(#main-content) {
-	transition: all var(--transition), scroll-margin-block-start 0s;
+	transition-duration: var(--transition);
+	transition-property: text-shadow, font-weight;
 	scroll-margin-block-start: 15vh;
-	color: var(--accent-color);
+	font-weight: var(--font-weight-light);
 	text-shadow: var(--text-shadow-glow);
 }
 
