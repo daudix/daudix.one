@@ -32,6 +32,11 @@
 #nanolog-heading {
 	display: flex;
 	flex-direction: column;
+	margin-block-start: 2rem;
+
+	h1 {
+		margin-block-start: 0;
+	}
 
 	#nanolog-details {
 		display: flex;
@@ -58,8 +63,8 @@
 			inset-inline-end: 0;
 
 			#backlinks summary + div {
-				width: min(var(--container-width) / 3, calc(100vw - 4.5rem));
 				inset-inline-end: 2.5rem;
+				width: min(var(--container-width) / 3, calc(100vw - 4.5rem));
 			}
 		}
 	}

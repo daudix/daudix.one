@@ -97,7 +97,7 @@ I work with the following creative applications and I’m always learning to bet
 <div class="card">
 <strong class="title">Payment and Pricing</strong>
 
-<div class="card-content">
+<div class="card-content overshoot">
 <div class="fancy-list">
 
 - **Only commission me if you have the means to pay.**  
@@ -119,7 +119,7 @@ If the total cost is less than estimated, I’ll refund the difference.
 <div class="card">
 <strong class="title">Timing</strong>
 
-<div class="card-content">
+<div class="card-content overshoot">
 <div class="fancy-list">
 
 - **Response time is usually 24-48 hours.**  
@@ -137,7 +137,7 @@ That said, I will do my best to complete it as fast as I can.
 <div class="card">
 <strong class="title">Process</strong>
 
-<div class="card-content">
+<div class="card-content overshoot">
 <div class="fancy-list">
 
 - **I will regularly send work-in-progress pictures to keep you updated on the progress.**  
@@ -157,7 +157,7 @@ Websites will have full source code and instructions on how to build them, logos
 <div class="card">
 <strong class="title">Other Details</strong>
 
-<div class="card-content">
+<div class="card-content overshoot">
 <div class="fancy-list">
 
 - **I have the right to decline any commission that goes against my values or makes me uncomfortable.**  
@@ -188,7 +188,7 @@ This not only improves speed, but also ensures that the website uses only well-d
 <!-- Card start -->
 <div class="card">
 <strong class="title">88x31 Button</strong>
-<div class="card-content">
+<div class="card-content overshoot">
 
 Small Scale • <mark>$2</mark>
 
@@ -211,14 +211,14 @@ Custom 88x31 button for your website. Animation will double the price. Available
 </li>
 </ul>
 
-<div class="card-content">
+<div class="card-content overshoot">
 
 Small Scale • <mark>$12-$24</mark>
 
 Up to 2 logo variants (color and monochrome), with a simple color palette and matching fonts. Ideal for small projects/organizations.
 </div>
 
-<div class="card-content">
+<div class="card-content overshoot">
 
 Large Scale • <mark>$24-$48</mark>
 
@@ -241,14 +241,14 @@ Includes more logo variants, a complete brand kit (fonts, color palette), and br
 </li>
 </ul>
 
-<div class="card-content">
+<div class="card-content overshoot">
 
 Small Scale • <mark>$8-$16</mark>
 
 [Duckquill](https://duckquill.daudix.one)-powered website. 1-8 page layouts at a flat rate. Extra pages cost $2 each.
 </div>
 
-<div class="card-content">
+<div class="card-content overshoot">
 
 Large Scale • <mark>$16-$32</mark>
 
@@ -271,7 +271,7 @@ Large Scale • <mark>$16-$32</mark>
 </li>
 </ul>
 
-<div class="card-content">
+<div class="card-content overshoot">
 
 Small Scale • <mark>$32-$64</mark>
 
@@ -285,7 +285,7 @@ Small Scale • <mark>$32-$64</mark>
 {% end %}
 </div>
 
-<div class="card-content">
+<div class="card-content overshoot">
 
 Large Scale • <mark>$64-$128</mark>
 
@@ -304,7 +304,7 @@ Large Scale • <mark>$64-$128</mark>
 <!-- Card start -->
 <div class="card">
 <strong class="title">Motion Design</strong>
-<div class="card-content">
+<div class="card-content overshoot">
 
 Small Scale • <mark>$24-$48</mark>
 
@@ -316,7 +316,7 @@ Short video (up to 90 seconds) made in Blender, 2D or with some 3D elements.
 <!-- Card start -->
 <div class="card">
 <strong class="title">Video Editing</strong>
-<div class="card-content">
+<div class="card-content overshoot">
 
 Small Scale • <mark>$12-$48</mark>
 

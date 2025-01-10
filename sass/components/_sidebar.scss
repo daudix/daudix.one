@@ -74,18 +74,11 @@
 		}
 
 		#search-results {
-			--mask: linear-gradient(to bottom,
-					transparent,
-					black 1rem,
-					black calc(100% - 0.5rem),
-					transparent);
-			-webkit-mask-image: var(--mask);
 			display: none;
 			flex-direction: column;
 			gap: 0.5rem;
-			mask-image: var(--mask);
-			margin: 0 -0.5rem -0.5rem;
-			padding: 1rem 0.5rem 0.5rem;
+			margin: 0 -0.5rem -2rem;
+			padding: 1rem 0.5rem;
 			overflow: auto;
 
 			.item {

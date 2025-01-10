@@ -48,18 +48,9 @@ body::before {
 		aspect-ratio: 1 / 1;
 
 		.card-content {
-			--mask: linear-gradient(
-				to bottom,
-				transparent,
-				black 1rem,
-				black calc(100% - 1rem),
-				transparent
-			);
-			-webkit-mask-image: var(--mask);
 			display: block;
 			flex: 1;
 			flex-direction: column;
-			mask-image: var(--mask);
 			margin: 0 -1rem -1rem;
 			padding: 1rem;
 			overflow: auto;

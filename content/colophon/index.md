@@ -11,7 +11,7 @@ This is the least fun page on this website. Deal with it.
 
 <aside id="to-do">
 <strong class="title">To-do</strong>
-<div>
+<div class="overshoot">
 
 - [ ] Add photo gallery (random polaroid rotation can be done using Tera's [`get_random`](https://keats.github.io/tera/docs/#get-random))
 - [ ] Cacheburst (?)

@@ -8,7 +8,7 @@
 	<details id="badges-popup" class="closable">
 		<summary title="Link to Me"><i class="icon"></i></summary>
 		<div>
-			<div>
+			<div class="overshoot">
 				<p>
 					If you'd like to link to me, use the following badge:
 				</p>
@@ -27,7 +27,7 @@
 			</div>
 		</div>
 	</details>
-	<div class="marquee-wrapper">
+	<div class="marquee-wrapper overshoot-row">
 		<div class="marquee">
 			<ul style="--duration: {{ page.extra.badges | length * 2 }}s">
 				{% for badge in page.extra.badges %}

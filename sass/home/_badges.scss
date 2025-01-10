@@ -98,14 +98,6 @@
 	}
 
 	.marquee-wrapper {
-		--mask: linear-gradient(
-			to right,
-			transparent,
-			black 1rem,
-			black calc(100% - 1rem),
-			transparent
-		);
-		-webkit-mask-image: var(--mask);
 		content-visibility: auto;
 		mask-image: var(--mask);
 		margin: -1rem -1rem -2.125rem;
@@ -283,19 +275,10 @@
 			border-radius: var(--rounded-corner);
 			background-color: var(--glass-bg-1);
 			aspect-ratio: 1 / 1;
-			width: min(calc(var(--container-width) / 3), calc(90vw - 3rem));
+			width: min(calc(var(--container-width) / 3), calc(100vw - 5rem));
 
 			div {
-				--mask: linear-gradient(
-					to bottom,
-					transparent,
-					black 1rem,
-					black calc(100% - 1rem),
-					transparent
-				);
-				-webkit-mask-image: var(--mask);
 				flex: 1;
-				mask-image: var(--mask);
 				padding: 1rem;
 				padding-block-start: 0.75rem;
 				overflow: auto;
