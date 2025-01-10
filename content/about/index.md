@@ -45,6 +45,7 @@ A bit about myself.
 - Purple <small>(lavender in particular)</small>
 - Monokai Pro <small>(it got this sweet purple tint)</small>
 - Photography <small>(mostly view from my window)</small>
+- Amethysts and Ametrines
 - Emoticons (but not emojis)
 - Minor details and references
 - Retro(futurism) and vintage stuff
