@@ -25,3 +25,13 @@ document.addEventListener("click", function (event) {
 		});
 	}
 });
+
+const toggleSidebar = document.getElementById('toggle-sidebar');
+const siteSidebar = document.getElementById('site-sidebar');
+const mainContent = document.getElementById('main-content');
+
+mainContent.addEventListener('click', (event) => {
+  if (toggleSidebar.checked && !siteSidebar.contains(event.target)) {
+    toggleSidebar.checked = false;
+  }
+});
