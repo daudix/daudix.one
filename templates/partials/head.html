@@ -105,12 +105,12 @@
 		{%- set scripts = scripts | concat(with=section.extra.scripts) %}
 	{%- endif %}
 
-	{%- if config.extra.speed_insights %}
-		<script type="text/javascript" async src="{{ get_url(path='api/speed-insights/script.js') | safe }}" data-endpoint="/api/speed-insights/vitals"></script>
+	{%- if config.extra.analytics %}
+		<script type="text/javascript" async src="{{ get_url(path='api/insights/script.js') | safe }}" data-endpoint="/api/insights"></script>
 	{%- endif %}
 
-	{%- if config.extra.analytics %}
-		<script defer src="/stats/script.js" data-website-id="{{ config.extra.analytics_id }}"></script>
+	{%- if config.extra.speed_insights %}
+		<script type="text/javascript" async src="{{ get_url(path='api/speed-insights/script.js') | safe }}" data-endpoint="/api/speed-insights/vitals"></script>
 	{%- endif %}
 
 	{%- if scripts | length > 0 %}
