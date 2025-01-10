@@ -17,7 +17,7 @@
 		box-shadow: var(--edge-highlight);
 		border-radius: 999px;
 		background-color: var(--bg-muted-1);
-		padding: 0.0625rem 0.75rem;
+		padding: 1px 0.75rem;
 		color: var(--fg-muted-1);
 		font-size: var(--font-size-small);
 		text-decoration: none;
@@ -44,7 +44,7 @@
 
 		.tag {
 			display: inline-block;
-			padding: 0.0625rem 0.5rem 0.0625rem 0.75rem;
+			padding: 1px 0.5rem 1px 0.75rem;
 		}
 
 		.count {
@@ -52,7 +52,7 @@
 			transition: var(--transition);
 			border-radius: 0 999px 999px 0;
 			background-color: var(--bg-muted-1);
-			padding: 0.0625rem 0.625rem 0.0625rem 0.5rem;
+			padding: 1px 0.625rem 1px 0.5rem;
 			font-variant-numeric: tabular-nums;
 		}
 	}

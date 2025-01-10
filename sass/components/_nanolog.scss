@@ -42,7 +42,7 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		border-block-end: max(1px, 0.0625rem) solid var(--bg-muted-2);
+		border-block-end: 1px solid var(--bg-muted-2);
 		padding-block-end: 1rem;
 
 		& > p {

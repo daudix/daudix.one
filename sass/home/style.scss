@@ -45,11 +45,7 @@
 		margin-inline-end: 1rem;
 		box-shadow: var(--edge-highlight), var(--shadow);
 		border-radius: var(--rounded-corner);
-		background-image: radial-gradient(
-			circle,
-			var(--bg-muted-1) max(1px, 0.0625rem),
-			transparent max(1px, 0.0625rem)
-		);
+		background-image: radial-gradient(circle, var(--bg-muted-1) 1px, transparent 1px);
 		background-size: 1rem 1rem;
 		background-color: var(--bg-muted-1);
 		padding: 1rem;
@@ -68,11 +64,11 @@
 			min-width: 4rem;
 			height: 4rem;
 			min-height: 4rem;
-	
+
 			&:hover {
 				transform: scale(1.5);
 			}
-	
+
 			@media only screen and (max-width: 720px) {
 				width: 6rem;
 				min-width: 6rem;

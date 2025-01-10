@@ -13,7 +13,7 @@
 	z-index: 999;
 	transition: var(--transition);
 	inset-block-start: 0;
-	border-inline-end: max(1px, 0.0625rem) solid var(--bg-muted-2);
+	border-inline-end: 1px solid var(--bg-muted-2);
 	background-color: var(--bg-muted-1);
 	padding: 1rem;
 	width: 20vw;
@@ -99,7 +99,7 @@
 
 				span {
 					margin-block-start: 0.25rem;
-					border-block-start: max(1px, 0.0625rem) solid var(--bg-muted-2);
+					border-block-start: 1px solid var(--bg-muted-2);
 					padding-block-start: 0.25rem;
 					color: var(--fg-muted-2);
 
@@ -137,7 +137,7 @@
 				.line {
 					flex: 1;
 					background-color: var(--bg-muted-2);
-					height: max(1px, 0.0625rem);
+					height: 1px;
 				}
 			}
 

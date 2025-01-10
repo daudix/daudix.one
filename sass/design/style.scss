@@ -107,8 +107,8 @@ section {
 	border-start-start-radius: var(--rounded-corner);
 	background-image: radial-gradient(
 		circle,
-		var(--bg-muted-1) max(1px, 0.0625rem),
-		transparent max(1px, 0.0625rem)
+		var(--bg-muted-1) 1px,
+		transparent 1px
 	);
 	background-size: 1rem 1rem;
 	padding: 1rem;

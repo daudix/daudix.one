@@ -68,8 +68,8 @@
 
 				&::before {
 					z-index: -1;
-					filter: drop-shadow(0 0.0625rem 0.1875rem #008eda)
-						drop-shadow(0 0.0625rem 0.375rem #008eda);
+					filter: drop-shadow(0 1px 3px #008eda)
+						drop-shadow(0 1px 6px #008eda);
 					background: url("sprites.gif") 0 0;
 				}
 
@@ -87,8 +87,8 @@
 
 				&::before {
 					z-index: -1;
-					filter: drop-shadow(0 0.0625rem 0.1875rem #e09e36)
-						drop-shadow(0 0.0625rem 0.375rem #e09e36);
+					filter: drop-shadow(0 1px 3px #e09e36)
+						drop-shadow(0 1px 6px #e09e36);
 					background: url("sprites.gif") 0 -32px;
 				}
 
@@ -292,7 +292,7 @@
 		&:hover span {
 			color: #e0a100;
 			font-weight: var(--font-weight-semi-bold);
-			text-shadow: 0 0.0625rem 0 #413014;
+			text-shadow: 0 1px 0 #413014;
 		}
 	}
 
