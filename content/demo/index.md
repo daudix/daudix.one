@@ -683,10 +683,10 @@ With `centered` and `big` classes:
 <!-- For the demo purposes only -->
 <div id="color-picker-container">
   <small>Accent color:</small>
-  <input id="color-picker-light" type="color" value="#e16032" />
+  <input id="color-picker-light" type="color" value="#843179" />
   <label for="color-picker-light">Light theme</label>
   <br />
-  <input id="color-picker-dark" type="color" value="#fc9867" />
+  <input id="color-picker-dark" type="color" value="#fba0e3" />
   <label for="color-picker-dark">Dark theme</label>
 </div>
 <!-- End -->

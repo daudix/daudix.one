@@ -32,8 +32,8 @@ index_format = "elasticlunr_json"
 # accent_color_dark = "#ff6188"
 
 # Orange
-accent_color = "#e16032"
-accent_color_dark = "#fc9867"
+# accent_color = "#e16032"
+# accent_color_dark = "#fc9867"
 
 # Yellow
 # accent_color = "#cc7a0a"
@@ -54,6 +54,11 @@ accent_color_dark = "#fc9867"
 # Purple (GNOME)
 # accent_color = "#8939a4"
 # accent_color_dark = "#fba7ff"
+
+# Plum/lavender rose
+accent_color = "#843179"
+accent_color_dark = "#fba0e3"
+
 issues_url = "https://codeberg.org/daudix/website/issues"
 source_url = "https://codeberg.org/daudix/website"
 show_copy_button = true
