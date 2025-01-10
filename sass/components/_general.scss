@@ -78,7 +78,7 @@ body {
 main {
 	position: relative;
 	grid-area: main;
-	padding: 4rem 0;
+	padding: 2rem 0 4rem;
 	min-width: 0;
 
 	& > *:not(#banner-container, #buttons-container, #fluttershy, #comments-section main > *) {
