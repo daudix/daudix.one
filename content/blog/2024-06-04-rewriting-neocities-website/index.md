@@ -6,6 +6,8 @@ updated = 2024-06-22
 tags = ["100DaysToOffload", "Devlog", "Website", "Neocities"]
 categories = ["Featured"]
 [extra.comments]
+host = "vmst.io"
+user = "daudix"
 id = "112555378913783711"
 +++
 

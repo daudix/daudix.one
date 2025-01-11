@@ -4,6 +4,8 @@ description = "The concerning trend of fast food content consumption."
 [taxonomies]
 tags = ["100DaysToOffload"]
 [extra.comments]
+host = "vmst.io"
+user = "daudix"
 id = "112697941151315924"
 +++
 

@@ -11,6 +11,8 @@ accent_color_dark = "#ddc6a7"
 banner = "banner.png"
 toc = true
 [extra.comments]
+host = "vmst.io"
+user = "daudix"
 id = "112752002875813283"
 +++
 

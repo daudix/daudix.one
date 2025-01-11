@@ -10,6 +10,8 @@ banner = "banner.webp"
 trigger = "Contains a huge amount of meta, thankfully not the fedi meta."
 toc = true
 [extra.comments]
+host = "vmst.io"
+user = "daudix"
 id = "113647866479778879"
 +++
 

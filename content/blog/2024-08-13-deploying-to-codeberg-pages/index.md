@@ -11,6 +11,8 @@ scripts = ["audio.js"]
 banner = "banner.webp"
 toc = true
 [extra.comments]
+host = "vmst.io"
+user = "daudix"
 id = "112956494344143118"
 +++
 

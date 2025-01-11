@@ -8,6 +8,8 @@ categories = ["Featured"]
 [extra]
 toc = true
 [extra.comments]
+host = "vmst.io"
+user = "daudix"
 id = "112595182527799666"
 +++
 

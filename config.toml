@@ -100,7 +100,7 @@ show_copyright = true
 show_fediring = true
 
 [extra.comments]
-host = "vmst.io"
+host = "wetdry.world"
 user = "daudix"
 show_qr = true
 

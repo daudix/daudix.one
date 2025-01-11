@@ -9,6 +9,8 @@ accent_color = "#262c32"
 accent_color_dark = "#5f6c70"
 banner = "banner.webp"
 [extra.comments]
+host = "vmst.io"
+user = "daudix"
 id = "113068488938326761"
 +++
 

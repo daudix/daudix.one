@@ -9,6 +9,8 @@ accent_color_dark = "#978c87"
 banner = "banner.webp"
 disclaimer = "I'll be completely honest, this post is pretty bad and mostly aimed at future self. You've been warned xD"
 [extra.comments]
+host = "vmst.io"
+user = "daudix"
 id = "113251181891066967"
 +++
 

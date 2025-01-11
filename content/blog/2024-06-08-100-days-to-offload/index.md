@@ -6,6 +6,8 @@ tags = ["100DaysToOffload"]
 [extra]
 scripts = ["audio.js"]
 [extra.comments]
+host = "vmst.io"
+user = "daudix"
 id = "112582292475911778"
 +++
 

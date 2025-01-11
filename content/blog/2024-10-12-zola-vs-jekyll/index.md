@@ -10,6 +10,8 @@ accent_color_dark = "#d33c55"
 toc = true
 banner = "banner.webp"
 [extra.comments]
+host = "vmst.io"
+user = "daudix"
 id = "113295812044964246"
 +++
 
