@@ -14,7 +14,7 @@ id = ""
 <small>Photo by [Ed 259](https://unsplash.com/@ed259) on [Unsplash](https://unsplash.com/photos/aerial-photography-of-interlocking-freeways-with-travelling-cars-xcrI6CPkkJs).</small>
 
 {% alert(note=true) %}
-This post is ramblings about me and my feelings and such, feel free to skip to the [TL;DR](#tl-dr) right away to save your time. You won't miss anything.
+This post is ramblings about me and my feelings and such, feel free to skip to [conclusion](#conclusion) right away to save your time. You won't miss anything.
 {% end %}
 
 Hi, welcome to the first post of '25. Still nothing interesting to write about, so here we are, writing about myself again.
