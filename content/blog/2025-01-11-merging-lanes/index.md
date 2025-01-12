@@ -63,3 +63,5 @@ In terms of branding, I will use my formal one for now, but this may change late
 I know what you're thinking right now: "Ugh, does this guy really have nothing better to do than move his social media profiles around? Who cares about Fediverse? Even then, why blog about it?" and you'll be right, I'm not amused either.
 
 Another thing I've been thinking about is merging my [Journal](https://daudix.neocities.org/journal/) with this blog, the reasoning behind this is the same as behind merging the alt and main accounts, but the decision is up to *you*, there's a poll on the [Blog](@/blog/_index.md) page where you can choose its fate. It ends on January 16th. There's still plenty of fun stuff I can do with the Neocities site besides journal, so it won't be too much of a loss.
+
+That's all for now. Thanks for reading through my ramblings, and see you in the next one!
