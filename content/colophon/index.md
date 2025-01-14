@@ -13,6 +13,12 @@ This is the least fun page on this website. Deal with it.
 <strong class="title">To-do</strong>
 <div class="overshoot">
 
+- [ ] Focus mode; it it sidebar collapses, everything centers, and overall becomes slightly more boring
+- [ ] Redesign Snug Nook page
+- [ ] Display post faves, boosts, and reactions
+- [ ] Return some bare-bones CSP
+- [ ] Redesign tags page
+- [ ] Make sure table of contents works on all pages
 - [ ] Add photo gallery (random polaroid rotation can be done using Tera's [`get_random`](https://keats.github.io/tera/docs/#get-random))
 - [ ] Cacheburst (?)
 - [ ] Make "shrine" for my beloved portal series
