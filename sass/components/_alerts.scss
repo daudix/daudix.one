@@ -8,11 +8,6 @@ blockquote {
 		a {
 			color: var(--blue-fg);
 		}
-
-		.alert-title .icon {
-			-webkit-mask-image: var(--icon-info);
-			mask-image: var(--icon-info);
-		}
 	}
 
 	&.tip {
@@ -23,11 +18,6 @@ blockquote {
 		li::marker,
 		a {
 			color: var(--green-fg);
-		}
-
-		.alert-title .icon {
-			-webkit-mask-image: var(--icon-lightbulb);
-			mask-image: var(--icon-lightbulb);
 		}
 	}
 
@@ -40,11 +30,6 @@ blockquote {
 		a {
 			color: var(--purple-fg);
 		}
-
-		.alert-title .icon {
-			-webkit-mask-image: var(--icon-important);
-			mask-image: var(--icon-important);
-		}
 	}
 
 	&.warning {
@@ -56,11 +41,6 @@ blockquote {
 		a {
 			color: var(--yellow-fg);
 		}
-
-		.alert-title .icon {
-			-webkit-mask-image: var(--icon-warning);
-			mask-image: var(--icon-warning);
-		}
 	}
 
 	&.caution {
@@ -71,11 +51,6 @@ blockquote {
 		li::marker,
 		a {
 			color: var(--red-fg);
-		}
-
-		.alert-title .icon {
-			-webkit-mask-image: var(--icon-caution);
-			mask-image: var(--icon-caution);
 		}
 	}
 
@@ -90,22 +65,12 @@ blockquote {
 		}
 	}
 
-	&.edit .alert-title .icon {
-		-webkit-mask-image: var(--icon-edit);
-		mask-image: var(--icon-edit);
-	}
-
-	&.fact .alert-title .icon {
-		-webkit-mask-image: var(--icon-trash);
-		mask-image: var(--icon-trash);
-	}
-
 	.alert-title {
 		margin-block-end: -0.75rem;
 		font-weight: var(--font-weight-semi-bold);
 
-		.icon {
-			vertical-align: -0.125em;
+		.ph-bold {
+			vertical-align: -1px;
 			margin-inline-end: 0.25rem;
 		}
 	}

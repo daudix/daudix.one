@@ -52,7 +52,5 @@ ____0_____0__\|/__@@@@__@@@__________|_\|/__|___\|/__\|/___________|_|_
 {% endblock content %}
 
 {% block actions %}
-<a class="feed" href="{% if paginator.pages %}{{ paginator.first ~ 'atom.xml' }}{% else %}{{ current_url ~ 'atom.xml' }}{% endif %}" title="Feed">
-	<i class="icon"></i>
-</a>
+<a href="{% if paginator.pages %}{{ paginator.first ~ 'atom.xml' }}{% else %}{{ current_url ~ 'atom.xml' }}{% endif %}" title="Feed"><i class="ph-bold ph-rss-simple"></i></a>
 {% endblock actions %}

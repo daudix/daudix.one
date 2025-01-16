@@ -1,3 +1,5 @@
+@import "../../static/phosphor-bold";
+
 // Who doesn't like a party popper mid article?
 .audio {
 	appearance: none;
@@ -14,6 +16,24 @@
 
 	&:hover {
 		background-color: var(--bg-muted-2);
+
+		&::after {
+			animation: speaker var(--transition-long) ease-out infinite;
+
+			@keyframes speaker {
+				from {
+					content: "\e44e";
+				}
+
+				50% {
+					content: "\e44c";
+				}
+
+				to {
+					content: "\e44a";
+				}
+			}
+		}
 	}
 
 	&:active {
@@ -21,16 +41,12 @@
 	}
 
 	&::after {
-		-webkit-mask-image: var(--icon-mini-audio);
-		display: inline-block;
+		@extend .ph-bold;
+		vertical-align: -1px;
 		opacity: var(--dim-opacity);
-		mask-image: var(--icon-mini-audio);
-		mask-size: cover;
 		transition: var(--transition);
 		margin-inline-start: 0.25rem;
-		background-color: currentColor;
-		width: max(0.75rem, 0.75em);
-		height: max(0.75rem, 0.75em);
-		content: "";
+		content: "\e44a";
+		font-size: 16px;
 	}
 }

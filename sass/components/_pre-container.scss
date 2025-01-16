@@ -25,6 +25,7 @@
 		}
 
 		button {
+			position: relative;
 			appearance: none;
 			transition: all var(--transition), transform var(--transition-bezier);
 			cursor: pointer;
@@ -53,10 +54,22 @@
 				}
 			}
 
-			.icon {
-				-webkit-mask-image: var(--icon-copy);
-				mask-image: var(--icon-copy);
-				transition: var(--transition);
+			.ph-bold {
+				display: inline-block;
+				transition: all var(--transition-longer), transform var(--transition-bezier-longer);
+				font-size: 16px;
+			}
+
+			.ph-copy {
+				transform-origin: bottom left;
+			}
+
+			.ph-check-square-offset {
+				position: absolute;
+				transform: scale(0.5);
+				transform-origin: top right;
+				opacity: 0;
+				inset: 0.5rem;
 			}
 		}
 
@@ -68,9 +81,14 @@
 				background-color: var(--bg-muted-1);
 				color: var(--accent-color);
 
-				.icon {
-					-webkit-mask-image: var(--icon-done);
-					mask-image: var(--icon-done);
+				.ph-copy {
+					transform: scale(0.5);
+					opacity: 0;
+				}
+
+				.ph-check-square-offset {
+					transform: none;
+					opacity: 1;
 				}
 			}
 

@@ -37,22 +37,20 @@
 		margin-block-end: 2rem;
 		max-height: calc(50vh - 2.5rem);
 
-		&:has(#search-bar:not(:placeholder-shown)) .icon {
+		&:has(#search-bar:not(:placeholder-shown)) .ph-bold {
 			transform: translateX(0.5rem);
 			opacity: 0;
 			pointer-events: none;
 		}
 
-		.icon {
+		.ph-bold {
 			position: absolute;
-			mask-image: var(--icon-slash);
-			inset-block-start: 0.75rem;
-			inset-inline-end: 1rem;
-			-webkit-mask-image: var(--icon-slash);
 			opacity: var(--disabled-opacity);
 			transition: all var(--transition), transform var(--transition-bezier);
 			cursor: help;
-			color: var(--fg-muted-1);
+			inset-block-start: 0.75rem;
+			inset-inline-end: 1rem;
+			color: var(--fg-muted-2);
 		}
 
 		#search-bar {
@@ -172,64 +170,10 @@
 						}
 					}
 
-					.icon {
-						vertical-align: -0.125em;
+					.ph-bold {
+						vertical-align: text-top;
 						margin-inline-end: 0.5rem;
-					}
-
-					.icon.home {
-						-webkit-mask-image: var(--icon-home);
-						mask-image: var(--icon-home);
-					}
-
-					.icon.online {
-						-webkit-mask-image: var(--icon-online);
-						mask-image: var(--icon-online);
-					}
-
-					.icon.about {
-						-webkit-mask-image: var(--icon-info);
-						mask-image: var(--icon-info);
-					}
-
-					.icon.blog {
-						-webkit-mask-image: var(--icon-newspaper);
-						mask-image: var(--icon-newspaper);
-					}
-
-					.icon.nanolog {
-						-webkit-mask-image: var(--icon-edit);
-						mask-image: var(--icon-edit);
-					}
-
-					.icon.design {
-						-webkit-mask-image: var(--icon-design);
-						mask-image: var(--icon-design);
-					}
-
-					.icon.calendar {
-						-webkit-mask-image: var(--icon-calendar);
-						mask-image: var(--icon-calendar);
-					}
-
-					.icon.snug-nook {
-						-webkit-mask-image: var(--icon-chat);
-						mask-image: var(--icon-chat);
-					}
-
-					.icon.coffee {
-						-webkit-mask-image: var(--icon-coffee);
-						mask-image: var(--icon-coffee);
-					}
-
-					.icon.colophon {
-						-webkit-mask-image: var(--icon-info);
-						mask-image: var(--icon-info);
-					}
-
-					.icon.commissions {
-						-webkit-mask-image: var(--icon-wallet);
-						mask-image: var(--icon-wallet);
+						font-size: 20px;
 					}
 				}
 			}

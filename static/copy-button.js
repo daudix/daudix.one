@@ -10,13 +10,17 @@ document.addEventListener("DOMContentLoaded", function () {
 			title.innerHTML = lang;
 
 			// Copy button icon
-			let icon = document.createElement("i");
-			icon.classList.add("icon");
+			let iconCopy = document.createElement("i");
+			iconCopy.classList.add("ph-bold", "ph-copy");
+
+			let iconCheck = document.createElement("i");
+			iconCheck.classList.add("ph-bold", "ph-check-square-offset");
 
 			// Copy button
 			let button = document.createElement("button");
 			button.setAttribute("title", "Copy Code")
-			button.appendChild(icon);
+			button.appendChild(iconCopy);
+			button.appendChild(iconCheck);
 
 			// Code block header
 			let header = document.createElement("div");
@@ -34,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			container.appendChild(block);
 
 			button.addEventListener("click", async () => {
-				await copyCode(block, header, button); // Pass the button here
+				await copyCode(block, header, button);
 			});
 		}
 	});

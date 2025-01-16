@@ -1,6 +1,5 @@
 @use "components/variables";
-
-@import "components/_variables.scss";
+@import "components/variables";
 
 @include theme-variables using ($theme) {
     @if $theme == "dark" {

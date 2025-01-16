@@ -3,7 +3,7 @@
 <div id="site-sidebar">
 	{%- if config.build_search_index %}
 		<div id="search">
-			<i class="icon" title="Press “/” to Open Search Bar"></i>
+			<i class="ph-bold ph-keyboard" title="Press “/” to Open Search Bar"></i>
 			<label for="search-bar" class="visually-hidden">Search</label>
 			<input id="search-bar" placeholder="Search for…" autocomplete="off" type="search">
 			<div id="search-results" class="overshoot"></div>
@@ -22,7 +22,7 @@
 							{%- if link.url is matching("https?://") %}
 								<li>
 									<a href="{{ link.url }}" rel="{{ rel_attributes }}" class="external{% if link.new %} new{% endif %}">
-										<i class="icon {{ link.name | slugify }}"></i>
+										<i class="ph-bold ph-{{ link.icon }}"></i>
 										{{- link.name -}}
 									</a>
 								</li>
@@ -35,7 +35,7 @@
 										{% if current_url | default(value='/') | trim_end_matches(pat='/') | safe == get_url(path=link.url) | trim_end_matches(pat='/') | safe %}
 											active
 										{% endif %}">
-										<i class="icon {{ link.name | slugify }}"></i>
+										<i class="ph-bold ph-{{ link.icon }}"></i>
 										{{- link.name -}}
 									</a>
 								</li>
@@ -45,7 +45,7 @@
 				{%- elif link.url is matching("https?://") %}
 					<li>
 						<a href="{{ link.url }}" rel="{{ rel_attributes }}" class="external{% if link.new %} new{% endif %}">
-							<i class="icon {{ link.name | slugify }}"></i>
+							<i class="ph-bold ph-{{ link.icon }}"></i>
 							{{- link.name -}}
 						</a>
 					</li>
@@ -58,7 +58,7 @@
 							{% if current_url | default(value='/') | trim_end_matches(pat='/') | safe == get_url(path=link.url) | trim_end_matches(pat='/') | safe %}
 								active
 							{% endif %}">
-							<i class="icon {{ link.name | slugify }}"></i>
+							<i class="ph-bold ph-{{ link.icon }}"></i>
 							{{- link.name -}}
 						</a>
 					</li>

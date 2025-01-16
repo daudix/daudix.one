@@ -1,29 +1,36 @@
 {%- if note -%}
 	{%- set alert_type = "note" -%}
+	{%- set alert_icon = "info" -%}
 	{%- set alert_string = "Note" -%}
 {%- elif tip -%}
 	{%- set alert_type = "tip" -%}
+	{%- set alert_icon = "lightbulb" -%}
 	{%- set alert_string = "Tip" -%}
 {%- elif important -%}
 	{%- set alert_type = "important" -%}
+	{%- set alert_icon = "warning-diamond" -%}
 	{%- set alert_string = "Important" -%}
 {%- elif warning -%}
 	{%- set alert_type = "warning" -%}
+	{%- set alert_icon = "warning" -%}
 	{%- set alert_string = "Warning" -%}
 {%- elif caution -%}
 	{%- set alert_type = "caution" -%}
+	{%- set alert_icon = "warning-octagon" -%}
 	{%- set alert_string = "Caution" -%}
 {%- elif edit -%}
 	{%- set alert_type = "edit" -%}
+	{%- set alert_icon = "pencil" -%}
 	{%- set alert_string = "Edit" -%}
 {%- elif fact -%}
 	{%- set alert_type = "fact" -%}
+	{%- set alert_icon = "trash" -%}
 	{%- set alert_string = "Uninteresting Fact" -%}
 {%- endif -%}
 
 <blockquote class="{{ alert_type }}">
 	<p class="alert-title">
-		<i class="icon"></i>
+		<i class="ph-bold ph-{{ alert_icon }}"></i>
 		{{- alert_string -}}
 	</p>
 	{{ body | markdown | safe }}

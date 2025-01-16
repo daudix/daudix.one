@@ -11,7 +11,10 @@
 	<header id="site-header">
 		<div id="site-header-title">
 			<input class="visually-hidden" id="toggle-sidebar" type="checkbox" name="toggle-sidebar" autocomplete="off" />
-			<label for="toggle-sidebar" title="Toggle Sidebar"><i class="icon"></i><i class="icon"></i></label>
+			<label for="toggle-sidebar" title="Toggle Sidebar">
+				<i class="ph-bold ph-list"></i>
+				<i class="ph-bold ph-x"></i>
+			</label>
 			<a class="go-to-top" href="#top">
 				<strong class="title">
 					{%- if current_path and current_path == "/" -%}
@@ -47,7 +50,7 @@
 			{%- endif -%}
 			{%- if backlinks and backlinks | length > 0 -%}
 				<details class="backlinks closable">
-					<summary title="Backlinks"><i class="icon"></i></summary>
+					<summary title="Backlinks"><i class="ph-bold ph-arrow-u-down-left"></i></summary>
 					<div>
 						<strong class="title">Backlinks</strong>
 						<div>
@@ -70,7 +73,7 @@
 			{%- endif -%}
 			{%- if toc and toc | length > 0 -%}
 				<details class="toc closable">
-					<summary title="Table of Contents"><i class="icon"></i></summary>
+					<summary title="Table of Contents"><i class="ph-bold ph-list-bullets"></i></summary>
 					<div>
 						<strong class="title">Table of Contents</strong>
 						<div>

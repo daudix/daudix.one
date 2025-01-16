@@ -1,12 +1,10 @@
+@import "../../static/phosphor-bold";
+
 a.external::after {
-	-webkit-mask-image: var(--icon-mini-external);
-	display: inline-block;
-	opacity: var(--dim-opacity);
-	mask-image: var(--icon-mini-external);
-	mask-size: cover;
+	@extend .ph-bold;
+	display:inline-block;
+	vertical-align: text-top;
 	margin-inline-start: 0.25rem;
-	background-color: currentColor;
-	width: max(0.75rem, 0.75em);
-	height: max(0.75rem, 0.75em);
-	content: "";
+	content: "\e5de";
+	font-size: max(16px, 1em);
 }

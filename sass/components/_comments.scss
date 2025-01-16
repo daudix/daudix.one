@@ -1,3 +1,5 @@
+@import "../../static/phosphor-bold";
+
 #comments-section {
 	#qrcode {
 		float: inline-end;
@@ -40,6 +42,49 @@
 		}
 	}
 
+	#reactions-wrapper,
+	.reactions {
+		display: flex;
+		flex-wrap: wrap;
+		// flex-wrap: nowrap;
+		gap: 0.25rem;
+		margin: 1.5rem -1rem -0.5rem -1rem;
+		padding: 0.5rem 1rem;
+		// overflow: auto;
+		// scrollbar-width: none;
+		color: var(--accent-color);
+		font-weight: var(--font-weight-semi-bold);
+
+		&:hover .reaction:not(:hover) {
+			opacity: var(--disabled-opacity);
+			border: 1px solid transparent;
+		}
+
+		.reaction {
+			display: flex;
+			flex-shrink: 0;
+			align-items: center;
+			gap: 0.25rem;
+			transition: all var(--transition), transform var(--transition-bezier);
+			cursor: zoom-in;
+			border: 1px solid var(--bg-muted-2);
+			border-radius: var(--rounded-corner-small);
+			padding: 0.25rem 0.375rem;
+
+			&:hover .emoji {
+				transform: scale(2);
+			}
+
+			.emoji {
+				cursor: unset;
+			}
+
+			span {
+				font-variant-numeric: tabular-nums;
+			}
+		}
+	}
+
 	#comments-wrapper {
 		display: flex;
 		flex-direction: column;
@@ -57,12 +102,12 @@
 			display: grid;
 			grid-template-columns: min-content;
 			grid-template-areas:
-				"avatar name        "
-				"avatar time        "
-				"avatar post        "
-				"...... media       "
-				"...... card         "
-				"...... interactions";
+				"avatar name           "
+				"avatar time           "
+				"reactions post        "
+				"reactions media       "
+				"reactions card        "
+				"reactions interactions";
 			column-gap: 1rem;
 			justify-items: start;
 			animation: slide-in-right var(--transition-bezier);
@@ -138,17 +183,12 @@
 						padding-inline-start: 0.4375rem;
 
 						&::before {
-							-webkit-mask-image: var(--icon-verified);
-							display: inline-block;
-							vertical-align: -0.1875rem;
-							mask-image: var(--icon-verified);
-							mask-size: cover;
+							@extend .ph-bold;
+							vertical-align: -2px;
 							transition: var(--transition);
 							margin-inline-end: 0.25rem;
-							background-color: currentColor;
-							width: 1rem;
-							height: 1rem;
-							content: "";
+							content: "\e606";
+							font-size: 16px;
 						}
 					}
 				}
@@ -366,8 +406,9 @@
 					font-variant-numeric: tabular-nums;
 					text-decoration: none;
 
-					.icon {
-						vertical-align: -0.125em;
+					.ph-bold {
+						display: inline-block;
+						vertical-align: -1px;
 						transition: var(--transition-bezier);
 						margin-inline-end: 0.25rem;
 					}
@@ -388,14 +429,9 @@
 					&:hover {
 						background-color: var(--purple-bg-1);
 
-						.icon {
+						.ph-bold {
 							transform: rotate(180deg);
 						}
-					}
-
-					.icon {
-						-webkit-mask-image: var(--icon-boosts);
-						mask-image: var(--icon-boosts);
 					}
 				}
 
@@ -405,15 +441,20 @@
 					&:hover {
 						background-color: var(--yellow-bg-1);
 
-						.icon {
+						.ph-bold {
 							transform: rotate(72deg);
 						}
 					}
+				}
+			}
 
-					.icon {
-						-webkit-mask-image: var(--icon-faves);
-						mask-image: var(--icon-faves);
-					}
+			.reactions {
+				grid-area: reactions;
+				flex-direction: column;
+
+				&:not(:has(.reaction)) {
+					margin: 0;
+					padding: 0;
 				}
 			}
 		}

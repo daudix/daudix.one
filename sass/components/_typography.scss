@@ -1,3 +1,5 @@
+@import "../../static/phosphor-bold";
+
 // HEADINGS
 h1,
 h2,
@@ -258,16 +260,11 @@ details {
 		}
 
 		&::before {
-			-webkit-mask-image: var(--icon-down);
-			display: inline-block;
-			vertical-align: -0.125em;
-			mask-image: var(--icon-down);
-			transition: var(--transition);
+			@extend .ph-bold;
+			display:inline-block;
+			transition: var(--transition-bezier);
 			margin-inline-end: 0.25rem;
-			background-color: currentColor;
-			width: 1rem;
-			height: 1rem;
-			content: "";
+			content: "\e136";
 		}
 	}
 

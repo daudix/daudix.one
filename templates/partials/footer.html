@@ -11,9 +11,9 @@
 	{%- if config.extra.footer.show_fediring  %}
 		<div id="site-footer-fediring">
 			<a class="external" href="https://fediring.net">Fediring</a>
-			<a class="previous" href="https://fediring.net/previous?host={{ config.base_url | replace(from='https://', to='') }}" title="Previous"><i class="icon"></i></a>
-			<a class="random" href="https://fediring.net/random" title="Random"><i class="icon"></i></a>
-			<a class="next" href="https://fediring.net/next?host={{ config.base_url | replace(from='https://', to='') }}" title="Next"><i class="icon"></i></a>
+			<a class="previous" href="https://fediring.net/previous?host={{ config.base_url | replace(from='https://', to='') }}" title="Previous"><i class="ph-bold ph-arrow-left"></i></a>
+			<a class="random" href="https://fediring.net/random" title="Random"><i class="ph-bold ph-dice-three"></i></a>
+			<a class="next" href="https://fediring.net/next?host={{ config.base_url | replace(from='https://', to='') }}" title="Next"><i class="ph-bold ph-arrow-right"></i></a>
 		</div>
 	{%- endif %}
 </footer>

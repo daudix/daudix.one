@@ -51,9 +51,16 @@
 			}
 		}
 
-		#badges-expand + label .icon {
-			-webkit-mask-image: var(--icon-minimize);
-			mask-image: var(--icon-minimize);
+		#badges-expand + label {
+			.ph-arrows-out-simple {
+				transform: scale(0.5);
+				opacity: 0;
+			}
+	
+			.ph-arrows-in-simple {
+				transform: none;
+				opacity: 1;
+			}
 		}
 
 		#badges-neocities {
@@ -192,6 +199,7 @@
 		}
 
 		& + label {
+			display: inline-flex;
 			position: absolute;
 			transition: all var(--transition);
 			cursor: pointer;
@@ -211,11 +219,15 @@
 				transform: var(--active);
 			}
 
-			.icon {
-				-webkit-mask-image: var(--icon-expand);
-				vertical-align: -0.125em;
-				mask-image: var(--icon-expand);
-				transition: var(--transition);
+			.ph-bold {
+				transition: all var(--transition-longer), transform var(--transition-bezier-longer);
+			}
+
+			.ph-arrows-in-simple {
+				position: absolute;
+				transform: scale(0.5);
+				opacity: 0;
+				inset: 0.5rem;
 			}
 		}
 	}
@@ -227,6 +239,7 @@
 		padding: 0;
 
 		summary {
+			display: inline-flex;
 			position: absolute;
 			transition: var(--transition);
 			inset-block-start: 0.5rem;
@@ -251,13 +264,15 @@
 				display: none;
 			}
 
-			.icon {
-				-webkit-mask-image: var(--icon-plus);
-				vertical-align: -0.125em;
-				mask-image: var(--icon-plus);
-				transition: var(--transition-bezier);
-				width: 1rem;
-				height: 1rem;
+			.ph-bold {
+				transition: all var(--transition-longer), transform var(--transition-bezier-longer);
+			}
+
+			.ph-x {
+				position: absolute;
+				transform: rotate(-45deg);
+				opacity: 0;
+				inset: 0.5rem;
 			}
 		}
 
@@ -301,8 +316,16 @@
 		}
 
 		&[open] {
-			summary .icon {
-				transform: rotate(45deg);
+			summary {
+				.ph-plus {
+					transform: rotate(45deg);
+					opacity: 0;
+				}
+		
+				.ph-x {
+					transform: none;
+					opacity: 1;
+				}
 			}
 
 			& > div {

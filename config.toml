@@ -76,22 +76,22 @@ speed_insights = true
 [extra.nav]
 auto_hide = true
 links = [
-	{ url = "@/home/index.md", name = "Home" },
-	{ url = "@/about/index.md", name = "About" },
-	{ url = "@/online/index.md", name = "Online" },
+	{ url = "@/home/index.md", name = "Home", icon = "house" },
+	{ url = "@/about/index.md", name = "About", icon = "info" },
+	{ url = "@/online/index.md", name = "Online", icon = "at" },
 	{ name = "Writing", category = [
-		{ url = "@/blog/_index.md", name = "Blog" },
-		{ url = "@/nanolog/_index.md", name = "Nanolog" },
+		{ url = "@/blog/_index.md", name = "Blog", icon = "newspaper" },
+		{ url = "@/nanolog/_index.md", name = "Nanolog", icon = "pencil" },
 	] },
 	{ name = "Projects", category = [
-		{ url = "@/design/index.md", name = "Design" },
-		{ url = "@/calendar/index.md", name = "Calendar" },
-		{ url = "@/snug-nook/index.md", name = "Snug Nook" },
+		{ url = "@/design/index.md", name = "Design", icon = "pencil-ruler" },
+		{ url = "@/calendar/index.md", name = "Calendar", icon = "calendar" },
+		{ url = "@/snug-nook/index.md", name = "Snug Nook", icon = "chats" },
 	] },
 	{ name = "Extra", category = [
-		{ url = "@/coffee/index.md", name = "Coffee" },
-		{ url = "@/colophon/index.md", name = "Colophon" },
-		{ url = "@/commissions/index.md", name = "Commissions" },
+		{ url = "@/coffee/index.md", name = "Coffee", icon = "coffee" },
+		{ url = "@/colophon/index.md", name = "Colophon", icon = "question" },
+		{ url = "@/commissions/index.md", name = "Commissions", icon = "wallet" },
 	] },
 ]
 

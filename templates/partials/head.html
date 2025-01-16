@@ -27,7 +27,7 @@
 	<title>{% include "partials/title.html" %}</title>
 	<link rel="canonical" href="{{ current_url | default(value='/') | safe }}" />
 
-	{%- if config.extra.comments %}
+	{%- if config.extra.comments.host and config.extra.comments.user %}
 		<link rel="me" href="https://{{ config.extra.comments.host }}/@{{ config.extra.comments.user }}" />
 		<meta name="fediverse:creator" content="@{{ config.extra.comments.user }}@{{ config.extra.comments.host }}" />
 	{%- endif %}
@@ -50,7 +50,7 @@
 
 	{%- include "partials/variables.html" %}
 
-	{%- set styles = [ "style.css" ] %}
+	{%- set styles = ["style.css", "phosphor-bold.css"] %}
 
 	{%- if config.extra.bundled_fonts %}
 		{%- set styles = styles | concat(with=["fonts.css"]) %}

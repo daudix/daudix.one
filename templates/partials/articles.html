@@ -33,7 +33,7 @@
 					{%- if page.date -%}
 						<div class="details-date">
 							<span title="Published On">
-								<i class="icon"></i>
+								<i class="ph-bold ph-calendar"></i>
 							</span>
 							<time datetime="{{ page.date | date(format='%+') }}" pubdate>
 								{{- page.date | date(format=config.extra.date_format, locale=config.extra.date_locale) -}}
@@ -44,7 +44,7 @@
 					{%- if page.authors -%}
 						<div class="details-authors">
 							<span>
-								<i class="icon"></i>
+								<i class="ph-bold ph-users"></i>
 							</span>
 							<span>{% include "partials/authors.html" %}</span>
 						</div>
@@ -53,7 +53,7 @@
 					{%- if config.extra.show_reading_time -%}
 						<div class="details-time">
 							<span title="Read Time">
-								<i class="icon"></i>
+								<i class="ph-bold ph-clock-countdown"></i>
 							</span>
 							<span>{{ page.reading_time }} minute{{ page.reading_time | pluralize -}}</span>
 						</div>
@@ -62,7 +62,7 @@
 					{%- if page.taxonomies.categories -%}
 						<div class="details-category">
 							<span title="Category">
-								<i class="icon"></i>
+								<i class="ph-bold ph-book-bookmark"></i>
 							</span>
 							{%- for category in page.taxonomies.categories %}
 								<a href="{{ get_taxonomy_url(kind='categories', name=category) }}">{{ category }}</a>
@@ -73,7 +73,7 @@
 				{%- if page.taxonomies.tags -%}
 					<div class="tags-row">
 						<span title="Tags">
-							<i class="icon"></i>
+							<i class="ph-bold ph-tag"></i>
 						</span>
 						<ul class="tags">
 							{%- for tag in page.taxonomies.tags %}
@@ -84,7 +84,7 @@
 				{%- endif %}
 			</div>
 			<a class="open-post" href="{{ page.permalink | safe }}">
-				<i class="icon"></i>
+				<i class="ph-bold ph-caret-right"></i>
 			</a>
 		</article>
 	{%- endfor %}

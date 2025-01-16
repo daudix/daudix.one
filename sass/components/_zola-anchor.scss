@@ -34,14 +34,6 @@ h6 {
 	&:focus-visible {
 		opacity: 1;
 	}
-
-	.icon {
-		-webkit-mask-image: var(--icon-link);
-		mask-image: var(--icon-link);
-		transition: var(--transition);
-		width: 1em;
-		height: 1em;
-	}
 }
 
 :target .zola-anchor {

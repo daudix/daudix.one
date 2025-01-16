@@ -48,6 +48,57 @@ function emojify(input, emojis) {
 	return output;
 }
 
+// // General function to load reactions for a given status ID
+// function loadReactions(statusId, targetElement) {
+// 	if (!targetElement) {
+// 		console.error("No target element provided for reactions.");
+// 		return;
+// 	}
+
+// 	// Clear existing reactions to prevent duplication
+// 	targetElement.innerHTML = "";
+
+// 	fetch(`https://${host}/api/v1/statuses/${statusId}`)
+// 		.then(response => response.json())
+// 		.then(data => {
+// 			if (data.reactions && Array.isArray(data.reactions)) {
+
+// 				data.reactions.forEach(reaction => {
+// 					let reactionElement = document.createElement("span");
+// 					reactionElement.className = "reaction";
+
+// 					if (reaction.url) {
+// 						// Custom emoji
+// 						let img = document.createElement("img");
+// 						img.className = "emoji";
+// 						img.setAttribute("src", escapeHtml(reaction.url));
+// 						img.setAttribute("title", `${reaction.name}`);
+// 						img.setAttribute("width", "24");
+// 						img.setAttribute("height", "24");
+// 						reactionElement.appendChild(img);
+// 					} else {
+// 						// Standard emoji
+// 						reactionElement.textContent = reaction.name;
+// 					}
+
+// 					// Append the count
+// 					let count = document.createElement("span");
+// 					count.textContent = ` ${reaction.count}`;
+// 					reactionElement.appendChild(count);
+
+// 					targetElement.appendChild(reactionElement);
+// 				});
+// 			}
+// 		})
+// 		.catch(error => console.error("Error loading reactions:", error));
+// }
+
+// // Load reactions for the main post
+// document.addEventListener("DOMContentLoaded", function() {
+// 	const mainReactionsWrapper = document.getElementById("reactions-wrapper");
+// 	loadReactions(id, mainReactionsWrapper);
+// });
+
 function loadComments() {
 	let commentsWrapper = document.getElementById("comments-wrapper");
 	commentsWrapper.innerHTML = "";
@@ -310,7 +361,7 @@ function loadComments() {
 					boosts.setAttribute("title", `Boosts from ${instance}`);
 
 					let boostsIcon = document.createElement("i");
-					boostsIcon.className = "icon";
+					boostsIcon.classList.add("ph-bold", "ph-repeat");
 					boosts.appendChild(boostsIcon);
 					boosts.insertAdjacentHTML('beforeend', ` ${status.reblogs_count}`);
 					interactions.appendChild(boosts);
@@ -321,7 +372,7 @@ function loadComments() {
 					faves.setAttribute("title", `Favorites from ${instance}`);
 
 					let favesIcon = document.createElement("i");
-					favesIcon.className = "icon";
+					favesIcon.classList.add("ph-bold", "ph-star");
 					faves.appendChild(favesIcon);
 					faves.insertAdjacentHTML('beforeend', ` ${status.favourites_count}`);
 					interactions.appendChild(faves);
@@ -376,7 +427,13 @@ function loadComments() {
 						);
 					}
 
-					commentsWrapper.innerHTML += comment.outerHTML;
+					let reactions = document.createElement("div");
+					reactions.classList.add("reactions", "overshoot");
+					comment.appendChild(reactions);
+
+					// loadReactions(status.id, reactions);
+
+					commentsWrapper.appendChild(comment);
 				});
 			}
 

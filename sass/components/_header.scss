@@ -55,13 +55,11 @@
 		gap: 0.25rem;
 	
 		summary,
-		.share,
-		.issue,
-        .feed {
+		& > a {
 			display: inline-block;
 			transition: all var(--transition), transform var(--transition-bezier);
-			border-radius: var(--rounded-corner);
-			padding: 0.625rem;
+			border-radius: var(--rounded-corner-small);
+			padding: 0.5rem;
 			color: var(--accent-color);
 			line-height: 0;
 	
@@ -73,10 +71,10 @@
 			&:active {
 				transform: var(--active);
 			}
-	
-			.icon {
-				transition: var(--transition);
-			}
+		}
+
+		& > a {
+			text-decoration: none;
 		}
 	
 		details {
@@ -86,7 +84,7 @@
 			background-color: transparent;
 			padding: 0;
 	
-			&[open] summary~* {
+			&[open] summary ~ * {
 				transform-origin: top right;
 				animation: expand-top-right var(--transition-bezier);
 			}
@@ -149,35 +147,8 @@
 			}
 		}
 	
-		.toc .icon {
-			-webkit-mask-image: var(--icon-toc);
-			mask-image: var(--icon-toc);
-		}
-	
-		.backlinks {
-			.icon {
-				-webkit-mask-image: var(--icon-backlinks);
-				mask-image: var(--icon-backlinks);
-			}
-	
-			summary + div {
-				width: min(calc(var(--container-width) / 3), calc(90vw - 3rem));
-			}
-		}
-	
-		.share .icon {
-			-webkit-mask-image: var(--icon-share);
-			mask-image: var(--icon-share);
-		}
-	
-		.issue .icon {
-			-webkit-mask-image: var(--icon-bug);
-			mask-image: var(--icon-bug);
-		}
-
-        .feed .icon {
-			-webkit-mask-image: var(--icon-feed);
-			mask-image: var(--icon-feed);
+		.backlinks summary + div {
+			width: min(calc(var(--container-width) / 3), calc(90vw - 3rem));
 		}
 	}
 
@@ -186,8 +157,8 @@
 		position: relative;
 		transition: all var(--transition), transform var(--transition-bezier);
 		cursor: pointer;
-		border-radius: var(--rounded-corner);
-		padding: 0.625rem;
+		border-radius: var(--rounded-corner-small);
+		padding: 0.5rem;
 		color: var(--accent-color);
 
 		&:hover {
@@ -204,31 +175,24 @@
 		}
 	}
 
-	label .icon {
-		transition: all var(--transition), transform var(--transition-bezier);
+	label .ph-bold {
+		transition: all var(--transition-longer), transform var(--transition-bezier-longer);
 	}
 
-	label .icon:nth-of-type(1) {
-		-webkit-mask-image: var(--icon-menu);
-		mask-image: var(--icon-menu);
-	}
-
-	label .icon:nth-of-type(2) {
-		-webkit-mask-image: var(--icon-cross);
+	label .ph-x {
 		position: absolute;
 		transform: rotate(-45deg);
 		opacity: 0;
-		mask-image: var(--icon-cross);
-		inset: 0.625rem;
+		inset: 0.5rem;
 	}
 
 	#toggle-sidebar:checked + label {
-		.icon:nth-of-type(1) {
-			transform: rotate(45deg) scale(0.5);
+		.ph-list {
+			transform: rotate(45deg) scaleY(0);
 			opacity: 0;
 		}
 
-		.icon:nth-of-type(2) {
+		.ph-x {
 			transform: none;
 			opacity: 1;
 		}

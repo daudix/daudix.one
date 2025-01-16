@@ -1,3 +1,5 @@
+@import "../../static/phosphor-bold";
+
 input[type="radio"],
 input[type="checkbox"],
 input[type="color"] {
@@ -5,7 +7,7 @@ input[type="color"] {
 	appearance: none;
 	transition: var(--transition);
 	cursor: pointer;
-	border: 0.15rem solid var(--bg-muted-2);
+	border: 0.125rem solid var(--bg-muted-2);
 	background-color: var(--bg-muted-1);
 	width: 1rem;
 	height: 1rem;
@@ -36,7 +38,6 @@ input[type="checkbox"] {
 		transform: scale(0.5);
 		opacity: 0;
 		transition: all var(--transition), transform var(--transition-bezier);
-		background-color: var(--contrast-color);
 		content: "";
 	}
 
@@ -59,6 +60,7 @@ input[type="radio"] {
 		inset-block-start: 0.125rem;
 		inset-inline-start: 0.125rem;
 		border-radius: 50%;
+		background-color: var(--contrast-color);
 		width: 0.5rem;
 		height: 0.5rem;
 	}
@@ -69,14 +71,14 @@ input[type="checkbox"] {
 	border-radius: calc(var(--rounded-corner-small) / 2);
 
 	&::before {
-		-webkit-mask-image: var(--icon-checkmark);
+		@extend .ph-bold;
 		transform-origin: bottom left;
-		mask-image: var(--icon-checkmark);
 		mask-size: cover;
 		inset-block-start: -0.125rem;
 		inset-inline-start: -0.125rem;
-		width: 1rem;
-		height: 1rem;
+		content: "\e182";
+		color: var(--contrast-color);
+		font-size: 16px;
 	}
 
 	&.switch {
@@ -110,6 +112,7 @@ input[type="checkbox"] {
 			background-color: white;
 			width: 1rem;
 			height: 1rem;
+			content: "";
 		}
 
 		&:checked {

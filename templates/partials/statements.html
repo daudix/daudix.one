@@ -1,8 +1,7 @@
 {%- if page.extra.archive and page.extra.archive != true -%}
 	<div class="statement-container archive">
 		<strong class="title">
-			<i class="icon"></i>
-			Archived
+			<i class="ph-bold ph-box-arrow-down"></i>Archived
 		</strong>
 		{{ page.extra.archive | markdown | safe }}
 	</div>
@@ -11,8 +10,7 @@
 {%- if page.extra.trigger -%}
 	<div class="statement-container trigger">
 		<strong class="title">
-			<i class="icon"></i>
-			Trigger Warning
+			<i class="ph-bold ph-warning"></i>Trigger Warning
 		</strong>
 		{{ page.extra.trigger | markdown | safe }}
 	</div>
@@ -21,8 +19,7 @@
 {%- if page.extra.disclaimer -%}
 	<div class="statement-container disclaimer">
 		<strong class="title">
-			<i class="icon"></i>
-			Disclaimer
+			<i class="ph-bold ph-warning"></i>Disclaimer
 		</strong>
 		{{ page.extra.disclaimer | markdown | safe }}
 	</div>

@@ -22,40 +22,26 @@
 
 	.title {
 		color: inherit;
-		font-weight: var(--font-weight-medium);
+		font-weight: var(--font-weight-semi-bold);
 
-		.icon {
-			margin-inline-end: 0.375rem;
+		.ph-bold {
+			vertical-align: -1px;
+			margin-inline-end: 0.25rem;
 		}
 	}
 
 	&.archive {
 		background-color: var(--purple-bg-1);
 		color: var(--purple-fg);
-
-		.icon {
-			-webkit-mask-image: var(--icon-archive);
-			mask-image: var(--icon-archive);
-		}
 	}
 
 	&.disclaimer {
 		background-color: var(--red-bg-1);
 		color: var(--red-fg);
-
-		.icon {
-			-webkit-mask-image: var(--icon-warning);
-			mask-image: var(--icon-warning);
-		}
 	}
 
 	&.trigger {
 		background-color: var(--yellow-bg-1);
 		color: var(--yellow-fg);
-
-		.icon {
-			-webkit-mask-image: var(--icon-warning);
-			mask-image: var(--icon-warning);
-		}
 	}
 }

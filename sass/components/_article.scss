@@ -103,14 +103,8 @@ main:has(#banner) {
 			color: var(--accent-color);
 		}
 
-		&-authors .icon {
-			-webkit-mask-image: var(--icon-users);
-			mask-image: var(--icon-users);
-		}
-
-		&-time .icon {
-			-webkit-mask-image: var(--icon-delay);
-			mask-image: var(--icon-delay);
+		.ph-bold {
+			font-size: 16px;
 		}
 
 		&-category {
@@ -124,27 +118,12 @@ main:has(#banner) {
 					text-decoration-color: inherit;
 				}
 			}
-
-			.icon {
-				-webkit-mask-image: var(--icon-book);
-				mask-image: var(--icon-book);
-			}
 		}
 
 		&-tags {
 			.tags {
 				margin: 0;
 			}
-
-			.icon {
-				-webkit-mask-image: var(--icon-tag);
-				mask-image: var(--icon-tag);
-			}
-		}
-
-		&-count .icon {
-			-webkit-mask-image: var(--icon-newspaper);
-			mask-image: var(--icon-newspaper);
 		}
 	}
 }

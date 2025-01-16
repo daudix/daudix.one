@@ -29,14 +29,14 @@
 				<div class="details">
 					<div class="details-count">
 						<span>
-							<i class="icon"></i>
+							<i class="ph-bold ph-newspaper"></i>
 						</span>
 						<span>{{ category.page_count }} post{{ category.page_count | pluralize }}</span>
 					</div>
 				</div>
 			</div>
 			<a class="open-post" href="{{ get_taxonomy_url(kind='categories', name=category.name) }}">
-				<i class="icon"></i>
+				<i class="ph-bold ph-caret-right"></i>
 			</a>
 		</article>
 	{%- endfor -%}

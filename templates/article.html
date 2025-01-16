@@ -27,7 +27,7 @@
 			{%- if page.authors -%}
 				<div class="details-authors">
 					<span title="Authors">
-						<i class="icon"></i>
+						<i class="ph-bold ph-users"></i>
 					</span>
 					<span>{% include "partials/authors.html" %}</span>
 				</div>
@@ -36,7 +36,7 @@
 			{%- if config.extra.show_reading_time -%}
 				<div class="details-time">
 					<span title="Read Time">
-						<i class="icon"></i>
+						<i class="ph-bold ph-clock-countdown"></i>
 					</span>
 					<span>{{ page.reading_time }} minute{{ page.reading_time | pluralize -}}</span>
 				</div>
@@ -45,7 +45,7 @@
 			{%- if page.taxonomies.categories -%}
 				<div class="details-category">
 					<span title="Category">
-						<i class="icon"></i>
+						<i class="ph-bold ph-book-bookmark"></i>
 					</span>
 					{%- for category in page.taxonomies.categories %}
 						<a href="{{ get_taxonomy_url(kind='categories', name=category) }}">{{ category }}</a>
@@ -56,7 +56,7 @@
 			{%- if page.taxonomies.tags -%}
 				<div class="details-tags">
 					<span title="Tags">
-						<i class="icon"></i>
+						<i class="ph-bold ph-tag"></i>
 					</span>
 					<ul class="tags">
 						{%- for tag in page.taxonomies.tags %}
@@ -98,10 +98,10 @@
 
 {% block actions %}
 {%- if config.extra.issues_url -%}
-	<a class="issue" href="{{ config.extra.issues_url }}" rel="{{ rel_attributes }}" title="File an Issue"><i class="icon"></i></a>
+	<a href="{{ config.extra.issues_url }}" rel="{{ rel_attributes }}" title="File an Issue"><i class="ph-bold ph-bug-beetle"></i></a>
 {%- endif -%}
 
 {%- if config.extra.show_share_button -%}
-	<a class="share" href="https://shareopenly.org/share/?url={{ page.permalink }}&text={{ page.description | urlencode }}" rel="{{ rel_attributes }}" title="Share"><i class="icon"></i></a>
+	<a href="https://shareopenly.org/share/?url={{ page.permalink }}&text={{ page.description | urlencode }}" rel="{{ rel_attributes }}" title="Share"><i class="ph-bold ph-share-fat"></i></a>
 {%- endif -%}
 {% endblock actions %}
