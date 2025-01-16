@@ -48,15 +48,11 @@ function emojify(input, emojis) {
 	return output;
 }
 
-// // General function to load reactions for a given status ID
 // function loadReactions(statusId, targetElement) {
 // 	if (!targetElement) {
 // 		console.error("No target element provided for reactions.");
 // 		return;
 // 	}
-
-// 	// Clear existing reactions to prevent duplication
-// 	targetElement.innerHTML = "";
 
 // 	fetch(`https://${host}/api/v1/statuses/${statusId}`)
 // 		.then(response => response.json())
