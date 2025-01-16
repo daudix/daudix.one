@@ -271,11 +271,11 @@ Alright, this one doesn't simplify anything, it just adds a CRT-like effect arou
 
 #### Emoji
 
-Use any custom emoji from Akkoma.
+Use any custom emoji from Mastodon.
 
 Available variables are:
 
-- `host`: The instance on which the emoji is located (defaults to [pleroma.envs.net](https://pleroma.envs.net)).
+- `host`: The instance on which the emoji is located (defaults to instance set for loading comments, otherwise to [wetdry.world](https://wetdry.world)).
 - `name`: Name of the emoji.
 - `path`: Path or filename of the local colocated emoji.
 - `big`: Make the emoji bigger.
@@ -287,10 +287,10 @@ Available variables are:
 Hello there, I'm an {{ emoji(name="neofox_googly_shocked") }} inline custom emoji.
 
 ```jinja2
-{{/* emoji(name="afloofLoad", big=true) */}}
+{{/* emoji(name="neofox_floof_explode", big=true) */}}
 ```
 
-{{ emoji(name="afloofLoad", big=true) }}
+{{ emoji(name="neofox_floof_explode", big=true) }}
 
 #### YouTube
 
@@ -332,10 +332,10 @@ Available variables are:
 - `id`: The ID of the post, usually at the end of the URL.
 
 ```jinja2
-{{/* mastodon(id="113375516179365586") */}}
+{{/* mastodon(host="vmst.io", user="daudix", id="113375516179365586") */}}
 ```
 
-{{ mastodon(id="113375516179365586") }}
+{{ mastodon(host="vmst.io", user="daudix", id="113375516179365586") }}
 
 ### Description List
 
