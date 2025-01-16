@@ -12,7 +12,7 @@ styles = ["blog/style.css"]
 
 Hi! Welcome to my blog! <sup>[Why such a stupid name?](@/blog/2024-10-25-blog-name/index.md)</sup>
 
-<aside class="poll">
+<!-- <aside class="poll">
   <form method="post" action="https://poll.pollcode.com/83144997">
     <strong class="title">Merge Journal into This Blog?</strong>
     <p>
@@ -33,7 +33,7 @@ Hi! Welcome to my blog! <sup>[Why such a stupid name?](@/blog/2024-10-25-blog-na
       <input type="submit" name="view" value="View" />
     </div>
   </form>
-</aside>
+</aside> -->
 
 Here I write about my projects, updates on them, life, things that bother me, and pretty much anything else that spins around in my head and gets to be written down and is not too cringey, in which case I write it in my [journal](https://daudix.neocities.org/journal/).
 
