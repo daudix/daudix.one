@@ -1,4 +1,4 @@
-@import "../../static/phosphor-bold";
+@import "placeholders";
 
 // Who doesn't like a party popper mid article?
 .audio {
@@ -41,7 +41,7 @@
 	}
 
 	&::after {
-		@extend .ph-bold;
+		@extend %ph-bold;
 		vertical-align: -1px;
 		opacity: var(--dim-opacity);
 		transition: var(--transition);

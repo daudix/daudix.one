@@ -1,4 +1,4 @@
-@import "../../static/phosphor-bold";
+@import "placeholders";
 
 .card-list {
 	display: flex;
@@ -10,7 +10,7 @@
 		position: relative;
 
 		&::before {
-			@extend .ph-bold;
+			@extend %ph-bold;
 			position: absolute;
 			transform: translateY(-50%);
 			transition: var(--transition-bezier);

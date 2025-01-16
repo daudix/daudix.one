@@ -1,7 +1,7 @@
-@import "../../static/phosphor-bold";
+@import "placeholders";
 
 a.external::after {
-	@extend .ph-bold;
+	@extend %ph-bold;
 	display:inline-block;
 	vertical-align: text-top;
 	margin-inline-start: 0.25rem;

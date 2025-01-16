@@ -1,4 +1,4 @@
-@import "../../static/phosphor-bold";
+@import "placeholders";
 
 input[type="radio"],
 input[type="checkbox"],
@@ -71,7 +71,7 @@ input[type="checkbox"] {
 	border-radius: calc(var(--rounded-corner-small) / 2);
 
 	&::before {
-		@extend .ph-bold;
+		@extend %ph-bold;
 		transform-origin: bottom left;
 		mask-size: cover;
 		inset-block-start: -0.125rem;

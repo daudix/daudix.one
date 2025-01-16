@@ -1,4 +1,4 @@
-@import "../../static/phosphor-bold";
+@import "placeholders";
 
 #comments-section {
 	#qrcode {
@@ -190,7 +190,7 @@
 						padding-inline-start: 0.4375rem;
 
 						&::before {
-							@extend .ph-bold;
+							@extend %ph-bold;
 							vertical-align: -2px;
 							transition: var(--transition);
 							margin-inline-end: 0.25rem;

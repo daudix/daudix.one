@@ -1,4 +1,4 @@
-@import "../../static/phosphor-bold";
+@import "placeholders";
 
 // HEADINGS
 h1,
@@ -260,7 +260,7 @@ details {
 		}
 
 		&::before {
-			@extend .ph-bold;
+			@extend %ph-bold;
 			display:inline-block;
 			transition: var(--transition-bezier);
 			margin-inline-end: 0.25rem;

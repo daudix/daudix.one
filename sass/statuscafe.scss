@@ -1,4 +1,3 @@
-@use "components/variables";
 @import "components/variables";
 
 @include theme-variables using ($theme) {
