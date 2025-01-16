@@ -50,7 +50,7 @@ The icons are from [Tango](https://en.wikipedia.org/wiki/Tango_Desktop_Project),
 
 See that footer? yes, it uses a deprecated marquee HTML element, it's just too good to _not_ be used. I even [posted about it](https://vmst.io/@daudix/112532737670738850) on Mastodon.
 
-{{ mastodon(id="112532737670738850") }}
+{{ mastodon(host="vmst.io", user="daudix", id="112532737670738850") }}
 
 At this point it was 4:00 AM and I had to go sleep 0_0
 
@@ -64,7 +64,7 @@ Yeah, I enjoyed the rewrite a bit too much.
 
 Aaanyway, the next day I added the [cbox](https://www.cbox.ws) chat, polished the footer, and [teased it](https://vmst.io/@daudix/112533590357822496) to my Mastodon followers.
 
-{{ mastodon(id="112533590357822496") }}
+{{ mastodon(host="vmst.io", user="daudix", id="112533590357822496") }}
 
 About chat box: cbox doesn't allow adding custom CSS in the free plan, so I couldn't add the text shadow for the carved text effect, what I did is applied a `drop-shadow()` filter to the whole `<iframe>` which did the job.
 
