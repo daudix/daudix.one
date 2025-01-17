@@ -108,8 +108,8 @@
 			flex-direction: column;
 			z-index: 1;
 			backdrop-filter: var(--blur);
-			inset-block-start: calc(100% + 0.75rem);
-			inset-inline-end: -0.25rem;
+			inset-block-start: calc(100% + 0.5rem);
+			inset-inline-end: 0;
 			box-shadow: var(--edge-highlight), var(--shadow-glass);
 			border-radius: var(--rounded-corner);
 			background-color: var(--glass-bg-1);
