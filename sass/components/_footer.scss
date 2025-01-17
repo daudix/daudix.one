@@ -4,14 +4,16 @@
 	justify-content: space-between;
 	align-items: center;
     gap: 0.5rem;
+	margin: 0.5rem;
 	margin-block-start: auto;
-	border-block-start: 1px solid var(--bg-muted-2);
-	background-color: var(--bg-muted-1);
-	padding: 0.5rem 1rem;
-	height: 53px;
+	box-shadow: var(--edge-highlight), var(--shadow);
+	border-radius: var(--rounded-corner);
+	background-color: var(--glass-bg-1);
+	padding: 0.5rem;
 
 	&-copyright {
 		cursor: help;
+		margin-inline-start: 0.25rem;
 		color: var(--fg-muted-2);
 		font-size: var(--font-size-small);
 

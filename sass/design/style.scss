@@ -1,21 +1,14 @@
 main {
-	container: curtains / inline-size;
+	margin: 0 0.5rem 0.5rem;
+	box-shadow: var(--edge-highlight), var(--shadow);
+	border-radius: var(--rounded-corner);
+	background-image: linear-gradient(rgb(0 0 0 / 0.5), rgb(0 0 0 / 0.5)), url("curtain.webp");
+	background-size: contain;
+	background-repeat: repeat-x;
+	background-attachment: fixed;
 
-	&::before {
-		position: fixed;
-		z-index: -1;
-		filter: brightness(0.5);
-		margin-block-start: -2rem;
-		background-image: url("curtain.webp");
-		background-size: contain;
-		background-repeat: repeat-x;
-		width: 100cqw;
-		height: 100cqh;
-		content: "";
-
-		@media (prefers-color-scheme: dark) {
-			filter: brightness(0.2);
-		}
+	@media (prefers-color-scheme: dark) {
+		background-image: linear-gradient(rgb(0 0 0 / 0.8), rgb(0 0 0 / 0.8)), url("curtain.webp");
 	}
 }
 
@@ -176,8 +169,16 @@ section {
 	}
 
 	&#unused-icons {
-		background-color: var(--bg-muted-2);
-		color: var(--fg-muted-2);
+		--bg-muted-1: var(--red-bg-1);
+		--bg-muted-2: var(--red-bg-2);
+		--fg-muted-1: var(--red-fg-muted-1);
+		--fg-muted-2: var(--red-fg-muted-2);
+		background-color: var(--red-bg-2);
+		color: var(--red-fg-muted-2);
+
+		h2 {
+			color: var(--red-fg);
+		}
 	}
 
 	&#wallpapers {

@@ -19,7 +19,6 @@
 		// COLORS
 		--bg-color: color-mix(in srgb, var(--accent-color) 10%, black);
 		--bg-overlay: linear-gradient(rgb(0 0 0 / var(--dim-opacity)), rgb(0 0 0 / var(--dim-opacity)));
-		--bg-overlay-neutral: linear-gradient(rgb(0 0 0 / var(--dim-opacity)), rgb(0 0 0 / var(--dim-opacity)));
 		--fg-color: #fcfcfa;
 		--fg-muted-1: color-mix(in srgb, var(--accent-color) 15%, rgb(255 255 255 / 0.5));
 		--fg-muted-2: color-mix(in srgb, var(--accent-color) 15%, rgb(255 255 255 / 0.6));
@@ -53,7 +52,6 @@
 		--dim-accent-color: rgb(from var(--accent-color) r g b / var(--dim-opacity));
 		--bg-color: color-mix(in srgb, var(--accent-color) 20%, white);
 		--bg-overlay: linear-gradient(rgb(255 255 255 / var(--dim-opacity)), rgb(255 255 255 / var(--dim-opacity)));
-		--bg-overlay-neutral: linear-gradient(rgb(255 255 255 / var(--dim-opacity)), rgb(255 255 255 / var(--dim-opacity)));
 		--bg-muted-1: rgb(from var(--accent-color) r g b / var(--color-opacity-1));
 		--bg-muted-2: rgb(from var(--accent-color) r g b / var(--color-opacity-2));
 		--fg-color: #29242a;
@@ -104,7 +102,7 @@
 		--rounded-corner-small: 0.5rem;
 
 		// FILTERS
-		--blur: saturate(1.8) blur(0.75rem);
+		--blur: blur(0.75rem);
 		--printed: contrast(2) brightness(0.75) grayscale(1);
 		--drop-shadow: drop-shadow(0 0.08rem 0.1rem rgb(0 0 0 / 0.35)) drop-shadow(0 0.4rem 0.7rem rgb(0 0 0 / 0.18));
 
@@ -152,7 +150,7 @@
 			0 0 0 1px rgb(0 0 0 / 0.06),
 			0 2px 6px 2px rgb(0 0 0 / 0.14),
 			0 4px 12px 4px rgb(0 0 0 / 0.06);
-		--shadow-glass: 0 12px 24px -16px rgb(0 0 0 / 0.5);
+		--shadow-glass: 0 12px 24px -16px rgb(0 0 0 / 0.4);
 		--shadow-glow:
 			0 0 0 1px var(--bg-muted-1),
 			0 2px 6px 2px var(--bg-muted-1),

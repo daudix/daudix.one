@@ -30,8 +30,8 @@
 			background-color: var(--purple-bg-1);
 
 			&::before {
-				color: var(--purple-bg-1);
 				content: "\e00e";
+				color: var(--purple-bg-1);
 			}
 
 			h3 {
@@ -63,8 +63,8 @@
 			background-color: var(--yellow-bg-1);
 
 			&::before {
-				color: var(--yellow-bg-1);
 				content: "\e46a";
+				color: var(--yellow-bg-1);
 			}
 
 			&:has(h3:hover)::before,
@@ -101,8 +101,8 @@
 			background-color: var(--red-bg-1);
 
 			&::before {
-				color: var(--red-bg-1);
 				content: "\e242";
+				color: var(--red-bg-1);
 			}
 
 			h3 {
@@ -137,7 +137,6 @@
 	}
 
 	article {
-		--bg-overlay: var(--bg-muted-1);
 		display: flex;
 		position: relative;
 		justify-content: space-between;
@@ -145,7 +144,7 @@
 		box-shadow: var(--edge-highlight), var(--shadow);
 		border-radius: 1.5rem;
 		border-start-start-radius: var(--rounded-corner);
-		background-color: var(--bg-overlay);
+		background-color: var(--bg-muted-1);
 		padding: 1rem;
 		overflow: hidden;
 
@@ -155,7 +154,7 @@
 			--bg-muted-2: rgb(from var(--accent-color) r g b / var(--color-opacity-2));
 			--fg-muted-1: color-mix(in srgb, var(--accent-color) 15%, rgb(0 0 0 / 0.5));
 			--fg-muted-2: color-mix(in srgb, var(--accent-color) 15%, rgb(0 0 0 / 0.6));
-			background-image: linear-gradient(var(--bg-overlay), var(--bg-overlay)), var(--bg-overlay-neutral), var(--bg-overlay-neutral), var(--blurnail);
+			background-image: var(--bg-overlay), var(--blurnail);
 			background-position: center;
 			background-size: cover;
 

@@ -1,5 +1,8 @@
 main:has(#banner) {
-	background: var(--bg-overlay), var(--blurnail), var(--accent-color);
+	margin: 0 0.5rem 0.5rem;
+	box-shadow: var(--edge-highlight), var(--shadow);
+	border-radius: var(--rounded-corner);
+	background-image: var(--bg-overlay), var(--blurnail);
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
@@ -14,6 +17,7 @@ main:has(#banner) {
 	mask-image: var(--mask);
 	container: banner / inline-size;
 	inset: 0;
+	border-radius: var(--rounded-corner) var(--rounded-corner) 0 0;
 	padding-block-start: 4rem;
 	height: min(calc((var(--container-width) / 2) + 4rem), calc(50cqw - 4rem));
 
