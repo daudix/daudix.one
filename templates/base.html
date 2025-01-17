@@ -16,27 +16,25 @@
 				<i class="ph-bold ph-x"></i>
 			</label>
 			<a class="go-to-top" href="#top">
-				<strong class="title">
-					{%- if current_path and current_path == "/" -%}
-						{%- set suffix = "" -%}
-					{% elif title %}
-						{%- set suffix = title -%}
-					{% elif section.title -%}
-						{%- set suffix = section.title -%}
-					{% elif page.title %}
-						{%- set suffix = page.title -%}
-					{% elif term.name %}
-						{#- Individual tags -#}
-						{%- set suffix = term.name -%}
-					{% elif taxonomy.name %}
-						{#- List of tags -#}
-						{%- set suffix = taxonomy.name | capitalize -%}
-					{% else %}
-						{%- set suffix = "404" %}
-					{%- endif -%}
-			
-					{{- suffix -}}
-				</strong>
+				{%- if current_path and current_path == "/" -%}
+					{%- set suffix = "" -%}
+				{% elif title %}
+					{%- set suffix = title -%}
+				{% elif section.title -%}
+					{%- set suffix = section.title -%}
+				{% elif page.title %}
+					{%- set suffix = page.title -%}
+				{% elif term.name %}
+					{#- Individual tags -#}
+					{%- set suffix = term.name -%}
+				{% elif taxonomy.name %}
+					{#- List of tags -#}
+					{%- set suffix = taxonomy.name | capitalize -%}
+				{% else %}
+					{%- set suffix = "404" %}
+				{%- endif -%}
+		
+				{{- suffix -}}
 			</a>
 		</div>
 

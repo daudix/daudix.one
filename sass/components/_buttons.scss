@@ -72,10 +72,12 @@
 		}
 
 		&.suggested {
+			box-shadow: var(--edge-highlight), var(--shadow-glow);
 			background-image: linear-gradient(to bottom right, var(--accent-color), var(--bg-muted-1));
 			color: var(--contrast-color);
 
 			&:hover {
+				box-shadow: var(--edge-highlight);
 				background-color: var(--accent-color);
 			}
 		}

@@ -7,9 +7,9 @@ authors = ["Jimmy", "Bill", "Bob"]
 tags = ["100DaysToOffload", "Test", "Testing", "Long tag name", "Even longer tag name to make sure nothing overflows"]
 categories = ["Test"]
 [extra]
-banner = "mike.png"
-accent_color = "#133553"
-accent_color_dark = "#347bbb"
+banner = "banner.jpg"
+accent_color = "#2c302b"
+accent_color_dark = "#8d9089"
 archive = "This page is in fact not archived. It is only here to demonstrate the archival statement."
 trigger = "This page contains blackjack and hookers, and bad jokes such as this one."
 disclaimer = """

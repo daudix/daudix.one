@@ -121,8 +121,9 @@
 
 			&.comment-reply {
 				position: relative;
-				border-radius: 0.25rem;
 				border-inline-start: 0.25rem solid var(--bg-muted-2);
+				border-start-start-radius: 0.25rem;
+				border-end-start-radius: 0.25rem;
 				padding-inline-start: 1rem;
 
 				&:has(+ .comment-reply) {
@@ -187,7 +188,7 @@
 					}
 
 					&.op {
-						padding-inline-start: 0.4375rem;
+						padding-inline-start: 7px;
 
 						&::before {
 							@extend %ph-bold;

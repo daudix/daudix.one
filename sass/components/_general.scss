@@ -12,11 +12,12 @@
 body {
 	display: grid;
 	grid-template-rows: auto 1fr auto;
-	grid-template-columns: auto 1fr;
+	grid-template-columns: clamp(14rem, 20vw, calc(var(--container-width) / 2)) 1fr;
 	grid-template-areas:
 		"sidebar header"
 		"sidebar main"
 		"sidebar footer";
+	transition: var(--transition);
 	margin: 0;
 	background-color: var(--bg-color);
 	min-height: 100vh;

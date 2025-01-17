@@ -10,6 +10,7 @@ disclaimer = """
 - Don't expose yourself to 4000° kelvin.
 - Don't take party escort submission position.
 - Don't interact with asbestos and moon rocks.
+- Don't visit [aperturescience.com](https://www.aperturescience.com).
 """
 +++
 

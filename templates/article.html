@@ -97,13 +97,13 @@
 {% endblock content %}
 
 {% block actions %}
-{%- if config.extra.show_focus_button -%}
+{# {%- if config.extra.show_focus_button -%}
 	<input class="visually-hidden" id="toggle-focus" type="checkbox" name="toggle-focus" autocomplete="off" />
 	<label for="toggle-focus" title="Toggle Focus Mode">
 		<i class="ph-bold ph-eye-closed"></i>
 		<i class="ph-bold ph-eye"></i>
 	</label>
-{%- endif -%}
+{%- endif -%} #}
 
 {%- if config.extra.issues_url -%}
 	<a href="{{ config.extra.issues_url }}" rel="{{ rel_attributes }}" title="File an Issue"><i class="ph-bold ph-bug-beetle"></i></a>
