@@ -72,11 +72,11 @@
 		}
 
 		&.suggested {
-			background-color: var(--accent-color);
+			background-image: linear-gradient(to bottom right, var(--accent-color), var(--bg-muted-1));
 			color: var(--contrast-color);
 
 			&:hover {
-				background-color: var(--dim-accent-color);
+				background-color: var(--accent-color);
 			}
 		}
 	}

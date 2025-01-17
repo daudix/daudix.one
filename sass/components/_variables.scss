@@ -49,7 +49,6 @@
 
 	@else {
 		// COLORS
-		--dim-accent-color: rgb(from var(--accent-color) r g b / var(--dim-opacity));
 		--bg-color: color-mix(in srgb, var(--accent-color) 20%, white);
 		--bg-overlay: linear-gradient(rgb(255 255 255 / var(--dim-opacity)), rgb(255 255 255 / var(--dim-opacity)));
 		--bg-muted-1: rgb(from var(--accent-color) r g b / var(--color-opacity-1));

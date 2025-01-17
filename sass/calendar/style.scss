@@ -180,6 +180,15 @@ body {
 }
 
 .buttons {
+	.suggested {
+		background-image: none !important;
+		background-color: var(--accent-color);
+
+		&:hover {
+			opacity: var(--dim-opacity);
+		}
+	}
+
 	@media print {
 		display: none;
 	}
