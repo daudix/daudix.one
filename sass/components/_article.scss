@@ -1,4 +1,5 @@
 main:has(#banner) {
+	position: relative;
 	margin: 0 0.5rem 0.5rem;
 	box-shadow: var(--edge-highlight), var(--shadow);
 	border-radius: var(--rounded-corner);
