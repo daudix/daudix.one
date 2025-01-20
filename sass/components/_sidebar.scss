@@ -8,8 +8,10 @@
 }
 
 #site-sidebar {
+	display: flex;
 	position: sticky;
 	grid-area: sidebar;
+	flex-direction: column;
 	z-index: 999;
 	transition: var(--transition);
 	margin: 0.5rem;
@@ -110,9 +112,9 @@
 	}
 
 	nav {
+		flex: 1;
 		margin: -1rem;
 		padding: 1rem;
-		height: calc(100vh - 120px);
 		overflow-y: auto;
 
 		ul {
