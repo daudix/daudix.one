@@ -17,7 +17,7 @@ Where and when to find me online.
 
 For me it's currently <time id="clock"><noscript>NO:JS</noscript></time> <small>(UTC+3)</small> and I'm <span id="online-indicator"><noscript>N/A</noscript></span>.
 
-Feel free to reach out to me on any of these! I'm usually too shy to start the conversation, but I'm excited to chat once someone messages me first.
+Feel free to reach me out on any of these! Although I'm usually too shy to start the conversation, I'm happy to chat once someone messages me first.
 
 <small>From most preferred to the least ↓</small>
 
@@ -27,15 +27,7 @@ Feel free to reach out to me on any of these! I'm usually too shy to start the c
 <img class="transparent no-hover pixels drop-shadow icon" src="icons/discord.gif" alt="Pixel art Discord icon." />
 <div class="details">
 <strong>Discord</strong>
-<p>I prefer it to Matrix for the most part.</p>
-</div>
-</a>
-
-<a href="https://matrix.to/#/@daudix:envs.net">
-<img class="transparent no-hover pixels drop-shadow icon" src="icons/matrix.gif" alt="Pixel art Matrix icon." />
-<div class="details">
-<strong>Matrix</strong>
-<p>I have a few alts, but I don't use them.</p>
+<p>Classic chatting experience.</p>
 </div>
 </a>
 
@@ -43,7 +35,15 @@ Feel free to reach out to me on any of these! I'm usually too shy to start the c
 <img class="transparent no-hover pixels drop-shadow icon" src="icons/signal.gif" alt="Pixel art Signal icon." />
 <div class="details">
 <strong>Signal</strong>
-<p>Telegram if they kept privacy promises.</p>
+<p>Matrix if it could decrypt messages.</p>
+</div>
+</a>
+
+<a href="https://matrix.to/#/@daudix:envs.net">
+<img class="transparent no-hover pixels drop-shadow icon" src="icons/matrix.gif" alt="Pixel art Matrix icon." />
+<div class="details">
+<strong>Matrix</strong>
+<p>Half-baked, half-broken thingy.</p>
 </div>
 </a>
 
@@ -85,7 +85,7 @@ This is not a complete list, but rather list of places where I'm somewhat active
 
 <div class="icon-grid">
 
-<a href="https://vmst.io/@daudix">
+<a href="https://wetdry.world/@daudix">
 <img class="transparent no-hover pixels drop-shadow icon" src="icons/mastodon.gif" alt="Pixel art Mastodon icon." />
 <div class="details">
 <strong>Mastodon</strong>
@@ -93,27 +93,27 @@ This is not a complete list, but rather list of places where I'm somewhat active
 </div>
 </a>
 
-<a href="https://pleroma.envs.net/daudix">
-<img class="transparent no-hover pixels drop-shadow icon" src="icons/akkoma.gif" alt="Pixel art Akkoma icon." />
-<div class="details">
-<strong>Akkoma</strong>
-<p>Alt for everything that doesn't fit main.</p>
-</div>
-</a>
-
 <a href="https://bsky.app/profile/daudix.one">
 <img class="transparent no-hover pixels drop-shadow icon" src="icons/bluesky.gif" alt="Pixel art Bluesky icon." />
 <div class="details">
 <strong>Bluesky</strong>
-<p>A mix of the former two. Kind of.</p>
+<p>Open-source Twitter with custom feeds.</p>
 </div>
 </a>
 
-<a href="https://lemmy.zip/u/daudix">
-<img class="transparent no-hover pixels drop-shadow icon" src="icons/lemmy.gif" alt="Pixel art Lemmy icon." />
+<a href="https://www.tumblr.com/ddaudix">
+<img class="transparent no-hover pixels drop-shadow icon" src="icons/tumblr.gif" alt="Pixel art Tumblr icon." />
 <div class="details">
-<strong>Lemmy</strong>
-<p>Been a lurker since the Reddit days.</p>
+<strong>Tumblr</strong>
+<p>I'm very new to it but liking it so far.</p>
+</div>
+</a>
+
+<a href="https://spacehey.com/daudix">
+<img class="transparent no-hover pixels drop-shadow icon" src="icons/spacehey.gif" alt="Pixel art SpaceHey icon." />
+<div class="details">
+<strong>SpaceHey</strong>
+<p>MySpace is alive and rocking! ...Kinda.</p>
 </div>
 </a>
 
@@ -141,12 +141,17 @@ I have changed the Fediverse instance I'm on a lot, so to make sure nothing is l
 
 <ol id="timeline">
   <li>
+    <strong>11 Jan 2025 - Today</strong>
+    <a href="https://wetdry.world/@daudix">wetdry.world</a>
+    <span>Main profile</span>
+  </li>
+  <li>
     <strong>10 Dec 2024 - Today</strong>
     <a href="https://wetdry.world/@daudix">wetdry.world</a>
     <span>Personal profile</span>
   </li>
   <li>
-    <strong>05 May 2024 - Today</strong>
+    <strong>05 May 2024 - 11 Jan 2025</strong>
     <a href="https://vmst.io/@daudix">vmst.io</a>
     <span>Main profile</span>
   </li>
