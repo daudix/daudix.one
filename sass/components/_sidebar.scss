@@ -35,7 +35,7 @@
 		display: flex;
 		position: relative;
 		flex-direction: column;
-		margin-block-end: 1rem;
+		margin-block-end: 2rem;
 		max-height: calc(50vh - 2.5rem);
 
 		&:has(#search-bar:not(:placeholder-shown)) .ph-bold {
@@ -76,8 +76,7 @@
 			display: none;
 			flex-direction: column;
 			gap: 0.5rem;
-			margin: -1rem;
-			margin-block-start: 0;
+			margin: 0 -1rem -2rem;
 			padding: 1rem;
 			overflow: auto;
 
@@ -114,7 +113,9 @@
 	nav {
 		flex: 1;
 		margin: -1rem;
+		margin-block-start: -2rem;
 		padding: 1rem;
+		padding-block-start: 2rem;
 		overflow-y: auto;
 
 		ul {
