@@ -7,7 +7,6 @@ tags = ["100DaysToOffload", "Design", "Blender", "Inkscape"]
 [extra]
 accent_color = "#3f3eec"
 accent_color_dark = "#5857f4"
-scripts = ["audio.js"]
 banner = "banner.webp"
 toc = true
 [extra.comments]

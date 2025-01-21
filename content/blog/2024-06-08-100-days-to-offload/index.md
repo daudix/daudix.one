@@ -3,8 +3,6 @@ title = "100 Days to Offload or the Drafts Folder Overflow"
 description = "Why I decided to participate in a challenge that I'm doomed to fail?"
 [taxonomies]
 tags = ["100DaysToOffload"]
-[extra]
-scripts = ["audio.js"]
 [extra.comments]
 host = "vmst.io"
 user = "daudix"

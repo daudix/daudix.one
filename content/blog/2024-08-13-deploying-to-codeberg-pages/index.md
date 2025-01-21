@@ -7,7 +7,6 @@ categories = ["Featured"]
 [extra]
 accent_color = "#5c616a"
 accent_color_dark = "#a4bac0"
-scripts = ["audio.js"]
 banner = "banner.webp"
 toc = true
 [extra.comments]

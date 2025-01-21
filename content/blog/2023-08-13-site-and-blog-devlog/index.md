@@ -5,7 +5,6 @@ description = "Some behind-the-scenes of the blog update."
 tags = ["Devlog", "Website"]
 categories = ["Archived"]
 [extra]
-scripts = ["audio.js"]
 toc = true
 [extra.comments]
 host = "mstdn.social"
