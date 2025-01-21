@@ -27,7 +27,7 @@ Feel free to reach me out on any of these! Although I'm usually too shy to start
 <img class="transparent no-hover pixels drop-shadow icon" src="icons/discord.gif" alt="Pixel art Discord icon." />
 <div class="details">
 <strong>Discord</strong>
-<p>Classic chatting experience.</p>
+<p>Classic chatting experience. (@daudix)</p>
 </div>
 </a>
 

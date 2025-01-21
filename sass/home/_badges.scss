@@ -289,7 +289,7 @@
 			border-radius: var(--rounded-corner);
 			background-color: var(--glass-bg-1);
 			aspect-ratio: 1 / 1;
-			width: min(calc(var(--container-width) / 3), calc(100vw - 5rem));
+			width: calc(var(--container-width) / 3);
 
 			div {
 				flex: 1;

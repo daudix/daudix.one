@@ -1,6 +1,8 @@
 body {
 	--bg-overlay: linear-gradient(rgb(0 0 0 / var(--dim-opacity)), rgb(0 0 0 / var(--dim-opacity)));
-	display: block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	background: var(--bg-overlay), url("static.gif"), black;
 
 	@media (prefers-reduced-motion) {
@@ -15,8 +17,6 @@ main {
 	align-items: center;
 	gap: 1rem;
 	padding: 0;
-	width: 100vw;
-	height: 100vh;
 	line-height: 1;
 
 	p {
@@ -53,7 +53,7 @@ main {
 		height: calc(48px + 0.75rem);
 		font-weight: var(--font-weight-black);
 		font-size: 48px;
-		letter-spacing: -5%;
+		letter-spacing: -0.05em;
 		text-decoration: underline solid;
 		text-decoration-color: transparent;
 		text-decoration-thickness: 0.125em;

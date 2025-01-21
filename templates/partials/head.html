@@ -47,6 +47,10 @@
 		{% endfor %}
 	{% endif %}
 
+	<link rel="preload" href="{{ get_url(path='fonts/geist.woff2') }}" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="{{ get_url(path='fonts/geist-mono.woff2') }}" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="{{ get_url(path='fonts/phosphor-bold.woff2') }}" as="font" type="font/woff2" crossorigin>
+
 	{%- include "partials/variables.html" %}
 
 	{%- set styles = ["style.css", "phosphor-bold.css"] %}

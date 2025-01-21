@@ -13,13 +13,12 @@ body::before {
 	z-index: -1;
 	mask-image: var(--mask);
 	animation: rays 35s linear infinite;
+	inset: 0;
 	background: repeating-conic-gradient(
 		from var(--angle) at top right,
 		var(--ray) 0deg 10deg,
 		transparent 10deg 20deg
 	);
-	width: 100vw;
-	height: 100vh;
 	content: "";
 
 	@keyframes rays {

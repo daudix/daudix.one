@@ -53,19 +53,5 @@
 				font-size: var(--font-size-large);
 			}
 		}
-
-		#buttons-container {
-			position: static;
-			flex-direction: row-reverse;
-			animation: none;
-			margin: 0;
-			inset-block-end: 0;
-			inset-inline-end: 0;
-
-			#backlinks summary + div {
-				inset-inline-end: 2.5rem;
-				width: min(var(--container-width) / 3, calc(100vw - 4.5rem));
-			}
-		}
 	}
 }
