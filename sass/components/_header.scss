@@ -1,5 +1,4 @@
 #site-header {
-	-webkit-backdrop-filter: var(--blur);
 	display: flex;
 	position: sticky;
 	grid-area: header;
@@ -7,13 +6,22 @@
 	align-items: center;
     gap: 0.5rem;
 	z-index: 999;
-	backdrop-filter: var(--blur);
 	margin: 0.5rem;
 	inset-block-start: 0.5rem;
-	box-shadow: var(--edge-highlight), var(--shadow);
 	border-radius: var(--rounded-corner);
-	background-color: var(--glass-bg-1);
 	padding: 0.25rem;
+
+	&::before {
+		-webkit-backdrop-filter: var(--blur);
+		position: absolute;
+		z-index: -1;
+		backdrop-filter: var(--blur);
+		inset: 0;
+		box-shadow: var(--edge-highlight), var(--shadow);
+		border-radius: inherit;
+		background-color: var(--glass-bg-1);
+		content: "";
+	}
 
     &-title {
 		display: flex;
