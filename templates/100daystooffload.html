@@ -17,7 +17,7 @@
 			<p>{{ post.description }}</p>
 			<small>
 				<time datetime="{{ post.date | date(format='%+') }}">
-					{{ post.date | date(format=config.extra.date_format | default(value="%B %d, %Y") , locale=config.extra.date_locale | default(value="en_US")) }}
+					{{ post.date | date(format=config.extra.date_format | default(value="%B %d, %Y"), timezone=config.extra.timezone | default(value="UTC"), locale=config.extra.date_locale | default(value="en_US")) }}
 				</time>
 				{%- if post.journal -%}
 					<span> {{ config.extra.separator | default(value="•") }} </span>

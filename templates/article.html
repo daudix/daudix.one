@@ -9,12 +9,12 @@
 			<p>
 				<small>
 					<time datetime="{{ page.date | date(format='%+') }}">
-						Published on {{ page.date | date(format=config.extra.date_format, locale=config.extra.date_locale) -}}
+						Published on {{ page.date | date(format=config.extra.date_format, timezone=config.extra.timezone | default(value="UTC"), locale=config.extra.date_locale) -}}
 					</time>
 					{%- if page.updated -%}
 						<span> {{ config.extra.separator | default(value="•") }} </span>
 						<time datetime="{{ page.updated | date(format='%+') }}">
-							Updated on {{ page.updated | date(format=config.extra.date_format, locale=config.extra.date_locale) -}}
+							Updated on {{ page.updated | date(format=config.extra.date_format, timezone=config.extra.timezone | default(value="UTC"), locale=config.extra.date_locale) -}}
 						</time>
 					{%- endif -%}
 				</small>

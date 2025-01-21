@@ -5,12 +5,12 @@
 <div id="nanolog">
 	{%- if page.lower -%}
 		<a id="nanolog-higher" href="{{ page.lower.permalink }}">
-			<span>{{ page.lower.date | date(format=config.extra.date_format_long | default(value="%B %d, %Y, %R"), locale=config.extra.date_locale) | default(value="en_US") }}</span>
+			<span>{{ page.lower.date | date(format=config.extra.date_format_long | default(value="%B %d, %Y, %R (%Z)"), timezone=config.extra.timezone | default(value="UTC"), locale=config.extra.date_locale) | default(value="en_US") }}</span>
 		</a>
 	{%- endif -%}
 
 	<div id="nanolog-heading">
-		<h1>{{ page.date | date(format=config.extra.date_format_long | default(value="%B %d, %Y, %R"), locale=config.extra.date_locale) | default(value="en_US") }}</h1>
+		<h1>{{ page.date | date(format=config.extra.date_format_long | default(value="%B %d, %Y, %R (%Z)"), timezone=config.extra.timezone | default(value="UTC"), locale=config.extra.date_locale) | default(value="en_US") }}</h1>
 		<div id="nanolog-details">
 			<p><small>{{ page.title }}</small></p>
 		</div>
@@ -19,7 +19,7 @@
 
 	{%- if page.higher -%}
 		<a id="nanolog-lower" href="{{ page.higher.permalink }}">
-			<span>{{ page.higher.date | date(format=config.extra.date_format_long | default(value="%B %d, %Y, %R"), locale=config.extra.date_locale) | default(value="en_US") }}</span>
+			<span>{{ page.higher.date | date(format=config.extra.date_format_long | default(value="%B %d, %Y, %R (%Z)"), timezone=config.extra.timezone | default(value="UTC"), locale=config.extra.date_locale) | default(value="en_US") }}</span>
 		</a>
 	{%- endif -%}
 </div>

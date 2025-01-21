@@ -36,7 +36,7 @@
 								<i class="ph-bold ph-calendar"></i>
 							</span>
 							<time datetime="{{ page.date | date(format='%+') }}" pubdate>
-								{{- page.date | date(format=config.extra.date_format, locale=config.extra.date_locale) -}}
+								{{- page.date | date(format=config.extra.date_format, timezone=config.extra.timezone | default(value="UTC"), locale=config.extra.date_locale) -}}
 							</time>
 						</div>
 					{%- endif -%}
