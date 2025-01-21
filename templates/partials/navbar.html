@@ -1,6 +1,6 @@
 {%- set rel_attributes = macros_rel_attributes::rel_attributes() | trim -%}
 
-<div id="site-sidebar">
+<div id="site-navbar">
 	{%- if config.build_search_index %}
 		<div id="search">
 			<i class="ph-bold ph-keyboard" title="Press “/” to Open Search Bar"></i>
@@ -9,6 +9,7 @@
 			<div id="search-results" class="overshoot"></div>
 		</div>
 	{%- endif %}
+
 	<nav class="overshoot">
 		<ul>
 			{%- for link in config.extra.nav.links %}

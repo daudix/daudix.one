@@ -26,12 +26,25 @@ document.addEventListener("click", function (event) {
 	}
 });
 
-const toggleSidebar = document.getElementById('toggle-sidebar');
-const siteSidebar = document.getElementById('site-sidebar');
-const mainContent = document.getElementById('main-content');
+const toggleSidebar = document.getElementById("toggle-sidebar");
+const toggleNavbar = document.getElementById("toggle-navbar");
+const siteSidebar = document.getElementById("site-sidebar");
+const siteNavbar = document.getElementById("site-navbar");
+const mainContent = document.getElementById("main-content");
 
-mainContent.addEventListener('click', (event) => {
-  if (toggleSidebar.checked && !siteSidebar.contains(event.target)) {
-    toggleSidebar.checked = false;
-  }
+toggleSidebar.addEventListener("change", () => {
+	if (toggleSidebar.checked) {
+		toggleNavbar.checked = false;
+	}
+});
+
+toggleNavbar.addEventListener("change", () => {
+	if (toggleNavbar.checked) {
+		toggleSidebar.checked = false;
+	}
+});
+
+mainContent.addEventListener("click", () => {
+	if (toggleSidebar.checked) toggleSidebar.checked = false;
+	if (toggleNavbar.checked) toggleNavbar.checked = false;
 });

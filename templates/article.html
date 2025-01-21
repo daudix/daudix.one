@@ -4,69 +4,23 @@
 {%- set rel_attributes = macros_rel_attributes::rel_attributes() | trim -%}
 
 <article>
-	<div id="heading">
-		{%- if page.date -%}
-			<p>
-				<small>
-					<time datetime="{{ page.date | date(format='%+') }}">
-						Published on {{ page.date | date(format=config.extra.date_format, timezone=config.extra.timezone | default(value="UTC"), locale=config.extra.date_locale) -}}
+	<h1 id="heading">{{ page.title }}</h1>
+
+	{%- if page.date -%}
+		<p>
+			<small>
+				<time datetime="{{ page.date | date(format='%+') }}">
+					Published on {{ page.date | date(format=config.extra.date_format, timezone=config.extra.timezone | default(value="UTC"), locale=config.extra.date_locale) -}}
+				</time>
+				{%- if page.updated -%}
+					<span> {{ config.extra.separator | default(value="•") }} </span>
+					<time datetime="{{ page.updated | date(format='%+') }}">
+						Updated on {{ page.updated | date(format=config.extra.date_format, timezone=config.extra.timezone | default(value="UTC"), locale=config.extra.date_locale) -}}
 					</time>
-					{%- if page.updated -%}
-						<span> {{ config.extra.separator | default(value="•") }} </span>
-						<time datetime="{{ page.updated | date(format='%+') }}">
-							Updated on {{ page.updated | date(format=config.extra.date_format, timezone=config.extra.timezone | default(value="UTC"), locale=config.extra.date_locale) -}}
-						</time>
-					{%- endif -%}
-				</small>
-			</p>
-		{%- endif -%}
-
-		<h1>{{ page.title }}</h1>
-
-		<div class="details">
-			{%- if page.authors -%}
-				<div class="details-authors">
-					<span title="Authors">
-						<i class="ph-bold ph-users"></i>
-					</span>
-					<span>{% include "partials/authors.html" %}</span>
-				</div>
-			{%- endif -%}
-
-			{%- if config.extra.show_reading_time -%}
-				<div class="details-time">
-					<span title="Read Time">
-						<i class="ph-bold ph-clock-countdown"></i>
-					</span>
-					<span>{{ page.reading_time }} minute{{ page.reading_time | pluralize -}}</span>
-				</div>
-			{%- endif -%}
-
-			{%- if page.taxonomies.categories -%}
-				<div class="details-category">
-					<span title="Category">
-						<i class="ph-bold ph-book-bookmark"></i>
-					</span>
-					{%- for category in page.taxonomies.categories %}
-						<a href="{{ get_taxonomy_url(kind='categories', name=category) }}">{{ category }}</a>
-					{%- endfor -%}
-				</div>
-			{%- endif %}
-
-			{%- if page.taxonomies.tags -%}
-				<div class="details-tags">
-					<span title="Tags">
-						<i class="ph-bold ph-tag"></i>
-					</span>
-					<ul class="tags">
-						{%- for tag in page.taxonomies.tags %}
-							<li><a class="tag" href="{{ get_taxonomy_url(kind='tags', name=tag) }}">{{ tag }}</a></li>
-						{%- endfor -%}
-					</ul>
-				</div>
-			{%- endif %}
-		</div>
-	</div>
+				{%- endif -%}
+			</small>
+		</p>
+	{%- endif -%}
 
 	{%- include "partials/statements.html" -%}
 
@@ -113,3 +67,53 @@
 	<a href="https://shareopenly.org/share/?url={{ page.permalink }}&text={{ page.description | urlencode }}" rel="{{ rel_attributes }}" title="Share"><i class="ph-bold ph-share-fat"></i></a>
 {%- endif -%}
 {% endblock actions %}
+
+{% block details %}
+<div class="details">
+	<div class="category">
+		<strong class="title">Details</strong>
+		<div class="line"></div>
+	</div>
+	{%- if page.authors -%}
+		<div class="details-authors">
+			<span title="Authors">
+				<i class="ph-bold ph-users"></i>
+			</span>
+			<span>{% include "partials/authors.html" %}</span>
+		</div>
+	{%- endif -%}
+
+	{%- if config.extra.show_reading_time -%}
+		<div class="details-time">
+			<span title="Read Time">
+				<i class="ph-bold ph-clock-countdown"></i>
+			</span>
+			<span>{{ page.reading_time }} minute{{ page.reading_time | pluralize -}}</span>
+		</div>
+	{%- endif -%}
+
+	{%- if page.taxonomies.categories -%}
+		<div class="details-category">
+			<span title="Category">
+				<i class="ph-bold ph-book-bookmark"></i>
+			</span>
+			{%- for category in page.taxonomies.categories %}
+				<a href="{{ get_taxonomy_url(kind='categories', name=category) }}">{{ category }}</a>
+			{%- endfor -%}
+		</div>
+	{%- endif %}
+
+	{%- if page.taxonomies.tags -%}
+		<div class="details-tags">
+			<span title="Tags">
+				<i class="ph-bold ph-tag"></i>
+			</span>
+			<ul class="tags">
+				{%- for tag in page.taxonomies.tags %}
+					<li><a class="tag" href="{{ get_taxonomy_url(kind='tags', name=tag) }}">{{ tag }}</a></li>
+				{%- endfor -%}
+			</ul>
+		</div>
+	{%- endif %}
+</div>
+{% endblock details %}

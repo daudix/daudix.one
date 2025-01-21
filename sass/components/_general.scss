@@ -11,11 +11,11 @@
 body {
 	display: grid;
 	grid-template-rows: auto 1fr auto;
-	grid-template-columns: clamp(14rem, 20vw, calc(var(--container-width) / 2)) 1fr;
+	grid-template-columns: auto 1fr auto;
 	grid-template-areas:
-		"sidebar header"
-		"sidebar main"
-		"sidebar footer";
+		"navbar header sidebar"
+		"navbar main   sidebar"
+		"navbar footer sidebar";
 	margin: 0;
 	background-color: var(--bg-color);
 	min-height: 100dvh;
@@ -25,9 +25,14 @@ body {
 	text-wrap: pretty;
 	overflow-wrap: break-word;
 
+	@media only screen and (max-width: 1280px) {
+		grid-template-columns: auto 1fr 0;
+	}
+
 	@media only screen and (max-width: 720px) {
 		grid-template-columns: 1fr;
 		grid-template-areas:
+			"navbar"
 			"sidebar"
 			"header"
 			"main"
@@ -44,8 +49,6 @@ body {
 // Make focused anchor not get covered by nav,
 // and flash it with accent color when jumping to it
 :target:not(#main-content) {
-	transition-duration: var(--transition);
-	transition-property: text-shadow, font-weight;
 	scroll-margin-block-start: 15vh;
 	font-weight: var(--font-weight-light);
 	text-shadow: var(--text-shadow-glow);
@@ -74,7 +77,7 @@ body {
 	}
 }
 
-main {
+main:not(#comments-wrapper main) {
 	grid-area: main;
 	padding: 2rem 0 4rem;
 	min-width: 0;

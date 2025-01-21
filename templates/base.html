@@ -7,13 +7,13 @@
 <body>
 {% block body %}
 	<a id="skip-to-content" href="#main-content" tabindex="0">Skip to Main Content</a>
-	{% include "partials/sidebar.html" %}
+	{% include "partials/navbar.html" %}
 	<header id="site-header">
 		<div id="site-header-title">
-			<input class="visually-hidden" id="toggle-sidebar" type="checkbox" name="toggle-sidebar" autocomplete="off" />
-			<label for="toggle-sidebar" title="Toggle Sidebar">
-				<i class="ph-bold ph-list"></i>
-				<i class="ph-bold ph-x"></i>
+			<input class="visually-hidden" id="toggle-navbar" type="checkbox" name="toggle-navbar" autocomplete="off" />
+			<label for="toggle-navbar" title="Toggle Navigation Sidebar">
+				<i class="ph-bold ph-compass"></i>
+				<i class="ph-bold ph-x-circle"></i>
 			</label>
 			<a class="go-to-top" href="#top">
 				{%- if current_path and current_path == "/" -%}
@@ -37,69 +37,13 @@
 				{{- suffix -}}
 			</a>
 		</div>
-
 		<div id="site-header-buttons">
-			{% block actions %}{% endblock post_actions %}
-
-			{%- if page.backlinks -%}
-				{%- set backlinks = page.backlinks -%}
-			{%- elif section.backlinks -%}
-				{%- set backlinks = section.backlinks -%}
-			{%- endif -%}
-			{%- if backlinks and backlinks | length > 0 -%}
-				<details class="backlinks closable">
-					<summary title="Backlinks"><i class="ph-bold ph-arrow-u-down-left"></i></summary>
-					<div>
-						<strong class="title">Backlinks</strong>
-						<div>
-							<ul>
-								{%- for backlink in backlinks -%}
-									<li>
-										<a href="{{ backlink.permalink }}">{{ backlink.title }}</a>
-									</li>
-								{%- endfor -%}
-							</ul>
-						</div>
-					</div>
-				</details>
-			{%- endif -%}
-
-			{%- if page.toc -%}
-				{%- set toc = page.toc -%}
-			{%- elif section.toc -%}
-				{%- set toc = section.toc -%}
-			{%- endif -%}
-			{%- if toc and toc | length > 0 -%}
-				<details class="toc closable">
-					<summary title="Table of Contents"><i class="ph-bold ph-list-bullets"></i></summary>
-					<div>
-						<strong class="title">Table of Contents</strong>
-						<div>
-							<ul>
-								{%- for h1 in toc -%}
-									<li>
-										<a href="{{ h1.permalink | safe }}">{{ h1.title }}</a>
-										{%- if h1.children -%}
-											<ul>
-												{%- for h2 in h1.children -%}
-													<li>
-														<a href="{{ h2.permalink | safe }}">{{ h2.title }}</a>
-													</li>
-												{%- endfor -%}
-											</ul>
-										{%- endif -%}
-									</li>
-								{%- endfor -%}
-								{%- if page.extra.comments.id -%}
-									<li>
-										<a href="{{ current_url ~ '#comments' }}">Comments</a>
-									</li>
-								{%- endif -%}
-							</ul>
-						</div>
-					</div>
-				</details>
-			{%- endif -%}
+			{% block actions %}{% endblock actions %}
+			<input class="visually-hidden" id="toggle-sidebar" type="checkbox" name="toggle-sidebar" autocomplete="off" />
+			<label for="toggle-sidebar" title="Toggle Sidebar">
+				<i class="ph-bold ph-list-bullets"></i>
+				<i class="ph-bold ph-x"></i>
+			</label>
 		</div>
 	</header>
 	<main id="main-content">
@@ -120,6 +64,69 @@
 			{% block content %}{% endblock content %}
 		</div>
 	</main>
+	<div id="site-sidebar">
+		{% block details %}{% endblock details %}
+
+		{%- if page.toc -%}
+			{%- set toc = page.toc -%}
+		{%- elif section.toc -%}
+			{%- set toc = section.toc -%}
+		{%- endif -%}
+		{%- if toc and toc | length > 0 -%}
+			<div>
+				<div class="category">
+					<strong class="title">Table of Contents</strong>
+					<div class="line"></div>
+				</div>
+				<div class="overshoot">
+					<ul>
+						{%- for h1 in toc -%}
+							<li>
+								<a href="{{ h1.permalink | safe }}">{{ h1.title }}</a>
+								{%- if h1.children -%}
+									<ul>
+										{%- for h2 in h1.children -%}
+											<li>
+												<a href="{{ h2.permalink | safe }}">{{ h2.title }}</a>
+											</li>
+										{%- endfor -%}
+									</ul>
+								{%- endif -%}
+							</li>
+						{%- endfor -%}
+						{%- if page.extra.comments.id -%}
+							<li>
+								<a href="{{ current_url ~ '#comments' }}">Comments</a>
+							</li>
+						{%- endif -%}
+					</ul>
+				</div>
+			</div>
+		{%- endif -%}
+
+		{%- if page.backlinks -%}
+			{%- set backlinks = page.backlinks -%}
+		{%- elif section.backlinks -%}
+			{%- set backlinks = section.backlinks -%}
+		{%- endif -%}
+		{%- if backlinks and backlinks | length > 0 -%}
+			<div>
+				<div class="category">
+					<strong class="title">Backlinks</strong>
+					<div class="line"></div>
+				</div>
+				<div class="overshoot">
+					<ul>
+						{%- for backlink in backlinks -%}
+							<li>
+								<a href="{{ backlink.permalink }}">{{ backlink.title }}</a>
+							</li>
+						{%- endfor -%}
+					</ul>
+				</div>
+			</div>
+		{%- endif -%}
+	</div>	
 	{% include "partials/footer.html" %}
 {% endblock body %}
 </body>

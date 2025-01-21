@@ -21,6 +21,7 @@ main:has(#banner) {
 	border-radius: var(--rounded-corner) var(--rounded-corner) 0 0;
 	padding-block-start: 4rem;
 	height: min(calc((var(--container-width) / 2) + 4rem), calc(50cqw - 4rem));
+	pointer-events: none;
 
 	@media only screen and (max-width: 720px) {
 		height: min(calc((var(--container-width) / 2) + 4rem), calc(50cqw + 3rem));
@@ -67,68 +68,6 @@ main:has(#banner) {
 
 		@media only screen and (max-width: 720px) {
 			margin-block-start: min(calc(var(--container-width) / 2), calc(50cqw - 1rem));
-		}
-	}
-}
-
-#heading {
-	margin: 2rem 0 4rem;
-	text-align: center;
-
-	h1 {
-		margin: 0;
-		color: var(--fg-muted-2);
-	}
-
-	.details {
-		display: flex;
-		justify-content: center;
-		gap: 0.5rem;
-		margin-block-start: 2rem;
-
-		@media only screen and (max-width: 720px) {
-			flex-direction: column;
-			gap: 0.25rem;
-		}
-
-		& > div {
-			display: inline-flex;
-			align-items: center;
-			gap: 0.5rem;
-			color: var(--fg-muted-2);
-			font-size: var(--font-size-small);
-		}
-
-		& > div > span:first-of-type {
-			display: inline-flex;
-			box-shadow: var(--edge-highlight);
-			border-radius: var(--rounded-corner-small);
-			background-color: var(--bg-muted-1);
-			padding: 0.5rem;
-			color: var(--accent-color);
-		}
-
-		.ph-bold {
-			font-size: 16px;
-		}
-
-		&-category {
-			a {
-				color: inherit;
-				font-weight: inherit;
-				text-decoration-color: transparent;
-
-				&:hover {
-					text-decoration-style: solid;
-					text-decoration-color: inherit;
-				}
-			}
-		}
-
-		&-tags {
-			.tags {
-				margin: 0;
-			}
 		}
 	}
 }

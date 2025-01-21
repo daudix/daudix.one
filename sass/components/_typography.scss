@@ -7,6 +7,8 @@ h3,
 h4,
 h5,
 h6 {
+	transition-duration: var(--transition);
+	transition-property: text-shadow, font-weight;
 	margin: 2rem 0 1rem;
 	color: var(--accent-color);
 	font-weight: var(--font-weight-bold);
@@ -59,9 +61,9 @@ figcaption {
 
 blockquote {
 	margin: 0;
+	border-inline-start: 0.25rem solid var(--accent-color);
 	border-start-start-radius: 0.25rem;
 	border-end-start-radius: 0.25rem;
-	border-inline-start: 0.25rem solid var(--accent-color);
 	padding-inline-start: 0.75rem;
 	color: var(--fg-muted-2);
 }
