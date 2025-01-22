@@ -6,6 +6,7 @@ video {
 	border-radius: var(--rounded-corner);
 	background-color: var(--bg-muted-1);
 	max-width: 100%;
+	max-height: calc(100dvh - 5.5rem);
 
 	&.full,
 	&[src*="#full"] {

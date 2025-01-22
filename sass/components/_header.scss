@@ -32,7 +32,7 @@ body:has(#site-sidebar:empty) #toggle-sidebar + label {
 		display: flex;
 		flex: 1;
 
-		.go-to-top {
+		.back-to-top {
 			flex: 1;
 			margin-inline-start: 0.5rem;
 			width: 0;
