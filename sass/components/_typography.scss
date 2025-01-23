@@ -1,3 +1,4 @@
+@use "functions" as *;
 @import "placeholders";
 
 // HEADINGS
@@ -50,7 +51,7 @@ abbr[title] {
 	cursor: help;
 	text-decoration: underline;
 	text-decoration-style: dotted;
-	text-decoration-thickness: max(1px, 0.0625em);
+	text-decoration-thickness: rpx(1);
 }
 
 figcaption {
@@ -87,14 +88,14 @@ del {
 	background-color: var(--red-bg-1);
 	color: var(--red-fg);
 	text-decoration: line-through;
-	text-decoration-thickness: max(1px, 0.0625em);
+	text-decoration-thickness: rpx(1);
 }
 
 ins {
 	background-color: var(--green-bg-1);
 	color: var(--green-fg);
 	text-decoration: underline;
-	text-decoration-thickness: max(1px, 0.0625em);
+	text-decoration-thickness: rpx(1);
 }
 
 samp {
@@ -113,7 +114,7 @@ u {
 	text-decoration: underline;
 	text-decoration-style: wavy;
 	text-decoration-color: var(--red-fg);
-	text-decoration-thickness: max(1px, 0.0625em);
+	text-decoration-thickness: rpx(1);
 }
 
 progress {
@@ -165,7 +166,7 @@ kbd {
 	// Small nice thingy, keys can be pressed!
 	&:active {
 		transform: translateY(0.125rem);
-		box-shadow: inset 0 1px 0 var(--bg-muted-2);
+		box-shadow: inset 0 rpx(1) 0 var(--bg-muted-2);
 		background-color: var(--bg-muted-2);
 	}
 }
@@ -173,7 +174,7 @@ kbd {
 a {
 	color: var(--accent-color);
 	font-weight: var(--font-weight-semi-bold);
-	text-decoration-thickness: max(1px, 0.0625em);
+	text-decoration-thickness: rpx(1);
 
 	&:hover {
 		text-decoration-style: wavy;

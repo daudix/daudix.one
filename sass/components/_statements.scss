@@ -1,3 +1,5 @@
+@use "functions" as *;
+
 .statement-container {
 	margin: 1rem 0;
 	box-shadow: var(--edge-highlight), var(--shadow);
@@ -25,7 +27,7 @@
 		font-weight: var(--font-weight-semi-bold);
 
 		.ph-bold {
-			vertical-align: -1px;
+			vertical-align: rpx(-1);
 			margin-inline-end: 0.25rem;
 		}
 	}

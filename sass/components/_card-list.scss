@@ -1,3 +1,4 @@
+@use "functions" as *;
 @import "placeholders";
 
 .card-list {
@@ -241,7 +242,7 @@
 			}
 
 			.ph-bold {
-				font-size: 16px;
+				font-size: 1rem;
 			}
 		}
 
@@ -250,7 +251,7 @@
 			align-items: center;
 			gap: 0.5rem;
 			margin-block-start: 0.5rem;
-			border-block-start: 1px solid var(--bg-muted-2);
+			border-block-start: rpx(1) solid var(--bg-muted-2);
 			padding-block-start: 0.5rem;
 
 			& > span {
@@ -288,7 +289,7 @@
 			}
 
 			.ph-bold {
-				font-size: 20px;
+				font-size: 1.25rem;
 			}
 		}
 	}

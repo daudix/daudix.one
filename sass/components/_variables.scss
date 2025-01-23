@@ -1,3 +1,5 @@
+@use "functions" as *;
+
 @mixin theme-variables {
 	:root {
 		@content ("light");
@@ -94,7 +96,7 @@
 		--contrast-color: oklch(from var(--accent-color) var(--l) 0 h / var(--a));
 
 		// CONTAINERS
-		--container-width: 720px;
+		--container-width: #{rpx(720)};
 
 		// CORNERS
 		--rounded-corner: 0.75rem;
@@ -140,21 +142,21 @@
 		--disabled-opacity: 0.6;
 
 		// SHADOWS
-		--edge-highlight: inset 0 1px 0 rgb(255 255 255 / var(--color-opacity-1));
+		--edge-highlight: inset 0 #{rpx(1)} 0 rgb(255 255 255 / var(--color-opacity-1));
 		--shadow:
-			0 0 0 1px rgb(0 0 0 / 0.03),
-			0 1px 3px 1px rgb(0 0 0 / 0.07),
-			0 2px 6px 2px rgb(0 0 0 / 0.03);
+			0 0 0 #{rpx(1)} rgb(0 0 0 / 0.03),
+			0 #{rpx(1)} #{rpx(3)} #{rpx(1)} rgb(0 0 0 / 0.07),
+			0 #{rpx(2)} #{rpx(6)} #{rpx(2)} rgb(0 0 0 / 0.03);
 		--shadow-raised:
-			0 0 0 1px rgb(0 0 0 / 0.06),
-			0 2px 6px 2px rgb(0 0 0 / 0.14),
-			0 4px 12px 4px rgb(0 0 0 / 0.06);
-		--shadow-glass: 0 12px 24px -16px rgb(0 0 0 / 0.4);
+			0 0 0 #{rpx(1)} rgb(0 0 0 / 0.06),
+			0 #{rpx(2)} #{rpx(6)} #{rpx(2)} rgb(0 0 0 / 0.14),
+			0 #{rpx(4)} #{rpx(12)} #{rpx(4)} rgb(0 0 0 / 0.06);
+		--shadow-glass: 0 #{rpx(12)} #{rpx(24)} #{rpx(-16)} rgb(0 0 0 / 0.4);
 		--shadow-glow:
-			0 0 0 1px var(--bg-muted-1),
-			0 2px 6px 2px var(--bg-muted-1),
-			0 4px 24px 4px var(--bg-muted-2);
-		--text-shadow-glow: var(--bg-muted-2) 0 0 4px, var(--accent-color) 0 0 12px;
+			0 0 0 #{rpx(1)} var(--bg-muted-1),
+			0 #{rpx(2)} #{rpx(6)} #{rpx(2)} var(--bg-muted-1),
+			0 #{rpx(4)} #{rpx(24)} #{rpx(4)} var(--bg-muted-2);
+		--text-shadow-glow: var(--bg-muted-2) 0 0 #{rpx(4)}, var(--accent-color) 0 0 #{rpx(12)};
 
 		// STATES
 		--hover: scale(1.1);

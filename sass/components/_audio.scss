@@ -1,3 +1,4 @@
+@use "functions" as *;
 @import "placeholders";
 
 // Who doesn't like a party popper mid article?
@@ -42,11 +43,11 @@
 
 	&::after {
 		@extend %ph-bold;
-		vertical-align: -1px;
+		vertical-align: rpx(-1);
 		opacity: var(--dim-opacity);
 		transition: var(--transition);
 		margin-inline-start: 0.25rem;
 		content: "\e44a";
-		font-size: 16px;
+		font-size: 1rem;
 	}
 }

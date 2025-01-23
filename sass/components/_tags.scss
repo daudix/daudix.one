@@ -1,3 +1,5 @@
+@use "functions" as *;
+
 .tags {
 	display: flex;
 	flex-wrap: wrap;
@@ -15,9 +17,9 @@
 	a {
 		transition: all var(--transition), transform var(--transition-bezier);
 		box-shadow: var(--edge-highlight);
-		border-radius: 13px;
+		border-radius: rpx(13);
 		background-color: var(--bg-muted-1);
-		padding: 1px 0.75rem;
+		padding: rpx(1) 0.75rem;
 		color: var(--fg-muted-1);
 		font-size: var(--font-size-small);
 		text-decoration: none;
@@ -44,7 +46,7 @@
 
 		.tag {
 			display: inline-block;
-			padding: 1px 0.5rem 1px 0.75rem;
+			padding: rpx(1) 0.5rem rpx(1) 0.75rem;
 		}
 
 		.count {
@@ -52,7 +54,7 @@
 			transition: var(--transition);
 			border-radius: 0 999px 999px 0;
 			background-color: var(--bg-muted-1);
-			padding: 1px 0.625rem 1px 0.5rem;
+			padding: rpx(1) 0.625rem rpx(1) 0.5rem;
 			font-variant-numeric: tabular-nums;
 		}
 	}

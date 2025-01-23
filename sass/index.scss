@@ -41,6 +41,11 @@ main {
 			gap: 0.5rem;
 			text-align: center;
 
+			img {
+				width: 4rem;
+				height: 4rem;
+			}
+
 			span {
 				font-size: var(--font-size-xx-small);
 			}
@@ -53,10 +58,10 @@ main {
 		transition: var(--transition-bezier-longer);
 		border-block-start: 0.125rem solid white;
 		border-block-end: 0.125rem solid white;
-		width: 280px;
-		height: calc(48px + 0.75rem);
+		width: 17.5rem;
+		height: 3.75rem;
 		font-weight: var(--font-weight-black);
-		font-size: 48px;
+		font-size: 3rem;
 		letter-spacing: -0.05em;
 		text-decoration: underline solid;
 		text-decoration-color: transparent;
@@ -119,7 +124,12 @@ main {
 	#bottom {
 		display: flex;
 		justify-content: space-between;
-		width: 280px;
+		width: 17.5rem;
+
+		#warning {
+			width: 8.5rem;
+			height: 4rem;
+		}
 
 		strong {
 			font-size: var(--font-size-small);
@@ -137,6 +147,8 @@ main {
 		position: absolute;
 		inset-block-end: 1rem;
 		inset-inline-start: 1rem;
+		width: 9.5625rem;
+		height: 1.625rem;
 	}
 
 	#rainbow {

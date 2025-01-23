@@ -1,3 +1,5 @@
+@use "../components/functions" as *;
+
 #clock {
 	animation: clock-blink 1s infinite;
 	box-shadow: var(--edge-highlight);
@@ -116,7 +118,7 @@
 			box-shadow: var(--edge-highlight);
 			border-radius: 999px;
 			background-color: var(--bg-muted-1);
-			padding: 1px 0.75rem;
+			padding: rpx(1) 0.75rem;
 			color: var(--fg-muted-1);
 			font-weight: var(--font-weight-semi-bold);
 			font-size: var(--font-size-small);

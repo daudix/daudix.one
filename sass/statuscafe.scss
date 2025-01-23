@@ -1,3 +1,4 @@
+@use "components/functions" as *;
 @import "components/variables";
 
 @include theme-variables using ($theme) {
@@ -59,7 +60,7 @@ h6 {
 a {
 	color: var(--accent-color);
 	font-weight: var(--font-weight-semi-bold);
-	text-decoration-thickness: max(1px, 0.0625em);
+	text-decoration-thickness: rpx(1);
 
 	&:hover {
 		text-decoration-style: wavy;

@@ -1,3 +1,5 @@
+@use "functions" as *;
+
 #nanolog-higher,
 #nanolog-lower {
 	display: block;
@@ -42,7 +44,7 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		border-block-end: 1px solid var(--bg-muted-2);
+		border-block-end: rpx(1) solid var(--bg-muted-2);
 		padding-block-end: 1rem;
 
 		& > p {

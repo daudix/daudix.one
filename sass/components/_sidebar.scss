@@ -1,3 +1,5 @@
+@use "functions" as *;
+
 @media only screen and (max-width: 720px) {
 	body:has(#toggle-navbar:checked) #site-navbar {
 		-webkit-backdrop-filter: var(--blur);
@@ -46,7 +48,7 @@ body:has(#toggle-sidebar:checked) #site-sidebar {
 		.line {
 			flex: 1;
 			background-color: var(--bg-muted-2);
-			height: 1px;
+			height: rpx(1);
 		}
 	}
 }
@@ -72,7 +74,7 @@ body:has(#toggle-sidebar:checked) #site-sidebar {
 		position: relative;
 		flex-direction: column;
 		margin-block-end: 2rem;
-		max-height: calc(50vh - 2.5rem);
+		max-height: calc(50dvh - 2.5rem);
 
 		&:has(#search-bar:not(:placeholder-shown)) .ph-bold {
 			transform: translateX(0.5rem);
@@ -134,7 +136,7 @@ body:has(#toggle-sidebar:checked) #site-sidebar {
 
 				span {
 					margin-block-start: 0.25rem;
-					border-block-start: 1px solid var(--bg-muted-2);
+					border-block-start: rpx(1) solid var(--bg-muted-2);
 					padding-block-start: 0.25rem;
 					color: var(--fg-muted-2);
 
@@ -196,7 +198,7 @@ body:has(#toggle-sidebar:checked) #site-sidebar {
 					.ph-bold {
 						vertical-align: text-top;
 						margin-inline-end: 0.5rem;
-						font-size: 20px;
+						font-size: 1.25rem;
 					}
 				}
 			}
@@ -275,7 +277,7 @@ body:has(#toggle-sidebar:checked) #site-sidebar {
 		}
 
 		.ph-bold {
-			font-size: 16px;
+			font-size: 1rem;
 		}
 
 		&-category {
@@ -296,7 +298,7 @@ body:has(#toggle-sidebar:checked) #site-sidebar {
 
 			.tags {
 				margin-inline-end: 0;
-				margin-block-start: 3px;
+				margin-block-start: 0.1875rem;
 				padding-inline-start: 0;
 			}
 		}

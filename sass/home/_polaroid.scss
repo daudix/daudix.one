@@ -1,3 +1,5 @@
+@use "../components/functions" as *;
+
 // It's not an accurate polaroid please don't kill me
 #polaroid {
 	display: block;
@@ -31,8 +33,8 @@
 		inset-inline-start: calc(50% - 0.7813rem);
 		background-image: url("thumbtack.png");
 		background-size: cover;
-		width: 1.5625rem; // 25px
-		height: 1.1875rem; // 19px
+		width: rpx(25);
+		height: rpx(19);
 		pointer-events: none;
 		content: "";
 	}

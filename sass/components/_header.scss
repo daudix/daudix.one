@@ -1,3 +1,5 @@
+@use "functions" as *;
+
 body:has(#site-sidebar:empty) #toggle-sidebar + label {
 	display: none;
 }
@@ -111,7 +113,7 @@ body:has(#site-sidebar:empty) #toggle-sidebar + label {
 			max-height: 50cqh;
 	
 			strong.title {
-				border-block-end: var(--bg-muted-2) 1px solid;
+				border-block-end: var(--bg-muted-2) rpx(1) solid;
 				padding-block-end: 0.5rem;
 			}
 	
@@ -229,7 +231,7 @@ body:has(#site-sidebar:empty) #toggle-sidebar + label {
 	// 		}
 
 	// 		.ph-eye {
-	// 			transform: translateY(-1px) rotateX(90deg);
+	// 			transform: translateY(rpx(-1)) rotateX(90deg);
 	// 			opacity: 0;
 	// 		}
 	// 	}
@@ -240,7 +242,7 @@ body:has(#site-sidebar:empty) #toggle-sidebar + label {
 	// 		.ph-eye-closed {
 	// 			position: absolute;
 	// 			transform: rotateX(-180deg);
-	// 			transform-origin: 50% 6px;
+	// 			transform-origin: 50% rpx(6);
 	// 			opacity: 0;
 	// 			inset: 0.5rem;
 	// 		}

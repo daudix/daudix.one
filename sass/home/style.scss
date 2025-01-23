@@ -1,3 +1,4 @@
+@use "../components/functions" as *;
 @use "badges";
 @use "header";
 @use "polaroid";
@@ -45,7 +46,7 @@
 		margin-inline-end: 1rem;
 		box-shadow: var(--edge-highlight), var(--shadow);
 		border-radius: var(--rounded-corner);
-		background-image: radial-gradient(circle, var(--bg-muted-1) 1px, transparent 1px);
+		background-image: radial-gradient(circle, var(--bg-muted-1) rpx(1), transparent rpx(1));
 		background-size: 1rem 1rem;
 		background-color: var(--bg-muted-1);
 		padding: 1rem;

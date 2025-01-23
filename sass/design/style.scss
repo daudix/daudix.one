@@ -1,3 +1,5 @@
+@use "../components/functions" as *;
+
 main {
 	margin: 0 0.5rem 0.5rem;
 	box-shadow: var(--edge-highlight), var(--shadow);
@@ -14,7 +16,7 @@ main {
 
 h1 {
 	-webkit-background-clip: text;
-	filter: drop-shadow(max(1px, 0.0625em) max(1px, 0.0625em) rgb(0 0 0 / 0.6));
+	filter: drop-shadow(rpx(1) rpx(1) rgb(0 0 0 / 0.6));
 	background-image: linear-gradient(
 		to bottom,
 		#cfc09f 27%,
@@ -100,8 +102,8 @@ section {
 	border-start-start-radius: var(--rounded-corner);
 	background-image: radial-gradient(
 		circle,
-		var(--bg-muted-1) 1px,
-		transparent 1px
+		var(--bg-muted-1) rpx(1),
+		transparent rpx(1)
 	);
 	background-size: 1rem 1rem;
 	padding: 1rem;

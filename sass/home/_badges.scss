@@ -74,20 +74,12 @@
 		#here {
 			transform: scale(0.5) rotate(-90deg);
 			opacity: 0;
-
-			@media only screen and (max-width: 1074px) {
-				transform: scale(0.5) rotate(-90deg);
-			}
 		}
 	}
 
 	&:has(#badges-popup[open]) #here {
 		transform: scale(0.5) rotate(-90deg);
 		opacity: 0;
-
-		@media only screen and (max-width: 1074px) {
-			transform: scale(0.5) rotate(-90deg);
-		}
 	}
 
 	& > p {
