@@ -17,7 +17,7 @@
 	width: 10rem;
 	overflow: hidden;
 
-	@media only screen and (max-width: 937px) {
+	@media only screen and (max-width: 944px) {
 		float: none;
 		margin: 2rem auto 0;
 	}
@@ -100,6 +100,8 @@
 
 		img {
 			margin: 0;
+			width: rpx(144);
+			height: rpx(144);
 
 			&:last-child {
 				position: absolute;
