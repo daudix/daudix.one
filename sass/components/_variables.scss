@@ -46,6 +46,9 @@
 		--purple-fg-muted-2: color-mix(in srgb, var(--purple-fg) 15%, rgb(255 255 255 / 0.6));
 		--shade-color: rgb(0 0 0 / 0.25);
 
+		// SHADOWS
+		--edge-highlight: inset 0 #{rpx(1)} 0 rgb(255 255 255 / var(--color-opacity-1));
+
 		color-scheme: dark;
 	}
 
@@ -142,7 +145,7 @@
 		--disabled-opacity: 0.6;
 
 		// SHADOWS
-		--edge-highlight: inset 0 #{rpx(1)} 0 rgb(255 255 255 / var(--color-opacity-1));
+		--edge-highlight: inset 0 #{rpx(-1)} 0 rgb(0 0 0 / var(--color-opacity-1));
 		--shadow:
 			0 0 0 #{rpx(1)} rgb(0 0 0 / 0.03),
 			0 #{rpx(1)} #{rpx(3)} #{rpx(1)} rgb(0 0 0 / 0.07),
