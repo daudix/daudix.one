@@ -19,7 +19,9 @@ Many members are polyglots, but not all. The use of foreign languages also makes
 Doing so will count as breaking the rule by yourself.
 8. **Don't Spam and Don't Mention Users without Need**  
 Even if the spam is unintentional, automated moderation can think it is.
-9. **Don't Try to Find Loopholes in the Rules**  
+9. **No admining inside**
+Please don't ask admins or other members of the server to admin you inside.
+10. **Don't Try to Find Loopholes in the Rules**  
 Want to speedrun getting banned? Just ask `@Moderator` to do so.
 
 <details>
