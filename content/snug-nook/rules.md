@@ -15,13 +15,15 @@ Seriously, we have enough of that already. There is a difference between venting
 As per [Discord's TOS](https://discord.com/terms/#2), this server can be viewed by anyone as young as 13.
 6. **Keep Conversations in English**  
 Many members are polyglots, but not all. The use of foreign languages also makes moderation more difficult. However, if the conversation is mainly in English and a member, for example, asks for the meaning of a particular foreign word, that's fine.
-7. **Limit Unnecessary Use of Profanity**  
-You know what that means; pointless swearing out of habit.
-8. **Don't Encourage Others in Breaking the Rules**  
+7. **Keep Profanity to a Minimum**  
+Swearing is okay, as long as you don't do it excessively.
+8. **Include Latin Characters in your Name**  
+Please at least have letters from the English alphabet instead of having your name fully in Egyptian Hieroglyphics. It would be annoying for screen reader users and generally is annoying. 
+9. **Don't Encourage Others in Breaking the Rules**  
 Doing so will count as breaking the rule by yourself.
-9. **Don't Spam and Don't Mention Users without Need**  
+10. **Don't Spam and Don't Mention Users without Need**  
 Even if the spam is unintentional, automated moderation can think it is.
-10. **Don't Try to Find Loopholes in the Rules**  
+11. **Don't Try to Find Loopholes in the Rules**  
 Want to speedrun getting banned? Just ask `@Moderator` to do so.
 
 <details>
