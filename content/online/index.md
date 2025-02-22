@@ -55,19 +55,19 @@ Feel free to reach me out on any of these! Although I'm usually too shy to start
 </div>
 </a>
 
+<a href="xmpp:daudix@disroot.org">
+<img class="transparent no-hover pixels drop-shadow icon" src="icons/xmpp.gif" alt="Pixel art XMPP icon." />
+<div class="details">
+<strong>XMPP</strong>
+<p>Does anyone use it? Everyone's on Matrix.</p>
+</div>
+</a>
+
 <a href="mailto:me@daudix.one">
 <img class="transparent no-hover pixels drop-shadow icon" src="icons/email.gif" alt="Pixel art Email icon." />
 <div class="details">
 <strong>Email</strong>
 <p>Email anxiety makes it less appealing.</p>
-</div>
-</a>
-
-<a href="xmpp:daudix@nixnet.services">
-<img class="transparent no-hover pixels drop-shadow icon" src="icons/xmpp.gif" alt="Pixel art XMPP icon." />
-<div class="details">
-<strong>XMPP</strong>
-<p>Does anyone use it? Everyone's on Matrix.</p>
 </div>
 </a>
 
