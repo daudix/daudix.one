@@ -39,7 +39,7 @@ badges = [
   </p>
 </noscript>
 
-<div id="header">
+<div class="container-fill">
 <div>
 
 {{ polaroid() }}

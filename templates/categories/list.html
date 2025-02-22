@@ -1,6 +1,8 @@
 {% extends "base.html" %}
 
 {% block content %}
+{%- set categories = config.extra.categories | default(value=[]) -%}
+
 <h1>Categories</h1>
 
 <p>
@@ -9,22 +11,16 @@
 
 <div class="card-list categories">
 	{%- for category in terms -%}
-		<article class="{{ category.slug }}">
+		{%- set matched_category = categories | filter(attribute="name", value=category.name) | first -%}
+		{%- set category_description = matched_category.description | default(value="There's no info on this category. Boo-womp.") -%}
+
+		<article {% if matched_category.color %}class="{{ matched_category.color }}"{% endif %}>
 			<div>
 				<a href="{{ get_taxonomy_url(kind='categories', name=category.name) }}">
 					<h3>{{ category.name }}</h3>
 				</a>
 				<div class="description">
-					{%- if category.slug == "archived" -%}
-						{%- set category_description = "Posts that have been archived due to their age." -%}
-					{%- elif category.slug == "featured" -%}
-						{%- set category_description = "Posts that are somewhat decently written." -%}
-					{%- elif category.slug == "hot" -%}
-						{%- set category_description = "Posts that did numbers compared to others." -%}
-					{%- else -%}
-						{%- set category_description = "There's no info on this category. Boo-womp." -%}
-					{%- endif -%}
-					{{ category_description | markdown | safe }}
+					{{- category_description | markdown | safe -}}
 				</div>
 				<div class="details">
 					<div class="details-count">
@@ -38,6 +34,10 @@
 			<a class="open-post" href="{{ get_taxonomy_url(kind='categories', name=category.name) }}">
 				<i class="ph-bold ph-caret-right"></i>
 			</a>
+
+			{%- if matched_category.icon -%}
+				<i class="category-icon ph-bold ph-{{ matched_category.icon }}"></i>
+			{%- endif -%}
 		</article>
 	{%- endfor -%}
 </div>

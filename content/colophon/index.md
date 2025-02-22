@@ -13,7 +13,6 @@ This is the least fun page on this website. Deal with it.
 <strong class="title">To-do</strong>
 <div class="overshoot">
 
-- [ ] Focus mode; it it sidebar collapses, everything centers, and overall becomes slightly more boring
 - [ ] Redesign Snug Nook page
 - [ ] Display post faves, boosts, and reactions
 - [ ] Return some bare-bones CSP
@@ -27,7 +26,7 @@ This is the least fun page on this website. Deal with it.
 - [ ] Style piclog.blue page
 - [ ] /uses page (?)
 - [ ] New ARG/Easter Egg type of thingy (?) (inspirations: Portal "dinosaur" ARG, SSTV)
-- ~~[x] Display "Website Source" link somewhere~~
+- [ ] Display "Website Source" link somewhere
 - [x] Redesign navbar one more time (full-width bar, perhaps with my logo in it)
 - [x] Replace burger menu with navigation sidebar
 - [x] Introduce categories as a replacement to post types

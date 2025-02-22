@@ -29,7 +29,6 @@ body:has(#toggle-sidebar:checked) #site-sidebar {
 	margin: 0.5rem;
 	inset-block-start: 0.5rem;
 	width: clamp(14rem, 20vw, calc(var(--container-width) / 2));
-	height: calc(100dvh - 1rem);
 
 	.category {
 		display: flex;
@@ -60,6 +59,7 @@ body:has(#toggle-sidebar:checked) #site-sidebar {
 	border-radius: var(--rounded-corner);
 	background-color: var(--glass-bg-1);
 	padding: 1rem;
+	height: calc(100dvh - 1rem);
 
 	@media only screen and (max-width: 720px) {
 		position: fixed;
@@ -211,13 +211,12 @@ body:has(#toggle-sidebar:checked) #site-sidebar {
 	position: fixed;
 	grid-area: sidebar;
 	flex-direction: column;
-	// justify-content: center;
 	gap: 0.5rem;
 	transform: translateX(calc(100% + 0.5rem));
 	margin-inline-start: 0;
 	inset-block-start: calc(2.5rem + 0.5rem);
 	inset-inline-end: 0;
-	height: calc(100dvh - (2.5rem + 1.5rem));
+	max-height: calc(100dvh - (2.5rem + 1.5rem));
 
 	&:empty {
 		display: none;

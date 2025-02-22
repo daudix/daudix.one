@@ -1,17 +1,12 @@
 {% extends "base.html" %}
 
 {% block content %}
+{%- set categories = config.extra.categories | default(value=[]) -%}
+
 <h1>{{ term.name }} Posts</h1>
 
-{%- if term.slug == "archived" -%}
-	{%- set category_description = "Posts that have been archived due to their age." -%}
-{%- elif term.slug == "featured" -%}
-	{%- set category_description = "Posts that are somewhat decently written." -%}
-{%- elif term.slug == "hot" -%}
-	{%- set category_description = "Posts that did numbers compared to others." -%}
-{%- else -%}
-	{%- set category_description = "There's no info on this category. Boo-womp." -%}
-{%- endif -%}
+{%- set matched_category = categories | filter(attribute="name", value=term.name) | first -%}
+{%- set category_description = matched_category.description | default(value="There's no info on this category. Boo-womp.") -%}
 {{ category_description | markdown | safe }}
 
 <p>
