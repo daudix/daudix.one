@@ -46,6 +46,10 @@ h1 + p {
 				display: block;
 				color: var(--accent-color);
 			}
+
+			small {
+				text-align: end;
+			}
 		}
 
 		& > div:nth-of-type(2) {
