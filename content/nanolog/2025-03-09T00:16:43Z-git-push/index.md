@@ -6,6 +6,6 @@ Testing something out, if everything works this post should be created and pushe
 
 Or it'll nuke the entire repo, idk.
 
-[7 edits omitted]
-Edit #7: Turned out I was using an old version of the script and didn't properly export the GIT_DIR variable, hopefully it'll work now.
+[7 edits omitted]  
+Edit #7: Turned out I was using an old version of the script and didn't properly export the GIT_DIR variable, hopefully it'll work now.  
 Edit #8: I hate Git so so much.
