@@ -26,6 +26,7 @@ badges = [
   { name = "standwith.gif", url = "https://decolonizepalestine.com" },
   { name = "volpeon.gif", url = "https://volpeon.ink" },
   { name = "vscodium.gif", url = "https://vscodium.com" },
+  { name = "xan.gif", url = "https://xan.lol" },
 ]
 +++
 
