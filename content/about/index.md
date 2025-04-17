@@ -92,7 +92,7 @@ A bit about myself.
 <li>
 <article>
 
-**I'm rather shy.** Quoting [Jeffrey](https://hyperreal.coffee/about/) as I can't say it better:
+**I'm rather shy.** Quoting [Jeffrey](https://hyperreal.coffee) as I can't say it better:
 
 > I'm <button id="shy">shy</button> and might come across as reserved and standoffish at first, but I open up when I get more comfortable with people.
 </article>
