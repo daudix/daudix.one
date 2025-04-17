@@ -27,6 +27,8 @@ badges = [
   { name = "volpeon.gif", url = "https://volpeon.ink" },
   { name = "vscodium.gif", url = "https://vscodium.com" },
   { name = "xan.gif", url = "https://xan.lol" },
+  { name = "zeffo.gif", url = "https://zeffo.me" },
+
 ]
 +++
 
