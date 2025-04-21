@@ -1,3 +1,5 @@
+@use "../components/functions" as *;
+
 blockquote:has(div) {
 	color: inherit;
 
@@ -31,4 +33,174 @@ blockquote:has(div) {
 
 .icon-grid {
 	grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+}
+
+#guild-widget {
+	--rotation: 5deg;
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	transition: var(--transition-bezier-longer);
+	margin-inline: auto;
+	outline: rpx(1) solid var(--bg-muted-2);
+	box-shadow: var(--edge-highlight), var(--shadow-glass);
+	border-radius: calc(var(--rounded-corner) + 1rem);
+	background-image:
+		radial-gradient(circle, var(--bg-muted-1) rpx(1), transparent rpx(1)),
+		linear-gradient(to bottom right, var(--bg-color) 8rem, var(--bg-muted-1), var(--bg-muted-2));
+	background-size: 1rem 1rem, auto;
+	// background-color: var(--bg-muted-1);
+	padding: 1rem;
+	width: min(calc(var(--container-width) / 2), 100%);
+	overflow: hidden;
+
+	&:has(#hover-map .top-left:hover) {
+		transform: perspective(var(--container-width)) rotate3d(-1, 1, 0, var(--rotation));
+	}
+
+	&:has(#hover-map .top-middle:hover) {
+		transform: perspective(var(--container-width)) rotate3d(-1, 0, 0, var(--rotation));
+	}
+
+	&:has(#hover-map .top-right:hover) {
+		transform: perspective(var(--container-width)) rotate3d(-1, -1, 0, var(--rotation));
+	}
+
+	&:has(#hover-map .middle-left:hover) {
+		transform: perspective(var(--container-width)) rotate3d(0, 1, 0, var(--rotation));
+	}
+
+	&:has(#hover-map .middle-right:hover) {
+		transform: perspective(var(--container-width)) rotate3d(0, -1, 0, var(--rotation));
+	}
+
+	&:has(#hover-map .bottom-left:hover) {
+		transform: perspective(var(--container-width)) rotate3d(1, 1, 0, var(--rotation));
+	}
+
+	&:has(#hover-map .bottom-middle:hover) {
+		transform: perspective(var(--container-width)) rotate3d(1, 0, 0, var(--rotation));
+	}
+
+	&:has(#hover-map .bottom-right:hover) {
+		transform: perspective(var(--container-width)) rotate3d(1, -1, 0, var(--rotation));
+	}
+
+	.buttons {
+		margin-block-start: 1.5rem;
+		border-block-start: rpx(1) solid var(--bg-muted-1);
+		padding-block-start: 1rem;
+
+		a {
+			z-index: 4;
+		}
+
+		.suggested {
+			margin-inline-start: auto;
+		}
+	}
+}
+
+#guild-banner {
+	position: relative;
+	margin-inline: -1rem;
+	margin-block: -1rem 3rem;
+	border-radius: calc(var(--rounded-corner) + 1rem) calc(var(--rounded-corner) + 1rem) 0 0;
+	background-color: var(--bg-color);
+	height: 8rem;
+
+	&::before,
+	&::after {
+		position: absolute;
+		// clip-path: inset(0 0 0 0 round calc(var(--rounded-corner) + 1rem) calc(var(--rounded-corner) + 1rem) 0 0);
+		inset: 0;
+		border-radius: inherit;
+		content: "";
+	}
+
+	&::before {
+		z-index: 1;
+		filter: blur(2rem) saturate(180%);
+		background-image: var(--banner);
+		background-size: cover;
+	}
+
+	&::after {
+		z-index: 2;
+		--glow: radial-gradient(
+			100% 150% ellipse at 50% 125%,
+			rgb(255 255 255 / 0.8),
+			rgb(255 255 255 / 0.2) 75%,
+			rgb(255 255 255 / 0.4));
+		background-image: var(--glow);
+	}
+}
+
+#guild-icon {
+	position: absolute;
+	z-index: 3;
+	margin: 0;
+	inset-block-end: -2rem;
+	inset-inline-start: 1rem;
+	outline: 0.25rem solid var(--bg-color);
+	border-radius: var(--rounded-corner);
+	width: 4rem;
+	height: 4rem;
+}
+
+#guild-name {
+	color: var(--fg-color);
+}
+
+#guild-stats {
+	display: flex;
+	gap: 0.5rem;
+	margin-block: 0.25rem 0;
+	color: var(--fg-muted-2);
+	font-size: var(--font-size-small);
+}
+
+#member-count::before,
+#online-count::before {
+	display: inline-block;
+	margin-inline-end: 0.25rem;
+	border-radius: 50%;
+	background-color: var(--green-fg);
+	width: 0.625rem;
+	height: 0.625rem;
+	content: "";
+}
+
+#member-count::before {
+	background-color: var(--fg-muted-1);
+}
+
+#online-count::before {
+	background-color: var(--green-fg);
+}
+
+#guild-traits {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.25rem;
+	margin-block: 0;
+	padding-inline-start: 0;
+	list-style: none;
+
+	li {
+		border: rpx(1) solid var(--bg-muted-1);
+		border-radius: 9999px;
+		padding-inline: 0.5rem 0.75rem;
+		font-size: var(--font-size-small);
+	}
+}
+
+#hover-map {
+	display: grid;
+	position: absolute;
+	grid-template-columns: repeat(3, 1fr);
+	z-index: 3;
+	inset: 0;
+	border-radius: inherit;
+	overflow: hidden;
 }
