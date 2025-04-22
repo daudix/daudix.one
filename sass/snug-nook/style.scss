@@ -40,7 +40,7 @@ blockquote:has(div) {
 	display: flex;
 	position: relative;
 	flex-direction: column;
-	transition: var(--transition-bezier-longer);
+	transition: var(--transition-longer);
 	margin-inline: auto;
 	outline: rpx(1) solid var(--bg-muted-2);
 	box-shadow: var(--edge-highlight), var(--shadow-glass);
