@@ -67,7 +67,9 @@ Some things from the unique side of things:
 
 ### Weekend Rebrand
 
-At Snug Nook we have many unique "traditions", and weekend rebrand is one of them; every other weekend (Saturday and Sunday in the UTC time zone) we collectively decide upon what to rebrand Snug Nook to; a meme, gag, series we've been discussing in the last two weeks, and the like. It may seem silly and confusing, but that is what Snug Nook is all about; chaotic fun.
+At Snug Nook we have many unique "traditions", and weekend rebrand is one of them; every* weekend (Saturday and Sunday in the UTC time zone) we collectively decide upon what to rebrand Snug Nook to; a meme, gag, series we've been discussing in the last two weeks, and the like. It may seem silly and confusing, but that is what Snug Nook is all about; chaotic fun.
+
+*Sometimes every other weekend if we don't have any ideas.
 
 ## Bridges
 
