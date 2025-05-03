@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", async () => {
 	const GUILD_ID = "1300606629083086878";
+	const GUILD_NAME = "Snug Nook";
 
 	let emojiMap = {};
 
@@ -52,6 +53,10 @@ document.addEventListener("DOMContentLoaded", async () => {
 			document.getElementById("online-count").textContent = `${data.approximate_presence_count} Online`;
 			document.getElementById("member-count").textContent = `${data.approximate_member_count} Members`;
 			document.getElementById("guild-traits").innerHTML = traits.split(", ").map(trait => `<li>${trait}</li>`).join("");
+
+			if (data.guild.name !== GUILD_NAME) {
+				document.getElementById("guild-widget").classList.add("weekend");
+			}
 		} catch (error) {
 			console.error("Error fetching invite data:", error);
 		}

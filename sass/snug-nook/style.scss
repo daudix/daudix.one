@@ -49,10 +49,13 @@ blockquote:has(div) {
 		radial-gradient(circle, var(--bg-muted-1) rpx(1), transparent rpx(1)),
 		linear-gradient(to bottom right, var(--bg-color) 8rem, var(--bg-muted-1), var(--bg-muted-2));
 	background-size: 1rem 1rem, auto;
-	// background-color: var(--bg-muted-1);
 	padding: 1rem;
 	width: min(calc(var(--container-width) / 2), 100%);
 	overflow: hidden;
+
+	&.weekend #guild-weekend {
+		display: block;
+	}
 
 	&:has(#hover-map .top-left:hover) {
 		transform: perspective(var(--container-width)) rotate3d(-1, 1, 0, var(--rotation));
@@ -203,4 +206,36 @@ blockquote:has(div) {
 	inset: 0;
 	border-radius: inherit;
 	overflow: hidden;
+}
+
+#guild-weekend {
+	display: none;
+	position: absolute;
+	z-index: 4;
+	transition: all var(--transition), transform var(--transition-bezier);
+	inset-block-start: 1rem;
+	inset-inline-end: 1rem;
+	box-shadow: var(--edge-highlight);
+	border-radius: 9999px;
+	background-color: var(--glass-bg-1);
+	padding-inline: 0.375rem 0.75rem;
+	padding-block: 0.125rem;
+	color: var(--fg-muted-2);
+	font-weight: var(--font-weight-normal);
+	font-size: var(--font-size-small);
+	text-decoration: none;
+
+	&:hover {
+		background-color: var(--glass-bg-2);
+	}
+
+	&:active {
+		transform: var(--active);
+	}
+
+	.ph-bold {
+		vertical-align: rpx(-2);
+		margin-inline-end: 0.125rem;
+		font-size: 1rem;
+	}
 }
