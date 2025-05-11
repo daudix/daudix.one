@@ -1,101 +1,21 @@
-@use "../components/functions" as *;
+@use "../../themes/ametrine/sass/components/functions" as *;
 
 #badges {
 	position: relative;
 	padding-block-start: 0.75rem;
 
 	&:hover #here {
-		transform: rotate(-90deg);
+		transform: none;
 		opacity: 1;
 	}
 
-	&:has(#badges-expand:checked) {
-		float: none;
-		margin-inline-start: 0;
-		width: 100%;
-		overflow: visible;
-
-		.marquee-wrapper {
-			-webkit-mask-image: none;
-			content-visibility: visible;
-			mask-image: none;
-			margin: 0;
-			padding: 0;
-			overflow: visible;
-		}
-
-		.marquee {
-			position: static;
-
-			ul {
-				flex-shrink: 1;
-				flex-wrap: wrap;
-				justify-content: center;
-				animation: none;
-				transition: none;
-				margin-inline-end: 0;
-				height: fit-content;
-
-				&:nth-of-type(2) {
-					display: none;
-				}
-			}
-
-			img,
-			#increment {
-				position: relative;
-				z-index: 0;
-
-				&:hover:not(a:active img) {
-					transform: scale(2);
-					z-index: 1;
-				}
-			}
-		}
-
-		#badges-expand + label {
-			.ph-arrows-out-simple {
-				transform: scale(0.5);
-				opacity: 0;
-			}
-	
-			.ph-arrows-in-simple {
-				transform: none;
-				opacity: 1;
-			}
-		}
-
-		#badges-neocities {
-			display: block;
-
-			hr {
-				margin-block-start: 2rem;
-			}
-		}
-
-		#here {
-			transform: scale(0.5) rotate(-90deg);
-			opacity: 0;
-		}
-	}
-
-	&:has(#badges-popup[open]) #here {
-		transform: scale(0.5) rotate(-90deg);
+	&:has(#badges-popup-expand:checked) #here {
+		transform: scale(0.5);
 		opacity: 0;
 	}
 
 	& > p {
 		margin: 0.5rem 0 1rem;
-	}
-
-	&:not(:has(#badges-expand:checked)):has(.marquee img:hover, .marquee #increment:hover) .marquee ul {
-		animation-play-state: paused;
-
-		img:not(:hover),
-		#increment:not(:hover) {
-			transform: translate(-0.125rem, 0.125rem);
-			opacity: var(--disabled-opacity);
-		}
 	}
 
 	.marquee-wrapper {
@@ -107,6 +27,17 @@
 
 	.marquee {
 		display: flex;
+
+		&:hover ul {
+			animation-play-state: paused;
+
+			img:not(:hover),
+			iframe:not(:hover),
+			#more:not(:hover) {
+				// transform: translate(-0.125rem, 0.125rem);
+				opacity: var(--disabled-opacity);
+			}
+		}
 
 		ul {
 			display: flex;
@@ -139,13 +70,14 @@
 
 		a:active {
 			img,
-			#increment {
+			iframe {
 				transform: var(--active);
 			}
 		}
 
 		img,
-		#increment {
+		iframe,
+		#more {
 			transition: all var(--transition), transform var(--transition-bezier);
 			margin: 0;
 			width: rpx(88);
@@ -157,49 +89,78 @@
 			}
 		}
 
-		#increment {
+		iframe {
 			box-shadow: none;
-			border: none;
 			border-radius: 0;
-			width: 5.5rem;
-			height: 1.9375rem;
+		}
+
+		#more {
+			display: flex;
+			justify-content: center;
+			border: rpx(1) dashed var(--fg-muted-1);
+			color: var(--fg-color);
+			font-weight: var(--font-weight-medium);
+			font-size: var(--font-size-x-small);
+			line-height: 1;
+			text-decoration: none;
+		
+			&:hover {
+				border-color: var(--contrast-color);
+				background-color: var(--accent-color);
+				color: var(--contrast-color);
+			}
+	
+			&:active {
+				transform: var(--active);
+			}
+		
+			span {
+				display: inline-block;
+				margin-block-start: rpx(2);
+			}
 		}
 	}
 
-	#badges-neocities {
-		display: none;
-	}
+	#badges-popup-expand {
+		&:checked {
+			& + label {
+				.icon.plus {
+					transform: rotate(45deg);
+					opacity: 0;
+				}
 
-	.buttons {
-		margin-block-start: 0;
-	}
+				.icon.x {
+					transform: none;
+					opacity: 1;
+				}
+			}
 
-	#badges-expand {
+			& ~ #badges-popup {
+				-webkit-backdrop-filter: var(--blur);
+				transform: none;
+				visibility: visible;
+				opacity: 1;
+				backdrop-filter: var(--blur);
+				background-color: var(--glass-bg-1);
+			}
+		}
+
 		&:focus-visible + label {
 			animation: focus-in var(--transition);
 			outline: 0.125rem solid var(--accent-color);
 			outline-offset: 0.125rem;
 		}
 
-		@supports not selector(:focus-visible) {
-			&:focus + label {
-				animation: focus-in var(--transition);
-				outline: 0.125rem solid var(--accent-color);
-				outline-offset: 0.125rem;
-			}
-		}
-
 		& + label {
-			display: inline-flex;
 			position: absolute;
-			transition: all var(--transition);
+			transition: all var(--transition), transform var(--transition-bezier);
 			cursor: pointer;
 			inset-block-start: 0.5rem;
-			inset-inline-end: 2.75rem;
+			inset-inline-end: 0.5rem;
 			border-radius: var(--rounded-corner-small);
-			padding: 0.5rem;
+			width: 2rem;
+			height: 2rem;
 			color: var(--accent-color);
-			line-height: 0;
 
 			&:hover {
 				box-shadow: var(--edge-highlight);
@@ -210,118 +171,55 @@
 				transform: var(--active);
 			}
 
-			.ph-bold {
-				transition: all var(--transition-longer), transform var(--transition-bezier-longer);
+			.icon {
+				position: absolute;
+				transition: all var(--transition), transform var(--transition-bezier);
+				inset: 0.5rem;
 			}
 
-			.ph-arrows-in-simple {
-				position: absolute;
-				transform: scale(0.5);
+			.icon.x {
+				transform: rotate(-45deg);
 				opacity: 0;
-				inset: 0.5rem;
 			}
 		}
 	}
 
 	#badges-popup {
-		box-shadow: none;
-		border-radius: 0;
-		background-color: transparent;
-		padding: 0;
+		position: absolute;
+		transform: scale(0.5) translate(1rem, -1rem);
+		transform-origin: top right;
+		visibility: hidden;
+		opacity: 0;
+		z-index: 1;
+		transition: all var(--transition), transform var(--transition-bezier);
+		inset-block-start: 2.5rem;
+		inset-inline-end: 2.5rem;
+		box-shadow: var(--edge-highlight), var(--shadow-glass);
+		border-radius: var(--rounded-corner);
+		padding: 1rem;
+		width: calc(var(--container-width) / 3);
 
-		summary {
-			display: inline-flex;
-			position: absolute;
-			transition: var(--transition);
-			inset-block-start: 0.5rem;
-			inset-inline-end: 0.5rem;
-			box-shadow: none;
-			border-radius: var(--rounded-corner-small);
-			background-color: transparent;
-			padding: 0.5rem;
-			color: var(--accent-color);
-			line-height: 0;
-
-			&:hover {
-				box-shadow: var(--edge-highlight);
-				background-color: var(--bg-muted-1);
-			}
-
-			&:active {
-				transform: var(--active);
-			}
-
-			&::before {
-				display: none;
-			}
-
-			.ph-bold {
-				transition: all var(--transition-longer), transform var(--transition-bezier-longer);
-			}
-
-			.ph-x {
-				position: absolute;
-				transform: rotate(-45deg);
-				opacity: 0;
-				inset: 0.5rem;
-			}
-		}
-
-		& > div {
-			-webkit-backdrop-filter: var(--blur);
+		ul {
 			display: flex;
-			position: absolute;
-			flex-direction: column;
-			z-index: 1;
-			backdrop-filter: var(--blur);
-			inset-block-start: 0.5rem;
-			inset-inline-end: 3rem;
-			box-shadow: var(--edge-highlight), var(--shadow-glass);
-			border-radius: var(--rounded-corner);
-			background-color: var(--glass-bg-1);
-			aspect-ratio: 1 / 1;
-			width: calc(var(--container-width) / 3);
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 0.25rem;
+			padding-inline-start: 0;
+			list-style: none;
 
-			div {
-				flex: 1;
-				padding: 1rem;
-				padding-block-start: 0.75rem;
-				overflow: auto;
-
-				p:first-of-type {
-					margin-block-start: 0;
-				}
-
-				p:has(img) {
-					display: flex;
-					flex-wrap: wrap;
-					justify-content: center;
-					gap: 0.25rem;
-				}
+			li {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
 
 				img {
-					display: inline-block;
 					margin: 0;
 				}
-			}
-		}
 
-		&[open] {
-			summary {
-				.ph-plus {
-					transform: rotate(45deg);
-					opacity: 0;
+				span {
+					color: var(--fg-muted-2);
+					font-size: var(--font-size-x-small);
 				}
-		
-				.ph-x {
-					transform: none;
-					opacity: 1;
-				}
-			}
-
-			& > div {
-				transform-origin: top right;
-				animation: expand-top-right var(--transition-bezier);
 			}
 		}
 	}
@@ -330,17 +228,17 @@
 		--mask: url("here.gif");
 		-webkit-mask-image: var(--mask);
 		position: absolute;
-		transform: scale(0.5) rotate(-90deg);
-		transform-origin: 0.25rem 1.75rem;
+		transform: scale(0.5);
+		transform-origin: rpx(36) rpx(182);
 		opacity: 0;
 		mask-image: var(--mask);
 		mask-size: cover;
 		transition: var(--transition-bezier);
-		inset-block-start: -1rem;
-		inset-inline-start: 12.5rem;
+		inset-block-start: calc(-100% - 3rem);
+		inset-inline-end: -2.5rem;
 		background-color: var(--accent-color);
-		width: 12.125rem;
-		height: 4.75rem;
+		width: rpx(76);
+		height: rpx(194);
 		pointer-events: none;
 
 		@media (prefers-reduced-motion) {

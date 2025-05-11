@@ -5,10 +5,9 @@ updated = 2024-09-28
 [taxonomies]
 tags = ["100DaysToOffload", "Gaming", "Teardown"]
 [extra]
-accent_color = "#6d5542"
-accent_color_dark = "#ad8463"
+accent_color = ["hsl(26.511627 25% 34%)", "hsl(26.75676 31% 53%)"]
 banner = "banner.webp"
-[extra.comments]
+[extra.fediverse]
 host = "vmst.io"
 user = "daudix"
 id = "113210064391141759"

@@ -7,7 +7,7 @@ tags = ["100DaysToOffload", "MacBoy"]
 categories = ["Featured"]
 [extra]
 toc = true
-[extra.comments]
+[extra.fediverse]
 host = "vmst.io"
 user = "daudix"
 id = "112595182527799666"

@@ -1,11 +1,14 @@
+@use "../components/mixins" as *;
+
 #coffee-container {
-	margin: 5rem auto auto;
+	margin-inline: auto;
 	box-shadow: var(--edge-highlight), var(--shadow);
 	border-radius: 2.25rem;
 	background-color: var(--bg-muted-1);
 	padding: 1rem;
 	width: min(calc(var(--container-width) / 2), 100%);
 	text-align: center;
+	@include fancy-card;
 
 	#blobfox {
 		position: absolute;
@@ -42,6 +45,7 @@
 		cursor: help;
 		margin: -1rem -1rem 1rem -1rem;
 		border-radius: 2.25rem 2.25rem 0 0;
+		height: 8rem;
 		overflow: hidden;
 
 		&:active {
@@ -61,6 +65,8 @@
 			margin: 0;
 			box-shadow: none;
 			border-radius: 0;
+			height: 100%;
+			object-fit: cover;
 
 			&:active {
 				transform: translateY(-100%);

@@ -6,11 +6,10 @@ updated = 2024-08-05
 tags = ["100DaysToOffload", "Dumbphone", "Pixel 3"]
 categories = ["Featured"]
 [extra]
-accent_color = "#5e534b"
-accent_color_dark = "#ddc6a7"
+accent_color = ["hsl(25.263159 11% 33%)", "hsl(34.444447 44% 76%)"]
 banner = "banner.png"
 toc = true
-[extra.comments]
+[extra.fediverse]
 host = "vmst.io"
 user = "daudix"
 id = "112752002875813283"

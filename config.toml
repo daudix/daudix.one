@@ -1,6 +1,9 @@
 title = "Daudix"
 base_url = "https://daudix.one"
+# base_url = "/"
 description = "Silly little goober with a creative mind."
+
+theme = "ametrine"
 
 compile_sass = true
 minify_html = true
@@ -8,17 +11,17 @@ build_search_index = true
 author = "Daudix"
 
 taxonomies = [
-	{ name = "tags", feed = true, paginate_by = 10 },
-	{ name = "categories", feed = true },
+  { name = "tags", feed = true, paginate_by = 10 },
+  { name = "categories", feed = true },
 ]
 
 [markdown]
 highlight_code = true
-extra_syntaxes_and_themes = ["sublime"]
+extra_syntaxes_and_themes = ["themes/ametrine/sublime"]
 highlight_theme = "css"
 highlight_themes_css = [
-	{ theme = "monokai-pro-dark", filename = "syntax-theme-dark.css" },
-	{ theme = "monokai-pro-light", filename = "syntax-theme-light.css" },
+  { theme = "monokai-pro-dark", filename = "syntax-theme-dark.css" },
+  { theme = "monokai-pro-light", filename = "syntax-theme-light.css" },
 ]
 smart_punctuation = true
 bottom_footnotes = true
@@ -27,92 +30,77 @@ bottom_footnotes = true
 index_format = "elasticlunr_json"
 
 [extra]
+styles = ["custom.css"]
 categories = [
-    { name = "Archived", description = "Posts that have been archived due to their age.", color = "purple", icon = "box-arrow-down" },
-    { name = "Featured", description = "Posts that are somewhat decently written.", color = "yellow", icon = "star" },
-    { name = "Hot", description = "Posts that did numbers compared to others.", color = "red", icon = "fire" },
-    { name = "Test", description = "Categories can be set and customized entirely from config, woo-hoo!", color = "green", icon = "feather" },
+  { name = "Archived", description = "Posts that have been archived due to their age.", color = "purple", icon = "box-arrow-down" },
+  { name = "Featured", description = "Posts that are somewhat decently written.", color = "yellow", icon = "star" },
+  { name = "Hot", description = "Posts that did numbers compared to others.", color = "red", icon = "fire" },
+  { name = "Test", description = "Categories can be set and customized entirely from config, woo-hoo!", color = "green", icon = "feather" },
 ]
-
-# Red
-# accent_color = "#e14775"
-# accent_color_dark = "#ff6188"
-
-# Orange
-# accent_color = "#e16032"
-# accent_color_dark = "#fc9867"
-
-# Yellow
-# accent_color = "#cc7a0a"
-# accent_color_dark = "#ffd866"
-
-# Green
-# accent_color = "#269d69"
-# accent_color_dark = "#a9dc76"
-
-# Blue
-# accent_color = "#1c8ca8"
-# accent_color_dark = "#78dce8"
-
-# Purple
-# accent_color = "#7058be"
-# accent_color_dark = "#ab9df2"
-
-# Purple (GNOME)
-# accent_color = "#8939a4"
-# accent_color_dark = "#fba7ff"
-
-# Plum/lavender rose
-accent_color = "#843179"
-accent_color_dark = "#fba0e3"
-# accent_color_predefined = "purple"
-
+accent_color = ["hsl(307.9518 46% 35%)", "hsl(315.82416 92% 81%)"]
+home_url = "@/home/index.md"
 issues_url = "https://codeberg.org/daudix/website/issues"
 source_url = "https://codeberg.org/daudix/website"
 show_copy_button = true
 show_reading_time = true
-show_share_button = true
-# show_focus_button = true
 show_backlinks = true
-# separator = "•"
-# title_separator = "-"
 date_format = "%d %B %Y"
 date_format_long = "%d %B %Y, %R (%Z)"
 date_locale = "en_IE"
 timezone = "Europe/Moscow"
-analytics = true
-speed_insights = true
+show_comments_qr = true
+
+[extra.meta]
+favicon = "favicon.gif"
+apple_touch_icon = true
+card = true
 
 [extra.nav]
+icon = "apple-touch-icon.png"
 links = [
-	{ url = "@/home/index.md", name = "Home", icon = "house" },
-	{ url = "@/about/index.md", name = "About", icon = "info" },
-	{ url = "@/online/index.md", name = "Online", icon = "at" },
-	{ name = "Writing", category = [
-		{ url = "@/blog/_index.md", name = "Blog", icon = "newspaper" },
-		{ url = "@/nanolog/_index.md", name = "Nanolog", icon = "pencil" },
-	] },
-	{ name = "Projects", category = [
-		{ url = "@/design/index.md", name = "Design", icon = "pencil-ruler" },
-		{ url = "@/calendar/index.md", name = "Calendar", icon = "calendar" },
-		{ url = "@/snug-nook/index.md", name = "Snug Nook", icon = "chats" },
-	] },
-	{ name = "Extra", category = [
-		{ url = "@/coffee/index.md", name = "Coffee", icon = "coffee" },
-		{ url = "@/colophon/index.md", name = "Colophon", icon = "question" },
-		{ url = "@/commissions/index.md", name = "Commissions", icon = "wallet" },
-	] },
+  { url = "@/about/index.md", name = "About", icon = "info" },
+  { url = "@/online/index.md", name = "Online", icon = "at" },
+  { name = "Writing", category = [
+    { url = "@/blog/_index.md", name = "Blog", icon = "newspaper" },
+    { url = "@/nanolog/_index.md", name = "Nanolog", icon = "pencil" },
+  ] },
+  { name = "Projects", category = [
+    { url = "@/design/index.md", name = "Design", icon = "pencil-ruler" },
+    { url = "@/calendar/index.md", name = "Calendar", icon = "calendar" },
+    { url = "@/snug-nook/index.md", name = "Snug Nook", icon = "chats" },
+  ] },
+  { name = "Extra", category = [
+    { url = "@/coffee/index.md", name = "Coffee", icon = "coffee" },
+    { url = "@/colophon/index.md", name = "Colophon", icon = "question" },
+    { url = "@/commissions/index.md", name = "Commissions", icon = "wallet" },
+  ] },
 ]
 
 [extra.footer]
-show_copyright = true
+copyright = true
 show_fediring = true
+show_timestamp = true
+socials = [
+  { url = "https://bsky.app/profile/daudix.one", icon = "bluesky" },
+  { url = "https://wetdry.world/@daudix", icon = "mastodon" },
+  { url = "https://discord.com/users/650757995378114581", icon = "discord" },
+  { url = "https://signal.me/#eu/b4KzM1OB3uW52mMywHUJa8h6yD4ATY_KXJJiuJtWUxOVAJP22PVO_qoNGFnf32W7", icon = "signal" },
+  { url = "https://codeberg.org/daudix", icon = "codeberg" },
+]
 
-[extra.comments]
+[extra.fediverse]
 host = "wetdry.world"
 user = "daudix"
 show_qr = true
 
+[extra.vercel]
+analytics = true
+speed_insights = true
+rewrites_source = "api"
+
 [extra.debug]
 layout = false
 no_styles = false
+no_emojis = false
+slow_mo = false
+fake_error = false

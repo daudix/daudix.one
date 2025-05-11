@@ -4,10 +4,9 @@ description = "Alt account was a good idea on the surface, but not in practice."
 [taxonomies]
 tags = ["100DaysToOffload", "Akkoma", "Mastodon"]
 [extra]
-accent_color = "#997500"
-accent_color_dark = "#fecf33"
+accent_color = ["hsl(45.88235 100% 30%)", "hsl(46.108376 99% 60%)"]
 banner = "banner.webp"
-[extra.comments]
+[extra.fediverse]
 id = "113810617751578530"
 +++
 

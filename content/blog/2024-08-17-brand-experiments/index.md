@@ -5,11 +5,11 @@ updated = 2024-08-18
 [taxonomies]
 tags = ["100DaysToOffload", "Design", "Blender", "Inkscape"]
 [extra]
-accent_color = "#3f3eec"
-accent_color_dark = "#5857f4"
+accent_color = ["hsl(240.34483 82% 58%)", "hsl(240.38217 88% 65%)"]
 banner = "banner.webp"
 toc = true
-[extra.comments]
+audio_button = true
+[extra.fediverse]
 host = "vmst.io"
 user = "daudix"
 id = "112975067115258952"

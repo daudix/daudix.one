@@ -7,41 +7,7 @@ scripts = ["snug-nook/script.js"]
 no_header = true
 +++
 
-<div class="container-fill">
-    <div id="guild-widget">
-        <div id="guild-banner" style="--banner: url('https://cdn.discordapp.com/icons/1300606629083086878/b5fc1d99d16c51b521efe1231456460e.webp?size=16');">
-            <img id="guild-icon" class="transparent no-hover" src="https://cdn.discordapp.com/icons/1300606629083086878/b5fc1d99d16c51b521efe1231456460e.webp" alt="Snug Nook guild icon." />
-        </div>
-        <strong id="guild-name" class="title">Snug Nook</strong>
-        <p id="guild-stats">
-            <span id="online-count">0 Online</span>
-            <span id="member-count">0 Members</span>
-        </p>
-        <p id="guild-description">Cozy and welcoming space for cool people to hang out in.</p>
-        <ul id="guild-traits">
-            <li>💫 Silly</li>
-            <li>🗣️ Multi-topic</li>
-            <li>💜 Friendly</li>
-        </ul>
-        <div class="buttons start">
-            <a href="#about">About ↓</a>
-            <a href="/snug-nook/rules/">Rules →</a>
-            <a id="guild-invite" class="suggested" href="https://discord.com/invite/ksgyZgCvGx">Join →</a>
-        </div>
-        <div id="hover-map">
-            <div class="top-left"></div>
-            <div class="top-middle"></div>
-            <div class="top-right"></div>
-            <div class="middle-left"></div>
-            <div class="middle"></div>
-            <div class="middle-right"></div>
-            <div class="bottom-left"></div>
-            <div class="bottom-middle"></div>
-            <div class="bottom-right"></div>
-        </div>
-        <a id="guild-weekend" href="#weekend-rebrand"><i class="ph-bold ph-clock-countdown"></i>Weekend Rebrand</a>
-    </div>
-</div>
+{{ snug_nook() }}
 
 ## About
 

@@ -4,10 +4,9 @@ description = "That's right, and it's stupid one as well."
 [taxonomies]
 tags = ["100DaysToOffload"]
 [extra]
-accent_color = "#7a5893"
-accent_color_dark = "#c59ae4"
+accent_color = ["hsl(274.57626 25% 46%)", "hsl(274.86487 58% 75%)"]
 banner = "banner.png"
-[extra.comments]
+[extra.fediverse]
 host = "vmst.io"
 user = "daudix"
 id = "113364857250574824"

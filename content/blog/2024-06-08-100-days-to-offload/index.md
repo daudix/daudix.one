@@ -3,7 +3,9 @@ title = "100 Days to Offload or the Drafts Folder Overflow"
 description = "Why I decided to participate in a challenge that I'm doomed to fail?"
 [taxonomies]
 tags = ["100DaysToOffload"]
-[extra.comments]
+[extra]
+audio_button = true
+[extra.fediverse]
 host = "vmst.io"
 user = "daudix"
 id = "112582292475911778"

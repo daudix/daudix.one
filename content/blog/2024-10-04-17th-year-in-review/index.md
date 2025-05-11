@@ -4,11 +4,10 @@ description = "Wait, it's been a year already?"
 [taxonomies]
 tags = ["100DaysToOffload"]
 [extra]
-accent_color = "#433532"
-accent_color_dark = "#978c87"
+accent_color = ["hsl(10.588233 15% 23%)", "hsl(18.75 7% 56%)"]
 banner = "banner.webp"
 disclaimer = "I'll be completely honest, this post is pretty bad and mostly aimed at future self. You've been warned xD"
-[extra.comments]
+[extra.fediverse]
 host = "vmst.io"
 user = "daudix"
 id = "113251181891066967"

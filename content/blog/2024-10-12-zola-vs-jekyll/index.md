@@ -5,11 +5,10 @@ description = "Or don't, it's up to you to decide after all."
 tags = ["100DaysToOffload", "Zola", "Jekyll"]
 categories = ["Featured"]
 [extra]
-accent_color = "#722330"
-accent_color_dark = "#d33c55"
+accent_color = ["hsl(350.1266 53% 29%)", "hsl(350.06622 63% 53%)"]
 toc = true
 banner = "banner.webp"
-[extra.comments]
+[extra.fediverse]
 host = "vmst.io"
 user = "daudix"
 id = "113295812044964246"

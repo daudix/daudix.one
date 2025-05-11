@@ -1,6 +1,5 @@
 +++
 [extra]
-default_theme = "dark"
-accent_color_dark = "white"
+accent_color = "hsl(0 0% 100%)"
 styles = ["index.css"]
 +++

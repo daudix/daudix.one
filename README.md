@@ -8,7 +8,38 @@ The source code of my personal website. It is powered by [Zola](https://www.getz
 
 ![Screenshot](screenshot.png)
 
-## Know your rights
+## Read Me, for Real
+
+If you like how my website looks and want to make your own based on it: DON'T.
+
+Seriously, just use the [Ametrine](https://ametrine.daudix.one) theme; I'm the author of it and it's literally the same thing minus all my content, custom elements, and the like. Save your nerves, I'm serious.
+
+If you want to use some custom styles and stuff from here: go ahead! ...just don't make it *too similar,* I got to have some uniqueness x3
+
+## Setup Local Repository
+
+Mostly for myself.
+
+- Clone the repository recursively:
+
+```bash
+git clone --recursive ssh://git@codeberg.org/daudix/website.git
+```
+
+- Checkout `main` branch for Ametrine:
+
+```bash
+cd website/themes/ametrine/
+git checkout main
+```
+
+- Set the remote URL to an SSH one:
+
+```bash
+git remote set-url origin ssh://git@codeberg.org/daudix/ametrine.git
+```
+
+## Know Your Rights
 
 This website is under the MIT license:
 
@@ -20,7 +51,7 @@ This website is under the MIT license:
 - **No Usage Restrictions**: There are no restrictions on the technologies or fields of use, giving you maximum flexibility.
 - **No Royalties**: You are not required to pay any royalties or fees for using, modifying, or distributing the software.
 
-## Contributing guidelines
+## Contributing Guidelines
 
 There are several ways to contribute to this project:
 

@@ -3,7 +3,7 @@ title = "Auto and Manual Dark Mode Switching Is a Pain"
 description = "One of the things why I hate JS."
 [taxonomies]
 tags = ["Devlog", "Website", "Duckquill", "JavaScript"]
-[extra.comments]
+[extra.fediverse]
 host = "social.treehouse.systems"
 user = "daudix"
 id = "111881385228724178"

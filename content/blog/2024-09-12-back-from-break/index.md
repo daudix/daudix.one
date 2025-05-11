@@ -4,10 +4,9 @@ description = "I'm back from my pathetic, short break."
 [taxonomies]
 tags = ["100DaysToOffload"]
 [extra]
-accent_color = "#78635b"
-accent_color_dark = "#a18e88"
+accent_color = ["hsl(16.551723 14% 41%)", "hsl(14.4 12% 58%)"]
 banner = "banner.webp"
-[extra.comments]
+[extra.fediverse]
 host = "vmst.io"
 user = "daudix"
 id = "113122090995619097"

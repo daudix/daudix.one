@@ -1,4 +1,4 @@
-@use "../components/functions" as *;
+@use "../../themes/ametrine/sass/components/functions" as *;
 
 .window {
 	& > div {
@@ -94,6 +94,7 @@
 				a {
 					color: var(--yellow-fg);
 					line-height: 1;
+					text-decoration-color: hsl(var(--yellow-h) var(--yellow-s) var(--yellow-l) / var(--disabled-opacity));
 				}
 			}
 		}

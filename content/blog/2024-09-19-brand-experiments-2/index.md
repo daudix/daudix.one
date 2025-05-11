@@ -4,10 +4,9 @@ description = "Experimenting with my logo once again, with something actually ne
 [taxonomies]
 tags = ["100DaysToOffload", "Design", "Inkscape"]
 [extra]
-accent_color = "#d85a28"
-accent_color_dark = "#b66cb9"
+accent_color = ["hsl(17.045454 69% 50%)", "hsl(297.66235 35% 57%)"]
 banner = "banner.webp"
-[extra.comments]
+[extra.fediverse]
 host = "vmst.io"
 user = "daudix"
 id = "113165388369757692"

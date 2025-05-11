@@ -29,7 +29,7 @@ Want to speedrun getting banned? Just ask `@Moderator` to do so.
 <details>
 <summary>TL;DR</summary>
 
-![Meme titled "Be friendly" with a stretched image of Twilight Sparkle, followed by the text: Don't engage with rude people online. And make sure you behave yourself - Don't offend anyone. When communicating on the Internet, be kind to others. Avoid using harsh words! You might unintentionally hurt someone, And reading rude comments is just as unpleasant as hearing them.](../be-friendly.png)
+![Meme titled "Be friendly" with a stretched image of Twilight Sparkle, followed by the text: Don't engage with rude people online. And make sure you behave yourself - Don't offend anyone. When communicating on the Internet, be kind to others. Avoid using harsh words! You might unintentionally hurt someone, And reading rude comments is just as unpleasant as hearing them.](../be-friendly.png#transparent#no-hover)
 </details>
 
 The rules may be changed at any time. Improvement proposals are welcome.

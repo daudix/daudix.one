@@ -1,4 +1,4 @@
-@use "../components/functions" as *;
+@use "../../themes/ametrine/sass/components/functions" as *;
 
 // It's not an accurate polaroid please don't kill me
 #polaroid {
@@ -52,15 +52,6 @@
 			inset-block-start: -5rem;
 			background-color: transparent;
 		}
-
-		#polaroid-photo img:last-child {
-			opacity: 1;
-		}
-
-		#statuscafe-content,
-		#statuscafe-face {
-			filter: none;
-		}
 	}
 
 	#polaroid-shine {
@@ -102,13 +93,6 @@
 			margin: 0;
 			width: rpx(144);
 			height: rpx(144);
-
-			&:last-child {
-				position: absolute;
-				opacity: 0;
-				inset-block-start: 0;
-				inset-inline-start: 0;
-			}
 		}
 	}
 
@@ -129,8 +113,6 @@
 	}
 
 	#statuscafe-content {
-		filter: var(--printed);
-		transition: var(--transition);
 		margin-block-start: 0.25rem;
 		font-size: var(--font-size-xx-small);
 	}
@@ -153,8 +135,6 @@
 
 	#statuscafe-face {
 		float: inline-end;
-		filter: var(--printed);
-		transition: var(--transition);
 		color: black;
 		font-size: var(--font-size-medium);
 		line-height: 0; // Avoid the link becoming too high

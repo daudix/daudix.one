@@ -4,10 +4,9 @@ description = "Yet another rewrite is pretty much over."
 [taxonomies]
 tags = ["100DaysToOffload", "Website", "Devlog"]
 [extra]
-accent_color = "#e14775"
-accent_color_dark = "#ff6188"
+accent_color = ["hsl(342.0779 72% 58%)", "hsl(345.18988 100% 69%)"]
 banner = "banner.webp"
-[extra.comments]
+[extra.fediverse]
 host = "vmst.io"
 user = "daudix"
 id = "113469556450495745"

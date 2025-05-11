@@ -4,7 +4,7 @@ description = "One of my little dreams finally came true! But how?"
 updated = 2024-07-02
 [taxonomies]
 tags = ["100DaysToOffload", "Website", "Devlog"]
-[extra.comments]
+[extra.fediverse]
 host = "vmst.io"
 user = "daudix"
 id = "112675082269886749"

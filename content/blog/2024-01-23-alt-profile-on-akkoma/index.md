@@ -5,7 +5,7 @@ description = "Now I have an alt Fediverse profile. But why?"
 tags = ["Akkoma", "Mastodon"]
 [extra]
 toc = true
-[extra.comments]
+[extra.fediverse]
 host = "social.treehouse.systems"
 user = "daudix"
 id = "111804777265949955"

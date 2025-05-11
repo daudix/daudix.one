@@ -3,7 +3,7 @@ title = "Giving Zed Code Editor a Shot"
 description = "Trying out a new, shiny, and fast code editor (sorry, VSCodium)."
 [taxonomies]
 tags = ["100DaysToOffload", "Zed"]
-[extra.comments]
+[extra.fediverse]
 host = "vmst.io"
 user = "daudix"
 id = "113012054245789117"

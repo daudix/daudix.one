@@ -1,9 +1,11 @@
+@use "../../themes/ametrine/sass/components/functions" as *;
+
 #title {
 	--shift: 0.1875rem;
 	display: block;
 	transition: var(--transition-bezier);
 	margin-block-start: 0;
-	width: min(31.0625rem, 100%);
+	width: min(rpx(497), 100%);
 
 	&:hover {
 		// Dashie!
@@ -29,8 +31,11 @@
 		--mask: url("header.gif");
 		-webkit-user-select: none;
 		-webkit-mask-image: var(--mask);
+		-webkit-mask-size: contain;
+		-webkit-mask-repeat: no-repeat;
 		mask-image: var(--mask);
 		mask-size: contain;
+		mask-repeat: no-repeat;
 		transition: var(--transition-bezier);
 		margin: 0;
 		background-color: var(--accent-color);
@@ -39,6 +44,7 @@
 		overflow: hidden; // Make aspect ratio set above work
 		color: transparent;
 		user-select: none;
+		text-decoration: none;
 
 		@media (prefers-reduced-motion) {
 			--mask: url("header-static.gif");
