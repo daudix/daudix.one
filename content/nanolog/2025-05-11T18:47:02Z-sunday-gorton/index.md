@@ -11,3 +11,5 @@ Next up I came across [the hardest working font in Manhattan](https://aresluna.o
 Lastly, I came across [Micro Bold Icons](https://nucleoapp.com/micro-bold-icons) mentioned on one of Helena's posts about [best new icons of 2024](https://minoraxis.medium.com/best-new-icons-of-2024-4d54726e3f86). It's such a great icon library and it's exactly what I needed for [Ametrine](https://ametrine.daudix.one), however it's paid, so I'll continue using Phosphor Icons, they're great too.
 
 And after writing the above chunk of text, I've read [nobody cares](https://grantslatton.com/nobody-cares), I forgot how I came across it, but yeah, it really does suck that many people really just don't care :<
+
+P.S. What's funny about this entire journey is that it all started with me looking up "more" icons on Phosphor Icons website XD
