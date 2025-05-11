@@ -12,6 +12,7 @@ env:
 jobs:
   deploy:
     name: "Deploy"
+    runs-on: codeberg-tiny
     steps:
       - name: "Checkout"
         uses: "https://code.forgejo.org/actions/checkout@v4"

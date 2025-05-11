@@ -10,6 +10,7 @@ env:
 jobs:
   preview:
     name: "Preview"
+    runs-on: codeberg-tiny
     steps:
       - name: "Checkout"
         uses: "https://code.forgejo.org/actions/checkout@v4"
