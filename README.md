@@ -19,20 +19,20 @@ Mostly for myself.
 - Clone the repository recursively:
 
 ```bash
-git clone --recursive ssh://git@codeberg.org/daudix/website.git
+git clone --recursive git@github.com:daudix/daudix.one.git
 ```
 
 - Checkout `main` branch for Ametrine:
 
 ```bash
-cd website/themes/ametrine/
+cd daudix.one/themes/ametrine/
 git checkout main
 ```
 
 - Set the remote URL to an SSH one:
 
 ```bash
-git remote set-url origin ssh://git@codeberg.org/daudix/ametrine.git
+git remote set-url origin git@codeberg.org/daudix/ametrine.git
 ```
 
 </> with <3 by [daudix](https://daudix.one)
