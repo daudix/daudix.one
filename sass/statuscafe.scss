@@ -10,11 +10,13 @@
 	--accent-dark-l: 81%;
 
 	@include colors-accent("light");
-	@include variables("accent");
+	@include variables(("light", "accent", "common"));
 
 	@media (prefers-color-scheme: dark) {
 		& {
+			@include variables("dark");
 			@include colors-accent("dark");
+			color-scheme: dark;
 		}
 	}
 }
