@@ -51,10 +51,10 @@
 			z-index: 1;
 			filter: var(--drop-shadow);
 		}
+	}
 
-		&:active {
-			transform: var(--active);
-		}
+	a img:active {
+		transform: var(--active);
 	}
 
 	&:hover img:not(:hover) {

@@ -5,10 +5,12 @@ template = "badges.html"
 [extra]
 styles = ["badges/style.css"]
 badges = [
+  { name = "green-team.gif", url = "https://512kb.club", mine = true },
+  { name = "orange-team.gif", url = "https://512kb.club", mine = true },
+  { name = "blue-team.gif", url = "https://512kb.club", mine = true },
   { name = "adhd.gif", mine = true },
   { name = "aperturelabs.gif", url = "https://www.aperturescience.com" },
   { name = "bestviewed16bit.gif" },
-  { name = "blue-team.gif", url = "https://512kb.club", mine = true },
   { name = "bring-back-the-headphone-jack.gif" },
   { name = "companion.gif" },
   { name = "d-rens.gif", url = "https://d-rens.xyz", mine = true },
