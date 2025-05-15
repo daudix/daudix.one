@@ -3,8 +3,7 @@ title = "Design"
 description = "A sneak peek into my designs."
 template = "design.html"
 [extra]
-default_theme = "dark"
-accent_color_dark = "#dd2936"
+accent_color = "hsl(355.66666 73% 51%)"
 styles = ["design/style.css"]
 original_icons = [
   { name = "Bavarder", icon = "io.github.Bavarder.Bavarder.svg", url = "https://flathub.org/apps/io.github.Bavarder.Bavarder" },

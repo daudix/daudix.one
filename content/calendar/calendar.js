@@ -313,15 +313,14 @@
 			this.elem.insertAdjacentHTML('beforeend', "<div class='cjs-weekRow cjs-calHeader'><button class='cjs-lastLink'>&#8592; " + lastMo + "</button><button class='cjs-nextLink'>" + nextMo + " &#8594;</button></div>");
 
 			// My shit starts here
-			document.getElementById('month-number').textContent = this.month + 1;
+			document.getElementById('month-number').textContent = String(this.month + 1).padStart(2, '0');
 			document.getElementById('month-name').textContent = monthName;
 			document.getElementById('year').textContent = this.year;
 
 			var percentage = Math.floor(((this.month + 1) / 12) * 100);
 
 			document.getElementById('progress-bar').style.setProperty('--year-percentage', `${percentage}%`);
-			document.getElementById('progress-bar').title = `${percentage}% of the year has passed`;
-			document.getElementById('progress-month').textContent = `${this.month + 1}/12`;
+			document.getElementById('progress-month').textContent = `${String(this.month + 1).padStart(2, '0')}/12`;
 			// My shit ends here
 
 			// Draw day labels
@@ -391,7 +390,7 @@
 						if (currentDay === 6 && currentDate === lastDate) directionalClass += " cjs-bottom-right";
 					}
 					// draw day
-					week.insertAdjacentHTML('beforeend', "<div class='cjs-dayCol cjs-bottom cjs-left" + directionalClass + " " + (isDisabled ? 'cjs-blankday' : '') + "'><div class='cjs-dayContent'><div class='cjs-dayTable'><div class='cjs-dayCell " + (isDisabled ? '' : 'cjs-calDay') + " cjs-dayCell" + currentDate + "' data-day='" + currentDate + "' data-events='" + (evtids.join(",")) + "'><span class='cjs-dateLabel'>" + currentDate + "</span> </div></div></div></div>");
+					week.insertAdjacentHTML('beforeend', "<div class='cjs-dayCol cjs-bottom cjs-left" + directionalClass + " " + (isDisabled ? 'cjs-blankday' : '') + "'><div class='cjs-dayContent'><div class='cjs-dayTable'><div class='cjs-dayCell " + (isDisabled ? '' : 'cjs-calDay') + " cjs-dayCell" + currentDate + "' data-day='" + currentDate + "' data-events='" + (evtids.join(",")) + "'><span class='cjs-dateLabel'>" + String(currentDate).padStart(2, '0') + "</span> </div></div></div></div>");
 					currentDate++;
 					currentDay++;
 				}

@@ -4,10 +4,9 @@ description = "It's time for it to live its own life."
 [taxonomies]
 tags = ["100DaysToOffload", "Duckquill"]
 [extra]
-accent_color = "#5c5d5e"
-accent_color_dark = "#b0b1b1"
+accent_color = ["hsl(210 1% 36%)", "hsl(180 1% 69%)"]
 banner = "banner.webp"
-[extra.comments]
+[extra.fediverse]
 host = "vmst.io"
 user = "daudix"
 id = "113415328427289687"

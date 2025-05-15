@@ -3,7 +3,7 @@ title = "Content Doesn’t Have an Expiration Date"
 description = "The concerning trend of fast food content consumption."
 [taxonomies]
 tags = ["100DaysToOffload"]
-[extra.comments]
+[extra.fediverse]
 host = "vmst.io"
 user = "daudix"
 id = "112697941151315924"

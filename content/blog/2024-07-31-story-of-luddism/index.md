@@ -4,10 +4,9 @@ description = "The brief story of Luddism. (1/?)"
 [taxonomies]
 tags = ["100DaysToOffload", "Luddism", "Neo-Luddism"]
 [extra]
-accent_color = "#8b7950"
-accent_color_dark = "#ccbe9d"
+accent_color = ["hsl(41.694912 27% 43%)", "hsl(42.12766 32% 71%)"]
 banner = "banner.webp"
-[extra.comments]
+[extra.fediverse]
 host = "vmst.io"
 user = "daudix"
 id = "112878216253904523"

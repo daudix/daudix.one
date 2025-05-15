@@ -1,0 +1,63 @@
+@use "../../themes/ametrine/sass/components/functions" as *;
+
+.badges,
+.stamps {
+	display: flex;
+	position: relative;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 0.25rem;
+	margin-block-start: 2rem;
+	border: rpx(1) dashed var(--bg-muted-2);
+	padding: 1rem;
+	list-style: none;
+
+	.title {
+		position: absolute;
+		inset-block-start: -1rem;
+		inset-inline-start: 0.75rem;
+		background-color: var(--bg-color);
+		padding: 0.25rem;
+		color: var(--fg-muted-2);
+		font-weight: var(--font-weight-normal);
+		font-size: var(--font-size-x-small);
+	}
+
+	.icon.scissors {
+		position: absolute;
+		transform: scaleX(-1);
+		inset-block-end: -0.75rem;
+		inset-inline-end: 0.75rem;
+		background-color: var(--bg-color);
+		padding: 0.25rem;
+		color: var(--fg-muted-1);
+	}
+
+	li {
+		padding-inline-start: 0;
+
+		& > img {
+			cursor: zoom-in;
+		}
+	}
+
+	img {
+		position: relative;
+		transition: all var(--transition), transform var(--transition-bezier);
+		margin: 0;
+
+		&:hover {
+			transform: scale(2);
+			z-index: 1;
+			filter: var(--drop-shadow);
+		}
+
+		&:active {
+			transform: var(--active);
+		}
+	}
+
+	&:hover img:not(:hover) {
+		opacity: var(--disabled-opacity);
+	}
+}

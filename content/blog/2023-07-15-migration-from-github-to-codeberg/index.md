@@ -6,7 +6,7 @@ tags = ["Codeberg", "GitHub", "Woodpecker", "Migration"]
 categories = ["Archived"]
 [extra]
 toc = true
-[extra.comments]
+[extra.fediverse]
 host = "mstdn.social"
 user = "Daudix"
 id = "110720129252541458"

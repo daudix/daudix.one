@@ -1,4 +1,4 @@
-@use "../components/functions" as *;
+@use "../../themes/ametrine/sass/components/functions" as *;
 
 .games li {
 	&:not(:first-of-type) {

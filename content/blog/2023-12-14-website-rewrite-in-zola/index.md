@@ -6,7 +6,7 @@ tags = ["Devlog", "Website", "Duckquill"]
 categories = ["Archived"]
 [extra]
 toc = true
-[extra.comments]
+[extra.fediverse]
 host = "social.treehouse.systems"
 user = "daudix"
 id = "111637048720507166"

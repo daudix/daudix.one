@@ -5,11 +5,11 @@ description = "Step-by-step guide to deploying a Zola website using Codeberg Pag
 tags = ["100DaysToOffload", "Codeberg", "Zola"]
 categories = ["Featured"]
 [extra]
-accent_color = "#5c616a"
-accent_color_dark = "#a4bac0"
+accent_color = ["hsl(218.57143 7% 39%)", "hsl(192.85715 18% 70%)"]
 banner = "banner.webp"
 toc = true
-[extra.comments]
+audio_button = true
+[extra.fediverse]
 host = "vmst.io"
 user = "daudix"
 id = "112956494344143118"
@@ -57,7 +57,7 @@ Now you can go and smash that "Create repository" button and proceed to the next
 
 ## Initializing Zola Website
 
-To be completely unbiased, I will use my own [Duckquill](https://duckquill.daudix.one) Zola theme in this example {{ emoji(name="troll") }}
+To be completely unbiased, I will use my own [Duckquill](https://duckquill.daudix.one) Zola theme in this example {{ emoji(path="troll.png") }}
 
 Jokes aside, you can use any theme from [getzola.org/themes](https://www.getzola.org/themes/), but to make sure we're on the same page we'll use Duckquill.
 

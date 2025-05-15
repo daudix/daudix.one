@@ -1,6 +1,10 @@
+@use "../../themes/ametrine/sass/components/mixins" as *;
+
 :root {
-	--border-width: 0.5mm;
+	@include colors-accent("light");
+	@include variables("light");
 	font-size: 16px;
+	--border-width: 0.5mm;
 }
 
 @font-face {
@@ -112,7 +116,6 @@ body {
 			-webkit-mask-image: var(--mask);
 			-webkit-print-color-adjust: exact;
 			mask-image: var(--mask);
-			cursor: help;
 			background-image: repeating-linear-gradient(to right,
 					black,
 					black 0.5mm,
@@ -182,8 +185,10 @@ body {
 
 .buttons {
 	.suggested {
+		box-shadow: none !important;
 		background-image: none !important;
 		background-color: var(--accent-color);
+		text-shadow: none !important;
 
 		&:hover {
 			opacity: var(--dim-opacity);
@@ -278,6 +283,10 @@ body {
 	margin: 0;
 	padding: 0 0 3mm 0 !important;
 	width: 100%;
+
+	button {
+		color: inherit;
+	}
 
 	@media print {
 		display: none;

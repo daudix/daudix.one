@@ -24,13 +24,3 @@
 	{%- endif -%}
 </div>
 {% endblock content %}
-
-{% block actions %}
-{%- if config.extra.issues_url -%}
-	<a href="{{ config.extra.issues_url }}" rel="{{ rel_attributes }}" title="File an Issue"><i class="ph-bold ph-bug-beetle"></i></a>
-{%- endif -%}
-
-{%- if config.extra.show_share_button -%}
-	<a href="https://shareopenly.org/share/?url={{ page.permalink }}&text={{ page.title | urlencode }}" rel="{{ rel_attributes }}" title="Share"><i class="ph-bold ph-share-fat"></i></a>
-{%- endif -%}
-{% endblock actions %}

@@ -1,14 +1,22 @@
-@use "components/functions" as *;
-@import "components/variables";
+@use "../themes/ametrine/sass/components/functions" as *;
+@use "../themes/ametrine/sass/components/mixins" as *;
 
-@include theme-variables using ($theme) {
-    @if $theme == "dark" {
-		--accent-color: #fba0e3;
-    }
+:root {
+	--accent-light-h: 307.9518;
+	--accent-light-s: 46%;
+	--accent-light-l: 35%;
+	--accent-dark-h: 315.82416;
+	--accent-dark-s: 92%;
+	--accent-dark-l: 81%;
 
-    @else {
-        --accent-color: #843179;
-    }
+	@include colors-accent("light");
+	@include variables("accent");
+
+	@media (prefers-color-scheme: dark) {
+		& {
+			@include colors-accent("dark");
+		}
+	}
 }
 
 body {

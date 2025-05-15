@@ -4,12 +4,11 @@ description = "My entire blogging workflow, from A to Я."
 [taxonomies]
 tags = ["100DaysToOffload"]
 [extra]
-accent_color = "#d13300"
-accent_color_dark = "#e89928"
+accent_color = ["hsl(14.641149 100% 41%)", "hsl(35.3125 81% 53%)"]
 banner = "banner.webp"
 trigger = "Contains a huge amount of meta, thankfully not the fedi meta."
 toc = true
-[extra.comments]
+[extra.fediverse]
 host = "vmst.io"
 user = "daudix"
 id = "113647866479778879"
@@ -44,7 +43,7 @@ tags = ["100DaysToOffload"]
 accent_color = ""
 accent_color_dark = ""
 banner = ""
-[extra.comments]
+[extra.fediverse]
 id = ""
 +++
 ```

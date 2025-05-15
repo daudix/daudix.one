@@ -5,7 +5,7 @@ updated = 2024-06-22
 [taxonomies]
 tags = ["100DaysToOffload", "Devlog", "Website", "Neocities"]
 categories = ["Featured"]
-[extra.comments]
+[extra.fediverse]
 host = "vmst.io"
 user = "daudix"
 id = "112555378913783711"

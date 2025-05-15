@@ -6,7 +6,8 @@ tags = ["Devlog", "Website"]
 categories = ["Archived"]
 [extra]
 toc = true
-[extra.comments]
+audio_button = true
+[extra.fediverse]
 host = "mstdn.social"
 user = "Daudix"
 id = "110882489740462163"

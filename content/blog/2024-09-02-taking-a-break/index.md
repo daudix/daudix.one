@@ -5,10 +5,9 @@ date = 2024-09-02T14:00:00
 [taxonomies]
 tags = ["100DaysToOffload", "Mental Health"]
 [extra]
-accent_color = "#262c32"
-accent_color_dark = "#5f6c70"
+accent_color = ["hsl(210 14% 17%)", "hsl(194.11765 8% 41%)"]
 banner = "banner.webp"
-[extra.comments]
+[extra.fediverse]
 host = "vmst.io"
 user = "daudix"
 id = "113068488938326761"

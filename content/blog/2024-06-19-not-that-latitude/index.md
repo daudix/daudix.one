@@ -6,11 +6,10 @@ updated = 2024-06-25
 tags = ["100DaysToOffload", "MacBoy", "Latte"]
 categories = ["Hot"]
 [extra]
-accent_color = "#69617e"
-accent_color_dark = "#987eae"
+accent_color = ["hsl(256.55173 13% 44%)", "hsl(272.50003 23% 59%)"]
 banner = "banner.png"
 toc = true
-[extra.comments]
+[extra.fediverse]
 host = "vmst.io"
 user = "daudix"
 id = "112640483364403774"

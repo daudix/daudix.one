@@ -3,7 +3,7 @@ title = "Running Syncthing from inside Toolbx"
 description = "Yet another way of using Syncthing on Silverblue."
 [taxonomies]
 tags = ["Silverblue", "Syncthing", "Toolbx"]
-[extra.comments]
+[extra.fediverse]
 host = "social.treehouse.systems"
 user = "daudix"
 id = "111957654155839059"

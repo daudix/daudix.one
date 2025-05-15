@@ -5,10 +5,9 @@ updated = 2024-11-01
 [taxonomies]
 tags = ["100DaysToOffload"]
 [extra]
-accent_color = "#6a535c"
-accent_color_dark = "#a98ea2"
+accent_color = ["hsl(336.52173 12% 37%)", "hsl(315.55554 14% 61%)"]
 banner = "banner.webp"
-[extra.comments]
+[extra.fediverse]
 host = "vmst.io"
 user = "daudix"
 id = "113404729751512002"

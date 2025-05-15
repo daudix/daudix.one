@@ -6,15 +6,14 @@ updated = 2024-11-29
 tags = ["100DaysToOffload", "Gradience"]
 categories = ["Hot"]
 [extra]
-accent_color = "#7a6aa8"
-accent_color_dark = "#b9aee1"
+accent_color = ["hsl(255.48386 26% 54%)", "hsl(252.94118 46% 78%)"]
 banner = "banner.webp"
 disclaimer = """
 - This post doesn't mention some names as it's not meant to offend anyone or make them uncomfortable, but to give an idea of what was going on.
 - This post doesn't link to some of the mentioned resources because I used to be a different person at the time, and find it very cringey.
 """
 toc = true
-[extra.comments]
+[extra.fediverse]
 host = "vmst.io"
 user = "daudix"
 id = "112804700367926214"

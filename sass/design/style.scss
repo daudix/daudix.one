@@ -1,9 +1,12 @@
-@use "../components/functions" as *;
+@use "../../themes/ametrine/sass/components/functions" as *;
+@use "../../themes/ametrine/sass/components/mixins" as *;
+
+:root {
+	@include colors-accent("dark");
+	@include variables("dark");
+}
 
 main {
-	margin: 0 0.5rem 0.5rem;
-	box-shadow: var(--edge-highlight), var(--shadow);
-	border-radius: var(--rounded-corner);
 	background-image: linear-gradient(rgb(0 0 0 / 0.5), rgb(0 0 0 / 0.5)), url("curtain.webp");
 	background-size: contain;
 	background-repeat: repeat-x;
@@ -16,7 +19,7 @@ main {
 
 h1 {
 	-webkit-background-clip: text;
-	filter: drop-shadow(rpx(1) rpx(1) rgb(0 0 0 / 0.6));
+	filter: drop-shadow(rpx(1) rpx(1) rgb(0 0 0 / var(--disabled-opacity)));
 	background-image: linear-gradient(
 		to bottom,
 		#cfc09f 27%,

@@ -3,7 +3,7 @@ title = "Changing My Publishing Strategy"
 description = "With the current publishing strategy, I will burn out too soon."
 [taxonomies]
 tags = ["100DaysToOffload"]
-[extra.comments]
+[extra.fediverse]
 host = "vmst.io"
 user = "daudix"
 id = "112836985272355509"

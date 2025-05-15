@@ -4,10 +4,9 @@ description = "You've been what!?"
 [taxonomies]
 tags = ["100DaysToOffload"]
 [extra]
-accent_color = "#35353d"
-accent_color_dark = "#7a7687"
+accent_color = ["hsl(240 7% 22%)", "hsl(254.11763 7% 50%)"]
 banner = "banner.webp"
-[extra.comments]
+[extra.fediverse]
 host = "vmst.io"
 user = "daudix"
 id = "113312629869813421"

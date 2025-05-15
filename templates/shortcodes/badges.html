@@ -1,83 +1,99 @@
+{%- import "macros/icon.html" as macros_icon -%}
+
 <aside id="badges">
 	<strong class="title">Badges</strong>
 	<p>
 		<small><abbr title="Also Known As">AKA</abbr> 88x31 buttons</small>
 	</p>
-	<input type="checkbox" id="badges-expand" class="visually-hidden" autocomplete="off" />
-	<label for="badges-expand" title="Expand">
-		<i class="ph-bold ph-arrows-out-simple"></i>
-		<i class="ph-bold ph-arrows-in-simple"></i>
+	<input type="checkbox" id="badges-popup-expand" class="visually-hidden" autocomplete="off" />
+	<label for="badges-popup-expand" autocomplete="off" title="Link to Me">
+		{{- macros_icon::icon(name="plus") -}}
+		{{- macros_icon::icon(name="x") -}}
 	</label>
-	<details id="badges-popup" class="closable">
-		<summary title="Link to Me">
-			<i class="ph-bold ph-plus"></i>
-			<i class="ph-bold ph-x"></i>
-		</summary>
-		<div>
-			<div class="overshoot">
-				<p>
-					If you'd like to link to me, use the following badge:
-				</p>
-				<p>
-					<img class="pixels transparent no-hover" alt="daudix" src="{{ get_url(path='home/badges/daudix.gif') }}" />
-				</p>
-				<blockquote class="note">
-					<p class="alert-title">
-						<i class="ph-bold ph-info"></i>Note
-					</p>
-					<p>
-						It’s recommended to hotlink it, as it changes its design from time to time.
-					</p>
-				</blockquote>
-			</div>
-		</div>
-	</details>
+	<div id="badges-popup">
+		<p>
+			If you'd like to link to me, you can use one of the following badges:
+		</p>
+		<ul>
+			<li>
+				<img class="pixels transparent no-hover" alt="daudix" src="{{ get_url(path='home/badges/daudix.gif') }}" />
+				<span>Current</span>
+			</li>
+			<li>
+				<img class="pixels transparent no-hover" alt="daudix-neocities" src="{{ get_url(path='home/badges/daudix-neocities.gif') }}" />
+				<span>Neocities</span>
+			</li>
+			<li>
+				<img class="pixels transparent no-hover" alt="daudix-synthwave" src="{{ get_url(path='home/badges/daudix-synthwave.gif') }}" />
+				<span>Synthwave</span>
+			</li>
+			<li>
+				<img class="pixels transparent no-hover" alt="daudix-tile" src="{{ get_url(path='home/badges/daudix-tile.gif') }}" />
+				<span>Tile</span>
+			</li>
+		</ul>
+	</div>
+	<div id="here"></div>
 	<div class="marquee-wrapper overshoot-row">
 		<div class="marquee">
 			<ul style="--duration: {{ page.extra.badges | length * 2 }}s">
-				{% for badge in page.extra.badges %}
+				{%- for badge in page.extra.badges -%}
 					<li>
-						<a href="{{ badge.url }}">
+						{%- if badge.url -%}
+							<a href="{{ badge.url }}">
+						{%- endif -%}
 							<img
 								class="pixels transparent no-hover"
-								alt="{{ badge.name | trim_end_matches(pat='.gif') }}"
+								{%- if badge.alt -%}
+									{%- set badge_alt = badge.alt -%}
+								{%- else -%}
+									{%- set badge_alt = badge.name | split(pat=".", limit=2) | first -%}
+								{%- endif -%}
+								alt="{{ badge_alt }}"
 								{% set badge_url = "home/badges/" ~ badge.name %}
 								src="{{ get_url(path=badge_url) }}"
 							/>
-						</a>
+						{%- if badge.url -%}
+							</a>
+						{%- endif -%}
 					</li>
-				{% endfor %}
+				{%- endfor -%}
 				<li>
-					<iframe id="increment" src="https://incr.easrng.net/badge?key={{ config.base_url | replace(from='https://', to='') }}" title="increment badge"></iframe>
+					<iframe src="https://incr.easrng.net/badge?key={{ config.base_url | replace(from='https://', to='') }}" title="increment badge"></iframe>
+				</li>
+				<li>
+					<a href="{{ get_url(path='badges/') }}" id="more"><span>more +<br />stamps</span></a>
 				</li>
 			</ul>
 			<ul style="--duration: {{ page.extra.badges | length * 2 }}s" aria-hidden="true">
-				{% for badge in page.extra.badges %}
+				{%- for badge in page.extra.badges -%}
 					<li>
-						<a href="{{ badge.url }}">
+						{%- if badge.url -%}
+							<a href="{{ badge.url }}">
+						{%- endif -%}
 							<img
 								class="pixels transparent no-hover"
-								alt="{{ badge.name | trim_end_matches(pat='.gif') }}"
+								{%- if badge.alt -%}
+									{%- set badge_alt = badge.alt -%}
+								{%- else -%}
+									{%- set badge_alt = badge.name | split(pat=".", limit=2) | first -%}
+								{%- endif -%}
+								alt="{{ badge_alt }}"
 								{% set badge_url = "home/badges/" ~ badge.name %}
 								src="{{ get_url(path=badge_url) }}"
 							/>
-						</a>
+						{%- if badge.url -%}
+							</a>
+						{%- endif -%}
 					</li>
-				{% endfor %}
+				{%- endfor -%}
 				<li>
-					<iframe id="increment" src="https://incr.easrng.net/badge?key={{ config.base_url | replace(from='https://', to='') }}" title="increment badge"></iframe>
+					<iframe src="https://incr.easrng.net/badge?key={{ config.base_url | replace(from='https://', to='') }}" title="increment badge"></iframe>
+				</li>
+				<li>
+					<a href="{{ get_url(path='badges/') }}" id="more"><span>more +<br />stamps</span></a>
 				</li>
 			</ul>
 		</div>
 	</div>
-	<div id="badges-neocities">
-		<hr />
-		<p>
-			<small>The rest is on my Neocities site; it includes all the badges not present here, and even some stamps!</small>
-		</p>
-		<div class="buttons centered big">
-			<a class="external" href="https://daudix.neocities.org">Neocities Site</a>
-		</div>
-	</div>
-	<div id="here"></div>
 </aside>

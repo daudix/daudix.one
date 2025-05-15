@@ -4,11 +4,10 @@ description = "How and why I've moved this site away from Codeberg Pages."
 [taxonomies]
 tags = ["100DaysToOffload", "Devlog", "Vercel", "Codeberg"]
 [extra]
-accent_color = "#007fa4"
-accent_color_dark = "#02a4d3"
+accent_color = ["hsl(193.53659 100% 32%)", "hsl(193.49281 98% 42%)"]
 banner = "banner.png"
 toc = true
-[extra.comments]
+[extra.fediverse]
 host = "vmst.io"
 user = "daudix"
 id = "113613291522721129"

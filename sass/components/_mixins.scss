@@ -1,0 +1,10 @@
+@use "../../themes/ametrine/sass/components/functions" as *;
+
+@mixin fancy-card {
+	outline: rpx(1) solid var(--bg-muted-2);
+	box-shadow: var(--edge-highlight), var(--shadow-glass);
+	background-image:
+		radial-gradient(circle, var(--bg-muted-1) rpx(1), transparent rpx(1)),
+		linear-gradient(to bottom right, var(--bg-color) 8rem, var(--bg-muted-1), var(--bg-muted-2));
+	background-size: 1rem 1rem, auto;
+}

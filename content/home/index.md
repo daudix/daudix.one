@@ -5,30 +5,14 @@ styles = ["home/style.css"]
 scripts = ["home/statuscafe.js"]
 no_header = true
 badges = [
-  { name = "blue-team.gif", url = "https://512kb.club" },
-  { name = "doskel.gif", url = "https://doskel.net" },
-  { name = "ersei.gif", url = "https://ersei.net" },
-  { name = "free.gif", url = "https://freeplay.floof.company" },
-  { name = "georgemoody.gif", url = "https://moody.im" },
-  { name = "getimiskon.gif", url = "https://getimiskon.xyz" },
-  { name = "graphite.gif", url = "https://gra.phite.ro" },
-  { name = "immjs.gif", url = "https://immjs.dev" },
-  { name = "lyra.gif", url = "https://lyra.horse" },
-  { name = "marchintosh.gif", url = "https://libreivan.com/writing/" },
-  { name = "melankorin.gif", url = "https://melankorin.net" },
-  { name = "melontini.gif", url = "https://melontini.me" },
-  { name = "nek0zyx.gif", url = "https://nek0zyx.pages.gay" },
-  { name = "pixlxip.gif", url = "https://xip.neocities.org" },
+  { name = "adhd.gif", url = "https://en.wikipedia.org/wiki/Attention_deficit_hyperactivity_disorder" },
+  { name = "blue-team.gif", url = "https://512kb.club", mine = true },
+  { name = "dark-mode.gif", url = "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme" },
+  { name = "mobilefriendly.gif", url = "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design" },
   { name = "righttorepair.gif", url="https://www.ifixit.com/Right-to-Repair" },
-  { name = "ronbutton.gif", url = "https://veeronniecaw.space" },
   { name = "saynotoweb3.gif", url = "https://yesterweb.org/no-to-web3/" },
-  { name = "seirdy.gif", url = "https://seirdy.one" },
   { name = "standwith.gif", url = "https://decolonizepalestine.com" },
-  { name = "volpeon.gif", url = "https://volpeon.ink" },
   { name = "vscodium.gif", url = "https://vscodium.com" },
-  { name = "xan.gif", url = "https://xan.lol" },
-  { name = "zeffo.gif", url = "https://zeffo.me" },
-
 ]
 +++
 
@@ -52,7 +36,7 @@ badges = [
 # David Lapshin
 </div>
 
-Greetings! Welcome to my little corner on World Wild Web. You might know me by my online handle; Daudix.
+Greetings! Welcome to my little corner on the World Wild Web. You might know me by my online handle; Daudix.
 
 <div class="buttons start big">
   <a class="suggested" href="/about/">About Me →</a>
