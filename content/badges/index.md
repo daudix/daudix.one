@@ -56,6 +56,7 @@ badges = [
   { name = "tsp-bucket-love.gif" },
   { name = "up-all-night.gif" },
   { name = "valid-atom.gif", url = "https://validator.w3.org/feed/" },
+  { name = "valid-crashout.gif", mine = true },
   { name = "volpeon.gif", url = "https://volpeon.ink" },
   { name = "vscodium.gif", url = "https://vscodium.com", mine = true },
   { name = "want-to-believe.gif" },
