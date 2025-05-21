@@ -61,12 +61,12 @@ links = [
   { url = "@/about/index.md", name = "About", icon = "info" },
   { url = "@/online/index.md", name = "Online", icon = "at" },
   { name = "Writing", category = [
-    { url = "@/blog/_index.md", name = "Blog", icon = "newspaper" },
-    { url = "@/nanolog/_index.md", name = "Nanolog", icon = "pencil" },
+    { url = "@/blog/_index.md", name = "Blog", icon = "newspaper-clipping" },
+    { url = "@/nanolog/_index.md", name = "Nanolog", icon = "note-pencil" },
   ] },
   { name = "Projects", category = [
-    { url = "@/design/index.md", name = "Design", icon = "pencil-ruler" },
-    { url = "@/calendar/index.md", name = "Calendar", icon = "calendar" },
+    { url = "@/design/index.md", name = "Design", icon = "compass-tool" },
+    { url = "@/calendar/index.md", name = "Calendar", icon = "calendar-dots" },
     { url = "@/snug-nook/index.md", name = "Snug Nook", icon = "chats" },
   ] },
   { name = "Extra", category = [
