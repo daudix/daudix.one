@@ -6,11 +6,12 @@ scripts = ["home/statuscafe.js"]
 no_header = true
 badges = [
   { name = "adhd.gif", url = "https://en.wikipedia.org/wiki/Attention_deficit_hyperactivity_disorder" },
-  { name = "blue-team.gif", url = "https://512kb.club", mine = true },
+  { name = "blue-team.gif", url = "https://512kb.club" },
   { name = "dark-mode.gif", url = "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme" },
   { name = "mobilefriendly.gif", url = "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design" },
   { name = "righttorepair.gif", url="https://www.ifixit.com/Right-to-Repair" },
   { name = "saynotoweb3.gif", url = "https://yesterweb.org/no-to-web3/" },
+  { name = "snug-nook.gif", url = "https://daudix.one/snug-nook/" },
   { name = "standwith.gif", url = "https://decolonizepalestine.com" },
   { name = "vscodium.gif", url = "https://vscodium.com" },
 ]

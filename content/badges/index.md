@@ -47,6 +47,7 @@ badges = [
   { name = "saynotoweb3.gif", url = "https://yesterweb.org/no-to-web3/" },
   { name = "seirdy.gif", url = "https://seirdy.one" },
   { name = "smoke.gif", url = "https://smokepowered.com" },
+  { name = "snug-nook.gif", url = "https://daudix.one/snug-nook/", mine = true },
   { name = "solinus.gif", url = "https://solinus.neocities.org" },
   { name = "sourcemissing.gif" },
   { name = "spacehey.gif", url = "https://spacehey.com" },
