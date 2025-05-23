@@ -4,7 +4,7 @@
 {%- set rel_attributes = macros::rel_attributes() | trim -%}
 <div id="nanolog">
 	{%- if page.lower -%}
-		<a id="nanolog-higher" href="{{ page.lower.permalink }}">
+		<a id="nanolog-higher" href="{{ page.lower.permalink }}#up">
 			<span>{{ page.lower.date | date(format=config.extra.date_format_long | default(value="%B %d, %Y, %R (%Z)"), timezone=config.extra.timezone | default(value="UTC"), locale=config.extra.date_locale) | default(value="en_US") }}</span>
 		</a>
 	{%- endif -%}
@@ -18,7 +18,7 @@
 	{{ page.content | safe }}
 
 	{%- if page.higher -%}
-		<a id="nanolog-lower" href="{{ page.higher.permalink }}">
+		<a id="nanolog-lower" href="{{ page.higher.permalink }}#down">
 			<span>{{ page.higher.date | date(format=config.extra.date_format_long | default(value="%B %d, %Y, %R (%Z)"), timezone=config.extra.timezone | default(value="UTC"), locale=config.extra.date_locale) | default(value="en_US") }}</span>
 		</a>
 	{%- endif -%}
