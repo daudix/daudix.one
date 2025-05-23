@@ -1,4 +1,4 @@
-{%- import "macros/icon.html" as macros_icon -%}
+{% import "partials/macros.html" as macros %}
 
 <div class="container-fill">
 	<div id="guild-widget">
@@ -33,7 +33,7 @@
 			<div class="bottom-right"></div>
 		</div>
 		<a id="guild-weekend" href="#weekend-rebrand">
-			{{- macros_icon::icon(name="clock-countdown") -}}
+			{{- macros::icon(name="clock-countdown") -}}
 			Weekend Rebrand
 		</a>
 	</div>

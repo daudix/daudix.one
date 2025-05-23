@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{%- import "macros/icon.html" as macros_icon -%}
+{% import "partials/macros.html" as macros %}
 
 {% block content %}
 
@@ -34,7 +34,7 @@
 			</li>
 		{%- endif -%}
 	{%- endfor -%}
-	{{- macros_icon::icon(name="scissors") -}}
+	{{- macros::icon(name="scissors") -}}
 </ul>
 
 
@@ -65,7 +65,7 @@
 			{%- endif -%}
 		</li>
 	{%- endfor -%}
-	{{- macros_icon::icon(name="scissors") -}}
+	{{- macros::icon(name="scissors") -}}
 </ul>
 
 <h2>Stamps</h2>
@@ -95,7 +95,7 @@
 			{%- endif -%}
 		</li>
 	{%- endfor -%}
-	{{- macros_icon::icon(name="scissors") -}}
+	{{- macros::icon(name="scissors") -}}
 </ul>
 
 {% endblock content %}
