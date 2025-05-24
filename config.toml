@@ -39,7 +39,7 @@ categories = [
 ]
 accent_color = ["hsl(307.9518 46% 35%)", "hsl(315.82416 92% 81%)"]
 home_url = "@/home/index.md"
-issues_url = "https://github.com/daudix/daudix.one/issues"
+issues_url = "https://github.com/daudix/daudix.one/issues/new"
 source_url = "https://github.com/daudix/daudix.one"
 show_copy_button = true
 show_reading_time = true
