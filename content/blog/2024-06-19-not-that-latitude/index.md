@@ -16,7 +16,7 @@ id = "112640483364403774"
 +++
 
 {% alert(fact=true) %}
-It was quite hard to get the expressions right, [first version](https://codeberg.org/daudix/website/src/commit/e39dd708a4d39012ce54f23673cb13460210bc75/content/blog/not-that-latitude/header.png) had them very sadge, so I changed them to be a bit more restrained.
+It was quite hard to get the expressions right, [first version](https://github.com/daudix/daudix.one/blob/6fe0769435516a0b3a4818592a8d5ab47d7b3db4/content/blog/not-that-latitude/header.png) had them very sadge, so I changed them to be a bit more restrained.
 {% end %}
 
 ## Backstory

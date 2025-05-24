@@ -2,7 +2,7 @@
 title = "Git Push"
 +++
 
-Testing something out, if everything works this post should be created and pushed to the [website](https://codeberg.org/daudix/website) repo automatically by the [nanolog](https://codeberg.org/daudix/nanolog) tool.
+Testing something out, if everything works this post should be created and pushed to the [website](https://github.com/daudix/daudix.one) repo automatically by the [nanolog](https://codeberg.org/daudix/nanolog) tool.
 
 Or it'll nuke the entire repo, idk.
 

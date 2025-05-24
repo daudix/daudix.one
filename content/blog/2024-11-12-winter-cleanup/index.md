@@ -63,7 +63,7 @@ Now there are two spotlights on the [design](@/design/index.md) page... Yeah.
 - **Moved Back to Codeberg**:  
 Temporarily until the end of the month, due to reasons beyond my control.
 
-Phew, those are the most noticeable changes. All in all, this site should feel more polished. You can see all the changes in [this diff](https://codeberg.org/daudix/website/compare/c2321d66848c54b767f81e6fbe1321d877f73b27..main), thanks Anthony for the [tip](https://social.exozy.me/@a/113443957407294174)!
+Phew, those are the most noticeable changes. All in all, this site should feel more polished. You can see all the changes in [this diff](https://github.com/daudix/daudix.one/compare/c2321d66848c54b767f81e6fbe1321d877f73b27..dae66a114f52ace7d52d1f184ea84e93055d329f), thanks Anthony for the tip!
 
 I also plan to revisit the templates themselves and clean them up, but that doesn't affect the look and feel of the site, so I don't think it counts. I also plan to get rid of the homepage... Just kidding, I will just move it to `home` and the site root will be a welcome screen inspired by what [melankorin](https://melankorin.net) does.
 

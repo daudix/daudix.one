@@ -50,4 +50,4 @@ The solution, as you guessed, requires the existence of at least one [Wayback Ma
 
 ## Conclusion
 
-Was it worth it? [Maybe](https://codeberg.org/daudix/website/commit/dfcaefd202553b867611254791eaab4bc316a812), maybe not. This shows once again how much I care about stupid little things that no one would ever notice.
+Was it worth it? [Maybe](https://github.com/daudix/daudix.one/commit/dfcaefd202553b867611254791eaab4bc316a812), maybe not. This shows once again how much I care about stupid little things that no one would ever notice.
