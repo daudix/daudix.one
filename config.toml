@@ -80,6 +80,7 @@ links = [
 copyright = true
 show_fediring = true
 show_timestamp = true
+show_powered_by = true
 socials = [
   { url = "https://bsky.app/profile/daudix.one", icon = "bluesky" },
   { url = "https://wetdry.world/@daudix", icon = "mastodon" },
