@@ -31,12 +31,12 @@ unused_icons = [
   { name = "Sveglia", icon = "org.nickvision.sveglia.svg" },
 ]
 wallpapers = [
-  { name = "Amber", wallpaper = "amber-l.webp", wallpaper_dark = "amber-d.webp", url = "https://codeberg.org/daudix/archive/src/branch/main/wallpapers/amber" },
-  { name = "Amber v2", wallpaper = "amber-v2-l.webp", wallpaper_dark = "amber-v2-d.webp", url = "https://codeberg.org/daudix/archive/src/branch/main/wallpapers/amber-v2" },
-  { name = "Crash", wallpaper = "crash-l.webp", wallpaper_dark = "crash-d.webp", url = "https://codeberg.org/daudix/archive/src/branch/main/wallpapers/crash" },
-  { name = "Finder", wallpaper = "finder-gnome-l.webp", wallpaper_dark = "finder-gnome-d.webp", url = "https://codeberg.org/daudix/archive/src/branch/main/wallpapers/finder" },
-  { name = "Lava", wallpaper = "lava-l.webp", wallpaper_dark = "lava-d.webp", url = "https://codeberg.org/daudix/archive/src/branch/main/wallpapers/lava" },
-  { name = "Waves", wallpaper = "waves-l.webp", wallpaper_dark = "waves-d.webp", url = "https://codeberg.org/daudix/archive/src/branch/main/wallpapers/waves" },
+  { name = "Amber", wallpaper = "amber-l.webp", wallpaper_dark = "amber-d.webp", url = "https://github.com/daudix/assets/tree/main/wallpapers/amber" },
+  { name = "Amber v2", wallpaper = "amber-v2-l.webp", wallpaper_dark = "amber-v2-d.webp", url = "https://github.com/daudix/assets/tree/main/wallpapers/amber-v2" },
+  { name = "Crash", wallpaper = "crash-l.webp", wallpaper_dark = "crash-d.webp", url = "https://github.com/daudix/assets/tree/main/wallpapers/crash" },
+  { name = "Finder", wallpaper = "finder-gnome-l.webp", wallpaper_dark = "finder-gnome-d.webp", url = "https://github.com/daudix/assets/tree/main/wallpapers/finder" },
+  { name = "Lava", wallpaper = "lava-l.webp", wallpaper_dark = "lava-d.webp", url = "https://github.com/daudix/assets/tree/main/wallpapers/lava" },
+  { name = "Waves", wallpaper = "waves-l.webp", wallpaper_dark = "waves-d.webp", url = "https://github.com/daudix/assets/tree/main/wallpapers/waves" },
 ]
 logos = [
   { name = "Distrobox", logo = "distrobox-light.svg", logo_mono = "distrobox-light-mono.svg", logo_dark = "distrobox-dark.svg", logo_dark_mono = "distrobox-dark-mono.svg", url = "https://distrobox.it" },
