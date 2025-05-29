@@ -1,5 +1,7 @@
 # [daudix.one](https://daudix.one)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ebae929e-5e6e-4b5f-855c-6942733fca41/deploy-status)](https://app.netlify.com/projects/daudix/deploys)
+
 The source code of my personal website. It is powered by [Zola](https://www.getzola.org) and [Ametrine](https://ametrine.daudix.one).
 
 ![Screenshot](screenshot.png)
