@@ -1,4 +1,4 @@
-{% import "partials/macros.html" as macros %}
+{% import "macros/icon.html" as macros_icon %}
 
 <aside id="badges">
 	<strong class="title">Badges</strong>
@@ -7,8 +7,8 @@
 	</p>
 	<input type="checkbox" id="badges-popup-expand" class="visually-hidden" autocomplete="off" />
 	<label for="badges-popup-expand" autocomplete="off" title="Link to Me">
-		{{- macros::icon(name="plus") -}}
-		{{- macros::icon(name="x") -}}
+		{{- macros_icon::icon(name="plus") -}}
+		{{- macros_icon::icon(name="x") -}}
 	</label>
 	<div id="badges-popup">
 		<p>

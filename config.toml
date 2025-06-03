@@ -94,10 +94,10 @@ host = "wetdry.world"
 user = "daudix"
 show_qr = true
 
-[extra.vercel]
-analytics = true
-speed_insights = true
-rewrites_source = "api"
+[extra.analytics]
+service = "umami"
+id = "3dbc6c32-f4f0-420e-bdb8-cfcaff7e7201"
+self_hosted_url = "https://daudix.one/api/"
 
 [extra.debug]
 layout = false
