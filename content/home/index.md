@@ -51,10 +51,10 @@ Greetings! Welcome to my little corner on the World Wild Web. You might know me 
 <div>
 
 <div id="icons">
-  <img class="transparent no-hover drop-shadow" src="/design/icons/original/de.schmidhuberj.DieBahn.svg" />
-  <img class="transparent no-hover drop-shadow" src="/design/icons/original/io.github.tfuxu.Halftone.svg" />
-  <img class="transparent no-hover drop-shadow" src="/design/icons/original/org.nickvision.cavalier.svg" />
-  <img class="transparent no-hover drop-shadow" src="/design/icons/original/org.nickvision.tagger.svg" />
+  <img class="transparent no-hover drop-shadow" src="/design/icons/original/de.schmidhuberj.DieBahn.svg" alt="Railway app icon." />
+  <img class="transparent no-hover drop-shadow" src="/design/icons/original/io.github.tfuxu.Halftone.svg" alt="Halftone app icon." />
+  <img class="transparent no-hover drop-shadow" src="/design/icons/original/org.nickvision.cavalier.svg" alt="Cavalier app icon." />
+  <img class="transparent no-hover drop-shadow" src="/design/icons/original/org.nickvision.tagger.svg" alt="Tagger app icon." />
 </div>
 
 <div>
