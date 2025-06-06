@@ -17,8 +17,7 @@ body::before {
 	background: repeating-conic-gradient(
 		from var(--angle) at top right,
 		var(--ray) 0deg 10deg,
-		transparent 10deg 20deg
-	);
+		transparent 10deg 20deg);
 	content: "";
 
 	@keyframes rays {
@@ -54,10 +53,6 @@ body::before {
 			padding: 1rem;
 			overflow: auto;
 
-			& > * {
-				animation: slide-in-right var(--transition-bezier);
-			}
-
 			:first-child {
 				margin-block-start: 0;
 			}
@@ -67,18 +62,22 @@ body::before {
 			}
 		}
 
-		&:has(li:nth-of-type(1) input[type="radio"]:checked)
-			.card-content:nth-of-type(1),
-		&:has(li:nth-of-type(2) input[type="radio"]:checked)
-			.card-content:nth-of-type(2) {
+		&:has(li:nth-of-type(1) input[type="radio"]:checked) .card-content:nth-of-type(1),
+		&:has(li:nth-of-type(2) input[type="radio"]:checked) .card-content:nth-of-type(2) {
 			display: block;
 		}
 
-		&:has(li:nth-of-type(1) input[type="radio"]:checked)
-			.card-content:nth-of-type(2),
-		&:has(li:nth-of-type(2) input[type="radio"]:checked)
-			.card-content:nth-of-type(1) {
+		&:has(li:nth-of-type(1) input[type="radio"]:checked) .card-content:nth-of-type(2),
+		&:has(li:nth-of-type(2) input[type="radio"]:checked) .card-content:nth-of-type(1) {
 			display: none;
+		}
+
+		&:has(li:nth-of-type(1) input[type="radio"]:checked) .card-content:nth-of-type(1) {
+			animation: slide-in-left var(--transition-bezier);
+		}
+
+		&:has(li:nth-of-type(2) input[type="radio"]:checked) .card-content:nth-of-type(2) {
+			animation: slide-in-right var(--transition-bezier);
 		}
 	}
 
@@ -105,9 +104,10 @@ body::before {
 				cursor: pointer;
 				border-radius: var(--rounded-corner-small);
 				padding: 0 0.375rem;
-				font-weight: var(--font-weight-semi-bold);
 				font-size: var(--font-size-small);
+				user-select: none;
 				text-align: center;
+				-webkit-user-select: none;
 
 				&:hover {
 					box-shadow: var(--edge-highlight);
@@ -134,6 +134,7 @@ body::before {
 					box-shadow: var(--shadow);
 					background-color: white;
 					color: rgb(0 0 0 / 0.8);
+					font-weight: var(--font-weight-semi-bold);
 				}
 			}
 		}
