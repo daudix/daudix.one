@@ -22,6 +22,7 @@ main {
 	justify-content: center;
 	align-items: center;
 	gap: 1rem;
+	animation: fade-in-zoom var(--transition-bezier-longer);
 	margin: 0;
 	box-shadow: none;
 	border-radius: 0;
@@ -69,7 +70,7 @@ main {
 		height: 3.75rem;
 		font-weight: var(--font-weight-black);
 		font-size: 3rem;
-		letter-spacing: -0.05em;
+		letter-spacing: -0.055em;
 		text-decoration: underline solid;
 		text-decoration-color: transparent;
 		text-decoration-thickness: 0.125em;
@@ -162,29 +163,30 @@ main {
 			}
 		}
 	}
+}
 
-	#barcode {
-		position: absolute;
-		inset-block-end: 1rem;
-		inset-inline-start: 1rem;
-		width: rpx(153);
-		height: rpx(26);
-	}
+#barcode {
+	position: absolute;
+	margin: 0;
+	inset-block-end: 1rem;
+	inset-inline-start: 1rem;
+	width: rpx(153);
+	height: rpx(26);
+}
 
-	#rainbow {
-		position: absolute;
-		inset-block-end: 1rem;
-		inset-inline-end: 1rem;
-		background-image: linear-gradient(
-			to right,
-			var(--red-fg),
-			var(--orange-fg),
-			var(--yellow-fg),
-			var(--green-fg),
-			var(--blue-fg),
-			var(--purple-fg)
-		);
-		width: 8rem;
-		height: 1rem;
-	}
+#rainbow {
+	position: absolute;
+	inset-block-end: 1rem;
+	inset-inline-end: 1rem;
+	background-image: linear-gradient(
+		to right,
+		var(--red-fg),
+		var(--orange-fg),
+		var(--yellow-fg),
+		var(--green-fg),
+		var(--blue-fg),
+		var(--purple-fg)
+	);
+	width: 8rem;
+	height: 1rem;
 }
