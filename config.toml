@@ -30,7 +30,6 @@ bottom_footnotes = true
 index_format = "elasticlunr_json"
 
 [extra]
-styles = ["custom.css"]
 categories = [
   { name = "Archived", description = "Posts that have been archived due to their age.", color = "purple", icon = "box-arrow-down" },
   { name = "Featured", description = "Posts that are somewhat decently written.", color = "yellow", icon = "star" },

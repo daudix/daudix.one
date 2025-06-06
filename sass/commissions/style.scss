@@ -73,11 +73,11 @@ body::before {
 		}
 
 		&:has(li:nth-of-type(1) input[type="radio"]:checked) .card-content:nth-of-type(1) {
-			animation: slide-in-left var(--transition-bezier);
+			animation: slide-in-right var(--transition-bezier);
 		}
 
 		&:has(li:nth-of-type(2) input[type="radio"]:checked) .card-content:nth-of-type(2) {
-			animation: slide-in-right var(--transition-bezier);
+			animation: slide-in-left var(--transition-bezier);
 		}
 	}
 
