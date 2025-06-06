@@ -73,6 +73,14 @@ Experience can be significantly worse when using these; messages could be delaye
 
 </div>
 
+## Badge
+
+Want to link back to this page and let more people know about Snug Nook? We've got you covered! With this 88x31 badge, you can do just that.
+
+<a id="snug-nook-badge" href="/badges/badges/snug-nook.gif">
+    <img class="pixels" src="/badges/badges/snug-nook.gif" />
+</a>
+
 ***
 
 1. <https://icycoide.github.io>

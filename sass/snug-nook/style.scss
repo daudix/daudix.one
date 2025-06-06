@@ -235,3 +235,25 @@ blockquote:has(div) {
 		font-size: 1rem;
 	}
 }
+
+#snug-nook-badge {
+	display: block;
+	margin: 1rem auto;
+	width: fit-content;
+
+	img {
+		margin: 0;
+		box-shadow: var(--shadow-glow);
+		border-radius: 0;
+		width: rpx(176);
+		height: rpx(62);
+
+		&:hover {
+			transform: scale(1.5);
+		}
+
+		&:active {
+			transform: scale(1.25);
+		}
+	}
+}
