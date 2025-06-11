@@ -1,2 +1,9 @@
 @use "../themes/ametrine/sass/style";
 @use "components/nanolog";
+
+body {
+    background-image: var(--bg-overlay), url("/sky.webp");
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
