@@ -1,0 +1,23 @@
+{%- if type == "contacts" -%}
+	{%- set items = page.extra.contacts -%}
+{%- elif type == "socials" -%}
+	{%- set items = page.extra.socials -%}
+{%- elif type == "forges" -%}
+	{%- set items = page.extra.forges -%}
+{%- endif -%}
+
+<ul>
+	{%- for item in items -%}
+		<li>
+			<a href="{{ item.url }}">
+				<img
+					class="transparent no-hover pixels drop-shadow"
+					alt="Pixel art {{ item.name }} icon."
+					{% set item_path = "home/icons/" ~ item.name ~ ".gif" | lower %}
+					src="{{ get_url(path=item_path) }}"
+				/>
+				{{- item.name -}}
+			</a>
+		</li>
+	{%- endfor -%}
+</ul>
