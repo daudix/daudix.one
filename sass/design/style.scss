@@ -1,33 +1,11 @@
-@use "../../themes/ametrine/sass/components/functions" as *;
 @use "../../themes/ametrine/sass/components/variables" as *;
+@use "../components/mixins" as *;
 
-:root {
-	@include colors-accent("dark");
-	@include variables("dark");
-}
-
-main {
-	background-image: linear-gradient(rgb(0 0 0 / 0.5), rgb(0 0 0 / 0.5)), url("curtain.webp");
+body {
+	background-image: var(--bg-overlay), url("curtain.webp");
 	background-size: contain;
 	background-repeat: repeat-x;
 	background-attachment: fixed;
-
-	@media (prefers-color-scheme: dark) {
-		background-image: linear-gradient(rgb(0 0 0 / 0.8), rgb(0 0 0 / 0.8)), url("curtain.webp");
-	}
-}
-
-h1 {
-	-webkit-background-clip: text;
-	filter: drop-shadow(rpx(1) rpx(1) rgb(0 0 0 / var(--disabled-opacity)));
-	background-image: linear-gradient(
-		to bottom,
-		#cfc09f 27%,
-		#ffecb3 40%,
-		#3a2c0f 78%
-	);
-	background-clip: text;
-	color: transparent;
 }
 
 .media-grid {
@@ -97,19 +75,19 @@ h1 {
 }
 
 section {
-	-webkit-backdrop-filter: var(--blur);
-	backdrop-filter: var(--blur);
 	margin-block-start: 2rem;
-	box-shadow: var(--edge-highlight), var(--shadow);
 	border-radius: 2.75rem;
 	border-start-start-radius: var(--rounded-corner);
-	background-image: radial-gradient(
-		circle,
-		var(--bg-muted-1) rpx(1),
-		transparent rpx(1)
-	);
-	background-size: 1rem 1rem;
 	padding: 1rem;
+	@include fancy-card;
+	@include colors-accent("light");
+	@include variables("accent");
+
+	@media (prefers-color-scheme: dark) {
+		& {
+			@include colors-accent("dark");
+		}
+	}
 
 	h2 {
 		margin: 0;
@@ -131,29 +109,23 @@ section {
 	}
 
 	&#original-icons {
-		--bg-muted-1: var(--blue-bg-1);
-		--bg-muted-2: var(--blue-bg-2);
-		--fg-muted-1: var(--blue-fg-muted-1);
-		--fg-muted-2: var(--blue-fg-muted-2);
-		background-color: var(--blue-bg-2);
-		color: var(--blue-fg-muted-2);
+		--accent-light-h: var(--blue-h);
+		--accent-light-s: var(--blue-s);
+		--accent-light-l: var(--blue-l);
 
-		h2 {
-			color: var(--blue-fg);
-		}
+		--accent-dark-h: var(--blue-h);
+		--accent-dark-s: var(--blue-s);
+		--accent-dark-l: var(--blue-l);
 	}
 
 	&#redrawn-icons {
-		--bg-muted-1: var(--green-bg-1);
-		--bg-muted-2: var(--green-bg-2);
-		--fg-muted-1: var(--green-fg-muted-1);
-		--fg-muted-2: var(--green-fg-muted-2);
-		background-color: var(--green-bg-2);
-		color: var(--green-fg-muted-2);
+		--accent-light-h: var(--green-h);
+		--accent-light-s: var(--green-s);
+		--accent-light-l: var(--green-l);
 
-		h2 {
-			color: var(--green-fg);
-		}
+		--accent-dark-h: var(--green-h);
+		--accent-dark-s: var(--green-s);
+		--accent-dark-l: var(--green-l);
 
 		a div:hover {
 			img {
@@ -174,42 +146,33 @@ section {
 	}
 
 	&#unused-icons {
-		--bg-muted-1: var(--red-bg-1);
-		--bg-muted-2: var(--red-bg-2);
-		--fg-muted-1: var(--red-fg-muted-1);
-		--fg-muted-2: var(--red-fg-muted-2);
-		background-color: var(--red-bg-2);
-		color: var(--red-fg-muted-2);
+		--accent-light-h: var(--red-h);
+		--accent-light-s: var(--red-s);
+		--accent-light-l: var(--red-l);
 
-		h2 {
-			color: var(--red-fg);
-		}
+		--accent-dark-h: var(--red-h);
+		--accent-dark-s: var(--red-s);
+		--accent-dark-l: var(--red-l);
 	}
 
 	&#wallpapers {
-		--bg-muted-1: var(--purple-bg-1);
-		--bg-muted-2: var(--purple-bg-2);
-		--fg-muted-1: var(--purple-fg-muted-1);
-		--fg-muted-2: var(--purple-fg-muted-2);
-		background-color: var(--purple-bg-2);
-		color: var(--purple-fg-muted-2);
+		--accent-light-h: var(--purple-h);
+		--accent-light-s: var(--purple-s);
+		--accent-light-l: var(--purple-l);
 
-		h2 {
-			color: var(--purple-fg);
-		}
+		--accent-dark-h: var(--purple-h);
+		--accent-dark-s: var(--purple-s);
+		--accent-dark-l: var(--purple-l);
 	}
 
 	&#logos {
-		--bg-muted-1: var(--yellow-bg-1);
-		--bg-muted-2: var(--yellow-bg-2);
-		--fg-muted-1: var(--yellow-fg-muted-1);
-		--fg-muted-2: var(--yellow-fg-muted-2);
-		background-color: var(--yellow-bg-2);
-		color: var(--yellow-fg-muted-2);
+		--accent-light-h: var(--yellow-h);
+		--accent-light-s: var(--yellow-s);
+		--accent-light-l: var(--yellow-l);
 
-		h2 {
-			color: var(--yellow-fg);
-		}
+		--accent-dark-h: var(--yellow-h);
+		--accent-dark-s: var(--yellow-s);
+		--accent-dark-l: var(--yellow-l);
 
 		a div:hover {
 			img.mono {
@@ -232,10 +195,4 @@ section {
 			inset-inline-start: 0;
 		}
 	}
-}
-
-#site-footer {
-	-webkit-backdrop-filter: var(--blur);
-	backdrop-filter: var(--blur);
-	background-color: var(--glass-bg-1);
 }

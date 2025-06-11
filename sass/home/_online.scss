@@ -1,0 +1,49 @@
+.fancy-list.online {
+	ul {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+
+		li {
+			display: flex;
+			border-radius: 0;
+			background-color: transparent;
+			padding: 0;
+
+			&:first-of-type {
+				border-radius: var(--rounded-corner) var(--rounded-corner) var(--rounded-corner-small) var(--rounded-corner-small);
+			}
+
+			&:last-of-type {
+				border-radius: var(--rounded-corner-small) var(--rounded-corner-small) var(--rounded-corner) var(--rounded-corner);
+			}
+
+			img {
+				display: inline-block;
+				margin: 0;
+				margin-inline-end: 0.5rem;
+				width: 2rem;
+				height: 2rem;
+			}
+
+			a {
+				display: flex;
+				flex: 1;
+				align-items: center;
+				transition: all var(--transition), transform var(--transition-bezier);
+				border-radius: var(--rounded-corner-small);
+				background-color: var(--bg-muted-1);
+				padding: 0.5rem;
+				color: var(--fg-muted-2);
+				text-decoration: none;
+
+				&:hover {
+					background-color: var(--bg-muted-2);
+				}
+
+				&:active {
+					transform: var(--active);
+				}
+			}
+		}
+	}
+}

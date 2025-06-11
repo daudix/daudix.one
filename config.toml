@@ -25,6 +25,7 @@ highlight_themes_css = [
 ]
 smart_punctuation = true
 bottom_footnotes = true
+external_links_class = "external"
 
 [search]
 index_format = "elasticlunr_json"
@@ -57,8 +58,6 @@ card = true
 [extra.nav]
 icon = "apple-touch-icon.png"
 links = [
-  { url = "@/about/index.md", name = "About", icon = "info" },
-  { url = "@/online/index.md", name = "Online", icon = "at" },
   { name = "Writing", category = [
     { url = "@/blog/_index.md", name = "Blog", icon = "newspaper-clipping" },
     { url = "@/nanolog/_index.md", name = "Nanolog", icon = "note-pencil" },
@@ -102,5 +101,3 @@ self_hosted_url = "https://daudix.one/api"
 layout = false
 no_styles = false
 no_emojis = false
-slow_mo = false
-fake_error = false
