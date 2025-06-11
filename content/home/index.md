@@ -7,7 +7,7 @@ scripts = ["home/script.js"]
 no_header = true
 badges = [
   { name = "adhd.gif", url = "https://en.wikipedia.org/wiki/Attention_deficit_hyperactivity_disorder" },
-  { name = "blue-team.gif", url = "https://512kb.club" },
+  # { name = "blue-team.gif", url = "https://512kb.club" },
   { name = "dark-mode.gif", url = "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme" },
   { name = "mobilefriendly.gif", url = "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design" },
   { name = "righttorepair.gif", url = "https://www.ifixit.com/Right-to-Repair" },
