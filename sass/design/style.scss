@@ -96,15 +96,21 @@ section {
 	&#original-icons,
 	&#redrawn-icons,
 	&#unused-icons {
-		@media only screen and (max-width: 480px) {
-			.media-grid {
-				grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-			}
-		}
-
 		img {
 			width: 8rem;
 			height: 8rem;
+		}
+
+		@media only screen and (max-width: 520px) {
+			.media-grid {
+				grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+			}
+
+			.media-grid .grid-item div.grid::before,
+			img {
+				width: 6rem;
+				height: 6rem;
+			}
 		}
 	}
 
@@ -163,6 +169,21 @@ section {
 		--accent-dark-h: var(--purple-h);
 		--accent-dark-s: var(--purple-s);
 		--accent-dark-l: var(--purple-l);
+
+		img {
+			aspect-ratio: 4 / 3;
+			object-fit: cover;
+		}
+
+		@media only screen and (max-width: 520px) {
+			.media-grid {
+				grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+			}
+
+			img {
+				aspect-ratio: 3 / 4;
+			}
+		}
 	}
 
 	&#logos {
