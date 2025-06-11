@@ -38,6 +38,11 @@
 	width: rpx(128);
 	height: rpx(110);
 
+	@media only screen and (max-width: 480px) {
+		width: calc(rpx(128) / 2);
+		height: calc(rpx(110) / 2);
+	}
+
 	&.active {
 		animation: peek var(--transition-long);
 
