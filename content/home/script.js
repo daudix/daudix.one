@@ -1,15 +1,33 @@
-// Last.fm "Now playing"
-const player = document.getElementById("player");
-const cover = document.getElementById("cover");
-const title = document.getElementById("player-title");
-const titleContainer = document.getElementById("player-title-container");
-const artist = document.getElementById("player-artist");
-const artistContainer = document.getElementById("player-artist-container");
-const link = document.getElementById("player-go");
+/* ==========================================================================
+   Constants and DOM Elements
+   ========================================================================== */
+
+const lastFmPlayer = document.getElementById("player");
+const lastFmCover = document.getElementById("cover");
+const lastFmTitle = document.getElementById("player-title");
+const lastFmTitleContainer = document.getElementById("player-title-container");
+const lastFmArtist = document.getElementById("player-artist");
+const lastFmArtistContainer = document.getElementById("player-artist-container");
+const lastFmLink = document.getElementById("player-go");
+const statusCafeContent = document.getElementById("statuscafe-content");
+const statusCafeFace = document.getElementById("statuscafe-face");
+const statusCafeTimeAgo = document.getElementById("statuscafe-time-ago");
+const discordStatus = document.getElementById("online-indicator");
+const clock = document.getElementById("clock");
+const flutter = document.getElementById("flutter");
+const shy = document.getElementById("shy");
+const squee = new Audio("/home/squee.mp3");
 
 let lastTrackID = null;
+let lastDiscordStatus = "";
+let lastTime = "";
 
-async function fetchNowPlaying() {
+/* ==========================================================================
+   Functions
+   ========================================================================== */
+
+// Last.fm
+async function fetchLastFm() {
 	try {
 		// Replace my username and API key if you're going to use this
 		const res = await fetch(`https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=daudix&api_key=db60767a26fe9d01a170898e19814233&format=json&limit=1`);
@@ -20,35 +38,35 @@ async function fetchNowPlaying() {
 		const trackID = track.mbid || track.url;
 		const isPlaying = track["@attr"]?.nowplaying === "true";
 
-		if (trackID !== lastTrackID || isPlaying !== player.classList.contains("playing")) {
+		if (trackID !== lastTrackID || isPlaying !== lastFmPlayer.classList.contains("playing")) {
 			lastTrackID = trackID;
 
-			title.textContent = track.name;
-			artist.textContent = track.artist["#text"];
-			cover.src = track.image.find(img => img.size === "medium")?.["#text"] || "image-missing.svg";
-			link.href = track.url;
+			lastFmTitle.textContent = track.name;
+			lastFmArtist.textContent = track.artist["#text"];
+			lastFmCover.src = track.image.find(img => img.size === "medium")?.["#text"] || "image-missing.svg";
+			lastFmLink.href = track.url;
 
-			player.classList.toggle("playing", isPlaying);
+			lastFmPlayer.classList.toggle("playing", isPlaying);
 
 			// Make sure we're starting anew
-			titleContainer.classList.remove("marquee", "overshoot-row");
-			artistContainer.classList.remove("marquee", "overshoot-row");
+			lastFmTitleContainer.classList.remove("marquee", "overshoot-row");
+			lastFmArtistContainer.classList.remove("marquee", "overshoot-row");
 
-			const titleWidth = title.offsetWidth;
-			const titleContainerWidth = titleContainer.getBoundingClientRect().width;
-			const artistWidth = artist.offsetWidth;
-			const artistContainerWidth = artistContainer.getBoundingClientRect().width;
+			const titleWidth = lastFmTitle.offsetWidth;
+			const titleContainerWidth = lastFmTitleContainer.getBoundingClientRect().width;
+			const artistWidth = lastFmArtist.offsetWidth;
+			const artistContainerWidth = lastFmArtistContainer.getBoundingClientRect().width;
 
-			title.style.setProperty("--text-width", `${titleWidth}`);
-			title.style.setProperty("--container-width", `${titleContainerWidth}`);
-			artist.style.setProperty("--text-width", `${artistWidth}`);
-			artist.style.setProperty("--container-width", `${artistContainerWidth}`);
+			lastFmTitle.style.setProperty("--text-width", `${titleWidth}`);
+			lastFmTitle.style.setProperty("--container-width", `${titleContainerWidth}`);
+			lastFmArtist.style.setProperty("--text-width", `${artistWidth}`);
+			lastFmArtist.style.setProperty("--container-width", `${artistContainerWidth}`);
 
 			if (titleWidth > titleContainerWidth) {
-				titleContainer.classList.add("marquee", "overshoot-row");
+				lastFmTitleContainer.classList.add("marquee", "overshoot-row");
 			}
 			if (artistWidth > artistContainerWidth) {
-				artistContainer.classList.add("marquee", "overshoot-row");
+				lastFmArtistContainer.classList.add("marquee", "overshoot-row");
 			}
 		}
 	} catch (e) {
@@ -56,22 +74,19 @@ async function fetchNowPlaying() {
 	}
 }
 
-setInterval(fetchNowPlaying, 10000);
-fetchNowPlaying();
-
 // DEBUG FUNCTIONS
 function togglePlaying() {
-	player.classList.toggle("playing");
+	lastFmPlayer.classList.toggle("playing");
 }
 
 function toggleTitleMarquee() {
-	titleContainer.classList.toggle("marquee");
-	titleContainer.classList.toggle("overshoot-row");
+	lastFmTitleContainer.classList.toggle("marquee");
+	lastFmTitleContainer.classList.toggle("overshoot-row");
 }
 
 function toggleArtistMarquee() {
-	artistContainer.classList.toggle("marquee");
-	artistContainer.classList.toggle("overshoot-row");
+	lastFmArtistContainer.classList.toggle("marquee");
+	lastFmArtistContainer.classList.toggle("overshoot-row");
 }
 
 function forceReload() {
@@ -80,73 +95,71 @@ function forceReload() {
 }
 
 // status.cafe
-document.addEventListener("DOMContentLoaded", function () {
-	fetch("https://status.cafe/users/daudix/status.json")
-		.then(r => r.json())
-		.then(r => {
-			if (!r.content.length) {
-				document.getElementById("statuscafe-content").innerHTML = "No status yet."
-				return
-			}
-			document.getElementById("statuscafe-content").innerHTML = r.content
-			document.getElementById("statuscafe-face").innerHTML = r.face
-			document.getElementById("statuscafe-time-ago").innerHTML = r.timeAgo
-		})
-		.catch(error => console.error("Error fetching status:", error));
-});
+async function fetchStatusCafe() {
+	try {
+		const res = await fetch("https://status.cafe/users/daudix/status.json");
+		const r = await res.json();
+
+		if (!r.content.length) {
+			statusCafeContent.innerHTML = "No status yet.";
+			return;
+		}
+
+		statusCafeContent.innerHTML = r.content;
+		statusCafeFace.innerHTML = r.face;
+		statusCafeTimeAgo.innerHTML = r.timeAgo;
+	} catch (error) {
+		console.error("Error fetching status:", error);
+	}
+}
 
 // Flutter
-document.getElementById("shy").addEventListener("click", fluttershyAnim);
-
-function fluttershyAnim() {
-	const shy = document.getElementById("shy");
+function flutterAnim() {
 	shy.setAttribute("disabled", "true");
 
-	const squee = new Audio("/home/squee.mp3");
 	squee.play();
 
-	const fluttershy = document.getElementById("fluttershy");
-	fluttershy.classList.add("active");
+	flutter.classList.add("active");
 
-	fluttershy.addEventListener("animationend", function () {
+	flutter.addEventListener("animationend", function () {
 		shy.removeAttribute("disabled");
-		fluttershy.classList.remove("active");
-	});
+		flutter.classList.remove("active");
+	}, { once: true });
 }
 
 // Discord status
-document.addEventListener("DOMContentLoaded", function () {
-	const indicatorElement = document.getElementById("online-indicator");
-	indicatorElement.innerHTML = "N/A";
+async function fetchDiscordStatus() {
+	try {
+		const res = await fetch("https://api.lanyard.rest/v1/users/650757995378114581");
+		const data = await res.json();
+		const status = data.data.discord_status;
 
-	fetch("https://api.lanyard.rest/v1/users/650757995378114581")
-		.then(response => response.json())
-		.then(data => {
-			const status = data.data.discord_status;
+		if (status !== lastDiscordStatus) {
+			lastDiscordStatus = status;
 
-			indicatorElement.classList.remove("online", "idle", "dnd", "offline");
-			indicatorElement.classList.add(status);
+			discordStatus.classList.remove("online", "idle", "dnd", "offline");
+			discordStatus.classList.add(status);
 
 			switch (status) {
 				case "online":
-					indicatorElement.innerHTML = "Online";
+					discordStatus.innerHTML = "Online";
 					break;
 				case "idle":
-					indicatorElement.innerHTML = "Idle";
+					discordStatus.innerHTML = "Idle";
 					break;
 				case "dnd":
-					indicatorElement.innerHTML = "DND";
+					discordStatus.innerHTML = "DND";
 					break;
 				case "offline":
-					indicatorElement.innerHTML = "Offline";
+					discordStatus.innerHTML = "Offline";
 					break;
 			}
-		})
-		.catch(error => {
-			console.error("Error fetching Lanyard data:", error);
-			indicatorElement.innerHTML = "N/A";
-		});
-});
+		}
+	} catch (error) {
+		console.error("Error fetching Lanyard data:", error);
+		discordStatus.innerHTML = "N/A";
+	}
+}
 
 // Clock
 function updateClock() {
@@ -158,11 +171,29 @@ function updateClock() {
 		hour12: false,
 	};
 
-	const clockElement = document.getElementById("clock");
 	const localTime = new Date().toLocaleString("en-IE", options);
 
-	clockElement.textContent = localTime;
+	if (localTime !== lastTime) {
+		clock.textContent = localTime;
+		lastTime = localTime;
+	}
 }
 
-updateClock();
-setInterval(updateClock, 1000);
+/* ==========================================================================
+   Initialization and Event Listeners
+   ========================================================================== */
+
+document.addEventListener("DOMContentLoaded", function () {
+	fetchStatusCafe();
+
+	fetchLastFm();
+	setInterval(fetchLastFm, 10000);
+
+	updateClock();
+	setInterval(updateClock, 1000);
+
+	fetchDiscordStatus();
+	setInterval(fetchDiscordStatus, 10000);
+
+	document.getElementById("shy").addEventListener("click", flutterAnim);
+});

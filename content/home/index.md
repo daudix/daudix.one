@@ -222,4 +222,4 @@ I'm even a member of several [tildes](https://envs.net) and [CS clubs](https://e
 
 Better yet, I have a website on [neocities](https://neocities.org); It doesn't have any purpose except for being there and looking dated. [Check it out](https://daudix.neocities.org) if you want.
 
-<img id="fluttershy" class="transparent no-hover" src="flutter.webp" alt="Fluttershy with a wide grin on her face.">
+<img id="flutter" class="transparent no-hover" src="flutter.webp" alt="Fluttershy with a wide grin on her face.">
