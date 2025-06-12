@@ -16,6 +16,7 @@ It is currently hosted on [Vercel](https://vercel.com), and I like it so far. Be
 Most likely I forgot to credit someone. Sorry about that \>_<
 
 - [sadgrl.online](https://goblin-heart.net/sadgrl/) for the "static" [tiled background](https://goblin-heart.net/sadgrl/webmastery/downloads/tiledbgs) used on splash page, metadata card, and 88x31 button.
+- [Łukasz Łada](https://unsplash.com/@lukaszlada) on [Unsplash](https://unsplash.com/photos/sea-of-clouds-LtWFFVi1RXQ) for the sky background image.
 - [Volpeon](https://volpeon.ink) for [neofoxes](https://volpeon.ink/emojis/neofox/) used throughout the site.
 - [Vylet Pony](https://www.vyletpony.com) for inderictly inspiring the design of home/about. <small>([ANTONYMPH](https://www.youtube.com/watch?v=CNPdO5TZ1DQ) and [I DON'T NEED TO BE FIXED](https://www.youtube.com/watch?v=xMzxVVXTGjE) in particular)</small>
 - "dwb" for the ASCII art on the blog page.
