@@ -27,21 +27,32 @@
 }
 
 // Ah, that's who
-#fluttershy {
+#flutter {
 	position: fixed;
 	transform: translateY(100%);
+	visibility: hidden;
 	z-index: 1;
-	animation: peek var(--transition-long);
 	margin: 0;
 	inset-block-end: 0;
 	inset-inline-end: 1rem;
 	width: rpx(128);
 	height: rpx(110);
 
-	@keyframes peek {
-		50%,
-		75% {
-			transform: translateY(0);
+	@media only screen and (max-width: 480px) {
+		width: calc(rpx(128) / 2);
+		height: calc(rpx(110) / 2);
+	}
+
+	&.active {
+		animation: peek var(--transition-long);
+
+		@keyframes peek {
+			50%,
+			75% {
+				transform: translateY(0);
+				visibility: visible;
+				filter: var(--drop-shadow);
+			}
 		}
 	}
 }
