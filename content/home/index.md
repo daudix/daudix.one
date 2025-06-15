@@ -178,7 +178,7 @@ Where and when to find me online.
 
 <strong id="contacts" class="title">Contacts</strong>
 
-For me it's currently <time id="clock"><noscript>NO:JS</noscript></time> <small>(UTC+3)</small> and I'm <span id="online-indicator"><noscript>N/A</noscript></span>.
+For me it's currently <time id="clock">09:41</time> <small>(UTC+3)</small> and I'm <span id="online-indicator"><i class="icon"></i><span id="online-indicator-text">Offline</span></span>.
 
 Feel free to reach me out on any of these! Although I'm usually too shy to start the conversation, I'm happy to chat once someone messages me first.
 

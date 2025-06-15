@@ -1,9 +1,24 @@
 @use "../themes/ametrine/sass/style";
 @use "components/nanolog";
+@use "components/mixins" as *;
 
 body {
-    background-image: var(--bg-overlay), url("/sky.webp");
+	background-image: var(--bg-overlay), url("/sky.webp");
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
+}
+
+.article-list article,
+.article-list article.has-banner.has-accent-color,
+.card-grid .card,
+.icon-grid a,
+#nanolog-list li > div:nth-of-type(2),
+#site-nav::before {
+	@include fancy-card;
+	background-color: transparent;
+}
+
+#site-nav::before {
+	border-inline-end: none;
 }

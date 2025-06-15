@@ -1,3 +1,5 @@
+{% import "macros/icon.html" as macros_icon %}
+
 {%- if type == "contacts" -%}
 	{%- set items = page.extra.contacts -%}
 {%- elif type == "socials" -%}
@@ -21,3 +23,14 @@
 		</li>
 	{%- endfor -%}
 </ul>
+
+{%- if type == "contacts" -%}
+	<style>
+		:root {
+			--icon-circle-dashed: {{ macros_icon::icon(name="circle-dashed", inline=true) }};
+			--icon-circle: {{ macros_icon::icon(name="circle", inline=true) }};
+			--icon-minus-circle: {{ macros_icon::icon(name="minus-circle", inline=true) }};
+			--icon-moon: {{ macros_icon::icon(name="moon", inline=true) }};
+		}
+	</style>
+{%- endif -%}

@@ -1,3 +1,5 @@
+@use "../../themes/ametrine/sass/components/functions" as *;
+
 #online-indicator {
 	box-shadow: var(--edge-highlight);
 	border-radius: var(--rounded-corner-small);
@@ -9,20 +11,33 @@
 	&.online {
 		background-color: var(--green-bg-1);
 		color: var(--green-fg);
+
+		.icon {
+			--icon: var(--icon-circle);
+		}
 	}
 
 	&.idle {
 		background-color: var(--yellow-bg-1);
 		color: var(--yellow-fg);
+
+		.icon {
+			--icon: var(--icon-moon);
+		}
 	}
 
 	&.dnd {
 		background-color: var(--red-bg-1);
 		color: var(--red-fg);
+
+		.icon {
+			--icon: var(--icon-minus-circle);
+		}
 	}
 
-	&.offline {
-		background-color: var(--bg-muted-1);
-		color: var(--fg-muted-2);
+	.icon {
+		--icon: var(--icon-circle-dashed);
+		vertical-align: rpx(-2);
+		margin-inline-end: 0.25rem;
 	}
 }
