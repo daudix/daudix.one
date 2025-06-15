@@ -13,6 +13,7 @@ const statusCafeContent = document.getElementById("statuscafe-content");
 const statusCafeFace = document.getElementById("statuscafe-face");
 const statusCafeTimeAgo = document.getElementById("statuscafe-time-ago");
 const discordStatus = document.getElementById("online-indicator");
+const discordStatusText = document.getElementById("online-indicator-text");
 const clock = document.getElementById("clock");
 const flutter = document.getElementById("flutter");
 const shy = document.getElementById("shy");
@@ -142,22 +143,22 @@ async function fetchDiscordStatus() {
 
 			switch (status) {
 				case "online":
-					discordStatus.innerHTML = "Online";
+					discordStatusText.innerHTML = "Online";
 					break;
 				case "idle":
-					discordStatus.innerHTML = "Idle";
+					discordStatusText.innerHTML = "Idle";
 					break;
 				case "dnd":
-					discordStatus.innerHTML = "DND";
+					discordStatusText.innerHTML = "DND";
 					break;
 				case "offline":
-					discordStatus.innerHTML = "Offline";
+					discordStatusText.innerHTML = "Offline";
 					break;
 			}
 		}
 	} catch (error) {
 		console.error("Error fetching Lanyard data:", error);
-		discordStatus.innerHTML = "N/A";
+		discordStatusText.innerHTML = "N/A";
 	}
 }
 
