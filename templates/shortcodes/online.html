@@ -1,0 +1,36 @@
+{% import "macros/icon.html" as macros_icon %}
+
+{%- if type == "contacts" -%}
+	{%- set items = page.extra.contacts -%}
+{%- elif type == "socials" -%}
+	{%- set items = page.extra.socials -%}
+{%- elif type == "forges" -%}
+	{%- set items = page.extra.forges -%}
+{%- endif -%}
+
+<ul>
+	{%- for item in items -%}
+		<li>
+			<a href="{{ item.url }}">
+				<img
+					class="transparent no-hover pixels drop-shadow"
+					alt="Pixel art {{ item.name }} icon."
+					{% set item_path = "home/icons/" ~ item.name ~ ".gif" | lower %}
+					src="{{ get_url(path=item_path) }}"
+				/>
+				{{- item.name -}}
+			</a>
+		</li>
+	{%- endfor -%}
+</ul>
+
+{%- if type == "contacts" -%}
+	<style>
+		:root {
+			--icon-circle-dashed: {{ macros_icon::icon(name="circle-dashed", inline=true) }};
+			--icon-circle: {{ macros_icon::icon(name="circle", inline=true) }};
+			--icon-minus-circle: {{ macros_icon::icon(name="minus-circle", inline=true) }};
+			--icon-moon: {{ macros_icon::icon(name="moon", inline=true) }};
+		}
+	</style>
+{%- endif -%}

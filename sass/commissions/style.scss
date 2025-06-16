@@ -39,9 +39,7 @@ body::before {
 	.card {
 		display: flex;
 		flex-direction: column;
-		box-shadow: var(--edge-highlight);
 		border-radius: var(--rounded-corner);
-		background-color: var(--bg-muted-1);
 		padding: 1rem;
 		aspect-ratio: 1 / 1;
 

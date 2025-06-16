@@ -269,6 +269,6 @@ Description: (Provide as much detail as possible, such as how you want it to fee
 Additional: (Any extra information I should consider.)
 ```
 
-You can contact me via any method listed on the [online](@/online/index.md#contacts) page.
+You can contact me via any method listed on the [home](@/home/index.md#contacts) page.
 
 <small>I hope you actually read this far instead of skipping straight to the end!</small>
