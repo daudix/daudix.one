@@ -18,6 +18,7 @@ body {
 		transition: all var(--transition), transform var(--transition-bezier);
 		border-radius: calc(var(--rounded-corner) + 1rem);
 		padding: 1rem;
+		line-height: 0;
 		text-decoration: none;
 
 		&:hover {
@@ -64,8 +65,9 @@ body {
 
 		small {
 			display: block;
-			margin-block-start: 0.25rem;
+			margin-block-start: 0.75rem;
 			font-weight: var(--font-weight-semi-bold);
+			line-height: 1;
 		}
 	}
 
@@ -195,13 +197,17 @@ section {
 		--accent-dark-s: var(--yellow-s);
 		--accent-dark-l: var(--yellow-l);
 
-		a div:hover {
-			img.mono {
+		a div {
+			box-shadow: var(--shadow);
+			border-radius: var(--rounded-corner);
+
+			&:hover img.mono {
 				opacity: 1;
 			}
 		}
 
 		img {
+			box-shadow: none;
 			background-color: white;
 
 			@media (prefers-color-scheme: dark) {
