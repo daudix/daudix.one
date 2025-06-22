@@ -4,6 +4,7 @@
 @use "components/mixins" as *;
 
 :root {
+	--bg-overlay: linear-gradient(rgb(255 255 255 / var(--disabled-opacity)), rgb(255 255 255 / var(--dim-opacity)));
 	--blur: blur(0.25rem) saturate(180%);
 	--edge-highlight:
 		inset 0px 12px 14px 0px rgb(255 255 255 / 0.3),
@@ -14,6 +15,7 @@
 
 	@media (prefers-color-scheme: dark) {
 		& {
+			--bg-overlay: linear-gradient(rgb(0 0 0 / var(--disabled-opacity)), rgb(0 0 0 / var(--dim-opacity)));
 			--edge-highlight:
 				inset 0px -12px 14px 0px rgba(0, 0, 0, 0.3),
 				inset 0px 4px 16px 0px rgba(255, 255, 255, 0.1),
@@ -25,7 +27,7 @@
 }
 
 body {
-	background-image: var(--bg-overlay), url("/aero.webp");
+	background-image: var(--bg-overlay), url("/longhorn-1.webp");
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
