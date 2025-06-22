@@ -1,9 +1,34 @@
 @use "../themes/ametrine/sass/style";
 @use "components/nanolog";
+@use "../themes/ametrine/sass/components/functions" as *;
 @use "components/mixins" as *;
 
+:root {
+	--blur: blur(0.25rem) saturate(180%);
+	--edge-highlight:
+		inset 0px 12px 14px 0px rgb(255 255 255 / 0.3),
+		inset 0px -4px 16px 0px rgb(0 0 0 / 0.1),
+		inset -1px -1px 2px 0.5px rgb(0 0 0 / 0.05),
+		inset 2px -2px 4px 1px rgb(0 0 0 / 0.05),
+		inset 0 #{rpx(-1)} 0 rgb(0 0 0 / var(--color-opacity-1));
+
+	@media (prefers-color-scheme: dark) {
+		& {
+			--edge-highlight:
+				inset 0px -12px 14px 0px rgba(0, 0, 0, 0.3),
+				inset 0px 4px 16px 0px rgba(255, 255, 255, 0.1),
+				inset 1px 1px 2px 0.5px rgba(255, 255, 255, 0.1),
+				inset -2px -2px 4px 1px rgba(255, 255, 255, 0.05),
+				inset 0 #{rpx(1)} 0 rgb(255 255 255 / var(--color-opacity-1));
+		}
+	}
+}
+
 body {
-	background-image: var(--bg-overlay), url("/sky.webp");
+	// background-image: var(--bg-overlay), url("/sky.webp");
+	background-image: var(--bg-overlay), url("/aero.webp");
+	// background-image: var(--bg-overlay), url("/longhorn.jpg");
+	// background-image: var(--bg-overlay), url("/panther_aqua_graphite.jpg");
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
@@ -21,3 +46,12 @@ body {
 .icon-grid a:hover {
 	background-color: var(--bg-muted-1);
 }
+
+.buttons a,
+.buttons button {
+	box-shadow: var(--edge-highlight), var(--shadow-glass);
+}
+
+// #site-nav a.active .icon {
+// 	box-shadow: var(--edge-highlight);
+// }
