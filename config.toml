@@ -37,7 +37,6 @@ categories = [
   { name = "Hot", description = "Posts that did numbers compared to others.", color = "red", icon = "fire" },
   { name = "Test", description = "Categories can be set and customized entirely from config, woo-hoo!", color = "green", icon = "feather" },
 ]
-accent_color = ["hsl(169.09091 44% 22%)", "hsl(169.09091 66% 44%)"]
 home_url = "@/home/index.md"
 issues_url = "https://github.com/daudix/daudix.one/issues/new"
 source_url = "https://github.com/daudix/daudix.one"
