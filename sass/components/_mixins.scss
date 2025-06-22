@@ -1,7 +1,7 @@
 @use "../../themes/ametrine/sass/components/functions" as *;
 
 @mixin fancy-card {
-	position: relative;
+	// position: relative;
 	box-shadow: var(--edge-highlight), var(--shadow-glass);
 	background-image:
 		linear-gradient(135deg,
@@ -34,13 +34,13 @@
 				var(--bg-muted-1));
 	}
 
-	&::before {
-		position: absolute;
-		inset: 0;
-		border-radius: inherit;
-		content: "";
-		-webkit-backdrop-filter: var(--blur);
-		z-index: -1;
-		backdrop-filter: var(--blur);
-	}
+	// &::before {
+	// 	position: absolute;
+	// 	inset: 0;
+	// 	border-radius: inherit;
+	// 	content: "";
+	// 	-webkit-backdrop-filter: var(--blur);
+	// 	z-index: -1;
+	// 	backdrop-filter: var(--blur);
+	// }
 }
