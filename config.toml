@@ -69,7 +69,7 @@ links = [
   { name = "Projects", category = [
     { url = "@/design/index.md", name = "Design", icon = "compass-tool" },
     { url = "@/calendar/index.md", name = "Calendar", icon = "calendar-dots" },
-    { url = "@/snug-nook/index.md", name = "Snug Nook", icon = "chats" },
+    { url = "@/snug-nook/_index.md", name = "Snug Nook", icon = "chats" },
   ] },
   { name = "Extra", category = [
     { url = "@/coffee/index.md", name = "Coffee", icon = "coffee" },
