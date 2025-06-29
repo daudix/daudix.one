@@ -117,6 +117,6 @@ Can I still recommend Codeberg Pages? Yes.
 
 And that's it for now, see you in the next one! (hopefully soon)
 
-P.S. <abbr title="Members of the Snug Nook chat">Snug Nookers</abbr> knew about this all along. If you want to too, [feel free to join](@/snug-nook/index.md)! We don't bite :3
+P.S. <abbr title="Members of the Snug Nook chat">Snug Nookers</abbr> knew about this all along. If you want to too, [feel free to join](@/snug-nook/_index.md)! We don't bite :3
 
 P.P.S. The color for the banner was chosen there too xD
