@@ -13,6 +13,10 @@ Thanks to [kevadesu](https://kevadesu.github.io/)'s initiative, we have an offic
     }
 </style>
 
+## Version
+
+Currently we're running Minecraft <mark>v1.21.1</mark>.
+
 ## Access
 
 Access to this server is limited to Snug Nook members only. If you would like to play on this server, join [Snug Nook](@/snug-nook/_index.md).
