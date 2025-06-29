@@ -23,7 +23,7 @@ To join:
 - In Snug Nook, message `/register <nickname>`
 - Check your DMs for "RSCC AuthAgents" and click accept.
 
-## Mods
+## Mods/Resource Packs
 
 To improve and make the experience more fun, our server uses a few Fabric mods:
 
@@ -36,7 +36,12 @@ To improve and make the experience more fun, our server uses a few Fabric mods:
 - [Plasmo Voice](https://modrinth.com/plugin/plasmo-voice)
 - [Terralith](https://modrinth.com/datapack/terralith)
 
-You don't need to install any of these to play. However, for the full experience, you can install [Fabric API](https://modrinth.com/mod/fabric-api/).
+You don't need to install any of these to play. However, for the full experience, you can install the following mods:
+
+- [Plasmo Voice](https://modrinth.com/plugin/plasmo-voice)
+- [Xaero's Minimap](https://modrinth.com/mod/xaeros-minimap)
+
+And the [Sparkles](https://modrinth.com/resourcepack/sparkles) resource pack. 
 
 ## Rules
 
