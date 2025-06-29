@@ -3,7 +3,7 @@ title = "Snug Nook Minecraft Server"
 description = "Experience the nook in a third dimension."
 +++
 
-Thanks to [kevadesu](https://kevadesu.github.io/)'s initiative, we have an official Minecraft server for Snug Nook members. They provided the hosting, configuration, and everything else, while I only provided the subdomain, [mc.daudix.one](https://mc.daudix.one).
+Thanks to [kevadesu](https://kevadesu.github.io/)'s initiative, we have an official Minecraft server for Snug Nook members. They provided the hosting, configuration, and everything else, while I only provided the subdomain, `mc.daudix.one`.
 
 ![Screenshot of Snug Nook Minecraft Server in Minecraft server list. It's description is "The Snug Nook® Experience - Now in Minecraft!"](../snmc.png#no-hover#pixels)
 
@@ -27,16 +27,16 @@ To join:
 
 To improve and make the experience more fun, our server uses a few Fabric mods:
 
-- [Plasmo Voice](https://modrinth.com/plugin/plasmo-voice)
+- [Concurrent Chunk Management Engine](https://modrinth.com/mod/c2me-fabric)
+- [Distant Horizons](https://modrinth.com/mod/distanthorizons)
+- [Incendium](https://modrinth.com/datapack/incendium)
 - [No Chat Reports](https://modrinth.com/mod/no-chat-reports)
 - [Noisium](https://modrinth.com/mod/noisium)
-- [Terralith](https://modrinth.com/datapack/terralith)
-- [Incendium](https://modrinth.com/datapack/incendium)
 - [Nullscape](https://modrinth.com/datapack/nullscape)
-- [Tectonic](https://modrinth.com/datapack/tectonic)
-- [Concurrent Chunk Management Engine](https://modrinth.com/mod/c2me-fabric)
+- [Plasmo Voice](https://modrinth.com/plugin/plasmo-voice)
+- [Terralith](https://modrinth.com/datapack/terralith)
 
-However, in order to play you don't need to install any of these, only [Fabric API](https://modrinth.com/mod/fabric-api/).
+You don't need to install any of these to play. However, for the full experience, you can install [Fabric API](https://modrinth.com/mod/fabric-api/).
 
 ## Rules
 
