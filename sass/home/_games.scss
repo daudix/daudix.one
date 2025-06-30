@@ -1,0 +1,33 @@
+@use "../../themes/ametrine/sass/components/functions" as *;
+
+.games {
+	ul {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	li {
+		display: flex;
+		border-radius: 0 !important;
+		background-color: transparent !important;
+		padding: 0 !important;
+		box-shadow: none !important;
+	}
+
+	img {
+		box-shadow: none;
+		border-radius: 0.25rem;
+		width: rpx(92);
+
+		&:hover {
+			transform: scale(1.5);
+			filter: var(--drop-shadow);
+			border-radius: 0.25rem;
+		}
+
+		&:active {
+			transform: var(--active);
+		}
+	}
+}

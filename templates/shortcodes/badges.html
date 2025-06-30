@@ -50,8 +50,8 @@
 									{%- set badge_alt = badge.name | split(pat=".", limit=2) | first -%}
 								{%- endif -%}
 								alt="{{ badge_alt }}"
-								{% set badge_url = "home/badges/" ~ badge.name %}
-								src="{{ get_url(path=badge_url) }}"
+								{% set badge_path = "home/badges/" ~ badge.name %}
+								src="{{ get_url(path=badge_path) }}"
 							/>
 						{%- if badge.url -%}
 							</a>
@@ -79,8 +79,8 @@
 									{%- set badge_alt = badge.name | split(pat=".", limit=2) | first -%}
 								{%- endif -%}
 								alt="{{ badge_alt }}"
-								{% set badge_url = "home/badges/" ~ badge.name %}
-								src="{{ get_url(path=badge_url) }}"
+								{% set badge_path = "home/badges/" ~ badge.name %}
+								src="{{ get_url(path=badge_path) }}"
 							/>
 						{%- if badge.url -%}
 							</a>

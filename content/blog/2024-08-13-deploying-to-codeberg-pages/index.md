@@ -263,4 +263,4 @@ If everything is done properly, the build should succeed and site be available o
 
 {{ audio(url="party-horn.mp3", name="Congrats!") }} You are now officially a web citizen! Show off your new site to the world; it's something to be proud of! Since it's yours and yours alone, you can do whatever you want with it; add silly gags all over the place, write serious or not-so-serious articles, let it rot for eternity, you name it!
 
-If you run into problems or need help with any of the steps, feel free to [reach out](@/online/index.md#contacts), I will try my best to help ^^
+If you run into problems or need help with any of the steps, feel free to [reach out](@/home/index.md#contacts), I will try my best to help ^^
