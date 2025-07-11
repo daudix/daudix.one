@@ -9,7 +9,13 @@ ZOLA_VERSION = "0.20.0"
 command = "git submodule update --init --recursive && zola build --base-url $DEPLOY_PRIME_URL"
 
 [[redirects]]
-  from = "/api/*"
-  to = "https://cloud.umami.is/:splat"
-  status = 200
-  force = true
+from = "/api/*"
+to = "https://cloud.umami.is/:splat"
+status = 200
+force = true
+
+[[plugins]]
+package = "@netlify/plugin-lighthouse"
+
+[[plugins.inputs.audits]]
+path = "home"
