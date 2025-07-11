@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 	}
 
 	async function fetchInviteData(inviteUrl, inviteCode) {
-		const url = `https://discord.com/api/v10/invites/${inviteCode}?with_counts=true`;
+		const url = `https://discord.com/api/invites/${inviteCode}?with_counts=true`;
 
 		try {
 			const response = await fetch(url);
