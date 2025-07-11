@@ -2,37 +2,17 @@
 
 @mixin fancy-card {
 	// position: relative;
+	outline: rpx(1) solid var(--bg-muted-2);
 	box-shadow: var(--edge-highlight), var(--shadow-glass);
 	background-image:
-		linear-gradient(135deg,
-			transparent 20%,
-			rgba(255, 255, 255, 0.15) 20%,
-			rgba(255, 255, 255, 0.075) 40%,
-			transparent 40%,
-			transparent 60%,
-			rgba(255, 255, 255, 0.15) 60%,
-			rgba(255, 255, 255, 0.075) 70%,
-			transparent 70%),
+		radial-gradient(circle,
+			var(--bg-muted-1) rpx(1),
+			transparent rpx(1)),
 		linear-gradient(to bottom right,
-			var(--glass-bg-1),
-			var(--bg-muted-1));
-
-
-	@media (prefers-color-scheme: dark) {
-		background-image:
-			linear-gradient(135deg,
-				transparent 20%,
-				rgba(255, 255, 255, 0.03) 20%,
-				rgba(255, 255, 255, 0.015) 40%,
-				transparent 40%,
-				transparent 60%,
-				rgba(255, 255, 255, 0.03) 60%,
-				rgba(255, 255, 255, 0.015) 70%,
-				transparent 70%),
-			linear-gradient(to bottom right,
-				var(--glass-bg-1),
-				var(--bg-muted-1));
-	}
+			var(--bg-color) 50%,
+			var(--bg-muted-1),
+			var(--bg-muted-2));
+	background-size: 1rem 1rem, auto;
 
 	// &::before {
 	// 	position: absolute;

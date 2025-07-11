@@ -1,31 +1,31 @@
-// @property --angle {
-// 	syntax: "<angle>";
-// 	inherits: false;
-// 	initial-value: 0deg;
-// }
+@property --angle {
+	syntax: "<angle>";
+	inherits: false;
+	initial-value: 0deg;
+}
 
-// body::before {
-// 	--ray: rgb(from var(--accent-color) r g b / calc(var(--color-opacity-1) / 2));
-// 	--mask: radial-gradient(circle at top right, black, transparent);
-// 	-webkit-mask-image: var(--mask);
-// 	display: block;
-// 	position: fixed;
-// 	z-index: -1;
-// 	mask-image: var(--mask);
-// 	animation: rays 35s linear infinite;
-// 	inset: 0;
-// 	background: repeating-conic-gradient(
-// 		from var(--angle) at top right,
-// 		var(--ray) 0deg 10deg,
-// 		transparent 10deg 20deg);
-// 	content: "";
+body::before {
+	--ray: rgb(from var(--accent-color) r g b / calc(var(--color-opacity-1) / 2));
+	--mask: radial-gradient(circle at top right, black, transparent);
+	-webkit-mask-image: var(--mask);
+	display: block;
+	position: fixed;
+	z-index: -1;
+	mask-image: var(--mask);
+	animation: rays 35s linear infinite;
+	inset: 0;
+	background: repeating-conic-gradient(
+		from var(--angle) at top right,
+		var(--ray) 0deg 10deg,
+		transparent 10deg 20deg);
+	content: "";
 
-// 	@keyframes rays {
-// 		to {
-// 			--angle: 360deg;
-// 		}
-// 	}
-// }
+	@keyframes rays {
+		to {
+			--angle: 360deg;
+		}
+	}
+}
 
 .card-grid {
 	display: grid;
@@ -39,7 +39,9 @@
 	.card {
 		display: flex;
 		flex-direction: column;
+		box-shadow: var(--edge-highlight), var(--shadow);
 		border-radius: var(--rounded-corner);
+		background-color: var(--bg-muted-1);
 		padding: 1rem;
 		aspect-ratio: 1 / 1;
 
@@ -50,6 +52,7 @@
 			margin: 0 -1rem -1rem;
 			padding: 1rem;
 			overflow: auto;
+			scrollbar-width: thin;
 
 			:first-child {
 				margin-block-start: 0;

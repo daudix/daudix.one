@@ -1,11 +1,8 @@
 @use "../../themes/ametrine/sass/components/functions" as *;
-@use "../components/mixins" as *;
 
 #badges {
 	position: relative;
-	background-color: transparent;
 	padding-block-start: 0.75rem;
-	@include fancy-card;
 
 	&:hover #here {
 		transform: none;

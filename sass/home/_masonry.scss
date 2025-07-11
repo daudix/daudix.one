@@ -1,5 +1,3 @@
-@use "../components/mixins" as *;
-
 .masonry {
 	column-gap: 0.5rem;
 	columns: auto 16rem;
@@ -16,11 +14,10 @@
 		article {
 			break-inside: avoid;
 			margin-block-end: 0.5rem;
-			// box-shadow: var(--edge-highlight), var(--shadow);
+			box-shadow: var(--edge-highlight), var(--shadow);
 			border-radius: var(--rounded-corner);
-			// background-color: var(--bg-muted-1);
+			background-color: var(--bg-muted-1);
 			padding: 1rem;
-			@include fancy-card;
 
 			:first-child {
 				margin-block-start: 0;

@@ -38,10 +38,8 @@ categories = [
   { name = "Test", description = "Categories can be set and customized entirely from config, woo-hoo!", color = "green", icon = "feather" },
 ]
 # accent_color = "<red, orange, yellow, green, blue, purple>"
-# accent_color = ["hsl(228.78505 54% 39%)", "hsl(227.40741 49% 67%)"]
-accent_color = ["hsl(148.76712 35% 41%)", "hsl(93.333336 51% 65%)"]
-# accent_color = ["hsl(263.47827 24% 37%)", "hsl(218.25 75% 79%)"]
-# accent_color = ["hsl(197.2973 44% 50%)", "hsl(197.59999 49% 70%)"]
+# Rum, London Hue
+accent_color = ["hsl(270 13% 48%)", "hsl(290 20% 71%)"]
 home_url = "@/home/index.md"
 issues_url = "https://github.com/daudix/daudix.one/issues/new"
 source_url = "https://github.com/daudix/daudix.one"
@@ -69,7 +67,7 @@ links = [
   { name = "Projects", category = [
     { url = "@/design/index.md", name = "Design", icon = "compass-tool" },
     { url = "@/calendar/index.md", name = "Calendar", icon = "calendar-dots" },
-    { url = "@/snug-nook/_index.md", name = "Snug Nook", icon = "chats" },
+    { url = "@/snug-nook/index.md", name = "Snug Nook", icon = "chats" },
   ] },
   { name = "Extra", category = [
     { url = "@/coffee/index.md", name = "Coffee", icon = "coffee" },

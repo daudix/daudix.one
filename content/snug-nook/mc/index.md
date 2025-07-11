@@ -19,7 +19,7 @@ Currently we're running Minecraft <mark>v1.21.1</mark>.
 
 ## Access
 
-Access to this server is limited to Snug Nook members only. If you would like to play on this server, join [Snug Nook](@/snug-nook/_index.md).
+Access to this server is limited to Snug Nook members only. If you would like to play on this server, join [Snug Nook](@/snug-nook/index.md).
 
 To join:
 
@@ -49,6 +49,6 @@ And the [Sparkles](https://modrinth.com/resourcepack/sparkles) resource pack.
 
 ## Rules
 
-All [Snug Nook rules](@/snug-nook/rules.md) apply to the in-game chat. Consequences for breaking the rules in the in-game chat are the same as for breaking the rules in any of Snug Nook's chats.
+All [Snug Nook rules](@/snug-nook/rules/index.md) apply to the in-game chat. Consequences for breaking the rules in the in-game chat are the same as for breaking the rules in any of Snug Nook's chats.
 
 In addition to the above, griefing, turning the server into 2b2t, and overall ruining the fun for everyone, will result in action.
