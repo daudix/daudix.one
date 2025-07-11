@@ -37,6 +37,7 @@ categories = [
   { name = "Hot", description = "Posts that did numbers compared to others.", color = "red", icon = "fire" },
   { name = "Test", description = "Categories can be set and customized entirely from config, woo-hoo!", color = "green", icon = "feather" },
 ]
+# accent_color = "<red, orange, yellow, green, blue, purple>"
 # accent_color = ["hsl(228.78505 54% 39%)", "hsl(227.40741 49% 67%)"]
 accent_color = ["hsl(148.76712 35% 41%)", "hsl(93.333336 51% 65%)"]
 # accent_color = ["hsl(263.47827 24% 37%)", "hsl(218.25 75% 79%)"]
