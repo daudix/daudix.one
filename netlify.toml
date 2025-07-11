@@ -6,7 +6,7 @@ command = "git submodule update --init --recursive && zola build"
 ZOLA_VERSION = "0.20.0"
 
 [context.deploy-preview]
-command = "zola build --base-url $DEPLOY_PRIME_URL"
+command = "git submodule update --init --recursive && zola build --base-url $DEPLOY_PRIME_URL"
 
 [[redirects]]
   from = "/api/*"
