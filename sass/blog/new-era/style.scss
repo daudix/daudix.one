@@ -1,0 +1,30 @@
+@use "../../../themes/ametrine/sass/components/functions" as *;
+
+#eras-timeline {
+	margin-inline: -1rem;
+	margin-block: 1rem;
+	width: calc(100% + 2rem);
+	height: rpx(575);
+	line-height: 0;
+
+	.overshoot-row {
+		height: 100%;
+		overflow: scroll;
+		scrollbar-width: thin;
+	}
+
+	picture {
+		height: 100%;
+	}
+
+	img {
+		margin: 0;
+		max-width: none;
+		height: 100%;
+		max-height: none;
+	}
+
+	& + .buttons {
+		margin-block-start: 1rem;
+	}
+}

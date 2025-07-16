@@ -17,9 +17,8 @@ id = "112956494344143118"
 
 <small>Photo by [Lubomir Minar](https://www.lubomirminar.com) on [Unsplash (archived)](https://web.archive.org/web/20210124002804/https://unsplash.com/photos/3K6ZkYBj2Xo).</small>
 
-{% alert(note=true) %}
-This guide focuses on the Zola <abbr title="Static site generator">SSG</abbr>, but other SSGs like Hugo and Jekyll should work with this guide as well.
-{% end %}
+> [!NOTE]
+> This guide focuses on the Zola <abbr title="Static site generator">SSG</abbr>, but other SSGs like Hugo and Jekyll should work with this guide as well.
 
 This guide is intended to help with the process of getting a Zola website up and running using Codeberg and Codeberg pages; some of the steps are confusing, so this article tries to clear them up.
 
@@ -72,9 +71,8 @@ Then, initialize a new Zola site with `zola init --force`. You can simply spam <
 
 Now you'll need to add the Duckquill theme as a Git submodule:
 
-{% alert(note=true) %}
-A Git submodule is a repository inside another repository. When you add a submodule, Git adds it to a special `.gitmodules` file, which can then be read by Git somewhere else and clone the needed repository in place, which will be helpful later when we set up the <abbr title="Contineventuous integration">CI</abbr> workflow.
-{% end %}
+> [!NOTE]
+> A Git submodule is a repository inside another repository. When you add a submodule, Git adds it to a special `.gitmodules` file, which can then be read by Git somewhere else and clone the needed repository in place, which will be helpful later when we set up the <abbr title="Contineventuous integration">CI</abbr> workflow.
 
 ```bash
 git submodule init
@@ -88,9 +86,8 @@ cd themes/duckquill
 git checkout tags/v4.2.1
 ```
 
-{% alert(tip=true) %}
-You can check the latest release here: <https://codeberg.org/daudix/duckquill/releases>
-{% end %}
+> [!TIP]
+> You can check the latest release here: <https://codeberg.org/daudix/duckquill/releases>
 
 Now you can try serving the site locally:
 
@@ -156,9 +153,8 @@ Now we can push the changes to Codeberg and set up the CI to build and deploy ou
 
 ## Setting up the CI
 
-{% alert(important=true) %}
-Before we get to setting up the CI, we first need to get access to it. You'll need to fill [the following form](https://codeberg.org/Codeberg-e.V./requests/issues/new?template=ISSUE_TEMPLATE%2fWoodpecker-CI.yaml) at [Codeberg-e.V./requests](https://codeberg.org/Codeberg-e.V./requests) repository and wait for approval. After your request been approved, we can proceed further.
-{% end %}
+> [!IMPORTANT]
+> Before we get to setting up the CI, we first need to get access to it. You'll need to fill [the following form](https://codeberg.org/Codeberg-e.V./requests/issues/new?template=ISSUE_TEMPLATE%2fWoodpecker-CI.yaml) at [Codeberg-e.V./requests](https://codeberg.org/Codeberg-e.V./requests) repository and wait for approval. After your request been approved, we can proceed further.
 
 Copy [the following Woodpecker workflow](https://codeberg.org/Codeberg-CI/examples/src/branch/main/Zola/.woodpecker.yaml) example from [Codeberg-CI/examples](https://codeberg.org/Codeberg-CI/examples) and put it in the `.woodpecker.yaml` file in the root of your project. If you want the CI to be able to run manually, add `manual` to steps that have the `push` events in them.
 
@@ -263,4 +259,4 @@ If everything is done properly, the build should succeed and site be available o
 
 {{ audio(url="party-horn.mp3", name="Congrats!") }} You are now officially a web citizen! Show off your new site to the world; it's something to be proud of! Since it's yours and yours alone, you can do whatever you want with it; add silly gags all over the place, write serious or not-so-serious articles, let it rot for eternity, you name it!
 
-If you run into problems or need help with any of the steps, feel free to [reach out](@/online/index.md#contacts), I will try my best to help ^^
+If you run into problems or need help with any of the steps, feel free to [reach out](@/home/index.md#contacts), I will try my best to help ^^

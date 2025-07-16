@@ -1,0 +1,13 @@
+<ul>
+	{%- for game in page.extra.games -%}
+		<li>
+			<a href="https://store.steampowered.com/app/{{ game.id }}">
+				<img
+					class="transparent"
+					alt="Capsule art of {{ game.name }}."
+					src="https://cdn.cloudflare.steamstatic.com/steam/apps/{{ game.id }}/capsule_184x69.jpg"
+				/>
+			</a>
+		</li>
+	{%- endfor -%}
+</ul>

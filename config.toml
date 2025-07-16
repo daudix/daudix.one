@@ -7,6 +7,7 @@ theme = "ametrine"
 
 compile_sass = true
 minify_html = true
+feed_filenames = ["atom.xml", "rss.xml"]
 build_search_index = true
 author = "Daudix"
 
@@ -25,6 +26,8 @@ highlight_themes_css = [
 ]
 smart_punctuation = true
 bottom_footnotes = true
+external_links_class = "external"
+github_alerts = true
 
 [search]
 index_format = "elasticlunr_json"
@@ -36,7 +39,9 @@ categories = [
   { name = "Hot", description = "Posts that did numbers compared to others.", color = "red", icon = "fire" },
   { name = "Test", description = "Categories can be set and customized entirely from config, woo-hoo!", color = "green", icon = "feather" },
 ]
-accent_color = ["hsl(307.9518 46% 35%)", "hsl(315.82416 92% 81%)"]
+# accent_color = "<red, orange, yellow, green, blue, purple>"
+# Rum, London Hue
+accent_color = ["hsl(270 13% 48%)", "hsl(290 20% 71%)"]
 home_url = "@/home/index.md"
 issues_url = "https://github.com/daudix/daudix.one/issues/new"
 source_url = "https://github.com/daudix/daudix.one"
@@ -57,8 +62,6 @@ card = true
 [extra.nav]
 icon = "apple-touch-icon.png"
 links = [
-  { url = "@/about/index.md", name = "About", icon = "info" },
-  { url = "@/online/index.md", name = "Online", icon = "at" },
   { name = "Writing", category = [
     { url = "@/blog/_index.md", name = "Blog", icon = "newspaper-clipping" },
     { url = "@/nanolog/_index.md", name = "Nanolog", icon = "note-pencil" },
@@ -66,7 +69,7 @@ links = [
   { name = "Projects", category = [
     { url = "@/design/index.md", name = "Design", icon = "compass-tool" },
     { url = "@/calendar/index.md", name = "Calendar", icon = "calendar-dots" },
-    { url = "@/snug-nook/_index.md", name = "Snug Nook", icon = "chats" },
+    { url = "@/snug-nook/index.md", name = "Snug Nook", icon = "chats" },
   ] },
   { name = "Extra", category = [
     { url = "@/coffee/index.md", name = "Coffee", icon = "coffee" },
@@ -102,5 +105,3 @@ self_hosted_url = "https://daudix.one/api"
 layout = false
 no_styles = false
 no_emojis = false
-slow_mo = false
-fake_error = false

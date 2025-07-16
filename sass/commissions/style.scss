@@ -39,7 +39,7 @@ body::before {
 	.card {
 		display: flex;
 		flex-direction: column;
-		box-shadow: var(--edge-highlight);
+		box-shadow: var(--edge-highlight), var(--shadow);
 		border-radius: var(--rounded-corner);
 		background-color: var(--bg-muted-1);
 		padding: 1rem;
@@ -52,6 +52,7 @@ body::before {
 			margin: 0 -1rem -1rem;
 			padding: 1rem;
 			overflow: auto;
+			scrollbar-width: thin;
 
 			:first-child {
 				margin-block-start: 0;

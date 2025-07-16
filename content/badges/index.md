@@ -36,7 +36,7 @@ badges = [
   { name = "melankorin.gif", url = "https://melankorin.net" },
   { name = "melontini.gif", url = "https://melontini.me" },
   { name = "mobilefriendly.gif" },
-  { name = "nek0zyx.gif", url = "https://nek0zyx.pages.gay" },
+  { name = "nek0zyx.gif", url = "https://nek0zyx.lgbt.sh" },
   { name = "neo-fedi.gif" },
   { name = "nofuckingthanks.gif" },
   { name = "pixlxip.gif", url = "https://xip.neocities.org" },

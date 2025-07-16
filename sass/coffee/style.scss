@@ -2,9 +2,7 @@
 
 #coffee-container {
 	margin-inline: auto;
-	box-shadow: var(--edge-highlight), var(--shadow);
 	border-radius: 2.25rem;
-	background-color: var(--bg-muted-1);
 	padding: 1rem;
 	width: min(calc(var(--container-width) / 2), 100%);
 	text-align: center;
