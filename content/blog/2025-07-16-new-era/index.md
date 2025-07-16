@@ -8,7 +8,7 @@ accent_color = ["hsl(270 13% 48%)", "hsl(290 20% 71%)"]
 banner = "banner.webp"
 styles = ["blog/new-era/style.css"]
 [extra.comments]
-id = ""
+id = "114864922325514289"
 +++
 
 Time to talk a bit about my recent changes to this website, plans for this blog, and One More Thing™.
