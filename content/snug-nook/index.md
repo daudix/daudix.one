@@ -13,9 +13,8 @@ no_header = true
 
 Ever wanted to join yet another Discord server where you can act all silly and still have productive conversations? Had enough of the toxisity and, um, freakiness? Want to meet some cool new people? In that case, <span class="rainbow"><strong>Snug Nook</strong></span> fits the bill. Gluten-free and is proven safe by the FDA. Probably.
 
-{% alert(note=true) %}
-Read about its creation and the motivation behind it [here](@/blog/2024-10-31-snug-nook/index.md).
-{% end %}
+> [!NOTE]
+> Read about its creation and the motivation behind it [here](@/blog/2024-10-31-snug-nook/index.md).
 
 The server isn't special in itself, there are many servers out there, however, the wonderful people on it are. It is meant to be cozy, welcoming, and friendly, which means toxicity, doxxing, drama, suicide threats, <span class="spoiler">NSFW</span>, and the like are not welcome.
 
@@ -41,9 +40,8 @@ At Snug Nook we have many unique "traditions", and weekend rebrand is one of the
 
 Discord isn't your cup of tea? No big deal, we provide a few bridges that, whilist lacking some features and stability, allow chatting with Discord folks:
 
-{% alert(caution=true) %}
-Experience can be significantly worse when using these; messages could be delayed, sent in wrong order, or not sent at all.
-{% end %}
+> [!CAUTION]
+> Experience can be significantly worse when using these; messages could be delayed, sent in wrong order, or not sent at all.
 
 <div class="icon-grid">
 

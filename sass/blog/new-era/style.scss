@@ -4,12 +4,13 @@
 	margin-inline: -1rem;
 	margin-block: 1rem;
 	width: calc(100% + 2rem);
-	height: calc(rpx(2298) / 4);
+	height: rpx(575);
 	line-height: 0;
 
 	.overshoot-row {
 		height: 100%;
 		overflow: scroll;
+		scrollbar-width: thin;
 	}
 
 	picture {

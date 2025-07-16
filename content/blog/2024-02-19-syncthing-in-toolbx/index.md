@@ -13,9 +13,8 @@ Today I wanted to reduce the amount of layered packages on my Silveblue install,
 
 The issue is that it needs to autostart on login, otherwise it's useless. Autostart using the GNOME Tweaks from inside Toolbx didn't work, because it points to the regular binary location instead of Toolbx.
 
-{% alert(note=true) %}
-There are [a few](https://www.qualityology.com/tech/syncthing-in-toolbox-on-fedora-silverblue-with-systemd/) [solutions](https://mmarco94.github.io/linux-guides/immutable-os/syncthing), and there's also [SyncThingy](https://github.com/zocker-160/SyncThingy), but I wanted to have the *original* Syncthing and easy way of solving things; manually creating Podman container when we have Toolbx seemed like overengineering.
-{% end %}
+> [!NOTE]
+> There are [a few](https://www.qualityology.com/tech/syncthing-in-toolbox-on-fedora-silverblue-with-systemd/) [solutions](https://mmarco94.github.io/linux-guides/immutable-os/syncthing), and there's also [SyncThingy](https://github.com/zocker-160/SyncThingy), but I wanted to have the *original* Syncthing and easy way of solving things; manually creating Podman container when we have Toolbx seemed like overengineering.
 
 And so I backed up the `~/.config/autostart/syncthing-start.desktop` before uninstalling the Syncthing overlay, located the Toolbx binary using `whereis toolbox`, replaced `/usr/bin/syncthing` in the backed up Syncthing desktop file with `/usr/bin/toolbox run syncthing`, put it back and logged out...
 

@@ -9,10 +9,9 @@ user = "daudix"
 id = "111881385228724178"
 +++
 
-{% alert(note=true) %}
-~~This is a post in a new format called "microblog", not quite a Mastodon post nor a full-blown blog post, you got the idea :)~~
-Changed my mind, blog (even small) is here, microblog is on Fediverse, no in between.
-{% end %}
+> [!NOTE]
+> ~~This is a post in a new format called "microblog", not quite a Mastodon post nor a full-blown blog post, you got the idea :)~~
+> Changed my mind, blog (even small) is here, microblog is on Fediverse, no in between.
 
 I was just working on adding a manual dark mode toggle to Duckquill as [some people wanted to see it](https://codeberg.org/daudix/duckquill/issues/5), and it turned out to be a huge pain (who might've though), it needs either:
 

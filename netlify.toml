@@ -3,7 +3,7 @@ publish = "public"
 command = "git submodule update --init --recursive && zola build"
 
 [build.environment]
-ZOLA_VERSION = "0.20.0"
+ZOLA_VERSION = "0.21.0"
 
 [context.deploy-preview]
 command = "git submodule update --init --recursive && zola build --base-url $DEPLOY_PRIME_URL"
