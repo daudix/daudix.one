@@ -10,8 +10,8 @@ user = "daudix"
 id = "112675082269886749"
 +++
 
-{% alert(note=true) %}
-I know I said in the [previous post](@/blog/2024-06-19-not-that-latitude/index.md) that the next post would be about how my Pixel 3 committed suicide, but I didn't quite feel like publishing 3 posts in a row about my devices dying and being replaced, plus I haven't researched the topic enough and don't have much to tell about the replacement, so it will stay in the drafts folder for a bit longer.
+> [!NOTE]
+> I know I said in the [previous post](@/blog/2024-06-19-not-that-latitude/index.md) that the next post would be about how my Pixel 3 committed suicide, but I didn't quite feel like publishing 3 posts in a row about my devices dying and being replaced, plus I haven't researched the topic enough and don't have much to tell about the replacement, so it will stay in the drafts folder for a bit longer.
 
 I do have another post in the works and expect it to be quite interesting, so yeah!
 {% end %}

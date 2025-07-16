@@ -25,13 +25,11 @@ id = "112804700367926214"
 
 Two years ago today, a project called AdwCustomizer emerged; a libadwaita app that allowed users to recolor their libadwaita and GTK3 apps (if the [adw-gtk3](https://github.com/lassekongo83/adw-gtk3) theme was present) using an easy-to-use interface.
 
-{% alert(important=true) %}
-My stance on theming hasn't changed; I still believe that distributions should *not* ship theming out of the box. It's up to the user to decide whether or not they are comfortable with broken applications. See ["please don't theme our apps"](https://stopthemingmy.app).
-{% end %}
+> [!IMPORTANT]
+> My stance on theming hasn't changed; I still believe that distributions should *not* ship theming out of the box. It's up to the user to decide whether or not they are comfortable with broken applications. See ["please don't theme our apps"](https://stopthemingmy.app).
 
-{% alert(note=true) %}
-Personally, I've stopped theming my desktop for a while; I've been using vanilla GNOME for about a year now, with only a few extensions that add some missing features that I really need, like automatic dark mode at sunset.
-{% end %}
+> [!NOTE]
+> Personally, I've stopped theming my desktop for a while; I've been using vanilla GNOME for about a year now, with only a few extensions that add some missing features that I really need, like automatic dark mode at sunset.
 
 I was absolutely thrilled to be one of the first to discover this amazing app! I had been thinking about such an app literally just a few days prior to this. I even posted about this app on [r/gnome](https://old.reddit.com/r/gnome/comments/w2ehe2/libadwaita_and_adwgtk3_recoloring_demo_using/).
 
