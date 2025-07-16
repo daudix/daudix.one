@@ -1,11 +1,11 @@
 +++
 title = "New Era"
-description = "World around is is changing, and so do I."
+description = "World around us is changing, and so do I."
 [taxonomies]
 tags = ["Devlog", "GitHub", "Neocities", "Netlify", "Umami"]
 [extra]
-accent_color = ""
-banner = ""
+accent_color = ["hsl(270 13% 48%)", "hsl(290 20% 71%)"]
+banner = "banner.webp"
 styles = ["blog/new-era/style.css"]
 [extra.comments]
 id = ""
