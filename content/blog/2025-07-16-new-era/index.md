@@ -1,7 +1,6 @@
 +++
 title = "New Era"
 description = "World around is is changing, and so do I."
-draft = true
 [taxonomies]
 tags = ["Devlog", "GitHub", "Neocities", "Netlify", "Umami"]
 [extra]
