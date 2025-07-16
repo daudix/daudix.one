@@ -1,6 +1,6 @@
 +++
 title = "New Era"
-description = "World around us is changing, and so do I."
+description = "The world around us is changing, and so do I."
 [taxonomies]
 tags = ["Devlog", "GitHub", "Neocities", "Netlify", "Umami"]
 [extra]
