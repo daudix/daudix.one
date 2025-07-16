@@ -40,9 +40,8 @@ Good question, I honestly don't know. As a matter of fact, GitLab is a bit confu
 
 ## Migration
 
-{% alert(note=true) %}
-I have found about that [Dan Erat](https://www.erat.org) have published an article about his migration from GitHub to Codeberg before this one, [check it out](https://www.erat.org/codeberg.html).
-{% end %}
+> [!NOTE]
+> I have found about that [Dan Erat](https://www.erat.org) have published an article about his migration from GitHub to Codeberg before this one, [check it out](https://www.erat.org/codeberg.html).
 
 After final decision that I will migrate my personal repositories to Codeberg I have created a [poll](https://mstdn.social/@Daudix/110680533037666405) on Mastodon, in which asked what to do with repositories on GitHub, people decided that adding small note in README that tells about migration and gives a link to repository on Codeberg, and then archiving were the best approach, [and so I did it!](https://mstdn.social/@Daudix/110685982530642051)
 
@@ -69,9 +68,8 @@ Speaking of Codeberg pages, I have successfully recreated the workflow of GitHub
 
 #### Woodpecker
 
-{% alert(tip=true) %}
-See [blog post](https://jan.wildeboer.net/2022/07/Woodpecker-CI-Jekyll/) by Jan Wildeboer for better understanding how the CI works, since this guy created the workflow used here.
-{% end %}
+> [!TIP]
+> See [blog post](https://jan.wildeboer.net/2022/07/Woodpecker-CI-Jekyll/) by Jan Wildeboer for better understanding how the CI works, since this guy created the workflow used here.
 
 First, I have requested and waited for manual approval to access to Woodpecker CI by opening an issue [here](https://codeberg.org/Codeberg-e.V./requests/issues/new/choose) and selecting _Woodpecker CI Access_, it took a few hours, so when I woke up I already had access.
 
@@ -149,9 +147,8 @@ And `cbtoken` should contain the secret we saved earlier
 
 Make sure these two secrets have successfully created and make some changes in `blog-source` to trigger the CI, it should finish successfully.
 
-{% alert(tip=true) %}
-If you don't want to trigger the CI (the change doesn't affect content for example) you can add `[CI SKIP]` to your commit message to skip the CI.
-{% end %}
+> [!TIP]
+> If you don't want to trigger the CI (the change doesn't affect content for example) you can add `[CI SKIP]` to your commit message to skip the CI.
 
 ![ci successful](ci-successful.png)
 

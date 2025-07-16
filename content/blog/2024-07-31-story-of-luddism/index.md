@@ -12,9 +12,8 @@ user = "daudix"
 id = "112878216253904523"
 +++
 
-{% alert(tip=true) %}
-I recommend giving [this article](https://www.smithsonianmag.com/history/what-the-luddites-really-fought-against-264412/) a read, it tells a story of Luddism in great details. It's been published back in 2011 and it's still the best article out of ones that I read when researching this topic.
-{% end %}
+> [!TIP]
+> I recommend giving [this article](https://www.smithsonianmag.com/history/what-the-luddites-really-fought-against-264412/) a read, it tells a story of Luddism in great details. It's been published back in 2011 and it's still the best article out of ones that I read when researching this topic.
 
 Before we get to modern times and neo-Luddism–the philosophy that opposes many forms of modern technology–we need to understand what the original Luddism was. And no, it's not what you think it is today.
 
