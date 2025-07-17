@@ -76,7 +76,7 @@ TL;DR: I like Netlify and Umami as opposed to Vercel and its built-in analytics 
 
 ## 100DaysToOffload No More
 
-For the past year I've been [participating](@/100daystooffload/_index.md) in a challenge called [100DaysToOffload](https://100daystooffload.com), and now it is officially over with 31 questionable posts and severe burnout. A bit sad but honestly it's such a relief; this challenge messed up my mental health quite a bit --- even if I didn't write much, the feeling of always being under the pressure and forcing myself to come up with post ideas was exhausting. [Taking breaks](@/blog/2024-09-02-taking-a-break/index.md) did not help, it took me half a year of not writing anything to get back in shape.
+For the past year I've been [participating](@/100daystooffload/_index.md) in a challenge called [100DaysToOffload](https://100daystooffload.com), and now it is officially over with 31 questionable posts and severe burnout. A bit sad but honestly it's such a relief; this challenge messed up my mental health quite a bit --- even if I didn't write much, the feeling of always being under the pressure and forcing myself to come up with post ideas was exhausting. [Taking breaks](@/blog/2024-09-02-taking-a-break/index.md) did not help, it took me half a year of not writing anything[^3] to get back in shape.
 
 I wanted to quit it multiple times, but I have set myself a goal to *not* quit it, no matter what, and finish it even if I don't complete it. And so I did, yay. Proving to myself that I am capable of not quitting something prematurely, despite all kinds of obstacles, is valuable to me <span class="spoiler solid">(it's not just about 100DaysToOffload, is it?)</span>.
 
@@ -170,3 +170,4 @@ This blog post is a little summary of what I was doing and planning to do for a 
 
 [^1]: Discord widget API (`https://discord.com/api/guilds/<GUILD_ID>/widget.json`) doesn't expose server icon, description, total member count, and basically any other useful info about the server, however, it does expose an automatically generated invite link (that's being regenerated every now and then), which *does* expose said info via the `https://discord.com/api/invites/<INVITE_CODE>?with_counts=true` endpoint. And so by trimming the `https://discord.com/invite/` bit of the auto-generated invite link we get said invite code. Two API calls, yes, but we get all the info without any additional services or hardcoding anything.
 [^2]: It's not very original, rather a compilation of StackOverflow answers, CSS Tricks, and code from random Git repositories.
+[^3]: Okay, I *did* write one detailed blog post about me moving from Firefox to Vivaldi, but before I could finish it I have already moved to vanilla Chrome.
