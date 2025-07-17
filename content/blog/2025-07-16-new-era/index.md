@@ -1,6 +1,7 @@
 +++
 title = "New Era"
 description = "The world around us is changing, and so do I."
+updated = 2025-07-18
 [taxonomies]
 tags = ["Devlog", "GitHub", "Neocities", "Netlify", "Umami"]
 [extra]
@@ -48,17 +49,17 @@ We have quite some changes on this front:
 - [Commissions](@/commissions/index.md) have lost most of the services except for a few. Only services that I'm certain I can complete in the best manner have remained.
 - [Snug Nook](@/snug-nook/index.md) was completely redone. Essential info is now presented via a fully dynamic widget, which by the way uses an interesting Discord widget API hack[^1] that I couldn't find any mentions of online, so we might be the first to use it?
 - [Design](@/design/index.md) styling was adjusted to better fit the new design. It now also follows the light/dark mode preference like the rest of the site, instead of being hardcoded to dark mode.
-- [Home](@/home/index.md) besides inheriting "about" and "online" pages' info also got a brand new widget: "Now Playing" powered by Last.fm. Not only it displays currently playing track live, but it also switches to "Last Played" if nothing is playing or playback is paused, accompanied by a nice CD (which is taken from elementary OS icon theme :P) animation. I have experimented with using Discord Rich Presence (RPC) to display not only this but also other activities, but it didn't expose last played song and was much, much more complex, so it was scrapped.
+- [Home](@/home/index.md), besides inheriting "about" and "online" pages' info also got a brand new widget: "Now Playing" powered by Last.fm. Not only it displays currently playing track live, but it also switches to "Last Played" if nothing is playing or playback is paused, accompanied by a nice CD (which is taken from elementary OS icon theme :P) animation. I have experimented with using Discord Rich Presence (RPC) to display not only this but also other activities, but it didn't expose last played song and was much, much more complex, so it was scrapped.
 
 ### Source Code
 
 Throughout the site's existence, it was always completely open (not necessarily FOSS) --- nothing was developed behind closed doors, and deployment always matched the source code at any period in time.
 
-Ever since I [moved away from GitHub](@/blog/2023-07-15-migration-from-github-to-codeberg/index.md) it was hosted on Codeberg, I enjoyed it this entire time despite occasional, sometimes unconventional, downtimes. Recently however they introduced new size limits for, and I quote <q>repositories that are for personal use (e.g. 'my website', 'my dotfiles'</q>. And as you could guess, my website falls into that category. The new limit for such repositories is 100MB compared to the old 500MB limit. Mine was 200MB+, so I had to move it to GitHub, first as a private repository to prevent Copilot from training its code on it, but then I gave up and chose continuing being open over integrity of my code's originality[^2]. I have considered moving to my [friend's Forgejo instance](https://git.rootsource.cc), but it doesn't have any sort of CI, so it's not an option at the moment.
+Ever since I [moved away from GitHub](@/blog/2023-07-15-migration-from-github-to-codeberg/index.md) it was hosted on Codeberg, I enjoyed it this entire time despite occasional, sometimes unconventional, downtimes. Recently however they introduced new size limits for, and I quote <q>repositories that are for personal use (e.g. 'my website', 'my dotfiles'</q>. And as you could guess, my website falls into that category. The new limit for such repositories is 100MB compared to the old 500MB limit. Mine was 200MB+, so I had to move it to GitHub --- first as a private repository to prevent Copilot from training its code on it, but then I gave up and chose continuing being open over integrity of my code's originality[^2]. I have considered moving to my [friend's Forgejo instance](https://git.rootsource.cc), but it doesn't have any sort of CI, so it's not an option at the moment.
 
 ### Branding
 
-I'm planning to design a new profile picture in the near future, but at the moment I don't have anything at hand, so in the meantime I have slightly deemphasized my official "branding" and now combine it with things like Discord profile picture. Other badge/88x31 variants has been added as part of this initiative, they're not new, simply older versions and ones from other sites (Neocities).
+I'm planning to design a new profile picture in the near future, but at the moment I don't have anything at hand, so in the meantime I have slightly deemphasized my official "branding" and now combine it with things like Discord profile picture. Other badge/88x31 variants have been added as part of this initiative, they're not new, simply older versions and ones from other sites (Neocities).
 
 ### Vercel No More
 
@@ -66,9 +67,9 @@ I'm planning to design a new profile picture in the near future, but at the mome
 
 For this reason I have recently switched to Netlify, which has much better integration with Zola (getzola.org uses it), and overall is more oriented towards SSGs such as Jekyll and Hugo, rather than Node.js sites.
 
-It also exposes preview URL in workflow, so preview deployments use proper base URL, technical details aside, it means I can actually utilize Git branches to work on features before making them accessible to everyone.
+It also exposes preview URL in the workflow, so that preview deployments can use a proper base URL. Technical details aside, it means I can actually utilize Git branches to work on features before making them accessible to everyone.
 
-As part of this, I switched to Umami for analytics; they provide 6 months frame for free, which is 6x better than a single month frame Vercel provided.
+As part of this, I switched to Umami for analytics; they provide six-month frame for free, which is 6x better than a one-month frame Vercel provided.
 
 Duckquill and Ametrine were also moved to Netlify because why not.
 
@@ -76,11 +77,11 @@ TL;DR: I like Netlify and Umami as opposed to Vercel and its built-in analytics 
 
 ## 100DaysToOffload No More
 
-For the past year I've been [participating](@/100daystooffload/_index.md) in a challenge called [100DaysToOffload](https://100daystooffload.com), and now it is officially over with 31 questionable posts and severe burnout. A bit sad but honestly it's such a relief; this challenge messed up my mental health quite a bit --- even if I didn't write much, the feeling of always being under the pressure and forcing myself to come up with post ideas was exhausting. [Taking breaks](@/blog/2024-09-02-taking-a-break/index.md) did not help, it took me half a year of not writing anything[^3] to get back in shape.
+For the past year I've been [participating](@/100daystooffload/_index.md) in a challenge called [100DaysToOffload](https://100daystooffload.com), and now it is officially over with 31 questionable posts and severe burnout. A bit sad but honestly it's such a relief; this challenge messed up my mental health quite a bit --- even if I didn't write much, the feeling of always being under the pressure and forcing myself to come up with post ideas was exhausting. [Taking breaks](@/blog/2024-09-02-taking-a-break/index.md) did not help; it took me half a year of not writing anything[^3] to get back in shape.
 
 I wanted to quit it multiple times, but I have set myself a goal to *not* quit it, no matter what, and finish it even if I don't complete it. And so I did, yay. Proving to myself that I am capable of not quitting something prematurely, despite all kinds of obstacles, is valuable to me <span class="spoiler solid">(it's not just about 100DaysToOffload, is it?)</span>.
 
-![](100daystooffload.jpg)
+![A4-sized wall calendar for the period from June 4th 2024 to June 4th 2025, some dates are marked with orange. February, March, April, May, June, and July are crossed out.](100daystooffload.jpg)
 
 Now that the results are documented, I can blog at my own pace, with "quality over quantity" approach and...
 
@@ -94,23 +95,23 @@ Type of promise presidents make during inauguration: "I'll try to blog about wha
 
 Because, at the end of the day, it really is my blog, on my own domain, made piece by piece by me.
 
-...That sounded way to narcissist isn't it? That wasn't the intent, but whatever. There was this thing with me trying to keep this site somewhat down to earth, which is the reason I started a "journal" on Neocities, but now thinking about it more, there's no point in it, and I'd rather keep everything here and be myself, because, after all, it's my own platform, not someone's social media.
+...That sounded way to narcissist isn't it? That wasn't the intent, but whatever. There was this thing with me trying to keep this site somewhat down to earth, which is the reason I started a "journal" on Neocities, but now thinking about it more, there's no point in it, and I'd rather keep everything here and be myself, because --- after all --- it's my own platform, not someone's social media.
 
-And so, [journal](https://daudix.neocities.org/journal/) will be discontinued and merged with this blog shortly. There is only one article worth preserving, so it won't make much of a difference. I've been considering this for a while, and even ran a [poll](https://poll.pollcode.com/83144997_result_paused) asking readers whether this is a good idea half a year ago, on Jan 9, and closed it on Jan 16.
+And so, [journal](https://daudix.neocities.org/journal/) will be discontinued and merged with this blog shortly. There is only one article worth preserving, so it won't make much of a difference. I've been considering this for a while, and even ran a [poll](https://poll.pollcode.com/83144997_result_paused) asking readers whether this is a good idea half a year ago on January 9th.
 
-![](poll.png)
+![Small rectangular box titled "Merge Journal into This Blog", text "Poll ends January 16", and two poll options below: "Yup, why not", and "Nope, why would you".](poll.png)
 
 Poll results suggest that majority is in favor of this.
 
-![](poll-results.png)
+![Poll results show that 80% are in favor. There were 10 voters in total.](poll-results.png)
 
 Yes, it's only 10 votes, but look at it this way: It's a whopping *10* votes!!1
 
-In the end I'm left uncertain as to what to do with Neocities after retiring the journal, all that is left is a homepage that provides no info and somewhat cool styling, and a fun 404. I don't want it to go down the [gmi.daudix.one](https://gmi.daudix.one) path of dying silently, nor I want to have two nearly-identical sites in terms of content.
+In the end, I'm left uncertain as to what to do with Neocities after retiring the journal, all that is left is a homepage that provides no info and somewhat cool styling, and a fun 404. I don't want it to go down the [gmi.daudix.one](https://gmi.daudix.one) path of dying silently, nor I want to have two nearly-identical sites in terms of content.
 
 ## The Sky That Is Blue
 
-Lately, I've heavily shifted my focus from Fedi to Bluesky. Fedi is great, but Bluesky suits me better; it doesn't have the whole fedimeta thing, defederations that you have no control over, and such. I plan to add support for Bluesky-powered comments to Ametrine at some point, but I currently lack the required skills to do so. If you've been following me on the Fedi, you might want to follow my bridged Bluesky account as well (if your instance's admin didn't defederate Bridgy Fed :P).
+Lately, my focus has heavily shifted from Fedi to Bluesky. Fedi is great, but Bluesky suits me better; it doesn't have the whole fedimeta thing, defederations that you have no control over, and such. I plan to add support for Bluesky-powered comments to Ametrine at some point, but I currently lack the required skills to do so. If you've been following me on the Fedi, you might want to follow my bridged Bluesky account as well (if your instance's admin didn't defederate Bridgy Fed :P).
 
 ## New Era
 
@@ -120,16 +121,16 @@ So, what's this all about?
 
 I like to split my work and life into "eras", each marking a new chapter. These eras are usually accompanied by a redesign of my profile picture and/or website, although this tends to happen spontaneously.
 
-My first era, titled "Cold Boot". started back in late 2022, with a bunch of preparation prior to that. Eras were always a "behind the scenes" thing that wasn't really public besides folder names in the ["assets" repository](https://github.com/daudix/assets/tree/main/daudix). I have considered expanding this concept <abbr title="December 10th, 2024">half a year ago</abbr>, but this idea didn't go beyond this mockup as I deemed it too silly of an idea. 
+My first era --- titled "Cold Boot" --- started back in late 2022, with a bunch of preparation prior to that. Eras were always a "behind the scenes" thing that wasn't really public besides folder names in the ["assets" repository](https://github.com/daudix/assets/tree/main/daudix). I have considered expanding this concept <abbr title="December 10th, 2024">half a year ago</abbr>, but this idea didn't go beyond this mockup as I deemed it too silly of an idea. 
 
-![](eras-old.png)
+![Three eras: "Cold Boot", "Déjà Vu" and "Rainbow". Each era has a profile picture, an era title and a screenshot of the website from that period. The screenshot for the "Rainbow" era is missing, with a black rectangle containing three question marks taking its place.](eras-old.png)
 
-Profile pictures continued to use this approach internally, for example my previous era was titled "Prism", which was a continuation of the "Rainbow" era.
+Profile pictures continued to use this approach internally; for example, my previous era was titled "Prism", which was a continuation of the "Rainbow" era.
 
 {% alert(fact=true) %}
 Prism era's assets had a bit of a hidden meaning behind them; the texture they have is actually monochrome photos of a broken mirror and old book's page, overlaid on top of each other with different opacity and blend modes. A bit cheesy, but it is what it is.
 
-[![](prism.png)](prism-hd.png)
+[![The "Prism" era's profile picture diagram shows the broken glass and paper images first overlaid as they are in the actual profile picture, then separately and without the black-and-white filter.](prism.png)](prism-hd.png)
 {% end %}
 
 Recently however, I came across Vylet's video explaining her eras, which is relatable in so many ways and is pretty much what I was aiming for, it's just crazy. It have inspired me to push this idea further, and whilst I won't maintain a spreadsheet of each era like she does, I too will have a more public era separation, and will be naming eras retroactively from now on.
@@ -146,7 +147,7 @@ And so, here is my current "era timeline".
     <div class="overshoot-row">
         <picture>
             <source srcset="eras-dark.png"  media="(prefers-color-scheme: dark)" />
-            <img src="eras.png" class="transparent no-hover" />
+            <img alt='Interactive timeline of the past few eras, starting from late 2022 up to present. The eras are as follows: "Cold Boot", "Déjà vu", "Rainbow / Prism", and an untitled, upcomming one.' src="eras.png" class="transparent no-hover" />
         </picture>
     </div>
 </div>
@@ -164,7 +165,7 @@ It was rough. I survived, however.
 
 ## Conclusion
 
-This blog post is a little summary of what I was doing and planning to do for a while, and I hope that this will mark a new, more hopeful chapter in my life and this blog. Thanks for reading, caring, and just being here. Can't wait to see you in the next one!
+This blog post is a little summary of what I was doing and planning to do for a long time, and I hope that this will mark a new, more hopeful chapter in my life and this blog. Thanks for reading, caring, and just being here. Can't wait to see you in the next one!
 
 <small>Interesting how the phrase "half a year" was used a whopping 6 times in this blog post.</small>
 
