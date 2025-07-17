@@ -28,6 +28,28 @@ let lastTime = "";
    ========================================================================== */
 
 // Last.fm
+function updateMarquee() {
+	const titleWidth = lastFmTitle.offsetWidth;
+	const titleContainerWidth = lastFmTitleContainer.getBoundingClientRect().width;
+	const artistWidth = lastFmArtist.offsetWidth;
+	const artistContainerWidth = lastFmArtistContainer.getBoundingClientRect().width;
+
+	lastFmTitle.style.setProperty("--text-width", `${titleWidth}`);
+	lastFmTitle.style.setProperty("--container-width", `${titleContainerWidth}`);
+	lastFmArtist.style.setProperty("--text-width", `${artistWidth}`);
+	lastFmArtist.style.setProperty("--container-width", `${artistContainerWidth}`);
+
+	lastFmTitleContainer.classList.remove("marquee", "overshoot-row");
+	lastFmArtistContainer.classList.remove("marquee", "overshoot-row");
+
+	if (titleWidth > titleContainerWidth) {
+		lastFmTitleContainer.classList.add("marquee", "overshoot-row");
+	}
+	if (artistWidth > artistContainerWidth) {
+		lastFmArtistContainer.classList.add("marquee", "overshoot-row");
+	}
+}
+
 async function fetchLastFm() {
 	try {
 		// Replace my username and API key if you're going to use this
@@ -49,26 +71,7 @@ async function fetchLastFm() {
 
 			lastFmPlayer.classList.toggle("playing", isPlaying);
 
-			// Make sure we're starting anew
-			lastFmTitleContainer.classList.remove("marquee", "overshoot-row");
-			lastFmArtistContainer.classList.remove("marquee", "overshoot-row");
-
-			const titleWidth = lastFmTitle.offsetWidth;
-			const titleContainerWidth = lastFmTitleContainer.getBoundingClientRect().width;
-			const artistWidth = lastFmArtist.offsetWidth;
-			const artistContainerWidth = lastFmArtistContainer.getBoundingClientRect().width;
-
-			lastFmTitle.style.setProperty("--text-width", `${titleWidth}`);
-			lastFmTitle.style.setProperty("--container-width", `${titleContainerWidth}`);
-			lastFmArtist.style.setProperty("--text-width", `${artistWidth}`);
-			lastFmArtist.style.setProperty("--container-width", `${artistContainerWidth}`);
-
-			if (titleWidth > titleContainerWidth) {
-				lastFmTitleContainer.classList.add("marquee", "overshoot-row");
-			}
-			if (artistWidth > artistContainerWidth) {
-				lastFmArtistContainer.classList.add("marquee", "overshoot-row");
-			}
+			updateMarquee();
 		}
 	} catch (e) {
 		console.error("Failed to fetch now playing track:", e);
@@ -197,4 +200,8 @@ document.addEventListener("DOMContentLoaded", function () {
 	setInterval(fetchDiscordStatus, 10000);
 
 	document.getElementById("shy").addEventListener("click", flutterAnim);
+});
+
+window.addEventListener("resize", () => {
+	requestAnimationFrame(updateMarquee);
 });
