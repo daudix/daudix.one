@@ -137,6 +137,6 @@
 		float: inline-end;
 		color: black;
 		font-size: var(--font-size-medium);
-		line-height: 0; // Avoid the link becoming too high
+		line-height: .625rem; // Avoid the link becoming too high
 	}
 }
