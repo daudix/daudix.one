@@ -7,7 +7,7 @@ tags = ["Devlog", "GitHub", "Neocities", "Netlify", "Umami"]
 accent_color = ["hsl(270 13% 48%)", "hsl(290 20% 71%)"]
 banner = "banner.webp"
 styles = ["blog/new-era/style.css"]
-[extra.comments]
+[extra.fediverse]
 id = "114864922325514289"
 +++
 
