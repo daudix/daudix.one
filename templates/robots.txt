@@ -1,5 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /shrek
+Disallow: /swag
 Sitemap: {{ get_url(path="sitemap.xml") }}
 
 # Borrowed from seirdy.one
