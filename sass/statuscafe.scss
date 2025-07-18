@@ -10,17 +10,6 @@
 	--accent-dark-h: 290;
 	--accent-dark-s: 20%;
 	--accent-dark-l: 71%;
-
-	@include colors-accent("light");
-	@include variables(("light", "accent", "common"));
-
-	@media (prefers-color-scheme: dark) {
-		& {
-			@include variables("dark");
-			@include colors-accent("dark");
-			color-scheme: dark;
-		}
-	}
 }
 
 body {
