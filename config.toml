@@ -53,6 +53,17 @@ date_format_long = "%d %B %Y, %R (%Z)"
 date_locale = "en_IE"
 timezone = "Europe/Moscow"
 show_comments_qr = true
+csp = [
+	{ directive = "font-src", domains = ["'self'"] },
+	{ directive = "img-src", domains = ["'self'", "https:", "data:"] },
+	{ directive = "media-src", domains = ["'self'", "https:"] },
+	{ directive = "script-src", domains = ["'self'", "https://daudix.one/api"] },
+	{ directive = "style-src", domains = ["'self'", "'unsafe-inline'"] },
+	{ directive = "frame-src", domains = ["https://www.youtube-nocookie.com", "https://incr.easrng.net", "https://vmst.io", "https://drive.google.com"] },
+	{ directive = "connect-src", domains = ["https://status.cafe", "https://api.lanyard.rest", "https://ws.audioscrobbler.com", "https://discord.com"] },
+	{ directive = "base-uri", domains = ["'none'"] },
+	{ directive = "form-action", domains = ["'none'"] }
+]
 
 [extra.meta]
 favicon = "favicon.gif"
