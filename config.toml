@@ -111,7 +111,7 @@ show_qr = true
 service = "umami"
 id = "3dbc6c32-f4f0-420e-bdb8-cfcaff7e7201"
 self_hosted_url = "https://daudix.one/api"
-do_not_track = true
+do_not_track = false
 
 [extra.debug]
 layout = false
