@@ -30,6 +30,7 @@ badges = [
   { name = "imac.gif" },
   { name = "immjs.gif", url = "https://immjs.dev" },
   { name = "iso.gif", url = "https://www.w3.org/QA/Tips/iso-date" },
+  { name = "kevadesu.gif", url = "https://kevadesu.github.io" },
   { name = "lucida.gif", url = "https://lucida.to" },
   { name = "lyra.gif", url = "https://lyra.horse" },
   { name = "marchintosh.gif", url = "https://libreivan.com/writing/" },
