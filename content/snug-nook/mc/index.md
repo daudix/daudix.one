@@ -5,7 +5,7 @@ description = "Experience the nook in a third dimension."
 
 Thanks to [kevadesu](https://kevadesu.github.io/)'s initiative, we have an official Minecraft server for Snug Nook members. They provided the hosting, configuration, and everything else, while I only provided the subdomain, `mc.daudix.one`.
 
-![Screenshot of Snug Nook Minecraft Server in Minecraft server list. It's description is "The Snug Nook® Experience - Now in Minecraft!"](../snmc.png#no-hover#pixels)
+![Screenshot of Snug Nook Minecraft Server in Minecraft server list. It's description is "The Snug Nook® Experience - Now in Minecraft!"](snmc.png#no-hover#pixels)
 
 <style>
     img {
