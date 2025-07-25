@@ -34,7 +34,7 @@ git checkout main
 - Set the remote URL to an SSH one:
 
 ```bash
-git remote set-url origin git@codeberg.org/daudix/ametrine.git
+git remote set-url origin ssh://git@codeberg.org/daudix/ametrine.git
 ```
 
 </> with <3 by [daudix](https://daudix.one)
