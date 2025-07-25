@@ -23,18 +23,16 @@ Some things from the unique side of things:
 - Ananas Duck
 - Hall of... Shame
 - Most of my friends
+- Ametrine devlog channel
 - Time zone roles (optional)
-- Weekend rebrands twice a month
+- Weekend rebrands every now and then
 - Custom emojis on both Discord and Matrix
-- Duckquill/Ametrine updates and devlog channels
 - Voice channel where one can be silent, that's right, shy folks
 - Locations metaphor; e.g. `#living-room` instead of `#general` 
 
 ### Weekend Rebrand
 
-At Snug Nook we have many unique "traditions", and weekend rebrand is one of them; every* weekend (Saturday and Sunday in the UTC time zone) we collectively decide upon what to rebrand Snug Nook to; a meme, gag, series we've been discussing in the last two weeks, and the like. It may seem silly and confusing, but that is what Snug Nook is all about; chaotic fun.
-
-*Sometimes every other weekend if we don't have any ideas.
+At Snug Nook we have many unique "traditions", and weekend rebrand is one of them; every now and then, during weekend (Saturday and Sunday in the UTC time zone) we collectively decide upon what to rebrand Snug Nook to; a meme, gag, series we've been discussing in the past week, and the like. It may seem silly and confusing, but that is what Snug Nook is all about; chaotic harmless fun.
 
 ## Bridges
 
