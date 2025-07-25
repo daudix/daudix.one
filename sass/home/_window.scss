@@ -20,7 +20,9 @@
 			overflow: auto;
 
 			@media (prefers-color-scheme: dark) {
-				background-color: #2d2a2e;
+				& {
+					background-color: #2d2a2e;
+				}
 			}
 
 			#rainbow-text span {

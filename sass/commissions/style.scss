@@ -20,6 +20,12 @@ body::before {
 		transparent 10deg 20deg);
 	content: "";
 
+	@media (prefers-color-scheme: dark) {
+		& {
+			--ray: rgb(from var(--accent-color) r g b / calc(var(--color-opacity-1) / 4));
+		}
+	}
+
 	@keyframes rays {
 		to {
 			--angle: 360deg;
