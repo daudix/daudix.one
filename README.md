@@ -1,8 +1,7 @@
-[![Please don't upload to GitHub](https://nogithub.codeberg.page/badge.svg)](https://nogithub.codeberg.page)
 [![MIT license](https://img.shields.io/badge/License-MIT-blue)](https://mit-license.org)
-[![status-badge](https://ci.codeberg.org/api/badges/13890/status.svg)](https://ci.codeberg.org/repos/13890)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ebae929e-5e6e-4b5f-855c-6942733fca41/deploy-status?branch=old)](https://app.netlify.com/projects/daudix/deploys)
 
-# [Daudix’s Blog](https://daudix.one)
+# [Daudix’s Blog](https://old.daudix.one)
 
 The source code of my personal website. It is powered by [Zola](https://www.getzola.org) and <3. It is crafted in such a way as to be usable as a theme, but I cannot guarantee its stability and it is made to suit my needs first.
 
@@ -33,4 +32,4 @@ There are several ways to contribute to this project:
 
 When making any sort of contribution, please make sure to follow [Forgejo's Code of Conduct](https://codeberg.org/forgejo/code-of-conduct). If you don't have the time to read it, just know that all you have to do is be nice, and you'll be just fine.
 
-*</> with <3 by [daudix](https://daudix.one) | README based on [libreivan's](https://codeberg.org/libreivan/libreivan.com)*
+*</> with <3 by [daudix](https://old.daudix.one) | README based on [libreivan's](https://codeberg.org/libreivan/libreivan.com)*
