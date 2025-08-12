@@ -18,8 +18,8 @@
 	img {
 		box-shadow: none;
 		border-radius: 0.25rem;
-		width: calc(rpx(184) / 2);
-		height: calc(rpx(69) / 2);
+		width: rpx(96);
+		height: rpx(36);
 
 		&:hover {
 			transform: scale(1.5);

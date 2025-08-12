@@ -193,10 +193,10 @@ Feel free to reach me out on any of these! Although I'm usually too shy to start
 <div>
 
 <div id="icons">
-  <img class="transparent no-hover drop-shadow" src="/design/icons/original/de.schmidhuberj.DieBahn.svg" alt="Railway app icon." />
-  <img class="transparent no-hover drop-shadow" src="/design/icons/original/io.github.tfuxu.Halftone.svg" alt="Halftone app icon." />
-  <img class="transparent no-hover drop-shadow" src="/design/icons/original/org.nickvision.cavalier.svg" alt="Cavalier app icon." />
-  <img class="transparent no-hover drop-shadow" src="/design/icons/original/org.nickvision.tagger.svg" alt="Tagger app icon." />
+  <img width="64" height="64" class="transparent no-hover drop-shadow" src="/design/icons/original/de.schmidhuberj.DieBahn.svg" alt="Railway app icon." />
+  <img width="64" height="64" class="transparent no-hover drop-shadow" src="/design/icons/original/io.github.tfuxu.Halftone.svg" alt="Halftone app icon." />
+  <img width="64" height="64" class="transparent no-hover drop-shadow" src="/design/icons/original/org.nickvision.cavalier.svg" alt="Cavalier app icon." />
+  <img width="64" height="64" class="transparent no-hover drop-shadow" src="/design/icons/original/org.nickvision.tagger.svg" alt="Tagger app icon." />
 </div>
 
 <div>
@@ -222,4 +222,4 @@ I'm even a member of several [tildes](https://envs.net) and [CS clubs](https://e
 
 Better yet, I have a website on [neocities](https://neocities.org); It doesn't have any purpose except for being there and looking dated. [Check it out](https://daudix.neocities.org) if you want.
 
-<img id="flutter" class="transparent no-hover" src="flutter.webp" alt="Fluttershy with a wide grin on her face.">
+<img id="flutter" width="128" height="110" class="transparent no-hover" src="flutter.webp" alt="Fluttershy with a wide grin on her face.">
