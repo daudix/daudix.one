@@ -64,7 +64,7 @@ Greetings! Welcome to my little corner on the World Wild Web and a second home o
 
 <div class="buttons start big">
   <a class="suggested" href="#about">About Me ↓</a>
-  <a href="#works">My Works ↓</a>
+  <a href="/#splash">Splash →</a>
 </div>
 </div>
 </div>

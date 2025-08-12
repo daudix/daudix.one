@@ -41,6 +41,11 @@
 		<img id="warning" class="transparent no-hover" src="{{ get_url(path='graphics/warning.svg') }}" alt="Warning" />
 	</div>
 </main>
+<label id="splash-toggle">
+	<input type="checkbox" id="skip-splash">
+	Skip splash screen
+</label>
 <img id="barcode" class="transparent no-hover" src="{{ get_url(path='graphics/barcode.svg') }}" alt="Barcode" />
 <div id="rainbow"></div>
+{% include "partials/icons.html" %}
 {% endblock body %}
