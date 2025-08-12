@@ -9,16 +9,17 @@
 
 	li {
 		display: flex;
+		box-shadow: none !important;
 		border-radius: 0 !important;
 		background-color: transparent !important;
 		padding: 0 !important;
-		box-shadow: none !important;
 	}
 
 	img {
 		box-shadow: none;
 		border-radius: 0.25rem;
-		width: rpx(92);
+		width: calc(rpx(184) / 2);
+		height: calc(rpx(69) / 2);
 
 		&:hover {
 			transform: scale(1.5);
