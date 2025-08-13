@@ -9,6 +9,8 @@ This is the least fun page on this website. Deal with it.
 
 This website is a passion project of mine, made with a lot of love and attention to details, is constantly updated and improved, and has the goal of being lightweight and somewhat compatible with older browsers. <small>(at very least most stuff works on iOS 15 and macOS High Sierra; which unfortunately a lot of people still use)</small>
 
+It does not use frameworks such as React --- only [Zola](https://www.getzola.org) with handwritten HTML templates --- and the (S)CSS is handwritten without the use of tools like Tailwind. One could argue that it would be much easier if I did, but I prefer to write everything myself to have great control over minor details.
+
 It is currently hosted on [Netlify](https://www.netlify.com) and I like it so far. Before that it used to be hosted on [Vercel](https://vercel.com), [Codeberg Pages](https://codeberg.page), [exozyme](https://exozy.me), and [GitHub Pages](https://pages.github.com).
 
 ## Thanks To
