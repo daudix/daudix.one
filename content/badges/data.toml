@@ -1,5 +1,6 @@
 [badges]
 personal = [
+  { name = "dimden.gif", url = "https://dimden.dev" },
   { name = "doskel.gif", url = "https://doskel.net" },
   { name = "ersei.gif", url = "https://ersei.net" },
   { name = "free.gif", url = "https://freeplay.floof.company" },
@@ -54,6 +55,7 @@ misc = [
   { name = "up-all-night.gif" },
   { name = "valid-atom.gif", url = "https://validator.w3.org/feed/" },
   { name = "want-to-believe.gif" },
+  { name = "wetdry-world.gif", url = "https://wetdry.world" },
   { name = "yarrr.gif" },
 ]
 mine = [
