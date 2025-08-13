@@ -28,7 +28,7 @@ main {
 	border-radius: 0;
 	background-color: transparent;
 	padding: 0;
-	color: white;
+	color: var(--accent-color);
 	line-height: 1;
 
 	p {
@@ -64,8 +64,7 @@ main {
 		display: block;
 		position: relative;
 		transition: var(--transition-bezier-longer);
-		border-block-start: 0.125rem solid white;
-		border-block-end: 0.125rem solid white;
+		border-block: 0.125rem solid var(--accent-color);
 		width: 17.5rem;
 		height: 3.75rem;
 		font-weight: var(--font-weight-black);
@@ -170,11 +169,26 @@ main {
 	cursor: pointer;
 	inset-block-start: 1rem;
 	inset-inline-start: 1rem;
-	font-size: 0.875rem;
+	font-size: var(--font-size-small);
 	line-height: 1;
 
 	#skip-splash {
-		vertical-align: rpx(-3);
+		vertical-align: rpx(-7);
+		margin-inline-end: 0.25rem;
+		border-color: var(--accent-color);
+		border-radius: 0;
+		background-color: transparent;
+		width: 1.5rem;
+		height: 1.5rem;
+
+		&:checked {
+			background-color: var(--accent-color);
+		}
+
+		&::before {
+			width: 1.5rem;
+			height: 1.5rem;
+		}
 	}
 }
 
