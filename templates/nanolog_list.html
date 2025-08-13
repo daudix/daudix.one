@@ -35,13 +35,15 @@
 	{%- for page in section.pages %}
 		<li>
 			<div>
-				<strong>
+				<a href="{{ page.permalink | safe }}">
 					{{ page.date | date(format=config.extra.date_format_long | default(value="%B %d, %Y, %R (%Z)"), timezone=config.extra.timezone | default(value="UTC"), locale=config.extra.date_locale | default(value="en_US")) }}
-				</strong>
+				</a>
 				<small>{{ page.title }}</small>
 			</div>
 			<div>
-				<a href="{{ page.permalink | safe }}">View Post</a>
+				{% if config.extra.source_url %}
+					<a href="{{ config.extra.source_url }}/edit/main/content/{{ page.relative_path }}">Edit Post</a>
+				{%- endif -%}
 				{{ page.content | safe }}
 			</div>
 		</li>
