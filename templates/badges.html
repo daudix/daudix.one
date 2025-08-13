@@ -2,54 +2,87 @@
 {% import "macros/icon.html" as macros_icon %}
 
 {% block content %}
+{% set data = load_data(path="content/badges/data.toml") %}
+{% set badges = data.badges %}
+{% set stamps = data.stamps %}
 
 <h1>{{ page.title }}</h1>
 
 <p>
-	Badges from friends, cool people, sites that link to me, and sites that just look good. Linking to someone does not mean that I endorse everything they say.
+	Badges from friends, cool people, sites that link to me, and sites that just look good. Linking to someone doesn’t mean that I endorse everything they say.
 </p>
 
 <ul class="badges">
-	<strong class="title">Badges/88x31s</strong>
-	{%- for badge in page.extra.badges -%}
-		{%- if not badge.mine -%}
-			<li>
-				{%- if badge.url -%}
-					<a href="{{ badge.url }}">
-				{%- endif -%}
-					<img
-						class="pixels transparent no-hover"
-						{%- if badge.alt -%}
-							{%- set badge_alt = badge.alt -%}
-						{%- else -%}
-							{%- set badge_alt = badge.name | split(pat=".", limit=2) | first -%}
-						{%- endif -%}
-						alt="{{ badge_alt }}"
-						{% set badge_url = "badges/badges/" ~ badge.name %}
-						src="{{ get_url(path=badge_url) }}"
-					/>
-				{%- if badge.url -%}
-					</a>
-				{%- endif -%}
-			</li>
-		{%- endif -%}
-	{%- endfor -%}
-	{{- macros_icon::icon(name="scissors") -}}
-</ul>
-
-
-<h2>By Me</h2>
-
-<p>Even though I don't do so often, I like making 88x31 buttons; the process is simply so fun and relaxing. You can also <a href="/commissions/">commission</a> me to make one :3</p>
-
-<ul class="badges">
-	<strong class="title">Badges/88x31s by Me</strong>
-	{%- for badge in page.extra.badges | filter(attribute="mine", value=true) -%}
+	<strong class="title">Personal Badges/88x31s</strong>
+	{%- for badge in badges.personal -%}
 		<li>
 			{%- if badge.url -%}
 				<a href="{{ badge.url }}">
 			{%- endif -%}
 				<img
+					width="88" height="31"
+					class="pixels transparent no-hover"
+					{%- if badge.alt -%}
+						{%- set badge_alt = badge.alt -%}
+					{%- else -%}
+						{%- set badge_alt = badge.name | split(pat=".", limit=2) | first -%}
+					{%- endif -%}
+					alt="{{ badge_alt }}"
+					{% set badge_url = "badges/badges/" ~ badge.name %}
+					src="{{ get_url(path=badge_url) }}"
+				/>
+			{%- if badge.url -%}
+				</a>
+			{%- endif -%}
+		</li>
+	{%- endfor -%}
+	{{- macros_icon::icon(name="scissors") -}}
+</ul>
+
+<h2>Misc</h2>
+
+<p>Catch-all category for random badges. Some link to something, some don’t.</p>
+
+<ul class="badges">
+	<strong class="title">Misc Badges/88x31s</strong>
+	{%- for badge in badges.misc -%}
+		<li>
+			{%- if badge.url -%}
+				<a href="{{ badge.url }}">
+			{%- endif -%}
+				<img
+					width="88" height="31"
+					class="pixels transparent no-hover"
+					{%- if badge.alt -%}
+						{%- set badge_alt = badge.alt -%}
+					{%- else -%}
+						{%- set badge_alt = badge.name | split(pat=".", limit=2) | first -%}
+					{%- endif -%}
+					alt="{{ badge_alt }}"
+					{% set badge_url = "badges/badges/" ~ badge.name %}
+					src="{{ get_url(path=badge_url) }}"
+				/>
+			{%- if badge.url -%}
+				</a>
+			{%- endif -%}
+		</li>
+	{%- endfor -%}
+	{{- macros_icon::icon(name="scissors") -}}
+</ul>
+
+<h2>By Me</h2>
+
+<p>Even though I don’t do so often, I like making 88x31 buttons; the process is simply so fun and relaxing. You can also <a href="/commissions/">commission</a> me to make one :3</p>
+
+<ul class="badges">
+	<strong class="title">Badges/88x31s by Me</strong>
+	{%- for badge in badges.mine -%}
+		<li>
+			{%- if badge.url -%}
+				<a href="{{ badge.url }}">
+			{%- endif -%}
+				<img
+					width="88" height="31"
 					class="pixels transparent no-hover"
 					{%- if badge.alt -%}
 						{%- set badge_alt = badge.alt -%}
@@ -70,27 +103,28 @@
 
 <h2>Stamps</h2>
 
-<p>Technically not badges, but they're cute too and I don't know where to put them.</p>
+<p>Technically not badges, but they’re cute too and I don’t know where to put them.</p>
 
 <ul class="stamps">
 	<strong class="title">DeviantArt Stamps</strong>
-	{%- for stamp in page.extra.stamps -%}
+	{%- for stamp in stamps.misc -%}
 		<li>
-			{%- if badge.url -%}
+			{%- if stamp.url -%}
 				<a href="{{ stamp.url }}">
 			{%- endif -%}
 				<img
+					width="99" height="56"
 					class="pixels transparent no-hover"
 					{%- if stamp.alt -%}
 						{%- set stamp_alt = stamp.alt -%}
 					{%- else -%}
-						{%- set stamp_alt = stamp.name | split(pat='.', limit=2) | first -%}
+						{%- set stamp_alt = stamp.name | split(pat=".", limit=2) | first -%}
 					{%- endif -%}
 					alt="{{ stamp_alt }}"
 					{% set stamp_url = "badges/stamps/" ~ stamp.name %}
 					src="{{ get_url(path=stamp_url) }}"
 				/>
-			{%- if badge.url -%}
+			{%- if stamp.url -%}
 				</a>
 			{%- endif -%}
 		</li>
