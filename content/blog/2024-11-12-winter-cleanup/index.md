@@ -48,11 +48,11 @@ That's right, no more serif headings. I liked them, but I got bored, so here we 
 Small change that makes a big difference. Seriously, it feels like I'm using a CSS framework now :P. Post banners have a different animation, you might have noticed.
 - **Improved Styles**  
 All styles have been revisited to ensure they meet the new quality requirements.
-- [Material You](@/nanolog/2024-11-10-material-you/index.md)  
+- [Material You](@/nanolog/2024-11-10-material-you.md)  
 All posts that have a banner will now use the accent color picked (manually) from the banner, so that the post itself is colored similarly to the banner. Post cards use it as well. This post may appear to use the same accent color as the rest of the site, and you're right, but if I change the global accent color in the future, it will still use the same accent color as it does now.
-- [Nanolog](@/nanolog/2024-11-07-first-post/index.md)  
+- [Nanolog](@/nanolog/2024-11-07-first-post.md)  
 Like microblog, but even smaller (not really, I just liked the name). I plan to post there a lot since I really like the format and the style turned out pretty good. It's available [here](@/nanolog/_index.md). It even has its own Atom feed!
-- [Bye Skeuo](@/nanolog/2024-11-09-bye-skeuo/index.md)  
+- [Bye Skeuo](@/nanolog/2024-11-09-bye-skeuo.md)  
 The [coffee](@/coffee/index.md) page no longer has the skeuo mode switch. Sad, but it got way too annoying to fix. Maybe it'll come back later.
 - **Blog Atom Feed Changed**  
 Now it's under the `blog` directory instead of the site root. This is because it was mixed with nanolog, so I had to split it up.

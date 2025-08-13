@@ -1,4 +1,5 @@
 @use "../../themes/ametrine/sass/components/functions" as *;
+@use "../../themes/ametrine/sass/components/mixins" as *;
 
 h1,
 h1 + p {
@@ -9,7 +10,7 @@ h1 + p {
 	display: flex;
 	flex-direction: column;
 	gap: 1rem;
-	margin: 2rem auto 0;
+	margin: 4rem auto 0;
 	border-inline-start: 0.25rem solid var(--accent-color);
 	padding-inline-start: 0;
 	width: min(calc(var(--container-width) / 1.5), 100%);
@@ -63,7 +64,8 @@ h1 + p {
 
 			& > a {
 				float: inline-end;
-				transition: all var(--transition), transform var(--transition-bezier);
+				transition: all var(--transition),
+					transform var(--transition-bezier);
 				margin-inline-start: 1rem;
 				box-shadow: var(--edge-highlight);
 				border-radius: 999px;
@@ -75,7 +77,7 @@ h1 + p {
 				&:hover {
 					background-color: var(--bg-muted-2);
 				}
-		
+
 				&:active {
 					transform: var(--active);
 				}
@@ -88,6 +90,177 @@ h1 + p {
 			:last-child {
 				margin-block-end: 0;
 			}
+		}
+	}
+}
+
+#nanolog-button {
+	position: fixed;
+	appearance: none;
+	backdrop-filter: var(--blur);
+	transition: all var(--transition), transform var(--transition-bezier);
+	cursor: pointer;
+	inset-block-end: 1rem;
+	inset-inline-end: 1rem;
+	box-shadow: var(--edge-highlight), var(--shadow);
+	border: none;
+	border-radius: 50%;
+	background: var(--bg-muted-1);
+	padding: 1rem;
+	font-size: 1.5rem;
+	line-height: 0;
+	font-family: inherit;
+	-webkit-backdrop-filter: var(--blur);
+	z-index: 9999;
+	@include gradient-fill;
+
+	&:hover {
+		@include gradient-fill-hover;
+	}
+
+	&:active {
+		transform: var(--active);
+	}
+}
+
+#nanolog-modal {
+	display: flex;
+	position: fixed;
+	flex-direction: column;
+	align-items: center;
+	visibility: hidden;
+	opacity: 0;
+	z-index: 9999;
+	transition: var(--transition);
+	inset: 0;
+	background-color: var(--shade-color);
+	padding-block-start: 15vh;
+	width: 100%;
+	height: 100vh;
+
+	&.active {
+		visibility: visible;
+		opacity: 1;
+
+		#nanolog-modal-content {
+			transform: none;
+		}
+	}
+
+	&-content {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		transform: var(--hover);
+		border-radius: 1.75rem 1.75rem 2.25rem 2.25rem;
+		padding: 1rem;
+		-webkit-backdrop-filter: var(--blur);
+		backdrop-filter: var(--blur);
+		transition: all var(--transition),
+			transform var(--transition-bezier-longer);
+		box-shadow: var(--edge-highlight), var(--shadow-glass);
+		// border-radius: 2.25rem 2.25rem 1.75rem 1.75rem;
+		background-color: var(--glass-bg-1);
+		width: calc(100% - 2rem);
+		max-width: calc(var(--container-width) / 1.5);
+
+		input,
+		textarea {
+			border: none;
+			border-radius: 0;
+			background: none;
+			width: 100%;
+			font-size: inherit;
+			line-height: inherit;
+			font-family: inherit;
+
+			&::placeholder {
+				opacity: 1;
+				color: var(--fg-muted-1);
+			}
+
+			&:focus-visible {
+				animation: none;
+				outline: none;
+			}
+		}
+
+		#compose-container {
+			display: flex;
+			flex-direction: column;
+			box-shadow: var(--edge-highlight);
+			border-radius: var(--rounded-corner) var(--rounded-corner) 1.25rem
+				1.25rem;
+			background: var(--bg-muted-1);
+			padding: 0.5rem 0.75rem;
+
+			.overshoot {
+				display: flex;
+				margin-block: -1rem;
+
+				#post-content {
+					padding-block: 1rem;
+				}
+			}
+
+			.buttons {
+				align-items: center;
+				margin-inline-end: -0.25rem;
+				margin-block-start: 1rem;
+				border-block-start: rpx(1) solid var(--bg-muted-2);
+				padding-block-start: 0.5rem;
+			}
+		}
+
+		#post-title {
+			margin-block-end: 1rem;
+			border-block-end: rpx(1) solid var(--bg-muted-2);
+			padding-block-end: 0.5rem;
+		}
+
+		#post-content {
+			height: 8rem;
+			resize: none;
+		}
+
+		#char-count {
+			transition: var(--transition);
+			margin-inline-end: 0.5rem;
+			color: var(--fg-muted-2);
+			font-size: var(--font-size-small);
+			font-variant-numeric: tabular-nums;
+
+			&.half {
+				color: var(--yellow-fg);
+			}
+
+			&.max {
+				color: var(--red-fg);
+			}
+		}
+
+		#auth-container {
+			display: flex;
+			flex: 1;
+			box-shadow: var(--edge-highlight);
+			border-radius: var(--rounded-corner);
+			background-color: var(--bg-muted-1);
+			padding-inline-start: 0.75rem;
+		}
+
+		#github-token {
+			box-shadow: none;
+			border-radius: 0;
+			background-color: transparent;
+			padding: 0;
+		}
+
+		#show-token-btn {
+			margin: 0.25rem;
+			border-radius: var(--rounded-corner-small);
+			padding: 0.375rem;
+			font-size: 1.25rem;
+			line-height: 0;
 		}
 	}
 }

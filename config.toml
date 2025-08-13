@@ -86,6 +86,7 @@ csp = [
     "https://api.lanyard.rest",
     "https://ws.audioscrobbler.com",
     "https://discord.com",
+    "https://api.github.com",
   ] },
   { directive = "base-uri", domains = [
     "'none'",

@@ -1,7 +1,6 @@
 {% extends "base.html" %}
 
 {% block content %}
-{%- set rel_attributes = macros_rel_attributes::rel_attributes() | trim -%}
 <div id="nanolog">
 	{%- if page.lower -%}
 		<a id="nanolog-higher" href="{{ page.lower.permalink }}#up">

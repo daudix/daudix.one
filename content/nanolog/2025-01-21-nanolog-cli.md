@@ -13,4 +13,4 @@ Now that this post is written I can finally nanopost something else, as it was s
 
 P.S. Here's a short demo:
 
-{{ video(url="/nanolog/nanolog-cli/demo.webm", alt="Demo of Nanolog's functionality", controls=true) }}
+{{ video(url="https://codeberg.org/daudix/nanolog/raw/branch/main/demo.webm", alt="Demo of Nanolog's functionality", controls=true) }}
