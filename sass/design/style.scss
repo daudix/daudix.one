@@ -195,7 +195,8 @@ section {
 				}
 
 				a {
-					transition: all var(--transition), transform var(--transition-bezier);
+					transition: all var(--transition),
+						transform var(--transition-bezier);
 					margin-inline-end: -0.5rem;
 					margin-block-end: -0.5rem;
 					box-shadow: var(--edge-highlight);
@@ -222,7 +223,7 @@ section {
 
 		@media only screen and (max-width: 520px) {
 			.media-grid {
-				grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+				grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
 			}
 
 			img {
