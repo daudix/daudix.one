@@ -58,8 +58,6 @@ function validateInputs(title, content, token) {
 
 	if (!title) {
 		errors.push("Post title is required!");
-	} else if (title.length > 70) {
-		errors.push("Post title is too long (max 70 characters)!");
 	}
 
 	if (!content) {
