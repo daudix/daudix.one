@@ -11,7 +11,7 @@
 <ul>
 	{%- for item in items -%}
 		<li>
-			<a href="{{ item.url }}">
+			<a href="{{ item.url }}"{% if item.favorite %} class="favorite"{% endif %}>
 				<img
 					width="32"
 					height="32"

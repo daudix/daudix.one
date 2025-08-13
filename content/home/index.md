@@ -28,7 +28,7 @@ games = [
   { name = "The Stanley Parable", id = "221910" },
 ]
 contacts = [
-  { name = "Discord", url = "https://discord.com/users/650757995378114581" },
+  { name = "Discord", url = "https://discord.com/users/650757995378114581", favorite = true },
   { name = "Signal", url = "https://signal.me/#eu/b4KzM1OB3uW52mMywHUJa8h6yD4ATY_KXJJiuJtWUxOVAJP22PVO_qoNGFnf32W7" },
   { name = "Telegram", url = "https://t.me/ddaudix" },
   { name = "Matrix", url = "https://matrix.to/#/@daudix:envs.net" },
@@ -36,7 +36,7 @@ contacts = [
   { name = "Email", url = "mailto:me@daudix.one" },
 ]
 socials = [
-  { name = "Bluesky", url = "https://bsky.app/profile/daudix.one" },
+  { name = "Bluesky", url = "https://bsky.app/profile/daudix.one", favorite = true },
   { name = "Mastodon", url = "https://wetdry.world/@daudix" },
   { name = "SpaceHey", url = "https://spacehey.com/daudix" },
   { name = "Tumblr", url = "https://www.tumblr.com/ddaudix" },
