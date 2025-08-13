@@ -42,7 +42,7 @@
 			</div>
 			<div>
 				{% if config.extra.source_url %}
-					<a href="{{ config.extra.source_url }}/edit/main/content/{{ page.relative_path }}">Edit Post</a>
+					<a href="{{ config.extra.source_url }}/edit/main/content/{{ page.relative_path }}" target="_blank">Edit Post</a>
 				{%- endif -%}
 				{{ page.content | safe }}
 			</div>
