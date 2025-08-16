@@ -2,6 +2,10 @@
 
 {% block body %}
 <main>
+	<label id="splash-toggle">
+		<input type="checkbox" id="skip-splash" />
+		Skip splash screen
+	</label>
 	<div id="top">
 		<div>
 			<img class="transparent no-hover" src="{{ get_url(path='graphics/4-by-3.svg') }}" alt="1024x768" />
@@ -40,13 +44,11 @@
 				<li>Wacky humor</li>
 			</ul>
 		</div>
-		<img id="warning" class="transparent no-hover" src="{{ get_url(path='graphics/warning.svg') }}" alt="Warning" />
+		<a href="{{ get_url(path='g.mp4') }}">
+			<img id="warning" class="transparent no-hover" src="{{ get_url(path='graphics/warning.svg') }}" alt="Warning" />
+		</a>
 	</div>
 </main>
-<label id="splash-toggle">
-	<input type="checkbox" id="skip-splash">
-	Skip splash screen
-</label>
 <img id="barcode" class="transparent no-hover" src="{{ get_url(path='graphics/barcode.svg') }}" alt="Barcode" />
 <div id="rainbow"></div>
 {% include "partials/icons.html" %}
