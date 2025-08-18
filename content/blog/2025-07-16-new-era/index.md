@@ -14,6 +14,10 @@ id = "114864922325514289"
 
 Time to talk a bit about my recent changes to this website, plans for this blog, and One More Thing™.
 
+{% alert(edit=true) %}
+Last edit introduced a couple of additional images and an entirely new section. See [this commit](https://github.com/daudix/daudix.one/commit/637bd7ef6f7acd53f5346104e5cc291ed5cc7968) for a detailed overview.
+{% end %}
+
 ## Website Changes
 
 This website has undergone numerous changes in the past... *looks at wall calendar* ...half a year (dear God how did it pass by this fast I'm gonna cry), though most of this time I've been working on Ametrine, and a bit more so procrastinating (nothing new haha).
@@ -209,8 +213,3 @@ This blog post is a little summary of what I was doing and planning to do for a 
 [^1]: Discord widget API (`https://discord.com/api/guilds/<GUILD_ID>/widget.json`) doesn't expose server icon, description, total member count, and basically any other useful info about the server, however, it does expose an automatically generated invite link (that's being regenerated every now and then), which *does* expose said info via the `https://discord.com/api/invites/<INVITE_CODE>?with_counts=true` endpoint. And so by trimming the `https://discord.com/invite/` bit of the auto-generated invite link we get said invite code. Two API calls, yes, but we get all the info without any additional services or hardcoding anything.
 [^2]: It's not very original, rather a compilation of StackOverflow answers, CSS Tricks, and code from random Git repositories.
 [^3]: Okay, I *did* write one detailed blog post about me moving from Firefox to Vivaldi, but before I could finish it I have already moved to vanilla Chrome.
-
-{% alert(edit=true) %}
-**August 18th, 2025.**  
-Last edit introduced a couple of additional images and an entirely new section. See the [edit history]() for a detailed overview.
-{% end %}
