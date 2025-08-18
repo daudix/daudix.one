@@ -1,7 +1,7 @@
 +++
 title = "New Era"
 description = "The world around us is changing, and so do I."
-updated = 2025-07-18
+updated = 2025-08-18
 [taxonomies]
 tags = ["Devlog", "GitHub", "Neocities", "Netlify", "Umami"]
 [extra]
@@ -35,6 +35,11 @@ Yet another question raises its hand: doesn’t that limit my creativity or make
 
 Now that Ametrine is more modular than Duckquill, and since I now know more Zola tricks, it means I can customize a lot without touching the internals too much, in fact, that's exactly what I did; at some point during the long process of writing this post, this website had an Aero-like styling, but since it wasn't good enough I have scrapped it a couple days ago.
 
+<picture>
+  <source srcset="aero-dark.png"  media="(prefers-color-scheme: dark)" />
+  <img alt="Homepage, but with Aero-like styling (but far from looking genuine) and green color scheme. " src="aero.png" />
+</picture>
+
 Fuzzy, I know, but I’ll talk more about Ametrine itself in a follow-up post soon (hopefully, unless depression kicks in again).
 
 <small>One could say that [winter cleanup](@/blog/2024-11-12-winter-cleanup/index.md) went on for a *bit* longer xD</small>
@@ -50,6 +55,12 @@ We have quite some changes on this front:
 - [Snug Nook](@/snug-nook/index.md) was completely redone. Essential info is now presented via a fully dynamic widget, which by the way uses an interesting Discord widget API hack[^1] that I couldn't find any mentions of online, so we might be the first to use it?
 - [Design](@/design/index.md) styling was adjusted to better fit the new design. It now also follows the light/dark mode preference like the rest of the site, instead of being hardcoded to dark mode.
 - [Home](@/home/index.md), besides inheriting "about" and "online" pages' info also got a brand new widget: "Now Playing" powered by Last.fm. Not only it displays currently playing track live, but it also switches to "Last Played" if nothing is playing or playback is paused, accompanied by a nice CD (which is taken from elementary OS icon theme :P) animation. I have experimented with using Discord Rich Presence (RPC) to display not only this but also other activities, but it didn't expose last played song and was much, much more complex, so it was scrapped.
+<a href="/home/#player">
+  <picture id="now-playing">
+    <source srcset="now-playing-dark.png"  media="(prefers-color-scheme: dark)" />
+    <img alt='Now playing widget, with "The Carrion Child" song by "Vylet Pony" displayed as last played.' src="now-playing.png" class="transparent no-hover" />
+  </picture>
+</a>
 
 ### Source Code
 
@@ -113,6 +124,32 @@ In the end, I'm left uncertain as to what to do with Neocities after retiring th
 
 Lately, my focus has heavily shifted from Fedi to Bluesky. Fedi is great, but Bluesky suits me better; it doesn't have the whole fedimeta thing, defederations that you have no control over, and such. I plan to add support for Bluesky-powered comments to Ametrine at some point, but I currently lack the required skills to do so. If you've been following me on the Fedi, you might want to follow my bridged Bluesky account as well (if your instance's admin didn't defederate Bridgy Fed :P).
 
+## Overorganization
+
+I was, and still am, trying to reduce the unnecesairy overorganization of... everything; [my social presence](@/blog/2025-01-11-merging-lanes/index.md), my websites (as mentioned earlier I merged a couple of pages with homepage and will retire neocities as a place for journaling), and more that is yet to come. I don't have a plan or anything, it's just a direction I'm going in.
+
+I have wrote a lot about this some time ago (file modification date says January 16th, 2025?) as a reply to questions someone (if you're reading this, hi!) asked me in one group chat, which, while a bit outdated, still conveys the same message as it did back then Here is what I sent, with no edits (I have unfortunately left said group chat and don't have original questions saved anywhere, but it maintains context even without them):
+
+<details>
+<summary>Click to expand</summary>
+
+Okay, so, first things first (replying to each paragraph/message)
+
+I completely agree with the "formal/informal personally issue" thing, just like you said it does a bit prevent from having fun and putting any serious effort into the informal stuff. Why it's so hard to just be yourself man...
+
+Over-organization is an issue for me as well, and again I fully agree with you; it's annoying, time wasting, prevents just doing things, and most of the time there's no benefit of doing so. I'm kinda trying to get rid of unnecessary categorization and organization, but being a perfectionist does't help. I've been using two simple markdown to-dos, one for irl stuff and one for website ideas, and it's a good workflow, you just make a new bullet point and call it a day, no need to separate stuff to separate notes, add tags, link all this from a central "hub" to-do, you know what I mean. Same for other things.
+
+The Fediverse thing is complicated though. I am not a social media person per se, quite the opposite; I'm shy to the point I'm thinking it's actually a social anxiety disorder, but I still use it for some reason. Thing is, I very rarely interact with people there and mostly just reblog stuff I like/find funny and post boring stuff, with which no one interacts as well. I've been thinking off and on about minimizing my usage of Mastodon and instead condensing my thoughts into blog posts or nanologs, but the ability to e.g. attach an image/video without having to rename, optimize, and link manually is pretty sweet. Otherwise there's objectively no real point in using it indeed, I get two likes at best, even then it's people that somewhat know me and we regularly interact. The main reason I'm using it however is talented people I follow, I like to get updates on things they do, and just so happens they mostly do so on Mastodon (because I found about them there). I follow just enough people for my timeline to be interesting, but not enough for it to be so active so I can doomscroll, and you know, Mastodon sucks in terms of showing posts from people you don't follow, like there's no "for you" tab and global timeline is an absolute garbage. I see your point and I could def survive without Mastodon account, and instead follow people I care about the most from an RSS reader.
+
+Going back to over-organization... Yeah it's not okay to have stuff this categorized, I ran a poll for about a week and results suggest that 80% of my readers would like the journal and blog to be merged. I'm still not certain on how I'd do so, but yeah this something that spins in my brain.
+
+Yeah nanolog does have an RSS feed, in fact every category and tag does (*cough* over-organization *cough*).
+
+I use microblogging mostly to share my web dev stuff and most short gags/shitposts that in no way deserve a "nanopost".
+
+One thing I'd like to add to the Fediverse and overall microblogging thing, I would really like to be in charge of my posts, because instances regularly die and the experience of viewing Mastodon exports suck. Expanding nanolog somehow to make posting there easier would be cool, but I don't see how I would do so.
+</details>
+
 ## New Era
 
 Behold... the title of this article, at last!
@@ -144,12 +181,12 @@ Excerpt from the video:
 And so, here is my current "era timeline".
 
 <div id="eras-timeline">
-    <div class="overshoot-row">
-        <picture>
-            <source srcset="eras-dark.png"  media="(prefers-color-scheme: dark)" />
-            <img alt='Interactive timeline of the past few eras, starting from late 2022 up to present. The eras are as follows: "Cold Boot", "Déjà vu", "Rainbow / Prism", and an untitled, upcomming one.' src="eras.png" class="transparent no-hover" />
-        </picture>
-    </div>
+  <div class="overshoot-row">
+    <picture>
+      <source srcset="eras-dark.png"  media="(prefers-color-scheme: dark)" />
+      <img alt='Interactive timeline of the past few eras, starting from late 2022 up to present. The eras are as follows: "Cold Boot", "Déjà vu", "Rainbow / Prism", and an untitled, upcomming one.' src="eras.png" class="transparent no-hover" />
+    </picture>
+  </div>
 </div>
 <div class="buttons">
   <a href="eras-hd.png">View in Full Resolution</a>
@@ -172,3 +209,8 @@ This blog post is a little summary of what I was doing and planning to do for a 
 [^1]: Discord widget API (`https://discord.com/api/guilds/<GUILD_ID>/widget.json`) doesn't expose server icon, description, total member count, and basically any other useful info about the server, however, it does expose an automatically generated invite link (that's being regenerated every now and then), which *does* expose said info via the `https://discord.com/api/invites/<INVITE_CODE>?with_counts=true` endpoint. And so by trimming the `https://discord.com/invite/` bit of the auto-generated invite link we get said invite code. Two API calls, yes, but we get all the info without any additional services or hardcoding anything.
 [^2]: It's not very original, rather a compilation of StackOverflow answers, CSS Tricks, and code from random Git repositories.
 [^3]: Okay, I *did* write one detailed blog post about me moving from Firefox to Vivaldi, but before I could finish it I have already moved to vanilla Chrome.
+
+{% alert(edit=true) %}
+**August 18th, 2025.**  
+Last edit introduced a couple of additional images and an entirely new section. See the [edit history]() for a detailed overview.
+{% end %}

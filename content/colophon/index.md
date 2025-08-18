@@ -20,7 +20,7 @@ Most likely I forgot to credit someone. Sorry about that \>_<
 - [sadgrl.online](https://goblin-heart.net/sadgrl/) for the "static" [tiled background](https://goblin-heart.net/sadgrl/webmastery/downloads/tiledbgs) used on splash page, metadata card, and 88x31 button.
 - [Volpeon](https://volpeon.ink) for [neofoxes](https://volpeon.ink/emojis/neofox/) used throughout the site.
 - [elementary OS](https://elementary.io) for the [CD icon](https://github.com/elementary/icons/blob/3aceb24f390bd8ded062e114681d6f35463de462/devices/64/media-optical.svg) used in the Now Playing widget on homepage.
-- [Vylet Pony](https://www.vyletpony.com) for inderictly inspiring the design of home/about. <small>([ANTONYMPH](https://www.youtube.com/watch?v=CNPdO5TZ1DQ) and [I DON'T NEED TO BE FIXED](https://www.youtube.com/watch?v=xMzxVVXTGjE) in particular)</small>
+- [Vylet Pony](https://www.vyletpony.com) for indirectly inspiring the design of homepage. <small>([ANTONYMPH](https://www.youtube.com/watch?v=CNPdO5TZ1DQ) and [I DON'T NEED TO BE FIXED](https://www.youtube.com/watch?v=xMzxVVXTGjE) in particular)</small>
 - "dwb" for the ASCII art on the blog page.
 - [Fuwari](https://fuwari.vercel.app) blog template for some design inspirations. <small>(mostly the design of post cards)</small>
 - All the sites that are listed on the [badges](@/badges/index.md) page for inspiration.

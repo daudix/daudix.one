@@ -1,5 +1,15 @@
 @use "../../../themes/ametrine/sass/components/functions" as *;
 
+#now-playing {
+	margin-block-start: 1rem;
+
+	img {
+		margin-block: 0;
+		box-shadow: var(--shadow);
+		border-radius: 1rem;
+	}
+}
+
 #eras-timeline {
 	margin-inline: -1rem;
 	margin-block: 1rem;
