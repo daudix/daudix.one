@@ -6,6 +6,12 @@ h1 + p {
 	text-align: center;
 }
 
+h1 {
+	cursor: pointer;
+	user-select: none;
+	-webkit-user-select: none;
+}
+
 #nanolog-list {
 	display: flex;
 	flex-direction: column;
@@ -111,6 +117,9 @@ h1 + p {
 	font-family: inherit;
 	-webkit-backdrop-filter: var(--blur);
 	z-index: 9999;
+	animation: calc(0.525s + var(--transition-longer))
+		cubic-bezier(0.17, 0.89, 0.32, 1.28) nanolog-button-load;
+
 	@include gradient-fill;
 
 	&:hover {
@@ -119,6 +128,14 @@ h1 + p {
 
 	&:active {
 		transform: var(--active);
+	}
+
+	@keyframes nanolog-button-load {
+		from,
+		52.5% {
+			transform: translateY(1rem);
+			opacity: 0;
+		}
 	}
 }
 
@@ -151,14 +168,13 @@ h1 + p {
 		flex-direction: column;
 		gap: 1rem;
 		transform: var(--hover);
-		border-radius: 1.75rem 1.75rem 2.25rem 2.25rem;
-		padding: 1rem;
+		border-radius: 1.25rem 1.25rem 1.75rem 1.75rem;
+		padding: 0.5rem;
 		-webkit-backdrop-filter: var(--blur);
 		backdrop-filter: var(--blur);
 		transition: all var(--transition),
 			transform var(--transition-bezier-longer);
 		box-shadow: var(--edge-highlight), var(--shadow-glass);
-		// border-radius: 2.25rem 2.25rem 1.75rem 1.75rem;
 		background-color: var(--glass-bg-1);
 		width: calc(100% - 2rem);
 		max-width: calc(var(--container-width) / 1.5);

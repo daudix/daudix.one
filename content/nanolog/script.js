@@ -273,3 +273,23 @@ nanologModal.addEventListener("click", function (e) {
 nanologModalContent.addEventListener("click", function (e) {
 	e.stopPropagation(); // Stops event from reaching nanologModal click handler
 });
+
+// Reveal new post button after clicking the Nanolog heading 10 times
+let nanologClickCount = 0;
+const nanologEnabled = localStorage.getItem("nanologEnabled");
+
+document.getElementById("nanolog").addEventListener("click", function () {
+	nanologClickCount++;
+
+	if (nanologEnabled != "true" && nanologClickCount === 10) {
+		console.log("Nanolog new post button revealed");
+		localStorage.setItem("nanologEnabled", true);
+		nanologButton.classList.remove("hidden");
+	}
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+	if (nanologEnabled === "true") {
+		nanologButton.classList.remove("hidden");
+	}
+});

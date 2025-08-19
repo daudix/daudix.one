@@ -24,7 +24,7 @@
 	margin-block-end: -1rem;
 }
 
-#nanolog {
+#nanolog-post {
 	margin: 0 auto;
 	border-inline-start: 0.25rem solid var(--accent-color);
 	padding-inline-start: 1rem;
@@ -49,7 +49,7 @@
 
 		& > p {
 			margin: 0;
-		
+
 			small {
 				color: var(--fg-muted-1);
 				font-size: var(--font-size-large);

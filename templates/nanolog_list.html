@@ -2,11 +2,11 @@
 {% import "macros/icon.html" as macros_icon %}
 
 {% block content %}
-<h1>{{ section.title }}</h1>
+<h1 id="nanolog">{{ section.title }}</h1>
 
 {{ section.description | markdown | safe }}
 
-<button id="nanolog-button" title="New Nanolog">
+<button id="nanolog-button" class="hidden" title="New Nanolog">
 	{{- macros_icon::icon(name="note-pencil") -}}
 </button>
 
