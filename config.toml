@@ -66,6 +66,9 @@ csp = [
     "'self'",
     "https:",
   ] },
+  { directive = "script-src-elem", domains = [
+    "static.cloudflareinsights.com",
+  ] },
   { directive = "style-src", domains = [
     "'self'",
     "'unsafe-inline'",
