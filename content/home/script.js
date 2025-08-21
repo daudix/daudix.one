@@ -2,6 +2,8 @@
    Constants and DOM Elements
    ========================================================================== */
 
+const lastFmUser = "daudix";
+const lastFmApiKey = "db60767a26fe9d01a170898e19814233"
 const lastFmPlayer = document.getElementById("player");
 const lastFmCover = document.getElementById("cover");
 const lastFmTitle = document.getElementById("player-title");
@@ -53,7 +55,7 @@ function updateMarquee() {
 async function fetchLastFm() {
 	try {
 		// Replace my username and API key if you're going to use this
-		const res = await fetch(`https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=daudix&api_key=db60767a26fe9d01a170898e19814233&format=json&limit=1`);
+		const res = await fetch(`https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=${lastFmUser}&api_key=${lastFmApiKey}&format=json&limit=1`);
 		const data = await res.json();
 		const track = data.recenttracks?.track?.[0];
 		if (!track) return;
