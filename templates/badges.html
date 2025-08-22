@@ -2,9 +2,8 @@
 {% import "macros/icon.html" as macros_icon %}
 
 {% block content %}
-{% set data = load_data(path="content/badges/data.toml") %}
-{% set badges = data.badges %}
-{% set stamps = data.stamps %}
+{% set badges = page.extra.badges %}
+{% set stamps = page.extra.stamps %}
 
 <h1>{{ page.title }}</h1>
 
