@@ -19,7 +19,7 @@ personal = [
   { name = "kevadesu.gif", url = "https://kevadesu.github.io" },
   { name = "lyra.gif", url = "https://lyra.horse" },
   { name = "mambuco.gif", url = "https://mambuco.dev" },
-  { name = "marchintosh.gif", url = "https://libreivan.com/writing/" },
+  { name = "marchintosh.gif", url = "https://ivanmarkov.net" },
   { name = "melankorin.gif", url = "https://melankorin.net" },
   { name = "melontini.gif", url = "https://melontini.me" },
   { name = "nek0zyx.gif", url = "https://nek0zyx.lgbt.sh" },

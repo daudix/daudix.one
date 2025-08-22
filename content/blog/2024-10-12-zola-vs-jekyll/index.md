@@ -164,7 +164,7 @@ img[src*="#pixels"] {
 }
 ```
 
-In this example, we have applied pixelated image rendering to an image with `#pixels` added to the image URL right after the file extension. Isn't that cool? I stole this solution from [libreivan's website](https://libreivan.com), kudos to him for that.
+In this example, we have applied pixelated image rendering to an image with `#pixels` added to the image URL right after the file extension. Isn't that cool? I stole this solution from [Ivan's website](https://ivanmarkov.net), kudos to him for that.
 
 ## Conclusion
 
