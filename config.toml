@@ -129,6 +129,7 @@ socials = [
   { url = "https://discord.com/users/650757995378114581", icon = "discord" },
   { url = "https://signal.me/#eu/b4KzM1OB3uW52mMywHUJa8h6yD4ATY_KXJJiuJtWUxOVAJP22PVO_qoNGFnf32W7", icon = "signal" },
   { url = "https://codeberg.org/daudix", icon = "codeberg" },
+  { url = "https://github.com/daudix", icon = "github" },
 ]
 
 [extra.fediverse]
