@@ -1,46 +1,33 @@
 .fancy-list.snug-nook {
 	position: relative;
-	background-image: linear-gradient(var(--orange-bg-1), var(--orange-bg-1));
-	background-color: var(--bg-color);
+	transition: all var(--transition), transform var(--transition-bezier);
+	background-color: var(--orange-bg-1);
 
-	&::before {
-		position: absolute;
-		transform: translateY(0.5rem);
-		opacity: 0.4;
-		z-index: -1;
-		filter: blur(0.75rem);
-		inset: 0;
-		border-radius: inherit;
-		background-image: linear-gradient(
-			to right,
-			var(--orange-fg),
-			var(--yellow-fg)
-		);
-		content: "";
+	&:hover {
+		background-color: var(--orange-bg-2);
+	}
+
+	&:active {
+		transform: var(--active);
 	}
 
 	.title {
 		color: var(--orange-fg);
 	}
 
-	.go-to {
-		display: inline-flex;
+	.icon {
 		position: absolute;
-		transition: all var(--transition), transform var(--transition-bezier);
-		inset-block-start: 0.5rem;
-		inset-inline-end: 0.5rem;
-		border-radius: var(--rounded-corner-small);
-		padding: 0.5rem;
+		inset-block-start: 1rem;
+		inset-inline-end: 1rem;
 		color: var(--orange-fg);
+		font-size: 1.25rem;
+	}
 
-		&:hover {
-			box-shadow: var(--edge-highlight);
-			background-color: var(--orange-bg-1);
-		}
-
-		&:active {
-			transform: var(--active);
-		}
+	a {
+		position: absolute;
+		z-index: 1;
+		inset: 0;
+		border-radius: inherit;
 	}
 
 	p:last-of-type {
@@ -51,6 +38,7 @@
 	img {
 		position: absolute;
 		transform: rotate(10deg);
+		margin: 0;
 		inset-block-end: -0.5rem;
 		inset-inline-end: -0.5rem;
 		width: 4rem;

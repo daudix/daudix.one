@@ -195,10 +195,9 @@ Feel free to reach me out on any of these! Although I'm usually too shy to start
 
 Cozy and welcoming space for cool people to hang out in.
 
-<a href="/snug-nook/" class="go-to" title="Learn More">
-{{ icon(name="arrow-square-out") }}
-</a>
 <img src="neofax.png" class="transparent no-hover drop-shadow" />
+<a href="/snug-nook/" title="Learn More"></a>
+{{ icon(name="arrow-square-out") }}
 </article>
 </li>
 <!-- Card End -->
