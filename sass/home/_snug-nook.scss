@@ -1,0 +1,60 @@
+.fancy-list.snug-nook {
+	position: relative;
+	background-image: linear-gradient(var(--orange-bg-1), var(--orange-bg-1));
+	background-color: var(--bg-color);
+
+	&::before {
+		position: absolute;
+		transform: translateY(0.5rem);
+		opacity: 0.4;
+		z-index: -1;
+		filter: blur(0.75rem);
+		inset: 0;
+		border-radius: inherit;
+		background-image: linear-gradient(
+			to right,
+			var(--orange-fg),
+			var(--yellow-fg)
+		);
+		content: "";
+	}
+
+	.title {
+		color: var(--orange-fg);
+	}
+
+	.go-to {
+		display: inline-flex;
+		position: absolute;
+		transition: all var(--transition), transform var(--transition-bezier);
+		inset-block-start: 0.5rem;
+		inset-inline-end: 0.5rem;
+		border-radius: var(--rounded-corner-small);
+		padding: 0.5rem;
+		color: var(--orange-fg);
+
+		&:hover {
+			box-shadow: var(--edge-highlight);
+			background-color: var(--orange-bg-1);
+		}
+
+		&:active {
+			transform: var(--active);
+		}
+	}
+
+	p:last-of-type {
+		margin-inline-end: 3rem;
+		margin-block-end: 0;
+	}
+
+	img {
+		position: absolute;
+		transform: rotate(10deg);
+		inset-block-end: -0.5rem;
+		inset-inline-end: -0.5rem;
+		width: 4rem;
+		height: 4rem;
+		pointer-events: none;
+	}
+}
