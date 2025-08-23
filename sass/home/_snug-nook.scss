@@ -1,25 +1,23 @@
 .fancy-list.snug-nook {
+	--accent-color: var(--orange-fg);
+	--bg-muted-1: var(--orange-bg-1);
+	--bg-muted-2: var(--orange-bg-2);
 	position: relative;
 	transition: all var(--transition), transform var(--transition-bezier);
-	background-color: var(--orange-bg-1);
 
 	&:hover {
-		background-color: var(--orange-bg-2);
+		background-color: var(--bg-muted-2);
 	}
 
 	&:active {
 		transform: var(--active);
 	}
 
-	.title {
-		color: var(--orange-fg);
-	}
-
 	.icon {
 		position: absolute;
 		inset-block-start: 1rem;
 		inset-inline-end: 1rem;
-		color: var(--orange-fg);
+		color: var(--accent-color);
 		font-size: 1.25rem;
 	}
 
