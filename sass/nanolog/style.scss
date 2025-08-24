@@ -181,18 +181,11 @@ h1 {
 
 		input,
 		textarea {
-			border: none;
+			box-shadow: none;
 			border-radius: 0;
-			background: none;
+			background-color: transparent;
+			padding: 0;
 			width: 100%;
-			font-size: inherit;
-			line-height: inherit;
-			font-family: inherit;
-
-			&::placeholder {
-				opacity: 1;
-				color: var(--fg-muted-1);
-			}
 
 			&:focus-visible {
 				animation: none;

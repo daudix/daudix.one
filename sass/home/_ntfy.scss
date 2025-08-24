@@ -1,0 +1,57 @@
+.fancy-list.ntfy {
+	#ntfy-bottom {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		margin-block-start: 1rem;
+	}
+
+	div {
+		display: flex;
+		gap: 0.25rem;
+
+		a.button,
+		button {
+			border-radius: 50%;
+			padding: 0.625rem;
+			font-size: 1.25rem;
+			line-height: 0;
+		}
+
+		button {
+			position: relative;
+
+			.icon {
+				transition: all var(--transition-longer),
+					transform var(--transition-bezier-longer);
+			}
+
+			.icon.paper-plane-right {
+				opacity: 1;
+			}
+
+			.icon.check {
+				position: absolute;
+				transform: rotate(15deg);
+				opacity: 0;
+				inset: 0.625rem;
+			}
+		}
+
+		button.sent {
+			.icon.paper-plane-right {
+				transform: rotateX(45deg) rotateY(-45deg);
+				opacity: 0;
+			}
+
+			.icon.check {
+				transform: none;
+				opacity: 1;
+			}
+		}
+	}
+
+	.buttons {
+		margin-block-start: 0;
+	}
+}

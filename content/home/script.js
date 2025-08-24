@@ -1,6 +1,4 @@
-/* ==========================================================================
-   Constants and DOM Elements
-   ========================================================================== */
+/* Constants and DOM Elements =============================================== */
 
 const lastFmUser = "daudix";
 const lastFmApiKey = "db60767a26fe9d01a170898e19814233"
@@ -20,14 +18,14 @@ const clock = document.getElementById("clock");
 const flutter = document.getElementById("flutter");
 const shy = document.getElementById("shy");
 const squee = new Audio("/home/squee.mp3");
+const ntfyInput = document.getElementById("ntfy-input");
+const ntfySend = document.getElementById("ntfy-send");
 
 let lastTrackID = null;
 let lastDiscordStatus = "";
 let lastTime = "";
 
-/* ==========================================================================
-   Functions
-   ========================================================================== */
+/* Functions ================================================================ */
 
 // Last.fm
 function updateMarquee() {
@@ -185,9 +183,28 @@ function updateClock() {
 	}
 }
 
-/* ==========================================================================
-   Initialization and Event Listeners
-   ========================================================================== */
+// ntfy (stolen from https://azumanga.gay)
+function send(message) {
+	fetch("https://ntfy.sh/GAyU6UBdIVpKoUK3", {
+		method: "POST",
+		headers: { "Content-Type": "text/plain" },
+		body: message
+	})
+}
+
+function sendNotification() {
+	if (!ntfyInput.value) return
+	send(ntfyInput.value)
+
+	ntfySend.classList.add("sent");
+	ntfySend.firstChild.addEventListener("transitionend", () => {
+		ntfySend.classList.remove("sent");
+	}, { once: true });
+
+	ntfyInput.value = ""
+}
+
+/* Initialization and Event Listeners ======================================= */
 
 document.addEventListener("DOMContentLoaded", function () {
 	fetchStatusCafe();
@@ -201,7 +218,8 @@ document.addEventListener("DOMContentLoaded", function () {
 	fetchDiscordStatus();
 	setInterval(fetchDiscordStatus, 10000);
 
-	document.getElementById("shy").addEventListener("click", flutterAnim);
+	shy.addEventListener("click", flutterAnim);
+	ntfySend.addEventListener("click", sendNotification);
 });
 
 window.addEventListener("resize", () => {

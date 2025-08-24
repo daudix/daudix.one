@@ -87,6 +87,7 @@ csp = [
     "ws.audioscrobbler.com",
     "discord.com",
     "api.github.com",
+    "ntfy.sh",
   ] },
   { directive = "base-uri", domains = [
     "'none'",
