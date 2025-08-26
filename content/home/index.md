@@ -63,7 +63,7 @@ forges = [
 Greetings! Welcome to my little corner on the World Wild Web and a second home of mine. You might know me by my online handle; Daudix.
 
 <div class="buttons start big">
-  <a class="suggested" href="#about">About Me ↓</a>
+  <a href="#about" class="suggested">About Me ↓</a>
   <a href="/#splash">Splash →</a>
 </div>
 </div>
@@ -168,6 +168,28 @@ Where and when to find me online.
 <strong id="forges" class="title">Forges</strong>
 
 {{ online(type="forges") }}
+</article>
+</li>
+<!-- Card End -->
+
+<!-- Card Start -->
+<li>
+<article class="ntfy fancy-list">
+
+<strong id="ntfy" class="title">Send Me a Notification</strong>
+
+The moment you press "Send" I'll get a push notification on my phone. Crazy, right?
+
+<div>
+  <input id="ntfy-input" placeholder="Stolen from azumanga.gay"></input>
+  <a href="https://ntfy.sh/GAyU6UBdIVpKoUK3" class="button" title="Message Histoy">
+    {{ icon(name="clock-counter-clockwise") }}
+  </a>
+  <button id="ntfy-send" class="suggested" title="Send">
+    {{ icon(name="paper-plane-right") }}
+    {{ icon(name="check") }}
+  </button>
+</div>
 </article>
 </li>
 <!-- Card End -->
