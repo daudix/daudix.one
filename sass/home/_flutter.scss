@@ -2,22 +2,25 @@
 
 // Who's shy?
 #shy {
-	appearance: none;
 	transition: var(--transition);
 	cursor: pointer;
-	border: none;
+	box-shadow: none;
+	border-radius: 0;
 	background-color: transparent;
 	padding: 0;
 	color: inherit;
-	font-style: inherit;
+	font-weight: inherit;
 	font-size: inherit;
-	font-family: inherit;
 	text-decoration: underline;
 	text-decoration-style: dotted;
 	text-decoration-thickness: rpx(1);
 
 	&:hover {
 		text-decoration-style: solid;
+	}
+
+	&:active {
+		transform: none;
 	}
 
 	&:disabled {
