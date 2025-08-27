@@ -1,7 +1,7 @@
 +++
 title = "New Era"
 description = "The world around us is changing, and so do I."
-updated = 2025-08-18
+updated = 2025-08-27
 [taxonomies]
 tags = ["Devlog", "GitHub", "Neocities", "Netlify", "Umami"]
 [extra]
@@ -15,7 +15,7 @@ id = "114864922325514289"
 Time to talk a bit about my recent changes to this website, plans for this blog, and One More Thing™.
 
 {% alert(edit=true) %}
-Last edit introduced a couple of additional images and an entirely new section. See [this commit](https://github.com/daudix/daudix.one/commit/637bd7ef6f7acd53f5346104e5cc291ed5cc7968) for a detailed overview.
+One of the recent edits introduced a couple of additional images and an entirely new section. See [this commit](https://github.com/daudix/daudix.one/commit/637bd7ef6f7acd53f5346104e5cc291ed5cc7968) for a detailed overview.
 {% end %}
 
 ## Website Changes
@@ -132,7 +132,7 @@ Lately, my focus has heavily shifted from Fedi to Bluesky. Fedi is great, but Bl
 
 I was, and still am, trying to reduce the unnecesairy overorganization of... everything; [my social presence](@/blog/2025-01-11-merging-lanes/index.md), my websites (as mentioned earlier I merged a couple of pages with homepage and will retire neocities as a place for journaling), and more that is yet to come. I don't have a plan or anything, it's just a direction I'm going in.
 
-I have wrote a lot about this some time ago (file modification date says January 16th, 2025?) as a reply to questions someone (if you're reading this, hi!) asked me in one group chat, which, while a bit outdated, still conveys the same message as it did back then Here is what I sent, with no edits (I have unfortunately left said group chat and don't have original questions saved anywhere, but it maintains context even without them):
+I have wrote a lot about this some time ago (file modification date says January 16th, 2025?) as a reply to questions someone (if you're reading this, hi!) asked me in one group chat, which, while a bit outdated, still conveys the same message as it did back then. I have unfortunately left said group chat and don't have original questions saved anywhere, but it maintains context even without them:
 
 <details>
 <summary>Click to expand</summary>
