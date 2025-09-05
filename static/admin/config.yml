@@ -1,0 +1,36 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: static/media
+public_folder: /media
+
+collections:
+  - label: Blog
+    name: blog
+    folder: content/blog
+    create: true
+    path: "{{year}}-{{month}}-{{day}}-{{slug}}/index"
+    media_folder: ""
+    public_folder: ""
+    fields:
+      - label: Title
+        name: title
+        widget: string
+      - label: Banner Image
+        name: banner
+        widget: image
+
+  - label: Nanolog
+    name: nanolog
+    folder: content/nanolog
+    create: true
+    path: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - label: Title
+        name: title
+        widget: string
+      - label: Date
+        name: date
+        widget: datetime
+        format: "YYYY-MM-DDTHH:mm:ss[Z]"
