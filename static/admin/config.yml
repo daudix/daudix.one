@@ -17,9 +17,77 @@ collections:
       - label: Title
         name: title
         widget: string
-      - label: Banner Image
+      - label: Description
+        name: description
+        widget: text
+        required: false
+      - label: Authors
+        name: authors
+        widget: list
+        required: false
+      - label: Date
+        name: date
+        widget: datetime
+        format: "YYYY-MM-DDTHH:mm:ss[Z]"
+      - label: Updated
+        name: updated
+        widget: datetime
+        format: "YYYY-MM-DD"
+        required: false
+      - label: Tags
+        name: taxonomies.tags
+        widget: list
+        default: []
+      - label: Categories
+        name: taxonomies.categories
+        widget: list
+        default: []
+      - label: Accent Color
+        name: extra.accent_color
+        widget: list
+        default: []
+        field:
+          label: Color
+          name: color
+          widget: string
+      - label: Banner
         name: extra.banner
         widget: image
+        required: false
+      - label: Pixel-art Banner
+        name: extra.banner_pixels
+        widget: boolean
+        required: false
+        default: false
+      - label: Archive
+        name: extra.archive
+        widget: text
+        required: false
+      - label: Trigger
+        name: extra.trigger
+        widget: text
+        required: false
+      - label: Disclaimer
+        name: extra.disclaimer
+        widget: text
+        required: false
+      - label: Stylesheets
+        name: extra.styles
+        widget: list
+        required: false
+        default: []
+      - label: Fediverse Host
+        name: extra.fediverse.host
+        widget: string
+        required: false
+      - label: Fediverse User
+        name: extra.fediverse.user
+        widget: string
+        required: false
+      - label: Fediverse ID
+        name: extra.fediverse.id
+        widget: string
+        required: false
       - label: Body
         name: body
         widget: markdown
@@ -37,6 +105,11 @@ collections:
         name: date
         widget: datetime
         format: "YYYY-MM-DDTHH:mm:ss[Z]"
+      - label: Updated
+        name: updated
+        widget: datetime
+        format: "YYYY-MM-DDTHH:mm:ss[Z]"
+        required: false
       - label: Body
         name: body
         widget: markdown
