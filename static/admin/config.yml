@@ -12,13 +12,12 @@ collections:
     create: true
     format: toml-frontmatter
     path: "{{year}}-{{month}}-{{day}}-{{slug}}/index"
-    preview_path: blog/{{slug}}
     view_filters:
       - label: Drafts
         field: draft
         pattern: true
-    media_folder: ""
-    public_folder: ""
+    media_folder: "."
+    public_folder: "."
     fields:
       - label: Title
         name: title
@@ -132,7 +131,6 @@ collections:
     create: true
     format: toml-frontmatter
     path: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    preview_path: nanolog/{{slug}}
     fields:
       - label: Title
         name: title
