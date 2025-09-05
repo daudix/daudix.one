@@ -71,6 +71,7 @@ collections:
         name: extra
         widget: object
         required: false
+        collapsed: true
         fields:
           - label: Archive
             name: archive
@@ -93,6 +94,7 @@ collections:
         name: extra.fediverse
         widget: object
         required: false
+        collapsed: true
         fields:
           - label: Host
             name: host
