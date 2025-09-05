@@ -11,7 +11,7 @@ collections:
     folder: content/blog
     preview_path: blog/{{slug}}
     create: true
-    format: toml
+    format: toml-frontmatter
     path: "{{year}}-{{month}}-{{day}}-{{slug}}/index"
     view_filters:
     - label: Drafts
@@ -119,7 +119,7 @@ collections:
     folder: content/nanolog
     preview_path: nanolog/{{slug}}
     create: true
-    format: toml
+    format: toml-frontmatter
     path: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - label: Title
