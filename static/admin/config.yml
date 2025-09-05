@@ -10,6 +10,7 @@ collections:
     name: blog
     folder: content/blog
     create: true
+    format: toml
     path: "{{year}}-{{month}}-{{day}}-{{slug}}/index"
     view_filters:
     - label: Drafts
@@ -116,6 +117,7 @@ collections:
     name: nanolog
     folder: content/nanolog
     create: true
+    format: toml
     path: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - label: Title
