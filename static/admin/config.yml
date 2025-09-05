@@ -11,7 +11,10 @@ collections:
     folder: content/blog
     create: true
     path: "{{year}}-{{month}}-{{day}}-{{slug}}/index"
-    preview: "{% if draft %}(Draft) {% endif %}{{ title }}"
+    view_filters:
+    - label: Drafts
+      field: draft
+      pattern: true
     media_folder: ""
     public_folder: ""
     fields:
