@@ -9,14 +9,14 @@ collections:
   - label: Blog
     name: blog
     folder: content/blog
-    preview_path: blog/{{slug}}
     create: true
     format: toml-frontmatter
     path: "{{year}}-{{month}}-{{day}}-{{slug}}/index"
+    preview_path: blog/{{slug}}
     view_filters:
-    - label: Drafts
-      field: draft
-      pattern: true
+      - label: Drafts
+        field: draft
+        pattern: true
     media_folder: ""
     public_folder: ""
     fields:
@@ -49,67 +49,79 @@ collections:
         name: taxonomies.categories
         widget: list
         default: []
-      - label: Accent Color
-        name: extra.accent_color
-        widget: list
-        default: []
-        max: 2
-        field:
-          label: Color
-          name: color
-          widget: color
-      - label: Banner
-        name: extra.banner
-        widget: image
-        allow_multiple: false
-        choose_url: false
-        required: false
-      - label: Pixel-art Banner
-        name: extra.banner_pixels
-        widget: boolean
-        required: false
-        default: false
-      - label: Alerts
+      - label: Extra
         name: extra
         widget: object
-        required: false
         collapsed: true
-        fields:
-          - label: Archive
-            name: archive
-            widget: markdown
-            required: false
-          - label: Trigger
-            name: trigger
-            widget: markdown
-            required: false
-          - label: Disclaimer
-            name: disclaimer
-            widget: markdown
-            required: false
-      - label: Stylesheets
-        name: extra.styles
-        widget: list
         required: false
-        default: []
-      - label: Fediverse
-        name: extra.fediverse
-        widget: object
-        required: false
-        collapsed: true
         fields:
-          - label: Host
-            name: host
-            widget: string
+          - label: Stylesheets
+            name: styles
+            widget: list
             required: false
-          - label: User
-            name: user
-            widget: string
+            default: []
+
+          - label: Accent Color
+            name: accent_color
+            widget: list
             required: false
-          - label: ID
-            name: id
-            widget: string
+            default: []
+            max: 2
+            field:
+              label: Color
+              name: color
+              widget: string
+
+          - label: Banner
+            name: banner
+            widget: image
+            allow_multiple: false
+            choose_url: false
             required: false
+
+          - label: Pixel-art Banner
+            name: banner_pixels
+            widget: boolean
+            required: false
+            default: false
+
+          - label: Alerts
+            name: alerts
+            widget: object
+            collapsed: true
+            required: false
+            fields:
+              - label: Archive
+                name: archive
+                widget: markdown
+                required: false
+              - label: Trigger
+                name: trigger
+                widget: markdown
+                required: false
+              - label: Disclaimer
+                name: disclaimer
+                widget: markdown
+                required: false
+
+          - label: Fediverse
+            name: fediverse
+            widget: object
+            collapsed: true
+            required: false
+            fields:
+              - label: Host
+                name: host
+                widget: string
+                required: false
+              - label: User
+                name: user
+                widget: string
+                required: false
+              - label: ID
+                name: id
+                widget: string
+                required: false
       - label: Body
         name: body
         widget: markdown
@@ -117,10 +129,10 @@ collections:
   - label: Nanolog
     name: nanolog
     folder: content/nanolog
-    preview_path: nanolog/{{slug}}
     create: true
     format: toml-frontmatter
     path: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    preview_path: nanolog/{{slug}}
     fields:
       - label: Title
         name: title
