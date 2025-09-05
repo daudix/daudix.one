@@ -19,16 +19,12 @@ collections:
         widget: string
       - label: Description
         name: description
-        widget: text
+        widget: string
         required: false
       - label: Authors
         name: authors
         widget: list
         required: false
-      - label: Date
-        name: date
-        widget: datetime
-        format: "YYYY-MM-DDTHH:mm:ss[Z]"
       - label: Updated
         name: updated
         widget: datetime
@@ -46,6 +42,7 @@ collections:
         name: extra.accent_color
         widget: list
         default: []
+        max: 2
         field:
           label: Color
           name: color
@@ -53,6 +50,7 @@ collections:
       - label: Banner
         name: extra.banner
         widget: image
+        allow_multiple: false
         required: false
       - label: Pixel-art Banner
         name: extra.banner_pixels
