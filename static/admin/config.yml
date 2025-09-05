@@ -1,6 +1,6 @@
 backend:
-  name: git-gateway
-  branch: main
+  name: github
+  repo: daudix/daudix.one
 
 media_folder: static/media
 public_folder: /media
@@ -16,8 +16,8 @@ collections:
       - label: Drafts
         field: draft
         pattern: true
-    media_folder: "."
-    public_folder: "."
+    media_folder: ""
+    public_folder: ""
     fields:
       - label: Title
         name: title
