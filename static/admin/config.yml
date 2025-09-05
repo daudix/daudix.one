@@ -11,6 +11,7 @@ collections:
     folder: content/blog
     create: true
     path: "{{year}}-{{month}}-{{day}}-{{slug}}/index"
+    preview: "{% if draft %}(Draft) {% endif %}{{ title }}"
     media_folder: ""
     public_folder: ""
     fields:
@@ -24,6 +25,11 @@ collections:
       - label: Authors
         name: authors
         widget: list
+        required: false
+      - label: Draft
+        name: draft
+        widget: boolean
+        default: false
         required: false
       - label: Updated
         name: updated
