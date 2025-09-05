@@ -55,46 +55,57 @@ collections:
         field:
           label: Color
           name: color
-          widget: string
+          widget: color
       - label: Banner
         name: extra.banner
         widget: image
         allow_multiple: false
+        choose_url: false
         required: false
       - label: Pixel-art Banner
         name: extra.banner_pixels
         widget: boolean
         required: false
         default: false
-      - label: Archive
-        name: extra.archive
-        widget: text
+      - label: Alerts
+        name: extra
+        widget: object
         required: false
-      - label: Trigger
-        name: extra.trigger
-        widget: text
-        required: false
-      - label: Disclaimer
-        name: extra.disclaimer
-        widget: text
-        required: false
+        fields:
+          - label: Archive
+            name: archive
+            widget: markdown
+            required: false
+          - label: Trigger
+            name: trigger
+            widget: markdown
+            required: false
+          - label: Disclaimer
+            name: disclaimer
+            widget: markdown
+            required: false
       - label: Stylesheets
         name: extra.styles
         widget: list
         required: false
         default: []
-      - label: Fediverse Host
-        name: extra.fediverse.host
-        widget: string
+      - label: Fediverse
+        name: extra.fediverse
+        widget: object
         required: false
-      - label: Fediverse User
-        name: extra.fediverse.user
-        widget: string
-        required: false
-      - label: Fediverse ID
-        name: extra.fediverse.id
-        widget: string
-        required: false
+        fields:
+          - label: Host
+            name: host
+            widget: string
+            required: false
+          - label: User
+            name: user
+            widget: string
+            required: false
+          - label: ID
+            name: id
+            widget: string
+            required: false
       - label: Body
         name: body
         widget: markdown
