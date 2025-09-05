@@ -1,0 +1,15 @@
+.fancy-list ul {
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+	li {
+		box-shadow: var(--edge-highlight);
+		border-radius: var(--rounded-corner-small);
+		background-color: var(--bg-muted-1);
+		padding: 0.5rem 0.75rem;
+	}
+}

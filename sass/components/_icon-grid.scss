@@ -1,0 +1,61 @@
+// Fancy grid, now with icons
+.icon-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+	gap: 0.5rem;
+	margin-block: 1rem;
+
+	&:hover a:not(:hover) {
+		opacity: var(--disabled-opacity);
+	}
+
+	a {
+		display: flex;
+		justify-content: start;
+		align-items: center;
+		gap: 1rem;
+		transition: all var(--transition), transform var(--transition-bezier);
+		box-shadow: var(--edge-highlight), var(--shadow);
+		border-radius: var(--rounded-corner);
+		background-color: var(--bg-muted-1);
+		padding: 1rem;
+		color: var(--fg-muted-2);
+		text-decoration: none;
+
+		&:hover {
+			transform: translateY(-0.25rem);
+			opacity: 1;
+			filter: none;
+			box-shadow: var(--edge-highlight), var(--shadow-glass);
+			background-color: var(--bg-muted-2);
+		}
+
+		&:active {
+			transform: var(--active);
+		}
+
+		.icon {
+			margin: 0;
+			width: 4rem;
+			height: 4rem;
+		}
+
+		.details {
+			display: flex;
+			flex-direction: column;
+			gap: 0.125rem;
+
+			strong {
+				font-weight: var(--font-weight-semi-bold);
+				font-size: var(--font-size-large);
+			}
+
+			p {
+				margin: 0;
+				font-weight: var(--font-weight-normal);
+				font-size: var(--font-size-x-small);
+				line-height: 1rem;
+			}
+		}
+	}
+}
