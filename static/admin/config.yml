@@ -18,8 +18,11 @@ collections:
         name: title
         widget: string
       - label: Banner Image
-        name: banner
+        name: extra.banner
         widget: image
+      - label: Body
+        name: body
+        widget: markdown
 
   - label: Nanolog
     name: nanolog
@@ -34,3 +37,6 @@ collections:
         name: date
         widget: datetime
         format: "YYYY-MM-DDTHH:mm:ss[Z]"
+      - label: Body
+        name: body
+        widget: markdown
