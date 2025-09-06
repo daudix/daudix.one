@@ -1,32 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /admin
 Disallow: /shrek
 Disallow: /swag
 Sitemap: {{ get_url(path="sitemap.xml") }}
-
-# Borrowed from seirdy.one
-
-User-agent: peer39_crawler/1.0
-User-agent: TurnitinBot
-User-agent: AcademicBotRTU
-User-agent: SlySearch
-User-agent: BLEXBot
-User-agent: CheckMarkNetwork/1.0 (+https://www.checkmarknetwork.com/spider.html)
-User-agent: BrandVerity/1.0
-User-agent: GPTBot
-User-agent: Google-Extended
-User-agent: Applebot-Extended
-User-agent: ClaudeBot
-User-agent: FacebookBot
-User-agent: meta-externalagent
-User-agent: Cotoyogi
-User-agent: Webzio-extended
-User-agent: Kangaroo Bot
-User-agent: GenAI
-User-agent: SemrushBot-OCOB
-User-agent: SemrushBot-FT
-User-agent: VelenPublicWebCrawler
-Disallow: /
-
-User-agent: MJ12bot
-Crawl-Delay: 10
