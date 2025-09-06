@@ -1,7 +1,6 @@
 +++
 title = "From Sveltia"
-date = "2025-09-06T02:50:00Z"
-updated = ""
+date = 2025-09-06T02:50:00Z
 +++
 Hi, I'm writing this through [Sveltia CMS](https://github.com/sveltia/sveltia-cms); essentially a webui that allows be to browse, edit, delete, and create blog posts/nanologs without ever needing to open my code editor, or even pick up my laptop, for that matter. It's a drop-in replacement for [Decap](https://decapcms.org) (aka Netlify CMS) which I tried out today, which is pretty good but some things didn't work (such as colocated images, which I use exclusively) and the development has been pretty slow.
 

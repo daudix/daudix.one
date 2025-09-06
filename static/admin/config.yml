@@ -1,3 +1,5 @@
+# yaml-language-server: $schema=https://unpkg.com/@sveltia/cms/schema/sveltia-cms.json
+
 backend:
   name: github
   repo: daudix/daudix.one
@@ -38,7 +40,6 @@ collections:
       - label: Updated
         name: updated
         widget: datetime
-        format: "YYYY-MM-DD"
         required: false
       - label: Tags
         name: taxonomies.tags
@@ -138,11 +139,9 @@ collections:
       - label: Date
         name: date
         widget: datetime
-        format: "YYYY-MM-DDTHH:mm:ss[Z]"
       - label: Updated
         name: updated
         widget: datetime
-        format: "YYYY-MM-DDTHH:mm:ss[Z]"
         required: false
       - label: Body
         name: body
