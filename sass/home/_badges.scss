@@ -1,4 +1,4 @@
-@use "../../themes/ametrine/sass/components/functions" as *;
+@use "../../themes/ametrine/sass/abstracts/functions" as *;
 
 #badges {
 	position: relative;
@@ -78,7 +78,8 @@
 		img,
 		iframe,
 		#more {
-			transition: all var(--transition), transform var(--transition-bezier);
+			transition: all var(--transition),
+				transform var(--transition-bezier);
 			margin: 0;
 			width: rpx(88);
 			height: rpx(31);
@@ -103,17 +104,17 @@
 			font-size: var(--font-size-x-small);
 			line-height: 1;
 			text-decoration: none;
-		
+
 			&:hover {
 				border-color: var(--contrast-color);
 				background-color: var(--accent-color);
 				color: var(--contrast-color);
 			}
-	
+
 			&:active {
 				transform: var(--active);
 			}
-		
+
 			span {
 				display: inline-block;
 				margin-block-start: rpx(2);
@@ -153,7 +154,8 @@
 
 		& + label {
 			position: absolute;
-			transition: all var(--transition), transform var(--transition-bezier);
+			transition: all var(--transition),
+				transform var(--transition-bezier);
 			cursor: pointer;
 			inset-block-start: 0.5rem;
 			inset-inline-end: 0.5rem;
@@ -173,7 +175,8 @@
 
 			.icon {
 				position: absolute;
-				transition: all var(--transition), transform var(--transition-bezier);
+				transition: all var(--transition),
+					transform var(--transition-bezier);
 				inset: 0.5rem;
 			}
 
@@ -211,6 +214,7 @@
 				display: flex;
 				flex-direction: column;
 				align-items: center;
+				padding-inline-start: 0;
 
 				img {
 					margin: 0;

@@ -1,5 +1,5 @@
-@use "../../themes/ametrine/sass/components/functions" as *;
-@use "../components/mixins" as *;
+@use "../../themes/ametrine/sass/abstracts/functions" as *;
+@use "../abstracts/mixins" as *;
 
 blockquote:has(div) {
 	color: inherit;
@@ -54,35 +54,43 @@ blockquote:has(div) {
 	}
 
 	&:has(#hover-map .top-left:hover) {
-		transform: perspective(var(--container-width)) rotate3d(-1, 1, 0, var(--rotation));
+		transform: perspective(var(--container-width))
+			rotate3d(-1, 1, 0, var(--rotation));
 	}
 
 	&:has(#hover-map .top-middle:hover) {
-		transform: perspective(var(--container-width)) rotate3d(-1, 0, 0, var(--rotation));
+		transform: perspective(var(--container-width))
+			rotate3d(-1, 0, 0, var(--rotation));
 	}
 
 	&:has(#hover-map .top-right:hover) {
-		transform: perspective(var(--container-width)) rotate3d(-1, -1, 0, var(--rotation));
+		transform: perspective(var(--container-width))
+			rotate3d(-1, -1, 0, var(--rotation));
 	}
 
 	&:has(#hover-map .middle-left:hover) {
-		transform: perspective(var(--container-width)) rotate3d(0, 1, 0, var(--rotation));
+		transform: perspective(var(--container-width))
+			rotate3d(0, 1, 0, var(--rotation));
 	}
 
 	&:has(#hover-map .middle-right:hover) {
-		transform: perspective(var(--container-width)) rotate3d(0, -1, 0, var(--rotation));
+		transform: perspective(var(--container-width))
+			rotate3d(0, -1, 0, var(--rotation));
 	}
 
 	&:has(#hover-map .bottom-left:hover) {
-		transform: perspective(var(--container-width)) rotate3d(1, 1, 0, var(--rotation));
+		transform: perspective(var(--container-width))
+			rotate3d(1, 1, 0, var(--rotation));
 	}
 
 	&:has(#hover-map .bottom-middle:hover) {
-		transform: perspective(var(--container-width)) rotate3d(1, 0, 0, var(--rotation));
+		transform: perspective(var(--container-width))
+			rotate3d(1, 0, 0, var(--rotation));
 	}
 
 	&:has(#hover-map .bottom-right:hover) {
-		transform: perspective(var(--container-width)) rotate3d(1, -1, 0, var(--rotation));
+		transform: perspective(var(--container-width))
+			rotate3d(1, -1, 0, var(--rotation));
 	}
 
 	.buttons {
@@ -104,14 +112,18 @@ blockquote:has(div) {
 	position: relative;
 	margin-inline: -1rem;
 	margin-block: -1rem 3rem;
-	border-radius: calc(var(--rounded-corner) + 1rem) calc(var(--rounded-corner) + 1rem) 0 0;
+	border-radius: calc(var(--rounded-corner) + 1rem)
+		calc(var(--rounded-corner) + 1rem) 0 0;
 	background-color: var(--bg-color);
 	height: 8rem;
 
 	&::before,
 	&::after {
 		position: absolute;
-		clip-path: inset(0 0 0 0 round calc(var(--rounded-corner) + 1rem) calc(var(--rounded-corner) + 1rem) 0 0);
+		clip-path: inset(
+			0 0 0 0 round calc(var(--rounded-corner) + 1rem)
+				calc(var(--rounded-corner) + 1rem) 0 0
+		);
 		inset: 0;
 		border-radius: inherit;
 		content: "";
@@ -130,7 +142,8 @@ blockquote:has(div) {
 			100% 150% ellipse at 50% 125%,
 			rgb(255 255 255 / 0.8),
 			rgb(255 255 255 / 0.2) 75%,
-			rgb(255 255 255 / 0.4));
+			rgb(255 255 255 / 0.4)
+		);
 		background-image: var(--glow);
 	}
 }
@@ -191,6 +204,7 @@ blockquote:has(div) {
 		border-radius: 9999px;
 		padding-inline: 0.5rem 0.75rem;
 		font-size: var(--font-size-small);
+		line-height: 1.5rem;
 	}
 }
 

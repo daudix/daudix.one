@@ -1,0 +1,18 @@
+@use "../../themes/ametrine/sass/abstracts/functions" as *;
+
+// Why not, why shouldn't I use rainbow text
+.rainbow {
+	-webkit-background-clip: text;
+	filter: drop-shadow(rpx(1) rpx(1) rgb(0 0 0 / 0.6));
+	background-image: linear-gradient(
+		to right,
+		var(--red-fg),
+		var(--orange-fg),
+		var(--yellow-fg),
+		var(--green-fg),
+		var(--blue-fg),
+		var(--purple-fg)
+	);
+	background-clip: text;
+	color: transparent;
+}

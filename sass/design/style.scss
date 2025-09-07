@@ -1,5 +1,5 @@
-@use "../../themes/ametrine/sass/components/variables" as *;
-@use "../components/mixins" as *;
+@use "../../themes/ametrine/sass/abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 
 body {
 	background-image: var(--bg-overlay), url("curtain.webp");

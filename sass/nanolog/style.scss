@@ -1,5 +1,5 @@
-@use "../../themes/ametrine/sass/components/functions" as *;
-@use "../../themes/ametrine/sass/components/mixins" as *;
+@use "../../themes/ametrine/sass/abstracts/functions" as *;
+@use "../../themes/ametrine/sass/abstracts/mixins" as *;
 
 h1,
 h1 + p {
@@ -78,6 +78,7 @@ h1 {
 				background-color: var(--bg-muted-1);
 				padding: 0.25rem 0.75rem;
 				font-size: var(--font-size-small);
+				line-height: 1.5rem;
 				text-decoration: none;
 
 				&:hover {
@@ -123,7 +124,7 @@ h1 {
 	@include gradient-fill;
 
 	&:hover {
-		@include gradient-fill-hover;
+		@include gradient-fill(hover);
 	}
 
 	&:active {

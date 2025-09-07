@@ -284,12 +284,12 @@ document.getElementById("nanolog").addEventListener("click", function () {
 	if (nanologEnabled != "true" && nanologClickCount === 10) {
 		console.log("Nanolog new post button revealed");
 		localStorage.setItem("nanologEnabled", true);
-		nanologButton.classList.remove("hidden");
+		nanologButton.removeAttribute("hidden");
 	}
 });
 
 document.addEventListener('DOMContentLoaded', () => {
 	if (nanologEnabled === "true") {
-		nanologButton.classList.remove("hidden");
+		nanologButton.removeAttribute("hidden");
 	}
 });
