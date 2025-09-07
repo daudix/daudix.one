@@ -5,7 +5,9 @@
 }
 
 body::before {
-	--ray: rgb(from var(--accent-color) r g b / calc(var(--color-opacity-1) / 2));
+	--ray: rgb(
+		from var(--accent-color) r g b / calc(var(--color-opacity-1) / 2)
+	);
 	--mask: radial-gradient(circle at top right, black, transparent);
 	-webkit-mask-image: var(--mask);
 	display: block;
@@ -17,12 +19,16 @@ body::before {
 	background: repeating-conic-gradient(
 		from var(--angle) at top right,
 		var(--ray) 0deg 10deg,
-		transparent 10deg 20deg);
+		transparent 10deg 20deg
+	);
 	content: "";
 
 	@media (prefers-color-scheme: dark) {
 		& {
-			--ray: rgb(from var(--accent-color) r g b / calc(var(--color-opacity-1) / 4));
+			--ray: rgb(
+				from var(--accent-color) r g b /
+					calc(var(--color-opacity-1) / 4)
+			);
 		}
 	}
 
@@ -69,21 +75,27 @@ body::before {
 			}
 		}
 
-		&:has(li:nth-of-type(1) input[type="radio"]:checked) .card-content:nth-of-type(1),
-		&:has(li:nth-of-type(2) input[type="radio"]:checked) .card-content:nth-of-type(2) {
+		&:has(li:nth-of-type(1) input[type="radio"]:checked)
+			.card-content:nth-of-type(1),
+		&:has(li:nth-of-type(2) input[type="radio"]:checked)
+			.card-content:nth-of-type(2) {
 			display: block;
 		}
 
-		&:has(li:nth-of-type(1) input[type="radio"]:checked) .card-content:nth-of-type(2),
-		&:has(li:nth-of-type(2) input[type="radio"]:checked) .card-content:nth-of-type(1) {
+		&:has(li:nth-of-type(1) input[type="radio"]:checked)
+			.card-content:nth-of-type(2),
+		&:has(li:nth-of-type(2) input[type="radio"]:checked)
+			.card-content:nth-of-type(1) {
 			display: none;
 		}
 
-		&:has(li:nth-of-type(1) input[type="radio"]:checked) .card-content:nth-of-type(1) {
+		&:has(li:nth-of-type(1) input[type="radio"]:checked)
+			.card-content:nth-of-type(1) {
 			animation: slide-in-right var(--transition-bezier);
 		}
 
-		&:has(li:nth-of-type(2) input[type="radio"]:checked) .card-content:nth-of-type(2) {
+		&:has(li:nth-of-type(2) input[type="radio"]:checked)
+			.card-content:nth-of-type(2) {
 			animation: slide-in-left var(--transition-bezier);
 		}
 	}
@@ -115,6 +127,7 @@ body::before {
 				user-select: none;
 				text-align: center;
 				-webkit-user-select: none;
+				line-height: 1.5rem;
 
 				&:hover {
 					box-shadow: var(--edge-highlight);

@@ -1,4 +1,4 @@
-@use "../../themes/ametrine/sass/components/functions" as *;
+@use "../../themes/ametrine/sass/abstracts/functions" as *;
 
 // It's not an accurate polaroid please don't kill me
 #polaroid {
@@ -26,7 +26,8 @@
 		display: block;
 		position: absolute;
 		// Dirty hack to avoid transformation of the thumbtack
-		transform: perspective(var(--container-width)) rotate(-5deg) rotateX(-5deg);
+		transform: perspective(var(--container-width)) rotate(-5deg)
+			rotateX(-5deg);
 		z-index: 1;
 		transition: var(--transition);
 		inset-block-start: 0.25rem;
@@ -77,13 +78,15 @@
 			position: absolute;
 			inset-block-end: -0.25rem;
 			inset-inline-end: 0;
-			background-image: linear-gradient(to right,
-					#ff6188,
-					#fc9867,
-					#ffd866,
-					#a9dc76,
-					#78dce8,
-					#ab9df2);
+			background-image: linear-gradient(
+				to right,
+				#ff6188,
+				#fc9867,
+				#ffd866,
+				#a9dc76,
+				#78dce8,
+				#ab9df2
+			);
 			width: 3rem;
 			height: 0.5rem;
 			content: "";
@@ -137,6 +140,6 @@
 		float: inline-end;
 		color: black;
 		font-size: var(--font-size-medium);
-		line-height: .625rem; // Avoid the link becoming too high
+		line-height: 0.625rem; // Avoid the link becoming too high
 	}
 }

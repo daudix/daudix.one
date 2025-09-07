@@ -1,7 +1,7 @@
-@use "../themes/ametrine/sass/components/functions" as *;
-@use "../themes/ametrine/sass/components/root";
-@use "../themes/ametrine/sass/components/fonts";
-@use "../themes/ametrine/sass/components/animations";
+@use "../themes/ametrine/sass/abstracts/functions" as *;
+@use "../themes/ametrine/sass/base/root";
+@use "../themes/ametrine/sass/base/fonts";
+@use "../themes/ametrine/sass/base/animations";
 
 :root {
 	--accent-light-h: 270;
@@ -16,7 +16,8 @@ body {
 	background-color: var(--bg-color);
 	color: var(--fg-color);
 	line-height: 1.5rem;
-	font-family: var(--font-sans-serif), var(--font-system-ui), var(--font-emoji);
+	font-family: var(--font-sans-serif), var(--font-system-ui),
+		var(--font-emoji);
 	text-wrap: pretty;
 	overflow-wrap: break-word;
 }

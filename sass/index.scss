@@ -1,5 +1,5 @@
-@use "../themes/ametrine/sass/components/functions" as *;
-@use "../themes/ametrine/sass/components/variables" as *;
+@use "../themes/ametrine/sass/abstracts/functions" as *;
+@use "../themes/ametrine/sass/abstracts/variables" as *;
 
 :root {
 	@include variables("dark");
