@@ -8,6 +8,9 @@
 					class="transparent"
 					alt="Capsule art of {{ game.name }}."
 					src="https://cdn.cloudflare.steamstatic.com/steam/apps/{{ game.id }}/capsule_184x69.jpg"
+					{% if config.markdown.lazy_async_image %}
+						decoding="async" loading="lazy"
+					{% endif %}
 				/>
 			</a>
 		</li>

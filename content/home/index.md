@@ -229,12 +229,7 @@ Cozy and welcoming space for cool people to hang out in.
 
 <div>
 
-<div id="icons">
-  <img width="64" height="64" class="transparent no-hover drop-shadow" src="/design/icons/original/de.schmidhuberj.DieBahn.svg" alt="Railway app icon." />
-  <img width="64" height="64" class="transparent no-hover drop-shadow" src="/design/icons/original/io.github.tfuxu.Halftone.svg" alt="Halftone app icon." />
-  <img width="64" height="64" class="transparent no-hover drop-shadow" src="/design/icons/original/org.nickvision.cavalier.svg" alt="Cavalier app icon." />
-  <img width="64" height="64" class="transparent no-hover drop-shadow" src="/design/icons/original/org.nickvision.tagger.svg" alt="Tagger app icon." />
-</div>
+{{ icons() }}
 
 <div>
 

@@ -1,10 +1,9 @@
 @use "../../themes/ametrine/sass/abstracts/functions" as *;
+@use "../../themes/ametrine/sass/abstracts/mixins" as *;
 
 #online-indicator {
-	box-shadow: var(--edge-highlight);
-	border-radius: var(--rounded-corner-small);
-	background-color: var(--bg-muted-1);
-	padding: 0.125rem 0.375rem;
+	@include chip;
+	display: inline-block;
 	color: var(--fg-muted-2);
 	font-weight: var(--font-weight-semi-bold);
 
@@ -37,7 +36,7 @@
 
 	.icon {
 		--icon: var(--icon-circle-dashed);
-		vertical-align: rpx(-2);
+		vertical-align: rpx(-3);
 		margin-inline-end: 0.25rem;
 	}
 }

@@ -1,7 +1,14 @@
 <div id="polaroid">
 	<div id="polaroid-shine"></div>
 	<div id="polaroid-photo">
-		<img class="full transparent no-hover" width="144" height="144" src="https://api.lanyard.rest/650757995378114581.webp" alt="My current Discord avatar." />
+		<img
+			class="full transparent no-hover"
+			width="144" height="144"
+			alt="My current Discord avatar."
+			src="https://api.lanyard.rest/650757995378114581.webp"
+			{% if config.markdown.lazy_async_image %}
+				decoding="async" loading="lazy"
+			{% endif %}/>
 	</div>
 	<span id="polaroid-title">Instant photo<br />format</span>
 	<span id="statuscafe-content">Loading…</span>

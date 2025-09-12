@@ -1,9 +1,8 @@
+@use "../../themes/ametrine/sass/abstracts/mixins" as *;
+
 #clock {
+	@include chip;
 	animation: clock-blink 1s infinite;
-	box-shadow: var(--edge-highlight);
-	border-radius: var(--rounded-corner-small);
-	background-color: var(--bg-muted-1);
-	padding: 0.125rem 0.375rem;
 	color: var(--accent-color);
 	font-weight: var(--font-weight-semi-bold);
 	font-variant-numeric: tabular-nums;

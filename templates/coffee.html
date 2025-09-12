@@ -4,12 +4,36 @@
 <div class="container-fill">
 	<div id="coffee-container">
 		<div id="avatar-container">
-			<img id="avatar" class="no-hover" alt="Avatar." src="/apple-touch-icon.png" />
+			<img
+				id="avatar"
+				class="no-hover"
+				alt="Avatar."
+				src="/apple-touch-icon.png"
+				{% if config.markdown.lazy_async_image %}
+					decoding="async" loading="lazy"
+				{% endif %}
+			/>
 		</div>
 		<div id="coffee-banner-container">
 			<span id="blobfox-message" class="drop-shadow">Hewwo~ 0w0</span>
-			<img id="blobfox" class="transparent no-hover drop-shadow" alt="Neofox stretch down." src="neofox-stretch-down.png" />
-			<img id="coffee-banner" class="no-hover" alt="Banner." src="banner.webp" />
+			<img
+				id="blobfox"
+				class="transparent no-hover drop-shadow"
+				alt="Neofox stretch down."
+				src="neofox-stretch-down.png"
+				{% if config.markdown.lazy_async_image %}
+					decoding="async" loading="lazy"
+				{% endif %}
+			/>
+			<img
+				id="coffee-banner"
+				class="no-hover"
+				alt="Banner."
+				src="banner.webp"
+				{% if config.markdown.lazy_async_image %}
+					decoding="async" loading="lazy"
+				{% endif %}
+			/>
 		</div>
 		<strong id="title">David Lapshin</strong>
 		<p id="message">

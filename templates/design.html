@@ -16,6 +16,9 @@
 						class="no-hover full transparent drop-shadow"
 						alt="{{ icon.name }} icon."
 						src="icons/original/{{ icon.icon }}"
+						{% if config.markdown.lazy_async_image %}
+							decoding="async" loading="lazy"
+						{% endif %}
 					/>
 				</div>
 				<small>{{ icon.name }}</small>
@@ -35,11 +38,17 @@
 						class="no-hover full transparent drop-shadow"
 						alt="{{ icon.name }} icon."
 						src="icons/redrawn/{{ icon.icon }}"
+						{% if config.markdown.lazy_async_image %}
+							decoding="async" loading="lazy"
+						{% endif %}
 					/>
 					<img
 						class="no-hover full transparent drop-shadow before"
 						alt="{{ icon.name }} icon."
 						src="icons/redrawn/before/{{ icon.icon }}"
+						{% if config.markdown.lazy_async_image %}
+							decoding="async" loading="lazy"
+						{% endif %}
 					/>
 				</div>
 				<small>{{ icon.name }}</small>
@@ -62,6 +71,9 @@
 						class="no-hover full transparent drop-shadow"
 						alt="{{ icon.name }} icon."
 						src="icons/unused/{{ icon.icon }}"
+						{% if config.markdown.lazy_async_image %}
+							decoding="async" loading="lazy"
+						{% endif %}
 					/>
 				</div>
 				<small>{{ icon.name }}</small>
@@ -88,6 +100,9 @@
 						class="no-hover full"
 						alt="{{ wallpaper.name }} wallpaper."
 						src="wallpapers/{{ wallpaper.wallpaper }}"
+						{% if config.markdown.lazy_async_image %}
+							decoding="async" loading="lazy"
+						{% endif %}
 					/>
 				</picture>
 				<div>
@@ -117,6 +132,9 @@
 							class="no-hover full"
 							alt="{{ logo.name }} logo."
 							src="logos/{{ logo.logo }}"
+							{% if config.markdown.lazy_async_image %}
+								decoding="async" loading="lazy"
+							{% endif %}
 						/>
 					</picture>
 					<picture>
@@ -128,6 +146,9 @@
 							class="no-hover full mono"
 							alt="{{ logo.name }} logo."
 							src="logos/{{ logo.logo_mono }}"
+							{% if config.markdown.lazy_async_image %}
+								decoding="async" loading="lazy"
+							{% endif %}
 						/>
 					</picture>
 				</div>

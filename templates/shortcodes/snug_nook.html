@@ -3,7 +3,15 @@
 <div class="container-fill">
 	<div id="guild-widget">
 		<div id="guild-banner" style="--banner: url('banner.webp');">
-			<img id="guild-icon" class="transparent no-hover" src="icon.webp" alt="Snug Nook guild icon." />
+			<img
+				id="guild-icon"
+				class="transparent no-hover"
+				src="icon.webp"
+				alt="Snug Nook guild icon."
+				{% if config.markdown.lazy_async_image %}
+					decoding="async" loading="lazy"
+				{% endif %}
+			/>
 		</div>
 		<strong id="guild-name" class="title">Snug Nook</strong>
 		<p id="guild-stats">

@@ -25,11 +25,11 @@
 	&::after {
 		display: block;
 		position: absolute;
-		// Dirty hack to avoid transformation of the thumbtack
 		transform: perspective(var(--container-width)) rotate(-5deg)
-			rotateX(-5deg);
+			rotateX(-5deg); // Dirty hack to avoid transformation of the thumbtack
 		z-index: 1;
-		transition: var(--transition);
+		filter: hue-rotate(calc(var(--accent-h) * 1deg));
+		transition: transform var(--transition-bezier);
 		inset-block-start: 0.25rem;
 		inset-inline-start: calc(50% - 0.7813rem);
 		background-image: url("thumbtack.png");

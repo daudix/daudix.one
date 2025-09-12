@@ -54,6 +54,9 @@
 								alt="{{ badge_alt }}"
 								{% set badge_path = "home/badges/" ~ badge.name %}
 								src="{{ get_url(path=badge_path) }}"
+								{% if config.markdown.lazy_async_image %}
+									decoding="async" loading="lazy"
+								{% endif %}
 							/>
 						{%- if badge.url -%}
 							</a>
