@@ -182,9 +182,6 @@ The moment you press "Send" I'll get a push notification on my phone. Crazy, rig
 
 <div>
   <input id="ntfy-input" placeholder="Stolen from azumanga.gay"></input>
-  <a href="https://ntfy.sh/GAyU6UBdIVpKoUK3" class="button" title="Message Histoy">
-    {{ icon(name="clock-counter-clockwise") }}
-  </a>
   <button id="ntfy-send" class="suggested" title="Send">
     {{ icon(name="paper-plane-right") }}
     {{ icon(name="check") }}
