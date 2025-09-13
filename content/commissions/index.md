@@ -5,7 +5,7 @@ description = "Commission me to create a wide range of designs."
 styles = ["commissions/style.css"]
 +++
 
-Open slots: <mark>4/4</mark> Small Scale • <mark>2/2</mark> Large Scale.
+Open slots: <mark>2/2</mark> Small Scale • <mark>0/1</mark> Large Scale.
 
 Hello and welcome to my commissions page. You can see some of my works on the [design](@/design/index.md) page.
 
@@ -80,7 +80,7 @@ Export in additional formats such as PDF are available upon request.
 Fonts will either be available on Google Fonts or one of the code forges.
 - **Websites come with a light and dark modes based on OS preference by default.**  
 Manual toggle will cost $4-$8 extra.
-- **I don’t provide hosting, but I can help with this.** If you use GitHub/GitLab/Codeberg pages or Vercel, you're in luck.
+- **I don’t provide hosting, but I can help with this.** If you use GitHub/GitLab/Codeberg/Cloudflare pages, Vercel, or Netlify, you're in luck.
 - **Website graphics (favicon, metadata card) are not included.**  
 You can however, order these separately with a sweet discount.
 - **No JavaScript is used unless necessary.**  
