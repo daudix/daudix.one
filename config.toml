@@ -1,6 +1,5 @@
 title = "Daudix"
 base_url = "https://daudix.one"
-# base_url = "/"
 description = "Silly little goober with a creative mind."
 
 theme = "ametrine"
@@ -25,7 +24,7 @@ highlight_themes_css = [
   { theme = "monokai-pro-light", filename = "syntax-theme-light.css" },
 ]
 smart_punctuation = true
-lazy_async_image = true
+lazy_async_image = false
 bottom_footnotes = true
 external_links_class = "external"
 github_alerts = true
