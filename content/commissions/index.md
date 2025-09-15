@@ -78,13 +78,6 @@ I suppose there's no need to explain why.
 Export in additional formats such as PDF are available upon request.
 - **Only freely licensed fonts are used.**  
 Fonts will either be available on Google Fonts or one of the code forges.
-- **Websites come with a light and dark modes based on OS preference by default.**  
-Manual toggle will cost $4-$8 extra.
-- **I don’t provide hosting, but I can help with this.** If you use GitHub/GitLab/Codeberg/Cloudflare pages, Vercel, or Netlify, you're in luck.
-- **Website graphics (favicon, metadata card) are not included.**  
-You can however, order these separately with a sweet discount.
-- **No JavaScript is used unless necessary.**  
-This not only improves speed, but also ensures that the website uses only well-defined HTML elements.
 </div>
 </div>
 </div>
