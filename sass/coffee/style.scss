@@ -4,7 +4,7 @@
 	margin-inline: auto;
 	border-radius: 2.25rem;
 	padding: 1rem;
-	width: min(calc(var(--container-width) / 2), 100%);
+	width: min(calc(var(--content-width) / 2), 100%);
 	text-align: center;
 	@include fancy-card;
 

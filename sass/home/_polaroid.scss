@@ -5,7 +5,7 @@
 	display: block;
 	position: relative;
 	float: inline-end;
-	transform: perspective(var(--container-width)) rotate(5deg) rotateX(5deg);
+	transform: perspective(var(--content-width)) rotate(5deg) rotateX(5deg);
 	transform-origin: 50% 1rem;
 	transition: var(--transition-bezier);
 	margin-inline-start: 1.5rem;
@@ -25,7 +25,7 @@
 	&::after {
 		display: block;
 		position: absolute;
-		transform: perspective(var(--container-width)) rotate(-5deg)
+		transform: perspective(var(--content-width)) rotate(-5deg)
 			rotateX(-5deg); // Dirty hack to avoid transformation of the thumbtack
 		z-index: 1;
 		filter: hue-rotate(calc(var(--accent-h) * 1deg));

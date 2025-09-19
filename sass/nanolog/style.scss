@@ -19,7 +19,7 @@ h1 {
 	margin: 4rem auto 0;
 	border-inline-start: 0.25rem solid var(--accent-color);
 	padding-inline-start: 0;
-	width: min(calc(var(--container-width) / 1.5), 100%);
+	width: min(calc(var(--content-width) / 1.5), 100%);
 	list-style: none;
 
 	li {
@@ -39,8 +39,8 @@ h1 {
 			border: 0.25rem solid var(--accent-color);
 			border-radius: 50%;
 			background-color: var(--bg-color);
-			width: 0.5rem;
-			height: 0.5rem;
+			width: 1rem;
+			height: 1rem;
 			content: "";
 		}
 
@@ -178,7 +178,7 @@ h1 {
 		box-shadow: var(--edge-highlight), var(--shadow-glass);
 		background-color: var(--glass-bg-1);
 		width: calc(100% - 2rem);
-		max-width: calc(var(--container-width) / 1.5);
+		max-width: calc(var(--content-width) / 1.5);
 
 		input,
 		textarea {

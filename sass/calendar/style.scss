@@ -34,7 +34,7 @@ body {
 
 	@media screen {
 		margin: 10mm auto;
-		width: min(var(--container-width), calc(100% - 2rem));
+		width: min(var(--content-width), calc(100% - 2rem));
 	}
 
 	blockquote {
@@ -216,7 +216,7 @@ body {
 	border: 1px solid #0e141b;
 	background-image: linear-gradient(to bottom, #23262e, #0e141b);
 	padding: 0.5rem;
-	width: min(calc(var(--container-width) / 2.25), 100%);
+	width: min(calc(var(--content-width) / 2.25), 100%);
 	color: white;
 
 	@media print {

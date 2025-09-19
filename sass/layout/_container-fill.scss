@@ -1,0 +1,13 @@
+.container-fill {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-block: -2rem;
+	padding-block: 2rem;
+	height: 100vh;
+	min-height: fit-content;
+
+	@supports (height: 100svh) {
+		height: 100svh;
+	}
+}

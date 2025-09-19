@@ -4,7 +4,7 @@
 	// margin-inline: auto;
 	border-radius: 1rem;
 	padding: 0.5rem;
-	// width: calc(var(--container-width) / 2.5);
+	// width: calc(var(--content-width) / 2.5);
 	// @include fancy-card;
 
 	&.playing {
@@ -77,23 +77,25 @@
 		transition: var(--transition-long);
 		inset: 0.25rem;
 		border-radius: 50%;
-		background-image: linear-gradient(to left,
-				hsl(0, 0%, 0%) 0%,
-				hsla(0, 0%, 0%, 0.987) 8.1%,
-				hsla(0, 0%, 0%, 0.951) 15.5%,
-				hsla(0, 0%, 0%, 0.896) 22.5%,
-				hsla(0, 0%, 0%, 0.825) 29%,
-				hsla(0, 0%, 0%, 0.741) 35.3%,
-				hsla(0, 0%, 0%, 0.648) 41.2%,
-				hsla(0, 0%, 0%, 0.55) 47.1%,
-				hsla(0, 0%, 0%, 0.45) 52.9%,
-				hsla(0, 0%, 0%, 0.352) 58.8%,
-				hsla(0, 0%, 0%, 0.259) 64.7%,
-				hsla(0, 0%, 0%, 0.175) 71%,
-				hsla(0, 0%, 0%, 0.104) 77.5%,
-				hsla(0, 0%, 0%, 0.049) 84.5%,
-				hsla(0, 0%, 0%, 0.013) 91.9%,
-				hsla(0, 0%, 0%, 0) 100%);
+		background-image: linear-gradient(
+			to left,
+			hsl(0, 0%, 0%) 0%,
+			hsla(0, 0%, 0%, 0.987) 8.1%,
+			hsla(0, 0%, 0%, 0.951) 15.5%,
+			hsla(0, 0%, 0%, 0.896) 22.5%,
+			hsla(0, 0%, 0%, 0.825) 29%,
+			hsla(0, 0%, 0%, 0.741) 35.3%,
+			hsla(0, 0%, 0%, 0.648) 41.2%,
+			hsla(0, 0%, 0%, 0.55) 47.1%,
+			hsla(0, 0%, 0%, 0.45) 52.9%,
+			hsla(0, 0%, 0%, 0.352) 58.8%,
+			hsla(0, 0%, 0%, 0.259) 64.7%,
+			hsla(0, 0%, 0%, 0.175) 71%,
+			hsla(0, 0%, 0%, 0.104) 77.5%,
+			hsla(0, 0%, 0%, 0.049) 84.5%,
+			hsla(0, 0%, 0%, 0.013) 91.9%,
+			hsla(0, 0%, 0%, 0) 100%
+		);
 		width: 3.5rem;
 		height: 3.5rem;
 	}
@@ -140,7 +142,9 @@
 
 			#player-title,
 			#player-artist {
-				animation: player-marquee calc((var(--text-width) + var(--container-width)) / 40 * 1s) linear infinite;
+				animation: player-marquee
+					calc((var(--text-width) + var(--content-width)) / 40 * 1s)
+					linear infinite;
 
 				@keyframes player-marquee {
 					0%,
@@ -150,7 +154,11 @@
 
 					45%,
 					55% {
-						transform: translateX(calc((var(--container-width) - var(--text-width)) * 1px));
+						transform: translateX(
+							calc(
+								(var(--content-width) - var(--text-width)) * 1px
+							)
+						);
 					}
 
 					90%,

@@ -28,7 +28,7 @@
 	margin: 0 auto;
 	border-inline-start: 0.25rem solid var(--accent-color);
 	padding-inline-start: 1rem;
-	width: min(calc(var(--container-width) / 1.5), 100%);
+	width: min(calc(var(--content-width) / 1.5), 100%);
 }
 
 #nanolog-heading {

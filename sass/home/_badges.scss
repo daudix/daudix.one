@@ -200,7 +200,7 @@
 		box-shadow: var(--edge-highlight), var(--shadow-glass);
 		border-radius: var(--rounded-corner);
 		padding: 1rem;
-		width: calc(var(--container-width) / 3);
+		width: calc(var(--content-width) / 3);
 
 		ul {
 			display: flex;
