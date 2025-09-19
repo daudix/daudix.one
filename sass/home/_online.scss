@@ -1,7 +1,7 @@
 .fancy-list.online {
 	ul {
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(auto-fit, minmax(min(9rem, 100%), 1fr));
 
 		li {
 			display: flex;
@@ -9,17 +9,6 @@
 			border-radius: 0;
 			background-color: transparent;
 			padding: 0;
-
-			&:first-of-type {
-				border-radius: var(--rounded-corner) var(--rounded-corner)
-					var(--rounded-corner-small) var(--rounded-corner-small);
-			}
-
-			&:last-of-type {
-				border-radius: var(--rounded-corner-small)
-					var(--rounded-corner-small) var(--rounded-corner)
-					var(--rounded-corner);
-			}
 
 			img {
 				display: inline-block;
