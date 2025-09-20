@@ -8,6 +8,12 @@ body {
 	background-attachment: fixed;
 }
 
+#site-nav::before {
+	backdrop-filter: var(--blur);
+	-webkit-backdrop-filter: var(--blur);
+	background-color: var(--glass-bg-1);
+}
+
 .media-grid {
 	grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
 	justify-items: center;
@@ -22,6 +28,8 @@ body {
 		text-decoration: none;
 
 		&:hover {
+			backdrop-filter: blur(0.25rem);
+			-webkit-backdrop-filter: blur(0.25rem);
 			box-shadow: var(--edge-highlight);
 			background-color: var(--bg-muted-1);
 			text-decoration: none;
