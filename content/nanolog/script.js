@@ -1,3 +1,5 @@
+// Loosely based on https://stackoverflow.com/questions/76448215/programmatically-adding-a-file-in-a-github-repository-in-javascript-and-html/76472770#76472770
+
 document.getElementById("github-token").addEventListener("blur", saveToken);
 
 function saveToken() {

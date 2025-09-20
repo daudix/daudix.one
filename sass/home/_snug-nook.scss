@@ -13,8 +13,10 @@
 		transform: var(--active);
 	}
 
-	.icon {
+	div {
+		display: flex;
 		position: absolute;
+		gap: 0.5rem;
 		inset-block-start: 1rem;
 		inset-inline-end: 1rem;
 		color: var(--accent-color);

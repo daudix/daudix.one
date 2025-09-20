@@ -136,13 +136,6 @@ Thing I hate doing the most; telling about myself.
 
 Where and when to find me online.
 
-<!-- <div class="buttons centered">
-  <button onclick="togglePlaying()">Toggle Playing State</button>
-  <button onclick="toggleTitleMarquee()">Toggle Title Marquee</button>
-  <button onclick="toggleArtistMarquee()">Toggle Artist Marquee</button>
-  <button onclick="forceReload()">Force Reload Player</button>
-</div> -->
-
 <ul class="masonry">
 <!-- Card Start -->
 <li>
@@ -153,7 +146,6 @@ Where and when to find me online.
 <!-- Card Start -->
 <li>
 <article class="online fancy-list">
-
 <strong id="socials" class="title">Socials</strong>
 
 {{ online(type="socials") }}
@@ -164,7 +156,6 @@ Where and when to find me online.
 <!-- Card Start -->
 <li>
 <article class="online fancy-list">
-
 <strong id="forges" class="title">Forges</strong>
 
 {{ online(type="forges") }}
@@ -175,7 +166,6 @@ Where and when to find me online.
 <!-- Card Start -->
 <li>
 <article class="ntfy fancy-list">
-
 <strong id="ntfy" class="title">Send Me a Notification</strong>
 
 The moment you press "Send" I'll get a push notification on my phone. Crazy, right?
@@ -187,6 +177,9 @@ The moment you press "Send" I'll get a push notification on my phone. Crazy, rig
     {{ icon(name="check") }}
   </button>
 </div>
+<div class="tooltip" title="Powered by ntfy.sh. Messages are not end-to-end encrypted and are public. This is not a secure method of communication">
+  {{ icon(name="lock-open") }}
+</div>
 </article>
 </li>
 <!-- Card End -->
@@ -194,7 +187,6 @@ The moment you press "Send" I'll get a push notification on my phone. Crazy, rig
 <!-- Card Start -->
 <li>
 <article class="online fancy-list">
-
 <strong id="contacts" class="title">Contacts</strong>
 
 For me it's currently <time id="clock">09:41</time> <small>(UTC+3)</small> and I'm <span id="online-indicator"><i class="icon"></i><span id="online-indicator-text">Offline</span></span>.
@@ -209,14 +201,16 @@ Feel free to reach me out on any of these! Although I'm usually too shy to start
 <!-- Card Start -->
 <li>
 <article class="snug-nook fancy-list">
-
 <strong id="snug-nook" class="title">Snug Nook</strong>
 
 Cozy and welcoming space for cool people to hang out in.
 
 <img src="neofax.png" class="transparent no-hover drop-shadow" />
 <a href="/snug-nook/" title="Learn More"></a>
-{{ icon(name="arrow-square-out") }}
+<div>
+{{ icon(name="discord-logo") }}
+{{ icon(name="matrix-logo") }}
+</div>
 </article>
 </li>
 <!-- Card End -->

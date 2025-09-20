@@ -369,15 +369,18 @@ body {
 .cjs-lastLink,
 .cjs-nextLink {
 	margin: 0;
-	border: none;
-	background: none;
+	box-shadow: none;
+	border-radius: 0;
+	background-color: transparent;
 	padding: 0;
 	width: 50%;
+	font-weight: normal;
 	font-size: 5mm;
 	font-family: inherit;
 
 	&:hover {
-		background: none;
+		background-color: transparent !important;
+		color: black !important;
 	}
 }
 

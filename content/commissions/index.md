@@ -92,7 +92,7 @@ Fonts will either be available on Google Fonts or one of the code forges.
 <!-- Card start -->
 <div class="card">
 <strong class="title">88x31 Badge</strong>
-<ul class="tab-switcher">
+<ul class="tab-switcher" role="radiogroup">
 <li>
 <input class="visually-hidden" id="badge-small" type="radio" name="badge" checked />
 <label for="badge-small">Small Scale</label>
@@ -122,7 +122,7 @@ Same as above, except it's animated.
 <!-- Card start -->
 <div class="card">
 <strong class="title">Logo</strong>
-<ul class="tab-switcher">
+<ul class="tab-switcher" role="radiogroup">
 <li>
 <input class="visually-hidden" id="logo-small" type="radio" name="logo" checked />
 <label for="logo-small">Small Scale</label>

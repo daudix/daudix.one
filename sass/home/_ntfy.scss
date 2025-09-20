@@ -1,4 +1,6 @@
 .fancy-list.ntfy {
+	position: relative;
+
 	#ntfy-bottom {
 		display: flex;
 		justify-content: space-between;
@@ -53,5 +55,19 @@
 
 	.buttons {
 		margin-block-start: 0;
+	}
+
+	.tooltip {
+		position: absolute;
+		justify-content: flex-end;
+		cursor: help;
+		inset-block-start: 1rem;
+		inset-inline-end: 1rem;
+		color: var(--accent-color);
+		font-size: 1.25rem;
+
+		&::after {
+			transform-origin: top right;
+		}
 	}
 }
