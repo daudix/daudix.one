@@ -183,7 +183,7 @@ The moment you press "Send" I'll get a push notification on my phone. Crazy, rig
 <div>
   <input id="ntfy-input" placeholder="Stolen from azumanga.gay"></input>
   <button id="ntfy-send" class="suggested" title="Send">
-    {{ icon(name="paper-plane-right") }}
+    {{ icon(name="send-horizontal") }}
     {{ icon(name="check") }}
   </button>
 </div>
@@ -216,7 +216,7 @@ Cozy and welcoming space for cool people to hang out in.
 
 <img src="neofax.png" class="transparent no-hover drop-shadow" />
 <a href="/snug-nook/" title="Learn More"></a>
-{{ icon(name="arrow-square-out") }}
+{{ icon(name="external-link") }}
 </article>
 </li>
 <!-- Card End -->
