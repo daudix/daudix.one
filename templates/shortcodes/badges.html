@@ -36,8 +36,8 @@
 	<div id="here"></div>
 	<div class="marquee-wrapper overshoot-row">
 		<div class="marquee">
-			<ul style="--duration: {{ page.extra.badges | length * 2 }}s">
-				{%- for badge in page.extra.badges -%}
+			<ul style="--duration: {{ section.extra.badges | length * 2 }}s">
+				{%- for badge in section.extra.badges -%}
 					<li>
 						{%- if badge.url -%}
 							<a href="{{ badge.url }}">
@@ -70,8 +70,8 @@
 					<a href="{{ get_url(path='badges/') }}" id="more"><span>more +<br />stamps</span></a>
 				</li>
 			</ul>
-			<ul style="--duration: {{ page.extra.badges | length * 2 }}s" aria-hidden="true">
-				{%- for badge in page.extra.badges -%}
+			<ul style="--duration: {{ section.extra.badges | length * 2 }}s" aria-hidden="true">
+				{%- for badge in section.extra.badges -%}
 					<li>
 						{%- if badge.url -%}
 							<a href="{{ badge.url }}">

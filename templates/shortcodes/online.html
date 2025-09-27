@@ -1,11 +1,11 @@
 {% import "macros/icon.html" as macros_icon %}
 
 {%- if type == "contacts" -%}
-	{%- set items = page.extra.contacts -%}
+	{%- set items = section.extra.contacts -%}
 {%- elif type == "socials" -%}
-	{%- set items = page.extra.socials -%}
+	{%- set items = section.extra.socials -%}
 {%- elif type == "forges" -%}
-	{%- set items = page.extra.forges -%}
+	{%- set items = section.extra.forges -%}
 {%- endif -%}
 
 {%- if type == "contacts" -%}
