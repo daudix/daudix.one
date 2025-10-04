@@ -5,6 +5,7 @@
 	display: block;
 	transition: var(--transition-bezier);
 	margin-block-start: 0;
+	image-rendering: pixelated;
 	width: min(rpx(497), 100%);
 
 	&:hover {
