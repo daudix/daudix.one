@@ -15,13 +15,11 @@
 
 	@starting-style {
 		&:target {
-			// opacity: 0;
 			transform: translateY(-100%);
 		}
 	}
 
-	body:has(#down:target) & {
-		// opacity: 0;
+	body:has(:target:not(#splash:target)) & {
 		transform: translateY(-100%);
 		visibility: hidden;
 	}
