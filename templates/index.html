@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block content %}
+{{ section.content | safe }}
+{% endblock content %}
+
+{% block body_before %}
+<div id="splash">
+	<div id="splash-content">
+		<label>
+			<input type="checkbox" id="skip-splash" />
+			Skip splash screen
+		</label>
+		<div>
+			{%- set graphics = section.extra.graphics -%}
+			{%- for graphic in graphics -%}
+				{%- set data = load_data(path="static/home/graphics/" ~ graphic.name ~ ".svg") -%}
+				<div>
+					{%- if graphic.url -%}
+						<a href="{{ graphic.url }}">
+					{%- endif -%}
+					{{- data | safe -}}
+					{%- if graphic.url -%}
+						</a>
+					{%- endif -%}
+					<span>{{ graphic.text | linebreaksbr | safe }}</span>
+				</div>
+			{%- endfor -%}
+		</div>
+		<a href="#down">
+			<span id="face-front">daudix.one</span>
+			<span id="face-back">
+				Enter
+				<span>→</span>
+				<span aria-hidden="true">→</span>
+				<span aria-hidden="true">→</span>
+			</span>
+		</a>
+		<div>
+			<div>
+				<strong>SITE DESCRIPTION:</strong>
+				<ul>
+					<li>Personal opinions</li>
+					<li>Mediocre writing</li>
+					<li>Wacky humor</li>
+				</ul>
+			</div>
+			<a href="home/g.mp4">
+				{%- set warning = load_data(path="static/home/graphics/warning.svg") -%}
+				{{ warning | safe }}
+			</a>
+		</div>
+	</div>
+	{%- set barcode = load_data(path="static/home/graphics/barcode.svg") -%}
+	{{ barcode | safe }}
+	<div id="rainbow"></div>
+</div>
+{% endblock body_before %}
