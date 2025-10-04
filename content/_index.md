@@ -18,7 +18,7 @@ badges = [
   { name = "mobilefriendly.gif", url = "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design" },
   { name = "righttorepair.gif", url = "https://www.ifixit.com/Right-to-Repair" },
   { name = "saynotoweb3.gif", url = "https://yesterweb.org/no-to-web3/" },
-  { name = "snug-nook.gif", url = "https://daudix.one/snug-nook/" },
+  { name = "snug-nook.gif", url = "https://snugnook.org" },
   { name = "standwith.gif", url = "https://decolonizepalestine.com" },
   { name = "vscodium.gif", url = "https://vscodium.com" },
 ]
@@ -247,7 +247,7 @@ Simply put, IndieWeb is anything on the web that is hand-crafted and feels perso
 
 Everything about it is awesome, from 88x31 buttons to webrings. It also feels cozy and is hella fun, quite refreshing after the sterile corporate web.
 
-I'm even a member of several [tildes](https://envs.net) and [CS clubs](https://exozy.me), even though I don't do much there, I still like being a part of them:
+I'm even a member of several [tildes](https://envs.net) and [CS clubs](https://exozy.me), even though I don't do much there, I still like being a part of them.
 
 Better yet, I have a website on [neocities](https://neocities.org); It doesn't have any purpose except for being there and looking dated. [Check it out](https://daudix.neocities.org) if you want.
 

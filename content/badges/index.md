@@ -75,7 +75,7 @@ mine = [
   { name = "daudix-synthwave.gif", type = "mine" },
   { name = "daudix-tile.gif", type = "mine" },
   { name = "daudix.gif", type = "mine" },
-  { name = "snug-nook.gif", url = "https://daudix.one/snug-nook/", type = "mine" },
+  { name = "snug-nook.gif", url = "https://snugnook.org", type = "mine" },
   { name = "valid-crashout.gif", type = "mine" },
   { name = "vscodium.gif", url = "https://vscodium.com", type = "mine" },
   { name = "zeffo.gif", url = "https://zeffo.me", type = "mine" },

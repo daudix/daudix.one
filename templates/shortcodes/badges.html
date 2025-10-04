@@ -16,19 +16,19 @@
 		</p>
 		<ul>
 			<li>
-				<img width="88" height="31" class="pixels transparent no-hover" alt="daudix" src="{{ get_url(path='home/badges/daudix.gif') }}" />
+				<img width="88" height="31" class="pixels transparent no-hover" alt="daudix" src="{{ get_url(path='badges/badges/daudix.gif') }}" />
 				<span>Current</span>
 			</li>
 			<li>
-				<img width="88" height="31" class="pixels transparent no-hover" alt="daudix-neocities" src="{{ get_url(path='home/badges/daudix-neocities.gif') }}" />
+				<img width="88" height="31" class="pixels transparent no-hover" alt="daudix-neocities" src="{{ get_url(path='badges/badges/daudix-neocities.gif') }}" />
 				<span>Neocities</span>
 			</li>
 			<li>
-				<img width="88" height="31" class="pixels transparent no-hover" alt="daudix-synthwave" src="{{ get_url(path='home/badges/daudix-synthwave.gif') }}" />
+				<img width="88" height="31" class="pixels transparent no-hover" alt="daudix-synthwave" src="{{ get_url(path='badges/badges/daudix-synthwave.gif') }}" />
 				<span>Synthwave</span>
 			</li>
 			<li>
-				<img width="88" height="31" class="pixels transparent no-hover" alt="daudix-tile" src="{{ get_url(path='home/badges/daudix-tile.gif') }}" />
+				<img width="88" height="31" class="pixels transparent no-hover" alt="daudix-tile" src="{{ get_url(path='badges/badges/daudix-tile.gif') }}" />
 				<span>Tile</span>
 			</li>
 		</ul>
@@ -52,7 +52,7 @@
 									{%- set badge_alt = badge.name | split(pat=".", limit=2) | first -%}
 								{%- endif -%}
 								alt="{{ badge_alt }}"
-								{% set badge_path = "home/badges/" ~ badge.name %}
+								{% set badge_path = "badges/badges/" ~ badge.name %}
 								src="{{ get_url(path=badge_path) }}"
 								{% if config.markdown.lazy_async_image %}
 									decoding="async" loading="lazy"
@@ -86,7 +86,7 @@
 									{%- set badge_alt = badge.name | split(pat=".", limit=2) | first -%}
 								{%- endif -%}
 								alt="{{ badge_alt }}"
-								{% set badge_path = "home/badges/" ~ badge.name %}
+								{% set badge_path = "badges/badges/" ~ badge.name %}
 								src="{{ get_url(path=badge_path) }}"
 							/>
 						{%- if badge.url -%}
