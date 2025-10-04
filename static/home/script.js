@@ -1,3 +1,37 @@
+/* Splash Screen ============================================================ */
+
+const splash = document.getElementById("splash");
+const skip = document.getElementById("skip-splash");
+const STORAGE_KEY = "skipSplash";
+
+const skipped = localStorage.getItem(STORAGE_KEY) === "true";
+const targeted = location.hash === "#splash";
+
+if (targeted) {
+	splash.removeAttribute("hidden");
+	splash.querySelector(".content")?.focus();
+}
+else if (skipped) {
+	splash.setAttribute("hidden", "");
+}
+else {
+	splash.removeAttribute("hidden");
+}
+
+if (skip) {
+	skip.checked = skipped;
+	skip.addEventListener("change", () => {
+		localStorage.setItem(STORAGE_KEY, skip.checked);
+	});
+}
+
+window.addEventListener("hashchange", () => {
+	if (location.hash === "#splash") {
+		splash.removeAttribute("hidden");
+		splash.querySelector(".content")?.focus();
+	}
+});
+
 /* Constants and DOM Elements =============================================== */
 
 const lastFmUser = "daudix";
@@ -224,20 +258,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
 window.addEventListener("resize", () => {
 	requestAnimationFrame(updateMarquee);
-});
-
-/* Splash Screen ============================================================ */
-
-const splashHash = "#splash";
-const skipSplash = localStorage.getItem("skipSplash") === "true";
-const currentHash = window.location.hash;
-
-if (skipSplash && currentHash !== splashHash) {
-	window.location.replace("#");
-}
-
-const skipSplashCheckbox = document.getElementById("skip-splash");
-skipSplashCheckbox.checked = skipSplash;
-skipSplashCheckbox.addEventListener("change", () => {
-	localStorage.setItem("skipSplash", skipSplashCheckbox.checked);
 });
