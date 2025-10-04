@@ -62,28 +62,6 @@ let lastTime = "";
 /* Functions ================================================================ */
 
 // Last.fm
-function updateMarquee() {
-	const titleWidth = lastFmTitle.offsetWidth;
-	const titleContainerWidth = lastFmTitleContainer.getBoundingClientRect().width;
-	const artistWidth = lastFmArtist.offsetWidth;
-	const artistContainerWidth = lastFmArtistContainer.getBoundingClientRect().width;
-
-	lastFmTitle.style.setProperty("--text-width", `${titleWidth}`);
-	lastFmTitle.style.setProperty("--container-width", `${titleContainerWidth}`);
-	lastFmArtist.style.setProperty("--text-width", `${artistWidth}`);
-	lastFmArtist.style.setProperty("--container-width", `${artistContainerWidth}`);
-
-	lastFmTitleContainer.classList.remove("marquee", "overshoot-row");
-	lastFmArtistContainer.classList.remove("marquee", "overshoot-row");
-
-	if (titleWidth > titleContainerWidth) {
-		lastFmTitleContainer.classList.add("marquee", "overshoot-row");
-	}
-	if (artistWidth > artistContainerWidth) {
-		lastFmArtistContainer.classList.add("marquee", "overshoot-row");
-	}
-}
-
 async function fetchLastFm() {
 	try {
 		// Replace my username and API key if you're going to use this
@@ -100,7 +78,7 @@ async function fetchLastFm() {
 
 			lastFmTitle.textContent = track.name;
 			lastFmArtist.textContent = track.artist["#text"];
-			lastFmCover.src = track.image.find(img => img.size === "medium")?.["#text"] || "image-missing.svg";
+			lastFmCover.src = track.image.find(img => img.size === "medium")?.["#text"] || "home/image-missing.svg";
 			lastFmLink.href = track.url;
 
 			lastFmPlayer.classList.toggle("playing", isPlaying);
