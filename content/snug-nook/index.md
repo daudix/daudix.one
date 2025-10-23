@@ -36,18 +36,15 @@ At Snug Nook we have many unique "traditions", and weekend rebrand is one of the
 
 ## Bridges
 
-Discord isn't your cup of tea? No big deal, we provide a few bridges that, whilist lacking some features and stability, allow chatting with Discord folks:
-
-> [!CAUTION]
-> Experience can be significantly worse when using these; messages could be delayed, sent in wrong order, or not sent at all.
+Discord isn't your cup of tea? No big deal, we provide a few bridges that, whilist lacking some minor features, allow chatting with Discord folks:
 
 <div class="icon-grid">
 
-<a href="https://matrix.to/#/#snug-nook-space:envs.net">
+<a href="https://matrix.to/#/#space:snugnook.org">
 <img class="transparent no-hover pixels drop-shadow icon" src="icons/matrix.gif" alt="Pixel art Discord icon." />
 <div class="details">
 <strong>Matrix</strong>
-<p><small>The most usable and officialy supported bridge.</small></p>
+<p><small>The only officialy supported bridge.</small></p>
 </div>
 </a>
 
@@ -56,14 +53,6 @@ Discord isn't your cup of tea? No big deal, we provide a few bridges that, whili
 <div class="details">
 <strong>Revolt</strong>
 <p><small>Collaboration with Icycoide<sup>1</sup>.</small></p>
-</div>
-</a>
-
-<a href="https://t.me/nug_snook">
-<img class="transparent no-hover pixels drop-shadow icon" src="icons/telegram.gif" alt="Pixel art Telegram icon." />
-<div class="details">
-<strong>Telegram</strong>
-<p><small>Only #living-room is bridged and it doesn't work half the time.</small></p>
 </div>
 </a>
 
