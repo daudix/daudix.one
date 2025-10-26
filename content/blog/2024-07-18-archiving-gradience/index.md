@@ -1,7 +1,7 @@
 +++
 title = "Gradience Autopsy: Rise and Set"
 description = "The most complete history of Gradience you'll ever find."
-updated = 2024-11-29
+updated = 2025-10-26
 [taxonomies]
 tags = ["100DaysToOffload", "Gradience"]
 categories = ["Hot"]
@@ -107,15 +107,3 @@ This is the end. For now. Goodbye, Gradience.
 
 ![Saluting.](saluting.png)
 ![Shell preview.](shell-preview.png)
-
-Ha, no.
-
-I thought so at the moment of writing the early draft. There's some promising work being done by one of my friends, it's still in the early stages, but I'm looking forward to it.
-
-*What is it? You gave us the most ambiguous description one could possibly come up with!*
-
-Okay okay! It's a rewrite of Gradience, you ready? in Rust. Called Chameleon. You satisfied?
-
-There's some other things happening behind the scenes, but I can't say much just yet :P
-
-And now that we are on a positive note, I can say: see you next time!
