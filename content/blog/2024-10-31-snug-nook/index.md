@@ -3,7 +3,7 @@ title = "Behold, The Snug Nook"
 description = "Yet another chat thingy that no one ever asked for."
 updated = 2024-11-01
 [taxonomies]
-tags = ["100DaysToOffload"]
+tags = ["100DaysToOffload", "Snug Nook"]
 [extra]
 accent_color = ["hsl(336.52173 12% 37%)", "hsl(315.55554 14% 61%)"]
 banner = "banner.webp"
