@@ -50,15 +50,15 @@ Notably, the initial decision to not include a voice channel due to admin and ma
 
 ## Icycoide Partnership
 
-We ran a short advertisement campaign with Icycoide community, where we advertised each other. This partnership resulted in an ongoing collaboration type thing, newest part of which is a shared bridge to Revolt.
+We ran a short advertisement campaign with Icycoide community, where we advertised each other. This partnership resulted in an ongoing collaboration-type thing, newest part of which is a shared bridge to Revolt.
 
 ## Workshop
 
-The new workshop category were added, under which everyone can request a channel for their project, and for the community to help improve the project with suggestions along the way. Notably, [Cathodique](https://github.com/cathodique) and [Steno](https://github.com/stenodevs) are part of workshop, and Snug Nook as a whole.
+A new workshop category was added, under which anyone can request a channel for their project, and for the community to help improve the project with suggestions along the way. Notably, [Cathodique](https://github.com/cathodique) and [Steno](https://github.com/stenodevs) are part of workshop, and are part of Snug Nook as a whole.
 
 ## Prime Minister
 
-[Keva](https://kevadesu.github.io/) have been elected (by themselves :P) as the prime minister of the Snug Nook. Initially it started as a joke, but now they're an important part of the Snug Nook community, who have done many notible contributions to the server. I'm forever grateful for having them on the team.
+[Keva](https://kevadesu.github.io/) have been elected (by themselves :P) as the prime minister of the Snug Nook. Initially it started as a joke, but now they're an important part of the Snug Nook community, who have done many notable contributions to the server. I'm forever grateful for having them on the team.
 
 ## Department of gnu_horny
 
@@ -74,13 +74,13 @@ Hosted by the prime minister, Snug Nook now has a Minecraft server for its membe
 
 Someone has added the Wordle app to the server, and everyone got hooked to it... Everyone started playing Wordle daily, thus spamming unrelated channels with its messages, because of which we had to resort to creating a bot channel called #robots-dot-txt.
 
-With that, we managed to reach an entire stack (64) of days as a streak on Worlde! The Wordle insanity still goes on despite the streak being intentionally broken.
+With that, we managed to reach an entire stack (64) of days as a streak on Wordle! The Wordle insanity still goes on despite the streak being intentionally broken.
 
 ![Wordle streak.](wordle-streak.png)
 
 ## Wplace
 
-Everyone knows about [Wplace](https://wplace.live); an online event with a world map where you can place pixels anywhere, thus making the globe a giant canvas... or a giant wall of questionable doodles.
+Everyone knows about [Wplace](https://wplace.live): an online event with a world map where you can place pixels anywhere, thus making the globe a giant canvas... or a giant wall of questionable doodles.
 
 Snug Nook actively participated in it in the first few weeks, and we even created 3 Snug Nook advertisements in 3 different countries: Canada, [USA](https://wplace.live/?lat=37.64284061242482&lng=-122.44719759697264&zoom=15.007757622056396) (South San Francisco), and [Turkey](https://wplace.live/?lat=38.36543507634402&lng=26.764364903027307&zoom=14.879252869276947).
 
@@ -112,18 +112,18 @@ For the long time, there was an underground community referred to as #sillies-on
 
 On 2nd November 2025 Gabs have gifted Snug Nook a domain of their own. Words cannot express my gratitude, it's just so cool!!
 
-Shortly after we have set up multiple services under that domain (details on *how* will be available in the next blog post), including but not limited to:
+Shortly after we set up multiple services under that domain (details on *how* will be available in the next blog post), including but not limited to:
 
 - phpBB forum: [forums.snugnook.org](https://forums.snugnook.org)
 - DokuWiki: [wiki.snugnook.org](https://wiki.snugnook.org)
 - An Otter Wiki (legacy): [otterwiki.snugnook.org](https://otterwiki.snugnook.org)
 - Matrix homeserver with a [mautrix-discord](https://docs.mau.fi/bridges/go/discord/index.html) bridge: [matrix.snugnook.org](https://matrix.snugnook.org)
 
-That's right, we now have a Matrix bridge of our own. For the long time we've been using [t2bot](https://t2bot.io), which is free and avaiable to all, I respect that, but it's been so darn slow, seriously, at times the delay between Matrix and Discord reached half an hour! Our own bridge on the other hand is instanteous and supports much more features, such as custom emoji reactions and threads, at the cost of maintenance, of course.
+That's right, we now have a Matrix bridge of our own. For the long time we've been using [t2bot](https://t2bot.io), which is free and avaiable to all, I respect that, but it's been so darn slow, seriously, at times the delay between Matrix and Discord reached half an hour! Our own bridge on the other hand is instanteous and supports many more features, such as custom emoji reactions and threads, at the cost of maintenance, of course.
 
-The wiki was a huge success, multiple people have contributed to it by creating and expanding a number of pages, which is honestly so so cool.
+The wiki was a huge success; multiple people have contributed to it by creating and expanding a number of pages, which is honestly so so cool.
 
-Forum on the other hand wasn't this much of a success, it's inactive for majority of the time. Which is fine, having one in 2025 is nice as is.
+Forum on the other hand wasn't this much of a success, as it's inactive for the majority of the time. Which is fine, having one in 2025 is nice as is.
 
 ## Rewind
 
@@ -232,4 +232,4 @@ ivanaddition
 > {{ icon(name="user") }} gabs:  
 > yay
 
-[^1]: I had this silly idea of writing an anniversary blog post with the team and publishing it on Snug Nook's birthday on the 29th. But a wild migraine had other plans so I couldn't  start work on it until the 30th, which meant that the deadline had to be moved to the 31st. On that day, I added the initial structure/boilerplate, and we iterated on it. On the 31st, we tried to get it finished before midnight UTC to publish the post on the same day as the [initial Snug Nook announcement](@/blog/2024-10-31-snug-nook/index.md), which made us hurry like crazy. We published the blog post just in time (a few seconds before midnight), after which I finalised it and designed the missing Snug Nook Rewind bento.
+[^1]: I had this silly idea of writing an anniversary blog post with the team and publishing it on Snug Nook's birthday on the 29th. But a wild migraine had other plans so I couldn't start work on it until the 30th, which meant that the deadline had to be moved to the 31st. On that day, I added the initial structure/boilerplate, and we iterated on it. On the 31st, we tried to get it finished before midnight UTC to publish the post on the same day as the [initial Snug Nook announcement](@/blog/2024-10-31-snug-nook/index.md), which made us hurry like crazy. We published the blog post just in time (a few seconds before midnight), after which I finalised it and designed the missing Snug Nook Rewind bento.
