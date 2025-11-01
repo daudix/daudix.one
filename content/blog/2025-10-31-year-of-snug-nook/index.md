@@ -1,10 +1,12 @@
 +++
 title = "Year of Snug Nook"
 description = "It's been one year since Snug Nook's emergence."
+authors = ["daudix", "ivanmarkov", "pixl_xip", "kevadesu", "gxbs"]
+updated = 2025-11-01
 [taxonomies]
 tags = ["Snug Nook"]
 [extra]
-# accent_color = ["hsl(270 13% 48%)", "hsl(290 20% 71%)"]
+accent_color = "orange"
 banner = ""
 [extra.fediverse]
 id = ""
@@ -14,7 +16,16 @@ id = ""
 article .icon {
     vertical-align: -0.125rem;
 }
+
+article table:first-of-type tr:nth-of-type(10) {
+    background-color: var(--red-bg-2);
+	font-weight: var(--font-weight-semi-bold);
+    color: var(--red-fg);
+}
 </style>
+
+> [!NOTE]
+> This blog post was written collaboratively[^1] by the Snug Nook staff over the course of three days. Some elements from the writing process have been intentionally retained.
 
 Hi, nice to see you here, how you've been doing? hopefully alright.
 
@@ -57,7 +68,7 @@ The new workshop category were added, under which everyone can request a channel
 
 Hosted by the prime minister, Snug Nook now has a Minecraft server for its members, informally referred to as SNMC or The Snug Nook Empire. At the time of writing it's down, but yeah. See [SNMC page](@/snug-nook/mc/index.md) for more info.
 
-![SOME SCREENSHOTS]()
+*Waiting for prime minister to provide some screenshots of it.*
 
 ## Wordle
 
@@ -114,16 +125,18 @@ The wiki was a huge success, multiple people have contributed to it by creating 
 
 Forum on the other hand wasn't this much of a success, it's inactive for majority of the time. Which is fine, having one in 2025 is nice as is.
 
-## Stats
+## Rewind
 
-It's number time!
+Welcome to Snug Nook Rewind. Here is your statistics for the past year.
 
-Total number of messages in all channels, from server creation to the time of writing: 112,818
+![Snug Nook Rewind bento.](rewind-bento.png)
+
+And now... it's number time!
 
 Messages in all channels, per month:
 
 | Month     | Year | Messages |
-|-----------|------|--------  |
+|-----------|------|----------|
 | October   | 2024 | 236      |
 | November  | 2024 | 3,377    |
 | December  | 2024 | 3,496    |
@@ -138,11 +151,34 @@ Messages in all channels, per month:
 | September | 2025 | 8,794    |
 | October   | 2025 | 11,614   |
 
-Total amount of members: 64
-Members on Discord: 59
-Members on Matrix: 5
+Starboard leaderboard (#hall-of-<fame/shame/france> combined):
+
+| Place | User            | XP     |
+|-------|-----------------|--------|
+| #1    | @daudix         | 567 XP |
+| #2    | @kevadesu       | 326 XP |
+| #3    | @gabsme         | 247 XP |
+| #4    | @pixlxip        | 175 XP |
+| #5    | @ivanmarkov.net | 114 XP |
+| #6    | @mambuco        | 68 XP  |
+| #7    | @getimiskon     | 68 XP  |
+| #8    | @Hey            | 47 XP  |
+| #9    | @ehternet       | 46 XP  |
+| #10   | @aeronook       | 34 XP  |
+
+## #SnugNookToSee
+
+Here is what members of Snug Nook liked you too see:
+
+- <q>this party's getting crazy!</q>---veeronniecaw
+- <q>Snug Nook nation when?</q>---mambuco
+- <q>silly party are a dictatorship</q>---gabsme
+- <q>bring freaky party back</q>---mambuco
+- <q>Love yourself, don't stress over silly in retrospect things, get yourself a treat, and fix your posture now!!</q>---daudix
 
 ## Conclusion
+
+What a chaotic blog post! Hope you enjoyed it at least a bit. So many things have happened in our little community, which wouldn't be possible without all of you, so thanks for being part of it for, in some cases, a year straight, and in some, only a few days <3
 
 Bwa
 
@@ -151,16 +187,18 @@ Here's to this being the ~~snuggest nook~~ nuggest snook on the interwebs!
 ## Credits
 
 - daudix (ofc lmao why is this even here)
-- the Iván
-- pixl\_xip 🪿
-- kevadesu
-- Gabs
+- [the Iván](https://ivanmarkov.net)
+- [pixl\_xip 🪿](https://xip.neocities.org)
+- [kevadesu](https://kevadesu.github.io)
+- [Gabs](https://gxbs.dev)
 
 ## Appendix
 
 its not encrypted hurr durr
 
 why the fuck post that will be public tomorrow needs to be encrypted??
+
+Lmao
 
 ivanaddition
 
@@ -178,3 +216,5 @@ ivanaddition
 
 > {{ icon(name="user") }} gabs:  
 > yay
+
+[^1]: I had this silly idea of writing an anniversary blog post with the team and publishing it on Snug Nook's birthday on the 29th. But a wild migraine had other plans so I couldn't  start work on it until the 30th, which meant that the deadline had to be moved to the 31st. On that day, I added the initial structure/boilerplate, and we iterated on it. On the 31st, we tried to get it finished before midnight UTC to publish the post on the same day as the [initial Snug Nook announcement](@/blog/2024-10-31-snug-nook/index.md), which made us hurry like crazy. We published the blog post just in time (a few seconds before midnight), after which I finalised it and designed the missing Snug Nook Rewind bento.
