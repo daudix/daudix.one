@@ -188,6 +188,9 @@ Here is what members of Snug Nook liked you too see:
 > «snug nook is peak server fr fr, best sister server of icecom ong {{ emoji(path="neofax_googly_shocked.webp") }}❤️{{ emoji(path="MedievalNineEleven.webp") }}»  
 > ---kevadesu
 
+> «featuring dante from the devil may cry series»  
+> ---veeronniecaw
+
 ## Conclusion
 
 What a chaotic blog post! Hope you enjoyed it at least a bit. So many things have happened in our little community, which wouldn't be possible without all of you, so thanks for being part of it for, in some cases, a year straight, and in some, only a few days <3
