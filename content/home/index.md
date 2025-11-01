@@ -12,7 +12,7 @@ badges = [
   { name = "mobilefriendly.gif", url = "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design" },
   { name = "righttorepair.gif", url = "https://www.ifixit.com/Right-to-Repair" },
   { name = "saynotoweb3.gif", url = "https://yesterweb.org/no-to-web3/" },
-  { name = "snug-nook.gif", url = "https://daudix.one/snug-nook/" },
+  { name = "snug-nook.gif", url = "https://snugnook.org" },
   { name = "standwith.gif", url = "https://decolonizepalestine.com" },
   { name = "vscodium.gif", url = "https://vscodium.com" },
 ]
@@ -206,7 +206,7 @@ Feel free to reach me out on any of these! Although I'm usually too shy to start
 Cozy and welcoming space for cool people to hang out in.
 
 <img src="neofax.png" class="transparent no-hover drop-shadow" />
-<a href="/snug-nook/" title="Learn More"></a>
+<a href="https://snugnook.org" title="Learn More"></a>
 <div>
 {{ icon(name="discord-logo") }}
 {{ icon(name="matrix-logo") }}

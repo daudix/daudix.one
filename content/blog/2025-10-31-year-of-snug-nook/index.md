@@ -66,7 +66,7 @@ The new workshop category were added, under which everyone can request a channel
 
 ## Minecraft Server
 
-Hosted by the prime minister, Snug Nook now has a Minecraft server for its members, informally referred to as SNMC or The Snug Nook Empire. At the time of writing it's down, but yeah. See [SNMC page](@/snug-nook/mc/index.md) for more info.
+Hosted by the prime minister, Snug Nook now has a Minecraft server for its members, informally referred to as SNMC or The Snug Nook Empire. At the time of writing it's down, but yeah. See [SNMC page](@/snug-nook/mc/_index.md) for more info.
 
 *Waiting for prime minister to provide some screenshots of it.*
 
