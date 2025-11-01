@@ -62,7 +62,7 @@ The new workshop category were added, under which everyone can request a channel
 
 ## Department of gnu_horny
 
-`:gnu_horny:` is no longer part of Snug Nook emoji set, after some *serious* psychological damage it caused over the course of a few months, and a bunch of :wrench: reactions. If you want to see it for yourself... you probably don't.
+`:gnu_horny:` is no longer part of Snug Nook emoji set, after some *serious* psychological damage it caused over the course of a few months, and a bunch of 🔧 reactions. If you want to see it for yourself... you probably don't.
 
 ## Minecraft Server
 
@@ -170,11 +170,23 @@ Starboard leaderboard (#hall-of-<fame/shame/france> combined):
 
 Here is what members of Snug Nook liked you too see:
 
-- <q>this party's getting crazy!</q>---veeronniecaw
-- <q>Snug Nook nation when?</q>---mambuco
-- <q>silly party are a dictatorship</q>---gabsme
-- <q>bring freaky party back</q>---mambuco
-- <q>Love yourself, don't stress over silly in retrospect things, get yourself a treat, and fix your posture now!!</q>---daudix
+> «this party's getting crazy!»  
+> ---veeronniecaw
+
+> «Snug Nook nation when?»  
+> ---mambuco
+
+> «silly party are a dictatorship»  
+> ---gabsme
+
+> «bring freaky party back»  
+> ---mambuco
+
+> «Love yourself, don't stress over silly in retrospect things, get yourself a treat, and fix your posture now!!»  
+> ---daudix
+
+> «snug nook is peak server fr fr, best sister server of icecom ong {{ emoji(path="neofax_googly_shocked.webp") }}❤️{{ emoji(path="MedievalNineEleven.webp") }}»  
+> ---kevadesu
 
 ## Conclusion
 

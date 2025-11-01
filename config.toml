@@ -23,7 +23,7 @@ highlight_themes_css = [
   { theme = "monokai-pro-dark", filename = "syntax-theme-dark.css" },
   { theme = "monokai-pro-light", filename = "syntax-theme-light.css" },
 ]
-render_emoji = true
+render_emoji = false
 smart_punctuation = true
 lazy_async_image = false
 bottom_footnotes = true
