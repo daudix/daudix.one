@@ -127,7 +127,7 @@ Forum on the other hand wasn't this much of a success, it's inactive for majorit
 
 ## Rewind
 
-Welcome to Snug Nook Rewind. Here is your statistics for the past year.
+Welcome to Snug Nook Rewind! Here are your statistics for the past year.
 
 ![Snug Nook Rewind bento.](rewind-bento.png)
 
