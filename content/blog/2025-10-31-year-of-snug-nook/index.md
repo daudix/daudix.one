@@ -33,7 +33,7 @@ It's been a year since I have [started the Snug Nook community](@/blog/2024-10-3
 
 ## New Mascot
 
-Shortly after the server creation, it became clear that having both neofox and neocat emoji variants is very wasteful of the limited amount of emoji slots Discord provides (50), so to halve the amount of emojis I have done something silly - combined neofox and neocat into an unholy combination, neofat. The name sucked and was soon chnaged to neofax, which is part of the Snug Nook brand ever since.
+Shortly after the server creation, it became clear that having both neofox and neocat emoji variants is very wasteful of the limited amount of emoji slots Discord provides (50), so to halve the amount of emojis I have done something silly - combined neofox and neocat into an unholy combination, neofat. The name sucked and was soon changed to neofax, which is part of the Snug Nook brand ever since.
 
 <div class="media-grid-markdown">
 
