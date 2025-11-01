@@ -38,3 +38,9 @@ git remote set-url origin ssh://git@codeberg.org/daudix/ametrine.git
 ```
 
 </> with <3 by [daudix](https://daudix.one)
+
+
+
+
+
+AMOGUSSS!
