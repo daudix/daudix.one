@@ -110,7 +110,7 @@ For the long time, there was an underground community referred to as #sillies-on
 
 ## snugnook.org
 
-On 2nd November 2025 Gabs have gifted Snug Nook a domain of their own. Words cannot express my gratitude, it's just so cool!!
+On the 1st of October 2025 Gabs have gifted Snug Nook a domain of their own. Words cannot express my gratitude, it's just so cool!!
 
 Shortly after we set up multiple services under that domain (details on *how* will be available in the next blog post), including but not limited to:
 
