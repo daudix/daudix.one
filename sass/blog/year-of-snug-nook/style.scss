@@ -1,0 +1,9 @@
+article .icon {
+	vertical-align: -0.125rem;
+}
+
+article table:first-of-type tr:nth-of-type(10) {
+	background-color: var(--red-bg-2);
+	font-weight: var(--font-weight-semi-bold);
+	color: var(--red-fg);
+}

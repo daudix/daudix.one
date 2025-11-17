@@ -2,27 +2,16 @@
 title = "Year of Snug Nook"
 description = "It's been one year since Snug Nook's emergence."
 authors = ["daudix", "ivanmarkov", "pixl_xip", "kevadesu", "gxbs"]
-updated = 2025-11-01
+updated = 2025-11-17
 [taxonomies]
 tags = ["Snug Nook"]
 [extra]
 accent_color = "orange"
 banner = ""
+styles = ["blog/year-of-snug-nook/style.css"]
 [extra.fediverse]
 id = ""
 +++
-
-<style>
-article .icon {
-    vertical-align: -0.125rem;
-}
-
-article table:first-of-type tr:nth-of-type(10) {
-    background-color: var(--red-bg-2);
-	font-weight: var(--font-weight-semi-bold);
-    color: var(--red-fg);
-}
-</style>
 
 > [!NOTE]
 > This blog post was written collaboratively[^1] by the Snug Nook staff over the course of three days. Some elements from the writing process have been intentionally retained.
@@ -35,11 +24,22 @@ It's been a year since I have [started the Snug Nook community](@/blog/2024-10-3
 
 Shortly after the server creation, it became clear that having both neofox and neocat emoji variants is very wasteful of the limited amount of emoji slots Discord provides (50), so to halve the amount of emojis I have done something silly - combined neofox and neocat into an unholy combination, neofat. The name sucked and was soon changed to neofax, which is part of the Snug Nook brand ever since.
 
-<div class="media-grid-markdown">
+<div class="media-grid">
+<figure>
 
 ![Neofox](neofox.png)
+<figcaption>Initial - Neofox</figcaption>
+</figure>
+<figure>
+
 ![Neofat](neofat.png)
+<figcaption>Intermediate - Neofat</figcaption>
+</figure>
+<figure>
+
 ![Neofax](neofax.png)
+<figcaption>Current - Neofax</figcaption>
+</figure>
 </div>
 
 ## Channels
@@ -82,14 +82,30 @@ With that, we managed to reach an entire stack (64) of days as a streak on Wordl
 
 Everyone knows about [Wplace](https://wplace.live): an online event with a world map where you can place pixels anywhere, thus making the globe a giant canvas... or a giant wall of questionable doodles.
 
-Snug Nook actively participated in it in the first few weeks, and we even created 3 Snug Nook advertisements in 3 different countries: Canada, [USA](https://wplace.live/?lat=37.64284061242482&lng=-122.44719759697264&zoom=15.007757622056396) (South San Francisco), and [Turkey](https://wplace.live/?lat=38.36543507634402&lng=26.764364903027307&zoom=14.879252869276947).
+Snug Nook actively participated in it in the first few weeks, and we even created 3 Snug Nook advertisements in 3 different countries: Canada, [USA](https://wplace.live/?lat=37.64284061242482&lng=-122.44719759697264&zoom=15.007757622056396) (South San Francisco, next to Vylet Pony art), and [Turkey](https://wplace.live/?lat=38.36543507634402&lng=26.764364903027307&zoom=14.879252869276947). In Canada in addition to the advert, pixl_xip also drew this very cool Ena!
 
-<div class="media-grid-markdown">
+<div class="media-grid">
+
+<figure>
 
 [![Wplace Canada](wplace-canada.png)](wplace-canada.png)
+<figcaption>Canada</figcaption>
+</figure>
+<figure>
+
 [![Wplace USA](wplace-usa.png)](wplace-usa.png)
+<figcaption>USA</figcaption>
+</figure>
+<figure>
+
 [![Wplace Turkey](wplace-turkey.png)](wplace-turkey.png)
+<figcaption>Turkey</figcaption>
+</figure>
 </div>
+
+In [Moldova](https://wplace.live/?lat=46.951762373303396&lng=28.461884434277337&zoom=13.167916916628968) (Chișinău), Gabs have drew this giant EU flag, and a lot of other pro-EU art, in addition to defense of already existing such art.
+
+[![Wplace Moldova](wplace-moldova.png)](wplace-moldova.png)
 
 ## Weekend Rebrands
 

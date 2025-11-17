@@ -118,7 +118,7 @@ links = [
   { name = "Extra", category = [
     { url = "@/coffee/index.md", name = "Coffee", icon = "coffee" },
     { url = "@/colophon/index.md", name = "Colophon", icon = "question" },
-    { url = "@/commissions/index.md", name = "Commissions", icon = "wallet" },
+    # { url = "@/commissions/index.md", name = "Commissions", icon = "wallet" },
   ] },
 ]
 

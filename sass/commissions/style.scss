@@ -171,3 +171,22 @@ body::before {
 		margin-block-end: 0.5rem;
 	}
 }
+
+#show-content {
+	margin-inline-end: 0.5rem;
+}
+
+#main-content > * {
+	opacity: var(--disabled-opacity);
+	filter: grayscale(1) blur(0.25rem);
+	transition: var(--transition);
+}
+
+#main-content > h1,
+#main-content > blockquote.markdown-alert-note,
+#main-content > #show-content,
+#main-content > #show-content + label,
+#main-content:has(#show-content:checked) > * {
+	opacity: 1;
+	filter: none;
+}

@@ -21,7 +21,6 @@ personal = [
   { name = "mambuco.gif", url = "https://mambuco.dev" },
   { name = "marchintosh.gif", url = "https://ivanmarkov.net" },
   { name = "melankorin.gif", url = "https://melankorin.net" },
-  { name = "melontini.gif", url = "https://melontini.me" },
   { name = "nek0zyx.gif", url = "https://nek0zyx.lgbt.sh" },
   { name = "pixlxip.gif", url = "https://xip.neocities.org" },
   { name = "ronbutton.gif", url = "https://veeronniecaw.space" },
@@ -29,6 +28,7 @@ personal = [
   { name = "solinus.gif", url = "https://solinus.neocities.org" },
   { name = "volpeon.gif", url = "https://volpeon.ink" },
   { name = "xan.gif", url = "https://xan.lol" },
+  { name = "zenfyr.gif", url = "https://zenfyr.dev" },
 ]
 misc = [
   { name = "aperturelabs.gif", url = "https://www.aperturescience.com" },

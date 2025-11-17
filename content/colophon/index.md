@@ -11,7 +11,7 @@ This website is a passion project of mine, made with a lot of love and attention
 
 It does not use frameworks such as React --- only [Zola](https://www.getzola.org) with handwritten HTML templates --- and the (S)CSS is handwritten without the use of tools like Tailwind. One could argue that it would be much easier if I did, but I prefer to write everything myself to have great control over minor details.
 
-It is currently hosted on [Netlify](https://www.netlify.com) and I like it so far. Before that it used to be hosted on [Vercel](https://vercel.com), [Codeberg Pages](https://codeberg.page), [exozyme](https://exozy.me), and [GitHub Pages](https://pages.github.com).
+It is currently hosted from a 2010 PC in my bedroom <sup>[*citation needed*]</sup>. Before that it used to be hosted on [Cloudflare Pages](https://pages.cloudflare.com), [Netlify](https://www.netlify.com), [Vercel](https://vercel.com), [Codeberg Pages](https://codeberg.page), [exozyme](https://exozy.me), and [GitHub Pages](https://pages.github.com).
 
 ## Thanks To
 

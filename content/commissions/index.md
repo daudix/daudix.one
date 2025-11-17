@@ -5,7 +5,13 @@ description = "Commission me to create a wide range of designs."
 styles = ["commissions/style.css"]
 +++
 
-Open slots: <mark>2/2</mark> Small Scale • <mark>0/1</mark> Large Scale.
+> [!NOTE]
+> This page and commissions themselves are closed until further notice. Provided services and the pricing is due to change.
+
+<input id="show-content" class="switch" type="checkbox" name="show-content" />
+<label for="show-content">Show content anyway</label>
+
+Open slots: <mark>0/?</mark> Small Scale • <mark>0/?</mark> Large Scale.
 
 Hello and welcome to my commissions page. You can see some of my works on the [design](@/design/index.md) page.
 
