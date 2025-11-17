@@ -167,7 +167,7 @@ Messages in all channels, per month:
 | September | 2025 | 8,794    |
 | October   | 2025 | 11,614   |
 
-Starboard leaderboard (#hall-of-<fame/shame/france> combined):
+Starboard leaderboard (#hall-of-<fame/shame/french> combined):
 
 | Place | User            | XP     |
 |-------|-----------------|--------|
