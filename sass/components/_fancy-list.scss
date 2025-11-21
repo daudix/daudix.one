@@ -7,6 +7,7 @@
 	list-style: none;
 
 	li {
+		margin-block: 0;
 		box-shadow: var(--edge-highlight);
 		border-radius: var(--rounded-corner-small);
 		background-color: var(--bg-muted-1);
