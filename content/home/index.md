@@ -103,6 +103,17 @@ Thing I hate doing the most; telling about myself.
 
 <!-- Card Start -->
 <li>
+<article class="fancy-list">
+
+**I am {{ age() }} moons old.**
+
+'07 was a busy year, too bad I couldn't see it with my own four eyes. Rawr XD
+</article>
+</li>
+<!-- Card End -->
+
+<!-- Card Start -->
+<li>
 <article class="window">
 {{ window() }}
 </article>

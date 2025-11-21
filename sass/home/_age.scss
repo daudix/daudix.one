@@ -1,0 +1,46 @@
+@use "../../themes/ametrine/sass/abstracts/functions" as *;
+
+#age {
+	display: inline-flex;
+	position: relative;
+	cursor: crosshair;
+	box-shadow: var(--edge-highlight), var(--shadow);
+	border-radius: var(--rounded-corner-small);
+	background-color: hsl(0, 0%, 20%);
+	padding-inline: 0.375rem;
+	height: 1.5rem;
+	overflow-y: hidden;
+	color: white;
+	font-weight: var(--font-weight-medium);
+	font-variant-numeric: tabular-nums;
+
+	&::before {
+		position: absolute;
+		z-index: 1;
+		inset: 0;
+		border-radius: inherit;
+		background-image: linear-gradient(to bottom, black, transparent, black);
+		content: "";
+	}
+
+	&:hover .char.digit {
+		transform: translateY(calc(-100% + 1.5rem));
+		transition-delay: var(--delay);
+	}
+
+	.char.digit {
+		display: flex;
+		flex-direction: column;
+		transition: transform var(--transition-long)
+			cubic-bezier(0.618, 0, 0.584, 1.126);
+		height: fit-content;
+
+		span {
+			opacity: var(--disabled-opacity);
+		}
+
+		span.true {
+			opacity: 1;
+		}
+	}
+}

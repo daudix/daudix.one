@@ -1,0 +1,24 @@
+<span id="age">
+	{%- set year = 31556926 -%}
+	{%- set birth = 1191497400 -%}
+	{%- set now = now(utc=true) | date(format="%s") | int -%}
+	{%- set age = (now - birth) / year -%}
+	{%- set delay = 0 -%}
+
+	{%- for ch in age | as_str | truncate(length=7, end="") | split(pat="") | slice(start=1, end=-1) -%}
+		{%- if ch == "." -%}
+			<span class="char dot">.</span>
+		{%- else -%}
+			{%- set digit = ch | int -%}
+			<span class="char digit" style="--delay: {{ get_random(start=200, end=800) }}ms">
+				<span class="true">{{ digit }}</span>
+				{%- for offset in range(start=1, end=10) -%}
+					{% set value = (digit + offset) % 10 %}
+					<span>{{ value }}</span>
+				{%- endfor -%}
+				<span class="true">{{ digit }}</span>
+			</span>
+			{%- set_global delay = delay + 1 -%}
+		{%- endif -%}
+	{%- endfor -%}
+</span>
