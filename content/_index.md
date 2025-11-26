@@ -109,6 +109,17 @@ Thing I hate doing the most; telling about myself.
 
 <!-- Card Start -->
 <li>
+<article class="fancy-list">
+
+**I am {{ age() }} moons old.**
+
+'07 was a busy year, too bad I couldn't see it with my own four eyes. Rawr XD
+</article>
+</li>
+<!-- Card End -->
+
+<!-- Card Start -->
+<li>
 <article class="window">
 {{ window() }}
 </article>
@@ -212,7 +223,7 @@ Feel free to reach me out on any of these! Although I'm usually too shy to start
 Cozy and welcoming space for cool people to hang out in.
 
 <img src="home/neofax.png" class="transparent no-hover drop-shadow" />
-<a href="/snug-nook/" title="Learn More"></a>
+<a href="https://snugnook.org" title="Learn More"></a>
 <div>
 {{ icon(name="discord-logo") }}
 {{ icon(name="matrix-logo") }}

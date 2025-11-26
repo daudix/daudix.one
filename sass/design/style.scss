@@ -8,10 +8,8 @@ body {
 	background-attachment: fixed;
 }
 
-#site-nav::before {
-	backdrop-filter: var(--blur);
-	-webkit-backdrop-filter: var(--blur);
-	background-color: var(--glass-bg-1);
+#site-sidebar::before {
+	background-color: var(--bg-color);
 }
 
 .media-grid {

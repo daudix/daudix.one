@@ -59,7 +59,7 @@ We have quite some changes on this front:
 - [Snug Nook](@/snug-nook/_index.md) was completely redone. Essential info is now presented via a fully dynamic widget, which by the way uses an interesting Discord widget API hack[^1] that I couldn't find any mentions of online, so we might be the first to use it?
 - [Design](@/design/index.md) styling was adjusted to better fit the new design. It now also follows the light/dark mode preference like the rest of the site, instead of being hardcoded to dark mode.
 - [Home](@/home/_index.md), besides inheriting "about" and "online" pages' info also got a brand new widget: "Now Playing" powered by Last.fm. Not only it displays currently playing track live, but it also switches to "Last Played" if nothing is playing or playback is paused, accompanied by a nice CD (which is taken from elementary OS icon theme :P) animation. I have experimented with using Discord Rich Presence (RPC) to display not only this but also other activities, but it didn't expose last played song and was much, much more complex, so it was scrapped.
-<a href="/home/#player">
+<a href="/#player">
   <picture id="now-playing">
     <source srcset="now-playing-dark.png"  media="(prefers-color-scheme: dark)" />
     <img alt='Now playing widget, with "The Carrion Child" song by "Vylet Pony" displayed as last played.' src="now-playing.png" class="transparent no-hover" />
