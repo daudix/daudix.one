@@ -83,31 +83,11 @@ async function fetchLastFm() {
 
 			lastFmPlayer.classList.toggle("playing", isPlaying);
 
-			updateMarquee();
+			updateMarquees();
 		}
 	} catch (e) {
 		console.error("Failed to fetch now playing track:", e);
 	}
-}
-
-// DEBUG FUNCTIONS
-function togglePlaying() {
-	lastFmPlayer.classList.toggle("playing");
-}
-
-function toggleTitleMarquee() {
-	lastFmTitleContainer.classList.toggle("marquee");
-	lastFmTitleContainer.classList.toggle("overshoot-row");
-}
-
-function toggleArtistMarquee() {
-	lastFmArtistContainer.classList.toggle("marquee");
-	lastFmArtistContainer.classList.toggle("overshoot-row");
-}
-
-function forceReload() {
-	lastTrackID = null;
-	fetchNowPlaying();
 }
 
 // status.cafe
@@ -232,8 +212,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	shy.addEventListener("click", flutterAnim);
 	ntfySend.addEventListener("click", sendNotification);
-});
-
-window.addEventListener("resize", () => {
-	requestAnimationFrame(updateMarquee);
 });

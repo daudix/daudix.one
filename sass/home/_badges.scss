@@ -42,13 +42,13 @@
 		ul {
 			display: flex;
 			flex-shrink: 0;
-			animation: marquee-scroll var(--duration) linear infinite;
+			animation: badges-marquee-scroll var(--duration) linear infinite;
 			transition: var(--transition);
 			margin: 0;
 			padding: 0;
 			list-style: none;
 
-			@keyframes marquee-scroll {
+			@keyframes badges-marquee-scroll {
 				from {
 					transform: translateX(0);
 				}

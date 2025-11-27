@@ -1,11 +1,8 @@
 #player {
 	display: flex;
 	gap: 1rem;
-	// margin-inline: auto;
 	border-radius: 1rem;
 	padding: 0.5rem;
-	// width: calc(var(--content-width) / 2.5);
-	// @include fancy-card;
 
 	&.playing {
 		#cd-container {
@@ -134,40 +131,6 @@
 	&-title-container,
 	&-artist-container {
 		line-height: 1;
-
-		&.marquee {
-			margin-inline: -1rem;
-			padding-inline: 1rem;
-			overflow: hidden;
-
-			#player-title,
-			#player-artist {
-				animation: player-marquee
-					calc((var(--text-width) + var(--content-width)) / 40 * 1s)
-					linear infinite;
-
-				@keyframes player-marquee {
-					0%,
-					10% {
-						transform: translateX(0);
-					}
-
-					45%,
-					55% {
-						transform: translateX(
-							calc(
-								(var(--content-width) - var(--text-width)) * 1px
-							)
-						);
-					}
-
-					90%,
-					100% {
-						transform: translateX(0);
-					}
-				}
-			}
-		}
 	}
 
 	&-title,
