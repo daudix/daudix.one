@@ -35,7 +35,7 @@ window.addEventListener("hashchange", () => {
 /* Constants and DOM Elements =============================================== */
 
 const lastFmUser = "daudix";
-const lastFmApiKey = "db60767a26fe9d01a170898e19814233"
+const lastFmApiKey = "1747901e170276677d1d0447cf6519b0"
 const lastFmPlayer = document.getElementById("player");
 const lastFmCover = document.getElementById("cover");
 const lastFmTitle = document.getElementById("player-title");
