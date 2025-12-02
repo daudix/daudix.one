@@ -22,17 +22,6 @@ badges = [
   { name = "standwith.gif", url = "https://decolonizepalestine.com" },
   { name = "vscodium.gif", url = "https://vscodium.com" },
 ]
-games = [
-  { name = "Portal 2", id = "620" },
-  { name = "OneShot", id = "420530" },
-  { name = "Celeste", id = "504230" },
-  { name = "Teardown", id = "1167630" },
-  { name = "Superliminal", id = "1049410" },
-  { name = "Machinarium", id = "40700" },
-  { name = "Stardew Valley", id = "413150" },
-  { name = "Untitled Goose Game", id = "837470" },
-  { name = "The Stanley Parable", id = "221910" },
-]
 contacts = [
   { name = "Discord", url = "https://discord.com/users/650757995378114581", favorite = true },
   { name = "Signal", url = "https://signal.me/#eu/b4KzM1OB3uW52mMywHUJa8h6yD4ATY_KXJJiuJtWUxOVAJP22PVO_qoNGFnf32W7" },
