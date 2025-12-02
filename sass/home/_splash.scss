@@ -187,6 +187,7 @@
 			list-style: none;
 
 			li {
+				margin-block: 0;
 				padding-inline-start: 0;
 
 				&::before {
