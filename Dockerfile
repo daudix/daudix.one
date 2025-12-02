@@ -1,5 +1,7 @@
 FROM ghcr.io/getzola/zola:v0.21.0 AS zola
 
+ARG DISCORD_TOKEN
+ENV DISCORD_TOKEN=$DISCORD_TOKEN
 COPY . /project
 WORKDIR /project
 RUN ["zola", "build"]
