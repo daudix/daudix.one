@@ -175,27 +175,6 @@ function updateClock() {
 	}
 }
 
-// ntfy (stolen from https://azumanga.gay)
-function send(message) {
-	fetch("https://ntfy.sh/GAyU6UBdIVpKoUK3", {
-		method: "POST",
-		headers: { "Content-Type": "text/plain" },
-		body: message
-	})
-}
-
-function sendNotification() {
-	if (!ntfyInput.value) return
-	send(ntfyInput.value)
-
-	ntfySend.classList.add("sent");
-	ntfySend.firstChild.addEventListener("transitionend", () => {
-		ntfySend.classList.remove("sent");
-	}, { once: true });
-
-	ntfyInput.value = ""
-}
-
 /* Initialization and Event Listeners ======================================= */
 
 document.addEventListener("DOMContentLoaded", function () {

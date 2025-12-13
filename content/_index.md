@@ -171,27 +171,6 @@ Where and when to find me online.
 
 <!-- Card Start -->
 <li>
-<article class="ntfy fancy-list">
-<strong id="ntfy" class="title">Send Me a Notification</strong>
-
-The moment you press "Send" I'll get a push notification on my phone. Crazy, right?
-
-<div>
-  <input id="ntfy-input" placeholder="Stolen from azumanga.gay"></input>
-  <button id="ntfy-send" class="suggested" title="Send">
-    {{ icon(name="paper-plane-right") }}
-    {{ icon(name="check") }}
-  </button>
-</div>
-<div class="tooltip" title="Powered by ntfy.sh. Messages are not end-to-end encrypted and are public. This is not a secure method of communication">
-  {{ icon(name="lock-open") }}
-</div>
-</article>
-</li>
-<!-- Card End -->
-
-<!-- Card Start -->
-<li>
 <article class="online fancy-list">
 <strong id="contacts" class="title">Contacts</strong>
 
