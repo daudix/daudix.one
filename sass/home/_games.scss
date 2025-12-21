@@ -9,6 +9,11 @@
 		padding-block-end: 0;
 	}
 
+	&:has(ul:hover) li:not(:hover) {
+		opacity: var(--disabled-opacity);
+		filter: blur(0.125rem);
+	}
+
 	ul {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
@@ -71,7 +76,8 @@
 			-webkit-user-select: none;
 			display: flex;
 			position: absolute;
-			transition: var(--transition);
+			transition: all var(--transition),
+				transform var(--transition-bezier);
 			inset-block-start: 0.5rem;
 			inset-inline-end: 0.5rem;
 			border-radius: var(--rounded-corner-small);
@@ -86,6 +92,10 @@
 				box-shadow: var(--edge-highlight);
 				background-color: var(--bg-muted-1);
 				color: var(--fg-muted-2);
+			}
+
+			&:active {
+				transform: var(--active);
 			}
 
 			.less {
