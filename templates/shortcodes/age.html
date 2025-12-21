@@ -14,9 +14,9 @@
 				<span class="true">{{ digit }}</span>
 				{%- for offset in range(start=1, end=10) -%}
 					{% set value = (digit + offset) % 10 %}
-					<span>{{ value }}</span>
+					<span aria-hidden="true">{{ value }}</span>
 				{%- endfor -%}
-				<span class="true">{{ digit }}</span>
+				<span aria-hidden="true" class="true">{{ digit }}</span>
 			</span>
 			{%- set_global delay = delay + 1 -%}
 		{%- endif -%}
