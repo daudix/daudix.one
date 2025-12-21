@@ -22,16 +22,19 @@
 
 {%- set played_games = profile.widgets | filter(attribute="id", value=widget_id) | first -%}
 
+{%- if played_games.data.games | length > 8 -%}
+	<input class="visually-hidden" id="show-more" type="checkbox" name="show-more" autocomplete="off" />
+	<label for="show-more">
+		<span class="more">Show More…</span>
+		<span class="less">Show Less…</span>
+	</label>
+{%- endif -%}
+
 <ul>
 	{%- for game in played_games.data.games -%}
 		{# All games past the first 8 are rendered inside of a separate <ul> #}
 		{%- if loop.index == 9 -%}
 </ul>
-<input class="visually-hidden" id="show-more" type="checkbox" name="show-more" autocomplete="off" />
-<label for="show-more">
-	<span class="more">Show More…</span>
-	<span class="less">Show Less…</span>
-</label>
 <ul class="games-extra">
 		{%- endif -%}
 		{%- set data = load_data(
