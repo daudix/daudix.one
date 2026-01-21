@@ -6,7 +6,7 @@ styles = ["commissions/style.css"]
 +++
 
 > [!NOTE]
-> This page and commissions themselves are closed until further notice. Provided services and the pricing is due to change.
+> This page and commissions themselves are closed until further notice. Provided services and pricing are due to change.
 
 <input id="show-content" class="switch" type="checkbox" name="show-content" />
 <label for="show-content">Show content anyway</label>

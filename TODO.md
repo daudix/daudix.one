@@ -1,17 +1,14 @@
+- Fix nanolog pages having "404" as their title
 - Use content-visibility to hide content that is not yet visible on nanolog
-- Provided services and the pricing ~~is~~ **are** due to change.
 - Use ✦ for list bullets, in some places at least
 - Add donation footer to blosts
-- Simper masonry grids on daudix.one
-- "Skip splash screen **next time**"
+- Simper masonry grids on /home
 - CHANGE STYLE OF "LINK TO SECTION" THINGY YOU MISERABLE POS (heading anchor link button)
 - Clarify that Ametrine is not some random starter template but is hand crafted by me
-- Movable stickers on homepage
 - Separate guides from blog posts
 - Use .ico favicon
 - https://home.hedy.dev/posts/meta-pages/
 - **Redraw pixel art social icons**
-- Drop nanolog titles in favor of date only (depends on https://github.com/getzola/zola/pull/2966)
 - Replace minified pngs with webps
 - https://slashpages.net
 - Chat bubble style/shortcode
@@ -28,6 +25,7 @@
 - Streamline some page-specific elements (fancy lists, tab switcher)
 - tomthings.fr / skiff-inspired design
 - Ensure a11y is great/add alt text to images
+- Movable stickers on homepage (?)
 - /uses/ page (?)
 - Chatbox (?)
 - New ARG/Easter Egg type of thingy (?) (inspirations: Portal "dinosaur" ARG, SSTV. details: localstorage, sstv image that says to look at spectrogram, base64)
