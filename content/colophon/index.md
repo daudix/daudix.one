@@ -25,3 +25,13 @@ Most likely I forgot to credit someone. Sorry about that \>_<
 - [Fuwari](https://fuwari.vercel.app) blog template for some design inspirations. <small>(mostly the design of post cards)</small>
 - All the sites that are listed on the [badges](@/badges/index.md) page for inspiration.
 - Everyone who supported me and said good stuff. <small>(you know who you are, thank you sincerely <3)</small>
+
+## To-Do
+
+This section is automatically updated from [TODO.md](https://github.com/daudix/daudix.one/blob/main/TODO.md).
+
+<details>
+<summary>Click to expand</summary>
+
+{{ todo() }}
+</details>
