@@ -1,4 +1,4 @@
-FROM ghcr.io/getzola/zola:v0.21.0 AS zola
+FROM ghcr.io/getzola/zola:v0.22.0 AS zola
 
 ARG DISCORD_TOKEN
 ENV DISCORD_TOKEN=$DISCORD_TOKEN
