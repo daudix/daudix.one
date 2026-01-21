@@ -16,19 +16,21 @@ taxonomies = [
 ]
 
 [markdown]
-highlight_code = true
-extra_syntaxes_and_themes = ["themes/ametrine/sublime"]
-highlight_theme = "css"
-highlight_themes_css = [
-  { theme = "monokai-pro-dark", filename = "syntax-theme-dark.css" },
-  { theme = "monokai-pro-light", filename = "syntax-theme-light.css" },
-]
 render_emoji = false
 smart_punctuation = true
 lazy_async_image = false
 bottom_footnotes = true
 external_links_class = "external"
 github_alerts = true
+
+[markdown.highlighting]
+style = "class"
+light_theme = "monokai-pro-light"
+dark_theme = "monokai-pro"
+extra_themes = [
+  "themes/ametrine/giallo/themes/monokai-pro-light.json",
+  "themes/ametrine/giallo/themes/monokai-pro.json",
+]
 
 [link_checker]
 internal_level = "warn"
