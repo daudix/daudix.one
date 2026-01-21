@@ -155,7 +155,6 @@ h1 {
 	&-content {
 		display: flex;
 		flex-direction: column;
-		gap: 1rem;
 		transform: var(--hover);
 		border-radius: 1.25rem 1.25rem calc(var(--rounded-corner) + 0.5rem)
 			calc(var(--rounded-corner) + 0.5rem);
@@ -172,16 +171,15 @@ h1 {
 
 		.overshoot {
 			display: flex;
-			margin-block: -1rem;
-
-			#post-content {
-				padding-block: 1rem;
-			}
+			margin: -0.5rem;
+			border-radius: inherit;
+			border-end-start-radius: 0;
+			border-end-end-radius: 0;
 		}
 
 		.buttons {
 			align-items: center;
-			margin-block-start: 1rem;
+			margin-block-start: 0.5rem;
 			border-block-start: rpx(1) solid var(--bg-muted-2);
 			padding-block-start: 0.5rem;
 		}
@@ -191,7 +189,6 @@ h1 {
 			box-shadow: none;
 			border-radius: 0;
 			background-color: transparent;
-			padding: 0;
 			width: 100%;
 
 			&:focus-visible {
@@ -199,51 +196,49 @@ h1 {
 				outline: none;
 			}
 		}
-
-		#post-content {
-			margin: 0.5rem;
-			height: 8rem;
-			resize: none;
-		}
-
-		#char-count {
-			transition: var(--transition);
-			margin-inline: 0.5rem;
-			color: var(--fg-muted-2);
-			font-size: var(--font-size-small);
-			font-variant-numeric: tabular-nums;
-
-			&.half {
-				color: var(--yellow-fg);
-			}
-
-			&.max {
-				color: var(--red-fg);
-			}
-		}
-
-		#auth-container {
-			display: flex;
-			flex: 1;
-			box-shadow: var(--edge-highlight);
-			border-radius: var(--rounded-corner);
-			background-color: var(--bg-muted-1);
-			padding-inline-start: 0.75rem;
-		}
-
-		#github-token {
-			box-shadow: none;
-			border-radius: 0;
-			background-color: transparent;
-			padding: 0;
-		}
-
-		#show-token-btn {
-			margin: 0.25rem;
-			border-radius: var(--rounded-corner-small);
-			padding: 0.375rem;
-			font-size: 1.25rem;
-			line-height: 0;
-		}
 	}
+}
+
+#post-content {
+	border-radius: inherit;
+	padding: 1rem;
+	height: 8rem;
+	resize: none;
+}
+
+#char-count {
+	transition: var(--transition);
+	margin-inline: 0.5rem;
+	color: var(--fg-muted-2);
+	font-size: var(--font-size-small);
+	font-variant-numeric: tabular-nums;
+
+	&.half {
+		color: var(--yellow-fg);
+	}
+
+	&.max {
+		color: var(--red-fg);
+	}
+}
+
+#auth-container {
+	display: flex;
+	flex: 1;
+	box-shadow: var(--edge-highlight);
+	border-radius: var(--rounded-corner);
+	background-color: var(--bg-muted-1);
+	padding-inline-start: 0.75rem;
+}
+
+#github-token {
+	padding: 0;
+}
+
+#show-token-btn {
+	margin: 0.25rem;
+	border-radius: var(--rounded-corner-small);
+	padding: 0.375rem;
+	font-size: 1.25rem;
+	line-height: 0;
 }
