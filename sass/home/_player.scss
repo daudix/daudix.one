@@ -4,6 +4,43 @@
 	border-radius: 1rem;
 	padding: 0.5rem;
 
+	&.has-cover {
+		position: relative;
+		background-image: var(--bg-overlay);
+
+		&::before {
+			position: absolute;
+			z-index: -1;
+			clip-path: inset(0 0 0 0 round 1rem);
+			filter: blur(0.75rem);
+			inset: 0;
+			border-radius: inherit;
+			background-image: var(--blurnail);
+			background-position: center;
+			background-size: cover;
+			background-color: var(--bg-color);
+			content: "";
+		}
+
+		#now-playing,
+		#last-played {
+			color: var(--fg-muted-neutral-1);
+		}
+
+		#player-artist {
+			color: var(--fg-muted-neutral-2);
+		}
+
+		#player-go {
+			background-color: var(--bg-muted-neutral-1);
+			color: var(--fg-muted-neutral-2);
+
+			&:hover {
+				background-color: var(--bg-muted-neutral-2);
+			}
+		}
+	}
+
 	&.playing {
 		#cd-container {
 			transform: translateX(-1.75rem);
@@ -154,7 +191,9 @@
 		flex-shrink: 0;
 		justify-content: center;
 		align-items: center;
-		transition: all var(--transition), transform var(--transition-bezier);
+		transition:
+			all var(--transition),
+			transform var(--transition-bezier);
 		box-shadow: var(--edge-highlight);
 		border-radius: var(--rounded-corner-small);
 		background-color: var(--bg-muted-1);

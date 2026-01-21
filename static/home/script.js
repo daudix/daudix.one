@@ -52,8 +52,6 @@ const clock = document.getElementById("clock");
 const flutter = document.getElementById("flutter");
 const shy = document.getElementById("shy");
 const squee = new Audio("/home/squee.mp3");
-const ntfyInput = document.getElementById("ntfy-input");
-const ntfySend = document.getElementById("ntfy-send");
 
 let lastTrackID = null;
 let lastDiscordStatus = "";
@@ -78,10 +76,27 @@ async function fetchLastFm() {
 
 			lastFmTitle.textContent = track.name;
 			lastFmArtist.textContent = track.artist["#text"];
-			lastFmCover.src = track.image.find(img => img.size === "medium")?.["#text"] || "home/image-missing.svg";
 			lastFmLink.href = track.url;
 
+			const mediumCover = track.image.find(img => img.size === "medium")?.["#text"];
+			const smallCover = track.image.find(img => img.size === "small")?.["#text"];
+			const fallbackCover = "home/image-missing.svg";
+
+			lastFmCover.src = mediumCover || fallbackCover;
+
+			const hasRealCover = Boolean(mediumCover) && mediumCover !== fallbackCover;
+
 			lastFmPlayer.classList.toggle("playing", isPlaying);
+			lastFmPlayer.classList.toggle("has-cover", hasRealCover);
+
+			if (hasRealCover && smallCover) {
+				lastFmPlayer.style.setProperty(
+					"--blurnail",
+					`url("${smallCover}")`
+				);
+			} else {
+				lastFmPlayer.style.removeProperty("--blurnail");
+			}
 
 			updateMarquees();
 		}
