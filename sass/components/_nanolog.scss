@@ -32,28 +32,5 @@
 }
 
 #nanolog-heading {
-	display: flex;
-	flex-direction: column;
 	margin-block-start: 2rem;
-
-	h1 {
-		margin-block-start: 0;
-	}
-
-	#nanolog-details {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		border-block-end: rpx(1) solid var(--bg-muted-2);
-		padding-block-end: 1rem;
-
-		& > p {
-			margin: 0;
-
-			small {
-				color: var(--fg-muted-1);
-				font-size: var(--font-size-large);
-			}
-		}
-	}
 }

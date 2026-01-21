@@ -51,15 +51,11 @@ function showAlert(message, type = 'info') {
 	alert(`${prefix} ${message}`);
 }
 
-function validateInputs(title, content, token) {
+function validateInputs(content, token) {
 	const errors = [];
 
 	if (!token) {
 		errors.push("No GitHub token saved! Please save your token first.");
-	}
-
-	if (!title) {
-		errors.push("Post title is required!");
 	}
 
 	if (!content) {
@@ -85,12 +81,11 @@ function setLoadingState(isLoading) {
 }
 
 async function upload() {
-	const title = document.getElementById('post-title')?.value.trim() || '';
 	const content = document.getElementById('post-content')?.value || '';
 	const token = localStorage.getItem('githubToken');
 
 	// Validate inputs
-	const errors = validateInputs(title, content, token);
+	const errors = validateInputs(content, token);
 	if (errors.length > 0) {
 		showAlert(errors.join('\n'), 'error');
 		return;
@@ -100,27 +95,18 @@ async function upload() {
 	const repo = 'daudix.one';
 
 	const now = new Date();
-	const dateForFilename = now.toISOString().slice(0, 10);
-	const dateExtended = now.toISOString().slice(0, 19) + "Z";
+	const date = now.toISOString().slice(0, 19) + "Z";
 
-	const slug = slugify(title);
-	if (!slug) {
-		showAlert("Could not generate a valid slug from the title!", "error");
-		return;
-	}
-
-	const filename = `${dateForFilename}-${slug}.md`;
+	const filename = `${date}.md`;
 	const path = `content/nanolog/${filename}`;
 
 	const markdown = `+++
-title = "${title}"
-date = ${dateExtended}
 +++
 
 ${content}
 `;
 
-	const message = `Nanolog: ${title.substring(0, 50)}${title.length > 50 ? '...' : ''}`;
+	const message = `Nanolog: ${date}`;
 
 	setLoadingState(true);
 
@@ -143,7 +129,6 @@ ${content}
 		if (response.ok) {
 			showAlert("Post published successfully!", "success");
 			console.log('Published:', result);
-			document.getElementById('post-title').value = '';
 			document.getElementById('post-content').value = '';
 			document.getElementById("nanolog-modal").classList.remove("active");
 		} else {

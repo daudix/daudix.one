@@ -12,21 +12,18 @@
 
 <div id="nanolog-modal">
 	<div id="nanolog-modal-content">
-		<div id="compose-container">
-			<input id="post-title" placeholder="Nanopost title" maxlength="70">
-			<div class="overshoot">
-				<textarea id="post-content" placeholder="What’s on your mind?" maxlength="500"></textarea>
+		<div class="overshoot">
+			<textarea id="post-content" placeholder="What’s on your mind?" maxlength="500"></textarea>
+		</div>
+		<div class="buttons">
+			<div id="char-count">0/500</div>
+			<div id="auth-container">
+				<input id="github-token" type="password" placeholder="GitHub token">
+				<button id="show-token-btn" title="Show Token">
+					{{- macros_icon::icon(name="eye") -}}
+				</button>
 			</div>
-			<div class="buttons">
-				<div id="char-count">0/500</div>
-				<div id="auth-container">
-					<input id="github-token" type="password" placeholder="GitHub token">
-					<button id="show-token-btn" title="Show Token">
-						{{- macros_icon::icon(name="eye") -}}
-					</button>
-				</div>
-				<button id="publish-btn">Publish</button>
-			</div>
+			<button id="publish-btn">Publish</button>
 		</div>
 	</div>
 </div>
@@ -34,12 +31,9 @@
 <ul id="nanolog-list">
 	{%- for page in section.pages %}
 		<li>
-			<div>
-				<a href="{{ page.permalink | safe }}">
-					{{ page.date | date(format=config.extra.date_format_long | default(value="%B %d, %Y, %R (%Z)"), timezone=config.extra.timezone | default(value="UTC"), locale=config.extra.date_locale | default(value="en_US")) }}
-				</a>
-				<small>{{ page.title }}</small>
-			</div>
+			<a href="{{ page.permalink | safe }}">
+				{{ page.date | date(format=config.extra.date_format_long | default(value="%B %d, %Y, %R (%Z)"), timezone=config.extra.timezone | default(value="UTC"), locale=config.extra.date_locale | default(value="en_US")) }}
+			</a>
 			<div>
 				{% if config.extra.source_url %}
 					<a href="{{ config.extra.source_url }}/edit/main/content/{{ page.relative_path }}" target="_blank">Edit Post</a>
