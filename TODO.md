@@ -1,5 +1,4 @@
 - Fix nanolog pages having "404" as their title
-- Use content-visibility to hide content that is not yet visible on nanolog
 - Use ✦ for list bullets, in some places at least
 - Add donation footer to blosts
 - Simper masonry grids on /home

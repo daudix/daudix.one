@@ -1,14 +1,16 @@
 {% extends "base.html" %}
 {% import "macros/icon.html" as macros_icon %}
 
+{% block body_before %}
+<button id="nanolog-button" title="New Nanolog" hidden>
+	{{- macros_icon::icon(name="note-pencil") -}}
+</button>
+{% endblock body_before %}
+
 {% block content %}
 <h1 id="nanolog">{{ section.title }}</h1>
 
 {{ section.description | markdown | safe }}
-
-<button id="nanolog-button" title="New Nanolog" hidden>
-	{{- macros_icon::icon(name="note-pencil") -}}
-</button>
 
 <div id="nanolog-modal">
 	<div id="nanolog-modal-content">
