@@ -72,9 +72,6 @@ csp = [
     "'self'",
     "https:",
   ] },
-  { directive = "script-src", domains = [
-    "cloud.umami.is",
-  ] },
   { directive = "style-src", domains = [
     "'self'",
     "'unsafe-inline'",
@@ -86,14 +83,11 @@ csp = [
     "drive.google.com",
   ] },
   { directive = "connect-src", domains = [
-    "*.umami.dev",
-    "cloud.umami.is",
     "status.cafe",
     "api.lanyard.rest",
     "ws.audioscrobbler.com",
     "discord.com",
     "api.github.com",
-    "ntfy.sh",
   ] },
   { directive = "base-uri", domains = [
     "'none'",
