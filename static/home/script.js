@@ -205,5 +205,4 @@ document.addEventListener("DOMContentLoaded", function () {
 	setInterval(fetchDiscordStatus, 10000);
 
 	shy.addEventListener("click", flutterAnim);
-	ntfySend.addEventListener("click", sendNotification);
 });
