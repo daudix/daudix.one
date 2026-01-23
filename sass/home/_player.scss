@@ -7,12 +7,13 @@
 	&.has-cover {
 		position: relative;
 		background-image: var(--bg-overlay);
+		background-color: transparent;
 
 		&::before {
 			position: absolute;
 			z-index: -1;
 			clip-path: inset(0 0 0 0 round 1rem);
-			filter: blur(0.75rem);
+			filter: blur(0.5rem);
 			inset: 0;
 			border-radius: inherit;
 			background-image: var(--blurnail);
