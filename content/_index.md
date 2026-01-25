@@ -68,20 +68,15 @@ Greetings! Welcome to my little corner on the World Wild Web and a second home o
 
 Thing I hate doing the most; telling about myself.
 
-<ul class="masonry">
-<!-- Card Start -->
-<li>
-<article>
+{% masonry(parent=true) %}
 
+{% masonry(column=1) %}
+
+{% masonry() %}
 **I'm originating from Siberia,** but currently residing in <abbr id="abyss" title="If you know, you know">abyss</abbr>. That means that I'm a native Russian speaker, что в каком-то смысле довольно прикольно..?
-</article>
-</li>
-<!-- Card End -->
+{% end %}
 
-<!-- Card Start -->
-<li>
-<article class="fancy-list">
-
+{% masonry(fancy_list=true) %}
 **Random things I like:**
 
 - Purple <small>(lavender in particular)</small>
@@ -92,86 +87,67 @@ Thing I hate doing the most; telling about myself.
 - Minor details and references
 - Retro(futuristic) and vintage stuff
 - Making this list look like a staircase
-</article>
-</li>
-<!-- Card End -->
+{% end %}
 
-<!-- Card Start -->
-<li>
-<article class="fancy-list">
-
+{% masonry(fancy_list=true) %}
 **I am {{ age() }} moons old.**
 
 '07 was a busy year, too bad I couldn't see it with my own four eyes. Rawr XD
-</article>
-</li>
-<!-- Card End -->
+{% end %}
 
-<!-- Card Start -->
-<li>
-<article class="window">
-{{ window() }}
-</article>
-</li>
-<!-- Card End -->
+{% end %}
 
-<!-- Card Start -->
-<li>
-<article>
+{% masonry(column=2) %}
 
+{% masonry(type="window") %}
+  {{ window() }}
+{% end %}
+
+{% masonry() %}
 **I'm rather shy.** Quoting [hyperreal](https://hyperreal.coffee) as I can't say it better:
 
 > I'm <button id="shy">shy</button> and might come across as reserved and standoffish at first, but I open up when I get more comfortable with people.
-</article>
-</li>
-<!-- Card End -->
+{% end %}
 
-<!-- Card Start -->
-<li>
-<article class="games fancy-list">
-
+{% masonry(type="games", fancy_list=true) %}
 **Games I like:**
 
 {{ games() }}
-</article>
-</li>
-<!-- Card End -->
-</ul>
+{% end %}
+
+{% end %}
+
+{% end %}
 
 ## Online
 
 Where and when to find me online.
 
-<ul class="masonry">
-<!-- Card Start -->
-<li>
-{{ now_playing() }}
-</li>
-<!-- Card End -->
+{% masonry(parent=true) %}
 
-<!-- Card Start -->
-<li>
-<article class="online fancy-list">
+{% masonry(column=1) %}
+
+{% masonry(type="player") %}
+{{ now_playing() }}
+{% end %}
+
+{% masonry(type="online", fancy_list=true) %}
 <strong id="socials" class="title">Socials</strong>
 
 {{ online(type="socials") }}
-</article>
-</li>
-<!-- Card End -->
+{% end %}
 
-<!-- Card Start -->
-<li>
-<article class="online fancy-list">
+{% masonry(type="online", fancy_list=true) %}
 <strong id="forges" class="title">Forges</strong>
 
 {{ online(type="forges") }}
-</article>
-</li>
-<!-- Card End -->
+{% end %}
 
-<!-- Card Start -->
-<li>
-<article class="online fancy-list">
+{% end %}
+
+{% masonry(column=2) %}
+
+{% masonry(type="online", fancy_list=true) %}
 <strong id="contacts" class="title">Contacts</strong>
 
 For me it's currently <time id="clock">09:41</time> <small>(UTC+3)</small> and I'm <span id="online-indicator"><i class="icon"></i><span id="online-indicator-text">Offline</span></span>.
@@ -179,13 +155,9 @@ For me it's currently <time id="clock">09:41</time> <small>(UTC+3)</small> and I
 Feel free to reach me out on any of these! Although I'm usually too shy to start the conversation, I'm happy to chat once someone messages me first.
 
 {{ online(type="contacts") }}
-</article>
-</li>
-<!-- Card End -->
+{% end %}
 
-<!-- Card Start -->
-<li>
-<article class="snug-nook fancy-list">
+{% masonry(type="snug-nook", fancy_list=true) %}
 <strong id="snug-nook" class="title">Snug Nook</strong>
 
 Cozy and welcoming space for cool people to hang out in.
@@ -196,10 +168,11 @@ Cozy and welcoming space for cool people to hang out in.
 {{ icon(name="discord-logo") }}
 {{ icon(name="matrix-logo") }}
 </div>
-</article>
-</li>
-<!-- Card End -->
-</ul>
+{% end %}
+
+{% end %}
+
+{% end %}
 
 ## Works
 

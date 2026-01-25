@@ -9,30 +9,30 @@
 {%- endif -%}
 
 {%- if type == "contacts" -%}
-	<style>
-		:root {
-			--icon-circle-dashed: {{ macros_icon::icon(name="circle-dashed", inline=true) }};
-			--icon-circle: {{ macros_icon::icon(name="circle", inline=true) }};
-			--icon-minus-circle: {{ macros_icon::icon(name="minus-circle", inline=true) }};
-			--icon-moon: {{ macros_icon::icon(name="moon", inline=true) }};
-		}
-	</style>
+<style>
+	:root {
+		--icon-circle-dashed: {{ macros_icon::icon(name="circle-dashed", inline=true) }};
+		--icon-circle: {{ macros_icon::icon(name="circle", inline=true) }};
+		--icon-minus-circle: {{ macros_icon::icon(name="minus-circle", inline=true) }};
+		--icon-moon: {{ macros_icon::icon(name="moon", inline=true) }};
+	}
+</style>
 {%- endif -%}
 
 <ul>
-	{%- for item in items -%}
-		<li>
-			<a href="{{ item.url }}"{% if item.favorite %} class="favorite"{% endif %}>
-				<img
-					width="32"
-					height="32"
-					class="transparent no-hover pixels drop-shadow"
-					alt="Pixel art {{ item.name }} icon."
-					{% set item_path = "home/icons/" ~ item.name ~ ".gif" | lower %}
-					src="{{ get_url(path=item_path) }}"
-				/>
-				{{- item.name -}}
-			</a>
-		</li>
-	{%- endfor -%}
+{%- for item in items -%}
+{% set item_path = "home/icons/" ~ item.name ~ ".gif" | lower %}
+<li>
+<a href="{{ item.url }}"{% if item.favorite %} class="favorite"{% endif %}>
+<img
+	width="32"
+	height="32"
+	class="transparent no-hover pixels drop-shadow"
+	alt="Pixel art {{ item.name }} icon."
+	src="{{ get_url(path=item_path) }}"
+/>
+{{- item.name -}}
+</a>
+</li>
+{%- endfor -%}
 </ul>

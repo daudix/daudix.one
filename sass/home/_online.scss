@@ -1,4 +1,4 @@
-.fancy-list.online {
+.masonry .item.online {
 	ul {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(min(9rem, 100%), 1fr));
@@ -22,7 +22,8 @@
 				display: flex;
 				flex: 1;
 				align-items: center;
-				transition: all var(--transition),
+				transition:
+					all var(--transition),
 					transform var(--transition-bezier);
 				box-shadow: var(--edge-highlight);
 				border-radius: var(--rounded-corner-small);

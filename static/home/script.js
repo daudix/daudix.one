@@ -36,7 +36,7 @@ window.addEventListener("hashchange", () => {
 
 const lastFmUser = "daudix";
 const lastFmApiKey = "1747901e170276677d1d0447cf6519b0"
-const lastFmPlayer = document.getElementById("player");
+const lastFmPlayer = document.getElementsByClassName("item player")[0];
 const lastFmCover = document.getElementById("cover");
 const lastFmTitle = document.getElementById("player-title");
 const lastFmTitleContainer = document.getElementById("player-title-container");

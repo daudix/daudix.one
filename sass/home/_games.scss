@@ -1,6 +1,6 @@
 @use "../../themes/ametrine/sass/abstracts/functions" as *;
 
-.fancy-list.games {
+.masonry .item.games {
 	position: relative;
 	padding: 0.5rem;
 
@@ -24,7 +24,9 @@
 	li {
 		display: flex;
 		position: relative;
-		transition: all var(--transition), transform var(--transition-bezier);
+		transition:
+			all var(--transition),
+			transform var(--transition-bezier);
 		box-shadow: none !important;
 		background-color: transparent !important;
 		padding: 0 !important;
@@ -76,7 +78,8 @@
 			-webkit-user-select: none;
 			display: flex;
 			position: absolute;
-			transition: all var(--transition),
+			transition:
+				all var(--transition),
 				transform var(--transition-bezier);
 			inset-block-start: 0.5rem;
 			inset-inline-end: 0.5rem;

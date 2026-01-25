@@ -1,0 +1,19 @@
+{% import "macros/icon.html" as macros_icon %}
+
+{%- if parent -%}
+<section class="masonry">
+{{- body | safe -}}
+</section>
+{%- endif -%}
+
+{%- if column -%}
+<div class="column">
+{{- body | safe -}}
+</div>
+{%- endif -%}
+
+{%- if not parent and not column -%}
+<div class="item{% if type %} {{ type }}{% endif %}{% if fancy_list %} fancy-list{% endif %}">
+{{- body | markdown | safe -}}
+</div>
+{%- endif -%}
