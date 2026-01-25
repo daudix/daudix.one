@@ -100,7 +100,7 @@ Thing I hate doing the most; telling about myself.
 {% masonry(column=2) %}
 
 {% masonry(type="window") %}
-  {{ window() }}
+{{ window() }}
 {% end %}
 
 {% masonry() %}
@@ -160,7 +160,7 @@ Feel free to reach me out on any of these! Although I'm usually too shy to start
 {% masonry(type="snug-nook", fancy_list=true) %}
 <strong id="snug-nook" class="title">Snug Nook</strong>
 
-Cozy and welcoming space for cool people to hang out in.
+The community-focused community.
 
 <img src="home/neofax.png" class="transparent no-hover drop-shadow" />
 <a href="https://snugnook.org" title="Learn More"></a>

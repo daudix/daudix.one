@@ -2,12 +2,6 @@
 
 .masonry .item.games {
 	position: relative;
-	padding: 0.5rem;
-
-	& > :first-child {
-		padding: 0.5rem;
-		padding-block-end: 0;
-	}
 
 	&:has(ul:hover) li:not(:hover) {
 		opacity: var(--disabled-opacity);
@@ -18,7 +12,8 @@
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
 		gap: 0.5rem;
-		margin-block: 0;
+		margin: -0.5rem;
+		margin-block-start: 0;
 	}
 
 	li {
@@ -57,74 +52,74 @@
 		width: 100%;
 	}
 
-	#show-more {
-		position: absolute;
+	.games-extra {
+		display: none;
+		margin-block-start: 1rem;
+	}
+}
 
-		&:focus-visible + label {
+#show-more {
+	position: absolute;
+
+	&:focus-visible + label {
+		animation: focus-in var(--transition);
+		outline: 0.125rem solid var(--accent-color);
+		outline-offset: 0.125rem;
+	}
+
+	@supports not selector(:focus-visible) {
+		&:focus + label {
 			animation: focus-in var(--transition);
 			outline: 0.125rem solid var(--accent-color);
 			outline-offset: 0.125rem;
 		}
+	}
 
-		@supports not selector(:focus-visible) {
-			&:focus + label {
-				animation: focus-in var(--transition);
-				outline: 0.125rem solid var(--accent-color);
-				outline-offset: 0.125rem;
-			}
+	& + label {
+		-webkit-user-select: none;
+		display: flex;
+		position: absolute;
+		transition:
+			all var(--transition),
+			transform var(--transition-bezier);
+		inset-block-start: 0.5rem;
+		inset-inline-end: 0.5rem;
+		border-radius: var(--rounded-corner-small);
+		padding: 0.75rem 0.5rem;
+		color: var(--fg-muted-1);
+		font-weight: var(--font-weight-semi-bold);
+		font-size: var(--font-size-small);
+		line-height: 1rem;
+		user-select: none;
+
+		&:hover {
+			box-shadow: var(--edge-highlight);
+			background-color: var(--bg-muted-1);
+			color: var(--fg-muted-2);
 		}
 
-		& + label {
-			-webkit-user-select: none;
-			display: flex;
-			position: absolute;
-			transition:
-				all var(--transition),
-				transform var(--transition-bezier);
-			inset-block-start: 0.5rem;
-			inset-inline-end: 0.5rem;
-			border-radius: var(--rounded-corner-small);
-			padding: 0.75rem 0.5rem;
-			color: var(--fg-muted-1);
-			font-weight: var(--font-weight-semi-bold);
-			font-size: var(--font-size-small);
-			line-height: 1rem;
-			user-select: none;
-
-			&:hover {
-				box-shadow: var(--edge-highlight);
-				background-color: var(--bg-muted-1);
-				color: var(--fg-muted-2);
-			}
-
-			&:active {
-				transform: var(--active);
-			}
-
-			.less {
-				display: none;
-			}
+		&:active {
+			transform: var(--active);
 		}
 
-		&:checked {
-			& + label {
-				.more {
-					display: none;
-				}
-
-				.less {
-					display: inline;
-				}
-			}
-
-			& ~ .games-extra {
-				display: grid;
-			}
+		.less {
+			display: none;
 		}
 	}
 
-	.games-extra {
-		display: none;
-		margin-block-start: 0.5rem;
+	&:checked {
+		& + label {
+			.more {
+				display: none;
+			}
+
+			.less {
+				display: inline;
+			}
+		}
+
+		& ~ .games-extra {
+			display: grid;
+		}
 	}
 }

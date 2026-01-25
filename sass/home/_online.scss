@@ -1,61 +1,61 @@
-.masonry .item.online {
-	ul {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(min(9rem, 100%), 1fr));
+.masonry .item.online ul {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(9rem, 100%), 1fr));
+	margin: -0.5rem;
+	margin-block-start: 0;
 
-		li {
+	li {
+		display: flex;
+		box-shadow: none;
+		border-radius: 0;
+		background-color: transparent;
+		padding: 0;
+
+		img {
+			display: inline-block;
+			margin: 0;
+			margin-inline-end: 0.5rem;
+			width: 2rem;
+			height: 2rem;
+		}
+
+		a {
 			display: flex;
-			box-shadow: none;
-			border-radius: 0;
-			background-color: transparent;
-			padding: 0;
+			flex: 1;
+			align-items: center;
+			transition:
+				all var(--transition),
+				transform var(--transition-bezier);
+			box-shadow: var(--edge-highlight);
+			border-radius: var(--rounded-corner-small);
+			background-color: var(--bg-muted-1);
+			padding: 0.5rem;
+			color: var(--fg-muted-2);
+			text-decoration: none;
 
-			img {
-				display: inline-block;
-				margin: 0;
-				margin-inline-end: 0.5rem;
-				width: 2rem;
-				height: 2rem;
+			&:hover {
+				background-color: var(--bg-muted-2);
 			}
 
-			a {
-				display: flex;
-				flex: 1;
-				align-items: center;
-				transition:
-					all var(--transition),
-					transform var(--transition-bezier);
-				box-shadow: var(--edge-highlight);
-				border-radius: var(--rounded-corner-small);
-				background-color: var(--bg-muted-1);
-				padding: 0.5rem;
-				color: var(--fg-muted-2);
-				text-decoration: none;
+			&:active {
+				transform: var(--active);
+			}
 
-				&:hover {
-					background-color: var(--bg-muted-2);
-				}
+			&.favorite {
+				position: relative;
+				overflow: hidden;
 
-				&:active {
-					transform: var(--active);
-				}
-
-				&.favorite {
-					position: relative;
-					overflow: hidden;
-
-					&::before {
-						position: absolute;
-						transform: rotate(-10deg);
-						mask-image: var(--icon-star);
-						inset-block: 0;
-						inset-inline-end: -1rem;
-						-webkit-mask-image: var(--icon-star);
-						background-color: var(--bg-muted-1);
-						width: 4rem;
-						height: 4rem;
-						content: "";
-					}
+				&::before {
+					position: absolute;
+					transform: rotate(-10deg);
+					mask-image: var(--icon-star);
+					inset-block: 0;
+					inset-inline-end: -1rem;
+					-webkit-mask-image: var(--icon-star);
+					background-color: var(--bg-muted-1);
+					width: 4rem;
+					height: 4rem;
+					content: "";
 				}
 			}
 		}
