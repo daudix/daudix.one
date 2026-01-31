@@ -1,3 +1,5 @@
+- Steal dynamic age widget from axeni.de
+- Fix ugly thin white border peeking from behind now playing widget
 - Fix nanolog pages having "404" as their title
 - Use ✦ for list bullets, in some places at least
 - Add donation footer to blosts
@@ -14,7 +16,6 @@
 - Rewrite the script on /snug-nook/
 - https://piccalil.li/blog/some-simple-ways-to-make-content-look-good/
 - https://bsky.app/profile/bell.bz/post/3lsbmfkreec2o
-- Utilize nested shortcodes for complex stuff
 - Make badges popup closable via outside click
 - Make "shrine" for my beloved portal series
 - Add photo gallery (random polaroid rotation can be done using Tera's `get_random`)
