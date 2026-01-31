@@ -81,6 +81,7 @@ csp = [
     "incr.easrng.net",
     "vmst.io",
     "drive.google.com",
+    "open.spotify.com",
   ] },
   { directive = "connect-src", domains = [
     "status.cafe",
