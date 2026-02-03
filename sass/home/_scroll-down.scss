@@ -1,0 +1,23 @@
+#scroll-down {
+	position: absolute;
+	transform: translateX(-50%);
+	inset-block-end: 3rem;
+	inset-inline-start: 50%;
+	width: 2rem;
+	color: var(--accent-color);
+	font-size: 2rem;
+	line-height: 0;
+
+	.icon {
+		opacity: var(--disabled-opacity);
+		animation: arrow-blink 0.6s ease-out alternate infinite;
+	}
+
+	.icon:first-of-type {
+		margin-block-end: -1.25rem;
+	}
+
+	.icon:last-of-type {
+		animation-delay: 0.2s;
+	}
+}

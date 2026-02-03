@@ -53,6 +53,7 @@ forges = [
 <div id="title">
 
 # David Lapshin
+
 </div>
 
 Greetings! Welcome to my little corner on the World Wild Web and a second home of mine. You might know me by my online handle; Daudix.
@@ -61,6 +62,12 @@ Greetings! Welcome to my little corner on the World Wild Web and a second home o
   <a href="#about" class="suggested">About Me ↓</a>
   <a href="#splash">Splash →</a>
 </div>
+
+<div id="scroll-down">
+{{ icon(name="caret-down") }}
+{{ icon(name="caret-down") }}
+</div>
+
 </div>
 </div>
 
@@ -87,7 +94,7 @@ Thing I hate doing the most; telling about myself.
 - Minor details and references
 - Retro(futuristic) and vintage stuff
 - Making this list look like a staircase
-{% end %}
+  {% end %}
 
 {% masonry(fancy_list=true) %}
 **I am {{ age() }} moons old.**
@@ -107,7 +114,7 @@ Thing I hate doing the most; telling about myself.
 **I'm rather shy.** Quoting [hyperreal](https://hyperreal.coffee) as I can't say it better:
 
 > I'm <button id="shy">shy</button> and might come across as reserved and standoffish at first, but I open up when I get more comfortable with people.
-{% end %}
+> {% end %}
 
 {% masonry(type="games", fancy_list=true) %}
 **Games I like:**

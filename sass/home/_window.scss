@@ -12,7 +12,7 @@
 	height: rpx(171);
 }
 
-#window-contents {
+#window-inner {
 	position: absolute;
 	// Get around bulky empty space caused by the image border
 	inset: rpx(-32) rpx(-58) rpx(-54) rpx(-58);
@@ -25,6 +25,11 @@
 			background-color: #2d2a2e;
 		}
 	}
+}
+
+#window-contents {
+	margin-inline: auto;
+	width: fit-content;
 
 	small {
 		color: var(--fg-color);

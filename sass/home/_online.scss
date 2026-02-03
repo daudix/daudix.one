@@ -1,8 +1,6 @@
 .masonry .item.online ul {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(min(9rem, 100%), 1fr));
-	margin: -0.5rem;
-	margin-block-start: 0;
 
 	li {
 		display: flex;
