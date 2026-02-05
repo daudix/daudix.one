@@ -1,3 +1,3 @@
 +++
-redirect_to = "home/#online"
+redirect_to = "#online"
 +++

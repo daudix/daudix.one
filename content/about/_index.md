@@ -1,3 +1,3 @@
 +++
-redirect_to = "home/#about"
+redirect_to = "#about"
 +++

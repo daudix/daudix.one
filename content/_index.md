@@ -1,6 +1,7 @@
 +++
 title = "Home"
 description = "The central hub."
+aliases = ["home"]
 [extra]
 styles = ["home/style.css"]
 scripts = ["home/script.js"]
@@ -106,7 +107,7 @@ Thing I hate doing the most; telling about myself.
 
 {% masonry(column=2) %}
 
-{% masonry(type="window") %}
+{% masonry() %}
 {{ window() }}
 {% end %}
 
