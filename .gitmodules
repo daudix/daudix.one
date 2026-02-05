@@ -1,3 +1,4 @@
 [submodule "themes/ametrine"]
 	path = themes/ametrine
 	url = https://codeberg.org/Geode/ametrine.git
+	shallow = true
