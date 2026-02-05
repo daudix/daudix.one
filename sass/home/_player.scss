@@ -4,36 +4,23 @@
 	padding: 0.5rem;
 
 	&.has-cover {
-		position: relative;
-		background-image: var(--bg-overlay);
-		background-color: transparent;
-
-		&::before {
-			position: absolute;
-			z-index: -1;
-			clip-path: inset(0 0 0 0 round 1rem);
-			filter: blur(0.5rem);
-			inset: 0;
-			border-radius: inherit;
-			background-image: var(--blurnail);
-			background-position: center;
-			background-size: cover;
-			background-color: var(--bg-color);
-			content: "";
-		}
+		background-image: var(--bg-overlay), var(--blurnail);
+		background-position: center;
+		background-size: 1000%;
+		background-color: var(--bg-color);
 
 		#now-playing,
 		#last-played {
 			color: var(--fg-muted-neutral-1);
 		}
 
-		#player-artist {
+		#player-artist,
+		#player-go {
 			color: var(--fg-muted-neutral-2);
 		}
 
 		#player-go {
 			background-color: var(--bg-muted-neutral-1);
-			color: var(--fg-muted-neutral-2);
 
 			&:hover {
 				background-color: var(--bg-muted-neutral-2);
