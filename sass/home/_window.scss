@@ -1,15 +1,13 @@
 @use "../../themes/ametrine/sass/abstracts/functions" as *;
 
-.masonry .item.window {
-	display: block;
+#window-border {
 	position: relative;
-	margin: 0 auto;
+	margin-inline: auto;
 	border: 4rem solid;
-	border-radius: rpx(6);
 	border-image: url("border.gif") 32 repeat;
 	image-rendering: pixelated;
-	width: 100%;
-	height: rpx(171);
+	width: rpx(298);
+	height: rpx(170);
 }
 
 #window-inner {
