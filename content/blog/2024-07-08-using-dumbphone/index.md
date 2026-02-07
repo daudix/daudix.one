@@ -30,7 +30,7 @@ Since then, I've been thinking about a replacement. Around the same time, I star
 When the time came, we got it without a doubt, and it was an amazing device; the camera was as great as advertised, the OLED screen after IPS was something revolutionary, and battery life, oh boy, it was times better than the non-existent longevity of the iPhone. I had used Android phones before, so openness wasn't something new for me.
 
 ![iPhone SE.](iphone-se.jpg#end)
-{% alert(fact=true) %}
+{% alert(icon="trash", title="Uninteresting Fact") %}
 We got it by exchanging it for an iPhone SE (the one that looks like iPhone 5) with some extra cash, since its owner wanted to switch to iOS–the opposite of what we wanted to do XD
 {% end %}
 

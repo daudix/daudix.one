@@ -3,7 +3,7 @@ title = "Colophon"
 description = "Some details about this website."
 +++
 
-{% alert(fact=true) %}
+{% alert(icon="trash", title="Uninteresting Fact") %}
 This is the least fun page on this website. Deal with it.
 {% end %}
 

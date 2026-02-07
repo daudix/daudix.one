@@ -23,7 +23,7 @@ At first (back in the ["Space" theme era](https://web.archive.org/web/2022103001
 
 It was perfect: *one* of the cheapest options, *one* of a kind, and not a boring *one*.
 
-{% alert(fact=true) %}
+{% alert(icon="trash", title="Uninteresting Fact") %}
 Only after getting the domain, I realized it's actually a huge [one](https://www.youtube.com/watch?v=EE4mslnibzQ) reference. So yes, the pun was not in fact intended.
 {% end %}
 
@@ -69,11 +69,11 @@ The next day, I created the `pages` repository and added a `_redirects` file to 
 
 Yup, that's the entire file! It doesn't work perfectly though; links have a double slash after the domain (`daudix.one//blog/`), but it doesn't seem to affect page loading, so it's fine, I guess?
 
-{% alert(edit=true) %}
+{% alert(icon="pencil-simple", title="Edit") %}
 Awesome [Anthony](https://unnamed.website) suggested me to try removing the slash between the domain and `:splat` (so it becomes `https://daudix.one:splat`), and it worked!
 {% end %}
 
-{% alert(edit=true) %}
+{% alert(icon="pencil-simple", title="Edit") %}
 Changed HTTP response from 302 "Moved Temporarily" to 301 "Moved Permanently". The final `_redirects` is:
 
 ```txt

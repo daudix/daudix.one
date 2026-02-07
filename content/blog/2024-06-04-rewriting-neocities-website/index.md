@@ -13,11 +13,11 @@ id = "112555378913783711"
 
 > This is my first [#100DaysToOffload](https://100daystooffload.com) post; what this means is that I'll post more and about more diverse stuff. My drafts folder are nearly exploding so it's about time! A dedicated post about this will be published soon (hopefully *nervous giggling*).
 
-{% alert(edit=true) %}
+{% alert(icon="pencil-simple", title="Edit") %}
 It's been [published](@/blog/2024-06-08-100-days-to-offload/index.md) (4 days later and not in half a year!).
 {% end %}
 
-{% alert(edit=true) %}
+{% alert(icon="pencil-simple", title="Edit") %}
 This post has been [featured in exozyine](https://zine.exozy.me/posts/2024/june-2024/#website-rewriting-adventures)!
 {% end %}
 
@@ -76,11 +76,11 @@ Then I added a fake music player to the top-right corner (which was an absolute 
 <figcaption>Fake music player with some brony music</figcaption>
 </figure>
 
-| Mobile                                       | Tablet                                      |
-| -------------------------------------------- | ------------------------------------------- |
+| Mobile                                       | Tablet                                       |
+| -------------------------------------------- | -------------------------------------------- |
 | ![Website on mobile.](website-on-mobile.png) | ![Website on tablet.](website-on-tablet.png) |
 
-{% alert(fact=true) %}
+{% alert(icon="trash", title="Uninteresting Fact") %}
 The music player initially displayed [PrinceWhateverer](https://www.youtube.com/@princewhateverer)'s [Miscommunication](https://www.youtube.com/watch?v=r0P67hLrFHI) as it's very relatable, but since I aimed for the 2010's vibe, I decided to change it to [WoodenToaster](https://www.youtube.com/@WoodenToaster)'s [Rainbow Factory](https://www.youtube.com/watch?v=YRx_iXgLAyw) since it was released in 2011 and were quite popular back then.
 {% end %}
 
@@ -88,7 +88,7 @@ The music player initially displayed [PrinceWhateverer](https://www.youtube.com/
 | ------------------------------------------------ | ------------------------------------ |
 | ![Bookmark deviantart.](bookmark-deviantart.png) | ![Bookmark mine.](bookmark-mine.png) |
 
-{% alert(fact=true) %}
+{% alert(icon="trash", title="Uninteresting Fact") %}
 Initially the bookmark said "Work In Process", but I realised that it won't exit this state anytime soon, so it were changed to "Forever WIP"
 {% end %}
 

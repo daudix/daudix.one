@@ -15,7 +15,7 @@ user = "daudix"
 id = "112640483364403774"
 +++
 
-{% alert(fact=true) %}
+{% alert(icon="trash", title="Uninteresting Fact") %}
 It was quite hard to get the expressions right, [first version](https://github.com/daudix/daudix.one/blob/6fe0769435516a0b3a4818592a8d5ab47d7b3db4/content/blog/not-that-latitude/header.png) had them very sadge, so I changed them to be a bit more restrained.
 {% end %}
 

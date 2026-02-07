@@ -82,7 +82,7 @@ Well, nothing really, I just throw logotars on profiles and see what sticks.
 
 I meant to say that I conduct an A/B testing in the real world scenarios to determine which logotar variant fulfills the desired objectives better.
 
-{% alert(edit=true) %}
+{% alert(icon="pencil-simple", title="Edit") %}
 Silly me just realized that the blueprint logo I made for the banner is actually another experiment! I might explore this direction further, I'm pretty sure it'll look swag in purple.
 
 [!["Blueprint" logo.](blueprint.png)](https://raw.githubusercontent.com/daudix/assets/6a9442fb432facba26c74c48043a851dc54d5704/daudix/experiments/blueprint.png)

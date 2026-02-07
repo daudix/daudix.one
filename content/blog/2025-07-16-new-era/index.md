@@ -14,7 +14,7 @@ id = "114864922325514289"
 
 Time to talk a bit about my recent changes to this website, plans for this blog, and One More Thing™.
 
-{% alert(edit=true) %}
+{% alert(icon="pencil-simple", title="Edit") %}
 One of the recent edits introduced a couple of additional images and an entirely new section. See [this commit](https://github.com/daudix/daudix.one/commit/637bd7ef6f7acd53f5346104e5cc291ed5cc7968) for a detailed overview.
 {% end %}
 
@@ -168,7 +168,7 @@ My first era --- titled "Cold Boot" --- started back in late 2022, with a bunch 
 
 Profile pictures continued to use this approach internally; for example, my previous era was titled "Prism", which was a continuation of the "Rainbow" era.
 
-{% alert(fact=true) %}
+{% alert(icon="trash", title="Uninteresting Fact") %}
 Prism era's assets had a bit of a hidden meaning behind them; the texture they have is actually monochrome photos of a broken mirror and old book's page, overlaid on top of each other with different opacity and blend modes. A bit cheesy, but it is what it is.
 
 [![The "Prism" era's profile picture diagram shows the broken glass and paper images first overlaid as they are in the actual profile picture, then separately and without the black-and-white filter.](prism.png)](prism-hd.png)

@@ -152,7 +152,7 @@ And now... it's number time!
 Messages in all channels, per month:
 
 | Month     | Year | Messages |
-|-----------|------|----------|
+| --------- | ---- | -------- |
 | October   | 2024 | 236      |
 | November  | 2024 | 3,377    |
 | December  | 2024 | 3,496    |
@@ -170,7 +170,7 @@ Messages in all channels, per month:
 Starboard leaderboard (#hall-of-<fame/shame/french> combined):
 
 | Place | User            | XP     |
-|-------|-----------------|--------|
+| ----- | --------------- | ------ |
 | #1    | @daudix         | 567 XP |
 | #2    | @kevadesu       | 326 XP |
 | #3    | @gabsme         | 247 XP |
@@ -233,19 +233,24 @@ Lmao
 
 ivanaddition
 
-> {{ icon(name="user") }} daudix:  
-> lol comments are cool
+{% alert(icon="user", title="daudix") %}
+lol comments are cool
+{% end %}
 
-> {{ icon(name="user") }} kevadesu:  
-> agreed
+{% alert(icon="user", title="kevadesu") %}
+agreed
+{% end %}
 
-> {{ icon(name="user") }} gabs:  
-> what about a stat of how many "inchidents" we had. (yes I misspelled that intentionally, IYKYK)
+{% alert(icon="user", title="gabs") %}
+what about a stat of how many "inchidents" we had. (yes I misspelled that intentionally, IYKYK)
+{% end %}
 
-> {{ icon(name="user") }} daudix:  
-> why the hell not
+{% alert(icon="user", title="daudix") %}
+why the hell not
+{% end %}
 
-> {{ icon(name="user") }} gabs:  
-> yay
+{% alert(icon="user", title="gabs") %}
+yay
+{% end %}
 
 [^1]: I had this silly idea of writing an anniversary blog post with the team and publishing it on Snug Nook's birthday on the 29th. But a wild migraine had other plans so I couldn't start work on it until the 30th, which meant that the deadline had to be moved to the 31st. On that day, I added the initial structure/boilerplate, and we iterated on it. On the 31st, we tried to get it finished before midnight UTC to publish the post on the same day as the [initial Snug Nook announcement](@/blog/2024-10-31-snug-nook/index.md), which made us hurry like crazy. We published the blog post just in time (a few seconds before midnight), after which I finalised it and designed the missing Snug Nook Rewind bento.

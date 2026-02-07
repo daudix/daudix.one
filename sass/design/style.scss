@@ -19,7 +19,9 @@ body {
 	text-align: center;
 
 	.grid-item {
-		transition: all var(--transition), transform var(--transition-bezier);
+		transition:
+			all var(--transition),
+			transform var(--transition-bezier);
 		border-radius: calc(var(--rounded-corner) + 1rem);
 		padding: 1rem;
 		line-height: 0;
@@ -88,12 +90,11 @@ section {
 	border-start-start-radius: var(--rounded-corner);
 	padding: 1rem;
 	@include fancy-card;
-	@include colors-accent("light");
-	@include variables("accent");
+	@include variables-accent(("light", "common"));
 
 	@media (prefers-color-scheme: dark) {
 		& {
-			@include colors-accent("dark");
+			@include variables-accent("dark");
 		}
 	}
 
@@ -201,7 +202,8 @@ section {
 				}
 
 				a {
-					transition: all var(--transition),
+					transition:
+						all var(--transition),
 						transform var(--transition-bezier);
 					margin-inline-end: -0.5rem;
 					margin-block-end: -0.5rem;

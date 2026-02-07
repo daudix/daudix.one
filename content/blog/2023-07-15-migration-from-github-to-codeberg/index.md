@@ -24,7 +24,7 @@ It is owned by Microsoft for a long time, which is the first red sign. ~~When [R
 
 Recently I were contributing to [some](https://codeberg.org/Bavarder/Bavarder) [projects](https://codeberg.org/Imaginer/Imaginer) hosted on Codeberg, and I had to create an account and use it for some time, and... I liked it! The UI of Codeberg; the workflow and the overall _vibe_ were really nice, the fact that Codeberg is very open with its Community helped a lot too.
 
-{% alert(edit=true) %}
+{% alert(icon="pencil-simple", title="Edit") %}
 Apparently I have [contributed to one project](https://codeberg.org/foreverxml/random/pulls/41) earlier, so I already had a Codeberg account xD
 {% end %}
 
@@ -160,7 +160,7 @@ In my case I already had blog based on [jimmac/os-component-website](https://git
 
 The migration from GitHub to Codeberg were simple and smooth, but not without issues, I had difficulties understanding how to make Woodpecker secrets work and how to create them in first place, this is why I wrote this post in first place.
 
-{% alert(edit=true) %}
+{% alert(icon="pencil-simple", title="Edit") %}
 In Gitea and consequently in Forgejo v1.20 the secret creation UI have been completely changed, and it's more clear than current one
 {% end %}
 
