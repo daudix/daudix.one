@@ -17,12 +17,15 @@
 		"authorization= " ~ token,
 		"user-agent= DiscordBot (" ~ config.base_url ~ ", 0.1.0)",
 		"x-super-properties= " ~ x_super
-	])
+	],
+	required=false)
 -%}
 
-{%- set played_games = profile.widgets | filter(attribute="id", value=widget_id) | first -%}
+{%- if profile.widgets -%}
+	{%- set played_games = profile.widgets | filter(attribute="id", value=widget_id) | first -%}
+{%- endif -%}
 
-{%- if played_games.data.games | length > 8 -%}
+{%- if played_games.data.games and played_games.data.games | length > 8 -%}
 <input class="visually-hidden" id="show-more" type="checkbox" name="show-more" autocomplete="off" />
 <label for="show-more">
 	<span class="more">Show More…</span>
@@ -31,6 +34,7 @@
 {%- endif -%}
 
 <ul>
+{%- if played_games.data.games -%}
 {%- for game in played_games.data.games -%}
 {# All games past the first 8 are rendered inside of a separate <ul> #}
 {%- if loop.index == 9 -%}
@@ -46,7 +50,8 @@
 		"authorization= " ~ token,
 		"user-agent= DiscordBot (" ~ config.base_url ~ ", 0.1.0)",
 		"x-super-properties= " ~ x_super
-	]) | first
+	],
+	required=false) | first
 -%}
 {%- set steam = data.third_party_skus | filter(attribute="distributor", value="steam") | first -%}
 <li>
@@ -60,4 +65,5 @@
 </a>
 </li>
 {%- endfor -%}
+{%- endif -%}
 </ul>
