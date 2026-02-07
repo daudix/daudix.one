@@ -44,12 +44,14 @@
 				overflow: hidden;
 
 				&::before {
+					-webkit-mask-image: var(--icon-star);
+					-webkit-mask-size: cover;
 					position: absolute;
 					transform: rotate(-10deg);
 					mask-image: var(--icon-star);
+					mask-size: cover;
 					inset-block: 0;
 					inset-inline-end: -1rem;
-					-webkit-mask-image: var(--icon-star);
 					background-color: var(--bg-muted-1);
 					width: 4rem;
 					height: 4rem;
