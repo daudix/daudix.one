@@ -1,0 +1,38 @@
+$golos-text-version: "2.005";
+$golos-ui-version: "2.000";
+
+// Golos Text
+@font-face {
+	font-style: normal;
+	font-weight: 400 900;
+	src: url("/fonts/golos-text.woff2?v=#{$golos-text-version}") format("woff2");
+	font-family: "Golos Text";
+	font-display: swap;
+}
+
+@font-face {
+	font-style: italic;
+	font-style: oblique -12deg;
+	font-weight: 400 900;
+	src: url("/fonts/golos-text.woff2?v=#{$golos-text-version}") format("woff2");
+	font-family: "Golos Text";
+	font-display: swap;
+}
+
+// Golos UI
+@font-face {
+	font-style: normal;
+	font-weight: 400 900;
+	src: url("/fonts/golos-ui.woff2?v=#{$golos-ui-version}") format("woff2");
+	font-family: "Golos UI";
+	font-display: swap;
+}
+
+@font-face {
+	font-style: italic;
+	font-style: oblique -12deg;
+	font-weight: 400 900;
+	src: url("/fonts/golos-ui.woff2?v=#{$golos-ui-version}") format("woff2");
+	font-family: "Golos UI";
+	font-display: swap;
+}

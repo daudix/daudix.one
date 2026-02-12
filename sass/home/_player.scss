@@ -1,3 +1,5 @@
+@use "../../themes/ametrine/sass/abstracts/functions" as *;
+
 .masonry .item.player {
 	display: flex;
 	gap: 1rem;
@@ -132,7 +134,7 @@
 
 #player-status {
 	position: relative;
-	height: 0.625rem;
+	height: rpx(12.5);
 	overflow: hidden;
 }
 
@@ -143,7 +145,7 @@
 	transition: var(--transition);
 	color: var(--fg-muted-1);
 	font-size: var(--font-size-xx-small);
-	line-height: 1;
+	line-height: 1.25;
 }
 
 #now-playing {
@@ -160,7 +162,7 @@
 #player-title,
 #player-artist {
 	display: inline-block;
-	line-height: 1;
+	line-height: 1.25;
 	white-space: nowrap;
 }
 

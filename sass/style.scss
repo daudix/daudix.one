@@ -1,6 +1,8 @@
 @use "../themes/ametrine/sass/style";
-@use "layout/container-fill";
+@use "base/fonts";
+@use "base/root";
 @use "components/icon-grid";
 @use "components/media-grid";
 @use "components/nanolog";
 @use "components/rainbow";
+@use "layout/container-fill";
