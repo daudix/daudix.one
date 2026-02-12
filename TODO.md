@@ -1,5 +1,4 @@
 - Steal dynamic age widget from axeni.de
-- Fix ugly thin white border peeking from behind now playing widget
 - Fix nanolog pages having "404" as their title
 - Use ✦ for list bullets, in some places at least
 - Add donation footer to blosts
@@ -7,15 +6,13 @@
 - CHANGE STYLE OF "LINK TO SECTION" THINGY YOU MISERABLE POS (heading anchor link button)
 - Clarify that Ametrine is not some random starter template but is hand crafted by me
 - Separate guides from blog posts
-- Use .ico favicon
-- https://home.hedy.dev/posts/meta-pages/
-- **Redraw pixel art social icons**
+- <https://home.hedy.dev/posts/meta-pages/>
 - Replace minified pngs with webps
-- https://slashpages.net
+- <https://slashpages.net>
 - Chat bubble style/shortcode
 - Rewrite the script on /snug-nook/
-- https://piccalil.li/blog/some-simple-ways-to-make-content-look-good/
-- https://bsky.app/profile/bell.bz/post/3lsbmfkreec2o
+- <https://piccalil.li/blog/some-simple-ways-to-make-content-look-good/>
+- <https://bsky.app/profile/bell.bz/post/3lsbmfkreec2o>
 - Make badges popup closable via outside click
 - Make "shrine" for my beloved portal series
 - Add photo gallery (random polaroid rotation can be done using Tera's `get_random`)
