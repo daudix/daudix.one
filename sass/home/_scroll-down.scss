@@ -20,4 +20,8 @@
 	.icon:last-of-type {
 		animation-delay: 0.2s;
 	}
+
+	@media only screen and (max-width: 480px) {
+		display: none;
+	}
 }

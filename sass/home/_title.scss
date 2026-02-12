@@ -1,12 +1,34 @@
 @use "../../themes/ametrine/sass/abstracts/functions" as *;
 
-#title {
-	--shift: 0.1875rem;
-	display: block;
+@font-face {
+	font-style: normal;
+	font-weight: 400;
+	src: url("/home/fonts/pacifico.woff2") format("woff2");
+	font-family: "Pacifico";
+	font-display: swap;
+	font-synthesis: none;
+	unicode-range:
+		0044, 0061, 0076, 0069, 0064, 0020, 004C, 0061, 0070, 0073, 0068, 0069,
+		006E;
+}
+
+#david-lapshin {
+	--shift: #{rpx(3)};
+	filter: url("#squiggly-1");
+	animation: squiggly var(--transition-longer) linear infinite;
 	transition: var(--transition-bezier);
-	margin-block-start: 0;
-	image-rendering: pixelated;
-	width: min(rpx(497), 100%);
+	margin: 0;
+	margin-block: 0 3rem;
+	font-size: 5rem;
+	font-family: "Pacifico";
+	letter-spacing: 0;
+	user-select: none;
+	text-decoration: none;
+
+	&:hover,
+	&:active {
+		color: #9bdbf5;
+	}
 
 	&:hover {
 		// Dashie!
@@ -14,55 +36,42 @@
 			calc(var(--shift) * 3),
 			calc(calc(var(--shift) * -1) * 3)
 		);
-		filter: drop-shadow(calc(var(--shift) * -1) var(--shift) 0 #1b98d1)
-			drop-shadow(calc(var(--shift) * -1) var(--shift) 0 #fde85f)
-			drop-shadow(calc(var(--shift) * -1) var(--shift) 0 #ec4141);
-
-		#david-lapshin {
-			background-color: #9bdbf5;
-		}
+		text-shadow:
+			calc(var(--shift) * -1) var(--shift) #1b98d1,
+			calc((var(--shift) * -1) * 2) calc(var(--shift) * 2) #fde85f,
+			calc((var(--shift) * -1) * 3) calc(var(--shift) * 3) #ec4141;
 	}
 
 	&:active {
+		--shift: #{rpx(-3)}; // Invert direction
 		// 20% cooler
 		transform: translate(
-			calc(calc(var(--shift) * -1) * 3),
+			calc(var(--shift) * 3),
 			calc(calc(var(--shift) * -1) * 3)
 		);
-		filter: drop-shadow(var(--shift) var(--shift) 0 #1b98d1)
-			drop-shadow(var(--shift) var(--shift) 0 #fde85f)
-			drop-shadow(var(--shift) var(--shift) 0 #ec4141);
-
-		#david-lapshin {
-			background-color: #9bdbf5;
-		}
 	}
 
-	#david-lapshin {
-		--mask: url("header.gif");
-		-webkit-user-select: none;
-		-webkit-mask-image: var(--mask);
-		-webkit-mask-size: contain;
-		-webkit-mask-repeat: no-repeat;
-		mask-image: var(--mask);
-		mask-size: contain;
-		mask-repeat: no-repeat;
-		transition: var(--transition-bezier);
-		margin: 0;
-		background-color: var(--accent-color);
-		aspect-ratio: 497 / 113; // Proper height regardless of the width
-		width: 100%;
-		overflow: hidden; // Make aspect ratio set above work
-		color: transparent;
-		user-select: none;
-		text-decoration: none;
-
-		@media (prefers-reduced-motion) {
-			--mask: url("header-static.gif");
-		}
+	@media only screen and (max-width: 960px) {
+		margin: 2rem auto 2.5rem;
+		text-align: center;
 	}
 
-	@media only screen and (max-width: 944px) {
-		margin: 2rem auto 1rem;
+	@media only screen and (max-width: 480px) {
+		font-size: 3.375rem;
+	}
+
+	@keyframes squiggly {
+		from {
+			filter: url("#squiggly-1");
+		}
+		33% {
+			filter: url("#squiggly-2");
+		}
+		66% {
+			filter: url("#squiggly-3");
+		}
+		to {
+			filter: url("#squiggly-4");
+		}
 	}
 }

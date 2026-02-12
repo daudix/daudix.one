@@ -90,11 +90,11 @@
 		transition: var(--transition-bezier-longer);
 		border-block: 0.125rem solid currentColor;
 		width: 17.5rem;
-		height: 3.75rem;
+		height: 3.625rem;
 		color: inherit;
-		font-weight: var(--font-weight-black);
-		font-size: 3rem;
-		letter-spacing: -0.055em;
+		font-weight: var(--font-weight-extra-bold);
+		font-size: 2.875rem;
+		letter-spacing: -0.025em;
 		text-decoration: underline solid;
 		text-decoration-color: transparent;
 		text-decoration-thickness: 0.125em;
@@ -135,6 +135,7 @@
 
 			span:nth-of-type(1) {
 				animation-delay: 0.2s;
+				margin-inline-start: 0.375rem;
 			}
 
 			span:nth-of-type(2) {

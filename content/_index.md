@@ -212,3 +212,32 @@ I'm even a member of several [tildes](https://envs.net) and [CS clubs](https://e
 Better yet, I have a website on [neocities](https://neocities.org); It doesn't have any purpose except for being there and looking dated. [Check it out](https://daudix.neocities.org) if you want.
 
 <img id="flutter" width="128" height="110" class="transparent no-hover" src="home/flutter.webp" alt="Fluttershy with a wide grin on her face.">
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="visually-hidden">
+  <defs>
+    <filter id="squiggly-1">
+      <feTurbulence baseFrequency="0.1" numOctaves="3" result="noise1" seed="1"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise1" scale="3" result="displaced1"/>
+      <feTurbulence baseFrequency="0.02" numOctaves="2" result="noise2" seed="1"/>
+      <feDisplacementMap in="displaced1" in2="noise2" scale="6"/>
+    </filter>
+    <filter id="squiggly-2">
+      <feTurbulence baseFrequency="0.1" numOctaves="3" result="noise1" seed="2"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise1" scale="3" result="displaced1"/>
+      <feTurbulence baseFrequency="0.02" numOctaves="2" result="noise2" seed="2"/>
+      <feDisplacementMap in="displaced1" in2="noise2" scale="6"/>
+    </filter>
+    <filter id="squiggly-3">
+      <feTurbulence baseFrequency="0.1" numOctaves="3" result="noise1" seed="3"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise1" scale="3" result="displaced1"/>
+      <feTurbulence baseFrequency="0.02" numOctaves="2" result="noise2" seed="3"/>
+      <feDisplacementMap in="displaced1" in2="noise2" scale="6"/>
+    </filter>
+    <filter id="squiggly-4">
+      <feTurbulence baseFrequency="0.1" numOctaves="3" result="noise1" seed="4"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise1" scale="3" result="displaced1"/>
+      <feTurbulence baseFrequency="0.02" numOctaves="2" result="noise2" seed="4"/>
+      <feDisplacementMap in="displaced1" in2="noise2" scale="6"/>
+    </filter>
+  </defs>
+</svg>
