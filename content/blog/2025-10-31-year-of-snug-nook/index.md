@@ -121,8 +121,9 @@ In additon to the made up politics, Snug Nook gained a channel for very much rea
 
 For the long time, there was an underground community referred to as #sillies-only, consisting of Het Etanes members and some trusted folks referred to as "Sillies". Multiple arguments have taken place in it, last one stabbing it fatally, so it has since been retired. Everyone now has equal access to channels!
 
-> {{ icon(name="user") }} gabs:  
-> Communism?? /hj
+{% alert(icon="user", title="gabs") %}
+Communism?? /hj
+{% end %}
 
 ## snugnook.org
 
