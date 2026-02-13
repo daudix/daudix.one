@@ -2,6 +2,7 @@
 
 #window-border {
 	position: relative;
+	filter: var(--drop-shadow);
 	margin-inline: auto;
 	border: 4rem solid;
 	border-image: url("border.gif") 32 repeat;
