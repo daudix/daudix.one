@@ -1,0 +1,33 @@
+#download-csv {
+	display: flex;
+	align-items: center;
+	transform-origin: 1.375rem 50%;
+	transition:
+		all var(--transition),
+		transform var(--transition-bezier);
+	border-radius: 1.625rem;
+	padding: 0.25rem;
+	padding-inline-end: 0.875rem;
+	width: fit-content;
+	color: var(--fg-muted-1);
+	line-height: 1;
+	text-decoration: none;
+
+	&:hover {
+		background-color: var(--bg-muted-2);
+		color: var(--fg-muted-2);
+	}
+
+	&:active {
+		transform: var(--active);
+	}
+
+	.icon {
+		margin-inline-end: 0.5rem;
+		box-shadow: var(--edge-highlight);
+		border-radius: 50%;
+		background-color: var(--bg-muted-1);
+		padding: 0.5rem;
+		font-size: 1.25rem;
+	}
+}
