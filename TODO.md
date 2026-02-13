@@ -1,7 +1,6 @@
 - Steal dynamic age widget from axeni.de
 - Fix nanolog pages having "404" as their title
 - Use ✦ for list bullets, in some places at least
-- Add donation footer to blosts
 - Simper masonry grids on /home
 - CHANGE STYLE OF "LINK TO SECTION" THINGY YOU MISERABLE POS (heading anchor link button)
 - Clarify that Ametrine is not some random starter template but is hand crafted by me
