@@ -9,7 +9,9 @@ This is the least fun page on this website. Deal with it.
 
 This website is a passion project of mine, made with a lot of love and attention to details, is constantly updated and improved, and has the goal of being lightweight and somewhat compatible with older browsers. <small>(at very least most stuff works on iOS 15 and macOS High Sierra; which unfortunately a lot of people still use)</small>
 
-It does not use frameworks such as React --- only [Zola](https://www.getzola.org) with handwritten HTML templates --- and the (S)CSS is handwritten without the use of tools like Tailwind. One could argue that it would be much easier if I did, but I prefer to write everything myself to have great control over minor details.
+It does not use frameworks such as React---only [Zola](https://www.getzola.org) with handwritten HTML templates, and the (S)CSS is handwritten without the use of tools like Tailwind. One could argue that it would be much easier if I did, but I prefer to write everything myself to have great control over minor details. I also enjoy the process and I find it calming.
+
+Nothing on it (except for some tiny JavaScript snippets, but even then it's throughly reviewed and changed up) is "vibecoded". All blog posts are written by yours truly, and all ideas are my own or inspired by other human beings.
 
 It is currently hosted from a 2010 PC in my bedroom <sup><small>[*citation needed*]</small></sup>. Before that it used to be hosted on [Cloudflare Pages](https://pages.cloudflare.com), [Netlify](https://www.netlify.com), [Vercel](https://vercel.com), [Codeberg Pages](https://codeberg.page), [exozyme](https://exozy.me), and [GitHub Pages](https://pages.github.com).
 
@@ -24,11 +26,11 @@ Most likely I forgot to credit someone. Sorry about that \>_<
 - "dwb" for the ASCII art on the blog page.
 - [Fuwari](https://fuwari.vercel.app) blog template for some design inspirations. <small>(mostly the design of post cards)</small>
 - All the sites that are listed on the [badges](@/badges/index.md) page for inspiration.
-- Everyone who supported me and said good stuff. <small>(you know who you are, thank you sincerely <3)</small>
+- Everyone who supported me, said good stuff, and kept me going on. <small>(you know who you are, thank you sincerely <3)</small>
 
 ## To-Do
 
-This section is automatically updated from [TODO.md](https://github.com/daudix/daudix.one/blob/main/TODO.md).
+This section is automatically pulled from [TODO.md](https://github.com/daudix/daudix.one/blob/main/TODO.md) file.
 
 <details>
 <summary>Click to expand</summary>
