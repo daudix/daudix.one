@@ -6,9 +6,10 @@
 	padding: 0.5rem;
 
 	&.has-cover {
+		animation: cover-alternate 60s ease-in-out infinite;
 		background-image: var(--bg-overlay), var(--blurnail);
 		background-position: center;
-		background-size: 1000%;
+		background-size: 2000%;
 
 		#now-playing,
 		#last-played {
