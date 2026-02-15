@@ -1,4 +1,4 @@
-- Steal dynamic age widget from axeni.de
+- Avoid using IDs for styling as per <https://google.github.io/styleguide/htmlcssguide.html#ID_Selectors>
 - Fix nanolog pages having "404" as their title
 - Use ✦ for list bullets, in some places at least
 - Clarify that Ametrine is not some random starter template but is hand crafted by me
