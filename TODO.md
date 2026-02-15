@@ -1,7 +1,6 @@
 - Steal dynamic age widget from axeni.de
 - Fix nanolog pages having "404" as their title
 - Use ✦ for list bullets, in some places at least
-- Simper masonry grids on /home
 - Clarify that Ametrine is not some random starter template but is hand crafted by me
 - Separate guides from blog posts
 - <https://home.hedy.dev/posts/meta-pages/>
