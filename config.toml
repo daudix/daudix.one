@@ -32,9 +32,6 @@ extra_themes = [
   "themes/ametrine/giallo/themes/monokai-pro.json",
 ]
 
-[link_checker]
-internal_level = "warn"
-
 [search]
 index_format = "elasticlunr_json"
 
