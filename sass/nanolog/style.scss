@@ -22,7 +22,7 @@ h1 {
 	width: min(calc(var(--content-width) / 1.5), 100%);
 	list-style: none;
 
-	li {
+	& > li {
 		position: relative;
 		margin-block: 0;
 		padding-inline-start: 1rem;
