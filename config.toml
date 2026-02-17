@@ -110,9 +110,10 @@ links = [
   { name = "Projects", category = [
     { url = "@/design/index.md", name = "Design", icon = "compass-tool" },
     { url = "@/calendar/index.md", name = "Calendar", icon = "calendar-dots" },
+    { url = "https://ametrine.daudix.one", name = "Ametrine", icon = "traffic-cone" },
     { url = "https://snugnook.org", name = "Snug Nook", icon = "chats" },
   ] },
-  { name = "Extra", category = [
+  { name = "Extra", closed = true, category = [
     { url = "@/coffee/index.md", name = "Coffee", icon = "coffee" },
     { url = "@/colophon/index.md", name = "Colophon", icon = "question" },
     # { url = "@/commissions/index.md", name = "Commissions", icon = "wallet" },

@@ -10,7 +10,7 @@ graphics = [
 	{ name = "4-by-3", text = "1024x768" },
 	{ name = "no-js", text = "No Essential\nJavaScript" },
 	{ name = "web-14", text = "14+", url = "https://www.mabsland.com/Adoption.html" },
-	{ name = "profanity", text = "Mild Profanity" },
+	{ name = "profanity", text = "Mild\nProfanity" },
 ]
 badges = [
   { name = "adhd.gif", url = "https://en.wikipedia.org/wiki/Attention_deficit_hyperactivity_disorder" },

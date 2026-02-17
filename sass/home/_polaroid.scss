@@ -8,7 +8,7 @@
 	transform: perspective(var(--content-width)) rotate(5deg) rotateX(5deg);
 	transform-origin: 50% 1rem;
 	transition: var(--transition-bezier);
-	margin-inline-start: 1rem;
+	margin-inline-start: 2rem;
 	margin-block-start: 1rem;
 	box-shadow: var(--shadow-glass);
 	border-radius: var(--rounded-corner-small);
