@@ -1,6 +1,7 @@
 +++
 title = "I've Been Interviewed"
 description = "You've been what!?"
+updated = 2026-02-19
 [taxonomies]
 tags = ["100DaysToOffload"]
 [extra]
@@ -14,6 +15,8 @@ id = "113312629869813421"
 
 This came as a surprise to me, a good one; I've been interviewed by [Jakov](https://sheepdev.xyz) on the recommendation of [Ivan](https://ivanmarkov.net). It's been quite fun reading the previous editions of the "People and Websites" series and writing this one. It covers a bit of my and my website's backstory, some of which I've already shared here, but nonetheless there's some exclusive stuff, so give it and the other editions of the series a read:
 
-[sheepdev.xyz/blog/people-and-websites-5-david](https://sheepdev.xyz/blog/people-and-websites-5-david)
+<https://jkoprivnjak.com/blog/people-and-websites-5-david>
 
-If you want to comment on the interview itself, I'd recommend doing so at [Jakov's post](https://social.sheepdev.xyz/@sheep/statuses/01JA7Q3MWS34XKASF431T6HZ57) ;)
+{% alert(icon="pencil-simple", title="Edit") %}
+**2026-02-19:** Jakov let me know that his old domain---sheepdev.xyz---have expired and now he's using a different one. I have updated the link accordingly. social.sheepdev.xyz no longer exists, so I removed the mention of it as a place for commenting on the interview.
+{% end %}
