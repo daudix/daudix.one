@@ -2,7 +2,6 @@
 - Avoid using IDs for styling as per <https://google.github.io/styleguide/htmlcssguide.html#ID_Selectors>
 - Fix nanolog pages having "404" as their title
 - Use ✦ for list bullets, in some places at least
-- Clarify that Ametrine is not some random starter template but is hand crafted by me
 - Separate guides from blog posts
 - <https://home.hedy.dev/posts/meta-pages/>
 - Replace minified pngs with webps

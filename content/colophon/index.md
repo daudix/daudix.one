@@ -13,6 +13,8 @@ It does not use frameworks such as React---only [Zola](https://www.getzola.org) 
 
 Nothing on it (except for some tiny JavaScript snippets, but even then it's throughly reviewed and changed up) is "vibecoded". All blog posts are written by yours truly, and all ideas are my own or inspired by other human beings.
 
+Powered by a modified version of my [Ametrine theme](https://ametrine.daudix.one) for [Zola](https://www.getzola.org), which is not someone's starter template but something hand-written by me that doesn't use React or Tailwind or any other web or styling framework (it's a common misconception, although I'm flattered). You might've seen a dozen other sites that look similar to this one, and well, yeah, that's kind of the point of Ametrine (although "borrowing" all of my custom additons to it isn't).
+
 It is currently hosted from a 2010 PC in my bedroom <sup><small>[*citation needed*]</small></sup>. Before that it used to be hosted on [Cloudflare Pages](https://pages.cloudflare.com), [Netlify](https://www.netlify.com), [Vercel](https://vercel.com), [Codeberg Pages](https://codeberg.page), [exozyme](https://exozy.me), and [GitHub Pages](https://pages.github.com).
 
 ## Thanks To
