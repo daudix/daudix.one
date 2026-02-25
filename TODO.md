@@ -1,3 +1,4 @@
+- Design new 88x31 to match current logo
 - Make rainbow text animation use `steps(n, jump-none)`
 - Add more icons to /design (Cassiere, Miniera, GNOMEntary Cavailer, open-tv, Compito, MenuKaran, sveglia, boutique, gdm-settings, GSConnect, Stamina, etc. that I can find in ~/Projects)
 - Add icon reflections to /design (use [-webkit-box-reflect](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/-webkit-box-reflect) and [element()](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/element))
