@@ -1,259 +1,264 @@
 @use "../../themes/ametrine/sass/abstracts/functions" as *;
 
 #badges {
-	position: relative;
-	padding-block-start: 0.75rem;
+  position: relative;
+  padding-block-start: 0.75rem;
 
-	&:hover #here {
-		transform: none;
-		opacity: 1;
-	}
+  &:hover #here {
+    transform: none;
+    opacity: 1;
+  }
 
-	&:has(#badges-popup-expand:checked) #here {
-		transform: scale(0.5);
-		opacity: 0;
-	}
+  &:has(#badges-popup-expand:checked) #here {
+    transform: scale(0.5);
+    opacity: 0;
+  }
 
-	& > p {
-		margin: 0.5rem 0 1rem;
-	}
+  & > p {
+    margin: 0.5rem 0 1rem;
+  }
 
-	.badges-marquee-wrapper {
-		content-visibility: auto;
-		margin: -1rem -1rem -2.125rem;
-		padding: 1rem 0 2.125rem;
-		overflow: hidden;
-	}
+  .badges-marquee-wrapper {
+    content-visibility: auto;
+    margin: -1rem -1rem -2.125rem;
+    padding: 1rem 0 2.125rem;
+    overflow: hidden;
+  }
 
-	.badges-marquee {
-		display: flex;
+  .badges-marquee {
+    display: flex;
 
-		&:hover ul {
-			animation-play-state: paused;
+    &:hover ul {
+      animation-play-state: paused;
 
-			img:not(:hover),
-			iframe:not(:hover),
-			#more:not(:hover) {
-				// transform: translate(-0.125rem, 0.125rem);
-				opacity: var(--disabled-opacity);
-				filter: blur(0.125rem);
-			}
-		}
+      img:not(:hover),
+      iframe:not(:hover),
+      #more:not(:hover) {
+        // transform: translate(-0.125rem, 0.125rem);
+        opacity: var(--disabled-opacity);
+        filter: blur(0.125rem);
+      }
+    }
 
-		ul {
-			display: flex;
-			flex-shrink: 0;
-			animation: badges-marquee-scroll var(--duration) linear infinite;
-			transition: var(--transition);
-			margin: 0;
-			padding: 0;
-			list-style: none;
+    ul {
+      display: flex;
+      flex-shrink: 0;
+      animation: badges-marquee-scroll var(--duration) linear infinite;
+      transition: var(--transition);
+      margin: 0;
+      padding: 0;
+      list-style: none;
 
-			@keyframes badges-marquee-scroll {
-				from {
-					transform: translateX(0);
-				}
+      @keyframes badges-marquee-scroll {
+        from {
+          transform: translateX(0);
+        }
 
-				to {
-					transform: translateX(-100%);
-				}
-			}
-		}
+        to {
+          transform: translateX(-100%);
+        }
+      }
+    }
 
-		li {
-			display: flex;
-			flex-shrink: 0;
-			margin-inline-end: 0.25rem;
-			margin-block: 0;
-			padding: 0;
-			height: fit-content;
-			line-height: 0;
-		}
+    li {
+      display: flex;
+      flex-shrink: 0;
+      margin-inline-end: 0.25rem;
+      margin-block: 0;
+      padding: 0;
+      height: fit-content;
+      line-height: 0;
+    }
 
-		a:active {
-			img,
-			iframe {
-				transform: var(--active);
-			}
-		}
+    a:active {
+      img,
+      iframe {
+        transform: var(--active);
+      }
+    }
 
-		img,
-		iframe,
-		#more {
-			transition: all var(--transition),
-				transform var(--transition-bezier);
-			margin: 0;
-			width: rpx(88);
-			height: rpx(31);
+    img,
+    iframe,
+    #more {
+      transition:
+        all var(--transition),
+        transform var(--transition-bezier);
+      margin: 0;
+      width: rpx(88);
+      height: rpx(31);
 
-			&:hover {
-				transform: translate(0.125rem, -0.125rem);
-				filter: var(--drop-shadow);
-			}
-		}
+      &:hover {
+        transform: translate(0.125rem, -0.125rem);
+        filter: var(--drop-shadow);
+      }
+    }
 
-		iframe {
-			box-shadow: none;
-			border-radius: 0;
-		}
+    iframe {
+      box-shadow: none;
+      border-radius: 0;
+    }
 
-		#more {
-			display: flex;
-			justify-content: center;
-			border: rpx(1) dashed var(--fg-muted-1);
-			color: var(--fg-color);
-			font-weight: var(--font-weight-medium);
-			font-size: var(--font-size-x-small);
-			line-height: 1;
-			text-decoration: none;
+    #more {
+      display: flex;
+      justify-content: center;
+      border: rpx(1) dashed var(--fg-muted-1);
+      color: var(--fg-color);
+      font-weight: var(--font-weight-medium);
+      font-size: var(--font-size-x-small);
+      line-height: 1;
+      text-decoration: none;
 
-			&:hover {
-				border-color: var(--contrast-color);
-				background-color: var(--accent-color);
-				color: var(--contrast-color);
-			}
+      &:hover {
+        border-color: var(--contrast-color);
+        background-color: var(--accent-color);
+        color: var(--contrast-color);
+      }
 
-			&:active {
-				transform: var(--active);
-			}
+      &:active {
+        transform: var(--active);
+      }
 
-			span {
-				display: inline-block;
-				margin-block-start: rpx(2);
-			}
-		}
-	}
+      span {
+        display: inline-block;
+        margin-block-start: rpx(2);
+      }
+    }
+  }
 
-	#badges-popup-expand {
-		&:checked {
-			& + label {
-				.icon.plus {
-					transform: rotate(45deg);
-					opacity: 0;
-				}
+  #badges-popup-expand {
+    &:checked {
+      & + label {
+        .icon.plus {
+          transform: rotate(45deg);
+          opacity: 0;
+        }
 
-				.icon.x {
-					transform: none;
-					opacity: 1;
-				}
-			}
+        .icon.x {
+          transform: none;
+          opacity: 1;
+        }
+      }
 
-			& ~ #badges-popup {
-				-webkit-backdrop-filter: var(--blur);
-				transform: none;
-				visibility: visible;
-				opacity: 1;
-				backdrop-filter: var(--blur);
-				background-color: var(--glass-bg-1);
-			}
-		}
+      & ~ #badges-popup {
+        -webkit-backdrop-filter: var(--blur);
+        transform: none;
+        visibility: visible;
+        opacity: 1;
+        backdrop-filter: var(--blur);
+        background-color: var(--glass-bg-1);
+      }
+    }
 
-		&:focus-visible + label {
-			animation: focus-in var(--transition);
-			outline: 0.125rem solid var(--accent-color);
-			outline-offset: 0.125rem;
-		}
+    &:focus-visible + label {
+      animation: focus-in var(--transition);
+      outline: 0.125rem solid var(--accent-color);
+      outline-offset: 0.125rem;
+    }
 
-		& + label {
-			position: absolute;
-			transition: all var(--transition),
-				transform var(--transition-bezier);
-			cursor: pointer;
-			inset-block-start: 0.5rem;
-			inset-inline-end: 0.5rem;
-			border-radius: var(--rounded-corner-small);
-			width: 2rem;
-			height: 2rem;
-			color: var(--accent-color);
+    & + label {
+      position: absolute;
+      transition:
+        all var(--transition),
+        transform var(--transition-bezier);
+      cursor: pointer;
+      inset-block-start: 0.5rem;
+      inset-inline-end: 0.5rem;
+      border-radius: var(--rounded-corner-small);
+      width: 2rem;
+      height: 2rem;
+      color: var(--accent-color);
 
-			&:hover {
-				box-shadow: var(--edge-highlight);
-				background-color: var(--bg-muted-1);
-			}
+      &:hover {
+        box-shadow: var(--edge-highlight);
+        background-color: var(--bg-muted-1);
+      }
 
-			&:active {
-				transform: var(--active);
-			}
+      &:active {
+        transform: var(--active);
+      }
 
-			.icon {
-				position: absolute;
-				transition: all var(--transition),
-					transform var(--transition-bezier);
-				inset: 0.5rem;
-			}
+      .icon {
+        position: absolute;
+        transition:
+          all var(--transition),
+          transform var(--transition-bezier);
+        inset: 0.5rem;
+      }
 
-			.icon.x {
-				transform: rotate(-45deg);
-				opacity: 0;
-			}
-		}
-	}
+      .icon.x {
+        transform: rotate(-45deg);
+        opacity: 0;
+      }
+    }
+  }
 
-	#badges-popup {
-		position: absolute;
-		transform: scale(0.5) translate(1rem, -1rem);
-		transform-origin: top right;
-		visibility: hidden;
-		opacity: 0;
-		z-index: 1;
-		transition: all var(--transition), transform var(--transition-bezier);
-		inset-block-start: 2.5rem;
-		inset-inline-end: 2.5rem;
-		box-shadow: var(--edge-highlight), var(--shadow-glass);
-		border-radius: var(--rounded-corner);
-		padding: 1rem;
-		width: calc(var(--content-width) / 3);
+  #badges-popup {
+    position: absolute;
+    transform: scale(0.5) translate(1rem, -1rem);
+    transform-origin: top right;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+    transition:
+      all var(--transition),
+      transform var(--transition-bezier);
+    inset-block-start: 2.5rem;
+    inset-inline-end: 2.5rem;
+    box-shadow: var(--edge-highlight), var(--shadow-glass);
+    border-radius: var(--rounded-corner);
+    padding: 1rem;
+    width: calc(var(--content-width) / 3);
 
-		ul {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-			gap: 0.25rem;
-			padding-inline-start: 0;
-			list-style: none;
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.25rem;
+      padding-inline-start: 0;
+      list-style: none;
 
-			li {
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				margin-block: 0;
-				padding-inline-start: 0;
+      li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-block: 0;
+        padding-inline-start: 0;
 
-				img {
-					margin: 0;
-				}
+        img {
+          margin: 0;
+        }
 
-				span {
-					color: var(--fg-muted-2);
-					font-size: var(--font-size-x-small);
-				}
-			}
-		}
-	}
+        span {
+          color: var(--fg-muted-2);
+          font-size: var(--font-size-x-small);
+        }
+      }
+    }
+  }
 
-	#here {
-		--mask: url("here.gif");
-		-webkit-mask-image: var(--mask);
-		position: absolute;
-		transform: scale(0.5);
-		transform-origin: rpx(36) rpx(182);
-		opacity: 0;
-		mask-image: var(--mask);
-		mask-size: cover;
-		transition: var(--transition-bezier);
-		inset-block-start: calc(-100% - 3rem);
-		inset-inline-end: -2.5rem;
-		background-color: var(--accent-color);
-		width: rpx(76);
-		height: rpx(194);
-		pointer-events: none;
+  #here {
+    --mask: url("here.gif");
+    -webkit-mask-image: var(--mask);
+    position: absolute;
+    transform: scale(0.5);
+    transform-origin: rpx(36) rpx(182);
+    opacity: 0;
+    mask-image: var(--mask);
+    mask-size: cover;
+    transition: var(--transition-bezier);
+    inset-block-start: calc(-100% - 3rem);
+    inset-inline-end: -2.5rem;
+    background-color: var(--accent-color);
+    width: rpx(76);
+    height: rpx(194);
+    pointer-events: none;
 
-		@media (prefers-reduced-motion) {
-			--mask: url("here-static.gif");
-		}
+    @media (prefers-reduced-motion) {
+      --mask: url("here-static.gif");
+    }
 
-		@media only screen and (max-width: 1024px) {
-			display: none;
-		}
-	}
+    @media only screen and (max-width: 1024px) {
+      display: none;
+    }
+  }
 }

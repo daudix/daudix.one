@@ -1,40 +1,40 @@
 @use "../../../themes/ametrine/sass/abstracts/functions" as *;
 
 #now-playing {
-	margin-block-start: 1rem;
+  margin-block-start: 1rem;
 
-	img {
-		margin-block: 0;
-		box-shadow: var(--shadow);
-		border-radius: 1rem;
-	}
+  img {
+    margin-block: 0;
+    box-shadow: var(--shadow);
+    border-radius: 1rem;
+  }
 }
 
 #eras-timeline {
-	margin-inline: -1rem;
-	margin-block: 1rem;
-	width: calc(100% + 2rem);
-	height: rpx(575);
-	line-height: 0;
+  margin-inline: -1rem;
+  margin-block: 1rem;
+  width: calc(100% + 2rem);
+  height: rpx(575);
+  line-height: 0;
 
-	.overshoot-row {
-		height: 100%;
-		overflow: scroll;
-		scrollbar-width: thin;
-	}
+  .overshoot-row {
+    height: 100%;
+    overflow: scroll;
+    scrollbar-width: thin;
+  }
 
-	picture {
-		height: 100%;
-	}
+  picture {
+    height: 100%;
+  }
 
-	img {
-		margin: 0;
-		max-width: none;
-		height: 100%;
-		max-height: none;
-	}
+  img {
+    margin: 0;
+    max-width: none;
+    height: 100%;
+    max-height: none;
+  }
 
-	& + .buttons {
-		margin-block-start: 1rem;
-	}
+  & + .buttons {
+    margin-block-start: 1rem;
+  }
 }

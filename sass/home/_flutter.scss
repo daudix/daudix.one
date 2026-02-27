@@ -2,60 +2,60 @@
 
 // Who's shy?
 #shy {
-	transition: var(--transition);
-	cursor: pointer;
-	box-shadow: none;
-	border-radius: 0;
-	background-color: transparent;
-	padding: 0;
-	color: inherit;
-	font-weight: inherit;
-	font-size: inherit;
-	text-decoration: underline;
-	text-decoration-style: dotted;
-	text-decoration-thickness: rpx(1);
+  transition: var(--transition);
+  cursor: pointer;
+  box-shadow: none;
+  border-radius: 0;
+  background-color: transparent;
+  padding: 0;
+  color: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-thickness: rpx(1);
 
-	&:hover {
-		text-decoration-style: solid;
-	}
+  &:hover {
+    text-decoration-style: solid;
+  }
 
-	&:active {
-		transform: none;
-	}
+  &:active {
+    transform: none;
+  }
 
-	&:disabled {
-		opacity: var(--disabled-opacity);
-		cursor: not-allowed;
-	}
+  &:disabled {
+    opacity: var(--disabled-opacity);
+    cursor: not-allowed;
+  }
 }
 
 // Ah, that's who
 #flutter {
-	position: fixed;
-	transform: translateY(100%);
-	visibility: hidden;
-	z-index: 1;
-	margin: 0;
-	inset-block-end: 0;
-	inset-inline-end: 1rem;
-	width: rpx(128);
-	height: rpx(110);
+  position: fixed;
+  transform: translateY(100%);
+  visibility: hidden;
+  z-index: 1;
+  margin: 0;
+  inset-block-end: 0;
+  inset-inline-end: 1rem;
+  width: rpx(128);
+  height: rpx(110);
 
-	@media only screen and (max-width: 480px) {
-		width: calc(rpx(128) / 2);
-		height: calc(rpx(110) / 2);
-	}
+  @media only screen and (max-width: 480px) {
+    width: calc(rpx(128) / 2);
+    height: calc(rpx(110) / 2);
+  }
 
-	&.active {
-		animation: peek var(--transition-long);
+  &.active {
+    animation: peek var(--transition-long);
 
-		@keyframes peek {
-			50%,
-			75% {
-				transform: translateY(0);
-				visibility: visible;
-				filter: var(--drop-shadow);
-			}
-		}
-	}
+    @keyframes peek {
+      50%,
+      75% {
+        transform: translateY(0);
+        visibility: visible;
+        filter: var(--drop-shadow);
+      }
+    }
+  }
 }

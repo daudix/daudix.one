@@ -2,7 +2,7 @@
 
 {% block picture %}
 <picture id="not-found">
-	<source srcset="{{ get_url(path='404-static.gif') }}" media="(prefers-reduced-motion: reduce)"></source>
-	<img class="pixels transparent no-hover drop-shadow" alt="404" {%- if config.markdown.lazy_async_image -%}decoding="async" loading="lazy"{%- endif -%} src="{{ get_url(path='404.gif') }}">
+  <source srcset="{{ get_url(path='404-static.gif') }}" media="(prefers-reduced-motion: reduce)"></source>
+  <img class="pixels transparent no-hover drop-shadow" alt="404" {%- if config.markdown.lazy_async_image -%}decoding="async" loading="lazy"{%- endif -%} src="{{ get_url(path='404.gif') }}">
 </picture>
 {% endblock picture %}

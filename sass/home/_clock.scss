@@ -1,19 +1,19 @@
 @use "../../themes/ametrine/sass/abstracts/mixins" as *;
 
 #clock {
-	@include chip;
-	animation: clock-blink 1s infinite;
-	color: var(--accent-color);
-	font-weight: var(--font-weight-semi-bold);
-	font-variant-numeric: tabular-nums;
+  @include chip;
+  animation: clock-blink 1s infinite;
+  color: var(--accent-color);
+  font-weight: var(--font-weight-semi-bold);
+  font-variant-numeric: tabular-nums;
 
-	@keyframes clock-blink {
-		25% {
-			color: var(--bg-muted-1);
-		}
+  @keyframes clock-blink {
+    25% {
+      color: var(--bg-muted-1);
+    }
 
-		50% {
-			color: var(--accent-color);
-		}
-	}
+    50% {
+      color: var(--accent-color);
+    }
+  }
 }

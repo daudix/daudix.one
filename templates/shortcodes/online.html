@@ -1,21 +1,21 @@
 {% import "macros/icon.html" as macros_icon %}
 
 {%- if type == "contacts" -%}
-	{%- set items = section.extra.contacts -%}
+  {%- set items = section.extra.contacts -%}
 {%- elif type == "socials" -%}
-	{%- set items = section.extra.socials -%}
+  {%- set items = section.extra.socials -%}
 {%- elif type == "forges" -%}
-	{%- set items = section.extra.forges -%}
+  {%- set items = section.extra.forges -%}
 {%- endif -%}
 
 {%- if type == "contacts" -%}
 <style>
-	:root {
-		--icon-circle-dashed: {{ macros_icon::icon(name="circle-dashed", inline=true) }};
-		--icon-circle: {{ macros_icon::icon(name="circle", inline=true) }};
-		--icon-minus-circle: {{ macros_icon::icon(name="minus-circle", inline=true) }};
-		--icon-moon: {{ macros_icon::icon(name="moon", inline=true) }};
-	}
+  :root {
+    --icon-circle-dashed: {{ macros_icon::icon(name="circle-dashed", inline=true) }};
+    --icon-circle: {{ macros_icon::icon(name="circle", inline=true) }};
+    --icon-minus-circle: {{ macros_icon::icon(name="minus-circle", inline=true) }};
+    --icon-moon: {{ macros_icon::icon(name="moon", inline=true) }};
+  }
 </style>
 {%- endif -%}
 
@@ -25,11 +25,11 @@
 <li>
 <a href="{{ item.url }}"{% if item.favorite %} class="favorite"{% endif %}>
 <img
-	width="32"
-	height="32"
-	class="transparent no-hover pixels drop-shadow"
-	alt="Pixel art {{ item.name }} icon."
-	src="{{ get_url(path=item_path) }}"
+  width="32"
+  height="32"
+  class="transparent no-hover pixels drop-shadow"
+  alt="Pixel art {{ item.name }} icon."
+  src="{{ get_url(path=item_path) }}"
 />
 {{- item.name -}}
 </a>

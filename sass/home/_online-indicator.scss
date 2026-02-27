@@ -2,41 +2,41 @@
 @use "../../themes/ametrine/sass/abstracts/mixins" as *;
 
 #online-indicator {
-	@include chip;
-	display: inline-block;
-	color: var(--fg-muted-2);
-	font-weight: var(--font-weight-semi-bold);
+  @include chip;
+  display: inline-block;
+  color: var(--fg-muted-2);
+  font-weight: var(--font-weight-semi-bold);
 
-	&.online {
-		background-color: var(--green-bg-1);
-		color: var(--green-fg);
+  &.online {
+    background-color: var(--green-bg-1);
+    color: var(--green-fg);
 
-		.icon {
-			--icon: var(--icon-circle);
-		}
-	}
+    .icon {
+      --icon: var(--icon-circle);
+    }
+  }
 
-	&.idle {
-		background-color: var(--yellow-bg-1);
-		color: var(--yellow-fg);
+  &.idle {
+    background-color: var(--yellow-bg-1);
+    color: var(--yellow-fg);
 
-		.icon {
-			--icon: var(--icon-moon);
-		}
-	}
+    .icon {
+      --icon: var(--icon-moon);
+    }
+  }
 
-	&.dnd {
-		background-color: var(--red-bg-1);
-		color: var(--red-fg);
+  &.dnd {
+    background-color: var(--red-bg-1);
+    color: var(--red-fg);
 
-		.icon {
-			--icon: var(--icon-minus-circle);
-		}
-	}
+    .icon {
+      --icon: var(--icon-minus-circle);
+    }
+  }
 
-	.icon {
-		--icon: var(--icon-circle-dashed);
-		vertical-align: rpx(-3);
-		margin-inline-end: 0.25rem;
-	}
+  .icon {
+    --icon: var(--icon-circle-dashed);
+    vertical-align: rpx(-3);
+    margin-inline-end: 0.25rem;
+  }
 }

@@ -2,144 +2,143 @@
 
 // It's not an accurate polaroid please don't kill me
 #polaroid {
-	display: block;
-	position: relative;
-	float: inline-end;
-	transform: perspective(var(--content-width)) rotate(5deg) rotateX(5deg);
-	transform-origin: 50% 1rem;
-	transition: var(--transition-bezier);
-	margin-inline-start: 2rem;
-	margin-block-start: 1rem;
-	box-shadow: var(--shadow-glass);
-	border-radius: var(--rounded-corner-small);
-	background-color: white;
-	padding: 0.5rem;
-	width: 10rem;
-	overflow: hidden;
+  display: block;
+  position: relative;
+  float: inline-end;
+  transform: perspective(var(--content-width)) rotate(5deg) rotateX(5deg);
+  transform-origin: 50% 1rem;
+  transition: var(--transition-bezier);
+  margin-inline-start: 2rem;
+  margin-block-start: 1rem;
+  box-shadow: var(--shadow-glass);
+  border-radius: var(--rounded-corner-small);
+  background-color: white;
+  padding: 0.5rem;
+  width: 10rem;
+  overflow: hidden;
 
-	@media only screen and (max-width: 960px) {
-		float: none;
-		margin: 2rem auto 0;
-	}
+  @media only screen and (max-width: 960px) {
+    float: none;
+    margin: 2rem auto 0;
+  }
 
-	&::after {
-		display: block;
-		position: absolute;
-		transform: perspective(var(--content-width)) rotate(-5deg)
-			rotateX(-5deg); // Dirty hack to avoid transformation of the thumbtack
-		z-index: 1;
-		filter: hue-rotate(calc(var(--accent-h) * 1deg));
-		transition: transform var(--transition-bezier);
-		inset-block-start: 0.25rem;
-		inset-inline-start: calc(50% - 0.7813rem);
-		background-image: url("thumbtack.png");
-		background-size: cover;
-		width: rpx(25);
-		height: rpx(19);
-		pointer-events: none;
-		content: "";
-	}
+  &::after {
+    display: block;
+    position: absolute;
+    transform: perspective(var(--content-width)) rotate(-5deg) rotateX(-5deg); // Dirty hack to avoid transformation of the thumbtack
+    z-index: 1;
+    filter: hue-rotate(calc(var(--accent-h) * 1deg));
+    transition: transform var(--transition-bezier);
+    inset-block-start: 0.25rem;
+    inset-inline-start: calc(50% - 0.7813rem);
+    background-image: url("thumbtack.png");
+    background-size: cover;
+    width: rpx(25);
+    height: rpx(19);
+    pointer-events: none;
+    content: "";
+  }
 
-	&:hover {
-		transform: none;
-		box-shadow: var(--shadow);
+  &:hover {
+    transform: none;
+    box-shadow: var(--shadow);
 
-		&::after {
-			transform: none;
-		}
+    &::after {
+      transform: none;
+    }
 
-		#polaroid-shine {
-			transform: rotate(35deg);
-			inset-block-start: -5rem;
-			background-color: transparent;
-		}
-	}
+    #polaroid-shine {
+      transform: rotate(35deg);
+      inset-block-start: -5rem;
+      background-color: transparent;
+    }
+  }
 
-	#polaroid-shine {
-		position: absolute;
-		transform: rotate(30deg);
-		z-index: 1;
-		mix-blend-mode: screen;
-		filter: blur(0.25rem);
-		transition: var(--transition-bezier);
-		inset-block-start: -2rem;
-		inset-inline-start: 0;
-		background-color: rgb(255 255 255 / 0.3);
-		width: 14rem;
-		height: 8rem;
-		pointer-events: none;
-	}
+  #polaroid-shine {
+    position: absolute;
+    transform: rotate(30deg);
+    z-index: 1;
+    mix-blend-mode: screen;
+    filter: blur(0.25rem);
+    transition: var(--transition-bezier);
+    inset-block-start: -2rem;
+    inset-inline-start: 0;
+    background-color: rgb(255 255 255 / 0.3);
+    width: 14rem;
+    height: 8rem;
+    pointer-events: none;
+  }
 
-	#polaroid-photo {
-		display: block;
-		position: relative;
+  #polaroid-photo {
+    display: block;
+    position: relative;
 
-		&::after {
-			position: absolute;
-			inset-block-end: -0.25rem;
-			inset-inline-end: 0;
-			background-image: linear-gradient(
-				to right,
-				#ff6188,
-				#fc9867,
-				#ffd866,
-				#a9dc76,
-				#78dce8,
-				#ab9df2
-			);
-			width: 3rem;
-			height: 0.5rem;
-			content: "";
-		}
+    &::after {
+      position: absolute;
+      inset-block-end: -0.25rem;
+      inset-inline-end: 0;
+      background-image: linear-gradient(
+        to right,
+        #ff6188,
+        #fc9867,
+        #ffd866,
+        #a9dc76,
+        #78dce8,
+        #ab9df2
+      );
+      width: 3rem;
+      height: 0.5rem;
+      content: "";
+    }
 
-		img {
-			margin: 0;
-			width: rpx(144);
-			height: rpx(144);
-		}
-	}
+    img {
+      margin: 0;
+      width: rpx(144);
+      height: rpx(144);
+    }
+  }
 
-	#polaroid-title,
-	#statuscafe-content,
-	#statuscafe-link {
-		display: block;
-		color: rgb(0 0 0 / 0.8);
-		line-height: 1;
-		font-family: var(--font-monospace), var(--font-ui-monospace);
-	}
+  #polaroid-title,
+  #statuscafe-content,
+  #statuscafe-link {
+    display: block;
+    color: rgb(0 0 0 / 0.8);
+    line-height: 1;
+    font-family: var(--font-monospace), var(--font-ui-monospace);
+  }
 
-	#polaroid-title {
-		margin-block-start: 0.5rem;
-		font-weight: var(--font-weight-semi-bold);
-		font-size: var(--font-size-xx-small);
-		text-transform: uppercase;
-	}
+  #polaroid-title {
+    margin-block-start: 0.5rem;
+    font-weight: var(--font-weight-semi-bold);
+    font-size: var(--font-size-xx-small);
+    text-transform: uppercase;
+  }
 
-	#statuscafe-content {
-		margin-block-start: 0.25rem;
-		font-size: var(--font-size-xx-small);
-	}
+  #statuscafe-content {
+    margin-block-start: 0.25rem;
+    font-size: var(--font-size-xx-small);
+  }
 
-	#statuscafe-link {
-		margin-block-start: 0.5rem;
-		font-weight: var(--font-weight-normal);
-		font-size: var(--font-size-xx-small);
-		text-decoration: none;
+  #statuscafe-link {
+    margin-block-start: 0.5rem;
+    font-weight: var(--font-weight-normal);
+    font-size: var(--font-size-xx-small);
+    text-decoration: none;
 
-		&::after {
-			content: " →";
-		}
+    &::after {
+      content: " →";
+    }
 
-		&:hover {
-			text-decoration: underline;
-			text-decoration-style: solid; // Make underline not wavy
-		}
-	}
+    &:hover {
+      text-decoration: underline;
+      text-decoration-style: solid; // Make underline not wavy
+    }
+  }
 
-	#statuscafe-face {
-		float: inline-end;
-		color: black;
-		font-size: var(--font-size-medium);
-		line-height: 0.625rem; // Avoid the link becoming too high
-	}
+  #statuscafe-face {
+    float: inline-end;
+    color: black;
+    font-size: var(--font-size-medium);
+    line-height: 0.625rem; // Avoid the link becoming too high
+  }
 }

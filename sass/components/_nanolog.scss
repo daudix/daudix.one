@@ -2,35 +2,35 @@
 
 #nanolog-higher,
 #nanolog-lower {
-	display: block;
-	position: relative;
-	line-height: 1;
+  display: block;
+  position: relative;
+  line-height: 1;
 
-	&::before {
-		display: block;
-		position: absolute;
-		inset-block-start: 0;
-		inset-inline-start: -1.625rem;
-		border: 0.25rem solid var(--accent-color);
-		border-radius: 50%;
-		background-color: var(--bg-color);
-		width: 1rem;
-		height: 1rem;
-		content: "";
-	}
+  &::before {
+    display: block;
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-start: -1.625rem;
+    border: 0.25rem solid var(--accent-color);
+    border-radius: 50%;
+    background-color: var(--bg-color);
+    width: 1rem;
+    height: 1rem;
+    content: "";
+  }
 }
 
 #nanolog-higher {
-	margin-block-end: -1rem;
+  margin-block-end: -1rem;
 }
 
 #nanolog-post {
-	margin: 0 auto;
-	border-inline-start: 0.25rem solid var(--accent-color);
-	padding-inline-start: 1rem;
-	width: min(calc(var(--content-width) / 1.5), 100%);
+  margin: 0 auto;
+  border-inline-start: 0.25rem solid var(--accent-color);
+  padding-inline-start: 1rem;
+  width: min(calc(var(--content-width) / 1.5), 100%);
 }
 
 #nanolog-heading {
-	margin-block-start: 2rem;
+  margin-block-start: 2rem;
 }

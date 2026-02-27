@@ -2,30 +2,30 @@
 @use "../abstracts/mixins" as *;
 
 .pathetic {
-	@include fancy-card;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
-	gap: 1rem;
-	margin-inline: auto;
-	margin-block-start: 3rem;
-	background-color: transparent;
-	max-width: calc(var(--content-width) / 2);
+  @include fancy-card;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-inline: auto;
+  margin-block-start: 3rem;
+  background-color: transparent;
+  max-width: calc(var(--content-width) / 2);
 
-	p {
-		margin-block: 0;
-	}
+  p {
+    margin-block: 0;
+  }
 
-	span.heart {
-		color: var(--red-fg);
-	}
+  span.heart {
+    color: var(--red-fg);
+  }
 
-	.icon.heart {
-		vertical-align: rpx(-2);
-	}
+  .icon.heart {
+    vertical-align: rpx(-2);
+  }
 
-	.button {
-		flex-shrink: 0;
-	}
+  .button {
+    flex-shrink: 0;
+  }
 }

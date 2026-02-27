@@ -1,125 +1,125 @@
 @use "../../themes/ametrine/sass/abstracts/functions" as *;
 
 .masonry .item.games {
-	position: relative;
+  position: relative;
 
-	&:has(ul:hover) li:not(:hover) {
-		opacity: var(--disabled-opacity);
-		filter: blur(0.125rem);
-	}
+  &:has(ul:hover) li:not(:hover) {
+    opacity: var(--disabled-opacity);
+    filter: blur(0.125rem);
+  }
 
-	ul {
-		display: grid;
-		grid-template-columns: repeat(4, 1fr);
-		gap: 0.5rem;
-		margin: -0.5rem;
-		margin-block-start: 0;
-	}
+  ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+    margin: -0.5rem;
+    margin-block-start: 0;
+  }
 
-	li {
-		display: flex;
-		position: relative;
-		transition:
-			all var(--transition),
-			transform var(--transition-bezier);
-		box-shadow: none !important;
-		background-color: transparent !important;
-		padding: 0 !important;
+  li {
+    display: flex;
+    position: relative;
+    transition:
+      all var(--transition),
+      transform var(--transition-bezier);
+    box-shadow: none !important;
+    background-color: transparent !important;
+    padding: 0 !important;
 
-		&:last-child:hover {
-			margin-inline-end: 0;
-		}
+    &:last-child:hover {
+      margin-inline-end: 0;
+    }
 
-		&:hover {
-			transform: scale(1.5);
-			z-index: 1;
-			filter: var(--drop-shadow);
-		}
+    &:hover {
+      transform: scale(1.5);
+      z-index: 1;
+      filter: var(--drop-shadow);
+    }
 
-		&:active {
-			transform: var(--active);
-		}
+    &:active {
+      transform: var(--active);
+    }
 
-		a {
-			display: inherit;
-			justify-content: center;
-			border-radius: inherit;
-		}
-	}
+    a {
+      display: inherit;
+      justify-content: center;
+      border-radius: inherit;
+    }
+  }
 
-	img {
-		border-radius: inherit;
-		width: 100%;
-	}
+  img {
+    border-radius: inherit;
+    width: 100%;
+  }
 
-	.games-extra {
-		display: none;
-		margin-block-start: 1rem;
-	}
+  .games-extra {
+    display: none;
+    margin-block-start: 1rem;
+  }
 }
 
 #show-more {
-	position: absolute;
+  position: absolute;
 
-	&:focus-visible + label {
-		animation: focus-in var(--transition);
-		outline: 0.125rem solid var(--accent-color);
-		outline-offset: 0.125rem;
-	}
+  &:focus-visible + label {
+    animation: focus-in var(--transition);
+    outline: 0.125rem solid var(--accent-color);
+    outline-offset: 0.125rem;
+  }
 
-	@supports not selector(:focus-visible) {
-		&:focus + label {
-			animation: focus-in var(--transition);
-			outline: 0.125rem solid var(--accent-color);
-			outline-offset: 0.125rem;
-		}
-	}
+  @supports not selector(:focus-visible) {
+    &:focus + label {
+      animation: focus-in var(--transition);
+      outline: 0.125rem solid var(--accent-color);
+      outline-offset: 0.125rem;
+    }
+  }
 
-	& + label {
-		-webkit-user-select: none;
-		display: flex;
-		position: absolute;
-		transition:
-			all var(--transition),
-			transform var(--transition-bezier);
-		inset-block-start: 0.5rem;
-		inset-inline-end: 0.5rem;
-		border-radius: var(--rounded-corner-small);
-		padding: 0.75rem 0.5rem;
-		color: var(--fg-muted-1);
-		font-weight: var(--font-weight-semi-bold);
-		font-size: var(--font-size-small);
-		line-height: 1rem;
-		user-select: none;
+  & + label {
+    -webkit-user-select: none;
+    display: flex;
+    position: absolute;
+    transition:
+      all var(--transition),
+      transform var(--transition-bezier);
+    inset-block-start: 0.5rem;
+    inset-inline-end: 0.5rem;
+    border-radius: var(--rounded-corner-small);
+    padding: 0.75rem 0.5rem;
+    color: var(--fg-muted-1);
+    font-weight: var(--font-weight-semi-bold);
+    font-size: var(--font-size-small);
+    line-height: 1rem;
+    user-select: none;
 
-		&:hover {
-			box-shadow: var(--edge-highlight);
-			background-color: var(--bg-muted-1);
-			color: var(--fg-muted-2);
-		}
+    &:hover {
+      box-shadow: var(--edge-highlight);
+      background-color: var(--bg-muted-1);
+      color: var(--fg-muted-2);
+    }
 
-		&:active {
-			transform: var(--active);
-		}
+    &:active {
+      transform: var(--active);
+    }
 
-		.less {
-			display: none;
-		}
-	}
+    .less {
+      display: none;
+    }
+  }
 
-	&:checked {
-		& + label {
-			.more {
-				display: none;
-			}
+  &:checked {
+    & + label {
+      .more {
+        display: none;
+      }
 
-			.less {
-				display: inline;
-			}
-		}
+      .less {
+        display: inline;
+      }
+    }
 
-		& ~ .games-extra {
-			display: grid;
-		}
-	}
+    & ~ .games-extra {
+      display: grid;
+    }
+  }
 }

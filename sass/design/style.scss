@@ -2,278 +2,278 @@
 @use "../abstracts/mixins" as *;
 
 body {
-	background-image: var(--bg-overlay), url("curtain.webp");
-	background-size: contain;
-	background-repeat: repeat-x;
-	background-attachment: fixed;
+  background-image: var(--bg-overlay), url("curtain.webp");
+  background-size: contain;
+  background-repeat: repeat-x;
+  background-attachment: fixed;
 }
 
 #site-sidebar::before {
-	background-color: var(--bg-color);
+  background-color: var(--bg-color);
 }
 
 .media-grid {
-	grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
-	justify-items: center;
-	gap: 1rem;
-	text-align: center;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  justify-items: center;
+  gap: 1rem;
+  text-align: center;
 
-	.grid-item {
-		transition:
-			all var(--transition),
-			transform var(--transition-bezier);
-		border-radius: calc(var(--rounded-corner) + 1rem);
-		padding: 1rem;
-		line-height: 0;
-		text-decoration: none;
+  .grid-item {
+    transition:
+      all var(--transition),
+      transform var(--transition-bezier);
+    border-radius: calc(var(--rounded-corner) + 1rem);
+    padding: 1rem;
+    line-height: 0;
+    text-decoration: none;
 
-		&:hover {
-			backdrop-filter: blur(0.25rem);
-			-webkit-backdrop-filter: blur(0.25rem);
-			box-shadow: var(--edge-highlight);
-			background-color: var(--bg-muted-1);
-			text-decoration: none;
+    &:hover {
+      backdrop-filter: blur(0.25rem);
+      -webkit-backdrop-filter: blur(0.25rem);
+      box-shadow: var(--edge-highlight);
+      background-color: var(--bg-muted-1);
+      text-decoration: none;
 
-			div.grid {
-				img {
-					opacity: var(--dim-opacity);
-				}
+      div.grid {
+        img {
+          opacity: var(--dim-opacity);
+        }
 
-				&::before {
-					opacity: 1;
-				}
-			}
-		}
+        &::before {
+          opacity: 1;
+        }
+      }
+    }
 
-		div {
-			position: relative;
+    div {
+      position: relative;
 
-			&.grid::before {
-				--grid: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='128' height='128' style='display:inline' version='1.0'%3E%3Ccircle cx='64' cy='64' r='59.5' style='fill:none;stroke:%23000;stroke-width:1'/%3E%3Crect width='87' height='111' x='20.5' y='8.5' rx='8' ry='8' style='fill:none;stroke:%23000;stroke-width:1'/%3E%3Crect width='103' height='103' x='12.5' y='12.5' rx='8' ry='8' style='fill:none;stroke:%23000;stroke-width:1'/%3E%3Crect width='111' height='87' x='8.5' y='28.5' rx='8' ry='8' style='fill:none;stroke:%23000;stroke-width:1'/%3E%3C/svg%3E");
-				-webkit-mask-image: var(--grid);
-				position: absolute;
-				opacity: 0;
-				mask-image: var(--grid);
-				mask-size: cover;
-				transition: var(--transition);
-				inset-block-start: 0;
-				inset-inline-start: 0;
-				background-color: var(--bg-muted-2);
-				width: 8rem;
-				height: 8rem;
-				content: "";
-			}
-		}
+      &.grid::before {
+        --grid: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='128' height='128' style='display:inline' version='1.0'%3E%3Ccircle cx='64' cy='64' r='59.5' style='fill:none;stroke:%23000;stroke-width:1'/%3E%3Crect width='87' height='111' x='20.5' y='8.5' rx='8' ry='8' style='fill:none;stroke:%23000;stroke-width:1'/%3E%3Crect width='103' height='103' x='12.5' y='12.5' rx='8' ry='8' style='fill:none;stroke:%23000;stroke-width:1'/%3E%3Crect width='111' height='87' x='8.5' y='28.5' rx='8' ry='8' style='fill:none;stroke:%23000;stroke-width:1'/%3E%3C/svg%3E");
+        -webkit-mask-image: var(--grid);
+        position: absolute;
+        opacity: 0;
+        mask-image: var(--grid);
+        mask-size: cover;
+        transition: var(--transition);
+        inset-block-start: 0;
+        inset-inline-start: 0;
+        background-color: var(--bg-muted-2);
+        width: 8rem;
+        height: 8rem;
+        content: "";
+      }
+    }
 
-		img {
-			display: inline-block;
-			transition: var(--transition);
-			margin: 0;
-		}
+    img {
+      display: inline-block;
+      transition: var(--transition);
+      margin: 0;
+    }
 
-		small {
-			display: block;
-			margin-block-start: 0.75rem;
-			font-weight: var(--font-weight-semi-bold);
-			line-height: 1;
-		}
-	}
+    small {
+      display: block;
+      margin-block-start: 0.75rem;
+      font-weight: var(--font-weight-semi-bold);
+      line-height: 1;
+    }
+  }
 
-	a.grid-item:active {
-		transform: var(--active);
-	}
+  a.grid-item:active {
+    transform: var(--active);
+  }
 }
 
 section {
-	margin-block-start: 2rem;
-	border-radius: 2.75rem;
-	border-start-start-radius: var(--rounded-corner);
-	padding: 1rem;
-	@include fancy-card;
-	@include variables-accent(("light", "common"));
+  margin-block-start: 2rem;
+  border-radius: 2.75rem;
+  border-start-start-radius: var(--rounded-corner);
+  padding: 1rem;
+  @include fancy-card;
+  @include variables-accent(("light", "common"));
 
-	@media (prefers-color-scheme: dark) {
-		& {
-			@include variables-accent("dark");
-		}
-	}
+  @media (prefers-color-scheme: dark) {
+    & {
+      @include variables-accent("dark");
+    }
+  }
 
-	h2 {
-		margin: 0;
-	}
+  h2 {
+    margin: 0;
+  }
 
-	&#original-icons,
-	&#redrawn-icons,
-	&#unused-icons {
-		img {
-			width: 8rem;
-			height: 8rem;
-		}
+  &#original-icons,
+  &#redrawn-icons,
+  &#unused-icons {
+    img {
+      width: 8rem;
+      height: 8rem;
+    }
 
-		@media only screen and (max-width: 520px) {
-			.media-grid {
-				grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
-			}
+    @media only screen and (max-width: 520px) {
+      .media-grid {
+        grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+      }
 
-			.media-grid .grid-item div.grid::before,
-			img {
-				width: 6rem;
-				height: 6rem;
-			}
-		}
-	}
+      .media-grid .grid-item div.grid::before,
+      img {
+        width: 6rem;
+        height: 6rem;
+      }
+    }
+  }
 
-	&#original-icons {
-		--accent-light-h: var(--blue-h);
-		--accent-light-s: var(--blue-s);
-		--accent-light-l: var(--blue-l);
+  &#original-icons {
+    --accent-light-h: var(--blue-h);
+    --accent-light-s: var(--blue-s);
+    --accent-light-l: var(--blue-l);
 
-		--accent-dark-h: var(--blue-h);
-		--accent-dark-s: var(--blue-s);
-		--accent-dark-l: var(--blue-l);
-	}
+    --accent-dark-h: var(--blue-h);
+    --accent-dark-s: var(--blue-s);
+    --accent-dark-l: var(--blue-l);
+  }
 
-	&#redrawn-icons {
-		--accent-light-h: var(--green-h);
-		--accent-light-s: var(--green-s);
-		--accent-light-l: var(--green-l);
+  &#redrawn-icons {
+    --accent-light-h: var(--green-h);
+    --accent-light-s: var(--green-s);
+    --accent-light-l: var(--green-l);
 
-		--accent-dark-h: var(--green-h);
-		--accent-dark-s: var(--green-s);
-		--accent-dark-l: var(--green-l);
+    --accent-dark-h: var(--green-h);
+    --accent-dark-s: var(--green-s);
+    --accent-dark-l: var(--green-l);
 
-		a div:hover {
-			img {
-				opacity: 0;
-			}
+    a div:hover {
+      img {
+        opacity: 0;
+      }
 
-			img.before {
-				opacity: var(--dim-opacity);
-			}
-		}
+      img.before {
+        opacity: var(--dim-opacity);
+      }
+    }
 
-		img.before {
-			position: absolute;
-			opacity: 0;
-			inset-block-start: 0;
-			inset-inline-start: 0;
-		}
-	}
+    img.before {
+      position: absolute;
+      opacity: 0;
+      inset-block-start: 0;
+      inset-inline-start: 0;
+    }
+  }
 
-	&#unused-icons {
-		--accent-light-h: var(--red-h);
-		--accent-light-s: var(--red-s);
-		--accent-light-l: var(--red-l);
+  &#unused-icons {
+    --accent-light-h: var(--red-h);
+    --accent-light-s: var(--red-s);
+    --accent-light-l: var(--red-l);
 
-		--accent-dark-h: var(--red-h);
-		--accent-dark-s: var(--red-s);
-		--accent-dark-l: var(--red-l);
-	}
+    --accent-dark-h: var(--red-h);
+    --accent-dark-s: var(--red-s);
+    --accent-dark-l: var(--red-l);
+  }
 
-	&#wallpapers {
-		--accent-light-h: var(--purple-h);
-		--accent-light-s: var(--purple-s);
-		--accent-light-l: var(--purple-l);
+  &#wallpapers {
+    --accent-light-h: var(--purple-h);
+    --accent-light-s: var(--purple-s);
+    --accent-light-l: var(--purple-l);
 
-		--accent-dark-h: var(--purple-h);
-		--accent-dark-s: var(--purple-s);
-		--accent-dark-l: var(--purple-l);
+    --accent-dark-h: var(--purple-h);
+    --accent-dark-s: var(--purple-s);
+    --accent-dark-l: var(--purple-l);
 
-		img {
-			aspect-ratio: 4 / 3;
-			object-fit: cover;
-		}
+    img {
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+    }
 
-		.grid-item {
-			border-end-end-radius: 1.625rem;
+    .grid-item {
+      border-end-end-radius: 1.625rem;
 
-			div {
-				display: flex;
-				justify-content: space-between;
-				align-items: flex-end;
-				margin-block-start: 0.5rem;
+      div {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-block-start: 0.5rem;
 
-				small {
-					margin-block-start: 0;
-					box-shadow: var(--edge-highlight);
-					border-radius: var(--rounded-corner);
-					background-color: var(--bg-muted-1);
-					padding: 0.25rem 0.625rem;
-				}
+        small {
+          margin-block-start: 0;
+          box-shadow: var(--edge-highlight);
+          border-radius: var(--rounded-corner);
+          background-color: var(--bg-muted-1);
+          padding: 0.25rem 0.625rem;
+        }
 
-				a {
-					transition:
-						all var(--transition),
-						transform var(--transition-bezier);
-					margin-inline-end: -0.5rem;
-					margin-block-end: -0.5rem;
-					box-shadow: var(--edge-highlight);
-					border-radius: 50%;
-					background-color: var(--bg-muted-1);
-					padding: 0.5rem;
-					color: var(--fg-muted-2);
-					line-height: 0;
+        a {
+          transition:
+            all var(--transition),
+            transform var(--transition-bezier);
+          margin-inline-end: -0.5rem;
+          margin-block-end: -0.5rem;
+          box-shadow: var(--edge-highlight);
+          border-radius: 50%;
+          background-color: var(--bg-muted-1);
+          padding: 0.5rem;
+          color: var(--fg-muted-2);
+          line-height: 0;
 
-					&:hover {
-						background-color: var(--bg-muted-2);
-					}
+          &:hover {
+            background-color: var(--bg-muted-2);
+          }
 
-					&:active {
-						transform: var(--active);
-					}
+          &:active {
+            transform: var(--active);
+          }
 
-					.icon {
-						font-size: 1.25rem;
-					}
-				}
-			}
-		}
+          .icon {
+            font-size: 1.25rem;
+          }
+        }
+      }
+    }
 
-		@media only screen and (max-width: 520px) {
-			.media-grid {
-				grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-			}
+    @media only screen and (max-width: 520px) {
+      .media-grid {
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+      }
 
-			img {
-				aspect-ratio: 3 / 4;
-			}
-		}
-	}
+      img {
+        aspect-ratio: 3 / 4;
+      }
+    }
+  }
 
-	&#logos {
-		--accent-light-h: var(--yellow-h);
-		--accent-light-s: var(--yellow-s);
-		--accent-light-l: var(--yellow-l);
+  &#logos {
+    --accent-light-h: var(--yellow-h);
+    --accent-light-s: var(--yellow-s);
+    --accent-light-l: var(--yellow-l);
 
-		--accent-dark-h: var(--yellow-h);
-		--accent-dark-s: var(--yellow-s);
-		--accent-dark-l: var(--yellow-l);
+    --accent-dark-h: var(--yellow-h);
+    --accent-dark-s: var(--yellow-s);
+    --accent-dark-l: var(--yellow-l);
 
-		a div {
-			box-shadow: var(--shadow);
-			border-radius: var(--rounded-corner);
+    a div {
+      box-shadow: var(--shadow);
+      border-radius: var(--rounded-corner);
 
-			&:hover img.mono {
-				opacity: 1;
-			}
-		}
+      &:hover img.mono {
+        opacity: 1;
+      }
+    }
 
-		img {
-			box-shadow: none;
-			background-color: white;
+    img {
+      box-shadow: none;
+      background-color: white;
 
-			@media (prefers-color-scheme: dark) {
-				& {
-					background-color: black;
-				}
-			}
-		}
+      @media (prefers-color-scheme: dark) {
+        & {
+          background-color: black;
+        }
+      }
+    }
 
-		img.mono {
-			position: absolute;
-			opacity: 0;
-			inset-block-start: 0;
-			inset-inline-start: 0;
-		}
-	}
+    img.mono {
+      position: absolute;
+      opacity: 0;
+      inset-block-start: 0;
+      inset-inline-start: 0;
+    }
+  }
 }

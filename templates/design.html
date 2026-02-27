@@ -5,156 +5,156 @@
 <h1>{{ page.title }}</h1>
 <p>{{ page.description }}</p>
 <section id="original-icons">
-	<h2>Original Icons</h2>
-	<p>Custom icons with original idea made for projects without prior or with different one.</p>
-	<br />
-	<div class="media-grid">
-		{% for icon in page.extra.original_icons %}
-			<a class="grid-item" href="{{ icon.url }}">
-				<div class="grid">
-					<img
-						class="no-hover full transparent drop-shadow"
-						alt="{{ icon.name }} icon."
-						src="icons/original/{{ icon.icon }}"
-						{% if config.markdown.lazy_async_image %}
-							decoding="async" loading="lazy"
-						{% endif %}
-					/>
-				</div>
-				<small>{{ icon.name }}</small>
-			</a>
-		{% endfor %}
-	</div>
+  <h2>Original Icons</h2>
+  <p>Custom icons with original idea made for projects without prior or with different one.</p>
+  <br />
+  <div class="media-grid">
+    {% for icon in page.extra.original_icons %}
+      <a class="grid-item" href="{{ icon.url }}">
+        <div class="grid">
+          <img
+            class="no-hover full transparent drop-shadow"
+            alt="{{ icon.name }} icon."
+            src="icons/original/{{ icon.icon }}"
+            {% if config.markdown.lazy_async_image %}
+              decoding="async" loading="lazy"
+            {% endif %}
+          />
+        </div>
+        <small>{{ icon.name }}</small>
+      </a>
+    {% endfor %}
+  </div>
 </section>
 <section id="redrawn-icons">
-	<h2>Redrawn Icons</h2>
-	<p>Tweaked icons made for projects with an icon and idea already present.</p>
-	<br />
-	<div class="media-grid">
-		{% for icon in page.extra.redrawn_icons %}
-			<a class="grid-item" href="{{ icon.url }}">
-				<div class="grid">
-					<img
-						class="no-hover full transparent drop-shadow"
-						alt="{{ icon.name }} icon."
-						src="icons/redrawn/{{ icon.icon }}"
-						{% if config.markdown.lazy_async_image %}
-							decoding="async" loading="lazy"
-						{% endif %}
-					/>
-					<img
-						class="no-hover full transparent drop-shadow before"
-						alt="{{ icon.name }} icon."
-						src="icons/redrawn/before/{{ icon.icon }}"
-						{% if config.markdown.lazy_async_image %}
-							decoding="async" loading="lazy"
-						{% endif %}
-					/>
-				</div>
-				<small>{{ icon.name }}</small>
-			</a>
-		{% endfor %}
-	</div>
+  <h2>Redrawn Icons</h2>
+  <p>Tweaked icons made for projects with an icon and idea already present.</p>
+  <br />
+  <div class="media-grid">
+    {% for icon in page.extra.redrawn_icons %}
+      <a class="grid-item" href="{{ icon.url }}">
+        <div class="grid">
+          <img
+            class="no-hover full transparent drop-shadow"
+            alt="{{ icon.name }} icon."
+            src="icons/redrawn/{{ icon.icon }}"
+            {% if config.markdown.lazy_async_image %}
+              decoding="async" loading="lazy"
+            {% endif %}
+          />
+          <img
+            class="no-hover full transparent drop-shadow before"
+            alt="{{ icon.name }} icon."
+            src="icons/redrawn/before/{{ icon.icon }}"
+            {% if config.markdown.lazy_async_image %}
+              decoding="async" loading="lazy"
+            {% endif %}
+          />
+        </div>
+        <small>{{ icon.name }}</small>
+      </a>
+    {% endfor %}
+  </div>
 </section>
 <section id="unused-icons">
-	<h2>Unused Icons</h2>
-	<p>Unused icons that didn't find their way for one reason or another.</p>
-	<p>
-		<small>There was much more, but unfortunately I've lost the sources :&#60;</small>
-	</p>
-	<br />
-	<div class="media-grid">
-		{% for icon in page.extra.unused_icons %}
-			<div class="grid-item">
-				<div class="grid">
-					<img
-						class="no-hover full transparent drop-shadow"
-						alt="{{ icon.name }} icon."
-						src="icons/unused/{{ icon.icon }}"
-						{% if config.markdown.lazy_async_image %}
-							decoding="async" loading="lazy"
-						{% endif %}
-					/>
-				</div>
-				<small>{{ icon.name }}</small>
-			</div>
-		{% endfor %}
-	</div>
+  <h2>Unused Icons</h2>
+  <p>Unused icons that didn't find their way for one reason or another.</p>
+  <p>
+    <small>There was much more, but unfortunately I've lost the sources :&#60;</small>
+  </p>
+  <br />
+  <div class="media-grid">
+    {% for icon in page.extra.unused_icons %}
+      <div class="grid-item">
+        <div class="grid">
+          <img
+            class="no-hover full transparent drop-shadow"
+            alt="{{ icon.name }} icon."
+            src="icons/unused/{{ icon.icon }}"
+            {% if config.markdown.lazy_async_image %}
+              decoding="async" loading="lazy"
+            {% endif %}
+          />
+        </div>
+        <small>{{ icon.name }}</small>
+      </div>
+    {% endfor %}
+  </div>
 </section>
 <section id="wallpapers">
-	<h2>Wallpapers</h2>
-	<p>Wallpapers that I have made for myself, that you can use, too.</p>
-	<p>
-		<small>It would be nice if you credit me in case you reupload or remix them :^)</small>
-	</p>
-	<br />
-	<div class="media-grid">
-		{% for wallpaper in page.extra.wallpapers %}
-			<div class="grid-item">
-				<picture>
-					<source
-						srcset="wallpapers/{{ wallpaper.wallpaper_dark }}"
-						media="(prefers-color-scheme: dark)"
-					/>
-					<img
-						class="no-hover full"
-						alt="{{ wallpaper.name }} wallpaper."
-						src="wallpapers/{{ wallpaper.wallpaper }}"
-						{% if config.markdown.lazy_async_image %}
-							decoding="async" loading="lazy"
-						{% endif %}
-					/>
-				</picture>
-				<div>
-					<small>{{ wallpaper.name }}</small>
-					<a href="https://download-directory.github.io/?url={{ wallpaper.url }}&filename={{ wallpaper.name }}" target="_blank">
-						{{- macros_icon::icon(name="download-simple") -}}
-					</a>
-				</div>
-			</div>
-		{% endfor %}
-	</div>
+  <h2>Wallpapers</h2>
+  <p>Wallpapers that I have made for myself, that you can use, too.</p>
+  <p>
+    <small>It would be nice if you credit me in case you reupload or remix them :^)</small>
+  </p>
+  <br />
+  <div class="media-grid">
+    {% for wallpaper in page.extra.wallpapers %}
+      <div class="grid-item">
+        <picture>
+          <source
+            srcset="wallpapers/{{ wallpaper.wallpaper_dark }}"
+            media="(prefers-color-scheme: dark)"
+          />
+          <img
+            class="no-hover full"
+            alt="{{ wallpaper.name }} wallpaper."
+            src="wallpapers/{{ wallpaper.wallpaper }}"
+            {% if config.markdown.lazy_async_image %}
+              decoding="async" loading="lazy"
+            {% endif %}
+          />
+        </picture>
+        <div>
+          <small>{{ wallpaper.name }}</small>
+          <a href="https://download-directory.github.io/?url={{ wallpaper.url }}&filename={{ wallpaper.name }}" target="_blank">
+            {{- macros_icon::icon(name="download-simple") -}}
+          </a>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
 </section>
 <section id="logos">
-	<h2>Logos</h2>
-	<p>It ain’t much, but it’s honest work.</p>
-	<br />
-	<div class="media-grid">
-		{% for logo in page.extra.logos %}
-			<a class="grid-item" href="{{ logo.url }}">
-				<div>
-					<picture>
-						<source
-							srcset="logos/{{ logo.logo_dark }}"
-							media="(prefers-color-scheme: dark)"
-						/>
-						<img
-							class="no-hover full"
-							alt="{{ logo.name }} logo."
-							src="logos/{{ logo.logo }}"
-							{% if config.markdown.lazy_async_image %}
-								decoding="async" loading="lazy"
-							{% endif %}
-						/>
-					</picture>
-					<picture>
-						<source
-							srcset="logos/{{ logo.logo_dark_mono }}"
-							media="(prefers-color-scheme: dark)"
-						/>
-						<img
-							class="no-hover full mono"
-							alt="{{ logo.name }} logo."
-							src="logos/{{ logo.logo_mono }}"
-							{% if config.markdown.lazy_async_image %}
-								decoding="async" loading="lazy"
-							{% endif %}
-						/>
-					</picture>
-				</div>
-				<small>{{ logo.name }}</small>
-			</a>
-		{% endfor %}
-	</div>
+  <h2>Logos</h2>
+  <p>It ain’t much, but it’s honest work.</p>
+  <br />
+  <div class="media-grid">
+    {% for logo in page.extra.logos %}
+      <a class="grid-item" href="{{ logo.url }}">
+        <div>
+          <picture>
+            <source
+              srcset="logos/{{ logo.logo_dark }}"
+              media="(prefers-color-scheme: dark)"
+            />
+            <img
+              class="no-hover full"
+              alt="{{ logo.name }} logo."
+              src="logos/{{ logo.logo }}"
+              {% if config.markdown.lazy_async_image %}
+                decoding="async" loading="lazy"
+              {% endif %}
+            />
+          </picture>
+          <picture>
+            <source
+              srcset="logos/{{ logo.logo_dark_mono }}"
+              media="(prefers-color-scheme: dark)"
+            />
+            <img
+              class="no-hover full mono"
+              alt="{{ logo.name }} logo."
+              src="logos/{{ logo.logo_mono }}"
+              {% if config.markdown.lazy_async_image %}
+                decoding="async" loading="lazy"
+              {% endif %}
+            />
+          </picture>
+        </div>
+        <small>{{ logo.name }}</small>
+      </a>
+    {% endfor %}
+  </div>
 </section>
 {% endblock content %}

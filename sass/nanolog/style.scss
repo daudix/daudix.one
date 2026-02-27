@@ -3,242 +3,242 @@
 
 h1,
 h1 + p {
-	text-align: center;
+  text-align: center;
 }
 
 h1 {
-	cursor: pointer;
-	user-select: none;
-	-webkit-user-select: none;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 #nanolog-list {
-	display: flex;
-	flex-direction: column;
-	gap: 1rem;
-	margin: 4rem auto 0;
-	border-inline-start: 0.25rem solid var(--accent-color);
-	padding-inline-start: 0;
-	width: min(calc(var(--content-width) / 1.5), 100%);
-	list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 4rem auto 0;
+  border-inline-start: 0.25rem solid var(--accent-color);
+  padding-inline-start: 0;
+  width: min(calc(var(--content-width) / 1.5), 100%);
+  list-style: none;
 
-	& > li {
-		position: relative;
-		margin-block: 0;
-		padding-inline-start: 1rem;
+  & > li {
+    position: relative;
+    margin-block: 0;
+    padding-inline-start: 1rem;
 
-		&::before {
-			display: block;
-			position: absolute;
-			inset-block-start: rpx(-1);
-			inset-inline-start: -0.625rem;
-			border: 0.25rem solid var(--accent-color);
-			border-radius: 50%;
-			background-color: var(--bg-color);
-			width: 1rem;
-			height: 1rem;
-			content: "";
-		}
+    &::before {
+      display: block;
+      position: absolute;
+      inset-block-start: rpx(-1);
+      inset-inline-start: -0.625rem;
+      border: 0.25rem solid var(--accent-color);
+      border-radius: 50%;
+      background-color: var(--bg-color);
+      width: 1rem;
+      height: 1rem;
+      content: "";
+    }
 
-		& > a {
-			display: block;
-			margin-block-end: 1rem;
-			line-height: 1;
-		}
+    & > a {
+      display: block;
+      margin-block-end: 1rem;
+      line-height: 1;
+    }
 
-		& > div {
-			box-shadow: var(--edge-highlight), var(--shadow);
-			border-radius: var(--rounded-corner);
-			border-start-end-radius: 2rem;
-			background-color: var(--bg-muted-1);
-			padding: 1rem;
+    & > div {
+      box-shadow: var(--edge-highlight), var(--shadow);
+      border-radius: var(--rounded-corner);
+      border-start-end-radius: 2rem;
+      background-color: var(--bg-muted-1);
+      padding: 1rem;
 
-			& > a {
-				float: inline-end;
-				transition:
-					all var(--transition),
-					transform var(--transition-bezier);
-				margin-inline-start: 1rem;
-				box-shadow: var(--edge-highlight);
-				border-radius: 999px;
-				background-color: var(--bg-muted-1);
-				padding: 0.25rem 0.75rem;
-				font-size: var(--font-size-small);
-				line-height: 1.5rem;
-				text-decoration: none;
+      & > a {
+        float: inline-end;
+        transition:
+          all var(--transition),
+          transform var(--transition-bezier);
+        margin-inline-start: 1rem;
+        box-shadow: var(--edge-highlight);
+        border-radius: 999px;
+        background-color: var(--bg-muted-1);
+        padding: 0.25rem 0.75rem;
+        font-size: var(--font-size-small);
+        line-height: 1.5rem;
+        text-decoration: none;
 
-				&:hover {
-					background-color: var(--bg-muted-2);
-				}
+        &:hover {
+          background-color: var(--bg-muted-2);
+        }
 
-				&:active {
-					transform: var(--active);
-				}
+        &:active {
+          transform: var(--active);
+        }
 
-				& + p {
-					margin-block-start: 0;
-				}
-			}
+        & + p {
+          margin-block-start: 0;
+        }
+      }
 
-			:last-child {
-				margin-block-end: 0;
-			}
-		}
-	}
+      :last-child {
+        margin-block-end: 0;
+      }
+    }
+  }
 }
 
 #nanolog-button {
-	position: fixed;
-	appearance: none;
-	backdrop-filter: var(--blur);
-	transition:
-		all var(--transition),
-		transform var(--transition-bezier);
-	cursor: pointer;
-	inset-block-end: 1rem;
-	inset-inline-end: 1rem;
-	border: none;
-	border-radius: 50%;
-	background: none;
-	padding: 1rem;
-	font-size: 1.5rem;
-	line-height: 0;
-	font-family: inherit;
-	-webkit-backdrop-filter: var(--blur);
-	z-index: 9999;
-	animation: calc(0.525s + var(--transition-longer))
-		cubic-bezier(0.17, 0.89, 0.32, 1.28) nanolog-button-load;
+  position: fixed;
+  appearance: none;
+  backdrop-filter: var(--blur);
+  transition:
+    all var(--transition),
+    transform var(--transition-bezier);
+  cursor: pointer;
+  inset-block-end: 1rem;
+  inset-inline-end: 1rem;
+  border: none;
+  border-radius: 50%;
+  background: none;
+  padding: 1rem;
+  font-size: 1.5rem;
+  line-height: 0;
+  font-family: inherit;
+  -webkit-backdrop-filter: var(--blur);
+  z-index: 9999;
+  animation: calc(0.525s + var(--transition-longer))
+    cubic-bezier(0.17, 0.89, 0.32, 1.28) nanolog-button-load;
 
-	@include gradient-fill;
+  @include gradient-fill;
 
-	&:hover {
-		@include gradient-fill(hover);
-	}
+  &:hover {
+    @include gradient-fill(hover);
+  }
 
-	&:active {
-		transform: var(--active);
-	}
+  &:active {
+    transform: var(--active);
+  }
 
-	@keyframes nanolog-button-load {
-		from,
-		52.5% {
-			transform: translateY(1rem);
-			opacity: 0;
-		}
-	}
+  @keyframes nanolog-button-load {
+    from,
+    52.5% {
+      transform: translateY(1rem);
+      opacity: 0;
+    }
+  }
 }
 
 #nanolog-modal {
-	display: flex;
-	position: fixed;
-	flex-direction: column;
-	align-items: center;
-	visibility: hidden;
-	opacity: 0;
-	z-index: 9999;
-	transition: var(--transition);
-	inset: 0;
-	background-color: var(--shade-color);
-	padding-block-start: 15vh;
-	width: 100%;
-	height: 100vh;
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 9999;
+  transition: var(--transition);
+  inset: 0;
+  background-color: var(--shade-color);
+  padding-block-start: 15vh;
+  width: 100%;
+  height: 100vh;
 
-	&.active {
-		visibility: visible;
-		opacity: 1;
+  &.active {
+    visibility: visible;
+    opacity: 1;
 
-		#nanolog-modal-content {
-			transform: none;
-		}
-	}
+    #nanolog-modal-content {
+      transform: none;
+    }
+  }
 
-	&-content {
-		display: flex;
-		flex-direction: column;
-		transform: var(--hover);
-		border-radius: 1.25rem 1.25rem calc(var(--rounded-corner) + 0.5rem)
-			calc(var(--rounded-corner) + 0.5rem);
-		padding: 0.5rem;
-		-webkit-backdrop-filter: var(--blur);
-		backdrop-filter: var(--blur);
-		transition:
-			all var(--transition),
-			transform var(--transition-bezier-longer);
-		box-shadow: var(--edge-highlight), var(--shadow-glass);
-		background-color: var(--glass-bg-1);
-		width: calc(100% - 2rem);
-		max-width: calc(var(--content-width) / 1.5);
+  &-content {
+    display: flex;
+    flex-direction: column;
+    transform: var(--hover);
+    border-radius: 1.25rem 1.25rem calc(var(--rounded-corner) + 0.5rem)
+      calc(var(--rounded-corner) + 0.5rem);
+    padding: 0.5rem;
+    -webkit-backdrop-filter: var(--blur);
+    backdrop-filter: var(--blur);
+    transition:
+      all var(--transition),
+      transform var(--transition-bezier-longer);
+    box-shadow: var(--edge-highlight), var(--shadow-glass);
+    background-color: var(--glass-bg-1);
+    width: calc(100% - 2rem);
+    max-width: calc(var(--content-width) / 1.5);
 
-		.overshoot {
-			display: flex;
-			margin: -0.5rem;
-			border-radius: inherit;
-			border-end-start-radius: 0;
-			border-end-end-radius: 0;
-		}
+    .overshoot {
+      display: flex;
+      margin: -0.5rem;
+      border-radius: inherit;
+      border-end-start-radius: 0;
+      border-end-end-radius: 0;
+    }
 
-		.buttons {
-			align-items: center;
-			margin-block-start: 0.5rem;
-			border-block-start: rpx(1) solid var(--bg-muted-2);
-			padding-block-start: 0.5rem;
-		}
+    .buttons {
+      align-items: center;
+      margin-block-start: 0.5rem;
+      border-block-start: rpx(1) solid var(--bg-muted-2);
+      padding-block-start: 0.5rem;
+    }
 
-		input,
-		textarea {
-			box-shadow: none;
-			border-radius: 0;
-			background-color: transparent;
-			width: 100%;
+    input,
+    textarea {
+      box-shadow: none;
+      border-radius: 0;
+      background-color: transparent;
+      width: 100%;
 
-			&:focus-visible {
-				animation: none;
-				outline: none;
-			}
-		}
-	}
+      &:focus-visible {
+        animation: none;
+        outline: none;
+      }
+    }
+  }
 }
 
 #post-content {
-	border-radius: inherit;
-	padding: 1rem;
-	height: 8rem;
-	resize: none;
+  border-radius: inherit;
+  padding: 1rem;
+  height: 8rem;
+  resize: none;
 }
 
 #char-count {
-	transition: var(--transition);
-	margin-inline: 0.5rem;
-	color: var(--fg-muted-2);
-	font-size: var(--font-size-small);
-	font-variant-numeric: tabular-nums;
+  transition: var(--transition);
+  margin-inline: 0.5rem;
+  color: var(--fg-muted-2);
+  font-size: var(--font-size-small);
+  font-variant-numeric: tabular-nums;
 
-	&.half {
-		color: var(--yellow-fg);
-	}
+  &.half {
+    color: var(--yellow-fg);
+  }
 
-	&.max {
-		color: var(--red-fg);
-	}
+  &.max {
+    color: var(--red-fg);
+  }
 }
 
 #auth-container {
-	display: flex;
-	flex: 1;
-	box-shadow: var(--edge-highlight);
-	border-radius: var(--rounded-corner);
-	background-color: var(--bg-muted-1);
-	padding-inline-start: 0.75rem;
+  display: flex;
+  flex: 1;
+  box-shadow: var(--edge-highlight);
+  border-radius: var(--rounded-corner);
+  background-color: var(--bg-muted-1);
+  padding-inline-start: 0.75rem;
 }
 
 #github-token {
-	padding: 0;
+  padding: 0;
 }
 
 #show-token-btn {
-	margin: 0.25rem;
-	border-radius: var(--rounded-corner-small);
-	padding: 0.375rem;
-	font-size: 1.25rem;
-	line-height: 0;
+  margin: 0.25rem;
+  border-radius: var(--rounded-corner-small);
+  padding: 0.375rem;
+  font-size: 1.25rem;
+  line-height: 0;
 }
