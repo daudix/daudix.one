@@ -1,5 +1,0 @@
-[default]
-extend-ignore-re = ["\\bBig Sur\\b", "\\bNed Ludd\\b", "\\bJuli Kosolapova\\b"]
-
-[files]
-extend-exclude = ["*.js", "*.svg"]
