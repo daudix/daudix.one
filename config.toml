@@ -37,8 +37,8 @@ index_format = "elasticlunr_json"
 
 [extra]
 feed_sections = [
-  { name = "Blog", path = "@/blog/_index.md" },
   { name = "Nanolog", path = "@/nanolog/_index.md" },
+  { name = "Blog", path = "@/blog/_index.md" },
 ]
 categories = [
   { name = "Archived", description = "Posts that have been archived due to their age.", color = "purple", icon = "box-arrow-down" },
