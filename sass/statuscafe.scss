@@ -1,7 +1,7 @@
 @use "../themes/ametrine/sass/abstracts/functions" as *;
-@use "../themes/ametrine/sass/base/root";
-@use "../themes/ametrine/sass/base/fonts";
 @use "../themes/ametrine/sass/base/animations";
+@use "../themes/ametrine/sass/base/root";
+@use "./fonts";
 
 :root {
   --accent-light-h: 270;
