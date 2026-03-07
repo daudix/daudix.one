@@ -14,7 +14,7 @@
 #david-lapshin {
   --shift: #{rpx(3)};
   filter: url("#squiggly-1");
-  animation: squiggly var(--transition-longer) linear infinite;
+  animation: squiggly 0.3s step-end infinite;
   transition: var(--transition-bezier);
   margin: 0;
   margin-block: 0 3rem;
@@ -64,14 +64,15 @@
     from {
       filter: url("#squiggly-1");
     }
+
     33% {
       filter: url("#squiggly-2");
     }
+
     66% {
       filter: url("#squiggly-3");
     }
-    to {
-      filter: url("#squiggly-4");
-    }
+
+    // Last step is skipped, thus it's not set
   }
 }

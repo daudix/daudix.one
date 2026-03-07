@@ -233,11 +233,5 @@ Better yet, I have a website on [neocities](https://neocities.org); It doesn't h
       <feTurbulence baseFrequency="0.02" numOctaves="2" result="noise2" seed="3"/>
       <feDisplacementMap in="displaced1" in2="noise2" scale="6"/>
     </filter>
-    <filter id="squiggly-4">
-      <feTurbulence baseFrequency="0.1" numOctaves="3" result="noise1" seed="4"/>
-      <feDisplacementMap in="SourceGraphic" in2="noise1" scale="3" result="displaced1"/>
-      <feTurbulence baseFrequency="0.02" numOctaves="2" result="noise2" seed="4"/>
-      <feDisplacementMap in="displaced1" in2="noise2" scale="6"/>
-    </filter>
   </defs>
 </svg>
