@@ -66,21 +66,25 @@ misc = [
   { name = "yarrr.gif" },
 ]
 mine = [
-  { name = "green-team.gif", url = "https://512kb.club", type = "mine" },
-  { name = "orange-team.gif", url = "https://512kb.club", type = "mine" },
-  { name = "blue-team.gif", url = "https://512kb.club", type = "mine" },
-  { name = "adhd.gif", type = "mine" },
-  { name = "d-rens.gif", url = "https://d-rens.xyz", type = "mine" },
-  { name = "daudix-neocities.gif", url = "https://daudix.neocities.org", type = "mine" },
-  { name = "daudix-synthwave.gif", type = "mine" },
-  { name = "daudix-tile.gif", type = "mine" },
-  { name = "daudix.gif", type = "mine" },
-  { name = "snug-nook.gif", url = "https://snugnook.org", type = "mine" },
-  { name = "valid-crashout.gif", type = "mine" },
-  { name = "vscodium.gif", url = "https://vscodium.com", type = "mine" },
-  { name = "zeffo.gif", url = "https://zeffo.me", type = "mine" },
+  { name = "green-team.gif", url = "https://512kb.club" },
+  { name = "orange-team.gif", url = "https://512kb.club" },
+  { name = "blue-team.gif", url = "https://512kb.club" },
+  { name = "adhd.gif" },
+  { name = "d-rens.gif", url = "https://d-rens.xyz" },
+  { name = "snug-nook.gif", url = "https://snugnook.org" },
+  { name = "valid-crashout.gif" },
+  { name = "vscodium.gif", url = "https://vscodium.com" },
+  { name = "zeffo.gif", url = "https://zeffo.me" },
 ]
-
+me = [
+  { name = "daudix-tile.gif" },
+  { name = "daudix-synthwave.gif" },
+  { name = "daudix-neocities.gif", url = "https://daudix.neocities.org" },
+  { name = "daudix-rainbow.gif" },
+  { name = "daudix-badlydrawn.gif" },
+  { name = "daudix-alt.gif" },
+  { name = "daudix.gif" },
+]
 [extra.stamps]
 misc = [
   # { name = "adhd.gif" },

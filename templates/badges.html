@@ -109,6 +109,40 @@
   {{- macros_icon::icon(name="scissors") -}}
 </ul>
 
+<h2>Me</h2>
+
+<p>Hey, that’s me! An archive identical to the one on home page, with some exras.</p>
+
+<ul class="badges">
+  <strong class="title">My Badges/88x31s</strong>
+  {%- for badge in badges.me -%}
+    <li>
+      {%- if badge.url -%}
+        <a href="{{ badge.url }}">
+      {%- endif -%}
+        <img
+          width="88" height="31"
+          class="pixels transparent no-hover"
+          {% if badge.alt %}
+            {% set badge_alt = badge.alt %}
+          {% else %}
+            {% set badge_alt = badge.name | split(pat=".", limit=2) | first %}
+          {% endif %}
+          alt="{{ badge_alt }}"
+          {% set badge_url = "badges/badges/" ~ badge.name %}
+          src="{{ get_url(path=badge_url) }}"
+          {% if config.markdown.lazy_async_image %}
+            decoding="async" loading="lazy"
+          {% endif %}
+        />
+      {%- if badge.url -%}
+        </a>
+      {%- endif -%}
+    </li>
+  {%- endfor -%}
+  {{- macros_icon::icon(name="scissors") -}}
+</ul>
+
 <h2>Stamps</h2>
 
 <p>Technically not badges, but they’re cute too and I don’t know where to put them.</p>
