@@ -4,7 +4,8 @@
   <strong class="title">Badges</strong>
   <small>
     •
-    <a href="/badges/">View All</a>
+    <a href="
+    {{ get_url(path='@/badges/index.md') }}">View All</a>
   </small>
   <p>
     <abbr title="Also Known As">AKA</abbr> 88x31 buttons
@@ -20,27 +21,27 @@
     </p>
     <ul>
       <li>
-        <img width="88" height="31" class="pixels transparent no-hover" alt="daudix" src="{{ get_url(path='badges/badges/daudix.gif') }}" />
+        <img width="88" height="31" class="pixels transparent no-hover" alt="daudix" src="{{ get_url(path='badges/badges/daudix.gif', cachebust=true) }}" />
         <span>Current</span>
       </li>
       <li>
-        <img width="88" height="31" class="pixels transparent no-hover" alt="daudix-alt" src="{{ get_url(path='badges/badges/daudix-alt.gif') }}" />
+        <img width="88" height="31" class="pixels transparent no-hover" alt="daudix-alt" src="{{ get_url(path='badges/badges/daudix-alt.gif', cachebust=true) }}" />
         <span>Alternative</span>
       </li>
       <li>
-        <img width="88" height="31" class="pixels transparent no-hover" alt="daudix-rainbow" src="{{ get_url(path='badges/badges/daudix-rainbow.gif') }}" />
+        <img width="88" height="31" class="pixels transparent no-hover" alt="daudix-rainbow" src="{{ get_url(path='badges/badges/daudix-rainbow.gif', cachebust=true) }}" />
         <span>Rainbow</span>
       </li>
       <li>
-        <img width="88" height="31" class="pixels transparent no-hover" alt="daudix-neocities" src="{{ get_url(path='badges/badges/daudix-neocities.gif') }}" />
+        <img width="88" height="31" class="pixels transparent no-hover" alt="daudix-neocities" src="{{ get_url(path='badges/badges/daudix-neocities.gif', cachebust=true) }}" />
         <span>Neocities</span>
       </li>
       <li>
-        <img width="88" height="31" class="pixels transparent no-hover" alt="daudix-synthwave" src="{{ get_url(path='badges/badges/daudix-synthwave.gif') }}" />
+        <img width="88" height="31" class="pixels transparent no-hover" alt="daudix-synthwave" src="{{ get_url(path='badges/badges/daudix-synthwave.gif', cachebust=true) }}" />
         <span>Synthwave</span>
       </li>
       <li>
-        <img width="88" height="31" class="pixels transparent no-hover" alt="daudix-tile" src="{{ get_url(path='badges/badges/daudix-tile.gif') }}" />
+        <img width="88" height="31" class="pixels transparent no-hover" alt="daudix-tile" src="{{ get_url(path='badges/badges/daudix-tile.gif', cachebust=true) }}" />
         <span>Tile</span>
       </li>
     </ul>
@@ -65,7 +66,7 @@
                 {%- endif -%}
                 alt="{{ badge_alt }}"
                 {% set badge_path = "badges/badges/" ~ badge.name %}
-                src="{{ get_url(path=badge_path) }}"
+                src="{{ get_url(path=badge_path, cachebust=true) }}"
                 {% if config.markdown.lazy_async_image %}
                   decoding="async" loading="lazy"
                 {% endif %}
@@ -79,7 +80,7 @@
           <iframe src="https://incr.easrng.net/badge?key={{ config.base_url | replace(from='https://', to='') }}" title="increment badge"></iframe>
         </li>
         <li>
-          <a href="{{ get_url(path='badges/') }}" id="more"><span>more +<br />stamps</span></a>
+          <a href="{{ get_url(path='@/badges/index.md') }}" id="more"><span>more +<br />stamps</span></a>
         </li>
       </ul>
       <ul style="--duration: {{ section.extra.badges | length * 2 }}s" aria-hidden="true">
@@ -99,7 +100,7 @@
                 {%- endif -%}
                 alt="{{ badge_alt }}"
                 {% set badge_path = "badges/badges/" ~ badge.name %}
-                src="{{ get_url(path=badge_path) }}"
+                src="{{ get_url(path=badge_path, cachebust=true) }}"
               />
             {%- if badge.url -%}
               </a>
@@ -110,7 +111,7 @@
           <iframe src="https://incr.easrng.net/badge?key={{ config.base_url | replace(from='https://', to='') }}" title="increment badge"></iframe>
         </li>
         <li>
-          <a href="{{ get_url(path='badges/') }}" id="more"><span>more +<br />stamps</span></a>
+          <a href="{{ get_url(path='@/badges/index.md') }}" id="more"><span>more +<br />stamps</span></a>
         </li>
       </ul>
     </div>

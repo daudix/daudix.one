@@ -28,7 +28,7 @@
           {% endif %}
           alt="{{ badge_alt }}"
           {% set badge_url = "badges/badges/" ~ badge.name %}
-          src="{{ get_url(path=badge_url) }}"
+          src="{{ get_url(path=badge_url, cachebust=true) }}"
           {% if config.markdown.lazy_async_image %}
             decoding="async" loading="lazy"
           {% endif %}
@@ -62,7 +62,7 @@
           {% endif %}
           alt="{{ badge_alt }}"
           {% set badge_url = "badges/badges/" ~ badge.name %}
-          src="{{ get_url(path=badge_url) }}"
+          src="{{ get_url(path=badge_url, cachebust=true) }}"
           {% if config.markdown.lazy_async_image %}
             decoding="async" loading="lazy"
           {% endif %}
@@ -96,7 +96,7 @@
           {% endif %}
           alt="{{ badge_alt }}"
           {% set badge_url = "badges/badges/" ~ badge.name %}
-          src="{{ get_url(path=badge_url) }}"
+          src="{{ get_url(path=badge_url, cachebust=true) }}"
           {% if config.markdown.lazy_async_image %}
             decoding="async" loading="lazy"
           {% endif %}
@@ -130,7 +130,7 @@
           {% endif %}
           alt="{{ badge_alt }}"
           {% set badge_url = "badges/badges/" ~ badge.name %}
-          src="{{ get_url(path=badge_url) }}"
+          src="{{ get_url(path=badge_url, cachebust=true) }}"
           {% if config.markdown.lazy_async_image %}
             decoding="async" loading="lazy"
           {% endif %}
@@ -164,7 +164,7 @@
           {% endif %}
           alt="{{ stamp_alt }}"
           {% set stamp_url = "badges/stamps/" ~ stamp.name %}
-          src="{{ get_url(path=stamp_url) }}"
+          src="{{ get_url(path=stamp_url, cachebust=true) }}"
           {% if config.markdown.lazy_async_image %}
             decoding="async" loading="lazy"
           {% endif %}
