@@ -51,11 +51,7 @@ forges = [
 
 {{ polaroid() }}
 
-<div id="title">
-
 # David Lapshin
-
-</div>
 
 Greetings! Welcome to my little corner on the World Wild Web and a second home of mine. You might know me by my online handle; Daudix.
 
