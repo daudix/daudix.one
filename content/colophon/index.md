@@ -32,7 +32,7 @@ Most likely I forgot to credit someone. Sorry about that \>_<
 
 ## To-Do
 
-This section is automatically pulled from [TODO.md](https://github.com/daudix/daudix.one/blob/main/TODO.md) file.
+This section is automatically pulled from the [TODO.md](https://github.com/daudix/daudix.one/blob/main/TODO.md) file. As it's written for me, it may contain crude language or be confusing.
 
 <details>
 <summary>Click to expand</summary>
