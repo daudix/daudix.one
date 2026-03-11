@@ -47,8 +47,13 @@
     }
   }
 
+  picture,
   img {
     border-radius: inherit;
+  }
+
+  img {
+    margin-block: 0;
     width: 100%;
   }
 
