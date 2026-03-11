@@ -26,13 +26,8 @@
     background-color: transparent !important;
     padding: 0 !important;
 
-    &:last-child:hover {
-      margin-inline-end: 0;
-    }
-
     &:hover {
-      transform: scale(1.5);
-      z-index: 1;
+      transform: var(--hover);
       filter: var(--drop-shadow);
     }
 
