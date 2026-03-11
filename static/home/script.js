@@ -36,6 +36,7 @@ const lastFmUser = "daudix";
 const lastFmApiKey = "1747901e170276677d1d0447cf6519b0";
 const lastFmPlayer = document.getElementsByClassName("item player")[0];
 const lastFmCover = document.getElementById("cover");
+const lastFmCoverLarge = document.getElementById("cover-large");
 const lastFmTitle = document.getElementById("player-title");
 const lastFmTitleContainer = document.getElementById("player-title-container");
 const lastFmArtist = document.getElementById("player-artist");
@@ -83,6 +84,9 @@ async function fetchLastFm() {
       lastFmArtist.textContent = track.artist["#text"];
       lastFmLink.href = track.url;
 
+      const largeCover = track.image.find((img) => img.size === "large")?.[
+        "#text"
+      ];
       const mediumCover = track.image.find((img) => img.size === "medium")?.[
         "#text"
       ];
@@ -92,6 +96,12 @@ async function fetchLastFm() {
       const fallbackCover = "home/image-missing.svg";
 
       lastFmCover.src = mediumCover || fallbackCover;
+
+      if (largeCover) {
+        lastFmCoverLarge.srcset = largeCover;
+      } else {
+        lastFmCoverLarge.srcset = "";
+      }
 
       const hasRealCover =
         Boolean(mediumCover) && mediumCover !== fallbackCover;
