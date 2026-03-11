@@ -1,45 +1,42 @@
 @use "../../themes/ametrine/sass/abstracts/functions" as *;
 
-#window-border {
-  position: relative;
+#window {
   filter: var(--drop-shadow);
   margin-inline: auto;
-  border: 4rem solid;
-  border-image: url("border.gif") 32 repeat;
+  border-style: solid;
+  border-image-source: url("border.gif");
+  border-image-slice: 16 32 5 32 fill;
+  border-image-width: 32px 64px 10px 64px;
+  border-image-repeat: stretch repeat;
+  padding-inline: rpx(3);
+  padding-block: rpx(29) rpx(7);
   image-rendering: pixelated;
-  width: rpx(303);
-  height: rpx(170);
-}
-
-#window-inner {
-  position: absolute;
-  // Get around bulky empty space caused by the image border
-  inset: rpx(-32) rpx(-58) rpx(-54) rpx(-58);
-  background-color: #faf4f2;
-  padding: 1rem;
-  overflow: auto;
-
-  @media (prefers-color-scheme: dark) {
-    & {
-      background-color: #2d2a2e;
-    }
-  }
-}
-
-#window-contents {
-  margin-inline: auto;
   width: fit-content;
+  min-width: rpx(128);
+  max-width: 100%;
 
-  small {
-    color: var(--fg-color);
+  &-contents {
+    background-color: #faf4f2;
+    padding: 1rem;
+    overflow-x: auto;
 
-    a {
-      color: var(--yellow-fg);
-      line-height: 1;
-      text-decoration-color: hsl(
-        var(--yellow-h) var(--yellow-s) var(--yellow-l) /
-          var(--disabled-opacity)
-      );
+    small {
+      color: var(--fg-color);
+
+      a {
+        color: var(--yellow-fg);
+        line-height: 1;
+        text-decoration-color: hsl(
+          var(--yellow-h) var(--yellow-s) var(--yellow-l) /
+            var(--disabled-opacity)
+        );
+      }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      & {
+        background-color: #2d2a2e;
+      }
     }
   }
 }

@@ -1,4 +1,3 @@
-- Make rainbow window width automatic
 - Try to get total page size to the absolute minimum possible (without making stuff harder to maintain)
 - Add more icons to /design (Cassiere, Miniera, GNOMEntary Cavailer, open-tv, Compito, MenuKaran, sveglia, boutique, gdm-settings, GSConnect, Stamina, etc. that I can find in ~/Projects)
 - Add icon reflections to /design (use [-webkit-box-reflect](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/-webkit-box-reflect) and [element()](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/element))
