@@ -5,9 +5,9 @@
   margin-inline: auto;
   border-style: solid;
   border-image-source: url("border.gif");
-  border-image-slice: 16 32 5 32 fill;
-  border-image-width: 32px 64px 10px 64px;
-  border-image-repeat: stretch repeat;
+  border-image-slice: 16 32 5 32;
+  border-image-width: rpx(32) rpx(64) rpx(10) rpx(64);
+  border-image-repeat: repeat;
   padding-inline: rpx(3);
   padding-block: rpx(29) rpx(7);
   image-rendering: pixelated;
