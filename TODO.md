@@ -1,17 +1,15 @@
+- Refresh homepage head
+- Redesign splash screen one more time
+- Add AI disclosure or whatevr on /colophon
 - Try to get total page size to the absolute minimum possible (without making stuff harder to maintain)
 - Add more icons to /design (Cassiere, Miniera, GNOMEntary Cavailer, open-tv, Compito, MenuKaran, sveglia, boutique, gdm-settings, GSConnect, Stamina, etc. that I can find in ~/Projects)
 - Add icon reflections to /design (use [-webkit-box-reflect](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/-webkit-box-reflect) and [element()](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/element))
 - Avoid using IDs for styling as per <https://google.github.io/styleguide/htmlcssguide.html#ID_Selectors>
 - Fix nanolog pages having "404" as their title
-- Use ✦ for list bullets, in some places at least
 - Separate guides from blog posts
-- <https://home.hedy.dev/posts/meta-pages/>
 - Replace minified pngs with webps
-- <https://slashpages.net>
 - Chat bubble style/shortcode
 - Rewrite the script on /snug-nook/
-- <https://piccalil.li/blog/some-simple-ways-to-make-content-look-good/>
-- <https://bsky.app/profile/bell.bz/post/3lsbmfkreec2o>
 - Make badges popup closable via outside click
 - Make "shrine" for my beloved portal series
 - Add photo gallery (random polaroid rotation can be done using Tera's `get_random`)
@@ -28,3 +26,7 @@
 - License under AGPL (?)
 - MoodDB (?)
 - Remove IndieWeb section from /home/ (?)
+- <https://home.hedy.dev/posts/meta-pages/>
+- <https://slashpages.net>
+- <https://piccalil.li/blog/some-simple-ways-to-make-content-look-good/>
+- <https://bsky.app/profile/bell.bz/post/3lsbmfkreec2o>
