@@ -122,8 +122,14 @@
   margin-block: 1rem 0;
 }
 
+#send-beep:disabled + #beeper-countdown {
+  opacity: 1;
+}
+
 #beeper-countdown {
   --angle: 0deg;
+  opacity: 0;
+  transition: opacity var(--transition);
   border-radius: 50%;
   background: conic-gradient(
     var(--accent-color) var(--angle),
