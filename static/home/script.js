@@ -1,71 +1,49 @@
-/* Splash Screen ============================================================ */
+/* Splash ================================================================== */
 
-const splash = document.getElementById("splash");
-const skip = document.getElementById("skip-splash");
-const STORAGE_KEY = "skipSplash";
+function initSplash() {
+  const splash = document.getElementById("splash");
+  const skip = document.getElementById("skip-splash");
+  const STORAGE_KEY = "skipSplash";
 
-const skipped = localStorage.getItem(STORAGE_KEY) === "true";
-const targeted = location.hash === "#splash";
+  const skipped = localStorage.getItem(STORAGE_KEY) === "true";
 
-if (targeted) {
-  splash.removeAttribute("hidden");
-  splash.querySelector(".content")?.focus();
-} else if (skipped) {
-  splash.setAttribute("hidden", "");
-} else {
-  splash.removeAttribute("hidden");
-}
+  if (location.hash === "#splash" || !skipped) {
+    splash.removeAttribute("hidden");
+    if (location.hash === "#splash") splash.querySelector(".content")?.focus();
+  } else {
+    splash.setAttribute("hidden", "");
+  }
 
-if (skip) {
-  skip.checked = skipped;
-  skip.addEventListener("change", () => {
+  skip?.addEventListener("change", () => {
     localStorage.setItem(STORAGE_KEY, skip.checked);
+  });
+
+  window.addEventListener("hashchange", () => {
+    if (location.hash === "#splash") {
+      splash.removeAttribute("hidden");
+      splash.querySelector(".content")?.focus();
+    }
   });
 }
 
-window.addEventListener("hashchange", () => {
-  if (location.hash === "#splash") {
-    splash.removeAttribute("hidden");
-    splash.querySelector(".content")?.focus();
-  }
-});
+/* Last.fm ================================================================== */
 
-/* Constants and DOM Elements =============================================== */
-
-const lastFmUser = "daudix";
-const lastFmApiKey = "1747901e170276677d1d0447cf6519b0";
-const lastFmPlayer = document.getElementsByClassName("item player")[0];
-const lastFmCover = document.getElementById("cover");
-const lastFmCoverLarge = document.getElementById("cover-large");
-const lastFmTitle = document.getElementById("player-title");
-const lastFmTitleContainer = document.getElementById("player-title-container");
-const lastFmArtist = document.getElementById("player-artist");
-const lastFmArtistContainer = document.getElementById(
-  "player-artist-container",
-);
-const lastFmLink = document.getElementById("player-go");
-const statusCafeContent = document.getElementById("statuscafe-content");
-const statusCafeFace = document.getElementById("statuscafe-face");
-const statusCafeTimeAgo = document.getElementById("statuscafe-time-ago");
-const discordStatus = document.getElementById("online-indicator");
-const discordStatusText = document.getElementById("online-indicator-text");
-const clock = document.getElementById("clock");
-const flutter = document.getElementById("flutter");
-const shy = document.getElementById("shy");
-const squee = new Audio("/home/squee.mp3");
+const LASTFM_USER = "daudix";
+const LASTFM_API_KEY = "1747901e170276677d1d0447cf6519b0";
 
 let lastTrackID = null;
-let lastDiscordStatus = "";
-let lastTime = "";
 
-/* Functions ================================================================ */
-
-// Last.fm
 async function fetchLastFm() {
+  const player = document.getElementsByClassName("item player")[0];
+  const cover = document.getElementById("cover");
+  const coverLarge = document.getElementById("cover-large");
+  const title = document.getElementById("player-title");
+  const artist = document.getElementById("player-artist");
+  const link = document.getElementById("player-go");
+
   try {
-    // Replace my username and API key if you're going to use this
     const res = await fetch(
-      `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=${lastFmUser}&api_key=${lastFmApiKey}&format=json&limit=1`,
+      `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=${LASTFM_USER}&api_key=${LASTFM_API_KEY}&format=json&limit=1`,
     );
     const data = await res.json();
     const track = data.recenttracks?.track?.[0];
@@ -75,92 +53,81 @@ async function fetchLastFm() {
     const isPlaying = track["@attr"]?.nowplaying === "true";
 
     if (
-      trackID !== lastTrackID ||
-      isPlaying !== lastFmPlayer.classList.contains("playing")
-    ) {
-      lastTrackID = trackID;
+      trackID === lastTrackID &&
+      isPlaying === player.classList.contains("playing")
+    )
+      return;
+    lastTrackID = trackID;
 
-      lastFmTitle.textContent = track.name;
-      lastFmArtist.textContent = track.artist["#text"];
-      lastFmLink.href = track.url;
+    title.textContent = track.name;
+    artist.textContent = track.artist["#text"];
+    link.href = track.url;
 
-      const largeCover = track.image.find((img) => img.size === "large")?.[
-        "#text"
-      ];
-      const mediumCover = track.image.find((img) => img.size === "medium")?.[
-        "#text"
-      ];
-      const smallCover = track.image.find((img) => img.size === "small")?.[
-        "#text"
-      ];
-      const fallbackCover = "home/image-missing.svg";
+    const getImg = (size) =>
+      track.image.find((img) => img.size === size)?.["#text"];
+    const large = getImg("large");
+    const medium = getImg("medium");
+    const small = getImg("small");
+    const fallback = "home/image-missing.svg";
+    const hasRealCover = Boolean(medium) && medium !== fallback;
 
-      lastFmCover.src = mediumCover || fallbackCover;
+    cover.src = medium || fallback;
+    coverLarge.srcset = large || "";
 
-      if (largeCover) {
-        lastFmCoverLarge.srcset = largeCover;
-      } else {
-        lastFmCoverLarge.srcset = "";
-      }
+    player.classList.toggle("playing", isPlaying);
+    player.classList.toggle("has-cover", hasRealCover);
 
-      const hasRealCover =
-        Boolean(mediumCover) && mediumCover !== fallbackCover;
-
-      lastFmPlayer.classList.toggle("playing", isPlaying);
-      lastFmPlayer.classList.toggle("has-cover", hasRealCover);
-
-      if (hasRealCover && smallCover) {
-        lastFmPlayer.style.setProperty("--blurnail", `url("${smallCover}")`);
-      } else {
-        lastFmPlayer.style.removeProperty("--blurnail");
-      }
-
-      updateMarquees();
+    if (hasRealCover && small) {
+      player.style.setProperty("--blurnail", `url("${small}")`);
+    } else {
+      player.style.removeProperty("--blurnail");
     }
+
+    updateMarquees();
   } catch (e) {
     console.error("Failed to fetch now playing track:", e);
   }
 }
 
-// status.cafe
+/* status.cafe ============================================================== */
+
 async function fetchStatusCafe() {
+  const content = document.getElementById("statuscafe-content");
+  const face = document.getElementById("statuscafe-face");
+  const timeAgo = document.getElementById("statuscafe-time-ago");
+
   try {
     const res = await fetch("https://status.cafe/users/daudix/status.json");
     const r = await res.json();
 
     if (!r.content.length) {
-      statusCafeContent.innerHTML = "No status yet.";
+      content.innerHTML = "No status yet.";
       return;
     }
 
-    statusCafeContent.innerHTML = r.content;
-    statusCafeFace.innerHTML = r.face;
-    statusCafeTimeAgo.innerHTML = r.timeAgo;
-  } catch (error) {
-    console.error("Error fetching status:", error);
+    content.innerHTML = r.content;
+    face.innerHTML = r.face;
+    timeAgo.innerHTML = r.timeAgo;
+  } catch (e) {
+    console.error("Error fetching status:", e);
   }
 }
 
-// Flutter
-function flutterAnim() {
-  shy.setAttribute("disabled", "true");
+/* Discord ================================================================== */
 
-  squee.play();
+let lastDiscordStatus = "";
 
-  flutter.classList.add("active");
-
-  flutter.addEventListener(
-    "animationend",
-    function () {
-      shy.removeAttribute("disabled");
-      flutter.classList.remove("active");
-    },
-    { once: true },
-  );
-}
-
-// Discord status
 async function fetchDiscordStatus() {
+  const indicator = document.getElementById("online-indicator");
+  const indicatorText = document.getElementById("online-indicator-text");
+
+  const labels = {
+    online: "Online",
+    idle: "Idle",
+    dnd: "DND",
+    offline: "Offline",
+  };
+
   try {
     const res = await fetch(
       "https://api.lanyard.rest/v1/users/650757995378114581",
@@ -168,64 +135,229 @@ async function fetchDiscordStatus() {
     const data = await res.json();
     const status = data.data.discord_status;
 
-    if (status !== lastDiscordStatus) {
-      lastDiscordStatus = status;
+    if (status === lastDiscordStatus) return;
+    lastDiscordStatus = status;
 
-      discordStatus.classList.remove("online", "idle", "dnd", "offline");
-      discordStatus.classList.add(status);
-
-      switch (status) {
-        case "online":
-          discordStatusText.innerHTML = "Online";
-          break;
-        case "idle":
-          discordStatusText.innerHTML = "Idle";
-          break;
-        case "dnd":
-          discordStatusText.innerHTML = "DND";
-          break;
-        case "offline":
-          discordStatusText.innerHTML = "Offline";
-          break;
-      }
-    }
-  } catch (error) {
-    console.error("Error fetching Lanyard data:", error);
-    discordStatusText.innerHTML = "N/A";
+    indicator.classList.remove("online", "idle", "dnd", "offline");
+    indicator.classList.add(status);
+    indicatorText.innerHTML = labels[status] ?? "N/A";
+  } catch (e) {
+    console.error("Error fetching Lanyard data:", e);
+    indicatorText.innerHTML = "N/A";
   }
 }
 
-// Clock
+/* Clock ==================================================================== */
+
+let lastTime = "";
+
 function updateClock() {
-  const options = {
-    // No, I'm not in Moscow, just so happens the timezone is the same there
+  const clock = document.getElementById("clock");
+  const time = new Date().toLocaleString("en-IE", {
     timeZone: "Europe/Moscow",
     hour: "2-digit",
     minute: "2-digit",
     hour12: false,
-  };
+  });
 
-  const localTime = new Date().toLocaleString("en-IE", options);
-
-  if (localTime !== lastTime) {
-    clock.textContent = localTime;
-    lastTime = localTime;
+  if (time !== lastTime) {
+    clock.textContent = time;
+    lastTime = time;
   }
 }
 
-/* Initialization and Event Listeners ======================================= */
+/* Flutter ================================================================== */
 
-document.addEventListener("DOMContentLoaded", function () {
+function initFlutter() {
+  const flutter = document.getElementById("flutter");
+  const shy = document.getElementById("shy");
+  const squee = new Audio("/home/squee.mp3");
+
+  shy.addEventListener("click", () => {
+    shy.setAttribute("disabled", "true");
+    squee.play();
+    flutter.classList.add("active");
+    flutter.addEventListener(
+      "animationend",
+      () => {
+        shy.removeAttribute("disabled");
+        flutter.classList.remove("active");
+      },
+      { once: true },
+    );
+  });
+}
+
+/* Beeper =================================================================== */
+
+const WEBHOOK = "https://webhook.daudix.one/hooks/beep";
+const POLL_MS = 3000;
+const BEEP_FREQ = 440;
+const BEEP_DUR = 0.2;
+
+let audioCtx = null;
+let hasInteracted = false;
+let waitingFromIdx = -1;
+let prevLineCount = 0;
+let lastModified = null;
+let lastDisplayHTML = null;
+
+function logUrl() {
+  const d = new Date();
+  const y = d.getUTCFullYear();
+  const m = String(d.getUTCMonth() + 1).padStart(2, "0");
+  const day = String(d.getUTCDate()).padStart(2, "0");
+  return `https://daudix.one/beeper/${y}-${m}-${day}.log`;
+}
+
+function ensureAudio() {
+  if (!audioCtx)
+    audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  return audioCtx;
+}
+
+function playBeep() {
+  const osc = audioCtx.createOscillator();
+  osc.type = "square";
+  osc.frequency.setValueAtTime(BEEP_FREQ, audioCtx.currentTime);
+  osc.connect(audioCtx.destination);
+  osc.start();
+  osc.stop(audioCtx.currentTime + BEEP_DUR);
+}
+
+function setDisplay(display, html) {
+  if (display && html !== lastDisplayHTML) {
+    display.innerHTML = html;
+    lastDisplayHTML = html;
+  }
+}
+
+async function poll() {
+  const btn = document.getElementById("send-beep");
+  const display = document.querySelector(".beeper-display");
+  let lines;
+
+  try {
+    const headers = lastModified ? { "If-Modified-Since": lastModified } : {};
+    const res = await fetch(logUrl(), { headers });
+
+    if (res.status === 304) return;
+
+    if (res.status === 404) {
+      setDisplay(display, "No beeps yet today\nBe the first!");
+      prevLineCount = 0;
+      lastModified = null;
+      waitingFromIdx = -1;
+      if (btn) {
+        btn.disabled = false;
+        btn.classList.remove("progress");
+      }
+      return;
+    }
+
+    if (!res.ok) throw new Error();
+
+    lastModified = res.headers.get("Last-Modified") || lastModified;
+    const raw = (await res.text()).trim();
+    lines = raw ? raw.split("\n").filter((l) => l.trim()) : [];
+  } catch {
+    return;
+  }
+
+  if (lines.length < prevLineCount) {
+    prevLineCount = 0;
+    lastModified = null;
+    waitingFromIdx = -1;
+    if (btn) {
+      btn.disabled = false;
+      btn.classList.remove("progress");
+    }
+    setDisplay(display, "New day, no beeps yet\nBe the first!");
+    return;
+  }
+
+  const last2 = lines.slice(-2);
+  setDisplay(display, last2.length ? last2.join("<br>") : "&nbsp;");
+
+  let rateLimited = false;
+  let sawReset = false;
+
+  for (let i = lines.length - 1; i >= 0; i--) {
+    if (/rate limit reset/i.test(lines[i])) {
+      sawReset = true;
+      break;
+    }
+    if (/\d+s rate limit/i.test(lines[i])) {
+      rateLimited = true;
+      break;
+    }
+  }
+
+  if (sawReset) waitingFromIdx = -1;
+
+  if (btn) {
+    if (rateLimited) {
+      btn.disabled = true;
+      btn.classList.remove("progress");
+      waitingFromIdx = -1;
+    } else if (waitingFromIdx >= 0) {
+      if (lines.slice(waitingFromIdx).some((l) => /beep played/i.test(l))) {
+        waitingFromIdx = -1;
+        btn.classList.remove("progress");
+        btn.disabled = false;
+      }
+    } else {
+      btn.disabled = false;
+    }
+  }
+
+  if (hasInteracted && lines.length > prevLineCount) {
+    for (const line of lines.slice(prevLineCount)) {
+      if (/beep played/i.test(line)) playBeep();
+    }
+  }
+
+  prevLineCount = lines.length;
+}
+
+function initBeeper() {
+  const btn = document.getElementById("send-beep");
+  if (!btn) return;
+
+  btn.addEventListener("click", async () => {
+    if (btn.disabled) return;
+
+    hasInteracted = true;
+    ensureAudio();
+
+    btn.disabled = true;
+    btn.classList.add("progress");
+    waitingFromIdx = prevLineCount;
+
+    try {
+      await fetch(WEBHOOK);
+    } catch {}
+
+    setTimeout(poll, 1000);
+  });
+
+  poll();
+  setInterval(poll, POLL_MS);
+}
+
+/* Init ===================================================================== */
+
+document.addEventListener("DOMContentLoaded", () => {
+  initSplash();
+  initFlutter();
+  initBeeper();
+
   fetchStatusCafe();
-
   fetchLastFm();
-  setInterval(fetchLastFm, 10000);
-
-  updateClock();
-  setInterval(updateClock, 1000);
-
   fetchDiscordStatus();
-  setInterval(fetchDiscordStatus, 10000);
+  updateClock();
 
-  shy.addEventListener("click", flutterAnim);
+  setInterval(fetchLastFm, 10000);
+  setInterval(fetchDiscordStatus, 10000);
+  setInterval(updateClock, 1000);
 });

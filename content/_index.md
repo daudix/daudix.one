@@ -147,6 +147,25 @@ Where and when to find me online.
 {{ online(type="forges") }}
 {% end %}
 
+{% masonry(type="beeper") %}
+<div class="beeper-display">
+Either server is offline<br />Or JavaScript is off
+</div>
+<button id="send-beep">Send Beep</button>
+<span class="beeper-logo">Beep-o-matic 3000</span>
+<input type="checkbox" id="beeper-popup-expand" class="visually-hidden" autocomplete="off" />
+<label for="beeper-popup-expand" autocomplete="off" title="What Is This?">
+  {{ icon(name="question") }}
+  {{ icon(name="x-circle") }}
+</label>
+<div id="beeper-popup">
+
+Make my server (old PC) on which this site resides beep via its onboard tiny speaker in real time. I'd appreciate if this wasn't spammed at night, but who am I to stop you.
+
+Once you interact with this beeper, you'll hear beeps of other users.
+</div>
+{% end %}
+
 {% end %}
 
 {% masonry(column=2) %}
