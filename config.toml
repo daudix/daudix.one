@@ -90,6 +90,7 @@ csp = [
     "ws.audioscrobbler.com",
     "discord.com",
     "api.github.com",
+    "webhook.daudix.one",
   ] },
   { directive = "base-uri", domains = [
     "'none'",
