@@ -1,3 +1,4 @@
+- Use UTC TZ
 - Refresh homepage head
 - Redesign splash screen one more time
 - Add AI disclosure or whatevr on /colophon
