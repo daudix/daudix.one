@@ -1,3 +1,4 @@
+- Make beeper not break on site redeployment (.log volume is being disconnected from SWS container by this somehow)
 - Use UTC TZ
 - Refresh homepage head
 - Redesign splash screen one more time
