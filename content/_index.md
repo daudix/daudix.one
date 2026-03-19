@@ -151,7 +151,10 @@ Where and when to find me online.
 <div class="beeper-display">
 Either server is offline<br />Or JavaScript is off
 </div>
-<button id="send-beep">Send Beep</button>
+<div class="buttons start">
+  <button id="send-beep">Send Beep</button>
+  <div id="beeper-countdown"></div>
+</div>
 <span class="beeper-logo">Beep-o-matic 3000</span>
 <input type="checkbox" id="beeper-popup-expand" class="visually-hidden" autocomplete="off" />
 <label for="beeper-popup-expand" autocomplete="off" title="What Is This?">

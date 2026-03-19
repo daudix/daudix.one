@@ -201,6 +201,9 @@ let waitingFromIdx = -1;
 let prevLineCount = 0;
 let lastModified = null;
 let lastDisplayHTML = null;
+let countdownInterval = null;
+let rateLimitEnd = null;
+let rateLimitTotal = 0;
 
 function logUrl() {
   const d = new Date();
@@ -232,6 +235,63 @@ function setDisplay(display, html) {
   }
 }
 
+function tickCountdown() {
+  const el = document.getElementById("beeper-countdown");
+  if (!el) return;
+
+  const remaining = rateLimitEnd - Date.now();
+
+  if (remaining <= 0) {
+    clearInterval(countdownInterval);
+    countdownInterval = null;
+    el.style.setProperty("--angle", "0deg");
+    el.hidden = true;
+    return;
+  }
+
+  const angle = ((rateLimitTotal - remaining) / rateLimitTotal) * 360;
+  el.style.setProperty("--angle", `${angle.toFixed(1)}deg`);
+}
+
+function startCountdown(h, m, s, durationSecs) {
+  const el = document.getElementById("beeper-countdown");
+  if (!el) return;
+
+  const now = new Date();
+  const end = new Date(
+    Date.UTC(
+      now.getUTCFullYear(),
+      now.getUTCMonth(),
+      now.getUTCDate(),
+      h,
+      m,
+      s + durationSecs,
+    ),
+  );
+
+  // Don't restart if it's the same rate limit event
+  if (rateLimitEnd && end.getTime() === rateLimitEnd.getTime()) return;
+
+  rateLimitEnd = end;
+  rateLimitTotal = durationSecs * 1000;
+  el.hidden = false;
+
+  clearInterval(countdownInterval);
+  countdownInterval = setInterval(tickCountdown, 100);
+  tickCountdown();
+}
+
+function stopCountdown() {
+  const el = document.getElementById("beeper-countdown");
+  clearInterval(countdownInterval);
+  countdownInterval = null;
+  rateLimitEnd = null;
+  if (el) {
+    el.style.setProperty("--angle", "0deg");
+    el.hidden = true;
+  }
+}
+
 async function poll() {
   const btn = document.getElementById("send-beep");
   const display = document.querySelector(".beeper-display");
@@ -248,6 +308,7 @@ async function poll() {
       prevLineCount = 0;
       lastModified = null;
       waitingFromIdx = -1;
+      stopCountdown();
       if (btn) {
         btn.disabled = false;
         btn.classList.remove("progress");
@@ -268,6 +329,7 @@ async function poll() {
     prevLineCount = 0;
     lastModified = null;
     waitingFromIdx = -1;
+    stopCountdown();
     if (btn) {
       btn.disabled = false;
       btn.classList.remove("progress");
@@ -287,13 +349,25 @@ async function poll() {
       sawReset = true;
       break;
     }
-    if (/\d+s rate limit/i.test(lines[i])) {
+
+    const rl = lines[i].match(/^(\d{2}):(\d{2}):(\d{2}):\s*(\d+)s rate limit/i);
+    if (rl) {
       rateLimited = true;
+      startCountdown(
+        parseInt(rl[1]),
+        parseInt(rl[2]),
+        parseInt(rl[3]),
+        parseInt(rl[4]),
+      );
       break;
     }
   }
 
-  if (sawReset) waitingFromIdx = -1;
+  if (sawReset) {
+    waitingFromIdx = -1;
+    stopCountdown();
+  }
+  if (!rateLimited && !sawReset) stopCountdown();
 
   if (btn) {
     if (rateLimited) {

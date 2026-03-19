@@ -117,8 +117,20 @@
   letter-spacing: -0.05em;
 }
 
-#send-beep {
-  margin-block-start: 1rem;
+.buttons {
+  gap: 0.75rem;
+  margin-block: 1rem 0;
+}
+
+#beeper-countdown {
+  --angle: 0deg;
+  border-radius: 50%;
+  background: conic-gradient(
+    var(--accent-color) var(--angle),
+    transparent 0deg
+  );
+  width: 1rem;
+  height: 1rem;
 }
 
 #beeper-popup-expand {
