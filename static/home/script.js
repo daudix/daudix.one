@@ -225,7 +225,7 @@ function playBeep() {
 
   osc.type = "square";
   osc.frequency.setValueAtTime(BEEP_FREQ, audioCtx.currentTime);
-  gain.gain.setValueAtTime(0.5, audioCtx.currentTime);
+  gain.gain.setValueAtTime(0.25, audioCtx.currentTime);
 
   osc.connect(gain);
   gain.connect(audioCtx.destination);
