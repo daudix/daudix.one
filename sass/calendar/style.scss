@@ -3,8 +3,8 @@
 :root {
   @include variables("light");
   @include variables-accent("light");
-  font-size: 16px;
   --border-width: 0.5mm;
+  font-size: 16px;
 }
 
 @font-face {
@@ -102,22 +102,11 @@ body {
     #progress-bar-wrapper {
       flex: 1;
       margin-block-start: 2mm;
-      border-block-start: var(--border-width) solid black;
-      border-block-end: var(--border-width) solid black;
+      border-block: var(--border-width) solid black;
       padding: 1mm 0;
     }
 
     #progress-bar {
-      --mask: linear-gradient(
-        to right,
-        black,
-        black var(--year-percentage),
-        transparent var(--year-percentage),
-        transparent
-      );
-      -webkit-mask-image: var(--mask);
-      -webkit-print-color-adjust: exact;
-      mask-image: var(--mask);
       background-image: repeating-linear-gradient(
         to right,
         black,
@@ -125,9 +114,10 @@ body {
         white 0.5mm,
         white 1mm
       );
-      width: 100%;
+      width: var(--year-percentage);
       height: 5mm;
       print-color-adjust: exact;
+      -webkit-print-color-adjust: exact;
     }
   }
 
