@@ -148,7 +148,7 @@ show_qr = true
 service = "umami"
 id = "cc334b65-b9db-4b23-9735-97d3750e24d8"
 self_hosted_url = "https://stats.daudix.one"
-do_not_track = false
+exclude_hash = true
 
 [extra.debug]
 layout = false
