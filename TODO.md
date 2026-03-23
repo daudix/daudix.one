@@ -1,3 +1,7 @@
+- Change beeper design since it will get too crowded
+- Add volume buttons to beeper
+- Don't load beeper logs in real-time by default, add a real-time button 
+- Allow sending morse code with beeper (adjust rate limit)
 - Use UTC TZ
 - Refresh homepage head
 - Redesign splash screen one more time

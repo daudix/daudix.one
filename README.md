@@ -12,7 +12,9 @@ If you like how my website looks and want to make your own based on it: DON'T.
 
 Seriously, just use the [Ametrine](https://ametrine.daudix.one) theme; I'm the author of it and it's literally the same thing minus all my content, custom elements, and the like. Save your nerves, I'm serious.
 
-If you want to use some custom styles and stuff from here: go ahead! ...just don't make it *too similar,* I got to have some uniqueness x3
+If you want to reuse *some* custom styles and stuff from here: go ahead! ...just don't borrow too much, I got to have some uniqueness x3
+
+If I wasn't discreet enough: Please don't just copy-paste my site and replace your name with mine. I'm usually pretty chill regarding people copying my site, but sometimes it's just ridiculous. kthxbye.
 
 ## Setup Local Repository
 
