@@ -221,9 +221,15 @@ function ensureAudio() {
 
 function playBeep() {
   const osc = audioCtx.createOscillator();
+  const gain = audioCtx.createGain();
+
   osc.type = "square";
   osc.frequency.setValueAtTime(BEEP_FREQ, audioCtx.currentTime);
-  osc.connect(audioCtx.destination);
+  gain.gain.setValueAtTime(0.5, audioCtx.currentTime);
+
+  osc.connect(gain);
+  gain.connect(audioCtx.destination);
+
   osc.start();
   osc.stop(audioCtx.currentTime + BEEP_DUR);
 }
