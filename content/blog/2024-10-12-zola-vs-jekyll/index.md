@@ -132,7 +132,7 @@ What's neat is that you can override any theme template/file by creating a file 
 
 `themes/some-theme/templates/partials/head.html`:
 
-```jinja2
+```jinja
 <title>
     {% block title %}
         Theme's Title
@@ -142,7 +142,7 @@ What's neat is that you can override any theme template/file by creating a file 
 
 `templates/partials/head.html`:
 
-```jinja2
+```jinja
 {% extends "some-theme/templates/partials/head.html" %}
 
 {% block title %}
