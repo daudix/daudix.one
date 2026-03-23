@@ -1,14 +1,7 @@
-x3d {
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-}
+@use "../abstracts/mixins" as *;
 
-#disclaimer {
-  position: absolute;
-  margin: 0;
-  margin-inline-start: 0.5rem;
-  margin-block-end: 0.25rem;
-  inset-block-end: 0;
-  inset-inline-start: 0;
+x3d {
+  @include fancy-card;
+  border-radius: var(--rounded-corner);
+  overflow: hidden;
 }
