@@ -149,7 +149,7 @@ Where and when to find me online.
 
 {% masonry(type="beeper") %}
 <div class="beeper-display">
-Either server is offline<br />Or JavaScript is off
+Either server is offline,<br />or JavaScript is off
 </div>
 <div class="buttons start">
   <button id="send-beep">Send Beep</button>
