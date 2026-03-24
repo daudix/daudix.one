@@ -204,7 +204,7 @@ let volume = 20;
 let audioCtx = null;
 let gainNode = null;
 
-function ensureAudio() {
+function initAudioContext() {
   if (audioCtx) return;
   audioCtx = new (window.AudioContext || window.webkitAudioContext)();
   gainNode = audioCtx.createGain();
@@ -214,13 +214,14 @@ function ensureAudio() {
 
 function playBeep(duration = 0.2) {
   if (volume === 0) return;
-  ensureAudio();
+  if (!audioCtx || audioCtx.state !== "running") return;
   const osc = audioCtx.createOscillator();
   osc.connect(gainNode);
   osc.frequency.value = 440;
   osc.type = "square";
-  osc.start(audioCtx.currentTime);
-  osc.stop(audioCtx.currentTime + duration);
+  const t = audioCtx.currentTime + 0.05;
+  osc.start(t);
+  osc.stop(t + duration);
 }
 
 const savedVolume = localStorage.getItem("beeper-volume");
@@ -447,7 +448,8 @@ document.addEventListener("visibilitychange", () => {
 });
 
 async function sendBeep(url) {
-  ensureAudio();
+  initAudioContext();
+  await audioCtx.resume();
   setButtonsRateLimited(true);
   try {
     const res = await fetch(url, { method: "POST" });
@@ -457,28 +459,6 @@ async function sendBeep(url) {
   }
   burstFetch();
 }
-
-document
-  .getElementById("send-beep")
-  ?.addEventListener("click", () =>
-    sendBeep("https://webhook.daudix.one/hooks/beep"),
-  );
-document
-  .getElementById("send-beep-long")
-  ?.addEventListener("click", () =>
-    sendBeep("https://webhook.daudix.one/hooks/beep-long"),
-  );
-document
-  .getElementById("beeper-real-time")
-  ?.addEventListener("change", (e) => setRealtime(e.target.checked));
-document.getElementById("beeper-volume-down")?.addEventListener("click", () => {
-  ensureAudio();
-  setVolume(volume - 10);
-});
-document.getElementById("beeper-volume-up")?.addEventListener("click", () => {
-  ensureAudio();
-  setVolume(volume + 10);
-});
 
 const _d = new Date();
 setTimeout(
@@ -491,6 +471,26 @@ setTimeout(
   },
   new Date(_d.getFullYear(), _d.getMonth(), _d.getDate() + 1) - _d,
 );
+
+function setupBeepButton(elementId, url) {
+  document.getElementById(elementId)?.addEventListener("click", () => {
+    initAudioContext();
+    sendBeep(url);
+  });
+}
+
+setupBeepButton("send-beep", "https://webhook.daudix.one/hooks/beep");
+setupBeepButton("send-beep-long", "https://webhook.daudix.one/hooks/beep-long");
+
+document
+  .getElementById("beeper-real-time")
+  ?.addEventListener("change", (e) => setRealtime(e.target.checked));
+document.getElementById("beeper-volume-down")?.addEventListener("click", () => {
+  setVolume(volume - 10);
+});
+document.getElementById("beeper-volume-up")?.addEventListener("click", () => {
+  setVolume(volume + 10);
+});
 
 /* Init ===================================================================== */
 
