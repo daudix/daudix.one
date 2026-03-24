@@ -76,7 +76,14 @@
   padding: 0.5rem;
 }
 
+.beeper-top {
+  display: flex;
+  position: relative;
+  gap: 0.5rem;
+}
+
 .beeper-display {
+  flex: 1;
   box-shadow: var(--edge-highlight), var(--shadow-inset);
   border-radius: var(--rounded-corner-small);
   background-image: linear-gradient(
@@ -117,13 +124,77 @@
   letter-spacing: -0.05em;
 }
 
-.buttons {
-  gap: 0.75rem;
+.beeper-volume,
+.beeper-actions {
+  button {
+    border-radius: 50%;
+    line-height: 0;
+  }
+}
+
+.beeper-volume {
+  flex-direction: column;
+
+  button {
+    padding: 0.375rem;
+    font-size: var(--font-size-medium);
+  }
+}
+
+.beeper-actions {
   margin-block: 1rem 0;
+
+  button {
+    padding: 0.5rem;
+    font-size: 1.25rem;
+  }
+}
+
+#beeper-volume-level {
+  position: absolute;
+  cursor: help;
+  inset-block: 0.5rem;
+  inset-inline-start: -0.5rem;
+  border-radius: 0 0.25rem 0.25rem 0;
+  background-image: linear-gradient(
+    to top,
+    var(--accent-color) var(--volume),
+    transparent var(--volume)
+  );
+  background-color: var(--bg-muted-1);
+  width: 0.25rem;
+}
+
+#beeper-speaker-grille {
+  box-shadow: var(--edge-highlight);
+  border-radius: var(--rounded-corner-small);
+  background-image:
+    radial-gradient(var(--bg-muted-2) 25%, transparent 25%),
+    radial-gradient(var(--bg-muted-2) 25%, transparent 25%);
+  background-position:
+    0 0,
+    0.25rem 0.25rem;
+  background-size: 0.5rem 0.5rem;
+  background-color: var(--bg-muted-1);
+  width: 1.75rem;
+}
+
+#beeper-real-time {
+  border-radius: var(--rounded-corner-small);
+
+  &::before {
+    border-radius: 0.25rem;
+  }
+
+  & + label {
+    color: var(--fg-muted-1);
+    line-height: 0;
+  }
 }
 
 #beeper-countdown {
   --angle: 0deg;
+  margin-inline-start: 0.5rem;
   border-radius: 50%;
   background: conic-gradient(
     var(--accent-color) var(--angle),

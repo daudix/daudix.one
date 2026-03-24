@@ -189,248 +189,282 @@ function initFlutter() {
 }
 
 /* Beeper =================================================================== */
-
-const WEBHOOK = "https://webhook.daudix.one/hooks/beep";
-const POLL_MS = 3000;
-const BEEP_FREQ = 440;
-const BEEP_DUR = 0.2;
+let logLines = [];
+let isRateLimited = false;
+let realtimeActive = false;
+let realtimeTimer = null;
+let countdownTimer = null;
+let countdownEnds = null;
+let prevPlayedCount = 0;
+let prevLongPlayedCount = 0;
+let prevDisplayText = "";
+let volume = 20;
 
 let audioCtx = null;
-let hasInteracted = false;
-let waitingFromIdx = -1;
-let prevLineCount = 0;
-let lastModified = null;
-let lastDisplayHTML = null;
-let countdownInterval = null;
-let rateLimitEnd = null;
-let rateLimitTotal = 0;
-
-function logUrl() {
-  const d = new Date();
-  const y = d.getUTCFullYear();
-  const m = String(d.getUTCMonth() + 1).padStart(2, "0");
-  const day = String(d.getUTCDate()).padStart(2, "0");
-  return `https://daudix.one/beeper/${y}-${m}-${day}.log`;
-}
+let gainNode = null;
 
 function ensureAudio() {
-  if (!audioCtx)
-    audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-  return audioCtx;
+  if (audioCtx) return;
+  audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  gainNode = audioCtx.createGain();
+  gainNode.connect(audioCtx.destination);
+  gainNode.gain.value = volume / 100;
 }
 
-function playBeep() {
+function playBeep(duration = 0.2) {
+  if (volume === 0) return;
+  ensureAudio();
   const osc = audioCtx.createOscillator();
-  const gain = audioCtx.createGain();
-
+  osc.connect(gainNode);
+  osc.frequency.value = 440;
   osc.type = "square";
-  osc.frequency.setValueAtTime(BEEP_FREQ, audioCtx.currentTime);
-  gain.gain.setValueAtTime(0.25, audioCtx.currentTime);
-
-  osc.connect(gain);
-  gain.connect(audioCtx.destination);
-
-  osc.start();
-  osc.stop(audioCtx.currentTime + BEEP_DUR);
+  osc.start(audioCtx.currentTime);
+  osc.stop(audioCtx.currentTime + duration);
 }
 
-function setDisplay(display, html) {
-  if (display && html !== lastDisplayHTML) {
-    display.innerHTML = html;
-    lastDisplayHTML = html;
+const savedVolume = localStorage.getItem("beeper-volume");
+
+function setVolume(v) {
+  volume = Math.min(100, Math.max(0, v));
+  if (gainNode) gainNode.gain.value = volume / 100;
+  localStorage.setItem("beeper-volume", volume);
+  const el = document.getElementById("beeper-volume-level");
+  if (el) {
+    el.title = `Volume: ${volume}%`;
+    el.style.setProperty("--volume", `${volume}%`);
   }
 }
 
-function tickCountdown() {
-  const el = document.getElementById("beeper-countdown");
-  if (!el) return;
-
-  const remaining = rateLimitEnd - Date.now();
-
-  if (remaining <= 0) {
-    clearInterval(countdownInterval);
-    countdownInterval = null;
-    el.style.setProperty("--angle", "0deg");
-    el.hidden = true;
-    return;
-  }
-
-  const angle = ((rateLimitTotal - remaining) / rateLimitTotal) * 360;
-  el.style.setProperty("--angle", `${angle.toFixed(1)}deg`);
+function classifyLine(msg) {
+  if (msg.includes("Long beep played")) return "long-beep-played";
+  if (msg.includes("Long beep received")) return "long-beep-received";
+  if (msg.includes("Beep played")) return "beep-played";
+  if (msg.includes("Beep received")) return "beep-received";
+  if (msg.includes("Rate limit reset")) return "rate-reset";
+  if (msg.includes("rate limit")) return "rate-limit";
+  return "";
 }
 
-function startCountdown(h, m, s, durationSecs) {
-  const el = document.getElementById("beeper-countdown");
-  if (!el) return;
+function parseLines(text) {
+  return text
+    .split("\n")
+    .map((l) => {
+      const m = l.trim().match(/^(\d{2}:\d{2}:\d{2}):\s*(.+)$/);
+      return m
+        ? { ts: m[1], msg: m[2], cls: classifyLine(m[2]), raw: l.trim() }
+        : null;
+    })
+    .filter(Boolean);
+}
 
+function deriveRateLimitState(lines) {
+  let limited = false,
+    duration = null,
+    limitTs = null;
+  for (const l of lines) {
+    if (l.cls === "rate-limit") {
+      limited = true;
+      limitTs = l.ts;
+      const m = l.msg.match(/(\d+)s rate limit/i);
+      duration = m ? parseInt(m[1], 10) : null;
+    }
+    if (
+      l.cls === "rate-reset" ||
+      l.cls === "beep-played" ||
+      l.cls === "long-beep-played"
+    ) {
+      limited = false;
+      limitTs = null;
+    }
+  }
+  return { limited, duration, limitTs };
+}
+
+function tsToUTCSecs(ts) {
+  const [h, m, s] = ts.split(":").map(Number);
+  return h * 3600 + m * 60 + s;
+}
+
+function startCountdown(duration, limitTs) {
   const now = new Date();
-  const end = new Date(
-    Date.UTC(
-      now.getUTCFullYear(),
-      now.getUTCMonth(),
-      now.getUTCDate(),
-      h,
-      m,
-      s + durationSecs,
-    ),
-  );
+  const nowSecs =
+    now.getUTCHours() * 3600 + now.getUTCMinutes() * 60 + now.getUTCSeconds();
+  const remaining = duration - Math.max(0, nowSecs - tsToUTCSecs(limitTs));
+  if (remaining <= 0) return;
 
-  // Don't restart if it's the same rate limit event
-  if (rateLimitEnd && end.getTime() === rateLimitEnd.getTime()) return;
-
-  rateLimitEnd = end;
-  rateLimitTotal = durationSecs * 1000;
-  el.hidden = false;
-
-  clearInterval(countdownInterval);
-  countdownInterval = setInterval(tickCountdown, 100);
-  tickCountdown();
+  countdownEnds = Date.now() + remaining * 1000;
+  countdownTimer = setInterval(() => {
+    const r = Math.ceil((countdownEnds - Date.now()) / 1000);
+    if (r <= 0) {
+      stopCountdown();
+    }
+    setButtonsRateLimited(isRateLimited, r > 0 ? r : null);
+  }, 250);
 }
 
 function stopCountdown() {
-  const el = document.getElementById("beeper-countdown");
-  clearInterval(countdownInterval);
-  countdownInterval = null;
-  rateLimitEnd = null;
-  if (el) {
-    el.style.setProperty("--angle", "0deg");
-    el.hidden = true;
+  clearInterval(countdownTimer);
+  countdownTimer = null;
+  countdownEnds = null;
+}
+
+function setButtonsRateLimited(limited, countdown = null) {
+  for (const id of ["send-beep", "send-beep-long"]) {
+    const btn = document.getElementById(id);
+    if (!btn) continue;
+    btn.disabled = limited;
+    btn.classList.toggle("progress", limited && countdown !== null);
+    if (limited && countdown !== null) btn.dataset.countdown = `${countdown}s`;
+    else delete btn.dataset.countdown;
   }
 }
 
-async function poll() {
-  const btn = document.getElementById("send-beep");
-  const display = document.querySelector(".beeper-display");
-  let lines;
+function renderDisplay() {
+  const el = document.querySelector(".beeper-display");
+  if (!el) return;
+  const text = logLines
+    .slice(-3)
+    .map((l) => l.raw)
+    .join("\n");
+  if (text === prevDisplayText) return;
+  prevDisplayText = text;
+  el.textContent = text;
+}
 
+function processLines(lines) {
+  const played = lines.filter((l) => l.cls === "beep-played").length;
+  const longPlayed = lines.filter((l) => l.cls === "long-beep-played").length;
+  for (let i = 0; i < played - prevPlayedCount; i++) playBeep(0.2);
+  for (let i = 0; i < longPlayed - prevLongPlayedCount; i++) playBeep(0.6);
+  prevPlayedCount = played;
+  prevLongPlayedCount = longPlayed;
+
+  logLines = lines;
+
+  const { limited, duration, limitTs } = deriveRateLimitState(lines);
+  isRateLimited = limited;
+
+  if (limited) {
+    if (duration && limitTs && !countdownTimer)
+      startCountdown(duration, limitTs);
+    setButtonsRateLimited(
+      true,
+      countdownEnds ? Math.ceil((countdownEnds - Date.now()) / 1000) : null,
+    );
+  } else {
+    stopCountdown();
+    setButtonsRateLimited(false);
+  }
+
+  renderDisplay();
+}
+
+function todayFilename() {
+  const d = new Date();
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}.log`;
+}
+
+async function fetchLog() {
   try {
-    const headers = lastModified ? { "If-Modified-Since": lastModified } : {};
-    const res = await fetch(logUrl(), { headers });
-
-    if (res.status === 304) return;
-
-    if (res.status === 404) {
-      setDisplay(display, "No beeps yet today\nBe the first!");
-      prevLineCount = 0;
-      lastModified = null;
-      waitingFromIdx = -1;
-      stopCountdown();
-      if (btn) {
-        btn.disabled = false;
-        btn.classList.remove("progress");
-      }
-      return;
-    }
-
-    if (!res.ok) throw new Error();
-
-    lastModified = res.headers.get("Last-Modified") || lastModified;
-    const raw = (await res.text()).trim();
-    lines = raw ? raw.split("\n").filter((l) => l.trim()) : [];
-  } catch {
-    return;
-  }
-
-  if (lines.length < prevLineCount) {
-    prevLineCount = 0;
-    lastModified = null;
-    waitingFromIdx = -1;
-    stopCountdown();
-    if (btn) {
-      btn.disabled = false;
-      btn.classList.remove("progress");
-    }
-    setDisplay(display, "New day, no beeps yet\nBe the first!");
-    return;
-  }
-
-  const last2 = lines.slice(-2);
-  setDisplay(display, last2.length ? last2.join("<br>") : "&nbsp;");
-
-  let rateLimited = false;
-  let sawReset = false;
-
-  for (let i = lines.length - 1; i >= 0; i--) {
-    if (/rate limit reset/i.test(lines[i])) {
-      sawReset = true;
-      break;
-    }
-
-    const rl = lines[i].match(/^(\d{2}):(\d{2}):(\d{2}):\s*(\d+)s rate limit/i);
-    if (rl) {
-      rateLimited = true;
-      startCountdown(
-        parseInt(rl[1]),
-        parseInt(rl[2]),
-        parseInt(rl[3]),
-        parseInt(rl[4]),
-      );
-      break;
-    }
-  }
-
-  if (sawReset) {
-    waitingFromIdx = -1;
-    stopCountdown();
-  }
-  if (!rateLimited && !sawReset) stopCountdown();
-
-  if (btn) {
-    if (rateLimited) {
-      btn.disabled = true;
-      btn.classList.remove("progress");
-      waitingFromIdx = -1;
-    } else if (waitingFromIdx >= 0) {
-      if (lines.slice(waitingFromIdx).some((l) => /beep played/i.test(l))) {
-        waitingFromIdx = -1;
-        btn.classList.remove("progress");
-        btn.disabled = false;
-      }
+    const res = await fetch("https://daudix.one/beeper/" + todayFilename(), {
+      cache: "no-store",
+    });
+    if (res.ok) {
+      processLines(parseLines(await res.text()));
+    } else if (res.status === 404) {
+      processLines([]);
     } else {
-      btn.disabled = false;
+      showFetchError(`Server error: ${res.status}`);
     }
+  } catch (e) {
+    console.warn("Beep-o-matic 3000: fetch failed", e);
+    showFetchError("Logs could not be loaded,\nfor one reason or another :/");
   }
-
-  if (hasInteracted && lines.length > prevLineCount) {
-    for (const line of lines.slice(prevLineCount)) {
-      if (/beep played/i.test(line)) playBeep();
-    }
-  }
-
-  prevLineCount = lines.length;
 }
 
-function initBeeper() {
-  const btn = document.getElementById("send-beep");
-  if (!btn) return;
-
-  btn.addEventListener("click", async () => {
-    if (btn.disabled) return;
-
-    hasInteracted = true;
-    ensureAudio();
-
-    btn.disabled = true;
-    btn.classList.add("progress");
-    waitingFromIdx = prevLineCount;
-
-    try {
-      await fetch(WEBHOOK);
-    } catch {}
-
-    setTimeout(poll, 1000);
-  });
-
-  poll();
-  setInterval(poll, POLL_MS);
+function showFetchError(message) {
+  const el = document.querySelector(".beeper-display");
+  if (!el) return;
+  el.textContent = message;
+  el.classList.add("error-state");
 }
+
+function burstFetch() {
+  fetchLog();
+  [500, 1000, 2000, 4000].forEach((t) => setTimeout(fetchLog, t));
+}
+
+function setRealtime(active) {
+  realtimeActive = active;
+  clearInterval(realtimeTimer);
+  realtimeTimer = active ? setInterval(fetchLog, 1000) : null;
+}
+
+document.addEventListener("visibilitychange", () => {
+  if (!realtimeActive) return;
+  if (document.hidden) {
+    clearInterval(realtimeTimer);
+    realtimeTimer = null;
+  } else {
+    realtimeTimer = setInterval(fetchLog, 1000);
+    fetchLog();
+  }
+});
+
+async function sendBeep(url) {
+  ensureAudio();
+  setButtonsRateLimited(true);
+  try {
+    const res = await fetch(url, { method: "POST" });
+    if (!res.ok && res.status !== 429) setButtonsRateLimited(false);
+  } catch {
+    setButtonsRateLimited(false);
+  }
+  burstFetch();
+}
+
+document
+  .getElementById("send-beep")
+  ?.addEventListener("click", () =>
+    sendBeep("https://webhook.daudix.one/hooks/beep"),
+  );
+document
+  .getElementById("send-beep-long")
+  ?.addEventListener("click", () =>
+    sendBeep("https://webhook.daudix.one/hooks/beep-long"),
+  );
+document
+  .getElementById("beeper-real-time")
+  ?.addEventListener("change", (e) => setRealtime(e.target.checked));
+document.getElementById("beeper-volume-down")?.addEventListener("click", () => {
+  ensureAudio();
+  setVolume(volume - 10);
+});
+document.getElementById("beeper-volume-up")?.addEventListener("click", () => {
+  ensureAudio();
+  setVolume(volume + 10);
+});
+
+const _d = new Date();
+setTimeout(
+  () => {
+    logLines = [];
+    prevPlayedCount = 0;
+    prevLongPlayedCount = 0;
+    prevDisplayText = "";
+    fetchLog();
+  },
+  new Date(_d.getFullYear(), _d.getMonth(), _d.getDate() + 1) - _d,
+);
 
 /* Init ===================================================================== */
 
 document.addEventListener("DOMContentLoaded", () => {
   initSplash();
   initFlutter();
-  initBeeper();
+
+  setVolume(savedVolume !== null ? parseInt(savedVolume) : volume);
+  fetchLog();
 
   fetchStatusCafe();
   fetchLastFm();

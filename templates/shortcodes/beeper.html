@@ -1,0 +1,41 @@
+{% import "macros/icon.html" as macros_icon %}
+
+<div class="beeper-top">
+  <div class="buttons start beeper-volume">
+    <button id="beeper-volume-up" title="Volume Up">
+      {{- macros_icon::icon(name="plus") -}}
+    </button>
+    <button id="beeper-volume-down" title="Volume Down">
+      {{- macros_icon::icon(name="minus") -}}
+    </button>
+    <div id="beeper-volume-level"></div>
+  </div>
+  <div class="beeper-display">
+    <noscript>JavaScript is off, beeper no<br />worky with no JavaScript :[</noscript>
+  </div>
+  <div id="beeper-speaker-grille"></div>
+</div>
+<div class="buttons start beeper-actions">
+  <button id="send-beep" title="Send Beep">
+    {{- macros_icon::icon(name="dot-outline") -}}
+  </button>
+  <button id="send-beep-long" title="Send Long Beep">
+    {{- macros_icon::icon(name="minus") -}}
+  </button>
+
+  <input type="checkbox" id="beeper-real-time" class="switch" autocomplete="off" />
+  <label for="beeper-real-time" title="Real-Time Mode">{{ macros_icon::icon(name="broadcast") }}</label>
+  <div id="beeper-countdown"></div>
+</div>
+<span class="beeper-logo">Beep-o-matic 3000</span>
+<input type="checkbox" id="beeper-popup-expand" class="visually-hidden" autocomplete="off" />
+<label for="beeper-popup-expand" title="What Is This?">
+  {{- macros_icon::icon(name="question") -}}
+  {{- macros_icon::icon(name="x-circle") -}}
+</label>
+<div id="beeper-popup">
+
+Make my server (old PC) on which this site resides beep via its onboard tiny speaker in real time. I'd appreciate if this wasn't spammed at night, but who am I to stop you.
+
+Once you interact with this beeper, you'll hear beeps of other users.
+</div>
