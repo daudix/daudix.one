@@ -195,6 +195,7 @@ let realtimeActive = false;
 let realtimeTimer = null;
 let countdownTimer = null;
 let countdownEnds = null;
+let rateLimitRecoveryTimer = null;
 let prevPlayedCount = 0;
 let prevLongPlayedCount = 0;
 let prevDisplayText = "";
@@ -383,10 +384,7 @@ function processLines(lines) {
       startCountdown(duration, limitTs);
     if (duration && limitTs && !rateLimitRecoveryTimer)
       startRateLimitRecovery(duration, limitTs);
-    setButtonsRateLimited(
-      true,
-      countdownEnds ? Math.ceil((countdownEnds - Date.now()) / 1000) : null,
-    );
+    setButtonsRateLimited(true);
   } else {
     stopCountdown();
     stopRateLimitRecovery();
