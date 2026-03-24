@@ -257,6 +257,30 @@ function parseLines(text) {
     .filter(Boolean);
 }
 
+function startRateLimitRecovery(duration, limitTs) {
+  const now = new Date();
+  const nowSecs =
+    now.getUTCHours() * 3600 + now.getUTCMinutes() * 60 + now.getUTCSeconds();
+  const remaining = duration - Math.max(0, nowSecs - tsToUTCSecs(limitTs));
+
+  if (remaining <= 0) return;
+
+  clearTimeout(rateLimitRecoveryTimer);
+
+  rateLimitRecoveryTimer = setTimeout(
+    () => {
+      console.log("beeper: rate limit expired, refetching logs");
+      fetchLog();
+    },
+    (remaining + 1) * 1000,
+  );
+}
+
+function stopRateLimitRecovery() {
+  clearTimeout(rateLimitRecoveryTimer);
+  rateLimitRecoveryTimer = null;
+}
+
 function deriveRateLimitState(lines) {
   let limited = false,
     duration = null,
@@ -297,8 +321,10 @@ function startCountdown(duration, limitTs) {
     const r = Math.ceil((countdownEnds - Date.now()) / 1000);
     if (r <= 0) {
       stopCountdown();
+    } else {
+      const progress = Math.max(0, (remaining - r) / remaining);
+      updateCountdownDisplay(progress * 360);
     }
-    setButtonsRateLimited(isRateLimited, r > 0 ? r : null);
   }, 250);
 }
 
@@ -306,16 +332,24 @@ function stopCountdown() {
   clearInterval(countdownTimer);
   countdownTimer = null;
   countdownEnds = null;
+  updateCountdownDisplay(null);
 }
 
-function setButtonsRateLimited(limited, countdown = null) {
+function updateCountdownDisplay(angle) {
+  const el = document.getElementById("beeper-countdown");
+  if (!el) return;
+  if (angle === null) {
+    el.style.setProperty("--angle", "0deg");
+  } else {
+    el.style.setProperty("--angle", `${angle}deg`);
+  }
+}
+
+function setButtonsRateLimited(limited) {
   for (const id of ["send-beep", "send-beep-long"]) {
     const btn = document.getElementById(id);
     if (!btn) continue;
     btn.disabled = limited;
-    btn.classList.toggle("progress", limited && countdown !== null);
-    if (limited && countdown !== null) btn.dataset.countdown = `${countdown}s`;
-    else delete btn.dataset.countdown;
   }
 }
 
@@ -347,12 +381,15 @@ function processLines(lines) {
   if (limited) {
     if (duration && limitTs && !countdownTimer)
       startCountdown(duration, limitTs);
+    if (duration && limitTs && !rateLimitRecoveryTimer)
+      startRateLimitRecovery(duration, limitTs);
     setButtonsRateLimited(
       true,
       countdownEnds ? Math.ceil((countdownEnds - Date.now()) / 1000) : null,
     );
   } else {
     stopCountdown();
+    stopRateLimitRecovery();
     setButtonsRateLimited(false);
   }
 
