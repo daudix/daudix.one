@@ -424,7 +424,7 @@ function burstFetch() {
 function setRealtime(active) {
   realtimeActive = active;
   clearInterval(realtimeTimer);
-  realtimeTimer = active ? setInterval(fetchLog, 250) : null;
+  realtimeTimer = active ? setInterval(fetchLog, 1000) : null;
 }
 
 document.addEventListener("visibilitychange", () => {
