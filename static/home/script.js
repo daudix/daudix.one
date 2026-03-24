@@ -418,13 +418,13 @@ function showFetchError(message) {
 }
 
 function burstFetch() {
-  [500, 1000, 2000, 4000].forEach((t) => setTimeout(fetchLog, t));
+  [50, 250, 500, 1000, 2000, 4000].forEach((t) => setTimeout(fetchLog, t));
 }
 
 function setRealtime(active) {
   realtimeActive = active;
   clearInterval(realtimeTimer);
-  realtimeTimer = active ? setInterval(fetchLog, 1000) : null;
+  realtimeTimer = active ? setInterval(fetchLog, 250) : null;
 }
 
 document.addEventListener("visibilitychange", () => {
