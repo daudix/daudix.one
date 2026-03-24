@@ -10,7 +10,7 @@ generate_feeds = true
 no_header = true
 +++
 
-{% crt() %}
+{% crt(label = "ASCII illustration with a home in the middle, pickup truck on the left of it, tree and a launchpad with a rocket on the right of it.") %}
          *                 *                  *              *
                                                       *             *
                         *            *                             ___
