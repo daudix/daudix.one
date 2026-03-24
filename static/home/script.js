@@ -323,7 +323,7 @@ function renderDisplay() {
   const el = document.querySelector(".beeper-display");
   if (!el) return;
   const text = logLines
-    .slice(-3)
+    .slice(-2)
     .map((l) => l.raw)
     .join("\n");
   if (text === prevDisplayText) return;
