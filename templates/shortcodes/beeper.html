@@ -17,13 +17,13 @@
 </div>
 <div class="buttons start beeper-actions">
   <button id="send-beep" title="Send Beep">
-    {{- macros_icon::icon(name="dot-outline") -}}
+    {{- macros_icon::icon(name="circle") -}}
   </button>
   <button id="send-beep-long" title="Send Long Beep">
     {{- macros_icon::icon(name="minus") -}}
   </button>
 
-  <input type="checkbox" id="beeper-real-time" class="switch" autocomplete="off" />
+  <input type="checkbox" id="beeper-real-time" class="switch big" autocomplete="off" />
   <label for="beeper-real-time" title="Real-Time Mode">{{ macros_icon::icon(name="broadcast") }}</label>
   <div id="beeper-countdown"></div>
 </div>
@@ -35,7 +35,7 @@
 </label>
 <div id="beeper-popup">
 
-Make my server (old PC) on which this site resides beep via its onboard tiny speaker in real time. I'd appreciate if this wasn't spammed at night, but who am I to stop you.
+Make my server (old PC) on which this site resides beep via its onboard tiny speaker in real time.
 
-Once you interact with this beeper, you'll hear beeps of other users.
+Activate <span class="real-time">{{ macros_icon::icon(name="broadcast") }} Real-Time Mode</span> to listen to other users' beeps at the expense of increased network usage.
 </div>

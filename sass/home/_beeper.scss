@@ -97,7 +97,7 @@
   padding: 0.5rem;
   color: var(--fg-muted-2);
   font-size: var(--font-size-small);
-  line-height: 1.25;
+  line-height: 1.25rem;
   font-family: var(--font-monospace), var(--font-ui-monospace);
   white-space: pre;
 
@@ -124,20 +124,14 @@
   letter-spacing: -0.05em;
 }
 
-.beeper-volume,
-.beeper-actions {
-  button {
-    border-radius: 50%;
-    line-height: 0;
-  }
-}
-
 .beeper-volume {
   flex-direction: column;
 
   button {
-    padding: 0.375rem;
+    border-radius: var(--rounded-corner-small);
+    padding: rpx(5);
     font-size: var(--font-size-medium);
+    line-height: 0;
   }
 }
 
@@ -145,8 +139,18 @@
   margin-block: 1rem 0;
 
   button {
-    padding: 0.5rem;
+    border-radius: 50%;
+    padding: 0.375rem;
     font-size: 1.25rem;
+    line-height: 0;
+  }
+}
+
+.real-time {
+  color: var(--red-fg);
+
+  .icon {
+    vertical-align: rpx(-2);
   }
 }
 
@@ -176,19 +180,54 @@
     0.25rem 0.25rem;
   background-size: 0.5rem 0.5rem;
   background-color: var(--bg-muted-1);
-  width: 1.75rem;
+  width: 1.625rem;
 }
 
 #beeper-real-time {
-  border-radius: var(--rounded-corner-small);
+  &:checked + label {
+    color: var(--red-fg);
 
-  &::before {
-    border-radius: 0.25rem;
+    &::before {
+      opacity: 1;
+      animation: beeper-radar 1s ease-out infinite var(--transition);
+    }
   }
 
   & + label {
+    position: relative;
+    transition: var(--transition);
     color: var(--fg-muted-1);
     line-height: 0;
+
+    &::before {
+      position: absolute;
+      transform: scale(0);
+      opacity: 0;
+      transition: var(--transition);
+      inset: 0;
+      border-radius: 50%;
+      background-image:
+        radial-gradient(var(--red-bg-1), var(--red-bg-1)),
+        radial-gradient(var(--red-bg-1) 25%, transparent 25%),
+        radial-gradient(var(--red-bg-1) 50%, transparent 50%);
+      content: "";
+    }
+
+    @keyframes beeper-radar {
+      25% {
+        opacity: 1;
+      }
+
+      50% {
+        transform: scale(3);
+        opacity: 1;
+      }
+
+      to {
+        transform: scale(3);
+        opacity: 0;
+      }
+    }
   }
 }
 
