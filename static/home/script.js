@@ -224,8 +224,6 @@ function playBeep(duration = 0.2) {
   osc.stop(t + duration);
 }
 
-const savedVolume = localStorage.getItem("beeper-volume");
-
 function setVolume(v) {
   volume = Math.min(100, Math.max(0, v));
   if (gainNode) gainNode.gain.value = volume / 100;
@@ -405,13 +403,9 @@ async function fetchLog() {
     const res = await fetch("https://daudix.one/beeper/" + todayFilename(), {
       cache: "no-store",
     });
-    if (res.ok) {
-      processLines(parseLines(await res.text()));
-    } else if (res.status === 404) {
-      processLines([]);
-    } else {
-      showFetchError(`Server error: ${res.status}`);
-    }
+    if (res.ok) processLines(parseLines(await res.text()));
+    else if (res.status === 404) processLines([]);
+    else showFetchError(`Server error: ${res.status}`);
   } catch (e) {
     console.warn("Beep-o-matic 3000: fetch failed", e);
     showFetchError("Logs could not be loaded,\nfor one reason or another :/");
@@ -420,13 +414,10 @@ async function fetchLog() {
 
 function showFetchError(message) {
   const el = document.querySelector(".beeper-display");
-  if (!el) return;
-  el.textContent = message;
-  el.classList.add("error-state");
+  if (el) el.textContent = message;
 }
 
 function burstFetch() {
-  fetchLog();
   [500, 1000, 2000, 4000].forEach((t) => setTimeout(fetchLog, t));
 }
 
@@ -474,7 +465,6 @@ setTimeout(
 
 function setupBeepButton(elementId, url) {
   document.getElementById(elementId)?.addEventListener("click", () => {
-    initAudioContext();
     sendBeep(url);
   });
 }
@@ -498,6 +488,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initSplash();
   initFlutter();
 
+  const savedVolume = localStorage.getItem("beeper-volume");
   setVolume(savedVolume !== null ? parseInt(savedVolume) : volume);
   fetchLog();
 
