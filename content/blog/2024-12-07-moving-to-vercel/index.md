@@ -7,7 +7,7 @@ tags = ["100DaysToOffload", "Devlog", "Vercel", "Codeberg"]
 accent_color = ["hsl(193.53659 100% 32%)", "hsl(193.49281 98% 42%)"]
 banner = "banner.png"
 toc = true
-disclaimer = "This post was written way before Vercel's CEO took a selfie and endorsed certain war criminal known as Bibi. I no longer can recommend Vercel, or any product developed by them."
+disclaimer = "This post was written way before Vercel's CEO took a selfie and endorsed certain war criminal known as Bibi. I can no longer recommend Vercel or any products developed by them or for which they are the primary sponsor."
 [extra.fediverse]
 host = "vmst.io"
 user = "daudix"
