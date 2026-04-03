@@ -1,3 +1,4 @@
+- https://critters.gay/notes/akl7de2pfxjm0052
 - Mention nanolog mstdn/bsky bridge in the UI
 - Use UTC TZ
 - Refresh homepage head
@@ -12,7 +13,7 @@
 - Replace minified pngs with webps
 - Chat bubble style/shortcode
 - Rewrite the script on /snug-nook/
-- Make badges popup closable via outside click
+- Make badges and beeper popups closable via outside click
 - Make "shrine" for my beloved portal series
 - Add photo gallery (random polaroid rotation can be done using Tera's `get_random`)
 - Try using mail envelope style for comments or nanolog
