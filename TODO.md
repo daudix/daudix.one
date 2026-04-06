@@ -1,35 +1,38 @@
-- https://critters.gay/notes/akl7de2pfxjm0052
-- Mention nanolog mstdn/bsky bridge in the UI
-- Use UTC TZ
-- Refresh homepage head
-- Redesign splash screen one more time
-- Add AI disclosure or whatevr on /colophon
-- Try to get total page size to the absolute minimum possible (without making stuff harder to maintain)
-- Add more icons to /design (Cassiere, Miniera, GNOMEntary Cavailer, open-tv, Compito, MenuKaran, sveglia, boutique, gdm-settings, GSConnect, Stamina, etc. that I can find in ~/Projects)
-- Add icon reflections to /design (use [-webkit-box-reflect](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/-webkit-box-reflect) and [element()](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/element))
-- Avoid using IDs for styling as per <https://google.github.io/styleguide/htmlcssguide.html#ID_Selectors>
-- Fix nanolog pages having "404" as their title
-- Separate guides from blog posts
-- Replace minified pngs with webps
-- Chat bubble style/shortcode
-- Rewrite the script on /snug-nook/
-- Make badges and beeper popups closable via outside click
-- Make "shrine" for my beloved portal series
-- Add photo gallery (random polaroid rotation can be done using Tera's `get_random`)
-- Try using mail envelope style for comments or nanolog
-- Add some global achievements
-- Use piclog.blue somehow
-- Streamline some page-specific elements (fancy lists, tab switcher)
-- tomthings.fr / skiff-inspired design
-- Ensure a11y is great/add alt text to images
-- Movable stickers on homepage (?)
-- /uses/ page (?)
-- Chatbox (?)
-- New ARG/Easter Egg type of thingy (?) (inspirations: Portal "dinosaur" ARG, SSTV. details: localstorage, sstv image that says to look at spectrogram, base64)
-- License under AGPL (?)
-- MoodDB (?)
-- Remove IndieWeb section from /home/ (?)
-- <https://home.hedy.dev/posts/meta-pages/>
-- <https://slashpages.net>
-- <https://piccalil.li/blog/some-simple-ways-to-make-content-look-good/>
 - <https://bsky.app/profile/bell.bz/post/3lsbmfkreec2o>
+- <https://piccalil.li/blog/some-simple-ways-to-make-content-look-good/>
+- <https://slashpages.net>
+- <https://home.hedy.dev/posts/meta-pages/>
+- Remove IndieWeb section from /home/ (?)
+- MoodDB (?)
+- License under AGPL (?)
+- New ARG/Easter Egg type of thingy (?) (inspirations: Portal "dinosaur" ARG, SSTV. details: localstorage, sstv image that says to look at spectrogram, base64)
+- Chatbox (?)
+- /uses/ page (?)
+- Movable stickers on homepage (?)
+- Ensure a11y is great/add alt text to images
+- tomthings.fr / skiff-inspired design
+- Streamline some page-specific elements (fancy lists, tab switcher)
+- Use piclog.blue somehow
+- Add some global achievements
+- Try using mail envelope style for comments or nanolog
+- Add photo gallery (random polaroid rotation can be done using Tera's `get_random`)
+- Make "shrine" for my beloved portal series
+- Make badges and beeper popups closable via outside click
+- Rewrite the script on /snug-nook/
+- Chat bubble style/shortcode
+- Replace minified pngs with webps
+- Separate guides from blog posts
+- Fix nanolog pages having "404" as their title
+- Avoid using IDs for styling as per <https://google.github.io/styleguide/htmlcssguide.html#ID_Selectors>
+- Add icon reflections to /design (use [-webkit-box-reflect](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/-webkit-box-reflect) and [element()](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/element))
+- Add more icons to /design (Cassiere, Miniera, GNOMEntary Cavailer, open-tv, Compito, MenuKaran, sveglia, boutique, gdm-settings, GSConnect, Stamina, etc. that I can find in ~/Projects)
+- Try to get total page size to the absolute minimum possible (without making stuff harder to maintain)
+- Add AI disclosure or whatevr on /colophon
+- Redesign splash screen one more time
+- Refresh homepage head
+- Use UTC TZ
+- Mention nanolog mstdn/bsky bridge in the UI
+- https://critters.gay/notes/akl7de2pfxjm0052
+- Make polaroid pic unpinnable, revealing some easter egg
+- Simplify/rewrite polaroid CSS
+- "Анкета" for visitors
