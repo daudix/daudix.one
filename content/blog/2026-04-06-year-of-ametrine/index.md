@@ -1,11 +1,10 @@
 +++
 title = "Awesome Ametrine Adventures"
 description = "Duckquill got a successor, more than a year ago, actually."
-draft = true
 [taxonomies]
 tags = ["Devlog", "Ametrine"]
 [extra]
-accent_color = ["purple", "orange"]
+accent_color = "purple"
 banner = "banner.webp"
 +++
 
