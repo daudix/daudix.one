@@ -51,6 +51,9 @@ forges = [
 
 {{ polaroid() }}
 
+> [!NOTE]
+> This site is participating in a [CSS Naked Day](https://css-naked-day.org), which means during this time this site won't load any CSS!
+
 # David Lapshin
 
 Greetings! Welcome to my little corner on the World Wild Web and a second home of mine. You might know me by my online handle; Daudix.

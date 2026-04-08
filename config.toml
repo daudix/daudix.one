@@ -154,5 +154,5 @@ exclude_hash = true
 
 [extra.debug]
 layout = false
-no_styles = false
+no_styles = true
 no_emojis = false
