@@ -1,9 +1,5 @@
 {% extends "base.html" %}
 
-{% block content %}
-{{ section.content | safe }}
-{% endblock content %}
-
 {% block body_before %}
 <div id="splash">
   <div id="splash-content">
@@ -51,3 +47,7 @@
   <div id="rainbow"></div>
 </div>
 {% endblock body_before %}
+
+{% block content %}
+{{ section.content | safe }}
+{% endblock content %}
