@@ -139,6 +139,7 @@ socials = [
 ]
 webrings = [
   { name = "Fediring", url = "https://fediring.net", previous = "https://fediring.net/previous?host=$HOST", next = "https://fediring.net/next?host=$HOST", random = "https://fediring.net/random" },
+  { name = "Snug Ring", url = "https://snugnook.org/ring", previous = "https://snugnook.org/ring?action=previous", next = "https://snugnook.org/ring?action=next", random = "https://snugnook.org/ring?action=random" },
 ]
 
 [extra.fediverse]
