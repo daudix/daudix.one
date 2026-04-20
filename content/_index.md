@@ -25,7 +25,7 @@ badges = [
 ]
 contacts = [
   { name = "Discord", url = "https://discord.com/users/650757995378114581", favorite = true },
-  { name = "Signal", url = "https://signal.me/#eu/JtLERY8NcgzPKKJzufu4MZUpqX1ZsBpEJFUD6l9-4MAKtRKmfDdCca4O0g-EfBQg" },
+  { name = "Signal", url = "https://signal.me/#eu/fT5zeoMi24hfmmpMNMVEqNoP42qLhPIDWrrgVbmO_tnNh1il8ptMto2MlDFkSs5w" },
   { name = "Matrix", url = "https://matrix.to/#/@daudix:daudix.one" },
   { name = "Email", url = "mailto:me@daudix.one" },
   { name = "Telegram", url = "https://t.me/ddaudix" },
