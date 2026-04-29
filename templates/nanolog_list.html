@@ -1,9 +1,9 @@
 {% extends "base.html" %}
-{% import "macros/icon.html" as macros_icon %}
+{% import "macros/macros.html" as macros %}
 
 {% block body_before %}
 <button id="nanolog-button" title="New Nanolog" hidden>
-  {{- macros_icon::icon(name="note-pencil") -}}
+  {{- macros::icon(name="note-pencil") -}}
 </button>
 {% endblock body_before %}
 
@@ -22,7 +22,7 @@
       <div id="auth-container">
         <input id="github-token" type="password" placeholder="GitHub token">
         <button id="show-token-btn" title="Show Token">
-          {{- macros_icon::icon(name="eye") -}}
+          {{- macros::icon(name="eye") -}}
         </button>
       </div>
       <button id="publish-btn">Publish</button>

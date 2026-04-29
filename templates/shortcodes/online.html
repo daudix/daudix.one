@@ -1,4 +1,4 @@
-{% import "macros/icon.html" as macros_icon %}
+{% import "macros/macros.html" as macros %}
 
 {%- if type == "contacts" -%}
   {%- set items = section.extra.contacts -%}
@@ -11,10 +11,10 @@
 {%- if type == "contacts" -%}
 <style>
   :root {
-    --icon-circle-dashed: {{ macros_icon::icon(name="circle-dashed", inline=true) }};
-    --icon-circle: {{ macros_icon::icon(name="circle", inline=true) }};
-    --icon-minus-circle: {{ macros_icon::icon(name="minus-circle", inline=true) }};
-    --icon-moon: {{ macros_icon::icon(name="moon", inline=true) }};
+    --icon-circle-dashed: {{ macros::icon(name="circle-dashed", inline=true) }};
+    --icon-circle: {{ macros::icon(name="circle", inline=true) }};
+    --icon-minus-circle: {{ macros::icon(name="minus-circle", inline=true) }};
+    --icon-moon: {{ macros::icon(name="moon", inline=true) }};
   }
 </style>
 {%- endif -%}

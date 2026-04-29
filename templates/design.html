@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% import "macros/icon.html" as macros_icon %}
+{% import "macros/macros.html" as macros %}
 
 {% block content %}
 <h1>{{ page.title }}</h1>
@@ -108,7 +108,7 @@
         <div>
           <small>{{ wallpaper.name }}</small>
           <a href="https://download-directory.github.io/?url={{ wallpaper.url }}&filename={{ wallpaper.name }}" target="_blank">
-            {{- macros_icon::icon(name="download-simple") -}}
+            {{- macros::icon(name="download-simple") -}}
           </a>
         </div>
       </div>

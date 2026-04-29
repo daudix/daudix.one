@@ -1,11 +1,11 @@
 {% extends "base.html" %}
-{% import "macros/icon.html" as macros_icon %}
+{% import "macros/macros.html" as macros %}
 
 {% block content %}
 {% set badges = page.extra.badges %}
 {% set stamps = page.extra.stamps %}
 
-<h1>{{ page.title }}</h1>
+{{- "# " ~ page.title | markdown | safe -}}
 
 <p>
   Badges from friends, cool people, sites that link to me, and sites that just look good. Linking to someone doesn’t mean that I endorse everything they say.
@@ -38,7 +38,7 @@
       {%- endif -%}
     </li>
   {%- endfor -%}
-  {{- macros_icon::icon(name="scissors") -}}
+  {{- macros::icon(name="scissors") -}}
 </ul>
 
 <h2>Misc</h2>
@@ -72,7 +72,7 @@
       {%- endif -%}
     </li>
   {%- endfor -%}
-  {{- macros_icon::icon(name="scissors") -}}
+  {{- macros::icon(name="scissors") -}}
 </ul>
 
 <h2>By Me</h2>
@@ -106,7 +106,7 @@
       {%- endif -%}
     </li>
   {%- endfor -%}
-  {{- macros_icon::icon(name="scissors") -}}
+  {{- macros::icon(name="scissors") -}}
 </ul>
 
 <h2>Me</h2>
@@ -140,7 +140,7 @@
       {%- endif -%}
     </li>
   {%- endfor -%}
-  {{- macros_icon::icon(name="scissors") -}}
+  {{- macros::icon(name="scissors") -}}
 </ul>
 
 <h2>Stamps</h2>
@@ -174,7 +174,7 @@
       {%- endif -%}
     </li>
   {%- endfor -%}
-  {{- macros_icon::icon(name="scissors") -}}
+  {{- macros::icon(name="scissors") -}}
 </ul>
 
 {% endblock content %}
