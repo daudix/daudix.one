@@ -1,85 +1,8 @@
 @use "../../themes/ametrine/sass/abstracts/functions" as *;
 
-// .masonry .item.beeper {
-//   position: relative;
-//   box-shadow:
-//     inset 0 -0.5rem 0 rgba(0, 0, 0, 0.35),
-//     var(--shadow);
-//   //   background-color: #727171;
-//   background-image: linear-gradient(
-//     to bottom,
-//     hsl(0, 0%, 35%),
-//     hsl(0, 0%, 45%),
-//     hsl(0, 0%, 25%)
-//   );
-//   padding: 0.75rem;
-//   padding-block-end: 1.25rem;
-// }
-
-// .beeper-display {
-//   box-shadow: inset 0 0.25rem 0.125rem rgba(0, 0, 0, var(--color-opacity-2));
-//   border: 0.25rem solid #323232;
-//   border-radius: var(--rounded-corner-small);
-//   background-image: linear-gradient(
-//     to bottom,
-//     transparent,
-//     rgba(255, 255, 255, 0.75) 50%,
-//     transparent 50%,
-//     rgba(255, 255, 255, 0.5)
-//   );
-//   background-color: #a3d56b;
-//   background-blend-mode: overlay;
-//   padding: 0.375rem;
-//   color: rgba(0, 0, 0, 0.5);
-//   font-weight: var(--font-weight-semi-bold);
-//   line-height: 1.25;
-//   font-family: var(--font-monospace), var(--font-ui-monospace);
-// }
-
-// .beeper-logo {
-//   position: absolute;
-//   inset-block-end: 1.25rem;
-//   inset-inline-end: 0.75rem;
-//   color: #f0f0f1;
-//   font-style: italic;
-//   font-weight: var(--font-weight-extra-bold);
-//   font-size: var(--font-size-small);
-//   line-height: 1;
-//   font-family: var(--font-monospace), var(--font-ui-monospace);
-//   letter-spacing: -0.05em;
-//   text-shadow: 0 rpx(-1) 0 rgba(0, 0, 0, 0.8);
-// }
-
-// #send-beep {
-//   transition: var(--transition-bezier);
-//   margin-block: 0.5rem 0.25rem;
-//   box-shadow:
-//     0 0.25rem 0 rgba(0, 0, 0, 0.8),
-//     var(--shadow);
-//   border-radius: var(--rounded-corner-small);
-//   background-image: linear-gradient(
-//     to bottom,
-//     hsl(0, 0%, 10%),
-//     hsl(0, 0%, 20%) 50%
-//   );
-//   background-color: #323232;
-//   color: #f0f0f1;
-
-//   &:active {
-//     transform: translateY(0.25rem);
-//     box-shadow: 0 0 0 rgba(0, 0, 0, 0.8);
-//   }
-// }
-
 .masonry .item.beeper {
   position: relative;
   padding: 0.5rem;
-}
-
-.beeper-top {
-  display: flex;
-  position: relative;
-  gap: 0.5rem;
 }
 
 .beeper-display {
@@ -124,17 +47,6 @@
   letter-spacing: -0.05em;
 }
 
-.beeper-volume {
-  flex-direction: column;
-
-  button {
-    border-radius: var(--rounded-corner-small);
-    padding: rpx(5);
-    font-size: var(--font-size-medium);
-    line-height: 0;
-  }
-}
-
 .beeper-actions {
   margin-block: 1rem 0;
 
@@ -152,35 +64,6 @@
   .icon {
     vertical-align: rpx(-2);
   }
-}
-
-#beeper-volume-level {
-  position: absolute;
-  cursor: help;
-  inset-block: 0.5rem;
-  inset-inline-start: -0.5rem;
-  border-radius: 0 0.25rem 0.25rem 0;
-  background-image: linear-gradient(
-    to top,
-    var(--accent-color) var(--volume),
-    transparent var(--volume)
-  );
-  background-color: var(--bg-muted-1);
-  width: 0.25rem;
-}
-
-#beeper-speaker-grille {
-  box-shadow: var(--edge-highlight);
-  border-radius: var(--rounded-corner-small);
-  background-image:
-    radial-gradient(var(--bg-muted-2) 25%, transparent 25%),
-    radial-gradient(var(--bg-muted-2) 25%, transparent 25%);
-  background-position:
-    0 0,
-    0.25rem 0.25rem;
-  background-size: 0.5rem 0.5rem;
-  background-color: var(--bg-muted-1);
-  width: 1.625rem;
 }
 
 #beeper-real-time {

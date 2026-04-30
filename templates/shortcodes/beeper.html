@@ -1,19 +1,7 @@
 {% import "macros/macros.html" as macros %}
 
-<div class="beeper-top">
-  <div class="buttons start beeper-volume">
-    <button id="beeper-volume-up" title="Volume Up">
-      {{- macros::icon(name="plus") -}}
-    </button>
-    <button id="beeper-volume-down" title="Volume Down">
-      {{- macros::icon(name="minus") -}}
-    </button>
-    <div id="beeper-volume-level"></div>
-  </div>
-  <div class="beeper-display">
-    <noscript>JavaScript is off, beeper no<br />worky with no JavaScript :[</noscript>
-  </div>
-  <div id="beeper-speaker-grille"></div>
+<div class="beeper-display">
+  <noscript>JavaScript is off, beeper no<br />worky with no JavaScript :[</noscript>
 </div>
 <div class="buttons start beeper-actions">
   <button id="send-beep" title="Send Beep">

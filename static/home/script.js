@@ -199,7 +199,6 @@ let rateLimitRecoveryTimer = null;
 let prevPlayedCount = 0;
 let prevLongPlayedCount = 0;
 let prevDisplayText = "";
-let volume = 20;
 
 let audioCtx = null;
 let gainNode = null;
@@ -209,11 +208,10 @@ function initAudioContext() {
   audioCtx = new (window.AudioContext || window.webkitAudioContext)();
   gainNode = audioCtx.createGain();
   gainNode.connect(audioCtx.destination);
-  gainNode.gain.value = volume / 100;
+  gainNode.gain.value = 0.2;
 }
 
 function playBeep(duration = 0.2) {
-  if (volume === 0) return;
   if (!audioCtx || audioCtx.state !== "running") return;
   const osc = audioCtx.createOscillator();
   osc.connect(gainNode);
@@ -222,17 +220,6 @@ function playBeep(duration = 0.2) {
   const t = audioCtx.currentTime + 0.05;
   osc.start(t);
   osc.stop(t + duration);
-}
-
-function setVolume(v) {
-  volume = Math.min(100, Math.max(0, v));
-  if (gainNode) gainNode.gain.value = volume / 100;
-  localStorage.setItem("beeper-volume", volume);
-  const el = document.getElementById("beeper-volume-level");
-  if (el) {
-    el.title = `Volume: ${volume}%`;
-    el.style.setProperty("--volume", `${volume}%`);
-  }
 }
 
 function classifyLine(msg) {
@@ -472,24 +459,12 @@ function setupBeepButton(elementId, url) {
 setupBeepButton("send-beep", "https://webhook.daudix.one/hooks/beep");
 setupBeepButton("send-beep-long", "https://webhook.daudix.one/hooks/beep-long");
 
-document
-  .getElementById("beeper-real-time")
-  ?.addEventListener("change", (e) => setRealtime(e.target.checked));
-document.getElementById("beeper-volume-down")?.addEventListener("click", () => {
-  setVolume(volume - 10);
-});
-document.getElementById("beeper-volume-up")?.addEventListener("click", () => {
-  setVolume(volume + 10);
-});
-
 /* Init ===================================================================== */
 
 document.addEventListener("DOMContentLoaded", () => {
   initSplash();
   initFlutter();
 
-  const savedVolume = localStorage.getItem("beeper-volume");
-  setVolume(savedVolume !== null ? parseInt(savedVolume) : volume);
   fetchLog();
 
   fetchStatusCafe();
