@@ -75,7 +75,7 @@ h1 {
           transform: var(--active);
         }
 
-        & + p {
+        & + * {
           margin-block-start: 0;
         }
       }
