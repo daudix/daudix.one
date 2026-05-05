@@ -5,7 +5,8 @@
 - Remove IndieWeb section from /home/ (?)
 - MoodDB (?)
 - License under AGPL (?)
-- New ARG/Easter Egg type of thingy (?) (inspirations: Portal "dinosaur" ARG, SSTV. details: localstorage, sstv image that says to look at spectrogram, base64)
+- New ARG/Easter Egg type of thingy (?)
+  - Inspirations: Portal "dinosaur" ARG, SSTV. details: localstorage, sstv, spectrogram, base64
 - Chatbox (?)
 - /uses/ page (?)
 - Movable stickers on homepage (?)
@@ -13,26 +14,39 @@
 - tomthings.fr / skiff-inspired design
 - Streamline some page-specific elements (fancy lists, tab switcher)
 - Use piclog.blue somehow
-- Add some global achievements
+- Add global achievements
 - Try using mail envelope style for comments or nanolog
 - Add photo gallery (random polaroid rotation can be done using Tera's `get_random`)
 - Make "shrine" for my beloved portal series
 - Make badges and beeper popups closable via outside click
-- Rewrite the script on /snug-nook/
 - Chat bubble style/shortcode
 - Replace minified pngs with webps
-- Separate guides from blog posts
-- Fix nanolog pages having "404" as their title
+- Separate guides from blog posts (or perhaps just have a webgarden?)
+- Fix nanolog pages having "404" as their title (no idea how tho)
 - Avoid using IDs for styling as per <https://google.github.io/styleguide/htmlcssguide.html#ID_Selectors>
 - Add icon reflections to /design (use [-webkit-box-reflect](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/-webkit-box-reflect) and [element()](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/element))
-- Add more icons to /design (Cassiere, Miniera, GNOMEntary Cavailer, open-tv, Compito, MenuKaran, sveglia, boutique, gdm-settings, GSConnect, Stamina, etc. that I can find in ~/Projects)
+- Add more icons to /design
+  - [ ] Cassiere
+  - [ ] Miniera
+  - [ ] GNOMEntary Cavailer
+  - [ ] open-tv
+  - [ ] Compito
+  - [ ] MenuKaran
+  - [ ] sveglia
+  - [ ] boutique
+  - [ ] gdm-settings
+  - [ ] GSConnect
+  - [ ] Stamina
+  - [ ] etc. that I can find in ~/Projects
 - Try to get total page size to the absolute minimum possible (without making stuff harder to maintain)
-- Add AI disclosure or whatevr on /colophon
+- Add AI disclosure or whatevr on /colophon (only JS code is slightly tainted, everything else is made by yours truly)
 - Redesign splash screen one more time
-- Refresh homepage head
-- Use UTC TZ
+- Redesign and rewrite homepage header (the whole top part)
+- Use UTC TZ (?)
 - Mention nanolog mstdn/bsky bridge in the UI
-- https://critters.gay/notes/akl7de2pfxjm0052
-- Make polaroid pic unpinnable, revealing some easter egg
-- Simplify/rewrite polaroid CSS
+- <https://critters.gay/notes/akl7de2pfxjm0052>
+- Make polaroid pic unpinnable, revealing some easter egg :worm_red:
 - "Анкета" for visitors
+- Serve as http if client doesn't suppor neither https nor hsts
+- Display beeper timeout as part of some toher element
+- Serve deployment log publically (useful if you want to debug failed deployment without SSHing into server)
