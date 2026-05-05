@@ -57,21 +57,21 @@
   #polaroid-shine {
     position: absolute;
     transform: rotate(30deg);
+    opacity: 0.3;
     z-index: 1;
-    mix-blend-mode: screen;
     filter: blur(0.25rem);
     transition: var(--transition-bezier);
-    inset-block-start: -2rem;
-    inset-inline-start: 0;
-    background-color: rgb(255 255 255 / 0.3);
-    width: 14rem;
-    height: 8rem;
+    inset-block-start: -2.5rem;
+    inset-inline: -3.5rem;
+    background-color: white;
+    height: 50%;
     pointer-events: none;
   }
 
   #polaroid-photo {
-    display: block;
     position: relative;
+    width: rpx(144);
+    height: rpx(144);
 
     &::after {
       position: absolute;
@@ -93,8 +93,6 @@
 
     img {
       margin: 0;
-      width: rpx(144);
-      height: rpx(144);
     }
   }
 
@@ -131,7 +129,6 @@
 
     &:hover {
       text-decoration: underline;
-      text-decoration-style: solid; // Make underline not wavy
     }
   }
 
