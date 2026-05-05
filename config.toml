@@ -40,12 +40,25 @@ feed_sections = [
   { name = "Nanolog", path = "@/nanolog/_index.md" },
   { name = "Blog", path = "@/blog/_index.md" },
 ]
-categories = [
-  { name = "Archived", description = "Posts that have been archived due to their age.", color = "purple", icon = "box-arrow-down" },
-  { name = "Featured", description = "Posts that are somewhat decently written.", color = "yellow", icon = "star" },
-  { name = "Hot", description = "Posts that did numbers compared to others.", color = "red", icon = "fire" },
-  { name = "Test", description = "Categories can be set and customized entirely from config, woo-hoo!", color = "green", icon = "feather" },
-]
+
+[[extra.categories]]
+name = "Archived"
+description = "Posts that have been archived due to their age."
+color = "purple"
+icon = "box-arrow-down"
+
+[[extra.categories]]
+name = "Featured"
+description = "Posts that are somewhat decently written."
+color = "yellow"
+icon = "star"
+
+[[extra.categories]]
+name = "Hot"
+description = "Posts that did numbers compared to others."
+color = "red"
+icon = "fire"
+
 # accent_color = "<red, orange, yellow, green, blue, purple>"
 # Rum, London Hue
 accent_color = ["hsl(270 13% 48%)", "hsl(290 20% 71%)"]
