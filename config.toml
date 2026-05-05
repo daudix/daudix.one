@@ -137,10 +137,20 @@ socials = [
   { url = "https://codeberg.org/daudix", icon = "codeberg" },
   { url = "https://github.com/daudix", icon = "github" },
 ]
-webrings = [
-  { name = "Fediring", url = "https://fediring.net", previous = "https://fediring.net/previous?host=$HOST", next = "https://fediring.net/next?host=$HOST", random = "https://fediring.net/random" },
-  { name = "Snug Ring", url = "https://snugnook.org/ring", previous = "https://snugnook.org/ring/$HOST/previous", next = "https://snugnook.org/ring/$HOST/next", random = "https://snugnook.org/ring/random" },
-]
+
+[[extra.footer.webrings]]
+name = "Fediring"
+url = "https://fediring.net"
+previous = "https://fediring.net/previous?host=$HOST"
+next = "https://fediring.net/next?host=$HOST"
+random = "https://fediring.net/random"
+
+[[extra.footer.webrings]]
+name = "Snug Ring"
+url = "https://snugnook.org/ring"
+previous = "https://snugnook.org/ring/$HOST/previous"
+next = "https://snugnook.org/ring/$HOST/next"
+random = "https://snugnook.org/ring/random"
 
 [extra.fediverse]
 host = "wetdry.world"
