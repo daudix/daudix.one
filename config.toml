@@ -40,25 +40,6 @@ feed_sections = [
   { name = "Nanolog", path = "@/nanolog/_index.md" },
   { name = "Blog", path = "@/blog/_index.md" },
 ]
-
-[[extra.categories]]
-name = "Archived"
-description = "Posts that have been archived due to their age."
-color = "purple"
-icon = "box-arrow-down"
-
-[[extra.categories]]
-name = "Featured"
-description = "Posts that are somewhat decently written."
-color = "yellow"
-icon = "star"
-
-[[extra.categories]]
-name = "Hot"
-description = "Posts that did numbers compared to others."
-color = "red"
-icon = "fire"
-
 # accent_color = "<red, orange, yellow, green, blue, purple>"
 # Rum, London Hue
 accent_color = ["hsl(270 13% 48%)", "hsl(290 20% 71%)"]
@@ -112,6 +93,24 @@ csp = [
     "'none'",
   ] },
 ]
+
+[[extra.categories]]
+name = "Archived"
+description = "Posts that have been archived due to their age."
+color = "purple"
+icon = "box-arrow-down"
+
+[[extra.categories]]
+name = "Featured"
+description = "Posts that are somewhat decently written."
+color = "yellow"
+icon = "star"
+
+[[extra.categories]]
+name = "Hot"
+description = "Posts that did numbers compared to others."
+color = "red"
+icon = "fire"
 
 [extra.meta]
 favicon = "favicon.gif"
@@ -168,7 +167,6 @@ random = "https://snugnook.org/ring/random"
 [extra.fediverse]
 host = "wetdry.world"
 user = "daudix"
-show_qr = true
 
 [extra.analytics]
 service = "umami"
