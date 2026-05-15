@@ -14,7 +14,7 @@ If you want to reuse *some* custom styles and stuff from here: go ahead! ...just
 
 If I wasn't discreet enough: Please don't just copy-paste my site and replace your name with mine. I'm usually pretty chill regarding people copying my site, but sometimes it's just ridiculous. kthxbye.
 
-## Setup Local Repository
+## Serve Locally
 
 Mostly for myself.
 
@@ -37,4 +37,9 @@ git checkout main
 git remote set-url origin ssh://git@codeberg.org/daudix/ametrine.git
 ```
 
+- (Optional[1]) Add `DISCORD_TOKEN` and `LAST_FM_API_KEY` to `.env`
+- Run `./dev.sh serve`
+
 </> with <3 by [daudix](https://daudix.one)
+
+[1]: You can set `AMETRINE_OFFLINE` to `1` if you don't want/have needed API keys.
