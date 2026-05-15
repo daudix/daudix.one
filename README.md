@@ -37,9 +37,9 @@ git checkout main
 git remote set-url origin ssh://git@codeberg.org/daudix/ametrine.git
 ```
 
-- (Optional[1]) Add `DISCORD_TOKEN` and `LAST_FM_API_KEY` to `.env`
+- (Optional[^1]) Add `DISCORD_TOKEN` and `LAST_FM_API_KEY` to `.env`
 - Run `./dev.sh serve`
 
 </> with <3 by [daudix](https://daudix.one)
 
-[1]: You can set `AMETRINE_OFFLINE` to `1` if you don't want/have needed API keys.
+[^1]: You can set `AMETRINE_OFFLINE` to `1` if you don't want/have needed API keys.
