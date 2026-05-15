@@ -343,10 +343,12 @@ function setButtonsRateLimited(limited) {
 function renderDisplay() {
   const el = document.querySelector(".beeper-display");
   if (!el) return;
-  const text = logLines
-    .slice(-2)
-    .map((l) => l.raw)
-    .join("\n");
+  const text = logLines.length
+    ? logLines
+        .slice(-2)
+        .map((l) => l.raw)
+        .join("\n")
+    : "No messages were received today.\nYou can be the first!";
   if (text === prevDisplayText) return;
   prevDisplayText = text;
   el.textContent = text;
