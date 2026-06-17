@@ -25,7 +25,7 @@ personal = [
   { name = "pixlxip.gif", url = "https://xip.neocities.org" },
   { name = "ronbutton.gif", url = "https://veeronniecaw.space" },
   { name = "seirdy.gif", url = "https://seirdy.one" },
-  { name = "solinus.gif", url = "https://solinus.neocities.org" },
+  { name = "skyweaver.gif", url = "https://skyweaver.nekoweb.org" },
   { name = "volpeon.gif", url = "https://volpeon.ink" },
   { name = "xan.gif", url = "https://xan.lol" },
   { name = "zenfyr.gif", url = "https://zenfyr.dev" },
