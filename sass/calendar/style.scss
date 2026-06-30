@@ -107,13 +107,9 @@ body {
     }
 
     #progress-bar {
-      background-image: repeating-linear-gradient(
-        to right,
-        black,
-        black 0.5mm,
-        white 0.5mm,
-        white 1mm
-      );
+      background-image: url("progress.gif");
+      background-size: 1mm;
+      image-rendering: pixelated;
       width: var(--year-percentage);
       height: 5mm;
       print-color-adjust: exact;
