@@ -131,7 +131,7 @@ links = [
     { url = "https://ametrine.daudix.one", name = "Ametrine", icon = "traffic-cone" },
     { url = "https://snugnook.org", name = "Snug Nook", icon = "chats" },
   ] },
-  { name = "Extra", closed = true, category = [
+  { name = "Extra", category = [
     { url = "@/coffee/index.md", name = "Coffee", icon = "coffee" },
     { url = "@/colophon/index.md", name = "Colophon", icon = "question" },
     # { url = "@/commissions/index.md", name = "Commissions", icon = "wallet" },
