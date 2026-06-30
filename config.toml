@@ -43,6 +43,7 @@ feed_sections = [
 # accent_color = "<red, orange, yellow, green, blue, purple>"
 # Rum, London Hue
 accent_color = ["hsl(270 13% 48%)", "hsl(290 20% 71%)"]
+# accent_color = ["hsl(337.09677 87% 42%)", "hsl(337.79736, 92%, 52%)"]
 # home_url = "@/home/index.md"
 issues_url = "https://github.com/daudix/daudix.one/issues/new"
 source_url = "https://github.com/daudix/daudix.one"

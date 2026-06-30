@@ -38,6 +38,7 @@
   - [ ] GSConnect
   - [ ] Stamina
   - [ ] etc. that I can find in ~/Projects
+- [ ] Add pixel icons to /design
 - Try to get total page size to the absolute minimum possible (without making stuff harder to maintain)
 - Add AI disclosure or whatevr on /colophon (only JS code is slightly tainted, everything else is made by yours truly)
 - Redesign splash screen one more time
@@ -50,3 +51,5 @@
 - Serve as http if client doesn't suppor neither https nor hsts
 - Display beeper timeout as part of some toher element
 - Serve deployment log publically (useful if you want to debug failed deployment without SSHing into server)
+- Add TV with motion design portfolio to /design
+- "Steal" Discord server widget design from <https://lina.sh> (Only the \[m\] part)

@@ -19,25 +19,21 @@ If I wasn't discreet enough: Please don't just copy-paste my site and replace yo
 Mostly for myself.
 
 - Clone the repository recursively:
-
 ```bash
 git clone --recursive git@github.com:daudix/daudix.one.git
 ```
-
 - Checkout `main` branch for Ametrine:
-
 ```bash
 cd daudix.one/themes/ametrine/
 git checkout main
 ```
-
 - Set the remote URL to an SSH one:
-
 ```bash
 git remote set-url origin ssh://git@codeberg.org/daudix/ametrine.git
 ```
-
 - Add `DISCORD_TOKEN` and `LAST_FM_API_KEY` to `.env`[^1]
+> [!NOTE]
+> Alternatively, you can set these environment variables directly and use `zola serve` in the next step, but this way you'll end up with environment variables saved in your command history, which isn't a good thing at all.
 - Run `./dev.sh serve`
 
 </> with <3 by [daudix](https://daudix.one)
