@@ -1,7 +1,7 @@
 +++
 title = "Untitled 2025.m3u"
 description = "My musical preferences of 2025, in a playlist form."
-updated = 2026-02-14
+updated = 2026-07-04
 [taxonomies]
 tags = ["Music", "Playlist"]
 [extra]
@@ -139,6 +139,62 @@ I like the number 43.
 {% end %}
 
 Initially this playlist only had 38 songs, but I remembered some more that I wanted to add, so it became that accidentally.
+
+## Playlist As a Table
+
+Because why not, plus it has a bit more info.
+
+{% alert(icon="trash", title="Uninteresting Fact") %}
+This section was [removed in one of the early edits](https://github.com/daudix/daudix.one/commit/60c99a23498ea3531ae3ea89d72ed41cf911b783#diff-92db5b4a35b272cd34a40387a41065fc0a683573b3483b931a3b3c966024cdebL94-L142) half a year ago and only added back now due to how annoying tables are to deal with.
+{% end %}
+
+{% overflow_auto(overshoot_row=true) %}
+| #   | Song                                                | Artist                                                       | Duration | Popularity | Genres                                                                                       | Year |
+| --- | --------------------------------------------------- | ------------------------------------------------------------ | -------- | ---------- | -------------------------------------------------------------------------------------------- | ---- |
+| 1   | Good Morning                                        | gifting guide                                                | 03:22    | 2          |                                                                                              | 2025 |
+| 2   | On Little Cat Feet                                  | Nightmargin                                                  | 02:35    | 46         |                                                                                              | 2016 |
+| 3   | Take Responsibility (Hear Me)                       | Koa                                                          | 03:25    | 11         |                                                                                              | 2024 |
+| 4   | Loving forever                                      | Azure Comet, Roxby                                           | 04:34    | 2          |                                                                                              | 2025 |
+| 5   | `E` Background pt. 1                                | Koa, TCB                                                     | 03:08    | 7          |                                                                                              | 2021 |
+| 6   | Already Dead                                        | KittenSneeze, Jason Jeffrey James, Muscape                   | 02:38    | 39         |                                                                                              | 2022 |
+| 7   | Forgotten                                           | Maebi                                                        | 01:50    | 52         |                                                                                              | 2025 |
+| 8   | Summer's Gone                                       | Azure Comet, NekoSnicker                                     | 03:18    | 4          |                                                                                              | 2025 |
+| 9   | Cheerleader                                         | Porter Robinson                                              | 03:57    | 57         | edm, electronic                                                                              | 2024 |
+| 10  | `E` Von dutch                                       | Charli xcx                                                   | 02:44    | 79         | hyperpop, art pop                                                                            | 2024 |
+| 11  | 1999                                                | Charli xcx, Troye Sivan                                      | 03:09    | 58         | hyperpop, art pop                                                                            | 2018 |
+| 12  | `E` ANGELFISH (loser say what?)                     | Vylet Pony, Namii                                            | 02:06    | 23         | hyperpop, slap house                                                                         | 2022 |
+| 13  | microchip                                           | Oliver Buckland                                              | 02:56    | 41         |                                                                                              | 2014 |
+| 14  | Nightmare Night                                     | Vylet Pony                                                   | 04:52    | 20         | hyperpop                                                                                     | 2025 |
+| 15  | What I Want                                         | Gregor McMurray                                              | 03:02    | 57         |                                                                                              | 2024 |
+| 16  | Killing the Mercy                                   | And One                                                      | 05:19    | 47         | ebm, industrial, synthpop, darkwave                                                          | 2012 |
+| 17  | WE ARE SO BACK                                      | availax, Wavetapper                                          | 02:40    | 36         | breakcore, jungle, rally house                                                               | 2025 |
+| 18  | `E` U Love It                                       | Sophie Powers, $atori Zoom                                   | 02:40    | 52         | drift phonk                                                                                  | 2022 |
+| 19  | Locals (Girls like us) [with gabby start]           | underscores, gabby start                                     | 04:18    | 30         | hyperpop                                                                                     | 2023 |
+| 20  | yeah!                                               | availax                                                      | 02:13    | 42         | breakcore, jungle                                                                            | 2024 |
+| 21  | Lick a Rock                                         | gifting guide                                                | 02:16    | 0          |                                                                                              | 2025 |
+| 22  | Solace                                              | Maebi                                                        | 01:43    | 53         |                                                                                              | 2025 |
+| 23  | Takedown                                            | HUNTR/X, EJAE, AUDREY NUNA, REI AMI, KPop Demon Hunters Cast | 03:02    | 86         | k-pop                                                                                        | 2025 |
+| 24  | Lazuli                                              | Artifyber                                                    | 03:46    | 19         |                                                                                              | 2024 |
+| 25  | `E` Antonymph - Zizkil Remix                        | Zizkil, Vylet Pony                                           | 04:24    | 17         | hyperpop                                                                                     | 2022 |
+| 26  | The Ghost of You                                    | My Chemical Romance                                          | 03:14    | 75         | emo, pop punk                                                                                | 2004 |
+| 27  | Ich will                                            | Rammstein                                                    | 03:37    | 70         | industrial metal, metal, industrial rock, industrial                                         | 2001 |
+| 28  | `E` You Know What They Do to Guys Like Us in Prison | My Chemical Romance                                          | 02:53    | 68         | emo, pop punk                                                                                | 2004 |
+| 29  | That's My Floor                                     | Magdalena Bay                                                | 03:29    | 54         |                                                                                              | 2024 |
+| 30  | Affection Addiction                                 | VocaloKAT, Aku P                                             | 03:39    | 62         | vocaloid                                                                                     | 2025 |
+| 31  | Military Fashion Show                               | And One                                                      | 04:28    | 61         | ebm, industrial, synthpop, darkwave                                                          | 2006 |
+| 32  | Shotgun Blues                                       | Volbeat                                                      | 04:27    | 65         | rock, metal                                                                                  | 2021 |
+| 33  | Monster                                             | Skillet                                                      | 02:58    | 83         | christian rock, christian alternative rock, christian                                        | 2009 |
+| 34  | Confronting Myself                                  | Lena Raine                                                   | 04:09    | 41         |                                                                                              | 2018 |
+| 35  | `E` King For A Day                                  | Pierce The Veil, Kellin Quinn                                | 03:56    | 58         | emo, screamo, post-hardcore, pop punk                                                        | 2012 |
+| 36  | The Only                                            | Static-X                                                     | 02:51    | 64         | industrial metal, nu metal, industrial rock, industrial, rap metal, metal, alternative metal | 2003 |
+| 37  | Around the World (La La La La La)                   | A Touch Of Class, Pete Konemann                              | 03:34    | 75         | europop, eurodance                                                                           | 2000 |
+| 38  | Toxicity                                            | System Of A Down                                             | 03:38    | 85         | nu metal, metal, alternative metal, rap metal, rock                                          | 2001 |
+| 39  | `E` The Emptiness Machine                           | Linkin Park                                                  | 03:10    | 78         | nu metal, rap metal, rock, alternative metal                                                 | 2024 |
+| 40  | Going Under                                         | Evanescence                                                  | 03:34    | 80         | alternative metal                                                                            | 2003 |
+| 41  | Numb                                                | Linkin Park                                                  | 03:07    | 88         | nu metal, rap metal, rock, alternative metal                                                 | 2003 |
+| 42  | Look at the Sky                                     | Porter Robinson                                              | 05:09    | 54         | edm, electronic                                                                              | 2021 |
+| 43  | Ballade pour Adeline - Piano et orchestre           | Richard Clayderman                                           | 02:38    | 62         | easy listening                                                                               | 1977 |
+{% end %}
 
 ## Playlist As a CSV
 
