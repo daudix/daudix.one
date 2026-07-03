@@ -62,7 +62,7 @@ We have quite some changes on this front:
 <a href="/#player">
   <picture id="now-playing">
     <source srcset="now-playing-dark.png"  media="(prefers-color-scheme: dark)" />
-    <img alt='Now playing widget, with "The Carrion Child" song by "Vylet Pony" displayed as last played.' src="now-playing.png" class="transparent no-hover" />
+    <img alt='Now playing widget, with "The Carrion Child" song by "Vylet Pony" displayed as last played.' src="now-playing.png" class="has-alpha no-hover" />
   </picture>
 </a>
 
@@ -188,7 +188,7 @@ And so, here is my current "era timeline".
   <div class="overshoot-row">
     <picture>
       <source srcset="eras-dark.png"  media="(prefers-color-scheme: dark)" />
-      <img alt='Interactive timeline of the past few eras, starting from late 2022 up to present. The eras are as follows: "Cold Boot", "Déjà vu", "Rainbow / Prism", and an untitled, upcomming one.' src="eras.png" class="transparent no-hover" />
+      <img alt='Interactive timeline of the past few eras, starting from late 2022 up to present. The eras are as follows: "Cold Boot", "Déjà vu", "Rainbow / Prism", and an untitled, upcomming one.' src="eras.png" class="has-alpha no-hover" />
     </picture>
   </div>
 </div>

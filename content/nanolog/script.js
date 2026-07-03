@@ -72,7 +72,7 @@ function setLoadingState(isLoading) {
   if (publishBtn) {
     publishBtn.textContent = isLoading ? "Publishing…" : "Publish Post";
     publishBtn.disabled = isLoading;
-    publishBtn.classList.toggle("progress", isLoading);
+    publishBtn.setAttribute("aria-busy", isLoading ? "true" : "false");
   }
 
   if (saveBtn) {

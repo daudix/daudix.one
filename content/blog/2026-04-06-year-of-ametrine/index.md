@@ -399,7 +399,7 @@ Pretty easy right? Well mostly yeah, though I had to buck around a lot to get ba
 
 More on Perlin noise, I used [Kitfox' Perlin Noise Maker](http://kitfox.com/projects/perlinNoiseMaker/) to create a sprite with settings I needed. I then adjusted the opacity until it looked good, did the same for dark variant except that I inverted the image before adjusting opacity. The final result was then dithered to make sprites even more tiny.
 
-![Perlin, rain, and snow sprites in both light and dark variants.](weather.svg#transparent#no-hover)
+![Perlin, rain, and snow sprites in both light and dark variants.](weather.svg#has-alpha#no-hover)
 
 Oh right, what was so hard about getting animations right? Mostly background position for the rain animation, since I needed to maintain a nice speed while also keeping the animation loop seamless, all while looking natural, so that droplets don't fall in s straight line but also shift downwards slightly.
 

@@ -182,7 +182,7 @@ I work with the following creative applications and I’m always learning to bet
 <div class="icon-grid">
 
 <a href="https://www.aseprite.org">
-<img class="transparent no-hover pixels drop-shadow icon" src="icons/aseprite.gif" alt="Pixel art Aseprite icon." />
+<img class="has-alpha no-hover pixels drop-shadow icon" src="icons/aseprite.gif" alt="Pixel art Aseprite icon." />
 <div class="details">
 <strong>Aseprite</strong>
 <p>Pixel art</p>
@@ -190,7 +190,7 @@ I work with the following creative applications and I’m always learning to bet
 </a>
 
 <a href="https://www.audacityteam.org/">
-<img class="transparent no-hover pixels drop-shadow icon" src="icons/audacity.gif" alt="Pixel art Audacity icon." />
+<img class="has-alpha no-hover pixels drop-shadow icon" src="icons/audacity.gif" alt="Pixel art Audacity icon." />
 <div class="details">
 <strong>Audacity</strong>
 <p>Audio editing</p>
@@ -198,7 +198,7 @@ I work with the following creative applications and I’m always learning to bet
 </a>
 
 <a href="https://www.blender.org">
-<img class="transparent no-hover pixels drop-shadow icon" src="icons/blender.gif" alt="Pixel art Blender icon." />
+<img class="has-alpha no-hover pixels drop-shadow icon" src="icons/blender.gif" alt="Pixel art Blender icon." />
 <div class="details">
 <strong>Blender</strong>
 <p>3D modelling</p>
@@ -206,7 +206,7 @@ I work with the following creative applications and I’m always learning to bet
 </a>
 
 <a href="https://www.darktable.org">
-<img class="transparent no-hover pixels drop-shadow icon" src="icons/darktable.gif" alt="Pixel art Darktable icon." />
+<img class="has-alpha no-hover pixels drop-shadow icon" src="icons/darktable.gif" alt="Pixel art Darktable icon." />
 <div class="details">
 <strong>Darktable</strong>
 <p>Color grading</p>
@@ -214,7 +214,7 @@ I work with the following creative applications and I’m always learning to bet
 </a>
 
 <a href="https://www.figma.com">
-<img class="transparent no-hover pixels drop-shadow icon" src="icons/figma.gif" alt="Pixel art Figma icon." />
+<img class="has-alpha no-hover pixels drop-shadow icon" src="icons/figma.gif" alt="Pixel art Figma icon." />
 <div class="details">
 <strong>Figma</strong>
 <p>Interface design</p>
@@ -222,7 +222,7 @@ I work with the following creative applications and I’m always learning to bet
 </a>
 
 <a href="https://www.gimp.org">
-<img class="transparent no-hover pixels drop-shadow icon" src="icons/gimp.gif" alt="Pixel art GIMP icon." />
+<img class="has-alpha no-hover pixels drop-shadow icon" src="icons/gimp.gif" alt="Pixel art GIMP icon." />
 <div class="details">
 <strong>GIMP</strong>
 <p>Photo editing</p>
@@ -230,7 +230,7 @@ I work with the following creative applications and I’m always learning to bet
 </a>
 
 <a href="https://inkscape.org">
-<img class="transparent no-hover pixels drop-shadow icon" src="icons/inkscape.gif" alt="Pixel art Inkscape icon." />
+<img class="has-alpha no-hover pixels drop-shadow icon" src="icons/inkscape.gif" alt="Pixel art Inkscape icon." />
 <div class="details">
 <strong>Inkscape</strong>
 <p>Vector graphics</p>
@@ -238,7 +238,7 @@ I work with the following creative applications and I’m always learning to bet
 </a>
 
 <a href="https://kdenlive.org">
-<img class="transparent no-hover pixels drop-shadow icon" src="icons/kdenlive.gif" alt="Pixel art Kdenlive icon." />
+<img class="has-alpha no-hover pixels drop-shadow icon" src="icons/kdenlive.gif" alt="Pixel art Kdenlive icon." />
 <div class="details">
 <strong>Kdenlive</strong>
 <p>Video editing</p>
@@ -246,7 +246,7 @@ I work with the following creative applications and I’m always learning to bet
 </a>
 
 <a href="https://krita.org/en/">
-<img class="transparent no-hover pixels drop-shadow icon" src="icons/krita.gif" alt="Pixel art Krita icon." />
+<img class="has-alpha no-hover pixels drop-shadow icon" src="icons/krita.gif" alt="Pixel art Krita icon." />
 <div class="details">
 <strong>Krita</strong>
 <p>Digital art</p>

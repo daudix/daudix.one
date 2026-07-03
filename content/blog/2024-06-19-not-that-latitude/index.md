@@ -73,7 +73,7 @@ Bad things aside, I flashed a new Fedora Silverblue USB and installed it, which 
 
 <figure>
 
-![neowofetch.](neowofetch.png#transparent)
+![neowofetch.](neowofetch.png#has-alpha)
 <figcaption>How can one talk about a new laptop with Linux installed and not show a <del>neofetch</del> neowofetch screenshot!?</figcaption>
 </figure>
 
@@ -81,7 +81,7 @@ After the installation, I opened Software to update the system, and... BIOS AND 
 
 Then I opened Settings to check the Device Security tab, just for fun and giggles, and IT'S ALL GREEN!? On MacBoy it was all red, since no secure boot and such.
 
-![Device security.](device-security.png#transparent)
+![Device security.](device-security.png#has-alpha)
 
 Then I decided to watch some videos, connected the headphones and A HEADPHONE TYPE SELECTOR POPPED OUT!? MacBoy didn't have this as well, it was a headset all the time. Here, on the other hand, I can connect it as headphones, a headset, or just a microphone.
 

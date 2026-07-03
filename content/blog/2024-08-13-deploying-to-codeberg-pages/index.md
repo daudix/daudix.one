@@ -95,7 +95,7 @@ Now you can try serving the site locally:
 zola serve
 ```
 
-![Empty website.](empty.png#transparent)
+![Empty website.](empty.png#has-alpha)
 
 Hm, doesn't look quite right...
 
@@ -117,7 +117,7 @@ And let's create a homepage by creating an `_index.md` file under `content` with
 
 And we get...
 
-![Empty Duckquill website.](empty-duckquill.png#transparent)
+![Empty Duckquill website.](empty-duckquill.png#has-alpha)
 
 Alright, perhaps our config is too bare-bones, let's enable navbar and a footer:
 
@@ -145,7 +145,7 @@ title = "I'm a homepage, look at me!"
 I'm just a demo, I like to **demo**nstrate stuff, **demo**lish stuff, and I'm a **demo**crat (no actually, I'm just a silly demo)
 ```
 
-![Duckquill website with some content.](not-empty.png#transparent)
+![Duckquill website with some content.](not-empty.png#has-alpha)
 
 Much better. You can customize it further by looking at [Duckquill's config](https://codeberg.org/daudix/duckquill/src/branch/main/config.toml).
 

@@ -48,12 +48,12 @@ id = ""
 +++
 ```
 
-![Templates folder in Nautilus](templates.png#transparent)
-![Context menu with index.md template](context-menu.png#transparent)
+![Templates folder in Nautilus](templates.png#has-alpha)
+![Context menu with index.md template](context-menu.png#has-alpha)
 
 Afterwards I simply write. Nothing interesting.
 
-![Apostrophe window with this post open](apostrophe.png#transparent)
+![Apostrophe window with this post open](apostrophe.png#has-alpha)
 
 ## Step 3: Final Touches
 
@@ -61,7 +61,7 @@ After the better part of the post is written, I use [title.sh](https://title.sh)
 
 As for image assets I lossily compress them with [Curtail](https://apps.gnome.org/Curtail). All source images are located under the same path but with `-assets` suffix in the folder name. What I mean is, for exapmle, source `portal-1.png` image is located under `~/Projects/website-assets/content/blog/2007-10-10/`, while compressed version used in the actual post is under `~/Projects/website/content/blog/2007-10-10/`. This way I put the file under the `-assets` folder, and then edit path to remove it and copy files there, compress them, remove the originals and rename compressed files to get rid of `-min` suffix (nautilus can rename multiple files, which is cool).
 
-![Curtail window with assets for this post being compressed](curtail.png#transparent)
+![Curtail window with assets for this post being compressed](curtail.png#has-alpha)
 
 As for audio (which is very rare), I simply trim it, apply studio fade-in and fade-out, and export as MP3, all using [Audacity](https://www.audacityteam.org).
 
@@ -69,7 +69,7 @@ As for audio (which is very rare), I simply trim it, apply studio fade-in and fa
 
 Now it's time for a banner. This process is very inconsistent and every banner is unique; some use images from [Unsplash](https://unsplash.com), some are drawn in [Krita](https://krita.org), others are made in Blender, and lately I started using [Inkscape](https://inkscape.org) (I don't know why I didn't earlier). The only consistent thing about them is the resolution and aspect ratio, which is 1920x960px 2:1. As for the file format, it's usually WebP with 92% quality converted from source PNG using [Switcheroo](https://apps.gnome.org/Converter). If the banner is pixel art or dithered image, I use PNG and lossless compression setting in Curtail.
 
-![Switcheroo window with banner for this post being compressed](switcheroo.png#transparent)
+![Switcheroo window with banner for this post being compressed](switcheroo.png#has-alpha)
 
 When I'm happy with the banner, I open the downscaled 4x2px version of it (which name I get by inspecting the post card in blog post list) in GIMP and pick colors that look the best, and then I pick another color, but this time make it lighter and more saturated, or vice versa. These two colors are used for page accent color, as you see here. So yeah, all this "Material You" is manual, surprise surprise.
 
@@ -77,7 +77,7 @@ When I'm happy with the banner, I open the downscaled 4x2px version of it (which
 
 This is the hardest step, removing `draft = true` from the frontmatter and pushing it to the repo.
 
-![Lazygit with commit message "New post: My Blog Workflow"](lazygit.png#transparent)
+![Lazygit with commit message "New post: My Blog Workflow"](lazygit.png#has-alpha)
 
 Once it's deployed, I post about it on Mastodon using the following template (that I fill out manually):
 

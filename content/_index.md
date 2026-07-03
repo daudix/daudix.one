@@ -170,7 +170,7 @@ Feel free to reach me out on any of these! Although I'm usually too shy to start
 
 The community-focused community.
 
-<img src="home/neofax.png" class="transparent no-hover drop-shadow" />
+<img src="home/neofax.png" class="has-alpha no-hover drop-shadow" />
 <a href="https://snugnook.org" title="Learn More"></a>
 <div>
 {{ icon(name="discord-logo") }}
@@ -211,7 +211,7 @@ I'm even a member of several [tildes](https://envs.net) and [CS clubs](https://e
 
 Better yet, I have a website on [neocities](https://neocities.org); It doesn't have any purpose except for being there and looking dated. [Check it out](https://daudix.neocities.org) if you want.
 
-<img id="flutter" width="128" height="110" class="transparent no-hover" src="home/flutter.webp" alt="Fluttershy with a wide grin on her face.">
+<img id="flutter" width="128" height="110" class="has-alpha no-hover" src="home/flutter.webp" alt="Fluttershy with a wide grin on her face.">
 
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="visually-hidden">
   <defs>
@@ -235,3 +235,7 @@ Better yet, I have a website on [neocities](https://neocities.org); It doesn't h
     </filter>
   </defs>
 </svg>
+
+{% tv() %}
+{{ youtube(id="0Da8ZhKcNKQ") }}
+{% end %}

@@ -55,7 +55,7 @@
 <picture>
 <source srcset="{{ cover_url | safe }}?size=256&keep_aspect_ratio=true" media="(min-resolution: 2dppx)" />
 <img
-  class="transparent no-hover"
+  class="has-alpha no-hover"
   alt="Capsule art of {{ data.name }}."
   src="{{ cover_url | safe }}?size=128&keep_aspect_ratio=true"
   {%- if config.markdown.lazy_async_image %} decoding="async" loading="lazy"{% endif -%}
