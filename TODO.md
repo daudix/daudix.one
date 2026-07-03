@@ -53,3 +53,6 @@
 - Serve deployment log publically (useful if you want to debug failed deployment without SSHing into server)
 - Add TV with motion design portfolio to /design
 - "Steal" Discord server widget design from <https://lina.sh> (Only the \[m\] part)
+- Add Pinterest to socials
+- Add "Games I Play" section with live Steam stats, with a link to Steam profile
+- Add a bunch of ponies
