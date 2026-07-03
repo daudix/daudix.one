@@ -235,7 +235,3 @@ Better yet, I have a website on [neocities](https://neocities.org); It doesn't h
     </filter>
   </defs>
 </svg>
-
-{% tv() %}
-{{ youtube(id="0Da8ZhKcNKQ") }}
-{% end %}
