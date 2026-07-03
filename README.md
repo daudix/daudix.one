@@ -12,7 +12,7 @@ Seriously, just use the [Ametrine](https://ametrine.daudix.one) theme; I'm the a
 
 If you want to reuse *some* custom styles and stuff from here: go ahead! ...just don't borrow too much, I got to have some uniqueness x3
 
-If I wasn't discreet enough: Please don't just copy-paste my site and replace your name with mine. I'm usually pretty chill regarding people copying my site, but sometimes it's just ridiculous. kthxbye.
+If I wasn't discreet enough: **Please don't just copy-paste my site and replace my name with yours.** I'm usually pretty chill regarding people copying my site, but sometimes it's just ridiculous. kthxbye.
 
 ## Serve Locally
 
