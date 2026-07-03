@@ -2,10 +2,10 @@
 {% import "macros/macros.html" as macros %}
 
 {% block content %}
-<h1>{{ page.title }}</h1>
+{{- "# " ~ page.title | markdown | safe -}}
 <p>{{ page.description }}</p>
-<section id="original-icons">
-  <h2>Original Icons</h2>
+<section id="section-original-icons">
+  {{- "## Original Icons" | markdown | safe -}}
   <p>Custom icons with original idea made for projects without prior or with different one.</p>
   <br />
   <div class="media-grid">
@@ -26,8 +26,8 @@
     {% endfor %}
   </div>
 </section>
-<section id="redrawn-icons">
-  <h2>Redrawn Icons</h2>
+<section id="section-redrawn-icons">
+  {{- "## Redrawn Icons" | markdown | safe -}}
   <p>Tweaked icons made for projects with an icon and idea already present.</p>
   <br />
   <div class="media-grid">
@@ -35,7 +35,7 @@
       <a class="grid-item" href="{{ icon.url }}">
         <div class="grid">
           <img
-            class="no-hover full transparent drop-shadow"
+            class="no-hover full has-alpha drop-shadow"
             alt="{{ icon.name }} icon."
             src="icons/redrawn/{{ icon.icon }}"
             {% if config.markdown.lazy_async_image %}
@@ -56,8 +56,8 @@
     {% endfor %}
   </div>
 </section>
-<section id="unused-icons">
-  <h2>Unused Icons</h2>
+<section id="section-unused-icons">
+  {{- "## Unused Icons" | markdown | safe -}}
   <p>Unused icons that didn’t find their way for one reason or another.</p>
   <p>
     <small>There were much more, but unfortunately I’ve lost the sources :&#60;</small>
@@ -81,8 +81,8 @@
     {% endfor %}
   </div>
 </section>
-<section id="wallpapers">
-  <h2>Wallpapers</h2>
+<section id="section-wallpapers">
+  {{- "## Wallpapers" | markdown | safe -}}
   <p>Wallpapers that I have made for myself, that you can use, too.</p>
   <p>
     <small>It would be nice if you credit me in case you reupload or remix them :^)</small>
@@ -115,8 +115,8 @@
     {% endfor %}
   </div>
 </section>
-<section id="logos">
-  <h2>Logos</h2>
+<section id="section-logos">
+  {{- "## Logos" | markdown | safe -}}
   <p>It ain’t much, but it’s honest work.</p>
   <br />
   <div class="media-grid">
@@ -157,4 +157,16 @@
     {% endfor %}
   </div>
 </section>
+{# <div id="dock">
+  {% for icon in page.extra.original_icons %}
+    <img
+      class="no-hover full has-alpha drop-shadow"
+      alt="{{ icon.name }} icon."
+      src="icons/original/{{ icon.icon }}"
+      {% if config.markdown.lazy_async_image %}
+        decoding="async" loading="lazy"
+      {% endif %}
+    />
+  {% endfor %}
+</div> #}
 {% endblock content %}
