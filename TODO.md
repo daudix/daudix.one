@@ -57,4 +57,5 @@
 - Add "Games I Play" section with live Steam stats, with a link to Steam profile
 - Add a bunch of ponies
 - OneShot easter egg (dialog with sounds and stuff)
+- Mention old.daudix.one somehwere
 
