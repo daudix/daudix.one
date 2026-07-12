@@ -12,7 +12,7 @@ personal = [
   { name = "free.gif", url = "https://freeplay.floof.company" },
   { name = "freshlygrown.gif", url = "https://www.freshlygrown.me" },
   { name = "futile.gif", url = "https://futile.eu" },
-  { name = "georgemoody.gif", url = "https://moody.im" },
+  { name = "georgemoody.gif", url = "https://georgemoody.tilde.town" },
   { name = "getimiskon.gif", url = "https://getimiskon.xyz" },
   { name = "graphite.gif", url = "https://gra.phite.ro" },
   { name = "immjs.gif", url = "https://immjs.dev" },
