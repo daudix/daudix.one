@@ -11,6 +11,7 @@ personal = [
   { name = "ersei.gif", url = "https://ersei.net" },
   { name = "free.gif", url = "https://freeplay.floof.company" },
   { name = "freshlygrown.gif", url = "https://www.freshlygrown.me" },
+  { name = "futile.gif", url = "https://futile.eu" },
   { name = "georgemoody.gif", url = "https://moody.im" },
   { name = "getimiskon.gif", url = "https://getimiskon.xyz" },
   { name = "graphite.gif", url = "https://gra.phite.ro" },
