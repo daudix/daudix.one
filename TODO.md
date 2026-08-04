@@ -58,4 +58,4 @@
 - Add a bunch of ponies
 - OneShot easter egg (dialog with sounds and stuff)
 - Mention old.daudix.one somehwere
-
+- Mention that I don't use Cloudflare anymore
