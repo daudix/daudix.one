@@ -59,3 +59,4 @@
 - OneShot easter egg (dialog with sounds and stuff)
 - Mention old.daudix.one somehwere
 - Mention that I don't use Cloudflare anymore
+- Link to reduxflakes 🚨🚨🚨
