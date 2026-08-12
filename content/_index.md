@@ -53,7 +53,7 @@ forges = [
 
 # David Lapshin
 
-Greetings! Welcome to my little corner on the World Wild Web and a second home of mine. You might know me by my online handle; Daudix.
+Greetings! Welcome to my little corner on the World Wild Web and a second home of mine. You might know me by my online handle; ~~meiud9~~ Daudix.
 
 <div class="buttons start big">
   <a href="#about" class="suggested">About Me ↓</a>
