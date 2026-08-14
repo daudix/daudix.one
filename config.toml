@@ -146,7 +146,7 @@ socials = [
   { url = "https://bsky.app/profile/daudix.one", icon = "bluesky" },
   { url = "https://wetdry.world/@daudix", icon = "mastodon" },
   { url = "https://discord.com/users/650757995378114581", icon = "discord" },
-  { url = "https://signal.me/#eu/b4KzM1OB3uW52mMywHUJa8h6yD4ATY_KXJJiuJtWUxOVAJP22PVO_qoNGFnf32W7", icon = "signal" },
+  { url = "https://signal.me/#eu/p3XzQR5PKuLaIW6ZYIwA6_pNSBiujPHX9Btep36cozWPmfSR1PRLfYUM0uf4vOHj", icon = "signal" },
   { url = "https://codeberg.org/daudix", icon = "codeberg" },
   { url = "https://github.com/daudix", icon = "github" },
 ]
