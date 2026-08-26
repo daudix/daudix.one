@@ -48,7 +48,7 @@ misc = [
   { name = "neo-fedi.gif" },
   { name = "niko-chuckle.gif" },
   { name = "nofuckingthanks.gif" },
-  { name = "oneshot.gif", url = "https://oneshot.dangenentertainment.com" },
+  { name = "oneshot.gif", url = "https://www.oneshot-game.com" },
   { name = "portal.gif", url = "https://www.thinkwithportals.com" },
   { name = "righttorepair.gif", url = "https://www.ifixit.com/Right-to-Repair" },
   { name = "savewalterwhite.gif", url = "http://www.savewalterwhite.com" },
