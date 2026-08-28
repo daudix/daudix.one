@@ -19,9 +19,9 @@ It is currently hosted from a 2010 PC in my bedroom <sup><small>[*citation neede
 
 ## Thanks To
 
-Most likely I forgot to credit someone. Sorry about that \>_<
+Most likely forgot to credit someone. Sorry about that \>_<
 
-- [sadgrl.online](https://goblin-heart.net/sadgrl/) for the "static" [tiled background](https://goblin-heart.net/sadgrl/webmastery/downloads/tiledbgs) used on splash page, metadata card, and 88x31 button.
+- [sadgrl.online](https://sadgrl.online) for the "static" [tiled background](https://codepen.io/sadness97/full/dPoEqNN) used on splash page, metadata card, and 88x31 button.
 - [Volpeon](https://volpeon.ink) for [neofoxes](https://volpeon.ink/emojis/neofox/) used throughout the site.
 - [elementary OS](https://elementary.io) for the [CD icon](https://github.com/elementary/icons/blob/3aceb24f390bd8ded062e114681d6f35463de462/devices/64/media-optical.svg) used in the Now Playing widget on homepage.
 - [Vylet Pony](https://www.vyletpony.com) for indirectly inspiring the design of homepage. <small>([ANTONYMPH](https://www.youtube.com/watch?v=CNPdO5TZ1DQ) and [I DON'T NEED TO BE FIXED](https://www.youtube.com/watch?v=xMzxVVXTGjE) in particular)</small>
