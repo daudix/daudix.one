@@ -40,15 +40,12 @@
   - [ ] etc. that I can find in ~/Projects
 - [ ] Add pixel icons to /design
 - Try to get total page size to the absolute minimum possible (without making stuff harder to maintain)
-- Add AI disclosure or whatevr on /colophon (only JS code is slightly tainted, everything else is made by yours truly)
 - Redesign splash screen one more time
 - Redesign and rewrite homepage header (the whole top part)
 - Use UTC TZ (?)
-- Mention nanolog mstdn/bsky bridge in the UI
 - <https://critters.gay/notes/akl7de2pfxjm0052>
 - Make polaroid pic unpinnable, revealing some easter egg :worm_red:
 - "Анкета" for visitors
-- Serve as http if client doesn't suppor neither https nor hsts
 - Display beeper timeout as part of some toher element
 - Serve deployment log publically (useful if you want to debug failed deployment without SSHing into server)
 - Add TV with motion design portfolio to /design
@@ -60,3 +57,4 @@
 - Mention old.daudix.one somehwere
 - Mention that I don't use Cloudflare anymore
 - Link to reduxflakes 🚨🚨🚨
+- Update pixl_xip's 88x31
