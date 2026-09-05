@@ -6,6 +6,7 @@ template = "badges.html"
 styles = ["badges/style.css"]
 [extra.badges]
 personal = [
+  { name = "anins1der.gif", url = "https://anins1der.is-a.dev" },
   { name = "dimden.gif", url = "https://dimden.dev" },
   { name = "doskel.gif", url = "https://doskel.net" },
   { name = "ersei.gif", url = "https://ersei.net" },
@@ -24,6 +25,7 @@ personal = [
   { name = "melankorin.gif", url = "https://melankorin.net" },
   { name = "nek0zyx.gif", url = "https://nek0zyx.lgbt.sh" },
   { name = "pixlxip.gif", url = "https://xip.neocities.org" },
+  { name = "reduxflakes.gif", url = "https://reduxflakes.nekoweb.org" },
   { name = "ronbutton.gif", url = "https://veeronniecaw.space" },
   { name = "seirdy.gif", url = "https://seirdy.one" },
   { name = "skyweaver.gif", url = "https://skyweaver.nekoweb.org" },
@@ -40,6 +42,7 @@ misc = [
   { name = "ddg.gif", url = "https://duckduckgo.com" },
   { name = "eightyeightthirtyone.gif", url = "https://eightyeightthirty.one" },
   { name = "firefox3.gif", url = "https://getfirefox.com" },
+  { name = "glass-eat.gif", url = "https://glass-eat.party" },
   { name = "imac.gif" },
   { name = "iso.gif", url = "https://www.w3.org/QA/Tips/iso-date" },
   { name = "lucida.gif", url = "https://lucida.to" },

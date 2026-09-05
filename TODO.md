@@ -46,15 +46,12 @@
 - <https://critters.gay/notes/akl7de2pfxjm0052>
 - Make polaroid pic unpinnable, revealing some easter egg :worm_red:
 - "Анкета" for visitors
-- Display beeper timeout as part of some toher element
+- Display beeper timeout as part of some other element
 - Serve deployment log publically (useful if you want to debug failed deployment without SSHing into server)
 - Add TV with motion design portfolio to /design
 - "Steal" Discord server widget design from <https://lina.sh> (Only the \[m\] part)
-- Add Pinterest to socials
 - Add "Games I Play" section with live Steam stats, with a link to Steam profile
 - Add a bunch of ponies
 - OneShot easter egg (dialog with sounds and stuff)
 - Mention old.daudix.one somehwere
 - Mention that I don't use Cloudflare anymore
-- Link to reduxflakes 🚨🚨🚨
-- Update pixl_xip's 88x31

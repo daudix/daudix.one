@@ -36,7 +36,7 @@ socials = [
   { name = "Mastodon", url = "https://wetdry.world/@daudix" },
   { name = "SpaceHey", url = "https://spacehey.com/daudix" },
   { name = "Tumblr", url = "https://www.tumblr.com/ddaudix" },
-  { name = "Pixelfed", url = "https://pixelfed.social/Daudix" },
+  { name = "Pinterest", url = "https://www.pinterest.com/ddaudix" },
   { name = "YouTube", url = "https://www.youtube.com/@ddaudix" },
 ]
 forges = [
